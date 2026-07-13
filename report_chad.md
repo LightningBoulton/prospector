@@ -2,28 +2,12 @@
 ### Job report — 2026-07-13
 
 ## What's changed
-**New (19)**
-- **BILL** — [Lead Product Manager - Rewards Platform](https://www.bill.com/job?6101858004&gh_jid=6101858004) · Draper, Utah, United States; San Jose, California, United States; United States
-- **BILL** — [Lead Product Manager - Risk Platform](https://www.bill.com/job?6112258004&gh_jid=6112258004) · Draper, Utah, United States; San Jose, California, United States; United States
-- **BILL** — [Principal Partner Solution Engineer - Partner Embed Platform](https://www.bill.com/job?6107864004&gh_jid=6107864004) · Draper, Utah, United States; San Jose, California, United States; United States
-- **BILL** — [Senior Lead Product Manager - Risk Platform](https://www.bill.com/job?6104509004&gh_jid=6104509004) · Draper, Utah, United States; San Jose, California, United States; United States
-- **Canopy** — [Senior Full Stack Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4239960009) · South Jordan, UT
-- **Canopy** — [Senior QA Automation Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4256955009) · South Jordan, UT
-- **Canopy** — [Strategic Partnerships & Platform Ecosystem Manager](https://job-boards.greenhouse.io/canopytax/jobs/4301595009) · South Jordan, UT
-- **Domo** — [Sr. Software Engineer](https://domo.wd12.myworkdayjobs.com/DomoCareers/job/American-Fork-Utah/Sr-Software-Engineer_JR100282) · American Fork, Utah
-- **MX** — [Senior Analytics Engineer](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4106354009) · Lehi, Utah, United States
-- **Nav** — [Software Engineer](https://job-boards.greenhouse.io/navtechnologies/jobs/5985843004) · Draper, UT
-- **Podium** — [Analytics Engineer](https://job-boards.greenhouse.io/podium81/jobs/7905172) · Lehi, Utah
-- **Podium** — [Senior AI Engineer - Agentic](https://job-boards.greenhouse.io/podium81/jobs/7243261) · Lehi, Utah, Open to Remote
-- **Podium** — [Senior Mobile Engineer](https://job-boards.greenhouse.io/podium81/jobs/7944182) · Lehi, Utah, Open to Remote
-- **Podium** — [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/7129220) · Lehi, Utah, Open to Remote
-- **Podium** — [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/6637207) · Lehi, Utah
-- **Podium** — [Staff AI Engineer - USA](https://job-boards.greenhouse.io/podium81/jobs/7367363) · Lehi, Utah, Open to Remote
-- **Podium** — [Staff AI Engineer - Utah](https://job-boards.greenhouse.io/podium81/jobs/7490572) · Lehi, Utah
-- **Recursion** — [Sr. Data Platform Engineer - Computer System Validator](https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/7852491) · New York, New York; Salt Lake City, Utah
-- **Recursion** — [Staff Engineer, Identity & Access Management (IAM)](https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/7943347) · Salt Lake City, Utah
+**Removed / filled (3)**
+- **Canopy** — Senior Full Stack Engineer · South Jordan, UT
+- **Canopy** — Senior QA Automation Engineer · South Jordan, UT
+- **Canopy** — Strategic Partnerships & Platform Ecosystem Manager · South Jordan, UT
 
-## All current matching roles (33)
+## All current matching roles (30)
 
 **Awardco**
 - [Application Security Engineer](https://award.co/position?gh_jid=5856737004) · Lindon, Utah · updated 2026-06-02
@@ -34,11 +18,6 @@
 - [Lead Product Manager - Risk Platform](https://www.bill.com/job?6112258004&gh_jid=6112258004) · Draper, Utah, United States; San Jose, California, United States; United States · updated 2026-07-08
 - [Principal Partner Solution Engineer - Partner Embed Platform](https://www.bill.com/job?6107864004&gh_jid=6107864004) · Draper, Utah, United States; San Jose, California, United States; United States · updated 2026-07-03
 - [Senior Lead Product Manager - Risk Platform](https://www.bill.com/job?6104509004&gh_jid=6104509004) · Draper, Utah, United States; San Jose, California, United States; United States · updated 2026-07-08
-
-**Canopy**
-- [Senior Full Stack Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4239960009) · South Jordan, UT · updated 2026-07-09
-- [Senior QA Automation Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4256955009) · South Jordan, UT · updated 2026-06-08
-- [Strategic Partnerships & Platform Ecosystem Manager](https://job-boards.greenhouse.io/canopytax/jobs/4301595009) · South Jordan, UT · updated 2026-07-10
 
 **Cricut**
 - [Manager, Software Engineering QA](https://jobs.smartrecruiters.com/cricut/744000124511339) · South Jordan, UT, United States · updated 2026-05-04
@@ -74,8 +53,8 @@
 - [Analytics Engineer](https://job-boards.greenhouse.io/podium81/jobs/7905172) · Lehi, Utah · updated 2026-07-10
 - [Senior AI Engineer - Agentic](https://job-boards.greenhouse.io/podium81/jobs/7243261) · Lehi, Utah, Open to Remote · updated 2026-06-30
 - [Senior Mobile Engineer](https://job-boards.greenhouse.io/podium81/jobs/7944182) · Lehi, Utah, Open to Remote · updated 2026-07-01
-- [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/7129220) · Lehi, Utah, Open to Remote · updated 2026-06-30
 - [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/6637207) · Lehi, Utah · updated 2026-06-30
+- [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/7129220) · Lehi, Utah, Open to Remote · updated 2026-06-30
 - [Staff AI Engineer - USA](https://job-boards.greenhouse.io/podium81/jobs/7367363) · Lehi, Utah, Open to Remote · updated 2026-06-30
 - [Staff AI Engineer - Utah](https://job-boards.greenhouse.io/podium81/jobs/7490572) · Lehi, Utah · updated 2026-06-30
 
@@ -85,3 +64,6 @@
 
 **Route**
 - [Sr. Core Backend Engineer](https://careers.route.com/job-board?gh_jid=7803003003) · Remote · updated 2026-07-13
+
+## Source warnings (1)
+- Canopy (greenhouse/canopytax): TimeoutError The read operation timed out
