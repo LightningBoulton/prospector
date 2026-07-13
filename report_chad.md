@@ -2,23 +2,10 @@
 ### Job report — 2026-07-13
 
 ## What's changed
-**New (14)**
-- **Ancestry** — [Principal Design Engineer, Storytelling](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Principal-Design-Engineer--Storytelling_R003390) · Draper, UT · $153,000 - $182,000 · Posted Jul 7 · 6d ago
-- **Ancestry** — [Senior Software Engineer](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Senior-Software-Engineer_R003386) · Draper, UT · $120,000 - $135,000 · Posted Jul 1 · 12d ago
-- **Ancestry** — [Machine Learning Engineer, Co-op](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote/Machine-Learning-Engineer--Co-op_R003378) · Remote · Posted Jun 13 · 30d ago
-- **Ancestry** — [Senior Software Engineer](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote---US-Only/Senior-Software-Engineer_R003346) · Remote - US Only · $114,480 - $139,590 · Posted Jun 13 · 30d ago
-- **BambooHR** — [Director of Software Engineering - Payroll Services](https://job-boards.greenhouse.io/bamboohr17/jobs/5727054004) · Utah | Hybrid · Posted Jan 12 · 182d ago
-- **BambooHR** — [Principal Software Architect](https://job-boards.greenhouse.io/bamboohr17/jobs/6098097004) · Arizona | Remote; Idaho | Remote; Texas | Remote; Utah | Remote; Washington | Remote · Posted Jun 26 · 17d ago
-- **BambooHR** — [Sr. Data Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/5996687004) · Utah | Hybrid · Posted May 21 · 53d ago
-- **BambooHR** — [Sr. Data Governance Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6003041004) · Utah | Hybrid · Posted May 27 · 47d ago
-- **BambooHR** — [Staff Software Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/5990126004) · Utah | Hybrid · Posted May 12 · 62d ago
-- **BambooHR** — [Staff Software Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6008526004) · Utah | Remote · Posted Jun 26 · 17d ago
-- **Canopy** — [Senior Full Stack Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4239960009) · South Jordan, UT · Posted May 5 · 69d ago
-- **Canopy** — [Senior QA Automation Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4256955009) · South Jordan, UT · Posted May 21 · 53d ago
-- **Canopy** — [Strategic Partnerships & Platform Ecosystem Manager](https://job-boards.greenhouse.io/canopytax/jobs/4301595009) · South Jordan, UT · Posted Jun 30 · 13d ago
-- **Health Catalyst** — [Site Reliability Engineer- AI Enablement](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Site-Reliability-Engineer--AI-Enablement_REQ-3259) · US Remote · Posted Jul 8 · 5d ago
+**New (1)**
+- **Traeger** — [Junior Dev Ops Engineer](https://job-boards.greenhouse.io/traegergrills/jobs/7852723) · Salt Lake City · Posted May 14 · 60d ago
 
-## All current matching roles (44)
+## All current matching roles (45)
 
 **Ancestry**
 - [Machine Learning Engineer, Co-op](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote/Machine-Learning-Engineer--Co-op_R003378) · Remote · Posted Jun 13 · 30d ago
@@ -41,8 +28,8 @@
 - [Principal Software Architect](https://job-boards.greenhouse.io/bamboohr17/jobs/6098097004) · Arizona | Remote; Idaho | Remote; Texas | Remote; Utah | Remote; Washington | Remote · Posted Jun 26 · 17d ago
 - [Sr. Data Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/5996687004) · Utah | Hybrid · Posted May 21 · 53d ago
 - [Sr. Data Governance Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6003041004) · Utah | Hybrid · Posted May 27 · 47d ago
-- [Staff Software Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/5990126004) · Utah | Hybrid · Posted May 12 · 62d ago
 - [Staff Software Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6008526004) · Utah | Remote · Posted Jun 26 · 17d ago
+- [Staff Software Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/5990126004) · Utah | Hybrid · Posted May 12 · 62d ago
 
 **Canopy**
 - [Senior Full Stack Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4239960009) · South Jordan, UT · Posted May 5 · 69d ago
@@ -86,8 +73,8 @@
 - [Analytics Engineer](https://job-boards.greenhouse.io/podium81/jobs/7905172) · Lehi, Utah · Posted May 12 · 62d ago
 - [Senior AI Engineer - Agentic](https://job-boards.greenhouse.io/podium81/jobs/7243261) · Lehi, Utah, Open to Remote · Posted Sep 11 · 305d ago
 - [Senior Mobile Engineer](https://job-boards.greenhouse.io/podium81/jobs/7944182) · Lehi, Utah, Open to Remote · Posted Jul 1 · 12d ago
-- [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/7129220) · Lehi, Utah, Open to Remote · Posted Aug 4 · 343d ago
 - [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/6637207) · Lehi, Utah · Posted Feb 19 · 509d ago
+- [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/7129220) · Lehi, Utah, Open to Remote · Posted Aug 4 · 343d ago
 - [Staff AI Engineer - USA](https://job-boards.greenhouse.io/podium81/jobs/7367363) · Lehi, Utah, Open to Remote · Posted Dec 22 · 203d ago
 - [Staff AI Engineer - Utah](https://job-boards.greenhouse.io/podium81/jobs/7490572) · Lehi, Utah · Posted Dec 22 · 203d ago
 
@@ -97,3 +84,6 @@
 
 **Route**
 - [Sr. Core Backend Engineer](https://careers.route.com/job-board?gh_jid=7803003003) · Remote · $171,000 - $181,000 · Posted Jul 13 · today
+
+**Traeger**
+- [Junior Dev Ops Engineer](https://job-boards.greenhouse.io/traegergrills/jobs/7852723) · Salt Lake City · Posted May 14 · 60d ago
