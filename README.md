@@ -32,7 +32,8 @@ The daily run: read the company list → fetch and normalize every source once �
 | `profiles.json` | What to look for: one named title filter per person. |
 | `jobmonitor.py` | The engine — fetch, normalize, filter, diff, report. |
 | `snapshot_<name>.json` | Auto-generated per profile. The last run's matched roles, used for the diff. Commit these so history lives in git. |
-| `report_<name>.md` | Auto-generated per profile. The latest report — this is what gets emailed. |
+| `report_<name>.md` | Auto-generated per profile. The latest report in Markdown, for git history and the CLI. |
+| `report_<name>.html` | Auto-generated per profile. A styled, dark-mode, email-safe HTML version — this is what gets emailed. |
 
 ## Quick start
 
@@ -94,7 +95,7 @@ Companies on Workday, iCIMS, or a custom stack (several of the larger Silicon Sl
 
 ## Running daily with GitHub Actions
 
-Runs Prospector on a schedule, commits updated snapshots back, and emails each person their report — no server to maintain. Save as `.github/workflows/prospector.yml`:
+Runs Prospector on a schedule, commits updated snapshots back, and emails each person their report — no server to maintain. The workflow lives at [`.github/workflows/prospector.yml`](.github/workflows/prospector.yml):
 
 ```yaml
 name: prospector
@@ -102,6 +103,11 @@ on:
   schedule:
     - cron: "0 13 * * *"   # 7:00 AM Mountain (MDT); use "0 14 * * *" to hold at 7 in winter
   workflow_dispatch:
+    inputs:
+      chad_only:
+        description: "Test run: email only Chad, skip Lisa"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -121,7 +127,7 @@ jobs:
         run: |
           git config user.name  "prospector-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add snapshot_*.json report_*.md
+          git add snapshot_*.json report_*.md report_*.html
           git commit -m "Daily run: $(date -u +%Y-%m-%d)" || echo "No changes"
           git push
 
@@ -136,9 +142,10 @@ jobs:
           from: Prospector Bot
           to: ${{ secrets.MAIL_TO_CHAD }}
           subject: "Prospector — your daily jobs report"
-          body: file://report_chad.md
+          html_body: file://report_chad.html
 
       - name: Email Lisa's report
+        if: ${{ inputs.chad_only != true }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -149,8 +156,12 @@ jobs:
           from: Prospector Bot
           to: ${{ secrets.MAIL_TO_LISA }}
           subject: "Prospector — director / ops roles today"
-          body: file://report_lisa.md
+          html_body: file://report_lisa.html
 ```
+
+### Test runs without spamming Lisa
+
+Trigger the workflow manually from the **Actions** tab (**Run workflow**) and check **"Test run: email only Chad, skip Lisa."** The full pipeline still runs — Chad gets his email so you can eyeball the output — but Lisa's send is skipped. Scheduled runs leave the box unchecked, so Lisa is emailed as normal. Note a manual test run still commits updated snapshots, which advances the diff baseline.
 
 ### Credentials and recipients — you set these, not this repo
 
@@ -162,7 +173,7 @@ Never put a password or someone's email address in a committed file. In **Settin
 
 The workflow references these by name only, so nothing sensitive touches the code or git history.
 
-Report bodies are Markdown, which most mail clients render as clean plain text. For rich formatting, generate an HTML version in `jobmonitor.py` and use `html_body:`.
+Each run writes two report files per profile: `report_<name>.md` (Markdown, for git history and CLI) and `report_<name>.html` (a styled, dark-mode, email-safe HTML version). The workflow emails the HTML via `html_body:`. The HTML uses inline styles and a table layout with an explicit dark background and light text, so it renders consistently across mail clients without relying on client-side theming.
 
 ## Roadmap
 

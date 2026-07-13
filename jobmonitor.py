@@ -225,18 +225,153 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
     return "\n".join(L)
 
 
+# ---- HTML report (dark-mode, email-safe: inline styles, table layout) ----
+
+# GitHub-dark palette. Kept as explicit 6-digit hex so no client-side blending is needed.
+_C = {
+    "bg": "#0d1117", "card": "#161b22", "panel": "#1c2128", "border": "#30363d",
+    "text": "#c9d1d9", "head": "#f0f6fc", "muted": "#8b949e", "link": "#58a6ff",
+    "green": "#3fb950", "amber": "#d29922", "red": "#f85149",
+    "green_bg": "#122619", "amber_bg": "#2b2411", "red_bg": "#2d1618",
+}
+_FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
+
+
+def _esc(s):
+    return ((s or "").replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def _link(text, url):
+    return (f'<a href="{_esc(url)}" style="color:{_C["link"]};text-decoration:none;'
+            f'font-weight:600;">{_esc(text)}</a>')
+
+
+def _section(title):
+    return (f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:19px;'
+            f'font-weight:700;margin:26px 0 2px;">{_esc(title)}</div>'
+            f'<div style="height:1px;background-color:{_C["border"]};margin:10px 0 4px;"></div>')
+
+
+def _chip(label, key):
+    return (f'<div style="margin:16px 0 4px;"><span style="display:inline-block;'
+            f'background-color:{_C[key + "_bg"]};color:{_C[key]};font-family:{_FONT};'
+            f'font-size:12px;font-weight:700;letter-spacing:.3px;padding:4px 11px;'
+            f'border-radius:12px;">{_esc(label)}</span></div>')
+
+
+def _card(inner, accent):
+    return (f'<div style="border:1px solid {_C["border"]};border-left:3px solid {accent};'
+            f'background-color:{_C["panel"]};border-radius:8px;padding:11px 14px;'
+            f'margin:8px 0;">{inner}</div>')
+
+
+def _muted(text):
+    return (f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:13px;'
+            f'margin-top:4px;">{text}</div>')
+
+
+def build_html_report(profile, matched, new, removed, changed, errors, first_run):
+    today = datetime.date.today().isoformat()
+    B = []  # body-cell fragments, mirrors build_report's line list
+
+    # Header
+    B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:22px;'
+             f'font-weight:800;line-height:1.3;">{_esc(profile["label"])}</div>')
+    B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
+             f'margin-top:4px;">Job report · {today}</div>')
+
+    # What's changed
+    B.append(_section("What's changed"))
+    if first_run:
+        B.append(_muted("First run — baseline established. Changes will appear here on the next run."))
+    elif not (new or removed or changed):
+        B.append(_muted("No changes since the previous run."))
+    else:
+        if new:
+            B.append(_chip(f"New · {len(new)}", "green"))
+            for p in sorted(new, key=lambda x: x["company"]):
+                inner = (_link(p["title"], p["url"])
+                         + _muted(f'{_esc(p["company"])} · {_esc(p["location"])}'))
+                B.append(_card(inner, _C["green"]))
+        if changed:
+            B.append(_chip(f"Changed titles · {len(changed)}", "amber"))
+            for o, c in changed:
+                inner = (_link(c["title"], c["url"])
+                         + _muted(f'{_esc(c["company"])} · was "{_esc(o["title"])}"'))
+                B.append(_card(inner, _C["amber"]))
+        if removed:
+            B.append(_chip(f"Removed / filled · {len(removed)}", "red"))
+            for p in sorted(removed, key=lambda x: x["company"]):
+                inner = (f'<span style="color:{_C["text"]};font-family:{_FONT};'
+                         f'font-weight:600;">{_esc(p["title"])}</span>'
+                         + _muted(f'{_esc(p["company"])} · {_esc(p["location"])}'))
+                B.append(_card(inner, _C["red"]))
+
+    # All current matching roles
+    B.append(_section(f"All current matching roles ({len(matched)})"))
+    if not matched:
+        B.append(_muted("No roles currently match this profile."))
+    else:
+        last = None
+        for p in sorted(matched, key=lambda x: (x["company"], x["title"])):
+            if p["company"] != last:
+                B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};'
+                         f'font-weight:700;font-size:15px;margin:18px 0 6px;">'
+                         f'{_esc(p["company"])}</div>')
+                last = p["company"]
+            upd = f' · updated {_esc(p["updated"])}' if p["updated"] else ""
+            B.append(f'<div style="margin:0 0 6px;line-height:1.45;">'
+                     f'{_link(p["title"], p["url"])}'
+                     f'<span style="color:{_C["muted"]};font-family:{_FONT};font-size:13px;">'
+                     f' · {_esc(p["location"])}{upd}</span></div>')
+
+    # Source warnings
+    if errors:
+        B.append(_section(f"Source warnings ({len(errors)})"))
+        for e in errors:
+            B.append(f'<div style="color:{_C["amber"]};font-family:{_FONT};'
+                     f'font-size:13px;margin:0 0 4px;">{_esc(e)}</div>')
+
+    body = "".join(B)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>{_esc(profile["label"])}</title>
+</head>
+<body style="margin:0;padding:0;background-color:{_C['bg']};">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{_C['bg']};">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background-color:{_C['card']};border:1px solid {_C['border']};border-radius:14px;">
+<tr><td style="padding:28px 30px 32px;">{body}</td></tr>
+</table>
+<div style="color:{_C['muted']};font-family:{_FONT};font-size:11px;margin-top:16px;">Prospector · Silicon Slopes job monitor</div>
+</td></tr>
+</table>
+</body>
+</html>"""
+
+
 def run_profile(profile, pool, errors):
     matched = [p for p in pool if matches_profile(p, profile)]
     snap = os.path.join(HERE, f"snapshot_{profile['name']}.json")
     rpt  = os.path.join(HERE, f"report_{profile['name']}.md")
+    html = os.path.join(HERE, f"report_{profile['name']}.html")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
     if prev is None:
-        report = build_report(profile, matched, [], [], [], errors, first_run=True)
+        new, removed, changed, first = [], [], [], True
     else:
         new, removed, changed = diff(prev, matched)
-        report = build_report(profile, matched, new, removed, changed, errors, first_run=False)
+        first = False
+    report = build_report(profile, matched, new, removed, changed, errors, first_run=first)
+    report_html = build_html_report(profile, matched, new, removed, changed, errors, first_run=first)
     json.dump(matched, open(snap, "w"), indent=1)
     open(rpt, "w").write(report)
+    open(html, "w").write(report_html)
     return matched, report
 
 

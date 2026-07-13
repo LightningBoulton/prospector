@@ -13,14 +13,24 @@
     { "name": "Route",          "city": "Lehi",               "ats": "greenhouse",      "slug": "route" },
     { "name": "Vivint",         "city": "Lehi",               "ats": "smartrecruiters", "slug": "vivint" },
     { "name": "Instructure",    "city": "Cottonwood Heights", "ats": "smartrecruiters", "slug": "instructure" },
-    { "name": "Pluralsight",    "city": "Draper",             "ats": "workday",         "slug": "pluralsight", "wd_host": "pluralsight.wd1.myworkdayjobs.com", "site": "Careers" }
+    { "name": "Pluralsight",    "city": "Draper",             "ats": "workday",         "slug": "pluralsight", "wd_host": "pluralsight.wd1.myworkdayjobs.com", "site": "Careers" },
+    { "name": "Podium",         "city": "Lehi",               "ats": "greenhouse",      "slug": "podium81" },
+    { "name": "MX",             "city": "Lehi",               "ats": "greenhouse",      "slug": "mxtechnologiesinc" },
+    { "name": "BILL",           "city": "Draper",             "ats": "greenhouse",      "slug": "billcom" },
+    { "name": "Recursion",      "city": "Salt Lake City",     "ats": "greenhouse",      "slug": "recursionpharmaceuticals" },
+    { "name": "Canopy",         "city": "Draper",             "ats": "greenhouse",      "slug": "canopytax" },
+    { "name": "Nav",            "city": "Draper",             "ats": "greenhouse",      "slug": "navtechnologies" },
+    { "name": "Domo",           "city": "American Fork",      "ats": "workday",         "slug": "domo", "wd_host": "domo.wd12.myworkdayjobs.com", "site": "DomoCareers" }
   ],
   "needs_identification": [
-    "Adobe (Lehi) — CONFIRMED Workday: adobe.wd5.myworkdayjobs.com/external_experienced (~895 global roles; wire with a location facet)",
-    "eBay (Draper)", "Ancestry (Lehi)", "Domo (American Fork)",
-    "BambooHR (Lindon)", "Podium (Lehi)", "MX (Lehi)",
-    "Nav (Draper)", "Canopy (Draper)", "BILL/Divvy (Draper)", "Health Catalyst (South Jordan)",
-    "Ivanti (South Jordan)", "Merit Medical (South Jordan)", "Snap One/Control4 (Draper)",
-    "Dandy (Lehi)", "Owlet (Lehi)", "Recursion (SLC)", "Sorenson (SLC)", "Clearlink (SLC)"
+    "Adobe (Lehi) — CONFIRMED Workday: adobe.wd5.myworkdayjobs.com/external_experienced (~895 global roles; wire with a location facet before adding)",
+    "eBay (Draper) — likely Workday (large/global; needs tenant+site + location facet)",
+    "Ancestry (Lehi) — ATS not yet confirmed",
+    "BambooHR (Lindon) — ATS not yet confirmed",
+    "Health Catalyst (South Jordan) — ATS not yet confirmed",
+    "Ivanti (South Jordan) — ATS not yet confirmed",
+    "Merit Medical (South Jordan) — likely iCIMS/custom (tier-3)",
+    "Snap One/Control4 (Draper) — ATS not yet confirmed",
+    "Dandy (Lehi)", "Owlet (Lehi)", "Sorenson (SLC)", "Clearlink (SLC)"
   ]
 }

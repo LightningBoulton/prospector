@@ -15,8 +15,8 @@
       "label": "Lisa \u2014 Director / C-level Operations & Customer Relations",
       "enabled": true,
       "match_groups": [
-        ["director", "senior director", "sr. director", "vp", "vice president", "head of", "chief", "coo", "cco", "cxo", "c-level", "c-suite", "general manager", "senior manager", "sr. manager"],
-        ["operations", "operating", "customer", "client", "member experience", "customer success", "customer experience", "customer relations", "experience", "support", "service", "revenue operations", "revops", "community", "account management", "business operations", "people", "employee experience"]
+        ["director", "senior director", "sr. director", "vp", "vice president", "head of", "chief", "coo", "cco", "cxo", "c-level", "c-suite", "general manager", "senior manager", "sr. manager", "manager", "lead"],
+        ["operations", "operating", "customer", "client", "member experience", "customer success", "customer experience", "customer relations", "experience", "support", "service", "revenue operations", "revops", "community", "account management", "business operations", "people", "employee experience", "engagement", "onboarding", "retention", "renewals", "success", "care", "advocacy"]
       ],
       "exclude_any": ["engineer", "engineering", "developer", "software", "data scientist", "designer", "architect", "technician", "analyst", "intern", "account executive", "sales development", "sdr", "bdr", "coordinator"]
     }
