@@ -14,7 +14,7 @@ Usage:
 No Playwright, no HTML scraping — every source here is a structured JSON API.
 """
 
-import json, os, re, sys, urllib.request, datetime
+import html, json, os, re, sys, urllib.request, datetime
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
@@ -48,11 +48,26 @@ def _post_json(url, payload):
 # ---- per-ATS fetchers, each returning normalized postings ----
 
 def fetch_greenhouse(c):
+    # `first_published` is the true post date; `updated_at` (edit time) is the fallback.
     d = _get(f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs")
-    return [_norm(c, str(j["id"]), j.get("title", ""),
-                  (j.get("location") or {}).get("name", ""),
-                  j.get("absolute_url", ""), (j.get("updated_at") or "")[:10])
-            for j in d.get("jobs", [])]
+    out = []
+    for j in d.get("jobs", []):
+        jid = str(j["id"])
+        out.append(_norm(c, jid, j.get("title", ""),
+                         (j.get("location") or {}).get("name", ""),
+                         j.get("absolute_url", ""),
+                         (j.get("first_published") or j.get("updated_at") or "")[:10],
+                         ats="greenhouse",
+                         detail_url=f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs/{jid}"))
+    return out
+
+
+def _lever_salary(j):
+    # Lever exposes pay in the list response: prefer the structured range, else the prose.
+    r = j.get("salaryRange") or {}
+    if r.get("min") and r.get("max"):
+        return _fmt_pay(r["min"], r["max"], r.get("currency", "USD"), r.get("interval"))
+    return (j.get("salaryDescriptionPlain") or "").strip() or None
 
 
 def fetch_lever(c):
@@ -63,7 +78,8 @@ def fetch_lever(c):
                 .date().isoformat() if created else "")
         out.append(_norm(c, str(j["id"]), j.get("text", ""),
                          (j.get("categories") or {}).get("location", ""),
-                         j.get("hostedUrl", ""), date))
+                         j.get("hostedUrl", ""), date,
+                         salary=_lever_salary(j), ats="lever"))
     return out
 
 
@@ -79,7 +95,8 @@ def fetch_smartrecruiters(c):
                 loc_str = (loc_str + " (Remote)").strip()
             out.append(_norm(c, str(j["id"]), j.get("name", ""), loc_str,
                              f"https://jobs.smartrecruiters.com/{c['slug']}/{j['id']}",
-                             (j.get("releasedDate") or "")[:10]))
+                             (j.get("releasedDate") or "")[:10], ats="smartrecruiters",
+                             detail_url=f"https://api.smartrecruiters.com/v1/companies/{c['slug']}/postings/{j['id']}"))
         offset += 100
         if offset >= d.get("totalFound", 0):
             break
@@ -113,7 +130,9 @@ def fetch_workday(c):
             path = j.get("externalPath", "")
             ext = (j.get("bulletFields") or [path])[0]        # req number is the stable id
             out.append(_norm(c, str(ext), j.get("title", ""), j.get("locationsText", ""),
-                             f"https://{host}/{site}{path}", _workday_date(j.get("postedOn", ""))))
+                             f"https://{host}/{site}{path}", _workday_date(j.get("postedOn", "")),
+                             ats="workday",
+                             detail_url=f"https://{host}/wday/cxs/{tenant}/{site}{path}"))
         offset += 20
         if offset >= d.get("total", 0) or not d.get("jobPostings"):
             break
@@ -124,10 +143,16 @@ FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday}
 
 
-def _norm(company, ext_id, title, location, url, updated):
+def _norm(company, ext_id, title, location, url, posted,
+          salary=None, ats=None, detail_url=None):
+    # `posted` = best "first posted" date the list endpoint gives (YYYY-MM-DD or "").
+    # `salary` = structured/known pay if free at list time (Lever); else filled by
+    # enrich_salary() via a per-role detail fetch. `_ats`/`_detail_url` are private
+    # (underscore-prefixed) and stripped before a snapshot is written.
     return {"key": f"{company['name']}::{ext_id}", "company": company["name"],
             "title": title.strip(), "location": location.strip(),
-            "url": url, "updated": updated}
+            "url": url, "posted": posted, "salary": salary,
+            "_ats": ats, "_detail_url": detail_url}
 
 
 def is_local(loc):
@@ -135,6 +160,72 @@ def is_local(loc):
     if KEEP_REMOTE and "remote" in l:
         return True
     return any(k in l for k in LOCAL_KEYWORDS)
+
+
+# ---- salary enrichment (per-matched-role detail fetch + regex; Lever is inline) ----
+
+_INTERVAL = {"per-year-salary": "/yr", "per-hour-wage": "/hr",
+             "per-month-salary": "/mo", "per-week-salary": "/wk", "per-day-wage": "/day"}
+
+
+def _fmt_pay(lo, hi, currency, interval):
+    sym = "$" if currency in (None, "USD") else f"{currency} "
+    unit = _INTERVAL.get(interval, "")
+    fmt = lambda n: f"{sym}{n:,.0f}" if float(n) >= 1000 else f"{sym}{float(n):,.2f}"
+    return f"{fmt(lo)}–{fmt(hi)}{unit}"
+
+
+# A "$X – $Y" pay range in free text: two dollar amounts joined by a dash/"to".
+_PAY_RE = re.compile(
+    r"\$\s?\d{1,3}(?:,\d{3})*(?:\.\d+)?\s?[kK]?"          # first amount
+    r"\s*(?:-|–|—|to)\s*"                        # separator: - – — or "to"
+    r"\$?\s?\d{1,3}(?:,\d{3})*(?:\.\d+)?\s?[kK]?")         # second amount
+
+_SALARY_CACHE = {}   # key -> salary string|None, so a role shared across profiles is fetched once
+
+
+def _strip_html(s):
+    return html.unescape(re.sub(r"<[^>]+>", " ", s or ""))
+
+
+def _detail_text(p):
+    # Pull the plain-text job description from each ATS's per-posting detail endpoint.
+    d, ats = _get(p["_detail_url"]), p["_ats"]
+    if ats == "smartrecruiters":
+        secs = (d.get("jobAd") or {}).get("sections") or {}
+        text = " ".join(v.get("text", "") for v in secs.values() if isinstance(v, dict))
+        return _strip_html(text)
+    if ats == "workday":
+        return _strip_html((d.get("jobPostingInfo") or {}).get("jobDescription", ""))
+    return _strip_html(d.get("content", ""))   # greenhouse
+
+
+def enrich_salary(postings):
+    # For each role still missing salary, fetch its detail once and regex a pay range.
+    # Bounded to the postings passed in (the matched-across-profiles union) — polite.
+    for p in postings:
+        if p.get("salary") or not p.get("_detail_url"):
+            continue
+        if p["key"] not in _SALARY_CACHE:
+            try:
+                m = _PAY_RE.search(_detail_text(p))
+                _SALARY_CACHE[p["key"]] = m.group(0).strip() if m else None
+            except Exception:
+                _SALARY_CACHE[p["key"]] = None
+        p["salary"] = _SALARY_CACHE[p["key"]]
+
+
+def _fmt_posted(posted):
+    # "Jul 10 · 3d ago" from a YYYY-MM-DD string; "" if absent/unparseable.
+    if not posted:
+        return ""
+    try:
+        d = datetime.date.fromisoformat(posted)
+    except ValueError:
+        return ""
+    days = (datetime.date.today() - d).days
+    age = "today" if days <= 0 else "1d ago" if days == 1 else f"{days}d ago"
+    return f"Posted {d:%b} {d.day} · {age}"
 
 
 # ---- profile matching (word-boundary aware) ----
@@ -178,6 +269,17 @@ def diff(prev, curr):
     return new, removed, changed
 
 
+def _meta_bits(p):
+    # Ordered detail pieces shown after a title: location · salary · posted-age.
+    bits = [p.get("location") or ""]
+    if p.get("salary"):
+        bits.append(p["salary"])
+    fp = _fmt_posted(p.get("posted"))
+    if fp:
+        bits.append(fp)
+    return [b for b in bits if b]
+
+
 def build_report(profile, matched, new, removed, changed, errors, first_run):
     today = datetime.date.today().isoformat()
     L = [f"# {profile['label']}", f"### Job report — {today}", ""]
@@ -191,7 +293,7 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
     else:
         if new:
             L.append(f"**New ({len(new)})**")
-            L += [f"- **{p['company']}** — [{p['title']}]({p['url']}) · {p['location']}"
+            L += [f"- **{p['company']}** — [{p['title']}]({p['url']}) · {' · '.join(_meta_bits(p))}"
                   for p in sorted(new, key=lambda x: x["company"])]
         if changed:
             L.append(f"**Changed titles ({len(changed)})**")
@@ -199,7 +301,7 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
                   for o, c in changed]
         if removed:
             L.append(f"**Removed / filled ({len(removed)})**")
-            L += [f"- **{p['company']}** — {p['title']} · {p['location']}"
+            L += [f"- **{p['company']}** — {p['title']} · {' · '.join(_meta_bits(p))}"
                   for p in sorted(removed, key=lambda x: x["company"])]
     L.append("")
 
@@ -213,8 +315,7 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
             if p["company"] != last:
                 L.append(f"\n**{p['company']}**")
                 last = p["company"]
-            upd = f" · updated {p['updated']}" if p["updated"] else ""
-            L.append(f"- [{p['title']}]({p['url']}) · {p['location']}{upd}")
+            L.append(f"- [{p['title']}]({p['url']}) · {' · '.join(_meta_bits(p))}")
     L.append("")
 
     # --- Source warnings ---
@@ -271,6 +372,24 @@ def _muted(text):
             f'margin-top:4px;">{text}</div>')
 
 
+def _sal_html(p):
+    if not p.get("salary"):
+        return ""
+    return (f'<div style="color:{_C["green"]};font-family:{_FONT};font-size:13px;'
+            f'font-weight:700;margin-top:3px;">{_esc(p["salary"])}</div>')
+
+
+def _meta_html(p, lead=None):
+    # Muted "lead · location · Posted …" line, with salary called out in green beneath.
+    parts = [_esc(lead)] if lead else []
+    if p.get("location"):
+        parts.append(_esc(p["location"]))
+    fp = _fmt_posted(p.get("posted"))
+    if fp:
+        parts.append(_esc(fp))
+    return (_muted(" · ".join(parts)) if parts else "") + _sal_html(p)
+
+
 def build_html_report(profile, matched, new, removed, changed, errors, first_run):
     today = datetime.date.today().isoformat()
     B = []  # body-cell fragments, mirrors build_report's line list
@@ -291,21 +410,21 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
         if new:
             B.append(_chip(f"New · {len(new)}", "green"))
             for p in sorted(new, key=lambda x: x["company"]):
-                inner = (_link(p["title"], p["url"])
-                         + _muted(f'{_esc(p["company"])} · {_esc(p["location"])}'))
+                inner = _link(p["title"], p["url"]) + _meta_html(p, lead=p["company"])
                 B.append(_card(inner, _C["green"]))
         if changed:
             B.append(_chip(f"Changed titles · {len(changed)}", "amber"))
             for o, c in changed:
                 inner = (_link(c["title"], c["url"])
-                         + _muted(f'{_esc(c["company"])} · was "{_esc(o["title"])}"'))
+                         + _muted(f'{_esc(c["company"])} · was "{_esc(o["title"])}"')
+                         + _sal_html(c))
                 B.append(_card(inner, _C["amber"]))
         if removed:
             B.append(_chip(f"Removed / filled · {len(removed)}", "red"))
             for p in sorted(removed, key=lambda x: x["company"]):
                 inner = (f'<span style="color:{_C["text"]};font-family:{_FONT};'
                          f'font-weight:600;">{_esc(p["title"])}</span>'
-                         + _muted(f'{_esc(p["company"])} · {_esc(p["location"])}'))
+                         + _meta_html(p, lead=p["company"]))
                 B.append(_card(inner, _C["red"]))
 
     # All current matching roles
@@ -320,11 +439,8 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
                          f'font-weight:700;font-size:15px;margin:18px 0 6px;">'
                          f'{_esc(p["company"])}</div>')
                 last = p["company"]
-            upd = f' · updated {_esc(p["updated"])}' if p["updated"] else ""
-            B.append(f'<div style="margin:0 0 6px;line-height:1.45;">'
-                     f'{_link(p["title"], p["url"])}'
-                     f'<span style="color:{_C["muted"]};font-family:{_FONT};font-size:13px;">'
-                     f' · {_esc(p["location"])}{upd}</span></div>')
+            B.append(f'<div style="margin:0 0 12px;line-height:1.4;">'
+                     f'{_link(p["title"], p["url"])}{_meta_html(p)}</div>')
 
     # Source warnings
     if errors:
@@ -356,11 +472,10 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
 </html>"""
 
 
-def run_profile(profile, pool, errors):
-    matched = [p for p in pool if matches_profile(p, profile)]
+def run_profile(profile, matched, errors):
     snap = os.path.join(HERE, f"snapshot_{profile['name']}.json")
     rpt  = os.path.join(HERE, f"report_{profile['name']}.md")
-    html = os.path.join(HERE, f"report_{profile['name']}.html")
+    html_path = os.path.join(HERE, f"report_{profile['name']}.html")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
     if prev is None:
         new, removed, changed, first = [], [], [], True
@@ -369,9 +484,11 @@ def run_profile(profile, pool, errors):
         first = False
     report = build_report(profile, matched, new, removed, changed, errors, first_run=first)
     report_html = build_html_report(profile, matched, new, removed, changed, errors, first_run=first)
-    json.dump(matched, open(snap, "w"), indent=1)
+    # Drop private (underscore-prefixed) fetch metadata before persisting the snapshot.
+    clean = [{k: v for k, v in p.items() if not k.startswith("_")} for p in matched]
+    json.dump(clean, open(snap, "w"), indent=1)
     open(rpt, "w").write(report)
-    open(html, "w").write(report_html)
+    open(html_path, "w").write(report_html)
     return matched, report
 
 
@@ -394,9 +511,17 @@ def main():
         profiles = [p for p in profiles if p.get("enabled", True)]
 
     pool, errors = collect_pool()
-    print(f"Fetched {len(pool)} local/remote roles across all companies.\n")
+    print(f"Fetched {len(pool)} local/remote roles across all companies.")
+
+    # Match every profile first, then enrich the *union* of matched roles once, so a
+    # role two people match costs a single detail fetch (postings are shared references).
+    matched = {p["name"]: [x for x in pool if matches_profile(x, p)] for p in profiles}
+    union = {x["key"]: x for lst in matched.values() for x in lst}
+    enrich_salary(list(union.values()))
+    print(f"Enriched salary for {len(union)} matched roles.\n")
+
     for p in profiles:
-        matched, report = run_profile(p, pool, errors)
+        _, report = run_profile(p, matched[p["name"]], errors)
         print("=" * 70)
         print(report)
 

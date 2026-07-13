@@ -10,6 +10,7 @@ Most tech companies don't hand-build their careers pages; they run them on an ap
 - Normalizes Greenhouse, Lever, and SmartRecruiters into one common shape.
 - Applies a global location gate (Utah + remote), then runs each **profile** — a named title filter — against the results.
 - Diffs each profile against its own previous snapshot to surface **new**, **changed**, and **removed/filled** postings.
+- Shows each role's **posting date and age** ("Posted Jul 10 · 3d ago") and its **salary** where the posting states one.
 - Writes a separate snapshot and report per profile, so one search never contaminates another's history.
 
 No headless browser, no HTML parsing for the current sources, no third-party dependencies. Python standard library only.
@@ -81,6 +82,13 @@ A coarse global gate runs once before any profile, configured at the top of `job
 - `LOCAL_KEYWORDS` — city/state terms that count as local.
 - `KEEP_REMOTE` — when `True`, remote-tagged roles are kept regardless of geography.
 - `LOCAL_ONLY` — set `False` to track every role regardless of location.
+
+## Posting dates & salary
+
+Each role shows how long it's been open and, when the posting states it, the pay range.
+
+- **Posting date** is free from every ATS list feed (Greenhouse's `first_published`, Lever's `createdAt`, SmartRecruiters' `releasedDate`), so it costs no extra requests. Workday only publishes a relative string ("Posted 3 Days Ago"), which is approximated to a date — treat Workday ages as ballpark.
+- **Salary** is reliable only where the ATS exposes it structurally: **Lever** returns a `salaryRange` right in its feed. For Greenhouse, SmartRecruiters, and Workday there's no structured pay field, so Prospector fetches the job's detail page (only for roles that already passed a profile filter — never the whole pool) and extracts a "$X–$Y" range from the description text. That means salary appears when a posting spells out a range and is silently omitted when it doesn't — many roles simply don't publish pay. It's best-effort, not exhaustive.
 
 ## Adding a company
 

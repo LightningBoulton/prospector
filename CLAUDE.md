@@ -28,24 +28,40 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 
 - `companies.json` — `companies[]` + `needs_identification[]` backlog. Company fields: {name, city, ats, slug}; **workday entries also need** {wd_host, site}.
 - `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any}).
-- `jobmonitor.py` — the engine (~230 lines). Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `diff`, `build_report`, `run_profile`.
-- `snapshot_<name>.json`, `report_<name>.md` — generated per profile; committed by CI.
+- `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `enrich_salary`, `diff`, `build_report`, `build_html_report`, `run_profile`.
+- `snapshot_<name>.json`, `report_<name>.md`, `report_<name>.html` — generated per profile; committed by CI. The HTML is a dark-mode, email-safe (inline styles, table layout) version and is what the workflow emails via `html_body:`.
 
 ## Data model
 
 Every posting normalizes to:
-`{key, company, title, location, url, updated}`
+`{key, company, title, location, url, posted, salary}` (+ private `_ats`, `_detail_url`)
 `key = "<Company>::<ats_id>"` is the **stable diff identity** — never change how it's built,
 or every existing snapshot will read as fully new/removed on the next run.
+`posted` = best "first posted" date (YYYY-MM-DD) each list endpoint gives. `salary` =
+pay string if known. `_ats`/`_detail_url` are underscore-prefixed and **stripped before the
+snapshot is written** (see `run_profile`). Diff ignores everything but `key` and `title`.
 
 Diff: compares `key` sets. `new` = in current not previous; `removed` = in previous not
 current; `changed` = same `key`, different `title`.
 
+## Posting date & salary enrichment
+
+- **`posted`** comes free from every list endpoint (Greenhouse `first_published`, Lever
+  `createdAt`, SmartRecruiters `releasedDate`, Workday `_workday_date(postedOn)` — approximate).
+  Reports show it as "Posted Jul 10 · 3d ago" via `_fmt_posted`.
+- **`salary`**: Lever exposes a structured `salaryRange` in its list response (`_lever_salary`,
+  free). The other three ATSes don't expose structured pay, so `enrich_salary` does a
+  **per-matched-role detail fetch** and regexes a "$X–$Y" range out of the description
+  (`_PAY_RE`, `_detail_text`). Enrichment runs once on the **union of matched roles across all
+  profiles** (`main`), cached by `key` (`_SALARY_CACHE`) so a shared role costs one fetch — the
+  only place the engine makes per-posting calls; keep it bounded to matched roles, never the pool.
+
 ## ATS integration notes (hard-won — read before touching fetchers)
 
-- **Greenhouse**: `GET boards-api.greenhouse.io/v1/boards/{slug}/jobs` → `{jobs:[{id,title,location:{name},absolute_url,updated_at}]}`. 404s on bad slug. A real board can legitimately return `jobs:[]`.
-- **Lever**: `GET api.lever.co/v0/postings/{slug}?mode=json` → `[{id,text,categories:{location},hostedUrl,createdAt}]`. `text` is the title. `createdAt` is **epoch milliseconds**. 404s on bad slug.
-- **SmartRecruiters**: `GET api.smartrecruiters.com/v1/companies/{slug}/postings?limit=100&offset=N` → `{totalFound,content:[{id,name,location:{city,region,remote,fullLocation},releasedDate}]}`. `name` is the title. **Returns HTTP 200 with `totalFound:0` for ANY slug, including nonsense** — so a 0-count SmartRecruiters response does NOT confirm the company exists. Always verify count > 0 when adding one. Paginate via `offset` until `offset >= totalFound`. Public apply URL: `https://jobs.smartrecruiters.com/{slug}/{id}`.
+- **Greenhouse**: `GET boards-api.greenhouse.io/v1/boards/{slug}/jobs` → `{jobs:[{id,title,location:{name},absolute_url,first_published,updated_at}]}`. Use `first_published` for `posted` (falls back to `updated_at`). 404s on bad slug. A real board can legitimately return `jobs:[]`. No structured pay in the list; salary comes from regexing the `content` field on the per-job detail (`/jobs/{id}`).
+- **Lever**: `GET api.lever.co/v0/postings/{slug}?mode=json` → `[{id,text,categories:{location},hostedUrl,createdAt,salaryRange,salaryDescriptionPlain}]`. `text` is the title. `createdAt` is **epoch milliseconds**. **`salaryRange` `{min,max,currency,interval}` is right in the list** — the only ATS here that gives structured pay for free (`_lever_salary`). 404s on bad slug.
+- **SmartRecruiters**: `GET api.smartrecruiters.com/v1/companies/{slug}/postings?limit=100&offset=N` → `{totalFound,content:[{id,name,location:{city,region,remote,fullLocation},releasedDate}]}`. `name` is the title; `releasedDate` → `posted`. **Returns HTTP 200 with `totalFound:0` for ANY slug, including nonsense** — so a 0-count SmartRecruiters response does NOT confirm the company exists. Always verify count > 0 when adding one. Paginate via `offset` until `offset >= totalFound`. Public apply URL: `https://jobs.smartrecruiters.com/{slug}/{id}`. No structured pay; salary regexed from the detail endpoint's `jobAd.sections` (`/postings/{id}`).
+- **Detail endpoints (salary only)**: Greenhouse `content`, SmartRecruiters `jobAd.sections`, Workday `jobPostingInfo.jobDescription` — all HTML, stripped and regexed by `enrich_salary`. Only hit for matched roles, never the whole pool.
 
 ## Profile matching semantics
 
@@ -76,9 +92,10 @@ Each new ATS = one `fetch_*` function returning normalized postings + one `FETCH
 
 - IMPORTANT: **no secrets in the repo.** Email creds/recipients are GitHub Actions secrets
   (`MAIL_USERNAME`, `MAIL_PASSWORD` = Gmail App Password, `MAIL_TO_*`). Never hardcode an email address (Lisa's included) in committed files.
-- Be a polite client: one run/day; don't parallel-hammer ATS endpoints.
+- Be a polite client: one run/day; don't parallel-hammer ATS endpoints. `enrich_salary` is
+  the one place with per-posting calls — keep it bounded to matched roles and cached by `key`.
 - Snapshots are state — CI commits them back. Don't rename or relocate them without a migration.
-- Keep changes dependency-free and the fetch shared-once.
+- Keep changes dependency-free and the list fetch shared-once (salary enrichment aside).
 
 ## Next tasks (priority order)
 

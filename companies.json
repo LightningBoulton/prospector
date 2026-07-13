@@ -20,17 +20,16 @@
     { "name": "Recursion",      "city": "Salt Lake City",     "ats": "greenhouse",      "slug": "recursionpharmaceuticals" },
     { "name": "Canopy",         "city": "Draper",             "ats": "greenhouse",      "slug": "canopytax" },
     { "name": "Nav",            "city": "Draper",             "ats": "greenhouse",      "slug": "navtechnologies" },
-    { "name": "Domo",           "city": "American Fork",      "ats": "workday",         "slug": "domo", "wd_host": "domo.wd12.myworkdayjobs.com", "site": "DomoCareers" }
+    { "name": "Domo",           "city": "American Fork",      "ats": "workday",         "slug": "domo", "wd_host": "domo.wd12.myworkdayjobs.com", "site": "DomoCareers" },
+    { "name": "Adobe",          "city": "Lehi",               "ats": "workday",         "slug": "adobe", "wd_host": "adobe.wd5.myworkdayjobs.com", "site": "external_experienced", "search_text": "Lehi" },
+    { "name": "BambooHR",       "city": "Lindon",             "ats": "greenhouse",      "slug": "bamboohr17" },
+    { "name": "Ancestry",       "city": "Lehi",               "ats": "workday",         "slug": "ancestry", "wd_host": "ancestry.wd501.myworkdayjobs.com", "site": "Careers" },
+    { "name": "Health Catalyst","city": "South Jordan",       "ats": "workday",         "slug": "healthcatalyst", "wd_host": "healthcatalyst.wd5.myworkdayjobs.com", "site": "healthcatalystcareers" }
   ],
   "needs_identification": [
-    "Adobe (Lehi) — CONFIRMED Workday: adobe.wd5.myworkdayjobs.com/external_experienced (~895 global roles; wire with a location facet before adding)",
-    "eBay (Draper) — likely Workday (large/global; needs tenant+site + location facet)",
-    "Ancestry (Lehi) — ATS not yet confirmed",
-    "BambooHR (Lindon) — ATS not yet confirmed",
-    "Health Catalyst (South Jordan) — ATS not yet confirmed",
-    "Ivanti (South Jordan) — ATS not yet confirmed",
-    "Merit Medical (South Jordan) — likely iCIMS/custom (tier-3)",
-    "Snap One/Control4 (Draper) — ATS not yet confirmed",
-    "Dandy (Lehi)", "Owlet (Lehi)", "Sorenson (SLC)", "Clearlink (SLC)"
+    "eBay (Draper) — custom Phenom site (jobs.ebayinc.com); no Workday CXS endpoint — tier-3 scrape",
+    "Ivanti (South Jordan) — ATS not confirmed; likely iCIMS/custom — tier-3",
+    "Merit Medical (South Jordan) — likely iCIMS/custom — tier-3",
+    "Snap One/Control4 (Draper)", "Dandy (Lehi)", "Owlet (Lehi)", "Sorenson (SLC)", "Clearlink (SLC)"
   ]
 }
