@@ -26,9 +26,9 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 
 ## Files
 
-- `companies.json` — `companies[]` ({name, city, ats, slug}) + `needs_identification[]` backlog.
+- `companies.json` — `companies[]` + `needs_identification[]` backlog. Company fields: {name, city, ats, slug}; **workday entries also need** {wd_host, site}.
 - `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any}).
-- `jobmonitor.py` — the engine (~180 lines). Key functions: `fetch_greenhouse/lever/smartrecruiters`, `collect_pool`, `matches_profile`, `diff`, `build_report`, `run_profile`.
+- `jobmonitor.py` — the engine (~230 lines). Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `diff`, `build_report`, `run_profile`.
 - `snapshot_<name>.json`, `report_<name>.md` — generated per profile; committed by CI.
 
 ## Data model
@@ -66,7 +66,7 @@ add a per-profile override rather than widening the global list.
 Big local employers (Adobe, Domo, Pluralsight, eBay, Ancestry, MX, Podium, BambooHR)
 are on Workday/iCIMS/custom, not the three current APIs. Preferred path:
 
-- **Workday** (most common here): `POST https://{tenant}.wd{N}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs` with JSON body `{"limit":20,"offset":0,"searchText":"","appliedFacets":{}}` → `{total, jobPostings:[{title, externalPath, locationsText, postedOn}]}`. Discover `{tenant}/{site}` from the company's careers URL. Add a `fetch_workday` fetcher + register in `FETCHERS`.
+- **Workday** (most common here): `fetch_workday` is IMPLEMENTED and registered. `POST https://{wd_host}/wday/cxs/{slug}/{site}/jobs` with `{"appliedFacets":{},"limit":20,"offset":0,"searchText":""}` → `{total, jobPostings:[{title, externalPath, locationsText, postedOn, bulletFields}]}`. Stable id = `bulletFields[0]` (req number). `postedOn` is relative text → `_workday_date()` approximates it. Apply URL = `https://{wd_host}/{site}{externalPath}`. To add one: find the company's real careers URL (gives wd_host + site — do NOT guess, most guesses 404), add a config entry with {ats:"workday", slug:<tenant>, wd_host, site}. Verified working: Pluralsight (pluralsight.wd1.myworkdayjobs.com / Careers). Adobe is confirmed (adobe.wd5.myworkdayjobs.com / external_experienced) but returns ~895 global roles — before wiring it, add a location `appliedFacets` filter so it doesn't page through 45×20 results every run.
 - **Ashby**: `GET api.ashbyhq.com/posting-api/job-board/{slug}` → `{jobs:[...]}`; 404s on bad slug.
 - Only reach for Playwright if a company has no reachable JSON at all.
 

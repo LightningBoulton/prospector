@@ -12,11 +12,13 @@
     { "name": "Weave",          "city": "Lehi",               "ats": "greenhouse",      "slug": "weave" },
     { "name": "Route",          "city": "Lehi",               "ats": "greenhouse",      "slug": "route" },
     { "name": "Vivint",         "city": "Lehi",               "ats": "smartrecruiters", "slug": "vivint" },
-    { "name": "Instructure",    "city": "Cottonwood Heights", "ats": "smartrecruiters", "slug": "instructure" }
+    { "name": "Instructure",    "city": "Cottonwood Heights", "ats": "smartrecruiters", "slug": "instructure" },
+    { "name": "Pluralsight",    "city": "Draper",             "ats": "workday",         "slug": "pluralsight", "wd_host": "pluralsight.wd1.myworkdayjobs.com", "site": "Careers" }
   ],
   "needs_identification": [
-    "Adobe (Lehi)", "eBay (Draper)", "Ancestry (Lehi)", "Domo (American Fork)",
-    "Pluralsight (Draper)", "BambooHR (Lindon)", "Podium (Lehi)", "MX (Lehi)",
+    "Adobe (Lehi) — CONFIRMED Workday: adobe.wd5.myworkdayjobs.com/external_experienced (~895 global roles; wire with a location facet)",
+    "eBay (Draper)", "Ancestry (Lehi)", "Domo (American Fork)",
+    "BambooHR (Lindon)", "Podium (Lehi)", "MX (Lehi)",
     "Nav (Draper)", "Canopy (Draper)", "BILL/Divvy (Draper)", "Health Catalyst (South Jordan)",
     "Ivanti (South Jordan)", "Merit Medical (South Jordan)", "Snap One/Control4 (Draper)",
     "Dandy (Lehi)", "Owlet (Lehi)", "Recursion (SLC)", "Sorenson (SLC)", "Clearlink (SLC)"

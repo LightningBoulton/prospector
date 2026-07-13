@@ -36,6 +36,15 @@ def _get(url):
         return json.load(r)
 
 
+def _post_json(url, payload):
+    body = json.dumps(payload).encode()
+    req = urllib.request.Request(url, data=body, headers={
+        "Content-Type": "application/json", "Accept": "application/json",
+        "User-Agent": "prospector/1.0"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.load(r)
+
+
 # ---- per-ATS fetchers, each returning normalized postings ----
 
 def fetch_greenhouse(c):
@@ -77,8 +86,42 @@ def fetch_smartrecruiters(c):
     return out
 
 
+def _workday_date(text):
+    # Workday returns relative strings ("Posted 3 Days Ago"); approximate to a date.
+    t, today = (text or "").lower(), datetime.date.today()
+    if "today" in t:
+        return today.isoformat()
+    if "yesterday" in t:
+        return (today - datetime.timedelta(days=1)).isoformat()
+    m = re.search(r"(\d+)\+?\s*day", t)
+    if m:
+        return (today - datetime.timedelta(days=int(m.group(1)))).isoformat()
+    m = re.search(r"(\d+)\+?\s*month", t)
+    if m:
+        return (today - datetime.timedelta(days=30 * int(m.group(1)))).isoformat()
+    return ""
+
+
+def fetch_workday(c):
+    # Config: {"ats":"workday","slug":<tenant>,"wd_host":<sub.wdN.myworkdayjobs.com>,"site":<site>}
+    host, tenant, site = c["wd_host"], c["slug"], c["site"]
+    url = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
+    out, offset = [], 0
+    while True:
+        d = _post_json(url, {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": ""})
+        for j in d.get("jobPostings", []):
+            path = j.get("externalPath", "")
+            ext = (j.get("bulletFields") or [path])[0]        # req number is the stable id
+            out.append(_norm(c, str(ext), j.get("title", ""), j.get("locationsText", ""),
+                             f"https://{host}/{site}{path}", _workday_date(j.get("postedOn", ""))))
+        offset += 20
+        if offset >= d.get("total", 0) or not d.get("jobPostings"):
+            break
+    return out
+
+
 FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
-            "smartrecruiters": fetch_smartrecruiters}
+            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday}
 
 
 def _norm(company, ext_id, title, location, url, updated):
@@ -135,32 +178,46 @@ def diff(prev, curr):
     return new, removed, changed
 
 
-def build_report(profile, new, removed, changed, total, errors, first_run):
+def build_report(profile, matched, new, removed, changed, errors, first_run):
     today = datetime.date.today().isoformat()
     L = [f"# {profile['label']}", f"### Job report — {today}", ""]
+
+    # --- What's changed (leads the report) ---
+    L.append("## What's changed")
     if first_run:
-        L.append(f"First run — baseline set. Tracking **{total}** matching roles. "
-                 f"Tomorrow's run will show what changed.")
-        return "\n".join(L) + "\n"
-    L.append(f"Tracking **{total}** matching roles.")
-    L.append("")
-    if not (new or removed or changed):
+        L.append("_First run — baseline established. Changes will appear here on the next run._")
+    elif not (new or removed or changed):
         L.append("_No changes since the previous run._")
-    if new:
-        L.append(f"## New postings ({len(new)})")
-        L += [f"- **{p['company']}** — [{p['title']}]({p['url']}) · {p['location']}"
-              for p in sorted(new, key=lambda x: x["company"])]
-        L.append("")
-    if changed:
-        L.append(f"## Changed titles ({len(changed)})")
-        L += [f"- **{c['company']}** — \"{o['title']}\" → [{c['title']}]({c['url']})"
-              for o, c in changed]
-        L.append("")
-    if removed:
-        L.append(f"## Removed / filled ({len(removed)})")
-        L += [f"- **{p['company']}** — {p['title']} · {p['location']}"
-              for p in sorted(removed, key=lambda x: x["company"])]
-        L.append("")
+    else:
+        if new:
+            L.append(f"**New ({len(new)})**")
+            L += [f"- **{p['company']}** — [{p['title']}]({p['url']}) · {p['location']}"
+                  for p in sorted(new, key=lambda x: x["company"])]
+        if changed:
+            L.append(f"**Changed titles ({len(changed)})**")
+            L += [f"- **{c['company']}** — \"{o['title']}\" → [{c['title']}]({c['url']})"
+                  for o, c in changed]
+        if removed:
+            L.append(f"**Removed / filled ({len(removed)})**")
+            L += [f"- **{p['company']}** — {p['title']} · {p['location']}"
+                  for p in sorted(removed, key=lambda x: x["company"])]
+    L.append("")
+
+    # --- All current matching roles, grouped by company ---
+    L.append(f"## All current matching roles ({len(matched)})")
+    if not matched:
+        L.append("_No roles currently match this profile._")
+    else:
+        last = None
+        for p in sorted(matched, key=lambda x: (x["company"], x["title"])):
+            if p["company"] != last:
+                L.append(f"\n**{p['company']}**")
+                last = p["company"]
+            upd = f" · updated {p['updated']}" if p["updated"] else ""
+            L.append(f"- [{p['title']}]({p['url']}) · {p['location']}{upd}")
+    L.append("")
+
+    # --- Source warnings ---
     if errors:
         L.append(f"## Source warnings ({len(errors)})")
         L += [f"- {e}" for e in errors]
@@ -174,10 +231,10 @@ def run_profile(profile, pool, errors):
     rpt  = os.path.join(HERE, f"report_{profile['name']}.md")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
     if prev is None:
-        report = build_report(profile, [], [], [], len(matched), errors, first_run=True)
+        report = build_report(profile, matched, [], [], [], errors, first_run=True)
     else:
         new, removed, changed = diff(prev, matched)
-        report = build_report(profile, new, removed, changed, len(matched), errors, first_run=False)
+        report = build_report(profile, matched, new, removed, changed, errors, first_run=False)
     json.dump(matched, open(snap, "w"), indent=1)
     open(rpt, "w").write(report)
     return matched, report

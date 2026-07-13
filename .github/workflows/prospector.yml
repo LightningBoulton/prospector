@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: "0 13 * * *"   # 7:00 AM Mountain (MDT); use "0 14 * * *" to hold at 7 in winter
   workflow_dispatch:
+    inputs:
+      chad_only:
+        description: "Test run: email only Chad, skip Lisa"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -40,6 +45,7 @@ jobs:
           body: file://report_chad.md
 
       - name: Email Lisa's report
+        if: ${{ inputs.chad_only != true }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
