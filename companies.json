@@ -1,5 +1,5 @@
 {
-  "_comment": "Verified tech companies within ~30 miles of South Jordan, UT. Each entry's endpoint was confirmed to return live job data. Add companies as you identify their ATS (see 'needs_identification' for the tier-2 backlog).",
+  "_comment": "Verified tech companies within ~50 miles of South Jordan, UT. Each entry's endpoint was confirmed to return live job data. Add companies as you identify their ATS (see 'needs_identification' for the tier-2/3 backlog).",
   "companies": [
     { "name": "Filevine",       "city": "Salt Lake City",     "ats": "lever",           "slug": "filevine" },
     { "name": "Qualtrics",      "city": "Provo",              "ats": "greenhouse",      "slug": "qualtrics" },
@@ -24,12 +24,23 @@
     { "name": "Adobe",          "city": "Lehi",               "ats": "workday",         "slug": "adobe", "wd_host": "adobe.wd5.myworkdayjobs.com", "site": "external_experienced", "search_text": "Lehi" },
     { "name": "BambooHR",       "city": "Lindon",             "ats": "greenhouse",      "slug": "bamboohr17" },
     { "name": "Ancestry",       "city": "Lehi",               "ats": "workday",         "slug": "ancestry", "wd_host": "ancestry.wd501.myworkdayjobs.com", "site": "Careers" },
-    { "name": "Health Catalyst","city": "South Jordan",       "ats": "workday",         "slug": "healthcatalyst", "wd_host": "healthcatalyst.wd5.myworkdayjobs.com", "site": "healthcatalystcareers" }
+    { "name": "Health Catalyst","city": "South Jordan",       "ats": "workday",         "slug": "healthcatalyst", "wd_host": "healthcatalyst.wd5.myworkdayjobs.com", "site": "healthcatalystcareers" },
+    { "name": "Traeger",        "city": "Salt Lake City",     "ats": "greenhouse",      "slug": "traegergrills" },
+    { "name": "Beyond (Overstock)","city": "Midvale",         "ats": "greenhouse",      "slug": "beyond" },
+    { "name": "Nomi Health",    "city": "Orem",               "ats": "lever",           "slug": "nomihealth" }
   ],
   "needs_identification": [
-    "eBay (Draper) — custom Phenom site (jobs.ebayinc.com); no Workday CXS endpoint — tier-3 scrape",
-    "Ivanti (South Jordan) — ATS not confirmed; likely iCIMS/custom — tier-3",
-    "Merit Medical (South Jordan) — likely iCIMS/custom — tier-3",
+    "--- tier-3 / custom (need scraping, not a config add) ---",
+    "eBay (Draper) — custom Phenom site (jobs.ebayinc.com)",
+    "Ivanti (South Jordan) — likely iCIMS/custom",
+    "Merit Medical (South Jordan) — likely iCIMS/custom",
+    "--- 50-mi batch: ATS not yet confirmed, need careers-URL lookup (likely Workday/iCIMS/custom) ---",
+    "Nu Skin (Provo)", "doTERRA (Pleasant Grove)", "InMoment (SLC)", "Verisk/Xactware (Lehi)",
+    "Purple (Lehi)", "Cotopaxi (SLC)", "Backcountry (WVC)", "Skullcandy (Park City)",
+    "Younique (Lehi)", "LifeVantage (Sandy)", "FamilySearch (SLC)", "Nature's Sunshine (Lehi)",
+    "Tab Bank (Ogden)", "Kizik (Lindon)", "Chatbooks (Lindon)", "Grow (Lehi)", "Simplus (SLC)",
+    "Jane (Lehi)", "Kiln (SLC)", "JobNimbus (Lehi)",
+    "--- smaller, ATS not confirmed ---",
     "Snap One/Control4 (Draper)", "Dandy (Lehi)", "Owlet (Lehi)", "Sorenson (SLC)", "Clearlink (SLC)"
   ]
 }
