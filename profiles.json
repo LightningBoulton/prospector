@@ -1,0 +1,24 @@
+{
+  "_comment": "Each profile is a named filter. A posting is kept when its title matches AT LEAST ONE term in EVERY match_group (AND across groups, OR within a group), and matches NONE of exclude_any. Matching is word-boundary aware, so 'coo' won't match 'Coordinator'. Leave match_groups empty to keep all local roles. Run all enabled profiles with `python3 jobmonitor.py`, or one with `--profile lisa`.",
+  "profiles": [
+    {
+      "name": "chad",
+      "label": "Chad \u2014 Software / Frontend / Microservices",
+      "enabled": true,
+      "match_groups": [
+        ["engineer", "developer", "software", "frontend", "front-end", "full stack", "fullstack", "backend", "back-end", "microservice", "microservices", "platform", "sre", "devops", "web", "ui"]
+      ],
+      "exclude_any": ["sales", "account executive", "recruiter", "intern", "support specialist", "manager, customer"]
+    },
+    {
+      "name": "lisa",
+      "label": "Lisa \u2014 Director / C-level Operations & Customer Relations",
+      "enabled": true,
+      "match_groups": [
+        ["director", "senior director", "sr. director", "vp", "vice president", "head of", "chief", "coo", "cco", "cxo", "c-level", "c-suite", "general manager", "senior manager", "sr. manager"],
+        ["operations", "operating", "customer", "client", "member experience", "customer success", "customer experience", "customer relations", "experience", "support", "service", "revenue operations", "revops", "community", "account management", "business operations", "people", "employee experience"]
+      ],
+      "exclude_any": ["engineer", "engineering", "developer", "software", "data scientist", "designer", "architect", "technician", "analyst", "intern", "account executive", "sales development", "sdr", "bdr", "coordinator"]
+    }
+  ]
+}

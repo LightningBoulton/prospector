@@ -1,0 +1,24 @@
+{
+  "_comment": "Verified tech companies within ~30 miles of South Jordan, UT. Each entry's endpoint was confirmed to return live job data. Add companies as you identify their ATS (see 'needs_identification' for the tier-2 backlog).",
+  "companies": [
+    { "name": "Filevine",       "city": "Salt Lake City",     "ats": "lever",           "slug": "filevine" },
+    { "name": "Qualtrics",      "city": "Provo",              "ats": "greenhouse",      "slug": "qualtrics" },
+    { "name": "DigiCert",       "city": "Lehi",               "ats": "greenhouse",      "slug": "digicert" },
+    { "name": "Cricut",         "city": "South Jordan",       "ats": "smartrecruiters", "slug": "cricut" },
+    { "name": "Lucid Software", "city": "South Jordan",       "ats": "greenhouse",      "slug": "lucidsoftware" },
+    { "name": "Entrata",        "city": "Lehi",               "ats": "lever",           "slug": "entrata" },
+    { "name": "Galileo (SoFi)", "city": "Cottonwood Heights", "ats": "greenhouse",      "slug": "galileo" },
+    { "name": "Awardco",        "city": "Lindon",             "ats": "greenhouse",      "slug": "awardco" },
+    { "name": "Weave",          "city": "Lehi",               "ats": "greenhouse",      "slug": "weave" },
+    { "name": "Route",          "city": "Lehi",               "ats": "greenhouse",      "slug": "route" },
+    { "name": "Vivint",         "city": "Lehi",               "ats": "smartrecruiters", "slug": "vivint" },
+    { "name": "Instructure",    "city": "Cottonwood Heights", "ats": "smartrecruiters", "slug": "instructure" }
+  ],
+  "needs_identification": [
+    "Adobe (Lehi)", "eBay (Draper)", "Ancestry (Lehi)", "Domo (American Fork)",
+    "Pluralsight (Draper)", "BambooHR (Lindon)", "Podium (Lehi)", "MX (Lehi)",
+    "Nav (Draper)", "Canopy (Draper)", "BILL/Divvy (Draper)", "Health Catalyst (South Jordan)",
+    "Ivanti (South Jordan)", "Merit Medical (South Jordan)", "Snap One/Control4 (Draper)",
+    "Dandy (Lehi)", "Owlet (Lehi)", "Recursion (SLC)", "Sorenson (SLC)", "Clearlink (SLC)"
+  ]
+}
