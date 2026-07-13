@@ -2,8 +2,7 @@
 ### Job report — 2026-07-13
 
 ## What's changed
-**New (1)**
-- **Pluralsight** — [Senior Manager, Marketing Operations](https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Senior-Manager--Marketing-Operations_R0014281) · Remote - USA
+_No changes since the previous run._
 
 ## All current matching roles (4)
 

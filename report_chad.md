@@ -2,10 +2,7 @@
 ### Job report — 2026-07-13
 
 ## What's changed
-**New (3)**
-- **Pluralsight** — [Senior Engineer, Platform Analytics](https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Senior-Engineer--Platform-Analytics_R0014277) · Remote - USA
-- **Pluralsight** — [Principal Engineer, Platform Analytics](https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Principal-Engineer--Platform-Analytics_R0014276) · Remote - USA
-- **Pluralsight** — [Machine Learning Engineer](https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Machine-Learning-Engineer_R0014041) · Remote - USA
+_No changes since the previous run._
 
 ## All current matching roles (14)
 
