@@ -2,15 +2,19 @@
 ### Job report — 2026-07-14
 
 ## What's changed
-_No changes since the previous run._
+**Removed / filled (8)**
+- **BambooHR** — Director of Software Engineering - Payroll Services · Utah | Hybrid · Posted Jan 12 · 183d ago
+- **Filevine** — Software Development Engineer (Forward Deployed) · Salt Lake City, Utah · Posted Dec 22 · 204d ago
+- **Instructure** — L1 Technical Support Engineer · Salt Lake City, UT, United States · Posted Oct 23 · 2821d ago
+- **Podium** — Senior AI Engineer - Agentic · Lehi, Utah, Open to Remote · Posted Sep 11 · 306d ago
+- **Podium** — Senior Software Engineer · Lehi, Utah, Open to Remote · Posted Aug 4 · 344d ago
+- **Podium** — Senior Software Engineer · Lehi, Utah · Posted Feb 19 · 510d ago
+- **Podium** — Staff AI Engineer - USA · Lehi, Utah, Open to Remote · Posted Dec 22 · 204d ago
+- **Podium** — Staff AI Engineer - Utah · Lehi, Utah · Posted Dec 22 · 204d ago
 
-## All current matching roles (53)
+## All current matching roles (45)
 - **BambooHR** — [Staff Software Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6008526004) · Utah | Remote · Posted Jun 26 · 18d ago — **80/100** (yes)
    _Staff IC role, Utah remote, AuthZ/JWT/Cognito expertise match, greenfield platform work fits background well._
-- **Podium** — [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/7129220) · Lehi, Utah, Open to Remote · Posted Aug 4 · 344d ago — **78/100** (yes)
-   _Senior full-stack role, Utah/remote, SaaS, AI tooling fit; seniority slightly below Principal but matches range._
-- **Podium** — [Senior Software Engineer](https://job-boards.greenhouse.io/podium81/jobs/6637207) · Lehi, Utah · Posted Feb 19 · 510d ago — **78/100** (yes)
-   _Senior full-stack role in Lehi/Utah, AI tooling focus, matches skills; verify comp meets $190k minimum._
 - **Canopy** — [Senior Full Stack Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4239960009) · South Jordan, UT · Posted May 5 · 70d ago — **78/100** (yes)
    _Senior full-stack SaaS role in Utah, matches microservices/micro-frontend expertise; verify comp meets $190k minimum._
 - **BambooHR** — [Principal Software Architect](https://job-boards.greenhouse.io/bamboohr17/jobs/6098097004) · Arizona | Remote; Idaho | Remote; Texas | Remote; Utah | Remote; Washington | Remote · Posted Jun 26 · 18d ago — **78/100** (yes)
@@ -23,12 +27,6 @@ _No changes since the previous run._
    _Senior SWE title fits, Draper UT location good, but no domain/stack details available to confirm strong match._
 - **Pluralsight** — [Senior Engineer, Platform Analytics](https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Senior-Engineer--Platform-Analytics_R0014277) · Remote - USA · $144,400 - $190,000 · Posted Jul 3 · 11d ago — **55/100** (maybe)
    _Senior platform engineering role, remote-friendly, but analytics focus and seniority level unclear vs Principal target._
-- **Podium** — [Senior AI Engineer - Agentic](https://job-boards.greenhouse.io/podium81/jobs/7243261) · Lehi, Utah, Open to Remote · Posted Sep 11 · 306d ago — **55/100** (maybe)
-   _Location/remote fits, but AI agent engineering focus differs from frontend/full-stack strengths; title level slightly junior._
-- **Podium** — [Staff AI Engineer - USA](https://job-boards.greenhouse.io/podium81/jobs/7367363) · Lehi, Utah, Open to Remote · Posted Dec 22 · 204d ago — **55/100** (maybe)
-   _Staff IC role fits seniority/location, but AI agent platform focus diverges from frontend/full-stack strengths._
-- **Podium** — [Staff AI Engineer - Utah](https://job-boards.greenhouse.io/podium81/jobs/7490572) · Lehi, Utah · Posted Dec 22 · 204d ago — **55/100** (maybe)
-   _Staff IC role, right location/comp likely, but AI agent/distributed systems focus differs from frontend/full-stack strength._
 - **Domo** — [Sr. Software Engineer](https://domo.wd12.myworkdayjobs.com/DomoCareers/job/American-Fork-Utah/Sr-Software-Engineer_JR100282) · American Fork, Utah · Posted Jun 14 · 30d ago — **55/100** (maybe)
    _Senior SWE fits seniority/domain (SaaS/cloud), but American Fork location and unknown comp/details limit confidence._
 - **Adobe** — [Device Experience Platform Developer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Device-Experience-Platform-Developer_R165293-1) · Lehi (+1 more) · $151,000 - $218,650 · Posted Jun 14 · 30d ago — **55/100** (maybe)
@@ -81,12 +79,8 @@ _No changes since the previous run._
    _Data engineering/ML pipelines role, not full-stack/frontend software engineering - functional mismatch despite seniority fit._
 - **BambooHR** — [Sr. Data Governance Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6003041004) · Utah | Hybrid · Posted May 27 · 48d ago — **15/100** (no)
    _Data governance role mismatches frontend/full-stack engineering background and functional focus._
-- **Filevine** — [Software Development Engineer (Forward Deployed)](https://jobs.lever.co/filevine/6bb83e69-9b61-4a91-971a-dcc3257dad0d) · Salt Lake City, Utah · Posted Dec 22 · 204d ago — **10/100** (no)
-   _Forward Deployed role requires heavy travel (25-75%), a stated dealbreaker for candidate._
 - **MX** — [Senior Analytics Engineer](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4106354009) · Lehi, Utah, United States · Posted Mar 6 · 130d ago — **10/100** (no)
    _Analytics engineering/SQL data modeling role, not software/frontend engineering; mismatch with candidate's core expertise._
-- **BambooHR** — [Director of Software Engineering - Payroll Services](https://job-boards.greenhouse.io/bamboohr17/jobs/5727054004) · Utah | Hybrid · Posted Jan 12 · 183d ago — **10/100** (no)
-   _Pure people-management director role overseeing managers; candidate wants hands-on IC engineering, not management._
 - **Cricut** — [Manager, Software Engineering QA](https://jobs.smartrecruiters.com/cricut/744000124511339) · South Jordan, UT, United States · Posted May 4 · 71d ago — **8/100** (no)
    _QA management role, not hands-on senior engineering; mismatch on function and dealbreaker (management)._
 - **Podium** — [Analytics Engineer](https://job-boards.greenhouse.io/podium81/jobs/7905172) · Lehi, Utah · Posted May 12 · 63d ago — **8/100** (no)
@@ -109,5 +103,3 @@ _No changes since the previous run._
    _Junior DevOps role mismatches Principal-level, full-stack software engineering candidate; entry-level dealbreaker._
 - **Cricut** — [Senior Mechanical Design Engineer](https://jobs.smartrecruiters.com/cricut/744000132936269) · South Jordan, UT, United States · Posted Jun 18 · 26d ago — **2/100** (no)
    _Mechanical engineering role, completely outside software engineering domain and expertise._
-- **Instructure** — [L1 Technical Support Engineer](https://jobs.smartrecruiters.com/instructure/743999678330041) · Salt Lake City, UT, United States · Posted Oct 23 · 2821d ago — **2/100** (no)
-   _L1 technical support is a junior support role, not senior engineering—clear dealbreaker mismatch._

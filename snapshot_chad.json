@@ -1,20 +1,5 @@
 [
  {
-  "key": "Filevine::6bb83e69-9b61-4a91-971a-dcc3257dad0d",
-  "company": "Filevine",
-  "title": "Software Development Engineer (Forward Deployed)",
-  "location": "Salt Lake City, Utah",
-  "url": "https://jobs.lever.co/filevine/6bb83e69-9b61-4a91-971a-dcc3257dad0d",
-  "posted": "2025-12-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "Forward Deployed role requires heavy travel (25-75%), a stated dealbreaker for candidate.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "DigiCert::8601785002",
   "company": "DigiCert",
   "title": "Principal Site Reliability Engineer",
@@ -150,21 +135,6 @@
   }
  },
  {
-  "key": "Instructure::743999678330041",
-  "company": "Instructure",
-  "title": "L1 Technical Support Engineer",
-  "location": "Salt Lake City, UT, United States",
-  "url": "https://jobs.smartrecruiters.com/instructure/743999678330041",
-  "posted": "2018-10-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 2,
-   "reason": "L1 technical support is a junior support role, not senior engineering\u2014clear dealbreaker mismatch.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Pluralsight::R0014277",
   "company": "Pluralsight",
   "title": "Senior Engineer, Platform Analytics",
@@ -225,21 +195,6 @@
   }
  },
  {
-  "key": "Podium::7243261",
-  "company": "Podium",
-  "title": "Senior AI Engineer - Agentic",
-  "location": "Lehi, Utah, Open to Remote",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/7243261",
-  "posted": "2025-09-11",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Location/remote fits, but AI agent engineering focus differs from frontend/full-stack strengths; title level slightly junior.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Podium::7944182",
   "company": "Podium",
   "title": "Senior Mobile Engineer",
@@ -251,66 +206,6 @@
    "fit": "no",
    "score": 15,
    "reason": "Mobile iOS/Android engineering role; candidate is frontend/backend web-focused, no mobile native experience listed.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Podium::7129220",
-  "company": "Podium",
-  "title": "Senior Software Engineer",
-  "location": "Lehi, Utah, Open to Remote",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/7129220",
-  "posted": "2025-08-04",
-  "salary": null,
-  "fit_result": {
-   "fit": "yes",
-   "score": 78,
-   "reason": "Senior full-stack role, Utah/remote, SaaS, AI tooling fit; seniority slightly below Principal but matches range.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Podium::6637207",
-  "company": "Podium",
-  "title": "Senior Software Engineer",
-  "location": "Lehi, Utah",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/6637207",
-  "posted": "2025-02-19",
-  "salary": null,
-  "fit_result": {
-   "fit": "yes",
-   "score": 78,
-   "reason": "Senior full-stack role in Lehi/Utah, AI tooling focus, matches skills; verify comp meets $190k minimum.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Podium::7367363",
-  "company": "Podium",
-  "title": "Staff AI Engineer - USA",
-  "location": "Lehi, Utah, Open to Remote",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/7367363",
-  "posted": "2025-12-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Staff IC role fits seniority/location, but AI agent platform focus diverges from frontend/full-stack strengths.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Podium::7490572",
-  "company": "Podium",
-  "title": "Staff AI Engineer - Utah",
-  "location": "Lehi, Utah",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/7490572",
-  "posted": "2025-12-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Staff IC role, right location/comp likely, but AI agent/distributed systems focus differs from frontend/full-stack strength.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -615,21 +510,6 @@
   }
  },
  {
-  "key": "BambooHR::5727054004",
-  "company": "BambooHR",
-  "title": "Director of Software Engineering - Payroll Services",
-  "location": "Utah | Hybrid",
-  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/5727054004",
-  "posted": "2026-01-12",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "Pure people-management director role overseeing managers; candidate wants hands-on IC engineering, not management.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "BambooHR::6098097004",
   "company": "BambooHR",
   "title": "Principal Software Architect",
@@ -675,21 +555,6 @@
   }
  },
  {
-  "key": "BambooHR::5990126004",
-  "company": "BambooHR",
-  "title": "Staff Software Engineer",
-  "location": "Utah | Hybrid",
-  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/5990126004",
-  "posted": "2026-05-12",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 62,
-   "reason": "Staff-level Utah hybrid fits seniority/location, but AI backend platform focus diverges from frontend/full-stack strength.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "BambooHR::6008526004",
   "company": "BambooHR",
   "title": "Staff Software Engineer",
@@ -701,6 +566,21 @@
    "fit": "yes",
    "score": 80,
    "reason": "Staff IC role, Utah remote, AuthZ/JWT/Cognito expertise match, greenfield platform work fits background well.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "BambooHR::5990126004",
+  "company": "BambooHR",
+  "title": "Staff Software Engineer",
+  "location": "Utah | Hybrid",
+  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/5990126004",
+  "posted": "2026-05-12",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 62,
+   "reason": "Staff-level Utah hybrid fits seniority/location, but AI backend platform focus diverges from frontend/full-stack strength.",
    "bg": "b9f9e4b0db4d"
   }
  },

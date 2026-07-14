@@ -2,9 +2,12 @@
 ### Job report — 2026-07-14
 
 ## What's changed
-_No changes since the previous run._
+**Removed / filled (3)**
+- **Pluralsight** — Senior Manager, Marketing Operations · Remote - USA · $121,500-$160,000 · Posted Jun 26 · 18d ago
+- **Podium** — AI Customer Success Manager - SMB · Lehi, Utah · Posted Jan 9 · 186d ago
+- **Podium** — AI Mid-Market Customer Success Manager · Lehi, Utah · Posted Jan 9 · 186d ago
 
-## All current matching roles (39)
+## All current matching roles (36)
 - **Awardco** — [Director of Global Support](https://award.co/position?gh_jid=6091974004) · Lindon, Utah · Posted Jun 16 · 28d ago — **78/100** (yes)
    _Director-level global support leadership with AI-agent transformation mandate—strong match on CX, ops, AI enablement._
 - **Adobe** — [Director of Customer Success, Business Professionals](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Director-of-Customer-Success--Business-Professionals_R167559) · Lehi (+3 more) · $239,100 - $346,200 · Posted Jun 14 · 30d ago — **74/100** (yes)
@@ -33,8 +36,6 @@ _No changes since the previous run._
    _Product enablement is adjacent but title lacks clear executive scope; unclear seniority/domain match for Lisa._
 - **BambooHR** — [Manager, HR Consulting Services](https://job-boards.greenhouse.io/bamboohr17/jobs/5996497004) · Arizona | Remote; Florida | Remote; Georgia | Remote; Idaho | Remote; Nebraska | Remote; North Carolina | Remote; Oklahoma | Remote; Oregon | Remote; South Carolina | Remote; Tennessee | Remote; Texas | Remote; Utah | Remote; Virginia | Remote · Posted May 21 · 54d ago — **30/100** (no)
    _Manager-level, sub-director scope; too junior for Senior Director/VP target despite CX/services overlap._
-- **Pluralsight** — [Senior Manager, Marketing Operations](https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Senior-Manager--Marketing-Operations_R0014281) · Remote - USA · $121,500-$160,000 · Posted Jun 26 · 18d ago — **25/100** (no)
-   _Senior Manager level is below target seniority; marketing ops narrower than her strategy/CX/ops leadership scope._
 - **MX** — [Sr. Manager, Technical Program Management](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4298099009) · Lehi, Utah, United States · Posted Jun 25 · 19d ago — **25/100** (no)
    _Technical program management delivery role, not strategy/CX/ops leadership mandate she targets; too execution-focused._
 - **Adobe** — [Internal Product Delivery Manager](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Internal-Product-Delivery-Manager_R164081) · Lehi · Posted Jun 14 · 30d ago — **25/100** (no)
@@ -69,12 +70,8 @@ _No changes since the previous run._
    _Manager-level, technical revenue ops—below seniority target and outside core strategy/CX/professional-services leadership focus._
 - **DigiCert** — [Director, PKI Operations](https://www.digicert.com/careers/?gh_jid=8623796002) · United States - Remote · Posted Jul 9 · 5d ago — **12/100** (no)
    _Deep technical PKI/security engineering leadership role, mismatched domain vs CX/ops/strategy background._
-- **Podium** — [AI Customer Success Manager - SMB](https://job-boards.greenhouse.io/podium81/jobs/7528142) · Lehi, Utah · Posted Jan 9 · 186d ago — **10/100** (no)
-   _IC-level CSM role for SMB accounts; far below Lisa's senior executive leadership target._
 - **Podium** — [AI Customer Success Manager - SMB (Automotive)](https://job-boards.greenhouse.io/podium81/jobs/7798018) · Remote, US · Posted Apr 9 · 96d ago — **10/100** (no)
    _Individual-contributor CSM role for SMB accounts—far below her executive leadership seniority target._
-- **Podium** — [AI Mid-Market Customer Success Manager](https://job-boards.greenhouse.io/podium81/jobs/7528187) · Lehi, Utah · Posted Jan 9 · 186d ago — **8/100** (no)
-   _Individual-contributor CSM role, far below executive leadership scope Lisa targets._
 - **MX** — [Senior Manager, Sales Enablement](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4290524009) · Lehi, Utah, United States · Posted Jun 24 · 20d ago — **8/100** (no)
    _Sales enablement/methodology role, not strategy-ops or CX leadership; mismatched function despite seniority and location fit._
 - **Recursion** — [Vice President, Head of Clinical Operations](https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/7980609) · New York, New York; Salt Lake City, Utah · Posted Jun 3 · 41d ago — **8/100** (no)
