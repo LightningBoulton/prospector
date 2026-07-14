@@ -218,26 +218,34 @@ def score_fit(candidate, posting, client):
         '{"fit": "yes" | "maybe" | "no", "score": <integer 0-100>, "reason": "<20 words max>"}'
     )
     try:
-        msg = client.messages.create(model=FIT_MODEL, max_tokens=200,
+        # max_tokens generous so a verbose reason can't truncate the JSON mid-string.
+        msg = client.messages.create(model=FIT_MODEL, max_tokens=400,
                                      messages=[{"role": "user", "content": prompt}])
         text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
-        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text).strip()
-        r = json.loads(text)
+        # Pull the JSON object out even if the model wrapped it in fences or prose.
+        m = re.search(r"\{.*\}", text, re.S)
+        r = json.loads(m.group(0) if m else text)
         fit = str(r.get("fit", "maybe")).lower()
         return {"fit": fit if fit in ("yes", "maybe", "no") else "maybe",
                 "score": int(r.get("score", 50)),
                 "reason": str(r.get("reason", ""))[:200]}
     except Exception as e:
+        # Log the raw reply so CI shows what didn't parse; role is kept (score -1).
+        raw = locals().get("text", "")
+        print(f"[warn] fit parse failed [{posting.get('key', '?')}]: "
+              f"{type(e).__name__}: {str(e)[:80]} | raw={raw[:120]!r}")
         return {"fit": "maybe", "score": -1, "reason": f"(scoring unavailable: {type(e).__name__})"}
 
 
 def enrich_with_fit(matched, prev, profile, client):
     """Attach fit_result to each posting. Reuse cached verdicts from the previous
-    snapshot; only call the model for postings that are new this run."""
+    snapshot; only call the model for postings that are new this run. Failed verdicts
+    (score < 0) are NOT cached for reuse, so a transient parse error retries next run."""
     candidate = load_background(profile)
     if not (candidate and client):
         return 0
-    cached = {p["key"]: p["fit_result"] for p in (prev or []) if p.get("fit_result")}
+    cached = {p["key"]: p["fit_result"] for p in (prev or [])
+              if (p.get("fit_result") or {}).get("score", -1) >= 0}
     scored = 0
     for p in matched:
         if p["key"] in cached:
