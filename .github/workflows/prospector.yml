@@ -20,8 +20,13 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
 
+      - name: Install optional deps (LLM fit scoring)
+        run: pip install anthropic   # only needed for the optional LLM fit-scoring
+
       - name: Run prospector (all profiles)
         run: python jobmonitor.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # omit/unset to disable fit scoring
 
       - name: Commit updated snapshots
         run: |

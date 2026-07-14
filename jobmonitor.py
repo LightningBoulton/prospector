@@ -341,6 +341,176 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
     return "\n".join(L)
 
 
+# ---- HTML report (dark-mode, email-safe: inline styles, table layout) ----
+
+# GitHub-dark palette. Explicit 6-digit hex so mail clients need no color blending.
+_C = {
+    "bg": "#0d1117", "card": "#161b22", "panel": "#1c2128", "border": "#30363d",
+    "text": "#c9d1d9", "head": "#f0f6fc", "muted": "#8b949e", "link": "#58a6ff",
+    "green": "#3fb950", "amber": "#d29922", "red": "#f85149",
+    "green_bg": "#122619", "amber_bg": "#2b2411", "red_bg": "#2d1618",
+}
+_FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
+_FIT_COLOR = {"yes": "green", "maybe": "amber", "no": "red"}
+
+
+def _esc(s):
+    return ((s or "").replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def _link(text, url):
+    return (f'<a href="{_esc(url)}" style="color:{_C["link"]};text-decoration:none;'
+            f'font-weight:600;">{_esc(text)}</a>')
+
+
+def _muted(text):
+    return (f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:13px;'
+            f'margin-top:4px;">{text}</div>')
+
+
+def _section(title):
+    return (f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:19px;'
+            f'font-weight:700;margin:26px 0 2px;">{_esc(title)}</div>'
+            f'<div style="height:1px;background-color:{_C["border"]};margin:10px 0 4px;"></div>')
+
+
+def _chip(label, key):
+    return (f'<div style="margin:16px 0 4px;"><span style="display:inline-block;'
+            f'background-color:{_C[key + "_bg"]};color:{_C[key]};font-family:{_FONT};'
+            f'font-size:12px;font-weight:700;letter-spacing:.3px;padding:4px 11px;'
+            f'border-radius:12px;">{_esc(label)}</span></div>')
+
+
+def _card(inner, accent):
+    return (f'<div style="border:1px solid {_C["border"]};border-left:3px solid {accent};'
+            f'background-color:{_C["panel"]};border-radius:8px;padding:11px 14px;'
+            f'margin:8px 0;">{inner}</div>')
+
+
+def _fit_pill_html(p):
+    # Colored score pill (green/amber/red by verdict); empty when score unavailable.
+    fr = p.get("fit_result") or {}
+    s = fr.get("score", -1)
+    if s < 0:
+        return ""
+    key = _FIT_COLOR.get(fr.get("fit", ""), "amber")
+    return (f'<span style="display:inline-block;background-color:{_C[key + "_bg"]};'
+            f'color:{_C[key]};font-family:{_FONT};font-size:12px;font-weight:700;'
+            f'padding:2px 9px;border-radius:10px;margin-left:8px;white-space:nowrap;">'
+            f'{s}/100 · {_esc(fr.get("fit", "?"))}</span>')
+
+
+def _fit_reason_html(p):
+    fr = p.get("fit_result") or {}
+    return _muted(_esc(fr["reason"])) if fr.get("reason") else ""
+
+
+def _meta_html(p, lead=None):
+    # Muted "lead · location · updated …" line.
+    parts = [_esc(lead)] if lead else []
+    if p.get("location"):
+        parts.append(_esc(p["location"]))
+    if p.get("updated"):
+        parts.append(f'updated {_esc(p["updated"])}')
+    return _muted(" · ".join(parts)) if parts else ""
+
+
+def _role_html(p, lead=None):
+    # Title (+ fit pill) on one line; muted meta and fit reason beneath.
+    return (f'<div style="margin:0 0 12px;line-height:1.4;">'
+            f'{_link(p["title"], p["url"])}{_fit_pill_html(p)}'
+            f'{_meta_html(p, lead)}{_fit_reason_html(p)}</div>')
+
+
+def build_html_report(profile, matched, new, removed, changed, errors, first_run):
+    today = datetime.date.today().isoformat()
+    scored = any(p.get("fit_result") for p in matched)
+    by_score = lambda x: -((x.get("fit_result") or {}).get("score", 0))
+    B = []
+
+    # Header
+    B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:22px;'
+             f'font-weight:800;line-height:1.3;">{_esc(profile["label"])}</div>')
+    sub = f"Job report · {today}" + (" · ranked by fit" if scored else "")
+    B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
+             f'margin-top:4px;">{_esc(sub)}</div>')
+
+    # What's changed
+    B.append(_section("What's changed"))
+    if first_run:
+        B.append(_muted("First run — baseline established. Changes will appear here on the next run."))
+    elif not (new or removed or changed):
+        B.append(_muted("No changes since the previous run."))
+    else:
+        if new:
+            B.append(_chip(f"New · {len(new)}", "green"))
+            order = sorted(new, key=by_score) if scored else sorted(new, key=lambda x: x["company"])
+            for p in order:
+                inner = (_link(p["title"], p["url"]) + _fit_pill_html(p)
+                         + _meta_html(p, lead=p["company"]) + _fit_reason_html(p))
+                B.append(_card(inner, _C["green"]))
+        if changed:
+            B.append(_chip(f"Changed titles · {len(changed)}", "amber"))
+            for o, c in changed:
+                inner = (_link(c["title"], c["url"])
+                         + _muted(f'{_esc(c["company"])} · was "{_esc(o["title"])}"'))
+                B.append(_card(inner, _C["amber"]))
+        if removed:
+            B.append(_chip(f"Removed / filled · {len(removed)}", "red"))
+            for p in sorted(removed, key=lambda x: x["company"]):
+                inner = (f'<span style="color:{_C["text"]};font-family:{_FONT};'
+                         f'font-weight:600;">{_esc(p["title"])}</span>'
+                         + _meta_html(p, lead=p["company"]))
+                B.append(_card(inner, _C["red"]))
+
+    # All current matching roles
+    B.append(_section(f"All current matching roles ({len(matched)})"))
+    if not matched:
+        B.append(_muted("No roles currently match this profile."))
+    elif scored:
+        for p in sorted(matched, key=by_score):
+            B.append(_role_html(p, lead=p["company"]))
+    else:
+        last = None
+        for p in sorted(matched, key=lambda x: (x["company"], x["title"])):
+            if p["company"] != last:
+                B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};'
+                         f'font-weight:700;font-size:15px;margin:18px 0 6px;">'
+                         f'{_esc(p["company"])}</div>')
+                last = p["company"]
+            B.append(_role_html(p))
+
+    # Source warnings
+    if errors:
+        B.append(_section(f"Source warnings ({len(errors)})"))
+        for e in errors:
+            B.append(f'<div style="color:{_C["amber"]};font-family:{_FONT};'
+                     f'font-size:13px;margin:0 0 4px;">{_esc(e)}</div>')
+
+    body = "".join(B)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>{_esc(profile["label"])}</title>
+</head>
+<body style="margin:0;padding:0;background-color:{_C['bg']};">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{_C['bg']};">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background-color:{_C['card']};border:1px solid {_C['border']};border-radius:14px;">
+<tr><td style="padding:28px 30px 32px;">{body}</td></tr>
+</table>
+<div style="color:{_C['muted']};font-family:{_FONT};font-size:11px;margin-top:16px;">Prospector · Silicon Slopes job monitor</div>
+</td></tr>
+</table>
+</body>
+</html>"""
+
+
 def run_profile(profile, pool, errors, client=None):
     matched = [p for p in pool if matches_profile(p, profile)]
     snap = os.path.join(HERE, f"snapshot_{profile['name']}.json")
@@ -355,15 +525,20 @@ def run_profile(profile, pool, errors, client=None):
         matched = [p for p in matched if (p.get("fit_result") or {}).get("fit") != "no"]
 
     if prev is None:
-        report = build_report(profile, matched, [], [], [], errors, first_run=True)
+        args = (profile, matched, [], [], [], errors)
+        report = build_report(*args, first_run=True)
+        report_html = build_html_report(*args, first_run=True)
     else:
         new, removed, changed = diff(prev, matched)
-        report = build_report(profile, matched, new, removed, changed, errors, first_run=False)
+        args = (profile, matched, new, removed, changed, errors)
+        report = build_report(*args, first_run=False)
+        report_html = build_html_report(*args, first_run=False)
 
     # Persist a slim snapshot: keep fit_result (the cache) but drop bulky descriptions.
     slim = [{k: v for k, v in p.items() if k != "description"} for p in matched]
     json.dump(slim, open(snap, "w"), indent=1)
     open(rpt, "w").write(report)
+    open(os.path.join(HERE, f"report_{profile['name']}.html"), "w").write(report_html)
     return matched, report
 
 
