@@ -3,55 +3,7 @@
 _⭐ = posted in the last 7 days_
 
 ## What's changed
-**New (24)**
-- **NICE** — [Senior Director, AI Transformation](https://boards.eu.greenhouse.io/nice/jobs/4865355101?gh_jid=4865355101) · USA - Remote · Posted May 13 · 62d ago — **82/100** (yes)
-   _Senior Director AI transformation, change management, business/exec liaison—strong match to background and goals._
-- **NICE** — [Transformation Consultant](https://boards.eu.greenhouse.io/nice/jobs/4845027101?gh_jid=4845027101) · USA - Remote · Posted Apr 17 · 88d ago — **78/100** (yes)
-   _Executive-level AI transformation, change management, CX focus align strongly; consulting optionality matches goals._
-- **NICE** — [Director, Program Management, CX](https://boards.eu.greenhouse.io/nice/jobs/4920599101?gh_jid=4920599101) · Canada - Remote · Posted Jul 6 · 8d ago — **55/100** (maybe)
-   _Director-level CX/services delivery leadership fits, but narrower PM/delivery focus than strategic mandate she targets._
-- **NICE** — [Strategic Consulting Alliance Manager](https://boards.eu.greenhouse.io/nice/jobs/4874195101?gh_jid=4874195101) · USA - Remote · Posted Jun 2 · 42d ago — **55/100** (maybe)
-   _Alliance/partnership sales role, adjacent to CX/consulting background but leans commercial/partnerships, not core function match._
-- **NICE** — [Director, Program Management, CX](https://boards.eu.greenhouse.io/nice/jobs/4880908101?gh_jid=4880908101) · USA - Remote · Posted Jun 2 · 42d ago — **48/100** (maybe)
-   _Director-level CX/services role fits function, but implementation PM focus is narrower than strategic mandate she targets._
-- **NICE** — [Manager, Client Services, AI, CX](https://boards.eu.greenhouse.io/nice/jobs/4854899101?gh_jid=4854899101) · USA - Remote · Posted May 4 · 71d ago — **45/100** (maybe)
-   _Manager-level PMO/delivery role, below her Director+ target; AI/CX relevant but title/scope mismatch._
-- **NICE** — [Sr. Partner Readiness and Enablement Manager](https://boards.eu.greenhouse.io/nice/jobs/4867316101?gh_jid=4867316101) · USA - Hoboken, NJ; USA - Sandy, UT · Posted May 20 · 55d ago — **30/100** (no)
-   _Program manager/IC-level enablement role, not executive leadership scope Lisa targets._
-- **NICE** — [Business Operations Project Manager](https://boards.eu.greenhouse.io/nice/jobs/4774835101?gh_jid=4774835101) · USA - Atlanta, GA; USA - Hoboken, NJ; USA - Richardson, TX; USA - Sandy, UT · Posted Feb 5 · 159d ago — **25/100** (no)
-   _Individual-contributor PM role, below her senior-director/executive scope despite domain overlap in ops/CX._
-- **NICE** — [Customer Success Manager](https://boards.eu.greenhouse.io/nice/jobs/4853080101?gh_jid=4853080101) · Australia - Remote · Posted May 21 · 54d ago — **20/100** (no)
-   _Individual-contributor CSM role, reports to Director; too junior for candidate's executive scope._
-- **NICE** — [Lead Client Services Project Manager, CX](https://boards.eu.greenhouse.io/nice/jobs/4913553101?gh_jid=4913553101) · USA - Remote · Posted Jul 6 · 8d ago — **20/100** (no)
-   _Individual PM/delivery role, not executive leadership scope; too junior for candidate's target level._
-- **NICE** — [Lead Customer Success Manager](https://boards.eu.greenhouse.io/nice/jobs/4875626101?gh_jid=4875626101) · South Africa - Remote · Posted Jun 17 · 27d ago — **20/100** (no)
-   _IC-level CSM role managing accounts, not executive leadership scope Lisa targets._
-- **NICE** — [Customer Success Manager](https://boards.eu.greenhouse.io/nice/jobs/4913506101?gh_jid=4913506101) · USA - Remote · Posted Jul 1 · 13d ago — **15/100** (no)
-   _Individual-contributor CSM role, not executive leadership scope—mismatch on seniority and mandate._
-- **NICE** — [Lead Client Services Project Manager](https://boards.eu.greenhouse.io/nice/jobs/4857693101?gh_jid=4857693101) · USA - Remote · Posted May 27 · 48d ago — **15/100** (no)
-   _Individual-contributor PM role, not executive leadership scope; mismatched seniority and function._
-- **NICE** — [Senior Customer Success Manager](https://boards.eu.greenhouse.io/nice/jobs/4884077101?gh_jid=4884077101) · USA - Remote · Posted Jun 9 · 35d ago — **15/100** (no)
-   _Individual-contributor CSM role, not executive leadership; seniority and scope mismatch._
-- **Brex** — [Manager, Banking Operations](https://www.brex.com/careers/8579396002?gh_jid=8579396002) · Salt Lake City, Utah, United States · Posted Jun 5 · 39d ago — **15/100** (no)
-   _Mid-level banking ops manager role; too junior, wrong domain vs. CX/strategy exec background._
-- **NICE** — [Sales Enablement Manager](https://boards.eu.greenhouse.io/nice/jobs/4906975101?gh_jid=4906975101) · USA - Sandy, UT · Posted Jun 26 · 18d ago — **10/100** (no)
-   _Sales enablement IC/manager role, sales-focused not exec leadership; mismatches seniority and function scope._
-- **Pattern** — [Community Manager - TikTok Shop](https://jobs.lever.co/pattern/e5cd904e-90ce-4977-97cb-093ddcb42478) · Lehi, UT, US · Posted Apr 13 · 92d ago — **8/100** (no)
-   _Individual-contributor tactical role in social commerce; no executive scope, mismatched seniority and function._
-- **NICE** — [Technical Customer Success Manager](https://boards.eu.greenhouse.io/nice/jobs/4793534101?gh_jid=4793534101) · USA - Remote · Posted Mar 2 · 134d ago — **8/100** (no)
-   _Individual-contributor technical support role, not executive leadership; mismatches seniority and function entirely._
-- **NICE** — [Technical Enablement Manager](https://boards.eu.greenhouse.io/nice/jobs/4856311101?gh_jid=4856311101) · USA - Remote · Posted May 19 · 56d ago — **8/100** (no)
-   _Hands-on technical enablement/coding IC role, not executive leadership—mismatches seniority and function._
-- **Brex** — [Revenue Operations Manager](https://www.brex.com/careers/8621533002?gh_jid=8621533002) · Salt Lake City, Utah, United States · Posted Jul 6 · 8d ago — **8/100** (no)
-   _Manager-level RevOps/sales support role, not executive leadership—mismatch on seniority and function._
-- **Pattern** — [Community Manager (Spanish Speaking) - TikTok Shop](https://jobs.lever.co/pattern/dac351d9-dd2e-4915-83cd-2ba6daf40f66) · Lehi, UT, US · Posted Jul 6 · 8d ago — **5/100** (no)
-   _Individual-contributor creator-outreach role; far below executive leadership scope and functional focus._
-- ⭐ **NICE** — [Sales Enablement Manager(Onboarding)](https://boards.eu.greenhouse.io/nice/jobs/4924815101?gh_jid=4924815101) · USA - Sandy, UT · Posted Jul 10 · 4d ago — **5/100** (no)
-   _Junior sales enablement IC role, mismatched seniority, function, and sales-quota focus—dealbreaker territory._
-- **NICE** — [Team Lead, Technical Support](https://boards.eu.greenhouse.io/nice/jobs/4870692101?gh_jid=4870692101) · United Kingdom - Remote · Posted May 27 · 48d ago — **5/100** (no)
-   _Frontline technical support team lead role; far below executive seniority and functional scope required._
-- ⭐ **Kelso Industries** — [Fire Protection - Field Operations Director (Remote/Hybrid)](https://kelso-industries.com/careers/?gh_jid=5343829008#job-board) · Remote · Posted Jul 13 · 1d ago — **4/100** (no)
-   _Fire protection/construction field ops role, unrelated domain to CX/strategy leadership background._
+_No changes since the previous run._
 
 ## All current matching roles (60)
 - **NICE** — [Senior Director, AI Transformation](https://boards.eu.greenhouse.io/nice/jobs/4865355101?gh_jid=4865355101) · USA - Remote · Posted May 13 · 62d ago — **82/100** (yes)
