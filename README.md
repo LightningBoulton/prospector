@@ -102,6 +102,11 @@ on:
   schedule:
     - cron: "0 13 * * *"   # 7:00 AM Mountain (MDT); use "0 14 * * *" to hold at 7 in winter
   workflow_dispatch:
+    inputs:
+      chad_only:
+        description: "Test run: email only Chad, skip Lisa"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -114,19 +119,19 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
 
-      - name: Install dependencies
+      - name: Install optional deps (LLM fit scoring)
         run: pip install anthropic   # only needed for the optional LLM fit-scoring
 
       - name: Run prospector (all profiles)
         run: python jobmonitor.py
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # omit to disable fit scoring
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # omit/unset to disable fit scoring
 
       - name: Commit updated snapshots
         run: |
           git config user.name  "prospector-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add snapshot_*.json report_*.md
+          git add snapshot_*.json report_*.md report_*.html
           git commit -m "Daily run: $(date -u +%Y-%m-%d)" || echo "No changes"
           git push
 
@@ -141,9 +146,10 @@ jobs:
           from: Prospector Bot
           to: ${{ secrets.MAIL_TO_CHAD }}
           subject: "Prospector — your daily jobs report"
-          body: file://report_chad.md
+          html_body: file://report_chad.html
 
       - name: Email Lisa's report
+        if: ${{ inputs.chad_only != true }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -154,8 +160,10 @@ jobs:
           from: Prospector Bot
           to: ${{ secrets.MAIL_TO_LISA }}
           subject: "Prospector — director / ops roles today"
-          body: file://report_lisa.md
+          html_body: file://report_lisa.html
 ```
+
+The manual **Run workflow** button exposes a **"Test run: email only Chad, skip Lisa"** checkbox (the `chad_only` input) so you can preview output without emailing Lisa; scheduled runs always email both. Reports are emailed as styled dark-mode HTML (`report_<name>.html`); the Markdown versions are kept for git history.
 
 ### Credentials and recipients — you set these, not this repo
 
