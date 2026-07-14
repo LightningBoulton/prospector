@@ -1,0 +1,30 @@
+name: prospector-discover
+
+on:
+  schedule:
+    - cron: "0 14 * * 1"   # Mondays at 14:00 UTC (~7 AM Mountain during MDT)
+  workflow_dispatch:        # allows manual runs from the Actions tab
+
+permissions:
+  contents: write           # needed to commit discovered.md back to the repo
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run discovery
+        run: python discover.py
+
+      - name: Commit discovered.md
+        run: |
+          git config user.name "prospector-bot"
+          git config user.email "actions@github.com"
+          git add discovered.md
+          git diff --staged --quiet || git commit -m "weekly discovery $(date -u +%F)"
+          git push
