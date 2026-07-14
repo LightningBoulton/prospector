@@ -9,7 +9,8 @@
   "fit_result": {
    "fit": "no",
    "score": 10,
-   "reason": "Forward-deployed role requires heavy travel, dealbreaker; unclear seniority and compensation fit."
+   "reason": "Forward Deployed role requires heavy travel (25-75%), a stated dealbreaker for candidate.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -21,8 +22,9 @@
   "updated": "2026-06-26",
   "fit_result": {
    "fit": "no",
-   "score": 25,
-   "reason": "SRE/ops-focused role, not full-stack/frontend engineering; mismatch with candidate's software engineering IC background."
+   "score": 20,
+   "reason": "SRE/ops-focused role, not hands-on full-stack/frontend engineering; mismatch with core function despite Utah location.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -35,7 +37,8 @@
   "fit_result": {
    "fit": "no",
    "score": 25,
-   "reason": "SRE/ops role, not full-stack/frontend engineering; mismatch on function despite location fit."
+   "reason": "SRE ops-focused role, not frontend/full-stack engineering; mismatch with candidate's core function despite location fit.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -47,8 +50,9 @@
   "updated": "2026-06-26",
   "fit_result": {
    "fit": "no",
-   "score": 22,
-   "reason": "Title/seniority too junior, legacy stack (jQuery/Vue), likely below comp minimum for Principal-level candidate."
+   "score": 20,
+   "reason": "Junior-level title, legacy stack (jQuery/Vue), Lehi onsite; mismatches seniority and comp expectations.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -61,7 +65,8 @@
   "fit_result": {
    "fit": "no",
    "score": 5,
-   "reason": "Hardware test engineering mismatches candidate's software/frontend/cloud engineering background entirely."
+   "reason": "Hardware test engineering role, unrelated to Chad's software/frontend/cloud engineering background.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -74,7 +79,8 @@
   "fit_result": {
    "fit": "no",
    "score": 2,
-   "reason": "Mechanical engineering role, not software engineering; complete function mismatch despite location fit."
+   "reason": "Mechanical engineering role, completely outside software engineering domain and expertise.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -87,7 +93,8 @@
   "fit_result": {
    "fit": "no",
    "score": 8,
-   "reason": "Management QA role, not hands-on IC engineering; mismatches function and management-avoidance preference."
+   "reason": "QA management role, not hands-on senior engineering; mismatch on function and dealbreaker (management).",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -100,7 +107,8 @@
   "fit_result": {
    "fit": "no",
    "score": 15,
-   "reason": "Application security engineering role, not full-stack/frontend engineering; mismatched function despite Utah location."
+   "reason": "AppSec engineering role, not full-stack/frontend IC work; mismatched function despite location fit.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -112,8 +120,9 @@
   "updated": "2026-06-01",
   "fit_result": {
    "fit": "no",
-   "score": 8,
-   "reason": "Salesforce/Business Systems role, not software engineering; mismatched domain despite similar seniority."
+   "score": 15,
+   "reason": "Business systems/Salesforce engineer role mismatches candidate's full-stack/frontend/cloud engineering background.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -125,8 +134,9 @@
   "updated": "2026-07-13",
   "fit_result": {
    "fit": "maybe",
-   "score": 55,
-   "reason": "Backend-only role lacks frontend focus; remote/SaaS fits but domain and seniority level unclear."
+   "score": 50,
+   "reason": "Senior backend fit but lacks frontend focus; unclear stack match, comp/domain unverified for ecommerce SaaS.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -139,7 +149,8 @@
   "fit_result": {
    "fit": "no",
    "score": 2,
-   "reason": "L1 support role is a dealbreaker; far below Principal engineering seniority and function."
+   "reason": "L1 technical support is a junior support role, not senior engineering\u2014clear dealbreaker mismatch.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -152,7 +163,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Senior platform role fits seniority/remote, but analytics focus and unclear stack/comp limit confidence."
+   "reason": "Senior platform engineering role, remote-friendly, but analytics focus and seniority level unclear vs Principal target.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -165,7 +177,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 60,
-   "reason": "Principal IC title and remote fit well, but analytics domain and details unclear without description."
+   "reason": "Principal IC title and remote fit well, but analytics domain and details are unclear.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -178,7 +191,8 @@
   "fit_result": {
    "fit": "no",
    "score": 20,
-   "reason": "ML Engineer role mismatches candidate's full-stack/frontend/platform background; no ML specialization shown."
+   "reason": "ML Engineer role mismatches candidate's full-stack/frontend/platform engineering background and expertise.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -190,8 +204,9 @@
   "updated": "2026-07-10",
   "fit_result": {
    "fit": "no",
-   "score": 10,
-   "reason": "Analytics/data engineering role, not full-stack/frontend software engineering; mismatched function and seniority target."
+   "score": 8,
+   "reason": "Analytics engineering/data modeling role mismatches candidate's frontend/full-stack platform engineering background.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -204,7 +219,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Utah location fits, but AI agentic engineering role diverges from his frontend/full-stack architecture focus."
+   "reason": "Location/remote fits, but AI agent engineering focus differs from frontend/full-stack strengths; title level slightly junior.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -217,7 +233,8 @@
   "fit_result": {
    "fit": "no",
    "score": 15,
-   "reason": "Mobile iOS/Android engineering role; candidate is frontend/full-stack web, not mobile-native specialist."
+   "reason": "Mobile iOS/Android engineering role; candidate is frontend/backend web-focused, no mobile native experience listed.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -230,7 +247,8 @@
   "fit_result": {
    "fit": "yes",
    "score": 78,
-   "reason": "Senior full-stack role, Utah location, AI tooling, SaaS platform\u2014strong match despite title being one level below Principal."
+   "reason": "Senior full-stack role in Lehi/Utah, AI tooling focus, matches skills; verify comp meets $190k minimum.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -242,8 +260,9 @@
   "updated": "2026-06-30",
   "fit_result": {
    "fit": "yes",
-   "score": 74,
-   "reason": "Senior full-stack role, Utah/remote, SaaS platform, AI tooling; title slightly below Principal target but strong match"
+   "score": 78,
+   "reason": "Senior full-stack role, Utah/remote, SaaS, AI tooling fit; seniority slightly below Principal but matches range.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -256,7 +275,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Staff IC role in Utah fits location/seniority, but AI agent/distributed systems focus differs from frontend/full-stack strengths."
+   "reason": "Staff IC role fits seniority/location, but AI agent platform focus diverges from frontend/full-stack strengths.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -269,7 +289,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Staff IC fits seniority/location, but AI agent/distributed systems focus differs from frontend/full-stack strengths."
+   "reason": "Staff IC role, right location/comp likely, but AI agent/distributed systems focus differs from frontend/full-stack strength.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -282,7 +303,8 @@
   "fit_result": {
    "fit": "no",
    "score": 10,
-   "reason": "Analytics engineering/SQL data modeling role, not full-stack/frontend software engineering\u2014mismatched function."
+   "reason": "Analytics engineering/SQL data modeling role, not software/frontend engineering; mismatch with candidate's core expertise.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -295,7 +317,8 @@
   "fit_result": {
    "fit": "no",
    "score": 3,
-   "reason": "Product Manager role, not engineering; dealbreaker mismatch despite location overlap."
+   "reason": "Product Manager role, not engineering; dealbreaker mismatch with candidate's hands-on IC engineering focus.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -307,8 +330,9 @@
   "updated": "2026-07-08",
   "fit_result": {
    "fit": "no",
-   "score": 3,
-   "reason": "Product management role, not engineering\u2014dealbreaker mismatch despite location fit."
+   "score": 5,
+   "reason": "Product Manager role, not engineering; dealbreaker per candidate's IC engineering focus.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -321,7 +345,8 @@
   "fit_result": {
    "fit": "no",
    "score": 15,
-   "reason": "Solutions/sales engineering role with partners, not hands-on IC engineering; dealbreaker match."
+   "reason": "Sales/solutions engineering role facing partners, not hands-on IC software engineering; dealbreaker match.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -334,7 +359,8 @@
   "fit_result": {
    "fit": "no",
    "score": 3,
-   "reason": "Product Manager role, not engineering; dealbreaker mismatch on function despite location fit."
+   "reason": "Product management role, not hands-on engineering; dealbreaker mismatch despite location fit.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -347,7 +373,8 @@
   "fit_result": {
    "fit": "no",
    "score": 20,
-   "reason": "Data platform/compliance validation role in biotech, mismatched with candidate's frontend/full-stack SaaS focus."
+   "reason": "Data platform/GxP compliance role in biotech, not frontend/full-stack SaaS engineering match.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -360,7 +387,8 @@
   "fit_result": {
    "fit": "no",
    "score": 20,
-   "reason": "IAM security architecture role, not full-stack/frontend engineering\u2014mismatch on function despite location fit."
+   "reason": "IAM security specialist role, not full-stack/frontend engineering\u2014mismatch on function despite location fit.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -373,7 +401,8 @@
   "fit_result": {
    "fit": "yes",
    "score": 78,
-   "reason": "Senior full-stack SaaS role, micro-frontend/microservices match, Utah remote-eligible; verify comp meets $190k minimum."
+   "reason": "Senior full-stack SaaS role in Utah, matches microservices/micro-frontend expertise; verify comp meets $190k minimum.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -386,7 +415,8 @@
   "fit_result": {
    "fit": "no",
    "score": 8,
-   "reason": "QA automation role, not software engineering; mismatched function despite Utah location and SaaS domain."
+   "reason": "QA automation role, not software engineering; wrong function despite Utah location and SaaS domain match.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -399,7 +429,8 @@
   "fit_result": {
    "fit": "no",
    "score": 3,
-   "reason": "Non-engineering partnerships/product-commercial role; not hands-on IC engineering, clear dealbreaker mismatch."
+   "reason": "Non-engineering partnerships/product-commercial role; not hands-on IC engineering, dealbreaker mismatch.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -411,8 +442,9 @@
   "updated": "2026-04-30",
   "fit_result": {
    "fit": "no",
-   "score": 10,
-   "reason": "Junior-level role (2 yrs exp), Python/Java stack, mismatched seniority and tech stack for Principal engineer."
+   "score": 15,
+   "reason": "Junior-level (2 yrs) Python/Java role in Draper; mismatched seniority and tech stack vs Principal frontend/.NET profile.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -425,7 +457,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Senior SWE title matches seniority; American Fork location outside Salt Lake Valley, no domain/comp details given."
+   "reason": "Senior SWE fits seniority/domain (SaaS/cloud), but American Fork location and unknown comp/details limit confidence.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -438,7 +471,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Adobe Lehi is location match; platform/dev title fits, but no details on seniority, comp, or stack."
+   "reason": "Location fits, platform/dev experience relevant, but unclear seniority, stack, and compensation details.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -451,7 +485,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 50,
-   "reason": "Senior IC role in Utah fits location/seniority, but observability domain and stack unclear from posting."
+   "reason": "Senior IC role, good location, but observability niche unclear fit vs frontend/full-stack strengths.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -464,7 +499,8 @@
   "fit_result": {
    "fit": "no",
    "score": 20,
-   "reason": "Security engineering role mismatches candidate's full-stack/frontend architecture focus and experience."
+   "reason": "Security engineering, not software/frontend engineering; mismatch with candidate's core function and expertise.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -477,7 +513,8 @@
   "fit_result": {
    "fit": "no",
    "score": 15,
-   "reason": "Cybersecurity incident response role, not full-stack/frontend engineering\u2014mismatch on function despite good location/seniority."
+   "reason": "Cyber incident response is a security specialty, not aligned with candidate's full-stack/frontend architecture background.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -490,7 +527,8 @@
   "fit_result": {
    "fit": "no",
    "score": 20,
-   "reason": "Marketing analytics/martech role, not core full-stack/platform engineering\u2014mismatch with candidate's principal SWE focus."
+   "reason": "Marketing analytics/martech role mismatches candidate's core full-stack/cloud architecture engineering focus and seniority path.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -503,7 +541,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 45,
-   "reason": "Full-stack engineering fits, Lehi location works, but SEO niche and seniority/comp unclear from limited posting."
+   "reason": "Full-stack engineering fits skills, but TechSEO niche and Adobe fit/seniority/comp unclear from minimal posting.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -515,8 +554,9 @@
   "updated": "2026-06-14",
   "fit_result": {
    "fit": "no",
-   "score": 15,
-   "reason": "Android mobile engineering mismatch; candidate is frontend/full-stack web, not native mobile developer."
+   "score": 20,
+   "reason": "Android mobile engineering mismatch; candidate is frontend/full-stack web, not native mobile development.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -529,7 +569,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Staff-level engineering fits, Lehi location works, but 'Design Engineer' role focus is unclear/possibly mismatched."
+   "reason": "Staff-level fits, Lehi location works, but 'Design Engineer' role/domain fit unclear without more detail.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -542,7 +583,8 @@
   "fit_result": {
    "fit": "no",
    "score": 10,
-   "reason": "Pure people-management Director role overseeing managers, not hands-on IC\u2014violates dealbreaker."
+   "reason": "Pure people-management director role overseeing managers; candidate wants hands-on IC engineering, not management.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -554,8 +596,9 @@
   "updated": "2026-07-07",
   "fit_result": {
    "fit": "yes",
-   "score": 75,
-   "reason": "Principal IC architecture role, remote in Utah, SaaS/AI focus\u2014strong seniority and domain match."
+   "score": 78,
+   "reason": "Principal IC architecture role, remote in Utah region, enterprise SaaS, strong tech alignment; AI focus is a plus.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -568,7 +611,8 @@
   "fit_result": {
    "fit": "no",
    "score": 15,
-   "reason": "Data engineering/ML pipeline role, not full-stack/frontend software engineering; mismatch on core function."
+   "reason": "Data engineering/ML pipelines role, not full-stack/frontend software engineering - functional mismatch despite seniority fit.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -581,7 +625,8 @@
   "fit_result": {
    "fit": "no",
    "score": 15,
-   "reason": "Data governance role mismatches candidate's frontend/full-stack engineering background and cloud architecture focus."
+   "reason": "Data governance role mismatches frontend/full-stack engineering background and functional focus.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -593,8 +638,9 @@
   "updated": "2026-07-07",
   "fit_result": {
    "fit": "yes",
-   "score": 82,
-   "reason": "Staff-level IC role, remote Utah, matches auth/OAuth/JWT expertise, greenfield architecture\u2014strong domain and seniority fit."
+   "score": 80,
+   "reason": "Staff IC role, Utah remote, AuthZ/JWT/Cognito expertise match, greenfield platform work fits background well.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -607,7 +653,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 62,
-   "reason": "Staff-level Utah hybrid fits seniority/location, but backend AI platform focus diverges from frontend strength."
+   "reason": "Staff-level Utah hybrid fits seniority/location, but AI backend platform focus diverges from frontend/full-stack strength.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -619,8 +666,9 @@
   "updated": "2026-07-08",
   "fit_result": {
    "fit": "maybe",
-   "score": -1,
-   "reason": "(scoring unavailable: JSONDecodeError)"
+   "score": 40,
+   "reason": "Principal-level in Utah, but 'Design Engineer, Storytelling' suggests design/UX focus, not core backend/full-stack fit.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -633,7 +681,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 60,
-   "reason": "Senior SWE in Draper fits location/seniority, but no domain/tech details to confirm strong match."
+   "reason": "Senior SWE title fits, Draper UT location good, but no domain/stack details available to confirm strong match.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -646,7 +695,8 @@
   "fit_result": {
    "fit": "no",
    "score": 3,
-   "reason": "Co-op/entry-level ML role mismatches 25-year Principal engineer's seniority and software engineering focus."
+   "reason": "Co-op/entry-level ML role mismatches 25-year Principal engineer's seniority and full-stack focus.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -659,7 +709,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Senior SWE remote fits seniority/location, but no domain/tech detail or salary confirmation available."
+   "reason": "Senior SWE remote matches seniority/location, but no description, domain/comp/tech-stack fit unknown.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -672,7 +723,8 @@
   "fit_result": {
    "fit": "no",
    "score": 25,
-   "reason": "SRE role mismatches candidate's full-stack/frontend engineering focus; not core to strengths despite AI angle."
+   "reason": "SRE role mismatches candidate's frontend/full-stack engineering background; different function despite AI/cloud overlap.",
+   "bg": "b9f9e4b0db4d"
   }
  },
  {
@@ -685,7 +737,8 @@
   "fit_result": {
    "fit": "no",
    "score": 3,
-   "reason": "Junior DevOps role, entry-level; mismatches seniority, function, and compensation expectations."
+   "reason": "Junior DevOps role mismatches Principal-level, full-stack software engineering candidate; entry-level dealbreaker.",
+   "bg": "b9f9e4b0db4d"
   }
  }
 ]
