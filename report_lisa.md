@@ -3,9 +3,14 @@
 _⭐ = posted in the last 7 days_
 
 ## What's changed
-_No changes since the previous run._
+**Removed / filled (5)**
+- **Cricut** — Regional E-commerce Operations Lead, META · Istanbul, İstanbul, Turkey (Remote) · Posted May 6 · 69d ago
+- **NICE** — Customer Success Manager · Australia - Remote · Posted May 21 · 54d ago
+- **NICE** — Director, Program Management, CX · Canada - Remote · Posted Jul 6 · 8d ago
+- **NICE** — Lead Customer Success Manager · South Africa - Remote · Posted Jun 17 · 27d ago
+- **NICE** — Team Lead, Technical Support · United Kingdom - Remote · Posted May 27 · 48d ago
 
-## All current matching roles (60)
+## All current matching roles (55)
 - **NICE** — [Senior Director, AI Transformation](https://boards.eu.greenhouse.io/nice/jobs/4865355101?gh_jid=4865355101) · USA - Remote · Posted May 13 · 62d ago — **82/100** (yes)
    _Senior Director AI transformation, change management, business/exec liaison—strong match to background and goals._
 - **Awardco** — [Director of Global Support](https://award.co/position?gh_jid=6091974004) · Lindon, Utah · Posted Jun 16 · 28d ago — **78/100** (yes)
@@ -20,8 +25,6 @@ _No changes since the previous run._
    _Director-level ops/client-services leadership fits, but healthcare implementation domain is a stretch from her background._
 - ⭐ **Adobe** — [Senior Delivery Manager, Content & Commerce](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Manager---Content-Practice-Leadership_R170053) · Lehi (+7 more) · $200,200 - $289,900 · Posted Jul 9 · 5d ago — **55/100** (maybe)
    _Delivery/professional-services leadership fits, but title suggests mid-level scope below Director/VP target._
-- **NICE** — [Director, Program Management, CX](https://boards.eu.greenhouse.io/nice/jobs/4920599101?gh_jid=4920599101) · Canada - Remote · Posted Jul 6 · 8d ago — **55/100** (maybe)
-   _Director-level CX/services delivery leadership fits, but narrower PM/delivery focus than strategic mandate she targets._
 - **NICE** — [Strategic Consulting Alliance Manager](https://boards.eu.greenhouse.io/nice/jobs/4874195101?gh_jid=4874195101) · USA - Remote · Posted Jun 2 · 42d ago — **55/100** (maybe)
    _Alliance/partnership sales role, adjacent to CX/consulting background but leans commercial/partnerships, not core function match._
 - **MX** — [Sr. Manager, Strategy and Business Operations](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4302050009) · Lehi, Utah, United States · Posted Jun 30 · 14d ago — **52/100** (maybe)
@@ -36,8 +39,6 @@ _No changes since the previous run._
    _Strategy/ops focus fits, but 'Program Manager' title suggests lower seniority than Director-level target._
 - **NICE** — [Manager, Client Services, AI, CX](https://boards.eu.greenhouse.io/nice/jobs/4854899101?gh_jid=4854899101) · USA - Remote · Posted May 4 · 71d ago — **45/100** (maybe)
    _Manager-level PMO/delivery role, below her Director+ target; AI/CX relevant but title/scope mismatch._
-- **Cricut** — [Regional E-commerce Operations Lead, META](https://jobs.smartrecruiters.com/cricut/744000124924504) · Istanbul, İstanbul, Turkey (Remote) · Posted May 6 · 69d ago — **40/100** (maybe)
-   _E-commerce ops leadership overlaps CX/operations, but regional scope, unclear seniority, and Istanbul focus limit fit._
 - ⭐ **Adobe** — [Sr. Manager, Learning Systems & Operations](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Sr-Manager--Learning-Systems---Operations_R169237) · Lehi (+2 more) · $137,700 - $199,350 · Posted Jul 8 · 6d ago — **40/100** (maybe)
    _Sr. Manager title is below Director-level target; learning ops adjacent but seniority mismatch._
 - **Adobe** — [Sr. Sales Operations Manager](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Sr-Sales-Operations-Manager_R164092) · Lehi (+2 more) · $152,400 - $220,650 · Posted Jun 14 · 30d ago — **40/100** (maybe)
@@ -68,12 +69,8 @@ _No changes since the previous run._
    _Total Rewards/HR ops focus mismatches CX/strategy background; not aligned with core functions or strengths._
 - **Ancestry** — [People Analytics Manager](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote/People-Analytics-Manager_R003364) · Remote · $95,760 - $119,700 · Posted Jun 14 · 30d ago — **20/100** (no)
    _Manager-level IC/functional role, not senior-director+ leadership scope; mismatched seniority and function focus._
-- **NICE** — [Customer Success Manager](https://boards.eu.greenhouse.io/nice/jobs/4853080101?gh_jid=4853080101) · Australia - Remote · Posted May 21 · 54d ago — **20/100** (no)
-   _Individual-contributor CSM role, reports to Director; too junior for candidate's executive scope._
 - **NICE** — [Lead Client Services Project Manager, CX](https://boards.eu.greenhouse.io/nice/jobs/4913553101?gh_jid=4913553101) · USA - Remote · Posted Jul 6 · 8d ago — **20/100** (no)
    _Individual PM/delivery role, not executive leadership scope; too junior for candidate's target level._
-- **NICE** — [Lead Customer Success Manager](https://boards.eu.greenhouse.io/nice/jobs/4875626101?gh_jid=4875626101) · South Africa - Remote · Posted Jun 17 · 27d ago — **20/100** (no)
-   _IC-level CSM role managing accounts, not executive leadership scope Lisa targets._
 - **Lucid Software** — [NA Customer Success Manager](https://job-boards.greenhouse.io/lucidsoftware/jobs/6093724004) · Salt Lake City, UT · Posted Jun 23 · 21d ago — **15/100** (no)
    _Individual-contributor CSM role, not executive leadership; mismatched seniority and scope for Lisa._
 - **Route** — [Customer Success Manager](https://careers.route.com/job-board?gh_jid=7785975003) · Lehi, Utah, United States; New York, New York, United States; Remote · Posted Jun 25 · 19d ago — **15/100** (no)
@@ -120,8 +117,6 @@ _No changes since the previous run._
    _Individual-contributor creator-outreach role; far below executive leadership scope and functional focus._
 - ⭐ **NICE** — [Sales Enablement Manager(Onboarding)](https://boards.eu.greenhouse.io/nice/jobs/4924815101?gh_jid=4924815101) · USA - Sandy, UT · Posted Jul 10 · 4d ago — **5/100** (no)
    _Junior sales enablement IC role, mismatched seniority, function, and sales-quota focus—dealbreaker territory._
-- **NICE** — [Team Lead, Technical Support](https://boards.eu.greenhouse.io/nice/jobs/4870692101?gh_jid=4870692101) · United Kingdom - Remote · Posted May 27 · 48d ago — **5/100** (no)
-   _Frontline technical support team lead role; far below executive seniority and functional scope required._
 - ⭐ **Kelso Industries** — [Fire Protection - Field Operations Director (Remote/Hybrid)](https://kelso-industries.com/careers/?gh_jid=5343829008#job-board) · Remote · Posted Jul 13 · 1d ago — **4/100** (no)
    _Fire protection/construction field ops role, unrelated domain to CX/strategy leadership background._
 - **Canopy** — [QA Automation Tech Lead](https://job-boards.greenhouse.io/canopytax/jobs/4282324009) · South Jordan, UT · Posted Jun 18 · 26d ago — **3/100** (no)

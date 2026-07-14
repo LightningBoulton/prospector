@@ -3,9 +3,31 @@
 _⭐ = posted in the last 7 days_
 
 ## What's changed
-_No changes since the previous run._
+**Removed / filled (22)**
+- **Canopy** — Senior QA Automation Engineer · South Jordan, UT · Posted May 21 · 54d ago
+- **Cricut** — Manager, Software Engineering QA · South Jordan, UT, United States · Posted May 4 · 71d ago
+- **NICE** — Cloud Support Engineer · United Kingdom - Southampton · Posted May 12 · 63d ago
+- **NICE** — DevOps Engineer · United Kingdom - Southampton · Posted Jul 2 · 12d ago
+- **NICE** — DevOps Engineer- Late Shift(2 PM - 10PM) · United Kingdom - Remote · Posted Jun 29 · 15d ago
+- **NICE** — DevOps Engineer- Night Shift(10:00 PM - 6:00 AM) · United Kingdom - Remote · Posted Jun 16 · 28d ago
+- **NICE** — Forward Deployed Engineer · Australia - Remote · Posted Apr 30 · 75d ago
+- **NICE** — Forward Deployed Engineer · United Kingdom - Remote · Posted Apr 24 · 81d ago
+- **NICE** — Forward Deployment Engineer · Germany - Remote · Posted Apr 24 · 81d ago
+- **NICE** — Lead Cloud Operations Engineer · United Kingdom - Remote · Posted Jun 29 · 15d ago
+- **NICE** — Lead DevOps Engineer- Late Shift(2 PM - 10PM) · United Kingdom - Remote · Posted Jun 29 · 15d ago
+- **NICE** — Lead Site Reliability Engineer · United Kingdom - Southampton · Posted May 6 · 69d ago
+- **NICE** — Professional Sevices Engineer · United Kingdom - Southampton · Posted Apr 29 · 76d ago
+- **NICE** — Senior Cloud Operations Engineer (10PM- 6AM) · United Kingdom - Remote · Posted Jun 29 · 15d ago
+- **NICE** — Senior implementation Engineer · South Africa - Johannesburg · Posted Jun 5 · 39d ago
+- **NICE** — Senior Professional Services Engineer(Actimize) · South Africa - Johannesburg · Posted Jun 23 · 21d ago
+- **NICE** — Senior Software Architect · United Kingdom - Southampton · Posted Jun 18 · 26d ago
+- **NICE** — Senior Software Engineer · United Kingdom - Southampton · Posted Jun 19 · 25d ago
+- **NICE** — Senior Software Engineer · United Kingdom - Southampton · Posted Apr 27 · 78d ago
+- **NICE** — Senior Technical Support Engineer · United Kingdom - Remote · Posted May 27 · 48d ago
+- **NICE** — Site Reliability Engineer · United Kingdom - Remote · Posted Apr 22 · 83d ago
+- **NICE** — Solution Engineer, Strategic GSI Partnerships · United Kingdom - Remote · Posted Jun 4 · 40d ago
 
-## All current matching roles (104)
+## All current matching roles (82)
 - **NICE** — [Senior Software Architect (AI, AWS, React, C#)](https://boards.eu.greenhouse.io/nice/jobs/4835649101?gh_jid=4835649101) · USA - Sandy, UT · Posted Apr 8 · 97d ago — **85/100** (yes)
    _Senior IC architect role, Sandy UT, AWS/React/C#/AI—strong match on stack, seniority, location, and AI focus._
 - **BambooHR** — [Staff Software Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6008526004) · Utah | Remote · Posted Jun 26 · 18d ago — **80/100** (yes)
@@ -90,8 +112,6 @@ _No changes since the previous run._
    _Forward deployed AI agent role mismatches candidate's frontend/full-stack SaaS engineering background and preferences._
 - **NICE** — [Senior DevOps Engineer](https://boards.eu.greenhouse.io/nice/jobs/4901675101?gh_jid=4901675101) · USA - Sandy, UT · Posted Jun 18 · 26d ago — **20/100** (no)
    _DevOps/infrastructure ops role, not full-stack/frontend engineering; mismatch with candidate's core function._
-- **NICE** — [Senior Software Architect](https://boards.eu.greenhouse.io/nice/jobs/4902426101?gh_jid=4902426101) · United Kingdom - Southampton · Posted Jun 18 · 26d ago — **20/100** (no)
-   _UK on-site location mismatch; not remote/Salt Lake, likely relocation required, dealbreaker._
 - **NICE** — [Senior Software Engineer - Data Team (AWS, Flink, OpenSearch)](https://boards.eu.greenhouse.io/nice/jobs/4869969101?gh_jid=4869969101) · Seattle, Washington, United States; USA - Atlanta, GA; USA - San Francisco, CA; USA - Sandy, UT · Posted May 18 · 57d ago — **20/100** (no)
    _Backend data/streaming infra role (Kafka, Flink, OpenSearch) mismatches candidate's frontend-leaning full-stack expertise._
 - **Awardco** — [Application Security Engineer](https://award.co/position?gh_jid=5856737004) · Lindon, Utah · Posted Apr 14 · 91d ago — **15/100** (no)
@@ -114,54 +134,26 @@ _No changes since the previous run._
    _Data Engineer role mismatches full-stack/frontend software engineering background and functional focus._
 - **Pattern** — [Senior Financial Systems Engineer](https://jobs.lever.co/pattern/b635d9d2-165f-4619-ae48-8d62e2d9c7fd) · Lehi, UT, US · Posted Feb 18 · 146d ago — **15/100** (no)
    _Financial systems/data engineering niche mismatches frontend/full-stack architecture background; not core to candidate's expertise._
-- **NICE** — [Forward Deployed Engineer](https://boards.eu.greenhouse.io/nice/jobs/4851158101?gh_jid=4851158101) · Australia - Remote · Posted Apr 30 · 75d ago — **15/100** (no)
-   _Forward deployed/customer-facing AI solutions role in Australia—mismatches location, function, and hands-on IC preference._
-- **NICE** — [Forward Deployed Engineer](https://boards.eu.greenhouse.io/nice/jobs/4842105101?gh_jid=4842105101) · United Kingdom - Remote · Posted Apr 24 · 81d ago — **15/100** (no)
-   _Forward-deployed AI/customer-facing solution role, not core engineering IC work; location UK, not remote US-eligible._
-- **NICE** — [Senior Software Engineer](https://boards.eu.greenhouse.io/nice/jobs/4898423101?gh_jid=4898423101) · United Kingdom - Southampton · Posted Jun 19 · 25d ago — **15/100** (no)
-   _UK-based onsite role, wrong location/seniority mismatch (Senior vs Principal), no remote/Utah option, likely below comp._
-- **NICE** — [Senior Software Engineer](https://boards.eu.greenhouse.io/nice/jobs/4845692101?gh_jid=4845692101) · United Kingdom - Southampton · Posted Apr 27 · 78d ago — **15/100** (no)
-   _UK onsite location, relocation required, Senior title mismatch with C# legacy app, not remote/Utah_
 - **NICE** — [Senior Software Engineer, Actimize](https://boards.eu.greenhouse.io/nice/jobs/4895975101?gh_jid=4895975101) · USA - Sandy, UT; USA – Santa Clara, CA · Posted Jun 11 · 33d ago — **15/100** (no)
    _Legacy Java/JSF stack mismatch; candidate is React/.NET frontend-leaning, not legacy Java maintenance._
 - **NICE** — [Software Engineer, Advanced Services](https://boards.eu.greenhouse.io/nice/jobs/4893542101?gh_jid=4893542101) · USA - Sandy, UT · Posted Jun 17 · 27d ago — **15/100** (no)
    _Junior-level role (2-4 yrs) with legacy stack (AngularJS, WCF); mismatches seniority and modernization needs._
 - **MX** — [Senior Analytics Engineer](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4106354009) · Lehi, Utah, United States · Posted Mar 6 · 130d ago — **10/100** (no)
    _Analytics engineering/SQL data modeling role, not software/frontend engineering; mismatch with candidate's core expertise._
-- **NICE** — [Forward Deployment Engineer](https://boards.eu.greenhouse.io/nice/jobs/4836032101?gh_jid=4836032101) · Germany - Remote · Posted Apr 24 · 81d ago — **10/100** (no)
-   _Forward-deployed AI/customer-facing solutions engineer, EU location; mismatches candidate's platform/frontend IC focus and location needs._
 - ⭐ **NICE** — [Senior Machine Learning Engineer](https://boards.eu.greenhouse.io/nice/jobs/4923966101?gh_jid=4923966101) · USA - Sandy, UT · Posted Jul 13 · 1d ago — **10/100** (no)
    _ML/speech AI evaluation role mismatches candidate's full-stack/frontend engineering background and expertise._
-- **Cricut** — [Manager, Software Engineering QA](https://jobs.smartrecruiters.com/cricut/744000124511339) · South Jordan, UT, United States · Posted May 4 · 71d ago — **8/100** (no)
-   _QA management role, not hands-on senior engineering; mismatch on function and dealbreaker (management)._
 - **Podium** — [Analytics Engineer](https://job-boards.greenhouse.io/podium81/jobs/7905172) · Lehi, Utah · Posted May 12 · 63d ago — **8/100** (no)
    _Analytics engineering/data modeling role mismatches candidate's frontend/full-stack platform engineering background._
-- **Canopy** — [Senior QA Automation Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4256955009) · South Jordan, UT · Posted May 21 · 54d ago — **8/100** (no)
-   _QA automation role, not software engineering; wrong function despite Utah location and SaaS domain match._
-- **NICE** — [DevOps Engineer](https://boards.eu.greenhouse.io/nice/jobs/4917684101?gh_jid=4917684101) · United Kingdom - Southampton · Posted Jul 2 · 12d ago — **8/100** (no)
-   _DevOps/infra automation role (Python, Terraform, Puppet) in UK; mismatches candidate's frontend/full-stack focus and location._
-- **NICE** — [DevOps Engineer- Late Shift(2 PM - 10PM)](https://boards.eu.greenhouse.io/nice/jobs/4906278101?gh_jid=4906278101) · United Kingdom - Remote · Posted Jun 29 · 15d ago — **8/100** (no)
-   _DevOps/infra automation role (Python/Terraform/Puppet), UK-based shift work—mismatches candidate's frontend/full-stack focus and location._
 - **NICE** — [Director, Product Management, Platform](https://boards.eu.greenhouse.io/nice/jobs/4815797101?gh_jid=4815797101) · USA - Atlanta, GA; USA - Sandy, UT · Posted Mar 23 · 113d ago — **8/100** (no)
    _Product management director role, not hands-on engineering; dealbreaker: pure management/non-engineering._
-- **NICE** — [Lead Cloud Operations Engineer](https://boards.eu.greenhouse.io/nice/jobs/4906224101?gh_jid=4906224101) · United Kingdom - Remote · Posted Jun 29 · 15d ago — **8/100** (no)
-   _Cloud Ops/SRE role, not software engineering; mismatched function despite AWS overlap._
-- **NICE** — [Lead DevOps Engineer- Late Shift(2 PM - 10PM)](https://boards.eu.greenhouse.io/nice/jobs/4906285101?gh_jid=4906285101) · United Kingdom - Remote · Posted Jun 29 · 15d ago — **8/100** (no)
-   _DevOps/infra automation role (Python, Terraform, Puppet), not full-stack/frontend engineering; wrong domain and shift requirement._
 - **NICE** — [Lead Partner Success Implementation Engineer](https://boards.eu.greenhouse.io/nice/jobs/4850295101?gh_jid=4850295101) · USA - Remote · Posted May 8 · 67d ago — **8/100** (no)
    _Partner implementation/support role, not hands-on engineering; mismatched function despite remote/comp fit._
-- **NICE** — [Lead Site Reliability Engineer](https://boards.eu.greenhouse.io/nice/jobs/4858247101?gh_jid=4858247101) · United Kingdom - Southampton · Posted May 6 · 69d ago — **8/100** (no)
-   _SRE/DevOps role in UK, requires security clearance/residency; not full-stack SWE, relocation not offered._
 - **NICE** — [Partner Value Solution Engineer](https://boards.eu.greenhouse.io/nice/jobs/4868399101?gh_jid=4868399101) · USA - Remote · Posted May 29 · 46d ago — **8/100** (no)
    _Sales engineering/partner enablement role, not hands-on engineering—explicit dealbreaker mismatch._
 - ⭐ **NICE** — [Principal AI-Driven Enterprise Support Engineer](https://boards.eu.greenhouse.io/nice/jobs/4924126101?gh_jid=4924126101) · USA - Remote · Posted Jul 9 · 5d ago — **8/100** (no)
    _Support/TAM role, not hands-on engineering; dealbreaker-adjacent customer-facing focus, not architecture/dev work._
-- **NICE** — [Senior Cloud Operations Engineer (10PM- 6AM)](https://boards.eu.greenhouse.io/nice/jobs/4906269101?gh_jid=4906269101) · United Kingdom - Remote · Posted Jun 29 · 15d ago — **8/100** (no)
-   _Cloud ops/SRE overnight shift role, not software engineering; UK location, mismatched function and timezone._
 - **NICE** — [Senior Implementation Engineer](https://boards.eu.greenhouse.io/nice/jobs/4889374101?gh_jid=4889374101) · USA - Remote · Posted Jun 11 · 33d ago — **8/100** (no)
    _Customer-facing implementation/consulting role, not hands-on engineering—matches dealbreakers, not architecture/dev work._
-- **NICE** — [Site Reliability Engineer](https://boards.eu.greenhouse.io/nice/jobs/4837196101?gh_jid=4837196101) · United Kingdom - Remote · Posted Apr 22 · 83d ago — **8/100** (no)
-   _SRE/NOC 24x7 on-call ops role, not full-stack engineering; mismatched function despite remote UK location._
 - ⭐ **NICE** — [Sr AI-Driven Enterprise Support Engineer](https://boards.eu.greenhouse.io/nice/jobs/4924142101?gh_jid=4924142101) · USA - Remote · Posted Jul 9 · 5d ago — **8/100** (no)
    _Support engineering role, not hands-on software engineering; dealbreaker mismatch on function and seniority target._
 - **Speechify** — [Forward Deployment Engineer](https://job-boards.greenhouse.io/speechify/jobs/5979996004) · Remote · Posted Apr 23 · 82d ago — **8/100** (no)
@@ -172,8 +164,6 @@ _No changes since the previous run._
    _Product Manager role, not engineering; dealbreaker per candidate's IC engineering focus._
 - **NICE** — [CX Outbound Solution Engineer](https://boards.eu.greenhouse.io/nice/jobs/4838617101?gh_jid=4838617101) · USA - Remote · Posted Apr 10 · 95d ago — **5/100** (no)
    _Sales/solution engineering role in contact center domain, not hands-on software engineering; major function mismatch._
-- **NICE** — [DevOps Engineer- Night Shift(10:00 PM - 6:00 AM)](https://boards.eu.greenhouse.io/nice/jobs/4887612101?gh_jid=4887612101) · United Kingdom - Remote · Posted Jun 16 · 28d ago — **5/100** (no)
-   _Night-shift DevOps role, wrong function/seniority focus; not full-stack/frontend engineering per candidate's target._
 - **NICE** — [Implementation Engineer](https://boards.eu.greenhouse.io/nice/jobs/4913543101?gh_jid=4913543101) · USA - Remote · Posted Jun 30 · 14d ago — **5/100** (no)
    _Customer-facing implementation/consulting role, not hands-on engineering; dealbreaker per candidate preferences._
 - **NICE** — [Implementation Engineer](https://boards.eu.greenhouse.io/nice/jobs/4908757101?gh_jid=4908757101) · USA - Remote · Posted Jul 2 · 12d ago — **5/100** (no)
@@ -182,8 +172,6 @@ _No changes since the previous run._
    _Professional services/deployment role, not hands-on engineering; mismatches seniority, function, and dealbreaker (customer support-like)._
 - **NICE** — [Senior Customer Service Engineer](https://boards.eu.greenhouse.io/nice/jobs/4895948101?gh_jid=4895948101) · USA - Remote · Posted Jun 17 · 27d ago — **5/100** (no)
    _Customer support/success engineering role, not hands-on software engineering—matches explicit dealbreaker._
-- **NICE** — [Solution Engineer, Strategic GSI Partnerships](https://boards.eu.greenhouse.io/nice/jobs/4872699101?gh_jid=4872699101) · United Kingdom - Remote · Posted Jun 4 · 40d ago — **5/100** (no)
-   _Sales engineering/partnerships role, not hands-on IC engineering; explicit dealbreaker match._
 - **Speechify** — [Go-to-Market Engineer](https://job-boards.greenhouse.io/speechify/jobs/6003596004) · Remote · Posted May 22 · 53d ago — **5/100** (no)
    _Sales/GTM engineering role, not software engineering; mismatched function despite remote and AI-adjacent company._
 - ⭐ **BILL** — [Lead Product Manager - Rewards Platform](https://www.bill.com/job?6101858004&gh_jid=6101858004) · Draper, Utah, United States; San Jose, California, United States; United States · Posted Jul 9 · 5d ago — **3/100** (no)
@@ -196,18 +184,8 @@ _No changes since the previous run._
    _Co-op/entry-level ML role mismatches 25-year Principal engineer's seniority and full-stack focus._
 - **Traeger** — [Junior Dev Ops Engineer](https://job-boards.greenhouse.io/traegergrills/jobs/7852723) · Salt Lake City · Posted May 14 · 61d ago — **3/100** (no)
    _Junior DevOps role mismatches Principal-level, full-stack software engineering candidate; entry-level dealbreaker._
-- **NICE** — [Cloud Support Engineer](https://boards.eu.greenhouse.io/nice/jobs/4864500101?gh_jid=4864500101) · United Kingdom - Southampton · Posted May 12 · 63d ago — **3/100** (no)
-   _Support engineering role, UK office-based, not SWE IC; wrong function, location, seniority mismatch._
-- **NICE** — [Professional Sevices Engineer](https://boards.eu.greenhouse.io/nice/jobs/4854231101?gh_jid=4854231101) · United Kingdom - Southampton · Posted Apr 29 · 76d ago — **3/100** (no)
-   _Professional services/deployment role in UK office, not senior SWE; location and function mismatch._
 - **NICE** — [Senior Carrier Routing Engineer](https://boards.eu.greenhouse.io/nice/jobs/4853341101?gh_jid=4853341101) · USA - Sandy, UT · Posted Jun 3 · 41d ago — **3/100** (no)
    _Telecom carrier routing/business role, not software engineering; mismatched function despite Utah location._
-- **NICE** — [Senior implementation Engineer](https://boards.eu.greenhouse.io/nice/jobs/4883704101?gh_jid=4883704101) · South Africa - Johannesburg · Posted Jun 5 · 39d ago — **3/100** (no)
-   _Implementation/customer-facing PM role in South Africa, not hands-on engineering; location and function mismatch._
-- **NICE** — [Senior Professional Services Engineer(Actimize)](https://boards.eu.greenhouse.io/nice/jobs/4905812101?gh_jid=4905812101) · South Africa - Johannesburg · Posted Jun 23 · 21d ago — **3/100** (no)
-   _Onsite Johannesburg professional services/support role, wrong location, function, and seniority focus—not engineering IC fit._
-- **NICE** — [Senior Technical Support Engineer](https://boards.eu.greenhouse.io/nice/jobs/4870697101?gh_jid=4870697101) · United Kingdom - Remote · Posted May 27 · 48d ago — **3/100** (no)
-   _Customer support role, dealbreaker function mismatch; not hands-on engineering._
 - **NICE** — [Technical Support Engineer](https://boards.eu.greenhouse.io/nice/jobs/4901658101?gh_jid=4901658101) · USA - Sandy, UT · Posted Jun 22 · 22d ago — **3/100** (no)
    _Customer support role, not engineering; dealbreaker and massive seniority/function mismatch._
 - **Cricut** — [Senior Mechanical Design Engineer](https://jobs.smartrecruiters.com/cricut/744000132936269) · South Jordan, UT, United States · Posted Jun 18 · 26d ago — **2/100** (no)
