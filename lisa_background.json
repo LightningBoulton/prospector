@@ -1,21 +1,74 @@
 {
-  "_comment": "Candidate background used by the LLM fit scorer. Replace the example values with Lisa's real details — the more specific and honest this is, the better the fit judgments. Everything here is sent to the model for each new posting.",
-  "name": "Lisa",
-  "current_title": "Director of Customer Operations",
-  "years_experience": 15,
-  "seniority_target": ["Director", "Senior Director", "VP", "C-level"],
-  "functions": [
-    "Customer Success / Customer Experience",
-    "Customer & Business Operations",
-    "Client Relations / Account Management",
-    "Service Delivery / Implementation",
-    "Organizational transformation & change management"
+  "_comment": "Candidate background for the LLM fit scorer, regenerated from Lisa's own 'Professional Knowledge Base' documents. The whole object is sent to the model for each new posting. Fields marked TODO were not present in the source docs (which intentionally omit location, comp, and exact tenure) \u2014 confirm with Lisa for best scoring.",
+  "name": "Lisa Hillier",
+  "current_title": "Senior Director Customer Experience | Strategic Practice Leader | Experience Design",
+  "years_experience": "15",
+  "seniority_target": [
+    "Director", 
+    "Senior Director",
+    "VP",
+    "SVP",
+    "Chief / C-level (COO, CCO, CXO)",
+    "Head of",
+    "Executive Director"
   ],
-  "summary": "Operations and customer-relations leader with 15 years scaling post-sales, customer success, and service-delivery teams at B2B SaaS companies. Strong at building playbooks, cross-functional alignment, and retention/renewals programs.",
-  "strengths": ["team leadership", "process design", "retention & renewals", "cross-functional programs", "customer escalation management"],
-  "must_haves": ["people-leadership scope (manages a team or function)", "customer- or operations-facing"],
-  "nice_to_haves": ["AI/transformation initiatives", "SaaS", "hybrid or remote friendly"],
-  "dealbreakers": ["individual-contributor-only roles", "pure sales-quota / account-executive roles", "hands-on engineering roles", "relocation outside Utah unless fully remote"],
-  "location_preference": "Utah (Salt Lake / Utah County) or remote-US",
-  "notes": "Open to adjacent leadership (people ops, revenue operations) if customer/ops-oriented. Not interested in stepping down to non-management roles."
+  "functions": [
+    "Organizational strategy & design",
+    "Operations / operational excellence",
+    "Customer & digital experience",
+    "Professional services / service delivery",
+    "Leadership development",
+    "Change management",
+    "M&A integration",
+    "AI adoption, enablement & transformation"
+  ],
+  "summary": "Executive leader in organizational strategy, operations, leadership development, customer and digital experience, professional services, change management, M&A integration, and AI-enabled transformation. Background spans consulting, agency, enterprise, nonprofit, and global organizations. Has led global teams and organizational growth, with demonstrated improvements in revenue, margin, utilization, customer metrics, engagement, and retention.",
+  "career_highlights": [
+    "Senior leadership roles at Credera/TA Digital, Merkle/Axis41, 180fusion, and Delta Air Lines",
+    "Led global teams and organizational growth",
+    "Improved revenue, margin, utilization, customer metrics, engagement, and retention"
+  ],
+  "strengths": [
+    "Organizational design",
+    "Leadership development",
+    "Operational excellence",
+    "Professional services leadership",
+    "Customer experience",
+    "M&A integration",
+    "AI adoption & enablement",
+    "Change management",
+    "Executive communication"
+  ],
+  "working_style": [
+    "Systems thinker",
+    "Evidence-based decisions",
+    "Connects business strategy with execution",
+    "Explains technology in business terms"
+  ],
+  "must_haves": [
+    "executive or senior-leadership scope (leads a function, org, or teams)",
+    "strategy/operations or customer/professional-services leadership mandate"
+  ],
+  "nice_to_haves": [
+    "AI-enabled transformation mandate",
+    "global or international scope",
+    "consulting / advisory optionality",
+    "change management or M&A integration work",
+    "platform for thought leadership"
+  ],
+  "dealbreakers": [
+    "individual-contributor-only roles",
+    "non-leadership roles",
+    "pure sales-quota / account-executive roles",
+    "hands-on engineering roles"
+  ],
+  "location_preference": "Utah-area or remote; open to international career opportunities",
+  "goals": [
+    "Executive leadership",
+    "AI-enabled transformation",
+    "Thought leadership",
+    "Consulting optionality",
+    "International career flexibility"
+  ],
+  "notes": "Regenerated from Lisa's 'Professional Knowledge Base'. Communication style: structured, evidence-based, step-by-step. Source docs intentionally omit location/comp/tenure, so current_title, years_experience, and precise location are TODO \u2014 confirm with Lisa."
 }
