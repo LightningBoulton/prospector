@@ -44,7 +44,7 @@ jobs:
           secure: true
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          from: Prospector Bot
+          from: Prospector Bot <${{ secrets.MAIL_USERNAME }}>
           to: ${{ secrets.MAIL_TO_CHAD }}
           subject: "Prospector — your daily jobs report"
           html_body: file://report_chad.html
@@ -58,7 +58,7 @@ jobs:
           secure: true
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          from: Prospector Bot
+          from: Prospector Bot <${{ secrets.MAIL_USERNAME }}>
           to: ${{ secrets.MAIL_TO_LISA }}
           subject: "Prospector — director / ops roles today"
           html_body: file://report_lisa.html
