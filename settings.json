@@ -1,6 +1,7 @@
 {
-  "_comment": "Central tweakables for a run. max_posting_age_days: drop postings older than this many days (by their posted date); set to 0 or null to keep all ages. Postings with an unknown date are always kept. fit_scoring_enabled: master off-switch for the Anthropic API — set false to skip all LLM fit scoring (e.g. test runs), regardless of ANTHROPIC_API_KEY. star_within_days: mark postings newer than this many days with a star in the report; 0/null disables the star.",
+  "_comment": "Central tweakables for a run. max_posting_age_days: drop postings older than this many days (by their posted date); set to 0 or null to keep all ages. Postings with an unknown date are always kept. fit_scoring_enabled: master off-switch for the Anthropic API — set false to skip all LLM fit scoring (e.g. test runs), regardless of ANTHROPIC_API_KEY. star_within_days: mark postings newer than this many days with a star in the report; 0/null disables the star. allow_international_remote: when false (default), remote roles whose location names a non-US country (e.g. 'United Kingdom - Remote') are dropped; set true to keep all remote roles regardless of country.",
   "max_posting_age_days": 180,
   "fit_scoring_enabled": true,
-  "star_within_days": 7
+  "star_within_days": 7,
+  "allow_international_remote": false
 }

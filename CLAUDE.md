@@ -76,7 +76,13 @@ Preserve the word-boundary behavior. Empty `match_groups` = keep all local roles
 ## Location + age gates
 
 Global, applied once to the pool in `collect_pool` before profiles. Location:
-`LOCAL_KEYWORDS`, `KEEP_REMOTE`, `LOCAL_ONLY` (constants atop `jobmonitor.py`). Age:
+`LOCAL_KEYWORDS`, `KEEP_REMOTE`, `LOCAL_ONLY` (constants atop `jobmonitor.py`). `is_local`
+matches keywords with `\bword\b` boundaries (like `matches_profile`) — do NOT revert to
+substring `in`, or the short `ut` token matches inside foreign words ("So**ut**hampton").
+`KEEP_REMOTE` keeps remote roles, but when `allow_international_remote` (settings.json, default
+false) is off, a remote role naming a non-US country (`INTERNATIONAL_MARKERS`, e.g. "United
+Kingdom - Remote") is dropped unless it ALSO names a local city. Markers that collide with US
+places are intentionally omitted (Georgia, Mexico→New Mexico, Jordan→South Jordan). Age:
 `max_posting_age_days` from `settings.json` (`_within_age`) — drops confidently-too-old
 postings, saving downstream salary/LLM calls. If a future profile needs its own geography,
 add a per-profile override rather than widening the global list. Note: a role that ages out

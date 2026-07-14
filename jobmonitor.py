@@ -23,10 +23,13 @@ SETTINGS = os.path.join(HERE, "settings.json")
 
 # Run-wide tweakables (settings.json). Defaults apply if the file or a key is missing.
 SETTINGS_DEFAULTS = {"max_posting_age_days": 90, "fit_scoring_enabled": True,
-                     "star_within_days": 7}
+                     "star_within_days": 7, "allow_international_remote": False}
 
 # How recent a posting must be to earn a ⭐ in the report. Set from settings in main().
 STAR_WITHIN_DAYS = SETTINGS_DEFAULTS["star_within_days"]
+
+# When False, remote roles that name a non-US country are dropped. Set from settings in main().
+ALLOW_INTL_REMOTE = SETTINGS_DEFAULTS["allow_international_remote"]
 
 
 def load_settings():
@@ -52,6 +55,24 @@ LOCAL_KEYWORDS = [
 ]
 KEEP_REMOTE = True
 LOCAL_ONLY  = True
+
+# Non-US country/region tokens for the international-remote filter (word-boundary matched).
+# Ambiguous names that collide with US places are intentionally OMITTED — "Georgia",
+# "Mexico" (→ New Mexico), "Jordan" (→ South Jordan). Extend as new ones surface.
+INTERNATIONAL_MARKERS = [
+    "united kingdom", "uk", "england", "scotland", "wales", "ireland", "britain",
+    "canada", "brazil", "argentina", "chile", "colombia", "peru",
+    "india", "pakistan", "bangladesh", "sri lanka", "philippines", "china", "hong kong",
+    "japan", "korea", "singapore", "malaysia", "indonesia", "vietnam", "thailand", "taiwan",
+    "australia", "new zealand",
+    "germany", "france", "spain", "portugal", "italy", "netherlands", "belgium", "poland",
+    "romania", "bulgaria", "ukraine", "czech", "hungary", "sweden", "norway", "denmark",
+    "finland", "switzerland", "austria", "greece", "turkey", "serbia", "croatia",
+    "lithuania", "estonia", "latvia", "slovakia", "slovenia",
+    "israel", "egypt", "south africa", "nigeria", "kenya", "morocco",
+    "uae", "united arab emirates", "dubai", "abu dhabi", "saudi arabia", "qatar",
+    "emea", "apac", "latam", "europe", "asia pacific",
+]
 
 
 def _get(url):
@@ -199,11 +220,20 @@ def _norm(company, ext_id, title, location, url, posted,
             "_ats": ats, "_detail_url": detail_url}
 
 
+def _matches_any(l, terms):
+    # Word-boundary match (like matches_profile) so short tokens ("ut", "uk") don't hit
+    # inside unrelated words — e.g. "So[ut]hampton" was wrongly read as Utah-local.
+    return any(re.search(r"\b" + re.escape(t) + r"\b", l) for t in terms)
+
+
 def is_local(loc):
     l = loc.lower()
+    # Remote roles pass — unless a non-US country is named and international remote is off,
+    # in which case fall through to the keyword check (kept only if it ALSO names a local city).
     if KEEP_REMOTE and "remote" in l:
-        return True
-    return any(k in l for k in LOCAL_KEYWORDS)
+        if ALLOW_INTL_REMOTE or not _matches_any(l, INTERNATIONAL_MARKERS):
+            return True
+    return _matches_any(l, LOCAL_KEYWORDS)
 
 
 # ---- posting-date + salary enrichment (Lever inline; others: description/detail regex) ----
@@ -749,10 +779,11 @@ def main():
     else:
         profiles = [p for p in profiles if p.get("enabled", True)]
 
-    global STAR_WITHIN_DAYS
+    global STAR_WITHIN_DAYS, ALLOW_INTL_REMOTE
     settings = load_settings()
     max_age = settings.get("max_posting_age_days")
     STAR_WITHIN_DAYS = settings.get("star_within_days", STAR_WITHIN_DAYS)
+    ALLOW_INTL_REMOTE = settings.get("allow_international_remote", ALLOW_INTL_REMOTE)
     client = get_client() if settings.get("fit_scoring_enabled", True) else None
 
     pool, errors = collect_pool(max_age_days=max_age)
