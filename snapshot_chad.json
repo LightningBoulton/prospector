@@ -5,7 +5,12 @@
   "title": "Software Development Engineer (Forward Deployed)",
   "location": "Salt Lake City, Utah",
   "url": "https://jobs.lever.co/filevine/6bb83e69-9b61-4a91-971a-dcc3257dad0d",
-  "updated": "2025-12-22"
+  "updated": "2025-12-22",
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Forward-deployed role requires heavy travel, dealbreaker; unclear seniority and compensation fit."
+  }
  },
  {
   "key": "DigiCert::8601785002",
@@ -13,7 +18,12 @@
   "title": "Principal Site Reliability Engineer",
   "location": "Lehi, Utah",
   "url": "https://www.digicert.com/careers/?gh_jid=8601785002",
-  "updated": "2026-06-26"
+  "updated": "2026-06-26",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "SRE/ops-focused role, not full-stack/frontend engineering; mismatch with candidate's software engineering IC background."
+  }
  },
  {
   "key": "DigiCert::8585312002",
@@ -21,7 +31,12 @@
   "title": "Senior Site Reliability Engineer",
   "location": "Lehi, Utah",
   "url": "https://www.digicert.com/careers/?gh_jid=8585312002",
-  "updated": "2026-06-26"
+  "updated": "2026-06-26",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "SRE/ops role, not full-stack/frontend engineering; mismatch on function despite location fit."
+  }
  },
  {
   "key": "DigiCert::8559517002",
@@ -29,7 +44,12 @@
   "title": "Software Engineer",
   "location": "Lehi, Utah",
   "url": "https://www.digicert.com/careers/?gh_jid=8559517002",
-  "updated": "2026-06-26"
+  "updated": "2026-06-26",
+  "fit_result": {
+   "fit": "no",
+   "score": 22,
+   "reason": "Title/seniority too junior, legacy stack (jQuery/Vue), likely below comp minimum for Principal-level candidate."
+  }
  },
  {
   "key": "Cricut::744000135585568",
@@ -37,7 +57,12 @@
   "title": "Senior Hardware Test Engineer",
   "location": "South Jordan, UT, United States",
   "url": "https://jobs.smartrecruiters.com/cricut/744000135585568",
-  "updated": "2026-07-02"
+  "updated": "2026-07-02",
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Hardware test engineering mismatches candidate's software/frontend/cloud engineering background entirely."
+  }
  },
  {
   "key": "Cricut::744000132936269",
@@ -45,7 +70,12 @@
   "title": "Senior Mechanical Design Engineer",
   "location": "South Jordan, UT, United States",
   "url": "https://jobs.smartrecruiters.com/cricut/744000132936269",
-  "updated": "2026-06-18"
+  "updated": "2026-06-18",
+  "fit_result": {
+   "fit": "no",
+   "score": 2,
+   "reason": "Mechanical engineering role, not software engineering; complete function mismatch despite location fit."
+  }
  },
  {
   "key": "Cricut::744000124511339",
@@ -53,7 +83,12 @@
   "title": "Manager, Software Engineering QA",
   "location": "South Jordan, UT, United States",
   "url": "https://jobs.smartrecruiters.com/cricut/744000124511339",
-  "updated": "2026-05-04"
+  "updated": "2026-05-04",
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Management QA role, not hands-on IC engineering; mismatches function and management-avoidance preference."
+  }
  },
  {
   "key": "Awardco::5856737004",
@@ -61,7 +96,12 @@
   "title": "Application Security Engineer",
   "location": "Lindon, Utah",
   "url": "https://award.co/position?gh_jid=5856737004",
-  "updated": "2026-06-02"
+  "updated": "2026-06-02",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Application security engineering role, not full-stack/frontend engineering; mismatched function despite Utah location."
+  }
  },
  {
   "key": "Awardco::6010767004",
@@ -69,7 +109,12 @@
   "title": "Sr. Business Systems Engineer (Salesforce & AI)",
   "location": "Lindon, Utah",
   "url": "https://award.co/position?gh_jid=6010767004",
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Salesforce/Business Systems role, not software engineering; mismatched domain despite similar seniority."
+  }
  },
  {
   "key": "Route::7803003003",
@@ -77,7 +122,12 @@
   "title": "Sr. Core Backend Engineer",
   "location": "Remote",
   "url": "https://careers.route.com/job-board?gh_jid=7803003003",
-  "updated": "2026-07-13"
+  "updated": "2026-07-13",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Backend-only role lacks frontend focus; remote/SaaS fits but domain and seniority level unclear."
+  }
  },
  {
   "key": "Instructure::743999678330041",
@@ -85,7 +135,12 @@
   "title": "L1 Technical Support Engineer",
   "location": "Salt Lake City, UT, United States",
   "url": "https://jobs.smartrecruiters.com/instructure/743999678330041",
-  "updated": "2018-10-23"
+  "updated": "2018-10-23",
+  "fit_result": {
+   "fit": "no",
+   "score": 2,
+   "reason": "L1 support role is a dealbreaker; far below Principal engineering seniority and function."
+  }
  },
  {
   "key": "Pluralsight::R0014277",
@@ -93,7 +148,12 @@
   "title": "Senior Engineer, Platform Analytics",
   "location": "Remote - USA",
   "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Senior-Engineer--Platform-Analytics_R0014277",
-  "updated": "2026-07-03"
+  "updated": "2026-07-03",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Senior platform role fits seniority/remote, but analytics focus and unclear stack/comp limit confidence."
+  }
  },
  {
   "key": "Pluralsight::R0014276",
@@ -101,7 +161,12 @@
   "title": "Principal Engineer, Platform Analytics",
   "location": "Remote - USA",
   "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Principal-Engineer--Platform-Analytics_R0014276",
-  "updated": "2026-07-03"
+  "updated": "2026-07-03",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 60,
+   "reason": "Principal IC title and remote fit well, but analytics domain and details unclear without description."
+  }
  },
  {
   "key": "Pluralsight::R0014041",
@@ -109,7 +174,12 @@
   "title": "Machine Learning Engineer",
   "location": "Remote - USA",
   "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Machine-Learning-Engineer_R0014041",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "ML Engineer role mismatches candidate's full-stack/frontend/platform background; no ML specialization shown."
+  }
  },
  {
   "key": "Podium::7905172",
@@ -117,7 +187,12 @@
   "title": "Analytics Engineer",
   "location": "Lehi, Utah",
   "url": "https://job-boards.greenhouse.io/podium81/jobs/7905172",
-  "updated": "2026-07-10"
+  "updated": "2026-07-10",
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Analytics/data engineering role, not full-stack/frontend software engineering; mismatched function and seniority target."
+  }
  },
  {
   "key": "Podium::7243261",
@@ -125,7 +200,12 @@
   "title": "Senior AI Engineer - Agentic",
   "location": "Lehi, Utah, Open to Remote",
   "url": "https://job-boards.greenhouse.io/podium81/jobs/7243261",
-  "updated": "2026-06-30"
+  "updated": "2026-06-30",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Utah location fits, but AI agentic engineering role diverges from his frontend/full-stack architecture focus."
+  }
  },
  {
   "key": "Podium::7944182",
@@ -133,7 +213,12 @@
   "title": "Senior Mobile Engineer",
   "location": "Lehi, Utah, Open to Remote",
   "url": "https://job-boards.greenhouse.io/podium81/jobs/7944182",
-  "updated": "2026-07-01"
+  "updated": "2026-07-01",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Mobile iOS/Android engineering role; candidate is frontend/full-stack web, not mobile-native specialist."
+  }
  },
  {
   "key": "Podium::6637207",
@@ -141,7 +226,12 @@
   "title": "Senior Software Engineer",
   "location": "Lehi, Utah",
   "url": "https://job-boards.greenhouse.io/podium81/jobs/6637207",
-  "updated": "2026-06-30"
+  "updated": "2026-06-30",
+  "fit_result": {
+   "fit": "yes",
+   "score": 78,
+   "reason": "Senior full-stack role, Utah location, AI tooling, SaaS platform\u2014strong match despite title being one level below Principal."
+  }
  },
  {
   "key": "Podium::7129220",
@@ -149,7 +239,12 @@
   "title": "Senior Software Engineer",
   "location": "Lehi, Utah, Open to Remote",
   "url": "https://job-boards.greenhouse.io/podium81/jobs/7129220",
-  "updated": "2026-06-30"
+  "updated": "2026-06-30",
+  "fit_result": {
+   "fit": "yes",
+   "score": 74,
+   "reason": "Senior full-stack role, Utah/remote, SaaS platform, AI tooling; title slightly below Principal target but strong match"
+  }
  },
  {
   "key": "Podium::7367363",
@@ -157,7 +252,12 @@
   "title": "Staff AI Engineer - USA",
   "location": "Lehi, Utah, Open to Remote",
   "url": "https://job-boards.greenhouse.io/podium81/jobs/7367363",
-  "updated": "2026-06-30"
+  "updated": "2026-06-30",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Staff IC role in Utah fits location/seniority, but AI agent/distributed systems focus differs from frontend/full-stack strengths."
+  }
  },
  {
   "key": "Podium::7490572",
@@ -165,7 +265,12 @@
   "title": "Staff AI Engineer - Utah",
   "location": "Lehi, Utah",
   "url": "https://job-boards.greenhouse.io/podium81/jobs/7490572",
-  "updated": "2026-06-30"
+  "updated": "2026-06-30",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Staff IC fits seniority/location, but AI agent/distributed systems focus differs from frontend/full-stack strengths."
+  }
  },
  {
   "key": "MX::4106354009",
@@ -173,7 +278,12 @@
   "title": "Senior Analytics Engineer",
   "location": "Lehi, Utah, United States",
   "url": "https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4106354009",
-  "updated": "2026-07-13"
+  "updated": "2026-07-13",
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Analytics engineering/SQL data modeling role, not full-stack/frontend software engineering\u2014mismatched function."
+  }
  },
  {
   "key": "BILL::6101858004",
@@ -181,7 +291,12 @@
   "title": "Lead Product Manager - Rewards Platform",
   "location": "Draper, Utah, United States; San Jose, California, United States; United States",
   "url": "https://www.bill.com/job?6101858004&gh_jid=6101858004",
-  "updated": "2026-07-09"
+  "updated": "2026-07-09",
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Product Manager role, not engineering; dealbreaker mismatch despite location overlap."
+  }
  },
  {
   "key": "BILL::6112258004",
@@ -189,7 +304,12 @@
   "title": "Lead Product Manager - Risk Platform",
   "location": "Draper, Utah, United States; San Jose, California, United States; United States",
   "url": "https://www.bill.com/job?6112258004&gh_jid=6112258004",
-  "updated": "2026-07-08"
+  "updated": "2026-07-08",
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Product management role, not engineering\u2014dealbreaker mismatch despite location fit."
+  }
  },
  {
   "key": "BILL::6107864004",
@@ -197,7 +317,12 @@
   "title": "Principal Partner Solution Engineer - Partner Embed Platform",
   "location": "Draper, Utah, United States; San Jose, California, United States; United States",
   "url": "https://www.bill.com/job?6107864004&gh_jid=6107864004",
-  "updated": "2026-07-03"
+  "updated": "2026-07-03",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Solutions/sales engineering role with partners, not hands-on IC engineering; dealbreaker match."
+  }
  },
  {
   "key": "BILL::6104509004",
@@ -205,7 +330,12 @@
   "title": "Senior Lead Product Manager - Risk Platform",
   "location": "Draper, Utah, United States; San Jose, California, United States; United States",
   "url": "https://www.bill.com/job?6104509004&gh_jid=6104509004",
-  "updated": "2026-07-08"
+  "updated": "2026-07-08",
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Product Manager role, not engineering; dealbreaker mismatch on function despite location fit."
+  }
  },
  {
   "key": "Recursion::7852491",
@@ -213,7 +343,12 @@
   "title": "Sr. Data Platform Engineer - Computer System Validator",
   "location": "New York, New York; Salt Lake City, Utah",
   "url": "https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/7852491",
-  "updated": "2026-07-08"
+  "updated": "2026-07-08",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Data platform/compliance validation role in biotech, mismatched with candidate's frontend/full-stack SaaS focus."
+  }
  },
  {
   "key": "Recursion::7943347",
@@ -221,7 +356,12 @@
   "title": "Staff Engineer, Identity & Access Management (IAM)",
   "location": "Salt Lake City, Utah",
   "url": "https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/7943347",
-  "updated": "2026-07-08"
+  "updated": "2026-07-08",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "IAM security architecture role, not full-stack/frontend engineering\u2014mismatch on function despite location fit."
+  }
  },
  {
   "key": "Canopy::4239960009",
@@ -229,7 +369,12 @@
   "title": "Senior Full Stack Engineer",
   "location": "South Jordan, UT",
   "url": "https://job-boards.greenhouse.io/canopytax/jobs/4239960009",
-  "updated": "2026-07-09"
+  "updated": "2026-07-09",
+  "fit_result": {
+   "fit": "yes",
+   "score": 78,
+   "reason": "Senior full-stack SaaS role, micro-frontend/microservices match, Utah remote-eligible; verify comp meets $190k minimum."
+  }
  },
  {
   "key": "Canopy::4256955009",
@@ -237,7 +382,12 @@
   "title": "Senior QA Automation Engineer",
   "location": "South Jordan, UT",
   "url": "https://job-boards.greenhouse.io/canopytax/jobs/4256955009",
-  "updated": "2026-06-08"
+  "updated": "2026-06-08",
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "QA automation role, not software engineering; mismatched function despite Utah location and SaaS domain."
+  }
  },
  {
   "key": "Canopy::4301595009",
@@ -245,7 +395,12 @@
   "title": "Strategic Partnerships & Platform Ecosystem Manager",
   "location": "South Jordan, UT",
   "url": "https://job-boards.greenhouse.io/canopytax/jobs/4301595009",
-  "updated": "2026-07-10"
+  "updated": "2026-07-10",
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Non-engineering partnerships/product-commercial role; not hands-on IC engineering, clear dealbreaker mismatch."
+  }
  },
  {
   "key": "Nav::5985843004",
@@ -253,7 +408,12 @@
   "title": "Software Engineer",
   "location": "Draper, UT",
   "url": "https://job-boards.greenhouse.io/navtechnologies/jobs/5985843004",
-  "updated": "2026-04-30"
+  "updated": "2026-04-30",
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Junior-level role (2 yrs exp), Python/Java stack, mismatched seniority and tech stack for Principal engineer."
+  }
  },
  {
   "key": "Domo::JR100282",
@@ -261,7 +421,12 @@
   "title": "Sr. Software Engineer",
   "location": "American Fork, Utah",
   "url": "https://domo.wd12.myworkdayjobs.com/DomoCareers/job/American-Fork-Utah/Sr-Software-Engineer_JR100282",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Senior SWE title matches seniority; American Fork location outside Salt Lake Valley, no domain/comp details given."
+  }
  },
  {
   "key": "Adobe::R165293",
@@ -269,7 +434,12 @@
   "title": "Device Experience Platform Developer",
   "location": "Lehi (+1 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Device-Experience-Platform-Developer_R165293-1",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Adobe Lehi is location match; platform/dev title fits, but no details on seniority, comp, or stack."
+  }
  },
  {
   "key": "Adobe::R166999",
@@ -277,7 +447,12 @@
   "title": "Senior Observability Developer",
   "location": "Lehi (+1 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-Observability-Developer_R166999",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 50,
+   "reason": "Senior IC role in Utah fits location/seniority, but observability domain and stack unclear from posting."
+  }
  },
  {
   "key": "Adobe::R167438",
@@ -285,7 +460,12 @@
   "title": "Sr Security Engineer",
   "location": "Lehi (+2 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Security-Engineer_R167438",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Security engineering role mismatches candidate's full-stack/frontend architecture focus and experience."
+  }
  },
  {
   "key": "Adobe::R169287",
@@ -293,7 +473,12 @@
   "title": "Staff Cyber Incident Response Engineer",
   "location": "Lehi (+2 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Staff-Cyber-Incident-Response-Engineer_R169287",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Cybersecurity incident response role, not full-stack/frontend engineering\u2014mismatch on function despite good location/seniority."
+  }
  },
  {
   "key": "Adobe::R167498",
@@ -301,7 +486,12 @@
   "title": "Marketing Technologies Engineer (Analytics) \u2014 Growth & Martech Engineering",
   "location": "Lehi (+2 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Marketing-Technologies-Engineer--Analytics----Growth---Martech-Engineering_R167498",
-  "updated": "2026-06-20"
+  "updated": "2026-06-20",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Marketing analytics/martech role, not core full-stack/platform engineering\u2014mismatch with candidate's principal SWE focus."
+  }
  },
  {
   "key": "Adobe::R168986",
@@ -309,7 +499,12 @@
   "title": "TechSEO Full-Stack Engineer",
   "location": "Lehi (+3 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/TechSEO-Full-Stack-Engineer_R168986",
-  "updated": "2026-06-18"
+  "updated": "2026-06-18",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Full-stack engineering fits, Lehi location works, but SEO niche and seniority/comp unclear from limited posting."
+  }
  },
  {
   "key": "Adobe::R168831",
@@ -317,7 +512,12 @@
   "title": "Senior Product Engineer  \u2014 Android",
   "location": "Lehi (+4 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Product-Engineer----Android_R168831-1",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Android mobile engineering mismatch; candidate is frontend/full-stack web, not native mobile developer."
+  }
  },
  {
   "key": "Adobe::R168837",
@@ -325,7 +525,12 @@
   "title": "Staff Design Engineer, Document Foundations",
   "location": "Lehi (+10 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Staff-Design-Engineer--Document-Foundations_R168837-1",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Staff-level engineering fits, Lehi location works, but 'Design Engineer' role focus is unclear/possibly mismatched."
+  }
  },
  {
   "key": "BambooHR::5727054004",
@@ -333,7 +538,12 @@
   "title": "Director of Software Engineering - Payroll Services",
   "location": "Utah | Hybrid",
   "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/5727054004",
-  "updated": "2026-07-07"
+  "updated": "2026-07-07",
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Pure people-management Director role overseeing managers, not hands-on IC\u2014violates dealbreaker."
+  }
  },
  {
   "key": "BambooHR::6098097004",
@@ -341,7 +551,12 @@
   "title": "Principal Software Architect",
   "location": "Arizona | Remote; Idaho | Remote; Texas | Remote; Utah | Remote; Washington | Remote",
   "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6098097004",
-  "updated": "2026-07-07"
+  "updated": "2026-07-07",
+  "fit_result": {
+   "fit": "yes",
+   "score": 75,
+   "reason": "Principal IC architecture role, remote in Utah, SaaS/AI focus\u2014strong seniority and domain match."
+  }
  },
  {
   "key": "BambooHR::5996687004",
@@ -349,7 +564,12 @@
   "title": "Sr. Data Engineer",
   "location": "Utah | Hybrid",
   "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/5996687004",
-  "updated": "2026-07-07"
+  "updated": "2026-07-07",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Data engineering/ML pipeline role, not full-stack/frontend software engineering; mismatch on core function."
+  }
  },
  {
   "key": "BambooHR::6003041004",
@@ -357,7 +577,12 @@
   "title": "Sr. Data Governance Engineer",
   "location": "Utah | Hybrid",
   "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6003041004",
-  "updated": "2026-06-05"
+  "updated": "2026-06-05",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Data governance role mismatches candidate's frontend/full-stack engineering background and cloud architecture focus."
+  }
  },
  {
   "key": "BambooHR::6008526004",
@@ -365,7 +590,12 @@
   "title": "Staff Software Engineer",
   "location": "Utah | Remote",
   "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6008526004",
-  "updated": "2026-07-07"
+  "updated": "2026-07-07",
+  "fit_result": {
+   "fit": "yes",
+   "score": 82,
+   "reason": "Staff-level IC role, remote Utah, matches auth/OAuth/JWT expertise, greenfield architecture\u2014strong domain and seniority fit."
+  }
  },
  {
   "key": "BambooHR::5990126004",
@@ -373,7 +603,12 @@
   "title": "Staff Software Engineer",
   "location": "Utah | Hybrid",
   "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/5990126004",
-  "updated": "2026-07-07"
+  "updated": "2026-07-07",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 62,
+   "reason": "Staff-level Utah hybrid fits seniority/location, but backend AI platform focus diverges from frontend strength."
+  }
  },
  {
   "key": "Ancestry::R003390",
@@ -381,7 +616,12 @@
   "title": "Principal Design Engineer, Storytelling",
   "location": "Draper, UT",
   "url": "https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Principal-Design-Engineer--Storytelling_R003390",
-  "updated": "2026-07-08"
+  "updated": "2026-07-08",
+  "fit_result": {
+   "fit": "maybe",
+   "score": -1,
+   "reason": "(scoring unavailable: JSONDecodeError)"
+  }
  },
  {
   "key": "Ancestry::R003386",
@@ -389,7 +629,12 @@
   "title": "Senior Software Engineer",
   "location": "Draper, UT",
   "url": "https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Senior-Software-Engineer_R003386",
-  "updated": "2026-07-02"
+  "updated": "2026-07-02",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 60,
+   "reason": "Senior SWE in Draper fits location/seniority, but no domain/tech details to confirm strong match."
+  }
  },
  {
   "key": "Ancestry::R003378",
@@ -397,7 +642,12 @@
   "title": "Machine Learning Engineer, Co-op",
   "location": "Remote",
   "url": "https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote/Machine-Learning-Engineer--Co-op_R003378",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Co-op/entry-level ML role mismatches 25-year Principal engineer's seniority and software engineering focus."
+  }
  },
  {
   "key": "Ancestry::R003346",
@@ -405,7 +655,12 @@
   "title": "Senior Software Engineer",
   "location": "Remote - US Only",
   "url": "https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote---US-Only/Senior-Software-Engineer_R003346",
-  "updated": "2026-06-14"
+  "updated": "2026-06-14",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Senior SWE remote fits seniority/location, but no domain/tech detail or salary confirmation available."
+  }
  },
  {
   "key": "Health Catalyst::REQ-3259",
@@ -413,7 +668,12 @@
   "title": "Site Reliability Engineer- AI Enablement",
   "location": "US Remote",
   "url": "https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Site-Reliability-Engineer--AI-Enablement_REQ-3259",
-  "updated": "2026-07-09"
+  "updated": "2026-07-09",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "SRE role mismatches candidate's full-stack/frontend engineering focus; not core to strengths despite AI angle."
+  }
  },
  {
   "key": "Traeger::7852723",
@@ -421,6 +681,11 @@
   "title": "Junior Dev Ops Engineer",
   "location": "Salt Lake City",
   "url": "https://job-boards.greenhouse.io/traegergrills/jobs/7852723",
-  "updated": "2026-05-14"
+  "updated": "2026-05-14",
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Junior DevOps role, entry-level; mismatches seniority, function, and compensation expectations."
+  }
  }
 ]
