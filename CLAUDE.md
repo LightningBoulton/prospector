@@ -28,8 +28,9 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 
 - `companies.json` — `companies[]` + `needs_identification[]` backlog. Company fields: {name, city, ats, slug}; **workday entries also need** {wd_host, site}.
 - `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any}).
-- `jobmonitor.py` — the engine (~230 lines). Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `diff`, `build_report`, `run_profile`.
-- `snapshot_<name>.json`, `report_<name>.md` — generated per profile; committed by CI.
+- `settings.json` — run-wide tweakables (loaded by `load_settings`, defaults in `SETTINGS_DEFAULTS`): `max_posting_age_days` (drop postings older than this; 0/null = keep all; unknown-date always kept) and `fit_scoring_enabled` (master off-switch for the Anthropic API). Missing file/keys fall back to defaults.
+- `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `enrich_salary`, `enrich_with_fit`, `diff`, `build_report`, `build_html_report`, `run_profile`.
+- `snapshot_<name>.json`, `report_<name>.md`, `report_<name>.html` — generated per profile; committed by CI.
 
 ## Data model
 
@@ -72,11 +73,14 @@ OR within). Matching uses `\bterm\b` regex — **word-boundary aware on purpose*
 tokens (`coo`, `vp`, `cco`) don't match inside longer words (`coordinator`, `account`).
 Preserve the word-boundary behavior. Empty `match_groups` = keep all local roles.
 
-## Location gate
+## Location + age gates
 
-Global, at top of `jobmonitor.py`: `LOCAL_KEYWORDS`, `KEEP_REMOTE`, `LOCAL_ONLY`.
-Applied once to the pool before profiles. If a future profile needs its own geography,
-add a per-profile override rather than widening the global list.
+Global, applied once to the pool in `collect_pool` before profiles. Location:
+`LOCAL_KEYWORDS`, `KEEP_REMOTE`, `LOCAL_ONLY` (constants atop `jobmonitor.py`). Age:
+`max_posting_age_days` from `settings.json` (`_within_age`) — drops confidently-too-old
+postings, saving downstream salary/LLM calls. If a future profile needs its own geography,
+add a per-profile override rather than widening the global list. Note: a role that ages out
+of the window leaves the pool and thus shows up as **removed** in that profile's next diff.
 
 ## Adding tier-2 companies (the main backlog)
 
@@ -94,7 +98,7 @@ Each new ATS = one `fetch_*` function returning normalized postings + one `FETCH
 ## LLM fit scoring (optional relevance filter)
 
 Ranks each profile's matched roles by how well they fit a candidate, via the Anthropic API.
-- **Activation:** on only when `ANTHROPIC_API_KEY` is set (env) AND the profile has a `background_file`. Otherwise the whole feature no-ops and the tool behaves exactly as before. `anthropic` SDK must be installed (`pip install anthropic`) — CI needs this added to the workflow.
+- **Activation:** on only when `settings.json` `fit_scoring_enabled` is true (master off-switch — set false to skip all API calls for test runs) AND `ANTHROPIC_API_KEY` is set (env) AND the profile has a `background_file`. Otherwise the whole feature no-ops and the tool behaves exactly as before. `anthropic` SDK must be installed (`pip install anthropic`) — CI needs this in the workflow.
 - **Config:** profile fields `background_file` (path to a candidate JSON, e.g. `lisa_background.json`) and `fit_mode` = `"rank"` (keep all, sort by score — default/safe) or `"filter"` (drop model-rated `"no"`).
 - **Flow:** `enrich_with_fit` runs after keyword match, before diff. It **only scores NEW roles** — verdicts are cached in the snapshot's `fit_result` and reused, so daily cost ∝ new postings, not total. `score_fit` returns `{fit: yes|maybe|no, score: 0-100, reason}`; on ANY API/parse failure it returns a neutral `maybe`/score -1 (role kept, run never crashes) — and **failures aren't cached** (`score < 0` is never reused), so a transient parse error retries next run.
 - **Cache invalidation:** each verdict stores a `bg` fingerprint (`_bg_fingerprint` = short hash of the background content). A cached verdict is reused only if its `bg` matches the current background. **Editing a `background_file` auto-invalidates that profile's verdicts** → full re-score next run, no manual clearing. Legacy verdicts with no `bg` also re-score once.

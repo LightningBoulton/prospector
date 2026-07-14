@@ -31,6 +31,7 @@ The daily run: read the company list → fetch and normalize every source once �
 |------|---------|
 | `companies.json` | Where to look: each company's name, city, ATS, and slug. Plus a `needs_identification` backlog. |
 | `profiles.json` | What to look for: one named title filter per person. |
+| `settings.json` | Run-wide knobs: max posting age, and the LLM-scoring on/off switch. |
 | `jobmonitor.py` | The engine — fetch, normalize, filter, diff, report. |
 | `snapshot_<name>.json` | Auto-generated per profile. The last run's matched roles, used for the diff. Commit these so history lives in git. |
 | `report_<name>.md` | Auto-generated per profile. The latest report in Markdown, for git history and the CLI. |
@@ -82,6 +83,22 @@ A coarse global gate runs once before any profile, configured at the top of `job
 - `LOCAL_KEYWORDS` — city/state terms that count as local.
 - `KEEP_REMOTE` — when `True`, remote-tagged roles are kept regardless of geography.
 - `LOCAL_ONLY` — set `False` to track every role regardless of location.
+
+## Settings
+
+Run-wide knobs live in `settings.json`, so tweaks are in one place (no code changes):
+
+```json
+{
+  "max_posting_age_days": 90,
+  "fit_scoring_enabled": true
+}
+```
+
+- **`max_posting_age_days`** — drop any posting older than this many days (by its posting date), before profiles run. Trims stale listings and cuts downstream API/detail calls. Set to `0` or `null` to keep every age. Postings whose date is unknown are always kept (never dropped on a guess). Note: a role that ages past the limit will appear once under "Removed / filled" in the next report.
+- **`fit_scoring_enabled`** — master off-switch for the Anthropic API. Set `false` to skip all LLM fit scoring (handy for test runs or to avoid cost), regardless of whether `ANTHROPIC_API_KEY` is set. Reports still generate, just without the ranking.
+
+Missing file or missing keys fall back to the defaults above.
 
 ## Posting dates & salary
 
@@ -185,7 +202,7 @@ Never put a password or someone's email address in a committed file. In **Settin
 
 The workflow references these by name only, so nothing sensitive touches the code or git history.
 
-Report bodies are Markdown, which most mail clients render as clean plain text. For rich formatting, generate an HTML version in `jobmonitor.py` and use `html_body:`.
+Each run writes both `report_<name>.md` (for git history and the CLI) and `report_<name>.html` (a styled, dark-mode, email-safe version with inline styles). The workflow emails the HTML via `html_body:`.
 
 ## LLM fit scoring (optional)
 
@@ -199,8 +216,9 @@ To enable it for a profile:
    { "name": "lisa", "background_file": "lisa_background.json", "fit_mode": "rank", ... }
    ```
 3. `fit_mode` is `"rank"` (keep everything, sort by score — recommended while calibrating) or `"filter"` (drop roles the model rates a clear "no").
+4. Keep `fit_scoring_enabled: true` in `settings.json` (the default). Flip it to `false` to hard-disable all API calls for a test run without removing the key or the profile config.
 
-Cost stays low: only **new** postings are scored, and each verdict is cached in the snapshot and reused, so the daily bill tracks new roles, not the whole list. If the key is unset, the package is missing, or a call fails, the affected role is simply kept unscored — the run never breaks. Model is set by `FIT_MODEL` in `jobmonitor.py` (`claude-sonnet-5`, or `claude-haiku-4-5-20251001` for less cost); confirm current model names at docs.claude.com.
+Cost stays low: only **new** postings are scored, and each verdict is cached in the snapshot and reused, so the daily bill tracks new roles, not the whole list. Editing a `background_file` re-scores that profile automatically next run (the cache is fingerprinted by background content). If the key is unset, the package is missing, or a call fails, the affected role is simply kept unscored — the run never breaks. Model is set by `FIT_MODEL` in `jobmonitor.py` (`claude-sonnet-5`, or `claude-haiku-4-5-20251001` for less cost); confirm current model names at docs.claude.com.
 
 ## Roadmap
 

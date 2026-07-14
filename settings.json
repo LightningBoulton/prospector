@@ -1,0 +1,5 @@
+{
+  "_comment": "Central tweakables for a run. max_posting_age_days: drop postings older than this many days (by their posted date); set to 0 or null to keep all ages. Postings with an unknown date are always kept. fit_scoring_enabled: master off-switch for the Anthropic API — set false to skip all LLM fit scoring (e.g. test runs), regardless of ANTHROPIC_API_KEY.",
+  "max_posting_age_days": 180,
+  "fit_scoring_enabled": true
+}

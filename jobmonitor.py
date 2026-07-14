@@ -19,6 +19,21 @@ import hashlib, json, os, re, sys, html, urllib.request, datetime
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
 PROFILES = os.path.join(HERE, "profiles.json")
+SETTINGS = os.path.join(HERE, "settings.json")
+
+# Run-wide tweakables (settings.json). Defaults apply if the file or a key is missing.
+SETTINGS_DEFAULTS = {"max_posting_age_days": 90, "fit_scoring_enabled": True}
+
+
+def load_settings():
+    s = dict(SETTINGS_DEFAULTS)
+    try:
+        s.update({k: v for k, v in json.load(open(SETTINGS)).items() if not k.startswith("_")})
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        print(f"[warn] settings.json unreadable ({type(e).__name__}); using defaults.")
+    return s
 
 # LLM fit-scoring (optional). Active only when ANTHROPIC_API_KEY is set AND a profile
 # names a background_file. Falls back to no scoring otherwise — the tool still runs fine.
@@ -363,7 +378,19 @@ def enrich_with_fit(matched, prev, profile, client):
 
 # ---- pipeline ----
 
-def collect_pool():
+def _within_age(posted, max_age_days):
+    # Keep if there's no age limit, or the date is unknown (never drop what we can't date),
+    # or it's within the window. Only a confidently-too-old posting is dropped.
+    if not max_age_days or not posted:
+        return True
+    try:
+        d = datetime.date.fromisoformat(posted)
+    except ValueError:
+        return True
+    return (datetime.date.today() - d).days <= max_age_days
+
+
+def collect_pool(max_age_days=None):
     cfg = json.load(open(CONFIG))
     pool, errors = [], []
     for c in cfg["companies"]:
@@ -371,6 +398,7 @@ def collect_pool():
             got = FETCHERS[c["ats"]](c)
             if LOCAL_ONLY:
                 got = [p for p in got if is_local(p["location"])]
+            got = [p for p in got if _within_age(p["posted"], max_age_days)]
             pool.extend(got)
         except Exception as e:
             errors.append(f"{c['name']} ({c['ats']}/{c['slug']}): {type(e).__name__} {e}")
@@ -691,10 +719,14 @@ def main():
     else:
         profiles = [p for p in profiles if p.get("enabled", True)]
 
-    client = get_client()
-    pool, errors = collect_pool()
-    print(f"Fetched {len(pool)} local/remote roles across all companies."
-          f"{' Fit scoring: ON.' if client else ''}\n")
+    settings = load_settings()
+    max_age = settings.get("max_posting_age_days")
+    client = get_client() if settings.get("fit_scoring_enabled", True) else None
+
+    pool, errors = collect_pool(max_age_days=max_age)
+    age_note = f" ≤{max_age}d old" if max_age else ""
+    print(f"Fetched {len(pool)} local/remote roles{age_note} across all companies."
+          f"{' Fit scoring: ON.' if client else ' Fit scoring: OFF.'}\n")
     for p in profiles:
         matched, report = run_profile(p, pool, errors, client)
         print("=" * 70)
