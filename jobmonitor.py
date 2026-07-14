@@ -22,7 +22,11 @@ PROFILES = os.path.join(HERE, "profiles.json")
 SETTINGS = os.path.join(HERE, "settings.json")
 
 # Run-wide tweakables (settings.json). Defaults apply if the file or a key is missing.
-SETTINGS_DEFAULTS = {"max_posting_age_days": 90, "fit_scoring_enabled": True}
+SETTINGS_DEFAULTS = {"max_posting_age_days": 90, "fit_scoring_enabled": True,
+                     "star_within_days": 7}
+
+# How recent a posting must be to earn a ⭐ in the report. Set from settings in main().
+STAR_WITHIN_DAYS = SETTINGS_DEFAULTS["star_within_days"]
 
 
 def load_settings():
@@ -269,6 +273,17 @@ def _fmt_posted(posted):
     return f"Posted {d:%b} {d.day} · {age}"
 
 
+def _is_fresh(posted):
+    # True if the posting is within STAR_WITHIN_DAYS (0/null or unknown date → not fresh).
+    if not STAR_WITHIN_DAYS or not posted:
+        return False
+    try:
+        d = datetime.date.fromisoformat(posted)
+    except ValueError:
+        return False
+    return (datetime.date.today() - d).days <= STAR_WITHIN_DAYS
+
+
 # ---- profile matching (word-boundary aware) ----
 
 def _any_term(title, terms):
@@ -427,6 +442,11 @@ def _fit_reason(p):
     return f"\n   _{fr['reason']}_" if fr and fr.get("reason") and fr.get("score", -1) >= 0 else ""
 
 
+def _star(p):
+    # Leading "⭐ " for a posting newer than STAR_WITHIN_DAYS, else "".
+    return "⭐ " if _is_fresh(p.get("posted")) else ""
+
+
 def _meta_md(p):
     # "location · salary · Posted …" — the detail suffix after a role's title.
     bits = [p.get("location") or ""]
@@ -441,7 +461,10 @@ def _meta_md(p):
 def build_report(profile, matched, new, removed, changed, errors, first_run):
     today = datetime.date.today().isoformat()
     scored = any(p.get("fit_result") for p in matched)
-    L = [f"# {profile['label']}", f"### Job report — {today}", ""]
+    L = [f"# {profile['label']}", f"### Job report — {today}"]
+    if STAR_WITHIN_DAYS:
+        L.append(f"_⭐ = posted in the last {STAR_WITHIN_DAYS} days_")
+    L.append("")
 
     # --- What's changed (leads the report) ---
     L.append("## What's changed")
@@ -455,7 +478,7 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
             order = sorted(new, key=lambda x: -(x.get("fit_result") or {}).get("score", 0)) if scored \
                 else sorted(new, key=lambda x: x["company"])
             for p in order:
-                L.append(f"- **{p['company']}** — [{p['title']}]({p['url']}) · {_meta_md(p)}{_fit_badge(p)}{_fit_reason(p)}")
+                L.append(f"- {_star(p)}**{p['company']}** — [{p['title']}]({p['url']}) · {_meta_md(p)}{_fit_badge(p)}{_fit_reason(p)}")
         if changed:
             L.append(f"**Changed titles ({len(changed)})**")
             L += [f"- **{c['company']}** — \"{o['title']}\" → [{c['title']}]({c['url']})"
@@ -473,7 +496,7 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
     elif scored:
         # ranked best-fit first
         for p in sorted(matched, key=lambda x: -(x.get("fit_result") or {}).get("score", 0)):
-            L.append(f"- **{p['company']}** — [{p['title']}]({p['url']}) · {_meta_md(p)}{_fit_badge(p)}{_fit_reason(p)}")
+            L.append(f"- {_star(p)}**{p['company']}** — [{p['title']}]({p['url']}) · {_meta_md(p)}{_fit_badge(p)}{_fit_reason(p)}")
     else:
         # grouped by company (no scoring)
         last = None
@@ -481,7 +504,7 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
             if p["company"] != last:
                 L.append(f"\n**{p['company']}**")
                 last = p["company"]
-            L.append(f"- [{p['title']}]({p['url']}) · {_meta_md(p)}")
+            L.append(f"- {_star(p)}[{p['title']}]({p['url']}) · {_meta_md(p)}")
     L.append("")
 
     # --- Source warnings ---
@@ -572,10 +595,15 @@ def _meta_html(p, lead=None):
     return line
 
 
+def _star_html(p):
+    # Leading star for a posting newer than STAR_WITHIN_DAYS, else "".
+    return '<span style="font-size:14px;">⭐</span> ' if _is_fresh(p.get("posted")) else ""
+
+
 def _role_html(p, lead=None):
-    # Title (+ fit pill) on one line; muted meta and fit reason beneath.
+    # Title (+ star + fit pill) on one line; muted meta and fit reason beneath.
     return (f'<div style="margin:0 0 12px;line-height:1.4;">'
-            f'{_link(p["title"], p["url"])}{_fit_pill_html(p)}'
+            f'{_star_html(p)}{_link(p["title"], p["url"])}{_fit_pill_html(p)}'
             f'{_meta_html(p, lead)}{_fit_reason_html(p)}</div>')
 
 
@@ -589,6 +617,8 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
     B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:22px;'
              f'font-weight:800;line-height:1.3;">{_esc(profile["label"])}</div>')
     sub = f"Job report · {today}" + (" · ranked by fit" if scored else "")
+    if STAR_WITHIN_DAYS:
+        sub += f" · ⭐ = posted in the last {STAR_WITHIN_DAYS} days"
     B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
              f'margin-top:4px;">{_esc(sub)}</div>')
 
@@ -603,7 +633,7 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
             B.append(_chip(f"New · {len(new)}", "green"))
             order = sorted(new, key=by_score) if scored else sorted(new, key=lambda x: x["company"])
             for p in order:
-                inner = (_link(p["title"], p["url"]) + _fit_pill_html(p)
+                inner = (_star_html(p) + _link(p["title"], p["url"]) + _fit_pill_html(p)
                          + _meta_html(p, lead=p["company"]) + _fit_reason_html(p))
                 B.append(_card(inner, _C["green"]))
         if changed:
@@ -719,8 +749,10 @@ def main():
     else:
         profiles = [p for p in profiles if p.get("enabled", True)]
 
+    global STAR_WITHIN_DAYS
     settings = load_settings()
     max_age = settings.get("max_posting_age_days")
+    STAR_WITHIN_DAYS = settings.get("star_within_days", STAR_WITHIN_DAYS)
     client = get_client() if settings.get("fit_scoring_enabled", True) else None
 
     pool, errors = collect_pool(max_age_days=max_age)

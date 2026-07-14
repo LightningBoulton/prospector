@@ -91,12 +91,14 @@ Run-wide knobs live in `settings.json`, so tweaks are in one place (no code chan
 ```json
 {
   "max_posting_age_days": 90,
-  "fit_scoring_enabled": true
+  "fit_scoring_enabled": true,
+  "star_within_days": 7
 }
 ```
 
 - **`max_posting_age_days`** — drop any posting older than this many days (by its posting date), before profiles run. Trims stale listings and cuts downstream API/detail calls. Set to `0` or `null` to keep every age. Postings whose date is unknown are always kept (never dropped on a guess). Note: a role that ages past the limit will appear once under "Removed / filled" in the next report.
 - **`fit_scoring_enabled`** — master off-switch for the Anthropic API. Set `false` to skip all LLM fit scoring (handy for test runs or to avoid cost), regardless of whether `ANTHROPIC_API_KEY` is set. Reports still generate, just without the ranking.
+- **`star_within_days`** — mark postings newer than this many days with a ⭐ in the report (default 7). A small legend explains the star. Set to `0` or `null` to turn it off.
 
 Missing file or missing keys fall back to the defaults above.
 
