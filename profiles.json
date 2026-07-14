@@ -8,9 +8,9 @@
       "background_file": "chad_background.json",
       "fit_mode": "rank",
       "match_groups": [
-        ["engineer", "developer", "software", "frontend", "front-end", "full stack", "fullstack", "backend", "back-end", "microservice", "microservices", "platform", "sre", "devops", "web", "ui"]
+        ["engineer", "developer", "software", "frontend", "front-end", "full stack", "fullstack", "backend", "back-end", "microservice", "microservices", "platform", "devops", "web", "ui"]
       ],
-      "exclude_any": ["sales", "account executive", "recruiter", "intern", "support specialist", "manager, customer"]
+      "exclude_any": ["sales", "account executive", "recruiter", "intern", "support specialist","qa", "manager, customer"]
     },
     {
       "name": "lisa",
