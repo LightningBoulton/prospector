@@ -14,11 +14,16 @@ Usage:
 No Playwright, no HTML scraping — every source here is a structured JSON API.
 """
 
-import html, json, os, re, sys, urllib.request, datetime
+import json, os, re, sys, html, urllib.request, datetime
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
 PROFILES = os.path.join(HERE, "profiles.json")
+
+# LLM fit-scoring (optional). Active only when ANTHROPIC_API_KEY is set AND a profile
+# names a background_file. Falls back to no scoring otherwise — the tool still runs fine.
+FIT_MODEL = "claude-sonnet-5"   # judgment task; swap to "claude-haiku-4-5-20251001" for lower cost
+DESC_LIMIT = 2000               # chars of job description sent to the model
 
 # Global location gate, applied once to the fetched pool before any profile runs.
 LOCAL_KEYWORDS = [
@@ -45,29 +50,21 @@ def _post_json(url, payload):
         return json.load(r)
 
 
+def _clean_html(s, limit=DESC_LIMIT):
+    s = html.unescape(s or "")
+    s = re.sub(r"<[^>]+>", " ", s)
+    return re.sub(r"\s+", " ", s).strip()[:limit]
+
+
 # ---- per-ATS fetchers, each returning normalized postings ----
 
 def fetch_greenhouse(c):
-    # `first_published` is the true post date; `updated_at` (edit time) is the fallback.
-    d = _get(f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs")
-    out = []
-    for j in d.get("jobs", []):
-        jid = str(j["id"])
-        out.append(_norm(c, jid, j.get("title", ""),
-                         (j.get("location") or {}).get("name", ""),
-                         j.get("absolute_url", ""),
-                         (j.get("first_published") or j.get("updated_at") or "")[:10],
-                         ats="greenhouse",
-                         detail_url=f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs/{jid}"))
-    return out
-
-
-def _lever_salary(j):
-    # Lever exposes pay in the list response: prefer the structured range, else the prose.
-    r = j.get("salaryRange") or {}
-    if r.get("min") and r.get("max"):
-        return _fmt_pay(r["min"], r["max"], r.get("currency", "USD"), r.get("interval"))
-    return (j.get("salaryDescriptionPlain") or "").strip() or None
+    d = _get(f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs?content=true")
+    return [_norm(c, str(j["id"]), j.get("title", ""),
+                  (j.get("location") or {}).get("name", ""),
+                  j.get("absolute_url", ""), (j.get("updated_at") or "")[:10],
+                  _clean_html(j.get("content", "")))
+            for j in d.get("jobs", [])]
 
 
 def fetch_lever(c):
@@ -79,7 +76,7 @@ def fetch_lever(c):
         out.append(_norm(c, str(j["id"]), j.get("text", ""),
                          (j.get("categories") or {}).get("location", ""),
                          j.get("hostedUrl", ""), date,
-                         salary=_lever_salary(j), ats="lever"))
+                         (j.get("descriptionPlain") or "")[:DESC_LIMIT]))
     return out
 
 
@@ -95,8 +92,7 @@ def fetch_smartrecruiters(c):
                 loc_str = (loc_str + " (Remote)").strip()
             out.append(_norm(c, str(j["id"]), j.get("name", ""), loc_str,
                              f"https://jobs.smartrecruiters.com/{c['slug']}/{j['id']}",
-                             (j.get("releasedDate") or "")[:10], ats="smartrecruiters",
-                             detail_url=f"https://api.smartrecruiters.com/v1/companies/{c['slug']}/postings/{j['id']}"))
+                             (j.get("releasedDate") or "")[:10]))
         offset += 100
         if offset >= d.get("totalFound", 0):
             break
@@ -121,20 +117,29 @@ def _workday_date(text):
 
 def fetch_workday(c):
     # Config: {"ats":"workday","slug":<tenant>,"wd_host":<sub.wdN.myworkdayjobs.com>,"site":<site>}
+    # Optional "search_text" scopes a large tenant server-side (e.g. "Lehi") so we don't
+    # page through thousands of global roles. Multi-location hits return "N Locations";
+    # we relabel those with the search term so the local gate keeps them and they read well.
     host, tenant, site = c["wd_host"], c["slug"], c["site"]
+    search_text = c.get("search_text", "")
     url = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
-    out, offset = [], 0
+    out, offset, total = [], 0, None
     while True:
-        d = _post_json(url, {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": ""})
-        for j in d.get("jobPostings", []):
+        d = _post_json(url, {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": search_text})
+        if total is None:
+            total = d.get("total", 0)      # only the FIRST page reports the real total
+        page = d.get("jobPostings", [])
+        for j in page:
             path = j.get("externalPath", "")
             ext = (j.get("bulletFields") or [path])[0]        # req number is the stable id
-            out.append(_norm(c, str(ext), j.get("title", ""), j.get("locationsText", ""),
-                             f"https://{host}/{site}{path}", _workday_date(j.get("postedOn", "")),
-                             ats="workday",
-                             detail_url=f"https://{host}/wday/cxs/{tenant}/{site}{path}"))
+            loc = j.get("locationsText", "")
+            m = re.match(r"\s*(\d+)\s+locations", loc, re.I)
+            if search_text and m:
+                loc = f"{search_text} (+{int(m.group(1)) - 1} more)"
+            out.append(_norm(c, str(ext), j.get("title", ""), loc,
+                             f"https://{host}/{site}{path}", _workday_date(j.get("postedOn", ""))))
         offset += 20
-        if offset >= d.get("total", 0) or not d.get("jobPostings"):
+        if offset >= total or not page:
             break
     return out
 
@@ -143,16 +148,10 @@ FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday}
 
 
-def _norm(company, ext_id, title, location, url, posted,
-          salary=None, ats=None, detail_url=None):
-    # `posted` = best "first posted" date the list endpoint gives (YYYY-MM-DD or "").
-    # `salary` = structured/known pay if free at list time (Lever); else filled by
-    # enrich_salary() via a per-role detail fetch. `_ats`/`_detail_url` are private
-    # (underscore-prefixed) and stripped before a snapshot is written.
+def _norm(company, ext_id, title, location, url, updated, description=""):
     return {"key": f"{company['name']}::{ext_id}", "company": company["name"],
             "title": title.strip(), "location": location.strip(),
-            "url": url, "posted": posted, "salary": salary,
-            "_ats": ats, "_detail_url": detail_url}
+            "url": url, "updated": updated, "description": description}
 
 
 def is_local(loc):
@@ -160,72 +159,6 @@ def is_local(loc):
     if KEEP_REMOTE and "remote" in l:
         return True
     return any(k in l for k in LOCAL_KEYWORDS)
-
-
-# ---- salary enrichment (per-matched-role detail fetch + regex; Lever is inline) ----
-
-_INTERVAL = {"per-year-salary": "/yr", "per-hour-wage": "/hr",
-             "per-month-salary": "/mo", "per-week-salary": "/wk", "per-day-wage": "/day"}
-
-
-def _fmt_pay(lo, hi, currency, interval):
-    sym = "$" if currency in (None, "USD") else f"{currency} "
-    unit = _INTERVAL.get(interval, "")
-    fmt = lambda n: f"{sym}{n:,.0f}" if float(n) >= 1000 else f"{sym}{float(n):,.2f}"
-    return f"{fmt(lo)}–{fmt(hi)}{unit}"
-
-
-# A "$X – $Y" pay range in free text: two dollar amounts joined by a dash/"to".
-_PAY_RE = re.compile(
-    r"\$\s?\d{1,3}(?:,\d{3})*(?:\.\d+)?\s?[kK]?"          # first amount
-    r"\s*(?:-|–|—|to)\s*"                        # separator: - – — or "to"
-    r"\$?\s?\d{1,3}(?:,\d{3})*(?:\.\d+)?\s?[kK]?")         # second amount
-
-_SALARY_CACHE = {}   # key -> salary string|None, so a role shared across profiles is fetched once
-
-
-def _strip_html(s):
-    return html.unescape(re.sub(r"<[^>]+>", " ", s or ""))
-
-
-def _detail_text(p):
-    # Pull the plain-text job description from each ATS's per-posting detail endpoint.
-    d, ats = _get(p["_detail_url"]), p["_ats"]
-    if ats == "smartrecruiters":
-        secs = (d.get("jobAd") or {}).get("sections") or {}
-        text = " ".join(v.get("text", "") for v in secs.values() if isinstance(v, dict))
-        return _strip_html(text)
-    if ats == "workday":
-        return _strip_html((d.get("jobPostingInfo") or {}).get("jobDescription", ""))
-    return _strip_html(d.get("content", ""))   # greenhouse
-
-
-def enrich_salary(postings):
-    # For each role still missing salary, fetch its detail once and regex a pay range.
-    # Bounded to the postings passed in (the matched-across-profiles union) — polite.
-    for p in postings:
-        if p.get("salary") or not p.get("_detail_url"):
-            continue
-        if p["key"] not in _SALARY_CACHE:
-            try:
-                m = _PAY_RE.search(_detail_text(p))
-                _SALARY_CACHE[p["key"]] = m.group(0).strip() if m else None
-            except Exception:
-                _SALARY_CACHE[p["key"]] = None
-        p["salary"] = _SALARY_CACHE[p["key"]]
-
-
-def _fmt_posted(posted):
-    # "Jul 10 · 3d ago" from a YYYY-MM-DD string; "" if absent/unparseable.
-    if not posted:
-        return ""
-    try:
-        d = datetime.date.fromisoformat(posted)
-    except ValueError:
-        return ""
-    days = (datetime.date.today() - d).days
-    age = "today" if days <= 0 else "1d ago" if days == 1 else f"{days}d ago"
-    return f"Posted {d:%b} {d.day} · {age}"
 
 
 # ---- profile matching (word-boundary aware) ----
@@ -242,6 +175,77 @@ def matches_profile(posting, profile):
         if not _any_term(title, group):
             return False
     return True
+
+
+# ---- LLM fit scoring (optional) ----
+
+def get_client():
+    """Return an Anthropic client if a key is set and the SDK is installed, else None."""
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        return None
+    try:
+        import anthropic
+        return anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
+    except ImportError:
+        print("[warn] ANTHROPIC_API_KEY set but 'anthropic' package not installed; skipping fit scoring.")
+        return None
+
+
+def load_background(profile):
+    f = profile.get("background_file")
+    if not f:
+        return None
+    try:
+        return json.load(open(os.path.join(HERE, f)))
+    except Exception as e:
+        print(f"[warn] could not load background_file '{f}': {type(e).__name__}")
+        return None
+
+
+def score_fit(candidate, posting, client):
+    """Ask the model whether the candidate is a plausible fit. Returns
+    {'fit': yes|maybe|no, 'score': 0-100, 'reason': str}. Never raises — on any
+    failure returns a neutral 'maybe' with score -1 so the role is kept, not dropped."""
+    desc = posting.get("description") or "(no description available — judge from title and location)"
+    prompt = (
+        "You screen job postings for one specific candidate. Decide whether this role is "
+        "worth the candidate's attention. Be realistic: reward strong matches on seniority, "
+        "function, and domain; penalize clear mismatches.\n\n"
+        f"CANDIDATE:\n{json.dumps(candidate, indent=2)}\n\n"
+        f"JOB POSTING:\nTitle: {posting['title']}\nCompany: {posting['company']}\n"
+        f"Location: {posting['location']}\nDescription: {desc[:DESC_LIMIT]}\n\n"
+        'Respond with ONLY a JSON object, no prose and no markdown fences:\n'
+        '{"fit": "yes" | "maybe" | "no", "score": <integer 0-100>, "reason": "<20 words max>"}'
+    )
+    try:
+        msg = client.messages.create(model=FIT_MODEL, max_tokens=200,
+                                     messages=[{"role": "user", "content": prompt}])
+        text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text).strip()
+        r = json.loads(text)
+        fit = str(r.get("fit", "maybe")).lower()
+        return {"fit": fit if fit in ("yes", "maybe", "no") else "maybe",
+                "score": int(r.get("score", 50)),
+                "reason": str(r.get("reason", ""))[:200]}
+    except Exception as e:
+        return {"fit": "maybe", "score": -1, "reason": f"(scoring unavailable: {type(e).__name__})"}
+
+
+def enrich_with_fit(matched, prev, profile, client):
+    """Attach fit_result to each posting. Reuse cached verdicts from the previous
+    snapshot; only call the model for postings that are new this run."""
+    candidate = load_background(profile)
+    if not (candidate and client):
+        return 0
+    cached = {p["key"]: p["fit_result"] for p in (prev or []) if p.get("fit_result")}
+    scored = 0
+    for p in matched:
+        if p["key"] in cached:
+            p["fit_result"] = cached[p["key"]]
+        else:
+            p["fit_result"] = score_fit(candidate, p, client)
+            scored += 1
+    return scored
 
 
 # ---- pipeline ----
@@ -269,19 +273,22 @@ def diff(prev, curr):
     return new, removed, changed
 
 
-def _meta_bits(p):
-    # Ordered detail pieces shown after a title: location · salary · posted-age.
-    bits = [p.get("location") or ""]
-    if p.get("salary"):
-        bits.append(p["salary"])
-    fp = _fmt_posted(p.get("posted"))
-    if fp:
-        bits.append(fp)
-    return [b for b in bits if b]
+def _fit_badge(p):
+    fr = p.get("fit_result")
+    if not fr:
+        return ""
+    s = fr.get("score", -1)
+    return f" — **{s}/100** ({fr.get('fit','?')})" if s >= 0 else f" — _{fr.get('reason','')}_"
+
+
+def _fit_reason(p):
+    fr = p.get("fit_result")
+    return f"\n   _{fr['reason']}_" if fr and fr.get("reason") and fr.get("score", -1) >= 0 else ""
 
 
 def build_report(profile, matched, new, removed, changed, errors, first_run):
     today = datetime.date.today().isoformat()
+    scored = any(p.get("fit_result") for p in matched)
     L = [f"# {profile['label']}", f"### Job report — {today}", ""]
 
     # --- What's changed (leads the report) ---
@@ -293,29 +300,37 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
     else:
         if new:
             L.append(f"**New ({len(new)})**")
-            L += [f"- **{p['company']}** — [{p['title']}]({p['url']}) · {' · '.join(_meta_bits(p))}"
-                  for p in sorted(new, key=lambda x: x["company"])]
+            order = sorted(new, key=lambda x: -(x.get("fit_result") or {}).get("score", 0)) if scored \
+                else sorted(new, key=lambda x: x["company"])
+            for p in order:
+                L.append(f"- **{p['company']}** — [{p['title']}]({p['url']}) · {p['location']}{_fit_badge(p)}{_fit_reason(p)}")
         if changed:
             L.append(f"**Changed titles ({len(changed)})**")
             L += [f"- **{c['company']}** — \"{o['title']}\" → [{c['title']}]({c['url']})"
                   for o, c in changed]
         if removed:
             L.append(f"**Removed / filled ({len(removed)})**")
-            L += [f"- **{p['company']}** — {p['title']} · {' · '.join(_meta_bits(p))}"
+            L += [f"- **{p['company']}** — {p['title']} · {p['location']}"
                   for p in sorted(removed, key=lambda x: x["company"])]
     L.append("")
 
-    # --- All current matching roles, grouped by company ---
+    # --- All current matching roles ---
     L.append(f"## All current matching roles ({len(matched)})")
     if not matched:
         L.append("_No roles currently match this profile._")
+    elif scored:
+        # ranked best-fit first
+        for p in sorted(matched, key=lambda x: -(x.get("fit_result") or {}).get("score", 0)):
+            L.append(f"- **{p['company']}** — [{p['title']}]({p['url']}) · {p['location']}{_fit_badge(p)}{_fit_reason(p)}")
     else:
+        # grouped by company (no scoring)
         last = None
         for p in sorted(matched, key=lambda x: (x["company"], x["title"])):
             if p["company"] != last:
                 L.append(f"\n**{p['company']}**")
                 last = p["company"]
-            L.append(f"- [{p['title']}]({p['url']}) · {' · '.join(_meta_bits(p))}")
+            upd = f" · updated {p['updated']}" if p["updated"] else ""
+            L.append(f"- [{p['title']}]({p['url']}) · {p['location']}{upd}")
     L.append("")
 
     # --- Source warnings ---
@@ -326,169 +341,29 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
     return "\n".join(L)
 
 
-# ---- HTML report (dark-mode, email-safe: inline styles, table layout) ----
-
-# GitHub-dark palette. Kept as explicit 6-digit hex so no client-side blending is needed.
-_C = {
-    "bg": "#0d1117", "card": "#161b22", "panel": "#1c2128", "border": "#30363d",
-    "text": "#c9d1d9", "head": "#f0f6fc", "muted": "#8b949e", "link": "#58a6ff",
-    "green": "#3fb950", "amber": "#d29922", "red": "#f85149",
-    "green_bg": "#122619", "amber_bg": "#2b2411", "red_bg": "#2d1618",
-}
-_FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
-
-
-def _esc(s):
-    return ((s or "").replace("&", "&amp;").replace("<", "&lt;")
-            .replace(">", "&gt;").replace('"', "&quot;"))
-
-
-def _link(text, url):
-    return (f'<a href="{_esc(url)}" style="color:{_C["link"]};text-decoration:none;'
-            f'font-weight:600;">{_esc(text)}</a>')
-
-
-def _section(title):
-    return (f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:19px;'
-            f'font-weight:700;margin:26px 0 2px;">{_esc(title)}</div>'
-            f'<div style="height:1px;background-color:{_C["border"]};margin:10px 0 4px;"></div>')
-
-
-def _chip(label, key):
-    return (f'<div style="margin:16px 0 4px;"><span style="display:inline-block;'
-            f'background-color:{_C[key + "_bg"]};color:{_C[key]};font-family:{_FONT};'
-            f'font-size:12px;font-weight:700;letter-spacing:.3px;padding:4px 11px;'
-            f'border-radius:12px;">{_esc(label)}</span></div>')
-
-
-def _card(inner, accent):
-    return (f'<div style="border:1px solid {_C["border"]};border-left:3px solid {accent};'
-            f'background-color:{_C["panel"]};border-radius:8px;padding:11px 14px;'
-            f'margin:8px 0;">{inner}</div>')
-
-
-def _muted(text):
-    return (f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:13px;'
-            f'margin-top:4px;">{text}</div>')
-
-
-def _sal_html(p):
-    if not p.get("salary"):
-        return ""
-    return (f'<div style="color:{_C["green"]};font-family:{_FONT};font-size:13px;'
-            f'font-weight:700;margin-top:3px;">{_esc(p["salary"])}</div>')
-
-
-def _meta_html(p, lead=None):
-    # Muted "lead · location · Posted …" line, with salary called out in green beneath.
-    parts = [_esc(lead)] if lead else []
-    if p.get("location"):
-        parts.append(_esc(p["location"]))
-    fp = _fmt_posted(p.get("posted"))
-    if fp:
-        parts.append(_esc(fp))
-    return (_muted(" · ".join(parts)) if parts else "") + _sal_html(p)
-
-
-def build_html_report(profile, matched, new, removed, changed, errors, first_run):
-    today = datetime.date.today().isoformat()
-    B = []  # body-cell fragments, mirrors build_report's line list
-
-    # Header
-    B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:22px;'
-             f'font-weight:800;line-height:1.3;">{_esc(profile["label"])}</div>')
-    B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
-             f'margin-top:4px;">Job report · {today}</div>')
-
-    # What's changed
-    B.append(_section("What's changed"))
-    if first_run:
-        B.append(_muted("First run — baseline established. Changes will appear here on the next run."))
-    elif not (new or removed or changed):
-        B.append(_muted("No changes since the previous run."))
-    else:
-        if new:
-            B.append(_chip(f"New · {len(new)}", "green"))
-            for p in sorted(new, key=lambda x: x["company"]):
-                inner = _link(p["title"], p["url"]) + _meta_html(p, lead=p["company"])
-                B.append(_card(inner, _C["green"]))
-        if changed:
-            B.append(_chip(f"Changed titles · {len(changed)}", "amber"))
-            for o, c in changed:
-                inner = (_link(c["title"], c["url"])
-                         + _muted(f'{_esc(c["company"])} · was "{_esc(o["title"])}"')
-                         + _sal_html(c))
-                B.append(_card(inner, _C["amber"]))
-        if removed:
-            B.append(_chip(f"Removed / filled · {len(removed)}", "red"))
-            for p in sorted(removed, key=lambda x: x["company"]):
-                inner = (f'<span style="color:{_C["text"]};font-family:{_FONT};'
-                         f'font-weight:600;">{_esc(p["title"])}</span>'
-                         + _meta_html(p, lead=p["company"]))
-                B.append(_card(inner, _C["red"]))
-
-    # All current matching roles
-    B.append(_section(f"All current matching roles ({len(matched)})"))
-    if not matched:
-        B.append(_muted("No roles currently match this profile."))
-    else:
-        last = None
-        for p in sorted(matched, key=lambda x: (x["company"], x["title"])):
-            if p["company"] != last:
-                B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};'
-                         f'font-weight:700;font-size:15px;margin:18px 0 6px;">'
-                         f'{_esc(p["company"])}</div>')
-                last = p["company"]
-            B.append(f'<div style="margin:0 0 12px;line-height:1.4;">'
-                     f'{_link(p["title"], p["url"])}{_meta_html(p)}</div>')
-
-    # Source warnings
-    if errors:
-        B.append(_section(f"Source warnings ({len(errors)})"))
-        for e in errors:
-            B.append(f'<div style="color:{_C["amber"]};font-family:{_FONT};'
-                     f'font-size:13px;margin:0 0 4px;">{_esc(e)}</div>')
-
-    body = "".join(B)
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark">
-<meta name="supported-color-schemes" content="dark">
-<title>{_esc(profile["label"])}</title>
-</head>
-<body style="margin:0;padding:0;background-color:{_C['bg']};">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{_C['bg']};">
-<tr><td align="center" style="padding:24px 12px;">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background-color:{_C['card']};border:1px solid {_C['border']};border-radius:14px;">
-<tr><td style="padding:28px 30px 32px;">{body}</td></tr>
-</table>
-<div style="color:{_C['muted']};font-family:{_FONT};font-size:11px;margin-top:16px;">Prospector · Silicon Slopes job monitor</div>
-</td></tr>
-</table>
-</body>
-</html>"""
-
-
-def run_profile(profile, matched, errors):
+def run_profile(profile, pool, errors, client=None):
+    matched = [p for p in pool if matches_profile(p, profile)]
     snap = os.path.join(HERE, f"snapshot_{profile['name']}.json")
     rpt  = os.path.join(HERE, f"report_{profile['name']}.md")
-    html_path = os.path.join(HERE, f"report_{profile['name']}.html")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
+
+    scored = enrich_with_fit(matched, prev, profile, client)
+    if scored:
+        print(f"  [{profile['name']}] scored {scored} new role(s) with {FIT_MODEL}")
+    # Optional hard filter: drop roles the model rated a clear "no".
+    if profile.get("fit_mode") == "filter":
+        matched = [p for p in matched if (p.get("fit_result") or {}).get("fit") != "no"]
+
     if prev is None:
-        new, removed, changed, first = [], [], [], True
+        report = build_report(profile, matched, [], [], [], errors, first_run=True)
     else:
         new, removed, changed = diff(prev, matched)
-        first = False
-    report = build_report(profile, matched, new, removed, changed, errors, first_run=first)
-    report_html = build_html_report(profile, matched, new, removed, changed, errors, first_run=first)
-    # Drop private (underscore-prefixed) fetch metadata before persisting the snapshot.
-    clean = [{k: v for k, v in p.items() if not k.startswith("_")} for p in matched]
-    json.dump(clean, open(snap, "w"), indent=1)
+        report = build_report(profile, matched, new, removed, changed, errors, first_run=False)
+
+    # Persist a slim snapshot: keep fit_result (the cache) but drop bulky descriptions.
+    slim = [{k: v for k, v in p.items() if k != "description"} for p in matched]
+    json.dump(slim, open(snap, "w"), indent=1)
     open(rpt, "w").write(report)
-    open(html_path, "w").write(report_html)
     return matched, report
 
 
@@ -510,18 +385,12 @@ def main():
     else:
         profiles = [p for p in profiles if p.get("enabled", True)]
 
+    client = get_client()
     pool, errors = collect_pool()
-    print(f"Fetched {len(pool)} local/remote roles across all companies.")
-
-    # Match every profile first, then enrich the *union* of matched roles once, so a
-    # role two people match costs a single detail fetch (postings are shared references).
-    matched = {p["name"]: [x for x in pool if matches_profile(x, p)] for p in profiles}
-    union = {x["key"]: x for lst in matched.values() for x in lst}
-    enrich_salary(list(union.values()))
-    print(f"Enriched salary for {len(union)} matched roles.\n")
-
+    print(f"Fetched {len(pool)} local/remote roles across all companies."
+          f"{' Fit scoring: ON.' if client else ''}\n")
     for p in profiles:
-        _, report = run_profile(p, matched[p["name"]], errors)
+        matched, report = run_profile(p, pool, errors, client)
         print("=" * 70)
         print(report)
 

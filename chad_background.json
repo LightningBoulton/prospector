@@ -1,0 +1,171 @@
+{
+  "_comment": "Candidate background for the LLM fit scorer. This profile is intended to maximize accurate job-fit scoring by providing a detailed summary of Chad's experience, strengths, preferences, and constraints. Everything in this profile is sent to the model for each new job posting.",
+  "name": "Chad Boulton",
+  "current_title": "Principal Software Engineer",
+  "years_experience": 25,
+  "seniority_target": [
+    "Senior Software Engineer",
+    "Staff Software Engineer",
+    "Lead Software Engineer",
+    "Principal Software Engineer"
+  ],
+  "functions": [
+    "Full-stack software engineering",
+    "Frontend architecture",
+    "Backend API development",
+    "Cloud architecture",
+    "Platform engineering",
+    "Developer experience (DevEx)",
+    "Micro-frontend architecture",
+    "Microservices architecture",
+    "Technical leadership",
+    "Enterprise SaaS application development"
+  ],
+  "summary": "Principal Software Engineer with 25 years of experience building enterprise SaaS applications, modern web platforms, and cloud-native systems. Strong frontend-leaning full-stack engineer with deep expertise in React, .NET, AWS, and modern application architecture. Experienced leading technical direction, mentoring engineers, modernizing legacy systems, designing scalable micro-frontend and microservice architectures, and delivering polished, high-performance user experiences. Passionate about elegant software design, developer productivity, AI-assisted development, and solving complex technical problems while remaining a hands-on individual contributor.",
+  "strengths": [
+    "React architecture",
+    "TypeScript",
+    "Modern frontend engineering",
+    "Full-stack application development",
+    ".NET / ASP.NET Core",
+    "C#",
+    "Cloud architecture",
+    "AWS",
+    "Micro-frontends",
+    "Module Federation",
+    "Microservices",
+    "REST API design",
+    "Authentication and authorization",
+    "OAuth / JWT",
+    "Amazon Cognito",
+    "Developer tooling",
+    "Developer experience",
+    "Technical leadership",
+    "Software architecture",
+    "Enterprise SaaS",
+    "Performance optimization",
+    "UI/UX craftsmanship",
+    "Large-scale application modernization",
+    "Database design",
+    "SQL optimization",
+    "Cross-functional collaboration",
+    "Mentoring engineers",
+    "Rapid prototyping",
+    "AI-assisted software development"
+  ],
+  "tech_stack": [
+    "C#",
+    ".NET",
+    ".NET Core",
+    "ASP.NET Core",
+    "Entity Framework Core",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Material UI",
+    "MUI Data Grid",
+    "Blazor",
+    "MudBlazor",
+    "HTML",
+    "CSS",
+    "SQL Server",
+    "MySQL",
+    "REST APIs",
+    "OAuth",
+    "JWT",
+    "AWS",
+    "Amazon Cognito",
+    "AWS Lambda",
+    "Amazon S3",
+    "CloudFront",
+    "Amazon EKS",
+    "Helm",
+    "Docker",
+    "Kubernetes",
+    "Git",
+    "JetBrains Rider",
+    "Visual Studio",
+    "Module Federation",
+    "Micro-frontends",
+    "Microservices",
+    "CI/CD",
+    "Bash",
+    "Linux",
+    "macOS"
+  ],
+  "must_haves": [
+    "Hands-on software engineering",
+    "Senior individual contributor role",
+    "Modern engineering practices",
+    "Remote or Salt Lake Valley location",
+    "Competitive engineering culture",
+    "Compensation of at least $190,000/year"
+  ],
+  "nice_to_haves": [
+    "React or full-stack development",
+    "Cloud-native architecture",
+    "AWS",
+    "AI infrastructure",
+    "Developer tooling",
+    "Developer experience",
+    "Micro-frontends",
+    "Modern SaaS platform",
+    "Technical leadership opportunities",
+    "Greenfield development",
+    "Platform engineering",
+    "Strong design and UX culture",
+    "Flexible work schedule",
+    "Remote-first company"
+  ],
+  "dealbreakers": [
+    "Game development",
+    "Game programming",
+    "Pure management roles",
+    "Sales engineering",
+    "Customer support",
+    "Junior or entry-level positions",
+    "Non-engineering roles",
+    "Legacy-only technology stacks with no modernization efforts",
+    "Primarily travel-based positions",
+    "Relocation required"
+  ],
+  "location_preference": "Remote preferred. Also open to hybrid or onsite opportunities within the Salt Lake Valley, Utah. Not willing to relocate.",
+  "desired_compensation": {
+    "minimum_salary_usd": 190000,
+    "preferred_compensation": "Competitive salary and total compensation appropriate for a Principal Software Engineer."
+  },
+  "education": {
+    "degree": "Bachelor's degree coursework in Computer Engineering (3 years completed, no degree earned)"
+  },
+  "industry_preferences": {
+    "prioritize": [
+      "Enterprise software",
+      "B2B SaaS",
+      "Cloud platforms",
+      "Developer tools",
+      "AI infrastructure",
+      "Infrastructure software",
+      "Technology companies",
+      "Platform engineering"
+    ],
+    "avoid": [
+      "Game development",
+      "Video game studios"
+    ]
+  },
+  "previous_companies": [
+    {
+      "company": "Onboard (Conservice)",
+      "title": "Principal Software Engineer"
+    },
+    {
+      "company": "Evidon / Ghostery",
+      "title": "Senior Software Engineer / Technical Lead"
+    },
+    {
+      "company": "Zonos",
+      "title": "Software Engineer"
+    }
+  ],
+  "notes": "Strong preference for remaining a hands-on engineer rather than transitioning into people management. Particularly interested in challenging technical problems involving distributed systems, cloud infrastructure, AI platforms, developer productivity, enterprise architecture, and modern frontend engineering. Enjoys owning technical direction, mentoring engineers, modernizing legacy applications, and building polished products with excellent user experiences."
+}

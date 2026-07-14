@@ -10,7 +10,6 @@ Most tech companies don't hand-build their careers pages; they run them on an ap
 - Normalizes Greenhouse, Lever, and SmartRecruiters into one common shape.
 - Applies a global location gate (Utah + remote), then runs each **profile** — a named title filter — against the results.
 - Diffs each profile against its own previous snapshot to surface **new**, **changed**, and **removed/filled** postings.
-- Shows each role's **posting date and age** ("Posted Jul 10 · 3d ago") and its **salary** where the posting states one.
 - Writes a separate snapshot and report per profile, so one search never contaminates another's history.
 
 No headless browser, no HTML parsing for the current sources, no third-party dependencies. Python standard library only.
@@ -33,8 +32,7 @@ The daily run: read the company list → fetch and normalize every source once �
 | `profiles.json` | What to look for: one named title filter per person. |
 | `jobmonitor.py` | The engine — fetch, normalize, filter, diff, report. |
 | `snapshot_<name>.json` | Auto-generated per profile. The last run's matched roles, used for the diff. Commit these so history lives in git. |
-| `report_<name>.md` | Auto-generated per profile. The latest report in Markdown, for git history and the CLI. |
-| `report_<name>.html` | Auto-generated per profile. A styled, dark-mode, email-safe HTML version — this is what gets emailed. |
+| `report_<name>.md` | Auto-generated per profile. The latest report — this is what gets emailed. |
 
 ## Quick start
 
@@ -83,13 +81,6 @@ A coarse global gate runs once before any profile, configured at the top of `job
 - `KEEP_REMOTE` — when `True`, remote-tagged roles are kept regardless of geography.
 - `LOCAL_ONLY` — set `False` to track every role regardless of location.
 
-## Posting dates & salary
-
-Each role shows how long it's been open and, when the posting states it, the pay range.
-
-- **Posting date** is free from every ATS list feed (Greenhouse's `first_published`, Lever's `createdAt`, SmartRecruiters' `releasedDate`), so it costs no extra requests. Workday only publishes a relative string ("Posted 3 Days Ago"), which is approximated to a date — treat Workday ages as ballpark.
-- **Salary** is reliable only where the ATS exposes it structurally: **Lever** returns a `salaryRange` right in its feed. For Greenhouse, SmartRecruiters, and Workday there's no structured pay field, so Prospector fetches the job's detail page (only for roles that already passed a profile filter — never the whole pool) and extracts a "$X–$Y" range from the description text. That means salary appears when a posting spells out a range and is silently omitted when it doesn't — many roles simply don't publish pay. It's best-effort, not exhaustive.
-
 ## Adding a company
 
 1. Identify the ATS. A live endpoint returns JSON; a bad slug 404s on Greenhouse/Lever, but **SmartRecruiters returns an empty-but-valid response for any slug**, so confirm the role count is non-zero.
@@ -103,7 +94,7 @@ Companies on Workday, iCIMS, or a custom stack (several of the larger Silicon Sl
 
 ## Running daily with GitHub Actions
 
-Runs Prospector on a schedule, commits updated snapshots back, and emails each person their report — no server to maintain. The workflow lives at [`.github/workflows/prospector.yml`](.github/workflows/prospector.yml):
+Runs Prospector on a schedule, commits updated snapshots back, and emails each person their report — no server to maintain. Save as `.github/workflows/prospector.yml`:
 
 ```yaml
 name: prospector
@@ -111,11 +102,6 @@ on:
   schedule:
     - cron: "0 13 * * *"   # 7:00 AM Mountain (MDT); use "0 14 * * *" to hold at 7 in winter
   workflow_dispatch:
-    inputs:
-      chad_only:
-        description: "Test run: email only Chad, skip Lisa"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -128,14 +114,19 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
 
+      - name: Install dependencies
+        run: pip install anthropic   # only needed for the optional LLM fit-scoring
+
       - name: Run prospector (all profiles)
         run: python jobmonitor.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # omit to disable fit scoring
 
       - name: Commit updated snapshots
         run: |
           git config user.name  "prospector-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add snapshot_*.json report_*.md report_*.html
+          git add snapshot_*.json report_*.md
           git commit -m "Daily run: $(date -u +%Y-%m-%d)" || echo "No changes"
           git push
 
@@ -150,10 +141,9 @@ jobs:
           from: Prospector Bot
           to: ${{ secrets.MAIL_TO_CHAD }}
           subject: "Prospector — your daily jobs report"
-          html_body: file://report_chad.html
+          body: file://report_chad.md
 
       - name: Email Lisa's report
-        if: ${{ inputs.chad_only != true }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -164,12 +154,8 @@ jobs:
           from: Prospector Bot
           to: ${{ secrets.MAIL_TO_LISA }}
           subject: "Prospector — director / ops roles today"
-          html_body: file://report_lisa.html
+          body: file://report_lisa.md
 ```
-
-### Test runs without spamming Lisa
-
-Trigger the workflow manually from the **Actions** tab (**Run workflow**) and check **"Test run: email only Chad, skip Lisa."** The full pipeline still runs — Chad gets his email so you can eyeball the output — but Lisa's send is skipped. Scheduled runs leave the box unchecked, so Lisa is emailed as normal. Note a manual test run still commits updated snapshots, which advances the diff baseline.
 
 ### Credentials and recipients — you set these, not this repo
 
@@ -178,14 +164,30 @@ Never put a password or someone's email address in a committed file. In **Settin
 - `MAIL_USERNAME` — the sending Gmail address.
 - `MAIL_PASSWORD` — a Gmail **App Password** (created in your Google account's security settings; a normal password won't work with 2FA and shouldn't be used regardless).
 - `MAIL_TO_CHAD`, `MAIL_TO_LISA` — recipient addresses (secrets keep Lisa's address out of the repo).
+- `ANTHROPIC_API_KEY` — **optional**, enables LLM fit scoring (see below). Leave it unset and the tool runs exactly as before, minus the ranking. Get one from the Anthropic developer console; it's separate from a Claude.ai subscription and billed per use.
 
 The workflow references these by name only, so nothing sensitive touches the code or git history.
 
-Each run writes two report files per profile: `report_<name>.md` (Markdown, for git history and CLI) and `report_<name>.html` (a styled, dark-mode, email-safe HTML version). The workflow emails the HTML via `html_body:`. The HTML uses inline styles and a table layout with an explicit dark background and light text, so it renders consistently across mail clients without relying on client-side theming.
+Report bodies are Markdown, which most mail clients render as clean plain text. For rich formatting, generate an HTML version in `jobmonitor.py` and use `html_body:`.
+
+## LLM fit scoring (optional)
+
+Turns a long list of keyword matches into a ranked shortlist with a reason for each role. After the keyword filter, each **new** posting is sent to the Anthropic API with a candidate background file, and the model returns a fit verdict, a 0–100 score, and a one-line reason. Reports then lead with the best fits.
+
+To enable it for a profile:
+
+1. Add `ANTHROPIC_API_KEY` as a repo secret and the `pip install anthropic` step (both shown above).
+2. Create a background JSON for the person (see `lisa_background.json` for the shape — titles, seniority, functions, must-haves, dealbreakers, location) and point the profile at it:
+   ```json
+   { "name": "lisa", "background_file": "lisa_background.json", "fit_mode": "rank", ... }
+   ```
+3. `fit_mode` is `"rank"` (keep everything, sort by score — recommended while calibrating) or `"filter"` (drop roles the model rates a clear "no").
+
+Cost stays low: only **new** postings are scored, and each verdict is cached in the snapshot and reused, so the daily bill tracks new roles, not the whole list. If the key is unset, the package is missing, or a call fails, the affected role is simply kept unscored — the run never breaks. Model is set by `FIT_MODEL` in `jobmonitor.py` (`claude-sonnet-5`, or `claude-haiku-4-5-20251001` for less cost); confirm current model names at docs.claude.com.
 
 ## Roadmap
 
-- **Relevance filter** — a scoring pass on each profile's survivors (a cheap keyword rank first, an optional LLM pass on the rest) so reports stay signal-heavy.
+- ~~**Relevance filter**~~ — done: LLM fit scoring (above). Next: tune background/prompt and consider `fit_mode:"filter"` once verdicts are trusted.
 - **Tier-2 coverage** — pin down endpoints for the larger Workday-based employers in `needs_identification` (Adobe, Domo, Pluralsight, etc.).
 - **Source health alerts** — flag when a company's endpoint suddenly returns zero, which usually means an ATS migration and a stale slug.
 
