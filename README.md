@@ -143,8 +143,8 @@ jobs:
   prospect:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
 
       - name: Install optional deps (LLM fit scoring)
@@ -164,7 +164,7 @@ jobs:
           git push
 
       - name: Email Chad's report
-        uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
           server_port: 465
@@ -178,7 +178,7 @@ jobs:
 
       - name: Email Lisa's report
         if: ${{ inputs.chad_only != true }}
-        uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
           server_port: 465
