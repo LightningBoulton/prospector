@@ -10,6 +10,7 @@ Most tech companies don't hand-build their careers pages; they run them on an ap
 - Normalizes Greenhouse, Lever, and SmartRecruiters into one common shape.
 - Applies a global location gate (Utah + remote), then runs each **profile** — a named title filter — against the results.
 - Diffs each profile against its own previous snapshot to surface **new**, **changed**, and **removed/filled** postings.
+- Shows each role's **posting date and age** ("Posted Jul 10 · 3d ago") and its **salary** where the posting states one.
 - Writes a separate snapshot and report per profile, so one search never contaminates another's history.
 
 No headless browser, no HTML parsing for the current sources, no third-party dependencies. Python standard library only.
@@ -32,7 +33,8 @@ The daily run: read the company list → fetch and normalize every source once �
 | `profiles.json` | What to look for: one named title filter per person. |
 | `jobmonitor.py` | The engine — fetch, normalize, filter, diff, report. |
 | `snapshot_<name>.json` | Auto-generated per profile. The last run's matched roles, used for the diff. Commit these so history lives in git. |
-| `report_<name>.md` | Auto-generated per profile. The latest report — this is what gets emailed. |
+| `report_<name>.md` | Auto-generated per profile. The latest report in Markdown, for git history and the CLI. |
+| `report_<name>.html` | Auto-generated per profile. A styled, dark-mode, email-safe HTML version — this is what gets emailed. |
 
 ## Quick start
 
@@ -80,6 +82,13 @@ A coarse global gate runs once before any profile, configured at the top of `job
 - `LOCAL_KEYWORDS` — city/state terms that count as local.
 - `KEEP_REMOTE` — when `True`, remote-tagged roles are kept regardless of geography.
 - `LOCAL_ONLY` — set `False` to track every role regardless of location.
+
+## Posting dates & salary
+
+Each role shows how long it's been open and, when the posting states it, the pay range.
+
+- **Posting date** is free from every ATS list feed (Greenhouse's `first_published`, Lever's `createdAt`, SmartRecruiters' `releasedDate`), so it costs no extra requests. Workday only publishes a relative string ("Posted 3 Days Ago"), which is approximated to a date — treat Workday ages as ballpark.
+- **Salary** is reliable only where the ATS exposes it structurally: **Lever** returns a `salaryRange` right in its feed. For Greenhouse, SmartRecruiters, and Workday there's no structured pay field, so Prospector looks for a "$X–$Y" range in the job description — reusing the description it already fetched (Greenhouse) or fetching the posting's detail page (SmartRecruiters/Workday), and only for roles that already passed a profile filter, never the whole pool. Salary appears when a posting spells out a range and is silently omitted otherwise — many roles simply don't publish pay. Best-effort, not exhaustive.
 
 ## Adding a company
 

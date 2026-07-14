@@ -34,18 +34,35 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 ## Data model
 
 Every posting normalizes to:
-`{key, company, title, location, url, updated}`
+`{key, company, title, location, url, posted, salary, description}` (+ private `_ats`, `_detail_url`)
 `key = "<Company>::<ats_id>"` is the **stable diff identity** — never change how it's built,
 or every existing snapshot will read as fully new/removed on the next run.
+`posted` = best "first posted" date (YYYY-MM-DD) from the list feed; rendered as
+"Posted Jul 10 · 3d ago" (`_fmt_posted`). `salary` = pay string when known. `description`
+feeds LLM scoring + salary regex. `description`, `_ats`, and `_detail_url` are **stripped
+before the snapshot is written** (`run_profile`). Diff ignores everything but `key`/`title`.
 
 Diff: compares `key` sets. `new` = in current not previous; `removed` = in previous not
 current; `changed` = same `key`, different `title`.
 
+## Posting date & salary enrichment
+
+- **`posted`** is free from every list feed (Greenhouse `first_published`, Lever `createdAt`,
+  SmartRecruiters `releasedDate`, Workday `_workday_date(postedOn)` — approximate).
+- **`salary`**: Lever gives a structured `salaryRange` inline (`_lever_salary`). For the others,
+  `enrich_salary` regexes a "$X–$Y" range (`_PAY_RE`) out of the `description` already fetched
+  (Greenhouse), and only falls back to a per-posting detail fetch (`_detail_text`) when there's
+  no description (SmartRecruiters/Workday are title-only). Cached by `key` (`_SALARY_CACHE`) so a
+  role matched by multiple profiles costs one fetch. Keep it bounded to matched roles — the only
+  place besides the list feeds the engine makes calls. Salary is best-effort: absent when a
+  posting doesn't state pay.
+
 ## ATS integration notes (hard-won — read before touching fetchers)
 
-- **Greenhouse**: `GET boards-api.greenhouse.io/v1/boards/{slug}/jobs` → `{jobs:[{id,title,location:{name},absolute_url,updated_at}]}`. 404s on bad slug. A real board can legitimately return `jobs:[]`.
-- **Lever**: `GET api.lever.co/v0/postings/{slug}?mode=json` → `[{id,text,categories:{location},hostedUrl,createdAt}]`. `text` is the title. `createdAt` is **epoch milliseconds**. 404s on bad slug.
-- **SmartRecruiters**: `GET api.smartrecruiters.com/v1/companies/{slug}/postings?limit=100&offset=N` → `{totalFound,content:[{id,name,location:{city,region,remote,fullLocation},releasedDate}]}`. `name` is the title. **Returns HTTP 200 with `totalFound:0` for ANY slug, including nonsense** — so a 0-count SmartRecruiters response does NOT confirm the company exists. Always verify count > 0 when adding one. Paginate via `offset` until `offset >= totalFound`. Public apply URL: `https://jobs.smartrecruiters.com/{slug}/{id}`.
+- **Greenhouse**: `GET boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true` → `{jobs:[{id,title,location:{name},absolute_url,first_published,updated_at,content}]}`. Use `first_published` for `posted` (fallback `updated_at`); `content=true` gives the HTML description (LLM + salary regex). 404s on bad slug. A real board can legitimately return `jobs:[]`.
+- **Lever**: `GET api.lever.co/v0/postings/{slug}?mode=json` → `[{id,text,categories:{location},hostedUrl,createdAt,salaryRange,salaryDescriptionPlain,descriptionPlain}]`. `text` is the title. `createdAt` is **epoch milliseconds**. **`salaryRange {min,max,currency,interval}` is inline** — the only ATS here giving structured pay free. 404s on bad slug.
+- **SmartRecruiters**: `GET api.smartrecruiters.com/v1/companies/{slug}/postings?limit=100&offset=N` → `{totalFound,content:[{id,name,location:{city,region,remote,fullLocation},releasedDate}]}`. `name` is the title; `releasedDate` → `posted`. **Returns HTTP 200 with `totalFound:0` for ANY slug, including nonsense** — so a 0-count SmartRecruiters response does NOT confirm the company exists. Always verify count > 0 when adding one. Paginate via `offset` until `offset >= totalFound`. Public apply URL: `https://jobs.smartrecruiters.com/{slug}/{id}`. No description in the list; salary regexed from the detail endpoint `jobAd.sections` (`/postings/{id}`).
+- **Detail endpoints (salary fallback, matched roles only)**: Greenhouse `content`, SmartRecruiters `jobAd.sections`, Workday `jobPostingInfo.jobDescription` — HTML, cleaned by `_clean_html` and regexed by `enrich_salary`.
 
 ## Profile matching semantics
 

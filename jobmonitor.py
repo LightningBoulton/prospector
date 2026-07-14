@@ -59,12 +59,28 @@ def _clean_html(s, limit=DESC_LIMIT):
 # ---- per-ATS fetchers, each returning normalized postings ----
 
 def fetch_greenhouse(c):
+    # `first_published` is the true post date (`updated_at` is edit time). `content=true`
+    # yields the description used for both LLM scoring and salary regex.
     d = _get(f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs?content=true")
-    return [_norm(c, str(j["id"]), j.get("title", ""),
-                  (j.get("location") or {}).get("name", ""),
-                  j.get("absolute_url", ""), (j.get("updated_at") or "")[:10],
-                  _clean_html(j.get("content", "")))
-            for j in d.get("jobs", [])]
+    out = []
+    for j in d.get("jobs", []):
+        jid = str(j["id"])
+        out.append(_norm(c, jid, j.get("title", ""),
+                         (j.get("location") or {}).get("name", ""),
+                         j.get("absolute_url", ""),
+                         (j.get("first_published") or j.get("updated_at") or "")[:10],
+                         ats="greenhouse",
+                         detail_url=f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs/{jid}",
+                         description=_clean_html(j.get("content", ""))))
+    return out
+
+
+def _lever_salary(j):
+    # Lever exposes pay in the list response: prefer the structured range, else the prose.
+    r = j.get("salaryRange") or {}
+    if r.get("min") and r.get("max"):
+        return _fmt_pay(r["min"], r["max"], r.get("currency", "USD"), r.get("interval"))
+    return (j.get("salaryDescriptionPlain") or "").strip() or None
 
 
 def fetch_lever(c):
@@ -76,7 +92,8 @@ def fetch_lever(c):
         out.append(_norm(c, str(j["id"]), j.get("text", ""),
                          (j.get("categories") or {}).get("location", ""),
                          j.get("hostedUrl", ""), date,
-                         (j.get("descriptionPlain") or "")[:DESC_LIMIT]))
+                         salary=_lever_salary(j), ats="lever",
+                         description=(j.get("descriptionPlain") or "")[:DESC_LIMIT]))
     return out
 
 
@@ -92,7 +109,8 @@ def fetch_smartrecruiters(c):
                 loc_str = (loc_str + " (Remote)").strip()
             out.append(_norm(c, str(j["id"]), j.get("name", ""), loc_str,
                              f"https://jobs.smartrecruiters.com/{c['slug']}/{j['id']}",
-                             (j.get("releasedDate") or "")[:10]))
+                             (j.get("releasedDate") or "")[:10], ats="smartrecruiters",
+                             detail_url=f"https://api.smartrecruiters.com/v1/companies/{c['slug']}/postings/{j['id']}"))
         offset += 100
         if offset >= d.get("totalFound", 0):
             break
@@ -137,7 +155,9 @@ def fetch_workday(c):
             if search_text and m:
                 loc = f"{search_text} (+{int(m.group(1)) - 1} more)"
             out.append(_norm(c, str(ext), j.get("title", ""), loc,
-                             f"https://{host}/{site}{path}", _workday_date(j.get("postedOn", ""))))
+                             f"https://{host}/{site}{path}", _workday_date(j.get("postedOn", "")),
+                             ats="workday",
+                             detail_url=f"https://{host}/wday/cxs/{tenant}/{site}{path}"))
         offset += 20
         if offset >= total or not page:
             break
@@ -148,10 +168,16 @@ FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday}
 
 
-def _norm(company, ext_id, title, location, url, updated, description=""):
+def _norm(company, ext_id, title, location, url, posted,
+          salary=None, ats=None, detail_url=None, description=""):
+    # `posted` = best "first posted" date the list endpoint gives (YYYY-MM-DD or "").
+    # `salary` = pay known for free at list time (Lever); else filled by enrich_salary().
+    # `description` feeds LLM scoring + salary regex. `_ats`/`_detail_url` are private
+    # (underscore-prefixed) and stripped, along with `description`, before a snapshot is written.
     return {"key": f"{company['name']}::{ext_id}", "company": company["name"],
             "title": title.strip(), "location": location.strip(),
-            "url": url, "updated": updated, "description": description}
+            "url": url, "posted": posted, "salary": salary, "description": description,
+            "_ats": ats, "_detail_url": detail_url}
 
 
 def is_local(loc):
@@ -159,6 +185,73 @@ def is_local(loc):
     if KEEP_REMOTE and "remote" in l:
         return True
     return any(k in l for k in LOCAL_KEYWORDS)
+
+
+# ---- posting-date + salary enrichment (Lever inline; others: description/detail regex) ----
+
+_INTERVAL = {"per-year-salary": "/yr", "per-hour-wage": "/hr",
+             "per-month-salary": "/mo", "per-week-salary": "/wk", "per-day-wage": "/day"}
+
+
+def _fmt_pay(lo, hi, currency, interval):
+    sym = "$" if currency in (None, "USD") else f"{currency} "
+    unit = _INTERVAL.get(interval, "")
+    fmt = lambda n: f"{sym}{n:,.0f}" if float(n) >= 1000 else f"{sym}{float(n):,.2f}"
+    return f"{fmt(lo)}–{fmt(hi)}{unit}"
+
+
+# A "$X – $Y" pay range in free text: two dollar amounts joined by a dash/"to".
+_PAY_RE = re.compile(
+    r"\$\s?\d{1,3}(?:,\d{3})*(?:\.\d+)?\s?[kK]?"          # first amount
+    r"\s*(?:-|–|—|to)\s*"                                 # separator: - – — or "to"
+    r"\$?\s?\d{1,3}(?:,\d{3})*(?:\.\d+)?\s?[kK]?")        # second amount
+
+_SALARY_CACHE = {}   # key -> salary string|None, so a role shared across profiles is fetched once
+
+
+def _detail_text(p):
+    # Plain-text job description from each ATS's per-posting detail endpoint (salary fallback).
+    d, ats = _get(p["_detail_url"]), p["_ats"]
+    if ats == "smartrecruiters":
+        secs = (d.get("jobAd") or {}).get("sections") or {}
+        text = " ".join(v.get("text", "") for v in secs.values() if isinstance(v, dict))
+        return _clean_html(text, limit=20000)
+    if ats == "workday":
+        return _clean_html((d.get("jobPostingInfo") or {}).get("jobDescription", ""), limit=20000)
+    return _clean_html(d.get("content", ""), limit=20000)   # greenhouse
+
+
+def enrich_salary(postings):
+    # Fill missing salary: regex the description we already fetched; only hit the detail
+    # endpoint when there's no description (SmartRecruiters/Workday are title-only). Cached
+    # by key so a role shared across profiles costs at most one detail fetch. Bounded to
+    # the matched roles passed in — never the whole pool.
+    for p in postings:
+        if p.get("salary"):
+            continue
+        if p["key"] not in _SALARY_CACHE:
+            try:
+                text = p.get("description") or ""
+                if not text and p.get("_detail_url"):
+                    text = _detail_text(p)
+                m = _PAY_RE.search(text or "")
+                _SALARY_CACHE[p["key"]] = m.group(0).strip() if m else None
+            except Exception:
+                _SALARY_CACHE[p["key"]] = None
+        p["salary"] = _SALARY_CACHE[p["key"]]
+
+
+def _fmt_posted(posted):
+    # "Posted Jul 10 · 3d ago" from a YYYY-MM-DD string; "" if absent/unparseable.
+    if not posted:
+        return ""
+    try:
+        d = datetime.date.fromisoformat(posted)
+    except ValueError:
+        return ""
+    days = (datetime.date.today() - d).days
+    age = "today" if days <= 0 else "1d ago" if days == 1 else f"{days}d ago"
+    return f"Posted {d:%b} {d.day} · {age}"
 
 
 # ---- profile matching (word-boundary aware) ----
@@ -306,6 +399,17 @@ def _fit_reason(p):
     return f"\n   _{fr['reason']}_" if fr and fr.get("reason") and fr.get("score", -1) >= 0 else ""
 
 
+def _meta_md(p):
+    # "location · salary · Posted …" — the detail suffix after a role's title.
+    bits = [p.get("location") or ""]
+    if p.get("salary"):
+        bits.append(p["salary"])
+    fp = _fmt_posted(p.get("posted"))
+    if fp:
+        bits.append(fp)
+    return " · ".join(b for b in bits if b)
+
+
 def build_report(profile, matched, new, removed, changed, errors, first_run):
     today = datetime.date.today().isoformat()
     scored = any(p.get("fit_result") for p in matched)
@@ -323,14 +427,14 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
             order = sorted(new, key=lambda x: -(x.get("fit_result") or {}).get("score", 0)) if scored \
                 else sorted(new, key=lambda x: x["company"])
             for p in order:
-                L.append(f"- **{p['company']}** — [{p['title']}]({p['url']}) · {p['location']}{_fit_badge(p)}{_fit_reason(p)}")
+                L.append(f"- **{p['company']}** — [{p['title']}]({p['url']}) · {_meta_md(p)}{_fit_badge(p)}{_fit_reason(p)}")
         if changed:
             L.append(f"**Changed titles ({len(changed)})**")
             L += [f"- **{c['company']}** — \"{o['title']}\" → [{c['title']}]({c['url']})"
                   for o, c in changed]
         if removed:
             L.append(f"**Removed / filled ({len(removed)})**")
-            L += [f"- **{p['company']}** — {p['title']} · {p['location']}"
+            L += [f"- **{p['company']}** — {p['title']} · {_meta_md(p)}"
                   for p in sorted(removed, key=lambda x: x["company"])]
     L.append("")
 
@@ -341,7 +445,7 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
     elif scored:
         # ranked best-fit first
         for p in sorted(matched, key=lambda x: -(x.get("fit_result") or {}).get("score", 0)):
-            L.append(f"- **{p['company']}** — [{p['title']}]({p['url']}) · {p['location']}{_fit_badge(p)}{_fit_reason(p)}")
+            L.append(f"- **{p['company']}** — [{p['title']}]({p['url']}) · {_meta_md(p)}{_fit_badge(p)}{_fit_reason(p)}")
     else:
         # grouped by company (no scoring)
         last = None
@@ -349,8 +453,7 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
             if p["company"] != last:
                 L.append(f"\n**{p['company']}**")
                 last = p["company"]
-            upd = f" · updated {p['updated']}" if p["updated"] else ""
-            L.append(f"- [{p['title']}]({p['url']}) · {p['location']}{upd}")
+            L.append(f"- [{p['title']}]({p['url']}) · {_meta_md(p)}")
     L.append("")
 
     # --- Source warnings ---
@@ -427,13 +530,18 @@ def _fit_reason_html(p):
 
 
 def _meta_html(p, lead=None):
-    # Muted "lead · location · updated …" line.
+    # Muted "lead · location · Posted …" line, with salary called out in green beneath.
     parts = [_esc(lead)] if lead else []
     if p.get("location"):
         parts.append(_esc(p["location"]))
-    if p.get("updated"):
-        parts.append(f'updated {_esc(p["updated"])}')
-    return _muted(" · ".join(parts)) if parts else ""
+    fp = _fmt_posted(p.get("posted"))
+    if fp:
+        parts.append(_esc(fp))
+    line = _muted(" · ".join(parts)) if parts else ""
+    if p.get("salary"):
+        line += (f'<div style="color:{_C["green"]};font-family:{_FONT};font-size:13px;'
+                 f'font-weight:700;margin-top:3px;">{_esc(p["salary"])}</div>')
+    return line
 
 
 def _role_html(p, lead=None):
@@ -533,6 +641,7 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
 
 def run_profile(profile, pool, errors, client=None):
     matched = [p for p in pool if matches_profile(p, profile)]
+    enrich_salary(matched)   # cache-deduped across profiles; postings are shared refs
     snap = os.path.join(HERE, f"snapshot_{profile['name']}.json")
     rpt  = os.path.join(HERE, f"report_{profile['name']}.md")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
@@ -554,8 +663,10 @@ def run_profile(profile, pool, errors, client=None):
         report = build_report(*args, first_run=False)
         report_html = build_html_report(*args, first_run=False)
 
-    # Persist a slim snapshot: keep fit_result (the cache) but drop bulky descriptions.
-    slim = [{k: v for k, v in p.items() if k != "description"} for p in matched]
+    # Persist a slim snapshot: keep fit_result (the cache) but drop the bulky description
+    # and the private fetch metadata (_ats/_detail_url).
+    slim = [{k: v for k, v in p.items() if k != "description" and not k.startswith("_")}
+            for p in matched]
     json.dump(slim, open(snap, "w"), indent=1)
     open(rpt, "w").write(report)
     open(os.path.join(HERE, f"report_{profile['name']}.html"), "w").write(report_html)
