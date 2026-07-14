@@ -1,16 +1,9 @@
 # Chad — Software / Frontend / Microservices
 ### Job report — 2026-07-14
+_⭐ = posted in the last 7 days_
 
 ## What's changed
-**Removed / filled (8)**
-- **BambooHR** — Director of Software Engineering - Payroll Services · Utah | Hybrid · Posted Jan 12 · 183d ago
-- **Filevine** — Software Development Engineer (Forward Deployed) · Salt Lake City, Utah · Posted Dec 22 · 204d ago
-- **Instructure** — L1 Technical Support Engineer · Salt Lake City, UT, United States · Posted Oct 23 · 2821d ago
-- **Podium** — Senior AI Engineer - Agentic · Lehi, Utah, Open to Remote · Posted Sep 11 · 306d ago
-- **Podium** — Senior Software Engineer · Lehi, Utah, Open to Remote · Posted Aug 4 · 344d ago
-- **Podium** — Senior Software Engineer · Lehi, Utah · Posted Feb 19 · 510d ago
-- **Podium** — Staff AI Engineer - USA · Lehi, Utah, Open to Remote · Posted Dec 22 · 204d ago
-- **Podium** — Staff AI Engineer - Utah · Lehi, Utah · Posted Dec 22 · 204d ago
+_No changes since the previous run._
 
 ## All current matching roles (45)
 - **BambooHR** — [Staff Software Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6008526004) · Utah | Remote · Posted Jun 26 · 18d ago — **80/100** (yes)
@@ -35,17 +28,17 @@
    _Staff-level fits, Lehi location works, but 'Design Engineer' role/domain fit unclear without more detail._
 - **Ancestry** — [Senior Software Engineer](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote---US-Only/Senior-Software-Engineer_R003346) · Remote - US Only · $114,480 - $139,590 · Posted Jun 14 · 30d ago — **55/100** (maybe)
    _Senior SWE remote matches seniority/location, but no description, domain/comp/tech-stack fit unknown._
-- **Route** — [Sr. Core Backend Engineer](https://careers.route.com/job-board?gh_jid=7803003003) · Remote · Posted Jul 13 · 1d ago — **50/100** (maybe)
+- ⭐ **Route** — [Sr. Core Backend Engineer](https://careers.route.com/job-board?gh_jid=7803003003) · Remote · Posted Jul 13 · 1d ago — **50/100** (maybe)
    _Senior backend fit but lacks frontend focus; unclear stack match, comp/domain unverified for ecommerce SaaS._
 - **Adobe** — [Senior Observability Developer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-Observability-Developer_R166999) · Lehi (+1 more) · $208,300 - $301,600 · Posted Jun 14 · 30d ago — **50/100** (maybe)
    _Senior IC role, good location, but observability niche unclear fit vs frontend/full-stack strengths._
 - **Adobe** — [TechSEO Full-Stack Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/TechSEO-Full-Stack-Engineer_R168986) · Lehi (+3 more) · $148,500 - $214,950 · Posted Jun 18 · 26d ago — **45/100** (maybe)
    _Full-stack engineering fits skills, but TechSEO niche and Adobe fit/seniority/comp unclear from minimal posting._
-- **Ancestry** — [Principal Design Engineer, Storytelling](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Principal-Design-Engineer--Storytelling_R003390) · Draper, UT · $153,000 - $182,000 · Posted Jul 8 · 6d ago — **40/100** (maybe)
+- ⭐ **Ancestry** — [Principal Design Engineer, Storytelling](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Principal-Design-Engineer--Storytelling_R003390) · Draper, UT · $153,000 - $182,000 · Posted Jul 8 · 6d ago — **40/100** (maybe)
    _Principal-level in Utah, but 'Design Engineer, Storytelling' suggests design/UX focus, not core backend/full-stack fit._
 - **DigiCert** — [Senior Site Reliability Engineer](https://www.digicert.com/careers/?gh_jid=8585312002) · Lehi, Utah · Posted Jun 22 · 22d ago — **25/100** (no)
    _SRE ops-focused role, not frontend/full-stack engineering; mismatch with candidate's core function despite location fit._
-- **Health Catalyst** — [Site Reliability Engineer- AI Enablement](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Site-Reliability-Engineer--AI-Enablement_REQ-3259) · US Remote · Posted Jul 9 · 5d ago — **25/100** (no)
+- ⭐ **Health Catalyst** — [Site Reliability Engineer- AI Enablement](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Site-Reliability-Engineer--AI-Enablement_REQ-3259) · US Remote · Posted Jul 9 · 5d ago — **25/100** (no)
    _SRE role mismatches candidate's frontend/full-stack engineering background; different function despite AI/cloud overlap._
 - **DigiCert** — [Principal Site Reliability Engineer](https://www.digicert.com/careers/?gh_jid=8601785002) · Lehi, Utah · Posted Jun 24 · 20d ago — **20/100** (no)
    _SRE/ops-focused role, not hands-on full-stack/frontend engineering; mismatch with core function despite Utah location._
@@ -89,11 +82,11 @@
    _QA automation role, not software engineering; wrong function despite Utah location and SaaS domain match._
 - **Cricut** — [Senior Hardware Test Engineer](https://jobs.smartrecruiters.com/cricut/744000135585568) · South Jordan, UT, United States · Posted Jul 2 · 12d ago — **5/100** (no)
    _Hardware test engineering role, unrelated to Chad's software/frontend/cloud engineering background._
-- **BILL** — [Lead Product Manager - Risk Platform](https://www.bill.com/job?6112258004&gh_jid=6112258004) · Draper, Utah, United States; San Jose, California, United States; United States · Posted Jul 8 · 6d ago — **5/100** (no)
+- ⭐ **BILL** — [Lead Product Manager - Risk Platform](https://www.bill.com/job?6112258004&gh_jid=6112258004) · Draper, Utah, United States; San Jose, California, United States; United States · Posted Jul 8 · 6d ago — **5/100** (no)
    _Product Manager role, not engineering; dealbreaker per candidate's IC engineering focus._
-- **BILL** — [Lead Product Manager - Rewards Platform](https://www.bill.com/job?6101858004&gh_jid=6101858004) · Draper, Utah, United States; San Jose, California, United States; United States · Posted Jul 9 · 5d ago — **3/100** (no)
+- ⭐ **BILL** — [Lead Product Manager - Rewards Platform](https://www.bill.com/job?6101858004&gh_jid=6101858004) · Draper, Utah, United States; San Jose, California, United States; United States · Posted Jul 9 · 5d ago — **3/100** (no)
    _Product Manager role, not engineering; dealbreaker mismatch with candidate's hands-on IC engineering focus._
-- **BILL** — [Senior Lead Product Manager - Risk Platform](https://www.bill.com/job?6104509004&gh_jid=6104509004) · Draper, Utah, United States; San Jose, California, United States; United States · Posted Jul 8 · 6d ago — **3/100** (no)
+- ⭐ **BILL** — [Senior Lead Product Manager - Risk Platform](https://www.bill.com/job?6104509004&gh_jid=6104509004) · Draper, Utah, United States; San Jose, California, United States; United States · Posted Jul 8 · 6d ago — **3/100** (no)
    _Product management role, not hands-on engineering; dealbreaker mismatch despite location fit._
 - **Canopy** — [Strategic Partnerships & Platform Ecosystem Manager](https://job-boards.greenhouse.io/canopytax/jobs/4301595009) · South Jordan, UT · Posted Jun 30 · 14d ago — **3/100** (no)
    _Non-engineering partnerships/product-commercial role; not hands-on IC engineering, dealbreaker mismatch._
