@@ -14,7 +14,7 @@ Usage:
 No Playwright, no HTML scraping — every source here is a structured JSON API.
 """
 
-import json, os, re, sys, html, urllib.request, datetime
+import hashlib, json, os, re, sys, html, urllib.request, datetime
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
@@ -202,6 +202,12 @@ def load_background(profile):
         return None
 
 
+def _bg_fingerprint(candidate):
+    # Short hash of the candidate content actually sent to the model. Changing the
+    # background file changes this, which invalidates cached verdicts (see enrich_with_fit).
+    return hashlib.sha256(json.dumps(candidate, sort_keys=True).encode()).hexdigest()[:12]
+
+
 def score_fit(candidate, posting, client):
     """Ask the model whether the candidate is a plausible fit. Returns
     {'fit': yes|maybe|no, 'score': 0-100, 'reason': str}. Never raises — on any
@@ -238,20 +244,26 @@ def score_fit(candidate, posting, client):
 
 
 def enrich_with_fit(matched, prev, profile, client):
-    """Attach fit_result to each posting. Reuse cached verdicts from the previous
-    snapshot; only call the model for postings that are new this run. Failed verdicts
-    (score < 0) are NOT cached for reuse, so a transient parse error retries next run."""
+    """Attach fit_result to each posting. Reuse a cached verdict only when it scored
+    successfully (score >= 0) AND was produced against the SAME background (its stored
+    `bg` fingerprint matches the current one). Editing the background_file changes the
+    fingerprint, so every role is re-scored on the next run — no manual cache clearing.
+    Verdicts predating this feature carry no `bg`, so they also re-score once."""
     candidate = load_background(profile)
     if not (candidate and client):
         return 0
+    fp = _bg_fingerprint(candidate)
     cached = {p["key"]: p["fit_result"] for p in (prev or [])
-              if (p.get("fit_result") or {}).get("score", -1) >= 0}
+              if (p.get("fit_result") or {}).get("score", -1) >= 0
+              and (p.get("fit_result") or {}).get("bg") == fp}
     scored = 0
     for p in matched:
         if p["key"] in cached:
             p["fit_result"] = cached[p["key"]]
         else:
-            p["fit_result"] = score_fit(candidate, p, client)
+            r = score_fit(candidate, p, client)
+            r["bg"] = fp                       # stamp the background it was scored against
+            p["fit_result"] = r
             scored += 1
     return scored
 

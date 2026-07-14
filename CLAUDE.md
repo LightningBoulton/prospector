@@ -79,7 +79,8 @@ Each new ATS = one `fetch_*` function returning normalized postings + one `FETCH
 Ranks each profile's matched roles by how well they fit a candidate, via the Anthropic API.
 - **Activation:** on only when `ANTHROPIC_API_KEY` is set (env) AND the profile has a `background_file`. Otherwise the whole feature no-ops and the tool behaves exactly as before. `anthropic` SDK must be installed (`pip install anthropic`) — CI needs this added to the workflow.
 - **Config:** profile fields `background_file` (path to a candidate JSON, e.g. `lisa_background.json`) and `fit_mode` = `"rank"` (keep all, sort by score — default/safe) or `"filter"` (drop model-rated `"no"`).
-- **Flow:** `enrich_with_fit` runs after keyword match, before diff. It **only scores NEW roles** — verdicts are cached in the snapshot's `fit_result` and reused, so daily cost ∝ new postings, not total. `score_fit` returns `{fit: yes|maybe|no, score: 0-100, reason}`; on ANY API/parse failure it returns a neutral `maybe`/score -1 (role kept, run never crashes).
+- **Flow:** `enrich_with_fit` runs after keyword match, before diff. It **only scores NEW roles** — verdicts are cached in the snapshot's `fit_result` and reused, so daily cost ∝ new postings, not total. `score_fit` returns `{fit: yes|maybe|no, score: 0-100, reason}`; on ANY API/parse failure it returns a neutral `maybe`/score -1 (role kept, run never crashes) — and **failures aren't cached** (`score < 0` is never reused), so a transient parse error retries next run.
+- **Cache invalidation:** each verdict stores a `bg` fingerprint (`_bg_fingerprint` = short hash of the background content). A cached verdict is reused only if its `bg` matches the current background. **Editing a `background_file` auto-invalidates that profile's verdicts** → full re-score next run, no manual clearing. Legacy verdicts with no `bg` also re-score once.
 - **Descriptions:** `fetch_greenhouse` (`?content=true`, HTML-cleaned) and `fetch_lever` (`descriptionPlain`) now include a `description` field for better judgments. SmartRecruiters/Workday are title-only (no cheap bulk description). `description` is stripped before the snapshot is written (kept lean); `fit_result` is persisted.
 - **Model:** `FIT_MODEL` constant (currently `claude-sonnet-5`; `claude-haiku-4-5-20251001` for lower cost). Verify current model strings against docs.claude.com.
 
@@ -87,7 +88,7 @@ Ranks each profile's matched roles by how well they fit a candidate, via the Ant
 
 - IMPORTANT: **no secrets in the repo.** Email creds/recipients + `ANTHROPIC_API_KEY` are GitHub Actions secrets (`MAIL_USERNAME`, `MAIL_PASSWORD` = Gmail App Password, `MAIL_TO_*`, `ANTHROPIC_API_KEY`). Never hardcode an email address (Lisa's included) or key in committed files.
 - Be a polite client: one run/day; don't parallel-hammer ATS endpoints.
-- Snapshots are state — CI commits them back, and they carry the `fit_result` cache. Don't rename/relocate or wipe them casually (wiping forces a full re-score = full API bill).
+- Snapshots are state — CI commits them back, and they carry the `fit_result` cache (each stamped with a `bg` fingerprint). Don't rename/relocate or wipe them casually (wiping forces a full re-score = full API bill). To deliberately force a re-score, edit the `background_file` (auto-invalidates) rather than deleting the snapshot.
 - Core fetch/diff stays dependency-free; `anthropic` is the only optional dependency and must stay optional.
 
 ## Next tasks (priority order)
