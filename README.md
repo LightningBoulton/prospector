@@ -29,10 +29,12 @@ The daily run: read the company list → fetch and normalize every source once �
 
 | File | Purpose |
 |------|---------|
-| `companies.json` | Where to look: each company's name, city, ATS, and slug. Plus a `needs_identification` backlog. |
+| `companies.json` | Where to look: each company's name, city, ATS, slug, and `domain` (for logos). Plus a `needs_identification` backlog. |
 | `profiles.json` | What to look for: one named title filter per person. |
 | `settings.json` | Run-wide knobs: max posting age, and the LLM-scoring on/off switch. |
 | `jobmonitor.py` | The engine — fetch, normalize, filter, diff, report. |
+| `fetch_logos.py` | One-time/occasional prefetch of company logos into `logos/` (see [Company logos](#company-logos)). Not run by the daily job. |
+| `logos/<slug>.png` | Prefetched company logos, embedded inline in the HTML email. Commit these. Missing ones fall back to a colored monogram. |
 | `snapshot_<name>.json` | Auto-generated per profile. The last run's matched roles, used for the diff. Commit these so history lives in git. |
 | `report_<name>.md` | Auto-generated per profile. The latest report in Markdown, for git history and the CLI. |
 | `report_<name>.html` | Auto-generated per profile. A styled, dark-mode, email-safe HTML version — this is what gets emailed. |
@@ -265,6 +267,23 @@ Never put a password or someone's email address in a committed file. In **Settin
 The workflow references these by name only, so nothing sensitive touches the code or git history.
 
 Each run writes both `report_<name>.md` (for git history and the CLI) and `report_<name>.html` (a styled, dark-mode, email-safe version with inline styles). The workflow emails the HTML via `html_body:`.
+
+## Company logos
+
+Each posting in the HTML email shows a small square tile with the company's logo. Logos are **prefetched once** and **embedded inline** in the email (as CID attachments), so they render in Gmail/Apple Mail/Outlook without any runtime fetch — and the daily job needs no logo token or network call.
+
+**Refreshing logos** (only when you add companies or a logo goes stale):
+
+1. Get a free *publishable* token from [logo.dev](https://logo.dev).
+2. Run the prefetch (the token is used only here — never committed, never in the email):
+   ```
+   LOGO_DEV_TOKEN=pk_your_token python3 fetch_logos.py          # fetch missing only
+   LOGO_DEV_TOKEN=pk_your_token python3 fetch_logos.py --force  # re-download all
+   ```
+3. Eyeball `logos/` and delete any poor result (a missing file just falls back to a colored monogram of the company's initials).
+4. Commit `logos/*.png`.
+
+How it renders: `jobmonitor.py` uses `logos/<slug>.png` when present (`slug` and `domain` come from `companies.json`), else a monogram. It emits the exact list of logos each report references as a `<profile>_logos` output, and the workflow attaches only those (so none appear as stray download attachments). The `cid:` inlining relies on `dawidd6/action-send-mail`'s behavior of setting each attachment's Content-ID to its filename — pinned to `@v18`; re-verify if you bump that action's major version.
 
 ## LLM fit scoring (optional)
 

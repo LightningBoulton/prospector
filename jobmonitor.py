@@ -561,6 +561,71 @@ _FONT = ("'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,"
          "Helvetica,Arial,sans-serif")
 _FIT_COLOR = {"yes": "green", "maybe": "amber", "no": "red"}
 
+# Company logos are prefetched into logos/<slug>.png by fetch_logos.py and embedded in
+# the email as inline CID attachments (<img src="cid:<slug>.png">) — which render inline
+# in Gmail/Apple Mail/Outlook without a runtime fetch. When a logo file is absent we fall
+# back to a colored monogram of the company's initials. _LOGOS_USED collects the files
+# referenced while building one report so the workflow can attach exactly those (an
+# attached-but-unreferenced file would show as a stray download). Slugs come from
+# companies.json (loaded once, lazily).
+LOGO_DIR = os.path.join(HERE, "logos")
+_COMPANIES = None
+_LOGOS_USED = set()
+_MONO_COLORS = ["#1f6feb", "#238636", "#8957e5", "#bb8009", "#c93c37",
+                "#0e7490", "#a21caf", "#2da44e"]
+
+
+def _company_slug(company):
+    global _COMPANIES
+    if _COMPANIES is None:
+        try:
+            _COMPANIES = {c["name"]: c for c in json.load(open(CONFIG))["companies"]}
+        except Exception:
+            _COMPANIES = {}
+    return (_COMPANIES.get(company) or {}).get("slug")
+
+
+def _initials(company):
+    words = [w for w in re.split(r"[^A-Za-z0-9]+", company) if w]
+    if not words:
+        return "?"
+    return (words[0][:2] if len(words) == 1 else words[0][0] + words[1][0]).upper()
+
+
+def _mono_color(company):
+    h = int(hashlib.md5(company.encode("utf-8")).hexdigest(), 16)
+    return _MONO_COLORS[h % len(_MONO_COLORS)]
+
+
+def _logo_square(company):
+    # Fixed 40px rounded tile shown to the left of a posting: a prefetched logo on a
+    # white tile (inline CID) when logos/<slug>.png exists, else a colored monogram.
+    initials = _esc(_initials(company))
+    slug = _company_slug(company)
+    if slug and os.path.exists(os.path.join(LOGO_DIR, f"{slug}.png")):
+        _LOGOS_USED.add(f"logos/{slug}.png")
+        # logo.dev icons are full-bleed squares with their own background, so fill the
+        # tile edge-to-edge; the white cell shows only behind a transparent logo.
+        cell = (f'<td align="center" valign="middle" style="width:40px;height:40px;'
+                f'background-color:#ffffff;border-radius:8px;">'
+                f'<img src="cid:{slug}.png" width="40" height="40" alt="{initials}" '
+                f'style="display:block;border:0;border-radius:8px;"></td>')
+    else:
+        cell = (f'<td align="center" valign="middle" style="width:40px;height:40px;'
+                f'background-color:{_mono_color(company)};border-radius:8px;color:#ffffff;'
+                f'font-family:{_FONT};font-size:15px;font-weight:700;">{initials}</td>')
+    return ('<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
+            f'width="40" style="width:40px;"><tr>{cell}</tr></table>')
+
+
+def _icon_row(company, content):
+    # Two-column row: logo square on the left, posting content on the right.
+    return ('<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
+            'width="100%" style="width:100%;"><tr>'
+            '<td valign="top" width="52" style="width:52px;padding-right:12px;">'
+            f'{_logo_square(company)}</td>'
+            f'<td valign="top">{content}</td></tr></table>')
+
 
 def _esc(s):
     return ((s or "").replace("&", "&amp;").replace("<", "&lt;")
@@ -634,7 +699,7 @@ def _star_html(p):
     return '<span style="font-size:14px;">⭐</span> ' if _is_fresh(p.get("posted")) else ""
 
 
-def _role_html(p, lead=None):
+def _role_inner(p, lead=None):
     # Title (+ star + fit pill) on one line; muted meta and fit reason beneath.
     return (f'<div style="margin:0 0 12px;line-height:1.4;">'
             f'{_star_html(p)}{_link(p["title"], p["url"])}{_fit_pill_html(p)}'
@@ -645,6 +710,7 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
     today = datetime.date.today().isoformat()
     scored = any(p.get("fit_result") for p in matched)
     by_score = lambda x: -((x.get("fit_result") or {}).get("score", 0))
+    _LOGOS_USED.clear()   # collect the logo files this report references (for CID attach)
     B = []
 
     # Header
@@ -669,37 +735,30 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
             for p in order:
                 inner = (_star_html(p) + _link(p["title"], p["url"]) + _fit_pill_html(p)
                          + _meta_html(p, lead=p["company"]) + _fit_reason_html(p))
-                B.append(_card(inner, _C["green"]))
+                B.append(_card(_icon_row(p["company"], inner), _C["green"]))
         if changed:
             B.append(_chip(f"Changed titles · {len(changed)}", "amber"))
             for o, c in changed:
                 inner = (_link(c["title"], c["url"])
                          + _muted(f'{_esc(c["company"])} · was "{_esc(o["title"])}"'))
-                B.append(_card(inner, _C["amber"]))
+                B.append(_card(_icon_row(c["company"], inner), _C["amber"]))
         if removed:
             B.append(_chip(f"Removed / filled · {len(removed)}", "red"))
             for p in sorted(removed, key=lambda x: x["company"]):
                 inner = (f'<span style="color:{_C["text"]};font-family:{_FONT};'
                          f'font-weight:600;">{_esc(p["title"])}</span>'
                          + _meta_html(p, lead=p["company"]))
-                B.append(_card(inner, _C["red"]))
+                B.append(_card(_icon_row(p["company"], inner), _C["red"]))
 
     # All current matching roles
     B.append(_section(f"All current matching roles ({len(matched)})"))
     if not matched:
         B.append(_muted("No roles currently match this profile."))
-    elif scored:
-        for p in sorted(matched, key=by_score):
-            B.append(_role_html(p, lead=p["company"]))
     else:
-        last = None
-        for p in sorted(matched, key=lambda x: (x["company"], x["title"])):
-            if p["company"] != last:
-                B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};'
-                         f'font-weight:700;font-size:15px;margin:18px 0 6px;">'
-                         f'{_esc(p["company"])}</div>')
-                last = p["company"]
-            B.append(_role_html(p))
+        order = (sorted(matched, key=by_score) if scored
+                 else sorted(matched, key=lambda x: (x["company"], x["title"])))
+        for p in order:
+            B.append(_icon_row(p["company"], _role_inner(p, lead=p["company"])))
 
     # Source warnings
     if errors:
@@ -771,7 +830,8 @@ def run_profile(profile, pool, errors, client=None):
     json.dump(slim, open(snap, "w"), indent=1)
     open(rpt, "w").write(report)
     open(os.path.join(HERE, f"report_{profile['name']}.html"), "w").write(report_html)
-    return matched, report, has_changes
+    logos = sorted(_LOGOS_USED)   # logo files this report referenced (for inline CID attach)
+    return matched, report, has_changes, logos
 
 
 def main():
@@ -804,22 +864,28 @@ def main():
     print(f"Fetched {len(pool)} local/remote roles{age_note} across all companies."
           f"{' Fit scoring: ON.' if client else ' Fit scoring: OFF.'}\n")
     changed_profiles = []
+    logos_by_profile = {}
     for p in profiles:
-        matched, report, has_changes = run_profile(p, pool, errors, client)
+        matched, report, has_changes, logos = run_profile(p, pool, errors, client)
         if has_changes:
             changed_profiles.append(p["name"])
+        logos_by_profile[p["name"]] = logos
         print("=" * 70)
-        print(f"[{p['name']}] changes since last run: {'yes' if has_changes else 'no'}")
+        print(f"[{p['name']}] changes since last run: {'yes' if has_changes else 'no'}"
+              f" · {len(logos)} logo(s) to embed")
         print(report)
 
-    # Expose a per-profile "changed" flag to GitHub Actions so the workflow can
-    # email only the people whose report actually changed since the last run.
+    # Expose per-profile outputs to GitHub Actions: a "changed" flag so the workflow emails
+    # only people whose report changed, and the exact list of logo files to attach inline
+    # (as CID images) — only the ones this report references, so none show as stray downloads.
     gh_out = os.environ.get("GITHUB_OUTPUT")
     if gh_out:
         with open(gh_out, "a") as fh:
             for p in profiles:
-                fh.write(f"{p['name']}_changed="
-                         f"{'true' if p['name'] in changed_profiles else 'false'}\n")
+                name = p["name"]
+                fh.write(f"{name}_changed="
+                         f"{'true' if name in changed_profiles else 'false'}\n")
+                fh.write(f"{name}_logos={','.join(logos_by_profile.get(name, []))}\n")
 
 
 if __name__ == "__main__":

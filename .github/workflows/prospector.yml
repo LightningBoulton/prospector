@@ -50,6 +50,7 @@ jobs:
           to: ${{ secrets.MAIL_TO_CHAD }}
           subject: "Prospector — your daily jobs report"
           html_body: file://report_chad.html
+          attachments: ${{ steps.run.outputs.chad_logos }}   # inline company logos (cid:<file>)
 
       - name: Email Lisa's report
         if: ${{ inputs.chad_only != true && steps.run.outputs.lisa_changed == 'true' }}
@@ -64,3 +65,4 @@ jobs:
           to: ${{ secrets.MAIL_TO_LISA }}
           subject: "Prospector — director / ops roles today"
           html_body: file://report_lisa.html
+          attachments: ${{ steps.run.outputs.lisa_logos }}   # inline company logos (cid:<file>)

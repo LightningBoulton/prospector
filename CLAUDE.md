@@ -26,10 +26,12 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 
 ## Files
 
-- `companies.json` — `companies[]` + `needs_identification[]` backlog. Company fields: {name, city, ats, slug}; **workday entries also need** {wd_host, site}.
+- `companies.json` — `companies[]` + `needs_identification[]` backlog. Company fields: {name, city, ats, slug, domain}; **workday entries also need** {wd_host, site}. `domain` feeds logo prefetch.
 - `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any}).
 - `settings.json` — run-wide tweakables (loaded by `load_settings`, defaults in `SETTINGS_DEFAULTS`): `max_posting_age_days` (drop postings older than this; 0/null = keep all; unknown-date always kept), `fit_scoring_enabled` (master off-switch for the Anthropic API), and `star_within_days` (⭐ postings newer than this in the report; 0/null off — `main` sets the `STAR_WITHIN_DAYS` global from it). Missing file/keys fall back to defaults.
 - `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `enrich_salary`, `enrich_with_fit`, `diff`, `build_report`, `build_html_report`, `run_profile`.
+- `fetch_logos.py` — occasional prefetch of company logos → `logos/<slug>.png` via logo.dev (needs `LOGO_DEV_TOKEN` env). **Not run by the daily job.**
+- `logos/<slug>.png` — prefetched logos, committed; embedded inline in the email (see Company logos below).
 - `snapshot_<name>.json`, `report_<name>.md`, `report_<name>.html` — generated per profile; committed by CI.
 
 ## Data model
@@ -72,6 +74,25 @@ AND matches **at least one term in every** `match_groups` entry (AND across grou
 OR within). Matching uses `\bterm\b` regex — **word-boundary aware on purpose** so short
 tokens (`coo`, `vp`, `cco`) don't match inside longer words (`coordinator`, `account`).
 Preserve the word-boundary behavior. Empty `match_groups` = keep all local roles.
+
+## Email output & company logos
+
+`main` writes two per-profile outputs to `$GITHUB_OUTPUT` (when set): `<name>_changed`
+(true/false — the workflow only emails a person when their report changed since last run;
+first run counts as changed) and `<name>_logos` (comma-separated list of the exact logo
+files that report referenced). The workflow gates each email step on `<name>_changed` and
+passes `<name>_logos` to `attachments:`.
+
+Logos render as a 40px tile left of each posting (`_logo_square`/`_icon_row` in
+`build_html_report`): the prefetched `logos/<slug>.png` when it exists, else a colored
+monogram of the company's initials (`_mono_color`/`_initials`). `_LOGOS_USED` (cleared at
+the top of `build_html_report`) collects referenced files so **only referenced logos are
+attached** — an attached-but-unreferenced file would show as a stray download. Logos embed
+inline via **CID** (`<img src="cid:<slug>.png">`), which works because
+`dawidd6/action-send-mail@v18` sets each attachment's Content-ID to its filename (undocumented
+— re-verify on a major bump). The daily job never fetches logos; `fetch_logos.py` does that
+occasionally (needs `LOGO_DEV_TOKEN`, kept out of the repo). Missing logo → monogram, so it
+never breaks. Do NOT base64/data-URI logos instead — Gmail and Outlook strip `data:` images.
 
 ## Location + age gates
 
