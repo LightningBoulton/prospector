@@ -623,7 +623,7 @@ def _icon_row(company, content):
     # column hugs the tile (width = tile + a small gap) so the logo sits tight to the text.
     return ('<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
             'width="100%" style="width:100%;"><tr>'
-            '<td valign="top" width="74" style="width:74px;padding-right:10px;">'
+            '<td valign="top" width="70" style="width:70px;padding-right:6px;">'
             f'{_logo_square(company)}</td>'
             f'<td valign="top">{content}</td></tr></table>')
 
@@ -788,7 +788,7 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
 <body style="margin:0;padding:0;background-color:{_C['bg']};font-family:{_FONT};">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{_C['bg']};">
 <tr><td align="center" style="padding:24px 12px;">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background-color:{_C['card']};border:1px solid {_C['border']};border-radius:14px;">
+<table role="presentation" width="780" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:780px;background-color:{_C['card']};border:1px solid {_C['border']};border-radius:14px;">
 <tr><td style="padding:28px 30px 32px;">{body}</td></tr>
 </table>
 <div style="color:{_C['muted']};font-family:{_FONT};font-size:11px;margin-top:16px;">Prospector · Silicon Slopes job monitor</div>
