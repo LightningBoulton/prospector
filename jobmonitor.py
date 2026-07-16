@@ -745,11 +745,13 @@ def run_profile(profile, pool, errors, client=None):
         args = (profile, matched, [], [], [], errors)
         report = build_report(*args, first_run=True)
         report_html = build_html_report(*args, first_run=True)
+        has_changes = True   # first run: no prior snapshot, so treat the fresh report as worth sending
     else:
         new, removed, changed = diff(prev, matched)
         args = (profile, matched, new, removed, changed, errors)
         report = build_report(*args, first_run=False)
         report_html = build_html_report(*args, first_run=False)
+        has_changes = bool(new or removed or changed)
 
     # Persist a slim snapshot: keep fit_result (the cache) but drop the bulky description
     # and the private fetch metadata (_ats/_detail_url).
@@ -758,7 +760,7 @@ def run_profile(profile, pool, errors, client=None):
     json.dump(slim, open(snap, "w"), indent=1)
     open(rpt, "w").write(report)
     open(os.path.join(HERE, f"report_{profile['name']}.html"), "w").write(report_html)
-    return matched, report
+    return matched, report, has_changes
 
 
 def main():
@@ -790,10 +792,23 @@ def main():
     age_note = f" ≤{max_age}d old" if max_age else ""
     print(f"Fetched {len(pool)} local/remote roles{age_note} across all companies."
           f"{' Fit scoring: ON.' if client else ' Fit scoring: OFF.'}\n")
+    changed_profiles = []
     for p in profiles:
-        matched, report = run_profile(p, pool, errors, client)
+        matched, report, has_changes = run_profile(p, pool, errors, client)
+        if has_changes:
+            changed_profiles.append(p["name"])
         print("=" * 70)
+        print(f"[{p['name']}] changes since last run: {'yes' if has_changes else 'no'}")
         print(report)
+
+    # Expose a per-profile "changed" flag to GitHub Actions so the workflow can
+    # email only the people whose report actually changed since the last run.
+    gh_out = os.environ.get("GITHUB_OUTPUT")
+    if gh_out:
+        with open(gh_out, "a") as fh:
+            for p in profiles:
+                fh.write(f"{p['name']}_changed="
+                         f"{'true' if p['name'] in changed_profiles else 'false'}\n")
 
 
 if __name__ == "__main__":

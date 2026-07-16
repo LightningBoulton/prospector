@@ -24,6 +24,7 @@ jobs:
         run: pip install anthropic   # only needed for the optional LLM fit-scoring
 
       - name: Run prospector (all profiles)
+        id: run
         run: python jobmonitor.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # omit/unset to disable fit scoring
@@ -37,6 +38,7 @@ jobs:
           git push
 
       - name: Email Chad's report
+        if: ${{ steps.run.outputs.chad_changed == 'true' }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -50,7 +52,7 @@ jobs:
           html_body: file://report_chad.html
 
       - name: Email Lisa's report
-        if: ${{ inputs.chad_only != true }}
+        if: ${{ inputs.chad_only != true && steps.run.outputs.lisa_changed == 'true' }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com

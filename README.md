@@ -178,7 +178,7 @@ Constants at the top of `discover.py`:
 
 ## Running daily with GitHub Actions
 
-Runs Prospector on a schedule, commits updated snapshots back, and emails each person their report — no server to maintain. Save as `.github/workflows/prospector.yml`:
+Runs Prospector on a schedule, commits updated snapshots back, and emails each person their report **only when it changed since the last run** — no server to maintain. Save as `.github/workflows/prospector.yml`:
 
 ```yaml
 name: prospector
@@ -207,6 +207,7 @@ jobs:
         run: pip install anthropic   # only needed for the optional LLM fit-scoring
 
       - name: Run prospector (all profiles)
+        id: run   # exposes <profile>_changed=true|false outputs for the email steps below
         run: python jobmonitor.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # omit/unset to disable fit scoring
@@ -220,6 +221,7 @@ jobs:
           git push
 
       - name: Email Chad's report
+        if: ${{ steps.run.outputs.chad_changed == 'true' }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -233,7 +235,7 @@ jobs:
           html_body: file://report_chad.html
 
       - name: Email Lisa's report
-        if: ${{ inputs.chad_only != true }}
+        if: ${{ inputs.chad_only != true && steps.run.outputs.lisa_changed == 'true' }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -247,7 +249,9 @@ jobs:
           html_body: file://report_lisa.html
 ```
 
-The manual **Run workflow** button exposes a **"Test run: email only Chad, skip Lisa"** checkbox (the `chad_only` input) so you can preview output without emailing Lisa; scheduled runs always email both. Reports are emailed as styled dark-mode HTML (`report_<name>.html`); the Markdown versions are kept for git history.
+**Emails only go out when something changed.** `jobmonitor.py` writes a `<profile>_changed=true|false` output for each profile (via `$GITHUB_OUTPUT`), and each email step is gated on it (`if: steps.run.outputs.<profile>_changed == 'true'`). A profile "changed" when its diff has any new, removed, or changed-title role since the last run; a profile's first-ever run also counts as changed so the baseline still sends. On a day with no changes for a person, their email is simply skipped — snapshots and reports are still committed regardless. Note that adding a new profile requires adding its own email step + `if:` gate here; the output key follows the profile `name` automatically.
+
+The manual **Run workflow** button exposes a **"Test run: email only Chad, skip Lisa"** checkbox (the `chad_only` input) so you can preview output without emailing Lisa; scheduled runs email both (each still subject to its own "changed" gate). Reports are emailed as styled dark-mode HTML (`report_<name>.html`); the Markdown versions are kept for git history.
 
 ### Credentials and recipients — you set these, not this repo
 
