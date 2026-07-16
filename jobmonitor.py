@@ -606,23 +606,23 @@ def _logo_square(company):
         _LOGOS_USED.add(f"logos/{slug}.png")
         # logo.dev icons are full-bleed squares with their own background, so fill the
         # tile edge-to-edge; the white cell shows only behind a transparent logo.
-        cell = (f'<td align="center" valign="middle" style="width:40px;height:40px;'
-                f'background-color:#ffffff;border-radius:8px;">'
-                f'<img src="cid:{slug}.png" width="40" height="40" alt="{initials}" '
-                f'style="display:block;border:0;border-radius:8px;"></td>')
+        cell = (f'<td align="center" valign="middle" style="width:80px;height:80px;'
+                f'background-color:#ffffff;border-radius:14px;">'
+                f'<img src="cid:{slug}.png" width="80" height="80" alt="{initials}" '
+                f'style="display:block;border:0;border-radius:14px;"></td>')
     else:
-        cell = (f'<td align="center" valign="middle" style="width:40px;height:40px;'
-                f'background-color:{_mono_color(company)};border-radius:8px;color:#ffffff;'
-                f'font-family:{_FONT};font-size:15px;font-weight:700;">{initials}</td>')
+        cell = (f'<td align="center" valign="middle" style="width:80px;height:80px;'
+                f'background-color:{_mono_color(company)};border-radius:14px;color:#ffffff;'
+                f'font-family:{_FONT};font-size:30px;font-weight:700;">{initials}</td>')
     return ('<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
-            f'width="40" style="width:40px;"><tr>{cell}</tr></table>')
+            f'width="80" style="width:80px;"><tr>{cell}</tr></table>')
 
 
 def _icon_row(company, content):
     # Two-column row: logo square on the left, posting content on the right.
     return ('<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
             'width="100%" style="width:100%;"><tr>'
-            '<td valign="top" width="52" style="width:52px;padding-right:12px;">'
+            '<td valign="top" width="94" style="width:94px;padding-right:14px;">'
             f'{_logo_square(company)}</td>'
             f'<td valign="top">{content}</td></tr></table>')
 
