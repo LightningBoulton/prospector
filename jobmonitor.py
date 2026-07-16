@@ -763,7 +763,7 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
             row = _icon_row(p["company"], _role_inner(p, lead=p["company"]))
             # Separator line under each posting + a small gap to the next.
             B.append(f'<div style="border-bottom:1px solid {_C["border"]};'
-                     f'padding-bottom:8px;margin-bottom:4px;">{row}</div>')
+                     f'padding-bottom:16px;margin-bottom:8px;">{row}</div>')
 
     # Source warnings
     if errors:
