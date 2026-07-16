@@ -701,8 +701,9 @@ def _star_html(p):
 
 
 def _role_inner(p, lead=None):
-    # Title (+ star + fit pill) on one line; muted meta and fit reason beneath.
-    return (f'<div style="margin:0 0 12px;line-height:1.4;">'
+    # Title (+ star + fit pill) on one line; muted meta and fit reason beneath. No bottom
+    # margin — the list wrapper owns the separator line and inter-posting spacing.
+    return (f'<div style="margin:0;line-height:1.4;">'
             f'{_star_html(p)}{_link(p["title"], p["url"])}{_fit_pill_html(p)}'
             f'{_meta_html(p, lead)}{_fit_reason_html(p)}</div>')
 
@@ -759,7 +760,10 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
         order = (sorted(matched, key=by_score) if scored
                  else sorted(matched, key=lambda x: (x["company"], x["title"])))
         for p in order:
-            B.append(_icon_row(p["company"], _role_inner(p, lead=p["company"])))
+            row = _icon_row(p["company"], _role_inner(p, lead=p["company"]))
+            # Separator line under each posting + a small gap to the next.
+            B.append(f'<div style="border-bottom:1px solid {_C["border"]};'
+                     f'padding-bottom:8px;margin-bottom:4px;">{row}</div>')
 
     # Source warnings
     if errors:
