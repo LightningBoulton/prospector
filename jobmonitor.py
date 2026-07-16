@@ -554,7 +554,11 @@ _C = {
     "green": "#3fb950", "amber": "#d29922", "red": "#f85149",
     "green_bg": "#122619", "amber_bg": "#2b2411", "red_bg": "#2d1618",
 }
-_FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
+# Inter (the modern web font) first, then a system-sans fallback stack. Clients that
+# support web fonts (Apple Mail, iOS) render Inter; those that don't (Gmail, Outlook)
+# fall back to the system sans — either way it's ONE consistent sans-serif, never serif.
+_FONT = ("'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,"
+         "Helvetica,Arial,sans-serif")
 _FIT_COLOR = {"yes": "green", "maybe": "amber", "no": "red"}
 
 
@@ -565,7 +569,7 @@ def _esc(s):
 
 def _link(text, url):
     return (f'<a href="{_esc(url)}" style="color:{_C["link"]};text-decoration:none;'
-            f'font-weight:600;">{_esc(text)}</a>')
+            f'font-family:{_FONT};font-weight:600;">{_esc(text)}</a>')
 
 
 def _muted(text):
@@ -713,8 +717,15 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
 <meta name="color-scheme" content="dark">
 <meta name="supported-color-schemes" content="dark">
 <title>{_esc(profile["label"])}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+  body, td, div, a, span {{ font-family: {_FONT}; }}
+</style>
 </head>
-<body style="margin:0;padding:0;background-color:{_C['bg']};">
+<body style="margin:0;padding:0;background-color:{_C['bg']};font-family:{_FONT};">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{_C['bg']};">
 <tr><td align="center" style="padding:24px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background-color:{_C['card']};border:1px solid {_C['border']};border-radius:14px;">
