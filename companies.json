@@ -32,7 +32,8 @@
     { "name": "NICE",              "city": "Sandy",           "ats": "greenhouse",      "slug": "nice", "domain": "nice.com" },
     { "name": "Brex",              "city": "Salt Lake City",  "ats": "greenhouse",      "slug": "brex", "domain": "brex.com" },
     { "name": "Kelso Industries",  "city": "Ogden",           "ats": "greenhouse",      "slug": "kelsoindustries", "domain": "kelsoindustries.com" },
-    { "name": "Speechify",         "city": "Salt Lake City",  "ats": "greenhouse",      "slug": "speechify", "domain": "speechify.com" }
+    { "name": "Speechify",         "city": "Salt Lake City",  "ats": "greenhouse",      "slug": "speechify", "domain": "speechify.com" },
+    { "name": "Flex",              "city": "Salt Lake City",  "ats": "greenhouse",      "slug": "flex", "domain": "getflex.com" }
   ],
   "needs_identification": [
     "--- tier-3 / custom (need scraping, not a config add) ---",
