@@ -193,6 +193,10 @@ on:
         description: "Test run: email only Chad, skip Lisa"
         type: boolean
         default: false
+      force_email:
+        description: "Test run: send even if the report has no changes since last run"
+        type: boolean
+        default: false
 
 permissions:
   contents: write

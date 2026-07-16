@@ -8,6 +8,10 @@ on:
         description: "Test run: email only Chad, skip Lisa"
         type: boolean
         default: false
+      force_email:
+        description: "Test run: send even if the report has no changes since last run"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -38,7 +42,7 @@ jobs:
           git push
 
       - name: Email Chad's report
-        if: ${{ steps.run.outputs.chad_changed == 'true' }}
+        if: ${{ steps.run.outputs.chad_changed == 'true' || inputs.force_email == true }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -53,7 +57,7 @@ jobs:
           attachments: ${{ steps.run.outputs.chad_logos }}   # inline company logos (cid:<file>)
 
       - name: Email Lisa's report
-        if: ${{ inputs.chad_only != true && steps.run.outputs.lisa_changed == 'true' }}
+        if: ${{ inputs.chad_only != true && (steps.run.outputs.lisa_changed == 'true' || inputs.force_email == true) }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
