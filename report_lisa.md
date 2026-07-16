@@ -3,11 +3,7 @@
 _⭐ = posted in the last 3 days_
 
 ## What's changed
-**New (1)**
-- ⭐ **Podium** — [Chief of Staff](https://job-boards.greenhouse.io/podium81/jobs/8067712) · Lehi, Utah · Posted Jul 15 · 1d ago — **60/100** (maybe)
-   _Strong ops/CX leadership fit, local Utah location; but Chief of Staff role is support-level, not clear org leadership mandate._
-**Removed / filled (1)**
-- **Pluralsight** — Senior Manager, Marketing Operations · Remote - USA · $121,500-$160,000 · Posted Jul 15 · 1d ago
+_No changes since the previous run._
 
 ## All current matching roles (7)
 - ⭐ **Adobe** — [Director, TPS Strategy & Business Operations](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Director--TPS-Strategy---Business-Operations_R170411) · Lehi (+6 more) · $223,300 - $323,350 · Posted Jul 13 · 3d ago — **72/100** (yes)
