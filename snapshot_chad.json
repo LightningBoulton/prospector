@@ -30,21 +30,6 @@
   }
  },
  {
-  "key": "BILL::6101858004",
-  "company": "BILL",
-  "title": "Lead Product Manager - Rewards Platform",
-  "location": "Draper, Utah, United States; San Jose, California, United States; United States",
-  "url": "https://www.bill.com/job?6101858004&gh_jid=6101858004",
-  "posted": "2026-07-09",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 3,
-   "reason": "Product Manager role, not engineering; dealbreaker mismatch with candidate's hands-on IC engineering focus.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "BILL::6116018004",
   "company": "BILL",
   "title": "Staff Data Warehouse Engineer",
@@ -62,7 +47,7 @@
  {
   "key": "NICE::4928015101",
   "company": "NICE",
-  "title": "Lead Software Engineer",
+  "title": "AI Lead Software Engineer",
   "location": "Seattle, Washington, United States; USA - Atlanta, GA; USA - San Francisco, CA; USA - Sandy, UT",
   "url": "https://boards.eu.greenhouse.io/nice/jobs/4928015101?gh_jid=4928015101",
   "posted": "2026-07-15",
@@ -71,21 +56,6 @@
    "fit": "no",
    "score": 22,
    "reason": "Data/AI platform role (Snowflake, LLM SQL, vector search) mismatches candidate's frontend/full-stack SaaS expertise.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "NICE::4924126101",
-  "company": "NICE",
-  "title": "Principal AI-Driven Enterprise Support Engineer",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4924126101?gh_jid=4924126101",
-  "posted": "2026-07-09",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 8,
-   "reason": "Support/TAM role, not hands-on engineering; dealbreaker-adjacent customer-facing focus, not architecture/dev work.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -105,32 +75,92 @@
   }
  },
  {
-  "key": "NICE::4921997101",
-  "company": "NICE",
-  "title": "Software Engineer \u2013 Java, Angular, AWS",
-  "location": "USA - Sandy, UT",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4921997101?gh_jid=4921997101",
-  "posted": "2026-07-09",
+  "key": "Flex::4716085005",
+  "company": "Flex",
+  "title": "Senior Software Engineer, Backend FinPlatform",
+  "location": "Remote",
+  "url": "https://job-boards.greenhouse.io/flex/jobs/4716085005",
+  "posted": "2026-07-16",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Good location/AWS/enterprise fit, but Java/Angular stack mismatch vs React/.NET expertise; seniority unclear.",
+   "fit": "no",
+   "score": 15,
+   "reason": "Java backend fintech role mismatches Chad's .NET/React frontend-leaning stack and seniority target.",
    "bg": "b9f9e4b0db4d"
   }
  },
  {
-  "key": "NICE::4924142101",
-  "company": "NICE",
-  "title": "Sr AI-Driven Enterprise Support Engineer",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4924142101?gh_jid=4924142101",
-  "posted": "2026-07-09",
+  "key": "Flex::4716104005",
+  "company": "Flex",
+  "title": "Senior Software Engineer, Backend Money Team",
+  "location": "Remote",
+  "url": "https://job-boards.greenhouse.io/flex/jobs/4716104005",
+  "posted": "2026-07-16",
   "salary": null,
   "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Backend-heavy fintech role; lacks frontend/React focus, seniority slightly below Principal target, domain mismatch (payments infra).",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025291",
+  "company": "Western Governors University",
+  "title": "Software Engineer II - Web Platform",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025291",
+  "posted": "2026-07-17",
+  "salary": "$118,900.00 - $178,500.00",
+  "fit_result": {
    "fit": "no",
-   "score": 8,
-   "reason": "Support engineering role, not hands-on software engineering; dealbreaker mismatch on function and seniority target.",
+   "score": 25,
+   "reason": "Software Engineer II is too junior for Principal-level candidate; likely below comp requirements.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025285",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer | Web Platform",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025285",
+  "posted": "2026-07-17",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 62,
+   "reason": "Senior Web Platform role fits seniority/location, but title level and comp/description unclear.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025712",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer Angular/Python",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer-Angular-Python_JR-025712",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 52,
+   "reason": "Senior IC fit and SLC location match, but Angular/Python differs from React/.NET stack; comp/culture unknown.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025709",
+  "company": "Western Governors University",
+  "title": "Software Engineer Python/Angular",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-Python-Angular_JR-025709",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Location fits, but title suggests generic Python/Angular role, unclear seniority, no comp/domain info, no .NET/React focus.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -240,21 +270,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025309",
-  "company": "Western Governors University",
-  "title": "Senior Software Engineer- Full-Stack- Java/Angular",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer--Full-Stack--Java-Angular_JR-025309-1",
-  "posted": "2026-07-13",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Right seniority/location but Java/Angular stack mismatch vs C#/.NET/React expertise; unclear pay.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Western Governors University::JR-025649",
   "company": "Western Governors University",
   "title": "Senior Cloud Engineer",
@@ -341,21 +356,6 @@
    "fit": "no",
    "score": 8,
    "reason": "Management/QA role, not hands-on senior IC software engineering; mismatches function and dealbreaker on management.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "O.C. Tanner::JR26-205",
-  "company": "O.C. Tanner",
-  "title": "Sr. Site Reliability Engineer",
-  "location": "USA - Utah-Salt Lake City-Headquarters",
-  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Sr-Site-Reliability-Engineer_JR26-205",
-  "posted": "2026-07-09",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 40,
-   "reason": "SRE differs from core full-stack/frontend focus; location matches but function mismatch is significant.",
    "bg": "b9f9e4b0db4d"
   }
  }
