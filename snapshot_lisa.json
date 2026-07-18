@@ -15,21 +15,6 @@
   }
  },
  {
-  "key": "Pluralsight::R0014258",
-  "company": "Pluralsight",
-  "title": "Customer Success Manager",
-  "location": "Remote - USA",
-  "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Customer-Success-Manager_R0014258",
-  "posted": "2026-07-10",
-  "salary": "$104,000 - $130,000",
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Individual-contributor CSM role, not executive-level; mismatches seniority and leadership scope requirements.",
-   "bg": "08f1e317dfcc"
-  }
- },
- {
   "key": "Podium::8067712",
   "company": "Podium",
   "title": "Chief of Staff",
@@ -41,6 +26,21 @@
    "fit": "maybe",
    "score": 60,
    "reason": "Strong ops/CX leadership fit, local Utah location; but Chief of Staff role is support-level, not clear org leadership mandate.",
+   "bg": "08f1e317dfcc"
+  }
+ },
+ {
+  "key": "Podium::8010346",
+  "company": "Podium",
+  "title": "Regional Customer Success Manager - Automotive AI",
+  "location": "Remote, California",
+  "url": "https://job-boards.greenhouse.io/podium81/jobs/8010346",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Individual-contributor CSM role, not executive leadership; mismatch on seniority and scope despite CX/AI relevance.",
    "bg": "08f1e317dfcc"
   }
  },
@@ -60,17 +60,32 @@
   }
  },
  {
-  "key": "NICE::4924815101",
-  "company": "NICE",
-  "title": "Sales Enablement Manager(Onboarding)",
-  "location": "USA - Sandy, UT",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4924815101?gh_jid=4924815101",
-  "posted": "2026-07-10",
+  "key": "Traeger::8068211",
+  "company": "Traeger",
+  "title": "Sales Operations Key Account Manager",
+  "location": "Salt Lake City, UT",
+  "url": "https://job-boards.greenhouse.io/traegergrills/jobs/8068211",
+  "posted": "2026-07-17",
   "salary": null,
   "fit_result": {
    "fit": "no",
-   "score": 5,
-   "reason": "Junior sales enablement IC role, mismatched seniority, function, and sales-quota focus\u2014dealbreaker territory.",
+   "score": 8,
+   "reason": "IC retail account ops role; not executive leadership, wrong function/seniority for candidate.",
+   "bg": "08f1e317dfcc"
+  }
+ },
+ {
+  "key": "NICE::4930153101",
+  "company": "NICE",
+  "title": "Senior Director, Quote to Cash Transformation",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4930153101?gh_jid=4930153101",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Deep Quote-to-Cash/CPQ/billing domain operator role mismatches her CX/org-strategy background, not financial systems transformation.",
    "bg": "08f1e317dfcc"
   }
  },
@@ -86,6 +101,36 @@
    "fit": "no",
    "score": 4,
    "reason": "Fire protection/construction field ops role, unrelated domain to CX/strategy leadership background.",
+   "bg": "08f1e317dfcc"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025721",
+  "company": "Western Governors University",
+  "title": "Project Manager IV, Transformation",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721",
+  "posted": "2026-07-17",
+  "salary": "$109,900.00 - $170,400.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 40,
+   "reason": "Transformation focus fits, but Project Manager IV title likely below her senior director/executive seniority target.",
+   "bg": "08f1e317dfcc"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025641",
+  "company": "Western Governors University",
+  "title": "Manager, Lifecycle Engagement, Salt Lake City, UT",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Lifecycle-Engagement--Salt-Lake-City--UT_JR-025641-1",
+  "posted": "2026-07-17",
+  "salary": "$78,200.00 - $129,000.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Manager-level title is below her Senior Director/VP target; likely too junior in scope.",
    "bg": "08f1e317dfcc"
   }
  },
