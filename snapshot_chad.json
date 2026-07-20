@@ -30,6 +30,21 @@
   }
  },
  {
+  "key": "Pluralsight::R0014266",
+  "company": "Pluralsight",
+  "title": "Senior Software Engineer (Python/Node)",
+  "location": "Remote - USA",
+  "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Senior-Software-Engineer--Python-Node-_R0014266",
+  "posted": "2026-07-20",
+  "salary": "$144,400 - $190,000",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Senior IC remote role fits seniority/location, but Python/Node stack differs from React/.NET expertise; limited details.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "BILL::6116018004",
   "company": "BILL",
   "title": "Staff Data Warehouse Engineer",
@@ -56,6 +71,21 @@
    "fit": "no",
    "score": 22,
    "reason": "Data/AI platform role (Snowflake, LLM SQL, vector search) mismatches candidate's frontend/full-stack SaaS expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "NICE::4929222101",
+  "company": "NICE",
+  "title": "Senior AI Software Engineer",
+  "location": "USA - Sandy, UT",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4929222101?gh_jid=4929222101",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Senior IC role, Sandy UT location matches, but customer-experience/contact-center domain and AI-focus differ from core background.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -221,21 +251,6 @@
    "fit": "no",
    "score": 15,
    "reason": "Software Engineer II is too junior; likely below salary target and seniority mismatch for Principal-level candidate.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Western Governors University::JR-025178",
-  "company": "Western Governors University",
-  "title": "Software Engineer II- Salesforce",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II--Salesforce_JR-025178",
-  "posted": "2026-07-14",
-  "salary": "$118,900.00 - $178,500.00",
-  "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "Junior-level Salesforce role mismatches Principal seniority, tech stack, and compensation requirements.",
    "bg": "b9f9e4b0db4d"
   }
  },
