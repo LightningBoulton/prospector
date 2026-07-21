@@ -1,6 +1,6 @@
-# Prospector — discovered companies (2026-07-20)
+# Prospector — discovered companies (2026-07-21)
 
-Scanned employers hiring within 50 mi of South Jordan. 376 new names after removing ones already tracked and known staffing firms; probed the top 80 (tech-industry first) against tier-1 ATS platforms.
+Scanned employers hiring within 50 mi of South Jordan. 375 new names after removing ones already tracked and known staffing firms; probed the top 80 (tech-industry first) against tier-1 ATS platforms.
 
 ## Ready to add — resolved to a tier-1 ATS (0)
 _Paste the good ones into `companies.json` (fill in `city`); each was confirmed to return live jobs._
@@ -31,13 +31,14 @@ _Likely Workday/iCIMS/custom — worth a manual careers-page check for the inter
 - Adobe, Inc. (~42 in-area roles)
 - Brigham Young University (~42 in-area roles)
 - HelloTech (~40 in-area roles)
+- PacifiCorp (~39 in-area roles)
 - WSP (~38 in-area roles)
 - M. A. Mortenson Company (~38 in-area roles)
 - Kelso Building Services (~36 in-area roles)
 - Harris (~35 in-area roles)
 - Texas Instruments (~35 in-area roles)
+- ECAM (~34 in-area roles)
 - TERRACON (~34 in-area roles)
-- PacifiCorp (~34 in-area roles)
 - Quanta Services (~33 in-area roles)
 - Utah Valley University (~33 in-area roles)
 - Kesta IT (~32 in-area roles)
@@ -46,8 +47,8 @@ _Likely Workday/iCIMS/custom — worth a manual careers-page check for the inter
 - Big D (~31 in-area roles)
 - Actalent (~31 in-area roles)
 - HDR (~30 in-area roles)
+- BHI (~30 in-area roles)
 - Helix Electric (~30 in-area roles)
-- ECAM (~29 in-area roles)
 - Zions Bank (~29 in-area roles)
 - Lancesoft Inc. (~29 in-area roles)
 - NextDeavor Inc. (~29 in-area roles)
@@ -55,7 +56,6 @@ _Likely Workday/iCIMS/custom — worth a manual careers-page check for the inter
 - OC Tanner (~28 in-area roles)
 - Parker Hannifin Corp. (~28 in-area roles)
 - Torus, Inc. (~26 in-area roles)
-- BHI (~25 in-area roles)
 - Dennis Group (~25 in-area roles)
 - Jacobsen Construction Company, Inc. (~25 in-area roles)
 - MarketStar (~24 in-area roles)
