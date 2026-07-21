@@ -30,6 +30,21 @@
   }
  },
  {
+  "key": "Podium::8077450",
+  "company": "Podium",
+  "title": "Senior Software Engineer \u2013 VoIP",
+  "location": "Lehi, Utah, Open to Remote",
+  "url": "https://job-boards.greenhouse.io/podium81/jobs/8077450",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Senior IC fit and remote-ok, but VoIP telephony domain niche, unclear frontend/React alignment, title below Principal.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "MX::4317568009",
   "company": "MX",
   "title": "Staff Data Engineer",
@@ -60,6 +75,36 @@
   }
  },
  {
+  "key": "Canopy::4327563009",
+  "company": "Canopy",
+  "title": "Application Security Engineer",
+  "location": "South Jordan Utah",
+  "url": "https://job-boards.greenhouse.io/canopytax/jobs/4327563009",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Application security specialist role, not full-stack/frontend engineering; mismatch with candidate's core expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Nomi Health::24a9f84e-ebc2-4c41-b8fc-14822f0dc973",
+  "company": "Nomi Health",
+  "title": "Staff Software Engineer",
+  "location": "Salt Lake City, Utah",
+  "url": "https://jobs.lever.co/nomihealth/24a9f84e-ebc2-4c41-b8fc-14822f0dc973",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "fit": "yes",
+   "score": 78,
+   "reason": "Staff IC role in SLC, React/TypeScript/AWS match, technical leadership, though Go and healthcare domain are new.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "NICE::4928015101",
   "company": "NICE",
   "title": "AI Lead Software Engineer",
@@ -71,6 +116,36 @@
    "fit": "no",
    "score": 22,
    "reason": "Data/AI platform role (Snowflake, LLM SQL, vector search) mismatches candidate's frontend/full-stack SaaS expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "NICE::4932615101",
+  "company": "NICE",
+  "title": "Integration Engineer",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4932615101?gh_jid=4932615101",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Integration/partner support engineer role, junior scope (3+ yrs), not principal-level architecture or product engineering.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "NICE::4929222101",
+  "company": "NICE",
+  "title": "Senior Software Engineer",
+  "location": "USA - Sandy, UT",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4929222101?gh_jid=4929222101",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Senior IC role, right location, AI-forward, but contact-center domain and title level below Principal norm.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -116,6 +191,36 @@
    "fit": "no",
    "score": 3,
    "reason": "Webflow/design role mismatch; candidate is a senior full-stack/backend-leaning software engineer, not a web designer.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025472",
+  "company": "Western Governors University",
+  "title": "Software Engineer II- Salesforce",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II--Salesforce_JR-025472",
+  "posted": "2026-07-21",
+  "salary": "$118,900.00 - $178,500.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Salesforce-focused, Engineer II level mismatches Principal seniority and core .NET/React/cloud expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025709",
+  "company": "Western Governors University",
+  "title": "Software Engineer Python/Angular",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-Python-Angular_JR-025709",
+  "posted": "2026-07-21",
+  "salary": "$98,300.00 - $147,400.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Location fits, but title suggests generic Python/Angular role, unclear seniority, no comp/domain info, no .NET/React focus.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -236,21 +341,6 @@
    "fit": "maybe",
    "score": 52,
    "reason": "Senior IC fit and SLC location match, but Angular/Python differs from React/.NET stack; comp/culture unknown.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Western Governors University::JR-025709",
-  "company": "Western Governors University",
-  "title": "Software Engineer Python/Angular",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-Python-Angular_JR-025709",
-  "posted": "2026-07-17",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Location fits, but title suggests generic Python/Angular role, unclear seniority, no comp/domain info, no .NET/React focus.",
    "bg": "b9f9e4b0db4d"
   }
  },
