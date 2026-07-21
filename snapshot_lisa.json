@@ -8,10 +8,10 @@
   "posted": "2026-07-15",
   "salary": "$155,800 - $205,000",
   "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Content delivery director role lacks transformation, M&A, or org-effectiveness mandate; no description to confirm fit.",
-   "bg": "4450f0ecb7f8"
+   "fit": "maybe",
+   "score": 35,
+   "reason": "Director title but content-delivery function unclear fit; no description to confirm transformation/strategy mandate.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -25,8 +25,8 @@
   "fit_result": {
    "fit": "yes",
    "score": 78,
-   "reason": "Chief of Staff to COO, ops/strategy scope, local Utah AI company\u2014strong mandate fit despite generic title.",
-   "bg": "4450f0ecb7f8"
+   "reason": "Chief of Staff mandate, ops/strategy leadership, Utah location\u2014strong fit despite non-M&A focus.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -39,9 +39,9 @@
   "salary": null,
   "fit_result": {
    "fit": "no",
-   "score": 12,
-   "reason": "Individual-contributor CSM role, not senior-leadership transformation/strategy mandate; mismatched seniority and function.",
-   "bg": "4450f0ecb7f8"
+   "score": 20,
+   "reason": "Frontline CSM/account-management role, not a transformation/strategy leadership mandate; likely IC-level despite 'Manager' title.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -54,9 +54,9 @@
   "salary": null,
   "fit_result": {
    "fit": "no",
-   "score": 25,
-   "reason": "Customer Success team management role, not transformation/strategy/M&A leadership; too operational/quota-driven for her mandate.",
-   "bg": "4450f0ecb7f8"
+   "score": 50,
+   "reason": "Frontline CS team management (retention/adoption for auto dealerships), not transformation/strategy/M&A leadership mandate.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -69,9 +69,9 @@
   "salary": "$167,300 - $242,300",
   "fit_result": {
    "fit": "yes",
-   "score": 72,
-   "reason": "M&A integration mandate matches core expertise; Lehi location fits; finance-specific scope slightly narrows fit.",
-   "bg": "4450f0ecb7f8"
+   "score": 78,
+   "reason": "M&A integration lead matches priority target; Lehi location fits Utah preference, though finance-specific scope unconfirmed.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -84,9 +84,9 @@
   "salary": "$146,300 - $211,850",
   "fit_result": {
    "fit": "no",
-   "score": 15,
-   "reason": "Compliance operations manager role mismatches transformation/M&A leadership mandate; likely mid-level, not executive scope.",
-   "bg": "4450f0ecb7f8"
+   "score": 20,
+   "reason": "Sales/compliance operations niche, no transformation or org-effectiveness mandate evident; poor functional match despite manager-level title.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -99,9 +99,9 @@
   "salary": "$202,900 - $293,800",
   "fit_result": {
    "fit": "no",
-   "score": 15,
-   "reason": "Content strategy manager role is functional/marketing, not transformation, M&A, or org-effectiveness leadership mandate.",
-   "bg": "4450f0ecb7f8"
+   "score": 20,
+   "reason": "Content strategy/marketing manager role, not transformation/ops/M&A leadership; mismatched function despite manager-level title.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -115,8 +115,8 @@
   "fit_result": {
    "fit": "maybe",
    "score": 55,
-   "reason": "Chief-of-staff-adjacent strategy role fits mandate, but no description limits confidence in scope/seniority match.",
-   "bg": "4450f0ecb7f8"
+   "reason": "Chief-of-staff-style strategy role fits mandate, but no description detail to confirm scope/seniority.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -130,8 +130,8 @@
   "fit_result": {
    "fit": "no",
    "score": 10,
-   "reason": "Sales ops/account management IC-ish role, retail order execution\u2014not transformation/strategy leadership mandate.",
-   "bg": "4450f0ecb7f8"
+   "reason": "Retail sales operations/account management role, not transformation, M&A, or org-effectiveness leadership.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -143,10 +143,10 @@
   "posted": "2026-07-17",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 35,
-   "reason": "Strong transformation domain fit but explicitly IC-only, no leadership/management scope.",
-   "bg": "4450f0ecb7f8"
+   "fit": "maybe",
+   "score": -1,
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -158,10 +158,10 @@
   "posted": "2026-07-17",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 30,
-   "reason": "Deep Quote-to-Cash/CPQ/billing domain expertise required; Lisa's background is transformation/CX, not finance systems execution.",
-   "bg": "4450f0ecb7f8"
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Senior transformation ownership fits scope, but deep CPQ/billing/revenue-recognition domain expertise is a mismatch.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -174,9 +174,9 @@
   "salary": "$109,900.00 - $170,400.00",
   "fit_result": {
    "fit": "maybe",
-   "score": 45,
-   "reason": "Transformation-related and local, but 'Project Manager' title suggests lower seniority than Director-level target.",
-   "bg": "4450f0ecb7f8"
+   "score": 55,
+   "reason": "Transformation-titled PM role fits domain, but title suggests IC/PM level, not leadership mandate; no description to confirm scope.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -188,10 +188,10 @@
   "posted": "2026-07-17",
   "salary": "$78,200.00 - $129,000.00",
   "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Manager-level lifecycle engagement role; below target seniority and outside transformation/strategy mandate.",
-   "bg": "4450f0ecb7f8"
+   "fit": "maybe",
+   "score": 35,
+   "reason": "Manager-level in Salt Lake City fits location/seniority floor, but lifecycle engagement is narrow, unclear transformation mandate.",
+   "bg": "e375d8ec09f3"
   }
  },
  {
@@ -203,10 +203,10 @@
   "posted": "2026-07-16",
   "salary": "$68,300.00 - $102,500.00",
   "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Manager-level, unclear mandate; no transformation/M&A/org-effectiveness scope indicated; likely below Director-target seniority.",
-   "bg": "4450f0ecb7f8"
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Manager-level, local, but unclear mandate\u2014could be strategy/ops fit or narrow data-analytics role; no description.",
+   "bg": "e375d8ec09f3"
   }
  }
 ]

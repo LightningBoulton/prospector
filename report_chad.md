@@ -3,19 +3,7 @@
 _⭐ = posted in the last 3 days_
 
 ## What's changed
-**New (6)**
-- ⭐ **Nomi Health** — [Staff Software Engineer](https://jobs.lever.co/nomihealth/24a9f84e-ebc2-4c41-b8fc-14822f0dc973) · Salt Lake City, Utah · Posted Jul 21 · today — **78/100** (yes)
-   _Staff IC role in SLC, React/TypeScript/AWS match, technical leadership, though Go and healthcare domain are new._
-- ⭐ **NICE** — [Senior Software Engineer](https://boards.eu.greenhouse.io/nice/jobs/4929222101?gh_jid=4929222101) · USA - Sandy, UT · Posted Jul 20 · 1d ago — **55/100** (maybe)
-   _Senior IC role, right location, AI-forward, but contact-center domain and title level below Principal norm._
-- ⭐ **Podium** — [Senior Software Engineer – VoIP](https://job-boards.greenhouse.io/podium81/jobs/8077450) · Lehi, Utah, Open to Remote · Posted Jul 21 · today — **45/100** (maybe)
-   _Senior IC fit and remote-ok, but VoIP telephony domain niche, unclear frontend/React alignment, title below Principal._
-- ⭐ **NICE** — [Integration Engineer](https://boards.eu.greenhouse.io/nice/jobs/4932615101?gh_jid=4932615101) · USA - Remote · Posted Jul 21 · today — **25/100** (no)
-   _Integration/partner support engineer role, junior scope (3+ yrs), not principal-level architecture or product engineering._
-- ⭐ **Canopy** — [Application Security Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4327563009) · South Jordan Utah · Posted Jul 21 · today — **20/100** (no)
-   _Application security specialist role, not full-stack/frontend engineering; mismatch with candidate's core expertise._
-- ⭐ **Western Governors University** — [Software Engineer II- Salesforce](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II--Salesforce_JR-025472) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 21 · today — **15/100** (no)
-   _Salesforce-focused, Engineer II level mismatches Principal seniority and core .NET/React/cloud expertise._
+_No changes since the previous run._
 
 ## All current matching roles (26)
 - ⭐ **Nomi Health** — [Staff Software Engineer](https://jobs.lever.co/nomihealth/24a9f84e-ebc2-4c41-b8fc-14822f0dc973) · Salt Lake City, Utah · Posted Jul 21 · today — **78/100** (yes)
