@@ -227,7 +227,7 @@ jobs:
           git push
 
       - name: Email Chad's report
-        if: ${{ steps.run.outputs.chad_changed == 'true' }}
+        if: ${{ steps.run.outputs.chad_changed == 'true' || inputs.force_email == true }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -239,9 +239,10 @@ jobs:
           to: ${{ secrets.MAIL_TO_CHAD }}
           subject: "Prospector — your daily jobs report"
           html_body: file://report_chad.html
+          attachments: ${{ steps.run.outputs.chad_logos }}   # inline company logos (cid:<file>)
 
       - name: Email Lisa's report
-        if: ${{ inputs.chad_only != true && steps.run.outputs.lisa_changed == 'true' }}
+        if: ${{ inputs.chad_only != true && (steps.run.outputs.lisa_changed == 'true' || inputs.force_email == true) }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -253,11 +254,17 @@ jobs:
           to: ${{ secrets.MAIL_TO_LISA }}
           subject: "Prospector — director / ops roles today"
           html_body: file://report_lisa.html
+          attachments: ${{ steps.run.outputs.lisa_logos }}   # inline company logos (cid:<file>)
 ```
 
 **Emails only go out when something changed.** `jobmonitor.py` writes a `<profile>_changed=true|false` output for each profile (via `$GITHUB_OUTPUT`), and each email step is gated on it (`if: steps.run.outputs.<profile>_changed == 'true'`). A profile "changed" when its diff has any new, removed, or changed-title role since the last run; a profile's first-ever run also counts as changed so the baseline still sends. On a day with no changes for a person, their email is simply skipped — snapshots and reports are still committed regardless. Note that adding a new profile requires adding its own email step + `if:` gate here; the output key follows the profile `name` automatically.
 
-The manual **Run workflow** button exposes a **"Test run: email only Chad, skip Lisa"** checkbox (the `chad_only` input) so you can preview output without emailing Lisa; scheduled runs email both (each still subject to its own "changed" gate). Reports are emailed as styled dark-mode HTML (`report_<name>.html`); the Markdown versions are kept for git history.
+The manual **Run workflow** button exposes two test toggles:
+
+- **`chad_only`** ("Test run: email only Chad, skip Lisa") — preview output without emailing Lisa. Scheduled runs leave this off and email both (each still subject to its own "changed" gate).
+- **`force_email`** ("Test run: send even if the report has no changes since last run") — bypass the changed-gate so a report sends regardless. Useful for a visual test after tweaking styling/keywords, since a normal run skips emails when nothing changed. It applies to **both** people, so `force_email` on its own emails Chad *and* Lisa; pair it with `chad_only` to force just Chad. Scheduled runs leave it off (defaults to false), so the changed-gate governs normally.
+
+Reports are emailed as styled dark-mode HTML (`report_<name>.html`); the Markdown versions are kept for git history.
 
 ### Credentials and recipients — you set these, not this repo
 
