@@ -369,7 +369,9 @@ def score_fit(candidate, posting, client):
     prompt = (
         "You screen job postings for one specific candidate. Decide whether this role is "
         "worth the candidate's attention. Be realistic: reward strong matches on seniority, "
-        "function, and domain; penalize clear mismatches.\n\n"
+        "function, and domain; penalize clear mismatches. Many strong-fit roles are poorly or "
+        "generically titled, so weight the actual mandate, scope, and problems described in the "
+        "posting over title keywords.\n\n"
         f"CANDIDATE:\n{json.dumps(candidate, indent=2)}\n\n"
         f"JOB POSTING:\nTitle: {posting['title']}\nCompany: {posting['company']}\n"
         f"Location: {posting['location']}\nDescription: {desc[:DESC_LIMIT]}\n\n"
