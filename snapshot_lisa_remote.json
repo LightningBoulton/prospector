@@ -45,6 +45,21 @@
   }
  },
  {
+  "key": "GitLab::8622433002",
+  "company": "GitLab",
+  "title": "Senior Professional Services Project Manager",
+  "location": "Remote",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8622433002",
+  "posted": "2026-07-22",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "IC-level PS project manager delivering client engagements, not a leadership/transformation mandate matching her scope.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
   "key": "Cloudflare::8024849",
   "company": "Cloudflare",
   "title": "Senior Principal, Sales Compensation Design & Strategy",
@@ -165,21 +180,6 @@
   }
  },
  {
-  "key": "Instacart::8074453",
-  "company": "Instacart",
-  "title": "Manager, IT Operations",
-  "location": "San Francisco, Bay Area - Remote",
-  "url": "https://instacart.careers/job/?gh_jid=8074453",
-  "posted": "2026-07-20",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "IT helpdesk/ops manager role\u2014operational IT support, not transformation, strategy, or M&A leadership mandate.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
   "key": "1Password::eba90a49-3fde-4d82-aedd-ed07c8052db9",
   "company": "1Password",
   "title": "Manager, Quality Assurance, Customer Support",
@@ -206,6 +206,51 @@
    "fit": "maybe",
    "score": 45,
    "reason": "Director-level CS leadership but revenue/NRR-focused, not transformation, M&A, or ops-effectiveness mandate.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "LaunchDarkly::7808587003",
+  "company": "LaunchDarkly",
+  "title": "Head of Customer Marketing",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/7808587003",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Customer marketing/advocacy function, not transformation, strategy-ops, or org-effectiveness mandate\u2014functional mismatch.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "Deepgram::51a459fc-29b7-48cd-934d-3459dd04b950",
+  "company": "Deepgram",
+  "title": "Director, People",
+  "location": "USA | Remote",
+  "url": "https://jobs.ashbyhq.com/deepgram/51a459fc-29b7-48cd-934d-3459dd04b950",
+  "posted": "2026-07-16",
+  "salary": "$180K \u2013 $250K",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Director-level HR/People role, org-effectiveness adjacent but core function is HR, not transformation/strategy/M&A mandate.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "LangChain::7441ccb7-bc77-4966-8d2f-e9ff487bc651",
+  "company": "LangChain",
+  "title": "Marketing Operations Strategy",
+  "location": "Remote - US",
+  "url": "https://jobs.ashbyhq.com/langchain/7441ccb7-bc77-4966-8d2f-e9ff487bc651",
+  "posted": "2026-07-15",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Marketing ops tooling/tech-stack IC role, not transformation/strategy leadership\u2014mismatched function and scope.",
    "bg": "e375d8ec09f3"
   }
  }
