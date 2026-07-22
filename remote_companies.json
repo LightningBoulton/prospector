@@ -11,6 +11,24 @@
     { "name": "Vercel",       "ats": "greenhouse", "slug": "vercel",      "domain": "vercel.com" },
     { "name": "Grafana Labs", "ats": "greenhouse", "slug": "grafanalabs", "domain": "grafana.com" },
     { "name": "Postman",      "ats": "greenhouse", "slug": "postman",     "domain": "postman.com" },
-    { "name": "Webflow",      "ats": "greenhouse", "slug": "webflow",     "domain": "webflow.com" }
+    { "name": "Webflow",      "ats": "greenhouse", "slug": "webflow",     "domain": "webflow.com" },
+    { "name": "Mercury",      "ats": "greenhouse", "slug": "mercury",     "domain": "mercury.com" },
+    { "name": "Netlify",      "ats": "greenhouse", "slug": "netlify",     "domain": "netlify.com" },
+    { "name": "Doximity",     "ats": "greenhouse", "slug": "doximity",    "domain": "doximity.com" },
+    { "name": "Gusto",        "ats": "greenhouse", "slug": "gusto",       "domain": "gusto.com" },
+    { "name": "Affirm",       "ats": "greenhouse", "slug": "affirm",      "domain": "affirm.com" },
+    { "name": "Discord",      "ats": "greenhouse", "slug": "discord",     "domain": "discord.com" },
+    { "name": "Supabase",     "ats": "ashby",      "slug": "supabase",    "domain": "supabase.com" },
+    { "name": "PostHog",      "ats": "ashby",      "slug": "posthog",     "domain": "posthog.com" },
+    { "name": "Buffer",       "ats": "ashby",      "slug": "buffer",      "domain": "buffer.com" },
+    { "name": "Linear",       "ats": "ashby",      "slug": "linear",      "domain": "linear.app" },
+    { "name": "Replit",       "ats": "ashby",      "slug": "replit",      "domain": "replit.com" },
+    { "name": "Ramp",         "ats": "ashby",      "slug": "ramp",        "domain": "ramp.com" },
+    { "name": "Vanta",        "ats": "ashby",      "slug": "vanta",       "domain": "vanta.com" },
+    { "name": "Render",       "ats": "ashby",      "slug": "render",      "domain": "render.com" },
+    { "name": "Sentry",       "ats": "ashby",      "slug": "sentry",      "domain": "sentry.io" },
+    { "name": "Zapier",       "ats": "ashby",      "slug": "zapier",      "domain": "zapier.com" },
+    { "name": "Notion",       "ats": "ashby",      "slug": "notion",      "domain": "notion.so" },
+    { "name": "Toptal",       "ats": "lever",      "slug": "toptal",      "domain": "toptal.com" }
   ]
 }

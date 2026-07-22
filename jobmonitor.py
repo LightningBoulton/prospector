@@ -205,8 +205,32 @@ def fetch_workday(c):
     return out
 
 
+def fetch_ashby(c):
+    # Ashby public job board: GET posting-api/job-board/{slug} -> {jobs:[{id,title,location,
+    # isRemote,jobUrl,publishedAt,descriptionPlain,compensation}]}. `publishedAt` -> posted;
+    # `descriptionPlain` feeds LLM/salary; salary sometimes in the compensation summary.
+    # 404s on a bad slug (caught upstream).
+    d = _get(f"https://api.ashbyhq.com/posting-api/job-board/{c['slug']}?includeCompensation=true")
+    out = []
+    for j in d.get("jobs", []):
+        loc = (j.get("location") or "").strip()
+        if j.get("isRemote") and "remote" not in loc.lower():
+            loc = (loc + " (Remote)").strip() if loc else "Remote"
+        comp = j.get("compensation") or {}
+        salary = (comp.get("compensationTierSummary")
+                  or comp.get("scrapeableCompensationSalarySummary") or None)
+        if salary:  # Ashby summaries can trail equity/benefits prose; keep just the pay range
+            salary = salary.split("•")[0].strip() or None
+        out.append(_norm(c, str(j["id"]), j.get("title", ""), loc,
+                         j.get("jobUrl", ""), (j.get("publishedAt") or "")[:10],
+                         salary=salary, ats="ashby",
+                         description=(j.get("descriptionPlain") or "")[:DESC_LIMIT]))
+    return out
+
+
 FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
-            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday}
+            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday,
+            "ashby": fetch_ashby}
 
 
 def _norm(company, ext_id, title, location, url, posted,
