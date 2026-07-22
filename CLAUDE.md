@@ -27,6 +27,7 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 ## Files
 
 - `companies.json` — `companies[]` + `needs_identification[]` backlog. Company fields: {name, city, ats, slug, domain}; **workday entries also need** {wd_host, site}. `domain` feeds logo prefetch.
+- `remote_companies.json` — registry for the **US-remote lane** (same entry shape as `companies.json`). Hand-seeded, remote-friendly employers on tier-1 ATSes; each VERIFIED to return live US-remote roles before adding. Read only when `settings.remote_search.enabled` and a profile has `remote_search:true` (see US-remote lane below).
 - `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any}).
 - `settings.json` — run-wide tweakables (loaded by `load_settings`, defaults in `SETTINGS_DEFAULTS`): `max_posting_age_days` (drop postings older than this; 0/null = keep all; unknown-date always kept), `fit_scoring_enabled` (master off-switch for the Anthropic API), and `star_within_days` (⭐ postings newer than this in the report; 0/null off — `main` sets the `STAR_WITHIN_DAYS` global from it). Missing file/keys fall back to defaults.
 - `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `enrich_salary`, `enrich_with_fit`, `diff`, `build_report`, `build_html_report`, `run_profile`.
@@ -93,6 +94,21 @@ inline via **CID** (`<img src="cid:<slug>.png">`), which works because
 — re-verify on a major bump). The daily job never fetches logos; `fetch_logos.py` does that
 occasionally (needs `LOGO_DEV_TOKEN`, kept out of the repo). Missing logo → monogram, so it
 never breaks. Do NOT base64/data-URI logos instead — Gmail and Outlook strip `data:` images.
+
+## US-remote lane (second search lane)
+
+Additive to the local company search; never changes it. Master switch `settings.remote_search.enabled`;
+a profile opts in with `remote_search:true`. Reads `remote_companies.json` (NOT `companies.json`)
+and applies `is_us_remote` (keep US/remote; drop location-locked + non-US remote) instead of the
+local `is_local` gate — `collect_pool(config_path, gate)` is parameterized for exactly this.
+`_run_lane` matches/scores/diffs ONE lane against its own snapshot (`snapshot_<name>.json` local,
+`snapshot_<name>_remote.json` remote — independent diffs); `run_profile` composes BOTH lanes into
+**one report/email per person** (`build_report`/`build_html_report` take a list of lane dicts; single
+lane = old layout byte-for-byte, two lanes get "📍 Local"/"🌎 US-Remote" banners via `_lane_banner`).
+`<name>_changed` = OR of the lanes; `<name>_logos` = union — so the **workflow email steps are
+unchanged** (one email, gated on the combined flag). Design + why the feed approach was dropped:
+@DESIGN-remote.md. Grow the registry by verifying new remote-friendly employers on tier-1 ATSes
+(same discipline as `companies.json`); `fetch_logos.py` already reads both registries.
 
 ## Location + age gates
 

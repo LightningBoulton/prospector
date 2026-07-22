@@ -18,6 +18,7 @@ import hashlib, json, os, re, sys, html, urllib.request, datetime
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
+REMOTE_CONFIG = os.path.join(HERE, "remote_companies.json")  # US-remote lane registry
 PROFILES = os.path.join(HERE, "profiles.json")
 SETTINGS = os.path.join(HERE, "settings.json")
 
@@ -236,6 +237,21 @@ def is_local(loc):
     return _matches_any(l, LOCAL_KEYWORDS)
 
 
+def is_us_remote(loc):
+    """Gate for the US-remote lane: keep a role only if its location is REMOTE and
+    US-eligible. Drops location-locked roles (must name a remote marker) and non-US
+    remote roles (names a non-US country, unless allow_international_remote). A generic
+    'Remote'/'Anywhere' with no country named is treated as US-eligible."""
+    l = (loc or "").lower()
+    if not _matches_any(l, ["remote", "anywhere", "distributed", "work from home", "wfh", "virtual"]):
+        return False
+    if _matches_any(l, ["us", "usa", "united states", "u.s", "u.s.", "americas", "north america"]):
+        return True
+    if _matches_any(l, INTERNATIONAL_MARKERS):
+        return ALLOW_INTL_REMOTE
+    return True
+
+
 # ---- posting-date + salary enrichment (Lever inline; others: description/detail regex) ----
 
 _INTERVAL = {"per-year-salary": "/yr", "per-hour-wage": "/hr",
@@ -437,14 +453,20 @@ def _within_age(posted, max_age_days):
     return (datetime.date.today() - d).days <= max_age_days
 
 
-def collect_pool(max_age_days=None):
-    cfg = json.load(open(CONFIG))
+def collect_pool(max_age_days=None, config_path=CONFIG, gate=None):
+    """Fetch + normalize every source in `config_path` once, apply a geography `gate`
+    (defaults to the local gate `is_local` when None), then the age gate. The remote lane
+    calls this with config_path=REMOTE_CONFIG and gate=is_us_remote."""
+    if not os.path.exists(config_path):
+        return [], []
+    cfg = json.load(open(config_path))
+    keep = gate or (is_local if LOCAL_ONLY else None)
     pool, errors = [], []
-    for c in cfg["companies"]:
+    for c in cfg.get("companies", []):
         try:
             got = FETCHERS[c["ats"]](c)
-            if LOCAL_ONLY:
-                got = [p for p in got if is_local(p["location"])]
+            if keep:
+                got = [p for p in got if keep(p["location"])]
             got = [p for p in got if _within_age(p["posted"], max_age_days)]
             pool.extend(got)
         except Exception as e:
@@ -490,16 +512,12 @@ def _meta_md(p):
     return " · ".join(b for b in bits if b)
 
 
-def build_report(profile, matched, new, removed, changed, errors, first_run):
-    today = datetime.date.today().isoformat()
+def _md_lane(lane):
+    # Markdown for one lane's sections (What's changed / All current / warnings).
+    matched, new, removed, changed = lane["matched"], lane["new"], lane["removed"], lane["changed"]
+    errors, first_run = lane["errors"], lane["first_run"]
     scored = any(p.get("fit_result") for p in matched)
-    L = [f"# {profile['label']}", f"### Job report — {today}"]
-    if STAR_WITHIN_DAYS:
-        L.append(f"_⭐ = posted in the last {STAR_WITHIN_DAYS} days_")
-    L.append("")
-
-    # --- What's changed (leads the report) ---
-    L.append("## What's changed")
+    L = ["## What's changed"]
     if first_run:
         L.append("_First run — baseline established. Changes will appear here on the next run._")
     elif not (new or removed or changed):
@@ -520,17 +538,13 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
             L += [f"- **{p['company']}** — {p['title']} · {_meta_md(p)}"
                   for p in sorted(removed, key=lambda x: x["company"])]
     L.append("")
-
-    # --- All current matching roles ---
     L.append(f"## All current matching roles ({len(matched)})")
     if not matched:
         L.append("_No roles currently match this profile._")
     elif scored:
-        # ranked best-fit first
         for p in sorted(matched, key=lambda x: -(x.get("fit_result") or {}).get("score", 0)):
             L.append(f"- {_star(p)}**{p['company']}** — [{p['title']}]({p['url']}) · {_meta_md(p)}{_fit_badge(p)}{_fit_reason(p)}")
     else:
-        # grouped by company (no scoring)
         last = None
         for p in sorted(matched, key=lambda x: (x["company"], x["title"])):
             if p["company"] != last:
@@ -538,12 +552,26 @@ def build_report(profile, matched, new, removed, changed, errors, first_run):
                 last = p["company"]
             L.append(f"- {_star(p)}[{p['title']}]({p['url']}) · {_meta_md(p)}")
     L.append("")
-
-    # --- Source warnings ---
     if errors:
         L.append(f"## Source warnings ({len(errors)})")
         L += [f"- {e}" for e in errors]
         L.append("")
+    return L
+
+
+def build_report(profile, lanes):
+    # `lanes` is a list of lane dicts; rendered under one header. A single lane (remote off)
+    # renders exactly as before; two lanes get a `# <lane title>` heading each.
+    today = datetime.date.today().isoformat()
+    L = [f"# {profile['label']}", f"### Job report — {today}"]
+    if STAR_WITHIN_DAYS:
+        L.append(f"_⭐ = posted in the last {STAR_WITHIN_DAYS} days_")
+    multi = len(lanes) > 1
+    for lane in lanes:
+        L.append("")
+        if multi:
+            L.append(f"# {lane['title']} ({len(lane['matched'])})")
+        L += _md_lane(lane)
     return "\n".join(L)
 
 
@@ -580,10 +608,13 @@ _MONO_COLORS = ["#1f6feb", "#238636", "#8957e5", "#bb8009", "#c93c37",
 def _company_slug(company):
     global _COMPANIES
     if _COMPANIES is None:
-        try:
-            _COMPANIES = {c["name"]: c for c in json.load(open(CONFIG))["companies"]}
-        except Exception:
-            _COMPANIES = {}
+        _COMPANIES = {}
+        for path in (CONFIG, REMOTE_CONFIG):  # local + US-remote registries
+            try:
+                for c in json.load(open(path)).get("companies", []):
+                    _COMPANIES.setdefault(c["name"], c)
+            except Exception:
+                pass
     return (_COMPANIES.get(company) or {}).get("slug")
 
 
@@ -710,23 +741,24 @@ def _role_inner(p, lead=None):
             f'{_meta_html(p, lead)}{_fit_reason_html(p)}</div>')
 
 
-def build_html_report(profile, matched, new, removed, changed, errors, first_run):
-    today = datetime.date.today().isoformat()
+def _lane_banner(title, n):
+    # Prominent header separating lanes (Local vs US-Remote) in a combined report.
+    return (f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:21px;font-weight:800;'
+            f'margin:36px 0 2px;padding-top:14px;border-top:2px solid {_C["border"]};">'
+            f'{_esc(title)} <span style="color:{_C["muted"]};font-weight:600;font-size:15px;">'
+            f'· {n}</span></div>')
+
+
+def _html_lane(lane, show_banner):
+    # HTML for one lane's sections. Appends referenced logos into _LOGOS_USED (caller clears).
+    matched, new, removed, changed = lane["matched"], lane["new"], lane["removed"], lane["changed"]
+    errors, first_run = lane["errors"], lane["first_run"]
     scored = any(p.get("fit_result") for p in matched)
     by_score = lambda x: -((x.get("fit_result") or {}).get("score", 0))
-    _LOGOS_USED.clear()   # collect the logo files this report references (for CID attach)
     B = []
+    if show_banner:
+        B.append(_lane_banner(lane["title"], len(matched)))
 
-    # Header
-    B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:22px;'
-             f'font-weight:800;line-height:1.3;">{_esc(profile["label"])}</div>')
-    sub = f"Job report · {today}" + (" · ranked by fit" if scored else "")
-    if STAR_WITHIN_DAYS:
-        sub += f" · ⭐ = posted in the last {STAR_WITHIN_DAYS} days"
-    B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
-             f'margin-top:4px;">{_esc(sub)}</div>')
-
-    # What's changed
     B.append(_section("What's changed"))
     if first_run:
         B.append(_muted("First run — baseline established. Changes will appear here on the next run."))
@@ -754,7 +786,6 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
                          + _meta_html(p, lead=p["company"]))
                 B.append(_card(_icon_row(p["company"], inner), _C["red"]))
 
-    # All current matching roles
     B.append(_section(f"All current matching roles ({len(matched)})"))
     if not matched:
         B.append(_muted("No roles currently match this profile."))
@@ -763,16 +794,34 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
                  else sorted(matched, key=lambda x: (x["company"], x["title"])))
         for p in order:
             row = _icon_row(p["company"], _role_inner(p, lead=p["company"]))
-            # Separator line under each posting + a small gap to the next.
             B.append(f'<div style="border-bottom:1px solid {_C["border"]};'
                      f'padding-bottom:16px;margin-bottom:8px;">{row}</div>')
 
-    # Source warnings
     if errors:
         B.append(_section(f"Source warnings ({len(errors)})"))
         for e in errors:
             B.append(f'<div style="color:{_C["amber"]};font-family:{_FONT};'
                      f'font-size:13px;margin:0 0 4px;">{_esc(e)}</div>')
+    return "".join(B)
+
+
+def build_html_report(profile, lanes):
+    # Compose one or more lanes into a single email. Single lane (remote off) is byte-for-byte
+    # the old layout; two lanes get a banner each. Clears _LOGOS_USED, then both lanes populate it.
+    today = datetime.date.today().isoformat()
+    _LOGOS_USED.clear()   # collect the logo files this report references (for CID attach)
+    scored = any(p.get("fit_result") for lane in lanes for p in lane["matched"])
+    B = []
+    B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:22px;'
+             f'font-weight:800;line-height:1.3;">{_esc(profile["label"])}</div>')
+    sub = f"Job report · {today}" + (" · ranked by fit" if scored else "")
+    if STAR_WITHIN_DAYS:
+        sub += f" · ⭐ = posted in the last {STAR_WITHIN_DAYS} days"
+    B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
+             f'margin-top:4px;">{_esc(sub)}</div>')
+    multi = len(lanes) > 1
+    for lane in lanes:
+        B.append(_html_lane(lane, show_banner=multi))
 
     body = "".join(B)
     return f"""<!DOCTYPE html>
@@ -804,41 +853,53 @@ def build_html_report(profile, matched, new, removed, changed, errors, first_run
 </html>"""
 
 
-def run_profile(profile, pool, errors, client=None):
+def _run_lane(profile, pool, errors, client, suffix, title):
+    # Match + score + diff ONE lane against its own snapshot (suffix ""=local, "_remote").
+    # Writes the slim snapshot; returns (lane_dict, has_changes).
     matched = [p for p in pool if matches_profile(p, profile)]
     enrich_salary(matched)   # cache-deduped across profiles; postings are shared refs
-    snap = os.path.join(HERE, f"snapshot_{profile['name']}.json")
-    rpt  = os.path.join(HERE, f"report_{profile['name']}.md")
+    snap = os.path.join(HERE, f"snapshot_{profile['name']}{suffix}.json")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
 
     scored = enrich_with_fit(matched, prev, profile, client)
     if scored:
-        print(f"  [{profile['name']}] scored {scored} new role(s) with {FIT_MODEL}")
-    # Optional hard filter: drop roles the model rated a clear "no".
-    if profile.get("fit_mode") == "filter":
+        print(f"  [{profile['name']}{suffix}] scored {scored} new role(s) with {FIT_MODEL}")
+    if profile.get("fit_mode") == "filter":   # drop roles the model rated a clear "no"
         matched = [p for p in matched if (p.get("fit_result") or {}).get("fit") != "no"]
 
     if prev is None:
-        args = (profile, matched, [], [], [], errors)
-        report = build_report(*args, first_run=True)
-        report_html = build_html_report(*args, first_run=True)
-        has_changes = True   # first run: no prior snapshot, so treat the fresh report as worth sending
+        new, removed, changed, first_run, has_changes = [], [], [], True, True
     else:
         new, removed, changed = diff(prev, matched)
-        args = (profile, matched, new, removed, changed, errors)
-        report = build_report(*args, first_run=False)
-        report_html = build_html_report(*args, first_run=False)
-        has_changes = bool(new or removed or changed)
+        first_run, has_changes = False, bool(new or removed or changed)
 
-    # Persist a slim snapshot: keep fit_result (the cache) but drop the bulky description
-    # and the private fetch metadata (_ats/_detail_url).
     slim = [{k: v for k, v in p.items() if k != "description" and not k.startswith("_")}
             for p in matched]
     json.dump(slim, open(snap, "w"), indent=1)
-    open(rpt, "w").write(report)
+    lane = {"title": title, "matched": matched, "new": new, "removed": removed,
+            "changed": changed, "errors": errors, "first_run": first_run}
+    return lane, has_changes
+
+
+def run_profile(profile, local_pool, remote_pool, errors, client=None, remote_errors=None):
+    # Run the local lane and (when enabled + opted-in) the US-remote lane, then compose BOTH
+    # into ONE report/email per person. Each lane keeps its own snapshot so diffs are
+    # independent; `changed` is the OR of the lanes; logos are the union across lanes.
+    local_lane, changed = _run_lane(profile, local_pool, errors, client, "",
+                                    "📍 Local — Silicon Slopes")
+    lanes = [local_lane]
+    if remote_pool is not None and profile.get("remote_search"):
+        remote_lane, r_changed = _run_lane(profile, remote_pool, remote_errors or [], client,
+                                           "_remote", "🌎 US-Remote")
+        lanes.append(remote_lane)
+        changed = changed or r_changed
+
+    report = build_report(profile, lanes)
+    report_html = build_html_report(profile, lanes)   # clears + repopulates _LOGOS_USED
+    open(os.path.join(HERE, f"report_{profile['name']}.md"), "w").write(report)
     open(os.path.join(HERE, f"report_{profile['name']}.html"), "w").write(report_html)
-    logos = sorted(_LOGOS_USED)   # logo files this report referenced (for inline CID attach)
-    return matched, report, has_changes, logos
+    logos = sorted(_LOGOS_USED)   # union of logos referenced across all lanes
+    return changed, logos, report
 
 
 def main():
@@ -868,23 +929,38 @@ def main():
 
     pool, errors = collect_pool(max_age_days=max_age)
     age_note = f" ≤{max_age}d old" if max_age else ""
-    print(f"Fetched {len(pool)} local/remote roles{age_note} across all companies."
-          f"{' Fit scoring: ON.' if client else ' Fit scoring: OFF.'}\n")
+    print(f"Fetched {len(pool)} local roles{age_note} across all companies."
+          f"{' Fit scoring: ON.' if client else ' Fit scoring: OFF.'}")
+
+    # US-remote lane: fetched once (shared across profiles), gated to US-remote. Each profile
+    # that opts in (remote_search:true) gets a US-Remote section merged into its ONE report.
+    remote_pool, remote_errors = [], []
+    remote_on = bool(settings.get("remote_search", {}).get("enabled")
+                     and any(p.get("remote_search") for p in profiles))
+    if remote_on:
+        remote_pool, remote_errors = collect_pool(max_age_days=max_age,
+                                                  config_path=REMOTE_CONFIG, gate=is_us_remote)
+        print(f"Fetched {len(remote_pool)} US-remote role(s) across the remote registry.")
+    print()
+
     changed_profiles = []
     logos_by_profile = {}
     for p in profiles:
-        matched, report, has_changes, logos = run_profile(p, pool, errors, client)
-        if has_changes:
+        rp = remote_pool if (remote_on and p.get("remote_search")) else None
+        changed, logos, report = run_profile(p, pool, rp, errors, client,
+                                             remote_errors=remote_errors)
+        if changed:
             changed_profiles.append(p["name"])
         logos_by_profile[p["name"]] = logos
         print("=" * 70)
-        print(f"[{p['name']}] changes since last run: {'yes' if has_changes else 'no'}"
+        print(f"[{p['name']}] changes since last run: {'yes' if changed else 'no'}"
               f" · {len(logos)} logo(s) to embed")
         print(report)
 
     # Expose per-profile outputs to GitHub Actions: a "changed" flag so the workflow emails
-    # only people whose report changed, and the exact list of logo files to attach inline
-    # (as CID images) — only the ones this report references, so none show as stray downloads.
+    # only people whose (combined local+remote) report changed, and the exact list of logo
+    # files to attach inline as CID images — only those the report references, so none show
+    # as stray downloads. One report/email per person, so no separate remote-lane outputs.
     gh_out = os.environ.get("GITHUB_OUTPUT")
     if gh_out:
         with open(gh_out, "a") as fh:

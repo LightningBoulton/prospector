@@ -1,7 +1,34 @@
 # DESIGN — World/Remote search lane
 
-Status: **proposal for review** (no code yet). Decisions locked with Chad:
-US-only remote · results serve the existing per-person profiles · design doc before build.
+Status: **SHIPPED (revised after probe).** US-only remote · serves the existing per-person
+profiles · one email per person.
+
+## 0. What actually shipped (read this first)
+
+A measurement probe (§12–13) **killed the feed approach**: the curated remote feeds
+(Remotive, RemoteOK) expose neither an ATS apply URL (API or page) nor a name-resolvable
+company on a tier-1 ATS — funnel was ~0 validated, and their volume is tiny. So the "feed
+discovers → ATS validates" pipeline in §2–9 below was **not built**; it's kept for the record.
+
+What we built instead — **ATS-native, no feed:**
+- **`remote_companies.json`** — a hand-seeded registry of remote-friendly employers already on
+  tier-1 ATSes, each VERIFIED to return live US-remote roles before adding (GitLab, Cloudflare,
+  Coinbase, Reddit, Datadog, Airtable, Twilio, Vercel, Grafana Labs, Postman, Webflow). Grow it
+  over time. "Validated on the company's real board" holds **by construction** — we only ever
+  read ATS boards, so there's no feed spam/staleness to fight.
+- **`is_us_remote` gate** — keeps US/remote roles, drops location-locked and non-US-remote.
+- **`collect_pool(config_path, gate)`** — reused for both lanes (local file + `is_local`, remote
+  file + `is_us_remote`).
+- **`_run_lane` + `run_profile`** — each opted-in profile (`remote_search:true`) runs a local
+  lane and a US-remote lane, each with its own snapshot (`snapshot_<name>[_remote].json`) for
+  independent diffing, composed into **ONE report/email per person** (`build_html_report` takes a
+  list of lanes; a "📍 Local" and a "🌎 US-Remote" banner separate the sections). `<name>_changed`
+  is the OR of both lanes; `<name>_logos` is the union — so the existing workflow email steps work
+  unchanged (no per-lane email, no two-emails-a-day).
+- **Config:** `settings.json` `remote_search.enabled` (master switch); `fetch_logos.py` reads both
+  registries.
+
+Everything from §1 (goal) still holds. §2–13 describe the original feed proposal, superseded.
 
 ## 1. Goal
 

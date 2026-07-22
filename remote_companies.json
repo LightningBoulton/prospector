@@ -1,0 +1,16 @@
+{
+  "_comment": "Registry for the US-remote search lane (see DESIGN-remote.md). Same entry shape as companies.json. These are remote-friendly employers on tier-1 ATSes; each was VERIFIED to return live US-remote roles before adding (do not guess slugs). The remote lane reads THIS file (not companies.json), applies a US-remote gate instead of the local gate, and runs each profile with remote_search:true. Grow this list over time; the daily job never fetches logos (fetch_logos.py reads this file too).",
+  "companies": [
+    { "name": "GitLab",       "ats": "greenhouse", "slug": "gitlab",      "domain": "gitlab.com" },
+    { "name": "Cloudflare",   "ats": "greenhouse", "slug": "cloudflare",  "domain": "cloudflare.com" },
+    { "name": "Coinbase",     "ats": "greenhouse", "slug": "coinbase",    "domain": "coinbase.com" },
+    { "name": "Reddit",       "ats": "greenhouse", "slug": "reddit",      "domain": "reddit.com" },
+    { "name": "Datadog",      "ats": "greenhouse", "slug": "datadog",     "domain": "datadoghq.com" },
+    { "name": "Airtable",     "ats": "greenhouse", "slug": "airtable",    "domain": "airtable.com" },
+    { "name": "Twilio",       "ats": "greenhouse", "slug": "twilio",      "domain": "twilio.com" },
+    { "name": "Vercel",       "ats": "greenhouse", "slug": "vercel",      "domain": "vercel.com" },
+    { "name": "Grafana Labs", "ats": "greenhouse", "slug": "grafanalabs", "domain": "grafana.com" },
+    { "name": "Postman",      "ats": "greenhouse", "slug": "postman",     "domain": "postman.com" },
+    { "name": "Webflow",      "ats": "greenhouse", "slug": "webflow",     "domain": "webflow.com" }
+  ]
+}

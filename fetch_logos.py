@@ -20,7 +20,21 @@ import json, os, sys, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CONFIG = os.path.join(HERE, "companies.json")
+REMOTE_CONFIG = os.path.join(HERE, "remote_companies.json")
 LOGO_DIR = os.path.join(HERE, "logos")
+
+
+def _load_companies():
+    # Union of the local registry and the US-remote registry, deduped by slug.
+    seen, out = set(), []
+    for path in (CONFIG, REMOTE_CONFIG):
+        if not os.path.exists(path):
+            continue
+        for c in json.load(open(path)).get("companies", []):
+            if c.get("slug") and c["slug"] not in seen:
+                seen.add(c["slug"])
+                out.append(c)
+    return out
 
 
 def main():
@@ -29,7 +43,7 @@ def main():
         sys.exit("Set LOGO_DEV_TOKEN (free publishable token from https://logo.dev).")
     force = "--force" in sys.argv[1:]
     os.makedirs(LOGO_DIR, exist_ok=True)
-    companies = json.load(open(CONFIG))["companies"]
+    companies = _load_companies()
 
     got = skipped = failed = 0
     for c in companies:

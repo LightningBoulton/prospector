@@ -30,6 +30,7 @@ The daily run: read the company list → fetch and normalize every source once �
 | File | Purpose |
 |------|---------|
 | `companies.json` | Where to look: each company's name, city, ATS, slug, and `domain` (for logos). Plus a `needs_identification` backlog. |
+| `remote_companies.json` | Registry for the optional **US-remote lane** — remote-friendly employers on tier-1 ATSes (see [US-remote lane](#us-remote-lane)). |
 | `profiles.json` | What to look for: one named title filter per person. |
 | `settings.json` | Run-wide knobs: max posting age, and the LLM-scoring on/off switch. |
 | `jobmonitor.py` | The engine — fetch, normalize, filter, diff, report. |
@@ -295,6 +296,23 @@ Each posting in the HTML email shows a small square tile with the company's logo
 4. Commit `logos/*.png`.
 
 How it renders: `jobmonitor.py` uses `logos/<slug>.png` when present (`slug` and `domain` come from `companies.json`), else a monogram. It emits the exact list of logos each report references as a `<profile>_logos` output, and the workflow attaches only those (so none appear as stray download attachments). The `cid:` inlining relies on `dawidd6/action-send-mail`'s behavior of setting each attachment's Content-ID to its filename — pinned to `@v18`; re-verify if you bump that action's major version.
+
+## US-remote lane
+
+An optional second search that surfaces **US-based remote** roles from a curated set of
+remote-friendly employers — *in addition to* the local Silicon Slopes search, without changing it.
+Each person's existing profile (keywords + fit scoring) is applied to both lanes, and the results
+are merged into **one email per person** with a "📍 Local" and a "🌎 US-Remote" section.
+
+- **How it stays clean:** the lane reads `remote_companies.json` and pulls roles straight from each
+  company's own ATS board (no third-party job feed), so there's no stale/spam/fake-posting problem —
+  every role is first-party by construction. (See `DESIGN-remote.md` for why a feed-based approach
+  was measured and rejected.)
+- **Turn on/off:** `settings.json` → `"remote_search": { "enabled": true }`, and set
+  `"remote_search": true` on each profile that should include it.
+- **Grow the list:** add remote-friendly employers to `remote_companies.json` (same shape as
+  `companies.json`); verify each returns live US-remote roles before adding, exactly as you would a
+  local company. Run `fetch_logos.py` to pull their logos (it reads both registries).
 
 ## LLM fit scoring (optional)
 
