@@ -29,6 +29,24 @@
     { "name": "Sentry",       "ats": "ashby",      "slug": "sentry",      "domain": "sentry.io" },
     { "name": "Zapier",       "ats": "ashby",      "slug": "zapier",      "domain": "zapier.com" },
     { "name": "Notion",       "ats": "ashby",      "slug": "notion",      "domain": "notion.so" },
-    { "name": "Toptal",       "ats": "lever",      "slug": "toptal",      "domain": "toptal.com" }
+    { "name": "Toptal",       "ats": "lever",      "slug": "toptal",      "domain": "toptal.com" },
+    { "name": "Stripe",       "ats": "greenhouse", "slug": "stripe",      "domain": "stripe.com" },
+    { "name": "Instacart",    "ats": "greenhouse", "slug": "instacart",   "domain": "instacart.com" },
+    { "name": "Fivetran",     "ats": "greenhouse", "slug": "fivetran",    "domain": "fivetran.com" },
+    { "name": "Hightouch",    "ats": "greenhouse", "slug": "hightouch",   "domain": "hightouch.com" },
+    { "name": "Temporal",     "ats": "greenhouse", "slug": "temporaltechnologies", "domain": "temporal.io" },
+    { "name": "Dropbox",      "ats": "greenhouse", "slug": "dropbox",     "domain": "dropbox.com" },
+    { "name": "Calendly",     "ats": "greenhouse", "slug": "calendly",    "domain": "calendly.com" },
+    { "name": "Chime",        "ats": "greenhouse", "slug": "chime",       "domain": "chime.com" },
+    { "name": "Postscript",   "ats": "greenhouse", "slug": "postscript",  "domain": "postscript.io" },
+    { "name": "Cockroach Labs","ats": "greenhouse","slug": "cockroachlabs","domain": "cockroachlabs.com" },
+    { "name": "Plaid",        "ats": "ashby",      "slug": "plaid",       "domain": "plaid.com" },
+    { "name": "1Password",    "ats": "ashby",      "slug": "1password",   "domain": "1password.com" },
+    { "name": "Confluent",    "ats": "ashby",      "slug": "confluent",   "domain": "confluent.io" },
+    { "name": "Docker",       "ats": "ashby",      "slug": "docker",      "domain": "docker.com" },
+    { "name": "Airbyte",      "ats": "ashby",      "slug": "airbyte",     "domain": "airbyte.com" },
+    { "name": "Close",        "ats": "ashby",      "slug": "close",       "domain": "close.com" },
+    { "name": "Pinecone",     "ats": "ashby",      "slug": "pinecone",    "domain": "pinecone.io" },
+    { "name": "Miro",         "ats": "ashby",      "slug": "miro",        "domain": "miro.com" }
   ]
 }
