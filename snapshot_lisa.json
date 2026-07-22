@@ -5,7 +5,7 @@
   "title": "Director, Rapid Content Delivery",
   "location": "Remote - Connecticut",
   "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---Connecticut/Director--Rapid-Content-Delivery_R0014195",
-  "posted": "2026-07-15",
+  "posted": "2026-07-16",
   "salary": "$155,800 - $205,000",
   "fit_result": {
    "fit": "maybe",
@@ -65,7 +65,7 @@
   "title": "M&A Finance Integration Lead",
   "location": "Lehi (+1 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sr-M-A-Finance-Integration-Analyst_R169572-1",
-  "posted": "2026-07-14",
+  "posted": "2026-07-15",
   "salary": "$167,300 - $242,300",
   "fit_result": {
    "fit": "yes",
@@ -80,7 +80,7 @@
   "title": "Sales Partner Compliance Operations Manager",
   "location": "Lehi (+3 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sales-Partner-Compliance-Operations-Manager_R169617",
-  "posted": "2026-07-20",
+  "posted": "2026-07-21",
   "salary": "$146,300 - $211,850",
   "fit_result": {
    "fit": "no",
@@ -95,7 +95,7 @@
   "title": "Group Content Strategy Manager, Adobe.com",
   "location": "Lehi (+9 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Group-Content-Strategy-Manager--Adobecom_R170475-1",
-  "posted": "2026-07-21",
+  "posted": "2026-07-22",
   "salary": "$202,900 - $293,800",
   "fit_result": {
    "fit": "no",
@@ -110,7 +110,7 @@
   "title": "Strategic Business Manager- Office of the CEO",
   "location": "US Remote",
   "url": "https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Strategic-Business-Manager--Office-of-the-CEO_REQ-3273",
-  "posted": "2026-07-21",
+  "posted": "2026-07-22",
   "salary": null,
   "fit_result": {
    "fit": "maybe",
@@ -143,9 +143,9 @@
   "posted": "2026-07-17",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": -1,
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "fit": "no",
+   "score": 25,
+   "reason": "Explicitly individual-contributor role, no leadership/team scope despite strong transformation domain match.",
    "bg": "e375d8ec09f3"
   }
  },
@@ -170,7 +170,7 @@
   "title": "Project Manager IV, Transformation",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721",
-  "posted": "2026-07-21",
+  "posted": "2026-07-22",
   "salary": "$109,900.00 - $170,400.00",
   "fit_result": {
    "fit": "maybe",
@@ -185,7 +185,7 @@
   "title": "Manager, Lifecycle Engagement, Salt Lake City, UT",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Lifecycle-Engagement--Salt-Lake-City--UT_JR-025641-1",
-  "posted": "2026-07-17",
+  "posted": "2026-07-18",
   "salary": "$78,200.00 - $129,000.00",
   "fit_result": {
    "fit": "maybe",
@@ -200,12 +200,27 @@
   "title": "Engagement & Data Strategy Manager",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Engagement---Data-Strategy-Manager_JR-025566-1",
-  "posted": "2026-07-16",
+  "posted": "2026-07-17",
   "salary": "$68,300.00 - $102,500.00",
   "fit_result": {
    "fit": "maybe",
    "score": 45,
    "reason": "Manager-level, local, but unclear mandate\u2014could be strategy/ops fit or narrow data-analytics role; no description.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "LVT::5343405008",
+  "company": "LVT",
+  "title": "Enterprise Customer Success Manager",
+  "location": "American Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5343405008",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "IC account-management CSM role, not a transformation/strategy/M&A leadership mandate; below scope.",
    "bg": "e375d8ec09f3"
   }
  }
