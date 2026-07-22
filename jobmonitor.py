@@ -82,6 +82,13 @@ def _get(url):
         return json.load(r)
 
 
+def _get_text(url):
+    # Raw-bytes fetch for non-JSON sources (e.g. Personio's XML feed).
+    req = urllib.request.Request(url, headers={"User-Agent": "prospector/1.0"})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        return r.read()
+
+
 def _post_json(url, payload):
     body = json.dumps(payload).encode()
     req = urllib.request.Request(url, data=body, headers={
@@ -228,9 +235,52 @@ def fetch_ashby(c):
     return out
 
 
+def fetch_recruitee(c):
+    # Recruitee careers API: GET {slug}.recruitee.com/api/offers/ -> {offers:[{id,title,
+    # location,city,country,careers_url,published_at,created_at,description,remote,salary}]}.
+    # No auth. 404s on a bad slug (caught upstream).
+    d = _get(f"https://{c['slug']}.recruitee.com/api/offers/")
+    out = []
+    for j in d.get("offers", []):
+        loc = j.get("location") or ", ".join(x for x in [j.get("city"), j.get("country")] if x)
+        if j.get("remote") and "remote" not in (loc or "").lower():
+            loc = (loc + " (Remote)").strip() if loc else "Remote"
+        sal = j.get("salary")
+        salary = sal.strip() if isinstance(sal, str) and sal.strip() else None
+        posted = (j.get("published_at") or j.get("created_at") or "")[:10]
+        out.append(_norm(c, str(j["id"]), j.get("title", ""), loc or "",
+                         j.get("careers_url") or j.get("careers_apply_url") or "", posted,
+                         salary=salary, ats="recruitee",
+                         description=_clean_html(j.get("description", ""))))
+    return out
+
+
+def fetch_personio(c):
+    # Personio public XML feed: GET {slug}.jobs.personio.com/xml?language=en -> <position>
+    # elements (id,name,office,additionalOffices,department,createdAt,jobDescriptions). No JSON
+    # and no apply URL in the feed, so build the canonical job URL from slug+id. 404s on bad slug.
+    import xml.etree.ElementTree as ET
+    root = ET.fromstring(_get_text(f"https://{c['slug']}.jobs.personio.com/xml?language=en"))
+    out = []
+    for pos in root.findall(".//position"):
+        def _t(tag):
+            el = pos.find(tag)
+            return (el.text or "").strip() if el is not None and el.text else ""
+        pid = _t("id")
+        if not pid:
+            continue
+        offices = [_t("office")] + [o.text for o in pos.findall("additionalOffices/office") if o.text]
+        loc = ", ".join(x for x in offices if x)
+        desc = " ".join(d.text or "" for d in pos.findall("jobDescriptions/jobDescription/value"))
+        out.append(_norm(c, pid, _t("name"), loc,
+                         f"https://{c['slug']}.jobs.personio.com/job/{pid}?language=en",
+                         _t("createdAt")[:10], ats="personio", description=_clean_html(desc)))
+    return out
+
+
 FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday,
-            "ashby": fetch_ashby}
+            "ashby": fetch_ashby, "recruitee": fetch_recruitee, "personio": fetch_personio}
 
 
 def _norm(company, ext_id, title, location, url, posted,
