@@ -39,19 +39,41 @@ _No changes since the previous run._
    _Retail sales operations/account management role, not transformation, M&A, or org-effectiveness leadership._
 
 
-# 🌎 US-Remote (8)
+# 🌎 US-Remote (14)
 ## What's changed
-**New (1)**
-- ⭐ **Replit** — [Head of Marketing Operations](https://jobs.ashbyhq.com/replit/9394684e-814c-4a3c-b5ed-19612e4331bc) · Foster City, CA (Remote) · $160K – $200K · Posted Jul 21 · 1d ago — **25/100** (no)
-   _Marketing-ops function, not transformation/M&A/strategy leadership; mismatched domain despite Head-of title._
+**New (6)**
+- **Stripe** — [Strategic Programs Lead, New Markets](https://stripe.com/jobs/search?gh_jid=8070648) · US-Remote · Posted Jul 16 · 6d ago — **55/100** (maybe)
+   _Strategic program/ops leadership fits transformation profile, but IC program-manager scope, not clear leadership mandate._
+- ⭐ **Stripe** — [Strategy and Operations Lead, Deal Pricing](https://stripe.com/jobs/search?gh_jid=8044391) · New York City, Washington DC, Remote · Posted Jul 20 · 2d ago — **55/100** (maybe)
+   _Chief-of-staff/S&O operating-model role fits function, but narrow deal-pricing domain, no transformation/M&A/CX mandate._
+- ⭐ **1Password** — [Manager, Quality Assurance, Customer Support](https://jobs.ashbyhq.com/1password/eba90a49-3fde-4d82-aedd-ed07c8052db9) · Remote (United States | Canada) · Posted Jul 20 · 2d ago — **45/100** (maybe)
+   _Manager-level QA/CX ops mandate fits scope, but narrow support-QA function, not transformation/M&A/strategy focus._
+- ⭐ **1Password** — [Director, Customer Success (Enterprise)](https://jobs.ashbyhq.com/1password/7a3d6f70-c45b-4579-912a-7876b7da2eeb) · Remote (United States | Canada) · Posted Jul 21 · 1d ago — **45/100** (maybe)
+   _Director-level CS leadership but revenue/NRR-focused, not transformation, M&A, or ops-effectiveness mandate._
+- **Stripe** — [People Project Manager](https://stripe.com/jobs/search?gh_jid=8039954) · US-Remote, Atlanta, Chicago · Posted Jul 16 · 6d ago — **25/100** (no)
+   _IC-level HR project manager role, not a leadership/transformation mandate; below Lisa's scope threshold._
+- ⭐ **Instacart** — [Manager, IT Operations](https://instacart.careers/job/?gh_jid=8074453) · San Francisco, Bay Area - Remote · Posted Jul 20 · 2d ago — **20/100** (no)
+   _IT helpdesk/ops manager role—operational IT support, not transformation, strategy, or M&A leadership mandate._
 
-## All current matching roles (8)
+## All current matching roles (14)
+- **Stripe** — [Strategic Programs Lead, New Markets](https://stripe.com/jobs/search?gh_jid=8070648) · US-Remote · Posted Jul 16 · 6d ago — **55/100** (maybe)
+   _Strategic program/ops leadership fits transformation profile, but IC program-manager scope, not clear leadership mandate._
+- ⭐ **Stripe** — [Strategy and Operations Lead, Deal Pricing](https://stripe.com/jobs/search?gh_jid=8044391) · New York City, Washington DC, Remote · Posted Jul 20 · 2d ago — **55/100** (maybe)
+   _Chief-of-staff/S&O operating-model role fits function, but narrow deal-pricing domain, no transformation/M&A/CX mandate._
+- ⭐ **1Password** — [Manager, Quality Assurance, Customer Support](https://jobs.ashbyhq.com/1password/eba90a49-3fde-4d82-aedd-ed07c8052db9) · Remote (United States | Canada) · Posted Jul 20 · 2d ago — **45/100** (maybe)
+   _Manager-level QA/CX ops mandate fits scope, but narrow support-QA function, not transformation/M&A/strategy focus._
+- ⭐ **1Password** — [Director, Customer Success (Enterprise)](https://jobs.ashbyhq.com/1password/7a3d6f70-c45b-4579-912a-7876b7da2eeb) · Remote (United States | Canada) · Posted Jul 21 · 1d ago — **45/100** (maybe)
+   _Director-level CS leadership but revenue/NRR-focused, not transformation, M&A, or ops-effectiveness mandate._
 - ⭐ **Replit** — [Head of Marketing Operations](https://jobs.ashbyhq.com/replit/9394684e-814c-4a3c-b5ed-19612e4331bc) · Foster City, CA (Remote) · $160K – $200K · Posted Jul 21 · 1d ago — **25/100** (no)
    _Marketing-ops function, not transformation/M&A/strategy leadership; mismatched domain despite Head-of title._
+- **Stripe** — [People Project Manager](https://stripe.com/jobs/search?gh_jid=8039954) · US-Remote, Atlanta, Chicago · Posted Jul 16 · 6d ago — **25/100** (no)
+   _IC-level HR project manager role, not a leadership/transformation mandate; below Lisa's scope threshold._
 - **Twilio** — [Marketing Strategy & Planning Manager](https://job-boards.greenhouse.io/twilio/jobs/8054764) · Remote - US · Posted Jul 16 · 6d ago — **22/100** (no)
    _Marketing ops/analytics manager role, not transformation, M&A, or org-effectiveness leadership mandate she targets._
 - **Coinbase** — [Senior Strategic Program Lead](https://www.coinbase.com/careers/positions/8051894?gh_jid=8051894) · Remote - USA · Posted Jul 15 · 7d ago — **20/100** (no)
    _Social media CX ops management, not transformation/strategy/M&A leadership; too operational/tactical for her mandate._
+- ⭐ **Instacart** — [Manager, IT Operations](https://instacart.careers/job/?gh_jid=8074453) · San Francisco, Bay Area - Remote · Posted Jul 20 · 2d ago — **20/100** (no)
+   _IT helpdesk/ops manager role—operational IT support, not transformation, strategy, or M&A leadership mandate._
 - ⭐ **GitLab** — [Enablement Content Manager](https://job-boards.greenhouse.io/gitlab/jobs/8635277002) · Remote, United States · Posted Jul 20 · 2d ago — **15/100** (no)
    _IC-level content/enablement role, not transformation/strategy leadership mandate Lisa targets._
 - **Cloudflare** — [Senior Principal, Sales Compensation Design & Strategy](https://boards.greenhouse.io/cloudflare/jobs/8024849?gh_jid=8024849) · Remote · Posted Jul 15 · 7d ago — **15/100** (no)

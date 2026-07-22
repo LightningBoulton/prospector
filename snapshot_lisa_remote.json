@@ -118,5 +118,95 @@
    "reason": "Marketing-ops function, not transformation/M&A/strategy leadership; mismatched domain despite Head-of title.",
    "bg": "e375d8ec09f3"
   }
+ },
+ {
+  "key": "Stripe::8039954",
+  "company": "Stripe",
+  "title": "People Project Manager",
+  "location": "US-Remote, Atlanta, Chicago",
+  "url": "https://stripe.com/jobs/search?gh_jid=8039954",
+  "posted": "2026-07-16",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "IC-level HR project manager role, not a leadership/transformation mandate; below Lisa's scope threshold.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "Stripe::8070648",
+  "company": "Stripe",
+  "title": "Strategic Programs Lead, New Markets",
+  "location": "US-Remote",
+  "url": "https://stripe.com/jobs/search?gh_jid=8070648",
+  "posted": "2026-07-16",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Strategic program/ops leadership fits transformation profile, but IC program-manager scope, not clear leadership mandate.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "Stripe::8044391",
+  "company": "Stripe",
+  "title": "Strategy and Operations Lead, Deal Pricing",
+  "location": "New York City, Washington DC, Remote",
+  "url": "https://stripe.com/jobs/search?gh_jid=8044391",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Chief-of-staff/S&O operating-model role fits function, but narrow deal-pricing domain, no transformation/M&A/CX mandate.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "Instacart::8074453",
+  "company": "Instacart",
+  "title": "Manager, IT Operations",
+  "location": "San Francisco, Bay Area - Remote",
+  "url": "https://instacart.careers/job/?gh_jid=8074453",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "IT helpdesk/ops manager role\u2014operational IT support, not transformation, strategy, or M&A leadership mandate.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "1Password::eba90a49-3fde-4d82-aedd-ed07c8052db9",
+  "company": "1Password",
+  "title": "Manager, Quality Assurance, Customer Support",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/eba90a49-3fde-4d82-aedd-ed07c8052db9",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Manager-level QA/CX ops mandate fits scope, but narrow support-QA function, not transformation/M&A/strategy focus.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "1Password::7a3d6f70-c45b-4579-912a-7876b7da2eeb",
+  "company": "1Password",
+  "title": "Director, Customer Success (Enterprise)",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/7a3d6f70-c45b-4579-912a-7876b7da2eeb",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Director-level CS leadership but revenue/NRR-focused, not transformation, M&A, or ops-effectiveness mandate.",
+   "bg": "e375d8ec09f3"
+  }
  }
 ]

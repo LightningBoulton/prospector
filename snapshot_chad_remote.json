@@ -388,5 +388,275 @@
    "reason": "Strong DevEx/platform fit but backend infra-focused, lacks frontend/React emphasis Chad prefers.",
    "bg": "b9f9e4b0db4d"
   }
+ },
+ {
+  "key": "Stripe::8075469",
+  "company": "Stripe",
+  "title": "Software Engineer, Optimized Checkout & Link",
+  "location": "US Remote",
+  "url": "https://stripe.com/jobs/search?gh_jid=8075469",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Requires Ruby/Java/Mongo/GraphQL, degree mandatory; mismatches candidate's .NET/React/AWS stack and no degree.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Fivetran::7807605003",
+  "company": "Fivetran",
+  "title": "Customer Solutions Engineer",
+  "location": "Remote, Texas, United States, AMER",
+  "url": "https://www.fivetran.com/careers/job?gh_jid=7807605003",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Customer support/solutions engineering role, not hands-on software engineering; explicit dealbreaker.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Fivetran::7791958003",
+  "company": "Fivetran",
+  "title": "Senior Staff Software Engineer",
+  "location": "Remote, New York, United States, AMER",
+  "url": "https://www.fivetran.com/careers/job?gh_jid=7791958003",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Senior IC data infra role fits seniority, but backend/data-semantic focus mismatches frontend/React-leaning background.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Hightouch::6122160004",
+  "company": "Hightouch",
+  "title": "Forward Deployed Analytics Engineer",
+  "location": "Remote (North America)",
+  "url": "https://job-boards.greenhouse.io/hightouch/jobs/6122160004",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Forward-deployed analytics/SQL role, customer-facing, not full-stack/frontend engineering leadership match.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Temporal::5187649007",
+  "company": "Temporal",
+  "title": "Senior Software Engineer, Open Source Server",
+  "location": "United States - Remote Opportunity",
+  "url": "https://job-boards.greenhouse.io/temporaltechnologies/jobs/5187649007",
+  "posted": "2026-07-15",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Backend distributed-systems Go/server role; no frontend/React fit, mismatched with candidate's frontend-leaning full-stack expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Calendly::8639244002",
+  "company": "Calendly",
+  "title": "Senior IAM Engineer",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/calendly/jobs/8639244002",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "IAM/IT ops role, not software engineering; mismatch on function despite remote and seniority fit.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Postscript::8637343002",
+  "company": "Postscript",
+  "title": "Staff Platform Engineer",
+  "location": "Remote",
+  "url": "https://job-boards.greenhouse.io/postscript/jobs/8637343002",
+  "posted": "2026-07-16",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Backend infra/SRE-heavy platform role (Rust/Python, EKS, agent-operated infra) mismatches frontend-leaning full-stack profile.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Plaid::587e83dd-1d1b-4f31-812a-74fc67d67fbe",
+  "company": "Plaid",
+  "title": "Security Engineer, GRC",
+  "location": "San Francisco HQ (Remote)",
+  "url": "https://jobs.ashbyhq.com/plaid/587e83dd-1d1b-4f31-812a-74fc67d67fbe",
+  "posted": "2026-07-16",
+  "salary": "$156K \u2013 $213.6K",
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Security GRC engineering role, not software/frontend engineering; mismatch with candidate's core expertise and interests.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Plaid::607fd45b-7402-4c8d-b05f-a3769def4811",
+  "company": "Plaid",
+  "title": "TechOps Engineer",
+  "location": "New York City Office (Remote)",
+  "url": "https://jobs.ashbyhq.com/plaid/607fd45b-7402-4c8d-b05f-a3769def4811",
+  "posted": "2026-07-17",
+  "salary": "$118.8K \u2013 $151.2K",
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "IT/TechOps helpdesk role, not software engineering; mismatch on function and seniority target.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "1Password::d80df65c-3219-4290-b2e7-1a76c2446d65",
+  "company": "1Password",
+  "title": "Developer, Insights",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/d80df65c-3219-4290-b2e7-1a76c2446d65",
+  "posted": "2026-07-16",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Backend-leaning full-stack SaaS role fits skills, but less frontend/React focus and unclear seniority/comp.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "1Password::7cc29a43-a6ac-46f5-8cfd-c090f23b3289",
+  "company": "1Password",
+  "title": "Senior Developer, Open Source",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/7cc29a43-a6ac-46f5-8cfd-c090f23b3289",
+  "posted": "2026-07-15",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Senior IC role but open-source/dev-tools/IDE plugin focus differs from candidate's frontend/backend SaaS architecture strengths.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "1Password::ea50a3a5-0dff-44d5-8611-9f874a54c4d7",
+  "company": "1Password",
+  "title": "Senior Developer, Admin Workflows",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/ea50a3a5-0dff-44d5-8611-9f874a54c4d7",
+  "posted": "2026-07-15",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 62,
+   "reason": "Senior IC full-stack role at strong B2B SaaS, but title level below Principal target and stack unclear.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "1Password::e07bc774-d90b-443d-89f1-bec8fff33360",
+  "company": "1Password",
+  "title": "Senior Analytics Engineer",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/e07bc774-d90b-443d-89f1-bec8fff33360",
+  "posted": "2026-07-15",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Analytics/data engineering role, not full-stack/frontend software engineering\u2014mismatch with candidate's core expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "1Password::fb0f0d1d-5655-4c54-b4e7-e985c475dc9e",
+  "company": "1Password",
+  "title": ".Net Developer, SaaS Manager",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/fb0f0d1d-5655-4c54-b4e7-e985c475dc9e",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 62,
+   "reason": ".NET backend role at strong SaaS company, but title suggests less frontend/React focus than candidate prefers.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Confluent::47920ccd-db54-4ed4-a865-70857e865fff",
+  "company": "Confluent",
+  "title": "Distributed Systems Software Engineer - WarpSteam",
+  "location": "Remote, United States",
+  "url": "https://jobs.ashbyhq.com/confluent/47920ccd-db54-4ed4-a865-70857e865fff",
+  "posted": "2026-07-21",
+  "salary": "$197.4K \u2013 $271.2K",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Deep distributed systems/Go/storage engine role, not frontend-leaning full-stack; mismatched core expertise despite remote/SaaS fit.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Airbyte::b59bbc91-fb77-4a08-9c47-0fca7f755942",
+  "company": "Airbyte",
+  "title": "Senior AI Platform Engineer",
+  "location": "San Francisco (Remote)",
+  "url": "https://jobs.ashbyhq.com/airbyte/b59bbc91-fb77-4a08-9c47-0fca7f755942",
+  "posted": "2026-07-21",
+  "salary": "$196K \u2013 $255K",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Backend AI runtime/infra role, not frontend-leaning full-stack; unclear .NET/React alignment despite AI interest.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Close::29f5c695-8282-4407-ac09-2b61b9f2fc1e",
+  "company": "Close",
+  "title": "Senior Backend Engineer \u2013 Agents (USA Only - 100% Remote)",
+  "location": "USA - Remote",
+  "url": "https://jobs.ashbyhq.com/close/29f5c695-8282-4407-ac09-2b61b9f2fc1e",
+  "posted": "2026-07-16",
+  "salary": "$140K \u2013 $210K",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Backend/AI agent role, Python-centric; mismatches frontend/React strength but overlaps cloud/platform experience.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Close::1e412917-5d07-4423-93c1-aa61f2c9b7b9",
+  "company": "Close",
+  "title": "Senior Backend Engineer \u2013 Communications (USA Only - 100% Remote)",
+  "location": "USA - Remote",
+  "url": "https://jobs.ashbyhq.com/close/1e412917-5d07-4423-93c1-aa61f2c9b7b9",
+  "posted": "2026-07-16",
+  "salary": "$140K \u2013 $210K",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Backend-only Python/telephony/distributed systems role; mismatches candidate's frontend-leaning React/.NET expertise and stack.",
+   "bg": "b9f9e4b0db4d"
+  }
  }
 ]
