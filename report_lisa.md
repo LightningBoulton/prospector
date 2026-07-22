@@ -4,9 +4,7 @@ _⭐ = posted in the last 3 days_
 
 # 📍 Local — Silicon Slopes (15)
 ## What's changed
-**New (1)**
-- ⭐ **LVT** — [Enterprise Customer Success Manager](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5343405008) · American Fork, Utah, United States · Posted Jul 20 · 2d ago — **20/100** (no)
-   _IC account-management CSM role, not a transformation/strategy/M&A leadership mandate; below scope._
+_No changes since the previous run._
 
 ## All current matching roles (15)
 - **Podium** — [Chief of Staff](https://job-boards.greenhouse.io/podium81/jobs/8067712) · Lehi, Utah · Posted Jul 15 · 7d ago — **78/100** (yes)
@@ -41,11 +39,15 @@ _⭐ = posted in the last 3 days_
    _Retail sales operations/account management role, not transformation, M&A, or org-effectiveness leadership._
 
 
-# 🌎 US-Remote (7)
+# 🌎 US-Remote (8)
 ## What's changed
-_First run — baseline established. Changes will appear here on the next run._
+**New (1)**
+- ⭐ **Replit** — [Head of Marketing Operations](https://jobs.ashbyhq.com/replit/9394684e-814c-4a3c-b5ed-19612e4331bc) · Foster City, CA (Remote) · $160K – $200K · Posted Jul 21 · 1d ago — **25/100** (no)
+   _Marketing-ops function, not transformation/M&A/strategy leadership; mismatched domain despite Head-of title._
 
-## All current matching roles (7)
+## All current matching roles (8)
+- ⭐ **Replit** — [Head of Marketing Operations](https://jobs.ashbyhq.com/replit/9394684e-814c-4a3c-b5ed-19612e4331bc) · Foster City, CA (Remote) · $160K – $200K · Posted Jul 21 · 1d ago — **25/100** (no)
+   _Marketing-ops function, not transformation/M&A/strategy leadership; mismatched domain despite Head-of title._
 - **Twilio** — [Marketing Strategy & Planning Manager](https://job-boards.greenhouse.io/twilio/jobs/8054764) · Remote - US · Posted Jul 16 · 6d ago — **22/100** (no)
    _Marketing ops/analytics manager role, not transformation, M&A, or org-effectiveness leadership mandate she targets._
 - **Coinbase** — [Senior Strategic Program Lead](https://www.coinbase.com/careers/positions/8051894?gh_jid=8051894) · Remote - USA · Posted Jul 15 · 7d ago — **20/100** (no)

@@ -178,5 +178,215 @@
    "reason": "SRE/database reliability role for observability infra; mismatch with frontend/full-stack architecture background.",
    "bg": "b9f9e4b0db4d"
   }
+ },
+ {
+  "key": "Mercury::6118243004",
+  "company": "Mercury",
+  "title": "Senior Software Engineer - Banking Integration Platform",
+  "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+  "url": "https://job-boards.greenhouse.io/mercury/jobs/6118243004",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Backend banking core-integration infra role, not frontend/full-stack focus; mismatch with candidate's frontend-leaning strengths.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Mercury::6116808004",
+  "company": "Mercury",
+  "title": "Senior Software Engineer - Frontend Developer Experience",
+  "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+  "url": "https://job-boards.greenhouse.io/mercury/jobs/6116808004",
+  "posted": "2026-07-15",
+  "salary": null,
+  "fit_result": {
+   "fit": "yes",
+   "score": 82,
+   "reason": "Strong React/TS DevEx role matching frontend platform expertise; remote-friendly, senior IC, though comp/location unclear.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Affirm::7793242003",
+  "company": "Affirm",
+  "title": "Analytics Lead, Full Stack",
+  "location": "Remote US",
+  "url": "https://job-boards.greenhouse.io/affirm/jobs/7793242003",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Finance/pricing analytics role, not software engineering; mismatched function despite 'Full Stack' in title.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Affirm::7800317003",
+  "company": "Affirm",
+  "title": "Staff Software Engineer, Backend (Ledger Engineering)",
+  "location": "Remote US",
+  "url": "https://job-boards.greenhouse.io/affirm/jobs/7800317003",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Backend-only ledger/accounting systems role; mismatches candidate's frontend-leaning full-stack and micro-frontend expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Supabase::b75ba81e-54cc-4393-a575-bc41776b0113",
+  "company": "Supabase",
+  "title": "Supalite Engineer",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/supabase/b75ba81e-54cc-4393-a575-bc41776b0113",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Strong TS/backend fit and DevEx focus, but startup infra role lacks React/frontend emphasis and salary clarity.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Supabase::715ba1ea-bd0b-4960-9d5a-defca99f2e24",
+  "company": "Supabase",
+  "title": "Event Programs Manager, Developer Community & Ecosystem",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/supabase/715ba1ea-bd0b-4960-9d5a-defca99f2e24",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Marketing/events role, not engineering; complete function mismatch despite developer-adjacent company.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "PostHog::068ba58d-0143-4263-b83a-7b389c4d77e6",
+  "company": "PostHog",
+  "title": "Developer Marketer",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/posthog/068ba58d-0143-4263-b83a-7b389c4d77e6",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Marketing role, not engineering; dealbreaker mismatch despite tech company appeal.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "PostHog::0d1b6a32-6a21-4933-a33a-303b0e49302e",
+  "company": "PostHog",
+  "title": "Site Reliability Engineer (US - Central/Eastern time)",
+  "location": "Remote (US)",
+  "url": "https://jobs.ashbyhq.com/posthog/0d1b6a32-6a21-4933-a33a-303b0e49302e",
+  "posted": "2026-07-16",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "SRE infra role mismatches full-stack/frontend background; not aligned with React/.NET application engineering strengths.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Vanta::7600575b-fb06-485e-bc13-626e661a34aa",
+  "company": "Vanta",
+  "title": "Senior Data Engineer",
+  "location": "Remote U.S.",
+  "url": "https://jobs.ashbyhq.com/vanta/7600575b-fb06-485e-bc13-626e661a34aa",
+  "posted": "2026-07-15",
+  "salary": "$190K \u2013 $224K",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Data engineering role focused on analytics pipelines/SQL, not full-stack/frontend architecture, mismatch with candidate's core expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Vanta::c752a8a1-5832-4d2a-a8c5-8b8308d6a7e2",
+  "company": "Vanta",
+  "title": "Staff Software Engineer, GRC",
+  "location": "Remote U.S.",
+  "url": "https://jobs.ashbyhq.com/vanta/c752a8a1-5832-4d2a-a8c5-8b8308d6a7e2",
+  "posted": "2026-07-21",
+  "salary": "$260K \u2013 $306K",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 60,
+   "reason": "Staff IC fits seniority/full-stack, but GRC/compliance domain and enterprise B2B security differ from candidate's frontend/platform focus.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Render::f4883b3d-ada1-4859-931b-61881f7f9c00",
+  "company": "Render",
+  "title": "Postgres Product Engineer",
+  "location": "Remote: United States",
+  "url": "https://jobs.ashbyhq.com/render/f4883b3d-ada1-4859-931b-61881f7f9c00",
+  "posted": "2026-07-16",
+  "salary": "$204K \u2013 $280K",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Backend infra/Postgres platform role, not frontend/full-stack fit; lacks React/UI focus candidate prefers",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Render::b011a0c1-eed8-4afd-ab8b-3b4f974df199",
+  "company": "Render",
+  "title": "Valkey Product Engineer",
+  "location": "Remote: United States",
+  "url": "https://jobs.ashbyhq.com/render/b011a0c1-eed8-4afd-ab8b-3b4f974df199",
+  "posted": "2026-07-16",
+  "salary": "$204K \u2013 $280K",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Backend infra/database engineering role (Valkey/Redis), not frontend-leaning full-stack per candidate's profile.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Render::40378b18-ad46-4040-9514-121ec5eb047f",
+  "company": "Render",
+  "title": "Object Storage Product Engineer",
+  "location": "Remote: United States",
+  "url": "https://jobs.ashbyhq.com/render/40378b18-ad46-4040-9514-121ec5eb047f",
+  "posted": "2026-07-16",
+  "salary": "$204K \u2013 $280K",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Backend object storage infrastructure role, not frontend/full-stack SaaS fit; description lacks scope detail.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Sentry::35193bfb-bb6b-4479-85be-0945e5b94a3e",
+  "company": "Sentry",
+  "title": "Senior Software Engineer, Developer Infrastructure",
+  "location": "San Francisco, California (Remote)",
+  "url": "https://jobs.ashbyhq.com/sentry/35193bfb-bb6b-4479-85be-0945e5b94a3e",
+  "posted": "2026-07-20",
+  "salary": "$190K \u2013 $280K",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 48,
+   "reason": "Strong DevEx/platform fit but backend infra-focused, lacks frontend/React emphasis Chad prefers.",
+   "bg": "b9f9e4b0db4d"
+  }
  }
 ]
