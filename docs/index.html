@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Prospector — How Lisa's Email Is Built</title>
+<style>
+  :root {
+    --paper: #f6f7f9; --surface: #ffffff; --surface-2: #f0f2f5;
+    --ink: #171b21; --ink-soft: #3d4550; --muted: #6b7480; --line: #e3e7ec;
+    --accent: #2563d8; --accent-soft: #e9f1fe;
+    --green: #1a7f37; --green-bg: #e7f5ec;
+    --amber: #9a6700; --amber-bg: #fbf1d6;
+    --red: #b3202e; --red-bg: #fbe8ea;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    --shadow: 0 1px 2px rgba(19,24,31,.04), 0 4px 16px rgba(19,24,31,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0d1117; --surface: #161b22; --surface-2: #1b212a;
+      --ink: #e6edf3; --ink-soft: #c2ccd6; --muted: #8b949e; --line: #2a313c;
+      --accent: #4c8dff; --accent-soft: #12233f;
+      --green: #3fb950; --green-bg: #10261a;
+      --amber: #d29922; --amber-bg: #2a2411;
+      --red: #f85149; --red-bg: #2c1618;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #f6f7f9; --surface: #ffffff; --surface-2: #f0f2f5;
+    --ink: #171b21; --ink-soft: #3d4550; --muted: #6b7480; --line: #e3e7ec;
+    --accent: #2563d8; --accent-soft: #e9f1fe;
+    --green: #1a7f37; --green-bg: #e7f5ec;
+    --amber: #9a6700; --amber-bg: #fbf1d6;
+    --red: #b3202e; --red-bg: #fbe8ea;
+    --shadow: 0 1px 2px rgba(19,24,31,.04), 0 4px 16px rgba(19,24,31,.05);
+  }
+  :root[data-theme="dark"] {
+    --paper: #0d1117; --surface: #161b22; --surface-2: #1b212a;
+    --ink: #e6edf3; --ink-soft: #c2ccd6; --muted: #8b949e; --line: #2a313c;
+    --accent: #4c8dff; --accent-soft: #12233f;
+    --green: #3fb950; --green-bg: #10261a;
+    --amber: #d29922; --amber-bg: #2a2411;
+    --red: #f85149; --red-bg: #2c1618;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans);
+    line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: clamp(20px, 4vw, 52px) clamp(16px, 4vw, 40px) 80px; }
+
+  .eyebrow { font-family: var(--mono); font-size: .74rem; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: clamp(1.7rem, 4.4vw, 2.35rem); line-height: 1.12; letter-spacing: -.02em;
+    margin: .5rem 0 .4rem; text-wrap: balance; font-weight: 800; }
+  .lede { font-size: 1.12rem; color: var(--ink-soft); max-width: 60ch; margin: 0; }
+
+  h2 { font-size: 1.32rem; letter-spacing: -.01em; margin: 0 0 .2rem; text-wrap: balance; font-weight: 700; }
+  .sec-note { color: var(--muted); margin: 0 0 1.2rem; max-width: 62ch; }
+  section { margin-top: clamp(38px, 6vw, 62px); }
+
+  .callout { display: flex; gap: 12px; align-items: flex-start; background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    border-radius: 12px; padding: 14px 16px; margin-top: 18px; font-size: .95rem; color: var(--ink-soft); }
+  .callout b { color: var(--ink); }
+  .callout .ic { flex: none; font-size: 1.05rem; line-height: 1.4; }
+
+  .mandate-card { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: 14px; padding: 22px 24px; box-shadow: var(--shadow); }
+  .mandate-card p { margin: 0 0 14px; font-size: 1.05rem; }
+  .mandate-card p:last-child { margin-bottom: 0; }
+  .goals { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 8px; }
+  .goals li { padding-left: 26px; position: relative; color: var(--ink-soft); }
+  .goals li::before { content: "\2192"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+  .pipeline { display: grid; gap: 0; margin-top: 8px; }
+  .stage { position: relative; padding: 0 0 22px 62px; }
+  .stage::before { content: ""; position: absolute; left: 21px; top: 6px; bottom: -6px; width: 2px;
+    background: var(--line); }
+  .stage:last-child::before { display: none; }
+  .stage .num { position: absolute; left: 0; top: 0; width: 44px; height: 44px; border-radius: 12px;
+    background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow);
+    display: grid; place-items: center; font-family: var(--mono); font-weight: 700; font-size: .9rem;
+    color: var(--accent); z-index: 1; }
+  .stage h3 { margin: 6px 0 4px; font-size: 1.05rem; font-weight: 700; }
+  .stage h3 .tag { font-family: var(--mono); font-size: .68rem; color: var(--muted); font-weight: 600;
+    background: var(--surface-2); border: 1px solid var(--line); padding: 2px 7px; border-radius: 6px;
+    margin-left: 8px; letter-spacing: .04em; vertical-align: middle; white-space: nowrap; }
+  .stage p { margin: 0 0 8px; color: var(--ink-soft); font-size: .97rem; }
+  .setting { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: baseline;
+    font-size: .85rem; color: var(--muted); }
+  .setting .lbl { font-family: var(--mono); font-size: .72rem; letter-spacing: .04em;
+    text-transform: uppercase; }
+  .val { font-family: var(--mono); font-size: .82rem; background: var(--surface-2);
+    border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; color: var(--ink); }
+  .outcomes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .pill { font-size: .82rem; font-weight: 600; border-radius: 999px; padding: 3px 11px;
+    display: inline-flex; gap: 6px; align-items: center; border: 1px solid transparent; }
+  .pill.keep { background: var(--green-bg); color: var(--green); border-color: color-mix(in srgb, var(--green) 30%, transparent); }
+  .pill.drop { background: var(--red-bg); color: var(--red); border-color: color-mix(in srgb, var(--red) 30%, transparent); }
+  .pill.flag { background: var(--amber-bg); color: var(--amber); border-color: color-mix(in srgb, var(--amber) 30%, transparent); }
+
+  .lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: 8px; }
+  .lane { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px;
+    box-shadow: var(--shadow); }
+  .lane .em { font-size: 1.4rem; }
+  .lane h3 { margin: 8px 0 2px; font-size: 1.02rem; }
+  .lane .who { font-family: var(--mono); font-size: .74rem; color: var(--muted); margin-bottom: 10px; }
+  .lane p { margin: 0; font-size: .9rem; color: var(--ink-soft); }
+  .lane .rule { margin-top: 10px; font-size: .82rem; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 10px; }
+
+  .grp { margin-top: 18px; }
+  .grp-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+  .grp-head h3 { margin: 0; font-size: 1rem; }
+  .grp-head .k { font-family: var(--mono); font-size: .7rem; color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    border-radius: 6px; padding: 1px 6px; font-weight: 600; }
+  .grp-head .logic { color: var(--muted); font-size: .84rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+  .chip { font-family: var(--mono); font-size: .8rem; background: var(--surface); border: 1px solid var(--line);
+    color: var(--ink-soft); border-radius: 7px; padding: 3px 9px; }
+  .chip.new { border-color: color-mix(in srgb, var(--green) 45%, transparent); color: var(--green); background: var(--green-bg); }
+  .chips.excl .chip { border-color: color-mix(in srgb, var(--red) 32%, transparent); color: var(--red); background: var(--red-bg); }
+
+  .tbl-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); margin-top: 8px; }
+  table { border-collapse: collapse; width: 100%; min-width: 640px; background: var(--surface); font-size: .92rem; }
+  thead th { text-align: left; font-family: var(--mono); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--surface-2); }
+  tbody td { padding: 13px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.ref { font-family: var(--mono); font-weight: 700; color: var(--accent); white-space: nowrap; }
+  td.what b { display: block; margin-bottom: 2px; }
+  td.what span { color: var(--muted); font-size: .86rem; }
+  td.cur { color: var(--ink-soft); }
+  td.cur code { font-family: var(--mono); font-size: .82rem; background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: 5px; padding: 1px 6px; }
+  td.notes { min-width: 150px; }
+  .writeline { border-bottom: 1.5px dashed color-mix(in srgb, var(--accent) 45%, var(--line)); height: 1.1rem; margin: 4px 0; }
+
+  footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem; }
+  footer code { font-family: var(--mono); }
+
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .stage, .lane, .mandate-card, .grp, .tbl-scroll { animation: rise .5s both; }
+    .stage:nth-child(2){animation-delay:.03s}.stage:nth-child(3){animation-delay:.06s}
+    .stage:nth-child(4){animation-delay:.09s}.stage:nth-child(5){animation-delay:.12s}
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Prospector &middot; selection logic</div>
+    <h1>How your daily job email is built</h1>
+    <p class="lede">The mandate it works to, and the exact gauntlet every job posting runs before it can appear in your inbox. Made so you can mark it up.</p>
+    <div class="callout">
+      <span class="ic">&#9997;&#65039;</span>
+      <div><b>To request changes:</b> reference the code next to anything &mdash; a pipeline stage (<span class="val">S4</span>), a tunable knob (<span class="val">K6</span>), or a specific word chip. e.g. <i>"S4 / Group&nbsp;2: add <b>product marketing</b>"</i> or <i>"K4: widen local window to 14 days."</i></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The mandate</h2>
+    <div class="mandate-card">
+      <p>Every morning, surface <b>fresh, genuinely-relevant job postings</b> for you &mdash; across local, fully-remote, and contract work &mdash; filtered to your leadership profile, ranked by fit, with zero noise and no repeats.</p>
+      <p style="font-size:.98rem;color:var(--muted);margin-bottom:6px;">It optimizes for four things, in tension:</p>
+      <ul class="goals">
+        <li><b>Relevant</b> &mdash; matches your level and your domain (operations, strategy, transformation, customer/CX, change, consulting), not just any open role.</li>
+        <li><b>Fresh</b> &mdash; recently posted, so you're early rather than 200th in line.</li>
+        <li><b>Quiet</b> &mdash; you only get an email on days something actually changed; nothing you've already seen is repeated.</li>
+        <li><b>Reachable</b> &mdash; near South Jordan <em>or</em> US-remote; never a role you'd have to move for.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>The decision tree</h2>
+    <p class="sec-note">Follow one job posting from a company's careers page to your inbox. It has to clear every stage &mdash; fail one and it's out.</p>
+    <div class="pipeline">
+
+      <div class="stage">
+        <div class="num">S1</div>
+        <h3>Collect from the watch-lists <span class="tag">3 registries</span></h3>
+        <p>Pull every open role from the companies being watched &mdash; one list per lane (see the three lanes below).</p>
+        <div class="setting"><span class="lbl">watching</span> <span class="val">local employers</span> <span class="val">~71 remote employers</span> <span class="val">3 staffing firms</span></div>
+      </div>
+
+      <div class="stage">
+        <div class="num">S2</div>
+        <h3>Location gate <span class="tag">is it reachable?</span></h3>
+        <p>Keep the role only if it's near South Jordan <b>or</b> US-remote. On-site roles in other cities, and remote roles tied to another country, are dropped. (Each lane applies its own version &mdash; see below.)</p>
+        <div class="outcomes">
+          <span class="pill keep">&#10003; Utah-area or US-remote</span>
+          <span class="pill drop">&#10007; other-city on-site</span>
+          <span class="pill drop">&#10007; non-US remote</span>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="num">S3</div>
+        <h3>Freshness gate <span class="tag">how old?</span></h3>
+        <p>Drop anything posted too long ago. Roles with no visible post-date are always kept (better to show than silently hide).</p>
+        <div class="setting"><span class="lbl">window</span> <span class="val">Local &amp; Remote: 7 days</span> <span class="val">Contract/Staffing: 30 days</span></div>
+      </div>
+
+      <div class="stage">
+        <div class="num">S4</div>
+        <h3>Title match &mdash; your profile <span class="tag">the main filter</span></h3>
+        <p>The role's <b>title</b> is tested against your word-lists. It's kept only if the title contains <b>at least one word from Group&nbsp;1 <span style="color:var(--ink)">and</span> at least one from Group&nbsp;2</b>, and <b>none</b> of your exclude words. (The full lists are in <span class="val">K5&ndash;K7</span> below &mdash; this is your biggest lever.)</p>
+        <div class="outcomes">
+          <span class="pill keep">&#10003; "Director of Customer Experience"</span>
+          <span class="pill drop">&#10007; "Software Engineer" (excluded)</span>
+        </div>
+        <div class="callout" style="margin-top:12px;">
+          <span class="ic">&#9888;&#65039;</span>
+          <div><b>Whole-word matching.</b> It matches full words, not fragments &mdash; so <span class="val">change management</span> in your list does <b>not</b> match a title that says <span class="val">change manager</span>, and <span class="val">program management</span> won't catch <span class="val">program manager</span>. If you want those title variants, they each need their own entry. (We just added <span class="val">organizational change</span> + <span class="val">change manager</span> for exactly this reason.)</div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="num">S5</div>
+        <h3>Contract-only screen <span class="tag">staffing lane only</span></h3>
+        <p>In the Contract/Staffing lane, permanent placements are removed at the source, so only contract / contract-to-hire / temporary work comes through. The other two lanes skip this step.</p>
+        <div class="outcomes"><span class="pill keep">&#10003; contract / temp / C2H</span> <span class="pill drop">&#10007; permanent / direct-hire</span></div>
+      </div>
+
+      <div class="stage">
+        <div class="num">S6</div>
+        <h3>Fit scoring <span class="tag">AI read</span></h3>
+        <p>Each surviving <em>new</em> role is read against your background and scored <b>0&ndash;100</b> with a yes / maybe / no verdict and a one-line reason. Today this only <b>ranks</b> &mdash; nothing is dropped for a low score &mdash; so you see everything, best-fit first.</p>
+        <div class="setting"><span class="lbl">mode</span> <span class="val">Rank (keep all, sort by fit)</span> &middot; <span class="lbl">alt</span> <span class="val">Filter: hide "no"</span></div>
+      </div>
+
+      <div class="stage">
+        <div class="num">S7</div>
+        <h3>Compare to yesterday <span class="tag">what changed</span></h3>
+        <p>The list is diffed against the last run. This is what fills the <b>What's changed</b> section: brand-<b>new</b> roles, <b>changed</b> titles, and <b>removed / filled</b> ones. Everything still open also appears under <em>All current matching roles</em>.</p>
+        <div class="outcomes"><span class="pill keep">&#10022; new</span> <span class="pill flag">&#9998; changed title</span> <span class="pill drop">&#10003; removed / filled</span></div>
+      </div>
+
+      <div class="stage">
+        <div class="num">S8</div>
+        <h3>Star the newest <span class="tag">&#11088;</span></h3>
+        <p>A &#11088; is added to any role posted within the star window, so the very freshest jump out.</p>
+        <div class="setting"><span class="lbl">star window</span> <span class="val">posted in the last 1 day</span></div>
+      </div>
+
+      <div class="stage">
+        <div class="num">S9</div>
+        <h3>Send only if something changed <span class="tag">the quiet rule</span></h3>
+        <p>If nothing is new, changed, or removed across any lane since the last run, <b>no email is sent</b>. A quiet inbox means nothing moved &mdash; not that the tool skipped a day.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The three lanes</h2>
+    <p class="sec-note">One email, but the search runs in three separate lanes &mdash; each with its own company list, its own location rule, and its own section in the email.</p>
+    <div class="lanes">
+      <div class="lane">
+        <div class="em">&#128205;</div>
+        <h3>Local &mdash; Silicon Slopes</h3>
+        <div class="who">watch-list: local employers</div>
+        <p>Established local tech employers. Kept if the role is in the Salt Lake / Utah County area <em>or</em> US-remote.</p>
+        <div class="rule">Gate: Utah-area <b>or</b> US-remote</div>
+      </div>
+      <div class="lane">
+        <div class="em">&#127758;</div>
+        <h3>US-Remote</h3>
+        <div class="who">watch-list: ~71 remote employers</div>
+        <p>Remote-friendly national employers. Kept only if the role is genuinely remote and open to US-based candidates.</p>
+        <div class="rule">Gate: must be US-eligible remote</div>
+      </div>
+      <div class="lane">
+        <div class="em">&#129333;&#8205;&#128188;</div>
+        <h3>Contract / Staffing</h3>
+        <div class="who">watch-list: Aquent, Eliassen, Addison Group</div>
+        <p>Staffing firms, filtered to contract work. Same reach as Local (Utah-area or US-remote), with a wider 30-day freshness window.</p>
+        <div class="rule">Gate: Utah-area or US-remote &middot; contract only</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Your profile &mdash; the words that decide a match</h2>
+    <p class="sec-note">This is stage <span class="val">S4</span> in full. A title must hit Group&nbsp;1 <b>and</b> Group&nbsp;2, and avoid every exclude word. Strike anything you'd drop; write in anything you'd add. <span style="color:var(--green);font-weight:600;">Green</span> = added in the latest round.</p>
+
+    <div class="grp">
+      <div class="grp-head"><span class="k">K5</span><h3>Group 1 &mdash; level / role anchor</h3><span class="logic">title needs &ge; 1 of these</span></div>
+      <div class="chips">
+        <span class="chip">director</span><span class="chip">executive director</span><span class="chip">senior director</span><span class="chip">vp</span><span class="chip">vice president</span><span class="chip">head of</span><span class="chip">chief</span><span class="chip">chief of staff</span><span class="chip">coo</span><span class="chip">cco</span><span class="chip">cxo</span><span class="chip">c-level</span><span class="chip">general manager</span><span class="chip">senior manager</span><span class="chip">manager</span><span class="chip">lead</span><span class="chip">principal</span><span class="chip">practice leader</span><span class="chip">practice director</span><span class="chip">portfolio leader</span><span class="chip">program director</span><span class="chip">transformation</span><span class="chip">strategy</span><span class="chip">strategic operations</span><span class="chip">business transformation</span><span class="chip">organizational effectiveness</span><span class="chip">organizational development</span>
+      </div>
+    </div>
+
+    <div class="grp">
+      <div class="grp-head"><span class="k">K6</span><h3>Group 2 &mdash; function / domain</h3><span class="logic">title needs &ge; 1 of these</span></div>
+      <div class="chips">
+        <span class="chip">operations</span><span class="chip">business operations</span><span class="chip">strategy</span><span class="chip">strategy &amp; operations</span><span class="chip">people operations</span><span class="chip">m&amp;a</span><span class="chip">m&amp;a integration</span><span class="chip">post-merger integration</span><span class="chip">acquisition integration</span><span class="chip">integration management office</span><span class="chip">mergers</span><span class="chip">acquisitions</span><span class="chip">strategic initiatives</span><span class="chip">organizational capability</span><span class="chip">operating model</span><span class="chip">enterprise transformation</span><span class="chip">ai enablement</span><span class="chip">seo</span><span class="chip">customer</span><span class="chip">client</span><span class="chip">customer success</span><span class="chip">customer experience</span><span class="chip">customer relations</span><span class="chip">customer operations</span><span class="chip">client services</span><span class="chip">professional services</span><span class="chip">service delivery</span><span class="chip">delivery</span><span class="chip">implementation</span><span class="chip">consulting</span><span class="chip">post-sales</span><span class="chip">member experience</span><span class="chip">experience</span><span class="chip">support</span><span class="chip">service</span><span class="chip">revenue operations</span><span class="chip">revops</span><span class="chip">community</span><span class="chip">account management</span><span class="chip">people</span><span class="chip">employee experience</span><span class="chip">engagement</span><span class="chip">onboarding</span><span class="chip">retention</span><span class="chip">renewals</span><span class="chip">success</span><span class="chip">care</span><span class="chip">advocacy</span><span class="chip">change management</span><span class="chip new">organizational change</span><span class="chip new">change manager</span><span class="chip">operational excellence</span><span class="chip">operational efficiency</span><span class="chip">ai adoption</span><span class="chip">ai transformation</span><span class="chip">program management</span><span class="chip">portfolio management</span><span class="chip">leadership development</span><span class="chip">ai</span><span class="chip">artificial intelligence</span><span class="chip">enablement</span><span class="chip">adoption</span><span class="chip">automation</span><span class="chip">digital transformation</span><span class="chip">future of work</span><span class="chip">innovation</span>
+      </div>
+    </div>
+
+    <div class="grp">
+      <div class="grp-head"><span class="k">K7</span><h3>Never-match &mdash; exclude words</h3><span class="logic">any of these in the title = dropped</span></div>
+      <div class="chips excl">
+        <span class="chip">engineer</span><span class="chip">engineering</span><span class="chip">developer</span><span class="chip">software</span><span class="chip">data scientist</span><span class="chip">technician</span><span class="chip">intern</span><span class="chip">account executive</span><span class="chip">sales development</span><span class="chip">sdr</span><span class="chip">bdr</span><span class="chip">coordinator</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Knobs you can tune</h2>
+    <p class="sec-note">Every dial, with its current setting and room to note what you'd change. Nothing here is fixed &mdash; it's all yours to adjust.</p>
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr><th>Ref</th><th>What it controls</th><th>Current setting</th><th>&#9997;&#65039; Your notes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ref">K1</td>
+            <td class="what"><b>Which lanes run</b><span>The three searches feeding your email</span></td>
+            <td class="cur">Local + US-Remote + Contract/Staffing &mdash; all on</td>
+            <td class="notes"><div class="writeline"></div><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K2</td>
+            <td class="what"><b>What counts as "local"</b><span>The reachable-in-person radius</span></td>
+            <td class="cur">Salt Lake &amp; Utah County &mdash; <code>South Jordan, Lehi, Draper, Provo, Sandy, &hellip;</code></td>
+            <td class="notes"><div class="writeline"></div><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K3</td>
+            <td class="what"><b>Remote policy</b><span>Which remote roles qualify</span></td>
+            <td class="cur">US-remote kept; non-US remote dropped</td>
+            <td class="notes"><div class="writeline"></div><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K4</td>
+            <td class="what"><b>Freshness window</b><span>How new a posting must be (S3)</span></td>
+            <td class="cur">Local &amp; Remote: <code>7 days</code> &middot; Contract: <code>30 days</code></td>
+            <td class="notes"><div class="writeline"></div><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K5</td>
+            <td class="what"><b>Group 1 words</b><span>Level / role anchor (S4)</span></td>
+            <td class="cur">See chips above &mdash; mark up there</td>
+            <td class="notes"><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K6</td>
+            <td class="what"><b>Group 2 words</b><span>Function / domain (S4)</span></td>
+            <td class="cur">See chips above &mdash; mark up there</td>
+            <td class="notes"><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K7</td>
+            <td class="what"><b>Exclude words</b><span>Auto-reject list (S4)</span></td>
+            <td class="cur">See chips above &mdash; mark up there</td>
+            <td class="notes"><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K8</td>
+            <td class="what"><b>Fit-score behavior</b><span>What the AI score does (S6)</span></td>
+            <td class="cur"><code>Rank</code> &mdash; keep all, sort by fit. Option: <code>Filter</code> &mdash; hide "no"</td>
+            <td class="notes"><div class="writeline"></div><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K9</td>
+            <td class="what"><b>Star window</b><span>How new earns a &#11088; (S8)</span></td>
+            <td class="cur">Posted in the last <code>1 day</code></td>
+            <td class="notes"><div class="writeline"></div></td>
+          </tr>
+          <tr>
+            <td class="ref">K10</td>
+            <td class="what"><b>Companies watched</b><span>The three watch-lists (S1)</span></td>
+            <td class="cur">Local list &middot; ~71 remote &middot; Contract: Aquent, Eliassen, Addison Group</td>
+            <td class="notes"><div class="writeline"></div><div class="writeline"></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    Prospector &middot; daily job monitor. This page documents the current selection logic so you can request changes for the next iteration &mdash; mark it up by the <code>S#</code> / <code>K#</code> codes and send it back.
+  </footer>
+</div>
+</body>
+</html>
