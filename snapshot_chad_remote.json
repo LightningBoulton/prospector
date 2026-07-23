@@ -105,6 +105,21 @@
   }
  },
  {
+  "key": "Cloudflare::8078323",
+  "company": "Cloudflare",
+  "title": "Senior Customer Engineer, Majors - Detroit, MI",
+  "location": "Distributed",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8078323?gh_jid=8078323",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Sales/customer engineering role, not hands-on software engineering; dealbreaker per candidate preferences.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Coinbase::8051871",
   "company": "Coinbase",
   "title": "Senior Software Engineer, Backend - Platform (Core AI Automation)",
@@ -116,6 +131,21 @@
    "fit": "no",
    "score": 30,
    "reason": "Backend Python/Golang AI infra role; mismatches candidate's React/.NET frontend-leaning full-stack expertise and tech stack.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Coinbase::8064873",
+  "company": "Coinbase",
+  "title": "Senior Software Engineer, Data Layer",
+  "location": "Remote - USA",
+  "url": "https://www.coinbase.com/careers/positions/8064873?gh_jid=8064873",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 58,
+   "reason": "Backend API/platform DevEx role fits skills, but crypto domain and senior (not principal) title lower alignment.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -255,21 +285,6 @@
   }
  },
  {
-  "key": "Twilio::8076802",
-  "company": "Twilio",
-  "title": "Staff, Business Intelligence Engineer",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8076802",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "BI/analytics data role, not software engineering; mismatch with frontend/full-stack architecture background.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Twilio::8074762",
   "company": "Twilio",
   "title": "Staff, Business Intelligence Engineer",
@@ -281,6 +296,21 @@
    "fit": "no",
    "score": 12,
    "reason": "BI/data analytics role, not software engineering; mismatched function despite Staff title.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Twilio::8076802",
+  "company": "Twilio",
+  "title": "Staff, Business Intelligence Engineer",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8076802",
+  "posted": "2026-07-22",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "BI/analytics data role, not software engineering; mismatch with frontend/full-stack architecture background.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -326,6 +356,21 @@
    "fit": "no",
    "score": 20,
    "reason": "SRE/database reliability role for observability infra; mismatch with frontend/full-stack architecture background.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Webflow::8075059",
+  "company": "Webflow",
+  "title": "Senior Partner Solutions Engineer - Pacific Time",
+  "location": "CA Remote (BC & ON only); U.S. Remote",
+  "url": "https://job-boards.greenhouse.io/webflow/jobs/8075059",
+  "posted": "2026-07-23",
+  "salary": "$178,000 - $210,000",
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Sales engineering/partner enablement role, not hands-on software engineering; dealbreaker match.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -408,7 +453,7 @@
   "key": "Supabase::715ba1ea-bd0b-4960-9d5a-defca99f2e24",
   "company": "Supabase",
   "title": "Event Programs Manager, Developer Community & Ecosystem",
-  "location": "Remote",
+  "location": "San Francisco, CA (Remote)",
   "url": "https://jobs.ashbyhq.com/supabase/715ba1ea-bd0b-4960-9d5a-defca99f2e24",
   "posted": "2026-07-17",
   "salary": null,
@@ -431,21 +476,6 @@
    "fit": "no",
    "score": 5,
    "reason": "Marketing role, not engineering; dealbreaker mismatch despite tech company appeal.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "PostHog::0d1b6a32-6a21-4933-a33a-303b0e49302e",
-  "company": "PostHog",
-  "title": "Site Reliability Engineer (US - Central/Eastern time)",
-  "location": "Remote (US)",
-  "url": "https://jobs.ashbyhq.com/posthog/0d1b6a32-6a21-4933-a33a-303b0e49302e",
-  "posted": "2026-07-16",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "SRE infra role mismatches full-stack/frontend background; not aligned with React/.NET application engineering strengths.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -630,6 +660,36 @@
   }
  },
  {
+  "key": "Dropbox::8074709",
+  "company": "Dropbox",
+  "title": "Senior Fullstack Product Software Engineer, Web Experience",
+  "location": "Remote - Mexico",
+  "url": "https://jobs.dropbox.com/listing/8074709?gh_jid=8074709",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Remote-Mexico role likely pays local rates, mismatched location/compensation for US-based candidate.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Dropbox::8074704",
+  "company": "Dropbox",
+  "title": "Senior Fullstack Product Software Engineer, Web Experience",
+  "location": "Remote - US: Select locations",
+  "url": "https://jobs.dropbox.com/listing/8074704?gh_jid=8074704",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "yes",
+   "score": 78,
+   "reason": "Senior full-stack web engineering, React-like frontend, architecture ownership, remote\u2014strong match despite unclear comp/title level.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Calendly::8639244002",
   "company": "Calendly",
   "title": "Principal IAM Engineer",
@@ -795,6 +855,21 @@
   }
  },
  {
+  "key": "ClickHouse::5994727004",
+  "company": "ClickHouse",
+  "title": "Senior Cloud Engineer",
+  "location": "(Remote)",
+  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/5994727004",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Backend cloud infra/security/compliance focus, not frontend/full-stack\u2014mismatch with candidate's core strengths.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Chainguard::4697551006",
   "company": "Chainguard",
   "title": "Staff Software Engineer (Repositories)",
@@ -806,6 +881,21 @@
    "fit": "no",
    "score": 20,
    "reason": "Go backend infra role for package registries; no React/.NET/frontend fit, wrong tech stack.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Cresta::5369032008",
+  "company": "Cresta",
+  "title": "Solutions Engineer, AI Agent",
+  "location": "United States (Remote)",
+  "url": "https://job-boards.greenhouse.io/cresta/jobs/5369032008",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Sales engineering role, explicit dealbreaker; not hands-on software engineering position.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -956,6 +1046,21 @@
    "fit": "maybe",
    "score": 45,
    "reason": "Staff-level fit but fraud/risk backend domain, unclear frontend/React use; incomplete posting details",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Sardine::8d5da342-86f7-4ac9-a61d-f91a7e60bfeb",
+  "company": "Sardine",
+  "title": "Marketing Engineer",
+  "location": "Austin, Texas (Remote)",
+  "url": "https://jobs.ashbyhq.com/sardine/8d5da342-86f7-4ac9-a61d-f91a7e60bfeb",
+  "posted": "2026-07-23",
+  "salary": "$140K \u2013 $180K",
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Marketing ops role, not software engineering; mismatched function despite AI/SaaS domain overlap.",
    "bg": "b9f9e4b0db4d"
   }
  }

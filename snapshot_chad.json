@@ -150,6 +150,51 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025757",
+  "company": "Western Governors University",
+  "title": "Software Engineer- Salesforce",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer--Salesforce_JR-025757",
+  "posted": "2026-07-23",
+  "salary": "$98,300.00 - $147,400.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Salesforce-specific engineering role mismatches candidate's React/.NET/AWS full-stack and platform expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025048",
+  "company": "Western Governors University",
+  "title": "Staff Software Engineer- Full-Stack Python and React",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048",
+  "posted": "2026-07-23",
+  "salary": "$161,000.00 - $249,500.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 62,
+   "reason": "Staff full-stack fits seniority/location, but Python stack differs from .NET/React background; limited details.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025709",
+  "company": "Western Governors University",
+  "title": "Software Engineer Python/Angular",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-Python-Angular_JR-025709",
+  "posted": "2026-07-23",
+  "salary": "$98,300.00 - $147,400.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 40,
+   "reason": "Location fits, but Python/Angular stack and unclear seniority mismatch candidate's React/.NET/AWS principal-level background.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Western Governors University::JR-025732",
   "company": "Western Governors University",
   "title": "Senior Software Engineer- Full Stack- Java/Angular",
