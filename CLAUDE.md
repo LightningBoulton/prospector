@@ -128,21 +128,22 @@ The lane reuses the profile's existing `match_groups`/`exclude_any` (no contract
 needed): **contract-only filtering happens in the fetcher**, on structured data, not the title.
 Purpose: an income-focused contract search alongside the leadership search — the monitor is the
 trip-wire ("a matching contract posting appeared"), not a recruiter-outreach CRM (out of scope).
-Current firms: **Aquent** (RSS feed) + **Eliassen** (Atom feed).
+Current firms: **Aquent** (RSS) + **Eliassen** & **Addison Group** (SnapHop Atom, via `fetch_snaphop`).
 
-**Hard-won finding on growing this lane (probed 2026-07):** staffing firms do NOT expose the raw
-Bullhorn REST API — even the ones that run Bullhorn (Motion Recruitment: `bte.bullhornstaffing.com`)
-wrap it **server-side** behind a careersite and expose no public `corpToken`/REST. The one
-generalizable tier-1 surface is a **per-firm RSS/Atom job feed** (Aquent `/feeds/jobs.xml`,
-Eliassen `/feeds/jobs.atom`) — so the practical "fetcher" is a feed reader, NOT a `fetch_bullhorn`.
-Feed availability among Lisa's list: Aquent ✅, Eliassen ✅; Robert Half / Randstad / Mondo /
-Beacon Hill / Kforce — no discoverable job feed at common paths (JS apps / gated); LaSalle,
-Creative Circle, Insight Global expose only a **blog** `/rss` (not jobs); Motion Recruitment is
-server-rendered + tech-only (low relevance to Lisa's profile). TEKsystems (Allegis, bot-blocks
-scripted clients) and Insight Global (custom ASP.NET; its iCIMS subdomain is corporate-hiring only)
-stay deferred. **To add a firm: probe `/feeds/jobs.{xml,atom,rss}` + `/rss` first; only if a real
-job feed exists is it a clean tier-1 add** — otherwise it needs tier-2 HTML scraping (against this
-tool's low-maintenance ethos) and probably isn't worth it.
+**Hard-won finding on growing this lane (probed 2026-07, ~37 firms across two sweeps):** staffing
+firms do NOT expose the raw Bullhorn REST API — even the ones on Bullhorn (Motion Recruitment:
+`bte.bullhornstaffing.com`) wrap it **server-side** and expose no public `corpToken`/REST. The one
+generalizable tier-1 surface is a **per-firm RSS/Atom job feed**, and those are RARE: only **3**
+of ~37 had one — Aquent (`/feeds/jobs.xml`) and two on the **SnapHop** careersite platform
+(`careers.<domain>/feeds/jobs.atom` — Eliassen, Addison). SnapHop is the one reusable vendor, so
+`fetch_snaphop` is the generalization payoff (new SnapHop firm = one registry row). Everyone else
+probed (Robert Half, Randstad, Mondo, Beacon Hill, Kforce, Vaco, Judge, Collabera, Onward Search,
+24 Seven, Creative Circle, LaSalle, …) had **no job feed** (JS app/gated), or only a **blog** `/rss`
+(LaSalle, Creative Circle, Insight Global). Motion Recruitment is server-rendered + tech-only
+(off-domain for Lisa). TEKsystems (Allegis, bot-blocks scripts) and Insight Global (custom ASP.NET;
+iCIMS = corporate-hiring only) stay deferred. **To add a firm: probe `careers.<domain>/feeds/jobs.atom`
+(SnapHop) and `<domain>/feeds/jobs.{xml,rss}` first — only a real job feed is a clean tier-1 add;
+otherwise it needs brittle tier-2 HTML scraping and probably isn't worth it.**
 
 ## Location + age gates
 
@@ -171,7 +172,7 @@ Workday/iCIMS/custom, not the three JSON APIs. Preferred path:
 - **Personio**: `fetch_personio` IMPLEMENTED + registered. `GET {slug}.jobs.personio.com/xml?language=en` → **XML** `<position>` elements (id,name,office,additionalOffices,department,createdAt,jobDescriptions). No JSON, no auth, and NO apply URL in the feed — the job URL is built as `{slug}.jobs.personio.com/job/{id}`. Parsed via stdlib `xml.etree` + `_get_text` (raw-bytes fetch). Config `{ats:"personio", slug}`. NOTE: German/EU-centric — ~0 US-remote roles in practice; capability only.
 - **Ashby**: `fetch_ashby` is IMPLEMENTED and registered. `GET api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true` → `{jobs:[{id,title,location,isRemote,jobUrl,publishedAt,descriptionPlain,compensation}]}`. `publishedAt` → `posted`; `descriptionPlain` feeds LLM/salary; salary comes from `compensation.compensationTierSummary` (trimmed at the first `•` to drop equity/benefits prose). 404s on bad slug. Used mainly by the US-remote registry (Supabase, Replit, Ramp, Vanta, Sentry, Notion, …).
 - **Aquent** (staffing lane): `fetch_aquent` IMPLEMENTED + registered. `GET aquent.com/feeds/jobs.xml` → **RSS/XML** `<item>` elements: {job_id, title ("Role [job_id]"), location{city,state,country}, placement_type, remotetype, salary ("$45-48 Hourly"), description (HTML), pubDate (RFC-822), url}. Parsed via stdlib `xml.etree` (raw-bytes fetch, like Personio). ONE national feed — no per-company slug (config `{ats:"aquent","slug":"aquent"}`; slug is registry/logo identity only, optional `"feed_url"` overrides). Specifics: **only contract placement_types kept** (`_CONTRACT_PLACEMENT` — this is the contract lane); **non-US dropped by the structured `country` code** (the string gate's markers miss codes like "FR"/"GB", and 2-letter codes collide with English words, so filter here); `remotetype` folded into the location so the gate keeps remote roles; salary kept only if it names a currency (the field sometimes carries "W2"/"part-time" notes); CDATA titles `html.unescape`d.
-- **Eliassen** (staffing lane): `fetch_eliassen` IMPLEMENTED + registered. `GET careers.eliassen.com/feeds/jobs.atom` → **Atom** `<entry>`s {id ("tag:…:/<uuid>" = stable key), title, summary (HTML — leads with a location line, then contract/perm/hybrid detail), published/updated (ISO), link href}. Returns the ~100 most-recent roles (**no pagination**). Eliassen runs **Bullhorn-for-Salesforce behind a bespoke careersite**, so there is **NO structured location/type/salary**: location is parsed from the URL slug (`…-<city>-<st>` / `-anywhere` = remote) + the summary's first line (`_eliassen_location`); contract filtering is best-effort (keep unless explicitly permanent — `_PERMANENT_MARKERS`); salary is left to `enrich_salary`. Config `{ats:"eliassen","slug":"eliassen"}`.
+- **SnapHop** (staffing lane, shared vendor): `fetch_snaphop` IMPLEMENTED + registered — one fetcher for every staffing firm on the **SnapHop careersite** (Bullhorn-for-Salesforce front end; feed host `<slug>.gosnaphop.com`). Currently **Eliassen** + **Addison Group**. `GET careers.{domain}/feeds/jobs.atom` (derived from the entry's `domain`; override with `feed_url`) → **Atom** `<entry>`s {id ("tag:…:/<uuid>" = stable key), title, summary (HTML), published/updated (ISO), link href (slug ends `<city>-<state>` or `-anywhere`, then a Salesforce id)}. Returns the ~100 most-recent roles (**no pagination**). **NO structured location/type/salary**: location via `_snaphop_location` (remote iff slug `-anywhere` / "remote" in the TITLE / summary-first-line is exactly a remote phrase — NOT any "remote" deep in the summary, which would misread Eliassen hybrids; else "City, ST" from the summary, else the slug tail — 2-letter code OR full state name via `_US_STATE_ABBR`/`_US_STATE_NAMES`); contract = keep-unless-permanent (`_PERMANENT_MARKERS`); salary left to `enrich_salary`. **Adding a SnapHop firm = one registry row** `{ats:"snaphop","slug":<logo id>,"domain":<firm domain>}` (verify `careers.<domain>/feeds/jobs.atom` returns entries first).
 - Only reach for Playwright if a company has no reachable JSON at all.
 
 Each new ATS = one `fetch_*` function returning normalized postings + one `FETCHERS` entry.

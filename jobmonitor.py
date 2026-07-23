@@ -348,46 +348,65 @@ def fetch_aquent(c):
     return out
 
 
-_ELIASSEN_FEED = "https://careers.eliassen.com/feeds/jobs.atom"
 _ATOM_NS = {"a": "http://www.w3.org/2005/Atom"}
-# Eliassen's feed carries no structured placement type; it's a contract-heavy staffing shop,
-# so (like Aquent) keep everything EXCEPT roles explicitly flagged permanent/direct-hire.
+# SnapHop careersite feeds carry no structured placement type; these are contract-heavy
+# staffing shops, so (like Aquent) keep everything EXCEPT roles explicitly flagged permanent.
 _PERMANENT_MARKERS = ("permanent", "direct hire", "direct-hire", "perm placement")
+_US_STATE_ABBR = {"al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "hi", "id", "il",
+                  "in", "ia", "ks", "ky", "la", "me", "md", "ma", "mi", "mn", "ms", "mo", "mt",
+                  "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri",
+                  "sc", "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy", "dc"}
+_US_STATE_NAMES = {"alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+                   "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho",
+                   "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine",
+                   "maryland", "massachusetts", "michigan", "minnesota", "mississippi",
+                   "missouri", "montana", "nebraska", "nevada", "new hampshire", "new jersey",
+                   "new mexico", "new york", "north carolina", "north dakota", "ohio",
+                   "oklahoma", "oregon", "pennsylvania", "rhode island", "south carolina",
+                   "south dakota", "tennessee", "texas", "utah", "vermont", "virginia",
+                   "washington", "west virginia", "wisconsin", "wyoming"}
 
 
-def _eliassen_location(href, summary_html):
-    # Best-effort location for an Eliassen entry (the feed has no structured location). The
-    # URL slug reliably ends "<city>-<2-letter-state>" (or "-anywhere" for remote) before a
-    # Salesforce id; the summary's first line is human-readable ("On-site in Orange, CA",
-    # "Remote", "Hybrid 3 days in New York, NY"). Prefer a "City, ST" from that line for a
-    # clean display; fall back to the slug's state code; return "Remote" so the gate keeps it.
+def _snaphop_location(title, summary_html, href):
+    # Best-effort location for a SnapHop careersite entry (feeds carry no structured location).
+    # Remote signal: the URL slug ends "-anywhere", OR the TITLE says remote (Addison's
+    # "USA Remote - …" convention), OR the summary's first line is EXACTLY a remote phrase —
+    # deliberately NOT any "remote" deep in the summary, which would misread Eliassen hybrids
+    # ("2 days remote in Boston"). Otherwise derive "City, ST" from the summary's location
+    # line (Eliassen) or the slug tail — which ends in a 2-letter code (Eliassen: "orange-ca")
+    # OR a full state name (Addison: "…-virginia", "…-metro-area-texas").
     slug = re.sub(r"-[a-z0-9]{15,18}$", "", (href or "").rstrip("/").split("/")[-1])
     first_p = ""
     m = re.search(r"<p>(.*?)</p>", summary_html or "", re.S)
     if m:
         first_p = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", m.group(1)))).strip()
-    if slug.endswith("-anywhere") or first_p.lower() in ("remote", "fully remote", "100% remote"):
+    if (slug.endswith("-anywhere") or "remote" in (title or "").lower()
+            or first_p.lower() in ("remote", "fully remote", "100% remote", "usa remote", "us remote")):
         return "Remote"
-    cm = re.search(r"\bin\s+([A-Z][A-Za-z .'-]+,\s*[A-Z]{2})\b", first_p)  # "... in City, ST"
+    cm = re.search(r"\bin\s+([A-Z][A-Za-z .'-]+,\s*[A-Z]{2})\b", first_p)  # "… in City, ST"
     if cm:
         return cm.group(1).strip()
     toks = slug.split("-")
-    if len(toks) >= 2 and len(toks[-1]) == 2 and toks[-1].isalpha():
-        return toks[-1].upper()   # state code only (the city isn't confidently separable)
+    if toks and toks[-1].lower() in _US_STATE_ABBR:
+        city = toks[-2].title() if len(toks) >= 2 else ""
+        return f"{city}, {toks[-1].upper()}" if city else toks[-1].upper()
+    for span in (2, 1):                       # full state name may be 1-2 slug tokens
+        if len(toks) >= span and " ".join(toks[-span:]).lower() in _US_STATE_NAMES:
+            return " ".join(toks[-span:]).title()
     return ""
 
 
-def fetch_eliassen(c):
-    # Eliassen Atom jobs feed: GET careers.eliassen.com/feeds/jobs.atom -> Atom <entry>s
-    # {id ("tag:…:/<uuid>" — stable key), title, summary (HTML: leads with a location line,
-    # then the contract/perm/hybrid detail), published/updated (ISO), link href (slug ends
-    # "<city>-<st>" or "-anywhere", then a Salesforce id)}. Returns the ~100 most-recent roles
-    # (no pagination). Eliassen runs Bullhorn-for-Salesforce behind a bespoke careersite, so
-    # there is NO structured location/type/salary — location is parsed (`_eliassen_location`),
-    # contract filtering is best-effort (keep unless explicitly permanent), and salary is left
-    # to enrich_salary's regex over the description. Config: {ats:"eliassen","slug":"eliassen"}.
+def fetch_snaphop(c):
+    # SnapHop careersite Atom feed (used by staffing firms on Bullhorn-for-Salesforce, e.g.
+    # Eliassen, Addison Group): GET careers.{domain}/feeds/jobs.atom -> Atom <entry>s {id
+    # ("tag:…:/<uuid>" = stable key), title, summary (HTML), published/updated (ISO), link
+    # href (slug ends "<city>-<state>" or "-anywhere", then a Salesforce id)}. Returns the
+    # ~100 most-recent roles (NO pagination). No structured location/type/salary: location via
+    # `_snaphop_location`, contract filtering keep-unless-permanent, salary left to
+    # enrich_salary. Feed URL derived from `domain` (override with `feed_url`). Config
+    # {ats:"snaphop","slug":<logo id>,"domain":<firm domain>}.
     import xml.etree.ElementTree as ET
-    root = ET.fromstring(_get_text(c.get("feed_url", _ELIASSEN_FEED)))
+    root = ET.fromstring(_get_text(c.get("feed_url") or f"https://careers.{c['domain']}/feeds/jobs.atom"))
     out = []
     for e in root.findall("a:entry", _ATOM_NS):
         def _t(tag):
@@ -398,13 +417,14 @@ def fetch_eliassen(c):
             continue
         sel = e.find("a:summary", _ATOM_NS)
         summary = (sel.text or "") if sel is not None else ""
-        body = (summary + " " + _t("title")).lower()
+        title = html.unescape(_t("title"))
+        body = (summary + " " + title).lower()
         if any(m in body for m in _PERMANENT_MARKERS) and "contract" not in body:
             continue   # explicitly permanent placement — out of scope for the contract lane
         link_el = e.find("a:link", _ATOM_NS)
         href = ((link_el.attrib.get("href") if link_el is not None else "") or "").replace("http://", "https://")
-        out.append(_norm(c, jid, html.unescape(_t("title")), _eliassen_location(href, summary),
-                         href, (_t("published") or _t("updated"))[:10], ats="eliassen",
+        out.append(_norm(c, jid, title, _snaphop_location(title, summary, href),
+                         href, (_t("published") or _t("updated"))[:10], ats="snaphop",
                          description=_clean_html(summary)))
     return out
 
@@ -412,7 +432,7 @@ def fetch_eliassen(c):
 FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday,
             "ashby": fetch_ashby, "recruitee": fetch_recruitee, "personio": fetch_personio,
-            "aquent": fetch_aquent, "eliassen": fetch_eliassen}
+            "aquent": fetch_aquent, "snaphop": fetch_snaphop}
 
 
 def _norm(company, ext_id, title, location, url, posted,
