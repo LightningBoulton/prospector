@@ -1,31 +1,16 @@
 [
  {
-  "key": "Entrata::030f0323-e269-423f-8ff7-26c426627814",
-  "company": "Entrata",
-  "title": "Staff Software Engineer, Payments (Entrata, Inc., Lehi, UT)",
-  "location": "Lehi, Utah",
-  "url": "https://jobs.lever.co/entrata/030f0323-e269-423f-8ff7-26c426627814",
-  "posted": "2026-07-15",
+  "key": "Cricut::744000139160279",
+  "company": "Cricut",
+  "title": "Firmware Test Engineer",
+  "location": "South Jordan, UT, United States",
+  "url": "https://jobs.smartrecruiters.com/cricut/744000139160279",
+  "posted": "2026-07-22",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 58,
-   "reason": "Staff-level backend/payments role in Lehi UT fits location/seniority, but domain is backend-heavy, less frontend/React focus.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Pluralsight::R0014266",
-  "company": "Pluralsight",
-  "title": "Senior Software Engineer (Python/Node)",
-  "location": "Remote - USA",
-  "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Senior-Software-Engineer--Python-Node-_R0014266",
-  "posted": "2026-07-20",
-  "salary": "$144,400 - $190,000",
-  "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Senior IC remote role fits seniority/location, but Python/Node stack differs from React/.NET expertise; limited details.",
+   "fit": "no",
+   "score": 5,
+   "reason": "Firmware testing is unrelated to candidate's full-stack/frontend/cloud engineering background and seniority target.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -105,21 +90,6 @@
   }
  },
  {
-  "key": "NICE::4928015101",
-  "company": "NICE",
-  "title": "AI Lead Software Engineer",
-  "location": "Seattle, Washington, United States; USA - Atlanta, GA; USA - San Francisco, CA; USA - Sandy, UT",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4928015101?gh_jid=4928015101",
-  "posted": "2026-07-15",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 22,
-   "reason": "Data/AI platform role (Snowflake, LLM SQL, vector search) mismatches candidate's frontend/full-stack SaaS expertise.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "NICE::4932615101",
   "company": "NICE",
   "title": "Integration Engineer",
@@ -131,21 +101,6 @@
    "fit": "no",
    "score": 25,
    "reason": "Integration/partner support engineer role, junior scope (3+ yrs), not principal-level architecture or product engineering.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "NICE::4929222101",
-  "company": "NICE",
-  "title": "Senior Software Engineer",
-  "location": "USA - Sandy, UT",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4929222101?gh_jid=4929222101",
-  "posted": "2026-07-20",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Senior IC role, right location, AI-forward, but contact-center domain and title level below Principal norm.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -195,17 +150,17 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025472",
+  "key": "Western Governors University::JR-025732",
   "company": "Western Governors University",
-  "title": "Software Engineer II- Salesforce",
+  "title": "Senior Software Engineer- Full Stack- Java/Angular",
   "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II--Salesforce_JR-025472",
-  "posted": "2026-07-21",
-  "salary": "$118,900.00 - $178,500.00",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer--Full-Stack--Java-Angular_JR-025732",
+  "posted": "2026-07-22",
+  "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Salesforce-focused, Engineer II level mismatches Principal seniority and core .NET/React/cloud expertise.",
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Right location/seniority, but Java/Angular stack mismatches candidate's React/.NET expertise; no description to verify scope.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -330,21 +285,6 @@
   }
  },
  {
-  "key": "O.C. Tanner::JR26-212",
-  "company": "O.C. Tanner",
-  "title": "Software Engineer in Test - AI",
-  "location": "USA - Utah-Salt Lake City-Headquarters",
-  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Software-Engineer-in-Test---AI_JR26-212",
-  "posted": "2026-07-15",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "SDET role mismatches candidate's principal full-stack/frontend architecture focus; unclear seniority and compensation fit.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "LVT::5351798008",
   "company": "LVT",
   "title": "Senior Manager, Software Engineering (HQ)",
@@ -356,21 +296,6 @@
    "fit": "no",
    "score": 20,
    "reason": "People management role (Senior Manager) contradicts candidate's strong preference for hands-on IC work.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "LVT::5343463008",
-  "company": "LVT",
-  "title": "Senior Software Engineer II - Manufacturing Software Support",
-  "location": "American Fork, Utah, United States",
-  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5343463008",
-  "posted": "2026-07-15",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 30,
-   "reason": "Onsite manufacturing support role in Utah; not remote, niche domain mismatch vs SaaS/frontend background.",
    "bg": "b9f9e4b0db4d"
   }
  }
