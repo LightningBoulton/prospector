@@ -19,6 +19,7 @@ import hashlib, json, os, re, sys, html, urllib.request, datetime
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
 REMOTE_CONFIG = os.path.join(HERE, "remote_companies.json")  # US-remote lane registry
+STAFFING_CONFIG = os.path.join(HERE, "staffing_companies.json")  # contract/staffing lane registry
 PROFILES = os.path.join(HERE, "profiles.json")
 SETTINGS = os.path.join(HERE, "settings.json")
 
@@ -278,9 +279,140 @@ def fetch_personio(c):
     return out
 
 
+def _rss_date(text):
+    # RFC-822 pubDate ("Thu, 23 Jul 2026 18:53:50 GMT") -> "YYYY-MM-DD" ("" if unparseable).
+    if not text:
+        return ""
+    try:
+        import email.utils
+        return email.utils.parsedate_to_datetime(text).date().isoformat()
+    except Exception:
+        return ""
+
+
+# Aquent's placement_type values that signal CONTRACT work. The staffing lane exists ONLY
+# for contract roles, so fetch_aquent surfaces contract-ish placements (and any unknown
+# value) and drops clearly-permanent ones at the source — placement_type is structured, so
+# we filter on data instead of guessing "contract" from the title. "Temp to Perm" keeps
+# (it contains "temp"); "Permanent"/"Direct Hire" drop.
+_AQUENT_FEED = "https://aquent.com/feeds/jobs.xml"
+_CONTRACT_PLACEMENT = ("temporary", "temp", "contract", "freelance", "interim", "c2h")
+
+
+def fetch_aquent(c):
+    # Aquent national jobs feed: GET aquent.com/feeds/jobs.xml -> RSS <item> elements with
+    # {job_id, title ("Role [job_id]"), location{city,state,country}, placement_type,
+    # remotetype ("Fully remote"), salary ("$45-48 Hourly"), description (HTML), pubDate
+    # (RFC-822), url}. No auth and no per-company slug — ONE national feed for all of Aquent,
+    # so the fetcher ignores slug for the URL (slug is only the registry/logo identity; an
+    # optional "feed_url" in config overrides). Only contract-type placements are kept (this
+    # is the contract lane). remotetype is folded into the location string so the location
+    # gate keeps remote roles (the location itself is often just "US"). salary and description
+    # are inline — no per-posting detail fetch needed. Config: {ats:"aquent","slug":"aquent"}.
+    import xml.etree.ElementTree as ET
+    root = ET.fromstring(_get_text(c.get("feed_url", _AQUENT_FEED)))
+    out = []
+    for it in root.findall(".//item"):
+        def _t(tag):
+            el = it.find(tag)
+            return (el.text or "").strip() if el is not None and el.text else ""
+        jid = _t("job_id")
+        if not jid:
+            continue
+        pt = _t("placement_type").lower()
+        if pt and not any(m in pt for m in _CONTRACT_PLACEMENT):
+            continue   # clearly-permanent placement — out of scope for the contract lane
+        loc_el = it.find("location")
+        country = (loc_el.findtext("country") or "").strip() if loc_el is not None else ""
+        # Aquent gives a clean ISO country code, so drop non-US roles precisely HERE — the
+        # string gate's INTERNATIONAL_MARKERS are full names and miss codes like "FR"/"GB"
+        # (adding 2-letter codes there is unsafe: "it"/"in"/"no" collide with English words).
+        # Honor allow_international_remote exactly like the global gate does.
+        if country and country.upper() not in ("US", "USA") and not ALLOW_INTL_REMOTE:
+            continue
+        loc = html.unescape(", ".join(x for x in [
+            (loc_el.findtext("city") or "").strip() if loc_el is not None else "",
+            (loc_el.findtext("state") or "").strip() if loc_el is not None else "",
+            country] if x))
+        if "remote" in _t("remotetype").lower() and "remote" not in loc.lower():
+            loc = (loc + " (Remote)").strip() if loc else "Remote"
+        # CDATA titles aren't entity-decoded by the XML parser; unescape "&amp;" etc.
+        title = re.sub(r"\s*\[\d+\]\s*$", "", html.unescape(_t("title")))
+        # The salary field sometimes carries employment-type notes ("W2", "part-time…")
+        # rather than pay; keep it only when it names an actual currency amount.
+        raw_sal = _t("salary")
+        salary = raw_sal if raw_sal and any(sym in raw_sal for sym in "$€£") else None
+        out.append(_norm(c, jid, title, loc, _t("url"), _rss_date(_t("pubDate")),
+                         salary=salary, ats="aquent",
+                         description=_clean_html(_t("description"))))
+    return out
+
+
+_ELIASSEN_FEED = "https://careers.eliassen.com/feeds/jobs.atom"
+_ATOM_NS = {"a": "http://www.w3.org/2005/Atom"}
+# Eliassen's feed carries no structured placement type; it's a contract-heavy staffing shop,
+# so (like Aquent) keep everything EXCEPT roles explicitly flagged permanent/direct-hire.
+_PERMANENT_MARKERS = ("permanent", "direct hire", "direct-hire", "perm placement")
+
+
+def _eliassen_location(href, summary_html):
+    # Best-effort location for an Eliassen entry (the feed has no structured location). The
+    # URL slug reliably ends "<city>-<2-letter-state>" (or "-anywhere" for remote) before a
+    # Salesforce id; the summary's first line is human-readable ("On-site in Orange, CA",
+    # "Remote", "Hybrid 3 days in New York, NY"). Prefer a "City, ST" from that line for a
+    # clean display; fall back to the slug's state code; return "Remote" so the gate keeps it.
+    slug = re.sub(r"-[a-z0-9]{15,18}$", "", (href or "").rstrip("/").split("/")[-1])
+    first_p = ""
+    m = re.search(r"<p>(.*?)</p>", summary_html or "", re.S)
+    if m:
+        first_p = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", m.group(1)))).strip()
+    if slug.endswith("-anywhere") or first_p.lower() in ("remote", "fully remote", "100% remote"):
+        return "Remote"
+    cm = re.search(r"\bin\s+([A-Z][A-Za-z .'-]+,\s*[A-Z]{2})\b", first_p)  # "... in City, ST"
+    if cm:
+        return cm.group(1).strip()
+    toks = slug.split("-")
+    if len(toks) >= 2 and len(toks[-1]) == 2 and toks[-1].isalpha():
+        return toks[-1].upper()   # state code only (the city isn't confidently separable)
+    return ""
+
+
+def fetch_eliassen(c):
+    # Eliassen Atom jobs feed: GET careers.eliassen.com/feeds/jobs.atom -> Atom <entry>s
+    # {id ("tag:…:/<uuid>" — stable key), title, summary (HTML: leads with a location line,
+    # then the contract/perm/hybrid detail), published/updated (ISO), link href (slug ends
+    # "<city>-<st>" or "-anywhere", then a Salesforce id)}. Returns the ~100 most-recent roles
+    # (no pagination). Eliassen runs Bullhorn-for-Salesforce behind a bespoke careersite, so
+    # there is NO structured location/type/salary — location is parsed (`_eliassen_location`),
+    # contract filtering is best-effort (keep unless explicitly permanent), and salary is left
+    # to enrich_salary's regex over the description. Config: {ats:"eliassen","slug":"eliassen"}.
+    import xml.etree.ElementTree as ET
+    root = ET.fromstring(_get_text(c.get("feed_url", _ELIASSEN_FEED)))
+    out = []
+    for e in root.findall("a:entry", _ATOM_NS):
+        def _t(tag):
+            el = e.find(f"a:{tag}", _ATOM_NS)
+            return (el.text or "").strip() if el is not None and el.text else ""
+        jid = _t("id").rstrip("/").split("/")[-1]   # UUID from the tag: URI
+        if not jid:
+            continue
+        sel = e.find("a:summary", _ATOM_NS)
+        summary = (sel.text or "") if sel is not None else ""
+        body = (summary + " " + _t("title")).lower()
+        if any(m in body for m in _PERMANENT_MARKERS) and "contract" not in body:
+            continue   # explicitly permanent placement — out of scope for the contract lane
+        link_el = e.find("a:link", _ATOM_NS)
+        href = ((link_el.attrib.get("href") if link_el is not None else "") or "").replace("http://", "https://")
+        out.append(_norm(c, jid, html.unescape(_t("title")), _eliassen_location(href, summary),
+                         href, (_t("published") or _t("updated"))[:10], ats="eliassen",
+                         description=_clean_html(summary)))
+    return out
+
+
 FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday,
-            "ashby": fetch_ashby, "recruitee": fetch_recruitee, "personio": fetch_personio}
+            "ashby": fetch_ashby, "recruitee": fetch_recruitee, "personio": fetch_personio,
+            "aquent": fetch_aquent, "eliassen": fetch_eliassen}
 
 
 def _norm(company, ext_id, title, location, url, posted,
@@ -683,7 +815,7 @@ def _company_slug(company):
     global _COMPANIES
     if _COMPANIES is None:
         _COMPANIES = {}
-        for path in (CONFIG, REMOTE_CONFIG):  # local + US-remote registries
+        for path in (CONFIG, REMOTE_CONFIG, STAFFING_CONFIG):  # local + US-remote + staffing
             try:
                 for c in json.load(open(path)).get("companies", []):
                     _COMPANIES.setdefault(c["name"], c)
@@ -955,10 +1087,11 @@ def _run_lane(profile, pool, errors, client, suffix, title):
     return lane, has_changes
 
 
-def run_profile(profile, local_pool, remote_pool, errors, client=None, remote_errors=None):
-    # Run the local lane and (when enabled + opted-in) the US-remote lane, then compose BOTH
-    # into ONE report/email per person. Each lane keeps its own snapshot so diffs are
-    # independent; `changed` is the OR of the lanes; logos are the union across lanes.
+def run_profile(profile, local_pool, remote_pool, errors, client=None, remote_errors=None,
+                staffing_pool=None, staffing_errors=None):
+    # Run the local lane and (when enabled + opted-in) the US-remote and contract/staffing
+    # lanes, then compose ALL into ONE report/email per person. Each lane keeps its own
+    # snapshot so diffs are independent; `changed` is the OR of the lanes; logos are the union.
     local_lane, changed = _run_lane(profile, local_pool, errors, client, "",
                                     "📍 Local — Silicon Slopes")
     lanes = [local_lane]
@@ -967,6 +1100,11 @@ def run_profile(profile, local_pool, remote_pool, errors, client=None, remote_er
                                            "_remote", "🌎 US-Remote")
         lanes.append(remote_lane)
         changed = changed or r_changed
+    if staffing_pool is not None and profile.get("staffing_search"):
+        staffing_lane, s_changed = _run_lane(profile, staffing_pool, staffing_errors or [], client,
+                                             "_staffing", "🧑‍💼 Contract / Staffing")
+        lanes.append(staffing_lane)
+        changed = changed or s_changed
 
     report = build_report(profile, lanes)
     report_html = build_html_report(profile, lanes)   # clears + repopulates _LOGOS_USED
@@ -1015,14 +1153,35 @@ def main():
         remote_pool, remote_errors = collect_pool(max_age_days=max_age,
                                                   config_path=REMOTE_CONFIG, gate=is_us_remote)
         print(f"Fetched {len(remote_pool)} US-remote role(s) across the remote registry.")
+
+    # Contract/staffing lane: staffing-firm feeds (e.g. Aquent), fetched once and gated with
+    # the local gate (is_local keeps Utah-local + US-remote roles, dropping other-metro on-site
+    # and international remote). Each profile that opts in (staffing_search:true) gets a
+    # Contract/Staffing section merged into its ONE report. Contract-only filtering happens in
+    # the fetcher (placement_type), so this pool is already scoped to contract roles.
+    staffing_pool, staffing_errors = [], []
+    staffing_cfg = settings.get("staffing_search", {})
+    staffing_on = bool(staffing_cfg.get("enabled")
+                       and any(p.get("staffing_search") for p in profiles))
+    if staffing_on:
+        # The contract lane can look back further than the leadership lanes (income-focused
+        # search wants volume): staffing_search.max_age_days overrides the global window,
+        # falling back to it when unset.
+        staffing_age = staffing_cfg.get("max_age_days", max_age)
+        staffing_pool, staffing_errors = collect_pool(max_age_days=staffing_age,
+                                                      config_path=STAFFING_CONFIG, gate=is_local)
+        s_note = f" ≤{staffing_age}d old" if staffing_age else ""
+        print(f"Fetched {len(staffing_pool)} contract/staffing role(s){s_note} across the staffing registry.")
     print()
 
     changed_profiles = []
     logos_by_profile = {}
     for p in profiles:
         rp = remote_pool if (remote_on and p.get("remote_search")) else None
+        sp = staffing_pool if (staffing_on and p.get("staffing_search")) else None
         changed, logos, report = run_profile(p, pool, rp, errors, client,
-                                             remote_errors=remote_errors)
+                                             remote_errors=remote_errors,
+                                             staffing_pool=sp, staffing_errors=staffing_errors)
         if changed:
             changed_profiles.append(p["name"])
         logos_by_profile[p["name"]] = logos

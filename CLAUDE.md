@@ -28,6 +28,7 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 
 - `companies.json` — `companies[]` + `needs_identification[]` backlog. Company fields: {name, city, ats, slug, domain}; **workday entries also need** {wd_host, site}. `domain` feeds logo prefetch.
 - `remote_companies.json` — registry for the **US-remote lane** (same entry shape as `companies.json`). Hand-seeded, remote-friendly employers on tier-1 ATSes; each VERIFIED to return live US-remote roles before adding. Read only when `settings.remote_search.enabled` and a profile has `remote_search:true` (see US-remote lane below).
+- `staffing_companies.json` — registry for the **contract/staffing lane** (same entry shape). Staffing/recruiting firms whose public feeds we monitor for **contract** roles. Read only when `settings.staffing_search.enabled` and a profile has `staffing_search:true` (see Contract/staffing lane below).
 - `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any}).
 - `settings.json` — run-wide tweakables (loaded by `load_settings`, defaults in `SETTINGS_DEFAULTS`): `max_posting_age_days` (drop postings older than this; 0/null = keep all; unknown-date always kept), `fit_scoring_enabled` (master off-switch for the Anthropic API), and `star_within_days` (⭐ postings newer than this in the report; 0/null off — `main` sets the `STAR_WITHIN_DAYS` global from it). Missing file/keys fall back to defaults.
 - `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `enrich_salary`, `enrich_with_fit`, `diff`, `build_report`, `build_html_report`, `run_profile`.
@@ -110,6 +111,39 @@ unchanged** (one email, gated on the combined flag). Design + why the feed appro
 @DESIGN-remote.md. Grow the registry by verifying new remote-friendly employers on tier-1 ATSes
 (same discipline as `companies.json`); `fetch_logos.py` already reads both registries.
 
+## Contract/staffing lane (third search lane)
+
+Additive, like the US-remote lane, and built on the same machinery. Master switch
+`settings.staffing_search.enabled`; a profile opts in with `staffing_search:true` (currently
+Lisa only). Reads `staffing_companies.json` and applies the **local gate `is_local`** (keeps
+Utah-local + US-remote, drops other-metro on-site and international remote) — this is the
+"US-remote + local" scope. `main` collects the staffing pool once (shared across profiles) and
+`run_profile` runs it as a THIRD lane via the same `_run_lane` (suffix `_staffing`, snapshot
+`snapshot_<name>_staffing.json`, banner "🧑‍💼 Contract / Staffing"). Optional
+`settings.staffing_search.max_age_days` gives this lane its **own age window** (contract search
+favors volume, so it's typically wider than the global `max_posting_age_days`; falls back to it
+when unset). `<name>_changed` is now the
+OR of up to three lanes; `<name>_logos` the union — so the **workflow email steps are unchanged**.
+The lane reuses the profile's existing `match_groups`/`exclude_any` (no contract keyword group is
+needed): **contract-only filtering happens in the fetcher**, on structured data, not the title.
+Purpose: an income-focused contract search alongside the leadership search — the monitor is the
+trip-wire ("a matching contract posting appeared"), not a recruiter-outreach CRM (out of scope).
+Current firms: **Aquent** (RSS feed) + **Eliassen** (Atom feed).
+
+**Hard-won finding on growing this lane (probed 2026-07):** staffing firms do NOT expose the raw
+Bullhorn REST API — even the ones that run Bullhorn (Motion Recruitment: `bte.bullhornstaffing.com`)
+wrap it **server-side** behind a careersite and expose no public `corpToken`/REST. The one
+generalizable tier-1 surface is a **per-firm RSS/Atom job feed** (Aquent `/feeds/jobs.xml`,
+Eliassen `/feeds/jobs.atom`) — so the practical "fetcher" is a feed reader, NOT a `fetch_bullhorn`.
+Feed availability among Lisa's list: Aquent ✅, Eliassen ✅; Robert Half / Randstad / Mondo /
+Beacon Hill / Kforce — no discoverable job feed at common paths (JS apps / gated); LaSalle,
+Creative Circle, Insight Global expose only a **blog** `/rss` (not jobs); Motion Recruitment is
+server-rendered + tech-only (low relevance to Lisa's profile). TEKsystems (Allegis, bot-blocks
+scripted clients) and Insight Global (custom ASP.NET; its iCIMS subdomain is corporate-hiring only)
+stay deferred. **To add a firm: probe `/feeds/jobs.{xml,atom,rss}` + `/rss` first; only if a real
+job feed exists is it a clean tier-1 add** — otherwise it needs tier-2 HTML scraping (against this
+tool's low-maintenance ethos) and probably isn't worth it.
+
 ## Location + age gates
 
 Global, applied once to the pool in `collect_pool` before profiles. Location:
@@ -136,6 +170,8 @@ Workday/iCIMS/custom, not the three JSON APIs. Preferred path:
 - **Recruitee**: `fetch_recruitee` IMPLEMENTED + registered. `GET {slug}.recruitee.com/api/offers/` → `{offers:[{id,title,location,city,country,careers_url,published_at,description,remote,salary}]}`. JSON, no auth; 404s on bad slug. Config `{ats:"recruitee", slug}`. NOTE: Recruitee is EU-centric — probed candidates had ~0 US-remote roles, so the fetcher exists for capability/local use, not because it currently feeds the remote registry.
 - **Personio**: `fetch_personio` IMPLEMENTED + registered. `GET {slug}.jobs.personio.com/xml?language=en` → **XML** `<position>` elements (id,name,office,additionalOffices,department,createdAt,jobDescriptions). No JSON, no auth, and NO apply URL in the feed — the job URL is built as `{slug}.jobs.personio.com/job/{id}`. Parsed via stdlib `xml.etree` + `_get_text` (raw-bytes fetch). Config `{ats:"personio", slug}`. NOTE: German/EU-centric — ~0 US-remote roles in practice; capability only.
 - **Ashby**: `fetch_ashby` is IMPLEMENTED and registered. `GET api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true` → `{jobs:[{id,title,location,isRemote,jobUrl,publishedAt,descriptionPlain,compensation}]}`. `publishedAt` → `posted`; `descriptionPlain` feeds LLM/salary; salary comes from `compensation.compensationTierSummary` (trimmed at the first `•` to drop equity/benefits prose). 404s on bad slug. Used mainly by the US-remote registry (Supabase, Replit, Ramp, Vanta, Sentry, Notion, …).
+- **Aquent** (staffing lane): `fetch_aquent` IMPLEMENTED + registered. `GET aquent.com/feeds/jobs.xml` → **RSS/XML** `<item>` elements: {job_id, title ("Role [job_id]"), location{city,state,country}, placement_type, remotetype, salary ("$45-48 Hourly"), description (HTML), pubDate (RFC-822), url}. Parsed via stdlib `xml.etree` (raw-bytes fetch, like Personio). ONE national feed — no per-company slug (config `{ats:"aquent","slug":"aquent"}`; slug is registry/logo identity only, optional `"feed_url"` overrides). Specifics: **only contract placement_types kept** (`_CONTRACT_PLACEMENT` — this is the contract lane); **non-US dropped by the structured `country` code** (the string gate's markers miss codes like "FR"/"GB", and 2-letter codes collide with English words, so filter here); `remotetype` folded into the location so the gate keeps remote roles; salary kept only if it names a currency (the field sometimes carries "W2"/"part-time" notes); CDATA titles `html.unescape`d.
+- **Eliassen** (staffing lane): `fetch_eliassen` IMPLEMENTED + registered. `GET careers.eliassen.com/feeds/jobs.atom` → **Atom** `<entry>`s {id ("tag:…:/<uuid>" = stable key), title, summary (HTML — leads with a location line, then contract/perm/hybrid detail), published/updated (ISO), link href}. Returns the ~100 most-recent roles (**no pagination**). Eliassen runs **Bullhorn-for-Salesforce behind a bespoke careersite**, so there is **NO structured location/type/salary**: location is parsed from the URL slug (`…-<city>-<st>` / `-anywhere` = remote) + the summary's first line (`_eliassen_location`); contract filtering is best-effort (keep unless explicitly permanent — `_PERMANENT_MARKERS`); salary is left to `enrich_salary`. Config `{ats:"eliassen","slug":"eliassen"}`.
 - Only reach for Playwright if a company has no reachable JSON at all.
 
 Each new ATS = one `fetch_*` function returning normalized postings + one `FETCHERS` entry.
