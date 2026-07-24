@@ -1,5 +1,20 @@
 [
  {
+  "key": "Cricut::744000139368229",
+  "company": "Cricut",
+  "title": "Staff AI-Native Software Engineer",
+  "location": "South Jordan, UT, United States",
+  "url": "https://jobs.smartrecruiters.com/cricut/744000139368229",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 60,
+   "reason": "Staff-level, local to SLC area, AI-native angle intriguing, but no details on stack, comp, or scope.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Cricut::744000139160279",
   "company": "Cricut",
   "title": "Firmware Test Engineer",
@@ -41,21 +56,6 @@
    "fit": "no",
    "score": 25,
    "reason": "Data Engineer role mismatch; candidate is frontend-leaning full-stack/platform engineer, not data engineering focused.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "BILL::6116018004",
-  "company": "BILL",
-  "title": "Staff Data Warehouse Engineer",
-  "location": "Draper, Utah, United States; San Jose, California, United States; United States",
-  "url": "https://www.bill.com/job?6116018004&gh_jid=6116018004",
-  "posted": "2026-07-16",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Data warehouse/ETL role, not full-stack/frontend engineering\u2014mismatch with candidate's core expertise and interests.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -105,36 +105,6 @@
   }
  },
  {
-  "key": "Flex::4716085005",
-  "company": "Flex",
-  "title": "Senior Software Engineer, Backend FinPlatform",
-  "location": "Remote",
-  "url": "https://job-boards.greenhouse.io/flex/jobs/4716085005",
-  "posted": "2026-07-16",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Java backend fintech role mismatches Chad's .NET/React frontend-leaning stack and seniority target.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Flex::4716104005",
-  "company": "Flex",
-  "title": "Senior Software Engineer, Backend Money Team",
-  "location": "Remote",
-  "url": "https://job-boards.greenhouse.io/flex/jobs/4716104005",
-  "posted": "2026-07-16",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Backend-heavy fintech role; lacks frontend/React focus, seniority slightly below Principal target, domain mismatch (payments infra).",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Flex::4716474005",
   "company": "Flex",
   "title": "Web Designer & Webflow Developer",
@@ -146,6 +116,66 @@
    "fit": "no",
    "score": 3,
    "reason": "Webflow/design role mismatch; candidate is a senior full-stack/backend-leaning software engineer, not a web designer.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025654",
+  "company": "Western Governors University",
+  "title": "Senior Cloud Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer_JR-025654",
+  "posted": "2026-07-23",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 45,
+   "reason": "Location matches but title suggests infra/cloud ops role, not frontend-leaning full-stack engineering fit.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025457",
+  "company": "Western Governors University",
+  "title": "Salesforce Engineer I",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Salesforce-Engineer-I_JR-025457",
+  "posted": "2026-07-23",
+  "salary": "$98,300.00 - $147,400.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Junior Salesforce role, wrong seniority and tech stack; mismatches core .NET/React/AWS expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025417",
+  "company": "Western Governors University",
+  "title": "Software Engineer II - Salesforce",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Salesforce_JR-025417",
+  "posted": "2026-07-23",
+  "salary": "$118,900.00 - $178,500.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Salesforce Engineer II is junior-level, wrong stack/domain; mismatches seniority and core tech expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025416",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer - Salesforce",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416",
+  "posted": "2026-07-23",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Salesforce-specific role mismatches candidate's React/.NET/AWS full-stack expertise and background.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -291,7 +321,7 @@
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025291",
   "posted": "2026-07-17",
-  "salary": "$118,900.00 - $178,500.00",
+  "salary": null,
   "fit_result": {
    "fit": "no",
    "score": 25,
@@ -326,21 +356,6 @@
    "fit": "maybe",
    "score": 52,
    "reason": "Senior IC fit and SLC location match, but Angular/Python differs from React/.NET stack; comp/culture unknown.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "LVT::5351798008",
-  "company": "LVT",
-  "title": "Senior Manager, Software Engineering (HQ)",
-  "location": "American Fork, Utah, United States",
-  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5351798008",
-  "posted": "2026-07-16",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "People management role (Senior Manager) contradicts candidate's strong preference for hands-on IC work.",
    "bg": "b9f9e4b0db4d"
   }
  }

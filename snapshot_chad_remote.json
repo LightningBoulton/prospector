@@ -120,6 +120,21 @@
   }
  },
  {
+  "key": "Cloudflare::8082834",
+  "company": "Cloudflare",
+  "title": "Senior Customer Engineer, Named - Charlotte, NC",
+  "location": "Distributed",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8082834?gh_jid=8082834",
+  "posted": "2026-07-24",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Sales/customer engineering role, not hands-on IC engineering; explicit dealbreaker (sales engineering).",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Coinbase::8051871",
   "company": "Coinbase",
   "title": "Senior Software Engineer, Backend - Platform (Core AI Automation)",
@@ -191,6 +206,21 @@
    "fit": "no",
    "score": 25,
    "reason": "Backend ledger/fintech infra role; mismatches frontend/full-stack strength and micro-frontend/DevEx focus.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Reddit::8082867",
+  "company": "Reddit",
+  "title": "Senior Frontend Engineer, Ads Creative",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8082867",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 62,
+   "reason": "Strong React/TS senior IC match, but ads-domain and title level below Principal target.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -285,17 +315,32 @@
   }
  },
  {
-  "key": "Twilio::8074762",
+  "key": "Twilio::7946610",
   "company": "Twilio",
-  "title": "Staff, Business Intelligence Engineer",
+  "title": "Software Engineer (L2)",
   "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8074762",
-  "posted": "2026-07-22",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/7946610",
+  "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
    "fit": "no",
-   "score": 12,
-   "reason": "BI/data analytics role, not software engineering; mismatched function despite Staff title.",
+   "score": 8,
+   "reason": "Template posting, L2 title suggests junior level, no real details\u2014mismatch with Principal seniority.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Twilio::7689461",
+  "company": "Twilio",
+  "title": "Software Engineer (L2) Email",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/7689461",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Template posting, no real content; L2 title suggests junior level, mismatched seniority.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -311,6 +356,21 @@
    "fit": "no",
    "score": 10,
    "reason": "BI/analytics data role, not software engineering; mismatch with frontend/full-stack architecture background.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Twilio::8074762",
+  "company": "Twilio",
+  "title": "Staff, Business Intelligence Engineer",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8074762",
+  "posted": "2026-07-22",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 12,
+   "reason": "BI/data analytics role, not software engineering; mismatched function despite Staff title.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -341,21 +401,6 @@
    "fit": "no",
    "score": 15,
    "reason": "ML/recommender systems engineering role, not full-stack/frontend; mismatched specialization despite remote/seniority fit.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Grafana Labs::6119897004",
-  "company": "Grafana Labs",
-  "title": "Senior Software Engineer - Databases, SRE | USA | Remote",
-  "location": "United States (Remote)",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6119897004",
-  "posted": "2026-07-20",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "SRE/database reliability role for observability infra; mismatch with frontend/full-stack architecture background.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -495,51 +540,6 @@
   }
  },
  {
-  "key": "Render::f4883b3d-ada1-4859-931b-61881f7f9c00",
-  "company": "Render",
-  "title": "Postgres Product Engineer",
-  "location": "Remote: United States",
-  "url": "https://jobs.ashbyhq.com/render/f4883b3d-ada1-4859-931b-61881f7f9c00",
-  "posted": "2026-07-16",
-  "salary": "$204K \u2013 $280K",
-  "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Backend infra/Postgres platform role, not frontend/full-stack fit; lacks React/UI focus candidate prefers",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Render::b011a0c1-eed8-4afd-ab8b-3b4f974df199",
-  "company": "Render",
-  "title": "Valkey Product Engineer",
-  "location": "Remote: United States",
-  "url": "https://jobs.ashbyhq.com/render/b011a0c1-eed8-4afd-ab8b-3b4f974df199",
-  "posted": "2026-07-16",
-  "salary": "$204K \u2013 $280K",
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Backend infra/database engineering role (Valkey/Redis), not frontend-leaning full-stack per candidate's profile.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Render::40378b18-ad46-4040-9514-121ec5eb047f",
-  "company": "Render",
-  "title": "Object Storage Product Engineer",
-  "location": "Remote: United States",
-  "url": "https://jobs.ashbyhq.com/render/40378b18-ad46-4040-9514-121ec5eb047f",
-  "posted": "2026-07-16",
-  "salary": "$204K \u2013 $280K",
-  "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Backend object storage infrastructure role, not frontend/full-stack SaaS fit; description lacks scope detail.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Sentry::35193bfb-bb6b-4479-85be-0945e5b94a3e",
   "company": "Sentry",
   "title": "Senior Software Engineer, Developer Infrastructure",
@@ -660,21 +660,6 @@
   }
  },
  {
-  "key": "Dropbox::8074709",
-  "company": "Dropbox",
-  "title": "Senior Fullstack Product Software Engineer, Web Experience",
-  "location": "Remote - Mexico",
-  "url": "https://jobs.dropbox.com/listing/8074709?gh_jid=8074709",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Remote-Mexico role likely pays local rates, mismatched location/compensation for US-based candidate.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Dropbox::8074704",
   "company": "Dropbox",
   "title": "Senior Fullstack Product Software Engineer, Web Experience",
@@ -686,6 +671,21 @@
    "fit": "yes",
    "score": 78,
    "reason": "Senior full-stack web engineering, React-like frontend, architecture ownership, remote\u2014strong match despite unclear comp/title level.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Dropbox::8074709",
+  "company": "Dropbox",
+  "title": "Senior Fullstack Product Software Engineer, Web Experience",
+  "location": "Remote - Mexico",
+  "url": "https://jobs.dropbox.com/listing/8074709?gh_jid=8074709",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Remote-Mexico role likely pays local rates, mismatched location/compensation for US-based candidate.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -705,36 +705,6 @@
   }
  },
  {
-  "key": "Postscript::8637343002",
-  "company": "Postscript",
-  "title": "Staff Platform Engineer",
-  "location": "Remote",
-  "url": "https://job-boards.greenhouse.io/postscript/jobs/8637343002",
-  "posted": "2026-07-16",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Backend infra/SRE-heavy platform role (Rust/Python, EKS, agent-operated infra) mismatches frontend-leaning full-stack profile.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Plaid::587e83dd-1d1b-4f31-812a-74fc67d67fbe",
-  "company": "Plaid",
-  "title": "Security Engineer, GRC",
-  "location": "San Francisco HQ (Remote)",
-  "url": "https://jobs.ashbyhq.com/plaid/587e83dd-1d1b-4f31-812a-74fc67d67fbe",
-  "posted": "2026-07-16",
-  "salary": "$156K \u2013 $213.6K",
-  "fit_result": {
-   "fit": "no",
-   "score": 5,
-   "reason": "Security GRC engineering role, not software/frontend engineering; mismatch with candidate's core expertise and interests.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Plaid::607fd45b-7402-4c8d-b05f-a3769def4811",
   "company": "Plaid",
   "title": "TechOps Engineer",
@@ -746,21 +716,6 @@
    "fit": "no",
    "score": 8,
    "reason": "IT/TechOps helpdesk role, not software engineering; mismatch on function and seniority target.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "1Password::d80df65c-3219-4290-b2e7-1a76c2446d65",
-  "company": "1Password",
-  "title": "Developer, Insights",
-  "location": "Remote (United States | Canada)",
-  "url": "https://jobs.ashbyhq.com/1password/d80df65c-3219-4290-b2e7-1a76c2446d65",
-  "posted": "2026-07-16",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Backend-leaning full-stack SaaS role fits skills, but less frontend/React focus and unclear seniority/comp.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -821,36 +776,6 @@
    "fit": "no",
    "score": 25,
    "reason": "Backend AI runtime/infra role, not frontend-leaning full-stack; unclear .NET/React alignment despite AI interest.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Close::29f5c695-8282-4407-ac09-2b61b9f2fc1e",
-  "company": "Close",
-  "title": "Senior Backend Engineer \u2013 Agents (USA Only - 100% Remote)",
-  "location": "USA - Remote",
-  "url": "https://jobs.ashbyhq.com/close/29f5c695-8282-4407-ac09-2b61b9f2fc1e",
-  "posted": "2026-07-16",
-  "salary": "$140K \u2013 $210K",
-  "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Backend/AI agent role, Python-centric; mismatches frontend/React strength but overlaps cloud/platform experience.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Close::1e412917-5d07-4423-93c1-aa61f2c9b7b9",
-  "company": "Close",
-  "title": "Senior Backend Engineer \u2013 Communications (USA Only - 100% Remote)",
-  "location": "USA - Remote",
-  "url": "https://jobs.ashbyhq.com/close/1e412917-5d07-4423-93c1-aa61f2c9b7b9",
-  "posted": "2026-07-16",
-  "salary": "$140K \u2013 $210K",
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Backend-only Python/telephony/distributed systems role; mismatches candidate's frontend-leaning React/.NET expertise and stack.",
    "bg": "b9f9e4b0db4d"
   }
  },
