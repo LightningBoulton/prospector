@@ -75,6 +75,21 @@
   }
  },
  {
+  "key": "Adobe::R169523",
+  "company": "Adobe",
+  "title": "Data Science Engineer",
+  "location": "Lehi (+3 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Data-Science-Engineer_R169523-1",
+  "posted": "2026-07-24",
+  "salary": "$163,200 - $236,400",
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Data Science Engineer role mismatches candidate's frontend/full-stack architecture background; no description confirms overlap.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Nomi Health::24a9f84e-ebc2-4c41-b8fc-14822f0dc973",
   "company": "Nomi Health",
   "title": "Staff Software Engineer",
@@ -90,32 +105,32 @@
   }
  },
  {
-  "key": "NICE::4932615101",
-  "company": "NICE",
-  "title": "Integration Engineer",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4932615101?gh_jid=4932615101",
-  "posted": "2026-07-21",
-  "salary": null,
+  "key": "Western Governors University::JR-025776",
+  "company": "Western Governors University",
+  "title": "Software Engineer II - Infrastructure & Operations",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025776-1",
+  "posted": "2026-07-24",
+  "salary": "$118,900.00 - $178,500.00",
   "fit_result": {
    "fit": "no",
    "score": 25,
-   "reason": "Integration/partner support engineer role, junior scope (3+ yrs), not principal-level architecture or product engineering.",
+   "reason": "Software Engineer II is too junior for Principal-level candidate; likely below seniority and comp target.",
    "bg": "b9f9e4b0db4d"
   }
  },
  {
-  "key": "Flex::4716474005",
-  "company": "Flex",
-  "title": "Web Designer & Webflow Developer",
-  "location": "Remote",
-  "url": "https://job-boards.greenhouse.io/flex/jobs/4716474005",
-  "posted": "2026-07-17",
-  "salary": null,
+  "key": "Western Governors University::JR-025775",
+  "company": "Western Governors University",
+  "title": "Software Engineer II - Infrastructure & Operations",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025775",
+  "posted": "2026-07-24",
+  "salary": "$118,900.00 - $178,500.00",
   "fit_result": {
    "fit": "no",
-   "score": 3,
-   "reason": "Webflow/design role mismatch; candidate is a senior full-stack/backend-leaning software engineer, not a web designer.",
+   "score": 25,
+   "reason": "Software Engineer II is too junior for Principal-level candidate; likely mismatched seniority and scope.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -180,21 +195,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025757",
-  "company": "Western Governors University",
-  "title": "Software Engineer- Salesforce",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer--Salesforce_JR-025757",
-  "posted": "2026-07-23",
-  "salary": "$98,300.00 - $147,400.00",
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Salesforce-specific engineering role mismatches candidate's React/.NET/AWS full-stack and platform expertise.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Western Governors University::JR-025048",
   "company": "Western Governors University",
   "title": "Staff Software Engineer- Full-Stack Python and React",
@@ -206,36 +206,6 @@
    "fit": "maybe",
    "score": 62,
    "reason": "Staff full-stack fits seniority/location, but Python stack differs from .NET/React background; limited details.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Western Governors University::JR-025709",
-  "company": "Western Governors University",
-  "title": "Software Engineer Python/Angular",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-Python-Angular_JR-025709",
-  "posted": "2026-07-23",
-  "salary": "$98,300.00 - $147,400.00",
-  "fit_result": {
-   "fit": "maybe",
-   "score": 40,
-   "reason": "Location fits, but Python/Angular stack and unclear seniority mismatch candidate's React/.NET/AWS principal-level background.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Western Governors University::JR-025732",
-  "company": "Western Governors University",
-  "title": "Senior Software Engineer- Full Stack- Java/Angular",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer--Full-Stack--Java-Angular_JR-025732",
-  "posted": "2026-07-22",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Right location/seniority, but Java/Angular stack mismatches candidate's React/.NET expertise; no description to verify scope.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -300,62 +270,17 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025703",
-  "company": "Western Governors University",
-  "title": "Senior Cloud Engineer (IAM)",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer--IAM-_JR-025703",
-  "posted": "2026-07-17",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Location matches and IAM/cloud overlaps skills, but title suggests infra-focused role, not full-stack engineering.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Western Governors University::JR-025291",
-  "company": "Western Governors University",
-  "title": "Software Engineer II - Web Platform",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025291",
-  "posted": "2026-07-17",
-  "salary": null,
+  "key": "iCapital::8631890002",
+  "company": "iCapital",
+  "title": "Software Engineer in Test - Associate",
+  "location": "Salt Lake City, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8631890002",
+  "posted": "2026-07-24",
+  "salary": "$90,000 to $110,000",
   "fit_result": {
    "fit": "no",
-   "score": 25,
-   "reason": "Software Engineer II is too junior for Principal-level candidate; likely below comp requirements.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Western Governors University::JR-025285",
-  "company": "Western Governors University",
-  "title": "Senior Software Engineer | Web Platform",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025285",
-  "posted": "2026-07-17",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "fit": "maybe",
-   "score": 62,
-   "reason": "Senior Web Platform role fits seniority/location, but title level and comp/description unclear.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Western Governors University::JR-025712",
-  "company": "Western Governors University",
-  "title": "Senior Software Engineer Angular/Python",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer-Angular-Python_JR-025712",
-  "posted": "2026-07-17",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 52,
-   "reason": "Senior IC fit and SLC location match, but Angular/Python differs from React/.NET stack; comp/culture unknown.",
+   "score": 8,
+   "reason": "QA/SDET Associate role, wrong function, junior-level comp far below candidate's $190k minimum",
    "bg": "b9f9e4b0db4d"
   }
  }

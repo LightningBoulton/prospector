@@ -105,17 +105,17 @@
   }
  },
  {
-  "key": "Coinbase::8072054",
+  "key": "Coinbase::8083758",
   "company": "Coinbase",
-  "title": "M&A and Accounting Policy Manager",
+  "title": "Strategic Program Lead",
   "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8072054?gh_jid=8072054",
-  "posted": "2026-07-17",
+  "url": "https://www.coinbase.com/careers/positions/8083758?gh_jid=8083758",
+  "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 8,
-   "reason": "Technical accounting/GAAP IC role, not transformation or leadership mandate; wrong function entirely.",
+   "fit": "maybe",
+   "score": 45,
+   "reason": "CX-adjacent program role but narrower, operational scope; unclear seniority/leadership scope, lacks transformation/M&A mandate.",
    "bg": "e375d8ec09f3"
   }
  },
@@ -146,6 +146,21 @@
    "fit": "no",
    "score": 22,
    "reason": "Knowledge/taxonomy architecture IC-ish role, not transformation/M&A/ops leadership mandate Lisa targets.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "Mercury::6126980004",
+  "company": "Mercury",
+  "title": "Senior Product Manager - Dashboard Experience",
+  "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+  "url": "https://job-boards.greenhouse.io/mercury/jobs/6126980004",
+  "posted": "2026-07-24",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Hands-on IC product manager role for fintech dashboard UX; not a transformation/ops/M&A leadership mandate.",
    "bg": "e375d8ec09f3"
   }
  },
@@ -300,21 +315,6 @@
   }
  },
  {
-  "key": "Calendly::8646568002",
-  "company": "Calendly",
-  "title": "Director, Customer Support",
-  "location": "Remote",
-  "url": "https://job-boards.greenhouse.io/calendly/jobs/8646568002",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Director-level leadership but pure customer support ops, not transformation/strategy mandate she targets.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
   "key": "Postscript::8646237002",
   "company": "Postscript",
   "title": "Senior Customer Onboarding Manager",
@@ -356,21 +356,6 @@
    "fit": "maybe",
    "score": 45,
    "reason": "Director-level CS leadership but revenue/NRR-focused, not transformation, M&A, or ops-effectiveness mandate.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
-  "key": "LaunchDarkly::7808587003",
-  "company": "LaunchDarkly",
-  "title": "Head of Customer Marketing",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/7808587003",
-  "posted": "2026-07-17",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Customer marketing/advocacy function, not transformation, strategy-ops, or org-effectiveness mandate\u2014functional mismatch.",
    "bg": "e375d8ec09f3"
   }
  }
