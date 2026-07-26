@@ -1,140 +1,117 @@
 # Lisa — Director / C-level Operations & Customer Relations
-### Job report — 2026-07-25
+### Job report — 2026-07-26
 _⭐ = posted in the last 1 days_
 
 # 📍 Local — Silicon Slopes (15)
 ## What's changed
-**New (2)**
-- ⭐ **Western Governors University** — [Project Manager IV, Transformation](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721) · Salt Lake City, UT · $109,900.00 - $170,400.00 · Posted Jul 24 · 1d ago — **55/100** (maybe)
-   _Transformation PM IV in target location, but title suggests IC/PM scope below Lisa's leadership mandate; no description to confirm._
-- ⭐ **Western Governors University** — [Manager, Lifecycle Engagement, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Lifecycle-Engagement--Salt-Lake-City--UT_JR-025641-1) · Salt Lake City, UT · $78,200.00 - $129,000.00 · Posted Jul 24 · 1d ago — **40/100** (maybe)
-   _Manager-level leadership, but lifecycle engagement seems narrower marketing/CX role, unclear transformation mandate._
-**Removed / filled (5)**
-- **NICE** — Director, Strategic Initiatives · USA - Remote · Posted Jul 17 · 8d ago
-- **NICE** — Senior Director, Quote to Cash Transformation · USA - Remote · Posted Jul 17 · 8d ago
-- **Podium** — Regional Customer Success Manager - Automotive AI · Remote, California · Posted Jul 17 · 8d ago
-- **Traeger** — Sales Operations Key Account Manager · Salt Lake City, UT · Posted Jul 17 · 8d ago
-- **Western Governors University** — Change Manager I, Salt Lake City, UT · Salt Lake City, UT · $68,300.00 - $102,500.00 · Posted Jul 17 · 8d ago
+_No changes since the previous run._
 
 ## All current matching roles (15)
-- **NICE** — [Director, Business Consulting, VRS, CX](https://boards.eu.greenhouse.io/nice/jobs/4934090101?gh_jid=4934090101) · USA - Remote · Posted Jul 22 · 3d ago — **78/100** (yes)
+- **NICE** — [Director, Business Consulting, VRS, CX](https://boards.eu.greenhouse.io/nice/jobs/4934090101?gh_jid=4934090101) · USA - Remote · Posted Jul 22 · 4d ago — **78/100** (yes)
    _Director-level consulting leadership, customer value realization, CX/AI-driven transformation, revenue/margin/utilization ownership—strong mandate match._
-- **Health Catalyst** — [Strategic Business Manager- Office of the CEO](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Strategic-Business-Manager--Office-of-the-CEO_REQ-3273) · US Remote · Posted Jul 21 · 4d ago — **55/100** (maybe)
+- **Health Catalyst** — [Strategic Business Manager- Office of the CEO](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Strategic-Business-Manager--Office-of-the-CEO_REQ-3273) · US Remote · Posted Jul 21 · 5d ago — **55/100** (maybe)
    _Chief-of-staff-style strategy role fits mandate, but no description detail to confirm scope/seniority._
-- ⭐ **Western Governors University** — [Project Manager IV, Transformation](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721) · Salt Lake City, UT · $109,900.00 - $170,400.00 · Posted Jul 24 · 1d ago — **55/100** (maybe)
+- **Western Governors University** — [Project Manager IV, Transformation](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721) · Salt Lake City, UT · $109,900.00 - $170,400.00 · Posted Jul 24 · 2d ago — **55/100** (maybe)
    _Transformation PM IV in target location, but title suggests IC/PM scope below Lisa's leadership mandate; no description to confirm._
-- **Podium** — [Senior Manager, Customer Success - Automotive AI](https://job-boards.greenhouse.io/podium81/jobs/8074470) · Remote, US · Posted Jul 20 · 5d ago — **50/100** (no)
+- **Podium** — [Senior Manager, Customer Success - Automotive AI](https://job-boards.greenhouse.io/podium81/jobs/8074470) · Remote, US · Posted Jul 20 · 6d ago — **50/100** (no)
    _Frontline CS team management (retention/adoption for auto dealerships), not transformation/strategy/M&A leadership mandate._
-- **Health Catalyst** — [Implementation Manager](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Implementation-Manager_REQ-3267) · US Remote · Posted Jul 23 · 2d ago — **40/100** (maybe)
+- **Health Catalyst** — [Implementation Manager](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Implementation-Manager_REQ-3267) · US Remote · Posted Jul 23 · 3d ago — **40/100** (maybe)
    _Manager-level with possible implementation/PM scope, but no description confirms transformation, operations, or strategic mandate._
-- ⭐ **Western Governors University** — [Manager, Lifecycle Engagement, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Lifecycle-Engagement--Salt-Lake-City--UT_JR-025641-1) · Salt Lake City, UT · $78,200.00 - $129,000.00 · Posted Jul 24 · 1d ago — **40/100** (maybe)
+- **Western Governors University** — [Manager, Lifecycle Engagement, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Lifecycle-Engagement--Salt-Lake-City--UT_JR-025641-1) · Salt Lake City, UT · $78,200.00 - $129,000.00 · Posted Jul 24 · 2d ago — **40/100** (maybe)
    _Manager-level leadership, but lifecycle engagement seems narrower marketing/CX role, unclear transformation mandate._
-- **Health Catalyst** — [SVP Manager, Client Account Management](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/SVP-Client-Account-Management_REQ-3250) · US Remote · Posted Jul 23 · 2d ago — **35/100** (maybe)
+- **Health Catalyst** — [SVP Manager, Client Account Management](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/SVP-Client-Account-Management_REQ-3250) · US Remote · Posted Jul 23 · 3d ago — **35/100** (maybe)
    _Senior title but client account management focus, not transformation/ops/M&A; no description to confirm scope._
-- **NICE** — [Lead Client Services Project Manager, CX](https://boards.eu.greenhouse.io/nice/jobs/4934132101?gh_jid=4934132101) · USA - Remote · Posted Jul 22 · 3d ago — **22/100** (no)
+- **NICE** — [Lead Client Services Project Manager, CX](https://boards.eu.greenhouse.io/nice/jobs/4934132101?gh_jid=4934132101) · USA - Remote · Posted Jul 22 · 4d ago — **22/100** (no)
    _Individual project/program delivery role, client services PM—not a transformation, strategy, or org-leadership mandate._
-- **Podium** — [Associate Manager, Onboarding](https://job-boards.greenhouse.io/podium81/jobs/8080202) · Lehi, Utah · Posted Jul 22 · 3d ago — **20/100** (no)
+- **Podium** — [Associate Manager, Onboarding](https://job-boards.greenhouse.io/podium81/jobs/8080202) · Lehi, Utah · Posted Jul 22 · 4d ago — **20/100** (no)
    _Junior front-line onboarding team lead role; below seniority target and lacks transformation/strategy mandate._
-- **Adobe** — [Sales Partner Compliance Operations Manager](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sales-Partner-Compliance-Operations-Manager_R169617) · Lehi (+3 more) · $146,300 - $211,850 · Posted Jul 20 · 5d ago — **20/100** (no)
+- **Adobe** — [Sales Partner Compliance Operations Manager](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sales-Partner-Compliance-Operations-Manager_R169617) · Lehi (+3 more) · $146,300 - $211,850 · Posted Jul 20 · 6d ago — **20/100** (no)
    _Sales/compliance operations niche, no transformation or org-effectiveness mandate evident; poor functional match despite manager-level title._
-- **Adobe** — [Group Content Strategy Manager, Adobe.com](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Group-Content-Strategy-Manager--Adobecom_R170475-1) · Lehi (+9 more) · $202,900 - $293,800 · Posted Jul 23 · 2d ago — **20/100** (no)
+- **Adobe** — [Group Content Strategy Manager, Adobe.com](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Group-Content-Strategy-Manager--Adobecom_R170475-1) · Lehi (+9 more) · $202,900 - $293,800 · Posted Jul 23 · 3d ago — **20/100** (no)
    _Content strategy/marketing manager role, not transformation/ops/M&A leadership; mismatched function despite manager-level title._
-- **LVT** — [Enterprise Customer Success Manager](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5343405008) · American Fork, Utah, United States · Posted Jul 20 · 5d ago — **20/100** (no)
+- **LVT** — [Enterprise Customer Success Manager](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5343405008) · American Fork, Utah, United States · Posted Jul 20 · 6d ago — **20/100** (no)
    _IC account-management CSM role, not a transformation/strategy/M&A leadership mandate; below scope._
-- **Pattern** — [Director of North America Operations](https://jobs.lever.co/pattern/f1134df6-fae3-4b1c-9c5a-9410b9b4d513) · Lehi, UT, US · Posted Jul 21 · 4d ago — **15/100** (no)
+- **Pattern** — [Director of North America Operations](https://jobs.lever.co/pattern/f1134df6-fae3-4b1c-9c5a-9410b9b4d513) · Lehi, UT, US · Posted Jul 21 · 5d ago — **15/100** (no)
    _Facilities management role, not transformation/strategy/ops leadership Lisa targets despite title._
-- **BambooHR** — [Sr. Marketing Operations Manager](https://job-boards.greenhouse.io/bamboohr17/jobs/6011897004) · Utah | Hybrid · Posted Jul 23 · 2d ago — **12/100** (no)
+- **BambooHR** — [Sr. Marketing Operations Manager](https://job-boards.greenhouse.io/bamboohr17/jobs/6011897004) · Utah | Hybrid · Posted Jul 23 · 3d ago — **12/100** (no)
    _Hands-on marketing tech/tagging IC-management role, not transformation/strategy/M&A leadership mandate._
-- ⭐ **iCapital** — [Client Delivery Specialist - Assistant Vice President](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8648794002) · Salt Lake City, Utah, United States · Posted Jul 24 · 1d ago — **10/100** (no)
+- **iCapital** — [Client Delivery Specialist - Assistant Vice President](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8648794002) · Salt Lake City, Utah, United States · Posted Jul 24 · 2d ago — **10/100** (no)
    _Senior IC client-delivery/data reconciliation role, not leadership transformation or strategy mandate; explicit dealbreaker._
 
 
 # 🌎 US-Remote (24)
 ## What's changed
-**New (2)**
-- ⭐ **Coinbase** — [Strategic Program Lead](https://www.coinbase.com/careers/positions/8083758?gh_jid=8083758) · Remote - USA · Posted Jul 24 · 1d ago — **45/100** (maybe)
-   _CX-adjacent program role but narrower, operational scope; unclear seniority/leadership scope, lacks transformation/M&A mandate._
-- ⭐ **Mercury** — [Senior Product Manager - Dashboard Experience](https://job-boards.greenhouse.io/mercury/jobs/6126980004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Jul 24 · 1d ago — **5/100** (no)
-   _Hands-on IC product manager role for fintech dashboard UX; not a transformation/ops/M&A leadership mandate._
-**Removed / filled (3)**
-- **Calendly** — Director, Customer Support · Remote · Posted Jul 23 · 2d ago
-- **Coinbase** — M&A and Accounting Policy Manager · Remote - USA · Posted Jul 17 · 8d ago
-- **LaunchDarkly** — Head of Customer Marketing · Remote - US · Posted Jul 17 · 8d ago
+_No changes since the previous run._
 
 ## All current matching roles (24)
-- **GitLab** — [AI Transformation Owner, CRO](https://job-boards.greenhouse.io/gitlab/jobs/8638232002) · Remote, United States · Posted Jul 22 · 3d ago — **58/100** (maybe)
+- **GitLab** — [AI Transformation Owner, CRO](https://job-boards.greenhouse.io/gitlab/jobs/8638232002) · Remote, United States · Posted Jul 22 · 4d ago — **58/100** (maybe)
    _AI transformation mandate fits well, but narrow field-sales/CRO scope and hands-on execution focus differ from her leadership breadth._
-- **Affirm** — [Chief of Staff Director, Product](https://job-boards.greenhouse.io/affirm/jobs/7808142003) · Remote US · Posted Jul 23 · 2d ago — **55/100** (maybe)
+- **Affirm** — [Chief of Staff Director, Product](https://job-boards.greenhouse.io/affirm/jobs/7808142003) · Remote US · Posted Jul 23 · 3d ago — **55/100** (maybe)
    _Chief of Staff/org-effectiveness scope fits, but tied to Product function specifics, not her core domains._
-- **Stripe** — [Strategy and Operations Lead, Deal Pricing](https://stripe.com/jobs/search?gh_jid=8044391) · New York City, Washington DC, Remote · Posted Jul 20 · 5d ago — **55/100** (maybe)
+- **Stripe** — [Strategy and Operations Lead, Deal Pricing](https://stripe.com/jobs/search?gh_jid=8044391) · New York City, Washington DC, Remote · Posted Jul 20 · 6d ago — **55/100** (maybe)
    _Chief-of-staff/S&O operating-model role fits function, but narrow deal-pricing domain, no transformation/M&A/CX mandate._
-- ⭐ **Coinbase** — [Strategic Program Lead](https://www.coinbase.com/careers/positions/8083758?gh_jid=8083758) · Remote - USA · Posted Jul 24 · 1d ago — **45/100** (maybe)
+- **Coinbase** — [Strategic Program Lead](https://www.coinbase.com/careers/positions/8083758?gh_jid=8083758) · Remote - USA · Posted Jul 24 · 2d ago — **45/100** (maybe)
    _CX-adjacent program role but narrower, operational scope; unclear seniority/leadership scope, lacks transformation/M&A mandate._
-- **Vanta** — [Senior GTM Strategy & Operations Manager](https://jobs.ashbyhq.com/vanta/b70e3e50-1294-4b6c-b17e-8441fb89bbfb) · Remote U.S. · $161K – $189K · Posted Jul 23 · 2d ago — **45/100** (maybe)
+- **Vanta** — [Senior GTM Strategy & Operations Manager](https://jobs.ashbyhq.com/vanta/b70e3e50-1294-4b6c-b17e-8441fb89bbfb) · Remote U.S. · $161K – $189K · Posted Jul 23 · 3d ago — **45/100** (maybe)
    _Ops/strategy scope fits, but sales-channel GTM domain and manager IC-ish focus don't match transformation/M&A mandate._
-- **Stripe** — [Operations Program Manager](https://stripe.com/jobs/search?gh_jid=8039423) · US-Remote · Posted Jul 22 · 3d ago — **45/100** (maybe)
+- **Stripe** — [Operations Program Manager](https://stripe.com/jobs/search?gh_jid=8039423) · US-Remote · Posted Jul 22 · 4d ago — **45/100** (maybe)
    _Operational excellence/program mechanisms fit her skills, but IC-level Program Manager scope lacks leadership mandate._
-- **1Password** — [Manager, Quality Assurance, Customer Support](https://jobs.ashbyhq.com/1password/eba90a49-3fde-4d82-aedd-ed07c8052db9) · Remote (United States | Canada) · Posted Jul 20 · 5d ago — **45/100** (maybe)
+- **1Password** — [Manager, Quality Assurance, Customer Support](https://jobs.ashbyhq.com/1password/eba90a49-3fde-4d82-aedd-ed07c8052db9) · Remote (United States | Canada) · Posted Jul 20 · 6d ago — **45/100** (maybe)
    _Manager-level QA/CX ops mandate fits scope, but narrow support-QA function, not transformation/M&A/strategy focus._
-- **1Password** — [Director, Customer Success (Enterprise)](https://jobs.ashbyhq.com/1password/7a3d6f70-c45b-4579-912a-7876b7da2eeb) · Remote (United States | Canada) · Posted Jul 21 · 4d ago — **45/100** (maybe)
+- **1Password** — [Director, Customer Success (Enterprise)](https://jobs.ashbyhq.com/1password/7a3d6f70-c45b-4579-912a-7876b7da2eeb) · Remote (United States | Canada) · Posted Jul 21 · 5d ago — **45/100** (maybe)
    _Director-level CS leadership but revenue/NRR-focused, not transformation, M&A, or ops-effectiveness mandate._
-- **GitLab** — [Revenue Strategist Manager, Renewals](https://job-boards.greenhouse.io/gitlab/jobs/8645879002) · Remote, United States · Posted Jul 23 · 2d ago — **25/100** (no)
+- **GitLab** — [Revenue Strategist Manager, Renewals](https://job-boards.greenhouse.io/gitlab/jobs/8645879002) · Remote, United States · Posted Jul 23 · 3d ago — **25/100** (no)
    _Manager-level revenue ops/renewals analytics role, not transformation/M&A/org-effectiveness leadership Lisa targets._
-- **GitLab** — [Senior Professional Services Project Manager (EMEA)](https://job-boards.greenhouse.io/gitlab/jobs/8622433002) · Remote · Posted Jul 22 · 3d ago — **25/100** (no)
+- **GitLab** — [Senior Professional Services Project Manager (EMEA)](https://job-boards.greenhouse.io/gitlab/jobs/8622433002) · Remote · Posted Jul 22 · 4d ago — **25/100** (no)
    _IC-level PS project manager delivering client engagements, not a leadership/transformation mandate matching her scope._
-- **Replit** — [Head of Marketing Operations](https://jobs.ashbyhq.com/replit/9394684e-814c-4a3c-b5ed-19612e4331bc) · Foster City, CA (Remote) · $160K – $200K · Posted Jul 21 · 4d ago — **25/100** (no)
+- **Replit** — [Head of Marketing Operations](https://jobs.ashbyhq.com/replit/9394684e-814c-4a3c-b5ed-19612e4331bc) · Foster City, CA (Remote) · $160K – $200K · Posted Jul 21 · 5d ago — **25/100** (no)
    _Marketing-ops function, not transformation/M&A/strategy leadership; mismatched domain despite Head-of title._
-- **Mercury** — [AI Context Operations Lead](https://job-boards.greenhouse.io/mercury/jobs/6122476004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Jul 22 · 3d ago — **22/100** (no)
+- **Mercury** — [AI Context Operations Lead](https://job-boards.greenhouse.io/mercury/jobs/6122476004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Jul 22 · 4d ago — **22/100** (no)
    _Knowledge/taxonomy architecture IC-ish role, not transformation/M&A/ops leadership mandate Lisa targets._
-- **Dropbox** — [Senior Director, Revenue Operations](https://jobs.dropbox.com/listing/8067364?gh_jid=8067364) · Remote - US: Select locations · Posted Jul 23 · 2d ago — **22/100** (no)
+- **Dropbox** — [Senior Director, Revenue Operations](https://jobs.dropbox.com/listing/8067364?gh_jid=8067364) · Remote - US: Select locations · Posted Jul 23 · 3d ago — **22/100** (no)
    _Revenue/sales ops leadership, not transformation/M&A/CX mandate; wrong functional domain despite senior title._
-- **Stripe** — [Privacy Operations Program Manager](https://stripe.com/jobs/search?gh_jid=8053517) · US Remote · Posted Jul 22 · 3d ago — **20/100** (no)
+- **Stripe** — [Privacy Operations Program Manager](https://stripe.com/jobs/search?gh_jid=8053517) · US Remote · Posted Jul 22 · 4d ago — **20/100** (no)
    _Privacy compliance operations role—specialized legal/regulatory domain, not transformation, M&A, or CX leadership mandate._
-- **Postscript** — [Senior Customer Onboarding Manager](https://job-boards.greenhouse.io/postscript/jobs/8646237002) · Remote · Posted Jul 22 · 3d ago — **20/100** (no)
+- **Postscript** — [Senior Customer Onboarding Manager](https://job-boards.greenhouse.io/postscript/jobs/8646237002) · Remote · Posted Jul 22 · 4d ago — **20/100** (no)
    _IC-heavy customer onboarding role, not a transformation/strategy leadership mandate; below her scope._
-- **Temporal** — [Director, GTM Strategy & Analytics](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5194035007) · United States - Remote Opportunity · Posted Jul 22 · 3d ago — **18/100** (no)
+- **Temporal** — [Director, GTM Strategy & Analytics](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5194035007) · United States - Remote Opportunity · Posted Jul 22 · 4d ago — **18/100** (no)
    _GTM/RevOps analytics role, sales-data focused—mismatch vs transformation, M&A, org-effectiveness mandate._
-- **GitLab** — [Customer Success Manager- Public Sector](https://job-boards.greenhouse.io/gitlab/jobs/8646022002) · Remote, United States · Posted Jul 23 · 2d ago — **15/100** (no)
+- **GitLab** — [Customer Success Manager- Public Sector](https://job-boards.greenhouse.io/gitlab/jobs/8646022002) · Remote, United States · Posted Jul 23 · 3d ago — **15/100** (no)
    _IC-level account CSM role, technical DevSecOps focus, no transformation/strategy leadership mandate._
-- **GitLab** — [Enablement Content Manager](https://job-boards.greenhouse.io/gitlab/jobs/8635277002) · Remote, United States · Posted Jul 20 · 5d ago — **15/100** (no)
+- **GitLab** — [Enablement Content Manager](https://job-boards.greenhouse.io/gitlab/jobs/8635277002) · Remote, United States · Posted Jul 20 · 6d ago — **15/100** (no)
    _IC-level content/enablement role, not transformation/strategy leadership mandate Lisa targets._
-- **Instacart** — [Manager, IT Operations](https://instacart.careers/job/?gh_jid=8074453) · San Francisco, Bay Area - Remote · Posted Jul 20 · 5d ago — **15/100** (no)
+- **Instacart** — [Manager, IT Operations](https://instacart.careers/job/?gh_jid=8074453) · San Francisco, Bay Area - Remote · Posted Jul 20 · 6d ago — **15/100** (no)
    _IT helpdesk/operations logistics role, not strategy/transformation leadership; mismatched domain despite manager title._
-- **GitLab** — [Manager, Strategic Finance](https://job-boards.greenhouse.io/gitlab/jobs/8639170002) · Remote, United States · Posted Jul 21 · 4d ago — **10/100** (no)
+- **GitLab** — [Manager, Strategic Finance](https://job-boards.greenhouse.io/gitlab/jobs/8639170002) · Remote, United States · Posted Jul 21 · 5d ago — **10/100** (no)
    _FP&A/financial modeling role, not transformation, M&A, or org-effectiveness leadership—mismatched function._
-- **Hightouch** — [Strategic Finance Manager, GTM](https://job-boards.greenhouse.io/hightouch/jobs/6122752004) · Remote (North America) · Posted Jul 22 · 3d ago — **10/100** (no)
+- **Hightouch** — [Strategic Finance Manager, GTM](https://job-boards.greenhouse.io/hightouch/jobs/6122752004) · Remote (North America) · Posted Jul 22 · 4d ago — **10/100** (no)
    _GTM finance/FP&A IC role, not transformation, M&A, or org-effectiveness leadership mandate._
-- **GitLab** — [Renewals Manager Germany](https://job-boards.greenhouse.io/gitlab/jobs/8620580002) · Remote · Posted Jul 20 · 5d ago — **8/100** (no)
+- **GitLab** — [Renewals Manager Germany](https://job-boards.greenhouse.io/gitlab/jobs/8620580002) · Remote · Posted Jul 20 · 6d ago — **8/100** (no)
    _Sales/renewals quota role, not transformation or leadership mandate; dealbreaker match._
-- **Twilio** — [Global Event Manager, Event Content and Speaker Operations](https://job-boards.greenhouse.io/twilio/jobs/8079364) · Remote - US · Posted Jul 22 · 3d ago — **5/100** (no)
+- **Twilio** — [Global Event Manager, Event Content and Speaker Operations](https://job-boards.greenhouse.io/twilio/jobs/8079364) · Remote - US · Posted Jul 22 · 4d ago — **5/100** (no)
    _Event/speaker operations coordinator role; not transformation, strategy, M&A, or leadership mandate._
-- ⭐ **Mercury** — [Senior Product Manager - Dashboard Experience](https://job-boards.greenhouse.io/mercury/jobs/6126980004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Jul 24 · 1d ago — **5/100** (no)
+- **Mercury** — [Senior Product Manager - Dashboard Experience](https://job-boards.greenhouse.io/mercury/jobs/6126980004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Jul 24 · 2d ago — **5/100** (no)
    _Hands-on IC product manager role for fintech dashboard UX; not a transformation/ops/M&A leadership mandate._
 
 
 # 🧑‍💼 Contract / Staffing (8)
 ## What's changed
-**New (1)**
-- ⭐ **Aquent** — [Marketing Operations Manager](https://aquent.com/find-work/211825) · Austin, TX, US (Remote) · Posted Jul 24 · 1d ago — **45/100** (maybe)
-   _AI enablement/change mgmt fits, but Manager-level marketing ops via staffing agency is narrower scope than target._
-**Removed / filled (2)**
-- **Aquent** — Functional Strategy Generalist (III) · New York, NY, US (Remote) · Posted Jul 22 · 3d ago
-- **Aquent** — Marketing Operations & Enablement Project Manager · Alpharetta, GA, US (Remote) · Posted Jul 13 · 12d ago
+_No changes since the previous run._
 
 ## All current matching roles (8)
-- **Aquent** — [Portfolio Operations Manager](https://aquent.com/find-work/211563) · Lone Tree, CO, US (Remote) · Posted Jul 15 · 10d ago — **48/100** (maybe)
+- **Aquent** — [Portfolio Operations Manager](https://aquent.com/find-work/211563) · Lone Tree, CO, US (Remote) · Posted Jul 15 · 11d ago — **48/100** (maybe)
    _Strategic portfolio/operational excellence mandate fits, but likely IC/contract role via Aquent, unclear leadership scope._
-- ⭐ **Aquent** — [Marketing Operations Manager](https://aquent.com/find-work/211825) · Austin, TX, US (Remote) · Posted Jul 24 · 1d ago — **45/100** (maybe)
+- **Aquent** — [Marketing Operations Manager](https://aquent.com/find-work/211825) · Austin, TX, US (Remote) · Posted Jul 24 · 2d ago — **45/100** (maybe)
    _AI enablement/change mgmt fits, but Manager-level marketing ops via staffing agency is narrower scope than target._
-- **Aquent** — [Business Operations & Management Lead](https://aquent.com/find-work/211552) · REDMOND, WA, US (Remote) · up to $76.00/hr · Posted Jul 14 · 11d ago — **40/100** (maybe)
+- **Aquent** — [Business Operations & Management Lead](https://aquent.com/find-work/211552) · REDMOND, WA, US (Remote) · up to $76.00/hr · Posted Jul 14 · 12d ago — **40/100** (maybe)
    _Business ops/process role but marketing-execution focused, contractor-style, unclear leadership scope; below her transformation/M&A mandate level._
-- **Aquent** — [Strategic Communications & Strategy Consultant](https://aquent.com/find-work/211522) · Alpharetta, GA, US (Remote) · Posted Jul 13 · 12d ago — **30/100** (no)
+- **Aquent** — [Strategic Communications & Strategy Consultant](https://aquent.com/find-work/211522) · Alpharetta, GA, US (Remote) · Posted Jul 13 · 13d ago — **30/100** (no)
    _IC consultant role, no leadership scope, contract staffing gig - below Lisa's seniority/mandate requirements_
-- **Eliassen** — [Senior Organizational Change Manager](https://careers.eliassen.com/FeawKp/senior-organizational-change-manager-organizational-change-management-anywhere-a1wuq000001fujj2a2) · Remote · $75.00 to $85.00 · Posted Jul 17 · 8d ago — **28/100** (no)
+- **Eliassen** — [Senior Organizational Change Manager](https://careers.eliassen.com/FeawKp/senior-organizational-change-manager-organizational-change-management-anywhere-a1wuq000001fujj2a2) · Remote · $75.00 to $85.00 · Posted Jul 17 · 9d ago — **28/100** (no)
    _Contract W2 hourly OCM role for single tool migration—narrow, tactical, below her transformation-leadership mandate level._
-- **Aquent** — [Depot Operations Manager](https://aquent.com/find-work/211747) · Mountain View, CA, US (Remote) · Posted Jul 22 · 3d ago — **12/100** (no)
+- **Aquent** — [Depot Operations Manager](https://aquent.com/find-work/211747) · Mountain View, CA, US (Remote) · Posted Jul 22 · 4d ago — **12/100** (no)
    _Hands-on physical operations/depot management role, not transformation, strategy, or org-effectiveness leadership._
-- **Aquent** — [Marketing Operations Project Manager](https://aquent.com/find-work/211577) · Omaha, NE, US (Remote) · Posted Jul 15 · 10d ago — **8/100** (no)
+- **Aquent** — [Marketing Operations Project Manager](https://aquent.com/find-work/211577) · Omaha, NE, US (Remote) · Posted Jul 15 · 11d ago — **8/100** (no)
    _IC execution/PM role, no leadership mandate, marketing campaign ops not transformation/strategy—clear mismatch._
-- **Aquent** — [Client Transition Manager (Corporate Cards & Payments)](https://aquent.com/find-work/211359) · Chicago, IL, US (Remote) · $50-$53 hr / W2 · Posted Jul 6 · 19d ago — **8/100** (no)
+- **Aquent** — [Client Transition Manager (Corporate Cards & Payments)](https://aquent.com/find-work/211359) · Chicago, IL, US (Remote) · $50-$53 hr / W2 · Posted Jul 6 · 20d ago — **8/100** (no)
    _Fraud analytics/risk operations IC role, not transformation, M&A, or CX leadership mandate._
