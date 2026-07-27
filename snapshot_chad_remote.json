@@ -255,6 +255,21 @@
   }
  },
  {
+  "key": "Twilio::8081530",
+  "company": "Twilio",
+  "title": "Principal Software Engineer",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8081530",
+  "posted": "2026-07-27",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Template placeholder posting with no real details\u2014cannot assess actual role, scope, or mandate.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Twilio::8065028",
   "company": "Twilio",
   "title": "Senior Software Engineer",
@@ -300,21 +315,6 @@
   }
  },
  {
-  "key": "Twilio::8074762",
-  "company": "Twilio",
-  "title": "Staff, Business Intelligence Engineer",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8074762",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 12,
-   "reason": "BI/data analytics role, not software engineering; mismatched function despite Staff title.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Twilio::8076802",
   "company": "Twilio",
   "title": "Staff, Business Intelligence Engineer",
@@ -326,6 +326,21 @@
    "fit": "no",
    "score": 10,
    "reason": "BI/analytics data role, not software engineering; mismatch with frontend/full-stack architecture background.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Twilio::8074762",
+  "company": "Twilio",
+  "title": "Staff, Business Intelligence Engineer",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8074762",
+  "posted": "2026-07-22",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 12,
+   "reason": "BI/data analytics role, not software engineering; mismatched function despite Staff title.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -431,6 +446,21 @@
    "fit": "maybe",
    "score": 55,
    "reason": "Staff backend role, remote, right seniority but backend/search-marketplace focus, less frontend/full-stack alignment.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Supabase::f6035bf8-4f44-4425-9944-d5509a3c8652",
+  "company": "Supabase",
+  "title": "Release Engineer",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/supabase/f6035bf8-4f44-4425-9944-d5509a3c8652",
+  "posted": "2026-07-27",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "SRE/release engineering ops role, not frontend/full-stack IC work matching Chad's core expertise.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -585,36 +615,6 @@
   }
  },
  {
-  "key": "Dropbox::8074704",
-  "company": "Dropbox",
-  "title": "Senior Fullstack Product Software Engineer, Web Experience",
-  "location": "Remote - US: Select locations",
-  "url": "https://jobs.dropbox.com/listing/8074704?gh_jid=8074704",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "yes",
-   "score": 78,
-   "reason": "Senior full-stack web engineering, React-like frontend, architecture ownership, remote\u2014strong match despite unclear comp/title level.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Dropbox::8074709",
-  "company": "Dropbox",
-  "title": "Senior Fullstack Product Software Engineer, Web Experience",
-  "location": "Remote - Mexico",
-  "url": "https://jobs.dropbox.com/listing/8074709?gh_jid=8074709",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Remote-Mexico role likely pays local rates, mismatched location/compensation for US-based candidate.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "1Password::fb0f0d1d-5655-4c54-b4e7-e985c475dc9e",
   "company": "1Password",
   "title": ".Net Developer, SaaS Manager",
@@ -665,12 +665,27 @@
   "title": "Senior AI Platform Engineer",
   "location": "San Francisco (Remote)",
   "url": "https://jobs.ashbyhq.com/airbyte/b59bbc91-fb77-4a08-9c47-0fca7f755942",
-  "posted": "2026-07-21",
+  "posted": "2026-07-27",
   "salary": "$196K \u2013 $255K",
   "fit_result": {
    "fit": "no",
    "score": 25,
    "reason": "Backend AI runtime/infra role, not frontend-leaning full-stack; unclear .NET/React alignment despite AI interest.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Airbyte::5930fed9-c4f6-43c3-87be-3402c2c46489",
+  "company": "Airbyte",
+  "title": "Senior Site Reliability Engineer",
+  "location": "San Francisco (Remote)",
+  "url": "https://jobs.ashbyhq.com/airbyte/5930fed9-c4f6-43c3-87be-3402c2c46489",
+  "posted": "2026-07-27",
+  "salary": "$196K \u2013 $255K",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "SRE infrastructure/reliability role, not full-stack/frontend engineering; mismatched function despite AI/cloud domain overlap.",
    "bg": "b9f9e4b0db4d"
   }
  },
