@@ -2,11 +2,15 @@
 ### Job report — 2026-07-28
 _⭐ = posted in the last 1 days_
 
-# 🌎 US-Remote (25)
-## What's changed
-_No new or changed roles since the previous run._
+**2 new today** · 🌎 1 US-Remote · 📍 1 Local
 
-## All current matching roles (25)
+# 🌎 US-Remote (26)
+## What's changed
+**New (1)**
+- ⭐ **Ramp** — [Business Operations Lead, Compensation & Equity](https://jobs.ashbyhq.com/ramp/ea9f6e2d-8981-417a-ac96-87d421ccbf4c) · New York, NY (HQ) (Remote) · $200K – $250K · Posted Jul 28 · today — **15/100** (no)
+   _Senior IC compensation role, no leadership scope, narrow comp/equity focus—doesn't match transformation/ops mandate._
+
+## All current matching roles (26)
 - **GitLab** — [AI Transformation Owner, CRO](https://job-boards.greenhouse.io/gitlab/jobs/8638232002) · Remote, United States · Posted Jul 22 · 6d ago — **58/100** (maybe)
    _AI transformation mandate fits well, but narrow field-sales/CRO scope and hands-on execution focus differ from her leadership breadth._
 - **Affirm** — [Chief of Staff Director, Product](https://job-boards.greenhouse.io/affirm/jobs/7808142003) · Remote US · Posted Jul 23 · 5d ago — **55/100** (maybe)
@@ -41,6 +45,8 @@ _No new or changed roles since the previous run._
    _IC-level account CSM role, technical DevSecOps focus, no transformation/strategy leadership mandate._
 - ⭐ **Ramp** — [Associate Manager | Customer Experience](https://jobs.ashbyhq.com/ramp/2e47b59f-f68f-4266-80ff-eb92c8116f1a) · New York, NY (HQ) (Remote) · $88K – $132K · Posted Jul 27 · 1d ago — **15/100** (no)
    _Frontline call-center supervisor role; far below Lisa's strategic transformation/CX leadership scope._
+- ⭐ **Ramp** — [Business Operations Lead, Compensation & Equity](https://jobs.ashbyhq.com/ramp/ea9f6e2d-8981-417a-ac96-87d421ccbf4c) · New York, NY (HQ) (Remote) · $200K – $250K · Posted Jul 28 · today — **15/100** (no)
+   _Senior IC compensation role, no leadership scope, narrow comp/equity focus—doesn't match transformation/ops mandate._
 - ⭐ **Render** — [Executive Business Partner (CEO, VP of Finance, VP of People)](https://jobs.ashbyhq.com/render/1fffd796-b589-4cc1-9664-ed1d2c3d9938) · San Francisco HQ (Remote) · Posted Jul 27 · 1d ago — **15/100** (no)
    _EA/business-partner support role, not a transformation/strategy leadership mandate she targets._
 - ⭐ **Calendly** — [Director, Brand Influence, Advocacy & AI Discovery](https://job-boards.greenhouse.io/calendly/jobs/8652325002) · Remote - US · Posted Jul 27 · 1d ago — **15/100** (no)
@@ -84,34 +90,36 @@ _No new or changed roles since the previous run._
 
 # 📍 Local — Silicon Slopes (16)
 ## What's changed
-_No new or changed roles since the previous run._
+**New (1)**
+- ⭐ **Western Governors University** — [Change Manager I, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Change-Manager-I--Salt-Lake-City--UT_JR-025725) · Salt Lake City, UT · $68,300.00 - $102,500.00 · Posted Jul 28 · today — **40/100** (maybe)
+   _Change management aligns, but 'I' suggests junior IC level, below Lisa's leadership scope target._
 
 ## All current matching roles (16)
 - **NICE** — [Director, Business Consulting, VRS, CX](https://boards.eu.greenhouse.io/nice/jobs/4934090101?gh_jid=4934090101) · USA - Remote · Posted Jul 22 · 6d ago — **78/100** (yes)
    _Director-level consulting leadership, customer value realization, CX/AI-driven transformation, revenue/margin/utilization ownership—strong mandate match._
-- ⭐ **Adobe** — [Senior Manager, Business Process Optimization Program Management](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Manager--Business-Process-Optimization-Program-Management_R170677-1) · Lehi (+2 more) · $173,300 - $250,875 · Posted Jul 28 · today — **72/100** (yes)
+- ⭐ **Adobe** — [Senior Manager, Business Process Optimization Program Management](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Manager--Business-Process-Optimization-Program-Management_R170677-1) · Lehi (+2 more) · $173,300 - $250,875 · Posted Jul 27 · 1d ago — **72/100** (yes)
    _Senior Manager scope, business process optimization/program management aligns with operational excellence and transformation focus; Utah location matches._
-- **Health Catalyst** — [Strategic Business Manager- Office of the CEO](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Strategic-Business-Manager--Office-of-the-CEO_REQ-3273) · US Remote · Posted Jul 22 · 6d ago — **55/100** (maybe)
+- **Health Catalyst** — [Strategic Business Manager- Office of the CEO](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Strategic-Business-Manager--Office-of-the-CEO_REQ-3273) · US Remote · Posted Jul 21 · 7d ago — **55/100** (maybe)
    _Chief-of-staff-style strategy role fits mandate, but no description detail to confirm scope/seniority._
-- ⭐ **Adobe** — [Manager, Revenue Operations](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Manager--Revenue-Operations_R170491) · Lehi · Posted Jul 28 · today — **45/100** (maybe)
+- ⭐ **Adobe** — [Manager, Revenue Operations](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Manager--Revenue-Operations_R170491) · Lehi · Posted Jul 27 · 1d ago — **45/100** (maybe)
    _Manager-level ops role fits seniority/location, but Revenue Ops scope and mandate unclear from title alone._
-- **Health Catalyst** — [Implementation Manager](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Implementation-Manager_REQ-3267) · US Remote · Posted Jul 24 · 4d ago — **40/100** (maybe)
+- **Health Catalyst** — [Implementation Manager](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Implementation-Manager_REQ-3267) · US Remote · Posted Jul 23 · 5d ago — **40/100** (maybe)
    _Manager-level with possible implementation/PM scope, but no description confirms transformation, operations, or strategic mandate._
-- ⭐ **Western Governors University** — [Senior Manager, Enterprise Partnerships - Institution Strategy & Ventures](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Enterprise-Partnerships---Institution-Strategy---Ventures_JR-025784-1) · Salt Lake City, UT · $130,600.00 - $235,100.00 · Posted Jul 28 · today — **40/100** (maybe)
+- ⭐ **Western Governors University** — [Change Manager I, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Change-Manager-I--Salt-Lake-City--UT_JR-025725) · Salt Lake City, UT · $68,300.00 - $102,500.00 · Posted Jul 28 · today — **40/100** (maybe)
+   _Change management aligns, but 'I' suggests junior IC level, below Lisa's leadership scope target._
+- ⭐ **Western Governors University** — [Senior Manager, Enterprise Partnerships - Institution Strategy & Ventures](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Enterprise-Partnerships---Institution-Strategy---Ventures_JR-025784-1) · Salt Lake City, UT · $130,600.00 - $235,100.00 · Posted Jul 27 · 1d ago — **40/100** (maybe)
    _Senior Manager scope fits, but partnerships/strategy function only loosely matches transformation/ops/M&A mandate; no description to confirm._
-- ⭐ **Western Governors University** — [Operations Manager - School of Technology](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Operations-Manager---School-of-Technology_JR-025781) · Salt Lake City, UT · $68,300.00 - $102,500.00 · Posted Jul 28 · today — **40/100** (maybe)
+- ⭐ **Western Governors University** — [Operations Manager - School of Technology](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Operations-Manager---School-of-Technology_JR-025781) · Salt Lake City, UT · $68,300.00 - $102,500.00 · Posted Jul 27 · 1d ago — **40/100** (maybe)
    _Manager-level ops role, right location, but generic title/no description limits confidence in transformation scope._
-- **Western Governors University** — [Manager, Lifecycle Engagement, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Lifecycle-Engagement--Salt-Lake-City--UT_JR-025641-1) · Salt Lake City, UT · $78,200.00 - $129,000.00 · Posted Jul 25 · 3d ago — **40/100** (maybe)
+- **Western Governors University** — [Manager, Lifecycle Engagement, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Lifecycle-Engagement--Salt-Lake-City--UT_JR-025641-1) · Salt Lake City, UT · $78,200.00 - $129,000.00 · Posted Jul 24 · 4d ago — **40/100** (maybe)
    _Manager-level leadership, but lifecycle engagement seems narrower marketing/CX role, unclear transformation mandate._
-- **Health Catalyst** — [SVP Manager, Client Account Management](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/SVP-Client-Account-Management_REQ-3250) · US Remote · Posted Jul 24 · 4d ago — **35/100** (maybe)
+- **Health Catalyst** — [SVP Manager, Client Account Management](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/SVP-Client-Account-Management_REQ-3250) · US Remote · Posted Jul 23 · 5d ago — **35/100** (maybe)
    _Senior title but client account management focus, not transformation/ops/M&A; no description to confirm scope._
 - **NICE** — [Lead Client Services Project Manager, CX](https://boards.eu.greenhouse.io/nice/jobs/4934132101?gh_jid=4934132101) · USA - Remote · Posted Jul 22 · 6d ago — **22/100** (no)
    _Individual project/program delivery role, client services PM—not a transformation, strategy, or org-leadership mandate._
 - **Podium** — [Associate Manager, Onboarding](https://job-boards.greenhouse.io/podium81/jobs/8080202) · Lehi, Utah · Posted Jul 22 · 6d ago — **20/100** (no)
    _Junior front-line onboarding team lead role; below seniority target and lacks transformation/strategy mandate._
-- **Adobe** — [Sales Partner Compliance Operations Manager](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sales-Partner-Compliance-Operations-Manager_R169617) · Lehi (+3 more) · $146,300 - $211,850 · Posted Jul 21 · 7d ago — **20/100** (no)
-   _Sales/compliance operations niche, no transformation or org-effectiveness mandate evident; poor functional match despite manager-level title._
-- **Adobe** — [Group Content Strategy Manager, Adobe.com](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Group-Content-Strategy-Manager--Adobecom_R170475-1) · Lehi (+9 more) · $202,900 - $293,800 · Posted Jul 24 · 4d ago — **20/100** (no)
+- **Adobe** — [Group Content Strategy Manager, Adobe.com](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Group-Content-Strategy-Manager--Adobecom_R170475-1) · Lehi (+9 more) · $202,900 - $293,800 · Posted Jul 23 · 5d ago — **20/100** (no)
    _Content strategy/marketing manager role, not transformation/ops/M&A leadership; mismatched function despite manager-level title._
 - **Pattern** — [Director of North America Operations](https://jobs.lever.co/pattern/f1134df6-fae3-4b1c-9c5a-9410b9b4d513) · Lehi, UT, US · Posted Jul 21 · 7d ago — **15/100** (no)
    _Facilities management role, not transformation/strategy/ops leadership Lisa targets despite title._
@@ -124,4 +132,4 @@ _No new or changed roles since the previous run._
 # Removed / filled
 
 ## 📍 Local — Silicon Slopes (1)
-- **Western Governors University** — Project Manager IV, Transformation · Salt Lake City, UT · $109,900.00 - $170,400.00 · Posted Jul 25 · 3d ago
+- **Adobe** — Sales Partner Compliance Operations Manager · Lehi (+3 more) · $146,300 - $211,850 · Posted Jul 21 · 7d ago

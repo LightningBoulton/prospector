@@ -2,11 +2,17 @@
 ### Job report — 2026-07-28
 _⭐ = posted in the last 1 days_
 
-# 🌎 US-Remote (60)
-## What's changed
-_No new or changed roles since the previous run._
+**2 new today** · 🌎 2 US-Remote
 
-## All current matching roles (60)
+# 🌎 US-Remote (62)
+## What's changed
+**New (2)**
+- ⭐ **Supabase** — [Performance Engineer - Benchmarking](https://jobs.ashbyhq.com/supabase/11beb619-0c25-4b11-9818-3f18e278c65b) · Remote · Posted Jul 28 · today — **20/100** (no)
+   _Deep DB performance/benchmarking specialization mismatched with candidate's frontend-leaning full-stack/platform background._
+- ⭐ **Supabase** — [Performance Engineer - Performance Analysis & Tuning](https://jobs.ashbyhq.com/supabase/98ef6a11-9898-4960-9931-1264285849f3) · Remote · Posted Jul 28 · today — **15/100** (no)
+   _Deep systems/kernel/database performance engineering role; mismatched with candidate's frontend-leaning full-stack SaaS background._
+
+## All current matching roles (62)
 - **Reddit** — [Senior Frontend Engineer, Ads Creative](https://job-boards.greenhouse.io/reddit/jobs/8082867) · Remote - United States · Posted Jul 23 · 5d ago — **62/100** (maybe)
    _Strong React/TS senior IC match, but ads-domain and title level below Principal target._
 - **1Password** — [.Net Developer, SaaS Manager](https://jobs.ashbyhq.com/1password/fb0f0d1d-5655-4c54-b4e7-e985c475dc9e) · Remote (United States | Canada) · Posted Jul 21 · 7d ago — **62/100** (maybe)
@@ -57,6 +63,8 @@ _No new or changed roles since the previous run._
    _Backend/AI finance automation, NetSuite/Workday domain, no React/frontend focus - poor match for frontend-leaning full-stack engineer._
 - ⭐ **Supabase** — [Release Engineer](https://jobs.ashbyhq.com/supabase/f6035bf8-4f44-4425-9944-d5509a3c8652) · Remote · Posted Jul 27 · 1d ago — **20/100** (no)
    _SRE/release engineering ops role, not frontend/full-stack IC work matching Chad's core expertise._
+- ⭐ **Supabase** — [Performance Engineer - Benchmarking](https://jobs.ashbyhq.com/supabase/11beb619-0c25-4b11-9818-3f18e278c65b) · Remote · Posted Jul 28 · today — **20/100** (no)
+   _Deep DB performance/benchmarking specialization mismatched with candidate's frontend-leaning full-stack/platform background._
 - **Instacart** — [Staff Software Engineer, Bazel & Go](https://instacart.careers/job/?gh_jid=8080310) · United States - Remote · Posted Jul 22 · 6d ago — **20/100** (no)
    _Bazel/Go build infrastructure focus mismatches candidate's React/.NET/frontend-leaning full-stack expertise._
 - ⭐ **Docker** — [Staff Software Engineer, Networking (Seattle or SF Bay Area)](https://jobs.ashbyhq.com/docker/57ccbca7-6818-4e34-8f31-bf762e1f4e00) · San Francisco Bay Area (Remote) · Posted Jul 27 · 1d ago — **20/100** (no)
@@ -73,6 +81,8 @@ _No new or changed roles since the previous run._
    _People management role, not hands-on IC; candidate explicitly avoids pure management positions._
 - **Grafana Labs** — [Senior Machine Learning Engineer, Developer Advocacy | US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6121755004) · United States (Remote) · Posted Jul 22 · 6d ago — **15/100** (no)
    _ML/recommender systems engineering role, not full-stack/frontend; mismatched specialization despite remote/seniority fit._
+- ⭐ **Supabase** — [Performance Engineer - Performance Analysis & Tuning](https://jobs.ashbyhq.com/supabase/98ef6a11-9898-4960-9931-1264285849f3) · Remote · Posted Jul 28 · today — **15/100** (no)
+   _Deep systems/kernel/database performance engineering role; mismatched with candidate's frontend-leaning full-stack SaaS background._
 - **Render** — [Software Engineer, Network Infrastructure](https://jobs.ashbyhq.com/render/88cb74a4-bc28-40b1-b792-d3041e3e17d3) · Remote: United States · $236K – $290K · Posted Jul 24 · 4d ago — **15/100** (no)
    _Network infrastructure engineering role; mismatched with frontend-leaning full-stack/SaaS background, no React/UI focus._
 - ⭐ **Docker** — [Principal Software Engineer, Networking (Seattle or SF Bay Area)](https://jobs.ashbyhq.com/docker/c7d880eb-4fb5-48db-b325-595cc8a8d017) · San Francisco Bay Area (Remote) · Posted Jul 27 · 1d ago — **15/100** (no)
@@ -129,56 +139,48 @@ _No new or changed roles since the previous run._
    _Security/detection engineering role, unrelated to candidate's full-stack/frontend/cloud architecture background._
 
 
-# 📍 Local — Silicon Slopes (27)
+# 📍 Local — Silicon Slopes (23)
 ## What's changed
 _No new or changed roles since the previous run._
 
-## All current matching roles (27)
+## All current matching roles (23)
 - **Nomi Health** — [Staff Software Engineer](https://jobs.lever.co/nomihealth/24a9f84e-ebc2-4c41-b8fc-14822f0dc973) · Salt Lake City, Utah · Posted Jul 21 · 7d ago — **78/100** (yes)
    _Staff IC role in SLC, React/TypeScript/AWS match, technical leadership, though Go and healthcare domain are new._
-- ⭐ **Western Governors University** — [Staff Software Engineer  | Developer Experience](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer---WIS-to-Domestic-_JR-025290) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 28 · today — **78/100** (yes)
+- ⭐ **Western Governors University** — [Staff Software Engineer  | Developer Experience](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer---WIS-to-Domestic-_JR-025290) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 27 · 1d ago — **78/100** (yes)
    _Staff-level DevEx role in SLC matches seniority, function, and location; details sparse but strong directional fit._
-- **Western Governors University** — [Staff Software Engineer | Cloud Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer---Cloud-Platform_JR-025728) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 21 · 7d ago — **78/100** (yes)
-   _Staff-level cloud platform role in SLC matches seniority, function, and location; comp/details unknown._
-- **Western Governors University** — [Staff Software Engineer- Full-Stack Python and React](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 24 · 4d ago — **62/100** (maybe)
+- **Western Governors University** — [Staff Software Engineer- Full-Stack Python and React](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 23 · 5d ago — **62/100** (maybe)
    _Staff full-stack fits seniority/location, but Python stack differs from .NET/React background; limited details._
 - **Cricut** — [Staff AI-Native Software Engineer](https://jobs.smartrecruiters.com/cricut/744000139368229) · South Jordan, UT, United States · Posted Jul 23 · 5d ago — **60/100** (maybe)
    _Staff-level, local to SLC area, AI-native angle intriguing, but no details on stack, comp, or scope._
-- ⭐ **Western Governors University** — [Principal Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025250) · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Jul 28 · today — **60/100** (maybe)
+- ⭐ **Western Governors University** — [Principal Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025250) · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Jul 27 · 1d ago — **60/100** (maybe)
    _Right title, seniority, and location match, but no details on tech stack, domain, or compensation._
-- ⭐ **Western Governors University** — [Principal Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025248) · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Jul 28 · today — **60/100** (maybe)
+- ⭐ **Western Governors University** — [Principal Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025248) · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Jul 27 · 1d ago — **60/100** (maybe)
    _Right title/location/seniority, but no description to confirm stack, domain, or compensation fit._
 - **Podium** — [Senior Software Engineer – VoIP](https://job-boards.greenhouse.io/podium81/jobs/8077450) · Lehi, Utah, Open to Remote · Posted Jul 21 · 7d ago — **45/100** (maybe)
    _Senior IC fit and remote-ok, but VoIP telephony domain niche, unclear frontend/React alignment, title below Principal._
-- **Western Governors University** — [Senior Cloud Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer_JR-025654) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 24 · 4d ago — **45/100** (maybe)
+- **Western Governors University** — [Senior Cloud Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer_JR-025654) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 23 · 5d ago — **45/100** (maybe)
    _Location matches but title suggests infra/cloud ops role, not frontend-leaning full-stack engineering fit._
-- **Western Governors University** — [Senior Cloud Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer_JR-025649) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 21 · 7d ago — **45/100** (maybe)
-   _Location matches but cloud engineer role is narrower than full-stack principal engineering; unclear seniority/comp fit._
-- ⭐ **Western Governors University** — [Software Engineer II](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025786) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 28 · today — **25/100** (no)
+- ⭐ **Western Governors University** — [Software Engineer II](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025786) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 27 · 1d ago — **25/100** (no)
    _Software Engineer II is too junior for a Principal-level candidate; likely below seniority and comp requirements._
-- **Western Governors University** — [Software Engineer II - Infrastructure & Operations](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025776-1) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 25 · 3d ago — **25/100** (no)
+- **Western Governors University** — [Software Engineer II - Infrastructure & Operations](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025776-1) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 24 · 4d ago — **25/100** (no)
    _Software Engineer II is too junior for Principal-level candidate; likely below seniority and comp target._
-- **Western Governors University** — [Software Engineer II - Infrastructure & Operations](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025775) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 25 · 3d ago — **25/100** (no)
+- **Western Governors University** — [Software Engineer II - Infrastructure & Operations](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025775) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 24 · 4d ago — **25/100** (no)
    _Software Engineer II is too junior for Principal-level candidate; likely mismatched seniority and scope._
 - **Canopy** — [Application Security Engineer](https://job-boards.greenhouse.io/canopytax/jobs/4327563009) · South Jordan Utah · Posted Jul 21 · 7d ago — **20/100** (no)
    _Application security specialist role, not full-stack/frontend engineering; mismatch with candidate's core expertise._
-- **Western Governors University** — [Senior Software Engineer - Salesforce](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 24 · 4d ago — **20/100** (no)
+- **Western Governors University** — [Senior Software Engineer - Salesforce](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 23 · 5d ago — **20/100** (no)
    _Salesforce-specific role mismatches candidate's React/.NET/AWS full-stack expertise and background._
 - ⭐ **LVT** — [Senior DevOps Engineer I](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5371739008) · American Fork, Utah, United States · Posted Jul 27 · 1d ago — **20/100** (no)
    _DevOps/infra role, not full-stack/frontend engineering; onsite Utah, mismatched with candidate's IC software focus._
-- **Adobe** — [Data Science Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Data-Science-Engineer_R169523-1) · Lehi (+3 more) · $163,200 - $236,400 · Posted Jul 25 · 3d ago — **15/100** (no)
+- **Adobe** — [Data Science Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Data-Science-Engineer_R169523-1) · Lehi (+3 more) · $163,200 - $236,400 · Posted Jul 24 · 4d ago — **15/100** (no)
    _Data Science Engineer role mismatches candidate's frontend/full-stack architecture background; no description confirms overlap._
-- **Western Governors University** — [Software Engineer II - Salesforce](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Salesforce_JR-025417) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 24 · 4d ago — **15/100** (no)
+- **Western Governors University** — [Software Engineer II - Salesforce](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Salesforce_JR-025417) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 23 · 5d ago — **15/100** (no)
    _Salesforce Engineer II is junior-level, wrong stack/domain; mismatches seniority and core tech expertise._
-- **Western Governors University** — [Staff Software Product Manager - Communications Engineering](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Product-Manager---Communications-Engineering_JR-025520) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 21 · 7d ago — **15/100** (no)
-   _Product manager role, not hands-on engineering; mismatches candidate's IC engineering focus and dealbreakers._
-- **Western Governors University** — [Senior Quality Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Quality-Engineer---FY27_JR-025667) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 21 · 7d ago — **15/100** (no)
-   _QA/testing role, not software engineering; mismatched function despite good location._
-- ⭐ **Western Governors University** — [Staff Software Product Manager](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Product-Manager_JR-025664) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 28 · today — **10/100** (no)
+- ⭐ **Western Governors University** — [Staff Software Product Manager](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Product-Manager_JR-025664) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 27 · 1d ago — **10/100** (no)
    _Product management role, not hands-on engineering; mismatched function despite good location._
-- ⭐ **Western Governors University** — [Senior Software Product Manager](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Product-Manager_JR-025614) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 28 · today — **8/100** (no)
+- ⭐ **Western Governors University** — [Senior Software Product Manager](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Product-Manager_JR-025614) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 27 · 1d ago — **8/100** (no)
    _Product Manager role, not hands-on engineering; mismatched function despite good location._
-- **Western Governors University** — [Salesforce Engineer I](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Salesforce-Engineer-I_JR-025457) · Salt Lake City, UT · $98,300.00 - $147,400.00 · Posted Jul 24 · 4d ago — **8/100** (no)
+- **Western Governors University** — [Salesforce Engineer I](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Salesforce-Engineer-I_JR-025457) · Salt Lake City, UT · $98,300.00 - $147,400.00 · Posted Jul 23 · 5d ago — **8/100** (no)
    _Junior Salesforce role, wrong seniority and tech stack; mismatches core .NET/React/AWS expertise._
 - **iCapital** — [Software Engineer in Test - Associate](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8631890002) · Salt Lake City, Utah, United States · $90,000 to $110,000 · Posted Jul 24 · 4d ago — **8/100** (no)
    _QA/SDET Associate role, wrong function, junior-level comp far below candidate's $190k minimum_
@@ -188,3 +190,12 @@ _No new or changed roles since the previous run._
    _Regulatory/compliance engineering role for hardware products, unrelated to software engineering background._
 - ⭐ **LVT** — [Quality Engineer](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5369362008) · Spanish Fork, Utah, United States · Posted Jul 27 · 1d ago — **3/100** (no)
    _Manufacturing quality engineer role, unrelated to software engineering; not a functional match._
+
+
+# Removed / filled
+
+## 📍 Local — Silicon Slopes (4)
+- **Western Governors University** — Staff Software Product Manager - Communications Engineering · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 21 · 7d ago
+- **Western Governors University** — Staff Software Engineer | Cloud Platform · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 21 · 7d ago
+- **Western Governors University** — Senior Cloud Engineer · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 21 · 7d ago
+- **Western Governors University** — Senior Quality Engineer · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 21 · 7d ago

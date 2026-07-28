@@ -285,21 +285,6 @@
   }
  },
  {
-  "key": "Twilio::8074762",
-  "company": "Twilio",
-  "title": "Staff, Business Intelligence Engineer",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8074762",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 12,
-   "reason": "BI/data analytics role, not software engineering; mismatched function despite Staff title.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Twilio::8076802",
   "company": "Twilio",
   "title": "Staff, Business Intelligence Engineer",
@@ -311,6 +296,21 @@
    "fit": "no",
    "score": 10,
    "reason": "BI/analytics data role, not software engineering; mismatch with frontend/full-stack architecture background.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Twilio::8074762",
+  "company": "Twilio",
+  "title": "Staff, Business Intelligence Engineer",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8074762",
+  "posted": "2026-07-22",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 12,
+   "reason": "BI/data analytics role, not software engineering; mismatched function despite Staff title.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -461,6 +461,36 @@
    "fit": "no",
    "score": 20,
    "reason": "SRE/release engineering ops role, not frontend/full-stack IC work matching Chad's core expertise.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Supabase::98ef6a11-9898-4960-9931-1264285849f3",
+  "company": "Supabase",
+  "title": "Performance Engineer - Performance Analysis & Tuning",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/supabase/98ef6a11-9898-4960-9931-1264285849f3",
+  "posted": "2026-07-28",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Deep systems/kernel/database performance engineering role; mismatched with candidate's frontend-leaning full-stack SaaS background.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Supabase::11beb619-0c25-4b11-9818-3f18e278c65b",
+  "company": "Supabase",
+  "title": "Performance Engineer - Benchmarking",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/supabase/11beb619-0c25-4b11-9818-3f18e278c65b",
+  "posted": "2026-07-28",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Deep DB performance/benchmarking specialization mismatched with candidate's frontend-leaning full-stack/platform background.",
    "bg": "b9f9e4b0db4d"
   }
  },
