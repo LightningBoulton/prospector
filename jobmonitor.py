@@ -832,6 +832,13 @@ def build_report(profile, lanes):
     L = [f"# {profile['label']}", f"### Job report — {today}"]
     if STAR_WITHIN_DAYS:
         L.append(f"_⭐ = posted in the last {STAR_WITHIN_DAYS} days_")
+    c = _digest_counts(lanes)   # one-line digest mirroring the email's preheader/hero summary
+    if c["new"]:
+        seg = [f'{_lane_short(l["title"])[0]} {len(l["new"])} {_lane_short(l["title"])[1]}'
+               for l in lanes if l["new"]]
+        L.append(f'\n**{len(c["new"])} new today** · ' + " · ".join(seg))
+    elif c["first_run"]:
+        L.append(f'\n**Baseline established** · {c["matched"]} roles tracked')
     multi = len(lanes) > 1
     for lane in lanes:
         L.append("")
@@ -1074,13 +1081,156 @@ def _html_lane(lane, show_banner):
     return "".join(B)
 
 
+def _logo_tile(company, px):
+    # A logo tile at an arbitrary size (the digest hero's logo row). Same source logic as
+    # _logo_square — prefetched CID logo on white, else a colored monogram — returns a <td>.
+    initials = _esc(_initials(company))
+    slug = _company_slug(company)
+    rad = max(6, px // 5)
+    if slug and os.path.exists(os.path.join(LOGO_DIR, f"{slug}.png")):
+        _LOGOS_USED.add(f"logos/{slug}.png")
+        return (f'<td align="center" valign="middle" style="width:{px}px;height:{px}px;'
+                f'background-color:#ffffff;border-radius:{rad}px;">'
+                f'<img src="cid:{slug}.png" width="{px}" height="{px}" alt="{initials}" '
+                f'style="display:block;border:0;border-radius:{rad}px;"></td>')
+    return (f'<td align="center" valign="middle" style="width:{px}px;height:{px}px;'
+            f'background-color:{_mono_color(company)};border-radius:{rad}px;color:#ffffff;'
+            f'font-family:{_FONT};font-size:{max(11, px // 2 - 3)}px;font-weight:700;">{initials}</td>')
+
+
+def _lane_short(title):
+    # ("🌎", "US-Remote") from a lane title like "🌎 US-Remote" / "📍 Local — Silicon Slopes".
+    parts = title.split(None, 1)
+    emoji = parts[0] if parts else ""
+    rest = re.split(r"\s+[—/]\s+", parts[1])[0].strip() if len(parts) > 1 else ""
+    return emoji, rest
+
+
+def _digest_counts(lanes):
+    # Roll up the numbers the digest hero + preheader summarize.
+    all_new = [p for l in lanes for p in l["new"]]
+    return {"new": all_new,
+            "changed": sum(len(l["changed"]) for l in lanes),
+            "removed": sum(len(l["removed"]) for l in lanes),
+            "matched": sum(len(l["matched"]) for l in lanes),
+            "first_run": all(l["first_run"] for l in lanes),
+            "scored": any(p.get("fit_result") for p in all_new)}
+
+
+def _new_companies_by_fit(all_new, scored):
+    # Distinct new-role companies, best-fit first (so the logo row leads with the strongest
+    # matches), plus the fit-ordered postings (for the top pick). Falls back to alphabetical.
+    order = (sorted(all_new, key=lambda p: -((p.get("fit_result") or {}).get("score", 0)))
+             if scored else sorted(all_new, key=lambda p: p["company"]))
+    seen = []
+    for p in order:
+        if p["company"] not in seen:
+            seen.append(p["company"])
+    return seen, order
+
+
+def _summary_text(lanes):
+    # Plain-text one-liner for the hidden preheader (the Gmail/inbox snippet).
+    c = _digest_counts(lanes)
+    n = len(c["new"])
+    if n:
+        parts = [f'{_lane_short(l["title"])[0]} {len(l["new"])} {_lane_short(l["title"])[1]}'
+                 for l in lanes if l["new"]]
+        s = f'{n} new role{"s" if n != 1 else ""} · ' + "  ".join(parts)
+        if c["scored"]:
+            top = max(c["new"], key=lambda p: (p.get("fit_result") or {}).get("score", -1))
+            sc = (top.get("fit_result") or {}).get("score", -1)
+            if sc >= 0:
+                s += f' · Top: {top["title"][:44]} @ {top["company"]} ({sc})'
+        return s
+    if c["first_run"]:
+        return f'Baseline established · {c["matched"]} roles now tracked'
+    tail = []
+    if c["changed"]:
+        tail.append(f'{c["changed"]} title change{"s" if c["changed"] != 1 else ""}')
+    if c["removed"]:
+        tail.append(f'{c["removed"]} filled/removed')
+    return " · ".join(tail) if tail else "No changes since the last run"
+
+
+def _preheader(lanes):
+    # Hidden preheader: the FIRST text in the body, so Gmail/Apple Mail use it as the inbox
+    # snippet instead of scraping whatever markup comes first. Trailing invisible padding stops
+    # the client from appending body text after our summary.
+    pad = "&#847;&zwnj;&nbsp;" * 40
+    return ('<div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;'
+            'line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;color:transparent;'
+            f'height:0;width:0;">{_esc(_summary_text(lanes))}{pad}</div>')
+
+
+def _digest_hero(lanes):
+    # Scannable summary card at the very top of the email: headline count, per-lane new
+    # breakdown, a row of logos for the newly-added companies, and the single best new pick.
+    c = _digest_counts(lanes)
+    all_new, scored, F = c["new"], c["scored"], _FONT
+    if all_new:
+        big = (f'<span style="color:{_C["green"]};font-weight:800;">{len(all_new)}</span> '
+               f'new role{"s" if len(all_new) != 1 else ""} today')
+    elif c["first_run"]:
+        big = (f'<span style="color:{_C["link"]};font-weight:800;">{c["matched"]}</span> '
+               f'role{"s" if c["matched"] != 1 else ""} now tracked')
+    else:
+        big = "No new roles today"
+    rows = [f'<div style="color:{_C["head"]};font-family:{F};font-size:20px;font-weight:800;'
+            f'line-height:1.25;">{big}</div>']
+
+    seg = []
+    for l in lanes:
+        if l["new"]:
+            em, short = _lane_short(l["title"])
+            seg.append(f'{em}&nbsp;<b style="color:{_C["head"]};">{len(l["new"])}</b> {_esc(short)}')
+    tail = []
+    if c["changed"]:
+        tail.append(f'{c["changed"]} changed')
+    if c["removed"]:
+        tail.append(f'{c["removed"]} filled/removed')
+    if all_new:
+        sub = " &nbsp;·&nbsp; ".join(seg)
+        if tail:
+            sub += f' &nbsp;·&nbsp; <span style="color:{_C["muted"]};">{" · ".join(tail)}</span>'
+    elif c["first_run"]:
+        sub = "Baseline set — new matches will land here from the next run."
+    else:
+        sub = " · ".join(tail) if tail else "No changes since the last run."
+    rows.append(f'<div style="color:{_C["text"]};font-family:{F};font-size:14px;'
+                f'margin-top:7px;">{sub}</div>')
+
+    if all_new:
+        companies, order = _new_companies_by_fit(all_new, scored)
+        cap = 8
+        cells = "".join(f'{_logo_tile(co, 34)}<td style="width:7px;"></td>' for co in companies[:cap])
+        more = (f'<td valign="middle" style="color:{_C["muted"]};font-family:{F};font-size:12px;'
+                f'font-weight:600;padding-left:2px;">+{len(companies) - cap}</td>'
+                if len(companies) > cap else "")
+        rows.append('<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
+                    f'style="margin-top:14px;"><tr>{cells}{more}</tr></table>')
+        top = order[0]
+        rows.append(f'<div style="color:{_C["muted"]};font-family:{F};font-size:11px;font-weight:700;'
+                    f'letter-spacing:.5px;text-transform:uppercase;margin-top:16px;">Top pick</div>')
+        rows.append(f'<div style="margin-top:3px;line-height:1.4;">{_star_html(top)}'
+                    f'{_link(top["title"], top["url"])}{_fit_pill_html(top)}'
+                    f'<span style="color:{_C["muted"]};font-family:{F};font-size:13px;"> · '
+                    f'{_esc(top["company"])}</span></div>')
+
+    return (f'<div style="border:1px solid {_C["border"]};border-left:3px solid {_C["link"]};'
+            f'background-color:{_C["panel"]};border-radius:12px;padding:18px 20px;'
+            f'margin:16px 0 6px;">{"".join(rows)}</div>')
+
+
 def build_html_report(profile, lanes):
-    # Compose one or more lanes into a single email. Single lane (remote off) is byte-for-byte
-    # the old layout; two lanes get a banner each. Clears _LOGOS_USED, then both lanes populate it.
+    # Compose one or more lanes into a single email: a hidden preheader (inbox snippet) + a
+    # digest hero (summary), then each lane, then the Removed/filled region. Clears _LOGOS_USED,
+    # then the hero + lanes populate it.
     today = datetime.date.today().isoformat()
     _LOGOS_USED.clear()   # collect the logo files this report references (for CID attach)
     scored = any(p.get("fit_result") for lane in lanes for p in lane["matched"])
     B = []
+    B.append(_preheader(lanes))   # hidden summary → controls the Gmail/inbox preview line
     B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:22px;'
              f'font-weight:800;line-height:1.3;">{_esc(profile["label"])}</div>')
     sub = f"Job report · {today}" + (" · ranked by fit" if scored else "")
@@ -1088,6 +1238,7 @@ def build_html_report(profile, lanes):
         sub += f" · ⭐ = posted in the last {STAR_WITHIN_DAYS} days"
     B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
              f'margin-top:4px;">{_esc(sub)}</div>')
+    B.append(_digest_hero(lanes))   # scannable summary card at the top of the email
     multi = len(lanes) > 1
     for lane in lanes:
         B.append(_html_lane(lane, show_banner=multi))
