@@ -1124,19 +1124,20 @@ def run_profile(profile, local_pool, remote_pool, errors, client=None, remote_er
     # Run the local lane and (when enabled + opted-in) the US-remote and contract/staffing
     # lanes, then compose ALL into ONE report/email per person. Each lane keeps its own
     # snapshot so diffs are independent; `changed` is the OR of the lanes; logos are the union.
+    # Lanes are RUN here but ordered for DISPLAY below (email order != run order).
     local_lane, changed = _run_lane(profile, local_pool, errors, client, "",
                                     "📍 Local — Silicon Slopes")
-    lanes = [local_lane]
+    remote_lane = staffing_lane = None
     if remote_pool is not None and profile.get("remote_search"):
         remote_lane, r_changed = _run_lane(profile, remote_pool, remote_errors or [], client,
                                            "_remote", "🌎 US-Remote")
-        lanes.append(remote_lane)
         changed = changed or r_changed
     if staffing_pool is not None and profile.get("staffing_search"):
         staffing_lane, s_changed = _run_lane(profile, staffing_pool, staffing_errors or [], client,
                                              "_staffing", "🧑‍💼 Contract / Staffing")
-        lanes.append(staffing_lane)
         changed = changed or s_changed
+    # Email display order: US-Remote, then Contract/Staffing, then Local Silicon Slopes.
+    lanes = [lane for lane in (remote_lane, staffing_lane, local_lane) if lane is not None]
 
     report = build_report(profile, lanes)
     report_html = build_html_report(profile, lanes)   # clears + repopulates _LOGOS_USED
