@@ -104,10 +104,13 @@ and applies `is_us_remote` (keep US/remote; drop location-locked + non-US remote
 local `is_local` gate — `collect_pool(config_path, gate)` is parameterized for exactly this.
 `_run_lane` matches/scores/diffs ONE lane against its own snapshot (`snapshot_<name>.json` local,
 `snapshot_<name>_remote.json` remote — independent diffs); `run_profile` composes BOTH lanes into
-**one report/email per person** (`build_report`/`build_html_report` take a list of lane dicts; single
-lane = old layout byte-for-byte, two lanes get "📍 Local"/"🌎 US-Remote" banners via `_lane_banner`).
-`<name>_changed` = OR of the lanes; `<name>_logos` = union — so the **workflow email steps are
-unchanged** (one email, gated on the combined flag). Design + why the feed approach was dropped:
+**one report/email per person** (`build_report`/`build_html_report` take a list of lane dicts; multiple
+lanes get "📍 Local"/"🌎 US-Remote" banners via `_lane_banner`). Each lane renders its own
+"What's changed" (new + changed titles only) and "All current matching roles"; **removed/filled roles
+are pulled out of every lane and collected in one "Removed / filled" region at the very bottom of the
+report, with a per-lane sub-header** (`build_report`/`build_html_report`, driven by `lane["removed"]`).
+`<name>_changed` = OR of the lanes (still counts removals, so a removal-only day still emails);
+`<name>_logos` = union — so the **workflow email steps are unchanged** (one email, gated on the combined flag). Design + why the feed approach was dropped:
 @DESIGN-remote.md. Grow the registry by verifying new remote-friendly employers on tier-1 ATSes
 (same discipline as `companies.json`); `fetch_logos.py` already reads both registries.
 

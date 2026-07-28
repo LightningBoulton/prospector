@@ -746,8 +746,8 @@ def _md_lane(lane):
     L = ["## What's changed"]
     if first_run:
         L.append("_First run — baseline established. Changes will appear here on the next run._")
-    elif not (new or removed or changed):
-        L.append("_No changes since the previous run._")
+    elif not (new or changed):   # removed/filled is rendered in its own bottom section
+        L.append("_No new or changed roles since the previous run._")
     else:
         if new:
             L.append(f"**New ({len(new)})**")
@@ -759,10 +759,6 @@ def _md_lane(lane):
             L.append(f"**Changed titles ({len(changed)})**")
             L += [f"- **{c['company']}** — \"{o['title']}\" → [{c['title']}]({c['url']})"
                   for o, c in changed]
-        if removed:
-            L.append(f"**Removed / filled ({len(removed)})**")
-            L += [f"- **{p['company']}** — {p['title']} · {_meta_md(p)}"
-                  for p in sorted(removed, key=lambda x: x["company"])]
     L.append("")
     L.append(f"## All current matching roles ({len(matched)})")
     if not matched:
@@ -798,6 +794,16 @@ def build_report(profile, lanes):
         if multi:
             L.append(f"# {lane['title']} ({len(lane['matched'])})")
         L += _md_lane(lane)
+    # Removed / filled roles collected at the very bottom, one sub-section per lane.
+    removed_lanes = [lane for lane in lanes if lane["removed"]]
+    if removed_lanes:
+        L.append("")
+        L.append("# Removed / filled")
+        for lane in removed_lanes:
+            L.append("")
+            L.append(f"## {lane['title']} ({len(lane['removed'])})")
+            L += [f"- **{p['company']}** — {p['title']} · {_meta_md(p)}"
+                  for p in sorted(lane["removed"], key=lambda x: x["company"])]
     return "\n".join(L)
 
 
@@ -988,8 +994,8 @@ def _html_lane(lane, show_banner):
     B.append(_section("What's changed"))
     if first_run:
         B.append(_muted("First run — baseline established. Changes will appear here on the next run."))
-    elif not (new or removed or changed):
-        B.append(_muted("No changes since the previous run."))
+    elif not (new or changed):   # removed/filled is rendered in its own bottom section
+        B.append(_muted("No new or changed roles since the previous run."))
     else:
         if new:
             B.append(_chip(f"New · {len(new)}", "green"))
@@ -1004,13 +1010,6 @@ def _html_lane(lane, show_banner):
                 inner = (_link(c["title"], c["url"])
                          + _muted(f'{_esc(c["company"])} · was "{_esc(o["title"])}"'))
                 B.append(_card(_icon_row(c["company"], inner), _C["amber"]))
-        if removed:
-            B.append(_chip(f"Removed / filled · {len(removed)}", "red"))
-            for p in sorted(removed, key=lambda x: x["company"]):
-                inner = (f'<span style="color:{_C["text"]};font-family:{_FONT};'
-                         f'font-weight:600;">{_esc(p["title"])}</span>'
-                         + _meta_html(p, lead=p["company"]))
-                B.append(_card(_icon_row(p["company"], inner), _C["red"]))
 
     B.append(_section(f"All current matching roles ({len(matched)})"))
     if not matched:
@@ -1048,6 +1047,19 @@ def build_html_report(profile, lanes):
     multi = len(lanes) > 1
     for lane in lanes:
         B.append(_html_lane(lane, show_banner=multi))
+
+    # Removed / filled roles collected at the very bottom of the email, one sub-section per
+    # lane (e.g. "🌎 US-Remote · 3"), so departures don't clutter each lane's "What's changed".
+    removed_lanes = [lane for lane in lanes if lane["removed"]]
+    if removed_lanes:
+        B.append(_section("Removed / filled"))
+        for lane in removed_lanes:
+            B.append(_chip(f'{lane["title"]} · {len(lane["removed"])}', "red"))
+            for p in sorted(lane["removed"], key=lambda x: x["company"]):
+                inner = (f'<span style="color:{_C["text"]};font-family:{_FONT};'
+                         f'font-weight:600;">{_esc(p["title"])}</span>'
+                         + _meta_html(p, lead=p["company"]))
+                B.append(_card(_icon_row(p["company"], inner), _C["red"]))
 
     body = "".join(B)
     return f"""<!DOCTYPE html>
