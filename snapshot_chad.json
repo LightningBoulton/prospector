@@ -45,21 +45,6 @@
   }
  },
  {
-  "key": "MX::4317568009",
-  "company": "MX",
-  "title": "Staff Data Engineer",
-  "location": "Lehi, Utah, United States",
-  "url": "https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4317568009",
-  "posted": "2026-07-20",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Data Engineer role mismatch; candidate is frontend-leaning full-stack/platform engineer, not data engineering focused.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Canopy::4327563009",
   "company": "Canopy",
   "title": "Application Security Engineer",
@@ -80,7 +65,7 @@
   "title": "Data Science Engineer",
   "location": "Lehi (+3 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Data-Science-Engineer_R169523-1",
-  "posted": "2026-07-24",
+  "posted": "2026-07-25",
   "salary": "$163,200 - $236,400",
   "fit_result": {
    "fit": "no",
@@ -120,12 +105,102 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025786",
+  "company": "Western Governors University",
+  "title": "Software Engineer II",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025786",
+  "posted": "2026-07-28",
+  "salary": "$118,900.00 - $178,500.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 25,
+   "reason": "Software Engineer II is too junior for a Principal-level candidate; likely below seniority and comp requirements.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025250",
+  "company": "Western Governors University",
+  "title": "Principal Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025250",
+  "posted": "2026-07-28",
+  "salary": "$180,300.00 - $279,500.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 60,
+   "reason": "Right title, seniority, and location match, but no details on tech stack, domain, or compensation.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025248",
+  "company": "Western Governors University",
+  "title": "Principal Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025248",
+  "posted": "2026-07-28",
+  "salary": "$180,300.00 - $279,500.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 60,
+   "reason": "Right title/location/seniority, but no description to confirm stack, domain, or compensation fit.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025290",
+  "company": "Western Governors University",
+  "title": "Staff Software Engineer  | Developer Experience",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer---WIS-to-Domestic-_JR-025290",
+  "posted": "2026-07-28",
+  "salary": "$161,000.00 - $249,500.00",
+  "fit_result": {
+   "fit": "yes",
+   "score": 78,
+   "reason": "Staff-level DevEx role in SLC matches seniority, function, and location; details sparse but strong directional fit.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025664",
+  "company": "Western Governors University",
+  "title": "Staff Software Product Manager",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Product-Manager_JR-025664",
+  "posted": "2026-07-28",
+  "salary": "$161,000.00 - $249,500.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 10,
+   "reason": "Product management role, not hands-on engineering; mismatched function despite good location.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025614",
+  "company": "Western Governors University",
+  "title": "Senior Software Product Manager",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Product-Manager_JR-025614",
+  "posted": "2026-07-28",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Product Manager role, not hands-on engineering; mismatched function despite good location.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Western Governors University::JR-025776",
   "company": "Western Governors University",
   "title": "Software Engineer II - Infrastructure & Operations",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025776-1",
-  "posted": "2026-07-24",
+  "posted": "2026-07-25",
   "salary": "$118,900.00 - $178,500.00",
   "fit_result": {
    "fit": "no",
@@ -140,7 +215,7 @@
   "title": "Software Engineer II - Infrastructure & Operations",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025775",
-  "posted": "2026-07-24",
+  "posted": "2026-07-25",
   "salary": "$118,900.00 - $178,500.00",
   "fit_result": {
    "fit": "no",
@@ -155,7 +230,7 @@
   "title": "Senior Cloud Engineer",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer_JR-025654",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
    "fit": "maybe",
@@ -170,7 +245,7 @@
   "title": "Salesforce Engineer I",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Salesforce-Engineer-I_JR-025457",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$98,300.00 - $147,400.00",
   "fit_result": {
    "fit": "no",
@@ -185,7 +260,7 @@
   "title": "Software Engineer II - Salesforce",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Salesforce_JR-025417",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$118,900.00 - $178,500.00",
   "fit_result": {
    "fit": "no",
@@ -200,7 +275,7 @@
   "title": "Senior Software Engineer - Salesforce",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
    "fit": "no",
@@ -215,7 +290,7 @@
   "title": "Staff Software Engineer- Full-Stack Python and React",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$161,000.00 - $249,500.00",
   "fit_result": {
    "fit": "maybe",
@@ -230,7 +305,7 @@
   "title": "Staff Software Product Manager - Communications Engineering",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Product-Manager---Communications-Engineering_JR-025520",
-  "posted": "2026-07-20",
+  "posted": "2026-07-21",
   "salary": "$161,000.00 - $249,500.00",
   "fit_result": {
    "fit": "no",
@@ -245,7 +320,7 @@
   "title": "Staff Software Engineer | Cloud Platform",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer---Cloud-Platform_JR-025728",
-  "posted": "2026-07-20",
+  "posted": "2026-07-21",
   "salary": "$161,000.00 - $249,500.00",
   "fit_result": {
    "fit": "yes",
@@ -260,7 +335,7 @@
   "title": "Senior Cloud Engineer",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer_JR-025649",
-  "posted": "2026-07-20",
+  "posted": "2026-07-21",
   "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
    "fit": "maybe",
@@ -275,7 +350,7 @@
   "title": "Senior Quality Engineer",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Quality-Engineer---FY27_JR-025667",
-  "posted": "2026-07-20",
+  "posted": "2026-07-21",
   "salary": "$118,900.00 - $178,500.00",
   "fit_result": {
    "fit": "no",
@@ -296,6 +371,36 @@
    "fit": "no",
    "score": 8,
    "reason": "QA/SDET Associate role, wrong function, junior-level comp far below candidate's $190k minimum",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "LVT::5369362008",
+  "company": "LVT",
+  "title": "Quality Engineer",
+  "location": "Spanish Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5369362008",
+  "posted": "2026-07-27",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Manufacturing quality engineer role, unrelated to software engineering; not a functional match.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "LVT::5371739008",
+  "company": "LVT",
+  "title": "Senior DevOps Engineer I",
+  "location": "American Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5371739008",
+  "posted": "2026-07-27",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "DevOps/infra role, not full-stack/frontend engineering; onsite Utah, mismatched with candidate's IC software focus.",
    "bg": "b9f9e4b0db4d"
   }
  }
