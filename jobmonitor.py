@@ -429,10 +429,54 @@ def fetch_snaphop(c):
     return out
 
 
+def _phenom_payload(frm, size):
+    # Minimal refineSearch query the Phenom /widgets endpoint accepts; `from`/`size` page it.
+    return {"lang": "en_us", "deviceType": "desktop", "country": "us",
+            "pageName": "search-results", "ddoKey": "refineSearch", "from": frm, "size": size,
+            "jobs": True, "counts": True, "keywords": "", "global": True, "siteType": "external",
+            "clearAll": False, "jdsource": "facets", "pageId": "page1", "selected_facets": {}}
+
+
+def fetch_phenom(c):
+    # Phenom (phenompeople.com) careersite search API — the front end many large employers put
+    # over their real ATS (Circle's applyUrls are Workday). POST https://{host}/widgets (host
+    # defaults to careers.{domain}) with a paged refineSearch query -> {refineSearch:{totalHits,
+    # data:{jobs:[{jobId,title,cityStateCountry,isMultiLocation,multi_location,applyUrl,
+    # postedDate,descriptionTeaser}]}}}. No auth. Stable id = jobId (req number). GOTCHA: there
+    # is NO "remote" in the location field even for remote roles — remote lives only in the
+    # Workday applyUrl path ("…-remote-first-in-US"), so fold it into the location string so the
+    # US-remote gate keeps it. Config: {ats:"phenom","slug":<logo id>,"domain":<firm domain>
+    # [,"phenom_host":<careers host if not careers.{domain}>]}.
+    host = c.get("phenom_host") or f"careers.{c['domain']}"
+    url = f"https://{host}/widgets"
+    out, frm, size, total = [], 0, 100, None
+    while True:
+        rs = (_post_json(url, _phenom_payload(frm, size)) or {}).get("refineSearch") or {}
+        if total is None:
+            total = rs.get("totalHits", 0)
+        jobs = (rs.get("data") or {}).get("jobs") or []
+        for j in jobs:
+            jid = str(j.get("jobId") or j.get("reqId") or "").strip()
+            if not jid:
+                continue
+            loc = (j.get("cityStateCountry") or j.get("location") or "").strip()
+            if j.get("isMultiLocation") and len(j.get("multi_location") or []) > 1:
+                loc = f"{loc} (+{len(j['multi_location']) - 1} more)"
+            if "remote" in (j.get("applyUrl") or "").lower() and "remote" not in loc.lower():
+                loc = (loc + " (Remote)").strip() if loc else "Remote"
+            out.append(_norm(c, jid, j.get("title", ""), loc, j.get("applyUrl", ""),
+                             (j.get("postedDate") or j.get("dateCreated") or "")[:10],
+                             ats="phenom", description=_clean_html(j.get("descriptionTeaser", ""))))
+        frm += size
+        if frm >= total or not jobs:
+            break
+    return out
+
+
 FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday,
             "ashby": fetch_ashby, "recruitee": fetch_recruitee, "personio": fetch_personio,
-            "aquent": fetch_aquent, "snaphop": fetch_snaphop}
+            "aquent": fetch_aquent, "snaphop": fetch_snaphop, "phenom": fetch_phenom}
 
 
 def _norm(company, ext_id, title, location, url, posted,
