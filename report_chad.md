@@ -4,31 +4,7 @@ _⭐ = posted in the last 1 days_
 
 # 🌎 US-Remote (60)
 ## What's changed
-**New (12)**
-- ⭐ **Render** — [Software Engineer, User Auth Experience](https://jobs.ashbyhq.com/render/8815f772-6895-4383-a9e5-6c7bdc2bf141) · Remote: United States · Posted Jul 27 · 1d ago — **60/100** (maybe)
-   _Remote cloud/dev platform, auth-focused role fits skills but scope/seniority/level unclear from truncated posting._
-- ⭐ **Affirm** — [Senior Software Engineer, Affirm Bank](https://job-boards.greenhouse.io/affirm/jobs/7812982003) · Remote US · Posted Jul 27 · 1d ago — **55/100** (maybe)
-   _Senior IC remote role fits seniority, but fintech/banking backend focus mismatches frontend/React strengths and domain preference._
-- ⭐ **ClickHouse** — [Engineering Lead, Web Platform](https://job-boards.greenhouse.io/clickhouse/jobs/6126897004) · United States (Remote) · Posted Jul 27 · 1d ago — **55/100** (maybe)
-   _Strong technical fit but marketing-website scope, player/coach lead role, narrower than enterprise SaaS/platform focus preferred._
-- ⭐ **Chainguard** — [Software Engineer (Libraries Platform)](https://job-boards.greenhouse.io/chainguard/jobs/4699210006) · United States - Remote · Posted Jul 27 · 1d ago — **30/100** (no)
-   _Backend infra/security platform for package builds—no frontend/React, mismatched domain and skill focus._
-- ⭐ **Deepgram** — [Senior Software Engineer - Model Evaluation & AI Systems](https://jobs.ashbyhq.com/deepgram/6f3d761e-4873-43af-a9b1-daeb147661f9) · USA | Remote · $180K – $240K · Posted Jul 28 · today — **25/100** (no)
-   _ML model evaluation role for voice AI; mismatch with candidate's frontend/full-stack platform engineering background._
-- ⭐ **Docker** — [Staff Software Engineer, Networking (Seattle or SF Bay Area)](https://jobs.ashbyhq.com/docker/57ccbca7-6818-4e34-8f31-bf762e1f4e00) · San Francisco Bay Area (Remote) · Posted Jul 27 · 1d ago — **20/100** (no)
-   _Deep networking/infra/microVM specialization mismatches candidate's frontend-leaning full-stack, React/.NET background._
-- ⭐ **Docker** — [Principal Software Engineer, Networking (Seattle or SF Bay Area)](https://jobs.ashbyhq.com/docker/c7d880eb-4fb5-48db-b325-595cc8a8d017) · San Francisco Bay Area (Remote) · Posted Jul 27 · 1d ago — **15/100** (no)
-   _Deep networking/infra/virtualization role mismatched with candidate's frontend-leaning full-stack and cloud architecture background._
-- ⭐ **Chainguard** — [Security Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4700281006) · United States - Remote · Posted Jul 27 · 1d ago — **12/100** (no)
-   _Early-career security engineering role, not full-stack/frontend principal IC work; mismatched function and seniority._
-- ⭐ **Grafana Labs** — [Solutions Engineer | East or Central US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6127968004) · United States (Remote) · Posted Jul 27 · 1d ago — **10/100** (no)
-   _Sales/customer-facing solutions engineering role, not hands-on IC software engineering; explicit dealbreaker._
-- ⭐ **Affirm** — [Engineering Manager, Machine Learning Platform](https://job-boards.greenhouse.io/affirm/jobs/7817804003) · Remote US · Posted Jul 27 · 1d ago — **10/100** (no)
-   _People management role in ML infra; candidate wants hands-on IC work, not engineering management._
-- ⭐ **Affirm** — [Product Security Engineer II](https://job-boards.greenhouse.io/affirm/jobs/7796534003) · Remote US · Posted Jul 27 · 1d ago — **5/100** (no)
-   _Early-career security engineering role, mismatched seniority and function vs. principal full-stack engineer._
-- ⭐ **ClickHouse** — [Senior Curriculum Developer & Instructor](https://job-boards.greenhouse.io/clickhouse/jobs/6127775004) · United States (Remote) · Posted Jul 27 · 1d ago — **5/100** (no)
-   _Curriculum/instructor role, not hands-on engineering; mismatched function despite good company domain._
+_No new or changed roles since the previous run._
 
 ## All current matching roles (60)
 - **Reddit** — [Senior Frontend Engineer, Ads Creative](https://job-boards.greenhouse.io/reddit/jobs/8082867) · Remote - United States · Posted Jul 23 · 5d ago — **62/100** (maybe)
@@ -155,23 +131,7 @@ _⭐ = posted in the last 1 days_
 
 # 📍 Local — Silicon Slopes (27)
 ## What's changed
-**New (8)**
-- ⭐ **Western Governors University** — [Staff Software Engineer  | Developer Experience](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer---WIS-to-Domestic-_JR-025290) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 28 · today — **78/100** (yes)
-   _Staff-level DevEx role in SLC matches seniority, function, and location; details sparse but strong directional fit._
-- ⭐ **Western Governors University** — [Principal Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025250) · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Jul 28 · today — **60/100** (maybe)
-   _Right title, seniority, and location match, but no details on tech stack, domain, or compensation._
-- ⭐ **Western Governors University** — [Principal Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025248) · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Jul 28 · today — **60/100** (maybe)
-   _Right title/location/seniority, but no description to confirm stack, domain, or compensation fit._
-- ⭐ **Western Governors University** — [Software Engineer II](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025786) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Jul 28 · today — **25/100** (no)
-   _Software Engineer II is too junior for a Principal-level candidate; likely below seniority and comp requirements._
-- ⭐ **LVT** — [Senior DevOps Engineer I](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5371739008) · American Fork, Utah, United States · Posted Jul 27 · 1d ago — **20/100** (no)
-   _DevOps/infra role, not full-stack/frontend engineering; onsite Utah, mismatched with candidate's IC software focus._
-- ⭐ **Western Governors University** — [Staff Software Product Manager](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Product-Manager_JR-025664) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 28 · today — **10/100** (no)
-   _Product management role, not hands-on engineering; mismatched function despite good location._
-- ⭐ **Western Governors University** — [Senior Software Product Manager](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Product-Manager_JR-025614) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 28 · today — **8/100** (no)
-   _Product Manager role, not hands-on engineering; mismatched function despite good location._
-- ⭐ **LVT** — [Quality Engineer](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5369362008) · Spanish Fork, Utah, United States · Posted Jul 27 · 1d ago — **3/100** (no)
-   _Manufacturing quality engineer role, unrelated to software engineering; not a functional match._
+_No new or changed roles since the previous run._
 
 ## All current matching roles (27)
 - **Nomi Health** — [Staff Software Engineer](https://jobs.lever.co/nomihealth/24a9f84e-ebc2-4c41-b8fc-14822f0dc973) · Salt Lake City, Utah · Posted Jul 21 · 7d ago — **78/100** (yes)
@@ -228,20 +188,3 @@ _⭐ = posted in the last 1 days_
    _Regulatory/compliance engineering role for hardware products, unrelated to software engineering background._
 - ⭐ **LVT** — [Quality Engineer](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5369362008) · Spanish Fork, Utah, United States · Posted Jul 27 · 1d ago — **3/100** (no)
    _Manufacturing quality engineer role, unrelated to software engineering; not a functional match._
-
-
-# Removed / filled
-
-## 🌎 US-Remote (9)
-- **Affirm** — Analytics Lead, Full Stack · Remote US · Posted Jul 20 · 8d ago
-- **Affirm** — Staff Software Engineer, Backend (Ledger Engineering) · Remote US · Posted Jul 20 · 8d ago
-- **Baseten** — Forward Deployed Engineer (Training) · San Francisco (Remote) · $165K – $330K · Posted Jul 22 · 6d ago
-- **Coinbase** — Senior Software Engineer, Data Engineering Platform · Remote - USA · Posted Jul 24 · 4d ago
-- **Customer.io** — Senior Fullstack SDK Engineer · Americas Remote · Posted Jul 20 · 8d ago
-- **PostHog** — Developer Marketer · Remote · Posted Jul 20 · 8d ago
-- **Reddit** — Senior Machine Learning Engineer, Safety · Remote - United States · Posted Jul 20 · 8d ago
-- **Sentry** — Senior Software Engineer, Developer Infrastructure · San Francisco, California (Remote) · $190K – $280K · Posted Jul 20 · 8d ago
-- **Stripe** — Software Engineer, Optimized Checkout & Link · US Remote · Posted Jul 20 · 8d ago
-
-## 📍 Local — Silicon Slopes (1)
-- **MX** — Staff Data Engineer · Lehi, Utah, United States · Posted Jul 20 · 8d ago

@@ -4,19 +4,7 @@ _⭐ = posted in the last 1 days_
 
 # 🌎 US-Remote (25)
 ## What's changed
-**New (6)**
-- **Calendly** — [Senior Director, Customer Support](https://job-boards.greenhouse.io/calendly/jobs/8646568002) · Remote · Posted Jul 23 · 5d ago — **48/100** (maybe)
-   _Senior CX leadership fits seniority/function, but pure support-ops role lacks transformation, M&A, or strategy mandate._
-- ⭐ **Ramp** — [Associate Manager | Customer Experience](https://jobs.ashbyhq.com/ramp/2e47b59f-f68f-4266-80ff-eb92c8116f1a) · New York, NY (HQ) (Remote) · $88K – $132K · Posted Jul 27 · 1d ago — **15/100** (no)
-   _Frontline call-center supervisor role; far below Lisa's strategic transformation/CX leadership scope._
-- ⭐ **Render** — [Executive Business Partner (CEO, VP of Finance, VP of People)](https://jobs.ashbyhq.com/render/1fffd796-b589-4cc1-9664-ed1d2c3d9938) · San Francisco HQ (Remote) · Posted Jul 27 · 1d ago — **15/100** (no)
-   _EA/business-partner support role, not a transformation/strategy leadership mandate she targets._
-- ⭐ **Calendly** — [Director, Brand Influence, Advocacy & AI Discovery](https://job-boards.greenhouse.io/calendly/jobs/8652325002) · Remote - US · Posted Jul 27 · 1d ago — **15/100** (no)
-   _Marketing/brand/PR/AI-discovery function mismatch; not transformation, ops, M&A, or org-effectiveness mandate._
-- **Circle** — [Director, Arc - Banking Strategy & GTM](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Business-Development-Director--Arc_JR100755-1/apply) · San Francisco, California, United States of America (Remote) · Posted Jul 21 · 7d ago — **15/100** (no)
-   _Banking/blockchain GTM strategy role, not transformation/ops/M&A/CX mandate; domain mismatch despite Director title._
-- ⭐ **Twilio** — [Senior Global Event Manager, Content Operations & Production](https://job-boards.greenhouse.io/twilio/jobs/8089290) · Remote - US · Posted Jul 27 · 1d ago — **8/100** (no)
-   _Event/content production management—not transformation, strategy, ops, or M&A leadership mandate._
+_No new or changed roles since the previous run._
 
 ## All current matching roles (25)
 - **GitLab** — [AI Transformation Owner, CRO](https://job-boards.greenhouse.io/gitlab/jobs/8638232002) · Remote, United States · Posted Jul 22 · 6d ago — **58/100** (maybe)
@@ -94,27 +82,17 @@ _No new or changed roles since the previous run._
    _Fraud analytics/risk operations IC role, not transformation, M&A, or CX leadership mandate._
 
 
-# 📍 Local — Silicon Slopes (17)
+# 📍 Local — Silicon Slopes (16)
 ## What's changed
-**New (4)**
-- ⭐ **Adobe** — [Senior Manager, Business Process Optimization Program Management](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Manager--Business-Process-Optimization-Program-Management_R170677-1) · Lehi (+2 more) · $173,300 - $250,875 · Posted Jul 28 · today — **72/100** (yes)
-   _Senior Manager scope, business process optimization/program management aligns with operational excellence and transformation focus; Utah location matches._
-- ⭐ **Adobe** — [Manager, Revenue Operations](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Manager--Revenue-Operations_R170491) · Lehi · Posted Jul 28 · today — **45/100** (maybe)
-   _Manager-level ops role fits seniority/location, but Revenue Ops scope and mandate unclear from title alone._
-- ⭐ **Western Governors University** — [Senior Manager, Enterprise Partnerships - Institution Strategy & Ventures](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Enterprise-Partnerships---Institution-Strategy---Ventures_JR-025784-1) · Salt Lake City, UT · $130,600.00 - $235,100.00 · Posted Jul 28 · today — **40/100** (maybe)
-   _Senior Manager scope fits, but partnerships/strategy function only loosely matches transformation/ops/M&A mandate; no description to confirm._
-- ⭐ **Western Governors University** — [Operations Manager - School of Technology](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Operations-Manager---School-of-Technology_JR-025781) · Salt Lake City, UT · $68,300.00 - $102,500.00 · Posted Jul 28 · today — **40/100** (maybe)
-   _Manager-level ops role, right location, but generic title/no description limits confidence in transformation scope._
+_No new or changed roles since the previous run._
 
-## All current matching roles (17)
+## All current matching roles (16)
 - **NICE** — [Director, Business Consulting, VRS, CX](https://boards.eu.greenhouse.io/nice/jobs/4934090101?gh_jid=4934090101) · USA - Remote · Posted Jul 22 · 6d ago — **78/100** (yes)
    _Director-level consulting leadership, customer value realization, CX/AI-driven transformation, revenue/margin/utilization ownership—strong mandate match._
 - ⭐ **Adobe** — [Senior Manager, Business Process Optimization Program Management](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Manager--Business-Process-Optimization-Program-Management_R170677-1) · Lehi (+2 more) · $173,300 - $250,875 · Posted Jul 28 · today — **72/100** (yes)
    _Senior Manager scope, business process optimization/program management aligns with operational excellence and transformation focus; Utah location matches._
 - **Health Catalyst** — [Strategic Business Manager- Office of the CEO](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Strategic-Business-Manager--Office-of-the-CEO_REQ-3273) · US Remote · Posted Jul 22 · 6d ago — **55/100** (maybe)
    _Chief-of-staff-style strategy role fits mandate, but no description detail to confirm scope/seniority._
-- **Western Governors University** — [Project Manager IV, Transformation](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721) · Salt Lake City, UT · $109,900.00 - $170,400.00 · Posted Jul 25 · 3d ago — **55/100** (maybe)
-   _Transformation PM IV in target location, but title suggests IC/PM scope below Lisa's leadership mandate; no description to confirm._
 - ⭐ **Adobe** — [Manager, Revenue Operations](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Manager--Revenue-Operations_R170491) · Lehi · Posted Jul 28 · today — **45/100** (maybe)
    _Manager-level ops role fits seniority/location, but Revenue Ops scope and mandate unclear from title alone._
 - **Health Catalyst** — [Implementation Manager](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Implementation-Manager_REQ-3267) · US Remote · Posted Jul 24 · 4d ago — **40/100** (maybe)
@@ -145,14 +123,5 @@ _No new or changed roles since the previous run._
 
 # Removed / filled
 
-## 🌎 US-Remote (6)
-- **1Password** — Manager, Quality Assurance, Customer Support · Remote (United States | Canada) · Posted Jul 20 · 8d ago
-- **GitLab** — Enablement Content Manager · Remote, United States · Posted Jul 20 · 8d ago
-- **GitLab** — Renewals Manager Germany · Remote · Posted Jul 20 · 8d ago
-- **Instacart** — Manager, IT Operations · San Francisco, Bay Area - Remote · Posted Jul 20 · 8d ago
-- **Stripe** — Strategy and Operations Lead, Deal Pricing · New York City, Washington DC, Remote · Posted Jul 20 · 8d ago
-- **Twilio** — Global Event Manager, Event Content and Speaker Operations · Remote - US · Posted Jul 22 · 6d ago
-
-## 📍 Local — Silicon Slopes (2)
-- **LVT** — Enterprise Customer Success Manager · American Fork, Utah, United States · Posted Jul 20 · 8d ago
-- **Podium** — Senior Manager, Customer Success - Automotive AI · Remote, US · Posted Jul 20 · 8d ago
+## 📍 Local — Silicon Slopes (1)
+- **Western Governors University** — Project Manager IV, Transformation · Salt Lake City, UT · $109,900.00 - $170,400.00 · Posted Jul 25 · 3d ago
