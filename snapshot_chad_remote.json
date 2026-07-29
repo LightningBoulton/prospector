@@ -45,21 +45,6 @@
   }
  },
  {
-  "key": "GitLab::8637549002",
-  "company": "GitLab",
-  "title": "Senior Software Security Engineer",
-  "location": "Bangalore, India; Remote, Canada; Remote, Israel; Remote, United Kingdom; Remote, United States",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8637549002",
-  "posted": "2026-07-21",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Ruby/Rails security engineering role; mismatches candidate's React/.NET stack and non-security domain focus.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "GitLab::8638295002",
   "company": "GitLab",
   "title": "Staff Engineer, People Technology",
@@ -105,6 +90,21 @@
   }
  },
  {
+  "key": "Cloudflare::8093023",
+  "company": "Cloudflare",
+  "title": "Senior Customer Engineer - Vancouver, BC",
+  "location": "Distributed",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8093023?gh_jid=8093023",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Customer-facing sales engineering role, not hands-on IC software engineering; dealbreaker match.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Cloudflare::8082834",
   "company": "Cloudflare",
   "title": "Senior Strategic Customer Engineer, Named - Charlotte, NC",
@@ -120,21 +120,6 @@
   }
  },
  {
-  "key": "Coinbase::8051871",
-  "company": "Coinbase",
-  "title": "Senior Software Engineer, Backend - Platform (Core AI Automation)",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8051871?gh_jid=8051871",
-  "posted": "2026-07-21",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 30,
-   "reason": "Backend Python/Golang AI infra role; mismatches candidate's React/.NET frontend-leaning full-stack expertise and tech stack.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Coinbase::8064873",
   "company": "Coinbase",
   "title": "Senior Software Engineer, Data Layer",
@@ -146,6 +131,21 @@
    "fit": "maybe",
    "score": 58,
    "reason": "Backend API/platform DevEx role fits skills, but crypto domain and senior (not principal) title lower alignment.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Coinbase::8088201",
+  "company": "Coinbase",
+  "title": "Senior Software Engineer - Frontend - Coinbase Card team",
+  "location": "Remote - USA",
+  "url": "https://www.coinbase.com/careers/positions/8088201?gh_jid=8088201",
+  "posted": "2026-07-28",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 55,
+   "reason": "Frontend React fit but crypto/fintech domain, React Native mobile focus, senior not principal-level scope.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -180,21 +180,6 @@
   }
  },
  {
-  "key": "Reddit::8082867",
-  "company": "Reddit",
-  "title": "Senior Frontend Engineer, Ads Creative",
-  "location": "Remote - United States",
-  "url": "https://job-boards.greenhouse.io/reddit/jobs/8082867",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 62,
-   "reason": "Strong React/TS senior IC match, but ads-domain and title level below Principal target.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Reddit::8084032",
   "company": "Reddit",
   "title": "Senior Machine Learning Engineer, ML Efficiency",
@@ -210,47 +195,32 @@
   }
  },
  {
-  "key": "Twilio::8069243",
-  "company": "Twilio",
-  "title": "Principal Product Manager, Enterprise Commerce Platform",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8069243",
-  "posted": "2026-07-21",
+  "key": "Reddit::8082867",
+  "company": "Reddit",
+  "title": "Staff Frontend Engineer, Ads Creative",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8082867",
+  "posted": "2026-07-23",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 5,
-   "reason": "Product management role, not engineering; dealbreaker per candidate's IC engineering focus.",
+   "fit": "maybe",
+   "score": 62,
+   "reason": "Strong React/TS senior IC match, but ads-domain and title level below Principal target.",
    "bg": "b9f9e4b0db4d"
   }
  },
  {
-  "key": "Twilio::8081530",
+  "key": "Twilio::8044650",
   "company": "Twilio",
-  "title": "Principal Software Engineer",
+  "title": "Senior Analytics Engineer",
   "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8081530",
-  "posted": "2026-07-27",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8044650",
+  "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
    "fit": "no",
-   "score": 10,
-   "reason": "Template placeholder posting with no real details\u2014cannot assess actual role, scope, or mandate.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Twilio::8065028",
-  "company": "Twilio",
-  "title": "Senior Software Engineer",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8065028",
-  "posted": "2026-07-21",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "Template posting with no real content\u2014no verifiable role details, seniority, or domain match.",
+   "score": 12,
+   "reason": "Analytics engineering/data pipeline role, not full-stack/frontend or platform engineering fit.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -285,21 +255,6 @@
   }
  },
  {
-  "key": "Twilio::8076802",
-  "company": "Twilio",
-  "title": "Staff, Business Intelligence Engineer",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8076802",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "BI/analytics data role, not software engineering; mismatch with frontend/full-stack architecture background.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Twilio::8074762",
   "company": "Twilio",
   "title": "Staff, Business Intelligence Engineer",
@@ -315,17 +270,17 @@
   }
  },
  {
-  "key": "Twilio::8065043",
+  "key": "Twilio::8076802",
   "company": "Twilio",
-  "title": "Staff Software Engineer",
+  "title": "Staff, Business Intelligence Engineer",
   "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8065043",
-  "posted": "2026-07-21",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8076802",
+  "posted": "2026-07-22",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 40,
-   "reason": "Staff SWE remote matches seniority, but posting is a template with no real content to assess fit.",
+   "fit": "no",
+   "score": 10,
+   "reason": "BI/analytics data role, not software engineering; mismatch with frontend/full-stack architecture background.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -495,17 +450,47 @@
   }
  },
  {
-  "key": "Vanta::c752a8a1-5832-4d2a-a8c5-8b8308d6a7e2",
-  "company": "Vanta",
-  "title": "Staff Software Engineer, GRC",
-  "location": "Remote U.S.",
-  "url": "https://jobs.ashbyhq.com/vanta/c752a8a1-5832-4d2a-a8c5-8b8308d6a7e2",
-  "posted": "2026-07-21",
-  "salary": "$260K \u2013 $306K",
+  "key": "Buffer::1ee8b707-48a0-40cc-a319-3fb7c665a1e8",
+  "company": "Buffer",
+  "title": "Senior Infrastructure Engineer",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/buffer/1ee8b707-48a0-40cc-a319-3fb7c665a1e8",
+  "posted": "2026-07-28",
+  "salary": "$164,595 \u2013 $212,744",
   "fit_result": {
    "fit": "maybe",
-   "score": 60,
-   "reason": "Staff IC fits seniority/full-stack, but GRC/compliance domain and enterprise B2B security differ from candidate's frontend/platform focus.",
+   "score": 45,
+   "reason": "Infra/platform role, not frontend-leaning full-stack; unclear stack fit, likely lower comp than target.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Ramp::b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
+  "company": "Ramp",
+  "title": "Software Engineer, Forward Deployed AI",
+  "location": "New York, NY (HQ) (Remote)",
+  "url": "https://jobs.ashbyhq.com/ramp/b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
+  "posted": "2026-07-28",
+  "salary": "$189K \u2013 $330K",
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Client-facing forward-deployed AI role, not core full-stack/frontend engineering; mismatch with hands-on IC preference.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Ramp::dbc6e470-3ec3-4605-b511-8ae166fea7b9",
+  "company": "Ramp",
+  "title": "Software Engineer, GTM Platform",
+  "location": "San Francisco, CA (Remote)",
+  "url": "https://jobs.ashbyhq.com/ramp/dbc6e470-3ec3-4605-b511-8ae166fea7b9",
+  "posted": "2026-07-29",
+  "salary": "$189K \u2013 $330K",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 48,
+   "reason": "Full-stack SaaS fit but GTM/sales-tooling focus, not core platform/infra work candidate prefers.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -527,7 +512,7 @@
  {
   "key": "Render::8815f772-6895-4383-a9e5-6c7bdc2bf141",
   "company": "Render",
-  "title": "Software Engineer, User Auth Experience",
+  "title": "Software Engineer, Agent Auth Experience",
   "location": "Remote: United States",
   "url": "https://jobs.ashbyhq.com/render/8815f772-6895-4383-a9e5-6c7bdc2bf141",
   "posted": "2026-07-27",
@@ -536,6 +521,21 @@
    "fit": "maybe",
    "score": 60,
    "reason": "Remote cloud/dev platform, auth-focused role fits skills but scope/seniority/level unclear from truncated posting.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Stripe::7811937",
+  "company": "Stripe",
+  "title": "Risk Strategist, Platform Risk Strategy",
+  "location": "Chicago, US-Remote, Toronto",
+  "url": "https://stripe.com/jobs/search?gh_jid=7811937",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Risk strategy/policy role, not software engineering; no technical hands-on coding mandate.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -555,6 +555,21 @@
   }
  },
  {
+  "key": "Instacart::8091191",
+  "company": "Instacart",
+  "title": "Senior Risk & Compliance Engineer - Data",
+  "location": "United States - Remote",
+  "url": "https://instacart.careers/job/?gh_jid=8091191",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Security/risk/compliance data engineering, not frontend/full-stack SaaS work matching Chad's background.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Instacart::8080310",
   "company": "Instacart",
   "title": "Staff Software Engineer, Bazel & Go",
@@ -566,36 +581,6 @@
    "fit": "no",
    "score": 20,
    "reason": "Bazel/Go build infrastructure focus mismatches candidate's React/.NET/frontend-leaning full-stack expertise.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Fivetran::7791958003",
-  "company": "Fivetran",
-  "title": "Senior Staff Software Engineer",
-  "location": "Remote, New York, United States, AMER",
-  "url": "https://www.fivetran.com/careers/job?gh_jid=7791958003",
-  "posted": "2026-07-21",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Senior IC data infra role fits seniority, but backend/data-semantic focus mismatches frontend/React-leaning background.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Hightouch::6122160004",
-  "company": "Hightouch",
-  "title": "Forward Deployed Analytics Engineer",
-  "location": "Remote (North America)",
-  "url": "https://job-boards.greenhouse.io/hightouch/jobs/6122160004",
-  "posted": "2026-07-21",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 12,
-   "reason": "Forward-deployed analytics/SQL role, customer-facing, not full-stack/frontend engineering leadership Chad targets.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -615,32 +600,17 @@
   }
  },
  {
-  "key": "1Password::fb0f0d1d-5655-4c54-b4e7-e985c475dc9e",
+  "key": "1Password::c22ea4e6-f39b-448c-a9e9-a04445ba18e6",
   "company": "1Password",
-  "title": ".Net Developer, SaaS Manager",
+  "title": "Developer, Open Source",
   "location": "Remote (United States | Canada)",
-  "url": "https://jobs.ashbyhq.com/1password/fb0f0d1d-5655-4c54-b4e7-e985c475dc9e",
-  "posted": "2026-07-21",
+  "url": "https://jobs.ashbyhq.com/1password/c22ea4e6-f39b-448c-a9e9-a04445ba18e6",
+  "posted": "2026-07-29",
   "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 62,
-   "reason": ".NET backend role at strong SaaS company, but title suggests less frontend/React focus than candidate prefers.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Confluent::47920ccd-db54-4ed4-a865-70857e865fff",
-  "company": "Confluent",
-  "title": "Distributed Systems Software Engineer - WarpStream",
-  "location": "Remote, United States",
-  "url": "https://jobs.ashbyhq.com/confluent/47920ccd-db54-4ed4-a865-70857e865fff",
-  "posted": "2026-07-21",
-  "salary": "$197.4K \u2013 $271.2K",
   "fit_result": {
    "fit": "no",
    "score": 25,
-   "reason": "Deep distributed systems/Go/storage engine role, not frontend-leaning full-stack; mismatched core expertise despite remote/SaaS fit.",
+   "reason": "Intermediate-level open source/IDE plugin role, below Principal seniority and outside frontend/backend architecture focus.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -735,6 +705,21 @@
   }
  },
  {
+  "key": "LaunchDarkly::7819879003",
+  "company": "LaunchDarkly",
+  "title": "Developer Advocate, Growth",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/7819879003",
+  "posted": "2026-07-28",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Developer advocacy/growth role, not hands-on engineering; mismatches candidate's IC engineering focus.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "ClickHouse::6126897004",
   "company": "ClickHouse",
   "title": "Engineering Lead, Web Platform",
@@ -795,6 +780,21 @@
   }
  },
  {
+  "key": "Chainguard::4700287006",
+  "company": "Chainguard",
+  "title": "Senior Security Engineer (Cloud)",
+  "location": "United States - Remote",
+  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700287006",
+  "posted": "2026-07-28",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 15,
+   "reason": "Security engineering role, not full-stack/frontend software engineering\u2014mismatched function despite cloud overlap.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Chainguard::4699416006",
   "company": "Chainguard",
   "title": "Senior Software Engineer, Developer Platform",
@@ -840,62 +840,17 @@
   }
  },
  {
-  "key": "Gemini::8076817",
-  "company": "Gemini",
-  "title": "Senior Analytics Engineer",
-  "location": "New York, New York; Miami, Florida; Remote (USA)",
-  "url": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=8076817&gh_jid=8076817",
-  "posted": "2026-07-21",
-  "salary": null,
+  "key": "Deepgram::17f95148-fa1c-4c34-82c8-333589bef789",
+  "company": "Deepgram",
+  "title": "Staff Product Manager, Agentic Experiences (Former Engineer)",
+  "location": "USA | Remote",
+  "url": "https://jobs.ashbyhq.com/deepgram/17f95148-fa1c-4c34-82c8-333589bef789",
+  "posted": "2026-07-29",
+  "salary": "$200K \u2013 $268K",
   "fit_result": {
    "fit": "no",
-   "score": 10,
-   "reason": "Analytics engineering/data modeling role, not full-stack/frontend software engineering; poor functional match.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Gemini::8076827",
-  "company": "Gemini",
-  "title": "Senior Data Engineer",
-  "location": "New York, New York; Miami, Florida; Remote (USA)",
-  "url": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=8076827&gh_jid=8076827",
-  "posted": "2026-07-21",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Data engineering role, not full-stack/frontend; crypto domain mismatch with candidate's SaaS/platform focus.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Gemini::8074982",
-  "company": "Gemini",
-  "title": "Senior Manager, Platform Security",
-  "location": "New York, New York; Miami, Florida; Remote (USA)",
-  "url": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=8074982&gh_jid=8074982",
-  "posted": "2026-07-21",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "Security management leadership role, not hands-on full-stack engineering; wrong function and domain.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Gemini::8074978",
-  "company": "Gemini",
-  "title": "Staff Application Security Engineer",
-  "location": "New York, New York; Miami, Florida; Remote (USA)",
-  "url": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=8074978&gh_jid=8074978",
-  "posted": "2026-07-21",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "AppSec security specialist role, not aligned with candidate's full-stack/frontend engineering background.",
+   "score": 8,
+   "reason": "Product Manager role, not engineering IC; dealbreaker per candidate's hands-on engineering requirement.",
    "bg": "b9f9e4b0db4d"
   }
  },

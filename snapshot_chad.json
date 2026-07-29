@@ -1,5 +1,20 @@
 [
  {
+  "key": "Cricut::744000140495670",
+  "company": "Cricut",
+  "title": "Product Quality Engineer \u2013 Materials",
+  "location": "South Jordan, UT, United States",
+  "url": "https://jobs.smartrecruiters.com/cricut/744000140495670",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 3,
+   "reason": "Product quality/materials engineering role, unrelated to software engineering; mismatched function entirely.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Cricut::744000139368229",
   "company": "Cricut",
   "title": "Staff AI-Native Software Engineer",
@@ -30,32 +45,32 @@
   }
  },
  {
-  "key": "Podium::8077450",
-  "company": "Podium",
-  "title": "Senior Software Engineer \u2013 VoIP",
-  "location": "Lehi, Utah, Open to Remote",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/8077450",
-  "posted": "2026-07-21",
+  "key": "BILL::6128903004",
+  "company": "BILL",
+  "title": "Senior Lead Product Manager - Decisioning Platform",
+  "location": "Draper, Utah, United States; San Jose, California, United States",
+  "url": "https://www.bill.com/job?6128903004&gh_jid=6128903004",
+  "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Senior IC fit and remote-ok, but VoIP telephony domain niche, unclear frontend/React alignment, title below Principal.",
+   "fit": "no",
+   "score": 5,
+   "reason": "Product Manager role, not engineering; mismatched function despite fintech domain relevance.",
    "bg": "b9f9e4b0db4d"
   }
  },
  {
-  "key": "Canopy::4327563009",
-  "company": "Canopy",
-  "title": "Application Security Engineer",
-  "location": "South Jordan Utah",
-  "url": "https://job-boards.greenhouse.io/canopytax/jobs/4327563009",
-  "posted": "2026-07-21",
+  "key": "Adobe::R170420",
+  "company": "Adobe",
+  "title": "Sr Data Solution Engineer",
+  "location": "Lehi",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Sr-Data-Solution-Engineer_R170420",
+  "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Application security specialist role, not full-stack/frontend engineering; mismatch with candidate's core expertise.",
+   "fit": "maybe",
+   "score": 35,
+   "reason": "Data solution engineering unclear scope; not core frontend/full-stack fit, lacks description detail.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -75,6 +90,21 @@
   }
  },
  {
+  "key": "BambooHR::6127677004",
+  "company": "BambooHR",
+  "title": "Sr. Product Manager, Core Data Platform",
+  "location": "Utah | Hybrid",
+  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6127677004",
+  "posted": "2026-07-28",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Product Manager role, not engineering IC; mismatched function despite Utah location and data platform domain.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Traeger::8081544",
   "company": "Traeger",
   "title": "Product Compliance Engineer",
@@ -90,32 +120,32 @@
   }
  },
  {
-  "key": "Nomi Health::24a9f84e-ebc2-4c41-b8fc-14822f0dc973",
-  "company": "Nomi Health",
-  "title": "Staff Software Engineer",
-  "location": "Salt Lake City, Utah",
-  "url": "https://jobs.lever.co/nomihealth/24a9f84e-ebc2-4c41-b8fc-14822f0dc973",
-  "posted": "2026-07-21",
+  "key": "NICE::4940224101",
+  "company": "NICE",
+  "title": "Professional Services Engineer",
+  "location": "USA - Sandy, UT",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4940224101?gh_jid=4940224101",
+  "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
-   "fit": "yes",
-   "score": 78,
-   "reason": "Staff IC role in SLC, React/TypeScript/AWS match, technical leadership, though Go and healthcare domain are new.",
+   "fit": "no",
+   "score": 8,
+   "reason": "Professional services/implementation role, not senior SWE; mismatched seniority, function, and dealbreaker (customer support).",
    "bg": "b9f9e4b0db4d"
   }
  },
  {
-  "key": "Western Governors University::JR-025786",
+  "key": "Western Governors University::JR-025703",
   "company": "Western Governors University",
-  "title": "Software Engineer II",
+  "title": "Senior Cloud Engineer (IAM)",
   "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025786",
-  "posted": "2026-07-27",
-  "salary": "$118,900.00 - $178,500.00",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer--IAM-_JR-025703",
+  "posted": "2026-07-28",
+  "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Software Engineer II is too junior for a Principal-level candidate; likely below seniority and comp requirements.",
+   "fit": "maybe",
+   "score": 40,
+   "reason": "IAM/cloud engineering is narrower than full-stack profile; location fits, but role focus and seniority unclear.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -195,36 +225,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025776",
-  "company": "Western Governors University",
-  "title": "Software Engineer II - Infrastructure & Operations",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025776-1",
-  "posted": "2026-07-24",
-  "salary": "$118,900.00 - $178,500.00",
-  "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Software Engineer II is too junior for Principal-level candidate; likely below seniority and comp target.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Western Governors University::JR-025775",
-  "company": "Western Governors University",
-  "title": "Software Engineer II - Infrastructure & Operations",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025775",
-  "posted": "2026-07-24",
-  "salary": "$118,900.00 - $178,500.00",
-  "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Software Engineer II is too junior for Principal-level candidate; likely mismatched seniority and scope.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Western Governors University::JR-025654",
   "company": "Western Governors University",
   "title": "Senior Cloud Engineer",
@@ -285,17 +285,17 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025048",
-  "company": "Western Governors University",
-  "title": "Staff Software Engineer- Full-Stack Python and React",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048",
-  "posted": "2026-07-23",
-  "salary": "$161,000.00 - $249,500.00",
+  "key": "O.C. Tanner::JR26-205",
+  "company": "O.C. Tanner",
+  "title": "Sr. Site Reliability Engineer",
+  "location": "USA - Utah-Salt Lake City-Headquarters",
+  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Sr-Site-Reliability-Engineer_JR26-205",
+  "posted": "2026-07-28",
+  "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 62,
-   "reason": "Staff full-stack fits seniority/location, but Python stack differs from .NET/React background; limited details.",
+   "fit": "no",
+   "score": 25,
+   "reason": "SRE role mismatches full-stack/frontend background; no description to confirm modernization or leadership scope.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -311,6 +311,21 @@
    "fit": "no",
    "score": 8,
    "reason": "QA/SDET Associate role, wrong function, junior-level comp far below candidate's $190k minimum",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "LVT::5367884008",
+  "company": "LVT",
+  "title": "Fullstack Software Engineer II",
+  "location": "American Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5367884008",
+  "posted": "2026-07-28",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 20,
+   "reason": "Engineer II is too junior for Principal-level candidate; seniority mismatch despite decent tech/domain fit.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -341,6 +356,21 @@
    "fit": "no",
    "score": 20,
    "reason": "DevOps/infra role, not full-stack/frontend engineering; onsite Utah, mismatched with candidate's IC software focus.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "LVT::5368027008",
+  "company": "LVT",
+  "title": "Senior Fullstack Software Engineer",
+  "location": "American Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5368027008",
+  "posted": "2026-07-28",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 62,
+   "reason": "Senior fullstack React role fits skills; onsite American Fork, GraphQL/IoT domain differs from SaaS/enterprise focus.",
    "bg": "b9f9e4b0db4d"
   }
  }
