@@ -1,20 +1,5 @@
 [
  {
-  "key": "Podium::8080202",
-  "company": "Podium",
-  "title": "Associate Manager, Onboarding",
-  "location": "Lehi, Utah",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/8080202",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Junior front-line onboarding team lead role; below seniority target and lacks transformation/strategy mandate.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
   "key": "Adobe::R170491",
   "company": "Adobe",
   "title": "Manager, Revenue Operations",
@@ -75,6 +60,21 @@
   }
  },
  {
+  "key": "Health Catalyst::REQ-3278",
+  "company": "Health Catalyst",
+  "title": "Senior Manager, Customer Engagement Program",
+  "location": "US Remote",
+  "url": "https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Senior-Manager--Customer-Engagement-Program_REQ-3278",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 50,
+   "reason": "Senior Manager customer program fits function/seniority, but no mandate details to confirm transformation scope.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
   "key": "Health Catalyst::REQ-3250",
   "company": "Health Catalyst",
   "title": "SVP Manager, Client Account Management",
@@ -101,36 +101,6 @@
    "fit": "maybe",
    "score": 40,
    "reason": "Manager-level with possible implementation/PM scope, but no description confirms transformation, operations, or strategic mandate.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
-  "key": "NICE::4934090101",
-  "company": "NICE",
-  "title": "Director, Business Consulting, VRS, CX",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4934090101?gh_jid=4934090101",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "yes",
-   "score": 78,
-   "reason": "Director-level consulting leadership, customer value realization, CX/AI-driven transformation, revenue/margin/utilization ownership\u2014strong mandate match.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
-  "key": "NICE::4934132101",
-  "company": "NICE",
-  "title": "Lead Client Services Project Manager, CX",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4934132101?gh_jid=4934132101",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 22,
-   "reason": "Individual project/program delivery role, client services PM\u2014not a transformation, strategy, or org-leadership mandate.",
    "bg": "e375d8ec09f3"
   }
  },
@@ -236,6 +206,36 @@
    "fit": "maybe",
    "score": 40,
    "reason": "Manager-level leadership, but lifecycle engagement seems narrower marketing/CX role, unclear transformation mandate.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "O.C. Tanner::JR26-220",
+  "company": "O.C. Tanner",
+  "title": "Client Success Manager",
+  "location": "USA - Utah-Salt Lake City-Headquarters",
+  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Client-Success-Manager_JR26-220",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 35,
+   "reason": "Manager-level, customer-facing, Utah location fits, but title suggests account management, not transformation/strategy mandate.",
+   "bg": "e375d8ec09f3"
+  }
+ },
+ {
+  "key": "O.C. Tanner::JR26-225",
+  "company": "O.C. Tanner",
+  "title": "Client Success Data & Integrations Manager",
+  "location": "USA - Utah-Salt Lake City-Headquarters",
+  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Client-Success-Data---Integrations-Manager_JR26-225",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 35,
+   "reason": "Manager title, Utah-based, but 'Data & Integrations' suggests technical/operational scope, not transformation leadership mandate.",
    "bg": "e375d8ec09f3"
   }
  },

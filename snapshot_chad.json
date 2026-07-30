@@ -1,5 +1,20 @@
 [
  {
+  "key": "DigiCert::8624428002",
+  "company": "DigiCert",
+  "title": "Senior Infrastructure Engineer",
+  "location": "Lehi",
+  "url": "https://www.digicert.com/careers/?gh_jid=8624428002",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 8,
+   "reason": "Datacenter infra/hypervisor/storage ops role, not software engineering; mismatches candidate's frontend/full-stack focus.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
   "key": "Cricut::744000140495670",
   "company": "Cricut",
   "title": "Product Quality Engineer \u2013 Materials",
@@ -26,21 +41,6 @@
    "fit": "maybe",
    "score": 60,
    "reason": "Staff-level, local to SLC area, AI-native angle intriguing, but no details on stack, comp, or scope.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Cricut::744000139160279",
-  "company": "Cricut",
-  "title": "Firmware Test Engineer",
-  "location": "South Jordan, UT, United States",
-  "url": "https://jobs.smartrecruiters.com/cricut/744000139160279",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 5,
-   "reason": "Firmware testing is unrelated to candidate's full-stack/frontend/cloud engineering background and seniority target.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -131,6 +131,51 @@
    "fit": "no",
    "score": 8,
    "reason": "Professional services/implementation role, not senior SWE; mismatched seniority, function, and dealbreaker (customer support).",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025286",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025286",
+  "posted": "2026-07-29",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 50,
+   "reason": "Senior title fits location, but no description to confirm domain, stack, or seniority match.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025312",
+  "company": "Western Governors University",
+  "title": "Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer--WIS-to-Domestic-_JR-025312",
+  "posted": "2026-07-29",
+  "salary": "$98,300.00 - $147,400.00",
+  "fit_result": {
+   "fit": "maybe",
+   "score": 40,
+   "reason": "Location matches, but generic title suggests possibly junior role; no domain/seniority detail to confirm fit.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025513",
+  "company": "Western Governors University",
+  "title": "Associate Software Product Manager",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Product-Manager_JR-025513",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "no",
+   "score": 5,
+   "reason": "Associate PM role is junior, non-engineering, mismatched seniority and function for a Principal Engineer.",
    "bg": "b9f9e4b0db4d"
   }
  },
@@ -371,6 +416,21 @@
    "fit": "maybe",
    "score": 62,
    "reason": "Senior fullstack React role fits skills; onsite American Fork, GraphQL/IoT domain differs from SaaS/enterprise focus.",
+   "bg": "b9f9e4b0db4d"
+  }
+ },
+ {
+  "key": "LVT::5372856008",
+  "company": "LVT",
+  "title": "Senior Software Engineer II - Backend",
+  "location": "American Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5372856008",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "fit": "maybe",
+   "score": 58,
+   "reason": "Senior backend IC fits skills/location, but title level below Principal and backend-only, unclear pay/frontend scope.",
    "bg": "b9f9e4b0db4d"
   }
  }
