@@ -108,6 +108,19 @@ OR within). Matching uses `\bterm\b` regex — **word-boundary aware on purpose*
 tokens (`coo`, `vp`, `cco`) don't match inside longer words (`coordinator`, `account`).
 Preserve the word-boundary behavior. Empty `match_groups` = keep all local roles.
 
+`dedupe_same_title` (optional, per profile; Lisa only) collapses one-req-per-city duplicates
+via `dedupe_same_role` BEFORE scoring — employers open a separate requisition per location for
+a single opening (Angi posts one "Manager, Retail Partnerships" four times), so without this
+the email shows N identical cards and we pay to score each. Keeps the earliest-posted copy.
+**Chad deliberately does NOT use it**: two genuinely different "Software Engineer" openings
+legitimately share a title.
+
+Leveled IC tracks are excluded by WORD ORDER, which is worth understanding before editing
+`exclude_any`: `"customer success manager"` drops the IC ladder (Customer Success Manager
+II/III/V, Enterprise CSM, Strategic CSM) while KEEPING "Sr. Manager, Customer Success",
+"Director, Customer Success" and "Head of Customer Success", because leadership titles put the
+seniority word first. Found by probing Samsara, which alone would have added ~8 IC CSM roles.
+
 `mandate_rescue` (optional, per profile; Lisa only) gives a SECOND chance to a role whose
 title misses the groups: kept if the title still reads as leadership (`require_title_any`)
 AND its **description** names >= `min_hits` distinct `terms`. Exclusions are checked FIRST, so
@@ -186,6 +199,14 @@ probed (Robert Half, Randstad, Mondo, Beacon Hill, Kforce, Vaco, Judge, Collaber
 iCIMS = corporate-hiring only) stay deferred. **To add a firm: probe `careers.<domain>/feeds/jobs.atom`
 (SnapHop) and `<domain>/feeds/jobs.{xml,rss}` first — only a real job feed is a clean tier-1 add;
 otherwise it needs brittle tier-2 HTML scraping and probably isn't worth it.**
+
+**Third sweep (2026-07-31), 22 more firms, ZERO feeds found** — Signature Consultants, Apex
+Systems, Yoh, Modis, Experis, Hays, Michael Page, Robert Walters, Korn Ferry, Heidrick &
+Struggles, Solomon Page, Atrium, CyberCoders, Talently, Bolt Staffing, Cella, Career Profiles,
+Mondo, Hired by Matrix, Sparks Group, Robert Half/Creative Group, Nesco Resource. Running
+total across three sweeps: **3 feeds out of ~59 firms probed.** Treat the contract lane as
+EFFECTIVELY CAPPED at its current 3 firms unless a new SnapHop-style shared vendor appears —
+do not spend another session probing staffing firms one by one.
 
 ## Location + age gates
 

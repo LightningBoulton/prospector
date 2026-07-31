@@ -1,76 +1,509 @@
 {
-  "_comment": "Registry for the US-remote search lane (see DESIGN-remote.md). Same entry shape as companies.json. These are remote-friendly employers on tier-1 ATSes; each was VERIFIED to return live US-remote roles before adding (do not guess slugs). The remote lane reads THIS file (not companies.json), applies a US-remote gate instead of the local gate, and runs each profile with remote_search:true. Grow this list over time; the daily job never fetches logos (fetch_logos.py reads this file too).",
+  "_comment": "Registry for the US-remote search lane (see DESIGN-remote.md). Same entry shape as companies.json. These are remote-friendly employers on tier-1 ATSes; each was VERIFIED to return live US-remote roles before adding (do not guess slugs). The remote lane reads THIS file (not companies.json), applies a US-remote gate instead of the local gate, and runs each profile with remote_search:true. Grow this list over time; the daily job never fetches logos (fetch_logos.py reads this file too). EXPANSION 2026-07-31: added employer classes that actually staff transformation / operations / CX / PMO / professional-services leadership (healthcare & benefits, enterprise SaaS, ops-heavy marketplaces) rather than more developer-tools companies. Diagnosis that prompted it: 50 of the original 71 entries produced ZERO roles for Lisa, because a dev-tools company employs engineers, not Directors of Transformation. Each new entry was verified to return live US-remote roles matching her profile AFTER the IC-title exclusions and same-role dedup were in place.",
   "companies": [
-    { "name": "GitLab",       "ats": "greenhouse", "slug": "gitlab",      "domain": "gitlab.com" },
-    { "name": "Cloudflare",   "ats": "greenhouse", "slug": "cloudflare",  "domain": "cloudflare.com" },
-    { "name": "Coinbase",     "ats": "greenhouse", "slug": "coinbase",    "domain": "coinbase.com" },
-    { "name": "Reddit",       "ats": "greenhouse", "slug": "reddit",      "domain": "reddit.com" },
-    { "name": "Datadog",      "ats": "greenhouse", "slug": "datadog",     "domain": "datadoghq.com" },
-    { "name": "Airtable",     "ats": "greenhouse", "slug": "airtable",    "domain": "airtable.com" },
-    { "name": "Twilio",       "ats": "greenhouse", "slug": "twilio",      "domain": "twilio.com" },
-    { "name": "Vercel",       "ats": "greenhouse", "slug": "vercel",      "domain": "vercel.com" },
-    { "name": "Grafana Labs", "ats": "greenhouse", "slug": "grafanalabs", "domain": "grafana.com" },
-    { "name": "Postman",      "ats": "greenhouse", "slug": "postman",     "domain": "postman.com" },
-    { "name": "Webflow",      "ats": "greenhouse", "slug": "webflow",     "domain": "webflow.com" },
-    { "name": "Mercury",      "ats": "greenhouse", "slug": "mercury",     "domain": "mercury.com" },
-    { "name": "Netlify",      "ats": "greenhouse", "slug": "netlify",     "domain": "netlify.com" },
-    { "name": "Doximity",     "ats": "greenhouse", "slug": "doximity",    "domain": "doximity.com" },
-    { "name": "Gusto",        "ats": "greenhouse", "slug": "gusto",       "domain": "gusto.com" },
-    { "name": "Affirm",       "ats": "greenhouse", "slug": "affirm",      "domain": "affirm.com" },
-    { "name": "Discord",      "ats": "greenhouse", "slug": "discord",     "domain": "discord.com" },
-    { "name": "Supabase",     "ats": "ashby",      "slug": "supabase",    "domain": "supabase.com" },
-    { "name": "PostHog",      "ats": "ashby",      "slug": "posthog",     "domain": "posthog.com" },
-    { "name": "Buffer",       "ats": "ashby",      "slug": "buffer",      "domain": "buffer.com" },
-    { "name": "Linear",       "ats": "ashby",      "slug": "linear",      "domain": "linear.app" },
-    { "name": "Replit",       "ats": "ashby",      "slug": "replit",      "domain": "replit.com" },
-    { "name": "Ramp",         "ats": "ashby",      "slug": "ramp",        "domain": "ramp.com" },
-    { "name": "Vanta",        "ats": "ashby",      "slug": "vanta",       "domain": "vanta.com" },
-    { "name": "Render",       "ats": "ashby",      "slug": "render",      "domain": "render.com" },
-    { "name": "Sentry",       "ats": "ashby",      "slug": "sentry",      "domain": "sentry.io" },
-    { "name": "Zapier",       "ats": "ashby",      "slug": "zapier",      "domain": "zapier.com" },
-    { "name": "Notion",       "ats": "ashby",      "slug": "notion",      "domain": "notion.so" },
-    { "name": "Toptal",       "ats": "lever",      "slug": "toptal",      "domain": "toptal.com" },
-    { "name": "Stripe",       "ats": "greenhouse", "slug": "stripe",      "domain": "stripe.com" },
-    { "name": "Instacart",    "ats": "greenhouse", "slug": "instacart",   "domain": "instacart.com" },
-    { "name": "Fivetran",     "ats": "greenhouse", "slug": "fivetran",    "domain": "fivetran.com" },
-    { "name": "Hightouch",    "ats": "greenhouse", "slug": "hightouch",   "domain": "hightouch.com" },
-    { "name": "Temporal",     "ats": "greenhouse", "slug": "temporaltechnologies", "domain": "temporal.io" },
-    { "name": "Dropbox",      "ats": "greenhouse", "slug": "dropbox",     "domain": "dropbox.com" },
-    { "name": "Calendly",     "ats": "greenhouse", "slug": "calendly",    "domain": "calendly.com" },
-    { "name": "Chime",        "ats": "greenhouse", "slug": "chime",       "domain": "chime.com" },
-    { "name": "Postscript",   "ats": "greenhouse", "slug": "postscript",  "domain": "postscript.io" },
-    { "name": "Cockroach Labs","ats": "greenhouse","slug": "cockroachlabs","domain": "cockroachlabs.com" },
-    { "name": "Plaid",        "ats": "ashby",      "slug": "plaid",       "domain": "plaid.com" },
-    { "name": "1Password",    "ats": "ashby",      "slug": "1password",   "domain": "1password.com" },
-    { "name": "Confluent",    "ats": "ashby",      "slug": "confluent",   "domain": "confluent.io" },
-    { "name": "Docker",       "ats": "ashby",      "slug": "docker",      "domain": "docker.com" },
-    { "name": "Airbyte",      "ats": "ashby",      "slug": "airbyte",     "domain": "airbyte.com" },
-    { "name": "Close",        "ats": "ashby",      "slug": "close",       "domain": "close.com" },
-    { "name": "Pinecone",     "ats": "ashby",      "slug": "pinecone",    "domain": "pinecone.io" },
-    { "name": "Miro",         "ats": "ashby",      "slug": "miro",        "domain": "miro.com" },
-    { "name": "Sourcegraph",  "ats": "greenhouse", "slug": "sourcegraph91","domain": "sourcegraph.com" },
-    { "name": "Tailscale",    "ats": "greenhouse", "slug": "tailscale",   "domain": "tailscale.com" },
-    { "name": "LaunchDarkly", "ats": "greenhouse", "slug": "launchdarkly","domain": "launchdarkly.com" },
-    { "name": "Amplitude",    "ats": "greenhouse", "slug": "amplitude",   "domain": "amplitude.com" },
-    { "name": "Mixpanel",     "ats": "greenhouse", "slug": "mixpanel",    "domain": "mixpanel.com" },
-    { "name": "ClickHouse",   "ats": "greenhouse", "slug": "clickhouse",  "domain": "clickhouse.com" },
-    { "name": "Chainguard",   "ats": "greenhouse", "slug": "chainguard",  "domain": "chainguard.dev" },
-    { "name": "Cresta",       "ats": "greenhouse", "slug": "cresta",      "domain": "cresta.com" },
-    { "name": "Gemini",       "ats": "greenhouse", "slug": "gemini",      "domain": "gemini.com" },
-    { "name": "Together AI",  "ats": "greenhouse", "slug": "togetherai",  "domain": "together.ai" },
-    { "name": "AssemblyAI",   "ats": "greenhouse", "slug": "assemblyai",  "domain": "assemblyai.com" },
-    { "name": "Customer.io",  "ats": "greenhouse", "slug": "customerio",  "domain": "customer.io" },
-    { "name": "Knock",        "ats": "greenhouse", "slug": "knock",       "domain": "knock.app" },
-    { "name": "Baseten",      "ats": "ashby",      "slug": "baseten",     "domain": "baseten.co" },
-    { "name": "Deepgram",     "ats": "ashby",      "slug": "deepgram",    "domain": "deepgram.com" },
-    { "name": "LangChain",    "ats": "ashby",      "slug": "langchain",   "domain": "langchain.com" },
-    { "name": "Sanity",       "ats": "ashby",      "slug": "sanity",      "domain": "sanity.io" },
-    { "name": "Alchemy",      "ats": "ashby",      "slug": "alchemy",     "domain": "alchemy.com" },
-    { "name": "Sardine",      "ats": "ashby",      "slug": "sardine",     "domain": "sardine.ai" },
-    { "name": "Vantage",      "ats": "ashby",      "slug": "vantage",     "domain": "vantage.sh" },
-    { "name": "Doppler",      "ats": "ashby",      "slug": "doppler",     "domain": "doppler.com" },
-    { "name": "Inngest",      "ats": "ashby",      "slug": "inngest",     "domain": "inngest.com" },
-    { "name": "Metabase",     "ats": "lever",      "slug": "metabase",    "domain": "metabase.com" },
-    { "name": "Circle",       "ats": "phenom",     "slug": "circle",      "domain": "circle.com" }
+    {
+      "name": "GitLab",
+      "ats": "greenhouse",
+      "slug": "gitlab",
+      "domain": "gitlab.com"
+    },
+    {
+      "name": "Cloudflare",
+      "ats": "greenhouse",
+      "slug": "cloudflare",
+      "domain": "cloudflare.com"
+    },
+    {
+      "name": "Coinbase",
+      "ats": "greenhouse",
+      "slug": "coinbase",
+      "domain": "coinbase.com"
+    },
+    {
+      "name": "Reddit",
+      "ats": "greenhouse",
+      "slug": "reddit",
+      "domain": "reddit.com"
+    },
+    {
+      "name": "Datadog",
+      "ats": "greenhouse",
+      "slug": "datadog",
+      "domain": "datadoghq.com"
+    },
+    {
+      "name": "Airtable",
+      "ats": "greenhouse",
+      "slug": "airtable",
+      "domain": "airtable.com"
+    },
+    {
+      "name": "Twilio",
+      "ats": "greenhouse",
+      "slug": "twilio",
+      "domain": "twilio.com"
+    },
+    {
+      "name": "Vercel",
+      "ats": "greenhouse",
+      "slug": "vercel",
+      "domain": "vercel.com"
+    },
+    {
+      "name": "Grafana Labs",
+      "ats": "greenhouse",
+      "slug": "grafanalabs",
+      "domain": "grafana.com"
+    },
+    {
+      "name": "Postman",
+      "ats": "greenhouse",
+      "slug": "postman",
+      "domain": "postman.com"
+    },
+    {
+      "name": "Webflow",
+      "ats": "greenhouse",
+      "slug": "webflow",
+      "domain": "webflow.com"
+    },
+    {
+      "name": "Mercury",
+      "ats": "greenhouse",
+      "slug": "mercury",
+      "domain": "mercury.com"
+    },
+    {
+      "name": "Netlify",
+      "ats": "greenhouse",
+      "slug": "netlify",
+      "domain": "netlify.com"
+    },
+    {
+      "name": "Doximity",
+      "ats": "greenhouse",
+      "slug": "doximity",
+      "domain": "doximity.com"
+    },
+    {
+      "name": "Gusto",
+      "ats": "greenhouse",
+      "slug": "gusto",
+      "domain": "gusto.com"
+    },
+    {
+      "name": "Affirm",
+      "ats": "greenhouse",
+      "slug": "affirm",
+      "domain": "affirm.com"
+    },
+    {
+      "name": "Discord",
+      "ats": "greenhouse",
+      "slug": "discord",
+      "domain": "discord.com"
+    },
+    {
+      "name": "Supabase",
+      "ats": "ashby",
+      "slug": "supabase",
+      "domain": "supabase.com"
+    },
+    {
+      "name": "PostHog",
+      "ats": "ashby",
+      "slug": "posthog",
+      "domain": "posthog.com"
+    },
+    {
+      "name": "Buffer",
+      "ats": "ashby",
+      "slug": "buffer",
+      "domain": "buffer.com"
+    },
+    {
+      "name": "Linear",
+      "ats": "ashby",
+      "slug": "linear",
+      "domain": "linear.app"
+    },
+    {
+      "name": "Replit",
+      "ats": "ashby",
+      "slug": "replit",
+      "domain": "replit.com"
+    },
+    {
+      "name": "Ramp",
+      "ats": "ashby",
+      "slug": "ramp",
+      "domain": "ramp.com"
+    },
+    {
+      "name": "Vanta",
+      "ats": "ashby",
+      "slug": "vanta",
+      "domain": "vanta.com"
+    },
+    {
+      "name": "Render",
+      "ats": "ashby",
+      "slug": "render",
+      "domain": "render.com"
+    },
+    {
+      "name": "Sentry",
+      "ats": "ashby",
+      "slug": "sentry",
+      "domain": "sentry.io"
+    },
+    {
+      "name": "Zapier",
+      "ats": "ashby",
+      "slug": "zapier",
+      "domain": "zapier.com"
+    },
+    {
+      "name": "Notion",
+      "ats": "ashby",
+      "slug": "notion",
+      "domain": "notion.so"
+    },
+    {
+      "name": "Toptal",
+      "ats": "lever",
+      "slug": "toptal",
+      "domain": "toptal.com"
+    },
+    {
+      "name": "Stripe",
+      "ats": "greenhouse",
+      "slug": "stripe",
+      "domain": "stripe.com"
+    },
+    {
+      "name": "Instacart",
+      "ats": "greenhouse",
+      "slug": "instacart",
+      "domain": "instacart.com"
+    },
+    {
+      "name": "Fivetran",
+      "ats": "greenhouse",
+      "slug": "fivetran",
+      "domain": "fivetran.com"
+    },
+    {
+      "name": "Hightouch",
+      "ats": "greenhouse",
+      "slug": "hightouch",
+      "domain": "hightouch.com"
+    },
+    {
+      "name": "Temporal",
+      "ats": "greenhouse",
+      "slug": "temporaltechnologies",
+      "domain": "temporal.io"
+    },
+    {
+      "name": "Dropbox",
+      "ats": "greenhouse",
+      "slug": "dropbox",
+      "domain": "dropbox.com"
+    },
+    {
+      "name": "Calendly",
+      "ats": "greenhouse",
+      "slug": "calendly",
+      "domain": "calendly.com"
+    },
+    {
+      "name": "Chime",
+      "ats": "greenhouse",
+      "slug": "chime",
+      "domain": "chime.com"
+    },
+    {
+      "name": "Postscript",
+      "ats": "greenhouse",
+      "slug": "postscript",
+      "domain": "postscript.io"
+    },
+    {
+      "name": "Cockroach Labs",
+      "ats": "greenhouse",
+      "slug": "cockroachlabs",
+      "domain": "cockroachlabs.com"
+    },
+    {
+      "name": "Plaid",
+      "ats": "ashby",
+      "slug": "plaid",
+      "domain": "plaid.com"
+    },
+    {
+      "name": "1Password",
+      "ats": "ashby",
+      "slug": "1password",
+      "domain": "1password.com"
+    },
+    {
+      "name": "Confluent",
+      "ats": "ashby",
+      "slug": "confluent",
+      "domain": "confluent.io"
+    },
+    {
+      "name": "Docker",
+      "ats": "ashby",
+      "slug": "docker",
+      "domain": "docker.com"
+    },
+    {
+      "name": "Airbyte",
+      "ats": "ashby",
+      "slug": "airbyte",
+      "domain": "airbyte.com"
+    },
+    {
+      "name": "Close",
+      "ats": "ashby",
+      "slug": "close",
+      "domain": "close.com"
+    },
+    {
+      "name": "Pinecone",
+      "ats": "ashby",
+      "slug": "pinecone",
+      "domain": "pinecone.io"
+    },
+    {
+      "name": "Miro",
+      "ats": "ashby",
+      "slug": "miro",
+      "domain": "miro.com"
+    },
+    {
+      "name": "Sourcegraph",
+      "ats": "greenhouse",
+      "slug": "sourcegraph91",
+      "domain": "sourcegraph.com"
+    },
+    {
+      "name": "Tailscale",
+      "ats": "greenhouse",
+      "slug": "tailscale",
+      "domain": "tailscale.com"
+    },
+    {
+      "name": "LaunchDarkly",
+      "ats": "greenhouse",
+      "slug": "launchdarkly",
+      "domain": "launchdarkly.com"
+    },
+    {
+      "name": "Amplitude",
+      "ats": "greenhouse",
+      "slug": "amplitude",
+      "domain": "amplitude.com"
+    },
+    {
+      "name": "Mixpanel",
+      "ats": "greenhouse",
+      "slug": "mixpanel",
+      "domain": "mixpanel.com"
+    },
+    {
+      "name": "ClickHouse",
+      "ats": "greenhouse",
+      "slug": "clickhouse",
+      "domain": "clickhouse.com"
+    },
+    {
+      "name": "Chainguard",
+      "ats": "greenhouse",
+      "slug": "chainguard",
+      "domain": "chainguard.dev"
+    },
+    {
+      "name": "Cresta",
+      "ats": "greenhouse",
+      "slug": "cresta",
+      "domain": "cresta.com"
+    },
+    {
+      "name": "Gemini",
+      "ats": "greenhouse",
+      "slug": "gemini",
+      "domain": "gemini.com"
+    },
+    {
+      "name": "Together AI",
+      "ats": "greenhouse",
+      "slug": "togetherai",
+      "domain": "together.ai"
+    },
+    {
+      "name": "AssemblyAI",
+      "ats": "greenhouse",
+      "slug": "assemblyai",
+      "domain": "assemblyai.com"
+    },
+    {
+      "name": "Customer.io",
+      "ats": "greenhouse",
+      "slug": "customerio",
+      "domain": "customer.io"
+    },
+    {
+      "name": "Knock",
+      "ats": "greenhouse",
+      "slug": "knock",
+      "domain": "knock.app"
+    },
+    {
+      "name": "Baseten",
+      "ats": "ashby",
+      "slug": "baseten",
+      "domain": "baseten.co"
+    },
+    {
+      "name": "Deepgram",
+      "ats": "ashby",
+      "slug": "deepgram",
+      "domain": "deepgram.com"
+    },
+    {
+      "name": "LangChain",
+      "ats": "ashby",
+      "slug": "langchain",
+      "domain": "langchain.com"
+    },
+    {
+      "name": "Sanity",
+      "ats": "ashby",
+      "slug": "sanity",
+      "domain": "sanity.io"
+    },
+    {
+      "name": "Alchemy",
+      "ats": "ashby",
+      "slug": "alchemy",
+      "domain": "alchemy.com"
+    },
+    {
+      "name": "Sardine",
+      "ats": "ashby",
+      "slug": "sardine",
+      "domain": "sardine.ai"
+    },
+    {
+      "name": "Vantage",
+      "ats": "ashby",
+      "slug": "vantage",
+      "domain": "vantage.sh"
+    },
+    {
+      "name": "Doppler",
+      "ats": "ashby",
+      "slug": "doppler",
+      "domain": "doppler.com"
+    },
+    {
+      "name": "Inngest",
+      "ats": "ashby",
+      "slug": "inngest",
+      "domain": "inngest.com"
+    },
+    {
+      "name": "Metabase",
+      "ats": "lever",
+      "slug": "metabase",
+      "domain": "metabase.com"
+    },
+    {
+      "name": "Circle",
+      "ats": "phenom",
+      "slug": "circle",
+      "domain": "circle.com"
+    },
+    {
+      "name": "Samsara",
+      "ats": "greenhouse",
+      "slug": "samsara",
+      "domain": "samsara.com"
+    },
+    {
+      "name": "Hinge Health",
+      "ats": "ashby",
+      "slug": "hinge-health",
+      "domain": "hingehealth.com"
+    },
+    {
+      "name": "Included Health",
+      "ats": "lever",
+      "slug": "includedhealth",
+      "domain": "includedhealth.com"
+    },
+    {
+      "name": "Headway",
+      "ats": "ashby",
+      "slug": "headway",
+      "domain": "findheadway.com"
+    },
+    {
+      "name": "Maven Clinic",
+      "ats": "greenhouse",
+      "slug": "mavenclinic",
+      "domain": "mavenclinic.com"
+    },
+    {
+      "name": "Angi",
+      "ats": "ashby",
+      "slug": "angi",
+      "domain": "angi.com"
+    },
+    {
+      "name": "Thumbtack",
+      "ats": "ashby",
+      "slug": "thumbtack",
+      "domain": "thumbtack.com"
+    },
+    {
+      "name": "Omada Health",
+      "ats": "greenhouse",
+      "slug": "omadahealth",
+      "domain": "omadahealth.com"
+    },
+    {
+      "name": "Oscar Health",
+      "ats": "greenhouse",
+      "slug": "oscar",
+      "domain": "hioscar.com"
+    },
+    {
+      "name": "Smartsheet",
+      "ats": "greenhouse",
+      "slug": "smartsheet",
+      "domain": "smartsheet.com"
+    },
+    {
+      "name": "Gainsight",
+      "ats": "ashby",
+      "slug": "gainsight",
+      "domain": "gainsight.com"
+    },
+    {
+      "name": "Grow Therapy",
+      "ats": "ashby",
+      "slug": "grow-therapy",
+      "domain": "growtherapy.com"
+    },
+    {
+      "name": "Marqeta",
+      "ats": "greenhouse",
+      "slug": "marqeta",
+      "domain": "marqeta.com"
+    }
   ]
 }

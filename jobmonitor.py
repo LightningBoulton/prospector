@@ -682,6 +682,42 @@ def _mandate_rescue(posting, profile):
     return True
 
 
+def _normalized_title(title):
+    """Title reduced for same-role comparison: lowercased, parentheticals and level suffixes
+    dropped, punctuation flattened. "Customer Success Manager II (Remote, Austin)" and
+    "Customer Success Manager II" collapse to the same string."""
+    t = (title or "").lower()
+    t = re.sub(r"\(.*?\)", " ", t)                 # "(Remote)", "(EMEA)", "(Austin, TX)"
+    t = re.sub(r"[^a-z0-9&+/ ]", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def dedupe_same_role(postings):
+    """Collapse postings that are the SAME role listed once per location.
+
+    Employers routinely open one requisition per city for a single opening. Each gets its own
+    ATS id, so the diff sees N distinct roles, the email shows N identical cards, and we pay
+    to score every copy — Angi posts one "Manager, Retail Partnerships" four times.
+
+    Keeps the earliest-posted copy (tie-broken by key) so the choice is deterministic and the
+    displayed "Posted" date reflects when the role first appeared. OPT-IN per profile
+    (`dedupe_same_title`), because two genuinely different openings can share a title — very
+    common for "Software Engineer", which is why Chad does not use this."""
+    best = {}
+    for p in postings:
+        k = (p.get("company", "").lower(), _normalized_title(p.get("title")))
+        cur = best.get(k)
+        if cur is None:
+            best[k] = p
+            continue
+        # Prefer the earliest posted; unknown dates sort last. Key breaks exact ties.
+        a = (p.get("posted") or "9999-99-99", p.get("key", ""))
+        b = (cur.get("posted") or "9999-99-99", cur.get("key", ""))
+        if a < b:
+            best[k] = p
+    return list(best.values())
+
+
 def matches_profile(posting, profile):
     """Keep a posting iff its title matches NONE of `exclude_any` AND at least one term in
     EVERY `match_groups` entry (AND across groups, OR within) — or, failing the title test,
@@ -2262,6 +2298,14 @@ def _run_lane(profile, src, client, suffix, title, max_age_days=None):
     pool, errors = src.get("pool") or [], src.get("errors") or []
     failed_companies = src.get("failed") or set()
     matched = [p for p in pool if matches_profile(p, profile)]
+    if profile.get("dedupe_same_title"):
+        # Collapse one-req-per-city duplicates BEFORE scoring, so we neither show the same
+        # role four times nor pay to score each copy.
+        before = len(matched)
+        matched = dedupe_same_role(matched)
+        if before != len(matched):
+            print(f"  [{profile['name']}{suffix}] collapsed {before - len(matched)} "
+                  f"duplicate posting(s) of the same role")
     # Per-profile display window. The shared pool is fetched at the WIDEST window any profile
     # asks for, then narrowed here — so Lisa can run a 14-day window while Chad stays at 7
     # without a second set of API calls. Applied BEFORE scoring so out-of-window roles are

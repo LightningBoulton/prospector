@@ -361,6 +361,80 @@ class TestLisaProfileTitleFilter(unittest.TestCase):
             posting("A", "1", "Manager, Sales Development"), self.lisa))
 
 
+class TestDedupeSameRole(unittest.TestCase):
+    """Employers open one requisition per city for a single opening; each gets its own ATS id,
+    so the diff sees N roles, the email shows N identical cards, and we pay to score each.
+    Found on real feeds: Angi posts 'Manager, Retail Partnerships' four times."""
+
+    def test_same_title_same_company_collapses(self):
+        rows = [posting("Angi", str(i), "Manager, Retail Partnerships",
+                        location=loc, posted="2026-07-20")
+                for i, loc in enumerate(["Denver, CO", "Austin, TX", "Remote", "Boise, ID"])]
+        out = jm.dedupe_same_role(rows)
+        self.assertEqual(len(out), 1)
+
+    def test_parentheticals_and_punctuation_are_ignored(self):
+        rows = [posting("A", "1", "Customer Success Manager II (Remote, Austin)"),
+                posting("A", "2", "Customer Success Manager II")]
+        self.assertEqual(len(jm.dedupe_same_role(rows)), 1)
+
+    def test_different_titles_are_kept(self):
+        rows = [posting("A", "1", "Director, Operations"),
+                posting("A", "2", "Director, Strategy")]
+        self.assertEqual(len(jm.dedupe_same_role(rows)), 2)
+
+    def test_same_title_at_different_companies_is_kept(self):
+        rows = [posting("A", "1", "Director, Operations"),
+                posting("B", "1", "Director, Operations")]
+        self.assertEqual(len(jm.dedupe_same_role(rows)), 2)
+
+    def test_keeps_the_earliest_posted_copy_deterministically(self):
+        rows = [posting("A", "2", "Director, Operations", posted="2026-07-25"),
+                posting("A", "1", "Director, Operations", posted="2026-07-20"),
+                posting("A", "3", "Director, Operations", posted="2026-07-22")]
+        for _ in range(3):                     # order-independent
+            out = jm.dedupe_same_role(list(reversed(rows)))
+            self.assertEqual(out[0]["key"], "A::1")
+
+    def test_unknown_dates_lose_to_known_dates(self):
+        rows = [posting("A", "1", "Director, Operations", posted=""),
+                posting("A", "2", "Director, Operations", posted="2026-07-20")]
+        self.assertEqual(jm.dedupe_same_role(rows)[0]["key"], "A::2")
+
+    def test_only_lisa_opts_in(self):
+        self.assertTrue(load_real_profile("lisa").get("dedupe_same_title"))
+        self.assertFalse(load_real_profile("chad").get("dedupe_same_title", False),
+                         "Chad must not dedupe: two real 'Software Engineer' openings "
+                         "legitimately share a title")
+
+
+class TestLeveledICExclusions(unittest.TestCase):
+    """Word order separates the IC track from leadership. Found by probing Samsara, which
+    alone would have contributed ~8 individual-contributor CSM roles."""
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+
+    def test_ic_customer_success_tracks_are_dropped(self):
+        for title in ["Customer Success Manager", "Customer Success Manager II",
+                      "Customer Success Manager V", "Enterprise Customer Success Manager",
+                      "Strategic Customer Success Manager",
+                      "Principal Customer Success Manager", "Technical Account Manager",
+                      "Client Success Manager"]:
+            with self.subTest(title=title):
+                self.assertFalse(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                 f"leveled IC role should be dropped: {title}")
+
+    def test_customer_success_leadership_is_kept(self):
+        for title in ["Sr. Manager, Customer Success", "Director, Customer Success",
+                      "Head of Customer Success", "VP, Customer Success",
+                      "Senior Director, Customer Success (Enterprise)",
+                      "Director, Customer Experience"]:
+            with self.subTest(title=title):
+                self.assertTrue(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                f"leadership role should be kept: {title}")
+
+
 class TestMandateRescue(unittest.TestCase):
     """Generically titled roles are rescued on DESCRIPTION evidence, not title keywords."""
 

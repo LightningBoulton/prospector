@@ -43,11 +43,9 @@
       "enabled": true,
       "background_file": "lisa_background.json",
       "fit_mode": "rank",
-
       "_v2_comment": "report_style 'digest' switches Lisa to the ranked daily-digest email (build_digest_html): best currently-open roles first, one appearance per job, capped visible count, cautious Hiring Progress footer. Chad has no report_style and keeps the original lane-by-lane email. max_posting_age_days 14 is HER display window — the shared fetch widens to cover it without changing Chad's 7 days. fit_mode stays 'rank' on purpose: not_recommended roles are hidden at render time but retained in the snapshot for the weekly audit, which 'filter' would prevent.",
       "report_style": "digest",
       "max_posting_age_days": 14,
-
       "_group1_comment": "SENIORITY / LEADERSHIP SCOPE. Manager, Senior Manager, Lead, and Principal are deliberately included — Lisa is genuinely open to those when the mandate is strong, so the title gate must not screen them out. A few terms (transformation, strategy, operational excellence, organizational effectiveness/development, general manager, chief of staff, practice leader/director) appear in BOTH groups because they carry seniority and function at once, so titles like 'Chief of Staff' or 'General Manager' satisfy both on their own.",
       "match_groups": [
         [
@@ -169,7 +167,6 @@
           "practice director"
         ]
       ],
-
       "_exclude_comment": "Deterministic exclusions so obvious non-target roles never reach Claude. Notes on what is deliberately ABSENT: 'manufacturing' (transformation/integration/ops work inside a manufacturing company is highly relevant — only 'manufacturing engineer' is excluded); bare 'finance' (so 'Director, Finance Transformation' survives — the specific finance functions below are excluded instead); bare 'development' (would kill 'leadership development' and 'organizational development'); 'contract'/'temporary' (contract leadership work is in scope).",
       "exclude_any": [
         "accounting",
@@ -238,9 +235,14 @@
         "coordinator",
         "receptionist",
         "administrative assistant",
-        "executive assistant"
+        "executive assistant",
+        "customer success manager",
+        "account manager",
+        "technical account manager",
+        "partner success manager",
+        "client success manager",
+        "engagement manager"
       ],
-
       "_rescue_comment": "Lisa's best-fit roles are frequently poorly or generically titled. When the title misses match_groups, keep the role anyway if it still reads as leadership (require_title_any) AND its description names at least min_hits DISTINCT mandate terms. Exclusions are applied first, so a rescue can never drag back an accounting/engineering/clinical role. TERM CHOICE MATTERS: only DISTINCTIVE mandate language belongs here. Generic manager-JD boilerplate ('cross-functional', 'stakeholder management', 'program management', 'continuous improvement', 'operational efficiency', 'p&l') was tried and removed — it appears in almost every manager posting and rescued clear non-targets like 'Lead, Benefits' and a bare 'Project Manager'. KNOWN GAP: SmartRecruiters and Workday give no description at list time, so rescue cannot fire for those 11 local companies.",
       "mandate_rescue": {
         "min_hits": 2,
@@ -301,9 +303,10 @@
           "strategic initiatives"
         ]
       },
-
       "remote_search": true,
-      "staffing_search": true
+      "staffing_search": true,
+      "dedupe_same_title": true,
+      "_ic_comment": "Leveled individual-contributor tracks excluded by exact word order: 'customer success manager' drops 'Customer Success Manager II/III/V', 'Enterprise CSM' and 'Strategic CSM' (book-of-business IC roles) while KEEPING 'Sr. Manager, Customer Success', 'Director, Customer Success' and 'Head of Customer Success', because those put the seniority word before the function. Found by probing Samsara, which alone would have added ~8 IC CSM roles. dedupe_same_title collapses one-req-per-city duplicates (see dedupe_same_role)."
     }
   ]
 }
