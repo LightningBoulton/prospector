@@ -132,6 +132,40 @@
   }
  },
  {
+  "key": "Canopy::4324675009",
+  "company": "Canopy",
+  "title": "Technical Support Engineer",
+  "location": "South Jordan, UT",
+  "url": "https://job-boards.greenhouse.io/canopytax/jobs/4324675009",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Customer support role, explicit dealbreaker",
+    "Not a software engineering position",
+    "Below desired compensation likely"
+   ],
+   "concerns": [
+    "Customer support dealbreaker",
+    "Not hands-on engineering",
+    "Career step backward"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 5,
+   "practical_fit": 40,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Customer support role, explicit dealbreaker",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Domo::JR100285",
   "company": "Domo",
   "title": "Senior CloudOps Engineer",
@@ -367,6 +401,73 @@
    "score": 25,
    "fit": "no",
    "reason": "Dealbreaker: professional/customer-facing services role",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025759",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025759",
+  "posted": "2026-07-31",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Senior engineer role in Utah, no relocation needed",
+    "Matches seniority target range",
+    "Local employer, likely hybrid/onsite feasible"
+   ],
+   "concerns": [
+    "No description available to assess tech stack fit",
+    "Unknown if compensation meets $190k minimum",
+    "WGU may lean traditional edtech, less cutting-edge"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Senior engineer role in Utah, no relocation needed",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025048",
+  "company": "Western Governors University",
+  "title": "Staff Software Engineer- Full-Stack Python and React",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048",
+  "posted": "2026-07-31",
+  "salary": "$161,000.00 - $249,500.00",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Salt Lake City location matches preference",
+    "Staff-level IC role fits seniority target",
+    "Full-stack React aligns with strengths"
+   ],
+   "concerns": [
+    "Python stack differs from .NET/C# background",
+    "No description to confirm mandate or comp"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 65,
+   "practical_fit": 90,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "yes",
+   "reason": "Salt Lake City location matches preference",
    "bg": "8d3fa4bf6180"
   }
  },
