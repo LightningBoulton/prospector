@@ -1,5 +1,40 @@
 [
  {
+  "key": "GitLab::8638232002",
+  "company": "GitLab",
+  "title": "AI Transformation Owner, CRO",
+  "location": "Remote, United States",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8638232002",
+  "posted": "2026-07-22",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Strong AI adoption/enablement mandate across a field org",
+    "Operating model and governance ownership for AI transformation",
+    "US-remote role fits practical constraints well",
+    "Aligns with goal of enterprise AI adoption leadership"
+   ],
+   "concerns": [
+    "Sales/field-org (CRO) domain is less core than consulting/ops background",
+    "May require deep GTM/sales-org fluency not evidenced",
+    "Hands-on execution expectation with minimal oversight"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 85,
+   "practical_fit": 85,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Strong AI adoption/enablement mandate across a field org",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
   "key": "GitLab::8646022002",
   "company": "GitLab",
   "title": "Customer Success Manager- Public Sector",
@@ -8,56 +43,102 @@
   "posted": "2026-07-23",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Customer success role, but deeply technical DevSecOps/Git product focus",
+    "Requires hands-on technical platform expertise, not her background",
+    "US-remote location is practical",
+    "Public sector account management, not transformation leadership"
+   ],
+   "concerns": [
+    "Needs technical fluency in Git/CI/CD/DevSecOps",
+    "Account-management/portfolio ownership, not strategic transformation mandate",
+    "Below her target scope and seniority stance"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 75,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
-   "score": 15,
-   "reason": "IC-level account CSM role, technical DevSecOps focus, no transformation/strategy leadership mandate.",
-   "bg": "e375d8ec09f3"
+   "reason": "Customer success role, but deeply technical DevSecOps/Git product focus",
+   "bg": "cae648f28d15"
   }
  },
  {
-  "key": "GitLab::8645879002",
+  "key": "GitLab::8643154002",
   "company": "GitLab",
-  "title": "Revenue Strategist Manager, Renewals",
+  "title": "Manager, IT SOX PMO",
   "location": "Remote, United States",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8645879002",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Manager-level revenue ops/renewals analytics role, not transformation/M&A/org-effectiveness leadership Lisa targets.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
-  "key": "Coinbase::8093264",
-  "company": "Coinbase",
-  "title": "Accounting Manager, GL Operations & Intercompany",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8093264?gh_jid=8093264",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8643154002",
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote US location is practically strong",
+    "But role is SOX/IT controls compliance, not transformation",
+    "Sits under Chief Accounting Officer, audit-adjacent domain",
+    "No strategic, operational or CX mandate present"
+   ],
+   "concerns": [
+    "Wrong function: SOX/ITGC compliance vs her transformation focus",
+    "IC role with narrow audit scope, not executive-facing",
+    "No overlap with core domains or strong signals"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 85,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 12,
-   "reason": "Accounting/GL operations manager role - functional accounting mandate, not transformation/strategy/CX leadership fit.",
-   "bg": "e375d8ec09f3"
+   "reason": "Remote US location is practically strong",
+   "bg": "cae648f28d15"
   }
  },
  {
-  "key": "Coinbase::8083758",
+  "key": "Coinbase::8075021",
   "company": "Coinbase",
-  "title": "Strategic Program Lead",
+  "title": "Group Marketing Manager, Base Chain",
   "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8083758?gh_jid=8083758",
-  "posted": "2026-07-24",
+  "url": "https://www.coinbase.com/careers/positions/8075021?gh_jid=8075021",
+  "posted": "2026-07-21",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "CX-adjacent program role but narrower, operational scope; unclear seniority/leadership scope, lacks transformation/M&A mandate.",
-   "bg": "e375d8ec09f3"
-  }
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote-USA practical fit is workable",
+    "But role is product marketing, not transformation/ops",
+    "Crypto/Web3 GTM is outside core domains",
+    "No org-design, M&A, or CX ownership mandate"
+   ],
+   "concerns": [
+    "Requires deep crypto/developer marketing expertise she lacks",
+    "Quarterly in-person 'surges' add travel burden",
+    "Title and mandate mismatch with target roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Remote-USA practical fit is workable",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
  },
  {
   "key": "Twilio::8089290",
@@ -68,40 +149,149 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "US-remote is practically workable",
+    "Operational leadership angle loosely aligns with ops experience",
+    "Mandate is event production/content, not core to her strengths"
+   ],
+   "concerns": [
+    "Wrong function: event/production management, not transformation or strategy",
+    "No org-design, M&A, or CX ownership scope",
+    "Highly specialized event-ops skill set she doesn't demonstrate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 75,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 8,
-   "reason": "Event/content production management\u2014not transformation, strategy, ops, or M&A leadership mandate.",
-   "bg": "e375d8ec09f3"
+   "reason": "US-remote is practically workable",
+   "bg": "cae648f28d15"
   }
  },
  {
-  "key": "Mercury::6126980004",
+  "key": "Twilio::8067440",
+  "company": "Twilio",
+  "title": "Senior Technical Program Manager, Services Tools & Diagnostics",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8067440",
+  "posted": "2026-07-17",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Webflow::8096574",
+  "company": "Webflow",
+  "title": "Customer Success Manager - Pacific Time",
+  "location": "CA Remote (BC & ON only); U.S. Remote",
+  "url": "https://job-boards.greenhouse.io/webflow/jobs/8096574",
+  "posted": "2026-07-30",
+  "salary": "$148,500 - $175,000",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "CX-adjacent but tactical account management, not strategic leadership",
+    "IC customer success role lacks transformation/ops mandate",
+    "Enterprise CS relationship focus, not org-design or change work"
+   ],
+   "concerns": [
+    "Requires Pacific time zone, not aligned with Utah/Mountain",
+    "Role is individual account management, not strategic scope",
+    "Below candidate's demonstrated leadership and strategy level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 45,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "CX-adjacent but tactical account management, not strategic leadership",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Mercury::6122476004",
   "company": "Mercury",
-  "title": "Senior Product Manager - Dashboard Experience",
+  "title": "AI Context Operations Lead",
   "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
-  "url": "https://job-boards.greenhouse.io/mercury/jobs/6126980004",
-  "posted": "2026-07-24",
+  "url": "https://job-boards.greenhouse.io/mercury/jobs/6122476004",
+  "posted": "2026-07-22",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 5,
-   "reason": "Hands-on IC product manager role for fintech dashboard UX; not a transformation/ops/M&A leadership mandate.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "cae648f28d15"
   }
  },
  {
-  "key": "Affirm::7812990003",
-  "company": "Affirm",
-  "title": "Affirm Bank Strategic Finance Manager",
-  "location": "Remote US",
-  "url": "https://job-boards.greenhouse.io/affirm/jobs/7812990003",
-  "posted": "2026-07-27",
+  "key": "Mercury::6130879004",
+  "company": "Mercury",
+  "title": "Payment Operations Lead",
+  "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within United States",
+  "url": "https://job-boards.greenhouse.io/mercury/jobs/6130879004",
+  "posted": "2026-07-30",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 10,
-   "reason": "FP&A/finance-specialist role, not transformation/ops/M&A leadership; wrong function despite director-level scope.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "stretch",
+   "reasons": [
+    "Ops leadership, process/automation mandate fits operational excellence interest",
+    "US-remote option strongly workable",
+    "Team leadership and scaling operating rhythms aligns with her strengths"
+   ],
+   "concerns": [
+    "Deep payments/fintech domain expertise likely required, not her background",
+    "Highly specialized operational desk work, narrower than transformation mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Ops leadership, process/automation mandate fits operational excellence interest",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -113,10 +303,30 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "apply_first",
+   "reasons": [
+    "Chief of Staff to CPO is executive-facing strategic operator role",
+    "Strong org strategy, operating model, and cross-functional scope",
+    "US-remote matches practical constraints exactly",
+    "Aligns with goals: exec leadership, organizational scaling",
+    "Fits her Chief of Staff target title directly"
+   ],
+   "concerns": [
+    "Focused on People/HR function rather than broader enterprise transformation",
+    "High-trust CPO relationship role may require deep HR domain ramp-up"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 82,
+   "interest_fit": 90,
+   "practical_fit": 90,
+   "opportunity_score": 87,
+   "score": 87,
    "fit": "yes",
-   "score": 78,
-   "reason": "Chief of Staff strategic-operator mandate driving org cadence, transformation, and executive strategy\u2014strong functional and seniority fit.",
-   "bg": "e375d8ec09f3"
+   "reason": "Chief of Staff to CPO is executive-facing strategic operator role",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -128,10 +338,66 @@
   "posted": "2026-07-23",
   "salary": null,
   "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Chief of Staff target title, executive-facing scope",
+    "Org rhythms, headcount, strategic bets ownership",
+    "AI enablement special projects mandate",
+    "Remote US matches practical constraints",
+    "Strong operating/organizational effectiveness mandate"
+   ],
+   "concerns": [
+    "Product-domain specificity may require fintech/product fluency",
+    "Reports to SVP Product, less direct transformation scope",
+    "High-visibility role likely competitive"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 78,
+   "practical_fit": 90,
+   "opportunity_score": 76,
+   "score": 76,
+   "fit": "yes",
+   "reason": "Chief of Staff target title, executive-facing scope",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Replit::9394684e-814c-4a3c-b5ed-19612e4331bc",
+  "company": "Replit",
+  "title": "Head of Marketing Operations",
+  "location": "Foster City, CA (Remote)",
+  "url": "https://jobs.ashbyhq.com/replit/9394684e-814c-4a3c-b5ed-19612e4331bc",
+  "posted": "2026-07-21",
+  "salary": "$160K \u2013 $200K",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Real operational ownership: budget, hiring ops, cross-functional coordination",
+    "Executive-facing partnership with CMO on presentations and readouts",
+    "US-remote listed but based Foster City, CA HQ",
+    "Operations and structure-building matches her working style"
+   ],
+   "concerns": [
+    "Marketing-function-specific scope, narrower than transformation/org strategy mandate",
+    "Not clearly aligned with M&A, AI enablement, or CX ownership goals",
+    "Title/scope is operational support rather than strategic leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 45,
+   "practical_fit": 60,
+   "opportunity_score": 48,
+   "score": 48,
    "fit": "maybe",
-   "score": 55,
-   "reason": "Chief of Staff/org-effectiveness scope fits, but tied to Product function specifics, not her core domains.",
-   "bg": "e375d8ec09f3"
+   "reason": "Real operational ownership: budget, hiring ops, cross-functional coordination",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -143,10 +409,29 @@
   "posted": "2026-07-28",
   "salary": "$200K \u2013 $250K",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Senior IC scope touching exec decisions",
+    "Cross-functional influence with People/Finance/Legal",
+    "Remote-eligible practical fit is workable"
+   ],
+   "concerns": [
+    "Highly specialized comp/equity domain, not core background",
+    "No people management or transformation mandate",
+    "Narrow functional focus vs. her strategic/ops positioning"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 70,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "no",
-   "score": 15,
-   "reason": "Senior IC compensation role, no leadership scope, narrow comp/equity focus\u2014doesn't match transformation/ops mandate.",
-   "bg": "e375d8ec09f3"
+   "reason": "Senior IC scope touching exec decisions",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -158,40 +443,100 @@
   "posted": "2026-07-23",
   "salary": "$161K \u2013 $189K",
   "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "US-remote fits practical constraints well",
+    "Operating model and process design overlap with her strengths",
+    "Cross-functional strategic initiative leadership matches her style"
+   ],
+   "concerns": [
+    "Heavily channel/partner sales ops focused, narrower than her core scope",
+    "No M&A, transformation, or CX mandate evident",
+    "Manager-level GTM specialization may not leverage broader strategic strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 90,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "score": 45,
-   "reason": "Ops/strategy scope fits, but sales-channel GTM domain and manager IC-ish focus don't match transformation/M&A mandate.",
-   "bg": "e375d8ec09f3"
+   "reason": "US-remote fits practical constraints well",
+   "bg": "cae648f28d15"
   }
  },
  {
-  "key": "Render::1fffd796-b589-4cc1-9664-ed1d2c3d9938",
-  "company": "Render",
-  "title": "Executive Business Partner (CEO, VP of Finance, VP of People)",
-  "location": "San Francisco HQ (Remote)",
-  "url": "https://jobs.ashbyhq.com/render/1fffd796-b589-4cc1-9664-ed1d2c3d9938",
-  "posted": "2026-07-27",
-  "salary": "$170K \u2013 $285K",
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "EA/business-partner support role, not a transformation/strategy leadership mandate she targets.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
-  "key": "Stripe::8094869",
+  "key": "Stripe::8039423",
   "company": "Stripe",
-  "title": "Partner Development Manager, Strategic Partnerships",
-  "location": "US-NYC; US-San Francisco; US-Seattle; US-Remote; US- Chicago; US-Atlanta; Canada-Toronto; Canada-Remote",
-  "url": "https://stripe.com/jobs/search?gh_jid=8094869",
-  "posted": "2026-07-29",
+  "title": "Operations Program Manager",
+  "location": "US-Remote",
+  "url": "https://stripe.com/jobs/search?gh_jid=8039423",
+  "posted": "2026-07-22",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "BD/partnerships deal-making role, not transformation, ops, M&A integration, or org-effectiveness leadership.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Operating mechanisms & execution mandate fits ops excellence strength",
+    "Cross-functional coordination across Product/Eng/Ops",
+    "US-remote matches practical constraints",
+    "Structure-to-ambiguity framing matches positioning",
+    "Stripe brand adds credibility for future moves"
+   ],
+   "concerns": [
+    "Narrow tax-ops domain may limit strategic breadth",
+    "Program Manager title may cap scope vs Director-level mandates",
+    "Description cuts off, unclear seniority/reporting level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 75,
+   "practical_fit": 90,
+   "opportunity_score": 76,
+   "score": 76,
+   "fit": "yes",
+   "reason": "Operating mechanisms & execution mandate fits ops excellence strength",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Stripe::8053517",
+  "company": "Stripe",
+  "title": "Privacy Operations Program Manager",
+  "location": "US Remote",
+  "url": "https://stripe.com/jobs/search?gh_jid=8053517",
+  "posted": "2026-07-22",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "US-remote role fits location needs well",
+    "Process ownership and operational excellence mandate",
+    "Cross-functional program management aligns with PMO skills",
+    "Building playbooks/documentation echoes operations background"
+   ],
+   "concerns": [
+    "Deep privacy/legal/regulatory specialization not in candidate's background",
+    "Narrow compliance focus vs broader transformation mandate",
+    "No evident strategic or exec-facing scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "US-remote role fits location needs well",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -203,10 +548,132 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "US-remote practical fit is strong",
+    "Cross-functional risk strategy role, not her domain",
+    "No transformation, OpEx or org-design mandate"
+   ],
+   "concerns": [
+    "Requires deep payments/risk/compliance domain expertise",
+    "Not aligned with core transformation/ops leadership positioning",
+    "Mandate is specialized risk strategy, not strategic leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 70,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "score": 15,
-   "reason": "Risk strategy IC role for payments/fintech; no transformation, M&A, or org-leadership mandate matching Lisa's background.",
-   "bg": "e375d8ec09f3"
+   "reason": "US-remote practical fit is strong",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Stripe::8044391",
+  "company": "Stripe",
+  "title": "Strategy and Operations Lead, Deal Pricing",
+  "location": "New York City, Washington DC, Remote",
+  "url": "https://stripe.com/jobs/search?gh_jid=8044391",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Chief of Staff function with operating model and process ownership",
+    "Strategic operating rhythm and cross-functional excellence mandate",
+    "Aligns with operations/program leadership strengths",
+    "Remote option listed among locations"
+   ],
+   "concerns": [
+    "Deal pricing/commercial finance domain is narrow specialization",
+    "Primary locations are NYC/DC, not clearly Utah-remote default",
+    "May require deep pricing/finance subject-matter depth she lacks"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 65,
+   "practical_fit": 55,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Chief of Staff function with operating model and process ownership",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Instacart::8074453",
+  "company": "Instacart",
+  "title": "Manager, IT Operations",
+  "location": "San Francisco, Bay Area - Remote",
+  "url": "https://instacart.careers/job/?gh_jid=8074453",
+  "posted": "2026-07-20",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Ops management scope but IT helpdesk/logistics focus",
+    "Not strategic transformation or org-design mandate",
+    "Remote option keeps practical_fit moderate"
+   ],
+   "concerns": [
+    "Core mandate is IT service delivery, not transformation",
+    "No executive-facing or strategic ownership evident",
+    "Weak alignment with core_domains despite 'Operations' title"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Ops management scope but IT helpdesk/logistics focus",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Temporal::5194035007",
+  "company": "Temporal",
+  "title": "Director, GTM Strategy & Analytics",
+  "location": "United States - Remote Opportunity",
+  "url": "https://job-boards.greenhouse.io/temporaltechnologies/jobs/5194035007",
+  "posted": "2026-07-22",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "US-remote role fits location needs",
+    "Strategic GTM architecture has some org-strategy overlap",
+    "Reports to VP, real cross-functional scope"
+   ],
+   "concerns": [
+    "Requires deep technical data/analytics expertise not in profile",
+    "Sales/GTM quota and territory focus is off-domain",
+    "Not aligned with transformation, CX, or M&A strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "US-remote role fits location needs",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -218,10 +685,30 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Sales/revenue ops leadership, not transformation, M&A, org effectiveness, or CX mandate\u2014functional mismatch.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "stretch",
+   "reasons": [
+    "US-remote, strong practical fit",
+    "Operating model, planning, forecasting rigor mandate",
+    "Cross-functional GTM ops leadership scope",
+    "Adjacent to her operations/transformation strengths"
+   ],
+   "concerns": [
+    "Deep sales-ops/quota/forecasting specialization not core background",
+    "Heavier RevOps technical/systems depth expected",
+    "Less about org design/CX, more sales-engine metrics"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "US-remote, strong practical fit",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -233,25 +720,30 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Explicitly senior IC role in product marketing ops\u2014no leadership scope, wrong domain match.",
-   "bg": "e375d8ec09f3"
-  }
- },
- {
-  "key": "Calendly::8652325002",
-  "company": "Calendly",
-  "title": "Director, Brand Influence, Advocacy & AI Discovery",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/calendly/jobs/8652325002",
-  "posted": "2026-07-27",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Marketing/brand/PR/AI-discovery function mismatch; not transformation, ops, M&A, or org-effectiveness mandate.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "stretch",
+   "reasons": [
+    "Operating model, governance, cross-functional accountability mandate",
+    "US-remote aligns with practical constraints",
+    "Some overlap with operational excellence and program leadership skills",
+    "Broad visibility into GTM strategy execution"
+   ],
+   "concerns": [
+    "Narrowly scoped to Product Marketing function, not enterprise transformation",
+    "Senior IC role, less strategic ownership than target roles",
+    "Marketing-specific domain outside core transformation/M&A focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 58,
+   "interest_fit": 55,
+   "practical_fit": 78,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Operating model, governance, cross-functional accountability mandate",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -263,10 +755,66 @@
   "posted": "2026-07-23",
   "salary": null,
   "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Senior leader role with real ownership of support strategy and operations",
+    "Cross-functional influence with Product, Engineering, Success",
+    "Data-driven operational excellence mandate fits her strengths",
+    "Fully remote aligns with practical constraints",
+    "CX/employee experience overlap with her core domains"
+   ],
+   "concerns": [
+    "Support-specific focus narrower than transformation/M&A mandate",
+    "Less strategic/enterprise-wide scope than target roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 62,
+   "practical_fit": 90,
+   "opportunity_score": 66,
+   "score": 66,
+   "fit": "yes",
+   "reason": "Senior leader role with real ownership of support strategy and operations",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Postscript::8659896002",
+  "company": "Postscript",
+  "title": "Principal Customer Success Manager",
+  "location": "Remote",
+  "url": "https://job-boards.greenhouse.io/postscript/jobs/8659896002",
+  "posted": "2026-07-30",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Customer experience ownership and playbook-building program mandate",
+    "Fully remote US/Canada aligns with location needs",
+    "Enablement and process-building overlaps operational excellence skills",
+    "Narrower SaaS/e-commerce CSM scope than her strategic transformation focus"
+   ],
+   "concerns": [
+    "Individual book-of-business CSM work, not exec-facing",
+    "Limited strategic/M&A/operating-model scope",
+    "Vertical-specific SMS/e-commerce niche may not leverage broader experience"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 52,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 52,
+   "score": 52,
    "fit": "maybe",
-   "score": 48,
-   "reason": "Senior CX leadership fits seniority/function, but pure support-ops role lacks transformation, M&A, or strategy mandate.",
-   "bg": "e375d8ec09f3"
+   "reason": "Customer experience ownership and playbook-building program mandate",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -278,11 +826,100 @@
   "posted": "2026-07-29",
   "salary": "$172.8K \u2013 $237.6K",
   "fit_result": {
-   "fit": "no",
-   "score": 22,
-   "reason": "Tactical program manager role for technical integrations/migrations, not transformation or org-effectiveness leadership mandate.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "stretch",
+   "reasons": [
+    "Real cross-functional program ownership across engineering and partners",
+    "US-remote practical fit despite SF HQ",
+    "Operational governance and process-building matches her strengths",
+    "Narrow technical integration/migration focus limits strategic scope"
+   ],
+   "concerns": [
+    "Highly execution/tracking focused, less strategic or transformational",
+    "Engineering-integration domain is more technical than her core background",
+    "Limited evidence of org-design, M&A, or executive-facing mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 40,
+   "practical_fit": 65,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Real cross-functional program ownership across engineering and partners",
+   "bg": "cae648f28d15"
   }
+ },
+ {
+  "key": "1Password::7a3d6f70-c45b-4579-912a-7876b7da2eeb",
+  "company": "1Password",
+  "title": "Director, Customer Success (Enterprise)",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/7a3d6f70-c45b-4579-912a-7876b7da2eeb",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "US-remote role fits practical constraints well",
+    "Team leadership and executive partnership scope",
+    "Customer experience ownership aligns with core domain",
+    "Growth-stage company scaling operations"
+   ],
+   "concerns": [
+    "Heavy NRR/revenue-quota accountability leans sales-ops, not her core",
+    "Enterprise CSM people-management may be narrower than transformation mandate",
+    "Limited signal on org design, M&A or AI enablement scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 58,
+   "practical_fit": 88,
+   "opportunity_score": 58,
+   "score": 58,
+   "fit": "maybe",
+   "reason": "US-remote role fits practical constraints well",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Gemini::8080467",
+  "company": "Gemini",
+  "title": "Lead, Benefits",
+  "location": "New York, New York; Remote (USA)",
+  "url": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=8080467&gh_jid=8080467",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Benefits/leave administration is HR-specialist, not transformation or ops strategy",
+    "No org design, M&A, or operating model scope evident",
+    "Remote USA option is practically workable"
+   ],
+   "concerns": [
+    "Wrong domain: benefits compliance vs transformation/strategy focus",
+    "No evidence of strategic or executive-facing scope beyond HR function"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Benefits/leave administration is HR-specialist, not transformation or ops strategy",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
  },
  {
   "key": "Deepgram::681c5324-1234-4222-b783-a8a7a9440005",
@@ -293,10 +930,30 @@
   "posted": "2026-07-29",
   "salary": "$152.2K \u2013 $208.4K",
   "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Data ops program manager for ML pipelines\u2014operational IC-adjacent role, not transformation/strategy leadership mandate.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "stretch",
+   "reasons": [
+    "US-remote program management role fits location needs",
+    "Program leadership aligns with PMO/operations background",
+    "AI-first company aligns with AI adoption interest area",
+    "Data operations mandate is narrower than her core transformation focus"
+   ],
+   "concerns": [
+    "Truncated posting gives limited insight into strategic scope",
+    "Data operations may be more tactical/technical than her positioning",
+    "Unclear seniority/executive-facing scope vs typical program manager role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "US-remote program management role fits location needs",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -308,10 +965,55 @@
   "posted": "2026-07-29",
   "salary": "$140K \u2013 $160K",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "US-remote practical fit is strong",
+    "Customer experience keyword overlap only superficial",
+    "Role is hands-on technical account management, not strategic"
+   ],
+   "concerns": [
+    "No strategic, transformation or leadership scope",
+    "IC-level CSM work below her seniority and mandate",
+    "Highly technical/product-specific subject matter expertise required"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 85,
+   "opportunity_score": 28,
+   "score": 28,
    "fit": "no",
-   "score": 12,
-   "reason": "IC customer success role, technical/product-focused, no leadership scope or transformation mandate\u2014mismatches seniority and function.",
-   "bg": "e375d8ec09f3"
+   "reason": "US-remote practical fit is strong",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Circle::JR100755",
+  "company": "Circle",
+  "title": "Director, Arc - Banking Strategy & GTM",
+  "location": "San Francisco, California, United States of America (Remote)",
+  "url": "https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Business-Development-Director--Arc_JR100755-1/apply",
+  "posted": "2026-07-21",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "cae648f28d15"
   }
  }
 ]

@@ -1,0 +1,607 @@
+{
+ "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: applied, already_applied, not_interested, too_technical, wrong_function, wrong_industry, interested. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
+ "entries": [
+  {
+   "key": "1Password::c22ea4e6-f39b-448c-a9e9-a04445ba18e6",
+   "company": "1Password",
+   "title": "Developer, Open Source",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "1Password::df6afe6a-7e62-4d57-be23-22583d0cdeb9",
+   "company": "1Password",
+   "title": "Senior IT Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R169523",
+   "company": "Adobe",
+   "title": "Data Science Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R170420",
+   "company": "Adobe",
+   "title": "Sr Data Solution Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7817804003",
+   "company": "Affirm",
+   "title": "Engineering Manager, Machine Learning Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7796534003",
+   "company": "Affirm",
+   "title": "Product Security Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7812982003",
+   "company": "Affirm",
+   "title": "Senior Software Engineer, Affirm Bank",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7808384003",
+   "company": "Affirm",
+   "title": "Senior Software Engineer, Backend (PBA - Growth)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7819654003",
+   "company": "Affirm",
+   "title": "Senior Software Engineer, Fullstack (Card Acquisition)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Airbyte::b59bbc91-fb77-4a08-9c47-0fca7f755942",
+   "company": "Airbyte",
+   "title": "Senior AI Platform Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Airbyte::5930fed9-c4f6-43c3-87be-3402c2c46489",
+   "company": "Airbyte",
+   "title": "Senior Site Reliability Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "BILL::6128903004",
+   "company": "BILL",
+   "title": "Senior Lead Product Manager - Decisioning Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "BambooHR::6120089004",
+   "company": "BambooHR",
+   "title": "Sr. Data Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "BambooHR::6127677004",
+   "company": "BambooHR",
+   "title": "Sr. Product Manager, Core Data Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Baseten::c07eb44f-b5fa-4808-90b7-03b265d97836",
+   "company": "Baseten",
+   "title": "IT Support/Operations Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Buffer::1ee8b707-48a0-40cc-a319-3fb7c665a1e8",
+   "company": "Buffer",
+   "title": "Senior Infrastructure Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4700281006",
+   "company": "Chainguard",
+   "title": "Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4700287006",
+   "company": "Chainguard",
+   "title": "Senior Security Engineer (Cloud)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4700937006",
+   "company": "Chainguard",
+   "title": "Senior Software Engineer (AI CICD)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4699416006",
+   "company": "Chainguard",
+   "title": "Senior Software Engineer, Developer Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4699210006",
+   "company": "Chainguard",
+   "title": "Software Engineer (Libraries Platform)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4700933006",
+   "company": "Chainguard",
+   "title": "Staff Software Engineer (AI CICD)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4700929006",
+   "company": "Chainguard",
+   "title": "Staff Software Engineer (AI CICD)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "ClickHouse::6126897004",
+   "company": "ClickHouse",
+   "title": "Engineering Lead, Web Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "ClickHouse::6130149004",
+   "company": "ClickHouse",
+   "title": "Product Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "ClickHouse::6127775004",
+   "company": "ClickHouse",
+   "title": "Senior Curriculum Developer & Instructor",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8093023",
+   "company": "Cloudflare",
+   "title": "Senior Customer Engineer - Vancouver, BC",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8082834",
+   "company": "Cloudflare",
+   "title": "Senior Strategic Customer Engineer, Named - Charlotte, NC",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8095207",
+   "company": "Coinbase",
+   "title": "Senior IT Automation Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8095252",
+   "company": "Coinbase",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8088201",
+   "company": "Coinbase",
+   "title": "Senior Software Engineer - Frontend - Coinbase Card team",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8082199",
+   "company": "Coinbase",
+   "title": "Senior Software Engineer, Data Engineering Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cricut::744000140495670",
+   "company": "Cricut",
+   "title": "Product Quality Engineer \u2013 Materials",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Deepgram::6f3d761e-4873-43af-a9b1-daeb147661f9",
+   "company": "Deepgram",
+   "title": "Senior Software Engineer - Model Evaluation & AI Systems",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Deepgram::17f95148-fa1c-4c34-82c8-333589bef789",
+   "company": "Deepgram",
+   "title": "Staff Product Manager, Agentic Experiences (Former Engineer)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "DigiCert::8624428002",
+   "company": "DigiCert",
+   "title": "Senior Infrastructure Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Docker::c7d880eb-4fb5-48db-b325-595cc8a8d017",
+   "company": "Docker",
+   "title": "Principal Software Engineer, Networking (Seattle or SF Bay Area)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Docker::ec1eeb85-73bd-4956-bb67-93e0c42958e2",
+   "company": "Docker",
+   "title": "Senior Principal Product Manager, AI & Agent Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Docker::57ccbca7-6818-4e34-8f31-bf762e1f4e00",
+   "company": "Docker",
+   "title": "Staff Software Engineer, Networking (Seattle or SF Bay Area)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Domo::JR100285",
+   "company": "Domo",
+   "title": "Senior CloudOps Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Grafana Labs::6127968004",
+   "company": "Grafana Labs",
+   "title": "Solutions Engineer | East or Central US | Remote",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Instacart::8097510",
+   "company": "Instacart",
+   "title": "Forward Deployed Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Instacart::8091191",
+   "company": "Instacart",
+   "title": "Senior Risk & Compliance Engineer - Data",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LVT::5367884008",
+   "company": "LVT",
+   "title": "Fullstack Software Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LVT::5369362008",
+   "company": "LVT",
+   "title": "Quality Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LVT::5371739008",
+   "company": "LVT",
+   "title": "Senior DevOps Engineer I",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LVT::5368027008",
+   "company": "LVT",
+   "title": "Senior Fullstack Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LVT::5372856008",
+   "company": "LVT",
+   "title": "Senior Software Engineer II - Backend",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LaunchDarkly::7819879003",
+   "company": "LaunchDarkly",
+   "title": "Developer Advocate, Growth",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "NICE::4940224101",
+   "company": "NICE",
+   "title": "Professional Services Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "O.C. Tanner::JR26-205",
+   "company": "O.C. Tanner",
+   "title": "Sr. Site Reliability Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
+   "company": "Ramp",
+   "title": "Software Engineer, Forward Deployed AI",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::dbc6e470-3ec3-4605-b511-8ae166fea7b9",
+   "company": "Ramp",
+   "title": "Software Engineer, GTM Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8094764",
+   "company": "Reddit",
+   "title": "Staff People Integrations Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Render::8815f772-6895-4383-a9e5-6c7bdc2bf141",
+   "company": "Render",
+   "title": "Software Engineer, Agent Auth Experience",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Render::88cb74a4-bc28-40b1-b792-d3041e3e17d3",
+   "company": "Render",
+   "title": "Software Engineer, Network Infrastructure",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Sardine::527bac62-7445-4942-b2df-575fcb93e182",
+   "company": "Sardine",
+   "title": "Data Engineer - Onboarding",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Stripe::7811937",
+   "company": "Stripe",
+   "title": "Risk Strategist, Platform Risk Strategy",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Supabase::11beb619-0c25-4b11-9818-3f18e278c65b",
+   "company": "Supabase",
+   "title": "Performance Engineer - Benchmarking",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Supabase::98ef6a11-9898-4960-9931-1264285849f3",
+   "company": "Supabase",
+   "title": "Performance Engineer - Performance Analysis & Tuning",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Supabase::f6035bf8-4f44-4425-9944-d5509a3c8652",
+   "company": "Supabase",
+   "title": "Release Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Tailscale::4710755005",
+   "company": "Tailscale",
+   "title": "Software Engineer, AI Enablement",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Tailscale::4715448005",
+   "company": "Tailscale",
+   "title": "Software Engineer, Networking (Edge)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Traeger::8081544",
+   "company": "Traeger",
+   "title": "Product Compliance Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8081530",
+   "company": "Twilio",
+   "title": "Principal Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8044650",
+   "company": "Twilio",
+   "title": "Senior Analytics Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8096642",
+   "company": "Twilio",
+   "title": "Senior Presales Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::7946610",
+   "company": "Twilio",
+   "title": "Software Engineer (L2)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8097672",
+   "company": "Twilio",
+   "title": "Software Engineer (L2)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Vanta::1989a49f-227e-4928-b068-8ff24af88541",
+   "company": "Vanta",
+   "title": "Senior Analytics Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025513",
+   "company": "Western Governors University",
+   "title": "Associate Software Product Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025250",
+   "company": "Western Governors University",
+   "title": "Principal Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025248",
+   "company": "Western Governors University",
+   "title": "Principal Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025457",
+   "company": "Western Governors University",
+   "title": "Salesforce Engineer I",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025654",
+   "company": "Western Governors University",
+   "title": "Senior Cloud Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025703",
+   "company": "Western Governors University",
+   "title": "Senior Cloud Engineer (IAM)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025812",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025286",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025416",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer - Salesforce",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025614",
+   "company": "Western Governors University",
+   "title": "Senior Software Product Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025615",
+   "company": "Western Governors University",
+   "title": "Senior User Experience Designer-Software",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025312",
+   "company": "Western Governors University",
+   "title": "Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025417",
+   "company": "Western Governors University",
+   "title": "Software Engineer II - Salesforce",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025290",
+   "company": "Western Governors University",
+   "title": "Staff Software Engineer  | Developer Experience",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025664",
+   "company": "Western Governors University",
+   "title": "Staff Software Product Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "iCapital::8631890002",
+   "company": "iCapital",
+   "title": "Software Engineer in Test - Associate",
+   "status": "",
+   "note": ""
+  }
+ ]
+}

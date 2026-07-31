@@ -1,5 +1,68 @@
 [
  {
+  "key": "Aquent::211898",
+  "company": "Aquent",
+  "title": "Business Program Manager",
+  "location": "REDMOND, WA, US (Remote)",
+  "url": "https://aquent.com/find-work/211898",
+  "posted": "2026-07-28",
+  "salary": "up to $67.00/hr",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "reasons": [
+    "Program/operations leadership supporting executive rhythm of business",
+    "Strategic roadmap and OKR ownership aligns with core skills",
+    "Remote work fits US-remote preference",
+    "Contract role fits stated openness to contract work"
+   ],
+   "concerns": [
+    "Contract/temp via staffing firm, not permanent",
+    "Likely more execution/coordination than strategic ownership",
+    "Compensation and duration not specified"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 72,
+   "practical_fit": 70,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "maybe",
+   "reason": "Program/operations leadership supporting executive rhythm of business",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Aquent::211857",
+  "company": "Aquent",
+  "title": "Project Manager",
+  "location": "Chicago, IL, US (Remote)",
+  "url": "https://aquent.com/find-work/211857",
+  "posted": "2026-07-27",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
+ },
+ {
   "key": "Aquent::211825",
   "company": "Aquent",
   "title": "Marketing Operations Manager",
@@ -8,26 +71,103 @@
   "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
+   "recommendation": "practical_contract",
+   "reasons": [
+    "Marketing ops, AI enablement, change management align with core strengths",
+    "Program governance and process design match operational excellence skills",
+    "US-remote satisfies location constraint",
+    "Contract role fits explicitly acceptable employment type"
+   ],
+   "concerns": [
+    "Manager-level scope may be narrower than target seniority",
+    "Staffing firm contract likely limited duration/no benefits",
+    "Mandate seems tactical/coordination-heavy vs strategic leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 75,
+   "practical_fit": 70,
+   "opportunity_score": 68,
+   "score": 68,
    "fit": "maybe",
-   "score": 45,
-   "reason": "AI enablement/change mgmt fits, but Manager-level marketing ops via staffing agency is narrower scope than target.",
-   "bg": "e375d8ec09f3"
+   "reason": "Marketing ops, AI enablement, change management align with core strengths",
+   "bg": "cae648f28d15"
   }
  },
  {
-  "key": "Aquent::211747",
+  "key": "Aquent::211799",
   "company": "Aquent",
-  "title": "Depot Operations Manager",
-  "location": "Mountain View, CA, US (Remote)",
-  "url": "https://aquent.com/find-work/211747",
+  "title": "Senior Program Manager",
+  "location": "Anderson, SC, US (Remote)",
+  "url": "https://aquent.com/find-work/211799",
+  "posted": "2026-07-23",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "reasons": [
+    "Enterprise transformation program lead mandate",
+    "Operating model design for vendor/third-party governance",
+    "Cross-functional stakeholder orchestration at scale",
+    "Aligns with operational excellence and process transformation strengths"
+   ],
+   "concerns": [
+    "Contract role via staffing firm, not permanent",
+    "Onsite/remote status ambiguous with SC location listed",
+    "Healthcare vendor-governance niche may require ramp-up"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 80,
+   "interest_fit": 85,
+   "practical_fit": 65,
+   "opportunity_score": 78,
+   "score": 78,
+   "fit": "maybe",
+   "reason": "Enterprise transformation program lead mandate",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Aquent::211772",
+  "company": "Aquent",
+  "title": "Product Manager",
+  "location": "Chicago, IL, US (Remote)",
+  "url": "https://aquent.com/find-work/211772",
   "posted": "2026-07-22",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Product manager IC role, not transformation leadership",
+    "Healthcare workflow modernization touches operational excellence theme",
+    "Remote contract role fits practical constraints",
+    "Backlog/agile ownership lacks strategic or org-wide scope"
+   ],
+   "concerns": [
+    "Core mandate is tactical PM/backlog work, not strategy",
+    "Staffing firm contract likely limited duration/pay",
+    "Little executive-facing or transformation leadership scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 38,
+   "score": 38,
    "fit": "no",
-   "score": 12,
-   "reason": "Hands-on physical operations/depot management role, not transformation, strategy, or org-effectiveness leadership.",
-   "bg": "e375d8ec09f3"
-  }
+   "reason": "Product manager IC role, not transformation leadership",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
  },
  {
   "key": "Aquent::211577",
@@ -38,10 +178,29 @@
   "posted": "2026-07-15",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 8,
-   "reason": "IC execution/PM role, no leadership mandate, marketing campaign ops not transformation/strategy\u2014clear mismatch.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "practical_contract",
+   "reasons": [
+    "Marketing operations aligns with adjacent domain experience",
+    "Remote contract role could provide interim income",
+    "Project/campaign coordination lacks strategic ownership scope"
+   ],
+   "concerns": [
+    "Tactical execution role, not transformation or strategy-level",
+    "Below her seniority and mandate expectations",
+    "Staffing-firm contract with limited long-term upside"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Marketing operations aligns with adjacent domain experience",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -53,10 +212,31 @@
   "posted": "2026-07-15",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 48,
-   "reason": "Strategic portfolio/operational excellence mandate fits, but likely IC/contract role via Aquent, unclear leadership scope.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Portfolio/PMO operations with value-realization mandate fits core domains",
+    "Lean-Agile transformation and operational excellence focus",
+    "Remote role fits practical constraints",
+    "Contract work explicitly in scope for candidate",
+    "Financial services strategic initiatives leadership"
+   ],
+   "concerns": [
+    "Contract/staffing-firm role, not permanent",
+    "Generic 'Manager' title may undersell scope",
+    "Details on seniority/compensation unclear"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 80,
+   "practical_fit": 80,
+   "opportunity_score": 76,
+   "score": 76,
+   "fit": "yes",
+   "reason": "Portfolio/PMO operations with value-realization mandate fits core domains",
+   "bg": "cae648f28d15"
   }
  },
  {
@@ -68,11 +248,68 @@
   "posted": "2026-07-14",
   "salary": "up to $76.00/hr",
   "fit_result": {
+   "recommendation": "practical_contract",
+   "reasons": [
+    "Operational excellence and process optimization mandate",
+    "AI adoption and enablement explicitly in scope",
+    "Cross-functional operations leadership at scale",
+    "Remote role fits practical constraints",
+    "Contract work explicitly in candidate's acceptable range"
+   ],
+   "concerns": [
+    "Staffing firm contract role, likely limited duration",
+    "Marketing-org focus narrower than enterprise transformation scope",
+    "Title suggests possibly less senior/strategic than target roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 82,
+   "interest_fit": 78,
+   "practical_fit": 75,
+   "opportunity_score": 74,
+   "score": 74,
    "fit": "maybe",
-   "score": 40,
-   "reason": "Business ops/process role but marketing-execution focused, contractor-style, unclear leadership scope; below her transformation/M&A mandate level.",
-   "bg": "e375d8ec09f3"
+   "reason": "Operational excellence and process optimization mandate",
+   "bg": "cae648f28d15"
   }
+ },
+ {
+  "key": "Eliassen::650f0f1e-7fc0-11f1-a7a9-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Product Manager \u2013 Agentic AI, HR Technology",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/ojEVgx/product-manager-agentic-ai-hr-technology-product-management-anywhere-a1wuq000001gsg92aa",
+  "posted": "2026-07-25",
+  "salary": "$85.00 to $95.00",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "reasons": [
+    "AI enablement and employee experience mandate fits interests",
+    "W2 contract offers income and experience value",
+    "Remote, no relocation needed",
+    "Cross-functional liaison role suits her operating style"
+   ],
+   "concerns": [
+    "Requires deep Workday/ServiceNow technical product management background",
+    "Hands-on AI/product management skillset not clearly demonstrated in profile",
+    "Staffing-firm contract role, limited strategic ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 65,
+   "practical_fit": 70,
+   "opportunity_score": 58,
+   "score": 58,
+   "fit": "maybe",
+   "reason": "AI enablement and employee experience mandate fits interests",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
  },
  {
   "key": "Eliassen::c8874d0d-7adc-11f1-9454-02420a6c7775",
@@ -83,10 +320,30 @@
   "posted": "2026-07-17",
   "salary": "$75.00 to $85.00",
   "fit_result": {
-   "fit": "no",
-   "score": 28,
-   "reason": "Contract W2 hourly OCM role for single tool migration\u2014narrow, tactical, below her transformation-leadership mandate level.",
-   "bg": "e375d8ec09f3"
+   "recommendation": "practical_contract",
+   "reasons": [
+    "Change management ownership A-Z fits core skillset",
+    "Remote contract fits practical constraints well",
+    "AI-enabled enablement aligns with AI adoption interest",
+    "Stakeholder engagement and adoption metrics match strengths"
+   ],
+   "concerns": [
+    "Narrow tool migration scope, not broad transformation",
+    "W2 contract hourly rate, no long-term security",
+    "Staffing firm placement limits strategic influence"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 70,
+   "practical_fit": 78,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "maybe",
+   "reason": "Change management ownership A-Z fits core skillset",
+   "bg": "cae648f28d15"
   }
  }
 ]

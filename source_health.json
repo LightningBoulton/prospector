@@ -1,0 +1,1014 @@
+{
+ "_comment": "Per-company fetch health from the most recent run. consecutive_zero_runs counts runs returning no in-window roles \u2014 a rising number suggests an ATS migration or a changed slug.",
+ "generated": "2026-07-31",
+ "sources": [
+  {
+   "name": "Filevine",
+   "registry": "local",
+   "ats": "lever",
+   "slug": "filevine",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Qualtrics",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "qualtrics",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "DigiCert",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "digicert",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Cricut",
+   "registry": "local",
+   "ats": "smartrecruiters",
+   "slug": "cricut",
+   "roles_returned": 7,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Lucid Software",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "lucidsoftware",
+   "roles_returned": 3,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Entrata",
+   "registry": "local",
+   "ats": "lever",
+   "slug": "entrata",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Galileo (SoFi)",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "galileo",
+   "roles_returned": 5,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Awardco",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "awardco",
+   "roles_returned": 4,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Weave",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "weave",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Route",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "route",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Vivint",
+   "registry": "local",
+   "ats": "smartrecruiters",
+   "slug": "vivint",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Instructure",
+   "registry": "local",
+   "ats": "smartrecruiters",
+   "slug": "instructure",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Pluralsight",
+   "registry": "local",
+   "ats": "workday",
+   "slug": "pluralsight",
+   "roles_returned": 6,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Podium",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "podium81",
+   "roles_returned": 6,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "MX",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "mxtechnologiesinc",
+   "roles_returned": 3,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "BILL",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "billcom",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Recursion",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "recursionpharmaceuticals",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Canopy",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "canopytax",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Nav",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "navtechnologies",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Domo",
+   "registry": "local",
+   "ats": "workday",
+   "slug": "domo",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Adobe",
+   "registry": "local",
+   "ats": "workday",
+   "slug": "adobe",
+   "roles_returned": 19,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "BambooHR",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "bamboohr17",
+   "roles_returned": 3,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Ancestry",
+   "registry": "local",
+   "ats": "workday",
+   "slug": "ancestry",
+   "roles_returned": 5,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Health Catalyst",
+   "registry": "local",
+   "ats": "workday",
+   "slug": "healthcatalyst",
+   "roles_returned": 6,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Traeger",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "traegergrills",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Beyond (Overstock)",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "beyond",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Nomi Health",
+   "registry": "local",
+   "ats": "lever",
+   "slug": "nomihealth",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Pattern",
+   "registry": "local",
+   "ats": "lever",
+   "slug": "pattern",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "NICE",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "nice",
+   "roles_returned": 19,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Brex",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "brex",
+   "roles_returned": 8,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Kelso Industries",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "kelsoindustries",
+   "roles_returned": 21,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Speechify",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "speechify",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Flex",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "flex",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Western Governors University",
+   "registry": "local",
+   "ats": "workday",
+   "slug": "wgu",
+   "roles_returned": 66,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "O.C. Tanner",
+   "registry": "local",
+   "ats": "workday",
+   "slug": "octanner",
+   "roles_returned": 8,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "iCapital",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "icapitalnetwork",
+   "roles_returned": 5,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "LVT",
+   "registry": "local",
+   "ats": "greenhouse",
+   "slug": "liveviewtechnologiesinc",
+   "roles_returned": 15,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "BYU",
+   "registry": "local",
+   "ats": "workday",
+   "slug": "byu",
+   "roles_returned": 31,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "GitLab",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "gitlab",
+   "roles_returned": 20,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Cloudflare",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "cloudflare",
+   "roles_returned": 8,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Coinbase",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "coinbase",
+   "roles_returned": 22,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Reddit",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "reddit",
+   "roles_returned": 10,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Datadog",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "datadog",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Airtable",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "airtable",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Twilio",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "twilio",
+   "roles_returned": 36,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Vercel",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "vercel",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Grafana Labs",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "grafanalabs",
+   "roles_returned": 9,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Postman",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "postman",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Webflow",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "webflow",
+   "roles_returned": 5,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Mercury",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "mercury",
+   "roles_returned": 12,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Netlify",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "netlify",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Doximity",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "doximity",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Gusto",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "gusto",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Affirm",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "affirm",
+   "roles_returned": 18,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Discord",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "discord",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Supabase",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "supabase",
+   "roles_returned": 7,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "PostHog",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "posthog",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Buffer",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "buffer",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Linear",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "linear",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Replit",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "replit",
+   "roles_returned": 6,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Ramp",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "ramp",
+   "roles_returned": 11,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Vanta",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "vanta",
+   "roles_returned": 10,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Render",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "render",
+   "roles_returned": 7,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Sentry",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "sentry",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Zapier",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "zapier",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Notion",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "notion",
+   "roles_returned": 6,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Toptal",
+   "registry": "remote",
+   "ats": "lever",
+   "slug": "toptal",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Stripe",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "stripe",
+   "roles_returned": 20,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Instacart",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "instacart",
+   "roles_returned": 10,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Fivetran",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "fivetran",
+   "roles_returned": 35,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Hightouch",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "hightouch",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Temporal",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "temporaltechnologies",
+   "roles_returned": 4,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Dropbox",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "dropbox",
+   "roles_returned": 7,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Calendly",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "calendly",
+   "roles_returned": 3,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Chime",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "chime",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Postscript",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "postscript",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Cockroach Labs",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "cockroachlabs",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Plaid",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "plaid",
+   "roles_returned": 22,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "1Password",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "1password",
+   "roles_returned": 10,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Confluent",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "confluent",
+   "roles_returned": 3,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Docker",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "docker",
+   "roles_returned": 4,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Airbyte",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "airbyte",
+   "roles_returned": 4,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Close",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "close",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Pinecone",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "pinecone",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Miro",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "miro",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Sourcegraph",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "sourcegraph91",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Tailscale",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "tailscale",
+   "roles_returned": 7,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "LaunchDarkly",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "launchdarkly",
+   "roles_returned": 4,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Amplitude",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "amplitude",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Mixpanel",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "mixpanel",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "ClickHouse",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "clickhouse",
+   "roles_returned": 7,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Chainguard",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "chainguard",
+   "roles_returned": 9,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Cresta",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "cresta",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Gemini",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "gemini",
+   "roles_returned": 7,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Together AI",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "togetherai",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "AssemblyAI",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "assemblyai",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Customer.io",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "customerio",
+   "roles_returned": 5,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Knock",
+   "registry": "remote",
+   "ats": "greenhouse",
+   "slug": "knock",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Baseten",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "baseten",
+   "roles_returned": 3,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Deepgram",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "deepgram",
+   "roles_returned": 12,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "LangChain",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "langchain",
+   "roles_returned": 5,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Sanity",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "sanity",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Alchemy",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "alchemy",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Sardine",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "sardine",
+   "roles_returned": 4,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Vantage",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "vantage",
+   "roles_returned": 3,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Doppler",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "doppler",
+   "roles_returned": 1,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Inngest",
+   "registry": "remote",
+   "ats": "ashby",
+   "slug": "inngest",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Metabase",
+   "registry": "remote",
+   "ats": "lever",
+   "slug": "metabase",
+   "roles_returned": 0,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 1
+  },
+  {
+   "name": "Circle",
+   "registry": "remote",
+   "ats": "phenom",
+   "slug": "circle",
+   "roles_returned": 2,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Aquent",
+   "registry": "staffing",
+   "ats": "aquent",
+   "slug": "aquent",
+   "roles_returned": 147,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Eliassen",
+   "registry": "staffing",
+   "ats": "snaphop",
+   "slug": "eliassen",
+   "roles_returned": 25,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  },
+  {
+   "name": "Addison Group",
+   "registry": "staffing",
+   "ats": "snaphop",
+   "slug": "addisongroup",
+   "roles_returned": 3,
+   "fetch_failed": false,
+   "consecutive_zero_runs": 0
+  }
+ ]
+}

@@ -8,10 +8,29 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Infrastructure/ops role, not software engineering",
+    "No React/.NET/frontend engineering focus",
+    "Datacenter hardware ops mismatches candidate's skillset"
+   ],
+   "concerns": [
+    "Wrong function - infra/sysadmin not software dev",
+    "Requires onsite days for hardware testing",
+    "No mention of compensation"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 8,
-   "reason": "Datacenter infra/hypervisor/storage ops role, not software engineering; mismatches candidate's frontend/full-stack focus.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Infrastructure/ops role, not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -23,25 +42,27 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Materials/quality engineering, not software engineering",
+    "No alignment with full-stack or platform engineering background"
+   ],
+   "concerns": [
+    "Wrong function entirely",
+    "No description to verify but title suggests mismatch"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 30,
+   "opportunity_score": 5,
+   "score": 5,
    "fit": "no",
-   "score": 3,
-   "reason": "Product quality/materials engineering role, unrelated to software engineering; mismatched function entirely.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Cricut::744000139368229",
-  "company": "Cricut",
-  "title": "Staff AI-Native Software Engineer",
-  "location": "South Jordan, UT, United States",
-  "url": "https://jobs.smartrecruiters.com/cricut/744000139368229",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 60,
-   "reason": "Staff-level, local to SLC area, AI-native angle intriguing, but no details on stack, comp, or scope.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Materials/quality engineering, not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -53,10 +74,62 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Product management role, not engineering",
+    "Wrong function despite Utah location match"
+   ],
+   "concerns": [
+    "Not a hands-on engineering IC role",
+    "Risk/product strategy mismatch with candidate background"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 55,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 5,
-   "reason": "Product Manager role, not engineering; mismatched function despite fintech domain relevance.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Product management role, not engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Domo::JR100285",
+  "company": "Domo",
+  "title": "Senior CloudOps Engineer",
+  "location": "US UT Remote",
+  "url": "https://domo.wd12.myworkdayjobs.com/DomoCareers/job/US-UT-Remote/Senior-CloudOps-Engineer_JR100285",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah remote role matches location preference",
+    "AWS/Kubernetes overlap with candidate's cloud skills",
+    "CloudOps differs from full-stack engineering focus",
+    "No description limits qualification assessment"
+   ],
+   "concerns": [
+    "Role appears ops-focused, not core software engineering",
+    "Minimal posting detail makes fit uncertain",
+    "Title suggests Senior level, below Principal target"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 30,
+   "practical_fit": 90,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah remote role matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -65,13 +138,32 @@
   "title": "Sr Data Solution Engineer",
   "location": "Lehi",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Sr-Data-Solution-Engineer_R170420",
-  "posted": "2026-07-28",
+  "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Adobe is strong enterprise SaaS company",
+    "Lehi, UT location near Salt Lake Valley",
+    "Data solution engineering diverges from core frontend/full-stack strength"
+   ],
+   "concerns": [
+    "No job description available to assess mandate",
+    "Title suggests data engineering, not full-stack/frontend focus",
+    "Unclear seniority/scope of individual contributor role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 75,
+   "opportunity_score": 48,
+   "score": 48,
    "fit": "maybe",
-   "score": 35,
-   "reason": "Data solution engineering unclear scope; not core frontend/full-stack fit, lacks description detail.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Adobe is strong enterprise SaaS company",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -80,13 +172,66 @@
   "title": "Data Science Engineer",
   "location": "Lehi (+3 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Data-Science-Engineer_R169523-1",
-  "posted": "2026-07-24",
+  "posted": "2026-07-25",
   "salary": "$163,200 - $236,400",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Utah location is practical",
+    "Title suggests data science, not software engineering",
+    "No description to confirm architecture/full-stack scope",
+    "Mismatch with candidate's frontend/backend strengths"
+   ],
+   "concerns": [
+    "Role likely emphasizes ML/data science skills candidate lacks",
+    "No job description to verify actual mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 25,
+   "practical_fit": 75,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "score": 15,
-   "reason": "Data Science Engineer role mismatches candidate's frontend/full-stack architecture background; no description confirms overlap.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Utah location is practical",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "BambooHR::6120089004",
+  "company": "BambooHR",
+  "title": "Sr. Data Engineer",
+  "location": "Utah | Hybrid",
+  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6120089004",
+  "posted": "2026-07-30",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Data engineering role, not software engineering fit",
+    "Utah hybrid location matches preference",
+    "Requires Python/SQL/ML pipeline expertise not in profile"
+   ],
+   "concerns": [
+    "Core mandate is data/ML infrastructure, not frontend/full-stack",
+    "Candidate lacks demonstrated data engineering or Databricks experience",
+    "Background/credit check requirement adds friction"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 65,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Data engineering role, not software engineering fit",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -98,10 +243,29 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Product management role, not engineering",
+    "Not hands-on IC engineering per candidate must-haves",
+    "Utah hybrid location is workable"
+   ],
+   "concerns": [
+    "Wrong function - PM not engineering",
+    "No coding/architecture ownership described",
+    "Dealbreaker: non-engineering role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "score": 8,
-   "reason": "Product Manager role, not engineering IC; mismatched function despite Utah location and data platform domain.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Product management role, not engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -113,10 +277,28 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Regulatory compliance engineering, not software engineering",
+    "No match to full-stack/cloud skillset",
+    "Wrong function entirely"
+   ],
+   "concerns": [
+    "Not a software engineering role",
+    "No technical stack overlap"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 60,
+   "opportunity_score": 8,
+   "score": 8,
    "fit": "no",
-   "score": 3,
-   "reason": "Regulatory/compliance engineering role for hardware products, unrelated to software engineering background.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Regulatory compliance engineering, not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -128,10 +310,96 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Dealbreaker: professional/customer-facing services role",
+    "Not hands-on architecture/engineering ownership",
+    "Junior/mid-level implementation scope, not principal-level",
+    "Utah location is practically convenient though"
+   ],
+   "concerns": [
+    "Explicit sales/services engineering dealbreaker",
+    "Role is implementation support, not core engineering",
+    "Likely below desired seniority and comp expectations"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 8,
-   "reason": "Professional services/implementation role, not senior SWE; mismatched seniority, function, and dealbreaker (customer support).",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Dealbreaker: professional/customer-facing services role",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025812",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025812",
+  "posted": "2026-07-31",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Senior Software Engineer matches seniority target",
+    "Salt Lake City location fits candidate preference",
+    "No description limits confidence in mandate"
+   ],
+   "concerns": [
+    "No job description available to assess tech stack fit",
+    "Unknown if compensation meets $190k minimum",
+    "Education-sector SaaS may differ from enterprise B2B focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 45,
+   "practical_fit": 75,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Senior Software Engineer matches seniority target",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025615",
+  "company": "Western Governors University",
+  "title": "Senior User Experience Designer-Software",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-User-Experience-Designer-Software_JR-025615",
+  "posted": "2026-07-31",
+  "salary": "$118,900.00 - $178,500.00",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "UX Designer role, not software engineering",
+    "Mismatch with candidate's engineering background and goals"
+   ],
+   "concerns": [
+    "Not a hands-on engineering role",
+    "No description to verify tech scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 60,
+   "opportunity_score": 12,
+   "score": 12,
+   "fit": "no",
+   "reason": "UX Designer role, not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -140,13 +408,32 @@
   "title": "Senior Software Engineer",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025286",
-  "posted": "2026-07-29",
+  "posted": "2026-07-30",
   "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Senior Software Engineer title matches seniority target",
+    "Salt Lake City location fits practical preference",
+    "No description available to assess mandate quality"
+   ],
+   "concerns": [
+    "No job description to verify tech stack or scope",
+    "Unknown compensation vs $190k minimum",
+    "WGU may be less technically ambitious than SaaS/platform roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 50,
+   "practical_fit": 75,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "score": 50,
-   "reason": "Senior title fits location, but no description to confirm domain, stack, or seniority match.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Senior Software Engineer title matches seniority target",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -155,13 +442,33 @@
   "title": "Software Engineer",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer--WIS-to-Domestic-_JR-025312",
-  "posted": "2026-07-29",
+  "posted": "2026-07-30",
   "salary": "$98,300.00 - $147,400.00",
   "fit_result": {
-   "fit": "maybe",
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah-based, matches location preference",
+    "Generic title suggests non-senior level",
+    "Enterprise software domain aligns loosely",
+    "No description to confirm tech stack or scope"
+   ],
+   "concerns": [
+    "Title 'Software Engineer' may be below Principal/Staff level",
+    "No compensation or seniority details provided",
+    "Unclear if role offers hands-on technical leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 75,
+   "opportunity_score": 40,
    "score": 40,
-   "reason": "Location matches, but generic title suggests possibly junior role; no domain/seniority detail to confirm fit.",
-   "bg": "b9f9e4b0db4d"
+   "fit": "maybe",
+   "reason": "Utah-based, matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -170,13 +477,32 @@
   "title": "Associate Software Product Manager",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Product-Manager_JR-025513",
-  "posted": "2026-07-29",
+  "posted": "2026-07-30",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Product management, not engineering role",
+    "Associate level too junior for Principal",
+    "Non-engineering role is a dealbreaker"
+   ],
+   "concerns": [
+    "Title suggests PM track, not IC engineering",
+    "No technical hands-on scope described",
+    "Likely far below $190k target for Associate level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 65,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 5,
-   "reason": "Associate PM role is junior, non-engineering, mismatched seniority and function for a Principal Engineer.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Product management, not engineering role",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -185,13 +511,33 @@
   "title": "Senior Cloud Engineer (IAM)",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer--IAM-_JR-025703",
-  "posted": "2026-07-28",
+  "posted": "2026-07-29",
   "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah on-site location matches preference",
+    "Has AWS, OAuth, Cognito, JWT experience",
+    "IAM specialization narrower than generalist background",
+    "Limited description makes mandate unclear"
+   ],
+   "concerns": [
+    "No job description to assess actual scope",
+    "IAM-focused role may be too narrow/specialized",
+    "Unclear if hands-on engineering vs. security/ops focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 48,
+   "score": 48,
    "fit": "maybe",
-   "score": 40,
-   "reason": "IAM/cloud engineering is narrower than full-stack profile; location fits, but role focus and seniority unclear.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Utah on-site location matches preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -200,13 +546,32 @@
   "title": "Principal Software Engineer",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025250",
-  "posted": "2026-07-27",
+  "posted": "2026-07-28",
   "salary": "$180,300.00 - $279,500.00",
   "fit_result": {
-   "fit": "maybe",
-   "score": 60,
-   "reason": "Right title, seniority, and location match, but no details on tech stack, domain, or compensation.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Principal Software Engineer title matches seniority target",
+    "Salt Lake City location fits candidate's local preference",
+    "Enterprise-scale org likely needs modern SaaS architecture"
+   ],
+   "concerns": [
+    "No job description available to verify tech stack fit",
+    "Compensation and remote/hybrid policy unknown",
+    "WGU industry (higher ed) not a stated priority"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 60,
+   "practical_fit": 80,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "yes",
+   "reason": "Principal Software Engineer title matches seniority target",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -215,13 +580,32 @@
   "title": "Principal Software Engineer",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer_JR-025248",
-  "posted": "2026-07-27",
+  "posted": "2026-07-28",
   "salary": "$180,300.00 - $279,500.00",
   "fit_result": {
-   "fit": "maybe",
-   "score": 60,
-   "reason": "Right title/location/seniority, but no description to confirm stack, domain, or compensation fit.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Principal Software Engineer title matches seniority target",
+    "Salt Lake City location fits Utah preference",
+    "Likely enterprise SaaS/edtech platform work"
+   ],
+   "concerns": [
+    "No description available to confirm tech stack",
+    "Unknown remote/hybrid/onsite policy",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 60,
+   "practical_fit": 80,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "yes",
+   "reason": "Principal Software Engineer title matches seniority target",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -230,13 +614,33 @@
   "title": "Staff Software Engineer  | Developer Experience",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer---WIS-to-Domestic-_JR-025290",
-  "posted": "2026-07-27",
+  "posted": "2026-07-28",
   "salary": "$161,000.00 - $249,500.00",
   "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Developer Experience focus matches core interest area",
+    "Staff-level IC role fits seniority target",
+    "Salt Lake City location fits Utah preference",
+    "Direct employer, likely stable enterprise tech org"
+   ],
+   "concerns": [
+    "No description available to confirm tech stack fit",
+    "Compensation not stated, may be below $190k target",
+    "Onsite/hybrid requirement unclear"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 80,
+   "interest_fit": 88,
+   "practical_fit": 85,
+   "opportunity_score": 82,
+   "score": 82,
    "fit": "yes",
-   "score": 78,
-   "reason": "Staff-level DevEx role in SLC matches seniority, function, and location; details sparse but strong directional fit.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Developer Experience focus matches core interest area",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -245,13 +649,32 @@
   "title": "Staff Software Product Manager",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Product-Manager_JR-025664",
-  "posted": "2026-07-27",
+  "posted": "2026-07-28",
   "salary": "$161,000.00 - $249,500.00",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Product Manager role, not software engineering",
+    "Wrong function despite good Utah location",
+    "No hands-on engineering mandate implied by title"
+   ],
+   "concerns": [
+    "Title suggests PM/product role, not IC engineering",
+    "No description available to verify technical scope",
+    "Likely misaligned with candidate's engineering-only focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 75,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 10,
-   "reason": "Product management role, not hands-on engineering; mismatched function despite good location.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Product Manager role, not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -260,13 +683,32 @@
   "title": "Senior Software Product Manager",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Product-Manager_JR-025614",
-  "posted": "2026-07-27",
+  "posted": "2026-07-28",
   "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Product management, not engineering role",
+    "Utah location matches preference",
+    "No hands-on engineering mandate evident"
+   ],
+   "concerns": [
+    "Wrong function - PM not engineering",
+    "No description to verify technical scope",
+    "Likely misaligned with IC engineering goals"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 65,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 8,
-   "reason": "Product Manager role, not hands-on engineering; mismatched function despite good location.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Product management, not engineering role",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -275,13 +717,33 @@
   "title": "Senior Cloud Engineer",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer_JR-025654",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
-   "fit": "maybe",
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah-based role matches location preference",
+    "AWS/cloud experience partially overlaps skillset",
+    "Title suggests infra-focus, not full-stack dev",
+    "No description to confirm mandate or seniority scope"
+   ],
+   "concerns": [
+    "Lacks job description to assess actual responsibilities",
+    "Cloud Engineer title suggests ops/infra vs software engineering",
+    "Unclear compensation and remote/hybrid policy"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 80,
+   "opportunity_score": 45,
    "score": 45,
-   "reason": "Location matches but title suggests infra/cloud ops role, not frontend-leaning full-stack engineering fit.",
-   "bg": "b9f9e4b0db4d"
+   "fit": "maybe",
+   "reason": "Utah-based role matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -290,13 +752,32 @@
   "title": "Salesforce Engineer I",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Salesforce-Engineer-I_JR-025457",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$98,300.00 - $147,400.00",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Salesforce-specific role, not candidate's tech stack",
+    "Title 'Engineer I' suggests junior/entry-level position",
+    "No modern React/.NET/AWS platform work indicated"
+   ],
+   "concerns": [
+    "Likely junior-level role conflicting with Principal seniority target",
+    "Salesforce platform expertise not part of candidate's background",
+    "No job description available to verify scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 70,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 8,
-   "reason": "Junior Salesforce role, wrong seniority and tech stack; mismatches core .NET/React/AWS expertise.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Salesforce-specific role, not candidate's tech stack",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -305,13 +786,32 @@
   "title": "Software Engineer II - Salesforce",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Salesforce_JR-025417",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$118,900.00 - $178,500.00",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Salesforce niche mismatch with core stack",
+    "Title suggests mid-level, below Principal target",
+    "Utah location is practically workable"
+   ],
+   "concerns": [
+    "No .NET/React/AWS focus evident",
+    "Likely below desired seniority and compensation",
+    "Minimal description limits confidence"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "score": 15,
-   "reason": "Salesforce Engineer II is junior-level, wrong stack/domain; mismatches seniority and core tech expertise.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Salesforce niche mismatch with core stack",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -320,13 +820,33 @@
   "title": "Senior Software Engineer - Salesforce",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416",
-  "posted": "2026-07-23",
+  "posted": "2026-07-24",
   "salary": "$143,700.00 - $222,700.00",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Salt Lake City location matches preference",
+    "Senior IC title aligns with seniority target",
+    "Salesforce stack mismatches core skillset",
+    "No React/.NET/AWS focus evident"
+   ],
+   "concerns": [
+    "Salesforce specialization not in candidate's tech stack",
+    "No description to confirm modernization or architecture scope",
+    "Unclear compensation and remote flexibility"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 30,
+   "practical_fit": 80,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "score": 20,
-   "reason": "Salesforce-specific role mismatches candidate's React/.NET/AWS full-stack expertise and background.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Salt Lake City location matches preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -335,13 +855,33 @@
   "title": "Sr. Site Reliability Engineer",
   "location": "USA - Utah-Salt Lake City-Headquarters",
   "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Sr-Site-Reliability-Engineer_JR26-205",
-  "posted": "2026-07-28",
+  "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "SRE role mismatches full-stack/frontend background; no description to confirm modernization or leadership scope.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah HQ location matches location preference",
+    "Some AWS/Kubernetes overlap with candidate skills",
+    "Not a hands-on software engineering role",
+    "SRE specialization differs from full-stack focus"
+   ],
+   "concerns": [
+    "No job description available to assess mandate",
+    "SRE is operations-focused, not core interest",
+    "Compensation unknown, may be below $190k minimum"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 75,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah HQ location matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -353,10 +893,29 @@
   "posted": "2026-07-24",
   "salary": "$90,000 to $110,000",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "QA/SDET role, not software engineering",
+    "Associate-level title mismatches Principal seniority",
+    "Salary far below $190k minimum"
+   ],
+   "concerns": [
+    "Wrong function - testing not engineering",
+    "Compensation ~$100k well under requirement",
+    "Associate level inappropriate for 25 years experience"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 10,
+   "practical_fit": 40,
+   "opportunity_score": 12,
+   "score": 12,
    "fit": "no",
-   "score": 8,
-   "reason": "QA/SDET Associate role, wrong function, junior-level comp far below candidate's $190k minimum",
-   "bg": "b9f9e4b0db4d"
+   "reason": "QA/SDET role, not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -368,10 +927,30 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Utah onsite location matches preference",
+    "Full-stack TypeScript aligns with skills",
+    "Engineer II title likely below Principal level",
+    "AI/IoT platform touches interest areas"
+   ],
+   "concerns": [
+    "Engineer II is junior tier, seniority mismatch",
+    "Compensation likely below $190K minimum",
+    "Unclear if hands-on senior IC scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 60,
+   "opportunity_score": 45,
+   "score": 45,
    "fit": "no",
-   "score": 20,
-   "reason": "Engineer II is too junior for Principal-level candidate; seniority mismatch despite decent tech/domain fit.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Utah onsite location matches preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -383,10 +962,29 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Manufacturing quality engineering, not software engineering",
+    "No match to full-stack/cloud skill set",
+    "Onsite hardware/electro-mechanical role"
+   ],
+   "concerns": [
+    "Wrong function entirely",
+    "Onsite in Spanish Fork, not remote",
+    "No software engineering scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 3,
+   "practical_fit": 15,
+   "opportunity_score": 4,
+   "score": 4,
    "fit": "no",
-   "score": 3,
-   "reason": "Manufacturing quality engineer role, unrelated to software engineering; not a functional match.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Manufacturing quality engineering, not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -398,10 +996,29 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "DevOps/infra role, not core software engineering",
+    "Onsite in Utah but not remote",
+    "Doesn't match frontend/full-stack strengths"
+   ],
+   "concerns": [
+    "Role is DevOps-focused, not application engineering",
+    "Onsite requirement in American Fork, not remote",
+    "Mismatch with candidate's React/.NET SaaS focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
-   "score": 20,
-   "reason": "DevOps/infra role, not full-stack/frontend engineering; onsite Utah, mismatched with candidate's IC software focus.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "DevOps/infra role, not core software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -413,10 +1030,31 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 62,
-   "reason": "Senior fullstack React role fits skills; onsite American Fork, GraphQL/IoT domain differs from SaaS/enterprise focus.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Strong React/full-stack match to stack",
+    "Utah location, no relocation needed",
+    "AI-driven enterprise platform aligns with interests",
+    "Senior IC engineering role with ownership",
+    "GraphQL/backend scaling matches architecture skills"
+   ],
+   "concerns": [
+    "Compensation not stated in posting",
+    "Likely onsite, not fully remote",
+    "GraphQL depth unclear vs REST expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 80,
+   "interest_fit": 72,
+   "practical_fit": 65,
+   "opportunity_score": 70,
+   "score": 70,
+   "fit": "yes",
+   "reason": "Strong React/full-stack match to stack",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -428,10 +1066,31 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 58,
-   "reason": "Senior backend IC fits skills/location, but title level below Principal and backend-only, unclear pay/frontend scope.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Senior IC backend engineering role fits skillset",
+    "Microservices/APIs match strong architecture background",
+    "Utah location (American Fork) within acceptable range",
+    "AI-driven platform aligns with AI interest",
+    "Mentoring aspect fits leadership-without-management preference"
+   ],
+   "concerns": [
+    "Onsite in American Fork, not remote or SLC-hybrid confirmed",
+    "Compensation not stated",
+    "Backend-only role may underuse frontend strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 65,
+   "practical_fit": 70,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Senior IC backend engineering role fits skillset",
+   "bg": "8d3fa4bf6180"
   }
  }
 ]

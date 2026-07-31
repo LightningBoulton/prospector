@@ -1,35 +1,5 @@
 [
  {
-  "key": "GitLab::8615319002",
-  "company": "GitLab",
-  "title": "Senior Backend Engineer - Monitoring and Anomaly Detection (Monetization)",
-  "location": "Remote, Bangalore",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8615319002",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Backend-only billing/monitoring niche, India-based remote, lacks frontend/full-stack scope Chad targets.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Cloudflare::8078323",
-  "company": "Cloudflare",
-  "title": "Senior Customer Engineer, Majors - Detroit, MI",
-  "location": "Distributed",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8078323?gh_jid=8078323",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 5,
-   "reason": "Sales/customer engineering role, not hands-on software engineering; dealbreaker per candidate preferences.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
   "key": "Cloudflare::8093023",
   "company": "Cloudflare",
   "title": "Senior Customer Engineer - Vancouver, BC",
@@ -38,10 +8,29 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Customer-facing sales engineering role, explicit dealbreaker",
+    "Not hands-on software engineering",
+    "Wrong function vs candidate's IC engineering goals"
+   ],
+   "concerns": [
+    "Sales engineering is an explicit dealbreaker",
+    "Location Vancouver BC, not remote-US or Utah",
+    "No coding/architecture ownership described"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 5,
+   "practical_fit": 20,
+   "opportunity_score": 8,
+   "score": 8,
    "fit": "no",
-   "score": 5,
-   "reason": "Customer-facing sales engineering role, not hands-on IC software engineering; dealbreaker match.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Customer-facing sales engineering role, explicit dealbreaker",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -53,10 +42,28 @@
   "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Sales engineering role, explicit dealbreaker",
+    "Not hands-on software engineering",
+    "Customer-facing pre-sales, not engineering IC"
+   ],
+   "concerns": [
+    "Sales engineering excluded as dealbreaker",
+    "Location tied to Charlotte, NC territory"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 10,
+   "interest_fit": 5,
+   "practical_fit": 30,
+   "opportunity_score": 8,
+   "score": 8,
    "fit": "no",
-   "score": 5,
-   "reason": "Sales/customer engineering role, not hands-on IC engineering; explicit dealbreaker (sales engineering).",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Sales engineering role, explicit dealbreaker",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -68,10 +75,29 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "IT operations automation, not product engineering",
+    "Not enterprise SaaS/product development focus",
+    "Remote-USA aligns with location preference"
+   ],
+   "concerns": [
+    "Wrong function: IT support/automation vs software engineering",
+    "No React/.NET/full-stack product work",
+    "Quarterly in-person surges may require travel"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 12,
-   "reason": "IT ops automation role, not software engineering; mismatch on function and seniority target.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "IT operations automation, not product engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -83,10 +109,30 @@
   "posted": "2026-07-30",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote US role matches location preference",
+    "But requires blockchain/Go/smart contract expertise",
+    "No React/.NET/frontend alignment",
+    "Crypto domain outside stated interests"
+   ],
+   "concerns": [
+    "No demonstrated Go or smart contract experience",
+    "Crypto/blockchain not in candidate background",
+    "High-intensity culture with quarterly in-person surges"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 60,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 15,
-   "reason": "Backend Go/blockchain smart contracts role, mismatched with candidate's React/.NET frontend-leaning full-stack background.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote US role matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -98,25 +144,30 @@
   "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Data engineering/blockchain infra platform role mismatches candidate's frontend-leaning full-stack and micro-frontend expertise.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Coinbase::8064873",
-  "company": "Coinbase",
-  "title": "Senior Software Engineer, Data Layer",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8064873?gh_jid=8064873",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote-USA role fits location preference",
+    "Platform engineering aligns with interests",
+    "Backend/data infra differs from frontend strength",
+    "Blockchain domain expertise not demonstrated"
+   ],
+   "concerns": [
+    "Requires data engineering/blockchain domain depth not in background",
+    "Quarterly in-person 'surges' add travel expectation",
+    "Backend-heavy role vs candidate's frontend-leaning strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
    "fit": "maybe",
-   "score": 58,
-   "reason": "Backend API/platform DevEx role fits skills, but crypto domain and senior (not principal) title lower alignment.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote-USA role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -128,55 +179,62 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Frontend React fit but crypto/fintech domain, React Native mobile focus, senior not principal-level scope.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Strong React/frontend match for consumer product work",
+    "Remote-first aligns with location preference",
+    "Greenfield ownership on card platform",
+    "Fintech/crypto differs from typical enterprise SaaS focus"
+   ],
+   "concerns": [
+    "Requires quarterly in-person 'surges' travel",
+    "React Native mobile experience not confirmed in background",
+    "Fast-paced, high-intensity culture described"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 60,
+   "practical_fit": 78,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Strong React/frontend match for consumer product work",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
-  "key": "Coinbase::8064916",
-  "company": "Coinbase",
-  "title": "Staff Software Engineer, Backend - FinHub (Ledger)",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8064916?gh_jid=8064916",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Backend ledger/fintech infra role; mismatches frontend/full-stack strength and micro-frontend/DevEx focus.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Reddit::8084032",
+  "key": "Reddit::8094764",
   "company": "Reddit",
-  "title": "Senior Machine Learning Engineer, ML Efficiency",
+  "title": "Staff People Integrations Engineer",
   "location": "Remote - United States",
-  "url": "https://job-boards.greenhouse.io/reddit/jobs/8084032",
-  "posted": "2026-07-24",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8094764",
+  "posted": "2026-07-30",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "HR/Workday integrations, not software engineering focus",
+    "Mismatch with core full-stack/cloud architecture strengths"
+   ],
+   "concerns": [
+    "Requires deep Workday domain expertise Chad lacks",
+    "Not aligned with React/.NET/AWS platform engineering interests"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 60,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 10,
-   "reason": "ML systems optimization role; mismatch with candidate's frontend/full-stack SaaS engineering background.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Reddit::8082867",
-  "company": "Reddit",
-  "title": "Staff Frontend Engineer, Ads Creative",
-  "location": "Remote - United States",
-  "url": "https://job-boards.greenhouse.io/reddit/jobs/8082867",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "maybe",
-   "score": 62,
-   "reason": "Strong React/TS senior IC match, but ads-domain and title level below Principal target.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "HR/Workday integrations, not software engineering focus",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -188,10 +246,29 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 30,
-   "reason": "Backend data platform/distributed systems focus, not frontend-leaning full-stack; mismatch with candidate's core strengths.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location preference",
+    "Principal IC title matches seniority target",
+    "Data platform focus diverges from candidate's frontend/full-stack strength"
+   ],
+   "concerns": [
+    "Deep data systems expertise required, not core strength",
+    "Limited detail on frontend/full-stack applicability",
+    "Truncated posting limits full mandate assessment"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -203,10 +280,62 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Analytics engineering, not software engineering role",
+    "Focused on data layer/BI, not product development",
+    "Remote US location is practically workable"
+   ],
+   "concerns": [
+    "Not hands-on product/software engineering",
+    "Requires data warehousing/BI skills not in profile",
+    "Misaligned with full-stack/platform engineering interests"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "score": 12,
-   "reason": "Analytics engineering/data pipeline role, not full-stack/frontend or platform engineering fit.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Analytics engineering, not software engineering role",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Twilio::8096642",
+  "company": "Twilio",
+  "title": "Senior Presales Engineer",
+  "location": "Remote - Mexico",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8096642",
+  "posted": "2026-07-30",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Sales engineering role explicitly a dealbreaker",
+    "Not hands-on software engineering",
+    "Remote Mexico location not candidate's target region"
+   ],
+   "concerns": [
+    "Presales/sales function conflicts with candidate dealbreakers",
+    "Location is Mexico, not US remote"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 5,
+   "practical_fit": 15,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Sales engineering role explicitly a dealbreaker",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -218,25 +347,63 @@
   "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Posting is a broken template with no real details",
+    "L2 title suggests junior/mid level, not Principal",
+    "Remote US is practically workable"
+   ],
+   "concerns": [
+    "Job description appears to be unfilled placeholder text",
+    "Seniority level likely below candidate's target"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 30,
+   "practical_fit": 60,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 8,
-   "reason": "Template posting, L2 title suggests junior level, no real details\u2014mismatch with Principal seniority.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Posting is a broken template with no real details",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
-  "key": "Twilio::7689461",
+  "key": "Twilio::8097672",
   "company": "Twilio",
-  "title": "Software Engineer (L2) Email",
+  "title": "Software Engineer (L2)",
   "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/7689461",
-  "posted": "2026-07-23",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8097672",
+  "posted": "2026-07-30",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 5,
-   "reason": "Template posting, no real content; L2 title suggests junior level, mismatched seniority.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location preference",
+    "Backend engineering at data-heavy CDP platform",
+    "AI-assisted product work aligns with interests",
+    "Enterprise SaaS/developer tools space matches priorities"
+   ],
+   "concerns": [
+    "L2 title suggests mid-level, not Principal scope",
+    "Compensation and seniority level unclear",
+    "Backend-only role may not use frontend strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 65,
+   "practical_fit": 90,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -248,25 +415,28 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Sales engineering role, explicit dealbreaker",
+    "Not hands-on software engineering position",
+    "Customer-facing pre-sales, not core dev work"
+   ],
+   "concerns": [
+    "Sales engineering is a stated dealbreaker",
+    "Not an IC software engineering role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "score": 10,
-   "reason": "Sales/customer-facing solutions engineering role, not hands-on IC software engineering; explicit dealbreaker.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Webflow::8075059",
-  "company": "Webflow",
-  "title": "Senior Partner Solutions Engineer - Pacific Time",
-  "location": "CA Remote (BC & ON only); U.S. Remote",
-  "url": "https://job-boards.greenhouse.io/webflow/jobs/8075059",
-  "posted": "2026-07-23",
-  "salary": "$178,000 - $210,000",
-  "fit_result": {
-   "fit": "no",
-   "score": 8,
-   "reason": "Sales engineering/partner enablement role, not hands-on software engineering; dealbreaker match.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Sales engineering role, explicit dealbreaker",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -278,10 +448,29 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote US matches location preference",
+    "But is people-management role, not hands-on IC",
+    "Requires ML infra specialization Chad lacks",
+    "Candidate prefers staying individual contributor"
+   ],
+   "concerns": [
+    "Explicit people management requirement conflicts with dealbreaker",
+    "Deep ML/GPU infra expertise not in Chad's background"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 80,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "score": 10,
-   "reason": "People management role in ML infra; candidate wants hands-on IC work, not engineering management.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote US matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -293,10 +482,29 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Wrong function: security not software engineering",
+    "Explicitly early-career, not senior IC",
+    "No frontend/backend/cloud architecture mandate"
+   ],
+   "concerns": [
+    "Dealbreaker: entry-level position",
+    "Not aligned with candidate's engineering strengths",
+    "Security specialization mismatch"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 8,
+   "practical_fit": 55,
+   "opportunity_score": 10,
+   "score": 10,
    "fit": "no",
-   "score": 5,
-   "reason": "Early-career security engineering role, mismatched seniority and function vs. principal full-stack engineer.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Wrong function: security not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -308,10 +516,31 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Senior IC remote role fits seniority, but fintech/banking backend focus mismatches frontend/React strengths and domain preference.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote US role fits location preference",
+    "AI-native engineering culture matches AI interest",
+    "Senior IC ownership with real technical scope",
+    "Greenfield build inside established company",
+    "Cloud infra, workflows, data platform align with skills"
+   ],
+   "concerns": [
+    "Banking/fintech domain differs from prior SaaS focus",
+    "Broad generalist scope beyond frontend strength",
+    "Compensation not stated in posting"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 78,
+   "practical_fit": 88,
+   "opportunity_score": 74,
+   "score": 74,
+   "fit": "yes",
+   "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -323,10 +552,29 @@
   "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location preference",
+    "Backend API ownership aligns with strengths",
+    "Enterprise integrations work resembles SaaS platform experience"
+   ],
+   "concerns": [
+    "Tech stack (Python/Java likely) not confirmed vs C#/.NET focus",
+    "Role emphasizes team leadership over hands-on coding",
+    "Fintech domain differs from developer tools/AI infra interest"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "score": 52,
-   "reason": "Senior backend API role fits skills, but not React/frontend-leaning; unclear stack match, fintech domain shift.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -338,10 +586,30 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 58,
-   "reason": "Senior fullstack fits skills, but fintech/mobile+leadership focus differs from platform/DevEx preference; remote is good.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote US role fits location preference",
+    "Full-stack senior engineering with architecture ownership",
+    "Enterprise SaaS-like consumer fintech platform",
+    "Technical leadership and mentoring aligns with strengths"
+   ],
+   "concerns": [
+    "Card acquisition/onboarding domain is narrower than AI/platform interests",
+    "Heavy mobile-web-backend scope may skew less React/.NET specific",
+    "Fintech consumer growth focus vs preferred infra/dev tools space"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 85,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "yes",
+   "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -353,10 +621,30 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote role fits location preference",
+    "Uses AWS/Docker/K8s tangential to candidate skills",
+    "Role is SRE/release engineering, not product engineering",
+    "Lacks frontend/full-stack focus candidate prefers"
+   ],
+   "concerns": [
+    "Core mandate is SRE/on-call reliability work, not software engineering",
+    "No React/frontend or product-building scope",
+    "Mismatch with candidate's UX/product craftsmanship strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 85,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
-   "score": 20,
-   "reason": "SRE/release engineering ops role, not frontend/full-stack IC work matching Chad's core expertise.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -368,10 +656,29 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Deep systems/kernel performance role, not full-stack engineering",
+    "Requires low-level Postgres/kernel expertise candidate lacks",
+    "Remote aligns with location preference"
+   ],
+   "concerns": [
+    "Highly specialized database/kernel performance focus mismatched with candidate's frontend-leaning stack",
+    "No React/.NET/full-stack relevance",
+    "Would require deep Postgres internals expertise not in profile"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 25,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "score": 15,
-   "reason": "Deep systems/kernel/database performance engineering role; mismatched with candidate's frontend-leaning full-stack SaaS background.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Deep systems/kernel performance role, not full-stack engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -383,10 +690,28 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote-friendly and enterprise infra-adjacent",
+    "Postgres/cloud platform aligns loosely with strengths"
+   ],
+   "concerns": [
+    "Highly specialized performance/benchmarking focus, not core skillset",
+    "Not React/full-stack; deep DB internals emphasis",
+    "Niche role diverges from candidate's frontend/full-stack strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 75,
+   "opportunity_score": 32,
+   "score": 32,
    "fit": "no",
-   "score": 20,
-   "reason": "Deep DB performance/benchmarking specialization mismatched with candidate's frontend-leaning full-stack/platform background.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote-friendly and enterprise infra-adjacent",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -398,10 +723,29 @@
   "posted": "2026-07-28",
   "salary": "$164,595 \u2013 $212,744",
   "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Infra/platform role, not frontend-leaning full-stack; unclear stack fit, likely lower comp than target.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote role fits location preference",
+    "Infrastructure focus diverges from full-stack/frontend strengths",
+    "Not aligned with React/enterprise SaaS interests"
+   ],
+   "concerns": [
+    "Role is infrastructure/platform ops, not application engineering",
+    "Limited frontend or product engineering scope",
+    "Small team may lack senior IC technical leadership breadth"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 75,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Remote role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -413,10 +757,30 @@
   "posted": "2026-07-28",
   "salary": "$189K \u2013 $330K",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote option fits location preference",
+    "AI infrastructure aligns with interests",
+    "Heavy client-facing consulting mandate",
+    "Not a pure hands-on engineering role"
+   ],
+   "concerns": [
+    "Deeply client-facing, resembles sales engineering",
+    "Likely significant customer travel",
+    "Less deep architecture/coding ownership than desired"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 70,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "no",
-   "score": 20,
-   "reason": "Client-facing forward-deployed AI role, not core full-stack/frontend engineering; mismatch with hands-on IC preference.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote option fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -428,25 +792,64 @@
   "posted": "2026-07-29",
   "salary": "$189K \u2013 $330K",
   "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Full-stack engineering role matches technical strengths",
+    "Remote listed but tied to San Francisco base",
+    "Strong company with real technical scope",
+    "GTM/demo tooling focus is niche, not core interest"
+   ],
+   "concerns": [
+    "Sales/GTM-adjacent tooling not core interest area",
+    "Unclear compensation vs $190k minimum",
+    "SF-based remote may imply SF-centric culture/hours"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 45,
+   "score": 45,
    "fit": "maybe",
-   "score": 48,
-   "reason": "Full-stack SaaS fit but GTM/sales-tooling focus, not core platform/infra work candidate prefers.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Full-stack engineering role matches technical strengths",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
-  "key": "Vanta::f7225fae-2203-4332-8ea4-8569c7e371d1",
+  "key": "Vanta::1989a49f-227e-4928-b068-8ff24af88541",
   "company": "Vanta",
-  "title": "Staff Product Manager, Data Platform",
+  "title": "Senior Analytics Engineer",
   "location": "Remote U.S.",
-  "url": "https://jobs.ashbyhq.com/vanta/f7225fae-2203-4332-8ea4-8569c7e371d1",
-  "posted": "2026-07-23",
-  "salary": "$243K \u2013 $286K",
+  "url": "https://jobs.ashbyhq.com/vanta/1989a49f-227e-4928-b068-8ff24af88541",
+  "posted": "2026-07-30",
+  "salary": "$157K \u2013 $185K",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote US location matches preference",
+    "Role is analytics engineering, not software engineering",
+    "Requires dbt/SQL/data warehouse specialization not in profile"
+   ],
+   "concerns": [
+    "Function mismatch: analytics engineering vs full-stack/platform engineering",
+    "No React/.NET/cloud architecture emphasis",
+    "Not aligned with hands-on product engineering interests"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 75,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 5,
-   "reason": "Product management role, not hands-on engineering; mismatch with candidate's IC engineering focus.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote US location matches preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -458,10 +861,30 @@
   "posted": "2026-07-24",
   "salary": "$236K \u2013 $290K",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote US role aligns with location prefs",
+    "Cloud/dev platform company matches industry interest",
+    "Network infrastructure specialization not in candidate's background",
+    "Candidate is frontend-leaning full-stack, not network engineer"
+   ],
+   "concerns": [
+    "Requires deep networking/systems expertise candidate lacks",
+    "No React/.NET relevance to role",
+    "Likely needs Go/Rust/low-level systems skills"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 45,
+   "practical_fit": 75,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
-   "score": 15,
-   "reason": "Network infrastructure engineering role; mismatched with frontend-leaning full-stack/SaaS background, no React/UI focus.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote US role aligns with location prefs",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -473,10 +896,31 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 60,
-   "reason": "Remote cloud/dev platform, auth-focused role fits skills but scope/seniority/level unclear from truncated posting.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote US role at fast-growing cloud/dev platform",
+    "Strong alignment with auth/OAuth/JWT expertise",
+    "AI-native infrastructure matches interest in AI platforms",
+    "Developer experience focus matches DevEx passion",
+    "Modern cloud-native architecture aligns with strengths"
+   ],
+   "concerns": [
+    "Compensation not specified in posting",
+    "Seniority level and IC scope unclear from title",
+    "Narrow focus on agent auth may limit full-stack scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 88,
+   "practical_fit": 90,
+   "opportunity_score": 84,
+   "score": 84,
+   "fit": "yes",
+   "reason": "Remote US role at fast-growing cloud/dev platform",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -488,10 +932,61 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Risk strategy role, not software engineering",
+    "No technical engineering scope or mandate"
+   ],
+   "concerns": [
+    "Wrong function entirely for candidate's engineering background"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 40,
+   "opportunity_score": 5,
+   "score": 5,
    "fit": "no",
-   "score": 3,
-   "reason": "Risk strategy/policy role, not software engineering; no technical hands-on coding mandate.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Risk strategy role, not software engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Instacart::8097510",
+  "company": "Instacart",
+  "title": "Forward Deployed Engineer",
+  "location": "United States - Remote",
+  "url": "https://instacart.careers/job/?gh_jid=8097510",
+  "posted": "2026-07-30",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Field-deployed consulting-style role, not core engineering",
+    "Heavy client-facing/travel component resembles sales engineering",
+    "AI platform work aligns with interests but role framing is off-fit",
+    "Remote is a plus but role nature conflicts with IC preference"
+   ],
+   "concerns": [
+    "Overlaps with sales engineering dealbreaker",
+    "Likely significant client travel",
+    "Not a deep hands-on architecture role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Field-deployed consulting-style role, not core engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -503,40 +998,29 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Security/risk/compliance domain, not core software engineering",
+    "Data science and probabilistic risk modeling mismatch",
+    "Remote US location is practically workable"
+   ],
+   "concerns": [
+    "Not aligned with frontend/full-stack engineering strengths",
+    "Requires GRC/security domain expertise candidate lacks",
+    "Different career trajectory than desired IC engineering path"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 75,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 8,
-   "reason": "Security/risk/compliance data engineering, not frontend/full-stack SaaS work matching Chad's background.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Dropbox::8074704",
-  "company": "Dropbox",
-  "title": "Senior Fullstack Product Software Engineer, Web Experience",
-  "location": "Remote - US: Select locations",
-  "url": "https://jobs.dropbox.com/listing/8074704?gh_jid=8074704",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "yes",
-   "score": 78,
-   "reason": "Senior fullstack web role, remote, strong architecture/ownership scope matches candidate's frontend/full-stack strengths and seniority.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Dropbox::8074709",
-  "company": "Dropbox",
-  "title": "Senior Fullstack Product Software Engineer, Web Experience",
-  "location": "Remote - Mexico",
-  "url": "https://jobs.dropbox.com/listing/8074709?gh_jid=8074709",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Remote-Mexico role; candidate based in Utah, not relocating, likely requires Mexico work authorization.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Security/risk/compliance domain, not core software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -548,10 +1032,87 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "1Password::df6afe6a-7e62-4d57-be23-22583d0cdeb9",
+  "company": "1Password",
+  "title": "Senior IT Engineer",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/df6afe6a-7e62-4d57-be23-22583d0cdeb9",
+  "posted": "2026-07-30",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "IT endpoint management, not software engineering",
+    "Mismatch with full-stack/platform engineering background"
+   ],
+   "concerns": [
+    "Wrong function - IT infrastructure not software development",
+    "No React/.NET/cloud architecture engineering scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 60,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
+   "reason": "IT endpoint management, not software engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Docker::ec1eeb85-73bd-4956-bb67-93e0c42958e2",
+  "company": "Docker",
+  "title": "Senior Principal Product Manager, AI & Agent Platform",
+  "location": "Seattle, WA (Remote)",
+  "url": "https://jobs.ashbyhq.com/docker/ec1eeb85-73bd-4956-bb67-93e0c42958e2",
+  "posted": "2026-07-30",
+  "salary": "$300K \u2013 $340K",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Product Manager role, not engineering IC",
+    "AI/container platform space aligns with interests",
+    "Remote but Seattle-based team"
+   ],
+   "concerns": [
+    "Wrong function\u2014PM not software engineering",
+    "Role requires product strategy/roadmap ownership, not hands-on coding",
+    "Candidate is a hands-on IC engineer, not a PM"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 25,
    "score": 25,
-   "reason": "Intermediate-level open source/IDE plugin role, below Principal seniority and outside frontend/backend architecture focus.",
-   "bg": "b9f9e4b0db4d"
+   "fit": "no",
+   "reason": "Product Manager role, not engineering IC",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -563,10 +1124,21 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 15,
-   "reason": "Deep networking/infra/virtualization role mismatched with candidate's frontend-leaning full-stack and cloud architecture background.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -578,10 +1150,21 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Deep networking/infra/microVM specialization mismatches candidate's frontend-leaning full-stack, React/.NET background.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -591,12 +1174,32 @@
   "location": "San Francisco (Remote)",
   "url": "https://jobs.ashbyhq.com/airbyte/b59bbc91-fb77-4a08-9c47-0fca7f755942",
   "posted": "2026-07-27",
-  "salary": "$196K \u2013 $255K",
+  "salary": "$196K \u2013 $235K",
   "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "Backend AI runtime/infra role, not frontend-leaning full-stack; unclear .NET/React alignment despite AI interest.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "reasons": [
+    "AI infrastructure/platform engineering matches core interests",
+    "Remote role fits location preference",
+    "Greenfield architecture and technical ownership appeal",
+    "Cutting-edge agent runtime aligns with AI enthusiasm"
+   ],
+   "concerns": [
+    "Role likely needs LLM/agent-specific backend skills not in profile",
+    "Compensation not disclosed, startup equity risk",
+    "Frontend-heavy background may not match runtime/orchestration focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 50,
+   "interest_fit": 80,
+   "practical_fit": 75,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "AI infrastructure/platform engineering matches core interests",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -605,13 +1208,33 @@
   "title": "Senior Site Reliability Engineer",
   "location": "San Francisco (Remote)",
   "url": "https://jobs.ashbyhq.com/airbyte/5930fed9-c4f6-43c3-87be-3402c2c46489",
-  "posted": "2026-07-27",
-  "salary": "$196K \u2013 $255K",
+  "posted": "2026-07-30",
+  "salary": "$196K \u2013 $235K",
   "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "SRE infrastructure/reliability role, not full-stack/frontend engineering; mismatched function despite AI/cloud domain overlap.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote role fits location preference well",
+    "AI infrastructure company aligns with stated interests",
+    "Has Kubernetes/AWS exposure but not SRE-focused",
+    "Core mandate is reliability/infra, not full-stack engineering"
+   ],
+   "concerns": [
+    "Not primarily an SRE with incident/on-call background",
+    "Role is infrastructure-ops focused vs his full-stack/frontend strengths",
+    "Deep Terraform/K8s ownership expectations exceed demonstrated depth"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote role fits location preference well",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -623,10 +1246,30 @@
   "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "AI/DevEx tooling fits interests, but not React/full-stack; niche enablement role, unclear seniority/comp fit.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote US role matches location preference",
+    "Strong AI-assisted development enablement focus",
+    "Foundational IC role with real technical latitude",
+    "Aligns with interest in developer productivity/tooling"
+   ],
+   "concerns": [
+    "Support/enablement function vs core product engineering",
+    "Small team, unclear compensation range",
+    "Less emphasis on frontend/full-stack strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 88,
+   "practical_fit": 92,
+   "opportunity_score": 78,
+   "score": 78,
+   "fit": "yes",
+   "reason": "Remote US role matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -638,10 +1281,30 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Fully remote US role matches location preference",
+    "Deep networking/SRE focus mismatches candidate's stack",
+    "No React/.NET/frontend relevance",
+    "Requires low-level networking/dataplane expertise"
+   ],
+   "concerns": [
+    "Requires deep network engineering/SRE skills not in profile",
+    "Not aligned with frontend/full-stack SaaS focus",
+    "Likely Go-based systems programming, not candidate's core strength"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 30,
+   "practical_fit": 85,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 15,
-   "reason": "Low-level networking/SRE role (relay infrastructure, dataplane) mismatches frontend/full-stack SaaS background.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Fully remote US role matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -653,10 +1316,29 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Developer advocacy/growth role, not engineering",
+    "Requires public-facing outreach, content creation, not IC coding",
+    "Remote US matches location preference"
+   ],
+   "concerns": [
+    "Not hands-on software engineering",
+    "Not aligned with technical architecture interests",
+    "Career direction mismatch despite technical audience"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 70,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 8,
-   "reason": "Developer advocacy/growth role, not hands-on engineering; mismatches candidate's IC engineering focus.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Developer advocacy/growth role, not engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -668,10 +1350,30 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location needs",
+    "Hands-on player/coach matches IC preference",
+    "React/TypeScript/Next.js align with frontend strengths",
+    "Fast-growing AI infra company matches industry preferences"
+   ],
+   "concerns": [
+    "Marketing website focus is narrower than enterprise SaaS platform work",
+    "Role has 'Lead' title implying some coordination/coaching duties",
+    "Strapi/marketing-site scope less aligned with core backend/cloud strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 60,
+   "score": 60,
    "fit": "maybe",
-   "score": 55,
-   "reason": "Strong technical fit but marketing-website scope, player/coach lead role, narrower than enterprise SaaS/platform focus preferred.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote US role fits location needs",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -683,25 +1385,29 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Security engineering role, not software engineering focus",
+    "Requires deep security/vuln expertise candidate lacks",
+    "US-remote location matches practical preference"
+   ],
+   "concerns": [
+    "Not full-stack/platform engineering as candidate wants",
+    "Requires specialized security domain expertise not in profile",
+    "Mismatch with candidate's core strengths in React/.NET/cloud architecture"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 75,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 8,
-   "reason": "Product security engineering role; mismatch with candidate's full-stack/frontend architecture background, not security focus.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "ClickHouse::5994727004",
-  "company": "ClickHouse",
-  "title": "Senior Cloud Engineer",
-  "location": "(Remote)",
-  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/5994727004",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 20,
-   "reason": "Backend cloud infra/security/compliance focus, not frontend/full-stack\u2014mismatch with candidate's core strengths.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Security engineering role, not software engineering focus",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -713,10 +1419,27 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Curriculum/training role, not engineering",
+    "Mismatch with hands-on IC engineering goal"
+   ],
+   "concerns": [
+    "Not a software engineering role",
+    "No architecture or coding ownership described"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 60,
+   "opportunity_score": 12,
+   "score": 12,
    "fit": "no",
-   "score": 5,
-   "reason": "Curriculum/instructor role, not hands-on engineering; mismatched function despite good company domain.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Curriculum/training role, not engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -728,10 +1451,29 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Security engineering not candidate's core expertise",
+    "Earlier-career role below Principal-level target",
+    "Remote US location is practically workable"
+   ],
+   "concerns": [
+    "Wrong function - security vs full-stack/platform engineering",
+    "Explicitly framed as earlier-career, not Principal-level",
+    "Compensation likely below $190k minimum"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 22,
+   "score": 22,
    "fit": "no",
-   "score": 12,
-   "reason": "Early-career security engineering role, not full-stack/frontend principal IC work; mismatched function and seniority.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Security engineering not candidate's core expertise",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -743,10 +1485,29 @@
   "posted": "2026-07-28",
   "salary": null,
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote US role matches location preference",
+    "Cloud security focus, not core software engineering",
+    "Not aligned with full-stack/frontend background"
+   ],
+   "concerns": [
+    "Security engineering specialization, not candidate's strength",
+    "Not hands-on product development role",
+    "Mandate is security/IAM, not software engineering"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 75,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "score": 15,
-   "reason": "Security engineering role, not full-stack/frontend software engineering\u2014mismatched function despite cloud overlap.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Remote US role matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -758,10 +1519,31 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 45,
-   "reason": "Senior IC remote fits, but security/CICD/AI-agent domain diverges from candidate's frontend/full-stack SaaS expertise.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote-first role fits location preference",
+    "AI infrastructure and developer tools alignment",
+    "Full-stack ownership with architectural influence",
+    "Fast-moving product team, greenfield work",
+    "Security/AI space matches AI-adoption interest"
+   ],
+   "concerns": [
+    "Stack likely Go-based, differs from .NET/React expertise",
+    "Compensation not stated in posting",
+    "Senior vs Principal title may undervalue seniority"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 82,
+   "practical_fit": 88,
+   "opportunity_score": 74,
+   "score": 74,
+   "fit": "yes",
+   "reason": "Remote-first role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -773,10 +1555,29 @@
   "posted": "2026-07-24",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 55,
-   "reason": "Strong DevEx/platform match but backend/infra-heavy (Go, CI/CD, AI agents) vs candidate's frontend-leaning React/.NET strengths.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote US role matches location preference",
+    "Developer platform/DevEx aligns with strengths",
+    "AI agentic platform aligns with AI interest",
+    "Senior IC role, no management transition"
+   ],
+   "concerns": [
+    "Stack likely Go/cloud-native, less .NET/React focus",
+    "CI/CD infra depth may differ from candidate's frontend leaning"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 82,
+   "practical_fit": 88,
+   "opportunity_score": 74,
+   "score": 74,
+   "fit": "yes",
+   "reason": "Remote US role matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -788,10 +1589,30 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "fit": "no",
-   "score": 30,
-   "reason": "Backend infra/security platform for package builds\u2014no frontend/React, mismatched domain and skill focus.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "reasons": [
+    "Fully remote US role fits location preference",
+    "Platform/developer experience aligns with interests",
+    "Security supply-chain domain differs from core skill set",
+    "No mention of React/.NET stack match"
+   ],
+   "concerns": [
+    "Heavy infra/security focus, likely Go not React/.NET",
+    "Unclear alignment with frontend/full-stack strengths",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Fully remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -803,10 +1624,29 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Fully remote US option fits location needs",
+    "AI infrastructure and developer tooling align with interests",
+    "Staff-level IC role preserves hands-on engineering",
+    "Cloud-native, agentic AI product work is compelling"
+   ],
+   "concerns": [
+    "Deep CI/CD and software supply-chain security expertise not demonstrated",
+    "Requires strong DevSecOps background beyond current stack"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 58,
+   "interest_fit": 75,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
    "fit": "maybe",
-   "score": 55,
-   "reason": "Staff IC fits seniority/remote, but security/CICD/AI-agent domain diverges from frontend/full-stack SaaS strengths.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Fully remote US option fits location needs",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -818,25 +1658,30 @@
   "posted": "2026-07-29",
   "salary": null,
   "fit_result": {
-   "fit": "maybe",
-   "score": 52,
-   "reason": "Staff IC role fits seniority, but security/CICD/AI-agent domain diverges from frontend/full-stack SaaS strengths.",
-   "bg": "b9f9e4b0db4d"
-  }
- },
- {
-  "key": "Cresta::5369032008",
-  "company": "Cresta",
-  "title": "Solutions Engineer, AI Agent",
-  "location": "United States (Remote)",
-  "url": "https://job-boards.greenhouse.io/cresta/jobs/5369032008",
-  "posted": "2026-07-23",
-  "salary": null,
-  "fit_result": {
-   "fit": "no",
-   "score": 5,
-   "reason": "Sales engineering role, explicit dealbreaker; not hands-on software engineering position.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote-first, matches location preference",
+    "AI infrastructure & developer tooling focus",
+    "Staff-level IC role, hands-on engineering",
+    "Aligns with DevEx and platform engineering interests"
+   ],
+   "concerns": [
+    "Security/supply-chain domain not in prior experience",
+    "Tech stack (likely Go) differs from candidate's core skills",
+    "Small fast-moving team may require broad new domain ramp-up"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 80,
+   "practical_fit": 90,
+   "opportunity_score": 72,
+   "score": 72,
+   "fit": "yes",
+   "reason": "Remote-first, matches location preference",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -848,10 +1693,29 @@
   "posted": "2026-07-30",
   "salary": "$125K \u2013 $170K",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "IT support role, not software engineering",
+    "Wrong function entirely for candidate",
+    "Hybrid onsite NYC/SF not remote"
+   ],
+   "concerns": [
+    "Not an engineering role",
+    "Location and hybrid requirement mismatch",
+    "Compensation likely below candidate minimum"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 10,
+   "opportunity_score": 5,
+   "score": 5,
    "fit": "no",
-   "score": 3,
-   "reason": "IT support/helpdesk role, not software engineering; complete mismatch with candidate's principal engineer background.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "IT support role, not software engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -863,10 +1727,27 @@
   "posted": "2026-07-29",
   "salary": "$200K \u2013 $268K",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Product Manager role, not engineering",
+    "Wrong function despite AI/voice tech appeal"
+   ],
+   "concerns": [
+    "Role is PM not hands-on engineering",
+    "Career pivot away from IC engineering path"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 30,
+   "practical_fit": 70,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "score": 8,
-   "reason": "Product Manager role, not engineering IC; dealbreaker per candidate's hands-on engineering requirement.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Product Manager role, not engineering",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
@@ -878,25 +1759,63 @@
   "posted": "2026-07-28",
   "salary": "$180K \u2013 $240K",
   "fit_result": {
-   "fit": "no",
-   "score": 25,
-   "reason": "ML model evaluation role for voice AI; mismatch with candidate's frontend/full-stack platform engineering background.",
-   "bg": "b9f9e4b0db4d"
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location needs",
+    "AI infrastructure aligns with stated interests",
+    "Voice AI platform is compelling tech space"
+   ],
+   "concerns": [
+    "ML model evaluation focus doesn't match frontend/full-stack background",
+    "Likely requires ML/data science expertise Chad lacks",
+    "AI-first intense pace culture may not fit stated preferences"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote US role fits location needs",
+   "bg": "8d3fa4bf6180"
   }
  },
  {
-  "key": "Sardine::8d5da342-86f7-4ac9-a61d-f91a7e60bfeb",
+  "key": "Sardine::527bac62-7445-4942-b2df-575fcb93e182",
   "company": "Sardine",
-  "title": "Marketing Engineer",
-  "location": "Austin, Texas (Remote)",
-  "url": "https://jobs.ashbyhq.com/sardine/8d5da342-86f7-4ac9-a61d-f91a7e60bfeb",
-  "posted": "2026-07-23",
-  "salary": "$140K \u2013 $180K",
+  "title": "Data Engineer - Onboarding",
+  "location": "North America (Remote)",
+  "url": "https://jobs.ashbyhq.com/sardine/527bac62-7445-4942-b2df-575fcb93e182",
+  "posted": "2026-07-30",
+  "salary": "$150K \u2013 $205K",
   "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Data/ML engineering role, not frontend/full-stack",
+    "Requires data pipeline and ML feature engineering expertise",
+    "Remote US/Canada matches location preference"
+   ],
+   "concerns": [
+    "Wrong core discipline: data/ML engineering vs full-stack",
+    "No React/.NET/frontend scope evident",
+    "Domain mismatch with candidate's platform/DevEx focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 75,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "score": 8,
-   "reason": "Marketing ops role, not software engineering; mismatched function despite AI/SaaS domain overlap.",
-   "bg": "b9f9e4b0db4d"
+   "reason": "Data/ML engineering role, not frontend/full-stack",
+   "bg": "8d3fa4bf6180"
   }
  }
 ]
