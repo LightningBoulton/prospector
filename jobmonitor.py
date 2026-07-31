@@ -520,6 +520,22 @@ def is_local(loc):
     return _matches_any(l, LOCAL_KEYWORDS)
 
 
+def _region_locked_by_title(posting):
+    """Drop a role whose TITLE scopes it to a non-US region while its LOCATION gives nothing
+    away. The location gates only ever see `location`, so GitLab's
+    "Senior Professional Services Project Manager (EMEA)" — posted with location "Remote" —
+    sailed through `is_us_remote` and landed as a top recommendation. If the location DOES
+    name a local/US place, the title is left alone: a Utah-based role managing EMEA is a
+    legitimately local job."""
+    if ALLOW_INTL_REMOTE:
+        return False
+    loc = (posting.get("location") or "").lower()
+    if _matches_any(loc, LOCAL_KEYWORDS) or _matches_any(
+            loc, ["us", "usa", "united states", "u.s", "u.s."]):
+        return False
+    return _matches_any((posting.get("title") or "").lower(), INTERNATIONAL_MARKERS)
+
+
 def is_us_remote(loc):
     """Gate for the US-remote lane: keep a role only if its location is REMOTE and
     US-eligible. Drops location-locked roles (must name a remote marker) and non-US
@@ -1030,6 +1046,7 @@ def collect_pool(max_age_days=None, config_path=CONFIG, gate=None):
             got = FETCHERS[c["ats"]](c)
             if keep:
                 got = [p for p in got if keep(p["location"])]
+            got = [p for p in got if not _region_locked_by_title(p)]
             got = [p for p in got if _within_age(p["posted"], max_age_days)]
             pool.extend(got)
         except Exception as e:
@@ -1221,9 +1238,11 @@ def classify_removal(prev_role, profile, max_age_days):
     and otherwise says the posting is no longer *detected* rather than filled."""
     if max_age_days and not _within_age(prev_role.get("posted", ""), max_age_days):
         return "aged_out"
-    # Re-run the title gate against the stored record. A previously RESCUED role can't be
-    # re-checked (snapshots carry no description), so `_title_gate_only` is used and a rescue
-    # is never mistaken for a rule change.
+    # Re-evaluate the rules we CAN re-check from the stored record (it holds title +
+    # location but no description). A previously RESCUED role can't be re-checked, so
+    # `_title_gate_only` is used and a rescue is never mistaken for a rule change.
+    if _region_locked_by_title(prev_role):
+        return "filter_change"          # a region rule now excludes it, e.g. an EMEA title
     if not _title_gate_only(prev_role, profile) and not prev_role.get("rescued"):
         return "filter_change"
     return "not_listed"
@@ -2050,7 +2069,7 @@ def _digest_section(heading, rows, blurb=""):
     return "".join(out)
 
 
-def _digest_hero_lisa(sections, hidden, window):
+def _digest_hero_lisa(sections, hidden, window, contract_window=None):
     counts = {k: len(v) for k, v in sections.items()}
     total = sum(counts.values())
     F = _FONT
@@ -2073,8 +2092,13 @@ def _digest_hero_lisa(sections, hidden, window):
         quiet.append(f'{hidden["not_recommended"]} screened out')
     if hidden.get("suppressed"):
         quiet.append(f'{hidden["suppressed"]} hidden by your feedback')
+    # Be accurate about the window: the contract lane has its own, wider one, so a flat
+    # "last 14 days" contradicted a card reading "Posted over 14 days ago".
+    win_text = f"the last {window} days"
+    if counts.get("contract") and contract_window and contract_window != window:
+        win_text += f" ({contract_window} for contract roles)"
     rows.append(f'<div style="color:{_C["muted"]};font-family:{F};font-size:12px;'
-                f'margin-top:5px;">Showing open roles from the last {window} days'
+                f'margin-top:5px;">Showing open roles from {win_text}'
                 + (" &nbsp;·&nbsp; " + " · ".join(quiet) if quiet else "") + '</div>')
     # No "top pick" line here on purpose: the first card in Top Opportunities IS the top
     # pick, and repeating its link would make one job appear twice in the same email.
@@ -2129,7 +2153,8 @@ def build_digest_html(profile, lanes, settings, feedback=None):
              f'font-weight:800;line-height:1.3;">{_esc(profile["label"])}</div>')
     B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
              f'margin-top:4px;">Daily opportunity digest · {today}</div>')
-    B.append(_digest_hero_lisa(sections, hidden, window))
+    B.append(_digest_hero_lisa(sections, hidden, window,
+                               profile_age_window(profile, settings, "_staffing")))
     B.append(_digest_section("Top Opportunities", sections["top"],
                              "Best qualified, best matched, and practical enough to act on now."))
     B.append(_digest_section("Additional Strong Opportunities", sections["additional"]))

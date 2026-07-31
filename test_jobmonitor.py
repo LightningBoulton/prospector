@@ -114,6 +114,36 @@ class TestLocationGates(unittest.TestCase):
     def test_is_us_remote_treats_bare_remote_as_us_eligible(self):
         self.assertTrue(jm.is_us_remote("Remote"))
 
+    def test_title_scoped_to_a_non_us_region_is_dropped(self):
+        """Regression found by reading a real sample report: GitLab's "Senior Professional
+        Services Project Manager (EMEA)" posts its location as bare "Remote", so the location
+        gate passed it and it ranked as a top recommendation."""
+        for title in ["Senior Professional Services Project Manager (EMEA)",
+                      "Head of Operations, United Kingdom",
+                      "Director, APAC Transformation"]:
+            with self.subTest(title=title):
+                self.assertTrue(jm._region_locked_by_title(
+                    {"title": title, "location": "Remote"}), title)
+
+    def test_us_based_role_managing_a_foreign_region_is_kept(self):
+        # If the location names a local or US place, the title is left alone.
+        for loc in ["Lehi, UT", "Remote - US", "Salt Lake City, UT"]:
+            with self.subTest(loc=loc):
+                self.assertFalse(jm._region_locked_by_title(
+                    {"title": "Director, EMEA Operations", "location": loc}))
+
+    def test_ordinary_titles_are_unaffected_by_the_region_check(self):
+        for title in ["Director, Business Transformation", "Chief of Staff",
+                      "Senior Manager, Operational Excellence"]:
+            with self.subTest(title=title):
+                self.assertFalse(jm._region_locked_by_title(
+                    {"title": title, "location": "Remote"}))
+
+    def test_region_check_respects_allow_international_remote(self):
+        jm.ALLOW_INTL_REMOTE = True
+        self.assertFalse(jm._region_locked_by_title(
+            {"title": "Head of Operations (EMEA)", "location": "Remote"}))
+
     def test_allow_international_remote_switch(self):
         jm.ALLOW_INTL_REMOTE = True
         self.assertTrue(jm.is_local("United Kingdom - Remote"))
@@ -1027,6 +1057,16 @@ class TestRemovalClassification(unittest.TestCase):
         role = {"key": "A::1", "company": "A", "title": "Director, Special Projects",
                 "posted": jm.datetime.date.today().isoformat(), "rescued": True}
         self.assertEqual(jm.classify_removal(role, self.lisa, 14), "not_listed")
+
+    def test_region_rule_change_is_reported_as_a_rule_change(self):
+        # The title still passes the title gate; it was the region rule that dropped it, so
+        # the honest wording is "no longer matches the current search rules".
+        role = {"key": "G::1", "company": "GitLab",
+                "title": "Senior Professional Services Project Manager (EMEA)",
+                "location": "Remote", "posted": jm.datetime.date.today().isoformat()}
+        self.assertTrue(jm._title_gate_only(role, self.lisa),
+                        "precondition: the title itself still matches")
+        self.assertEqual(jm.classify_removal(role, self.lisa, 14), "filter_change")
 
     def test_still_matching_and_in_window_is_not_listed(self):
         role = {"key": "A::1", "company": "A", "title": "Director, Business Transformation",
