@@ -168,12 +168,23 @@ Two scheduled jobs:
 |---|---|---|
 | **prospector** | Daily, 13:00 UTC (~7 AM Mountain) | Fetches jobs, scores, emails whoever's report changed |
 | **prospector-audit** | Mondays, 15:00 UTC | Writes `AUDIT_lisa.md` / `AUDIT_chad.md`. No emails, no AI, no job-site requests. |
+| **prospector-logos** | Manual only | Refreshes company logos and commits them. Run it after adding companies. No emails, no AI. |
 
 ### To check a run
 
 1. Go to the repo on GitHub → **Actions** tab.
 2. Click the most recent **prospector** run.
 3. Green check = it worked. Red X = something failed; click the failed step to see why.
+
+### Refreshing company logos
+
+New companies show a coloured monogram until their logo is fetched. To fix that:
+Actions tab → **prospector-logos** → **Run workflow**. It fetches only what's missing,
+verifies each file is a real image, commits them, and needs nothing from you. Tick
+**force** only if you want every logo re-downloaded.
+
+If a logo can't be fetched, the run still succeeds — that one company keeps its monogram and
+is retried next time. Look for `removed` in the run summary to see which.
 
 ### To run it right now without waiting
 

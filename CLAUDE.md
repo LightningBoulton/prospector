@@ -63,7 +63,8 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 - `test_jobmonitor.py` — offline test suite. `audit.py` — weekly, network-free self-audit.
 - `feedback_<name>.json` — hand-edited feedback (the only file a non-developer edits).
 - `PROSPECTOR_V2_CHANGELOG.md` / `PROSPECTOR_TESTING.md` — what changed, and how to operate it.
-- `fetch_logos.py` — occasional prefetch of company logos → `logos/<slug>.png` via logo.dev (needs `LOGO_DEV_TOKEN` env). **Not run by the daily job.**
+- `fetch_logos.py` — occasional prefetch of company logos → `logos/<slug>.png` via logo.dev (needs `LOGO_DEV_TOKEN` env — the **publishable** `pk_` token; it is passed as a query param to `img.logo.dev`, so the server-side `sk_` key will not work). **Not run by the daily job.** Run it locally, or use the manual `prospector-logos` workflow (`.github/workflows/logos.yml`, `LOGO_DEV_TOKEN` repo secret) which fetches, verifies and commits for you.
+- `.github/scripts/verify_logos.py` — gate for that workflow. It QUARANTINES rather than failing: an HTML error page or truncated body is deleted so it can never be committed, the rest still land, and the affected company falls back to its monogram tile and retries next run. Hard-failing was rejected because one flaky domain would discard every good logo in the batch.
 - `logos/<slug>.png` — prefetched logos, committed; embedded inline in the email (see Company logos below).
 - `snapshot_<name>.json`, `report_<name>.md`, `report_<name>.html` — generated per profile; committed by CI.
 

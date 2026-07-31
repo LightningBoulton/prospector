@@ -1,0 +1,75 @@
+name: prospector-logos
+
+# Refresh company logos on demand and commit them.
+#
+# MANUAL ONLY — there is deliberately no `schedule:` trigger. Logos change almost never, and
+# the daily job must not fetch them (it just reads whatever is committed in logos/ and falls
+# back to a colored monogram for anything missing). Run this after adding companies to any
+# registry; the next daily email then shows real logos instead of monograms.
+#
+# Requires the LOGO_DEV_TOKEN repo secret: a free *publishable* (pk_) token from logo.dev.
+# The publishable key is the correct one — fetch_logos.py passes it as a query parameter to
+# img.logo.dev, the client-side image endpoint. logo.dev's secret (sk_) key is for their
+# server-side APIs and will not work here.
+#
+# WHY THERE IS A VERIFY STEP: this workflow commits BINARY files fetched from a third party
+# with nobody inspecting the result — a git diff on a PNG tells you nothing. If logo.dev
+# returns an error page or a truncated body, fetch_logos.py still writes it and exits 0, and
+# committed it renders as a broken image in the email.
+#
+# It QUARANTINES rather than failing the job: the bad file is deleted so it can never be
+# committed, and the other logos still land. The likely failure is one flaky domain, not an
+# outage, and hard-failing would discard every good logo in the batch. A removed logo simply
+# falls back to the monogram tile the engine already renders for companies without one, and is
+# retried next run. Removals surface as warnings and in the run summary.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-download every logo, not just the missing ones"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  logos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+
+      - name: Count logos before
+        run: echo "BEFORE=$(ls logos/*.png 2>/dev/null | wc -l | tr -d ' ')" >> "$GITHUB_ENV"
+
+      - name: Fetch logos
+        env:
+          LOGO_DEV_TOKEN: ${{ secrets.LOGO_DEV_TOKEN }}
+        run: |
+          if [ -z "$LOGO_DEV_TOKEN" ]; then
+            echo "::error::LOGO_DEV_TOKEN secret is not set — add a publishable (pk_) token from logo.dev."
+            exit 1
+          fi
+          python fetch_logos.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Verify logos before committing
+        run: python .github/scripts/verify_logos.py
+
+      - name: Commit logos
+        run: |
+          git config user.name  "prospector-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add logos/
+          if git diff --staged --quiet; then
+            echo "No logo changes — nothing to commit."
+            exit 0
+          fi
+          AFTER=$(ls logos/*.png | wc -l | tr -d ' ')
+          git commit -m "Refresh company logos: $(date -u +%Y-%m-%d) (${BEFORE} -> ${AFTER})"
+          # A daily run may have pushed while this was fetching; rebase rather than fail.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
+          echo "Committed. Logos: ${BEFORE} -> ${AFTER}"
