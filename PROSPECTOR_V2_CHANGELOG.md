@@ -243,7 +243,7 @@ canonical and the requisition ID is stable.
 | `lisa_background.json` | Rewritten as a lean scoring profile reflecting the new criteria |
 | `feedback_lisa.json` | **New.** Hand-edited feedback; starts empty |
 | `audit.py` | **New.** Weekly audit; reads committed files only, zero network calls |
-| `test_jobmonitor.py` | **New.** 141 offline tests, standard-library `unittest` |
+| `test_jobmonitor.py` | **New.** 148 offline tests, standard-library `unittest` |
 | `requirements.txt` | **New.** Declares the optional `anthropic` dependency |
 | `.github/workflows/prospector.yml` | Installs from `requirements.txt`; commits the new diagnostic artifacts |
 | `.github/workflows/audit.yml` | **New.** Weekly audit, Mondays 15:00 UTC |
@@ -259,8 +259,8 @@ Generated per run (committed by CI): `snapshot_*.json` (state), `report_*.md/htm
 
 ## Behavior changes to expect on the first production run
 
-1. **One full re-score** (~136 roles, ~$1–2) because the verdict schema changed. Subsequent
-   days cost only new postings, as before.
+1. **One full re-score** because the verdict schema changed — done on 2026-07-31, actual cost
+   ~$0.77. Subsequent days cost only new postings, as before.
 2. **Lisa's first digest will show a large "no longer match the current search rules" count.**
    That is the profile rewrite, not roles closing — and it is labeled as such rather than
    being called "filled". It settles after one run.
@@ -269,13 +269,43 @@ Generated per run (committed by CI): `snapshot_*.json` (state), `report_*.md/htm
 
 ---
 
+## First live run — results (2026-07-31, run 30599766373)
+
+Both emails delivered; every step green. What the run proved and what it exposed:
+
+**Worked as designed**
+- **Zero schema rejections** across 147 scoring calls — the model's field names and value
+  types match `validate_verdict` exactly.
+- **Prompt caching delivered:** 453,550 prompt tokens served from cache vs 84,150 fresh —
+  **83%** — which roughly halved the bill.
+- **Actual cost ≈ $0.77** for the full re-score, below the $1–2 estimate.
+- Real recommendation distribution across Lisa's 61 tracked roles: 27 `stretch`,
+  13 `not_recommended` (correctly hidden), 12 `strong_fit`, 7 `practical_contract`,
+  2 `apply_first`. Her digest showed 15 cards across all four sections.
+
+**Exposed and fixed: `max_tokens` truncation**
+
+10 of 147 calls (6.8%) failed to parse — every one a well-formed JSON prefix that stopped
+mid-string (`Unterminated string`). The cause was not formatting: **Sonnet 5 runs adaptive
+thinking by default, and `max_tokens` bounds thinking *plus* the visible reply together.**
+`max_tokens=700` was sized for the JSON alone, so longer verdicts ran out of room (mean output
+was 331 tokens *including* thinking).
+
+Fixed by raising `FIT_MAX_TOKENS` to 2000 and adding `output_config={"effort": "low"}` —
+appropriate for a scoring task, and output tokens were the largest line on the bill. The
+affected roles degraded exactly as designed: kept, shown unscored, not cached, retried on the
+next run. Nothing was lost. Regression tests added.
+
+---
+
 ## Unresolved limitations
 
-1. **The live API path is unverified.** No `ANTHROPIC_API_KEY`, `anthropic` SDK, or `ant` CLI
-   was available in the development environment, so the real model's replies have never been
-   round-tripped through `validate_verdict`. The logic is covered by 141 offline tests against
-   a fake client, and failure degrades to *unscored but still visible* roles rather than a
-   broken report — but the first CI run is the real test. **Watch that first email.**
+1. **`effort: "low"` has not itself been through a live run.** The truncation fix is verified
+   offline (the exact production reply shape is now a test), but the `output_config` parameter
+   ships unexercised against the API. If it were rejected, every call would fail — and would
+   fail *safely*, producing an unscored-but-complete digest, visible immediately in the run
+   log as `[warn]` lines. Check the next run's log for `Unterminated string` (should be zero)
+   and for any new error type.
 2. **`anthropic` is unpinned.** Pinning to a guessed version risked breaking CI, and the
    resolved version could not be verified offline. Pin it in `requirements.txt` after the
    first successful run (see the comment in that file).

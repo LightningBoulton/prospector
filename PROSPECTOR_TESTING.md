@@ -32,7 +32,7 @@ python3 test_jobmonitor.py
 **What you want to see** — the last two lines:
 
 ```
-Ran 141 tests in 0.10s
+Ran 148 tests in 0.11s
 OK
 ```
 
@@ -195,6 +195,9 @@ Open the **Run prospector** step and look for:
 - `[warn] fit schema rejected` — the AI returned something unusable for that role. It will be
   retried next run; the role still appears, just unscored. **If you see many of these, tell
   Claude** — it means the scoring format needs attention.
+- `[warn] fit parse failed … Unterminated string` — the AI's answer got cut off mid-sentence.
+  This happened on the first live run (10 of 147) and was fixed by giving it more room. If it
+  comes back, tell Claude — the limit needs raising again.
 
 ---
 

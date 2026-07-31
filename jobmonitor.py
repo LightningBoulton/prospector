@@ -62,6 +62,12 @@ DESC_LIMIT = 2000               # chars of job description sent to the model
 # new rendering code from reading a stale verdict written under the old schema.
 FIT_SCHEMA_VERSION = 2
 
+# Output ceiling per scoring call. This covers THINKING + the JSON reply, not just the JSON:
+# Sonnet 5 runs adaptive thinking by default and `max_tokens` bounds both together. The first
+# live run used 700 and truncated ~7% of replies mid-string. Do not tighten this without
+# re-checking the run log for "Unterminated string".
+FIT_MAX_TOKENS = 2000
+
 # Global location gate, applied once to the fetched pool before any profile runs.
 LOCAL_KEYWORDS = [
     "ut", "utah", "salt lake", "south jordan", "lehi", "draper", "sandy",
@@ -968,8 +974,13 @@ def score_fit(candidate, posting, client):
             f"Description: {desc[:DESC_LIMIT]}")
     text = ""
     try:
-        # max_tokens generous so reasons/concerns can't truncate the JSON mid-string.
-        msg = client.messages.create(model=FIT_MODEL, max_tokens=700,
+        # max_tokens must cover THINKING PLUS the JSON. Sonnet 5 runs adaptive thinking by
+        # default, and max_tokens caps both together — at 700 the first live run truncated
+        # 10 of 147 replies mid-string ("Unterminated string"), each with a valid prefix.
+        # effort "low" is right for a scoring task: it cuts thinking depth (output tokens were
+        # the largest line on the bill) without changing the judgment we need.
+        msg = client.messages.create(model=FIT_MODEL, max_tokens=FIT_MAX_TOKENS,
+                                     output_config={"effort": "low"},
                                      system=_fit_system(candidate),
                                      messages=[{"role": "user", "content": user}])
         _record_usage(msg)

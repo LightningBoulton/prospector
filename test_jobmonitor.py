@@ -892,6 +892,36 @@ class TestScoreFitSafety(unittest.TestCase):
                     "relocation_assistance_mentioned", "signing_bonus_mentioned"):
             self.assertIn(key, r, f"neutral verdict missing {key}")
 
+    def test_request_leaves_room_for_thinking_plus_json(self):
+        """Regression from the first live run: max_tokens=700 truncated ~7% of replies
+        mid-string, because Sonnet 5 thinks by default and max_tokens caps thinking AND the
+        visible JSON together."""
+        client = FakeClient(reply=verdict_json())
+        captured = {}
+        inner = client.messages.create
+
+        def recording_create(**kw):
+            captured.update(kw)
+            return inner(**kw)
+
+        client.messages.create = recording_create
+        jm.score_fit(self.CANDIDATE, self._posting(), client)
+
+        self.assertGreaterEqual(captured.get("max_tokens", 0), 1500,
+                                "max_tokens must cover thinking plus the JSON reply")
+        self.assertEqual(captured.get("output_config"), {"effort": "low"},
+                         "a scoring task should not pay for deep thinking")
+        self.assertEqual(captured["system"][0]["cache_control"], {"type": "ephemeral"},
+                         "the stable prefix must stay cached")
+
+    def test_a_truncated_reply_degrades_safely(self):
+        # The exact shape seen in production: valid prefix, cut off mid-string.
+        trunc = ('{"qualification_fit": 40, "interest_fit": 55, "practical_fit": 50, '
+                 '"opportunity_score": 45, "recommendation": "stretch", "reasons": ["part')
+        r = self._score(reply=trunc)
+        self.assertEqual(r["score"], -1, "must not be cached, so it retries next run")
+        self.assertEqual(r["fit"], "maybe", "the role is kept, not dropped")
+
     def test_every_recommendation_value_is_documented(self):
         self.assertEqual(set(jm.RECOMMENDATIONS),
                          {"apply_first", "strong_fit", "stretch",
