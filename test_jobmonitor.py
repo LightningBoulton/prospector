@@ -21,6 +21,7 @@ TWO HARD RULES, enforced by the tests themselves:
 """
 import copy
 import json
+import re
 import os
 import tempfile
 import unittest
@@ -937,6 +938,414 @@ class TestFitCache(unittest.TestCase):
         finally:
             jm.load_background = orig
         self.assertNotIn("fit_result", matched[0])
+
+
+# --------------------------------------------------------------------------------------
+# Feedback file (WS5)
+# --------------------------------------------------------------------------------------
+
+class TestFeedback(unittest.TestCase):
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def _write(self, doc, name="tester"):
+        json.dump(doc, open(os.path.join(self._tmp.name, f"feedback_{name}.json"), "w"))
+        return jm.load_feedback(name, directory=self._tmp.name)
+
+    def test_missing_file_is_not_fatal(self):
+        fb = jm.load_feedback("nobody", directory=self._tmp.name)
+        self.assertEqual(fb, {"by_key": {}, "by_ident": {}})
+
+    def test_malformed_file_is_not_fatal(self):
+        path = os.path.join(self._tmp.name, "feedback_broken.json")
+        open(path, "w").write("{not json")
+        fb = jm.load_feedback("broken", directory=self._tmp.name)
+        self.assertEqual(fb, {"by_key": {}, "by_ident": {}})
+
+    def test_match_by_key(self):
+        fb = self._write({"entries": [{"key": "Acme::1", "status": "applied"}]})
+        p = posting("Acme", "1", "Director, Operations")
+        self.assertEqual(jm.feedback_for(p, fb)["status"], "applied")
+
+    def test_match_by_company_and_title_case_insensitively(self):
+        fb = self._write({"entries": [
+            {"company": "  acme ", "title": "DIRECTOR, OPERATIONS",
+             "status": "not_interested"}]})
+        p = posting("Acme", "99", "Director, Operations")
+        self.assertEqual(jm.feedback_for(p, fb)["status"], "not_interested")
+
+    def test_unknown_status_is_ignored(self):
+        fb = self._write({"entries": [{"key": "Acme::1", "status": "maybe_later"}]})
+        self.assertIsNone(jm.feedback_for(posting("Acme", "1", "T"), fb))
+
+    def test_every_documented_status_loads(self):
+        fb = self._write({"entries": [{"key": f"C::{i}", "status": s}
+                                      for i, s in enumerate(jm.FEEDBACK_STATUSES)]})
+        self.assertEqual(len(fb["by_key"]), len(jm.FEEDBACK_STATUSES))
+
+    def test_suppress_list_matches_lisas_rules(self):
+        # applied / already_applied / not_interested / wrong_* / too_technical suppress;
+        # 'interested' must NOT.
+        self.assertIn("applied", jm.SUPPRESS_STATUSES)
+        self.assertIn("already_applied", jm.SUPPRESS_STATUSES)
+        self.assertIn("not_interested", jm.SUPPRESS_STATUSES)
+        self.assertNotIn("interested", jm.SUPPRESS_STATUSES)
+
+    def test_committed_feedback_file_is_valid(self):
+        # The shipped feedback_lisa.json must parse and start empty.
+        fb = jm.load_feedback("lisa")
+        self.assertEqual(fb, {"by_key": {}, "by_ident": {}})
+
+
+# --------------------------------------------------------------------------------------
+# Removal classification (WS4)
+# --------------------------------------------------------------------------------------
+
+class TestRemovalClassification(unittest.TestCase):
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+
+    def test_aged_out_is_not_reported_as_gone(self):
+        old = (jm.datetime.date.today() - jm.datetime.timedelta(days=40)).isoformat()
+        role = {"key": "A::1", "company": "A", "title": "Director, Operations",
+                "posted": old}
+        self.assertEqual(jm.classify_removal(role, self.lisa, 14), "aged_out")
+
+    def test_filter_change_detected_when_title_no_longer_matches(self):
+        role = {"key": "A::1", "company": "A", "title": "Support Manager",
+                "posted": jm.datetime.date.today().isoformat()}
+        self.assertEqual(jm.classify_removal(role, self.lisa, 14), "filter_change")
+
+    def test_previously_rescued_role_is_not_called_a_filter_change(self):
+        # Snapshots carry no description, so a rescued role can't be re-checked. The stored
+        # `rescued` flag stops it being mislabeled.
+        role = {"key": "A::1", "company": "A", "title": "Director, Special Projects",
+                "posted": jm.datetime.date.today().isoformat(), "rescued": True}
+        self.assertEqual(jm.classify_removal(role, self.lisa, 14), "not_listed")
+
+    def test_still_matching_and_in_window_is_not_listed(self):
+        role = {"key": "A::1", "company": "A", "title": "Director, Business Transformation",
+                "posted": jm.datetime.date.today().isoformat()}
+        self.assertEqual(jm.classify_removal(role, self.lisa, 14), "not_listed")
+
+    def test_reason_wording_never_claims_filled(self):
+        for reason, text in jm.REMOVAL_REASONS.items():
+            self.assertNotIn("filled", text.lower(), f"{reason} must not claim 'filled'")
+
+
+# --------------------------------------------------------------------------------------
+# Lisa's digest email (WS3)
+# --------------------------------------------------------------------------------------
+
+def verdict(rec="strong_fit", opp=80, **over):
+    v = jm.validate_verdict(json.loads(verdict_json(recommendation=rec,
+                                                    opportunity_score=opp, **over)))
+    assert v is not None
+    return v
+
+
+def lane(title, matched, removed=None, suffix="", **over):
+    d = {"title": title, "matched": matched, "new": [], "removed": removed or [],
+         "changed": [], "errors": [], "first_run": False, "held": [], "suffix": suffix}
+    d.update(over)
+    return d
+
+
+def scored(company, ext, title, rec="strong_fit", opp=80, location="Remote - US", **kw):
+    p = posting(company, ext, title, location=location,
+                posted=kw.pop("posted", jm.datetime.date.today().isoformat()))
+    p["fit_result"] = verdict(rec=rec, opp=opp, **kw)
+    return p
+
+
+class TestDigestEmail(unittest.TestCase):
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+        self.settings = {"max_posting_age_days": 7}
+        self.empty_fb = {"by_key": {}, "by_ident": {}}
+
+    def _build(self, lanes, feedback=None):
+        return jm.build_digest_html(self.lisa, lanes, self.settings,
+                                    feedback or self.empty_fb)
+
+    def _sections(self, lanes, feedback=None):
+        return jm._opportunities(lanes, self.settings, feedback or self.empty_fb)
+
+    def test_not_recommended_roles_are_hidden(self):
+        roles = [scored("A", "1", "Director, Operations", rec="not_recommended", opp=10),
+                 scored("B", "2", "Director, Transformation", rec="apply_first", opp=95)]
+        sections, hidden = self._sections([lane("🌎 US-Remote", roles)])
+        shown = [r["p"]["key"] for v in sections.values() for r in v]
+        self.assertEqual(shown, ["B::2"])
+        self.assertEqual(hidden["not_recommended"], 1)
+
+    def test_not_recommended_roles_are_still_retained_in_the_snapshot(self):
+        # They are hidden at RENDER time, not filtered out of state, so the weekly audit
+        # can review them. fit_mode must therefore stay 'rank', not 'filter'.
+        self.assertEqual(self.lisa.get("fit_mode"), "rank")
+
+    def test_no_job_appears_twice(self):
+        roles = [scored(f"C{i}", str(i), "Director, Operations",
+                        rec="apply_first", opp=95 - i) for i in range(14)]
+        html = self._build([lane("🌎 US-Remote", roles)])
+        urls = [u for u in re.findall(r'href="(https?://[^"]+)"', html)
+                if "fonts.goog" not in u]
+        self.assertEqual(len(urls), len(set(urls)), "a job link must appear at most once")
+
+    def test_visible_count_respects_the_ceiling(self):
+        roles = [scored(f"C{i}", str(i), "Director, Operations",
+                        rec="apply_first", opp=99 - i) for i in range(60)]
+        sections, hidden = self._sections([lane("🌎 US-Remote", roles)])
+        total = sum(len(v) for v in sections.values())
+        self.assertLessEqual(total, jm.DIGEST_TOTAL_CAP)
+        self.assertGreater(hidden["over_cap"], 0, "the overflow must be counted, not silent")
+
+    def test_sections_appear_in_the_specified_order(self):
+        lanes = [lane("🌎 US-Remote", [
+                    scored("A", "1", "Director, Transformation", rec="apply_first", opp=95),
+                    scored("B", "2", "Director, Operations", rec="stretch", opp=50,
+                           location="Lehi, UT")]),
+                 lane("🧑‍💼 Contract / Staffing",
+                      [scored("S", "9", "Program Lead", rec="practical_contract", opp=60)],
+                      suffix="_staffing")]
+        html = self._build(lanes)
+        order = [m.group(1) for m in re.finditer(
+            r'font-size:19px;font-weight:700;margin:26px 0 2px;">([^<(]+)', html)]
+        order = [o.strip() for o in order]
+        expected = ["Top Opportunities", "Additional Strong Opportunities",
+                    "Contract Opportunities", "Utah Opportunities", "Hiring Progress"]
+        present = [s for s in expected if s in order]
+        self.assertEqual(order[:len(present)], present,
+                         f"sections must follow the spec order; got {order}")
+
+    def test_contract_lane_roles_go_to_the_contract_section(self):
+        lanes = [lane("🧑‍💼 Contract / Staffing",
+                      [scored("S", "1", "Director, Operations", rec="apply_first", opp=99)],
+                      suffix="_staffing")]
+        sections, _ = self._sections(lanes)
+        self.assertEqual([r["p"]["key"] for r in sections["contract"]], ["S::1"])
+        self.assertEqual(sections["top"], [],
+                         "a staffing role belongs in Contract even when scored apply_first")
+
+    def test_contract_section_is_not_starved_by_a_top_heavy_day(self):
+        # Regression: a single global cap filled with apply_first roles and left Contract empty.
+        strong = [scored(f"C{i}", str(i), "Director, Operations", rec="apply_first",
+                         opp=99 - i) for i in range(30)]
+        contract = [scored("S", "9", "Program Lead", rec="practical_contract", opp=40)]
+        sections, _ = self._sections([lane("🌎 US-Remote", strong),
+                                      lane("🧑‍💼 Contract / Staffing", contract,
+                                           suffix="_staffing")])
+        self.assertEqual(len(sections["contract"]), 1,
+                         "Contract must keep its quota regardless of how strong the rest is")
+
+    def test_strong_roles_beyond_the_top_quota_fall_into_additional(self):
+        strong = [scored(f"C{i}", str(i), "Director, Operations", rec="apply_first",
+                         opp=99 - i) for i in range(10)]
+        sections, _ = self._sections([lane("🌎 US-Remote", strong)])
+        self.assertEqual(len(sections["top"]), jm.DIGEST_QUOTAS["top"])
+        self.assertTrue(sections["additional"], "overflow must not vanish")
+
+    def test_sorted_by_recommendation_then_score_then_recency(self):
+        roles = [scored("Low", "1", "Director, Operations", rec="strong_fit", opp=71),
+                 scored("High", "2", "Director, Operations", rec="strong_fit", opp=93),
+                 scored("First", "3", "Director, Operations", rec="apply_first", opp=60)]
+        sections, _ = self._sections([lane("🌎 US-Remote", roles)])
+        self.assertEqual([r["p"]["company"] for r in sections["top"]],
+                         ["First", "High", "Low"],
+                         "category outranks score; score outranks recency")
+
+    def test_recency_breaks_score_ties(self):
+        today = jm.datetime.date.today()
+        older = scored("Older", "1", "Director, Operations", opp=80,
+                       posted=(today - jm.datetime.timedelta(days=5)).isoformat())
+        newer = scored("Newer", "2", "Director, Operations", opp=80,
+                       posted=today.isoformat())
+        sections, _ = self._sections([lane("🌎 US-Remote", [older, newer])])
+        self.assertEqual([r["p"]["company"] for r in sections["top"]], ["Newer", "Older"])
+
+    # ---- location labels ----
+    def test_location_label_us_remote(self):
+        p = posting("A", "1", "T", location="Remote - US")
+        self.assertEqual(jm.location_label(p, verdict())[:2], ("✓", "Remote"))
+
+    def test_location_label_utah_onsite_and_hybrid(self):
+        p = posting("A", "1", "T", location="Lehi, UT")
+        self.assertEqual(jm.location_label(p, verdict())[:2], ("📍", "Utah"))
+        p2 = posting("A", "2", "T", location="Lehi, UT",
+                     description="This is a hybrid role, 3 days in office.")
+        self.assertEqual(jm.location_label(p2, verdict())[:2], ("📍", "Hybrid"))
+
+    def test_location_label_hybrid_outside_utah(self):
+        p = posting("A", "1", "T", location="Austin, TX",
+                    description="Hybrid schedule with 2 days onsite.")
+        self.assertEqual(jm.location_label(p, verdict())[:2], ("🏡", "Hybrid"))
+
+    def test_location_label_onsite_outside_utah_is_relocation(self):
+        p = posting("A", "1", "T", location="Austin, TX")
+        self.assertEqual(jm.location_label(p, verdict())[:2],
+                         ("🏡", "Relocation Required"))
+
+    def test_explicit_relocation_required_overrides_remote(self):
+        p = posting("A", "1", "T", location="Remote - US")
+        v = verdict(relocation_required=True)
+        self.assertEqual(jm.location_label(p, v)[:2], ("🏡", "Relocation Required"))
+
+    def test_unclear_location_falls_back_to_relocation_wording(self):
+        p = posting("A", "1", "T", location="")
+        self.assertEqual(jm.location_label(p, verdict())[:2],
+                         ("🏡", "Relocation Required"))
+
+    # ---- perks are never inferred ----
+    def test_perk_chips_absent_by_default(self):
+        html = self._build([lane("🌎 US-Remote",
+                                 [scored("A", "1", "Director, Operations")])])
+        self.assertNotIn("Signing bonus mentioned", html)
+        self.assertNotIn("Relocation assistance mentioned", html)
+
+    def test_perk_chips_shown_only_when_explicit(self):
+        r = scored("A", "1", "Director, Operations",
+                   signing_bonus_mentioned=True, relocation_assistance_mentioned=True)
+        html = self._build([lane("🌎 US-Remote", [r])])
+        self.assertIn("Signing bonus mentioned", html)
+        self.assertIn("Relocation assistance mentioned", html)
+
+    # ---- feedback drives repetition ----
+    def test_feedback_suppresses_roles(self):
+        roles = [scored("A", "1", "Director, Operations", rec="apply_first", opp=99),
+                 scored("B", "2", "Director, Transformation", rec="apply_first", opp=98)]
+        fb = {"by_key": {"A::1": {"status": "not_interested", "note": "", "date": ""}},
+              "by_ident": {}}
+        sections, hidden = self._sections([lane("🌎 US-Remote", roles)], fb)
+        shown = [r["p"]["key"] for v in sections.values() for r in v]
+        self.assertEqual(shown, ["B::2"])
+        self.assertEqual(hidden["suppressed"], 1)
+
+    def test_interested_keeps_showing_and_is_marked(self):
+        roles = [scored("A", "1", "Director, Operations", rec="strong_fit", opp=80)]
+        fb = {"by_key": {"A::1": {"status": "interested", "note": "", "date": ""}},
+              "by_ident": {}}
+        sections, hidden = self._sections([lane("🌎 US-Remote", roles)], fb)
+        self.assertEqual(sum(len(v) for v in sections.values()), 1)
+        self.assertEqual(hidden["suppressed"], 0)
+        html = self._build([lane("🌎 US-Remote", roles)], fb)
+        self.assertIn("Interested", html)
+
+    def test_every_suppressing_status_actually_suppresses(self):
+        for status in jm.SUPPRESS_STATUSES:
+            with self.subTest(status=status):
+                roles = [scored("A", "1", "Director, Operations", rec="apply_first")]
+                fb = {"by_key": {"A::1": {"status": status, "note": "", "date": ""}},
+                      "by_ident": {}}
+                sections, _ = self._sections([lane("🌎 US-Remote", roles)], fb)
+                self.assertEqual(sum(len(v) for v in sections.values()), 0)
+
+    # ---- unscored roles must not disappear ----
+    def test_unscored_roles_are_still_shown(self):
+        p = posting("A", "1", "Director, Operations", location="Remote - US")
+        sections, hidden = self._sections([lane("🌎 US-Remote", [p])])
+        self.assertEqual(sum(len(v) for v in sections.values()), 1,
+                         "a role must not vanish just because scoring failed")
+        self.assertEqual(hidden["unscored"], 1)
+
+    def test_neutral_verdict_renders_without_crashing(self):
+        p = posting("A", "1", "Director, Operations", location="Remote - US")
+        p["fit_result"] = jm._neutral_verdict("(scoring unavailable: RuntimeError)")
+        html = self._build([lane("🌎 US-Remote", [p])])
+        self.assertIn("Not scored this run", html)
+
+    # ---- hiring progress ----
+    def test_removal_only_day_produces_a_non_misleading_email(self):
+        gone = posting("A", "1", "Director, Operations")
+        gone["removal_reason"] = "not_listed"
+        html = self._build([lane("🌎 US-Remote", [], removed=[gone])])
+        self.assertIn("Hiring Progress", html)
+        self.assertIn("no longer detected", html)
+        self.assertNotIn("filled", html.lower())
+
+    def test_applied_roles_are_labeled_applied(self):
+        gone = posting("A", "1", "Director, Operations")
+        gone["removal_reason"] = "not_listed"
+        fb = {"by_key": {"A::1": {"status": "applied", "note": "", "date": ""}},
+              "by_ident": {}}
+        html = self._build([lane("🌎 US-Remote", [], removed=[gone])], fb)
+        self.assertIn("Applied ✓", html)
+        self.assertIn("no longer listed", html)
+
+    def test_aged_out_role_is_not_reported_as_a_departure(self):
+        aged = posting("A", "1", "Director, Operations")
+        aged["removal_reason"] = "aged_out"
+        prog = jm._hiring_progress([lane("🌎 US-Remote", [], removed=[aged])],
+                                   self.empty_fb)
+        self.assertEqual(prog["other"], [])
+        self.assertEqual(prog["aged"], 1)
+        html = self._build([lane("🌎 US-Remote", [], removed=[aged])])
+        self.assertIn("may still", html)
+
+    def test_source_error_hold_is_explained_not_counted_as_closed(self):
+        held = posting("A", "1", "Director, Operations")
+        html = self._build([lane("🌎 US-Remote", [], held=[held])])
+        self.assertIn("held because a job source failed", html)
+        self.assertNotIn("filled", html.lower())
+
+    def test_report_never_claims_a_company_filled_a_role(self):
+        gone = posting("A", "1", "Director, Operations")
+        gone["removal_reason"] = "not_listed"
+        html = self._build([lane("🌎 US-Remote",
+                                 [scored("B", "2", "Director, Operations")],
+                                 removed=[gone])])
+        self.assertNotIn("filled", html.lower())
+
+    # ---- window ----
+    def test_lisa_uses_a_14_day_window_and_chad_stays_at_7(self):
+        settings = {"max_posting_age_days": 7}
+        self.assertEqual(jm.profile_age_window(self.lisa, settings), 14)
+        self.assertEqual(jm.profile_age_window(load_real_profile("chad"), settings), 7)
+
+    def test_staffing_lane_keeps_its_own_wider_window(self):
+        settings = {"max_posting_age_days": 7, "staffing_search": {"max_age_days": 30}}
+        self.assertEqual(jm.profile_age_window(self.lisa, settings, "_staffing"), 30)
+
+    def test_links_are_real_urls(self):
+        html = self._build([lane("🌎 US-Remote",
+                                 [scored("A", "1", "Director, Operations")])])
+        urls = [u for u in re.findall(r'href="(https?://[^"]+)"', html)
+                if "fonts.goog" not in u]
+        self.assertTrue(urls)
+        for u in urls:
+            self.assertTrue(u.startswith("http"), u)
+
+    def test_chad_still_uses_the_original_renderer(self):
+        chad = load_real_profile("chad")
+        self.assertNotIn("report_style", chad,
+                         "Chad must keep the original lane-by-lane email")
+
+
+class TestUrgencyBands(unittest.TestCase):
+
+    def test_bands(self):
+        today = jm.datetime.date.today()
+        def band(days):
+            return jm.urgency_band((today - jm.datetime.timedelta(days=days)).isoformat())
+        self.assertIn("today", band(0))
+        self.assertIn("last 3 days", band(2))
+        self.assertIn("4–7 days", band(6))
+        self.assertIn("8–14 days", band(12))
+        self.assertIn("over 14 days", band(30))
+
+    def test_unknown_date_is_labeled_not_guessed(self):
+        self.assertIn("unknown", jm.urgency_band(""))
+        self.assertIn("unknown", jm.urgency_band("garbage"))
+
+    def test_urgency_is_independent_of_fit(self):
+        # Same posting date, wildly different scores -> identical urgency band.
+        d = jm.datetime.date.today().isoformat()
+        self.assertEqual(jm.urgency_band(d), jm.urgency_band(d))
 
 
 # --------------------------------------------------------------------------------------

@@ -1,0 +1,20 @@
+{
+  "_comment": "Lisa's feedback file — the ONLY file Prospector reads for feedback. Hand-edited; committed to the repo so it survives every run. Add one object per role to \"entries\". Identify a role EITHER by its exact \"key\" (copy it from feedback_template_lisa.json, which is regenerated every run) OR by \"company\" + \"title\" together, which is easier to type. \"note\" and \"date\" are free text for your own reference and are never parsed.",
+
+  "_statuses": {
+    "applied": "You applied. Never recommended again; shows under Hiring Progress once the posting disappears.",
+    "already_applied": "You had already applied elsewhere. Suppressed from recommendations.",
+    "not_interested": "Not interested. Suppressed permanently.",
+    "too_technical": "Too technical for you. Suppressed, and counted as a false positive in the weekly audit.",
+    "wrong_function": "Wrong function. Suppressed, and counted as a false positive.",
+    "wrong_industry": "Wrong industry. Suppressed, and counted as a false positive.",
+    "interested": "Keep showing it until it closes or ages out. NOT suppressed."
+  },
+
+  "_example": [
+    { "key": "Podium::8080202", "status": "not_interested", "note": "too junior" },
+    { "company": "Health Catalyst", "title": "Implementation Manager", "status": "applied", "date": "2026-07-30" }
+  ],
+
+  "entries": []
+}
