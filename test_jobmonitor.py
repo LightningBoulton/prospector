@@ -684,45 +684,187 @@ class FakeClient:
         self.messages = _Messages()
 
 
+def verdict_json(**over):
+    """A well-formed model reply, with fields overridable per test."""
+    d = {"qualification_fit": 80, "interest_fit": 90, "practical_fit": 70,
+         "opportunity_score": 84, "recommendation": "strong_fit",
+         "reasons": ["clear transformation mandate", "director-level scope"],
+         "concerns": ["hybrid two days per week"],
+         "relocation_required": False, "relocation_assistance_mentioned": False,
+         "signing_bonus_mentioned": False}
+    d.update(over)
+    return json.dumps(d)
+
+
+class TestVerdictValidation(unittest.TestCase):
+    """The spec is explicit: do not trust inconsistent model fields without validation."""
+
+    def test_valid_verdict_passes_through(self):
+        v = jm.validate_verdict(json.loads(verdict_json()))
+        self.assertIsNotNone(v)
+        self.assertEqual(v["recommendation"], "strong_fit")
+        self.assertEqual((v["qualification_fit"], v["interest_fit"],
+                          v["practical_fit"], v["opportunity_score"]), (80, 90, 70, 84))
+        self.assertTrue(v["valid"])
+
+    def test_legacy_aliases_are_populated_for_existing_renderers(self):
+        v = jm.validate_verdict(json.loads(verdict_json(opportunity_score=91)))
+        self.assertEqual(v["score"], 91, "score must alias opportunity_score")
+        self.assertEqual(v["fit"], "yes", "strong_fit maps to the legacy 'yes' bucket")
+        self.assertEqual(v["reason"], "clear transformation mandate")
+
+    def test_recommendation_maps_to_legacy_fit_buckets(self):
+        for rec, fit in [("apply_first", "yes"), ("strong_fit", "yes"),
+                         ("stretch", "maybe"), ("practical_contract", "maybe"),
+                         ("not_recommended", "no")]:
+            with self.subTest(rec=rec):
+                v = jm.validate_verdict(json.loads(verdict_json(recommendation=rec)))
+                self.assertEqual(v["fit"], fit)
+
+    def test_recommendation_is_normalized_for_spacing_and_dashes(self):
+        for variant in ["Apply_First", "apply first", "apply-first", "  APPLY_FIRST "]:
+            with self.subTest(variant=variant):
+                v = jm.validate_verdict(json.loads(verdict_json(recommendation=variant)))
+                self.assertIsNotNone(v)
+                self.assertEqual(v["recommendation"], "apply_first")
+
+    def test_invalid_recommendation_is_rejected(self):
+        for bad in ["definitely_apply", "yes", "", None, 7]:
+            with self.subTest(bad=bad):
+                self.assertIsNone(
+                    jm.validate_verdict(json.loads(verdict_json(recommendation=bad))),
+                    "an unrecognized recommendation must be rejected, not guessed")
+
+    def test_missing_required_score_is_rejected(self):
+        for field in ("qualification_fit", "interest_fit", "practical_fit",
+                      "opportunity_score"):
+            with self.subTest(missing=field):
+                raw = json.loads(verdict_json())
+                del raw[field]
+                self.assertIsNone(jm.validate_verdict(raw))
+
+    def test_non_numeric_score_is_rejected(self):
+        self.assertIsNone(jm.validate_verdict(json.loads(
+            verdict_json(opportunity_score="very high"))))
+
+    def test_boolean_score_is_rejected(self):
+        # True would otherwise silently coerce to 1.
+        self.assertIsNone(jm.validate_verdict(json.loads(
+            verdict_json(interest_fit=True))))
+
+    def test_out_of_range_scores_are_clamped(self):
+        v = jm.validate_verdict(json.loads(
+            verdict_json(qualification_fit=150, interest_fit=-20)))
+        self.assertEqual(v["qualification_fit"], 100)
+        self.assertEqual(v["interest_fit"], 0)
+
+    def test_float_score_is_rounded(self):
+        v = jm.validate_verdict(json.loads(verdict_json(opportunity_score=87.6)))
+        self.assertEqual(v["opportunity_score"], 88)
+
+    def test_reasons_and_concerns_are_capped(self):
+        v = jm.validate_verdict(json.loads(verdict_json(
+            reasons=[f"reason {i}" for i in range(12)],
+            concerns=[f"concern {i}" for i in range(9)])))
+        self.assertEqual(len(v["reasons"]), 5, "at most 5 reasons")
+        self.assertEqual(len(v["concerns"]), 3, "at most 3 concerns")
+
+    def test_string_instead_of_list_is_accepted(self):
+        v = jm.validate_verdict(json.loads(verdict_json(reasons="just one reason")))
+        self.assertEqual(v["reasons"], ["just one reason"])
+
+    def test_garbage_lists_do_not_crash(self):
+        v = jm.validate_verdict(json.loads(verdict_json(reasons=42, concerns={"a": 1})))
+        self.assertEqual(v["reasons"], [])
+        self.assertEqual(v["concerns"], [])
+
+    def test_booleans_are_coerced(self):
+        v = jm.validate_verdict(json.loads(verdict_json(
+            relocation_required="yes", signing_bonus_mentioned=1,
+            relocation_assistance_mentioned=0)))
+        self.assertIs(v["relocation_required"], True)
+        self.assertIs(v["signing_bonus_mentioned"], True)
+        self.assertIs(v["relocation_assistance_mentioned"], False)
+
+    def test_missing_booleans_default_to_false(self):
+        raw = json.loads(verdict_json())
+        for f in ("relocation_required", "relocation_assistance_mentioned",
+                  "signing_bonus_mentioned"):
+            del raw[f]
+        v = jm.validate_verdict(raw)
+        self.assertIs(v["relocation_required"], False)
+        self.assertIs(v["relocation_assistance_mentioned"], False)
+        self.assertIs(v["signing_bonus_mentioned"], False,
+                      "never infer a benefit that was not stated")
+
+    def test_non_dict_is_rejected(self):
+        for bad in [None, [], "text", 5]:
+            self.assertIsNone(jm.validate_verdict(bad))
+
+
 class TestScoreFitSafety(unittest.TestCase):
+    """Whatever the model does, the run must keep going and the role must be kept."""
 
     CANDIDATE = {"name": "Test Person", "summary": "ops leader"}
 
     def _posting(self):
         return posting("A", "1", "Director, Business Operations")
 
+    def _score(self, **client_kw):
+        return jm.score_fit(self.CANDIDATE, self._posting(), FakeClient(**client_kw))
+
     def test_valid_reply_parses(self):
-        c = FakeClient(reply='{"fit": "yes", "score": 88, "reason": "strong ops mandate"}')
-        r = jm.score_fit(self.CANDIDATE, self._posting(), c)
-        self.assertEqual(r["fit"], "yes")
+        r = self._score(reply=verdict_json(opportunity_score=88,
+                                           recommendation="apply_first"))
+        self.assertEqual(r["recommendation"], "apply_first")
+        self.assertEqual(r["opportunity_score"], 88)
         self.assertEqual(r["score"], 88)
-        self.assertEqual(r["reason"], "strong ops mandate")
+        self.assertTrue(r["valid"])
 
     def test_reply_wrapped_in_prose_or_fences_still_parses(self):
-        c = FakeClient(reply='Sure!\n```json\n{"fit":"maybe","score":50,"reason":"ok"}\n```')
-        r = jm.score_fit(self.CANDIDATE, self._posting(), c)
-        self.assertEqual(r["fit"], "maybe")
-        self.assertEqual(r["score"], 50)
-
-    def test_invalid_fit_value_falls_back_to_maybe(self):
-        c = FakeClient(reply='{"fit": "definitely", "score": 70, "reason": "x"}')
-        self.assertEqual(jm.score_fit(self.CANDIDATE, self._posting(), c)["fit"], "maybe")
+        r = self._score(reply=f"Sure!\n```json\n{verdict_json()}\n```")
+        self.assertTrue(r["valid"])
+        self.assertEqual(r["recommendation"], "strong_fit")
 
     def test_malformed_json_returns_neutral_and_does_not_raise(self):
-        c = FakeClient(reply="not json at all")
-        r = jm.score_fit(self.CANDIDATE, self._posting(), c)
-        self.assertEqual(r["fit"], "maybe")
+        r = self._score(reply="not json at all")
         self.assertEqual(r["score"], -1, "a parse failure must be marked uncacheable")
+        self.assertFalse(r["valid"])
+        self.assertEqual(r["fit"], "maybe", "neutral means the role is kept, not dropped")
+
+    def test_invalid_recommendation_returns_neutral(self):
+        r = self._score(reply=verdict_json(recommendation="definitely_apply"))
+        self.assertEqual(r["score"], -1)
+        self.assertFalse(r["valid"])
+        self.assertIn("schema validation failed", r["reason"])
+
+    def test_missing_fields_return_neutral(self):
+        r = self._score(reply='{"recommendation": "strong_fit"}')
+        self.assertEqual(r["score"], -1)
+        self.assertFalse(r["valid"])
+
+    def test_non_integer_score_returns_neutral(self):
+        r = self._score(reply=verdict_json(opportunity_score="very high"))
+        self.assertEqual(r["score"], -1)
 
     def test_api_exception_returns_neutral_and_does_not_raise(self):
-        c = FakeClient(raises=RuntimeError("api down"))
-        r = jm.score_fit(self.CANDIDATE, self._posting(), c)
+        r = self._score(raises=RuntimeError("api down"))
         self.assertEqual(r["score"], -1)
         self.assertIn("scoring unavailable", r["reason"])
 
-    def test_non_integer_score_returns_neutral(self):
-        c = FakeClient(reply='{"fit": "yes", "score": "very high", "reason": "x"}')
-        self.assertEqual(jm.score_fit(self.CANDIDATE, self._posting(), c)["score"], -1)
+    def test_neutral_verdict_has_every_key_a_renderer_reads(self):
+        # A partially-populated fallback would KeyError deep inside report building.
+        r = self._score(reply="garbage")
+        for key in ("recommendation", "fit", "score", "reason", "opportunity_score",
+                    "qualification_fit", "interest_fit", "practical_fit", "reasons",
+                    "concerns", "relocation_required",
+                    "relocation_assistance_mentioned", "signing_bonus_mentioned"):
+            self.assertIn(key, r, f"neutral verdict missing {key}")
+
+    def test_every_recommendation_value_is_documented(self):
+        self.assertEqual(set(jm.RECOMMENDATIONS),
+                         {"apply_first", "strong_fit", "stretch",
+                          "practical_contract", "not_recommended"})
 
 
 class TestFitCache(unittest.TestCase):
@@ -755,7 +897,7 @@ class TestFitCache(unittest.TestCase):
                  "fit_result": {"fit": "yes", "score": 90, "reason": "r",
                                 "bg": "staleprint000"}}]
         matched = [posting("A", "1", "T")]
-        c = FakeClient(reply='{"fit":"no","score":10,"reason":"rescored"}')
+        c = FakeClient(reply=verdict_json(reasons=["rescored"]))
         orig = jm.load_background
         jm.load_background = lambda p: self.CANDIDATE
         try:
@@ -774,7 +916,7 @@ class TestFitCache(unittest.TestCase):
         prev = [{"key": "A::1", "company": "A", "title": "T",
                  "fit_result": {"fit": "maybe", "score": -1, "reason": "err", "bg": fp}}]
         matched = [posting("A", "1", "T")]
-        c = FakeClient(reply='{"fit":"yes","score":77,"reason":"retried"}')
+        c = FakeClient(reply=verdict_json(opportunity_score=77, reasons=["retried"]))
         orig = jm.load_background
         jm.load_background = lambda p: self.CANDIDATE
         try:

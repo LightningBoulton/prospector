@@ -1,131 +1,84 @@
 {
-  "_comment": "Candidate background for the LLM fit scorer. The whole object is sent to the model for each new posting. Updated with Lisa's own prioritized target titles (§4), her 'search by problem, not title' signal vocabulary (§5), and her positioning / unifying-thread language (§6). Editing this file changes the bg fingerprint, so all of Lisa's cached verdicts re-score on the next run. Fields marked TODO were intentionally omitted from her source docs — confirm for best scoring.",
+  "_comment": "Candidate scoring profile for Lisa. This WHOLE object is sent to the model on every scoring call, so it is deliberately lean and decision-focused rather than a full CV — everything here exists to help the model score qualification_fit, interest_fit, practical_fit and opportunity_score. Editing this file changes the cache fingerprint, so all of Lisa's verdicts re-score on the next run. Previous version was ~7.9KB of prose; this is ~2.5KB.",
+
   "name": "Lisa Hillier",
-  "current_title": "Senior Director Customer Experience | Strategic Practice Leader | Experience Design",
-  "years_experience": "15",
-  "seniority_target": [
-    "Manager (with team / function / workstream leadership scope)",
-    "Senior Manager",
-    "Director",
-    "Senior Director",
-    "VP",
-    "SVP",
-    "Chief / C-level (COO, CCO, CXO)",
-    "Head of",
-    "Executive Director"
-  ],
-  "seniority_flexibility": "Lisa is GENUINELY OPEN to Manager and Senior Manager roles, not only Director+/C-level. Do NOT down-rank or reject a role solely because its title is below Director. Judge seniority by scope and mandate, not by the title word: a Manager or Senior Manager role with real leadership scope and a transformation / operations / strategy / M&A / org-effectiveness / customer / professional-services mandate is a STRONG fit and should score high. Only apply a seniority penalty when the role is individual-contributor or non-leadership.",
-  "common_thread": "Lisa helps organizations build the operating and leadership capabilities required to navigate growth and major transformation WITHOUT losing the people, knowledge, customer value, and operational strengths that made them successful. She is strongest entering complex or fast-growing environments, creating structure, improving performance, and helping teams scale.",
-  "positioning": "Targets Director / Senior Director / Head-of roles in enterprise transformation, strategy & operations, M&A integration, organizational effectiveness, and enterprise AI adoption — turning complex change into stronger operating capability and measurable business performance.",
-  "priority_target_titles": [
-    "Director, Enterprise Transformation",
-    "Director, Business Transformation",
-    "Director, Strategy & Operations",
-    "Director, Business Operations",
-    "Director, M&A Integration",
-    "M&A Integration Lead",
-    "Director, Organizational Effectiveness",
-    "Director, Operational Excellence",
-    "Director, AI Transformation",
-    "Director, AI Enablement",
-    "Head of Business Operations",
-    "Chief of Staff, Strategy and Operations"
-  ],
-  "secondary_target_titles": [
-    "Senior Manager, Enterprise Transformation",
-    "Director, Strategic Initiatives",
-    "Director, Professional Services",
-    "Director, Operating Model Transformation",
-    "Director, Organizational Capability",
-    "Transformation and Integration Director",
-    "Enterprise AI Adoption Lead",
-    "Director, Customer Transformation"
-  ],
-  "title_caveat": "Lisa's best-fit roles are FREQUENTLY POORLY OR GENERICALLY TITLED (as several of her own past roles were). Judge fit primarily from the mandate, scope, and problems in the description — not from title keywords. A generically-titled senior role whose description matches the problem_signals below can be an excellent fit.",
-  "problem_signals": {
-    "_note": "Description language that indicates a strong fit even when the title does not. These mirror Lisa's own boolean search strings.",
-    "m&a_integration": [
-      "M&A integration", "post-merger integration", "integration management office",
-      "acquisition integration", "business integration", "organizational design",
-      "employee experience", "operating model", "transformation"
-    ],
-    "ai_adoption": [
-      "AI adoption", "AI enablement", "AI transformation", "generative AI enablement",
-      "AI operating model", "workforce", "organizational", "change", "capability",
-      "value realization"
-    ],
-    "enterprise_transformation": [
-      "enterprise transformation", "business transformation", "strategic transformation",
-      "transformation office", "operating model", "organizational effectiveness",
-      "operational excellence", "integration"
-    ],
-    "scaling_company": [
-      "scaling operations", "operationalize strategy", "build scalable systems",
-      "organizational maturity", "operating cadence", "director", "head of", "VP",
-      "chief of staff"
-    ]
-  },
-  "functions": [
-    "Enterprise / business transformation",
-    "Strategy & operations, business operations",
+  "current_title": "Senior Director, Customer Experience — strategic practice leader, experience design",
+  "years_experience": 15,
+
+  "positioning": "Builds the operating and leadership capability organizations need to get through growth and major change without losing the people, knowledge, customer value, and operational strength that made them work. Strongest entering complex or fast-growing environments: creating structure, improving performance, helping teams scale.",
+
+  "core_domains": [
+    "Enterprise and business transformation",
+    "Organizational strategy, design and effectiveness",
+    "Operations, business operations, operational excellence",
+    "Program and portfolio leadership, PMO",
     "M&A integration (post-merger integration, IMO)",
-    "Organizational strategy, design & effectiveness",
-    "Operations / operational excellence",
-    "Customer & digital experience",
-    "Professional services / service delivery",
-    "Leadership development",
-    "Change management",
-    "AI adoption, enablement & transformation"
+    "Change management and organizational change",
+    "Customer experience and employee experience",
+    "Professional services and service delivery",
+    "AI adoption, enablement and transformation",
+    "Operating model design, value realization"
   ],
-  "summary": "Executive leader in enterprise transformation, strategy & operations, M&A integration, organizational effectiveness, operations/operational excellence, customer and digital experience, professional services, leadership development, change management, and AI-enabled transformation. Background spans consulting, agency, enterprise, nonprofit, and global organizations. Has led global teams and organizational growth, with demonstrated improvements in revenue, margin, utilization, customer metrics, engagement, and retention.",
-  "career_highlights": [
-    "Senior leadership roles at Credera/TA Digital, Merkle/Axis41, 180fusion, and Delta Air Lines",
-    "Led global teams and organizational growth",
-    "Improved revenue, margin, utilization, customer metrics, engagement, and retention"
+
+  "adjacent_domains_still_relevant": [
+    "Business operations", "Marketing operations", "Revenue operations",
+    "Customer success leadership", "Learning and development",
+    "Organizational development", "Service design", "Process improvement",
+    "Content strategy", "Digital strategy", "SEO",
+    "Workforce transformation"
   ],
-  "strengths": [
-    "Enterprise / business transformation leadership",
-    "M&A integration",
-    "Strategy & operations, operating-model design",
-    "Organizational design & effectiveness",
-    "Operational excellence",
-    "Professional services leadership",
-    "Customer experience",
-    "AI adoption & enablement",
-    "Change management",
-    "Executive communication"
+
+  "target_titles": [
+    "Director / Senior Director of: Organizational Strategy, Business Transformation, Operations, Operational Excellence, Program Management, PMO, Customer Experience, Employee Experience, Professional Services, Strategic Initiatives, AI Enablement, Change Management",
+    "Head of Operations", "Chief of Staff", "Program Director",
+    "Transformation Lead", "Practice Leader", "General Manager",
+    "VP / SVP / COO / CCO / CXO where scope fits"
   ],
-  "working_style": [
-    "Systems thinker",
-    "Evidence-based decisions",
-    "Connects business strategy with execution",
-    "Explains technology in business terms"
+
+  "seniority_stance": "Open from Manager through C-level. Do NOT down-rank a role only because the title is below Director, or because it is individual-contributor, Lead, Principal, Manager, Senior Manager, contract, or temporary. Judge it on whether it carries meaningful ownership, influence, strategic scope, transformation or operating responsibility, or executive-facing work. A Manager or Senior Manager role with a real transformation / operations / strategy / M&A / org-effectiveness / experience mandate is a STRONG fit, not a stretch.",
+
+  "title_caveat": "Her best-fit roles are frequently poorly or generically titled — several of her own past roles were. Judge primarily from the mandate, scope, and problems described in the posting, not from title keywords.",
+
+  "strong_signals": [
+    "M&A integration, post-merger integration, integration management office, due diligence",
+    "operating model design, target operating model, organizational design",
+    "enterprise or business transformation, transformation office or roadmap",
+    "operational excellence, process excellence, value realization",
+    "change management, change enablement, organizational change",
+    "AI adoption, AI enablement, workforce transformation",
+    "scaling operations, operationalizing strategy, organizational maturity",
+    "professional services or service delivery leadership",
+    "customer experience or employee experience ownership",
+    "executive-facing scope, P&L or margin ownership, global or multi-site scope"
   ],
-  "must_haves": [
-    "manager-level-or-above leadership scope (leads a function, team, workstream, or initiative — a large org is a plus, not a requirement)",
-    "a transformation / strategy-&-operations / M&A-integration / org-effectiveness / customer-or-professional-services leadership mandate (judged by mandate, not necessarily by title)"
+
+  "proof_points": [
+    "Senior leadership at Credera/TA Digital, Merkle/Axis41, 180fusion, Delta Air Lines",
+    "Led global teams through organizational growth and integration",
+    "Measurable gains in revenue, margin, utilization, customer metrics, engagement, retention",
+    "Spans consulting, agency, enterprise, nonprofit and global organizations"
   ],
-  "nice_to_haves": [
-    "enterprise AI adoption / enablement / transformation mandate",
-    "M&A / post-merger integration work",
-    "organizational scaling or operating-model design",
-    "global or international scope",
-    "consulting / advisory optionality",
-    "platform for thought leadership"
+
+  "working_style": "Systems thinker; evidence-based; connects business strategy to execution; explains technology in business terms; structured executive communication.",
+
+  "weak_or_wrong_fit": [
+    "Hands-on software / data / security engineering, IT administration, technician work",
+    "Accounting, FP&A, tax, treasury, audit, controller, payroll",
+    "Clinical or medical provider work",
+    "Plant, production-floor, warehouse or depot operations",
+    "Sales-quota ownership, account executive, SDR/BDR",
+    "Roles with no ownership, influence or strategic scope at all"
   ],
-  "dealbreakers": [
-    "individual-contributor-only roles",
-    "non-leadership roles",
-    "pure sales-quota / account-executive roles",
-    "hands-on engineering roles"
-  ],
-  "location_preference": "Utah-area or remote; open to international career opportunities",
+
+  "practical_constraints": {
+    "location_preference": "Utah (Salt Lake / Silicon Slopes corridor) or US-remote. Utah-hybrid is workable. Hybrid outside Utah is a real constraint; onsite outside Utah would require relocating and should be scored down on practical_fit but still surfaced when the role is strong.",
+    "employment_types": "Open to permanent, contract, interim and temporary. Contract leadership work is explicitly in scope and can be valuable for income and experience.",
+    "open_to_international": "Open to international opportunities in principle, but US-remote and Utah are the practical default."
+  },
+
   "goals": [
-    "Executive leadership in transformation & organizational scaling",
+    "Executive leadership in transformation and organizational scaling",
     "M&A integration and enterprise AI adoption",
-    "Thought leadership",
-    "Consulting optionality",
-    "International career flexibility"
-  ],
-  "notes": "Regenerated from Lisa's 'Professional Knowledge Base' plus her prioritized title list, problem-based search strings, and positioning language. Communication style: structured, evidence-based, step-by-step. Source docs intentionally omit location/comp/tenure, so current_title, years_experience, and precise location are TODO — confirm with Lisa."
+    "Consulting optionality and thought leadership"
+  ]
 }

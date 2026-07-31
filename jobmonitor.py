@@ -53,8 +53,14 @@ def load_settings():
 
 # LLM fit-scoring (optional). Active only when ANTHROPIC_API_KEY is set AND a profile
 # names a background_file. Falls back to no scoring otherwise — the tool still runs fine.
-FIT_MODEL = "claude-sonnet-5"   # judgment task; swap to "claude-haiku-4-5-20251001" for lower cost
+FIT_MODEL = "claude-sonnet-5"   # judgment task; swap to "claude-haiku-4-5" for lower cost
 DESC_LIMIT = 2000               # chars of job description sent to the model
+
+# Version of the verdict SHAPE that score_fit returns. It is folded into the cache
+# fingerprint (`_bg_fingerprint`), so bumping it invalidates every stored verdict and forces
+# one full re-score. Bump it whenever the fields or their meaning change — that is what stops
+# new rendering code from reading a stale verdict written under the old schema.
+FIT_SCHEMA_VERSION = 2
 
 # Global location gate, applied once to the fetched pool before any profile runs.
 LOCAL_KEYWORDS = [
@@ -695,46 +701,214 @@ def load_background(profile):
 
 
 def _bg_fingerprint(candidate):
-    # Short hash of the candidate content actually sent to the model. Changing the
-    # background file changes this, which invalidates cached verdicts (see enrich_with_fit).
-    return hashlib.sha256(json.dumps(candidate, sort_keys=True).encode()).hexdigest()[:12]
+    # Short hash of what is actually sent to the model, PLUS the verdict-schema version.
+    # Editing a background file changes this (invalidating that profile's cached verdicts),
+    # and so does bumping FIT_SCHEMA_VERSION — which is what guarantees a stale
+    # old-shape verdict is never reused by new rendering code. See enrich_with_fit.
+    payload = {"v": FIT_SCHEMA_VERSION, "bg": candidate}
+    return hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()[:12]
+
+
+# recommendation -> the legacy `fit` bucket, so everything written against the old verdict
+# shape (Chad's report rendering, the `fit_mode:"filter"` switch, score sorting) keeps working.
+_REC_TO_FIT = {"apply_first": "yes", "strong_fit": "yes", "stretch": "maybe",
+               "practical_contract": "maybe", "not_recommended": "no"}
+RECOMMENDATIONS = tuple(_REC_TO_FIT)
+
+
+def _neutral_verdict(why):
+    """The safe fallback. score -1 marks it UNCACHEABLE, so the role is kept in the report
+    and re-scored on the next run rather than being silently frozen as a bad verdict."""
+    return {"recommendation": "stretch", "fit": "maybe", "score": -1,
+            "opportunity_score": -1, "qualification_fit": -1, "interest_fit": -1,
+            "practical_fit": -1, "reasons": [], "concerns": [], "reason": why,
+            "relocation_required": False, "relocation_assistance_mentioned": False,
+            "signing_bonus_mentioned": False, "valid": False}
+
+
+def _as_score(value):
+    """0-100 int, or None if the model sent something that isn't a number. Bools are
+    rejected on purpose (True would otherwise coerce to 1)."""
+    if isinstance(value, bool) or value is None:
+        return None
+    try:
+        return max(0, min(100, int(round(float(value)))))
+    except (TypeError, ValueError):
+        return None
+
+
+def _as_str_list(value, limit, item_chars=140):
+    if isinstance(value, str):          # model sent one string instead of a list
+        value = [value]
+    if not isinstance(value, list):
+        return []
+    out = []
+    for item in value[:limit]:
+        s = str(item).strip()
+        if s:
+            out.append(s[:item_chars])
+    return out
+
+
+def validate_verdict(raw):
+    """Turn a parsed model reply into a trusted verdict, or None if it can't be trusted.
+
+    Strict about the fields that drive decisions (the four scores + recommendation): if any
+    is missing or malformed the whole verdict is rejected, because a wrong recommendation is
+    worse than no recommendation. Forgiving about presentation (over-long lists, a string
+    where a list belongs, non-bool booleans) — those are coerced."""
+    if not isinstance(raw, dict):
+        return None
+    rec = str(raw.get("recommendation", "")).strip().lower().replace("-", "_").replace(" ", "_")
+    if rec not in _REC_TO_FIT:
+        return None
+    scores = {k: _as_score(raw.get(k)) for k in
+              ("qualification_fit", "interest_fit", "practical_fit", "opportunity_score")}
+    if any(v is None for v in scores.values()):
+        return None
+    reasons = _as_str_list(raw.get("reasons"), 5)
+    v = {"recommendation": rec,
+         "reasons": reasons,
+         "concerns": _as_str_list(raw.get("concerns"), 3),
+         "relocation_required": bool(raw.get("relocation_required")),
+         "relocation_assistance_mentioned": bool(raw.get("relocation_assistance_mentioned")),
+         "signing_bonus_mentioned": bool(raw.get("signing_bonus_mentioned")),
+         "valid": True}
+    v.update(scores)
+    # Legacy aliases, kept so existing renderers/sorting/filter logic need no changes.
+    v["score"] = scores["opportunity_score"]
+    v["fit"] = _REC_TO_FIT[rec]
+    v["reason"] = reasons[0] if reasons else ""
+    return v
+
+
+# Built once per run (it is identical for every posting) and prepended to each request.
+def _fit_instructions():
+    return (
+        "You screen job postings for ONE specific candidate and return a structured "
+        "judgment. Be realistic and decisive.\n\n"
+        "Score four independent dimensions 0-100:\n"
+        "- qualification_fit: how well the candidate's demonstrated experience matches the "
+        "role's actual requirements and mandate.\n"
+        "- interest_fit: how strongly the role matches the work they want — transformation, "
+        "organizational strategy, operations, operational excellence, program leadership, "
+        "customer or employee experience, change, professional services, strategic "
+        "initiatives, AI adoption and enablement, M&A integration, operating models, "
+        "value realization.\n"
+        "- practical_fit: how workable it is — remote status, Utah location, hybrid or "
+        "onsite requirements, whether relocation would be needed, employment type, and "
+        "compensation or other constraints the posting actually states.\n"
+        "- opportunity_score: the overall value of PURSUING this role, balancing the three "
+        "above. This is not resume similarity — a strong mandate at a real company can "
+        "outrank a closer keyword match.\n\n"
+        "Location weighting for practical_fit: US-remote is best; Utah-local or Utah-hybrid "
+        "is high; hybrid outside Utah is reduced; onsite outside Utah is reduced because it "
+        "would likely require relocating. A weak practical_fit must NOT erase a strong role "
+        "— score it honestly and let the labels carry the caveat.\n\n"
+        "Do NOT automatically penalize a role for being individual-contributor, Lead, "
+        "Principal, Manager, Senior Manager, Director, contract, or temporary. Judge whether "
+        "it carries real ownership, influence, strategic scope, transformation or operating "
+        "responsibility, or executive-facing work. Many strong roles are generically titled, "
+        "so weight the mandate and problems described over title keywords.\n\n"
+        "recommendation must be exactly one of:\n"
+        "- apply_first: well qualified, strongly matches their interests, practical enough "
+        "to prioritize now.\n"
+        "- strong_fit: credible and attractive, worth serious consideration.\n"
+        "- stretch: interesting and possibly viable, but with real gaps, seniority concerns, "
+        "specialized requirements, or practical limits.\n"
+        "- practical_contract: a contract or temporary role useful for income or experience "
+        "even if it is not a long-term ideal.\n"
+        "- not_recommended: wrong function, unrealistic requirements, weak mandate fit, or "
+        "otherwise not worth their time.\n\n"
+        "relocation_assistance_mentioned and signing_bonus_mentioned must be true ONLY if "
+        "the posting explicitly says so. Never infer them. If the description is missing or "
+        "silent, they are false.\n\n"
+        "reasons: up to 5 items, each a short phrase (under 15 words) explaining why this "
+        "role surfaced. concerns: up to 3, only if genuinely useful.\n\n"
+        "Respond with ONLY this JSON object — no prose, no markdown fences:\n"
+        '{"qualification_fit": <0-100>, "interest_fit": <0-100>, "practical_fit": <0-100>, '
+        '"opportunity_score": <0-100>, "recommendation": "apply_first"|"strong_fit"|'
+        '"stretch"|"practical_contract"|"not_recommended", "reasons": ["..."], '
+        '"concerns": ["..."], "relocation_required": true|false, '
+        '"relocation_assistance_mentioned": true|false, '
+        '"signing_bonus_mentioned": true|false}')
+
+
+def _fit_system(candidate):
+    """The STABLE half of the prompt: scoring rubric + candidate profile. Byte-identical for
+    every posting in a run, so it is sent as a cached system block — the first call writes the
+    cache, the rest read it at roughly a tenth of the input price. `sort_keys=True` matters:
+    non-deterministic JSON ordering would silently change the bytes and defeat the cache.
+
+    A cache miss is harmless — it just costs what it did before, so this is a saving, not a
+    dependency. Nothing downstream inspects the cache fields."""
+    text = (_fit_instructions() + "\n\nCANDIDATE:\n"
+            + json.dumps(candidate, indent=2, sort_keys=True))
+    return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
+
+
+# Per-run token accounting, printed at the end of a scored run so cost stays visible.
+_FIT_USAGE = {"calls": 0, "input": 0, "output": 0, "cache_read": 0, "cache_write": 0}
+
+
+def _record_usage(msg):
+    u = getattr(msg, "usage", None)
+    if u is None:                      # test doubles won't carry usage; not an error
+        return
+    _FIT_USAGE["calls"] += 1
+    for key, attr in (("input", "input_tokens"), ("output", "output_tokens"),
+                      ("cache_read", "cache_read_input_tokens"),
+                      ("cache_write", "cache_creation_input_tokens")):
+        _FIT_USAGE[key] += getattr(u, attr, 0) or 0
+
+
+def fit_usage_summary():
+    """One-line cost/caching summary, or '' if nothing was scored."""
+    u = _FIT_USAGE
+    if not u["calls"]:
+        return ""
+    billed = u["input"] + u["cache_write"] + u["cache_read"]
+    hit = (100 * u["cache_read"] // billed) if billed else 0
+    return (f"Fit scoring: {u['calls']} call(s) · in {u['input']:,} · "
+            f"cache write {u['cache_write']:,} · cache read {u['cache_read']:,} "
+            f"({hit}% of prompt served from cache) · out {u['output']:,}")
 
 
 def score_fit(candidate, posting, client):
-    """Ask the model whether the candidate is a plausible fit. Returns
-    {'fit': yes|maybe|no, 'score': 0-100, 'reason': str}. Never raises — on any
-    failure returns a neutral 'maybe' with score -1 so the role is kept, not dropped."""
-    desc = posting.get("description") or "(no description available — judge from title and location)"
-    prompt = (
-        "You screen job postings for one specific candidate. Decide whether this role is "
-        "worth the candidate's attention. Be realistic: reward strong matches on seniority, "
-        "function, and domain; penalize clear mismatches. Many strong-fit roles are poorly or "
-        "generically titled, so weight the actual mandate, scope, and problems described in the "
-        "posting over title keywords.\n\n"
-        f"CANDIDATE:\n{json.dumps(candidate, indent=2)}\n\n"
-        f"JOB POSTING:\nTitle: {posting['title']}\nCompany: {posting['company']}\n"
-        f"Location: {posting['location']}\nDescription: {desc[:DESC_LIMIT]}\n\n"
-        'Respond with ONLY a JSON object, no prose and no markdown fences:\n'
-        '{"fit": "yes" | "maybe" | "no", "score": <integer 0-100>, "reason": "<20 words max>"}'
-    )
+    """Score one posting for one candidate. Returns a validated verdict dict (see
+    `validate_verdict`) carrying the four dimensions, a recommendation, reasons/concerns,
+    the three explicit-mention booleans, and legacy `fit`/`score`/`reason` aliases.
+
+    Never raises. On ANY failure — API error, unparseable reply, schema that fails
+    validation — returns a neutral verdict with score -1, so the role is KEPT and re-scored
+    next run instead of being dropped or frozen with a wrong recommendation."""
+    desc = posting.get("description") or \
+        "(no description available — judge from title and location only)"
+    # Only the posting varies per call, so it is the whole user turn (see _fit_system).
+    user = (f"JOB POSTING:\nTitle: {posting['title']}\nCompany: {posting['company']}\n"
+            f"Location: {posting['location']}\n"
+            f"Employment type hint: {posting.get('_lane') or 'standard posting'}\n"
+            f"Description: {desc[:DESC_LIMIT]}")
+    text = ""
     try:
-        # max_tokens generous so a verbose reason can't truncate the JSON mid-string.
-        msg = client.messages.create(model=FIT_MODEL, max_tokens=400,
-                                     messages=[{"role": "user", "content": prompt}])
+        # max_tokens generous so reasons/concerns can't truncate the JSON mid-string.
+        msg = client.messages.create(model=FIT_MODEL, max_tokens=700,
+                                     system=_fit_system(candidate),
+                                     messages=[{"role": "user", "content": user}])
+        _record_usage(msg)
         text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
         # Pull the JSON object out even if the model wrapped it in fences or prose.
         m = re.search(r"\{.*\}", text, re.S)
-        r = json.loads(m.group(0) if m else text)
-        fit = str(r.get("fit", "maybe")).lower()
-        return {"fit": fit if fit in ("yes", "maybe", "no") else "maybe",
-                "score": int(r.get("score", 50)),
-                "reason": str(r.get("reason", ""))[:200]}
+        verdict = validate_verdict(json.loads(m.group(0) if m else text))
+        if verdict is None:
+            print(f"[warn] fit schema rejected [{posting.get('key', '?')}]: "
+                  f"raw={text[:160]!r}")
+            return _neutral_verdict("(scoring unavailable: schema validation failed)")
+        return verdict
     except Exception as e:
-        # Log the raw reply so CI shows what didn't parse; role is kept (score -1).
-        raw = locals().get("text", "")
         print(f"[warn] fit parse failed [{posting.get('key', '?')}]: "
-              f"{type(e).__name__}: {str(e)[:80]} | raw={raw[:120]!r}")
-        return {"fit": "maybe", "score": -1, "reason": f"(scoring unavailable: {type(e).__name__})"}
+              f"{type(e).__name__}: {str(e)[:80]} | raw={text[:120]!r}")
+        return _neutral_verdict(f"(scoring unavailable: {type(e).__name__})")
 
 
 def enrich_with_fit(matched, prev, profile, client):
@@ -1352,6 +1526,13 @@ def _run_lane(profile, src, client, suffix, title):
     pool, errors = src.get("pool") or [], src.get("errors") or []
     failed_companies = src.get("failed") or set()
     matched = [p for p in pool if matches_profile(p, profile)]
+    # Tell the scorer which lane a role came from, so a staffing-firm posting is judged as
+    # contract work (and can earn `practical_contract`) rather than looking like a permanent
+    # role with a suspiciously thin description.
+    lane_hint = ("contract or temporary role from a staffing firm" if suffix == "_staffing"
+                 else "standard direct-employer posting")
+    for p in matched:
+        p["_lane"] = lane_hint
     enrich_salary(matched)   # cache-deduped across profiles; postings are shared refs
     snap = os.path.join(SNAPSHOT_DIR, f"snapshot_{profile['name']}{suffix}.json")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
@@ -1539,6 +1720,10 @@ def main():
     # only people whose (combined local+remote) report changed, and the exact list of logo
     # files to attach inline as CID images — only those the report references, so none show
     # as stray downloads. One report/email per person, so no separate remote-lane outputs.
+    summary = fit_usage_summary()
+    if summary:
+        print(summary)
+
     # A dry run must never signal the workflow to send email, even if GITHUB_OUTPUT is set.
     gh_out = None if args.dry_run else os.environ.get("GITHUB_OUTPUT")
     if gh_out:
