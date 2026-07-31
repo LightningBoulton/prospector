@@ -44,20 +44,29 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "recommendation": "practical_contract",
+   "reasons": [
+    "AI adoption/enablement mandate",
+    "Cross-functional project leadership visibility",
+    "Remote contract via staffing firm",
+    "Operational excellence and Lean focus"
+   ],
+   "concerns": [
+    "Below her seniority level as PM",
+    "Contract via staffing agency, not direct",
+    "4-6 yrs experience level target"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 68,
+   "practical_fit": 55,
+   "opportunity_score": 58,
+   "score": 58,
+   "fit": "maybe",
+   "reason": "AI adoption/enablement mandate",
    "bg": "cae648f28d15"
   },
   "rescued": true

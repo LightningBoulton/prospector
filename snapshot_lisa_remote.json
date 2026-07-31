@@ -141,6 +141,40 @@
   "rescued": true
  },
  {
+  "key": "Twilio::8092234",
+  "company": "Twilio",
+  "title": "Senior Customer Success Manager",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8092234",
+  "posted": "2026-07-30",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "US-remote practical fit",
+    "Customer success touches CX domain",
+    "Key account strategic influence"
+   ],
+   "concerns": [
+    "Quota/renewal-driven CSM role, not transformation",
+    "Below her target seniority/scope",
+    "Narrow product-adoption mandate vs strategic ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "US-remote practical fit",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
   "key": "Twilio::8089290",
   "company": "Twilio",
   "title": "Senior Global Event Manager, Content Operations & Production",
@@ -183,20 +217,28 @@
   "posted": "2026-07-17",
   "salary": null,
   "fit_result": {
-   "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "recommendation": "not_recommended",
+   "reasons": [
+    "US-remote practical fit is strong",
+    "Adjacent to service delivery operations",
+    "Some professional services alignment"
+   ],
+   "concerns": [
+    "Requires hands-on weekly coding, not her background",
+    "Deep technical/engineering ownership mismatch",
+    "Not a strategic transformation or org leadership mandate"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 85,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "US-remote practical fit is strong",
    "bg": "cae648f28d15"
   },
   "rescued": true
@@ -245,19 +287,27 @@
   "salary": null,
   "fit_result": {
    "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "reasons": [
+    "AI enablement and org knowledge systems align with interests",
+    "Cross-functional operations mandate",
+    "US-remote eligible location"
+   ],
+   "concerns": [
+    "Highly specialized knowledge architecture/technical scope",
+    "Not clearly a leadership/strategy ownership role",
+    "Requires deep systems/taxonomy expertise vs her background"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 65,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "AI enablement and org knowledge systems align with interests",
    "bg": "cae648f28d15"
   }
  },
@@ -677,6 +727,42 @@
   }
  },
  {
+  "key": "Dropbox::8092224",
+  "company": "Dropbox",
+  "title": "Program Manager, Workforce Planning",
+  "location": "Remote - US: Select locations",
+  "url": "https://jobs.dropbox.com/listing/8092224?gh_jid=8092224",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "US-remote, strong practical fit",
+    "Program/operating model ownership matches core skills",
+    "Cross-functional governance and executive reporting scope",
+    "Operational excellence and PMO-style mandate"
+   ],
+   "concerns": [
+    "Narrow HR/workforce planning domain, not transformation-wide",
+    "IC role may limit strategic influence",
+    "Less M&A/AI enablement scope than target roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 65,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "US-remote, strong practical fit",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
+ },
+ {
   "key": "Dropbox::8067362",
   "company": "Dropbox",
   "title": "Senior Director, Revenue Operations",
@@ -999,20 +1085,28 @@
   "posted": "2026-07-21",
   "salary": null,
   "fit_result": {
-   "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Strategy/GTM role but niche blockchain banking domain",
+    "Not aligned with transformation/ops core expertise",
+    "Remote but highly specialized fintech mandate"
+   ],
+   "concerns": [
+    "Requires deep banking/blockchain domain expertise",
+    "Not a transformation or operations mandate",
+    "Unclear org-effectiveness or change scope"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Strategy/GTM role but niche blockchain banking domain",
    "bg": "cae648f28d15"
   }
  }

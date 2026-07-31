@@ -407,6 +407,40 @@
   }
  },
  {
+  "key": "Grafana Labs::6130907004",
+  "company": "Grafana Labs",
+  "title": "Senior FullStack Engineer - Grafana Cloud Observability| US | Remote",
+  "location": "United States (Remote)",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6130907004",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote US role fits location preference",
+    "Full-stack engineering matches strengths",
+    "Enterprise SaaS/observability platform aligns with interests",
+    "Grafana is respected infra/dev tools company"
+   ],
+   "concerns": [
+    "Limited detail on frontend stack/tech match",
+    "Unclear seniority scope vs Principal title"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 75,
+   "practical_fit": 90,
+   "opportunity_score": 75,
+   "score": 75,
+   "fit": "yes",
+   "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Grafana Labs::6127968004",
   "company": "Grafana Labs",
   "title": "Solutions Engineer | East or Central US | Remote",
@@ -1033,19 +1067,28 @@
   "salary": null,
   "fit_result": {
    "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "reasons": [
+    "Remote-friendly, matches location preference",
+    "Developer tooling/DevEx aligns with interests",
+    "Open source dev tools somewhat niche vs profile",
+    "AI-adjacent IDE tooling appeals to interests"
+   ],
+   "concerns": [
+    "Title suggests Intermediate level, below Principal target",
+    "Compensation not specified",
+    "Narrower open-source/IDE plugin scope vs full-stack SaaS"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote-friendly, matches location preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1124,20 +1167,28 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
-   "relocation_required": false,
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Deep networking/infra specialization mismatch",
+    "Not remote-flexible, tied to Seattle/SF Bay Area",
+    "Docker brand aligns with developer tooling interest"
+   ],
+   "concerns": [
+    "Requires deep virtual networking/service mesh expertise not in profile",
+    "Location implies onsite/hybrid outside Utah",
+    "Would require relocation, a dealbreaker"
+   ],
+   "relocation_required": true,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 45,
+   "practical_fit": 35,
+   "opportunity_score": 32,
+   "score": 32,
+   "fit": "no",
+   "reason": "Deep networking/infra specialization mismatch",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1150,20 +1201,27 @@
   "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
-   "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Docker is strong DevTools/infra brand",
+    "Remote-first culture aligns with preference"
+   ],
+   "concerns": [
+    "Deep networking/service mesh specialization mismatch",
+    "Requires infra-at-scale expertise not core strength",
+    "Seattle/SF hub focus despite remote label"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 40,
+   "practical_fit": 35,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Docker is strong DevTools/infra brand",
    "bg": "8d3fa4bf6180"
   }
  },

@@ -40,7 +40,7 @@
   "title": "Manager, Revenue Operations",
   "location": "Lehi",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Manager--Revenue-Operations_R170491",
-  "posted": "2026-07-28",
+  "posted": "2026-07-27",
   "salary": null,
   "fit_result": {
    "recommendation": "strong_fit",
@@ -74,7 +74,7 @@
   "title": "Senior Manager, Business Process Optimization Program Management",
   "location": "Lehi (+2 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Manager--Business-Process-Optimization-Program-Management_R170677-1",
-  "posted": "2026-07-28",
+  "posted": "2026-07-27",
   "salary": "$173,300 - $250,875",
   "fit_result": {
    "recommendation": "strong_fit",
@@ -109,7 +109,7 @@
   "title": "Sales Partner Compliance Operations Manager",
   "location": "Lehi (+3 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sales-Partner-Compliance-Operations-Manager_R169617",
-  "posted": "2026-07-21",
+  "posted": "2026-07-20",
   "salary": "$146,300 - $211,850",
   "fit_result": {
    "recommendation": "stretch",
@@ -144,7 +144,7 @@
   "title": "Group Content Strategy Manager, Adobe.com",
   "location": "Lehi (+9 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Group-Content-Strategy-Manager--Adobecom_R170475-1",
-  "posted": "2026-07-24",
+  "posted": "2026-07-23",
   "salary": "$202,900 - $293,800",
   "fit_result": {
    "recommendation": "stretch",
@@ -212,7 +212,7 @@
   "title": "Implementation Manager",
   "location": "US Remote",
   "url": "https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Implementation-Manager_REQ-3267",
-  "posted": "2026-07-24",
+  "posted": "2026-07-23",
   "salary": null,
   "fit_result": {
    "recommendation": "stretch",
@@ -285,19 +285,27 @@
   "salary": null,
   "fit_result": {
    "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "reasons": [
+    "Utah-hybrid location matches practical constraints",
+    "Director-level ownership of physical operations",
+    "Fast-growing company with employee experience focus"
+   ],
+   "concerns": [
+    "Facilities/workplace operations, not strategic transformation",
+    "Title mismatch: posting body describes Facilities, not NA Ops",
+    "Limited alignment with M&A, AI, or org strategy interests"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 90,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-hybrid location matches practical constraints",
    "bg": "cae648f28d15"
   }
  },
@@ -513,98 +521,36 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025781",
-  "company": "Western Governors University",
-  "title": "Operations Manager - School of Technology",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Operations-Manager---School-of-Technology_JR-025781",
-  "posted": "2026-07-29",
-  "salary": "$68,300.00 - $102,500.00",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Utah-local role, no relocation needed",
-    "Operations Manager fits core operations/ops-excellence domain",
-    "WGU is a substantial, mission-driven organization",
-    "Title suggests real ownership over a school's operations"
-   ],
-   "concerns": [
-    "No job description available to verify actual mandate/scope",
-    "Title could indicate coordination-level rather than strategic role",
-    "Unclear seniority and reporting structure"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 58,
-   "practical_fit": 90,
-   "opportunity_score": 64,
-   "score": 64,
-   "fit": "yes",
-   "reason": "Utah-local role, no relocation needed",
-   "bg": "cae648f28d15"
-  }
- },
- {
   "key": "Western Governors University::JR-025566",
   "company": "Western Governors University",
   "title": "Engagement & Data Strategy Manager",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Engagement---Data-Strategy-Manager_JR-025566-1",
-  "posted": "2026-07-29",
+  "posted": "2026-07-28",
   "salary": "$68,300.00 - $102,500.00",
   "fit_result": {
    "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": false,
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Western Governors University::JR-025721",
-  "company": "Western Governors University",
-  "title": "Project Manager IV, Transformation",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721",
-  "posted": "2026-07-29",
-  "salary": "$109,900.00 - $170,400.00",
-  "fit_result": {
-   "recommendation": "strong_fit",
    "reasons": [
-    "Transformation Project Manager IV suggests strategic program ownership",
-    "Utah-based (Salt Lake City) matches location preference",
-    "Aligns with program/portfolio leadership and transformation domains",
-    "WGU is a large, complex org likely undergoing scaling work"
+    "Utah-based role, strong location fit",
+    "Manager title may still carry strategic scope",
+    "Data/engagement strategy adjacent to ops strategy"
    ],
    "concerns": [
-    "No job description available to confirm actual scope",
-    "Title level (PM IV) may be more execution-focused than strategic",
-    "Unclear seniority, reporting line, or mandate breadth"
+    "No description available to confirm mandate",
+    "Title suggests possible narrow data/analytics focus",
+    "Unclear seniority and ownership scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
+   "qualification_fit": 55,
+   "interest_fit": 55,
    "practical_fit": 85,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Transformation Project Manager IV suggests strategic program ownership",
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Utah-based role, strong location fit",
    "bg": "cae648f28d15"
   }
  },
@@ -614,7 +560,7 @@
   "title": "Change Manager I, Salt Lake City, UT",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Change-Manager-I--Salt-Lake-City--UT_JR-025725",
-  "posted": "2026-07-29",
+  "posted": "2026-07-28",
   "salary": "$68,300.00 - $102,500.00",
   "fit_result": {
    "recommendation": "stretch",
@@ -648,7 +594,7 @@
   "title": "Senior Manager, Enterprise Partnerships - Institution Strategy & Ventures",
   "location": "Salt Lake City, UT",
   "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Enterprise-Partnerships---Institution-Strategy---Ventures_JR-025784-1",
-  "posted": "2026-07-28",
+  "posted": "2026-07-27",
   "salary": "$130,600.00 - $235,100.00",
   "fit_result": {
    "recommendation": "stretch",
@@ -687,19 +633,27 @@
   "salary": null,
   "fit_result": {
    "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
+   "reasons": [
+    "Customer experience/retention overlap",
+    "Utah onsite location fits practical constraints",
+    "Executive-facing enterprise account role"
+   ],
+   "concerns": [
+    "CSM/account management is narrower than transformation mandate",
+    "Fully in-office, less strategic scope than target roles",
+    "Not a program/operations leadership role"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 45,
+   "practical_fit": 75,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Customer experience/retention overlap",
    "bg": "cae648f28d15"
   }
  }
