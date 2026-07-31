@@ -7,12 +7,22 @@ Full narrative + GitHub Actions setup in @README.md.
 
 ## Commands
 
-- `python3 jobmonitor.py` — fetch all companies once, run every enabled profile.
+- `python3 jobmonitor.py` — fetch all companies once, run every enabled profile (writes PRODUCTION state).
 - `python3 jobmonitor.py --profile <name>` — run one profile.
 - `python3 jobmonitor.py --list` — list profiles.
+- `python3 jobmonitor.py --dry-run` — **safe run**: snapshots + reports go to `.dryrun/`
+  (seeded from a copy of production), and `GITHUB_OUTPUT` is never written, so no email can
+  fire. Use this for every local test. `--snapshot-dir`/`--out-dir` redirect individually.
+- `python3 jobmonitor.py --no-fit` — skip all Anthropic calls. `--fake-fit` — deterministic
+  local fake verdicts for previewing email layout free (reports get a warning banner).
+- `python3 test_jobmonitor.py` — 141 offline tests (stdlib `unittest`; no network, no API).
+- `python3 audit.py` — weekly self-audit. **Reads committed files only; makes no network
+  calls of any kind.**
 
 Python 3.12, **standard library only — do not add dependencies** unless a tier-3
-(Playwright) source genuinely requires it. No build step, no tests framework yet.
+(Playwright) source genuinely requires it (`anthropic` is the one optional dep, declared in
+`requirements.txt`, and must stay optional). No build step. Tests: `test_jobmonitor.py`,
+stdlib `unittest`, offline — **run it after any engine change**.
 
 ## Architecture
 
@@ -24,14 +34,35 @@ way (one API call set per run, not per profile).
 Tiered fetch strategy: (1) ATS JSON API [current], (2) HTTP + HTML parse, (3) Playwright.
 Stay in tier 1 whenever possible — it's why this is low-maintenance.
 
+**V2 additions (see @PROSPECTOR_V2_CHANGELOG.md):**
+- `collect_pool` returns `(pool, errors, failed_companies)`. A company whose fetch RAISED
+  contributed nothing, so `_run_lane` holds its previously-known roles out of the removal
+  diff and carries them forward in the snapshot. **Never report a failed source's roles as
+  removed** — that bug shipped to users before it was fixed.
+- Per-profile display windows: the shared pool is fetched at the WIDEST window any profile
+  asks for (`profile_age_window`), then narrowed per lane inside `_run_lane`. Lisa 14d,
+  Chad 7d, one fetch.
+- Two renderers. `build_html_report` = the original lane-by-lane email (Chad).
+  `build_digest_html` = Lisa's ranked daily digest, selected by `report_style: "digest"`.
+  Don't "unify" them without a reason; Chad's email is deliberately unchanged.
+- The daily run writes diagnostics for the weekly audit: `rejects_<name>.json` (fetched but
+  filtered out, with the rule that dropped each) and `source_health.json`
+  (`consecutive_zero_runs` = ATS-migration signal). `audit.py` reads ONLY those + snapshots
+  + feedback. Keeping the audit network-free is a deliberate constraint — a re-fetching
+  audit would double our ATS traffic and risk the daily run.
+
 ## Files
 
 - `companies.json` — `companies[]` + `needs_identification[]` backlog. Company fields: {name, city, ats, slug, domain}; **workday entries also need** {wd_host, site}. `domain` feeds logo prefetch.
 - `remote_companies.json` — registry for the **US-remote lane** (same entry shape as `companies.json`). Hand-seeded, remote-friendly employers on tier-1 ATSes; each VERIFIED to return live US-remote roles before adding. Read only when `settings.remote_search.enabled` and a profile has `remote_search:true` (see US-remote lane below).
 - `staffing_companies.json` — registry for the **contract/staffing lane** (same entry shape). Staffing/recruiting firms whose public feeds we monitor for **contract** roles. Read only when `settings.staffing_search.enabled` and a profile has `staffing_search:true` (see Contract/staffing lane below).
-- `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any}).
+- `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any} + optional
+  `mandate_rescue`, `report_style`, `max_posting_age_days`, `background_file`, `fit_mode`).
 - `settings.json` — run-wide tweakables (loaded by `load_settings`, defaults in `SETTINGS_DEFAULTS`): `max_posting_age_days` (drop postings older than this; 0/null = keep all; unknown-date always kept), `fit_scoring_enabled` (master off-switch for the Anthropic API), and `star_within_days` (⭐ postings newer than this in the report; 0/null off — `main` sets the `STAR_WITHIN_DAYS` global from it). Missing file/keys fall back to defaults.
-- `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `enrich_salary`, `enrich_with_fit`, `diff`, `build_report`, `build_html_report`, `run_profile`.
+- `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `_mandate_rescue`, `enrich_salary`, `enrich_with_fit`, `score_fit`, `validate_verdict`, `diff`, `classify_removal`, `load_feedback`, `build_report`, `build_html_report`, `build_digest_html`, `run_profile`.
+- `test_jobmonitor.py` — offline test suite. `audit.py` — weekly, network-free self-audit.
+- `feedback_<name>.json` — hand-edited feedback (the only file a non-developer edits).
+- `PROSPECTOR_V2_CHANGELOG.md` / `PROSPECTOR_TESTING.md` — what changed, and how to operate it.
 - `fetch_logos.py` — occasional prefetch of company logos → `logos/<slug>.png` via logo.dev (needs `LOGO_DEV_TOKEN` env). **Not run by the daily job.**
 - `logos/<slug>.png` — prefetched logos, committed; embedded inline in the email (see Company logos below).
 - `snapshot_<name>.json`, `report_<name>.md`, `report_<name>.html` — generated per profile; committed by CI.
@@ -76,6 +107,14 @@ AND matches **at least one term in every** `match_groups` entry (AND across grou
 OR within). Matching uses `\bterm\b` regex — **word-boundary aware on purpose** so short
 tokens (`coo`, `vp`, `cco`) don't match inside longer words (`coordinator`, `account`).
 Preserve the word-boundary behavior. Empty `match_groups` = keep all local roles.
+
+`mandate_rescue` (optional, per profile; Lisa only) gives a SECOND chance to a role whose
+title misses the groups: kept if the title still reads as leadership (`require_title_any`)
+AND its **description** names >= `min_hits` distinct `terms`. Exclusions are checked FIRST, so
+a rescue can never bypass them. Only DISTINCTIVE mandate language belongs in `terms` — generic
+manager-JD boilerplate ("cross-functional", "stakeholder management", "program management")
+was tried and rescued clear non-targets off real feeds. No description = no rescue, so the 11
+Workday/SmartRecruiters companies (title-only at list time) can't benefit.
 
 ## Email output & company logos
 
@@ -189,7 +228,21 @@ Ranks each profile's matched roles by how well they fit a candidate, via the Ant
 - **Flow:** `enrich_with_fit` runs after keyword match, before diff. It **only scores NEW roles** — verdicts are cached in the snapshot's `fit_result` and reused, so daily cost ∝ new postings, not total. `score_fit` returns `{fit: yes|maybe|no, score: 0-100, reason}`; on ANY API/parse failure it returns a neutral `maybe`/score -1 (role kept, run never crashes) — and **failures aren't cached** (`score < 0` is never reused), so a transient parse error retries next run.
 - **Cache invalidation:** each verdict stores a `bg` fingerprint (`_bg_fingerprint` = short hash of the background content). A cached verdict is reused only if its `bg` matches the current background. **Editing a `background_file` auto-invalidates that profile's verdicts** → full re-score next run, no manual clearing. Legacy verdicts with no `bg` also re-score once.
 - **Descriptions:** `fetch_greenhouse` (`?content=true`, HTML-cleaned) and `fetch_lever` (`descriptionPlain`) now include a `description` field for better judgments. SmartRecruiters/Workday are title-only (no cheap bulk description). `description` is stripped before the snapshot is written (kept lean); `fit_result` is persisted.
-- **Model:** `FIT_MODEL` constant (currently `claude-sonnet-5`; `claude-haiku-4-5-20251001` for lower cost). Verify current model strings against docs.claude.com.
+- **Model:** `FIT_MODEL` constant (currently `claude-sonnet-5`; `claude-haiku-4-5` for lower cost). Verify current model strings against docs.claude.com.
+- **V2 verdict shape:** `score_fit` returns `qualification_fit`, `interest_fit`,
+  `practical_fit`, `opportunity_score`, `recommendation` (apply_first | strong_fit | stretch |
+  practical_contract | not_recommended), `reasons[<=5]`, `concerns[<=3]`, and three
+  explicit-mention booleans. `validate_verdict` REJECTS the verdict if any of the four scores
+  or the recommendation is malformed (a wrong recommendation is worse than none) and returns a
+  neutral `score -1` that is never cached. Legacy `fit`/`score`/`reason` aliases are still
+  populated so Chad's renderer and `fit_mode:"filter"` keep working — don't remove them.
+- **`FIT_SCHEMA_VERSION`** is folded into the cache fingerprint. **Bump it whenever the verdict
+  fields or their meaning change**, or new code will read stale old-shape verdicts.
+- **Prompt caching:** rubric + candidate go in a cached `system` block (`_fit_system`,
+  `sort_keys=True` so the bytes are stable); only the posting varies per call. A cache miss is
+  harmless. Per-run usage prints via `fit_usage_summary()`.
+- `not_recommended` roles are hidden at RENDER time but kept in the snapshot for the audit —
+  which is why Lisa's `fit_mode` stays `"rank"`, not `"filter"`.
 
 ## Conventions & guardrails
 

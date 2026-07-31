@@ -14,7 +14,7 @@ Usage:
 No Playwright, no HTML scraping — every source here is a structured JSON API.
 """
 
-import argparse, glob, hashlib, html, json, os, re, shutil, sys, urllib.request, datetime
+import argparse, collections, glob, hashlib, html, json, os, re, shutil, sys, urllib.request, datetime
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
@@ -1108,6 +1108,102 @@ def feedback_for(posting, feedback):
                                                   posting.get("title"))))
 
 
+# ---- audit trail written BY THE DAILY RUN (WS5) ----------------------------------------
+#
+# The daily run already computes the whole pool and already knows exactly which roles the
+# filter rejected, so capturing that costs nothing. The weekly audit then reads these files
+# and makes ZERO network calls — it never re-fetches an ATS. That keeps us inside the
+# project's "one run per day, don't hammer ATS endpoints" rule, and gives the audit a full
+# week of accumulated data instead of a single morning's fetch.
+MAX_REJECT_DAYS = 10        # days of reject history kept per profile
+MAX_REJECTS_PER_LANE = 60   # per lane per day, so the file stays reviewable
+
+
+def lane_rejects(pool, profile):
+    """Leadership-shaped roles that were fetched but did NOT survive the filter, each with
+    the rule that dropped it. Only titles that pass the profile's audit gate are recorded —
+    otherwise this would be thousands of obviously-irrelevant rows a human can't skim."""
+    gate = ((profile.get("mandate_rescue") or {}).get("require_title_any")
+            or profile.get("audit_gate") or [])
+    if not gate:
+        return []
+    out = []
+    for p in pool:
+        title = (p.get("title") or "").lower()
+        if not _any_term(title, gate) or matches_profile(p, profile):
+            continue
+        hit = next((t for t in profile.get("exclude_any", [])
+                    if re.search(r"\b" + re.escape(t) + r"\b", title)), None)
+        if hit:
+            reason = f"excluded by '{hit}'"
+        else:
+            missing = [i + 1 for i, g in enumerate(profile.get("match_groups", []))
+                       if not _any_term(title, g)]
+            reason = f"missed match group {missing or '?'}"
+        out.append({"company": p.get("company", ""), "title": p.get("title", ""),
+                    "location": p.get("location", ""), "reason": reason})
+        if len(out) >= MAX_REJECTS_PER_LANE:
+            break
+    return out
+
+
+def write_rejects(profile, lanes, directory=None):
+    """Append today's rejected-but-plausible roles to rejects_<name>.json, keeping the last
+    MAX_REJECT_DAYS days. Read by audit.py; never read by the daily run itself."""
+    path = os.path.join(directory or OUT_DIR, f"rejects_{profile['name']}.json")
+    today = datetime.date.today().isoformat()
+    doc = {"_comment": ("Roles that were fetched but filtered out, recorded by the daily run "
+                        "for the weekly audit (audit.py). Leadership-shaped titles only. "
+                        f"Keeps the last {MAX_REJECT_DAYS} days. Safe to delete — it is "
+                        "diagnostic, not state."), "days": []}
+    try:
+        prev = json.load(open(path))
+        if isinstance(prev.get("days"), list):
+            doc["days"] = [d for d in prev["days"] if d.get("date") != today]
+    except Exception:
+        pass
+    entry = {"date": today, "lanes": {}}
+    for lane in lanes:
+        rejects = lane.get("rejects") or []
+        if rejects:
+            entry["lanes"][lane.get("title", "?")] = rejects
+    doc["days"] = (doc["days"] + [entry])[-MAX_REJECT_DAYS:]
+    json.dump(doc, open(path, "w"), indent=1)
+
+
+def write_source_health(registries, directory=None):
+    """Registry-wide health snapshot: how many roles each configured company returned, and
+    how many consecutive runs it has returned none. A company sitting at zero for days is the
+    ATS-migration / dead-slug signal. `registries` is
+    [(label, config_path, pool, failed_companies)]."""
+    path = os.path.join(directory or OUT_DIR, "source_health.json")
+    prev_streak = {}
+    try:
+        for row in json.load(open(path)).get("sources", []):
+            prev_streak[row["name"]] = row.get("consecutive_zero_runs", 0)
+    except Exception:
+        pass
+    rows = []
+    for label, config_path, pool, failed in registries:
+        counts = collections.Counter(p["company"] for p in pool)
+        try:
+            companies = json.load(open(config_path)).get("companies", [])
+        except Exception:
+            continue
+        for c in companies:
+            n = counts.get(c["name"], 0)
+            streak = 0 if n else prev_streak.get(c["name"], 0) + 1
+            rows.append({"name": c["name"], "registry": label, "ats": c.get("ats"),
+                         "slug": c.get("slug"), "roles_returned": n,
+                         "fetch_failed": c["name"] in failed,
+                         "consecutive_zero_runs": streak})
+    json.dump({"_comment": ("Per-company fetch health from the most recent run. "
+                            "consecutive_zero_runs counts runs returning no in-window roles "
+                            "— a rising number suggests an ATS migration or a changed slug."),
+               "generated": datetime.date.today().isoformat(), "sources": rows},
+              open(path, "w"), indent=1)
+
+
 # ---- removal classification (WS4) -----------------------------------------------------
 #
 # The engine genuinely cannot tell "filled" from "pulled" — so it never claims either.
@@ -2188,7 +2284,9 @@ def _run_lane(profile, src, client, suffix, title, max_age_days=None):
     json.dump(slim, open(snap, "w"), indent=1)
     lane = {"title": title, "matched": matched, "new": new, "removed": removed,
             "changed": changed, "errors": errors, "first_run": first_run, "held": held,
-            "suffix": suffix}
+            "suffix": suffix,
+            # Recorded for the weekly audit; costs nothing since the pool is already here.
+            "rejects": lane_rejects(pool, profile)}
     return lane, has_changes
 
 
@@ -2237,6 +2335,7 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=N
     else:
         report_html = build_html_report(profile, lanes)   # clears + repopulates _LOGOS_USED
     write_feedback_template(profile, lanes, feedback)
+    write_rejects(profile, lanes)
     open(os.path.join(OUT_DIR, f"report_{profile['name']}.md"), "w").write(report)
     open(os.path.join(OUT_DIR, f"report_{profile['name']}.html"), "w").write(report_html)
     logos = sorted(_LOGOS_USED)   # union of logos referenced across all lanes
@@ -2386,6 +2485,17 @@ def main():
     # only people whose (combined local+remote) report changed, and the exact list of logo
     # files to attach inline as CID images — only those the report references, so none show
     # as stray downloads. One report/email per person, so no separate remote-lane outputs.
+    # Per-company fetch health for the weekly audit (no extra requests — this is just a
+    # tally of the fetches the run already made).
+    registries = [("local", CONFIG, local_src["pool"], local_src["failed"])]
+    if remote_src:
+        registries.append(("remote", REMOTE_CONFIG, remote_src["pool"],
+                           remote_src["failed"]))
+    if staffing_src:
+        registries.append(("staffing", STAFFING_CONFIG, staffing_src["pool"],
+                           staffing_src["failed"]))
+    write_source_health(registries)
+
     summary = fit_usage_summary()
     if summary:
         print(summary)

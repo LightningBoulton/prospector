@@ -1349,6 +1349,132 @@ class TestUrgencyBands(unittest.TestCase):
 
 
 # --------------------------------------------------------------------------------------
+# Audit trail written by the daily run (WS5, Option B)
+# --------------------------------------------------------------------------------------
+
+class TestAuditTrail(unittest.TestCase):
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.lisa = load_real_profile("lisa")
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def test_rejects_record_the_rule_that_dropped_each_role(self):
+        pool = [posting("A", "1", "Director of Corporate Accounting"),
+                posting("A", "2", "Director, Special Projects"),
+                posting("A", "3", "Director, Business Transformation")]  # matches, not a reject
+        rejects = jm.lane_rejects(pool, self.lisa)
+        by_title = {r["title"]: r["reason"] for r in rejects}
+        self.assertIn("accounting", by_title["Director of Corporate Accounting"])
+        self.assertIn("match group", by_title["Director, Special Projects"])
+        self.assertNotIn("Director, Business Transformation", by_title,
+                         "a matching role is not a reject")
+
+    def test_rejects_ignore_titles_that_are_not_leadership_shaped(self):
+        pool = [posting("A", "1", "Warehouse Associate"),
+                posting("A", "2", "Barista")]
+        self.assertEqual(jm.lane_rejects(pool, self.lisa), [],
+                         "only leadership-shaped near misses are worth a human's time")
+
+    def test_rejects_are_capped(self):
+        pool = [posting("A", str(i), f"Director, Widget {i}") for i in range(200)]
+        self.assertLessEqual(len(jm.lane_rejects(pool, self.lisa)),
+                             jm.MAX_REJECTS_PER_LANE)
+
+    def test_profile_without_a_gate_records_nothing(self):
+        chad = load_real_profile("chad")
+        pool = [posting("A", "1", "Director, Business Transformation")]
+        self.assertEqual(jm.lane_rejects(pool, chad), [],
+                         "Chad has no rescue gate or audit_gate, so no rejects are recorded")
+
+    def test_reject_history_rotates_and_dedupes_by_day(self):
+        lanes = [{"title": "🌎 US-Remote",
+                  "rejects": [{"company": "A", "title": "Director, X",
+                               "location": "Remote", "reason": "missed match group [2]"}]}]
+        for _ in range(3):        # same day, three runs
+            jm.write_rejects(self.lisa, lanes, directory=self._tmp.name)
+        doc = json.load(open(os.path.join(self._tmp.name, "rejects_lisa.json")))
+        self.assertEqual(len(doc["days"]), 1, "same-day runs replace, they don't stack")
+        # simulate old history beyond the retention window
+        doc["days"] = [{"date": f"2020-01-{i:02d}", "lanes": {}} for i in range(1, 20)]
+        json.dump(doc, open(os.path.join(self._tmp.name, "rejects_lisa.json"), "w"))
+        jm.write_rejects(self.lisa, lanes, directory=self._tmp.name)
+        doc = json.load(open(os.path.join(self._tmp.name, "rejects_lisa.json")))
+        self.assertLessEqual(len(doc["days"]), jm.MAX_REJECT_DAYS)
+
+    def test_source_health_counts_and_tracks_zero_streaks(self):
+        cfg = os.path.join(self._tmp.name, "cfg.json")
+        json.dump({"companies": [{"name": "Busy", "ats": "greenhouse", "slug": "busy"},
+                                 {"name": "Quiet", "ats": "lever", "slug": "quiet"},
+                                 {"name": "Broken", "ats": "lever", "slug": "broken"}]},
+                  open(cfg, "w"))
+        pool = [posting("Busy", "1", "T")]
+        regs = [("local", cfg, pool, {"Broken"})]
+
+        jm.write_source_health(regs, directory=self._tmp.name)
+        rows = {r["name"]: r for r in json.load(
+            open(os.path.join(self._tmp.name, "source_health.json")))["sources"]}
+        self.assertEqual(rows["Busy"]["roles_returned"], 1)
+        self.assertEqual(rows["Quiet"]["consecutive_zero_runs"], 1)
+        self.assertTrue(rows["Broken"]["fetch_failed"])
+
+        jm.write_source_health(regs, directory=self._tmp.name)   # second run
+        rows = {r["name"]: r for r in json.load(
+            open(os.path.join(self._tmp.name, "source_health.json")))["sources"]}
+        self.assertEqual(rows["Quiet"]["consecutive_zero_runs"], 2,
+                         "a persistent zero streak is the ATS-migration signal")
+        self.assertEqual(rows["Busy"]["consecutive_zero_runs"], 0)
+
+    def test_feedback_template_lists_roles_and_never_touches_the_real_file(self):
+        orig_out = jm.OUT_DIR
+        jm.OUT_DIR = self._tmp.name
+        try:
+            lanes = [{"title": "🌎 US-Remote",
+                      "matched": [posting("A", "1", "Director, Operations")]}]
+            jm.write_feedback_template(self.lisa, lanes, {"by_key": {}, "by_ident": {}})
+        finally:
+            jm.OUT_DIR = orig_out
+        doc = json.load(open(os.path.join(self._tmp.name,
+                                          "feedback_template_lisa.json")))
+        self.assertEqual(doc["entries"][0]["key"], "A::1")
+        self.assertEqual(doc["entries"][0]["status"], "")
+        self.assertFalse(os.path.exists(os.path.join(self._tmp.name,
+                                                     "feedback_lisa.json")),
+                         "the template must never overwrite real feedback")
+
+
+class TestAuditScriptIsOffline(unittest.TestCase):
+    """audit.py must never reach the network — that is the whole point of Option B."""
+
+    def test_audit_does_not_call_collect_pool_or_urllib(self):
+        src = open(os.path.join(HERE, "audit.py")).read()
+        for forbidden in ("collect_pool", "urllib", "urlopen", "requests.",
+                          "score_fit", "messages.create"):
+            self.assertNotIn(forbidden, src,
+                             f"audit.py must not reference {forbidden}")
+
+    def test_audit_runs_on_a_directory_of_committed_files(self):
+        import subprocess
+        with tempfile.TemporaryDirectory() as tmp:
+            json.dump([{"key": "A::1", "company": "A", "title": "Director, Operations",
+                        "posted": "2026-07-28", "salary": None,
+                        "fit_result": {"recommendation": "not_recommended",
+                                       "opportunity_score": 20, "reason": "wrong function",
+                                       "score": 20}}],
+                      open(os.path.join(tmp, "snapshot_lisa.json"), "w"))
+            r = subprocess.run(["python3", os.path.join(HERE, "audit.py"),
+                                "--profile", "lisa", "--in-dir", tmp, "--out-dir", tmp],
+                               capture_output=True, text=True, timeout=60)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            body = open(os.path.join(tmp, "AUDIT_lisa.md")).read()
+            self.assertIn("Possible false negatives", body)
+            self.assertIn("Director, Operations", body,
+                          "the not_recommended role should surface for review")
+
+
+# --------------------------------------------------------------------------------------
 # Age / freshness helpers
 # --------------------------------------------------------------------------------------
 

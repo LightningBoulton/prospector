@@ -1,0 +1,32 @@
+name: prospector-audit
+
+# Weekly self-review of Prospector's own behavior. Reads ONLY files the daily run already
+# committed (snapshots, rejects_*.json, feedback_*.json, source_health.json) — it makes no
+# ATS requests and no Anthropic API calls, so it adds nothing to our outbound traffic.
+
+on:
+  schedule:
+    - cron: "0 15 * * 1"   # Mondays 15:00 UTC (~8 AM Mountain during MDT)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+
+      - name: Run audit
+        run: python audit.py
+
+      - name: Commit audit reports
+        run: |
+          git config user.name  "prospector-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add AUDIT_*.md
+          git commit -m "Weekly audit: $(date -u +%Y-%m-%d)" || echo "No changes"
+          git push

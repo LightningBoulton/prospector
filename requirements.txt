@@ -1,0 +1,8 @@
+# Optional dependency, used ONLY for LLM fit scoring. Everything else in Prospector is
+# standard library. If ANTHROPIC_API_KEY is unset the app runs fine without this installed.
+#
+# Deliberately unpinned: pinning to a guessed version risks breaking CI, and the installed
+# version could not be verified from the development environment. After the first successful
+# CI run, read the resolved version from the "Install optional deps" step log and pin it here
+# (e.g. anthropic==0.42.0) so a future major release cannot change behavior silently.
+anthropic

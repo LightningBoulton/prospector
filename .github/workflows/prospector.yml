@@ -25,7 +25,7 @@ jobs:
         with: { python-version: "3.12" }
 
       - name: Install optional deps (LLM fit scoring)
-        run: pip install anthropic   # only needed for the optional LLM fit-scoring
+        run: pip install -r requirements.txt   # only needed for the optional LLM fit-scoring
 
       - name: Run prospector (all profiles)
         id: run
@@ -37,7 +37,11 @@ jobs:
         run: |
           git config user.name  "prospector-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add snapshot_*.json report_*.md report_*.html
+          # snapshot_*.json is STATE (carries the fit-verdict cache).
+          # rejects_*/source_health/feedback_template_* are diagnostics for audit.py.
+          # feedback_<name>.json is hand-edited and is never written by the run.
+          git add snapshot_*.json report_*.md report_*.html \
+                  rejects_*.json source_health.json feedback_template_*.json
           git commit -m "Daily run: $(date -u +%Y-%m-%d)" || echo "No changes"
           git push
 
