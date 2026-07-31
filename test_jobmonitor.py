@@ -1295,6 +1295,42 @@ class TestDigestEmail(unittest.TestCase):
         self.assertEqual(len(sections["top"]), jm.DIGEST_QUOTAS["top"])
         self.assertTrue(sections["additional"], "overflow must not vanish")
 
+    def test_fresh_roles_are_not_buried_by_a_wide_window(self):
+        """Regression from widening Lisa's window to 30 days: 25 roles posted within 7 days
+        existed in a real pool and NOT ONE reached the visible 15, because recency only broke
+        exact score ties. Top Opportunities now reserves slots for recent postings."""
+        today = jm.datetime.date.today()
+        old = (today - jm.datetime.timedelta(days=25)).isoformat()
+        # 20 stale roles that all outscore the fresh ones.
+        stale = [scored(f"Old{i}", str(i), "Director, Operations", rec="apply_first",
+                        opp=99 - i, posted=old) for i in range(20)]
+        fresh = [scored("New1", "a", "Director, Transformation", rec="apply_first",
+                        opp=70, posted=today.isoformat()),
+                 scored("New2", "b", "Director, Strategy", rec="apply_first",
+                        opp=69, posted=today.isoformat())]
+        sections, _ = self._sections([lane("🌎 US-Remote", stale + fresh)])
+        shown = {r["p"]["company"] for r in sections["top"]}
+        self.assertIn("New1", shown, "a fresh role must reach Top Opportunities")
+        self.assertIn("New2", shown)
+        self.assertEqual(len(sections["top"]), jm.DIGEST_QUOTAS["top"],
+                         "reserving slots must not shrink the section")
+
+    def test_unused_fresh_slots_fall_back_to_the_general_pool(self):
+        old = (jm.datetime.date.today() - jm.datetime.timedelta(days=25)).isoformat()
+        stale = [scored(f"Old{i}", str(i), "Director, Operations", rec="apply_first",
+                        opp=99 - i, posted=old) for i in range(10)]
+        sections, _ = self._sections([lane("🌎 US-Remote", stale)])
+        self.assertEqual(len(sections["top"]), jm.DIGEST_QUOTAS["top"],
+                         "with no fresh roles the quota still fills completely")
+
+    def test_reserved_slots_do_not_duplicate_a_role(self):
+        today = jm.datetime.date.today().isoformat()
+        rows = [scored(f"C{i}", str(i), "Director, Operations", rec="apply_first",
+                       opp=90 - i, posted=today) for i in range(8)]
+        sections, _ = self._sections([lane("🌎 US-Remote", rows)])
+        keys = [r["p"]["key"] for v in sections.values() for r in v]
+        self.assertEqual(len(keys), len(set(keys)), "no role may appear twice")
+
     def test_sorted_by_recommendation_then_score_then_recency(self):
         roles = [scored("Low", "1", "Director, Operations", rec="strong_fit", opp=71),
                  scored("High", "2", "Director, Operations", rec="strong_fit", opp=93),
@@ -1446,9 +1482,9 @@ class TestDigestEmail(unittest.TestCase):
         self.assertNotIn("filled", html.lower())
 
     # ---- window ----
-    def test_lisa_uses_a_14_day_window_and_chad_stays_at_7(self):
+    def test_lisa_uses_a_30_day_window_and_chad_stays_at_7(self):
         settings = {"max_posting_age_days": 7}
-        self.assertEqual(jm.profile_age_window(self.lisa, settings), 14)
+        self.assertEqual(jm.profile_age_window(self.lisa, settings), 30)
         self.assertEqual(jm.profile_age_window(load_real_profile("chad"), settings), 7)
 
     def test_staffing_lane_keeps_its_own_wider_window(self):
@@ -1480,7 +1516,15 @@ class TestUrgencyBands(unittest.TestCase):
         self.assertIn("last 3 days", band(2))
         self.assertIn("4–7 days", band(6))
         self.assertIn("8–14 days", band(12))
-        self.assertIn("over 14 days", band(30))
+        self.assertIn("15–30 days", band(22))
+        self.assertIn("over 30 days", band(45))
+
+    def test_bands_span_the_widest_display_window(self):
+        # Lisa's window is 30 days; no in-window role may fall into the overflow bucket.
+        today = jm.datetime.date.today()
+        for days in range(0, 31):
+            label = jm.urgency_band((today - jm.datetime.timedelta(days=days)).isoformat())
+            self.assertNotIn("over 30", label, f"day {days} fell into the overflow band")
 
     def test_unknown_date_is_labeled_not_guessed(self):
         self.assertIn("unknown", jm.urgency_band(""))

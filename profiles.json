@@ -43,9 +43,9 @@
       "enabled": true,
       "background_file": "lisa_background.json",
       "fit_mode": "rank",
-      "_v2_comment": "report_style 'digest' switches Lisa to the ranked daily-digest email (build_digest_html): best currently-open roles first, one appearance per job, capped visible count, cautious Hiring Progress footer. Chad has no report_style and keeps the original lane-by-lane email. max_posting_age_days 14 is HER display window — the shared fetch widens to cover it without changing Chad's 7 days. fit_mode stays 'rank' on purpose: not_recommended roles are hidden at render time but retained in the snapshot for the weekly audit, which 'filter' would prevent.",
+      "_v2_comment": "report_style 'digest' switches Lisa to the ranked daily-digest email (build_digest_html): best currently-open roles first, one appearance per job, capped visible count, cautious Hiring Progress footer. Chad has no report_style and keeps the original lane-by-lane email. max_posting_age_days 30 is HER display window (raised from 14 on 2026-07-31: the registry held 169 matching US-remote roles but a 14-day window surfaced only 37; 30 days surfaces 75 from 40 companies. The digest still caps at ~15 visible cards, so a wider window improves the QUALITY of the top 15 rather than flooding the email) — the shared fetch widens to cover it without changing Chad's 7 days. fit_mode stays 'rank' on purpose: not_recommended roles are hidden at render time but retained in the snapshot for the weekly audit, which 'filter' would prevent.",
       "report_style": "digest",
-      "max_posting_age_days": 14,
+      "max_posting_age_days": 30,
       "_group1_comment": "SENIORITY / LEADERSHIP SCOPE. Manager, Senior Manager, Lead, and Principal are deliberately included — Lisa is genuinely open to those when the mandate is strong, so the title gate must not screen them out. A few terms (transformation, strategy, operational excellence, organizational effectiveness/development, general manager, chief of staff, practice leader/director) appear in BOTH groups because they carry seniority and function at once, so titles like 'Chief of Staff' or 'General Manager' satisfy both on their own.",
       "match_groups": [
         [

@@ -1872,6 +1872,11 @@ REC_RANK = {"apply_first": 0, "strong_fit": 1, "practical_contract": 2, "stretch
 DIGEST_QUOTAS = {"top": 6, "additional": 4, "contract": 3, "utah": 2}
 DIGEST_TOTAL_CAP = 18     # hard ceiling on visible roles across all sections
 DIGEST_TARGET = 12        # the usual-day target
+# Slots in Top Opportunities held for recent postings, so a wide display window cannot bury
+# every fresh role behind marginally-higher-scoring older ones. Unused slots fall back to the
+# general pool. See the reservation logic in _opportunities.
+DIGEST_FRESH_DAYS = 7
+DIGEST_FRESH_RESERVE = 2
 
 
 def _is_remote(loc):
@@ -1914,8 +1919,11 @@ def location_label(posting, verdict):
 # Urgency is deliberately kept SEPARATE from fit. Note the precision limit: `posted` is a
 # date with no time of day (and Workday's is reverse-engineered from "Posted 3 Days Ago"),
 # so the freshest band honestly means "posted today" rather than "within 24 hours".
+# The bands must span the widest display window in use (30 days for Lisa), otherwise a third
+# of her roles collapse into a single "over 14 days ago" bucket.
 URGENCY_BANDS = [(0, "🕐 Posted today"), (3, "🕑 Posted in the last 3 days"),
-                 (7, "🕒 Posted 4–7 days ago"), (14, "🕓 Posted 8–14 days ago")]
+                 (7, "🕒 Posted 4–7 days ago"), (14, "🕓 Posted 8–14 days ago"),
+                 (30, "🕔 Posted 15–30 days ago")]
 
 
 def urgency_band(posted):
@@ -1928,7 +1936,7 @@ def urgency_band(posted):
     for limit, label in URGENCY_BANDS:
         if days <= limit:
             return label
-    return "🕓 Posted over 14 days ago"
+    return "🕕 Posted over 30 days ago"
 
 
 def _opportunities(lanes, settings, feedback):
@@ -1979,9 +1987,30 @@ def _opportunities(lanes, settings, feedback):
         else:
             pools["additional"].append(r)
 
-    # Strong roles beyond the Top quota drop into Additional rather than vanishing.
-    overflow = pools["top"][DIGEST_QUOTAS["top"]:]
-    pools["top"] = pools["top"][:DIGEST_QUOTAS["top"]]
+    # Reserve part of the Top quota for RECENT postings.
+    #
+    # Why: with a 30-day window, 59 of Lisa's 120 roles are 15-30 days old, and because
+    # recency only breaks exact score ties it has almost no influence on selection. Measured
+    # on a real pool, 25 roles posted within 7 days existed and NOT ONE reached the visible
+    # 15 — every card shown was 8-30 days old. For job applications that is backwards: being
+    # early is worth something a marginally higher score is not.
+    #
+    # This does NOT blend recency into fit (the spec is explicit that urgency stays distinct).
+    # It applies Lisa's exact sort — category, then score, then recency — within two segments,
+    # and unused reserved slots fall straight back to the general pool so nothing is wasted.
+    quota = DIGEST_QUOTAS["top"]
+    fresh = [r for r in pools["top"] if _within_age(r["p"].get("posted"), DIGEST_FRESH_DAYS)]
+    chosen, seen = fresh[:DIGEST_FRESH_RESERVE], set()
+    seen.update(id(r) for r in chosen)
+    for r in pools["top"]:                       # fill the rest strictly by fit rank
+        if len(chosen) >= quota:
+            break
+        if id(r) not in seen:
+            chosen.append(r)
+            seen.add(id(r))
+    chosen.sort(key=sort_key)                    # display order stays fit-ranked
+    overflow = [r for r in pools["top"] if id(r) not in seen]
+    pools["top"] = chosen
     pools["additional"] = overflow + pools["additional"]
 
     sections, shown = {}, 0

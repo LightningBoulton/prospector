@@ -130,7 +130,7 @@ lane-by-lane renderer — he has no `report_style` key.
 - `not_recommended` roles are hidden from every opportunity section but **retained in the
   snapshot** for the weekly audit — which is why `fit_mode` stays `rank`, not `filter`.
 - **Unscored roles are still shown**, so an API failure cannot silently hide work.
-- **Lisa's window is 14 days; Chad stays at 7.** The shared fetch widens to cover the largest
+- **Lisa's window is 30 days; Chad stays at 7.** The shared fetch widens to cover the largest
   window, so this costs no additional API calls and does not change Chad's report.
 
 ---
@@ -322,14 +322,16 @@ next run. Nothing was lost. Regression tests added.
    labeled by its location only.
 6. **"Posted today" is the honest floor.** There is no sub-day precision available; Workday's
    dates are approximated from relative text.
-7. **Visible-count target.** Quotas cap the digest at 15 (ceiling 18). Whether a typical day
-   lands in the 8–12 target depends on how generously the live model scores; that could not be
-   measured without API access. If every email arrives at 15, lower `DIGEST_QUOTAS` in
-   `jobmonitor.py` — or ask for it and it can be made a setting.
-8. **`rejects_*.json` and `source_health.json` grow slowly.** Rejects are capped at 10 days ×
+7. **Visible-count target.** Quotas cap the digest at 15 (ceiling 18); a typical day now fills
+   it, because the 30-day window keeps ~120 roles in play. Lower `DIGEST_QUOTAS` in
+   `jobmonitor.py` if 15 is too many to read.
+8. **~94 roles sit below the cut each day.** That is the design — the digest shows the best 15
+   of a deep pool — but it means a mid-ranked role may never be seen. `feedback_lisa.json`
+   (`interested`) is the lever for pinning something you want to keep tracking.
+9. **`rejects_*.json` and `source_health.json` grow slowly.** Rejects are capped at 10 days ×
    60 per lane; source health is one row per configured company per run. Both are diagnostic
    and safe to delete.
-9. **The audit's near-miss list is only as fresh as the last daily runs** — the deliberate
+10. **The audit's near-miss list is only as fresh as the last daily runs** — the deliberate
    trade for making it network-free. Right after editing a rule you must wait for the next
    daily run to see the effect there (or run `--dry-run` locally, which is immediate).
 

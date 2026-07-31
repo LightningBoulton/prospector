@@ -32,7 +32,7 @@ python3 test_jobmonitor.py
 **What you want to see** — the last two lines:
 
 ```
-Ran 148 tests in 0.11s
+Ran 161 tests in 0.11s
 OK
 ```
 
@@ -187,7 +187,7 @@ Actions tab → **prospector** → **Run workflow**. Two useful boxes:
 Open the **Run prospector** step and look for:
 
 - `Fetched N local roles` — how much came back. A sudden drop means a source problem.
-- `Fetch window widened to 14d` — normal; Lisa uses 14 days, Chad 7.
+- `Fetch window widened to 30d` — normal; Lisa uses 30 days, Chad 7.
 - `held N role(s) from M failed source(s)` — a job site didn't respond, and those roles were
   correctly **not** reported as closed. Normal and self-healing.
 - `Fit scoring: N call(s) … (X% of prompt served from cache)` — the AI cost line. A high cache
