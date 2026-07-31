@@ -613,14 +613,60 @@ def _any_term(title, terms):
     return any(re.search(r"\b" + re.escape(t) + r"\b", title) for t in terms)
 
 
+def _mandate_rescue(posting, profile):
+    """Second chance for a role whose TITLE misses `match_groups` but whose DESCRIPTION shows
+    the mandate we're actually looking for — the "generically titled but highly relevant"
+    case (several of Lisa's own past roles were titled that way).
+
+    Opt-in per profile via `mandate_rescue`:
+        {"require_title_any": [...],   # must still read as a leadership role
+         "terms": [...],               # mandate vocabulary to look for in the description
+         "min_hits": 2}                # how many DISTINCT terms must appear
+
+    Deliberate limits:
+      * Exclusions are checked by the caller BEFORE this runs, so a rescue can never drag
+        back an accounting/engineering/clinical role.
+      * `require_title_any` keeps the rescue anchored to leadership-shaped titles instead of
+        letting any description keyword through.
+      * Distinct terms are counted, so one phrase repeated in boilerplate can't rescue alone.
+      * **No description, no rescue.** SmartRecruiters and Workday are title-only at list
+        time (11 of the local companies), so generically-titled roles there stay invisible.
+        This is a known coverage gap, not an oversight — see PROSPECTOR_V2_CHANGELOG.md.
+    A rescued role is kept for LLM scoring to judge; the rescue widens recall, the model
+    supplies the precision."""
+    cfg = profile.get("mandate_rescue") or {}
+    terms = cfg.get("terms") or []
+    if not terms:
+        return False
+    title = posting["title"].lower()
+    gate = cfg.get("require_title_any") or []
+    if gate and not _any_term(title, gate):
+        return False
+    desc = (posting.get("description") or "").lower()
+    if not desc:
+        return False
+    hits = sum(1 for t in terms if re.search(r"\b" + re.escape(t) + r"\b", desc))
+    if hits < int(cfg.get("min_hits", 2)):
+        return False
+    # Mark WHY this role is here, per profile (postings are shared across profiles).
+    # Underscore-prefixed, so it is stripped before the snapshot is written.
+    posting.setdefault("_rescued_for", set()).add(profile.get("name"))
+    return True
+
+
 def matches_profile(posting, profile):
+    """Keep a posting iff its title matches NONE of `exclude_any` AND at least one term in
+    EVERY `match_groups` entry (AND across groups, OR within) — or, failing the title test,
+    its description carries the mandate (see `_mandate_rescue`).
+
+    Matching is word-boundary aware on purpose so short tokens ("coo", "vp") don't match
+    inside longer words ("coordinator", "improve"). Preserve that behavior."""
     title = posting["title"].lower()
     if _any_term(title, profile.get("exclude_any", [])):
-        return False
-    for group in profile.get("match_groups", []):
-        if not _any_term(title, group):
-            return False
-    return True
+        return False                       # exclusions are absolute and title-only
+    if all(_any_term(title, g) for g in profile.get("match_groups", [])):
+        return True
+    return _mandate_rescue(posting, profile)
 
 
 # ---- LLM fit scoring (optional) ----

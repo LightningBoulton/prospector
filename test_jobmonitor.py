@@ -192,6 +192,227 @@ class TestChadProfileRegression(unittest.TestCase):
                              f"Chad should not match Lisa-shaped title: {title}")
 
 
+class TestLisaProfileTitleFilter(unittest.TestCase):
+    """The positive/negative title lists come straight from the V2 spec. These bind to the
+    committed profiles.json, so tightening or loosening Lisa's filter fails here first."""
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+
+    # ---- must remain eligible ----
+    SHOULD_KEEP = [
+        "Director, Business Transformation",
+        "Senior Manager, Operational Excellence",
+        "Principal, Organizational Strategy",
+        "Head of Customer Experience",
+        "Program Director, M&A Integration",
+        "Change Management Lead",
+        "Manager, Strategic Initiatives",
+        "Principal Consultant, Operating Model Transformation",
+        "Director, Transformation — Manufacturing",
+        "Contract Program Lead, AI Adoption",
+    ]
+
+    # ---- must be excluded ----
+    SHOULD_DROP = [
+        "Director of Corporate Accounting",
+        "Senior Manager, FP&A",
+        "Tax Director",
+        "Controller",
+        "Software Engineering Manager",
+        "Senior Frontend Developer",
+        "Director of Data Science",
+        "Security Engineering Lead",
+        "Clinical Operations Director",
+        "Plant Operations Manager",
+        "Account Executive",
+        "Sales Development Manager",
+    ]
+
+    def test_spec_positive_titles_are_kept(self):
+        for title in self.SHOULD_KEEP:
+            with self.subTest(title=title):
+                self.assertTrue(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                f"Lisa should keep: {title}")
+
+    def test_spec_negative_titles_are_dropped(self):
+        for title in self.SHOULD_DROP:
+            with self.subTest(title=title):
+                self.assertFalse(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                 f"Lisa should drop: {title}")
+
+    def test_priority_role_families_all_match(self):
+        for fn in ["Organizational Strategy", "Business Transformation", "Operations",
+                   "Operational Excellence", "Program Management", "PMO",
+                   "Customer Experience", "Employee Experience", "Professional Services",
+                   "Strategic Initiatives", "AI Enablement", "Change Management"]:
+            title = f"Director, {fn}"
+            with self.subTest(title=title):
+                self.assertTrue(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                f"priority family should match: {title}")
+
+    def test_also_relevant_seniorities_match(self):
+        for title in ["Senior Director, Business Operations", "Senior Manager, Operations",
+                      "Principal, Enterprise Transformation", "Head of Operations",
+                      "Chief of Staff", "Program Director, Transformation",
+                      "Transformation Lead", "Practice Leader", "General Manager"]:
+            with self.subTest(title=title):
+                self.assertTrue(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                f"should match: {title}")
+
+    def test_adjacent_families_match_when_the_mandate_fits(self):
+        for title in ["Director, SEO", "Director, Content Strategy",
+                      "Director, Digital Strategy", "Director, Marketing Operations",
+                      "Head of Customer Success", "Director, Learning and Development",
+                      "Director, Organizational Development",
+                      "Director, Business Operations", "Director, Service Design",
+                      "Manager, Process Improvement", "Director, M&A Integration",
+                      "Director, Value Realization", "Director, Workforce Transformation",
+                      "Director, AI Adoption", "Director, Operating Model Design",
+                      "Director, Enterprise Transformation"]:
+            with self.subTest(title=title):
+                self.assertTrue(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                f"adjacent family should match: {title}")
+
+    def test_contract_and_temporary_are_not_penalized_by_the_title_gate(self):
+        for title in ["Contract Director, Business Transformation",
+                      "Interim Head of Operations",
+                      "Temporary Program Manager, Change Management"]:
+            with self.subTest(title=title):
+                self.assertTrue(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                f"contract/temp leadership should match: {title}")
+
+    def test_broad_words_alone_no_longer_let_noise_through(self):
+        """The main precision fix: bare 'experience', 'support', 'service', 'care', 'people',
+        'success', 'client', 'community', 'innovation', 'AI' used to satisfy the function
+        group on their own, so any Manager/Lead title slipped past."""
+        for title in ["Support Manager", "Community Manager", "Customer Care Manager",
+                      "Guest Experience Manager", "Food Service Manager",
+                      "People Manager", "Client Manager", "Innovation Manager",
+                      "AI Manager", "Delivery Driver Lead", "Member Services Manager"]:
+            with self.subTest(title=title):
+                self.assertFalse(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                 f"broad-word noise should be dropped: {title}")
+
+    def test_meaningful_compounds_of_those_broad_words_still_match(self):
+        for title in ["Director, Customer Experience", "Director, Employee Experience",
+                      "Director, Customer Success", "Director, Service Delivery",
+                      "Director, Client Services", "Director, People Operations",
+                      "Director, Member Experience", "Director, AI Enablement"]:
+            with self.subTest(title=title):
+                self.assertTrue(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                f"compound should still match: {title}")
+
+    def test_manufacturing_industry_is_not_excluded(self):
+        for title in ["Director, Operational Excellence — Manufacturing",
+                      "Senior Manager, Manufacturing Operations",
+                      "Director, Transformation, Manufacturing Division"]:
+            with self.subTest(title=title):
+                self.assertTrue(jm.matches_profile(posting("A", "1", title), self.lisa),
+                                f"manufacturing employer should not be excluded: {title}")
+        # but a manufacturing *engineering* role is still out
+        self.assertFalse(jm.matches_profile(
+            posting("A", "1", "Manufacturing Engineering Manager"), self.lisa))
+
+    def test_finance_transformation_survives_but_accounting_does_not(self):
+        # Bare "finance" is deliberately not an exclusion term.
+        self.assertTrue(jm.matches_profile(
+            posting("A", "1", "Director, Finance Transformation"), self.lisa))
+        self.assertFalse(jm.matches_profile(
+            posting("A", "1", "Director, Corporate Accounting"), self.lisa))
+
+    def test_leadership_development_survives_sales_development_does_not(self):
+        self.assertTrue(jm.matches_profile(
+            posting("A", "1", "Director, Leadership Development"), self.lisa))
+        self.assertTrue(jm.matches_profile(
+            posting("A", "1", "Director, Organizational Development"), self.lisa))
+        self.assertFalse(jm.matches_profile(
+            posting("A", "1", "Manager, Sales Development"), self.lisa))
+
+
+class TestMandateRescue(unittest.TestCase):
+    """Generically titled roles are rescued on DESCRIPTION evidence, not title keywords."""
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+
+    MANDATE_DESC = ("You will lead our enterprise transformation agenda, own the "
+                    "operating model redesign, and partner with executives on "
+                    "change management across a fast-growing organization.")
+
+    def test_generic_title_with_mandate_description_is_rescued(self):
+        p = posting("A", "1", "Director, Special Projects", description=self.MANDATE_DESC)
+        self.assertFalse(all(jm._any_term(p["title"].lower(), g)
+                             for g in self.lisa["match_groups"]),
+                         "precondition: this title must FAIL the normal title gate")
+        self.assertTrue(jm.matches_profile(p, self.lisa),
+                        "a leadership title with a clear mandate should be rescued")
+        self.assertIn("lisa", p["_rescued_for"])
+
+    def test_generic_title_without_mandate_is_not_rescued(self):
+        p = posting("A", "1", "Director, Special Projects",
+                    description="Manage the office snack budget and greet visitors.")
+        self.assertFalse(jm.matches_profile(p, self.lisa))
+
+    def test_rescue_requires_minimum_distinct_terms(self):
+        # One mandate phrase, repeated — must not be enough (min_hits is 3).
+        desc = "operating model. " * 12
+        p = posting("A", "1", "Director, Special Projects", description=desc)
+        self.assertFalse(jm.matches_profile(p, self.lisa),
+                         "repeated boilerplate must not rescue on its own")
+
+    def test_rescue_cannot_override_an_exclusion(self):
+        p = posting("A", "1", "Director of Corporate Accounting",
+                    description=self.MANDATE_DESC)
+        self.assertFalse(jm.matches_profile(p, self.lisa),
+                         "exclusions are absolute — a rescue must never bypass them")
+
+    def test_rescue_requires_a_leadership_shaped_title(self):
+        p = posting("A", "1", "Business Analyst", description=self.MANDATE_DESC)
+        self.assertFalse(jm.matches_profile(p, self.lisa),
+                         "rescue is gated on require_title_any")
+
+    def test_boilerplate_only_description_is_not_rescued(self):
+        """Regression on a real finding: with generic manager-JD terms in the rescue list
+        ('cross-functional', 'stakeholder management', 'program management'), a bare
+        'Project Manager' and a 'Lead, Benefits' role were both rescued off real feeds."""
+        boilerplate = ("Partner cross-functionally with stakeholders, own program "
+                       "management for our roadmap, drive continuous improvement and "
+                       "operational efficiency, and manage the p&l for your area.")
+        for title in ["Project Manager", "Lead, Benefits", "Product Manager"]:
+            with self.subTest(title=title):
+                p = posting("A", "1", title, description=boilerplate)
+                self.assertFalse(jm.matches_profile(p, self.lisa),
+                                 f"generic boilerplate must not rescue: {title}")
+
+    def test_distinctive_mandate_language_still_rescues(self):
+        # Same generic title, but the description names real transformation work.
+        p = posting("A", "1", "Project Manager",
+                    description="Own the target operating model and lead our "
+                                "post-merger integration workstream.")
+        self.assertTrue(jm.matches_profile(p, self.lisa))
+
+    def test_no_description_means_no_rescue(self):
+        # Documents the known Workday/SmartRecruiters coverage gap.
+        p = posting("A", "1", "Director, Special Projects", description="")
+        self.assertFalse(jm.matches_profile(p, self.lisa))
+
+    def test_chad_has_no_rescue_configured_so_behavior_is_unchanged(self):
+        chad = load_real_profile("chad")
+        self.assertIsNone(chad.get("mandate_rescue"))
+        p = posting("A", "1", "Director, Special Projects", description=self.MANDATE_DESC)
+        self.assertFalse(jm.matches_profile(p, chad),
+                         "Chad must not gain rescue behavior")
+
+    def test_rescue_flag_is_stripped_before_the_snapshot(self):
+        p = posting("A", "1", "Director, Special Projects", description=self.MANDATE_DESC)
+        jm.matches_profile(p, self.lisa)
+        slim = {k: v for k, v in p.items()
+                if k != "description" and not k.startswith("_")}
+        self.assertNotIn("_rescued_for", slim,
+                         "_rescued_for must not reach the snapshot (it is not JSON-safe)")
+
+
 # --------------------------------------------------------------------------------------
 # Diff
 # --------------------------------------------------------------------------------------
