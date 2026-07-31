@@ -14,7 +14,7 @@ Usage:
 No Playwright, no HTML scraping — every source here is a structured JSON API.
 """
 
-import hashlib, json, os, re, sys, html, urllib.request, datetime
+import argparse, glob, hashlib, html, json, os, re, shutil, sys, urllib.request, datetime
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
@@ -22,6 +22,13 @@ REMOTE_CONFIG = os.path.join(HERE, "remote_companies.json")  # US-remote lane re
 STAFFING_CONFIG = os.path.join(HERE, "staffing_companies.json")  # contract/staffing lane registry
 PROFILES = os.path.join(HERE, "profiles.json")
 SETTINGS = os.path.join(HERE, "settings.json")
+
+# Where per-profile STATE (snapshots) and OUTPUT (reports) are written. Both default to the
+# repo root, which is what the daily CI run wants — production snapshots live there and are
+# committed back. `--snapshot-dir` / `--out-dir` / `--dry-run` redirect them so a local or
+# test run can NEVER clobber committed production state. Set once in main().
+SNAPSHOT_DIR = HERE
+OUT_DIR      = HERE
 
 # Run-wide tweakables (settings.json). Defaults apply if the file or a key is missing.
 SETTINGS_DEFAULTS = {"max_posting_age_days": 90, "fit_scoring_enabled": True,
@@ -726,12 +733,17 @@ def _within_age(posted, max_age_days):
 def collect_pool(max_age_days=None, config_path=CONFIG, gate=None):
     """Fetch + normalize every source in `config_path` once, apply a geography `gate`
     (defaults to the local gate `is_local` when None), then the age gate. The remote lane
-    calls this with config_path=REMOTE_CONFIG and gate=is_us_remote."""
+    calls this with config_path=REMOTE_CONFIG and gate=is_us_remote.
+
+    Returns (pool, errors, failed_companies). `failed_companies` is the set of company names
+    whose fetch raised — those companies contributed NOTHING to the pool, so the caller must
+    hold their previously-known roles out of the removal diff (see `_run_lane`) instead of
+    reporting them as filled."""
     if not os.path.exists(config_path):
-        return [], []
+        return [], [], set()
     cfg = json.load(open(config_path))
     keep = gate or (is_local if LOCAL_ONLY else None)
-    pool, errors = [], []
+    pool, errors, failed = [], [], set()
     for c in cfg.get("companies", []):
         try:
             got = FETCHERS[c["ats"]](c)
@@ -741,7 +753,8 @@ def collect_pool(max_age_days=None, config_path=CONFIG, gate=None):
             pool.extend(got)
         except Exception as e:
             errors.append(f"{c['name']} ({c['ats']}/{c['slug']}): {type(e).__name__} {e}")
-    return pool, errors
+            failed.add(c["name"])
+    return pool, errors, failed
 
 
 def diff(prev, curr):
@@ -1286,12 +1299,15 @@ def build_html_report(profile, lanes):
 </html>"""
 
 
-def _run_lane(profile, pool, errors, client, suffix, title):
+def _run_lane(profile, src, client, suffix, title):
     # Match + score + diff ONE lane against its own snapshot (suffix ""=local, "_remote").
+    # `src` is a lane source dict: {"pool": [...], "errors": [...], "failed": {company names}}.
     # Writes the slim snapshot; returns (lane_dict, has_changes).
+    pool, errors = src.get("pool") or [], src.get("errors") or []
+    failed_companies = src.get("failed") or set()
     matched = [p for p in pool if matches_profile(p, profile)]
     enrich_salary(matched)   # cache-deduped across profiles; postings are shared refs
-    snap = os.path.join(HERE, f"snapshot_{profile['name']}{suffix}.json")
+    snap = os.path.join(SNAPSHOT_DIR, f"snapshot_{profile['name']}{suffix}.json")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
 
     scored = enrich_with_fit(matched, prev, profile, client)
@@ -1300,35 +1316,46 @@ def _run_lane(profile, pool, errors, client, suffix, title):
     if profile.get("fit_mode") == "filter":   # drop roles the model rated a clear "no"
         matched = [p for p in matched if (p.get("fit_result") or {}).get("fit") != "no"]
 
+    held = []
     if prev is None:
         new, removed, changed, first_run, has_changes = [], [], [], True, True
     else:
         new, removed, changed = diff(prev, matched)
+        # A source whose fetch raised contributed ZERO postings this run, so every role we
+        # knew about at that company would otherwise read as "removed"/filled. Hold those
+        # roles OUT of the diff and carry them forward into the snapshot below, so they
+        # neither report as gone today nor come back as brand-new tomorrow.
+        held    = [p for p in removed if p.get("company") in failed_companies]
+        removed = [p for p in removed if p.get("company") not in failed_companies]
         first_run, has_changes = False, bool(new or removed or changed)
+        if held:
+            print(f"  [{profile['name']}{suffix}] held {len(held)} role(s) from "
+                  f"{len(failed_companies)} failed source(s) — not reported as removed")
 
+    # `held` entries come from the previous snapshot and are already slim.
     slim = [{k: v for k, v in p.items() if k != "description" and not k.startswith("_")}
-            for p in matched]
+            for p in matched] + held
     json.dump(slim, open(snap, "w"), indent=1)
     lane = {"title": title, "matched": matched, "new": new, "removed": removed,
-            "changed": changed, "errors": errors, "first_run": first_run}
+            "changed": changed, "errors": errors, "first_run": first_run, "held": held}
     return lane, has_changes
 
 
-def run_profile(profile, local_pool, remote_pool, errors, client=None, remote_errors=None,
-                staffing_pool=None, staffing_errors=None):
+def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=None):
     # Run the local lane and (when enabled + opted-in) the US-remote and contract/staffing
     # lanes, then compose ALL into ONE report/email per person. Each lane keeps its own
     # snapshot so diffs are independent; `changed` is the OR of the lanes; logos are the union.
+    # Each `*_src` is a lane source dict (see _run_lane); None means "lane off for this person".
     # Lanes are RUN here but ordered for DISPLAY below (email order != run order).
-    local_lane, changed = _run_lane(profile, local_pool, errors, client, "",
+    local_lane, changed = _run_lane(profile, local_src, client, "",
                                     "📍 Local — Silicon Slopes")
     remote_lane = staffing_lane = None
-    if remote_pool is not None and profile.get("remote_search"):
-        remote_lane, r_changed = _run_lane(profile, remote_pool, remote_errors or [], client,
+    if remote_src is not None and profile.get("remote_search"):
+        remote_lane, r_changed = _run_lane(profile, remote_src, client,
                                            "_remote", "🌎 US-Remote")
         changed = changed or r_changed
-    if staffing_pool is not None and profile.get("staffing_search"):
-        staffing_lane, s_changed = _run_lane(profile, staffing_pool, staffing_errors or [], client,
+    if staffing_src is not None and profile.get("staffing_search"):
+        staffing_lane, s_changed = _run_lane(profile, staffing_src, client,
                                              "_staffing", "🧑‍💼 Contract / Staffing")
         changed = changed or s_changed
     # Email display order: US-Remote, then Contract/Staffing, then Local Silicon Slopes.
@@ -1336,58 +1363,102 @@ def run_profile(profile, local_pool, remote_pool, errors, client=None, remote_er
 
     report = build_report(profile, lanes)
     report_html = build_html_report(profile, lanes)   # clears + repopulates _LOGOS_USED
-    open(os.path.join(HERE, f"report_{profile['name']}.md"), "w").write(report)
-    open(os.path.join(HERE, f"report_{profile['name']}.html"), "w").write(report_html)
+    open(os.path.join(OUT_DIR, f"report_{profile['name']}.md"), "w").write(report)
+    open(os.path.join(OUT_DIR, f"report_{profile['name']}.html"), "w").write(report_html)
     logos = sorted(_LOGOS_USED)   # union of logos referenced across all lanes
     return changed, logos, report
 
 
+DRYRUN_DIR = os.path.join(HERE, ".dryrun")
+
+
+def _parse_args(argv=None):
+    p = argparse.ArgumentParser(
+        prog="jobmonitor.py",
+        description="Daily job-posting monitor. With no flags: run every enabled profile "
+                    "and write production snapshots + reports.")
+    p.add_argument("--profile", metavar="NAME", help="run just one profile")
+    p.add_argument("--list", action="store_true", help="list profiles and exit")
+    p.add_argument("--dry-run", action="store_true",
+                   help="safe test run: write snapshots + reports to .dryrun/ instead of the "
+                        "repo root, seeded from a copy of the production snapshots. Never "
+                        "writes production state and never writes GITHUB_OUTPUT.")
+    p.add_argument("--snapshot-dir", metavar="DIR", help="read/write snapshots here")
+    p.add_argument("--out-dir", metavar="DIR", help="write report_<name>.md/.html here")
+    p.add_argument("--no-fit", action="store_true",
+                   help="skip all LLM fit scoring (no Anthropic API calls, no cost)")
+    return p.parse_args(argv)
+
+
+def _resolve_dirs(args):
+    """Decide where snapshots (state) and reports (output) go.
+
+    `--dry-run` points BOTH at .dryrun/ and re-seeds it with a fresh COPY of the production
+    snapshots on every run. That gives a realistic diff *and* reuses the cached fit verdicts,
+    so a dry run of already-scored roles costs no API calls — while the committed production
+    snapshots are never opened for writing."""
+    snap_dir = args.snapshot_dir or (DRYRUN_DIR if args.dry_run else HERE)
+    out_dir  = args.out_dir      or (DRYRUN_DIR if args.dry_run else HERE)
+    for d in {snap_dir, out_dir}:
+        os.makedirs(d, exist_ok=True)
+    if args.dry_run and not args.snapshot_dir:
+        for src in glob.glob(os.path.join(HERE, "snapshot_*.json")):
+            shutil.copy2(src, os.path.join(snap_dir, os.path.basename(src)))
+    if snap_dir != HERE or out_dir != HERE:
+        print(f"[safe run] snapshots → {snap_dir}\n[safe run] reports   → {out_dir}\n"
+              f"[safe run] production snapshots and reports are untouched.\n")
+    return snap_dir, out_dir
+
+
 def main():
-    args = sys.argv[1:]
+    args = _parse_args()
     profiles = json.load(open(PROFILES))["profiles"]
 
-    if "--list" in args:
+    if args.list:
         for p in profiles:
             state = "on " if p.get("enabled", True) else "off"
             print(f"  [{state}] {p['name']:<8} {p['label']}")
         return
 
-    if "--profile" in args:
-        name = args[args.index("--profile") + 1]
-        profiles = [p for p in profiles if p["name"] == name]
+    if args.profile:
+        profiles = [p for p in profiles if p["name"] == args.profile]
         if not profiles:
-            sys.exit(f"No profile named '{name}'. Try --list.")
+            sys.exit(f"No profile named '{args.profile}'. Try --list.")
     else:
         profiles = [p for p in profiles if p.get("enabled", True)]
 
-    global STAR_WITHIN_DAYS, ALLOW_INTL_REMOTE
+    global SNAPSHOT_DIR, OUT_DIR, STAR_WITHIN_DAYS, ALLOW_INTL_REMOTE
+    SNAPSHOT_DIR, OUT_DIR = _resolve_dirs(args)
     settings = load_settings()
     max_age = settings.get("max_posting_age_days")
     STAR_WITHIN_DAYS = settings.get("star_within_days", STAR_WITHIN_DAYS)
     ALLOW_INTL_REMOTE = settings.get("allow_international_remote", ALLOW_INTL_REMOTE)
-    client = get_client() if settings.get("fit_scoring_enabled", True) else None
+    client = None if args.no_fit else (
+        get_client() if settings.get("fit_scoring_enabled", True) else None)
 
-    pool, errors = collect_pool(max_age_days=max_age)
+    pool, errors, failed = collect_pool(max_age_days=max_age)
+    local_src = {"pool": pool, "errors": errors, "failed": failed}
     age_note = f" ≤{max_age}d old" if max_age else ""
     print(f"Fetched {len(pool)} local roles{age_note} across all companies."
           f"{' Fit scoring: ON.' if client else ' Fit scoring: OFF.'}")
 
     # US-remote lane: fetched once (shared across profiles), gated to US-remote. Each profile
     # that opts in (remote_search:true) gets a US-Remote section merged into its ONE report.
-    remote_pool, remote_errors = [], []
+    remote_src = None
     remote_on = bool(settings.get("remote_search", {}).get("enabled")
                      and any(p.get("remote_search") for p in profiles))
     if remote_on:
-        remote_pool, remote_errors = collect_pool(max_age_days=max_age,
+        r_pool, r_errors, r_failed = collect_pool(max_age_days=max_age,
                                                   config_path=REMOTE_CONFIG, gate=is_us_remote)
-        print(f"Fetched {len(remote_pool)} US-remote role(s) across the remote registry.")
+        remote_src = {"pool": r_pool, "errors": r_errors, "failed": r_failed}
+        print(f"Fetched {len(r_pool)} US-remote role(s) across the remote registry.")
 
     # Contract/staffing lane: staffing-firm feeds (e.g. Aquent), fetched once and gated with
     # the local gate (is_local keeps Utah-local + US-remote roles, dropping other-metro on-site
     # and international remote). Each profile that opts in (staffing_search:true) gets a
     # Contract/Staffing section merged into its ONE report. Contract-only filtering happens in
     # the fetcher (placement_type), so this pool is already scoped to contract roles.
-    staffing_pool, staffing_errors = [], []
+    staffing_src = None
     staffing_cfg = settings.get("staffing_search", {})
     staffing_on = bool(staffing_cfg.get("enabled")
                        and any(p.get("staffing_search") for p in profiles))
@@ -1396,20 +1467,20 @@ def main():
         # search wants volume): staffing_search.max_age_days overrides the global window,
         # falling back to it when unset.
         staffing_age = staffing_cfg.get("max_age_days", max_age)
-        staffing_pool, staffing_errors = collect_pool(max_age_days=staffing_age,
-                                                      config_path=STAFFING_CONFIG, gate=is_local)
+        s_pool, s_errors, s_failed = collect_pool(max_age_days=staffing_age,
+                                                  config_path=STAFFING_CONFIG, gate=is_local)
+        staffing_src = {"pool": s_pool, "errors": s_errors, "failed": s_failed}
         s_note = f" ≤{staffing_age}d old" if staffing_age else ""
-        print(f"Fetched {len(staffing_pool)} contract/staffing role(s){s_note} across the staffing registry.")
+        print(f"Fetched {len(s_pool)} contract/staffing role(s){s_note} across the staffing registry.")
     print()
 
     changed_profiles = []
     logos_by_profile = {}
     for p in profiles:
-        rp = remote_pool if (remote_on and p.get("remote_search")) else None
-        sp = staffing_pool if (staffing_on and p.get("staffing_search")) else None
-        changed, logos, report = run_profile(p, pool, rp, errors, client,
-                                             remote_errors=remote_errors,
-                                             staffing_pool=sp, staffing_errors=staffing_errors)
+        rs = remote_src if p.get("remote_search") else None
+        ss = staffing_src if p.get("staffing_search") else None
+        changed, logos, report = run_profile(p, local_src, remote_src=rs,
+                                             staffing_src=ss, client=client)
         if changed:
             changed_profiles.append(p["name"])
         logos_by_profile[p["name"]] = logos
@@ -1422,7 +1493,8 @@ def main():
     # only people whose (combined local+remote) report changed, and the exact list of logo
     # files to attach inline as CID images — only those the report references, so none show
     # as stray downloads. One report/email per person, so no separate remote-lane outputs.
-    gh_out = os.environ.get("GITHUB_OUTPUT")
+    # A dry run must never signal the workflow to send email, even if GITHUB_OUTPUT is set.
+    gh_out = None if args.dry_run else os.environ.get("GITHUB_OUTPUT")
     if gh_out:
         with open(gh_out, "a") as fh:
             for p in profiles:
