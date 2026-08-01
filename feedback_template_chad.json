@@ -16,13 +16,6 @@
    "note": ""
   },
   {
-   "key": "Adobe::R169523",
-   "company": "Adobe",
-   "title": "Data Science Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Adobe::R170420",
    "company": "Adobe",
    "title": "Sr Data Solution Engineer",
@@ -47,13 +40,6 @@
    "key": "Affirm::7812982003",
    "company": "Affirm",
    "title": "Senior Software Engineer, Affirm Bank",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Affirm::7808384003",
-   "company": "Affirm",
-   "title": "Senior Software Engineer, Backend (PBA - Growth)",
    "status": "",
    "note": ""
   },
@@ -142,13 +128,6 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4699416006",
-   "company": "Chainguard",
-   "title": "Senior Software Engineer, Developer Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Chainguard::4699210006",
    "company": "Chainguard",
    "title": "Software Engineer (Libraries Platform)",
@@ -156,14 +135,14 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4700933006",
+   "key": "Chainguard::4700929006",
    "company": "Chainguard",
    "title": "Staff Software Engineer (AI CICD)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Chainguard::4700929006",
+   "key": "Chainguard::4700933006",
    "company": "Chainguard",
    "title": "Staff Software Engineer (AI CICD)",
    "status": "",
@@ -198,13 +177,6 @@
    "note": ""
   },
   {
-   "key": "Cloudflare::8082834",
-   "company": "Cloudflare",
-   "title": "Senior Strategic Customer Engineer, Named - Charlotte, NC",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Coinbase::8097880",
    "company": "Coinbase",
    "title": "IT Service Desk Engineer",
@@ -229,13 +201,6 @@
    "key": "Coinbase::8088201",
    "company": "Coinbase",
    "title": "Senior Software Engineer - Frontend - Coinbase Card team",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Coinbase::8082199",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer, Data Engineering Platform",
    "status": "",
    "note": ""
   },
@@ -303,6 +268,13 @@
    "note": ""
   },
   {
+   "key": "Fivetran::7822951003",
+   "company": "Fivetran",
+   "title": "Senior Business Value Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "GitLab::8654230002",
    "company": "GitLab",
    "title": "Support Engineer (AMER)",
@@ -355,6 +327,13 @@
    "key": "Hinge Health::aaef9501-f998-442b-882c-32d0e8023405",
    "company": "Hinge Health",
    "title": "Staff Software Engineer, CV UX",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Hinge Health::f7e949d1-fe6b-4357-bf1c-52cfe0f5f790",
+   "company": "Hinge Health",
+   "title": "Staff Software Engineer, Home Pod (React Native)",
    "status": "",
    "note": ""
   },
@@ -464,6 +443,13 @@
    "note": ""
   },
   {
+   "key": "Reddit::8093021",
+   "company": "Reddit",
+   "title": "Frontend Engineer III, Moderation Enforcement",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8094764",
    "company": "Reddit",
    "title": "Staff People Integrations Engineer",
@@ -478,44 +464,9 @@
    "note": ""
   },
   {
-   "key": "Render::88cb74a4-bc28-40b1-b792-d3041e3e17d3",
-   "company": "Render",
-   "title": "Software Engineer, Network Infrastructure",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Samsara::8021301",
    "company": "Samsara",
    "title": "Senior Software Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8063736",
-   "company": "Samsara",
-   "title": "Senior Software Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8055217",
-   "company": "Samsara",
-   "title": "Senior Software Engineer II - Web Experience",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8050373",
-   "company": "Samsara",
-   "title": "Sr. Software Engineer II, AI Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8068215",
-   "company": "Samsara",
-   "title": "Technical Support Engineer",
    "status": "",
    "note": ""
   },
@@ -530,13 +481,6 @@
    "key": "Sentry::86e3e57e-6caf-446a-9208-1a614a138b10",
    "company": "Sentry",
    "title": "Engineering Manager, Data Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Smartsheet::8083523",
-   "company": "Smartsheet",
-   "title": "Enterprise Technical Solutions Engineer",
    "status": "",
    "note": ""
   },
@@ -590,9 +534,9 @@
    "note": ""
   },
   {
-   "key": "Tailscale::4710755005",
-   "company": "Tailscale",
-   "title": "Software Engineer, AI Enablement",
+   "key": "Supabase::dcf09dfe-55bc-44ba-b5db-1a2de7f33216",
+   "company": "Supabase",
+   "title": "Support Engineer (AMER - Weekends)",
    "status": "",
    "note": ""
   },
@@ -646,21 +590,14 @@
    "note": ""
   },
   {
-   "key": "Twilio::8097672",
-   "company": "Twilio",
-   "title": "Software Engineer (L2)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Twilio::7946610",
-   "company": "Twilio",
-   "title": "Software Engineer (L2)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8100236",
+   "company": "Twilio",
+   "title": "Software Engineer (L2)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8097672",
    "company": "Twilio",
    "title": "Software Engineer (L2)",
    "status": "",
@@ -768,13 +705,6 @@
    "key": "Western Governors University::JR-025664",
    "company": "Western Governors University",
    "title": "Staff Software Product Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "iCapital::8631890002",
-   "company": "iCapital",
-   "title": "Software Engineer in Test - Associate",
    "status": "",
    "note": ""
   }

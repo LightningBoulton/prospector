@@ -68,39 +68,6 @@
   }
  },
  {
-  "key": "Cloudflare::8082834",
-  "company": "Cloudflare",
-  "title": "Senior Strategic Customer Engineer, Named - Charlotte, NC",
-  "location": "Distributed",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8082834?gh_jid=8082834",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Sales engineering role, explicit dealbreaker",
-    "Not hands-on software engineering",
-    "Customer-facing pre-sales, not engineering IC"
-   ],
-   "concerns": [
-    "Sales engineering excluded as dealbreaker",
-    "Location tied to Charlotte, NC territory"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 30,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Sales engineering role, explicit dealbreaker",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Coinbase::8097880",
   "company": "Coinbase",
   "title": "IT Service Desk Engineer",
@@ -202,41 +169,6 @@
   }
  },
  {
-  "key": "Coinbase::8082199",
-  "company": "Coinbase",
-  "title": "Senior Software Engineer, Data Engineering Platform",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8082199?gh_jid=8082199",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote-USA role fits location preference",
-    "Platform engineering aligns with interests",
-    "Backend/data infra differs from frontend strength",
-    "Blockchain domain expertise not demonstrated"
-   ],
-   "concerns": [
-    "Requires data engineering/blockchain domain depth not in background",
-    "Quarterly in-person 'surges' add travel expectation",
-    "Backend-heavy role vs candidate's frontend-leaning strengths"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote-USA role fits location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Coinbase::8088201",
   "company": "Coinbase",
   "title": "Senior Software Engineer - Frontend - Coinbase Card team",
@@ -268,6 +200,41 @@
    "score": 68,
    "fit": "yes",
    "reason": "Strong React/frontend match for consumer product work",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Reddit::8093021",
+  "company": "Reddit",
+  "title": "Frontend Engineer III, Moderation Enforcement",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8093021",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location needs",
+    "Frontend engineering matches core strengths",
+    "Reddit is large-scale consumer platform, not core B2B SaaS",
+    "Engineer III title may be below Principal level"
+   ],
+   "concerns": [
+    "Title suggests mid-level, not Principal-equivalent",
+    "Moderation enforcement domain is narrow, not core interest",
+    "Compensation and seniority scope unclear"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote US role fits location needs",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -405,6 +372,40 @@
   }
  },
  {
+  "key": "Twilio::8100236",
+  "company": "Twilio",
+  "title": "Software Engineer (L2)",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8100236",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location preference",
+    "Distributed systems at scale aligns with interests",
+    "Enterprise SaaS/platform experience relevant"
+   ],
+   "concerns": [
+    "L2 title suggests below Principal seniority target",
+    "Backend distributed systems focus, less frontend/React",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Twilio::8097672",
   "company": "Twilio",
   "title": "Software Engineer (L2)",
@@ -434,73 +435,6 @@
    "practical_fit": 90,
    "opportunity_score": 60,
    "score": 60,
-   "fit": "maybe",
-   "reason": "Remote US role fits location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Twilio::7946610",
-  "company": "Twilio",
-  "title": "Software Engineer (L2)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/7946610",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Posting is a broken template with no real details",
-    "L2 title suggests junior/mid level, not Principal",
-    "Remote US is practically workable"
-   ],
-   "concerns": [
-    "Job description appears to be unfilled placeholder text",
-    "Seniority level likely below candidate's target"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 30,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Posting is a broken template with no real details",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Twilio::8100236",
-  "company": "Twilio",
-  "title": "Software Engineer (L2)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8100236",
-  "posted": "2026-07-31",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote US role fits location preference",
-    "Distributed systems at scale aligns with interests",
-    "Enterprise SaaS/platform experience relevant"
-   ],
-   "concerns": [
-    "L2 title suggests below Principal seniority target",
-    "Backend distributed systems focus, less frontend/React",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
    "fit": "maybe",
    "reason": "Remote US role fits location preference",
    "bg": "8d3fa4bf6180"
@@ -678,40 +612,6 @@
   }
  },
  {
-  "key": "Affirm::7808384003",
-  "company": "Affirm",
-  "title": "Senior Software Engineer, Backend (PBA - Growth)",
-  "location": "Remote US",
-  "url": "https://job-boards.greenhouse.io/affirm/jobs/7808384003",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote US role fits location preference",
-    "Backend API ownership aligns with strengths",
-    "Enterprise integrations work resembles SaaS platform experience"
-   ],
-   "concerns": [
-    "Tech stack (Python/Java likely) not confirmed vs C#/.NET focus",
-    "Role emphasizes team leadership over hands-on coding",
-    "Fintech domain differs from developer tools/AI infra interest"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Remote US role fits location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Affirm::7819654003",
   "company": "Affirm",
   "title": "Senior Software Engineer, Fullstack (Card Acquisition)",
@@ -743,6 +643,39 @@
    "score": 62,
    "fit": "yes",
    "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Supabase::dcf09dfe-55bc-44ba-b5db-1a2de7f33216",
+  "company": "Supabase",
+  "title": "Support Engineer (AMER - Weekends)",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/supabase/dcf09dfe-55bc-44ba-b5db-1a2de7f33216",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Customer support role, explicit dealbreaker",
+    "Not hands-on engineering position",
+    "Weekend shift schedule undesirable"
+   ],
+   "concerns": [
+    "Customer support dealbreaker",
+    "Not software engineering role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 40,
+   "opportunity_score": 10,
+   "score": 10,
+   "fit": "no",
+   "reason": "Customer support role, explicit dealbreaker",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1022,41 +955,6 @@
   }
  },
  {
-  "key": "Render::88cb74a4-bc28-40b1-b792-d3041e3e17d3",
-  "company": "Render",
-  "title": "Software Engineer, Network Infrastructure",
-  "location": "Remote: United States",
-  "url": "https://jobs.ashbyhq.com/render/88cb74a4-bc28-40b1-b792-d3041e3e17d3",
-  "posted": "2026-07-24",
-  "salary": "$236K \u2013 $290K",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Remote US role aligns with location prefs",
-    "Cloud/dev platform company matches industry interest",
-    "Network infrastructure specialization not in candidate's background",
-    "Candidate is frontend-leaning full-stack, not network engineer"
-   ],
-   "concerns": [
-    "Requires deep networking/systems expertise candidate lacks",
-    "No React/.NET relevance to role",
-    "Likely needs Go/Rust/low-level systems skills"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Remote US role aligns with location prefs",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Render::8815f772-6895-4383-a9e5-6c7bdc2bf141",
   "company": "Render",
   "title": "Software Engineer, Agent Auth Experience",
@@ -1222,6 +1120,40 @@
    "score": 15,
    "fit": "no",
    "reason": "Security/risk/compliance domain, not core software engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Fivetran::7822951003",
+  "company": "Fivetran",
+  "title": "Senior Business Value Engineer",
+  "location": "Remote, Washington, United States, AMER",
+  "url": "https://www.fivetran.com/careers/job?gh_jid=7822951003",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Business value/consulting role, not engineering",
+    "No hands-on coding mandate",
+    "Wrong function for candidate's IC engineering goals"
+   ],
+   "concerns": [
+    "Not a software engineering IC role",
+    "Customer-facing value engineering, not dealbreaker but mismatch",
+    "Location not Utah, remote status unclear practicality"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 20,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Business value/consulting role, not engineering",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1460,41 +1392,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Remote role fits location preference well",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Tailscale::4710755005",
-  "company": "Tailscale",
-  "title": "Software Engineer, AI Enablement",
-  "location": "Remote (United States)",
-  "url": "https://job-boards.greenhouse.io/tailscale/jobs/4710755005",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Remote US role matches location preference",
-    "Strong AI-assisted development enablement focus",
-    "Foundational IC role with real technical latitude",
-    "Aligns with interest in developer productivity/tooling"
-   ],
-   "concerns": [
-    "Support/enablement function vs core product engineering",
-    "Small team, unclear compensation range",
-    "Less emphasis on frontend/full-stack strengths"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 88,
-   "practical_fit": 92,
-   "opportunity_score": 78,
-   "score": 78,
-   "fit": "yes",
-   "reason": "Remote US role matches location preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1773,40 +1670,6 @@
   }
  },
  {
-  "key": "Chainguard::4699416006",
-  "company": "Chainguard",
-  "title": "Senior Software Engineer, Developer Platform",
-  "location": "United States - Remote",
-  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4699416006",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Remote US role matches location preference",
-    "Developer platform/DevEx aligns with strengths",
-    "AI agentic platform aligns with AI interest",
-    "Senior IC role, no management transition"
-   ],
-   "concerns": [
-    "Stack likely Go/cloud-native, less .NET/React focus",
-    "CI/CD infra depth may differ from candidate's frontend leaning"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 82,
-   "practical_fit": 88,
-   "opportunity_score": 74,
-   "score": 74,
-   "fit": "yes",
-   "reason": "Remote US role matches location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Chainguard::4699210006",
   "company": "Chainguard",
   "title": "Software Engineer (Libraries Platform)",
@@ -1842,40 +1705,6 @@
   }
  },
  {
-  "key": "Chainguard::4700933006",
-  "company": "Chainguard",
-  "title": "Staff Software Engineer (AI CICD)",
-  "location": "Europe - Remote; United Kingdom - Remote; United States - Remote",
-  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700933006",
-  "posted": "2026-07-29",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Fully remote US option fits location needs",
-    "AI infrastructure and developer tooling align with interests",
-    "Staff-level IC role preserves hands-on engineering",
-    "Cloud-native, agentic AI product work is compelling"
-   ],
-   "concerns": [
-    "Deep CI/CD and software supply-chain security expertise not demonstrated",
-    "Requires strong DevSecOps background beyond current stack"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 58,
-   "interest_fit": 75,
-   "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "maybe",
-   "reason": "Fully remote US option fits location needs",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Chainguard::4700929006",
   "company": "Chainguard",
   "title": "Staff Software Engineer (AI CICD)",
@@ -1907,6 +1736,40 @@
    "score": 72,
    "fit": "yes",
    "reason": "Remote-first, matches location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Chainguard::4700933006",
+  "company": "Chainguard",
+  "title": "Staff Software Engineer (AI CICD)",
+  "location": "Europe - Remote; United Kingdom - Remote; United States - Remote",
+  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700933006",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Fully remote US option fits location needs",
+    "AI infrastructure and developer tooling align with interests",
+    "Staff-level IC role preserves hands-on engineering",
+    "Cloud-native, agentic AI product work is compelling"
+   ],
+   "concerns": [
+    "Deep CI/CD and software supply-chain security expertise not demonstrated",
+    "Requires strong DevSecOps background beyond current stack"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 58,
+   "interest_fit": 75,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "maybe",
+   "reason": "Fully remote US option fits location needs",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -2111,142 +1974,6 @@
   }
  },
  {
-  "key": "Samsara::8063736",
-  "company": "Samsara",
-  "title": "Senior Software Engineer II",
-  "location": "Remote - US",
-  "url": "https://www.samsara.com/company/careers/roles/8063736?gh_jid=8063736",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Full-stack senior IC role",
-    "AI voice product work",
-    "Enterprise IoT SaaS platform"
-   ],
-   "concerns": [
-    "Heavy AI/voice/product specialization vs generalist background",
-    "Less frontend/architecture emphasis than typical fit",
-    "Unclear compensation details"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Samsara::8055217",
-  "company": "Samsara",
-  "title": "Senior Software Engineer II - Web Experience",
-  "location": "Remote - US",
-  "url": "https://www.samsara.com/company/careers/roles/8055217?gh_jid=8055217",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Remote US role matches location preference",
-    "Full-stack platform/dashboard engineering fits strengths",
-    "AI-driven product workflows align with interests",
-    "Enterprise SaaS at scale, strong technical mandate"
-   ],
-   "concerns": [
-    "Compensation not specified",
-    "Senior II vs Principal title may be lateral"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 82,
-   "interest_fit": 85,
-   "practical_fit": 90,
-   "opportunity_score": 84,
-   "score": 84,
-   "fit": "yes",
-   "reason": "Remote US role matches location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Samsara::8050373",
-  "company": "Samsara",
-  "title": "Sr. Software Engineer II, AI Platform",
-  "location": "Remote - SF Bay Area",
-  "url": "https://www.samsara.com/company/careers/roles/8050373?gh_jid=8050373",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "AI platform engineering aligns with interests",
-    "Distributed systems and scalable platform work",
-    "Remote listed but SF Bay Area anchored",
-    "Enterprise SaaS/AI infra fits background"
-   ],
-   "concerns": [
-    "Remote tied to SF Bay Area, unclear if fully remote",
-    "Sales-ops/AI focus differs from core stack",
-    "No explicit compensation stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 65,
-   "practical_fit": 40,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "AI platform engineering aligns with interests",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Samsara::8068215",
-  "company": "Samsara",
-  "title": "Technical Support Engineer",
-  "location": "Remote - Mexico",
-  "url": "https://www.samsara.com/company/careers/roles/8068215?gh_jid=8068215",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Customer support dealbreaker",
-    "Not a software engineering role",
-    "Remote Mexico, not relocation-relevant"
-   ],
-   "concerns": [
-    "Explicit dealbreaker: customer support"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 10,
-   "opportunity_score": 5,
-   "score": 5,
-   "fit": "no",
-   "reason": "Customer support dealbreaker",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Hinge Health::4fba45fc-b27f-4ac8-9eac-2b8ac66c0a58",
   "company": "Hinge Health",
   "title": "Staff Software Engineer, Proactive Communications",
@@ -2385,6 +2112,39 @@
   }
  },
  {
+  "key": "Hinge Health::f7e949d1-fe6b-4357-bf1c-52cfe0f5f790",
+  "company": "Hinge Health",
+  "title": "Staff Software Engineer, Home Pod (React Native)",
+  "location": "San Francisco-HQ (Remote)",
+  "url": "https://jobs.ashbyhq.com/hinge-health/f7e949d1-fe6b-4357-bf1c-52cfe0f5f790",
+  "posted": "2026-07-31",
+  "salary": "$192K \u2013 $288K",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote role fits location preference",
+    "Staff-level IC ownership and mentoring",
+    "Strong architecture and experimentation focus"
+   ],
+   "concerns": [
+    "React Native mobile-specific, not core strength",
+    "Consumer health app, not B2B/dev-tools focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 70,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Thumbtack::d98e63a2-bbfb-48eb-8b73-abd3a8eb5976",
   "company": "Thumbtack",
   "title": "Senior Data Engineer",
@@ -2448,40 +2208,6 @@
    "score": 12,
    "fit": "no",
    "reason": "Data engineering role, not full-stack SE",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Smartsheet::8083523",
-  "company": "Smartsheet",
-  "title": "Enterprise Technical Solutions Engineer",
-  "location": "-REMOTE, USA-",
-  "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8083523",
-  "posted": "2026-07-24",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Presales/solutions engineering, not hands-on dev",
-    "Sales-support function conflicts with dealbreakers",
-    "Remote US location is workable"
-   ],
-   "concerns": [
-    "Sales engineering is a stated dealbreaker",
-    "Role is customer-facing, not engineering-building",
-    "Little architecture/coding ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 20,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Presales/solutions engineering, not hands-on dev",
    "bg": "8d3fa4bf6180"
   }
  },
