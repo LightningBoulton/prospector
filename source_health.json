@@ -1,13 +1,13 @@
 {
  "_comment": "Per-company fetch health from the most recent run. consecutive_zero_runs counts runs returning no in-window roles \u2014 a rising number suggests an ATS migration or a changed slug.",
- "generated": "2026-08-01",
+ "generated": "2026-08-02",
  "sources": [
   {
    "name": "Filevine",
    "registry": "local",
    "ats": "lever",
    "slug": "filevine",
-   "roles_returned": 4,
+   "roles_returned": 5,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -34,7 +34,7 @@
    "registry": "local",
    "ats": "smartrecruiters",
    "slug": "cricut",
-   "roles_returned": 20,
+   "roles_returned": 18,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -81,7 +81,7 @@
    "slug": "weave",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Route",
@@ -99,7 +99,7 @@
    "slug": "vivint",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Instructure",
@@ -108,7 +108,7 @@
    "slug": "instructure",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Pluralsight",
@@ -171,7 +171,7 @@
    "slug": "navtechnologies",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Domo",
@@ -234,7 +234,7 @@
    "slug": "beyond",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Nomi Health",
@@ -250,7 +250,7 @@
    "registry": "local",
    "ats": "lever",
    "slug": "pattern",
-   "roles_returned": 3,
+   "roles_returned": 4,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -259,7 +259,7 @@
    "registry": "local",
    "ats": "greenhouse",
    "slug": "nice",
-   "roles_returned": 38,
+   "roles_returned": 37,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -268,7 +268,7 @@
    "registry": "local",
    "ats": "greenhouse",
    "slug": "brex",
-   "roles_returned": 13,
+   "roles_returned": 12,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -288,14 +288,14 @@
    "slug": "speechify",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Flex",
    "registry": "local",
    "ats": "greenhouse",
    "slug": "flex",
-   "roles_returned": 9,
+   "roles_returned": 6,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -304,7 +304,7 @@
    "registry": "local",
    "ats": "workday",
    "slug": "wgu",
-   "roles_returned": 69,
+   "roles_returned": 68,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -349,7 +349,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "gitlab",
-   "roles_returned": 52,
+   "roles_returned": 47,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -376,7 +376,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "reddit",
-   "roles_returned": 22,
+   "roles_returned": 21,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -403,7 +403,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "twilio",
-   "roles_returned": 48,
+   "roles_returned": 47,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -412,7 +412,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "vercel",
-   "roles_returned": 2,
+   "roles_returned": 1,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -421,7 +421,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "grafanalabs",
-   "roles_returned": 22,
+   "roles_returned": 19,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -432,7 +432,7 @@
    "slug": "postman",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Webflow",
@@ -484,7 +484,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "affirm",
-   "roles_returned": 34,
+   "roles_returned": 32,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -495,14 +495,14 @@
    "slug": "discord",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Supabase",
    "registry": "remote",
    "ats": "ashby",
    "slug": "supabase",
-   "roles_returned": 13,
+   "roles_returned": 14,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -511,7 +511,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "posthog",
-   "roles_returned": 2,
+   "roles_returned": 1,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -529,7 +529,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "linear",
-   "roles_returned": 2,
+   "roles_returned": 1,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -574,7 +574,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "sentry",
-   "roles_returned": 8,
+   "roles_returned": 7,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -583,7 +583,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "zapier",
-   "roles_returned": 4,
+   "roles_returned": 3,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -592,7 +592,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "notion",
-   "roles_returned": 16,
+   "roles_returned": 14,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -603,14 +603,14 @@
    "slug": "toptal",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Stripe",
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "stripe",
-   "roles_returned": 35,
+   "roles_returned": 33,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -646,7 +646,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "temporaltechnologies",
-   "roles_returned": 10,
+   "roles_returned": 9,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -664,7 +664,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "calendly",
-   "roles_returned": 6,
+   "roles_returned": 5,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -709,7 +709,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "1password",
-   "roles_returned": 28,
+   "roles_returned": 27,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -727,7 +727,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "docker",
-   "roles_returned": 10,
+   "roles_returned": 9,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -765,7 +765,7 @@
    "slug": "miro",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Sourcegraph",
@@ -781,7 +781,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "tailscale",
-   "roles_returned": 11,
+   "roles_returned": 10,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -801,7 +801,7 @@
    "slug": "amplitude",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Mixpanel",
@@ -864,7 +864,7 @@
    "slug": "assemblyai",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Customer.io",
@@ -882,7 +882,7 @@
    "slug": "knock",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Baseten",
@@ -907,7 +907,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "langchain",
-   "roles_returned": 6,
+   "roles_returned": 7,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -916,7 +916,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "sanity",
-   "roles_returned": 5,
+   "roles_returned": 4,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -927,7 +927,7 @@
    "slug": "alchemy",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 1
+   "consecutive_zero_runs": 2
   },
   {
    "name": "Sardine",
@@ -963,7 +963,7 @@
    "slug": "inngest",
    "roles_returned": 0,
    "fetch_failed": false,
-   "consecutive_zero_runs": 4
+   "consecutive_zero_runs": 5
   },
   {
    "name": "Metabase",
@@ -988,7 +988,7 @@
    "registry": "remote",
    "ats": "greenhouse",
    "slug": "samsara",
-   "roles_returned": 66,
+   "roles_returned": 63,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -997,7 +997,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "hinge-health",
-   "roles_returned": 24,
+   "roles_returned": 26,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -1033,7 +1033,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "angi",
-   "roles_returned": 7,
+   "roles_returned": 6,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -1087,7 +1087,7 @@
    "registry": "remote",
    "ats": "ashby",
    "slug": "grow-therapy",
-   "roles_returned": 17,
+   "roles_returned": 16,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },
@@ -1105,7 +1105,7 @@
    "registry": "staffing",
    "ats": "aquent",
    "slug": "aquent",
-   "roles_returned": 150,
+   "roles_returned": 143,
    "fetch_failed": false,
    "consecutive_zero_runs": 0
   },

@@ -138,41 +138,6 @@
   }
  },
  {
-  "key": "GitLab::8617252002",
-  "company": "GitLab",
-  "title": "Professional Services Program Manager",
-  "location": "Remote, US",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8617252002",
-  "posted": "2026-07-02",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "US-remote program leadership role",
-    "Multi-workstream transformation delivery mandate",
-    "Executive stakeholder engagement across customers",
-    "Professional services delivery aligns with background",
-    "Structured PMO-style ownership"
-   ],
-   "concerns": [
-    "DevSecOps/technical domain may require ramp-up",
-    "May be more delivery-execution than strategy"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 82,
-   "practical_fit": 90,
-   "opportunity_score": 82,
-   "score": 82,
-   "fit": "yes",
-   "reason": "US-remote program leadership role",
-   "bg": "cae648f28d15"
-  }
- },
- {
   "key": "GitLab::8612937002",
   "company": "GitLab",
   "title": "Staff Product Manager,  RevOps & Finance Systems",
@@ -1825,40 +1790,6 @@
   }
  },
  {
-  "key": "Circle::JR100873",
-  "company": "Circle",
-  "title": "Director, StableFX Strategy & GTM",
-  "location": "San Francisco, California, United States of America (Remote)",
-  "url": "https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Blockchain-Partner-Manager--Ecosystems_JR100873/apply",
-  "posted": "2026-07-07",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Remote role but niche fintech/crypto GTM strategy",
-    "Not aligned with transformation/ops/org-design core domains",
-    "Requires specialized FX/stablecoin market expertise"
-   ],
-   "concerns": [
-    "Highly specialized domain knowledge required",
-    "Not a transformation or operations mandate",
-    "Weak match to candidate's proof points"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 60,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Remote role but niche fintech/crypto GTM strategy",
-   "bg": "cae648f28d15"
-  }
- },
- {
   "key": "Circle::JR101070",
   "company": "Circle",
   "title": "Senior Director, Arc \u2013 Agentic Economy Strategy & GTM",
@@ -1889,6 +1820,40 @@
    "score": 42,
    "fit": "maybe",
    "reason": "Strategy/GTM leadership role",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Circle::JR100873",
+  "company": "Circle",
+  "title": "Director, StableFX Strategy & GTM",
+  "location": "San Francisco, California, United States of America (Remote)",
+  "url": "https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Blockchain-Partner-Manager--Ecosystems_JR100873/apply",
+  "posted": "2026-07-07",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote role but niche fintech/crypto GTM strategy",
+    "Not aligned with transformation/ops/org-design core domains",
+    "Requires specialized FX/stablecoin market expertise"
+   ],
+   "concerns": [
+    "Highly specialized domain knowledge required",
+    "Not a transformation or operations mandate",
+    "Weak match to candidate's proof points"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 60,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Remote role but niche fintech/crypto GTM strategy",
    "bg": "cae648f28d15"
   }
  },

@@ -782,6 +782,41 @@
   }
  },
  {
+  "key": "Supabase::8229db66-dc3f-4ffe-8d86-90ce9ffb4c90",
+  "company": "Supabase",
+  "title": "Engineering Productivity Engineer",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/supabase/8229db66-dc3f-4ffe-8d86-90ce9ffb4c90",
+  "posted": "2026-08-02",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote role fits location needs",
+    "Developer experience/tooling aligns with interests",
+    "Strong company/platform reputation",
+    "CI/testing infra not core strength"
+   ],
+   "concerns": [
+    "Focus is DevProd/infra not full-stack SaaS product",
+    "Less frontend/React emphasis than Chad prefers",
+    "Unclear seniority/scope of ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 60,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote role fits location needs",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Supabase::3b5d54ca-741b-45ac-bd3f-31605a0d3541",
   "company": "Supabase",
   "title": "AI Platform Engineer",
@@ -1902,6 +1937,38 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Remote US role fits location needs",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "LangChain::b8dead31-212a-4b92-82a7-c42df16ae877",
+  "company": "LangChain",
+  "title": "Customer Engineer, Enablement",
+  "location": "San Francisco, CA (Remote)",
+  "url": "https://jobs.ashbyhq.com/langchain/b8dead31-212a-4b92-82a7-c42df16ae877",
+  "posted": "2026-08-01",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Customer-facing enablement, not engineering IC role",
+    "Dealbreaker-adjacent: sales/customer support function"
+   ],
+   "concerns": [
+    "Not hands-on software engineering",
+    "Customer engineer role misaligned with IC engineering goals"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Customer-facing enablement, not engineering IC role",
    "bg": "8d3fa4bf6180"
   }
  },
