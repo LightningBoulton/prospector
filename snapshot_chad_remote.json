@@ -1,5 +1,40 @@
 [
  {
+  "key": "GitLab::8644569002",
+  "company": "GitLab",
+  "title": "Intermediate Backend Engineer, Platform Readiness",
+  "location": "Remote, Canada; Remote, United States",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8644569002",
+  "posted": "2026-08-03",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote-friendly, matches location preference",
+    "Developer tooling/DevEx aligns with interests",
+    "GitLab is strong platform engineering company",
+    "Backend-focused, less frontend/full-stack emphasis"
+   ],
+   "concerns": [
+    "Title 'Intermediate' suggests below Principal seniority",
+    "Compensation and level unclear vs $190k minimum",
+    "Primarily backend, less React/full-stack usage"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 60,
+   "practical_fit": 82,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Remote-friendly, matches location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "GitLab::8654230002",
   "company": "GitLab",
   "title": "Support Engineer (AMER)",
@@ -30,6 +65,39 @@
    "score": 20,
    "fit": "no",
    "reason": "Support engineering is explicit dealbreaker",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Cloudflare::8087769",
+  "company": "Cloudflare",
+  "title": "Senior Customer Engineer - Nashville",
+  "location": "Distributed",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8087769?gh_jid=8087769",
+  "posted": "2026-08-03",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Sales engineering role, explicit dealbreaker",
+    "Customer-facing pre/post sales, not hands-on engineering",
+    "Not aligned with IC engineering career goals"
+   ],
+   "concerns": [
+    "Dealbreaker: sales engineering",
+    "Not remote-clear, Nashville focused role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 5,
+   "practical_fit": 30,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Sales engineering role, explicit dealbreaker",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -372,40 +440,6 @@
   }
  },
  {
-  "key": "Twilio::8100236",
-  "company": "Twilio",
-  "title": "Software Engineer (L2)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8100236",
-  "posted": "2026-07-31",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote US role fits location preference",
-    "Distributed systems at scale aligns with interests",
-    "Enterprise SaaS/platform experience relevant"
-   ],
-   "concerns": [
-    "L2 title suggests below Principal seniority target",
-    "Backend distributed systems focus, less frontend/React",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Remote US role fits location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Twilio::8097672",
   "company": "Twilio",
   "title": "Software Engineer (L2)",
@@ -435,6 +469,40 @@
    "practical_fit": 90,
    "opportunity_score": 60,
    "score": 60,
+   "fit": "maybe",
+   "reason": "Remote US role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Twilio::8100236",
+  "company": "Twilio",
+  "title": "Software Engineer (L2)",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8100236",
+  "posted": "2026-07-31",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location preference",
+    "Distributed systems at scale aligns with interests",
+    "Enterprise SaaS/platform experience relevant"
+   ],
+   "concerns": [
+    "L2 title suggests below Principal seniority target",
+    "Backend distributed systems focus, less frontend/React",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
    "reason": "Remote US role fits location preference",
    "bg": "8d3fa4bf6180"
@@ -1260,6 +1328,41 @@
   }
  },
  {
+  "key": "1Password::5cea0067-467b-4e1a-9ae5-089541ecd827",
+  "company": "1Password",
+  "title": "Senior Developer, CI Architecture",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/5cea0067-467b-4e1a-9ae5-089541ecd827",
+  "posted": "2026-08-03",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote-eligible role fits location constraints",
+    "Developer experience/tooling focus aligns with interests",
+    "CI/build architecture is niche vs candidate's frontend/full-stack strength",
+    "Reputable, growing company"
+   ],
+   "concerns": [
+    "Heavy CI/CD/build-systems focus not core to candidate's background",
+    "Little frontend/full-stack architecture emphasis",
+    "Unclear seniority scope vs Principal-level expectations"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote-eligible role fits location constraints",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Docker::ec1eeb85-73bd-4956-bb67-93e0c42958e2",
   "company": "Docker",
   "title": "Senior Principal Product Manager, AI & Agent Platform",
@@ -1535,40 +1638,6 @@
   }
  },
  {
-  "key": "ClickHouse::6130149004",
-  "company": "ClickHouse",
-  "title": "Product Security Engineer",
-  "location": "United States (remote)",
-  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/6130149004",
-  "posted": "2026-07-29",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Security engineering role, not software engineering focus",
-    "Requires deep security/vuln expertise candidate lacks",
-    "US-remote location matches practical preference"
-   ],
-   "concerns": [
-    "Not full-stack/platform engineering as candidate wants",
-    "Requires specialized security domain expertise not in profile",
-    "Mismatch with candidate's core strengths in React/.NET/cloud architecture"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 20,
-   "practical_fit": 75,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Security engineering role, not software engineering focus",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "ClickHouse::6127775004",
   "company": "ClickHouse",
   "title": "Senior Curriculum Developer & Instructor",
@@ -1597,6 +1666,40 @@
    "score": 12,
    "fit": "no",
    "reason": "Curriculum/training role, not engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "ClickHouse::6130149004",
+  "company": "ClickHouse",
+  "title": "Senior Product Security Engineer",
+  "location": "United States (remote)",
+  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/6130149004",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Security engineering role, not software engineering focus",
+    "Requires deep security/vuln expertise candidate lacks",
+    "US-remote location matches practical preference"
+   ],
+   "concerns": [
+    "Not full-stack/platform engineering as candidate wants",
+    "Requires specialized security domain expertise not in profile",
+    "Mismatch with candidate's core strengths in React/.NET/cloud architecture"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 75,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Security engineering role, not software engineering focus",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1740,6 +1843,40 @@
   }
  },
  {
+  "key": "Chainguard::4700933006",
+  "company": "Chainguard",
+  "title": "Staff Software Engineer (AI CICD)",
+  "location": "Europe - Remote; United Kingdom - Remote; United States - Remote",
+  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700933006",
+  "posted": "2026-07-29",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Fully remote US option fits location needs",
+    "AI infrastructure and developer tooling align with interests",
+    "Staff-level IC role preserves hands-on engineering",
+    "Cloud-native, agentic AI product work is compelling"
+   ],
+   "concerns": [
+    "Deep CI/CD and software supply-chain security expertise not demonstrated",
+    "Requires strong DevSecOps background beyond current stack"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 58,
+   "interest_fit": 75,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "maybe",
+   "reason": "Fully remote US option fits location needs",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Chainguard::4700929006",
   "company": "Chainguard",
   "title": "Staff Software Engineer (AI CICD)",
@@ -1771,40 +1908,6 @@
    "score": 72,
    "fit": "yes",
    "reason": "Remote-first, matches location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Chainguard::4700933006",
-  "company": "Chainguard",
-  "title": "Staff Software Engineer (AI CICD)",
-  "location": "Europe - Remote; United Kingdom - Remote; United States - Remote",
-  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700933006",
-  "posted": "2026-07-29",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Fully remote US option fits location needs",
-    "AI infrastructure and developer tooling align with interests",
-    "Staff-level IC role preserves hands-on engineering",
-    "Cloud-native, agentic AI product work is compelling"
-   ],
-   "concerns": [
-    "Deep CI/CD and software supply-chain security expertise not demonstrated",
-    "Requires strong DevSecOps background beyond current stack"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 58,
-   "interest_fit": 75,
-   "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "maybe",
-   "reason": "Fully remote US option fits location needs",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1941,6 +2044,76 @@
   }
  },
  {
+  "key": "LangChain::937e131f-1055-4f1f-bd8a-f036e4ba0666",
+  "company": "LangChain",
+  "title": "Deployed Engineer (Austin)",
+  "location": "Austin, TX (Remote)",
+  "url": "https://jobs.ashbyhq.com/langchain/937e131f-1055-4f1f-bd8a-f036e4ba0666",
+  "posted": "2026-08-03",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "AI infrastructure company matches interest area",
+    "Requires customer-facing pre-sales technical work",
+    "Not pure hands-on engineering role",
+    "Deployed Engineer resembles sales engineering"
+   ],
+   "concerns": [
+    "Sales engineering-like customer-facing role is dealbreaker",
+    "Pre-sales evaluations conflict with IC engineering preference",
+    "Location listed as onsite Austin despite remote tag"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "AI infrastructure company matches interest area",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "LangChain::8b533cc4-6654-44b4-b3fc-004def2a9927",
+  "company": "LangChain",
+  "title": "Deployed Engineer (Dallas)",
+  "location": "Dallas, TX (Remote)",
+  "url": "https://jobs.ashbyhq.com/langchain/8b533cc4-6654-44b4-b3fc-004def2a9927",
+  "posted": "2026-08-03",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Customer-facing deployed engineer role, not core IC development",
+    "Overlaps with sales engineering, a dealbreaker",
+    "AI infrastructure company aligns with interests",
+    "Location Dallas, not remote-confirmed for Chad's area"
+   ],
+   "concerns": [
+    "Heavy customer/pre-sales engagement resembles sales engineering",
+    "Not hands-on product engineering focus",
+    "Location tied to Dallas territory"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 45,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Customer-facing deployed engineer role, not core IC development",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "LangChain::b8dead31-212a-4b92-82a7-c42df16ae877",
   "company": "LangChain",
   "title": "Customer Engineer, Enablement",
@@ -1969,6 +2142,41 @@
    "score": 20,
    "fit": "no",
    "reason": "Customer-facing enablement, not engineering IC role",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "LangChain::385313eb-bff4-4019-8106-42714dc9879a",
+  "company": "LangChain",
+  "title": "Deployed Engineer (Houston)",
+  "location": "Houston, TX (Remote)",
+  "url": "https://jobs.ashbyhq.com/langchain/385313eb-bff4-4019-8106-42714dc9879a",
+  "posted": "2026-08-03",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "AI infra company aligns loosely with interests",
+    "Role is customer-facing deployed engineering, not core SWE",
+    "Sales-engineering-like lifecycle involvement",
+    "Onsite Houston, not remote-first for candidate"
+   ],
+   "concerns": [
+    "Heavy pre-sales/customer advisory work resembles sales engineering dealbreaker",
+    "Location Houston not remote/Utah, relocation implied",
+    "Not a hands-on product engineering IC role"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 25,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "AI infra company aligns loosely with interests",
    "bg": "8d3fa4bf6180"
   }
  },

@@ -406,6 +406,41 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025703",
+  "company": "Western Governors University",
+  "title": "Senior Cloud Engineer (IAM)",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer--IAM-_JR-025703",
+  "posted": "2026-08-03",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah on-site location matches preference",
+    "Has AWS, OAuth, Cognito, JWT experience",
+    "IAM specialization narrower than generalist background",
+    "Limited description makes mandate unclear"
+   ],
+   "concerns": [
+    "No job description to assess actual scope",
+    "IAM-focused role may be too narrow/specialized",
+    "Unclear if hands-on engineering vs. security/ops focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 48,
+   "score": 48,
+   "fit": "maybe",
+   "reason": "Utah on-site location matches preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Western Governors University::JR-025759",
   "company": "Western Governors University",
   "title": "Senior Software Engineer",
@@ -672,41 +707,6 @@
    "score": 15,
    "fit": "no",
    "reason": "Product management, not engineering role",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Western Governors University::JR-025703",
-  "company": "Western Governors University",
-  "title": "Senior Cloud Engineer (IAM)",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer--IAM-_JR-025703",
-  "posted": "2026-07-28",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah on-site location matches preference",
-    "Has AWS, OAuth, Cognito, JWT experience",
-    "IAM specialization narrower than generalist background",
-    "Limited description makes mandate unclear"
-   ],
-   "concerns": [
-    "No job description to assess actual scope",
-    "IAM-focused role may be too narrow/specialized",
-    "Unclear if hands-on engineering vs. security/ops focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 48,
-   "score": 48,
-   "fit": "maybe",
-   "reason": "Utah on-site location matches preference",
    "bg": "8d3fa4bf6180"
   }
  },
