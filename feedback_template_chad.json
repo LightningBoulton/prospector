@@ -23,9 +23,16 @@
    "note": ""
   },
   {
-   "key": "Adobe::R170420",
-   "company": "Adobe",
-   "title": "Sr Data Solution Engineer",
+   "key": "1Password::b50830bf-d475-4cd9-b89c-b2176a4d1465",
+   "company": "1Password",
+   "title": "Senior Security Engineer, Vulnerability Management",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7820306003",
+   "company": "Affirm",
+   "title": "Senior Software Engineer, Backend (Reliability Platform)",
    "status": "",
    "note": ""
   },
@@ -44,9 +51,9 @@
    "note": ""
   },
   {
-   "key": "BILL::6128903004",
-   "company": "BILL",
-   "title": "Senior Lead Product Manager - Decisioning Platform",
+   "key": "Angi::59a468ef-aef4-41a1-8bf2-5c920524e5d0",
+   "company": "Angi",
+   "title": "Principal Product Manager, AI Platform",
    "status": "",
    "note": ""
   },
@@ -54,13 +61,6 @@
    "key": "BambooHR::6120089004",
    "company": "BambooHR",
    "title": "Sr. Data Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "BambooHR::6127677004",
-   "company": "BambooHR",
-   "title": "Sr. Product Manager, Core Data Platform",
    "status": "",
    "note": ""
   },
@@ -79,16 +79,9 @@
    "note": ""
   },
   {
-   "key": "Buffer::1ee8b707-48a0-40cc-a319-3fb7c665a1e8",
-   "company": "Buffer",
-   "title": "Senior Infrastructure Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Chainguard::4700287006",
-   "company": "Chainguard",
-   "title": "Senior Security Engineer (Cloud)",
+   "key": "Canopy::4355401009",
+   "company": "Canopy",
+   "title": "Senior Full Stack Engineer",
    "status": "",
    "note": ""
   },
@@ -107,14 +100,14 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4700929006",
+   "key": "Chainguard::4700933006",
    "company": "Chainguard",
    "title": "Staff Software Engineer (AI CICD)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Chainguard::4700933006",
+   "key": "Chainguard::4700929006",
    "company": "Chainguard",
    "title": "Staff Software Engineer (AI CICD)",
    "status": "",
@@ -128,6 +121,20 @@
    "note": ""
   },
   {
+   "key": "Circle::JR101085",
+   "company": "Circle",
+   "title": "Senior Site Reliability Engineer - Infra Ops",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Circle::JR101101",
+   "company": "Circle",
+   "title": "Staff Site Reliability Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "ClickHouse::6130149004",
    "company": "ClickHouse",
    "title": "Senior Product Security Engineer",
@@ -137,7 +144,7 @@
   {
    "key": "Close::bbd78474-bee4-4fdc-a670-9234457bcf29",
    "company": "Close",
-   "title": "Senior Frontend Engineer - Growth (USA Only - 100% Remote)",
+   "title": "Senior Frontend Engineer \u2013 Growth (USA Only - 100% Remote)",
    "status": "",
    "note": ""
   },
@@ -170,13 +177,6 @@
    "note": ""
   },
   {
-   "key": "Coinbase::8088201",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer - Frontend - Coinbase Card team",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Coinbase::8095252",
    "company": "Coinbase",
    "title": "Senior Software Engineer, Backend - Platform (Tokens & Wrapped Assets)",
@@ -191,23 +191,23 @@
    "note": ""
   },
   {
+   "key": "Cricut::744000141575704",
+   "company": "Cricut",
+   "title": "Lead Agentic Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cricut::744000141577074",
+   "company": "Cricut",
+   "title": "Lead Agentic Software Engineer, Connected Devices",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Cricut::744000140495670",
    "company": "Cricut",
    "title": "Product Quality Engineer \u2013 Materials",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cricut::744000141345359",
-   "company": "Cricut",
-   "title": "Senior Mechanical Engineer: Test Development Engineering",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Deepgram::6f3d761e-4873-43af-a9b1-daeb147661f9",
-   "company": "Deepgram",
-   "title": "Senior Software Engineer - Model Evaluation & AI Systems",
    "status": "",
    "note": ""
   },
@@ -250,6 +250,41 @@
    "key": "Fivetran::7822951003",
    "company": "Fivetran",
    "title": "Senior Business Value Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Gemini::8099895",
+   "company": "Gemini",
+   "title": "Senior Data Platform Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8644569002",
+   "company": "GitLab",
+   "title": "Intermediate Backend Engineer, Platform Readiness",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8658878002",
+   "company": "GitLab",
+   "title": "Principal Product Manager, AI Software Factory",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8644572002",
+   "company": "GitLab",
+   "title": "Senior Backend Engineer, Platform Readiness",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8654230002",
+   "company": "GitLab",
+   "title": "Support Engineer (AMER)",
    "status": "",
    "note": ""
   },
@@ -331,20 +366,6 @@
    "note": ""
   },
   {
-   "key": "LVT::5367884008",
-   "company": "LVT",
-   "title": "Fullstack Software Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "LVT::5368027008",
-   "company": "LVT",
-   "title": "Senior Fullstack Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "LVT::5372856008",
    "company": "LVT",
    "title": "Senior Software Engineer II - Backend",
@@ -352,9 +373,16 @@
    "note": ""
   },
   {
+   "key": "LVT::5377974008",
+   "company": "LVT",
+   "title": "Sensor Integration Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "LangChain::b8dead31-212a-4b92-82a7-c42df16ae877",
    "company": "LangChain",
-   "title": "Customer Engineer, Enablement",
+   "title": "AI Engineer, Enablement",
    "status": "",
    "note": ""
   },
@@ -380,23 +408,16 @@
    "note": ""
   },
   {
-   "key": "LaunchDarkly::7819879003",
-   "company": "LaunchDarkly",
-   "title": "Developer Advocate, Growth",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "MX::4339716009",
    "company": "MX",
-   "title": "Sr. Site Reliability Engineer",
+   "title": "Sr. Observability Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Marqeta::8077189",
-   "company": "Marqeta",
-   "title": "Senior Production Support Engineer",
+   "key": "Mercury::6134310004",
+   "company": "Mercury",
+   "title": "Senior Cloud Security Engineer - InfoSec",
    "status": "",
    "note": ""
   },
@@ -408,23 +429,23 @@
    "note": ""
   },
   {
-   "key": "NICE::4940224101",
+   "key": "NICE::4931025101",
    "company": "NICE",
-   "title": "Professional Services Engineer",
+   "title": "Partner Success Implementation Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "O.C. Tanner::JR26-205",
-   "company": "O.C. Tanner",
-   "title": "Sr. Site Reliability Engineer",
+   "key": "Pinecone::ad347d1a-93d7-4867-83bc-99b06d3b5f01",
+   "company": "Pinecone",
+   "title": "Senior/Staff Software Engineer, Experience",
    "status": "",
    "note": ""
   },
   {
-   "key": "Ramp::b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
-   "company": "Ramp",
-   "title": "Software Engineer, Forward Deployed AI",
+   "key": "Pinecone::7ef089cb-a721-4ad8-a6d0-c390e64991d2",
+   "company": "Pinecone",
+   "title": "Senior/Staff Software Engineer, Search & Retrieval Infrastructure",
    "status": "",
    "note": ""
   },
@@ -439,6 +460,13 @@
    "key": "Reddit::8093021",
    "company": "Reddit",
    "title": "Frontend Engineer III, Moderation Enforcement",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8106246",
+   "company": "Reddit",
+   "title": "Senior Software Engineer - Messaging",
    "status": "",
    "note": ""
   },
@@ -478,6 +506,13 @@
    "note": ""
   },
   {
+   "key": "Sanity::4f892238-04a5-442e-ab36-7f1f60010abf",
+   "company": "Sanity",
+   "title": "Solutions Engineer, PreSales - Senior to Staff level (US)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Sardine::527bac62-7445-4942-b2df-575fcb93e182",
    "company": "Sardine",
    "title": "Data Engineer - Onboarding",
@@ -513,6 +548,13 @@
    "note": ""
   },
   {
+   "key": "Stripe::8089353",
+   "company": "Stripe",
+   "title": "Software Engineer, Vulnerability Management",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Supabase::3b5d54ca-741b-45ac-bd3f-31605a0d3541",
    "company": "Supabase",
    "title": "AI Platform Engineer",
@@ -534,16 +576,9 @@
    "note": ""
   },
   {
-   "key": "Supabase::11beb619-0c25-4b11-9818-3f18e278c65b",
+   "key": "Supabase::f44742fb-18c6-478f-bf78-63707ed57db7",
    "company": "Supabase",
-   "title": "Performance Engineer - Benchmarking",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Supabase::98ef6a11-9898-4960-9931-1264285849f3",
-   "company": "Supabase",
-   "title": "Performance Engineer - Performance Analysis & Tuning",
+   "title": "SDK Engineer - JavaScript",
    "status": "",
    "note": ""
   },
@@ -551,6 +586,13 @@
    "key": "Supabase::dcf09dfe-55bc-44ba-b5db-1a2de7f33216",
    "company": "Supabase",
    "title": "Support Engineer (AMER - Weekends)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Tailscale::4721289005",
+   "company": "Tailscale",
+   "title": "Analytics Engineer, Data",
    "status": "",
    "note": ""
   },
@@ -576,9 +618,16 @@
    "note": ""
   },
   {
-   "key": "Twilio::8044650",
-   "company": "Twilio",
-   "title": "Senior Analytics Engineer",
+   "key": "Together AI::5202015007",
+   "company": "Together AI",
+   "title": "Technical Support Engineer (GPU Clusters) - US Weekends",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Together AI::5202021007",
+   "company": "Together AI",
+   "title": "Technical Support Engineer (Inference) - US Weekends",
    "status": "",
    "note": ""
   },
@@ -590,14 +639,21 @@
    "note": ""
   },
   {
-   "key": "Twilio::8097672",
+   "key": "Twilio::8099162",
+   "company": "Twilio",
+   "title": "Senior Software Engineer (L3)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8100236",
    "company": "Twilio",
    "title": "Software Engineer (L2)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8100236",
+   "key": "Twilio::8097672",
    "company": "Twilio",
    "title": "Software Engineer (L2)",
    "status": "",
@@ -614,6 +670,20 @@
    "key": "Twilio::8098945",
    "company": "Twilio",
    "title": "Software Engineer (L4)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8026207",
+   "company": "Twilio",
+   "title": "Software Engineer, Platform Engineering (L2)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8026203",
+   "company": "Twilio",
+   "title": "Software Engineer-Platform Engineering (L3)",
    "status": "",
    "note": ""
   },
@@ -660,6 +730,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025309",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer- Full-Stack- Java/Angular",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025615",
    "company": "Western Governors University",
    "title": "Senior User Experience Designer-Software",
@@ -670,13 +747,6 @@
    "key": "Western Governors University::JR-025312",
    "company": "Western Governors University",
    "title": "Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025709",
-   "company": "Western Governors University",
-   "title": "Software Engineer I - Full-Stack",
    "status": "",
    "note": ""
   },
