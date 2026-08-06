@@ -35,36 +35,34 @@
   }
  },
  {
-  "key": "DigiCert::8624428002",
-  "company": "DigiCert",
-  "title": "Senior Infrastructure Engineer",
-  "location": "Lehi",
-  "url": "https://www.digicert.com/careers/?gh_jid=8624428002",
-  "posted": "2026-07-29",
+  "key": "Cricut::744000141753089",
+  "company": "Cricut",
+  "title": "Senior Mechanical Engineer: Test Development Engineering",
+  "location": "South Jordan, UT, United States",
+  "url": "https://jobs.smartrecruiters.com/cricut/744000141753089",
+  "posted": "2026-08-05",
   "salary": null,
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Infrastructure/ops role, not software engineering",
-    "No React/.NET/frontend engineering focus",
-    "Datacenter hardware ops mismatches candidate's skillset"
+    "Mechanical engineering role, not software",
+    "Not aligned with candidate's skillset"
    ],
    "concerns": [
-    "Wrong function - infra/sysadmin not software dev",
-    "Requires onsite days for hardware testing",
-    "No mention of compensation"
+    "Wrong function entirely",
+    "No software engineering scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "score": 15,
+   "qualification_fit": 3,
+   "interest_fit": 2,
+   "practical_fit": 20,
+   "opportunity_score": 3,
+   "score": 3,
    "fit": "no",
-   "reason": "Infrastructure/ops role, not software engineering",
+   "reason": "Mechanical engineering role, not software",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -135,38 +133,6 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Utah location matches preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Cricut::744000140495670",
-  "company": "Cricut",
-  "title": "Product Quality Engineer \u2013 Materials",
-  "location": "South Jordan, UT, United States",
-  "url": "https://jobs.smartrecruiters.com/cricut/744000140495670",
-  "posted": "2026-07-29",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Materials/quality engineering, not software engineering",
-    "No alignment with full-stack or platform engineering background"
-   ],
-   "concerns": [
-    "Wrong function entirely",
-    "No description to verify but title suggests mismatch"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 5,
-   "practical_fit": 30,
-   "opportunity_score": 5,
-   "score": 5,
-   "fit": "no",
-   "reason": "Materials/quality engineering, not software engineering",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -309,6 +275,74 @@
   }
  },
  {
+  "key": "BambooHR::6115974004",
+  "company": "BambooHR",
+  "title": "Sr. Forward Deployed Engineer",
+  "location": "Utah | Hybrid",
+  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6115974004",
+  "posted": "2026-08-05",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah hybrid location matches preference",
+    "Uses AI coding tools, aligns with AI interest",
+    "Requires customer travel, not preferred"
+   ],
+   "concerns": [
+    "Travel-heavy customer-facing role, not core IC engineering",
+    "Sales-engineering-like customer discovery focus",
+    "Credit/background check and hybrid travel constraints"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 45,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah hybrid location matches preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Pattern::284fdb28-7c35-4168-91c8-4340c472eeba",
+  "company": "Pattern",
+  "title": "Sr Software Engineer, Identity & Access Management (IAM)",
+  "location": "Lehi, UT, US",
+  "url": "https://jobs.lever.co/pattern/284fdb28-7c35-4168-91c8-4340c472eeba",
+  "posted": "2026-08-05",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah-based, avoids relocation",
+    "IAM niche differs from core frontend/full-stack strengths",
+    "Enterprise SaaS/AI company aligns with interests"
+   ],
+   "concerns": [
+    "No compensation details provided",
+    "IAM specialization not a core strength",
+    "Onsite in Lehi, not remote"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 65,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah-based, avoids relocation",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "NICE::4940087101",
   "company": "NICE",
   "title": "AI DevOps Engineer",
@@ -374,6 +408,40 @@
    "score": 20,
    "fit": "no",
    "reason": "Remote US location matches preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025846",
+  "company": "Western Governors University",
+  "title": "Associate Learning Systems Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Associate-Learning-Systems-Engineer_JR-025846",
+  "posted": "2026-08-05",
+  "salary": "$62,100.00 - $93,200.00",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Title suggests junior-level role",
+    "Learning systems not core engineering focus",
+    "Utah location matches preference"
+   ],
+   "concerns": [
+    "Associate-level likely below seniority target",
+    "No description to confirm tech stack",
+    "Possible non-software engineering scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Title suggests junior-level role",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -650,145 +718,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025286",
-  "company": "Western Governors University",
-  "title": "Senior Software Engineer",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025286",
-  "posted": "2026-07-29",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Senior Software Engineer title matches seniority target",
-    "Salt Lake City location fits practical preference",
-    "No description available to assess mandate quality"
-   ],
-   "concerns": [
-    "No job description to verify tech stack or scope",
-    "Unknown compensation vs $190k minimum",
-    "WGU may be less technically ambitious than SaaS/platform roles"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 50,
-   "practical_fit": 75,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Senior Software Engineer title matches seniority target",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Western Governors University::JR-025312",
-  "company": "Western Governors University",
-  "title": "Software Engineer",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer--WIS-to-Domestic-_JR-025312",
-  "posted": "2026-07-29",
-  "salary": "$98,300.00 - $147,400.00",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah-based, matches location preference",
-    "Generic title suggests non-senior level",
-    "Enterprise software domain aligns loosely",
-    "No description to confirm tech stack or scope"
-   ],
-   "concerns": [
-    "Title 'Software Engineer' may be below Principal/Staff level",
-    "No compensation or seniority details provided",
-    "Unclear if role offers hands-on technical leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Utah-based, matches location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Western Governors University::JR-025513",
-  "company": "Western Governors University",
-  "title": "Associate Software Product Manager",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Product-Manager_JR-025513",
-  "posted": "2026-07-29",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Product management, not engineering role",
-    "Associate level too junior for Principal",
-    "Non-engineering role is a dealbreaker"
-   ],
-   "concerns": [
-    "Title suggests PM track, not IC engineering",
-    "No technical hands-on scope described",
-    "Likely far below $190k target for Associate level"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 65,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Product management, not engineering role",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "LVT::5372856008",
-  "company": "LVT",
-  "title": "Senior Software Engineer II - Backend",
-  "location": "American Fork, Utah, United States",
-  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5372856008",
-  "posted": "2026-07-29",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Senior IC backend engineering role fits skillset",
-    "Microservices/APIs match strong architecture background",
-    "Utah location (American Fork) within acceptable range",
-    "AI-driven platform aligns with AI interest",
-    "Mentoring aspect fits leadership-without-management preference"
-   ],
-   "concerns": [
-    "Onsite in American Fork, not remote or SLC-hybrid confirmed",
-    "Compensation not stated",
-    "Backend-only role may underuse frontend strengths"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 65,
-   "practical_fit": 70,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Senior IC backend engineering role fits skillset",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "LVT::5377974008",
   "company": "LVT",
   "title": "Sensor Integration Engineer II",
@@ -818,6 +747,41 @@
    "score": 8,
    "fit": "no",
    "reason": "Hardware/sensor QA role, not software engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "LVT::5381423008",
+  "company": "LVT",
+  "title": "Staff Software Engineer - Backend",
+  "location": "American Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5381423008",
+  "posted": "2026-08-05",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Staff backend IC role matches seniority target",
+    "Utah location within commute range",
+    "AI-driven platform aligns with AI infrastructure interest",
+    "Architecture and mentoring responsibilities fit strengths"
+   ],
+   "concerns": [
+    "Backend-heavy role, less frontend/React emphasis",
+    "Onsite in American Fork, not remote",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 60,
+   "practical_fit": 55,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Staff backend IC role matches seniority target",
    "bg": "8d3fa4bf6180"
   }
  }

@@ -107,13 +107,6 @@
    "note": ""
   },
   {
-   "key": "Airtable::8610944002",
-   "company": "Airtable",
-   "title": "Manager, Sales Strategy & Planning",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Angi::a3d6b7cd-11ea-47be-92f8-eaa03512332c",
    "company": "Angi",
    "title": "Director, Sales Operations",
@@ -145,6 +138,13 @@
    "key": "Aquent::211577",
    "company": "Aquent",
    "title": "Marketing Operations Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::212054",
+   "company": "Aquent",
+   "title": "People Operations Manager",
    "status": "",
    "note": ""
   },
@@ -187,13 +187,6 @@
    "key": "BambooHR::6011897004",
    "company": "BambooHR",
    "title": "Sr. Marketing Operations Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Brex::8621533002",
-   "company": "Brex",
-   "title": "Revenue Operations Manager",
    "status": "",
    "note": ""
   },
@@ -250,6 +243,13 @@
    "key": "Coinbase::8089161",
    "company": "Coinbase",
    "title": "Manager, WFM Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8110496",
+   "company": "Coinbase",
+   "title": "Senior Manager Product Operations, FCM Ops",
    "status": "",
    "note": ""
   },
@@ -317,6 +317,13 @@
    "note": ""
   },
   {
+   "key": "Fivetran::7818276003",
+   "company": "Fivetran",
+   "title": "Marketing Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Fivetran::7803214003",
    "company": "Fivetran",
    "title": "Senior Director, People Strategy & Execution",
@@ -359,6 +366,13 @@
    "note": ""
   },
   {
+   "key": "GitLab::8686820002",
+   "company": "GitLab",
+   "title": "Director, Revenue Analytics",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "GitLab::8632005002",
    "company": "GitLab",
    "title": "Hyperscaler Operations Manager",
@@ -369,6 +383,13 @@
    "key": "GitLab::8643154002",
    "company": "GitLab",
    "title": "Manager, IT SOX PMO",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8679047002",
+   "company": "GitLab",
+   "title": "Senior Analyst, Sales Strategy",
    "status": "",
    "note": ""
   },
@@ -390,6 +411,13 @@
    "key": "Grow Therapy::31f85f93-5202-4c30-99f6-b9c95af46562",
    "company": "Grow Therapy",
    "title": "Director, Revenue Cycle Management Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Grow Therapy::2cf6b8af-4bc3-4faf-a41b-390a3ebeaa8d",
+   "company": "Grow Therapy",
+   "title": "Manager, Strategic Planning",
    "status": "",
    "note": ""
   },
@@ -464,13 +492,6 @@
    "note": ""
   },
   {
-   "key": "Maven Clinic::8620831002",
-   "company": "Maven Clinic",
-   "title": "Revenue Operations Manager (Payments and Reconciliation)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Mercury::6122476004",
    "company": "Mercury",
    "title": "AI Context Operations Lead",
@@ -481,6 +502,13 @@
    "key": "Mercury::6130879004",
    "company": "Mercury",
    "title": "Payment Operations Lead",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Mercury::6135823004",
+   "company": "Mercury",
+   "title": "Senior Manager - Product Partner Operations",
    "status": "",
    "note": ""
   },
@@ -537,6 +565,13 @@
    "key": "O.C. Tanner::JR26-147",
    "company": "O.C. Tanner",
    "title": "Manager, IT Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Omada Health::8103250",
+   "company": "Omada Health",
+   "title": "Customer Experience Enablement Senior Manager",
    "status": "",
    "note": ""
   },
@@ -618,23 +653,9 @@
    "note": ""
   },
   {
-   "key": "Samsara::8008386",
-   "company": "Samsara",
-   "title": "Manager, Technical Program Management",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Samsara::8070083",
    "company": "Samsara",
    "title": "Pre-Sales Services Consultant (Engagement Services Manager)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::7836977",
-   "company": "Samsara",
-   "title": "Senior Director, Finance Operations",
    "status": "",
    "note": ""
   },
@@ -674,16 +695,9 @@
    "note": ""
   },
   {
-   "key": "Sardine::8d5da342-86f7-4ac9-a61d-f91a7e60bfeb",
-   "company": "Sardine",
-   "title": "Marketing Operations Lead",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Smartsheet::8099286",
+   "key": "Smartsheet::8109667",
    "company": "Smartsheet",
-   "title": "Sr. Manager, Service Operations",
+   "title": "Solutions Consultant - East",
    "status": "",
    "note": ""
   },
@@ -698,13 +712,6 @@
    "key": "Stripe::8065643",
    "company": "Stripe",
    "title": "Head of Marketing Operations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Stripe::8039423",
-   "company": "Stripe",
-   "title": "Operations Program Manager",
    "status": "",
    "note": ""
   },
@@ -807,23 +814,16 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025721",
+   "company": "Western Governors University",
+   "title": "Project Manager IV, Transformation",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025784",
    "company": "Western Governors University",
    "title": "Senior Manager, Enterprise Partnerships - Institution Strategy & Ventures",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "iCapital::8605505002",
-   "company": "iCapital",
-   "title": "Product Solutions - Vice President",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "iCapital::8606952002",
-   "company": "iCapital",
-   "title": "Strategic Transformation, Data Support - Associate",
    "status": "",
    "note": ""
   }

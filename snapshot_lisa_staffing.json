@@ -1,41 +1,5 @@
 [
  {
-  "key": "Aquent::211898",
-  "company": "Aquent",
-  "title": "Business Program Manager",
-  "location": "REDMOND, WA, US (Remote)",
-  "url": "https://aquent.com/find-work/211898",
-  "posted": "2026-07-28",
-  "salary": "up to $67.00/hr",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "reasons": [
-    "Executive-facing program/ops leadership mandate",
-    "Strategic roadmap and OKR ownership",
-    "Remote-friendly contract role",
-    "Aligns with business ops and program leadership skills"
-   ],
-   "concerns": [
-    "Contract/temporary staffing role, not permanent",
-    "Likely below her seniority ceiling",
-    "Generic corporate program manager scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 65,
-   "practical_fit": 70,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "maybe",
-   "reason": "Executive-facing program/ops leadership mandate",
-   "bg": "cae648f28d15"
-  },
-  "rescued": true
- },
- {
   "key": "Aquent::211857",
   "company": "Aquent",
   "title": "Project Manager",
@@ -67,6 +31,77 @@
    "score": 62,
    "fit": "maybe",
    "reason": "AI adoption/enablement mandate fits interests",
+   "bg": "cae648f28d15"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Aquent::212054",
+  "company": "Aquent",
+  "title": "People Operations Manager",
+  "location": "Austin, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/212054",
+  "posted": "2026-08-04",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "reasons": [
+    "HR ops automation/process work adjacent to transformation",
+    "Remote, contract staffing role",
+    "Cross-functional coordination with IT/Legal/Finance",
+    "AI-enabled process design aligns with AI enablement interest"
+   ],
+   "concerns": [
+    "HR-specific operational role, not core transformation mandate",
+    "Contract via staffing firm, limited strategic scope",
+    "Narrower than her typical org-strategy/transformation remit"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "HR ops automation/process work adjacent to transformation",
+   "bg": "cae648f28d15"
+  }
+ },
+ {
+  "key": "Aquent::211898",
+  "company": "Aquent",
+  "title": "Business Program Manager",
+  "location": "REDMOND, WA, US (Remote)",
+  "url": "https://aquent.com/find-work/211898",
+  "posted": "2026-07-28",
+  "salary": "up to $67.00/hr",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "reasons": [
+    "Executive-facing program/ops leadership mandate",
+    "Strategic roadmap and OKR ownership",
+    "Remote-friendly contract role",
+    "Aligns with business ops and program leadership skills"
+   ],
+   "concerns": [
+    "Contract/temporary staffing role, not permanent",
+    "Likely below her seniority ceiling",
+    "Generic corporate program manager scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 65,
+   "practical_fit": 70,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "maybe",
+   "reason": "Executive-facing program/ops leadership mandate",
    "bg": "cae648f28d15"
   },
   "rescued": true
