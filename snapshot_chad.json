@@ -1,40 +1,5 @@
 [
  {
-  "key": "Filevine::e57a5f16-0711-4f50-a9a9-d19edf7b097a",
-  "company": "Filevine",
-  "title": "Staff Site Reliability Engineer",
-  "location": "Remote",
-  "url": "https://jobs.lever.co/filevine/e57a5f16-0711-4f50-a9a9-d19edf7b097a",
-  "posted": "2026-08-01",
-  "salary": "$235,000\u2013$275,000/yr",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Remote fits location preference",
-    "SRE role diverges from full-stack focus",
-    "Legal AI platform is interesting domain",
-    "Limited detail on actual mandate"
-   ],
-   "concerns": [
-    "SRE specialization not core strength",
-    "Title suggests infra ops not app engineering",
-    "Little info on tech stack fit"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 85,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "no",
-   "reason": "Remote fits location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Cricut::744000141753089",
   "company": "Cricut",
   "title": "Senior Mechanical Engineer: Test Development Engineering",
@@ -171,41 +136,6 @@
   }
  },
  {
-  "key": "Canopy::4355401009",
-  "company": "Canopy",
-  "title": "Senior Full Stack Engineer",
-  "location": "Remote- Utah",
-  "url": "https://job-boards.greenhouse.io/canopytax/jobs/4355401009",
-  "posted": "2026-08-04",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "apply_first",
-   "reasons": [
-    "Utah-remote SaaS role",
-    "Microservices/micro-frontend architecture match",
-    "Senior IC engineering role",
-    "Strong tech stack overlap",
-    "Enterprise SaaS product focus"
-   ],
-   "concerns": [
-    "Compensation not stated",
-    "Startup pace/scope unclear"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 90,
-   "interest_fit": 80,
-   "practical_fit": 90,
-   "opportunity_score": 82,
-   "score": 82,
-   "fit": "yes",
-   "reason": "Utah-remote SaaS role",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Domo::JR100285",
   "company": "Domo",
   "title": "Senior CloudOps Engineer",
@@ -241,36 +171,36 @@
   }
  },
  {
-  "key": "BambooHR::6120089004",
-  "company": "BambooHR",
-  "title": "Sr. Data Engineer",
-  "location": "Utah | Hybrid",
-  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6120089004",
-  "posted": "2026-07-30",
-  "salary": null,
+  "key": "Adobe::R167498",
+  "company": "Adobe",
+  "title": "Marketing Technologies Engineer (Analytics) \u2014 Growth & Martech Engineering",
+  "location": "Lehi (+2 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Marketing-Technologies-Engineer--Analytics----Growth---Martech-Engineering_R167498",
+  "posted": "2026-08-06",
+  "salary": "$148,500 - $214,950",
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Data engineering role, not software engineering fit",
-    "Utah hybrid location matches preference",
-    "Requires Python/SQL/ML pipeline expertise not in profile"
+    "Marketing analytics engineering, not core platform/product engineering",
+    "Utah location (Lehi) matches practical preference",
+    "Weak alignment with backend/frontend architecture strengths"
    ],
    "concerns": [
-    "Core mandate is data/ML infrastructure, not frontend/full-stack",
-    "Candidate lacks demonstrated data engineering or Databricks experience",
-    "Background/credit check requirement adds friction"
+    "Martech/analytics focus diverges from SaaS platform engineering interest",
+    "No description to confirm seniority or scope",
+    "Possible marketing-domain-specific tooling mismatch"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 65,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 60,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Data engineering role, not software engineering fit",
+   "reason": "Marketing analytics engineering, not core platform/product engineering",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -412,6 +342,39 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025311",
+  "company": "Western Governors University",
+  "title": "Associate Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Associate-Software-Engineer_JR-025311",
+  "posted": "2026-08-06",
+  "salary": "$73,800.00 - $110,700.00",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Entry-level title conflicts with Principal-level candidate",
+    "Salt Lake City location matches preference",
+    "No details on tech stack or mandate"
+   ],
+   "concerns": [
+    "Junior/entry-level role is a dealbreaker",
+    "Likely far below $190k comp requirement"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 20,
+   "practical_fit": 60,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Entry-level title conflicts with Principal-level candidate",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Western Governors University::JR-025846",
   "company": "Western Governors University",
   "title": "Associate Learning Systems Engineer",
@@ -475,41 +438,6 @@
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "Salt Lake City location matches preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Western Governors University::JR-025841",
-  "company": "Western Governors University",
-  "title": "Software Engineer II",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025841",
-  "posted": "2026-08-04",
-  "salary": "$118,900.00 - $178,500.00",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Salt Lake City location matches preference",
-    "Title suggests junior-to-mid level role",
-    "Likely below Principal-level seniority target",
-    "No description to confirm mandate"
-   ],
-   "concerns": [
-    "Software Engineer II likely too junior",
-    "Compensation likely below $190k minimum",
-    "No details on tech stack or scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 65,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
    "reason": "Salt Lake City location matches preference",
    "bg": "8d3fa4bf6180"
   }
@@ -585,135 +513,70 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025759",
-  "company": "Western Governors University",
-  "title": "Senior Software Engineer",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025759",
-  "posted": "2026-07-31",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Senior engineer role in Utah, no relocation needed",
-    "Matches seniority target range",
-    "Local employer, likely hybrid/onsite feasible"
-   ],
-   "concerns": [
-    "No description available to assess tech stack fit",
-    "Unknown if compensation meets $190k minimum",
-    "WGU may lean traditional edtech, less cutting-edge"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Senior engineer role in Utah, no relocation needed",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Western Governors University::JR-025048",
-  "company": "Western Governors University",
-  "title": "Staff Software Engineer- Full-Stack Python and React",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048",
-  "posted": "2026-07-31",
-  "salary": "$161,000.00 - $249,500.00",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Salt Lake City location matches preference",
-    "Staff-level IC role fits seniority target",
-    "Full-stack React aligns with strengths"
-   ],
-   "concerns": [
-    "Python stack differs from .NET/C# background",
-    "No description to confirm mandate or comp"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Salt Lake City location matches preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Western Governors University::JR-025812",
-  "company": "Western Governors University",
-  "title": "Senior Software Engineer",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025812",
-  "posted": "2026-07-30",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Senior Software Engineer matches seniority target",
-    "Salt Lake City location fits candidate preference",
-    "No description limits confidence in mandate"
-   ],
-   "concerns": [
-    "No job description available to assess tech stack fit",
-    "Unknown if compensation meets $190k minimum",
-    "Education-sector SaaS may differ from enterprise B2B focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Senior Software Engineer matches seniority target",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Western Governors University::JR-025615",
-  "company": "Western Governors University",
-  "title": "Senior User Experience Designer-Software",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-User-Experience-Designer-Software_JR-025615",
-  "posted": "2026-07-30",
-  "salary": "$118,900.00 - $178,500.00",
+  "key": "iCapital::8662826002",
+  "company": "iCapital",
+  "title": "Software Engineer - Associate / Assistant Vice President",
+  "location": "Salt Lake City, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8662826002",
+  "posted": "2026-08-06",
+  "salary": "$80,000 to $140,000",
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "UX Designer role, not software engineering",
-    "Mismatch with candidate's engineering background and goals"
+    "Salt Lake City location matches",
+    "Backend role but junior-level titling/pay",
+    "Below minimum compensation requirement"
    ],
    "concerns": [
-    "Not a hands-on engineering role",
-    "No description to verify tech scope"
+    "Salary cap $140k below $190k minimum",
+    "Associate/AVP level too junior for Principal",
+    "Unfamiliar stack: Scala/Ruby"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 60,
-   "opportunity_score": 12,
-   "score": 12,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "reason": "UX Designer role, not software engineering",
+   "reason": "Salt Lake City location matches",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "iCapital::8662833002",
+  "company": "iCapital",
+  "title": "Software Engineer -  Vice President",
+  "location": "Salt Lake City, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8662833002",
+  "posted": "2026-08-06",
+  "salary": "$130,000 to $170,000",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Salt Lake City location matches",
+    "Backend/cloud services role",
+    "Uses different stack (Scala/Ruby/Python)"
+   ],
+   "concerns": [
+    "Salary $130-170k below $190k minimum",
+    "Not primarily frontend/React focused",
+    "Onsite unclear if hybrid/remote"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "no",
+   "reason": "Salt Lake City location matches",
    "bg": "8d3fa4bf6180"
   }
  },

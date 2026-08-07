@@ -308,37 +308,105 @@
   }
  },
  {
-  "key": "Coinbase::8095252",
+  "key": "Coinbase::8104873",
   "company": "Coinbase",
-  "title": "Senior Software Engineer, Backend - Platform (Tokens & Wrapped Assets)",
+  "title": "Senior Software Engineer, Stablecoins",
   "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8095252?gh_jid=8095252",
-  "posted": "2026-07-30",
+  "url": "https://www.coinbase.com/careers/positions/8104873?gh_jid=8104873",
+  "posted": "2026-08-06",
   "salary": null,
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Remote US role matches location preference",
-    "But requires blockchain/Go/smart contract expertise",
-    "No React/.NET/frontend alignment",
-    "Crypto domain outside stated interests"
+    "Remote-USA matches location preference",
+    "Requires smart contract/Solidity expertise not in background",
+    "Backend crypto domain mismatch with frontend-leaning profile"
    ],
    "concerns": [
-    "No demonstrated Go or smart contract experience",
-    "Crypto/blockchain not in candidate background",
-    "High-intensity culture with quarterly in-person surges"
+    "No Solidity/blockchain experience shown",
+    "Quarterly in-person surges may conflict with remote preference",
+    "Crypto/stablecoin domain far from candidate's SaaS focus"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 60,
-   "opportunity_score": 25,
-   "score": 25,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "reason": "Remote US role matches location preference",
+   "reason": "Remote-USA matches location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Coinbase::8113286",
+  "company": "Coinbase",
+  "title": "Software Engineer, Data Platform Team",
+  "location": "Remote - USA",
+  "url": "https://www.coinbase.com/careers/positions/8113286?gh_jid=8113286",
+  "posted": "2026-08-06",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote-eligible role fits location preference",
+    "Platform engineering aligns with interests",
+    "Data engineering focus not core strength",
+    "Crypto industry outside stated preferences"
+   ],
+   "concerns": [
+    "Heavy data engineering/pipeline focus, not frontend/full-stack",
+    "Quarterly in-person 'surges' may add travel burden",
+    "Backend data platform mismatch with React/frontend strength"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Remote-eligible role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Coinbase::8104148",
+  "company": "Coinbase",
+  "title": "Staff Analytics Engineer, Compliance Data",
+  "location": "Remote - USA",
+  "url": "https://www.coinbase.com/careers/positions/8104148?gh_jid=8104148",
+  "posted": "2026-08-06",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Analytics/data engineering, not software engineering",
+    "Compliance data domain mismatch",
+    "Remote fits location preference"
+   ],
+   "concerns": [
+    "Wrong function - analytics engineering not full-stack",
+    "No React/.NET/frontend work",
+    "Heavy data modeling/compliance focus not aligned"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Analytics/data engineering, not software engineering",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -413,71 +481,6 @@
   }
  },
  {
-  "key": "Reddit::8094764",
-  "company": "Reddit",
-  "title": "Staff People Integrations Engineer",
-  "location": "Remote - United States",
-  "url": "https://job-boards.greenhouse.io/reddit/jobs/8094764",
-  "posted": "2026-07-30",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "HR/Workday integrations, not software engineering focus",
-    "Mismatch with core full-stack/cloud architecture strengths"
-   ],
-   "concerns": [
-    "Requires deep Workday domain expertise Chad lacks",
-    "Not aligned with React/.NET/AWS platform engineering interests"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "HR/Workday integrations, not software engineering focus",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Twilio::8096642",
-  "company": "Twilio",
-  "title": "Senior Presales Engineer",
-  "location": "Remote - Mexico",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8096642",
-  "posted": "2026-07-30",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Sales engineering role explicitly a dealbreaker",
-    "Not hands-on software engineering",
-    "Remote Mexico location not candidate's target region"
-   ],
-   "concerns": [
-    "Presales/sales function conflicts with candidate dealbreakers",
-    "Location is Mexico, not US remote"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 5,
-   "practical_fit": 15,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Sales engineering role explicitly a dealbreaker",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Twilio::8099162",
   "company": "Twilio",
   "title": "Senior Software Engineer (L3)",
@@ -509,41 +512,6 @@
    "score": 65,
    "fit": "yes",
    "reason": "Remote US role fits location needs",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Twilio::8097672",
-  "company": "Twilio",
-  "title": "Software Engineer (L2)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8097672",
-  "posted": "2026-07-30",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote US role fits location preference",
-    "Backend engineering at data-heavy CDP platform",
-    "AI-assisted product work aligns with interests",
-    "Enterprise SaaS/developer tools space matches priorities"
-   ],
-   "concerns": [
-    "L2 title suggests mid-level, not Principal scope",
-    "Compensation and seniority level unclear",
-    "Backend-only role may not use frontend strengths"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Remote US role fits location preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -827,7 +795,7 @@
   "key": "Gusto::8077301",
   "company": "Gusto",
   "title": "Staff Software Engineer, Time and Scheduling",
-  "location": "New York, NY;Atlanta, GA;Toronto, Ontario, CAN - Remote",
+  "location": "New York, NY;Toronto, Ontario, CAN - Remote",
   "url": "https://job-boards.greenhouse.io/gusto/jobs/8077301",
   "posted": "2026-08-03",
   "salary": null,
@@ -855,6 +823,40 @@
    "score": 62,
    "fit": "maybe",
    "reason": "Full-stack customer-facing product engineering role",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Affirm::7822387003",
+  "company": "Affirm",
+  "title": "Machine Learning Engineer II (Underwriting ML)",
+  "location": "Remote US",
+  "url": "https://job-boards.greenhouse.io/affirm/jobs/7822387003",
+  "posted": "2026-08-06",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "ML engineering, not full-stack/frontend focus",
+    "Requires specialized ML modeling expertise not shown",
+    "Remote US aligns with location preference"
+   ],
+   "concerns": [
+    "No React/.NET/frontend work",
+    "Mismatch with core strengths in ML modeling",
+    "Likely junior-mid level vs Principal target"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "ML engineering, not full-stack/frontend focus",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -959,6 +961,41 @@
    "score": 22,
    "fit": "no",
    "reason": "Analytics engineering role, not software engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Affirm::7813107003",
+  "company": "Affirm",
+  "title": "Staff Software Engineer, Affirm Bank",
+  "location": "Remote US",
+  "url": "https://job-boards.greenhouse.io/affirm/jobs/7813107003",
+  "posted": "2026-08-06",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote US role fits location needs",
+    "Staff-level IC ownership matches seniority target",
+    "Cloud infra and platform architecture overlap",
+    "AI-native team aligns with AI-assisted dev interest"
+   ],
+   "concerns": [
+    "Fintech/banking domain is new territory",
+    "Heavy infra/data platform focus vs frontend strength",
+    "High-stakes regulated environment may require deep domain ramp"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 70,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Remote US role fits location needs",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1205,75 +1242,6 @@
   }
  },
  {
-  "key": "Ramp::ed2e9a94-f58e-4ff8-8853-afd977850d43",
-  "company": "Ramp",
-  "title": "Software Engineer, Accounting",
-  "location": "New York, NY (HQ) (Remote)",
-  "url": "https://jobs.ashbyhq.com/ramp/ed2e9a94-f58e-4ff8-8853-afd977850d43",
-  "posted": "2026-08-05",
-  "salary": "$189K \u2013 $330K",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote-eligible role fits location constraints",
-    "Backend/systems work aligns with full-stack skills",
-    "Fintech accounting domain not a core interest area",
-    "AI-powered platform touches candidate's interests"
-   ],
-   "concerns": [
-    "Domain-specific accounting focus, less frontend/UX",
-    "Unclear seniority/title framing as mid-to-senior not Principal",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 60,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote-eligible role fits location constraints",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Vanta::1989a49f-227e-4928-b068-8ff24af88541",
-  "company": "Vanta",
-  "title": "Senior Analytics Engineer",
-  "location": "Remote U.S.",
-  "url": "https://jobs.ashbyhq.com/vanta/1989a49f-227e-4928-b068-8ff24af88541",
-  "posted": "2026-07-30",
-  "salary": "$157K \u2013 $185K",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Remote US location matches preference",
-    "Role is analytics engineering, not software engineering",
-    "Requires dbt/SQL/data warehouse specialization not in profile"
-   ],
-   "concerns": [
-    "Function mismatch: analytics engineering vs full-stack/platform engineering",
-    "No React/.NET/cloud architecture emphasis",
-    "Not aligned with hands-on product engineering interests"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 75,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Remote US location matches preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Render::b7508c39-c91f-405a-bdef-9c6b6eca1fee",
   "company": "Render",
   "title": "Staff Product Manager, CI/CD & Developer Productivity",
@@ -1341,25 +1309,24 @@
   }
  },
  {
-  "key": "Instacart::8097510",
-  "company": "Instacart",
-  "title": "Forward Deployed Engineer",
-  "location": "United States - Remote",
-  "url": "https://instacart.careers/job/?gh_jid=8097510",
-  "posted": "2026-07-30",
+  "key": "Stripe::8089353",
+  "company": "Stripe",
+  "title": "Software Engineer, Vulnerability Management",
+  "location": "US - Remote",
+  "url": "https://stripe.com/jobs/search?gh_jid=8089353",
+  "posted": "2026-08-04",
   "salary": null,
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Field-deployed consulting-style role, not core engineering",
-    "Heavy client-facing/travel component resembles sales engineering",
-    "AI platform work aligns with interests but role framing is off-fit",
-    "Remote is a plus but role nature conflicts with IC preference"
+    "Security/vulnerability management not core strength",
+    "Remote US aligns with location preference",
+    "Strong company but niche security domain mismatch"
    ],
    "concerns": [
-    "Overlaps with sales engineering dealbreaker",
-    "Likely significant client travel",
-    "Not a deep hands-on architecture role"
+    "No security engineering background shown",
+    "Not aligned with frontend/full-stack focus",
+    "Specialized security domain requirement"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -1367,11 +1334,11 @@
    "valid": true,
    "qualification_fit": 40,
    "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
+   "practical_fit": 80,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "no",
-   "reason": "Field-deployed consulting-style role, not core engineering",
+   "reason": "Security/vulnerability management not core strength",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1480,38 +1447,6 @@
   }
  },
  {
-  "key": "1Password::df6afe6a-7e62-4d57-be23-22583d0cdeb9",
-  "company": "1Password",
-  "title": "Senior IT Engineer",
-  "location": "Remote (United States | Canada)",
-  "url": "https://jobs.ashbyhq.com/1password/df6afe6a-7e62-4d57-be23-22583d0cdeb9",
-  "posted": "2026-07-30",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "IT endpoint management, not software engineering",
-    "Mismatch with full-stack/platform engineering background"
-   ],
-   "concerns": [
-    "Wrong function - IT infrastructure not software development",
-    "No React/.NET/cloud architecture engineering scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "IT endpoint management, not software engineering",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "1Password::5cea0067-467b-4e1a-9ae5-089541ecd827",
   "company": "1Password",
   "title": "Senior Developer, CI Architecture",
@@ -1576,75 +1511,6 @@
    "score": 15,
    "fit": "no",
    "reason": "Security engineering, not software engineering role",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Docker::ec1eeb85-73bd-4956-bb67-93e0c42958e2",
-  "company": "Docker",
-  "title": "Senior Principal Product Manager, AI & Agent Platform",
-  "location": "United States (Remote)",
-  "url": "https://jobs.ashbyhq.com/docker/ec1eeb85-73bd-4956-bb67-93e0c42958e2",
-  "posted": "2026-07-30",
-  "salary": "$300K \u2013 $340K",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Product Manager role, not engineering IC",
-    "AI/container platform space aligns with interests",
-    "Remote but Seattle-based team"
-   ],
-   "concerns": [
-    "Wrong function\u2014PM not software engineering",
-    "Role requires product strategy/roadmap ownership, not hands-on coding",
-    "Candidate is a hands-on IC engineer, not a PM"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Product Manager role, not engineering IC",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Airbyte::5930fed9-c4f6-43c3-87be-3402c2c46489",
-  "company": "Airbyte",
-  "title": "Senior Site Reliability Engineer",
-  "location": "San Francisco (Remote)",
-  "url": "https://jobs.ashbyhq.com/airbyte/5930fed9-c4f6-43c3-87be-3402c2c46489",
-  "posted": "2026-07-30",
-  "salary": "$196K \u2013 $235K",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote role fits location preference well",
-    "AI infrastructure company aligns with stated interests",
-    "Has Kubernetes/AWS exposure but not SRE-focused",
-    "Core mandate is reliability/infra, not full-stack engineering"
-   ],
-   "concerns": [
-    "Not primarily an SRE with incident/on-call background",
-    "Role is infrastructure-ops focused vs his full-stack/frontend strengths",
-    "Deep Terraform/K8s ownership expectations exceed demonstrated depth"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote role fits location preference well",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1893,6 +1759,40 @@
   }
  },
  {
+  "key": "Chainguard::4696743006",
+  "company": "Chainguard",
+  "title": "Staff Product Security Engineer",
+  "location": "United States - Remote",
+  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4696743006",
+  "posted": "2026-08-06",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Security engineering role, not software engineering",
+    "Requires deep security/DevSecOps specialization not shown",
+    "Not aligned with candidate's frontend/full-stack focus"
+   ],
+   "concerns": [
+    "Mismatch with core skillset",
+    "No React/.NET/frontend work",
+    "Security-specific domain expertise required"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 70,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Security engineering role, not software engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Cresta::5376924008",
   "company": "Cresta",
   "title": "Growth Marketing Manager, Web & CRO",
@@ -2023,40 +1923,6 @@
    "score": 15,
    "fit": "no",
    "reason": "Customer support dealbreaker role",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Baseten::c07eb44f-b5fa-4808-90b7-03b265d97836",
-  "company": "Baseten",
-  "title": "IT Support / Operations Engineer",
-  "location": "New York (Remote)",
-  "url": "https://jobs.ashbyhq.com/baseten/c07eb44f-b5fa-4808-90b7-03b265d97836",
-  "posted": "2026-07-30",
-  "salary": "$125K \u2013 $170K",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "IT support role, not software engineering",
-    "Wrong function entirely for candidate",
-    "Hybrid onsite NYC/SF not remote"
-   ],
-   "concerns": [
-    "Not an engineering role",
-    "Location and hybrid requirement mismatch",
-    "Compensation likely below candidate minimum"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 5,
-   "practical_fit": 10,
-   "opportunity_score": 5,
-   "score": 5,
-   "fit": "no",
-   "reason": "IT support role, not software engineering",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -2301,40 +2167,6 @@
   }
  },
  {
-  "key": "Sardine::527bac62-7445-4942-b2df-575fcb93e182",
-  "company": "Sardine",
-  "title": "Data Engineer - Onboarding",
-  "location": "North America (Remote)",
-  "url": "https://jobs.ashbyhq.com/sardine/527bac62-7445-4942-b2df-575fcb93e182",
-  "posted": "2026-07-30",
-  "salary": "$150K \u2013 $205K",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Data/ML engineering role, not frontend/full-stack",
-    "Requires data pipeline and ML feature engineering expertise",
-    "Remote US/Canada matches location preference"
-   ],
-   "concerns": [
-    "Wrong core discipline: data/ML engineering vs full-stack",
-    "No React/.NET/frontend scope evident",
-    "Domain mismatch with candidate's platform/DevEx focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 75,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Data/ML engineering role, not frontend/full-stack",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Circle::JR101085",
   "company": "Circle",
   "title": "Senior Site Reliability Engineer - Infra Ops",
@@ -2403,36 +2235,35 @@
   }
  },
  {
-  "key": "Samsara::8021301",
+  "key": "Samsara::7811931",
   "company": "Samsara",
-  "title": "Senior Software Engineer II",
+  "title": "Manager II, Data Platform",
   "location": "Remote - US",
-  "url": "https://www.samsara.com/company/careers/roles/8021301?gh_jid=8021301",
-  "posted": "2026-07-30",
+  "url": "https://www.samsara.com/company/careers/roles/7811931?gh_jid=7811931",
+  "posted": "2026-08-06",
   "salary": null,
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Remote US role fits location",
-    "Firmware/IoT focus mismatches full-stack background",
-    "Not React/.NET frontend work"
+    "People management role, not hands-on IC",
+    "Data platform focus not core strength",
+    "Remote US location works practically"
    ],
    "concerns": [
-    "Requires embedded/firmware/C++ skills not in profile",
-    "Little frontend/UX ownership",
-    "Excludes California but otherwise remote-friendly"
+    "Pure management dealbreaker",
+    "Data infrastructure not primary skillset"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 80,
-   "opportunity_score": 35,
-   "score": 35,
+   "interest_fit": 25,
+   "practical_fit": 60,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Remote US role fits location",
+   "reason": "People management role, not hands-on IC",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -2537,6 +2368,41 @@
   }
  },
  {
+  "key": "Hinge Health::d7bba1dc-1f6d-4ad0-9ad0-e65aa0aae628",
+  "company": "Hinge Health",
+  "title": "Staff Software Engineer, GI",
+  "location": "San Francisco-HQ (Remote)",
+  "url": "https://jobs.ashbyhq.com/hinge-health/d7bba1dc-1f6d-4ad0-9ad0-e65aa0aae628",
+  "posted": "2026-08-06",
+  "salary": "$197K \u2013 $296K",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote role, staff-level IC engineering",
+    "Strong technical leadership without management",
+    "Enterprise SaaS/platform-building experience relevant",
+    "AI-powered care platform aligns with AI infra interest"
+   ],
+   "concerns": [
+    "Healthcare/digital care domain differs from enterprise SaaS background",
+    "Unclear tech stack alignment with React/.NET/AWS expertise",
+    "New product line carries execution risk"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 65,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote role, staff-level IC engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Hinge Health::b0583044-fe9f-4e3a-bdca-1a8cf53960d5",
   "company": "Hinge Health",
   "title": "Senior AI Developer",
@@ -2567,6 +2433,75 @@
    "score": 30,
    "fit": "no",
    "reason": "Requires ML infra/CV specialization not in background",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Hinge Health::5e7401a9-405b-4bd6-866e-d5f008657e2d",
+  "company": "Hinge Health",
+  "title": "Sr. Software Engineer, GI",
+  "location": "San Francisco-HQ (Remote)",
+  "url": "https://jobs.ashbyhq.com/hinge-health/5e7401a9-405b-4bd6-866e-d5f008657e2d",
+  "posted": "2026-08-06",
+  "salary": "$164K \u2013 $247K",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote-friendly senior engineering role",
+    "Greenfield product build opportunity",
+    "Full-stack engineering likely involved"
+   ],
+   "concerns": [
+    "Healthcare domain differs from candidate's background",
+    "Compensation not specified",
+    "Hub-based team structure may favor onsite collaboration"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 65,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote-friendly senior engineering role",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Headway::2c7faf60-19df-49c9-9e19-f1bbfa839dc2",
+  "company": "Headway",
+  "title": "Staff Software Engineer - Insurance",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/headway/2c7faf60-19df-49c9-9e19-f1bbfa839dc2",
+  "posted": "2026-08-07",
+  "salary": "$224K \u2013 $336K",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote role fits location preference",
+    "Staff-level IC engineering role",
+    "Complex distributed systems/data problem",
+    "Enterprise SaaS platform at scale"
+   ],
+   "concerns": [
+    "Domain-specific insurance/claims focus, not core stack",
+    "Backend/data-heavy vs frontend strength",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 65,
+   "practical_fit": 85,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Remote role fits location preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -2606,36 +2541,33 @@
   }
  },
  {
-  "key": "Smartsheet::8097667",
+  "key": "Smartsheet::8112250",
   "company": "Smartsheet",
-  "title": "Software Engineer II - Full Stack (Remote Eligible)",
+  "title": "Senior Manager, Web Strategy",
   "location": "-REMOTE, USA-",
-  "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8097667",
-  "posted": "2026-07-30",
+  "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8112250",
+  "posted": "2026-08-06",
   "salary": null,
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Remote-eligible",
-    "Enterprise SaaS platform",
-    "AWS/Kubernetes stack overlap"
+    "Marketing/SEO strategy role, not engineering"
    ],
    "concerns": [
-    "Level II is too junior for Principal-level candidate",
-    "Likely below $190k target",
-    "Limited architectural ownership at this level"
+    "Not a software engineering position",
+    "No hands-on technical work"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 60,
+   "opportunity_score": 8,
+   "score": 8,
    "fit": "no",
-   "reason": "Remote-eligible",
+   "reason": "Marketing/SEO strategy role, not engineering",
    "bg": "8d3fa4bf6180"
   }
  },
