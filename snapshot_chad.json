@@ -1,5 +1,73 @@
 [
  {
+  "key": "Filevine::9522044d-e855-4c22-abfe-d15c6e3aa377",
+  "company": "Filevine",
+  "title": "Senior Site Reliability engineer",
+  "location": "Remote",
+  "url": "https://jobs.lever.co/filevine/9522044d-e855-4c22-abfe-d15c6e3aa377",
+  "posted": "2026-08-07",
+  "salary": "$175,000\u2013$195,000/yr",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote role fits location preference",
+    "AI-driven SaaS platform aligns with interests",
+    "SRE role differs from full-stack IC background"
+   ],
+   "concerns": [
+    "SRE focus not core strength vs full-stack dev",
+    "Limited detail on tech stack alignment",
+    "May be more infra-ops than software engineering"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Filevine::e57a5f16-0711-4f50-a9a9-d19edf7b097a",
+  "company": "Filevine",
+  "title": "Staff Site Reliability Engineer",
+  "location": "Remote",
+  "url": "https://jobs.lever.co/filevine/e57a5f16-0711-4f50-a9a9-d19edf7b097a",
+  "posted": "2026-08-01",
+  "salary": "$235,000\u2013$275,000/yr",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote role fits location preference",
+    "AI-driven SaaS platform aligns with interests",
+    "Cloud/AWS experience relevant to SRE work"
+   ],
+   "concerns": [
+    "SRE is infrastructure-ops focused, not core strength",
+    "Limited full-stack/frontend engineering scope",
+    "Unclear if role matches senior IC engineering interest"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Cricut::744000141753089",
   "company": "Cricut",
   "title": "Senior Mechanical Engineer: Test Development Engineering",
@@ -98,75 +166,6 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Utah location matches preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "MX::4339716009",
-  "company": "MX",
-  "title": "Sr. Observability Engineer",
-  "location": "Lehi, Utah, United States",
-  "url": "https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4339716009",
-  "posted": "2026-07-31",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "SRE/observability role, not software engineering focus",
-    "Utah onsite/hybrid location fits practically",
-    "Fintech aligns with enterprise SaaS interest"
-   ],
-   "concerns": [
-    "Not a hands-on full-stack engineering role",
-    "Focus on Datadog/incident response, not core stack",
-    "Shared pager duty misaligned with preferences"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 65,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "SRE/observability role, not software engineering focus",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Domo::JR100285",
-  "company": "Domo",
-  "title": "Senior CloudOps Engineer",
-  "location": "US UT Remote",
-  "url": "https://domo.wd12.myworkdayjobs.com/DomoCareers/job/US-UT-Remote/Senior-CloudOps-Engineer_JR100285",
-  "posted": "2026-07-31",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah remote role matches location preference",
-    "AWS/Kubernetes overlap with candidate's cloud skills",
-    "CloudOps differs from full-stack engineering focus",
-    "No description limits qualification assessment"
-   ],
-   "concerns": [
-    "Role appears ops-focused, not core software engineering",
-    "Minimal posting detail makes fit uncertain",
-    "Title suggests Senior level, below Principal target"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 90,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Utah remote role matches location preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -338,6 +337,40 @@
    "score": 20,
    "fit": "no",
    "reason": "Remote US location matches preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025732",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer- Full Stack- Java/Angular",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer--Full-Stack--Java-Angular_JR-025732",
+  "posted": "2026-08-07",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Salt Lake City location matches preference",
+    "Full-stack senior engineering role",
+    "Java/Angular differs from core .NET/React stack"
+   ],
+   "concerns": [
+    "Tech stack mismatch (Java/Angular vs C#/React)",
+    "No compensation info available",
+    "Seniority level may be below Principal target"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 50,
+   "practical_fit": 75,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Salt Lake City location matches preference",
    "bg": "8d3fa4bf6180"
   }
  },
