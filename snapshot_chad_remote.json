@@ -652,6 +652,40 @@
   }
  },
  {
+  "key": "Grafana Labs::6137468004",
+  "company": "Grafana Labs",
+  "title": "Senior Solutions Engineer | West Coast | Remote",
+  "location": "United States (Remote)",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6137468004",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Sales engineering role, not hands-on IC engineering",
+    "Customer-facing pre-sales, not product development",
+    "Remote US matches location preference"
+   ],
+   "concerns": [
+    "Sales engineering is an explicit dealbreaker",
+    "No hands-on software engineering ownership",
+    "Customer-facing demo/enablement focus mismatched"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Sales engineering role, not hands-on IC engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Mercury::6134310004",
   "company": "Mercury",
   "title": "Senior Cloud Security Engineer - InfoSec",
@@ -890,41 +924,6 @@
    "score": 68,
    "fit": "yes",
    "reason": "Remote US role fits location needs",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Supabase::8229db66-dc3f-4ffe-8d86-90ce9ffb4c90",
-  "company": "Supabase",
-  "title": "Engineering Productivity Engineer",
-  "location": "Remote",
-  "url": "https://jobs.ashbyhq.com/supabase/8229db66-dc3f-4ffe-8d86-90ce9ffb4c90",
-  "posted": "2026-08-02",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote role fits location needs",
-    "Developer experience/tooling aligns with interests",
-    "Strong company/platform reputation",
-    "CI/testing infra not core strength"
-   ],
-   "concerns": [
-    "Focus is DevProd/infra not full-stack SaaS product",
-    "Less frontend/React emphasis than Chad prefers",
-    "Unclear seniority/scope of ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 60,
-   "practical_fit": 85,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Remote role fits location needs",
    "bg": "8d3fa4bf6180"
   }
  },

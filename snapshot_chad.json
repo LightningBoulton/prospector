@@ -1,39 +1,5 @@
 [
  {
-  "key": "Filevine::9522044d-e855-4c22-abfe-d15c6e3aa377",
-  "company": "Filevine",
-  "title": "Senior Site Reliability engineer",
-  "location": "Remote",
-  "url": "https://jobs.lever.co/filevine/9522044d-e855-4c22-abfe-d15c6e3aa377",
-  "posted": "2026-08-07",
-  "salary": "$175,000\u2013$195,000/yr",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote role fits location preference",
-    "AI-driven SaaS platform aligns with interests",
-    "SRE role differs from full-stack IC background"
-   ],
-   "concerns": [
-    "SRE focus not core strength vs full-stack dev",
-    "Limited detail on tech stack alignment",
-    "May be more infra-ops than software engineering"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 85,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote role fits location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Cricut::744000141753089",
   "company": "Cricut",
   "title": "Senior Mechanical Engineer: Test Development Engineering",
@@ -132,6 +98,41 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Utah location matches preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Adobe::R170972",
+  "company": "Adobe",
+  "title": "Software Development Engineer - Adobe Firefly Web",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Software-Development-Engineer---Adobe-Firefly-Web_R170972-1",
+  "posted": "2026-08-10",
+  "salary": "$177,900 - $257,550",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Lehi location near Salt Lake Valley",
+    "Adobe is strong enterprise tech brand",
+    "Web engineering likely React-based",
+    "Title suggests SDE level, not Principal"
+   ],
+   "concerns": [
+    "No description to confirm seniority level",
+    "Title may be junior/mid-level SDE",
+    "Firefly is AI creative tool, unclear stack fit"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 70,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Lehi location near Salt Lake Valley",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -307,6 +308,75 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025876",
+  "company": "Western Governors University",
+  "title": "Systems Engineer II- Atlassian Cloud Platform",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Systems-Engineer-II--Atlassian-Cloud-Platform_JR-025876",
+  "posted": "2026-08-10",
+  "salary": "$98,300.00 - $147,400.00",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Systems engineering, not software engineering role",
+    "Atlassian admin focus mismatches candidate's skillset",
+    "Local Salt Lake City location fits geography"
+   ],
+   "concerns": [
+    "Not a hands-on software engineering IC role",
+    "Likely lower compensation than $190k target",
+    "No description to confirm scope or seniority"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 65,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Systems engineering, not software engineering role",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025775",
+  "company": "Western Governors University",
+  "title": "Software Engineer II - Infrastructure & Operations",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Infrastructure---Operations_JR-025775",
+  "posted": "2026-08-10",
+  "salary": "$118,900.00 - $178,500.00",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Salt Lake City location matches preference",
+    "Infrastructure engineering aligns with skills",
+    "Title level II suggests below Principal seniority",
+    "No description to confirm compensation or scope"
+   ],
+   "concerns": [
+    "Likely below $190k target given 'Engineer II' title",
+    "Unclear if hands-on senior IC role",
+    "No details on tech stack or mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 65,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Salt Lake City location matches preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Western Governors University::JR-025732",
   "company": "Western Governors University",
   "title": "Senior Software Engineer- Full Stack- Java/Angular",
@@ -473,41 +543,6 @@
    "score": 60,
    "fit": "maybe",
    "reason": "Cloud engineering aligns with AWS skills",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Western Governors University::JR-025703",
-  "company": "Western Governors University",
-  "title": "Senior Cloud Engineer (IAM)",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer--IAM-_JR-025703",
-  "posted": "2026-08-03",
-  "salary": "$143,700.00 - $222,700.00",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah on-site location matches preference",
-    "Has AWS, OAuth, Cognito, JWT experience",
-    "IAM specialization narrower than generalist background",
-    "Limited description makes mandate unclear"
-   ],
-   "concerns": [
-    "No job description to assess actual scope",
-    "IAM-focused role may be too narrow/specialized",
-    "Unclear if hands-on engineering vs. security/ops focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 48,
-   "score": 48,
-   "fit": "maybe",
-   "reason": "Utah on-site location matches preference",
    "bg": "8d3fa4bf6180"
   }
  },
