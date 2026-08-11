@@ -1,72 +1,5 @@
 [
  {
-  "key": "GitLab::8644569002",
-  "company": "GitLab",
-  "title": "Intermediate Backend Engineer, Platform Readiness",
-  "location": "Remote, Canada; Remote, United States",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8644569002",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote-friendly, matches location preference",
-    "Developer tooling/DevEx aligns with interests",
-    "GitLab is strong platform engineering company",
-    "Backend-focused, less frontend/full-stack emphasis"
-   ],
-   "concerns": [
-    "Title 'Intermediate' suggests below Principal seniority",
-    "Compensation and level unclear vs $190k minimum",
-    "Primarily backend, less React/full-stack usage"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 60,
-   "practical_fit": 82,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Remote-friendly, matches location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "GitLab::8658878002",
-  "company": "GitLab",
-  "title": "Principal Product Manager, AI Software Factory",
-  "location": "Remote, Canada; Remote, United States",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8658878002",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Product management role, not engineering",
-    "Wrong function despite AI/dev tooling domain overlap"
-   ],
-   "concerns": [
-    "Not hands-on engineering",
-    "Career pivot away from IC engineering path"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Product management role, not engineering",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "GitLab::8646556002",
   "company": "GitLab",
   "title": "Senior Backend Engineer, Architecture Engineering: Nonlinear Productivity",
@@ -103,37 +36,36 @@
   }
  },
  {
-  "key": "GitLab::8644572002",
+  "key": "GitLab::8682707002",
   "company": "GitLab",
-  "title": "Senior Backend Engineer, Platform Readiness",
+  "title": "Senior Backend Engineer (Ruby), Plan: Portfolio Experience",
   "location": "Remote, Canada; Remote, United States",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8644572002",
-  "posted": "2026-08-03",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8682707002",
+  "posted": "2026-08-10",
   "salary": null,
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "not_recommended",
    "reasons": [
-    "Remote US role fits location preference",
-    "Backend platform engineering aligns with strengths",
-    "Developer tooling matches DevEx interest",
-    "GitLab is strong B2B SaaS/dev tools company"
+    "Remote-friendly, matches location preference",
+    "Enterprise SaaS platform aligns with interests",
+    "Ruby backend not in candidate's core stack",
+    "Lacks React/.NET/C# alignment"
    ],
    "concerns": [
-    "Backend-heavy, less frontend/React focus",
-    "Unclear tech stack match (Ruby/Go likely)",
-    "Compensation not stated"
+    "Ruby-focused role, not candidate's primary language",
+    "Backend-only focus vs candidate's full-stack strength"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
+   "qualification_fit": 30,
+   "interest_fit": 45,
    "practical_fit": 80,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "yes",
-   "reason": "Remote US role fits location preference",
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Remote-friendly, matches location preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -204,70 +136,6 @@
    "score": 50,
    "fit": "maybe",
    "reason": "AI infrastructure/platform work aligns with interests",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Cloudflare::8087769",
-  "company": "Cloudflare",
-  "title": "Senior Customer Engineer - Nashville",
-  "location": "Distributed",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8087769?gh_jid=8087769",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Sales engineering role, explicit dealbreaker",
-    "Customer-facing pre/post sales, not hands-on engineering",
-    "Not aligned with IC engineering career goals"
-   ],
-   "concerns": [
-    "Dealbreaker: sales engineering",
-    "Not remote-clear, Nashville focused role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 5,
-   "practical_fit": 30,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Sales engineering role, explicit dealbreaker",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Cloudflare::8115936",
-  "company": "Cloudflare",
-  "title": "Senior Customer Engineer, Shenzhen",
-  "location": "Distributed",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8115936?gh_jid=8115936",
-  "posted": "2026-08-07",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Sales engineering/customer-facing role, dealbreaker"
-   ],
-   "concerns": [
-    "Location Shenzhen not compatible",
-    "Not hands-on engineering role"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 5,
-   "opportunity_score": 5,
-   "score": 5,
-   "fit": "no",
-   "reason": "Sales engineering/customer-facing role, dealbreaker",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -375,6 +243,39 @@
   }
  },
  {
+  "key": "Reddit::8112967",
+  "company": "Reddit",
+  "title": "Senior Machine Learning Systems Engineer, Ads ML Experience Platform",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8112967",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Remote US location fits practical needs",
+    "Role requires deep ML/distributed systems specialization",
+    "Not aligned with frontend/full-stack strengths"
+   ],
+   "concerns": [
+    "Requires ML platform expertise candidate lacks",
+    "Heavy distributed training/ML infra focus mismatched"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 30,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Remote US location fits practical needs",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Reddit::8106246",
   "company": "Reddit",
   "title": "Senior Software Engineer - Messaging",
@@ -443,105 +344,36 @@
   }
  },
  {
-  "key": "Twilio::8099162",
+  "key": "Twilio::8115128",
   "company": "Twilio",
-  "title": "Senior Software Engineer (L3)",
+  "title": "Principal Presales Engineer",
   "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8099162",
-  "posted": "2026-08-04",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Backend platform engineering matches skillset",
-    "Enterprise SaaS scale aligns with experience",
-    "Senior IC role preserves hands-on preference"
-   ],
-   "concerns": [
-    "Backend-heavy, less frontend/React focus",
-    "Compliance/KYC domain less aligned with interests",
-    "Compensation not stated, may be below target"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Remote US role fits location needs",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Twilio::8098945",
-  "company": "Twilio",
-  "title": "Software Engineer (L4)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8098945",
-  "posted": "2026-08-03",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8115128",
+  "posted": "2026-08-10",
   "salary": null,
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Remote US matches location preference",
-    "But mobile SDK/WebRTC/C++ mismatched skillset",
-    "No React/.NET/frontend relevance"
+    "Sales engineering role, explicit dealbreaker",
+    "Not hands-on product engineering",
+    "Customer-facing presales, not desired function"
    ],
    "concerns": [
-    "Android/C++/WebRTC specialization not in background",
-    "Not aligned with frontend/full-stack interests"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 30,
-   "practical_fit": 70,
-   "opportunity_score": 32,
-   "score": 32,
-   "fit": "no",
-   "reason": "Remote US matches location preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Twilio::8103253",
-  "company": "Twilio",
-  "title": "Software Engineer (L4)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8103253",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Requires Android SDK/WebRTC/C++ expertise not in profile",
-    "Remote-US matches location preference",
-    "Not frontend/full-stack SaaS focus",
-    "Mismatched core tech stack"
-   ],
-   "concerns": [
-    "No React/.NET/AWS overlap",
-    "Highly specialized mobile SDK domain",
-    "Title mismatch (L4 vs Staff)"
+    "Sales engineering is a stated dealbreaker",
+    "Travel/customer meetings required",
+    "Not aligned with IC engineering goals"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 25,
-   "interest_fit": 30,
-   "practical_fit": 70,
-   "opportunity_score": 30,
-   "score": 30,
+   "interest_fit": 10,
+   "practical_fit": 55,
+   "opportunity_score": 15,
+   "score": 15,
    "fit": "no",
-   "reason": "Requires Android SDK/WebRTC/C++ expertise not in profile",
+   "reason": "Sales engineering role, explicit dealbreaker",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -720,41 +552,6 @@
   }
  },
  {
-  "key": "Gusto::8077301",
-  "company": "Gusto",
-  "title": "Staff Software Engineer, Time and Scheduling",
-  "location": "New York, NY;Toronto, Ontario, CAN - Remote",
-  "url": "https://job-boards.greenhouse.io/gusto/jobs/8077301",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Full-stack customer-facing product engineering role",
-    "Staff-level IC with real ownership",
-    "React frontend matches strong skillset",
-    "Remote listed but tied to NY/GA/Toronto"
-   ],
-   "concerns": [
-    "Backend is Ruby/Rails, not .NET/C# stack",
-    "Location list suggests non-Utah remote ambiguity",
-    "May require timezone alignment to specific hubs"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 72,
-   "interest_fit": 70,
-   "practical_fit": 45,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Full-stack customer-facing product engineering role",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Affirm::7822387003",
   "company": "Affirm",
   "title": "Machine Learning Engineer II (Underwriting ML)",
@@ -928,6 +725,75 @@
   }
  },
  {
+  "key": "Affirm::7833950003",
+  "company": "Affirm",
+  "title": "Staff Software Engineer, Backend (Online Storage)",
+  "location": "Remote US",
+  "url": "https://job-boards.greenhouse.io/affirm/jobs/7833950003",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US matches location preference",
+    "Staff IC role aligns with seniority target",
+    "But deep database infra focus not core strength"
+   ],
+   "concerns": [
+    "Requires deep OLTP/distributed DB expertise not in profile",
+    "Backend infra role, not frontend/full-stack focus",
+    "Limited overlap with React/UX strengths"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 75,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Remote US matches location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Affirm::7819704003",
+  "company": "Affirm",
+  "title": "Staff Software Engineer, Backend (Order Platform)",
+  "location": "Remote US",
+  "url": "https://job-boards.greenhouse.io/affirm/jobs/7819704003",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location needs",
+    "Strong technical leadership/ownership mandate",
+    "Backend-heavy, less frontend/React focus",
+    "Fintech domain differs from prior industries"
+   ],
+   "concerns": [
+    "Primarily backend distributed systems, not frontend-leaning",
+    "No React/UX craftsmanship emphasis",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Remote US role fits location needs",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Supabase::f44742fb-18c6-478f-bf78-63707ed57db7",
   "company": "Supabase",
   "title": "SDK Engineer - JavaScript",
@@ -1032,71 +898,71 @@
   }
  },
  {
-  "key": "Replit::2fa2d079-96a5-4d51-8718-04134ed39032",
-  "company": "Replit",
-  "title": "Product Engineer, New Products",
-  "location": "Foster City, CA (Remote)",
-  "url": "https://jobs.ashbyhq.com/replit/2fa2d079-96a5-4d51-8718-04134ed39032",
-  "posted": "2026-08-03",
-  "salary": "$180K \u2013 $250K",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote role, AI product engineering",
-    "Strong technical ownership and greenfield building",
-    "Enterprise SaaS/frontend skills transferable",
-    "AI infrastructure aligns with interests"
-   ],
-   "concerns": [
-    "Founder-like ambiguity/velocity culture may not fit",
-    "Startup pace/scope differs from enterprise background",
-    "Compensation and level unclear"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 60,
-   "practical_fit": 55,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Remote role, AI product engineering",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "Render::b7508c39-c91f-405a-bdef-9c6b6eca1fee",
-  "company": "Render",
-  "title": "Staff Product Manager, CI/CD & Developer Productivity",
-  "location": "Remote: United States",
-  "url": "https://jobs.ashbyhq.com/render/b7508c39-c91f-405a-bdef-9c6b6eca1fee",
-  "posted": "2026-08-03",
-  "salary": "$218K \u2013 $300K",
+  "key": "Linear::f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1",
+  "company": "Linear",
+  "title": "Analytics Engineer",
+  "location": "North America (Remote)",
+  "url": "https://jobs.ashbyhq.com/linear/f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1",
+  "posted": "2026-08-11",
+  "salary": null,
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Product Manager role, not engineering",
-    "Remote US matches location preference",
-    "Interesting company/domain but wrong function"
+    "Analytics/data engineering, not full-stack SE",
+    "Remote NA fits location",
+    "Interesting company but wrong function"
    ],
    "concerns": [
-    "PM role violates hands-on IC engineering requirement",
-    "No engineering ownership mandate described",
-    "Career pivot away from software engineering"
+    "Not a software engineering role",
+    "No frontend/backend architecture work",
+    "Mismatch with core skillset"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 25,
-   "interest_fit": 40,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Product Manager role, not engineering",
+   "reason": "Analytics/data engineering, not full-stack SE",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Render::06377f8a-a255-412a-8032-18ace1d005a5",
+  "company": "Render",
+  "title": "Software Engineer, Expansion (all levels)",
+  "location": "Remote: United States",
+  "url": "https://jobs.ashbyhq.com/render/06377f8a-a255-412a-8032-18ace1d005a5",
+  "posted": "2026-08-10",
+  "salary": "$170K \u2013 $290K",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location preference",
+    "Cloud infrastructure/dev platform aligns with interests",
+    "AI-native platform matches AI infrastructure interest",
+    "Fast-growing well-funded startup"
+   ],
+   "concerns": [
+    "Vague generic posting lacks specifics on tech stack",
+    "Unclear seniority/comp level for 'all levels' posting",
+    "Startup may lack enterprise SaaS focus he prefers"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 78,
+   "practical_fit": 85,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "maybe",
+   "reason": "Remote US role fits location preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1134,6 +1000,41 @@
   }
  },
  {
+  "key": "Notion::ca74504a-9b91-4ce3-b0df-97919b46e749",
+  "company": "Notion",
+  "title": "Software Engineer, Collections Infra",
+  "location": "San Francisco, California (Remote)",
+  "url": "https://jobs.ashbyhq.com/notion/ca74504a-9b91-4ce3-b0df-97919b46e749",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Backend infra role, less frontend-aligned",
+    "Interesting scaling/distributed systems problems",
+    "Requires onsite Anchor Days SF/NYC",
+    "Not remote despite listing 'remote'"
+   ],
+   "concerns": [
+    "Onsite 3 days/week not in Utah",
+    "Would require relocation",
+    "Less alignment with React/frontend strengths"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 10,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Backend infra role, less frontend-aligned",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Stripe::8089353",
   "company": "Stripe",
   "title": "Software Engineer, Vulnerability Management",
@@ -1164,6 +1065,76 @@
    "score": 40,
    "fit": "no",
    "reason": "Security/vulnerability management not core strength",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Instacart::8110286",
+  "company": "Instacart",
+  "title": "Staff Software Engineer, Orders Platform",
+  "location": "United States - Remote",
+  "url": "https://instacart.careers/job/?gh_jid=8110286",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote-eligible, matches location preference",
+    "Staff-level backend platform architecture role",
+    "Large-scale distributed systems experience relevant",
+    "Enterprise-scale order orchestration is complex problem"
+   ],
+   "concerns": [
+    "Backend/distributed-systems heavy, less frontend focus",
+    "No React/.NET stack mentioned",
+    "Unclear if hands-on IC or requires backend specialization Chad lacks"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 58,
+   "practical_fit": 88,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Remote-eligible, matches location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Fivetran::7823193003",
+  "company": "Fivetran",
+  "title": "Staff Software Engineer, Metadata",
+  "location": "Remote, California, United States, AMER",
+  "url": "https://www.fivetran.com/careers/job?gh_jid=7823193003",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote role fits location preference",
+    "Staff-level IC technical leadership role",
+    "Data infrastructure aligns with platform engineering interest",
+    "Reputable company in data/AI infrastructure space"
+   ],
+   "concerns": [
+    "Backend metadata/data pipeline focus, not frontend-heavy",
+    "Unclear tech stack match (likely not .NET/React)",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 65,
+   "practical_fit": 55,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote role fits location preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1237,76 +1208,6 @@
   }
  },
  {
-  "key": "Chime::8578967002",
-  "company": "Chime",
-  "title": "Software Engineer, AI Enablement",
-  "location": "Remote, USA",
-  "url": "https://boards.greenhouse.io/chime/jobs/8578967002?gh_jid=8578967002",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote US role fits location needs",
-    "AI platform/enablement aligns with AI interest",
-    "Backend platform work overlaps skills",
-    "Less frontend/React focus than preferred"
-   ],
-   "concerns": [
-    "Salary cap $184k below $190k minimum",
-    "Heavy AI/LLM specialization gap vs generalist background",
-    "Less emphasis on frontend craftsmanship"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 65,
-   "practical_fit": 70,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "1Password::5cea0067-467b-4e1a-9ae5-089541ecd827",
-  "company": "1Password",
-  "title": "Senior Developer, CI Architecture",
-  "location": "Remote (United States | Canada)",
-  "url": "https://jobs.ashbyhq.com/1password/5cea0067-467b-4e1a-9ae5-089541ecd827",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Remote-eligible role fits location constraints",
-    "Developer experience/tooling focus aligns with interests",
-    "CI/build architecture is niche vs candidate's frontend/full-stack strength",
-    "Reputable, growing company"
-   ],
-   "concerns": [
-    "Heavy CI/CD/build-systems focus not core to candidate's background",
-    "Little frontend/full-stack architecture emphasis",
-    "Unclear seniority scope vs Principal-level expectations"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote-eligible role fits location constraints",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "1Password::b50830bf-d475-4cd9-b89c-b2176a4d1465",
   "company": "1Password",
   "title": "Senior Security Engineer, Vulnerability Management",
@@ -1340,36 +1241,37 @@
   }
  },
  {
-  "key": "Close::bbd78474-bee4-4fdc-a670-9234457bcf29",
-  "company": "Close",
-  "title": "Senior Frontend Engineer \u2013 Growth (USA Only - 100% Remote)",
-  "location": "USA - Remote",
-  "url": "https://jobs.ashbyhq.com/close/bbd78474-bee4-4fdc-a670-9234457bcf29",
-  "posted": "2026-08-03",
+  "key": "Docker::8faa282d-9783-4957-bace-ab29abd9e470",
+  "company": "Docker",
+  "title": "Senior Software Engineer, Docker Desktop, Desktop Systems Focus (East Coast)",
+  "location": "United States (Remote)",
+  "url": "https://jobs.ashbyhq.com/docker/8faa282d-9783-4957-bace-ab29abd9e470",
+  "posted": "2026-08-10",
   "salary": null,
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "not_recommended",
    "reasons": [
-    "100% remote US role fits location need",
-    "Senior frontend React role matches strengths",
-    "AI-forward engineering culture aligns with interests",
-    "Growth team ownership shows real scope"
+    "Developer tooling company aligns with interests",
+    "But requires East Coast time zone only",
+    "OS-level systems work mismatches frontend/full-stack background",
+    "Not primarily React/.NET/cloud SaaS work"
    ],
    "concerns": [
-    "Compensation not specified in posting",
-    "Senior title may be below Principal target"
+    "Excludes Mountain time zone candidates",
+    "Low overlap with core tech stack",
+    "Systems/OS integration not core strength"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 80,
-   "interest_fit": 75,
-   "practical_fit": 90,
-   "opportunity_score": 78,
-   "score": 78,
-   "fit": "yes",
-   "reason": "100% remote US role fits location need",
+   "qualification_fit": 30,
+   "interest_fit": 45,
+   "practical_fit": 20,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Developer tooling company aligns with interests",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1479,40 +1381,6 @@
   }
  },
  {
-  "key": "Tailscale::4721289005",
-  "company": "Tailscale",
-  "title": "Analytics Engineer, Data",
-  "location": "Remote (United States)",
-  "url": "https://job-boards.greenhouse.io/tailscale/jobs/4721289005",
-  "posted": "2026-08-04",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Wrong function: data/analytics engineering not software engineering",
-    "No frontend/backend product engineering scope",
-    "Not aligned with candidate's platform/SaaS engineering strengths"
-   ],
-   "concerns": [
-    "Role is dbt/SQL analytics, not software engineering",
-    "No mention of compensation meeting $190k minimum",
-    "Doesn't match desired tech stack"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 70,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Wrong function: data/analytics engineering not software engineering",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "Tailscale::4721714005",
   "company": "Tailscale",
   "title": "Software Engineer, Strategic Projects",
@@ -1578,6 +1446,75 @@
    "score": 12,
    "fit": "no",
    "reason": "Sales engineering role, explicit dealbreaker",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "LaunchDarkly::7849596003",
+  "company": "LaunchDarkly",
+  "title": "Staff Engineer \u2013 Distributed Systems \u2013 Flag Delivery",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/7849596003",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Remote US role fits location needs",
+    "Strong platform/infra company",
+    "Staff-level IC ownership",
+    "Distributed systems focus differs from frontend strength"
+   ],
+   "concerns": [
+    "Deep distributed systems expertise required, not core strength",
+    "On-call rotation required",
+    "Limited frontend/UX work"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Remote US role fits location needs",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "ClickHouse::6140168004",
+  "company": "ClickHouse",
+  "title": "Senior Consulting Engineer - AMER",
+  "location": "North America (Remote)",
+  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/6140168004",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Support/consulting role, not core engineering",
+    "Customer-facing consultative work misaligned with IC dev focus",
+    "Remote location matches preference"
+   ],
+   "concerns": [
+    "Heavy support/consulting, dealbreaker-adjacent",
+    "Not hands-on product engineering",
+    "Unclear compensation vs $190k minimum"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 25,
+   "practical_fit": 60,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Support/consulting role, not core engineering",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1753,94 +1690,25 @@
   }
  },
  {
-  "key": "Baseten::db6477fc-111a-4340-bf00-525fe023e6f3",
+  "key": "Baseten::3e925ab1-2089-4a79-989e-50479b546eda",
   "company": "Baseten",
-  "title": "AI Inference Engineer",
+  "title": "Software Engineer - Observability",
   "location": "San Francisco (Remote)",
-  "url": "https://jobs.ashbyhq.com/baseten/db6477fc-111a-4340-bf00-525fe023e6f3",
-  "posted": "2026-08-03",
+  "url": "https://jobs.ashbyhq.com/baseten/3e925ab1-2089-4a79-989e-50479b546eda",
+  "posted": "2026-08-10",
   "salary": "$165K \u2013 $330K",
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "AI infra company matches interests broadly",
-    "Remote-friendly listed but SF-centric role",
-    "Heavy customer-facing pre-sales work not desired"
+    "Remote but backend infra/observability focus",
+    "Not frontend/full-stack aligned",
+    "Requires deep distributed systems/observability specialization",
+    "Interesting AI infra company but wrong mandate"
    ],
    "concerns": [
-    "Forward-deployed/customer-facing role, not pure IC engineering",
-    "ML inference specialization mismatch vs full-stack background",
-    "Likely requires travel/customer engagement, dealbreaker-adjacent"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "AI infra company matches interests broadly",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "LangChain::937e131f-1055-4f1f-bd8a-f036e4ba0666",
-  "company": "LangChain",
-  "title": "Deployed Engineer (Austin)",
-  "location": "Austin, TX (Remote)",
-  "url": "https://jobs.ashbyhq.com/langchain/937e131f-1055-4f1f-bd8a-f036e4ba0666",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "AI infrastructure company matches interest area",
-    "Requires customer-facing pre-sales technical work",
-    "Not pure hands-on engineering role",
-    "Deployed Engineer resembles sales engineering"
-   ],
-   "concerns": [
-    "Sales engineering-like customer-facing role is dealbreaker",
-    "Pre-sales evaluations conflict with IC engineering preference",
-    "Location listed as onsite Austin despite remote tag"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "AI infrastructure company matches interest area",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "LangChain::8b533cc4-6654-44b4-b3fc-004def2a9927",
-  "company": "LangChain",
-  "title": "Deployed Engineer (Dallas)",
-  "location": "Dallas, TX (Remote)",
-  "url": "https://jobs.ashbyhq.com/langchain/8b533cc4-6654-44b4-b3fc-004def2a9927",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Customer-facing deployed engineer role, not core IC development",
-    "Overlaps with sales engineering, a dealbreaker",
-    "AI infrastructure company aligns with interests",
-    "Location Dallas, not remote-confirmed for Chad's area"
-   ],
-   "concerns": [
-    "Heavy customer/pre-sales engagement resembles sales engineering",
-    "Not hands-on product engineering focus",
-    "Location tied to Dallas territory"
+    "Backend telemetry pipeline focus, not React/full-stack",
+    "SF-based team culture despite remote",
+    "Highly specialized observability domain gap"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -1848,11 +1716,11 @@
    "valid": true,
    "qualification_fit": 35,
    "interest_fit": 40,
-   "practical_fit": 45,
-   "opportunity_score": 30,
-   "score": 30,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
-   "reason": "Customer-facing deployed engineer role, not core IC development",
+   "reason": "Remote but backend infra/observability focus",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -1920,41 +1788,6 @@
    "score": 20,
    "fit": "no",
    "reason": "Customer-facing enablement, not engineering IC role",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
-  "key": "LangChain::385313eb-bff4-4019-8106-42714dc9879a",
-  "company": "LangChain",
-  "title": "Deployed Engineer (Houston)",
-  "location": "Houston, TX (Remote)",
-  "url": "https://jobs.ashbyhq.com/langchain/385313eb-bff4-4019-8106-42714dc9879a",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "AI infra company aligns loosely with interests",
-    "Role is customer-facing deployed engineering, not core SWE",
-    "Sales-engineering-like lifecycle involvement",
-    "Onsite Houston, not remote-first for candidate"
-   ],
-   "concerns": [
-    "Heavy pre-sales/customer advisory work resembles sales engineering dealbreaker",
-    "Location Houston not remote/Utah, relocation implied",
-    "Not a hands-on product engineering IC role"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 40,
-   "practical_fit": 25,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "AI infra company aligns loosely with interests",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -2265,6 +2098,40 @@
   }
  },
  {
+  "key": "Headway::c22233f6-3143-4cb4-9c0c-8119e7ae7629",
+  "company": "Headway",
+  "title": "Staff Software Engineer - Experimentation",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/headway/c22233f6-3143-4cb4-9c0c-8119e7ae7629",
+  "posted": "2026-08-10",
+  "salary": "$265K \u2013 $331K",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Remote role matches location preference",
+    "Staff-level IC engineering role",
+    "Platform/experimentation infra aligns with strengths",
+    "Series D funded scaling company"
+   ],
+   "concerns": [
+    "Experimentation specialization not core background",
+    "Mission/domain differs from typical enterprise SaaS focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 90,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "yes",
+   "reason": "Remote role matches location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
   "key": "Headway::2c7faf60-19df-49c9-9e19-f1bbfa839dc2",
   "company": "Headway",
   "title": "Staff Software Engineer - Insurance",
@@ -2296,6 +2163,40 @@
    "score": 62,
    "fit": "maybe",
    "reason": "Remote role fits location preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Headway::9ce97d23-19aa-4741-97cf-e8532ce747d3",
+  "company": "Headway",
+  "title": "Senior Engineering Manager, Web Platform",
+  "location": "New York City (Remote)",
+  "url": "https://jobs.ashbyhq.com/headway/9ce97d23-19aa-4741-97cf-e8532ce747d3",
+  "posted": "2026-08-10",
+  "salary": "$261.2K \u2013 $331.5K",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "People management role, not hands-on IC",
+    "Mission-driven company but wrong function fit",
+    "NYC-based, remote status unclear/ambiguous"
+   ],
+   "concerns": [
+    "Title is Engineering Manager, conflicts with IC preference",
+    "Location NYC not Utah/remote-first",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 45,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "People management role, not hands-on IC",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -2393,6 +2294,70 @@
    "score": 5,
    "fit": "no",
    "reason": "Compliance/security governance role, not software engineering",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Cloudflare::8087769",
+  "company": "Cloudflare",
+  "title": "Senior Customer Engineer - Nashville",
+  "location": "Distributed",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8087769?gh_jid=8087769",
+  "posted": "2026-08-03",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Sales engineering role, explicit dealbreaker",
+    "Customer-facing pre/post sales, not hands-on engineering",
+    "Not aligned with IC engineering career goals"
+   ],
+   "concerns": [
+    "Dealbreaker: sales engineering",
+    "Not remote-clear, Nashville focused role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 5,
+   "practical_fit": 30,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Sales engineering role, explicit dealbreaker",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Cloudflare::8115936",
+  "company": "Cloudflare",
+  "title": "Senior Customer Engineer, Shenzhen",
+  "location": "Distributed",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8115936?gh_jid=8115936",
+  "posted": "2026-08-07",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "reasons": [
+    "Sales engineering/customer-facing role, dealbreaker"
+   ],
+   "concerns": [
+    "Location Shenzhen not compatible",
+    "Not hands-on engineering role"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 10,
+   "interest_fit": 5,
+   "practical_fit": 5,
+   "opportunity_score": 5,
+   "score": 5,
+   "fit": "no",
+   "reason": "Sales engineering/customer-facing role, dealbreaker",
    "bg": "8d3fa4bf6180"
   }
  }

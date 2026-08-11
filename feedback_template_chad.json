@@ -2,13 +2,6 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: applied, already_applied, not_interested, too_technical, wrong_function, wrong_industry, interested. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
-   "key": "1Password::5cea0067-467b-4e1a-9ae5-089541ecd827",
-   "company": "1Password",
-   "title": "Senior Developer, CI Architecture",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::b50830bf-d475-4cd9-b89c-b2176a4d1465",
    "company": "1Password",
    "title": "Senior Security Engineer, Vulnerability Management",
@@ -65,9 +58,30 @@
    "note": ""
   },
   {
+   "key": "Affirm::7833950003",
+   "company": "Affirm",
+   "title": "Staff Software Engineer, Backend (Online Storage)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7819704003",
+   "company": "Affirm",
+   "title": "Staff Software Engineer, Backend (Order Platform)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Angi::59a468ef-aef4-41a1-8bf2-5c920524e5d0",
    "company": "Angi",
    "title": "Principal Product Manager, AI Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "BYU::JR-10391",
+   "company": "BYU",
+   "title": "Platform Engineer",
    "status": "",
    "note": ""
   },
@@ -79,9 +93,9 @@
    "note": ""
   },
   {
-   "key": "Baseten::db6477fc-111a-4340-bf00-525fe023e6f3",
+   "key": "Baseten::3e925ab1-2089-4a79-989e-50479b546eda",
    "company": "Baseten",
-   "title": "AI Inference Engineer",
+   "title": "Software Engineer - Observability",
    "status": "",
    "note": ""
   },
@@ -100,13 +114,6 @@
    "note": ""
   },
   {
-   "key": "Chime::8578967002",
-   "company": "Chime",
-   "title": "Software Engineer, AI Enablement",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Circle::JR101085",
    "company": "Circle",
    "title": "Senior Site Reliability Engineer - Infra Ops",
@@ -121,23 +128,9 @@
    "note": ""
   },
   {
-   "key": "Close::bbd78474-bee4-4fdc-a670-9234457bcf29",
-   "company": "Close",
-   "title": "Senior Frontend Engineer \u2013 Growth (USA Only - 100% Remote)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cloudflare::8087769",
-   "company": "Cloudflare",
-   "title": "Senior Customer Engineer - Nashville",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cloudflare::8115936",
-   "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Shenzhen",
+   "key": "ClickHouse::6140168004",
+   "company": "ClickHouse",
+   "title": "Senior Consulting Engineer - AMER",
    "status": "",
    "note": ""
   },
@@ -177,9 +170,23 @@
    "note": ""
   },
   {
-   "key": "Cricut::744000141753089",
+   "key": "Cricut::744000142735637",
    "company": "Cricut",
-   "title": "Senior Mechanical Engineer: Test Development Engineering",
+   "title": "Systems Verification & Validation Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Docker::8faa282d-9783-4957-bace-ab29abd9e470",
+   "company": "Docker",
+   "title": "Senior Software Engineer, Docker Desktop, Desktop Systems Focus (East Coast)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Fivetran::7823193003",
+   "company": "Fivetran",
+   "title": "Staff Software Engineer, Metadata",
    "status": "",
    "note": ""
   },
@@ -191,16 +198,9 @@
    "note": ""
   },
   {
-   "key": "GitLab::8644569002",
+   "key": "GitLab::8682707002",
    "company": "GitLab",
-   "title": "Intermediate Backend Engineer, Platform Readiness",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "GitLab::8658878002",
-   "company": "GitLab",
-   "title": "Principal Product Manager, AI Software Factory",
+   "title": "Senior Backend Engineer (Ruby), Plan: Portfolio Experience",
    "status": "",
    "note": ""
   },
@@ -208,13 +208,6 @@
    "key": "GitLab::8646556002",
    "company": "GitLab",
    "title": "Senior Backend Engineer, Architecture Engineering: Nonlinear Productivity",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "GitLab::8644572002",
-   "company": "GitLab",
-   "title": "Senior Backend Engineer, Platform Readiness",
    "status": "",
    "note": ""
   },
@@ -247,9 +240,16 @@
    "note": ""
   },
   {
-   "key": "Gusto::8077301",
-   "company": "Gusto",
-   "title": "Staff Software Engineer, Time and Scheduling",
+   "key": "Headway::9ce97d23-19aa-4741-97cf-e8532ce747d3",
+   "company": "Headway",
+   "title": "Senior Engineering Manager, Web Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Headway::c22233f6-3143-4cb4-9c0c-8119e7ae7629",
+   "company": "Headway",
+   "title": "Staff Software Engineer - Experimentation",
    "status": "",
    "note": ""
   },
@@ -282,6 +282,13 @@
    "note": ""
   },
   {
+   "key": "Instacart::8110286",
+   "company": "Instacart",
+   "title": "Staff Software Engineer, Orders Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "LVT::5377974008",
    "company": "LVT",
    "title": "Sensor Integration Engineer II",
@@ -303,13 +310,6 @@
    "note": ""
   },
   {
-   "key": "LangChain::937e131f-1055-4f1f-bd8a-f036e4ba0666",
-   "company": "LangChain",
-   "title": "Deployed Engineer (Austin)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "LangChain::38947013-3d0c-4257-aa58-ab8fe247ea3e",
    "company": "LangChain",
    "title": "Deployed Engineer (Chicago)",
@@ -317,16 +317,23 @@
    "note": ""
   },
   {
-   "key": "LangChain::8b533cc4-6654-44b4-b3fc-004def2a9927",
-   "company": "LangChain",
-   "title": "Deployed Engineer (Dallas)",
+   "key": "LaunchDarkly::7849596003",
+   "company": "LaunchDarkly",
+   "title": "Staff Engineer \u2013 Distributed Systems \u2013 Flag Delivery",
    "status": "",
    "note": ""
   },
   {
-   "key": "LangChain::385313eb-bff4-4019-8106-42714dc9879a",
-   "company": "LangChain",
-   "title": "Deployed Engineer (Houston)",
+   "key": "Linear::f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1",
+   "company": "Linear",
+   "title": "Analytics Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "MX::4361585009",
+   "company": "MX",
+   "title": "Sr. Cloud Platform Engineer",
    "status": "",
    "note": ""
   },
@@ -338,16 +345,16 @@
    "note": ""
   },
   {
-   "key": "NICE::4940087101",
+   "key": "NICE::4931025101",
    "company": "NICE",
-   "title": "AI DevOps Engineer",
+   "title": "Partner Success Implementation Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "NICE::4931025101",
-   "company": "NICE",
-   "title": "Partner Success Implementation Engineer",
+   "key": "Notion::ca74504a-9b91-4ce3-b0df-97919b46e749",
+   "company": "Notion",
+   "title": "Software Engineer, Collections Infra",
    "status": "",
    "note": ""
   },
@@ -401,6 +408,13 @@
    "note": ""
   },
   {
+   "key": "Reddit::8112967",
+   "company": "Reddit",
+   "title": "Senior Machine Learning Systems Engineer, Ads ML Experience Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8106246",
    "company": "Reddit",
    "title": "Senior Software Engineer - Messaging",
@@ -415,16 +429,9 @@
    "note": ""
   },
   {
-   "key": "Render::b7508c39-c91f-405a-bdef-9c6b6eca1fee",
+   "key": "Render::06377f8a-a255-412a-8032-18ace1d005a5",
    "company": "Render",
-   "title": "Staff Product Manager, CI/CD & Developer Productivity",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Replit::2fa2d079-96a5-4d51-8718-04134ed39032",
-   "company": "Replit",
-   "title": "Product Engineer, New Products",
+   "title": "Software Engineer, Expansion (all levels)",
    "status": "",
    "note": ""
   },
@@ -485,13 +492,6 @@
    "note": ""
   },
   {
-   "key": "Tailscale::4721289005",
-   "company": "Tailscale",
-   "title": "Analytics Engineer, Data",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Tailscale::4721714005",
    "company": "Tailscale",
    "title": "Software Engineer, Strategic Projects",
@@ -534,23 +534,9 @@
    "note": ""
   },
   {
-   "key": "Twilio::8099162",
+   "key": "Twilio::8115128",
    "company": "Twilio",
-   "title": "Senior Software Engineer (L3)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Twilio::8098945",
-   "company": "Twilio",
-   "title": "Software Engineer (L4)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Twilio::8103253",
-   "company": "Twilio",
-   "title": "Software Engineer (L4)",
+   "title": "Principal Presales Engineer",
    "status": "",
    "note": ""
   },
@@ -583,6 +569,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025703",
+   "company": "Western Governors University",
+   "title": "Senior Cloud Engineer (IAM)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025732",
    "company": "Western Governors University",
    "title": "Senior Software Engineer- Full Stack- Java/Angular",
@@ -604,9 +597,9 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025827",
+   "key": "Western Governors University::JR-025882",
    "company": "Western Governors University",
-   "title": "Staff Cloud Engineer",
+   "title": "Staff Software Engineer (Front end focus)",
    "status": "",
    "note": ""
   },

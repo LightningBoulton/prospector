@@ -1,33 +1,34 @@
 [
  {
-  "key": "Cricut::744000141753089",
+  "key": "Cricut::744000142735637",
   "company": "Cricut",
-  "title": "Senior Mechanical Engineer: Test Development Engineering",
+  "title": "Systems Verification & Validation Engineer",
   "location": "South Jordan, UT, United States",
-  "url": "https://jobs.smartrecruiters.com/cricut/744000141753089",
-  "posted": "2026-08-05",
+  "url": "https://jobs.smartrecruiters.com/cricut/744000142735637",
+  "posted": "2026-08-10",
   "salary": null,
   "fit_result": {
    "recommendation": "not_recommended",
    "reasons": [
-    "Mechanical engineering role, not software",
-    "Not aligned with candidate's skillset"
+    "V&V engineering not software development role",
+    "Mismatch with frontend/full-stack expertise",
+    "No transformation or platform engineering mandate"
    ],
    "concerns": [
-    "Wrong function entirely",
-    "No software engineering scope"
+    "Wrong function - hardware/systems testing not software engineering",
+    "No description available to verify scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 3,
-   "interest_fit": 2,
-   "practical_fit": 20,
-   "opportunity_score": 3,
-   "score": 3,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 40,
+   "opportunity_score": 12,
+   "score": 12,
    "fit": "no",
-   "reason": "Mechanical engineering role, not software",
+   "reason": "V&V engineering not software development role",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -98,6 +99,40 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Utah location matches preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "MX::4361585009",
+  "company": "MX",
+  "title": "Sr. Cloud Platform Engineer",
+  "location": "Lehi, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4361585009",
+  "posted": "2026-08-10",
+  "salary": null,
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Lehi UT location fits geography",
+    "Cloud-native platform modernization aligns with interests",
+    "Fintech infra scale is meaningful mandate"
+   ],
+   "concerns": [
+    "Heavy infra/DevOps/cloud-migration focus vs full-stack strength",
+    "Less frontend/React emphasis than preferred",
+    "GCP focus vs candidate's AWS expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Lehi UT location fits geography",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -239,41 +274,6 @@
   }
  },
  {
-  "key": "NICE::4940087101",
-  "company": "NICE",
-  "title": "AI DevOps Engineer",
-  "location": "USA - Sandy, UT",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4940087101?gh_jid=4940087101",
-  "posted": "2026-08-03",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah location matches preference",
-    "AI infrastructure aligns with interests",
-    "Hands-on engineering role",
-    "DevOps/LLM focus differs from core strengths"
-   ],
-   "concerns": [
-    "Limited React/.NET/frontend overlap",
-    "DevOps/infra specialization not core strength",
-    "Unclear seniority and comp details"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah location matches preference",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "NICE::4931025101",
   "company": "NICE",
   "title": "Partner Success Implementation Engineer",
@@ -304,6 +304,76 @@
    "score": 20,
    "fit": "no",
    "reason": "Remote US location matches preference",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025882",
+  "company": "Western Governors University",
+  "title": "Staff Software Engineer (Front end focus)",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Front-end-focus-_JR-025882",
+  "posted": "2026-08-11",
+  "salary": "$161,000.00 - $249,500.00",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "reasons": [
+    "Staff-level IC frontend role",
+    "Salt Lake City location matches preference",
+    "React/frontend expertise aligns well",
+    "Enterprise SaaS-like org for education"
+   ],
+   "concerns": [
+    "No description to verify tech stack",
+    "Comp and remote flexibility unknown",
+    "WGU may have below-market pay"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 82,
+   "interest_fit": 75,
+   "practical_fit": 85,
+   "opportunity_score": 78,
+   "score": 78,
+   "fit": "yes",
+   "reason": "Staff-level IC frontend role",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025703",
+  "company": "Western Governors University",
+  "title": "Senior Cloud Engineer (IAM)",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Cloud-Engineer--IAM-_JR-025703",
+  "posted": "2026-08-10",
+  "salary": "$143,700.00 - $222,700.00",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Utah location matches preference",
+    "IAM/cloud overlaps with AWS/Cognito experience",
+    "Not a full-stack engineering role",
+    "Title suggests infra/security focus not core strength"
+   ],
+   "concerns": [
+    "No job description to verify scope",
+    "May be more infra/security than software engineering",
+    "Compensation unknown"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 70,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah location matches preference",
    "bg": "8d3fa4bf6180"
   }
  },
@@ -512,41 +582,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025827",
-  "company": "Western Governors University",
-  "title": "Staff Cloud Engineer",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Cloud-Engineer_JR-025827",
-  "posted": "2026-08-03",
-  "salary": "$161,000.00 - $249,500.00",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Cloud engineering aligns with AWS skills",
-    "Salt Lake City location matches preference",
-    "Staff level fits seniority target",
-    "Little description to assess mandate depth"
-   ],
-   "concerns": [
-    "No job description details available",
-    "Unclear if hands-on coding vs infra-only",
-    "Cloud engineer may lean less frontend/full-stack"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Cloud engineering aligns with AWS skills",
-   "bg": "8d3fa4bf6180"
-  }
- },
- {
   "key": "iCapital::8662826002",
   "company": "iCapital",
   "title": "Software Engineer - Associate / Assistant Vice President",
@@ -679,6 +714,40 @@
    "score": 60,
    "fit": "maybe",
    "reason": "Staff backend IC role matches seniority target",
+   "bg": "8d3fa4bf6180"
+  }
+ },
+ {
+  "key": "BYU::JR-10391",
+  "company": "BYU",
+  "title": "Platform Engineer",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Platform-Engineer_JR-10391",
+  "posted": "2026-08-10",
+  "salary": "$73,000-$95,000",
+  "fit_result": {
+   "recommendation": "stretch",
+   "reasons": [
+    "Platform engineering aligns with skills",
+    "Provo UT is in Salt Lake Valley region",
+    "No description to assess mandate depth"
+   ],
+   "concerns": [
+    "University salary likely below $190k minimum",
+    "No job description provided to evaluate scope",
+    "Onsite location, unclear remote flexibility"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Platform engineering aligns with skills",
    "bg": "8d3fa4bf6180"
   }
  }
