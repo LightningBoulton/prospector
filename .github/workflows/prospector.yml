@@ -55,6 +55,7 @@ jobs:
           git push
 
       - name: Email Chad's report
+        id: mail_chad
         if: ${{ steps.run.outputs.chad_changed == 'true' || inputs.force_email == true }}
         uses: dawidd6/action-send-mail@v18
         with:
@@ -70,6 +71,7 @@ jobs:
           attachments: ${{ steps.run.outputs.chad_logos }}   # inline company logos (cid:<file>)
 
       - name: Email Lisa's report
+        id: mail_lisa
         if: ${{ inputs.chad_only != true && (steps.run.outputs.lisa_changed == 'true' || inputs.force_email == true) }}
         uses: dawidd6/action-send-mail@v18
         with:
@@ -83,3 +85,39 @@ jobs:
           subject: "Prospector — director / ops roles today"
           html_body: file://report_lisa.html
           attachments: ${{ steps.run.outputs.lisa_logos }}   # inline company logos (cid:<file>)
+
+      # Delivery confirmation — the LAST step, on purpose.
+      #
+      # Prospector marks the roles it put in a report as "pending shown". Only a real send
+      # promotes them to permanently shown, and only a permanently shown role can ever appear
+      # in a later "Removed since prior run" section. Rendering a report is not delivering it:
+      # `chad_only` skips a recipient entirely, and SMTP can fail. Marking at render time
+      # would put roles nobody ever saw into the removed section — the exact bug the
+      # ever_shown field exists to prevent.
+      #
+      # A skipped or failed email step leaves its profile's marks pending. Those roles are
+      # simply rendered again on the next run; nothing is lost and nothing is over-claimed.
+      - name: Confirm delivery
+        if: ${{ always() }}
+        run: |
+          # Written as explicit ifs rather than `[ ... ] && VAR=x`: that form happens to be
+          # safe under `bash -e` (a failing test inside a && list does not trip errexit) but
+          # it reads like a bug, and a "fix" to it would be one.
+          SENT=""
+          if [ "${{ steps.mail_chad.outcome }}" = "success" ]; then
+            SENT="chad"
+          fi
+          if [ "${{ steps.mail_lisa.outcome }}" = "success" ]; then
+            SENT="${SENT:+$SENT,}lisa"
+          fi
+          if [ -z "$SENT" ]; then
+            echo "No email was delivered this run; leaving all 'shown' marks pending."
+            exit 0
+          fi
+          echo "Delivered to: $SENT"
+          python jobmonitor.py --confirm-sent "$SENT"
+          git config user.name  "prospector-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add jobs_*.json
+          git diff --staged --quiet || git commit -m "Confirm delivery: $(date -u +%Y-%m-%d) [$SENT]"
+          git push
