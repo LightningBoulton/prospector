@@ -2,9 +2,9 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: applied, already_applied, not_interested, too_technical, wrong_function, wrong_industry, interested. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
-   "key": "1Password::b50830bf-d475-4cd9-b89c-b2176a4d1465",
+   "key": "1Password::7f885c41-7572-439c-886f-bc508eb9a3d7",
    "company": "1Password",
-   "title": "Senior Security Engineer, Vulnerability Management",
+   "title": "Privacy Engineer",
    "status": "",
    "note": ""
   },
@@ -37,16 +37,16 @@
    "note": ""
   },
   {
-   "key": "Affirm::7820306003",
+   "key": "Affirm::7819999003",
    "company": "Affirm",
-   "title": "Senior Software Engineer, Backend (Reliability Platform)",
+   "title": "Staff Analytics Analyst, Full Stack (Revenue)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Affirm::7819999003",
+   "key": "Affirm::7819449003",
    "company": "Affirm",
-   "title": "Staff Analytics Analyst, Full Stack (Revenue)",
+   "title": "Staff CIAM Security Engineer",
    "status": "",
    "note": ""
   },
@@ -72,9 +72,9 @@
    "note": ""
   },
   {
-   "key": "Angi::59a468ef-aef4-41a1-8bf2-5c920524e5d0",
-   "company": "Angi",
-   "title": "Principal Product Manager, AI Platform",
+   "key": "Ancestry::R003377",
+   "company": "Ancestry",
+   "title": "Machine Learning Engineer, Co-op",
    "status": "",
    "note": ""
   },
@@ -93,6 +93,20 @@
    "note": ""
   },
   {
+   "key": "Baseten::e71e97a8-6367-4050-b6a9-42ce62ec78f1",
+   "company": "Baseten",
+   "title": "Software Engineer - AI Developer Productivity",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Baseten::fb886b59-fdc3-4315-a9b3-c49808bcd2ce",
+   "company": "Baseten",
+   "title": "Software Engineer - Continuous Delivery",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Baseten::3e925ab1-2089-4a79-989e-50479b546eda",
    "company": "Baseten",
    "title": "Software Engineer - Observability",
@@ -100,9 +114,9 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4686153006",
-   "company": "Chainguard",
-   "title": "Senior Software Engineer  (Guarded OS)",
+   "key": "Baseten::78028a72-2431-4373-aaec-d6e2c9a1cc7d",
+   "company": "Baseten",
+   "title": "Software Engineer - Testing Frameworks",
    "status": "",
    "note": ""
   },
@@ -114,23 +128,30 @@
    "note": ""
   },
   {
-   "key": "Circle::JR101085",
-   "company": "Circle",
-   "title": "Senior Site Reliability Engineer - Infra Ops",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Circle::JR101101",
-   "company": "Circle",
-   "title": "Staff Site Reliability Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "ClickHouse::6140168004",
    "company": "ClickHouse",
    "title": "Senior Consulting Engineer - AMER",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8121827",
+   "company": "Cloudflare",
+   "title": "Senior Customer Engineer, Named - Minnesota",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8115936",
+   "company": "Cloudflare",
+   "title": "Senior Customer Engineer, Shenzhen",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8124224",
+   "company": "Coinbase",
+   "title": "Senior Engineering Manager, Core Automation (Platform)",
    "status": "",
    "note": ""
   },
@@ -156,16 +177,9 @@
    "note": ""
   },
   {
-   "key": "Cricut::744000141575704",
+   "key": "Cricut::744000142970729",
    "company": "Cricut",
-   "title": "Lead Agentic Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cricut::744000141577074",
-   "company": "Cricut",
-   "title": "Lead Agentic Software Engineer, Connected Devices",
+   "title": "Senior Systems Quality Engineer",
    "status": "",
    "note": ""
   },
@@ -187,13 +201,6 @@
    "key": "Fivetran::7823193003",
    "company": "Fivetran",
    "title": "Staff Software Engineer, Metadata",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Gemini::8099895",
-   "company": "Gemini",
-   "title": "Senior Data Platform Engineer",
    "status": "",
    "note": ""
   },
@@ -226,13 +233,6 @@
    "note": ""
   },
   {
-   "key": "Grafana Labs::6135686004",
-   "company": "Grafana Labs",
-   "title": "Senior Software Engineer - k6 Core | USA, EST only | Remote",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Grafana Labs::6137468004",
    "company": "Grafana Labs",
    "title": "Senior Solutions Engineer | West Coast | Remote",
@@ -243,6 +243,13 @@
    "key": "Headway::9ce97d23-19aa-4741-97cf-e8532ce747d3",
    "company": "Headway",
    "title": "Senior Engineering Manager, Web Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Headway::d123a2aa-7c3c-4833-bfc2-4d3356db1041",
+   "company": "Headway",
+   "title": "Staff Software Engineer (Journeys)",
    "status": "",
    "note": ""
   },
@@ -275,6 +282,20 @@
    "note": ""
   },
   {
+   "key": "Hinge Health::146a5143-c0af-4aef-b504-8c1f5ed6339a",
+   "company": "Hinge Health",
+   "title": "Staff Engineer, MSK Verticals",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Hinge Health::940323e5-4b8a-4e42-830d-0850bfc07c39",
+   "company": "Hinge Health",
+   "title": "Staff Engineer/Tech Lead, MSK Verticals",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Hinge Health::d7bba1dc-1f6d-4ad0-9ad0-e65aa0aae628",
    "company": "Hinge Health",
    "title": "Staff Software Engineer, GI",
@@ -285,13 +306,6 @@
    "key": "Instacart::8110286",
    "company": "Instacart",
    "title": "Staff Software Engineer, Orders Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "LVT::5377974008",
-   "company": "LVT",
-   "title": "Sensor Integration Engineer II",
    "status": "",
    "note": ""
   },
@@ -338,16 +352,16 @@
    "note": ""
   },
   {
-   "key": "Mercury::6134310004",
+   "key": "Mercury::6141014004",
    "company": "Mercury",
-   "title": "Senior Cloud Security Engineer - InfoSec",
+   "title": "Head of Data Engineering & Platform",
    "status": "",
    "note": ""
   },
   {
-   "key": "NICE::4931025101",
+   "key": "NICE::4951002101",
    "company": "NICE",
-   "title": "Partner Success Implementation Engineer",
+   "title": "CX Outbound Solution Engineer",
    "status": "",
    "note": ""
   },
@@ -394,9 +408,23 @@
    "note": ""
   },
   {
+   "key": "Plaid::3f299587-7bed-4e59-9eb1-2d5d1df01821",
+   "company": "Plaid",
+   "title": "Technical Support Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "PostHog::1803b1de-d33b-4542-8e38-b6c4954cb789",
    "company": "PostHog",
    "title": "Backend Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "PostHog::b4bc11c6-49a8-48e1-9815-950ce7eef84d",
+   "company": "PostHog",
+   "title": "Context Engineer",
    "status": "",
    "note": ""
   },
@@ -408,6 +436,13 @@
    "note": ""
   },
   {
+   "key": "Reddit::8122887",
+   "company": "Reddit",
+   "title": "Principal UX Engineer, Ads",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8112967",
    "company": "Reddit",
    "title": "Senior Machine Learning Systems Engineer, Ads ML Experience Platform",
@@ -415,9 +450,9 @@
    "note": ""
   },
   {
-   "key": "Reddit::8106246",
+   "key": "Reddit::8122606",
    "company": "Reddit",
-   "title": "Senior Software Engineer - Messaging",
+   "title": "Senior Staff Machine Learning Engineer, Feed Relevance",
    "status": "",
    "note": ""
   },
@@ -443,9 +478,9 @@
    "note": ""
   },
   {
-   "key": "Samsara::8094156",
+   "key": "Samsara::8083352",
    "company": "Samsara",
-   "title": "Solutions Integration Engineer IV",
+   "title": "Sr. AI Engineer",
    "status": "",
    "note": ""
   },
@@ -453,13 +488,6 @@
    "key": "Samsara::8064742",
    "company": "Samsara",
    "title": "Staff Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Sanity::4f892238-04a5-442e-ab36-7f1f60010abf",
-   "company": "Sanity",
-   "title": "Solutions Engineer, PreSales - Senior to Staff level (US)",
    "status": "",
    "note": ""
   },
@@ -474,13 +502,6 @@
    "key": "Smartsheet::8110111",
    "company": "Smartsheet",
    "title": "Sr. Security Engineer II \u2013 IRAP Program Lead (Remote Eligible)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Stripe::8089353",
-   "company": "Stripe",
-   "title": "Software Engineer, Vulnerability Management",
    "status": "",
    "note": ""
   },
@@ -506,6 +527,13 @@
    "note": ""
   },
   {
+   "key": "Temporal::5209443007",
+   "company": "Temporal",
+   "title": "Director, Global Developer Success",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Temporal::5207314007",
    "company": "Temporal",
    "title": "Senior Platform Architect - West",
@@ -520,20 +548,6 @@
    "note": ""
   },
   {
-   "key": "Together AI::5202015007",
-   "company": "Together AI",
-   "title": "Technical Support Engineer (GPU Clusters) - US Weekends",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Together AI::5202021007",
-   "company": "Together AI",
-   "title": "Technical Support Engineer (Inference) - US Weekends",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8115128",
    "company": "Twilio",
    "title": "Principal Presales Engineer",
@@ -541,16 +555,16 @@
    "note": ""
   },
   {
-   "key": "Twilio::8026207",
-   "company": "Twilio",
-   "title": "Software Engineer, Platform Engineering (L2)",
+   "key": "Vanta::021cca9c-f937-4d97-8be7-bc83af8307be",
+   "company": "Vanta",
+   "title": "Senior Software Engineer, Product Platform",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8026203",
-   "company": "Twilio",
-   "title": "Software Engineer-Platform Engineering (L3)",
+   "key": "Western Governors University::JR-024398",
+   "company": "Western Governors University",
+   "title": "Assessment Developer",
    "status": "",
    "note": ""
   },
@@ -558,13 +572,6 @@
    "key": "Western Governors University::JR-025846",
    "company": "Western Governors University",
    "title": "Associate Learning Systems Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025311",
-   "company": "Western Governors University",
-   "title": "Associate Software Engineer",
    "status": "",
    "note": ""
   },
@@ -583,9 +590,9 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025309",
+   "key": "Western Governors University::JR-025892",
    "company": "Western Governors University",
-   "title": "Senior Software Engineer- Full-Stack- Java/Angular",
+   "title": "Software Engineer II",
    "status": "",
    "note": ""
   },
