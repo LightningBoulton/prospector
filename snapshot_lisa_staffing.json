@@ -7,32 +7,272 @@
   "url": "https://careers.eliassen.com/RYsCuX/lead-support-analyst-support-anywhere-a1wuq000001owk52ae",
   "posted": "2026-08-10",
   "salary": "$55.00 to $60.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
+   "confidence": "medium",
    "reasons": [
-    "IT application support, not strategic transformation",
-    "W2 contract technical helpdesk-adjacent role",
-    "Remote is practically fine but mandate mismatch"
+    "IT application support role, not strategic scope",
+    "W2 contract, low rate for seniority",
+    "Mismatch with transformation/operations focus"
    ],
    "concerns": [
-    "Hands-on ITIL support work, wrong domain",
-    "No strategic or organizational scope",
-    "Low pay rate for her level"
+    "Hands-on technical support, wrong function",
+    "Low pay relative to experience level"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
-   "interest_fit": 25,
+   "interest_fit": 20,
    "practical_fit": 55,
    "opportunity_score": 25,
    "score": 25,
    "fit": "no",
-   "reason": "IT application support, not strategic transformation",
-   "bg": "cae648f28d15"
+   "reason": "IT application support role, not strategic scope",
+   "bg": "1451cb4bda95"
   },
   "rescued": true
+ },
+ {
+  "key": "Eliassen::870985ec-90e3-11f1-97a0-024201c20d84",
+  "company": "Eliassen",
+  "title": "Portfolio Project Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/AMSrkn/portfolio-project-manager-programproject-management-anywhere-a1wuq000001iieh2aq",
+  "posted": "2026-08-05",
+  "salary": "$60.00 to $65.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'portfolio' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract W2 role",
+    "Program/portfolio leadership matches PMO skills",
+    "Restoring structure/discipline fits transformation strength",
+    "Technical Databricks/data scope somewhat narrow"
+   ],
+   "concerns": [
+    "Heavily technical data platform focus",
+    "Below her strategic/executive scope level",
+    "Contract-only, limited long-term growth"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 45,
+   "practical_fit": 70,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote contract W2 role",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Eliassen::bee1da82-9662-11f1-9509-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Project Manager \u2013 Customer Modeling & Anaplan Transformation",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/ZCrhvs/project-manager-customer-modeling-anaplan-transformation-programproject-management-anywhere-a1wuq000001o4iz2aa",
+  "posted": "2026-08-12",
+  "salary": "$65.00 to $70.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Enterprise transformation PM with real cross-functional scope",
+    "Remote W2 contract fits practical constraints",
+    "Executive/steering committee communication aligns with strengths",
+    "Program governance and adoption focus matches operations skillset"
+   ],
+   "concerns": [
+    "Anaplan/technical implementation specifics not her core expertise",
+    "Contract rate modest for seniority level",
+    "Narrower technical scope than typical transformation mandates"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 75,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Enterprise transformation PM with real cross-functional scope",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Eliassen::95a9af7f-8d03-11f1-b76d-024201c20d84",
+  "company": "Eliassen",
+  "title": "Senior Project Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/itKMUh/senior-project-manager-programproject-management-anywhere-a1wuq000001n7cf2ai",
+  "posted": "2026-07-31",
+  "salary": "$70.00 to $80.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "W2 contract PM role, remote",
+    "Technical AML/data platform migration, not her domain",
+    "Some transferable program governance skills"
+   ],
+   "concerns": [
+    "Deep AML/compliance/tech platform specificity mismatch",
+    "Not aligned to transformation/strategy mandate",
+    "Hourly W2 contract, limited strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "W2 contract PM role, remote",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Eliassen::08bf52f0-8c29-11f1-b76d-024201c20d84",
+  "company": "Eliassen",
+  "title": "Compliance Project Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/8tXGYR/compliance-project-manager-regulatorycompliance-anywhere-a1wuq000001mvuf2aa",
+  "posted": "2026-07-30",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract PM work",
+    "Project management transferable skills",
+    "Not core transformation or org strategy mandate"
+   ],
+   "concerns": [
+    "Highly specialized BSA/AML/OFAC regulatory compliance domain",
+    "W2 contract only, no strategic ownership",
+    "Not aligned with core transformation interests"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 60,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Remote contract PM work",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Eliassen::08b7b180-8c29-11f1-b76d-024201c20d84",
+  "company": "Eliassen",
+  "title": "Technical Project Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/8H3WtD/technical-project-manager-programproject-management-anywhere-a1wuq000001mlqt2aq",
+  "posted": "2026-07-30",
+  "salary": "$50.00 to $55.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract option",
+    "Project coordination not strategic ownership",
+    "Software R&D/regulatory PM, not transformation scope"
+   ],
+   "concerns": [
+    "Tactical execution role, not strategic",
+    "Regulatory/quality domain mismatch",
+    "Below her typical seniority and mandate level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 30,
+   "practical_fit": 60,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Remote contract option",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Eliassen::b50cc83b-8b89-11f1-b76d-024201c20d84",
+  "company": "Eliassen",
+  "title": "Senior PMO Consultant",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/MFyKJ4/senior-pmo-consultant-programproject-management-anywhere-a1wuq000001myor2au",
+  "posted": "2026-07-29",
+  "salary": "$80.00 to $85.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'pmo' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "PMO governance and program leadership mandate",
+    "Remote contract role fits practical constraints",
+    "Stakeholder alignment and executive communication scope",
+    "Rate provides useful income opportunity"
+   ],
+   "concerns": [
+    "ERP/Workday Extend technical focus is narrow",
+    "Contract role, not strategic ownership beyond project scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 70,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "PMO governance and program leadership mandate",
+   "bg": "1451cb4bda95"
+  }
  },
  {
   "key": "Eliassen::650f0f1e-7fc0-11f1-a7a9-02420a6c7775",
@@ -42,18 +282,23 @@
   "url": "https://careers.eliassen.com/ojEVgx/product-manager-agentic-ai-hr-technology-product-management-anywhere-a1wuq000001gsg92aa",
   "posted": "2026-07-25",
   "salary": "$85.00 to $95.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "practical_contract",
+   "confidence": "medium",
    "reasons": [
-    "AI enablement and employee experience mandate fits interests",
-    "W2 contract offers income and experience value",
-    "Remote, no relocation needed",
-    "Cross-functional liaison role suits her operating style"
+    "AI adoption/enablement in HR tech aligns with core domains",
+    "Remote W2 contract fits practical constraints",
+    "Employee experience and workflow automation mandate",
+    "Cross-functional liaison role suits her working style"
    ],
    "concerns": [
-    "Requires deep Workday/ServiceNow technical product management background",
-    "Hands-on AI/product management skillset not clearly demonstrated in profile",
-    "Staffing-firm contract role, limited strategic ownership"
+    "More hands-on product management/backlog role than strategic leadership",
+    "Requires specific Workday/ServiceNow platform depth",
+    "Staffing agency contract, limited long-term scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -62,11 +307,243 @@
    "qualification_fit": 55,
    "interest_fit": 65,
    "practical_fit": 70,
-   "opportunity_score": 58,
-   "score": 58,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "reason": "AI enablement and employee experience mandate fits interests",
-   "bg": "cae648f28d15"
+   "reason": "AI adoption/enablement in HR tech aligns with core domains",
+   "bg": "1451cb4bda95"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Robert Half::02100-0013483664-usen",
+  "company": "Robert Half",
+  "title": "Sr. Digital Marketing Manager",
+  "location": "Hartford, CT (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/hartford-ct/sr-digital-marketing-manager/02100-0013483664-usen",
+  "posted": "2026-08-11",
+  "salary": "$55.00\u2013$65.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, continuous improvement)",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Fully remote 4-month contract could provide income",
+    "Team leadership and cross-functional scope present",
+    "Not core transformation or ops strategy mandate"
+   ],
+   "concerns": [
+    "Deep B2B marketing execution focus, not her specialty",
+    "Short-term contract with limited strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 60,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Fully remote 4-month contract could provide income",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Robert Half::03410-0013474207-usen",
+  "company": "Robert Half",
+  "title": "Infrastructure and Security Manager",
+  "location": "Columbus, OH (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/columbus-oh/infrastructure-and-security-manager/03410-0013474207-usen",
+  "posted": "2026-07-27",
+  "salary": null,
+  "employment_type": "Temp to Perm",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (service delivery, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Deep IT infrastructure/security engineering role",
+    "Not a strategy or transformation mandate",
+    "Wrong domain for candidate profile"
+   ],
+   "concerns": [
+    "Requires hands-on technical IT/security expertise",
+    "No org strategy or transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 30,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Deep IT infrastructure/security engineering role",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Robert Half::00390-9504375082-usen",
+  "company": "Robert Half",
+  "title": "Program Manager",
+  "location": "Sacramento, CA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/sacramento-ca/program-manager/00390-9504375082-usen",
+  "posted": "2026-08-06",
+  "salary": "$65.00\u2013$70.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "M&A integration program leadership",
+    "Executive stakeholder communication",
+    "Remote contract with FTE potential",
+    "Cross-functional coordination matches strengths"
+   ],
+   "concerns": [
+    "Requires active PMP certification, unclear if held",
+    "Temp/contract via staffing agency",
+    "Healthcare-specific credentialing knowledge needed"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 75,
+   "practical_fit": 70,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "maybe",
+   "reason": "M&A integration program leadership",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Robert Half::00295-0013479119-usen",
+  "company": "Robert Half",
+  "title": "Recruiting Manager",
+  "location": "Beverly Hills, CA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/beverly-hills-ca/recruiting-manager/00295-0013479119-usen",
+  "posted": "2026-07-28",
+  "salary": "$47.50\u2013$60.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, adoption)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Operational leadership overlap",
+    "Not transformation/strategy scope",
+    "Recruiting-specific domain mismatch"
+   ],
+   "concerns": [
+    "Wrong core function - TA management not transformation",
+    "Temp contract, onsite hint despite remote tag",
+    "Limited strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 40,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Operational leadership overlap",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Robert Half::00610-0013481978-usen",
+  "company": "Robert Half",
+  "title": "Creative and Marketing Team Project Manager",
+  "location": "Denver, CO (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/denver-co/creative-and-marketing-team-project-manager/00610-0013481978-usen",
+  "posted": "2026-08-05",
+  "salary": "$35.00\u2013$45.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Portfolio governance & cross-functional PM aligns with ops leadership",
+    "Remote contract fits practical flexibility",
+    "Below her strategic/transformation scope"
+   ],
+   "concerns": [
+    "Contract, not permanent leadership role",
+    "Tourism/marketing PM is narrower than core transformation domains"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 52,
+   "score": 52,
+   "fit": "maybe",
+   "reason": "Portfolio governance & cross-functional PM aligns with ops leadership",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Robert Half::00400-0013487121-usen",
+  "company": "Robert Half",
+  "title": "Finance Manager",
+  "location": "San Diego, CA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/san-diego-ca/finance-manager/00400-0013487121-usen",
+  "posted": "2026-08-12",
+  "salary": "$47.50\u2013$55.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "FP&A financial modeling role, not her domain",
+    "Requires advanced modeling/SQL skills she lacks",
+    "M&A integration angle present but finance-heavy"
+   ],
+   "concerns": [
+    "Wrong function: hands-on FP&A modeling",
+    "Temp contract with narrow finance scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 25,
+   "practical_fit": 40,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "FP&A financial modeling role, not her domain",
+   "bg": "1451cb4bda95"
   },
   "rescued": true
  }

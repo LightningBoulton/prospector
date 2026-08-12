@@ -1,72 +1,116 @@
 [
  {
-  "key": "Podium::8067712",
-  "company": "Podium",
-  "title": "Chief of Staff",
-  "location": "Lehi, Utah",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/8067712",
-  "posted": "2026-07-15",
+  "key": "MX::4338011009",
+  "company": "MX",
+  "title": "Director, Governance, Risk & Compliance",
+  "location": "Lehi, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4338011009",
+  "posted": "2026-07-31",
   "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, governance)",
   "fit_result": {
-   "recommendation": "apply_first",
+   "recommendation": "not_recommended",
+   "confidence": "medium",
    "reasons": [
-    "Chief of Staff mandate matches target titles directly",
-    "Utah Lehi location, strong practical fit",
-    "Cross-functional operations and strategy scope",
-    "Fast-growing AI company, transformation-adjacent",
-    "Executive-facing role partnering with COO"
+    "Utah onsite, strong practical fit",
+    "Some org/program leadership overlap",
+    "Not a transformation or experience mandate"
    ],
    "concerns": [
-    "Heavy revenue ops focus may narrow strategic scope",
-    "High-growth chaos could mean unclear mandate boundaries"
+    "Requires deep security/compliance/regulatory expertise",
+    "Not aligned to candidate's core domains"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 85,
-   "interest_fit": 90,
-   "practical_fit": 90,
-   "opportunity_score": 88,
-   "score": 88,
-   "fit": "yes",
-   "reason": "Chief of Staff mandate matches target titles directly",
-   "bg": "cae648f28d15"
+   "qualification_fit": 25,
+   "interest_fit": 30,
+   "practical_fit": 85,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah onsite, strong practical fit",
+   "bg": "1451cb4bda95"
   }
  },
  {
-  "key": "Podium::8074470",
-  "company": "Podium",
-  "title": "Senior Manager, Customer Success - Automotive AI",
-  "location": "Remote, US",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/8074470",
-  "posted": "2026-07-20",
+  "key": "MX::4336014009",
+  "company": "MX",
+  "title": "Staff Technical Program Manager",
+  "location": "Lehi, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4336014009",
+  "posted": "2026-07-28",
   "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
    "recommendation": "stretch",
+   "confidence": "medium",
    "reasons": [
-    "Remote US role fits location constraints well",
-    "Customer success leadership overlaps with CX/experience ownership expertise",
-    "AI-driven product aligns with AI adoption/enablement interest",
-    "Team leadership and coaching scope shows real ownership"
+    "Lehi UT location fits practical constraints",
+    "Program leadership overlaps her PMO experience",
+    "But heavily technical SDLC/architecture mandate"
    ],
    "concerns": [
-    "Automotive dealership vertical is narrow, unproven domain fit",
-    "Heavily sales/retention-metrics driven vs strategic transformation mandate",
-    "Title suggests tactical CS management, not organizational strategy scope"
+    "Requires deep technical/engineering fluency not her core strength",
+    "Not a strategy/transformation mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 40,
+   "practical_fit": 90,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Lehi UT location fits practical constraints",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Canopy::4354755009",
+  "company": "Canopy",
+  "title": "Manager of Enablement",
+  "location": "Draper, UT",
+  "url": "https://job-boards.greenhouse.io/canopytax/jobs/4354755009",
+  "posted": "2026-08-04",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'enablement' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Utah hybrid, workable location",
+    "Enablement strategy and program ownership",
+    "GTM cross-functional collaboration"
+   ],
+   "concerns": [
+    "Sales enablement is narrower than her transformation focus",
+    "Manager-level GTM tactical scope, less strategic breadth"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 58,
-   "interest_fit": 62,
-   "practical_fit": 90,
-   "opportunity_score": 58,
-   "score": 58,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "reason": "Remote US role fits location constraints well",
-   "bg": "cae648f28d15"
+   "reason": "Utah hybrid, workable location",
+   "bg": "1451cb4bda95"
   }
  },
  {
@@ -77,63 +121,73 @@
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Manager--Revenue-Operations_R170491",
   "posted": "2026-07-27",
   "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "Utah (Lehi) location matches preference strongly",
-    "Revenue operations is listed adjacent domain",
-    "Adobe is reputable enterprise employer",
-    "Manager-level ownership fits seniority stance"
+    "RevOps aligns with operations background",
+    "Utah location matches preference",
+    "Adobe strong company platform"
    ],
    "concerns": [
-    "No job description to confirm mandate scope",
-    "RevOps may be narrower than transformation/strategy focus"
+    "No description to confirm scope",
+    "Manager title scope unclear",
+    "Could be narrow sales-ops function"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
-   "practical_fit": 88,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 85,
    "opportunity_score": 62,
    "score": 62,
-   "fit": "yes",
-   "reason": "Utah (Lehi) location matches preference strongly",
-   "bg": "cae648f28d15"
+   "fit": "maybe",
+   "reason": "RevOps aligns with operations background",
+   "bg": "1451cb4bda95"
   }
  },
  {
-  "key": "Adobe::R169572",
+  "key": "Adobe::R170576",
   "company": "Adobe",
-  "title": "M&A Finance Integration Lead",
-  "location": "Lehi (+1 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sr-M-A-Finance-Integration-Analyst_R169572-1",
-  "posted": "2026-07-14",
-  "salary": "$167,300 - $242,300",
+  "title": "Senior Analyst, Revenue Operations",
+  "location": "Lehi",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-Analyst--Revenue-Operations_R170576",
+  "posted": "2026-07-27",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'operations' + seniority in title",
   "fit_result": {
    "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "M&A integration matches core domain",
-    "Utah location, likely no relocation",
-    "Adobe brand strong platform"
+    "RevOps aligns with adjacent domain",
+    "Utah location matches preference",
+    "Senior Analyst title suggests limited scope"
    ],
    "concerns": [
-    "Finance-specific focus may not match her background",
-    "No description to confirm mandate scope"
+    "No description to confirm mandate",
+    "Analyst level may lack strategic ownership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 55,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 60,
-   "score": 60,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
    "fit": "maybe",
-   "reason": "M&A integration matches core domain",
-   "bg": "cae648f28d15"
+   "reason": "RevOps aligns with adjacent domain",
+   "bg": "1451cb4bda95"
   }
  },
  {
@@ -144,18 +198,22 @@
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Manager--Business-Process-Optimization-Program-Management_R170677-1",
   "posted": "2026-07-27",
   "salary": "$173,300 - $250,875",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "strong_fit",
+   "confidence": "low",
    "reasons": [
-    "Business process optimization matches operational excellence expertise",
-    "Program management aligns with PMO/portfolio leadership background",
-    "Lehi, Utah location matches her geographic preference",
-    "Adobe is a substantial enterprise with real scale",
-    "Senior Manager level fits her seniority range"
+    "Process optimization/program management mandate fits core strengths",
+    "Utah location (Lehi) matches preference",
+    "Senior Manager level fits seniority stance",
+    "Adobe scale suggests real operational scope"
    ],
    "concerns": [
-    "No job description available to confirm actual mandate/scope",
-    "Title could be narrower process-engineering role vs strategic transformation"
+    "No description available to confirm mandate depth",
+    "Title could be narrower operational role than transformation"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -167,148 +225,8 @@
    "opportunity_score": 78,
    "score": 78,
    "fit": "yes",
-   "reason": "Business process optimization matches operational excellence expertise",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Adobe::R164092",
-  "company": "Adobe",
-  "title": "Sr. Sales Operations Manager",
-  "location": "Lehi (+2 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Sr-Sales-Operations-Manager_R164092",
-  "posted": "2026-07-13",
-  "salary": "$152,400 - $220,650",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah location matches strongly",
-    "Sales ops adjacent to revenue operations",
-    "Sr. Manager title carries some scope",
-    "No description to confirm mandate depth"
-   ],
-   "concerns": [
-    "Sales operations may be narrower than transformation focus",
-    "No description available to verify strategic scope",
-    "Could be quota/pipeline-focused rather than org strategy"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah location matches strongly",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Adobe::R169109",
-  "company": "Adobe",
-  "title": "GRC Strategy and Insights Lead",
-  "location": "Lehi (+3 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/GRC-Strategy-and-Insights-Lead_R169109",
-  "posted": "2026-07-13",
-  "salary": "$162,000 - $234,600",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah location matches preference",
-    "GRC-adjacent to operations/strategy work",
-    "Title suggests strategic insights mandate",
-    "No description limits assessment"
-   ],
-   "concerns": [
-    "No job description available",
-    "GRC domain expertise unclear fit",
-    "May be compliance-heavy vs transformation-focused"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 40,
-   "practical_fit": 75,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Utah location matches preference",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Adobe::R169617",
-  "company": "Adobe",
-  "title": "Sales Partner Compliance Operations Manager",
-  "location": "Lehi (+3 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sales-Partner-Compliance-Operations-Manager_R169617",
-  "posted": "2026-07-20",
-  "salary": "$146,300 - $211,850",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah location (Lehi) matches location preference",
-    "Operations Manager title touches ops domain",
-    "Compliance focus narrower than core transformation interests",
-    "Adobe is a credible large employer"
-   ],
-   "concerns": [
-    "No job description available to assess real mandate",
-    "Compliance specialization may be narrow vs strategic ops scope",
-    "Sales partner focus may be niche/limited scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 75,
-   "opportunity_score": 42,
-   "score": 42,
-   "fit": "maybe",
-   "reason": "Utah location (Lehi) matches location preference",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Adobe::R167579",
-  "company": "Adobe",
-  "title": "Senior\u00a0Global\u00a0Total Rewards Operations & Project Manager",
-  "location": "Lehi (+3 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Global-Total-Rewards-Operations---Project-Manager_R167579",
-  "posted": "2026-07-13",
-  "salary": "$180,300 - $261,150",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Program/project management overlap",
-    "Utah location (Lehi) strong practical fit",
-    "Adobe brand credibility",
-    "Operations title suggests process ownership"
-   ],
-   "concerns": [
-    "Total Rewards/compensation is outside core domains",
-    "No description to confirm strategic scope",
-    "May be narrow HR-ops function vs transformation"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 75,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Program/project management overlap",
-   "bg": "cae648f28d15"
+   "reason": "Process optimization/program management mandate fits core strengths",
+   "bg": "1451cb4bda95"
   }
  },
  {
@@ -319,18 +237,22 @@
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Chicago/Project-Manager--Professional-Services-_R170971",
   "posted": "2026-08-05",
   "salary": "$118,100 - $171,100",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "Professional services PM aligns with delivery leadership background",
-    "Utah location matches practical preference",
-    "Adobe offers strong brand and scale",
-    "Limited detail obscures actual mandate scope"
+    "Lehi/Utah location fits location preference",
+    "Project management aligns with program leadership",
+    "Adobe professional services could offer scope",
+    "Thin posting, mandate unclear"
    ],
    "concerns": [
-    "No job description to assess strategic scope",
-    "Title suggests possibly tactical, not strategic role",
-    "Unclear seniority/ownership level"
+    "No description to assess scope or seniority",
+    "Title suggests possibly narrower PM role"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -338,12 +260,12 @@
    "valid": true,
    "qualification_fit": 65,
    "interest_fit": 55,
-   "practical_fit": 90,
+   "practical_fit": 85,
    "opportunity_score": 55,
    "score": 55,
    "fit": "maybe",
-   "reason": "Professional services PM aligns with delivery leadership background",
-   "bg": "cae648f28d15"
+   "reason": "Lehi/Utah location fits location preference",
+   "bg": "1451cb4bda95"
   }
  },
  {
@@ -354,18 +276,1136 @@
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Director--TPS-Strategy---Business-Operations_R170411",
   "posted": "2026-08-04",
   "salary": "$225,100 - $325,900",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "Utah location (Lehi) matches preference",
-    "Director-level operations title",
-    "Sales ops adjacent to business operations",
-    "Limited detail on transformation scope"
+    "Sales ops director title has some ops overlap",
+    "Utah location (Lehi) fits practical constraints",
+    "Technical pre-sales focus is a weaker match",
+    "No description to confirm strategic scope"
    ],
    "concerns": [
-    "No job description available to assess mandate",
-    "Technical pre-sales focus may be narrow",
-    "Sales ops may lack strategic/transformation scope"
+    "No job description available",
+    "Technical pre-sales may be too sales-specific",
+    "Unclear organizational scope or ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 75,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Sales ops director title has some ops overlap",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Adobe::R170475",
+  "company": "Adobe",
+  "title": "Group Content Strategy Manager, Adobe.com",
+  "location": "Lehi (+9 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Group-Content-Strategy-Manager--Adobecom_R170475-1",
+  "posted": "2026-07-23",
+  "salary": "$202,900 - $293,800",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah location (Lehi) fits practical constraints",
+    "Content strategy adjacent to her domain",
+    "Manager title but scope unclear",
+    "No description to confirm mandate"
+   ],
+   "concerns": [
+    "No job description available to assess strategic scope",
+    "Content strategy is adjacent, not core, domain"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 75,
+   "opportunity_score": 42,
+   "score": 42,
+   "fit": "maybe",
+   "reason": "Utah location (Lehi) fits practical constraints",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "BambooHR::6000282004",
+  "company": "BambooHR",
+  "title": "Product Design Lead, Customer Journey & Growth",
+  "location": "Utah | Hybrid",
+  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6000282004",
+  "posted": "2026-08-03",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'customer' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Utah hybrid location is workable",
+    "Customer-facing but pure UX/product design craft",
+    "Not organizational strategy or operations mandate"
+   ],
+   "concerns": [
+    "Requires hands-on product design expertise",
+    "Not a transformation or operations leadership role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 25,
+   "practical_fit": 75,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Utah hybrid location is workable",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "BambooHR::6011897004",
+  "company": "BambooHR",
+  "title": "Sr. Marketing Operations Manager - Website",
+  "location": "Utah | Hybrid",
+  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6011897004",
+  "posted": "2026-07-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Utah hybrid location fits practical constraints",
+    "But highly technical marketing-tagging/analytics role",
+    "Not aligned with transformation/ops leadership mandate"
+   ],
+   "concerns": [
+    "Requires deep GTM/tagging technical expertise",
+    "Not a strategic or leadership scope role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 75,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah hybrid location fits practical constraints",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Ancestry::R003425",
+  "company": "Ancestry",
+  "title": "Workplace Experience Lead",
+  "location": "Draper, UT",
+  "url": "https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Workplace-Experience-Lead_R003425",
+  "posted": "2026-08-07",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'workplace experience' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based role near her location",
+    "Experience/ops leadership overlap possible",
+    "Title suggests facilities-type scope, unclear mandate"
+   ],
+   "concerns": [
+    "No description available to assess scope",
+    "Could be facilities/office-ops rather than strategic",
+    "Title suggests narrower workplace-services focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-based role near her location",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Health Catalyst::REQ-3267",
+  "company": "Health Catalyst",
+  "title": "Implementation Manager",
+  "location": "US Remote",
+  "url": "https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Implementation-Manager_REQ-3267",
+  "posted": "2026-07-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Remote US, practical fit strong",
+    "Implementation/program leadership plausible fit",
+    "Thin posting with no description"
+   ],
+   "concerns": [
+    "No description to assess mandate",
+    "Title alone may be delivery-focused, not strategic"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 50,
+   "practical_fit": 85,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Remote US, practical fit strong",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "NICE::4934090101",
+  "company": "NICE",
+  "title": "Director, Business Consulting, VRS, CX",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4934090101?gh_jid=4934090101",
+  "posted": "2026-07-22",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "apply_first",
+   "confidence": "medium",
+   "reasons": [
+    "Value realization, CX, professional services leadership mandate",
+    "US-remote practical fit",
+    "AI-driven analytics adoption aligns with interests",
+    "P&L, utilization, margin ownership",
+    "Director-level executive-facing scope"
+   ],
+   "concerns": [
+    "Contact center domain specificity may require ramp-up",
+    "Heavy people-management of consultants vs strategy"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 88,
+   "practical_fit": 90,
+   "opportunity_score": 84,
+   "score": 84,
+   "fit": "yes",
+   "reason": "Value realization, CX, professional services leadership mandate",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "NICE::4934082101",
+  "company": "NICE",
+  "title": "Lead Business Consultant, VRS, CX",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4934082101?gh_jid=4934082101",
+  "posted": "2026-07-22",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Value realization consulting matches core domain expertise",
+    "US-remote fits practical constraints well",
+    "Change strategy and business case ownership align",
+    "Professional services/consulting delivery background fits",
+    "Cross-functional influence without authority matches working style"
+   ],
+   "concerns": [
+    "Requires CCaaS/contact center domain specifics",
+    "Hands-on delivery role, less strategic leadership scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 88,
+   "practical_fit": 92,
+   "opportunity_score": 84,
+   "score": 84,
+   "fit": "yes",
+   "reason": "Value realization consulting matches core domain expertise",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "NICE::4922943101",
+  "company": "NICE",
+  "title": "Lead Program Manager",
+  "location": "USA - Sandy, UT",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4922943101?gh_jid=4922943101",
+  "posted": "2026-07-27",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Program leadership with executive visibility",
+    "Utah on-site location matches preference",
+    "Cross-functional coordination fits ops background"
+   ],
+   "concerns": [
+    "Technical/engineering delivery focus more IT-PM than transformation",
+    "Less strategic/organizational scope than target roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "yes",
+   "reason": "Program leadership with executive visibility",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "NICE::4943797101",
+  "company": "NICE",
+  "title": "Partner Executive - SLED",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4943797101?gh_jid=4943797101",
+  "posted": "2026-08-03",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, executive alignment)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Alliance/sales quota-oriented partnership role",
+    "Not aligned with transformation/ops mandate",
+    "Requires Midwest/West Coast location"
+   ],
+   "concerns": [
+    "Sales pipeline and revenue quota ownership",
+    "CRM alliance-specific expertise required",
+    "Location restriction outside Utah"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Alliance/sales quota-oriented partnership role",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "NICE::4932685101",
+  "company": "NICE",
+  "title": "Principal Cloud Architect",
+  "location": "USA - Sandy, UT",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4932685101?gh_jid=4932685101",
+  "posted": "2026-07-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Deep hands-on cloud engineering role, wrong function"
+   ],
+   "concerns": [
+    "Requires AWS/Terraform technical expertise she lacks"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 8,
+   "interest_fit": 10,
+   "practical_fit": 60,
+   "opportunity_score": 12,
+   "score": 12,
+   "fit": "no",
+   "reason": "Deep hands-on cloud engineering role, wrong function",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "NICE::4934012101",
+  "company": "NICE",
+  "title": "Senior AI Project Manager, CX",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4934012101?gh_jid=4934012101",
+  "posted": "2026-07-22",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote, matches location preference",
+    "AI adoption/enablement is a core domain",
+    "Customer experience alignment",
+    "Program/delivery leadership overlap"
+   ],
+   "concerns": [
+    "Fairly tactical PM role, not strategic ownership",
+    "Below her seniority level and scope",
+    "AI-specific technical depth may be light for her"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 60,
+   "practical_fit": 90,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "US-remote, matches location preference",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "NICE::4930047101",
+  "company": "NICE",
+  "title": "Senior Product Manager, CX",
+  "location": "USA - Sandy, UT",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4930047101?gh_jid=4930047101",
+  "posted": "2026-07-22",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'cx' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Utah location matches",
+    "CX and AI themes align loosely",
+    "Role requires hands-on technical product management"
+   ],
+   "concerns": [
+    "Requires hands-on prototyping/technical PM skills not in profile",
+    "Wrong function: product management, not transformation/ops leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 45,
+   "practical_fit": 75,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Utah location matches",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "NICE::4951000101",
+  "company": "NICE",
+  "title": "Transformation Consultant",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4951000101?gh_jid=4951000101",
+  "posted": "2026-08-11",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "apply_first",
+   "confidence": "medium",
+   "reasons": [
+    "C-suite transformation mandate",
+    "AI adoption/enablement core focus",
+    "US-remote fits practical constraints",
+    "Change management and roadmap ownership"
+   ],
+   "concerns": [
+    "May require contact-center/CX platform expertise",
+    "Heavy consulting travel possible"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 92,
+   "practical_fit": 90,
+   "opportunity_score": 87,
+   "score": 87,
+   "fit": "yes",
+   "reason": "C-suite transformation mandate",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Brex::8654459002",
+  "company": "Brex",
+  "title": "GTM AI Revenue Enablement, Senior Manager",
+  "location": "Salt Lake City, Utah, United States",
+  "url": "https://www.brex.com/careers/8654459002?gh_jid=8654459002",
+  "posted": "2026-07-28",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'enablement' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "AI enablement/adoption mandate matches interests",
+    "Utah location, strong practical fit",
+    "Cross-functional GTM ownership role"
+   ],
+   "concerns": [
+    "Requires hands-on AI building/engineering skills",
+    "Sales enablement domain not core background",
+    "Highly technical builder expectations exceed profile"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 65,
+   "practical_fit": 85,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "AI enablement/adoption mandate matches interests",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Kelso Industries::5380620008",
+  "company": "Kelso Industries",
+  "title": "HVAC Project Manager",
+  "location": "Atlanta, GA; Ogden, UT; Tampa, FL",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5380620008#job-board",
+  "posted": "2026-08-05",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Wrong function: hands-on HVAC construction PM",
+    "No org strategy or transformation mandate",
+    "Requires technical HVAC trade expertise"
+   ],
+   "concerns": [
+    "Not aligned with candidate's domain at all"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 10,
+   "interest_fit": 5,
+   "practical_fit": 30,
+   "opportunity_score": 10,
+   "score": 10,
+   "fit": "no",
+   "reason": "Wrong function: hands-on HVAC construction PM",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Kelso Industries::5374537008",
+  "company": "Kelso Industries",
+  "title": "Mergers & Acquisitions Project Manager",
+  "location": "Draper, UT",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5374537008#job-board",
+  "posted": "2026-07-30",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Direct M&A integration/PMO mandate matches core domain",
+    "Utah location, likely onsite/hybrid",
+    "Cross-functional executive-facing coordination",
+    "Post-close integration is a strong signal"
+   ],
+   "concerns": [
+    "Title suggests PM execution vs strategic ownership",
+    "Unclear seniority/scope of decision authority"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 80,
+   "interest_fit": 85,
+   "practical_fit": 90,
+   "opportunity_score": 82,
+   "score": 82,
+   "fit": "yes",
+   "reason": "Direct M&A integration/PMO mandate matches core domain",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Kelso Industries::5374101008",
+  "company": "Kelso Industries",
+  "title": "Workforce Program Manager",
+  "location": "Salt Lake City, UT",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5374101008#job-board",
+  "posted": "2026-07-29",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Utah-local, program management ownership",
+    "Adjacent to L&D/org development",
+    "Workforce training scope less strategic than target roles"
+   ],
+   "concerns": [
+    "Specialized apprenticeship/grant-funding domain expertise required",
+    "Narrower operational mandate than transformation-level roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 40,
+   "practical_fit": 90,
+   "opportunity_score": 42,
+   "score": 42,
+   "fit": "maybe",
+   "reason": "Utah-local, program management ownership",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025147",
+  "company": "Western Governors University",
+  "title": "Senior Program Experience Strategist - Assessment Technology",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Program-Experience-Strategist---Assessment-Technology_JR-025147",
+  "posted": "2026-08-12",
+  "salary": "$109,900.00 - $170,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based role, strong location fit",
+    "Program/strategist title suggests program leadership scope",
+    "Assessment technology may involve education-specific expertise"
+   ],
+   "concerns": [
+    "No description available to assess mandate",
+    "Unclear if strategic vs operational execution role",
+    "Possible narrow ed-tech assessment focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 50,
+   "practical_fit": 80,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Utah-based role, strong location fit",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025809",
+  "company": "Western Governors University",
+  "title": "Senior Educational Program Designer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Educational-Product-Designer_JR-025809",
+  "posted": "2026-08-12",
+  "salary": "$80,700.00 - $121,000.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Utah location matches preference",
+    "Program title loosely related",
+    "No description to confirm real scope"
+   ],
+   "concerns": [
+    "Likely instructional design, not org transformation",
+    "No description available",
+    "Weak alignment with core domains"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 70,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah location matches preference",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025888",
+  "company": "Western Governors University",
+  "title": "Project Manager II, Marketing, Salt Lake City, UT",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-II--Marketing--Salt-Lake-City--UT_JR-025888-1",
+  "posted": "2026-08-11",
+  "salary": "$75,200.00 - $112,700.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based, matches location preference",
+    "PM title adjacent to program leadership",
+    "Marketing ops overlaps adjacent domains"
+   ],
+   "concerns": [
+    "No description to assess scope/seniority",
+    "Title suggests tactical PM, not strategic mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-based, matches location preference",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025890",
+  "company": "Western Governors University",
+  "title": "Project Manager I, Marketing, Salt Lake City, UT",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-I--Marketing--Salt-Lake-City--UT_JR-025890",
+  "posted": "2026-08-11",
+  "salary": "$62,100.00 - $93,200.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based, matches location preference",
+    "Marketing PM could touch operations/process",
+    "Title suggests junior-level scope"
+   ],
+   "concerns": [
+    "Title 'Project Manager I' suggests entry-level, limited ownership",
+    "No description to confirm strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 40,
+   "practical_fit": 85,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah-based, matches location preference",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025515",
+  "company": "Western Governors University",
+  "title": "Lead Academic Program Manager (Department Chair), WGU School of Technology \u2013 Cyber Security",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Lead-Academic-Program-Manager--Department-Chair---WGU-School-of-Technology---Cyber-Security_JR-025515",
+  "posted": "2026-08-11",
+  "salary": "$123,000.00 - $190,700.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based, matches location preference",
+    "Program manager title only surface-level match"
+   ],
+   "concerns": [
+    "Academic/cybersecurity domain expertise required, not her background",
+    "No description to confirm scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 20,
+   "practical_fit": 60,
+   "opportunity_score": 22,
+   "score": 22,
+   "fit": "no",
+   "reason": "Utah-based, matches location preference",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025725",
+  "company": "Western Governors University",
+  "title": "Change Manager I, Salt Lake City, UT",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Change-Manager-I--Salt-Lake-City--UT_JR-025725",
+  "posted": "2026-08-11",
+  "salary": "$68,300.00 - $102,500.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Change management aligns with core domain",
+    "Utah location matches preference",
+    "Title level unclear from posting"
+   ],
+   "concerns": [
+    "No description to assess scope or seniority",
+    "Title 'Change Manager I' suggests junior level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Change management aligns with core domain",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025854",
+  "company": "Western Governors University",
+  "title": "Senior Learning Product Owner",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Learning-Product-Owner_JR-025854",
+  "posted": "2026-08-10",
+  "salary": "$91,000.00 - $136,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'learning' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based, matches location preference",
+    "L&D is adjacent domain for candidate",
+    "Senior title suggests real ownership"
+   ],
+   "concerns": [
+    "No description to confirm strategic scope",
+    "Product owner role may be tactical, not strategic",
+    "Learning-specific focus may be narrow"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 42,
+   "score": 42,
+   "fit": "maybe",
+   "reason": "Utah-based, matches location preference",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025874",
+  "company": "Western Governors University",
+  "title": "Senior Manager, Technical Delivery and Quality",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Technical-Delivery-and-Quality_JR-025874",
+  "posted": "2026-08-07",
+  "salary": "$151,800.00 - $250,500.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'delivery' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based role, strong location fit",
+    "Delivery/quality ownership plausible transformation angle",
+    "No description to confirm scope or mandate"
+   ],
+   "concerns": [
+    "Technical delivery could be IT/engineering-heavy",
+    "No description available to verify fit"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-based role, strong location fit",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025451",
+  "company": "Western Governors University",
+  "title": "HR Program Manager - Performance",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Performance-Management-Lead_JR-025451",
+  "posted": "2026-07-28",
+  "salary": "$100,000.00 - $150,000.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Program manager scope aligns with PMO/ops experience",
+    "Utah location matches practical constraints",
+    "HR performance focus is adjacent, not core domain"
+   ],
+   "concerns": [
+    "No description to confirm strategic scope",
+    "HR-specific focus may be narrower than transformation mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Program manager scope aligns with PMO/ops experience",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025784",
+  "company": "Western Governors University",
+  "title": "Senior Manager, Enterprise Partnerships - Institution Strategy & Ventures",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Enterprise-Partnerships---Institution-Strategy---Ventures_JR-025784-1",
+  "posted": "2026-07-27",
+  "salary": "$130,600.00 - $235,100.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based, senior manager scope",
+    "Enterprise partnerships may involve strategy work",
+    "Thin description limits assessment"
+   ],
+   "concerns": [
+    "No description available to judge mandate",
+    "Partnerships/business development focus may not match core transformation expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-based, senior manager scope",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025746",
+  "company": "Western Governors University",
+  "title": "Senior Analytics Operations Specialist",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Analytics-Operations-Specialist_JR-025746",
+  "posted": "2026-07-22",
+  "salary": "$100,000.00 - $150,000.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'operations' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based operations role",
+    "Title suggests analytics-focused, not strategic ops",
+    "No description to confirm mandate scope"
+   ],
+   "concerns": [
+    "Vague title may indicate narrow analyst-level scope",
+    "No description available to assess seniority/ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah-based operations role",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025622",
+  "company": "Western Governors University",
+  "title": "Senior Technical Program Manager",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Technical-Program-Manager_JR-025622",
+  "posted": "2026-07-22",
+  "salary": "$143,700.00 - $222,700.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Program management role fits PMO/program leadership background",
+    "Utah location matches preference",
+    "Technical PM may skew engineering-heavy",
+    "Thin posting limits confidence"
+   ],
+   "concerns": [
+    "No description to confirm strategic scope",
+    "'Technical' may require deep IT/eng domain expertise"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -377,167 +1417,74 @@
    "opportunity_score": 50,
    "score": 50,
    "fit": "maybe",
-   "reason": "Utah location (Lehi) matches preference",
-   "bg": "cae648f28d15"
+   "reason": "Program management role fits PMO/program leadership background",
+   "bg": "1451cb4bda95"
   }
  },
  {
-  "key": "Adobe::R166638",
-  "company": "Adobe",
-  "title": "Director of Research & Strategy, Adobe Express",
-  "location": "Lehi (+8 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Director-of-Research---Strategy_R166638-1",
-  "posted": "2026-07-13",
-  "salary": "$223,300 - $323,350",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah location (Lehi) fits practical constraints",
-    "Director title suggests real scope",
-    "Research/Strategy could touch org strategy",
-    "No description available to confirm mandate"
-   ],
-   "concerns": [
-    "No job description to assess actual fit",
-    "Research/Strategy may be product-research focused, not transformation",
-    "Adobe Express is product-specific, may not align with core domains"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah location (Lehi) fits practical constraints",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Adobe::R170475",
-  "company": "Adobe",
-  "title": "Group Content Strategy Manager, Adobe.com",
-  "location": "Lehi (+9 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Group-Content-Strategy-Manager--Adobecom_R170475-1",
-  "posted": "2026-07-23",
-  "salary": "$202,900 - $293,800",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah (Lehi) location matches location preference",
-    "Content strategy is adjacent, not core domain",
-    "Adobe is a major employer with scale",
-    "Title suggests tactical content role, not transformation"
-   ],
-   "concerns": [
-    "No description to confirm strategic scope or ownership",
-    "Content strategy manager likely narrower than transformation mandate",
-    "May be execution-focused rather than organizational strategy"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 30,
-   "practical_fit": 80,
-   "opportunity_score": 38,
-   "score": 38,
-   "fit": "maybe",
-   "reason": "Utah (Lehi) location matches location preference",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "BambooHR::6011897004",
-  "company": "BambooHR",
-  "title": "Sr. Marketing Operations Manager - Website",
-  "location": "Utah | Hybrid",
-  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6011897004",
-  "posted": "2026-07-23",
+  "key": "O.C. Tanner::JR26-234",
+  "company": "O.C. Tanner",
+  "title": "Technical Program Manager",
+  "location": "USA - Utah-Salt Lake City-Headquarters",
+  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Technical-Program-Manager_JR26-234",
+  "posted": "2026-08-10",
   "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Utah hybrid location matches practical constraints",
-    "Marketing ops title loosely adjacent to her background"
-   ],
-   "concerns": [
-    "Highly technical tagging/GTM/consent management role, not strategic",
-    "No transformation, org design or M&A mandate",
-    "Mismatch with her leadership/strategy positioning"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Utah hybrid location matches practical constraints",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Health Catalyst::REQ-3267",
-  "company": "Health Catalyst",
-  "title": "Implementation Manager",
-  "location": "US Remote",
-  "url": "https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/US-Remote/Implementation-Manager_REQ-3267",
-  "posted": "2026-07-23",
-  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
    "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "US-remote aligns with location preference",
-    "Implementation Manager fits program/service delivery experience",
-    "Health Catalyst is healthcare analytics, transferable domain",
-    "Client-facing delivery role likely draws on PS background"
+    "Program management aligns with PMO/program leadership background",
+    "Utah on-site, matches location preference",
+    "Technical scope unclear from posting"
    ],
    "concerns": [
-    "No job description to confirm scope or seniority",
-    "Title suggests tactical PM role, not strategic leadership",
-    "Healthcare analytics domain is unfamiliar territory"
+    "No description; 'Technical' may imply engineering-heavy PM not her fit",
+    "Unclear seniority or transformation scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
-   "practical_fit": 88,
-   "opportunity_score": 58,
-   "score": 58,
+   "qualification_fit": 55,
+   "interest_fit": 50,
+   "practical_fit": 85,
+   "opportunity_score": 50,
+   "score": 50,
    "fit": "maybe",
-   "reason": "US-remote aligns with location preference",
-   "bg": "cae648f28d15"
+   "reason": "Program management aligns with PMO/program leadership background",
+   "bg": "1451cb4bda95"
   }
  },
  {
-  "key": "Pattern::f1134df6-fae3-4b1c-9c5a-9410b9b4d513",
-  "company": "Pattern",
-  "title": "Director of North America Operations",
-  "location": "Lehi, UT, US",
-  "url": "https://jobs.lever.co/pattern/f1134df6-fae3-4b1c-9c5a-9410b9b4d513",
-  "posted": "2026-07-21",
+  "key": "LVT::5384814008",
+  "company": "LVT",
+  "title": "Commercial Customer Success Manager",
+  "location": "American Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5384814008",
+  "posted": "2026-08-10",
   "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
   "fit_result": {
    "recommendation": "stretch",
+   "confidence": "medium",
    "reasons": [
-    "Utah-hybrid location matches practical constraints",
-    "Director-level ownership of physical operations",
-    "Fast-growing company with employee experience focus"
+    "Utah onsite location fits practical constraints",
+    "Customer success/retention overlaps CX experience",
+    "Fast-growing AI company could offer transformation angle",
+    "Book-of-business CSM role is narrower than her target scope"
    ],
    "concerns": [
-    "Facilities/workplace operations, not strategic transformation",
-    "Title mismatch: posting body describes Facilities, not NA Ops",
-    "Limited alignment with M&A, AI, or org strategy interests"
+    "Individual account management, not strategic/org-level mandate",
+    "Fully in-office, less senior scope than target titles",
+    "Limited transformation or operating model ownership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -545,392 +1492,51 @@
    "valid": true,
    "qualification_fit": 55,
    "interest_fit": 45,
-   "practical_fit": 90,
+   "practical_fit": 80,
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "Utah-hybrid location matches practical constraints",
-   "bg": "cae648f28d15"
+   "reason": "Utah onsite location fits practical constraints",
+   "bg": "1451cb4bda95"
   }
  },
  {
-  "key": "Pattern::b1b5111b-0b0c-4f79-af7c-70ebdc43084e",
-  "company": "Pattern",
-  "title": "International Strategy & Ops Manager",
-  "location": "Lehi, UT, US",
-  "url": "https://jobs.lever.co/pattern/b1b5111b-0b0c-4f79-af7c-70ebdc43084e",
-  "posted": "2026-08-02",
-  "salary": "$112,000\u2013$150,000/yr",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Strategy & ops mandate fits core domain",
-    "Utah location, Lehi-based, no relocation needed",
-    "Manager title but likely real scope"
-   ],
-   "concerns": [
-    "No description available to confirm mandate depth",
-    "International scope unclear vs candidate's background"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Strategy & ops mandate fits core domain",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "NICE::4934090101",
-  "company": "NICE",
-  "title": "Director, Business Consulting, VRS, CX",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4934090101?gh_jid=4934090101",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Value realization mandate matches operating model/ROI expertise",
-    "US-remote fits location constraints well",
-    "CX and professional services leadership aligns with core domains",
-    "AI-driven CX solutions align with AI enablement interest",
-    "P&L/utilization ownership signals executive-facing scope"
-   ],
-   "concerns": [
-    "Deep contact-center/CX analytics domain knowledge may be a gap",
-    "Direct NICE product expertise not evidenced in profile"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 85,
-   "practical_fit": 90,
-   "opportunity_score": 84,
-   "score": 84,
-   "fit": "yes",
-   "reason": "Value realization mandate matches operating model/ROI expertise",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "NICE::4930164101",
-  "company": "NICE",
-  "title": "Director, Strategic Initiatives",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4930164101?gh_jid=4930164101",
-  "posted": "2026-07-17",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "apply_first",
-   "reasons": [
-    "Direct transformation/strategic-initiatives mandate at senior generalist altitude",
-    "AI transformation and cost-efficiency work matches core interests",
-    "Reports to VP Transformation, executive stakeholder engagement",
-    "US-remote fits practical constraints well",
-    "IC role with real ownership, not junior support"
-   ],
-   "concerns": [
-    "Individual contributor without direct people management",
-    "Highly ambiguous scope may require constant re-justification of priorities"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 85,
-   "interest_fit": 92,
-   "practical_fit": 90,
-   "opportunity_score": 90,
-   "score": 90,
-   "fit": "yes",
-   "reason": "Direct transformation/strategic-initiatives mandate at senior generalist altitude",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "NICE::4934082101",
-  "company": "NICE",
-  "title": "Lead Business Consultant, VRS, CX",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4934082101?gh_jid=4934082101",
-  "posted": "2026-07-22",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Value realization and ROI ownership matches core positioning directly",
-    "Change strategy across people/process/tech aligns with expertise",
-    "US-remote fits practical constraints well",
-    "Consulting/professional services delivery matches proof points",
-    "CX/contact center transformation aligns with experience domain"
-   ],
-   "concerns": [
-    "Requires deep CCaaS/Quality Management technical subject matter expertise",
-    "Title 'Lead' may signal narrower scope than Director-level roles she targets"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 82,
-   "practical_fit": 90,
-   "opportunity_score": 82,
-   "score": 82,
-   "fit": "yes",
-   "reason": "Value realization and ROI ownership matches core positioning directly",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "NICE::4930153101",
-  "company": "NICE",
-  "title": "Senior Director, Quote to Cash Transformation",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4930153101?gh_jid=4930153101",
-  "posted": "2026-07-17",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "US-remote, strong practical fit",
-    "Transformation program ownership matches operating strengths",
-    "Requires deep hands-on CPQ/billing/revenue rec domain expertise",
-    "TMO and cross-functional leadership aligns with background"
-   ],
-   "concerns": [
-    "Needs demonstrated hands-on Quote-to-Cash system implementation experience",
-    "Very specific finance/rev-ops domain depth not evidenced in profile",
-    "High bar: must run program without ramp-up time"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "US-remote, strong practical fit",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "NICE::4951000101",
-  "company": "NICE",
-  "title": "Transformation Consultant",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4951000101?gh_jid=4951000101",
+  "key": "BYU::JR-11443",
+  "company": "BYU",
+  "title": "Business Manager-Wheatley Institute",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Business-Manager-Wheatley-Institute_JR-11443",
   "posted": "2026-08-11",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "US-remote, executive-facing transformation mandate",
-    "AI and agentic transformation aligns with core goals",
-    "C-suite engagement and roadmap ownership",
-    "Change management and operating model design scope"
-   ],
-   "concerns": [
-    "Consulting travel demands may be significant",
-    "Contact center/CX vertical is narrower than ideal"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 80,
-   "interest_fit": 90,
-   "practical_fit": 90,
-   "opportunity_score": 87,
-   "score": 87,
-   "fit": "yes",
-   "reason": "US-remote, executive-facing transformation mandate",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Kelso Industries::5374537008",
-  "company": "Kelso Industries",
-  "title": "Mergers & Acquisitions Project Manager",
-  "location": "Draper, UT",
-  "url": "https://kelso-industries.com/careers/?gh_jid=5374537008#job-board",
-  "posted": "2026-07-30",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Direct M&A integration and IMO-style mandate",
-    "Cross-functional executive-facing coordination role",
-    "Utah-based, likely onsite/local \u2014 no relocation needed",
-    "Matches core domain: M&A integration and due diligence",
-    "Program/PMO leadership across multiple concurrent deals"
-   ],
-   "concerns": [
-    "Title reads as PM, may be below her target seniority",
-    "Unclear P&L or strategic design ownership beyond coordination",
-    "Scope may be execution-heavy vs strategic"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 82,
-   "practical_fit": 90,
-   "opportunity_score": 82,
-   "score": 82,
-   "fit": "yes",
-   "reason": "Direct M&A integration and IMO-style mandate",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Western Governors University::JR-025725",
-  "company": "Western Governors University",
-  "title": "Change Manager I, Salt Lake City, UT",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Change-Manager-I--Salt-Lake-City--UT_JR-025725",
-  "posted": "2026-08-11",
-  "salary": "$68,300.00 - $102,500.00",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "reasons": [
-    "Change management aligns with core domain expertise",
-    "Utah location matches location preference",
-    "WGU is credible, mission-driven organization"
-   ],
-   "concerns": [
-    "Title suggests junior level (Change Manager I)",
-    "No description to confirm scope or mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Change management aligns with core domain expertise",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "Western Governors University::JR-025784",
-  "company": "Western Governors University",
-  "title": "Senior Manager, Enterprise Partnerships - Institution Strategy & Ventures",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Enterprise-Partnerships---Institution-Strategy---Ventures_JR-025784-1",
-  "posted": "2026-07-27",
-  "salary": "$130,600.00 - $235,100.00",
+  "salary": "$73,000-$95,000",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'business manager' + seniority in title",
   "fit_result": {
    "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "Utah-based role, strong location fit",
-    "Institution Strategy & Ventures suggests strategic scope",
-    "Enterprise Partnerships adjacent to business development, not core transformation",
-    "Senior Manager level fits seniority openness"
+    "Utah-local role",
+    "Business manager title suggests operations scope",
+    "No description to confirm mandate"
    ],
    "concerns": [
-    "No job description available to assess actual mandate",
-    "Partnerships/BD focus may be far from ops/transformation core",
-    "Unclear if role has organizational or operating scope"
+    "Thin posting, no responsibilities listed",
+    "Title suggests admin/finance, not transformation",
+    "Academic institute may lack strategic scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 48,
-   "score": 48,
-   "fit": "maybe",
-   "reason": "Utah-based role, strong location fit",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "O.C. Tanner::JR26-147",
-  "company": "O.C. Tanner",
-  "title": "Manager, IT Operations",
-  "location": "USA - Utah-Salt Lake City-Headquarters",
-  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Manager--Technology-Infrastructure_JR26-147-1",
-  "posted": "2026-07-13",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah-local role, strong practical fit",
-    "Operations management could carry transformation scope",
-    "Generic title, mandate unclear from posting"
-   ],
-   "concerns": [
-    "No description to assess real scope",
-    "IT Operations may be technical/hands-on, not strategic",
-    "Title suggests narrower operational focus than target roles"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
+   "qualification_fit": 55,
    "interest_fit": 40,
-   "practical_fit": 85,
-   "opportunity_score": 45,
-   "score": 45,
+   "practical_fit": 75,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "maybe",
-   "reason": "Utah-local role, strong practical fit",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "iCapital::8606952002",
-  "company": "iCapital",
-  "title": "Strategic Transformation, Data Support - Associate",
-  "location": "Salt Lake City, Utah, United States",
-  "url": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8606952002",
-  "posted": "2026-07-14",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "reasons": [
-    "Utah location matches preference",
-    "But role is hands-on SQL/ETL technical work",
-    "No strategic ownership or transformation leadership scope",
-    "Analyst/Associate level lacks executive influence"
-   ],
-   "concerns": [
-    "Requires deep SQL/ETL technical skill, not her strength",
-    "Title says transformation but mandate is data engineering",
-    "Too junior and hands-on for her positioning"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Utah location matches preference",
-   "bg": "cae648f28d15"
+   "reason": "Utah-local role",
+   "bg": "1451cb4bda95"
   }
  },
  {
@@ -941,18 +1547,99 @@
   "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Manager--Strategic-Sourcing-Operations_JR-11384",
   "posted": "2026-08-10",
   "salary": "$92,000-$119,000",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "Utah-local, matches location preference",
-    "Operations/manager title has some transformation potential",
-    "Sourcing/procurement not core domain match",
-    "No description to confirm mandate scope"
+    "Utah-based, practical location fit",
+    "Operations title suggests some overlap",
+    "No description to confirm strategic scope"
    ],
    "concerns": [
-    "No job description available to assess real scope",
-    "Sourcing operations may be tactical, not strategic",
-    "Unclear if role has transformation or org-design mandate"
+    "Sourcing/procurement may be transactional, not transformation",
+    "No details on mandate or seniority",
+    "Could be narrow procurement function"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 80,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah-based, practical location fit",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "BYU::JR-11401",
+  "company": "BYU",
+  "title": "Lead Academic Learning Specialist - School of Medicine",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Academic-Learning-Specialist--Lead_JR-11401",
+  "posted": "2026-08-10",
+  "salary": "$73,000 - $95,000",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'learning' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Utah location matches",
+    "Learning-adjacent title but academic/clinical focus",
+    "No transformation or operations mandate evident"
+   ],
+   "concerns": [
+    "Likely requires academic/education credentials",
+    "No description to confirm scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 20,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Utah location matches",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "BYU::JR-11351",
+  "company": "BYU",
+  "title": "Director, Creative Content Strategy - Revenue & Brand",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Director--Creative-Content-Strategy---Revenue---Brand_JR-11351",
+  "posted": "2026-08-07",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-local, high practical fit",
+    "Director-level strategic title",
+    "Content strategy adjacent to her background",
+    "No description to confirm scope"
+   ],
+   "concerns": [
+    "Creative/brand content focus, not core transformation",
+    "No description available to verify mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -964,76 +1651,8 @@
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "Utah-local, matches location preference",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "BYU::JR-11351",
-  "company": "BYU",
-  "title": "Director, Creative Content Strategy - Revenue & Brand",
-  "location": "Provo, UT",
-  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Director--Creative-Content-Strategy---Revenue---Brand_JR-11351",
-  "posted": "2026-08-07",
-  "salary": null,
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah-based, matches location preference",
-    "Director-level title with strategic scope",
-    "Content strategy adjacent to marketing operations",
-    "Limited transformation/operations mandate visible"
-   ],
-   "concerns": [
-    "No description to confirm scope or mandate",
-    "Creative/content focus is weaker core fit than operations/transformation"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 80,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Utah-based, matches location preference",
-   "bg": "cae648f28d15"
-  }
- },
- {
-  "key": "BYU::JR-8017",
-  "company": "BYU",
-  "title": "Senior Manager, Platform Strategy & Audience Engagement",
-  "location": "Provo, UT",
-  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Senior-Manager--Platform-Strategy---Audience-Engagement_JR-8017",
-  "posted": "2026-07-13",
-  "salary": "$92,000 - $119,000",
-  "fit_result": {
-   "recommendation": "stretch",
-   "reasons": [
-    "Utah-based role near target location",
-    "Strategy-adjacent title suggests some ownership",
-    "Limited detail obscures true mandate"
-   ],
-   "concerns": [
-    "No description available to confirm scope",
-    "Audience engagement may be marketing-execution focused",
-    "Unclear seniority and transformation mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Utah-based role near target location",
-   "bg": "cae648f28d15"
+   "reason": "Utah-local, high practical fit",
+   "bg": "1451cb4bda95"
   }
  }
 ]
