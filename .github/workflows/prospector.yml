@@ -32,16 +32,25 @@ jobs:
         run: python jobmonitor.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # omit/unset to disable fit scoring
+          # Optional: the Google Apps Script Web App bound to the tracking spreadsheet.
+          # When unset, the run still writes discovery_log_<profile>.csv and simply reports
+          # "sheet push not_configured" — the sheet is never the system of record.
+          SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
 
       - name: Commit updated snapshots
         run: |
           git config user.name  "prospector-bot"
           git config user.email "actions@users.noreply.github.com"
           # snapshot_*.json is STATE (carries the fit-verdict cache).
-          # rejects_*/source_health/feedback_template_* are diagnostics for audit.py.
+          # jobs_*.json is STATE TOO — the persistent discovery database. It carries
+          # first_seen, ever_shown and the human decision fields, and the digest's
+          # "removed since prior run" section is derived from it, so losing it would
+          # reintroduce the bug where roles nobody had been shown appeared as removed.
+          # rejects_*/source_health/feedback_template_*/discovery_log_* are diagnostics.
           # feedback_<name>.json is hand-edited and is never written by the run.
-          git add snapshot_*.json report_*.md report_*.html \
-                  rejects_*.json source_health.json feedback_template_*.json
+          git add snapshot_*.json jobs_*.json report_*.md report_*.html \
+                  rejects_*.json source_health.json feedback_template_*.json \
+                  discovery_log_*.csv
           git commit -m "Daily run: $(date -u +%Y-%m-%d)" || echo "No changes"
           git push
 

@@ -1,8 +1,29 @@
 {
-  "_comment": "Registry for the CONTRACT / STAFFING search lane (Phase 1 of the contract-jobs feature; see CLAUDE.md 'Contract/staffing lane'). Same entry shape as companies.json / remote_companies.json. These are staffing / recruiting firms whose public job feeds we monitor for CONTRACT roles (an income-focused search alongside the leadership search). The lane reads THIS file (not companies.json), applies the local+US-remote gate (is_local — keeps Utah-local + US-remote, drops other-metro on-site and international remote), and runs each profile with staffing_search:true. Contract-only filtering happens in the fetcher: fetch_aquent keeps only contract-type placements (placement_type), so this lane is contract work by construction. Each firm VERIFIED to return live contract roles before adding (do not guess). fetch_logos.py reads this file too. Grow the list as more staffing firms are confirmed on reachable JSON/XML feeds (next up: a generalized fetch_bullhorn — Eliassen et al.).",
+  "_comment": "Registry for the CONTRACT / STAFFING search lane (see CLAUDE.md 'Contract/staffing lane'). Same entry shape as companies.json / remote_companies.json. These are staffing / recruiting firms whose public job feeds we monitor for CONTRACT roles — their CLIENT roles, which is the point: a staffing firm's feed is a window onto dozens of employers, not just its own internal hiring. The lane reads THIS file (not companies.json), applies the local+US-remote gate (is_local — keeps Utah-local + US-remote, drops other-metro on-site and international remote), and runs each profile with staffing_search:true. Contract-only filtering happens in the fetcher on STRUCTURED data (placement_type / emptype), never on the title. Each firm VERIFIED to return live contract roles before adding (do not guess). fetch_logos.py reads this file too.",
+
+  "_v3_comment": "Robert Half added 2026-08-11 after probing its surfaces directly. Its own JSON API (prd-dr.jps.api.roberthalfonline.com/search) returns 403 without a client credential, but the public search page at /us/en/jobs SERVER-RENDERS its full result set into a JS assignment (aemSettings.rh_job_search.initialResults), and that payload is richer than most ATS feeds: full description, real date_posted, employment type, structured pay range, remote flag, canonical apply URL, stable job number. robots.txt allows /us/en/jobs. The `queries` below are what the page actually honors — `city` needs a display-cased city name, `stateprovince` alone is IGNORED, and `remote=yes` works. KFORCE WAS PROBED AND REJECTED: no RSS, no sitemap, no ATS; its Find Work SPA queries an Azure Cognitive Search index that returns 403 without the API key embedded in their client, and their robots.txt disallows /svc and /kforcesvc. There is no clean way to support it.",
+
   "companies": [
     { "name": "Aquent",        "ats": "aquent",  "slug": "aquent",       "domain": "aquent.com" },
     { "name": "Eliassen",      "ats": "snaphop", "slug": "eliassen",     "domain": "eliassen.com" },
-    { "name": "Addison Group", "ats": "snaphop", "slug": "addisongroup", "domain": "addisongroup.com" }
+    { "name": "Addison Group", "ats": "snaphop", "slug": "addisongroup", "domain": "addisongroup.com" },
+    {
+      "name": "Robert Half",
+      "ats": "roberthalf",
+      "slug": "roberthalf",
+      "domain": "roberthalf.com",
+      "contract_only": true,
+      "max_pages": 3,
+      "queries": [
+        { "city": "Salt Lake City" },
+        { "city": "Lehi" },
+        { "city": "Draper" },
+        { "city": "Provo" },
+        { "city": "Sandy" },
+        { "city": "South Jordan" },
+        { "city": "American Fork" },
+        { "remote": "yes" }
+      ]
+    }
   ]
 }

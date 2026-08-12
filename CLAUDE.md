@@ -15,9 +15,18 @@ Full narrative + GitHub Actions setup in @README.md.
   fire. Use this for every local test. `--snapshot-dir`/`--out-dir` redirect individually.
 - `python3 jobmonitor.py --no-fit` — skip all Anthropic calls. `--fake-fit` — deterministic
   local fake verdicts for previewing email layout free (reports get a warning banner).
-- `python3 test_jobmonitor.py` — 141 offline tests (stdlib `unittest`; no network, no API).
+- `python3 test_jobmonitor.py` — 223 offline tests (stdlib `unittest`; no network, no API).
 - `python3 audit.py` — weekly self-audit. **Reads committed files only; makes no network
   calls of any kind.**
+
+**V3 additions (see @PROSPECTOR_V3.md — read it before touching discovery, lifecycle or the
+digest):** discovery gate separated from fit scoring (`classify_match` → `core`/`discovery`
+tiers); persistent lifecycle DB in `lifecycle.py` (`jobs_<profile>.json`, one record per REAL
+job, cross-feed dedup); four-state source health with retry; the change digest
+(`report_style:"change"`); Discovery Log export in `sheets_sync.py`. Four sources added
+(Robert Half, Himalayas, We Work Remotely, Jobicy). **Kforce was probed and rejected** — no
+feed, no sitemap, Azure Search behind a client API key, `robots.txt` disallows its service
+paths. Do not spend another session on it.
 
 Python 3.12, **standard library only — do not add dependencies** unless a tier-3
 (Playwright) source genuinely requires it (`anthropic` is the one optional dep, declared in
@@ -59,7 +68,10 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 - `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any} + optional
   `mandate_rescue`, `report_style`, `max_posting_age_days`, `background_file`, `fit_mode`).
 - `settings.json` — run-wide tweakables (loaded by `load_settings`, defaults in `SETTINGS_DEFAULTS`): `max_posting_age_days` (drop postings older than this; 0/null = keep all; unknown-date always kept), `fit_scoring_enabled` (master off-switch for the Anthropic API), and `star_within_days` (⭐ postings newer than this in the report; 0/null off — `main` sets the `STAR_WITHIN_DAYS` global from it). Missing file/keys fall back to defaults.
-- `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_pool`, `matches_profile`, `_mandate_rescue`, `enrich_salary`, `enrich_with_fit`, `score_fit`, `validate_verdict`, `diff`, `classify_removal`, `load_feedback`, `build_report`, `build_html_report`, `build_digest_html`, `run_profile`.
+- `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_sources`/`collect_pool`, `fetch_source`, `classify_fetch_error`, `matches_profile`, `classify_match`, `_mandate_rescue`, `enrich_salary`, `enrich_with_fit`, `score_fit`, `validate_verdict`, `diff`, `classify_removal`, `load_feedback`, `update_lifecycle`, `change_sections`, `build_report`, `build_html_report`, `build_digest_html`, `build_change_digest_html`, `run_profile`.
+- `lifecycle.py` — the persistent discovery database (V3). `dedupe_key`, `upsert`, `refresh_statuses`, `close_missing`, `mark_shown`, `run_verification`, `prune`. **`mark_shown` is the ONLY thing that sets `ever_shown`**, and `ever_shown` is the ONLY thing that makes a role eligible for the digest's removed section — that is the fix for "removed roles that were never emailed". **`close_missing` must never mark a job removed on the word of a failed source.**
+- `sheets_sync.py` — Discovery Log export: CSV always, Apps Script webhook (`SHEETS_WEBHOOK_URL`) when configured. Writes ONLY the `Prospector Discovery Log` tab — never `Application Pipeline` or `Applied`.
+- `jobs_<profile>.json` — **STATE.** The lifecycle DB. Committed by CI. Do not delete: it carries `first_seen`, `ever_shown` and the human decision fields.
 - `test_jobmonitor.py` — offline test suite. `audit.py` — weekly, network-free self-audit.
 - `feedback_<name>.json` — hand-edited feedback (the only file a non-developer edits).
 - `PROSPECTOR_V2_CHANGELOG.md` / `PROSPECTOR_TESTING.md` — what changed, and how to operate it.

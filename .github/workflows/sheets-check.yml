@@ -1,0 +1,42 @@
+name: prospector-sheets-check
+
+# Verify the Google Sheet webhook (SHEETS_WEBHOOK_URL) on its own.
+#
+# MANUAL ONLY — there is deliberately no `schedule:`. This exists so the webhook can be
+# tested WITHOUT running the daily job, which would fetch every source, spend Anthropic
+# credit and send email just to answer "does the URL work?".
+#
+# It makes exactly one HTTPS POST to the Apps Script deployment. No ATS requests, no
+# Anthropic calls, no email, and nothing is committed back to the repo.
+#
+# Run it from the Actions tab -> prospector-sheets-check -> "Run workflow".
+
+on:
+  workflow_dispatch:
+    inputs:
+      send_real_rows:
+        description: "Send the real discovery records instead of one probe row"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+
+      - name: Check the Discovery Log webhook
+        env:
+          SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
+        run: |
+          if [ -z "$SHEETS_WEBHOOK_URL" ]; then
+            echo "::error::SHEETS_WEBHOOK_URL secret is not set. Add it under"
+            echo "::error::Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          python check_sheets.py ${{ inputs.send_real_rows && '--rows' || '' }}

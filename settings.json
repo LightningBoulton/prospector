@@ -1,10 +1,16 @@
 {
-  "_comment": "Central tweakables for a run. max_posting_age_days: drop postings older than this many days (by their posted date); set to 0 or null to keep all ages. Postings with an unknown date are always kept. fit_scoring_enabled: master off-switch for the Anthropic API — set false to skip all LLM fit scoring (e.g. test runs), regardless of ANTHROPIC_API_KEY. star_within_days: mark postings newer than this many days with a star in the report; 0/null disables the star. allow_international_remote: when false (default), remote roles whose location names a non-US country (e.g. 'United Kingdom - Remote') are dropped; set true to keep all remote roles regardless of country. remote_search.enabled: master switch for the US-remote lane (reads remote_companies.json, runs profiles with remote_search:true against a US-remote gate). staffing_search.enabled: master switch for the contract/staffing lane (reads staffing_companies.json, runs profiles with staffing_search:true against the local+US-remote gate; the fetchers surface contract-type roles only). staffing_search.max_age_days: optional per-lane age window for the contract lane, overriding max_posting_age_days (falls back to it when unset) — contract search favors volume, so this is typically wider.",
-  "max_posting_age_days": 7,
+  "_comment": "Central tweakables for a run. max_posting_age_days: drop postings older than this many days (by their posted date); set to 0 or null to keep all ages. Postings with an unknown date are always kept. fit_scoring_enabled: master off-switch for the Anthropic API — set false to skip all LLM fit scoring (e.g. test runs), regardless of ANTHROPIC_API_KEY. star_within_days: mark postings newer than this many days with a star in the report; 0/null disables the star. allow_international_remote: when false (default), remote roles whose location names a non-US country (e.g. 'United Kingdom - Remote') are dropped; set true to keep all remote roles regardless of country. remote_search.enabled: master switch for the US-remote lane (reads remote_companies.json, runs profiles with remote_search:true against a US-remote gate). staffing_search.enabled: master switch for the contract/staffing lane (reads staffing_companies.json, runs profiles with staffing_search:true against the local+US-remote gate; the fetchers surface contract-type roles only). staffing_search.max_age_days: optional per-lane age window for the contract lane, overriding max_posting_age_days (falls back to it when unset).",
+
+  "_v3_comment": "V3 keys. lifecycle.exceptional_score: a role older than 14 days is only repeated in the digest if it scores at least this AND was independently verified still open on the same run — the two conditions together are what stop stale roles recurring forever. lifecycle.verify_limit: how many such roles may be URL-checked per run (each costs one request, so this is a hard budget, not a target). lifecycle.prune_after_days: how long a closed record is kept before being dropped — records carrying a human decision are kept regardless. discovery.max_new_scored_per_run: ceiling on NEW roles sent to Claude in one run; broad discovery multiplies new roles per day and the bill is proportional to exactly that. Roles over the cap are kept and scored on the next run, never dropped. sheets.enabled: write discovery_log_<profile>.csv and, when SHEETS_WEBHOOK_URL is set, push to the Prospector Discovery Log tab.",
+
+  "max_posting_age_days": 21,
   "fit_scoring_enabled": true,
   "star_within_days": 1,
   "allow_international_remote": false,
   "remote_search": { "enabled": true },
-  "staffing_search": { "enabled": true, "max_age_days": 30 }
+  "staffing_search": { "enabled": true, "max_age_days": 30 },
+
+  "lifecycle": { "exceptional_score": 85, "verify_limit": 15, "prune_after_days": 180 },
+  "discovery": { "max_new_scored_per_run": 150 },
+  "sheets": { "enabled": true }
 }
-  
