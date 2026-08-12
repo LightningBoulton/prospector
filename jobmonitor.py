@@ -14,7 +14,11 @@ Usage:
 No Playwright, no HTML scraping — every source here is a structured JSON API.
 """
 
-import argparse, collections, glob, hashlib, html, json, os, re, shutil, sys, urllib.request, datetime
+import argparse, codecs, collections, glob, hashlib, html, http.client, json, os, re, \
+    shutil, socket, sys, time, urllib.error, urllib.parse, urllib.request, datetime
+
+import lifecycle
+import sheets_sync
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
@@ -31,8 +35,15 @@ SNAPSHOT_DIR = HERE
 OUT_DIR      = HERE
 
 # Run-wide tweakables (settings.json). Defaults apply if the file or a key is missing.
-SETTINGS_DEFAULTS = {"max_posting_age_days": 90, "fit_scoring_enabled": True,
-                     "star_within_days": 7, "allow_international_remote": False}
+SETTINGS_DEFAULTS = {
+    "max_posting_age_days": 90, "fit_scoring_enabled": True,
+    "star_within_days": 7, "allow_international_remote": False,
+    # V3. `lifecycle` governs the age rules and the bounded still-open verification;
+    # `discovery` caps what a broadened search may cost in one run.
+    "lifecycle": {"exceptional_score": 85, "verify_limit": 15, "prune_after_days": 180},
+    "discovery": {"max_new_scored_per_run": 150},
+    "sheets": {"enabled": True},
+}
 
 # How recent a posting must be to earn a ⭐ in the report. Set from settings in main().
 STAR_WITHIN_DAYS = SETTINGS_DEFAULTS["star_within_days"]
@@ -60,7 +71,7 @@ DESC_LIMIT = 2000               # chars of job description sent to the model
 # fingerprint (`_bg_fingerprint`), so bumping it invalidates every stored verdict and forces
 # one full re-score. Bump it whenever the fields or their meaning change — that is what stops
 # new rendering code from reading a stale verdict written under the old schema.
-FIT_SCHEMA_VERSION = 2
+FIT_SCHEMA_VERSION = 3   # v3 adds `confidence` and judges responsibilities over title
 
 # Output ceiling per scoring call. This covers THINKING + the JSON reply, not just the JSON:
 # Sonnet 5 runs adaptive thinking by default and `max_tokens` bounds both together. The first
@@ -93,6 +104,22 @@ INTERNATIONAL_MARKERS = [
     "israel", "egypt", "south africa", "nigeria", "kenya", "morocco",
     "uae", "united arab emirates", "dubai", "abu dhabi", "saudi arabia", "qatar",
     "emea", "apac", "latam", "europe", "asia pacific",
+    # Added with the V3 aggregator sources, which surface far more international remote
+    # work than the curated employer registries did. "Costa Rica; CRI - Remote" (Fivetran)
+    # sailed straight through the gate as a US-remote role.
+    #
+    # STILL DELIBERATELY OMITTED, because they collide with US place names: Georgia,
+    # Mexico (New Mexico), Jordan (South Jordan), Panama (Panama City FL), Jamaica
+    # (Jamaica, Queens), Lebanon (Lebanon PA/NH/OH). Puerto Rico is US and must never
+    # be listed here.
+    "costa rica", "uruguay", "ecuador", "bolivia", "paraguay", "venezuela",
+    "guatemala", "honduras", "nicaragua", "el salvador", "dominican republic",
+    "moldova", "belarus", "kazakhstan", "uzbekistan", "azerbaijan", "armenia",
+    "cyprus", "malta", "iceland", "luxembourg", "albania", "bosnia", "montenegro",
+    "ghana", "uganda", "tanzania", "zambia", "zimbabwe", "senegal", "ethiopia",
+    "rwanda", "botswana", "namibia",
+    "nepal", "myanmar", "cambodia", "laos", "mongolia", "brasil",
+    "latin america",
 ]
 
 
@@ -492,22 +519,284 @@ def fetch_phenom(c):
     return out
 
 
+# ---- aggregator / marketplace fetchers (V3) --------------------------------------------
+#
+# These differ from every fetcher above in one important way: the EMPLOYER varies per
+# posting, so the registry row is the *source*, not the company. `_norm` takes the employer
+# as its company and `source=` records which registry row produced it — otherwise every
+# Himalayas role would be filed under a company called "Himalayas" and source health would
+# read every one of them as belonging to one company.
+
+_RH_SEARCH = "https://www.roberthalf.com/us/en/jobs"
+# The search page server-renders its results into this JS assignment. Robert Half's own JSON
+# API (prd-dr.jps.api.roberthalfonline.com) is 403-gated behind a client credential, so the
+# public page is the supported surface — and it carries MORE than the ATS feeds do: full
+# description, real posted date, employment type, structured pay range, and a remote flag.
+_RH_RESULTS_RE = re.compile(
+    r"aemSettings\.rh_job_search\.initialResults\s*=\s*JSON\.parse\('(.*?)'\);", re.S)
+# Default queries: the Utah metro by city (the `city=` filter needs a display-cased city
+# name; `stateprovince` alone is ignored by the page) plus the national remote pool.
+_RH_DEFAULT_QUERIES = [
+    {"city": "Salt Lake City"}, {"city": "Lehi"}, {"city": "Draper"}, {"city": "Provo"},
+    {"city": "Sandy"}, {"city": "South Jordan"}, {"city": "American Fork"},
+    {"remote": "yes"},
+]
+_RH_PAGE_SIZE = 50
+_RH_MAX_PAGES = 4        # per query; 4 x 50 = 200 newest, which comfortably covers a day
+
+
+def _rh_results(params):
+    """One Robert Half search page -> its embedded results dict, or {} if the page changed
+    shape. Never raises on a missing block: an empty result is reported as zero roles, and
+    the source-health layer decides what that means."""
+    url = _RH_SEARCH + "?" + urllib.parse.urlencode(params)
+    page = _get_text(url).decode("utf-8", "replace")
+    m = _RH_RESULTS_RE.search(page)
+    if not m:
+        return {}
+    # The payload is a JS single-quoted string literal: unescape it, then parse as JSON.
+    raw = m.group(1).replace("\\u002D", "-").replace("\\/", "/")
+    return json.loads(codecs.decode(raw, "unicode_escape")).get("data") or {}
+
+
+def _rh_salary(j):
+    lo, hi, period = j.get("payrate_min"), j.get("payrate_max"), j.get("payrate_period")
+    try:
+        lo, hi = float(lo), float(hi)
+    except (TypeError, ValueError):
+        return None
+    if not (lo and hi):
+        return None
+    unit = {"Hourly": "/hr", "Yearly": "/yr", "Annually": "/yr", "Monthly": "/mo"}.get(
+        period or "", "")
+    fmt = (lambda v: f"${v:,.0f}") if lo >= 1000 else (lambda v: f"${v:,.2f}")
+    return f"{fmt(lo)}–{fmt(hi)}{unit}"
+
+
+def fetch_roberthalf(c):
+    """Robert Half client roles (staffing lane). Pages the public search page per configured
+    query and de-duplicates by job number across queries.
+
+    Config: {ats:"roberthalf", slug:"roberthalf" [, "queries":[{...}], "max_pages":N,
+             "contract_only":true]}. `contract_only` keeps Temp / Temp-to-Perm placements —
+    the same contract-lane discipline fetch_aquent applies to placement_type."""
+    queries = c.get("queries") or _RH_DEFAULT_QUERIES
+    max_pages = int(c.get("max_pages") or _RH_MAX_PAGES)
+    contract_only = bool(c.get("contract_only"))
+    out, seen = [], set()
+    for q in queries:
+        for page in range(1, max_pages + 1):
+            params = dict(q, pagesize=_RH_PAGE_SIZE, pagenumber=page)
+            d = _rh_results(params)
+            jobs = d.get("jobs") or []
+            for j in jobs:
+                jid = (j.get("unique_job_number") or j.get("sf_jo_number") or "").strip()
+                if not jid or jid in seen:
+                    continue
+                emptype = (j.get("emptype") or "").lower()
+                if contract_only and emptype and not any(
+                        m in emptype for m in _CONTRACT_PLACEMENT):
+                    continue
+                seen.add(jid)
+                loc = ", ".join(x for x in [(j.get("city") or "").strip(),
+                                            (j.get("stateprovince") or "").strip()] if x)
+                if str(j.get("remote", "")).lower() == "yes" and "remote" not in loc.lower():
+                    loc = (loc + " (Remote)").strip() if loc else "Remote"
+                desc = _clean_html(f"{j.get('description', '')} {j.get('skills', '')}")
+                out.append(_norm({"name": "Robert Half"}, jid, j.get("jobtitle", ""), loc,
+                                 j.get("job_detail_url", ""), (j.get("date_posted") or "")[:10],
+                                 salary=_rh_salary(j), ats="roberthalf", source=c["name"],
+                                 description=desc,
+                                 employment_type=j.get("emptype") or ""))
+            # The page reports `found` for the whole result set, but a short page means the
+            # end of THIS query — stop rather than re-requesting identical pages.
+            if len(jobs) < _RH_PAGE_SIZE:
+                break
+    return out
+
+
+def _iso_date(value):
+    """Best-effort date from the several shapes aggregators use: ISO string, epoch seconds,
+    or epoch milliseconds. Returns 'YYYY-MM-DD' or ''."""
+    if value in (None, "", 0):
+        return ""
+    if isinstance(value, (int, float)) or (isinstance(value, str) and value.isdigit()):
+        n = float(value)
+        if n > 1e11:            # milliseconds
+            n /= 1000.0
+        try:
+            return datetime.datetime.fromtimestamp(n, datetime.timezone.utc).date().isoformat()
+        except (ValueError, OSError, OverflowError):
+            return ""
+    s = str(value)
+    if re.match(r"^\d{4}-\d{2}-\d{2}", s):
+        return s[:10]
+    return _rss_date(s)
+
+
+_HIMALAYAS_API = "https://himalayas.app/jobs/api"
+_HIMALAYAS_PAGE = 100
+
+
+def _money(lo, hi, currency, period):
+    try:
+        lo, hi = float(lo or 0), float(hi or 0)
+    except (TypeError, ValueError):
+        return None
+    if not (lo and hi):
+        return None
+    sym = {"USD": "$", "EUR": "€", "GBP": "£"}.get((currency or "USD").upper(), "")
+    unit = {"yearly": "/yr", "year": "/yr", "hourly": "/hr", "monthly": "/mo"}.get(
+        (period or "").lower(), "")
+    return f"{sym}{lo:,.0f}–{sym}{hi:,.0f}{unit}"
+
+
+def fetch_himalayas(c):
+    """Himalayas remote-job aggregator: GET /jobs/api?limit&offset -> {totalCount, jobs:[...]}.
+    Rich records — employmentType, seniority, salary range, locationRestrictions, description,
+    applicationLink. Paged newest-first, so `max_pages` bounds how far back we look rather
+    than pulling all 100k. Config: {ats:"himalayas","slug":"himalayas"[,"max_pages":N]}."""
+    pages = int(c.get("max_pages") or 3)
+    out = []
+    for i in range(pages):
+        d = _get(f"{_HIMALAYAS_API}?limit={_HIMALAYAS_PAGE}&offset={i * _HIMALAYAS_PAGE}")
+        jobs = d.get("jobs") or []
+        for j in jobs:
+            jid = str(j.get("guid") or j.get("applicationLink") or "").strip()
+            if not jid:
+                continue
+            # locationRestrictions is a list ("United States", "Anywhere"); an empty list
+            # means unrestricted, which for a remote board means remote-anywhere.
+            restr = j.get("locationRestrictions") or []
+            loc = ", ".join(str(x) for x in restr) if restr else "Anywhere"
+            if "remote" not in loc.lower():
+                loc = f"{loc} (Remote)"
+            out.append(_norm({"name": j.get("companyName") or "Unknown"}, jid,
+                             j.get("title", ""), loc,
+                             j.get("applicationLink") or "",
+                             _iso_date(j.get("pubDate")),
+                             salary=_money(j.get("minSalary"), j.get("maxSalary"),
+                                           j.get("currency"), j.get("salaryPeriod")),
+                             ats="himalayas", source=c["name"],
+                             description=_clean_html(j.get("description")
+                                                     or j.get("excerpt") or ""),
+                             employment_type=j.get("employmentType") or "",
+                             expires=_iso_date(j.get("expiryDate"))))
+        if len(jobs) < _HIMALAYAS_PAGE:
+            break
+    return out
+
+
+# We Work Remotely publishes one RSS feed per category. Only the categories that can carry
+# leadership / operations / transformation work are listed — the engineering and design feeds
+# would be pure noise for this search.
+_WWR_FEED = "https://weworkremotely.com/categories/{category}.rss"
+_WWR_DEFAULT_CATEGORIES = ["remote-management-and-finance-jobs",
+                           "remote-product-jobs",
+                           "remote-customer-support-jobs"]
+
+
+def fetch_wwr(c):
+    """We Work Remotely category RSS. Item title is "Company: Role"; region/country/type are
+    separate elements. Config: {ats:"wwr","slug":"weworkremotely"[,"categories":[...]]}."""
+    import xml.etree.ElementTree as ET
+    out = []
+    for cat in (c.get("categories") or _WWR_DEFAULT_CATEGORIES):
+        root = ET.fromstring(_get_text(_WWR_FEED.format(category=cat)))
+        for it in root.findall(".//item"):
+            def _t(tag):
+                el = it.find(tag)
+                return html.unescape((el.text or "").strip()) if el is not None and el.text else ""
+            link = _t("link")
+            jid = _t("guid") or link
+            if not jid:
+                continue
+            raw_title = _t("title")
+            company, _, title = raw_title.partition(": ")
+            if not title:                       # no "Company: Role" split available
+                company, title = "Unknown", raw_title
+            region = _t("region") or _t("country") or "Anywhere"
+            loc = region if "remote" in region.lower() else f"{region} (Remote)"
+            out.append(_norm({"name": company.strip()}, jid, title.strip(), loc, link,
+                             _rss_date(_t("pubDate")), ats="wwr", source=c["name"],
+                             description=_clean_html(_t("description")),
+                             employment_type=_t("type"),
+                             expires=_iso_date(_t("expires_at"))))
+    return out
+
+
+_JOBICY_API = "https://jobicy.com/api/v2/remote-jobs"
+
+
+def fetch_jobicy(c):
+    """Jobicy remote-job API: GET /api/v2/remote-jobs?count&geo&industry -> {jobs:[...]}.
+    Config: {ats:"jobicy","slug":"jobicy"[,"count":N,"geo":"usa","industries":[...]]}."""
+    count = int(c.get("count") or 50)
+    geo = c.get("geo", "usa")
+    industries = c.get("industries") or [None]
+    out, seen, failures = [], set(), []
+    for ind in industries:
+        params = {"count": count}
+        if geo:
+            params["geo"] = geo
+        if ind:
+            params["industry"] = ind
+        try:
+            d = _get(f"{_JOBICY_API}?{urllib.parse.urlencode(params)}")
+        except urllib.error.HTTPError as e:
+            # Jobicy 400s on an industry slug it doesn't recognise. One bad filter must not
+            # take the whole source down — but if EVERY query fails, the source really is
+            # broken and must be reported as such rather than as "no jobs today".
+            failures.append(f"{ind}: HTTP {e.code}")
+            continue
+        for j in (d.get("jobs") or []):
+            jid = str(j.get("id") or "").strip()
+            if not jid or jid in seen:
+                continue
+            seen.add(jid)
+            loc = j.get("jobGeo") or "Anywhere"
+            if "remote" not in loc.lower():
+                loc = f"{loc} (Remote)"
+            desc = j.get("jobDescription") or j.get("jobExcerpt") or ""
+            out.append(_norm({"name": j.get("companyName") or "Unknown"}, jid,
+                             j.get("jobTitle", ""), loc, j.get("url", ""),
+                             _iso_date(j.get("pubDate")), ats="jobicy", source=c["name"],
+                             description=_clean_html(desc),
+                             employment_type=(j.get("jobType") or [""])[0]
+                             if isinstance(j.get("jobType"), list) else (j.get("jobType") or "")))
+    if failures and len(failures) == len(industries):
+        raise ValueError("every Jobicy query failed: " + "; ".join(failures[:4]))
+    if failures:
+        print(f"  [warn] Jobicy: skipped {len(failures)} unrecognised industry filter(s) "
+              f"({', '.join(failures[:3])})")
+    return out
+
+
 FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday,
             "ashby": fetch_ashby, "recruitee": fetch_recruitee, "personio": fetch_personio,
-            "aquent": fetch_aquent, "snaphop": fetch_snaphop, "phenom": fetch_phenom}
+            "aquent": fetch_aquent, "snaphop": fetch_snaphop, "phenom": fetch_phenom,
+            "roberthalf": fetch_roberthalf, "himalayas": fetch_himalayas,
+            "wwr": fetch_wwr, "jobicy": fetch_jobicy}
 
 
 def _norm(company, ext_id, title, location, url, posted,
-          salary=None, ats=None, detail_url=None, description=""):
+          salary=None, ats=None, detail_url=None, description="",
+          source=None, employment_type="", expires=""):
     # `posted` = best "first posted" date the list endpoint gives (YYYY-MM-DD or "").
     # `salary` = pay known for free at list time (Lever); else filled by enrich_salary().
     # `description` feeds LLM scoring + salary regex. `_ats`/`_detail_url` are private
     # (underscore-prefixed) and stripped, along with `description`, before a snapshot is written.
+    # `source` names the REGISTRY ROW that produced this posting, which for a normal
+    # employer feed is the company itself but for an aggregator (Himalayas, Robert Half,
+    # WWR, Jobicy) is the board — `company` stays the actual employer either way, so the
+    # diff key, the email and the lifecycle record all read correctly.
     return {"key": f"{company['name']}::{ext_id}", "company": company["name"],
             "title": title.strip(), "location": location.strip(),
             "url": url, "posted": posted, "salary": salary, "description": description,
-            "_ats": ats, "_detail_url": detail_url}
+            "employment_type": (employment_type or "").strip(), "expires": expires,
+            "_ats": ats, "_detail_url": detail_url,
+            "_source": source or company["name"]}
 
 
 def _matches_any(l, terms):
@@ -733,6 +1022,107 @@ def matches_profile(posting, profile):
     return _mandate_rescue(posting, profile)
 
 
+# ---- discovery gate (V3): search broadly, judge semantically -----------------------------
+#
+# THE PROBLEM THIS SOLVES. `matches_profile` is a PRECISION filter, and it was doing a
+# RECALL job. Because its match_groups are ANDed, a role had to name both a seniority word
+# and a function word in its TITLE to be retrieved at all — so "Director, Pipeline
+# Excellence", "Sr. Product Manager" and "Program Manager" were discarded before the model
+# ever saw them. On one real day that was 130 of 171 leadership-shaped roles dropped for
+# "missed match group 2".
+#
+# The fix is to separate RETRIEVAL from JUDGMENT:
+#   * core      — the historical gate, unchanged. High confidence, ranked normally.
+#   * discovery — a much wider net: any role-family term in the title, plus either a
+#                 seniority marker or real mandate language in the description.
+#   * excluded  — only the HARD list (wrong function outright: engineering, clinical,
+#                 warehouse, bookkeeping, internships). Deliberately much shorter than the
+#                 profile's precision `exclude_any`.
+# A discovery-tier role is not treated as a worse role — it is a role we are less sure about
+# from its title alone, so it goes to the model, and a lower-confidence verdict lands it in
+# Discovery / Wildcards for a human to judge rather than being thrown away (requirement G).
+
+TIER_CORE = "core"
+TIER_DISCOVERY = "discovery"
+
+
+def _discovery_cfg(profile):
+    return profile.get("discovery") or {}
+
+
+def discovery_enabled(profile):
+    return bool(_discovery_cfg(profile).get("enabled"))
+
+
+def hard_excluded(posting, profile):
+    """The only absolute exclusion in discovery mode: a role in the wrong FUNCTION entirely.
+    Kept short on purpose — every term here is a role we can never want, and each one is a
+    potential false negative if it is too broad."""
+    return _any_term((posting.get("title") or "").lower(),
+                     _discovery_cfg(profile).get("exclude_any", []))
+
+
+def classify_match(posting, profile):
+    """Decide whether to RETRIEVE this posting, and how confident the title alone makes us.
+
+    Returns (tier, reason): tier is TIER_CORE, TIER_DISCOVERY, or None to drop. `reason` is
+    kept for the audit trail so any selection can be explained after the fact (requirement H
+    asks for traceability, not a black box).
+
+    Sets `posting["demoted"]` when a role reaches the discovery tier despite being hit by the
+    profile's PRECISION `exclude_any` — see the demotion note below."""
+    posting.pop("demoted", None)
+    if hard_excluded(posting, profile):
+        return None, "hard-excluded function"
+    if matches_profile(posting, profile):
+        return TIER_CORE, "core title gate"
+    cfg = _discovery_cfg(profile)
+    if not cfg.get("enabled"):
+        return None, "no discovery gate configured"
+
+    title = (posting.get("title") or "").lower()
+    # DEMOTION, not deletion. The profile's precision `exclude_any` encodes months of tuning
+    # against real feeds — "customer success manager" is there because it drops the IC ladder
+    # (Customer Success Manager II/III, Enterprise CSM) while KEEPING "Director, Customer
+    # Success", a distinction found by probing Samsara. Broad discovery walks straight past
+    # that, because "customer success" is a role family and "manager" is a seniority word.
+    #
+    # Dropping such a role outright would restore the false negatives V3 exists to remove;
+    # promoting it to "New — worth reviewing" would resurrect known bad recommendations. So
+    # it is retrieved, scored, and confined to Discovery / Wildcards — visible for a human to
+    # judge, never presented as a strong new find.
+    precision_hit = next((t for t in profile.get("exclude_any", [])
+                          if re.search(r"\b" + re.escape(t) + r"\b", title)), None)
+    families = [t for t in cfg.get("title_any", [])
+                if re.search(r"\b" + re.escape(t) + r"\b", title)]
+    senior = _any_term(title, cfg.get("seniority_any", []))
+    desc = (posting.get("description") or "").lower()
+    terms = cfg.get("description_terms") or []
+    hits = [t for t in terms if re.search(r"\b" + re.escape(t) + r"\b", desc)]
+    min_hits = int(cfg.get("min_description_hits", 2))
+
+    def keep(reason):
+        if precision_hit:
+            posting["demoted"] = True
+            return TIER_DISCOVERY, (f"{reason}; demoted to wildcards by the precision rule "
+                                    f"'{precision_hit}'")
+        return TIER_DISCOVERY, reason
+
+    # A named role family plus ANY seniority signal is enough — this is the path that
+    # recovers "Director, Pipeline Excellence" and "Manager, Business Operations".
+    if families and senior:
+        return keep(f"role family '{families[0]}' + seniority in title")
+    # A named role family with no seniority word still counts if the DESCRIPTION carries the
+    # mandate — this is how a strong senior IC role with an unusual title gets through.
+    if families and len(hits) >= min_hits:
+        return keep(f"role family '{families[0]}' + mandate in description "
+                    f"({', '.join(hits[:3])})")
+    # Generic title, real mandate: the "poorly titled but highly relevant" case.
+    if senior and len(hits) >= min_hits:
+        return keep(f"mandate in description ({', '.join(hits[:3])})")
+    return None, "no role-family or mandate signal"
+
+
 # ---- LLM fit scoring (optional) ----
 
 def get_client():
@@ -833,6 +1223,7 @@ def _bg_fingerprint(candidate):
 _REC_TO_FIT = {"apply_first": "yes", "strong_fit": "yes", "stretch": "maybe",
                "practical_contract": "maybe", "not_recommended": "no"}
 RECOMMENDATIONS = tuple(_REC_TO_FIT)
+CONFIDENCE_LEVELS = ("high", "medium", "low")
 
 
 def _neutral_verdict(why):
@@ -841,6 +1232,7 @@ def _neutral_verdict(why):
     return {"recommendation": "stretch", "fit": "maybe", "score": -1,
             "opportunity_score": -1, "qualification_fit": -1, "interest_fit": -1,
             "practical_fit": -1, "reasons": [], "concerns": [], "reason": why,
+            "confidence": "low",
             "relocation_required": False, "relocation_assistance_mentioned": False,
             "signing_bonus_mentioned": False, "valid": False}
 
@@ -886,7 +1278,13 @@ def validate_verdict(raw):
     if any(v is None for v in scores.values()):
         return None
     reasons = _as_str_list(raw.get("reasons"), 5)
+    # `confidence` drives requirement G: a plausible role the model is UNSURE about is not
+    # discarded, it is routed to Discovery / Wildcards for a human to judge. It is
+    # deliberately NOT strict — an old or malformed value degrades to "medium" rather than
+    # rejecting an otherwise good verdict, because confidence only affects placement.
+    conf = str(raw.get("confidence", "")).strip().lower()
     v = {"recommendation": rec,
+         "confidence": conf if conf in CONFIDENCE_LEVELS else "medium",
          "reasons": reasons,
          "concerns": _as_str_list(raw.get("concerns"), 3),
          "relocation_required": bool(raw.get("relocation_required")),
@@ -929,6 +1327,20 @@ def _fit_instructions():
         "it carries real ownership, influence, strategic scope, transformation or operating "
         "responsibility, or executive-facing work. Many strong roles are generically titled, "
         "so weight the mandate and problems described over title keywords.\n\n"
+        "JUDGE THE RESPONSIBILITIES, NOT THE TITLE. Some postings reach you through a broad "
+        "discovery net precisely BECAUSE their title is unconventional; the 'Why retrieved' "
+        "line tells you which. An unusual or vague title is not evidence against a role. If "
+        "the described work is the candidate's work, score it as such regardless of what it "
+        "is called. Missing a strong role is a worse error than surfacing a plausible one.\n\n"
+        "confidence must be exactly one of high, medium, low — how sure you are of your own "
+        "recommendation. Use low or medium when the posting is thin, the title is unusual, "
+        "the scope is unclear, or you are inferring more than reading. A plausible role you "
+        "are unsure about should be scored honestly with LOW confidence, NOT downgraded to "
+        "not_recommended: low-confidence roles are shown to the candidate separately for "
+        "human review, so uncertainty is preserved rather than resolved by discarding.\n\n"
+        "Reserve not_recommended for roles that are genuinely wrong — wrong function, "
+        "unrealistic requirements, or clearly outside the candidate's field. Do not use it "
+        "merely because you are unsure.\n\n"
         "recommendation must be exactly one of:\n"
         "- apply_first: well qualified, strongly matches their interests, practical enough "
         "to prioritize now.\n"
@@ -947,7 +1359,8 @@ def _fit_instructions():
         "Respond with ONLY this JSON object — no prose, no markdown fences:\n"
         '{"qualification_fit": <0-100>, "interest_fit": <0-100>, "practical_fit": <0-100>, '
         '"opportunity_score": <0-100>, "recommendation": "apply_first"|"strong_fit"|'
-        '"stretch"|"practical_contract"|"not_recommended", "reasons": ["..."], '
+        '"stretch"|"practical_contract"|"not_recommended", "confidence": "high"|"medium"|'
+        '"low", "reasons": ["..."], '
         '"concerns": ["..."], "relocation_required": true|false, '
         '"relocation_assistance_mentioned": true|false, '
         '"signing_bonus_mentioned": true|false}')
@@ -1004,9 +1417,12 @@ def score_fit(candidate, posting, client):
     desc = posting.get("description") or \
         "(no description available — judge from title and location only)"
     # Only the posting varies per call, so it is the whole user turn (see _fit_system).
+    # "Why retrieved" tells the model whether the title or the description put this role in
+    # front of it, so an unconventional title reads as expected rather than as a red flag.
     user = (f"JOB POSTING:\nTitle: {posting['title']}\nCompany: {posting['company']}\n"
             f"Location: {posting['location']}\n"
-            f"Employment type hint: {posting.get('_lane') or 'standard posting'}\n"
+            f"Employment type hint: {posting.get('employment_type') or posting.get('_lane') or 'standard posting'}\n"
+            f"Why retrieved: {posting.get('match_reason') or 'matched the standard title filter'}\n"
             f"Description: {desc[:DESC_LIMIT]}")
     text = ""
     try:
@@ -1035,12 +1451,23 @@ def score_fit(candidate, posting, client):
         return _neutral_verdict(f"(scoring unavailable: {type(e).__name__})")
 
 
-def enrich_with_fit(matched, prev, profile, client):
+def _score_priority(p):
+    """Order unscored roles so that, if the per-run budget runs out, the roles most worth
+    paying for are the ones that got scored: core tier before discovery tier, then newest."""
+    return (0 if p.get("tier") == TIER_CORE else 1, _neg_date(p.get("posted") or ""))
+
+
+def enrich_with_fit(matched, prev, profile, client, max_new=None):
     """Attach fit_result to each posting. Reuse a cached verdict only when it scored
     successfully (score >= 0) AND was produced against the SAME background (its stored
     `bg` fingerprint matches the current one). Editing the background_file changes the
     fingerprint, so every role is re-scored on the next run — no manual cache clearing.
-    Verdicts predating this feature carry no `bg`, so they also re-score once."""
+    Verdicts predating this feature carry no `bg`, so they also re-score once.
+
+    `max_new` caps how many roles are scored in one run. Broadening discovery multiplies the
+    number of NEW roles per day, and the daily bill is proportional to exactly that. Roles
+    over the cap are left unscored and marked `score_pending` — they are not dropped, and
+    because a failed/absent verdict is never cached they are picked up on the next run."""
     candidate = load_background(profile)
     if not (candidate and client):
         return 0
@@ -1048,15 +1475,27 @@ def enrich_with_fit(matched, prev, profile, client):
     cached = {p["key"]: p["fit_result"] for p in (prev or [])
               if (p.get("fit_result") or {}).get("score", -1) >= 0
               and (p.get("fit_result") or {}).get("bg") == fp}
-    scored = 0
+    todo = []
     for p in matched:
         if p["key"] in cached:
             p["fit_result"] = cached[p["key"]]
         else:
-            r = score_fit(candidate, p, client)
-            r["bg"] = fp                       # stamp the background it was scored against
-            p["fit_result"] = r
-            scored += 1
+            todo.append(p)
+    todo.sort(key=_score_priority)
+    budget = len(todo) if max_new in (None, 0) else int(max_new)
+    scored = 0
+    for p in todo:
+        if scored >= budget:
+            p["score_pending"] = True
+            continue
+        r = score_fit(candidate, p, client)
+        r["bg"] = fp                       # stamp the background it was scored against
+        p["fit_result"] = r
+        scored += 1
+    deferred = sum(1 for p in todo if p.get("score_pending"))
+    if deferred:
+        print(f"  [{profile['name']}] scoring budget reached — {deferred} role(s) deferred "
+              f"to the next run (they are kept, not dropped)")
     return scored
 
 
@@ -1074,32 +1513,107 @@ def _within_age(posted, max_age_days):
     return (datetime.date.today() - d).days <= max_age_days
 
 
-def collect_pool(max_age_days=None, config_path=CONFIG, gate=None):
-    """Fetch + normalize every source in `config_path` once, apply a geography `gate`
-    (defaults to the local gate `is_local` when None), then the age gate. The remote lane
-    calls this with config_path=REMOTE_CONFIG and gate=is_us_remote.
+# ---- source status (V3) ----------------------------------------------------------------
+#
+# The old code caught every exception into one flat list of strings, so a dead slug and a
+# five-second timeout looked identical, and "returned nothing" was indistinguishable from
+# "never answered". Four states replace that, because they call for four different
+# reactions: leave it alone / leave it alone / retry and ignore / go fix the config.
+SRC_OK_RESULTS  = "ok_results"    # answered, and had matching roles
+SRC_OK_ZERO     = "ok_zero"       # answered cleanly with nothing — a normal, healthy state
+SRC_TEMP_ERROR  = "temp_error"    # timeout, 5xx, rate limit, connection reset — retryable
+SRC_CONFIG_ERROR = "config_error" # 404/403/gone, or a response we cannot parse — needs a human
 
-    Returns (pool, errors, failed_companies). `failed_companies` is the set of company names
-    whose fetch raised — those companies contributed NOTHING to the pool, so the caller must
-    hold their previously-known roles out of the removal diff (see `_run_lane`) instead of
-    reporting them as filled."""
-    if not os.path.exists(config_path):
-        return [], [], set()
-    cfg = json.load(open(config_path))
-    keep = gate or (is_local if LOCAL_ONLY else None)
-    pool, errors, failed = [], [], set()
-    for c in cfg.get("companies", []):
+SRC_ERROR_STATES = (SRC_TEMP_ERROR, SRC_CONFIG_ERROR)
+
+# HTTP codes that mean "this configuration is wrong", not "try again later". 429 is
+# deliberately absent — being rate limited is temporary.
+_PERMANENT_HTTP = {400, 401, 403, 404, 405, 410, 451}
+
+FETCH_RETRIES = 1        # one retry for a temporary failure
+FETCH_RETRY_WAIT = 3.0   # seconds; we are a polite client, so back off rather than hammer
+
+
+def classify_fetch_error(exc):
+    """Temporary or permanent? Anything we are not sure about is TEMPORARY on purpose: a
+    source wrongly called permanent stops getting retried and quietly disappears, while a
+    source wrongly called temporary just costs one extra request."""
+    if isinstance(exc, urllib.error.HTTPError):
+        return SRC_CONFIG_ERROR if exc.code in _PERMANENT_HTTP else SRC_TEMP_ERROR
+    if isinstance(exc, (json.JSONDecodeError, KeyError)):
+        return SRC_CONFIG_ERROR          # the endpoint answered, but not in the shape we parse
+    if isinstance(exc, (urllib.error.URLError, socket.timeout, TimeoutError,
+                        http.client.HTTPException, ConnectionError, OSError)):
+        return SRC_TEMP_ERROR
+    return SRC_TEMP_ERROR
+
+
+def fetch_source(c, retries=FETCH_RETRIES, wait=FETCH_RETRY_WAIT):
+    """Fetch ONE registry row, with a bounded retry for temporary failures.
+
+    Returns (postings, run) where `run` is the health record for this source. Postings are
+    raw (ungated) — gating is the caller's job. A source that errors returns NO postings and
+    an error status; the caller must never read that as "this source has no jobs"."""
+    run = {"name": c["name"], "ats": c.get("ats"), "slug": c.get("slug"),
+           "attempts": 0, "status": SRC_OK_ZERO, "error": "", "fetched": 0, "kept": 0}
+    for attempt in range(retries + 1):
+        run["attempts"] = attempt + 1
         try:
             got = FETCHERS[c["ats"]](c)
+            run["status"] = SRC_OK_RESULTS if got else SRC_OK_ZERO
+            run["fetched"] = len(got)
+            run["error"] = ""
+            return got, run
+        except Exception as e:                       # noqa: BLE001 - classified just below
+            status = classify_fetch_error(e)
+            run["status"] = status
+            run["error"] = f"{type(e).__name__}: {str(e)[:160]}"
+            if status != SRC_TEMP_ERROR or attempt >= retries:
+                return [], run
+            print(f"  [retry] {c['name']} ({c.get('ats')}/{c.get('slug')}): "
+                  f"{run['error']} — retrying in {wait:g}s")
+            time.sleep(wait)
+    return [], run
+
+
+def collect_sources(max_age_days=None, config_path=CONFIG, gate=None):
+    """Fetch + normalize every source in `config_path` once, apply a geography `gate`
+    (defaults to the local gate `is_local` when None), then the age gate.
+
+    Returns a lane-source dict: {"pool", "errors", "failed", "runs"}.
+      pool   — every posting that survived the gates, across all sources
+      errors — human-readable strings for the report's source-warning list
+      failed — names of sources whose fetch ERRORED. Those contributed nothing, so the
+               caller holds their previously-known roles out of the removal diff
+               (see `_run_lane`) rather than reporting them as filled. A source that
+               answered with zero roles is NOT in here — that is real information.
+      runs   — one health record per source (see fetch_source)"""
+    if not os.path.exists(config_path):
+        return {"pool": [], "errors": [], "failed": set(), "runs": []}
+    cfg = json.load(open(config_path))
+    keep = gate or (is_local if LOCAL_ONLY else None)
+    pool, errors, failed, runs = [], [], set(), []
+    for c in cfg.get("companies", []):
+        got, run = fetch_source(c)
+        if run["status"] in SRC_ERROR_STATES:
+            failed.add(c["name"])
+            label = "needs attention" if run["status"] == SRC_CONFIG_ERROR else "temporary"
+            errors.append(f"{c['name']} ({c['ats']}/{c['slug']}) [{label}]: {run['error']}")
+        else:
             if keep:
                 got = [p for p in got if keep(p["location"])]
             got = [p for p in got if not _region_locked_by_title(p)]
             got = [p for p in got if _within_age(p["posted"], max_age_days)]
+            run["kept"] = len(got)
             pool.extend(got)
-        except Exception as e:
-            errors.append(f"{c['name']} ({c['ats']}/{c['slug']}): {type(e).__name__} {e}")
-            failed.add(c["name"])
-    return pool, errors, failed
+        runs.append(run)
+    return {"pool": pool, "errors": errors, "failed": failed, "runs": runs}
+
+
+def collect_pool(max_age_days=None, config_path=CONFIG, gate=None):
+    """Backwards-compatible 3-tuple view of `collect_sources`."""
+    src = collect_sources(max_age_days=max_age_days, config_path=config_path, gate=gate)
+    return src["pool"], src["errors"], src["failed"]
 
 
 # ---- feedback (WS5): the smallest thing that controls repetition ----------------------
@@ -1116,14 +1630,30 @@ def collect_pool(max_age_days=None, config_path=CONFIG, gate=None):
 #   wrong_function  -> suppressed; counted as a false positive
 #   wrong_industry  -> suppressed; counted as a false positive
 #   interested      -> keeps showing until it closes or ages out (NOT suppressed)
-FEEDBACK_STATUSES = ("applied", "already_applied", "not_interested", "too_technical",
-                     "wrong_function", "wrong_industry", "interested")
-# Statuses that remove a role from the recommendation sections.
-SUPPRESS_STATUSES = ("applied", "already_applied", "not_interested", "too_technical",
-                     "wrong_function", "wrong_industry")
+#
+# V3 adds the explicit decision vocabulary of requirement H. Every status is a plain rule
+# with a stated effect — there is no learned weighting and nothing is inferred, so any
+# selection or suppression can be explained from the file alone.
+FEEDBACK_STATUSES = (
+    # pursuit decisions
+    "pursue", "applied", "already_applied", "interested",
+    # rejections, each naming WHY (the audit reads these as false-positive signals)
+    "not_interested", "wrong_function", "too_technical", "compensation", "location",
+    "seniority", "industry_requirement", "weak_fit", "duplicate", "closed",
+    # legacy spelling kept so existing feedback files keep working
+    "wrong_industry",
+)
+# Statuses that remove a role from the recommendation sections. "pursue" and "interested"
+# deliberately do NOT suppress — those roles should keep appearing until they close.
+SUPPRESS_STATUSES = ("applied", "already_applied", "not_interested", "wrong_function",
+                     "too_technical", "compensation", "location", "seniority",
+                     "industry_requirement", "weak_fit", "duplicate", "closed",
+                     "wrong_industry")
 # Statuses that mean "this was a bad recommendation" — the audit's false-positive signal.
+# A role rejected on compensation or location was a REASONABLE recommendation that did not
+# suit, so those are excluded here: they say something about the job, not about the match.
 FALSE_POSITIVE_STATUSES = ("too_technical", "wrong_function", "wrong_industry",
-                           "not_interested")
+                           "industry_requirement", "weak_fit", "not_interested")
 
 
 def _fb_ident(company, title):
@@ -1235,37 +1765,85 @@ def write_rejects(profile, lanes, directory=None):
     json.dump(doc, open(path, "w"), indent=1)
 
 
+def source_health_rows(registries, prev_streak=None, prev_error_streak=None):
+    """Build the per-source health rows for `registries` = [(label, lane_source_dict)].
+
+    Kept separate from the file write so the email's source-health block and the committed
+    diagnostics file are guaranteed to describe the same run.
+
+    `consecutive_zero_runs` counts only runs where the source ANSWERED and had nothing —
+    an errored run leaves the streak untouched, because an unanswered source tells us
+    nothing about whether it has jobs. Error runs get their own streak instead."""
+    prev_streak = prev_streak or {}
+    prev_error_streak = prev_error_streak or {}
+    rows = []
+    for label, src in registries:
+        # Aggregator postings carry `_source` = the registry row that produced them; normal
+        # employer feeds carry their own name. Counting by `_source` keeps a board's roles
+        # attributed to the board instead of to 60 different employers.
+        counts = collections.Counter(p.get("_source") or p["company"] for p in src["pool"])
+        for run in src.get("runs") or []:
+            name = run["name"]
+            errored = run["status"] in SRC_ERROR_STATES
+            kept = counts.get(name, 0)
+            if errored:
+                zero_streak = prev_streak.get(name, 0)          # unchanged: unknown, not zero
+                err_streak = prev_error_streak.get(name, 0) + 1
+            else:
+                zero_streak = 0 if kept else prev_streak.get(name, 0) + 1
+                err_streak = 0
+            rows.append({"name": name, "registry": label, "ats": run.get("ats"),
+                         "slug": run.get("slug"), "status": run["status"],
+                         "roles_fetched": run.get("fetched", 0), "roles_returned": kept,
+                         "attempts": run.get("attempts", 1), "error": run.get("error", ""),
+                         "fetch_failed": errored,
+                         "consecutive_zero_runs": zero_streak,
+                         "consecutive_error_runs": err_streak})
+    return rows
+
+
+def source_health_summary(rows):
+    """The compact counts the email shows: checked, successful, temporary, needs attention."""
+    total = len(rows)
+    ok = sum(1 for r in rows if r["status"] in (SRC_OK_RESULTS, SRC_OK_ZERO))
+    return {"total": total, "ok": ok,
+            "with_results": sum(1 for r in rows if r["status"] == SRC_OK_RESULTS),
+            "zero": sum(1 for r in rows if r["status"] == SRC_OK_ZERO),
+            "temp_error": sum(1 for r in rows if r["status"] == SRC_TEMP_ERROR),
+            "config_error": sum(1 for r in rows if r["status"] == SRC_CONFIG_ERROR),
+            # A source answering "nothing" for many days running is the ATS-migration signal;
+            # it is NOT an error, so it is surfaced separately as "needs attention".
+            "stale": sorted(r["name"] for r in rows
+                            if r["consecutive_zero_runs"] >= STALE_SOURCE_RUNS),
+            "broken": sorted(r["name"] for r in rows
+                             if r["status"] == SRC_CONFIG_ERROR)}
+
+
+STALE_SOURCE_RUNS = 10   # answered-with-nothing runs in a row before we call it out
+
+
 def write_source_health(registries, directory=None):
-    """Registry-wide health snapshot: how many roles each configured company returned, and
-    how many consecutive runs it has returned none. A company sitting at zero for days is the
-    ATS-migration / dead-slug signal. `registries` is
-    [(label, config_path, pool, failed_companies)]."""
+    """Registry-wide health snapshot. `registries` is [(label, lane_source_dict)]. Returns
+    the rows so the caller can render the same data into the email."""
     path = os.path.join(directory or OUT_DIR, "source_health.json")
-    prev_streak = {}
+    prev_streak, prev_error = {}, {}
     try:
         for row in json.load(open(path)).get("sources", []):
             prev_streak[row["name"]] = row.get("consecutive_zero_runs", 0)
+            prev_error[row["name"]] = row.get("consecutive_error_runs", 0)
     except Exception:
         pass
-    rows = []
-    for label, config_path, pool, failed in registries:
-        counts = collections.Counter(p["company"] for p in pool)
-        try:
-            companies = json.load(open(config_path)).get("companies", [])
-        except Exception:
-            continue
-        for c in companies:
-            n = counts.get(c["name"], 0)
-            streak = 0 if n else prev_streak.get(c["name"], 0) + 1
-            rows.append({"name": c["name"], "registry": label, "ats": c.get("ats"),
-                         "slug": c.get("slug"), "roles_returned": n,
-                         "fetch_failed": c["name"] in failed,
-                         "consecutive_zero_runs": streak})
-    json.dump({"_comment": ("Per-company fetch health from the most recent run. "
-                            "consecutive_zero_runs counts runs returning no in-window roles "
-                            "— a rising number suggests an ATS migration or a changed slug."),
-               "generated": datetime.date.today().isoformat(), "sources": rows},
-              open(path, "w"), indent=1)
+    rows = source_health_rows(registries, prev_streak, prev_error)
+    json.dump({"_comment": (
+        "Per-source fetch health from the most recent run. status is one of ok_results, "
+        "ok_zero, temp_error, config_error. consecutive_zero_runs counts runs where the "
+        "source ANSWERED with no in-window roles (an ATS-migration / dead-slug signal); an "
+        "errored run does not advance it, because a source that never answered tells us "
+        "nothing. consecutive_error_runs counts back-to-back failures instead."),
+        "generated": datetime.date.today().isoformat(),
+        "summary": source_health_summary(rows), "sources": rows},
+        open(path, "w"), indent=1)
+    return rows
 
 
 # ---- removal classification (WS4) -----------------------------------------------------
@@ -2295,6 +2873,355 @@ def _digest_shell(profile, body):
 </html>"""
 
 
+# ---- change digest (V3) ------------------------------------------------------------------
+#
+# The previous email ranked the whole active inventory every morning, so ~80% of it was
+# identical to yesterday's and the genuinely new roles were buried among roles the reader had
+# already dismissed. This renderer answers one question instead: WHAT CHANGED SINCE THE LAST
+# RUN. It reads the lifecycle database rather than the lane snapshots, which is what lets it
+# say "new today" honestly, show a role in "still worth applying" only while it is 8-14 days
+# old, and — critically — list a role as removed ONLY if that role was actually in an earlier
+# email (`ever_shown`).
+
+CHANGE_QUOTAS = {"apply_first": 8, "new_review": 10, "wildcards": 4, "still": 8, "removed": 12}
+# Requirement F asks for 2-4 wildcards. Fewer is fine; more would turn the section into a
+# dumping ground and cost it the credibility that makes it worth reading.
+WILDCARD_MIN, WILDCARD_MAX = 2, 4
+
+
+def _suppressed(rec, feedback):
+    """Has a human already dealt with this role? Decisions live in two places on purpose: the
+    lifecycle DB (written by the sheet / decision fields) and feedback_<name>.json (hand
+    edited). Either one silences a role."""
+    if rec.get("user_decision") in ("applied", "not_interested"):
+        return True
+    fb = feedback["by_ident"].get(_fb_ident(rec.get("company"), rec.get("title"))) if feedback else None
+    if not fb:
+        for key in rec.get("source_keys") or []:
+            fb = (feedback or {}).get("by_key", {}).get(key)
+            if fb:
+                break
+    return bool(fb and fb["status"] in SUPPRESS_STATUSES)
+
+
+def _is_wildcard(rec):
+    """A role worth a human's eyes despite lower machine confidence: the model told us it was
+    unsure, or a precision rule demoted it (see classify_match). Requirement G — preserve the
+    uncertainty rather than resolving it by deleting the role.
+
+    Note it is NOT every discovery-tier role: discovery is now most of what we retrieve, so
+    treating the whole tier as wildcards would make the section meaningless. Only genuine
+    uncertainty belongs here."""
+    return (rec.get("confidence") == "low" or rec.get("demoted")) \
+        and rec.get("recommendation") not in ("", "not_recommended")
+
+
+def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None):
+    """Pick what today's email shows. Every record lands in AT MOST ONE section, and the
+    order below is the precedence — a role cannot appear twice in one email."""
+    today = today or datetime.date.today().isoformat()
+    seen_keys = seen_keys or set()
+    sections = {"apply_first": [], "new_review": [], "wildcards": [], "still": [],
+                "removed": []}
+    counts = {"screened_out": 0, "suppressed": 0, "stale_hidden": 0, "pending_score": 0}
+
+    def rank(rec):
+        return (-(rec.get("fit_score") or -1), rec.get("posted_date") or "")
+
+    live = [db["jobs"][k] for k in seen_keys if k in db["jobs"]]
+    for rec in sorted(live, key=rank):
+        if _suppressed(rec, feedback):
+            counts["suppressed"] += 1
+            continue
+        if not rec.get("recommendation"):
+            counts["pending_score"] += 1        # over the scoring budget; scored next run
+            continue
+        if rec.get("recommendation") == "not_recommended":
+            counts["screened_out"] += 1
+            continue
+        band, fresh = rec.get("band"), rec.get("first_seen") == today
+        if rec.get("status") == lifecycle.STATUS_STALE:
+            counts["stale_hidden"] += 1         # 15+ days and not exceptional (requirement D)
+            continue
+        if _is_wildcard(rec):
+            # Wildcards is the ONLY place an uncertain or demoted role may appear. Letting
+            # one fall through to "New — worth reviewing" when the section is full would
+            # present a known-lower-precision role as a strong find.
+            sections["wildcards"].append(rec)
+        elif fresh and rec.get("recommendation") == "apply_first":
+            sections["apply_first"].append(rec)
+        elif fresh:
+            sections["new_review"].append(rec)
+        elif rec.get("ever_shown") and band in (lifecycle.BAND_APPLY, lifecycle.BAND_NEW):
+            sections["still"].append(rec)
+        else:
+            # Seen before but never actually shown (it was below the cut on an earlier day)
+            # — treat it as a new discovery for the reader, because for them it IS one.
+            sections["new_review" if not rec.get("ever_shown") else "still"].append(rec)
+
+    # REMOVED: only roles the reader was actually told about. This is the fix for "jobs in
+    # the removed section that were never in an earlier Prospector email".
+    for rec in (newly_gone or []):
+        if rec.get("ever_shown"):
+            sections["removed"].append(rec)
+
+    for name, rows in sections.items():
+        if name == "removed":
+            rows.sort(key=lambda r: (r.get("company") or "").lower())
+        else:
+            rows.sort(key=rank)
+        sections[name] = rows[:CHANGE_QUOTAS[name]]
+    # Wildcards are a shortlist, not a bucket: keep the strongest few.
+    sections["wildcards"] = sections["wildcards"][:WILDCARD_MAX]
+    return sections, counts
+
+
+def _rec_meta(rec):
+    """location / work arrangement · employment type · compensation · date line."""
+    arrangement = {"remote": "✓ Remote", "hybrid": "🏡 Hybrid",
+                   "onsite": "📍 Onsite"}.get(rec.get("work_arrangement"), "")
+    loc = rec.get("location") or ""
+    bits = [f'<b style="color:{_C["text"]};">{_esc(rec.get("company") or "")}</b>']
+    if arrangement:
+        bits.append(_esc(arrangement) + (f" — {_esc(loc)}"
+                                         if loc and arrangement != "✓ Remote" else ""))
+    elif loc:
+        bits.append(_esc(loc))
+    if rec.get("employment_type"):
+        bits.append(_esc(rec["employment_type"]))
+    # Requirement F: posting date OR first-seen date — and say WHICH, so a posting whose
+    # source never gave a date is never passed off as freshly posted.
+    if rec.get("posted_date"):
+        bits.append(_esc(_fmt_posted(rec["posted_date"]) or f"Posted {rec['posted_date']}"))
+    elif rec.get("first_seen"):
+        days = lifecycle._days_since(rec["first_seen"])
+        bits.append(_esc(f"First seen {rec['first_seen']}"
+                         + (f" · {days}d ago" if days else " · today")))
+    return _muted(" &nbsp;·&nbsp; ".join(bits))
+
+
+def _rec_card(rec):
+    rec_key = rec.get("recommendation") or "stretch"
+    emoji, label, color = REC_LABEL.get(rec_key, ("🤔", "Stretch", "amber"))
+    head = (f'<div style="margin:0 0 2px;">'
+            f'<span style="display:inline-block;background-color:{_C[color + "_bg"]};'
+            f'color:{_C[color]};font-family:{_FONT};font-size:11px;font-weight:800;'
+            f'letter-spacing:.3px;padding:3px 9px;border-radius:10px;">'
+            f'{emoji} {_esc(label.upper())}</span>')
+    if rec.get("confidence") == "low":
+        head += (f'<span style="display:inline-block;background-color:{_C["amber_bg"]};'
+                 f'color:{_C["amber"]};font-family:{_FONT};font-size:11px;font-weight:700;'
+                 f'padding:3px 9px;border-radius:10px;margin-left:6px;">'
+                 f'Lower confidence</span>')
+    if rec.get("tier") == TIER_DISCOVERY:
+        head += (f'<span style="display:inline-block;background-color:{_C["panel"]};'
+                 f'color:{_C["muted"]};font-family:{_FONT};font-size:11px;font-weight:700;'
+                 f'padding:3px 9px;border-radius:10px;margin-left:6px;">Discovery</span>')
+    head += '</div>'
+
+    title = (f'<div style="margin:3px 0 0;line-height:1.35;">'
+             f'{_link(rec.get("title") or "(untitled)", rec.get("canonical_url") or "")}</div>')
+    score = ""
+    if rec.get("fit_score") is not None:
+        score = (f'<span style="display:inline-block;background-color:{_C["green_bg"]};'
+                 f'color:{_C["green"]};font-family:{_FONT};font-size:13px;font-weight:800;'
+                 f'padding:2px 10px;border-radius:10px;margin-top:6px;">'
+                 f'{rec["fit_score"]}/100</span>')
+    comp = ""
+    if rec.get("compensation"):
+        comp = (f'<span style="color:{_C["green"]};font-family:{_FONT};font-size:13px;'
+                f'font-weight:700;margin-left:8px;">{_esc(rec["compensation"])}</span>')
+    body = f'<div style="margin-top:6px;">{score}{comp}</div>' if (score or comp) else ""
+    if rec.get("why_fits"):
+        body += (f'<div style="color:{_C["text"]};font-family:{_FONT};font-size:13px;'
+                 f'margin-top:6px;">{_esc(rec["why_fits"])}</div>')
+    if rec.get("top_concern"):
+        body += (f'<div style="color:{_C["amber"]};font-family:{_FONT};font-size:12px;'
+                 f'margin-top:4px;">Watch: {_esc(rec["top_concern"])}</div>')
+    inner = head + title + _rec_meta(rec) + body
+    return _card(_icon_row(rec.get("company") or "", inner), _C[color])
+
+
+def _change_section(heading, rows, blurb=""):
+    if not rows:
+        return ""
+    out = [_section(f"{heading} ({len(rows)})")]
+    if blurb:
+        out.append(_muted(blurb))
+    out += [_rec_card(r) for r in rows]
+    return "".join(out)
+
+
+def _removed_html(rows):
+    if not rows:
+        return ""
+    B = [_section(f"Removed since prior run ({len(rows)})"),
+         _muted("Roles that appeared in an earlier Prospector email and are now gone from "
+                "their source. A feed that failed never lands a role here.")]
+    for rec in rows:
+        why = lifecycle.REMOVAL_REASONS.get(rec.get("removal_reason"),
+                                            "No longer listed by its source")
+        applied = rec.get("user_decision") == "applied"
+        lead = (f'<span style="color:{_C["green"]};font-weight:700;">Applied ✓</span> '
+                if applied else '<span style="color:{0};">Not applied —</span> '.format(_C["muted"]))
+        B.append(f'<div style="color:{_C["text"]};font-family:{_FONT};font-size:13px;'
+                 f'margin:4px 0;">{lead}{_esc(rec.get("title") or "")} — '
+                 f'{_esc(rec.get("company") or "")} '
+                 f'<span style="color:{_C["muted"]};">· {_esc(why)}</span></div>')
+    return "".join(B)
+
+
+def _source_health_html(rows):
+    """Compact by design (requirement E): four numbers, then names only when a human has
+    something to do about them."""
+    if not rows:
+        return ""
+    s = source_health_summary(rows)
+    B = [_section("Source health")]
+    line = (f'{s["ok"]}/{s["total"]} sources checked successfully'
+            f' &nbsp;·&nbsp; {s["with_results"]} returned roles'
+            f' &nbsp;·&nbsp; {s["zero"]} returned none')
+    B.append(f'<div style="color:{_C["text"]};font-family:{_FONT};font-size:13px;'
+             f'margin:2px 0;">{line}</div>')
+    if s["temp_error"]:
+        B.append(f'<div style="color:{_C["amber"]};font-family:{_FONT};font-size:13px;'
+                 f'margin:2px 0;">Temporary errors: {s["temp_error"]} '
+                 f'(retried; roles from these sources were held, not marked removed)</div>')
+    attention = s["broken"] + [n for n in s["stale"] if n not in s["broken"]]
+    if attention:
+        shown = ", ".join(attention[:6]) + (f" +{len(attention) - 6} more"
+                                            if len(attention) > 6 else "")
+        B.append(f'<div style="color:{_C["red"]};font-family:{_FONT};font-size:13px;'
+                 f'margin:2px 0;">Needs attention: {len(attention)} — {_esc(shown)}</div>')
+    return "".join(B)
+
+
+def _change_hero(sections, counts):
+    """The four numbers requirement F puts at the top: new, high-priority, still worth
+    applying, closed/removed."""
+    new_total = len(sections["apply_first"]) + len(sections["new_review"]) \
+        + len(sections["wildcards"])
+    high = len(sections["apply_first"]) + sum(
+        1 for r in sections["new_review"] if r.get("priority") == lifecycle.PRIORITY_P1)
+    F = _FONT
+    rows = [f'<div style="color:{_C["head"]};font-family:{F};font-size:20px;font-weight:800;'
+            f'line-height:1.25;"><span style="color:{_C["green"]};">{new_total}</span> '
+            f'new role{"" if new_total == 1 else "s"} today</div>']
+    seg = [f'<b style="color:{_C["head"]};">{high}</b> high priority',
+           f'<b style="color:{_C["head"]};">{len(sections["still"])}</b> still worth applying',
+           f'<b style="color:{_C["head"]};">{len(sections["removed"])}</b> closed/removed']
+    rows.append(f'<div style="color:{_C["text"]};font-family:{F};font-size:14px;'
+                f'margin-top:7px;">{" &nbsp;·&nbsp; ".join(seg)}</div>')
+    quiet = []
+    if counts.get("screened_out"):
+        quiet.append(f'{counts["screened_out"]} screened out')
+    if counts.get("stale_hidden"):
+        quiet.append(f'{counts["stale_hidden"]} aged past 14 days')
+    if counts.get("suppressed"):
+        quiet.append(f'{counts["suppressed"]} hidden by your decisions')
+    if counts.get("pending_score"):
+        quiet.append(f'{counts["pending_score"]} awaiting scoring')
+    if quiet:
+        rows.append(f'<div style="color:{_C["muted"]};font-family:{F};font-size:12px;'
+                    f'margin-top:5px;">{" · ".join(quiet)}</div>')
+    return (f'<div style="border:1px solid {_C["border"]};border-left:3px solid {_C["link"]};'
+            f'background-color:{_C["panel"]};border-radius:12px;padding:18px 20px;'
+            f'margin:16px 0 6px;">{"".join(rows)}</div>')
+
+
+def _change_preheader(sections):
+    new_total = len(sections["apply_first"]) + len(sections["new_review"]) \
+        + len(sections["wildcards"])
+    s = f'{new_total} new · {len(sections["still"])} still worth applying'
+    top = sections["apply_first"] or sections["new_review"] or sections["wildcards"]
+    if top:
+        s += f' · Top: {(top[0].get("title") or "")[:44]} @ {top[0].get("company") or ""}'
+    pad = "&#847;&zwnj;&nbsp;" * 40
+    return ('<div style="display:none !important;visibility:hidden;mso-hide:all;'
+            'font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;'
+            'overflow:hidden;color:transparent;height:0;width:0;">'
+            f'{_esc(s)}{pad}</div>')
+
+
+def build_change_digest_html(profile, sections, counts, health_rows):
+    """Requirement F's email, in its stated order. Returns (html, shown_job_keys) — the
+    caller passes those keys to lifecycle.mark_shown, which is the ONLY thing that makes a
+    role eligible for the removed section later."""
+    _LOGOS_USED.clear()
+    today = datetime.date.today().isoformat()
+    B = [_change_preheader(sections), _simulated_banner()]
+    B.append(f'<div style="color:{_C["head"]};font-family:{_FONT};font-size:22px;'
+             f'font-weight:800;line-height:1.3;">Prospector — {today}</div>')
+    B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
+             f'margin-top:4px;">{_esc(profile["label"])}</div>')
+    B.append(_change_hero(sections, counts))
+    B.append(_change_section("Apply first", sections["apply_first"],
+                             "Highest-value new opportunities."))
+    B.append(_change_section("New — worth reviewing", sections["new_review"],
+                             "Other strong new discoveries."))
+    B.append(_change_section("Discovery / wildcards", sections["wildcards"],
+                             "Unusual titles or lower confidence, but the responsibilities "
+                             "look relevant. Shown for your judgment, not the model's."))
+    B.append(_change_section("Still worth applying", sections["still"],
+                             "Strong roles from earlier days, still open — especially those "
+                             "8–14 days old."))
+    if not any(sections[k] for k in ("apply_first", "new_review", "wildcards", "still")):
+        B.append(_muted("No new or still-open roles cleared the bar today."))
+    B.append(_removed_html(sections["removed"]))
+    B.append(_source_health_html(health_rows))
+    shown = [r["job_key"] for k in ("apply_first", "new_review", "wildcards", "still")
+             for r in sections[k]]
+    return _digest_shell(profile, "".join(B)), shown
+
+
+def build_change_digest_md(profile, sections, counts, health_rows):
+    """Plain-text mirror of the email, committed as report_<name>.md so a run can be reviewed
+    (and diffed) without opening HTML."""
+    today = datetime.date.today().isoformat()
+    new_total = sum(len(sections[k]) for k in ("apply_first", "new_review", "wildcards"))
+    L = [f"# Prospector — {today}", f"_{profile['label']}_", "",
+         f"**{new_total} new roles today** · {len(sections['still'])} still worth applying "
+         f"· {len(sections['removed'])} closed/removed", ""]
+    for heading, key in (("APPLY FIRST", "apply_first"),
+                         ("NEW — WORTH REVIEWING", "new_review"),
+                         ("DISCOVERY / WILDCARDS", "wildcards"),
+                         ("STILL WORTH APPLYING", "still")):
+        rows = sections[key]
+        if not rows:
+            continue
+        L.append(f"## {heading} ({len(rows)})")
+        for r in rows:
+            score = f"{r['fit_score']}/100" if r.get("fit_score") is not None else "unscored"
+            date = (f"posted {r['posted_date']}" if r.get("posted_date")
+                    else f"first seen {r.get('first_seen', '?')}")
+            L.append(f"- **{r.get('title')}** — {r.get('company')} · {score} · "
+                     f"{r.get('work_arrangement')} {r.get('location', '')} · "
+                     + (f"{r['compensation']} · " if r.get("compensation") else "")
+                     + f"{date}")
+            if r.get("why_fits"):
+                L.append(f"  - Why: {r['why_fits']}")
+            if r.get("top_concern"):
+                L.append(f"  - Concern: {r['top_concern']}")
+            L.append(f"  - {r.get('canonical_url', '')}")
+        L.append("")
+    if sections["removed"]:
+        L.append(f"## REMOVED SINCE PRIOR RUN ({len(sections['removed'])})")
+        for r in sections["removed"]:
+            why = lifecycle.REMOVAL_REASONS.get(r.get("removal_reason"), "no longer listed")
+            L.append(f"- {r.get('title')} — {r.get('company')} · {why}")
+        L.append("")
+    s = source_health_summary(health_rows)
+    L += ["## SOURCE HEALTH",
+          f"- Sources checked: {s['ok']}/{s['total']} successful",
+          f"- Temporary errors: {s['temp_error']}",
+          f"- Needs attention: {len(s['broken']) + len(s['stale'])}"]
+    if s["broken"]:
+        L.append(f"  - Broken config: {', '.join(s['broken'])}")
+    if s["stale"]:
+        L.append(f"  - Returning nothing for {STALE_SOURCE_RUNS}+ runs: {', '.join(s['stale'])}")
+    return "\n".join(L) + "\n"
+
+
 def write_feedback_template(profile, lanes, feedback):
     """Write feedback_template_<name>.json next to the reports: every role currently in play,
     pre-filled with an empty status, so giving feedback is copy-paste rather than typing keys
@@ -2320,13 +3247,25 @@ def write_feedback_template(profile, lanes, feedback):
     json.dump(doc, open(path, "w"), indent=1)
 
 
-def _run_lane(profile, src, client, suffix, title, max_age_days=None):
+def _run_lane(profile, src, client, suffix, title, max_age_days=None, budget=None):
     # Match + score + diff ONE lane against its own snapshot (suffix ""=local, "_remote").
     # `src` is a lane source dict: {"pool": [...], "errors": [...], "failed": {company names}}.
     # Writes the slim snapshot; returns (lane_dict, has_changes).
     pool, errors = src.get("pool") or [], src.get("errors") or []
     failed_companies = src.get("failed") or set()
-    matched = [p for p in pool if matches_profile(p, profile)]
+    # RETRIEVAL, not judgment (see classify_match). Every kept posting is tagged with the
+    # tier that retrieved it and the reason, so any selection can be explained later and the
+    # renderer can route low-confidence discovery roles to Wildcards instead of dropping them.
+    matched, tiers = [], collections.Counter()
+    for p in pool:
+        tier, reason = classify_match(p, profile)
+        tiers[tier or "dropped"] += 1
+        if tier:
+            p["tier"], p["match_reason"] = tier, reason
+            matched.append(p)
+    if discovery_enabled(profile):
+        print(f"  [{profile['name']}{suffix}] retrieved {len(matched)} of {len(pool)} "
+              f"({tiers[TIER_CORE]} core, {tiers[TIER_DISCOVERY]} discovery)")
     if profile.get("dedupe_same_title"):
         # Collapse one-req-per-city duplicates BEFORE scoring, so we neither show the same
         # role four times nor pay to score each copy.
@@ -2352,7 +3291,12 @@ def _run_lane(profile, src, client, suffix, title, max_age_days=None):
     snap = os.path.join(SNAPSHOT_DIR, f"snapshot_{profile['name']}{suffix}.json")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
 
-    scored = enrich_with_fit(matched, prev, profile, client)
+    # One scoring budget is shared across a profile's lanes, so a wide-open first lane cannot
+    # spend the whole day's allowance and leave the others unscored.
+    scored = enrich_with_fit(matched, prev, profile, client,
+                             max_new=budget["left"] if budget else None)
+    if budget is not None:
+        budget["left"] = max(0, budget["left"] - scored)
     if scored:
         print(f"  [{profile['name']}{suffix}] scored {scored} new role(s) with {FIT_MODEL}")
     if profile.get("fit_mode") == "filter":   # drop roles the model rated a clear "no"
@@ -2411,8 +3355,60 @@ def profile_age_window(profile, settings, suffix=""):
     return settings.get("max_posting_age_days")
 
 
+def _lifecycle_cfg(settings):
+    cfg = dict(SETTINGS_DEFAULTS["lifecycle"])
+    cfg.update(settings.get("lifecycle") or {})
+    return cfg
+
+
+def update_lifecycle(profile, lanes, settings, failed_sources):
+    """Fold this run into the profile's persistent discovery database and derive today's
+    lifecycle states. Returns (db, seen_keys, newly_gone, stats).
+
+    Order matters and is not arbitrary:
+      1. upsert every retrieved posting (cross-feed dedup happens here)
+      2. verify the old-but-strong roles that need it, BEFORE statuses are derived, so a
+         verified-open role can legitimately keep its exception
+      3. derive statuses from age + verification
+      4. only then decide what is gone — and never on the word of a failed source"""
+    cfg = _lifecycle_cfg(settings)
+    today = datetime.date.today().isoformat()
+    db = lifecycle.load_db(profile["name"], SNAPSHOT_DIR)
+    stats = {"discovered": 0, "new": 0, "duplicates": 0}
+    seen = set()
+    for lane in lanes:
+        # One `seen` set across every lane, so a job arriving on two feeds counts as one
+        # discovery deduplicated — not as two discoveries.
+        s = lifecycle.upsert(db, lane["matched"], lane["title"], today, run_seen=seen)
+        for k in ("discovered", "duplicates", "new"):
+            stats[k] += s[k]
+
+    checked = closed = 0
+    if cfg.get("verify_limit"):
+        checked, closed = lifecycle.run_verification(
+            db, seen, int(cfg["verify_limit"]), int(cfg["exceptional_score"]), today)
+    stats["verified_checked"], stats["verified_closed"] = checked, closed
+
+    max_age = profile_age_window(profile, settings)
+    lifecycle.refresh_statuses(db, seen, today, max_age, int(cfg["exceptional_score"]))
+    newly_gone = lifecycle.close_missing(db, seen, failed_sources, today)
+    stats["removed"] = len(newly_gone)
+    stats["aged_out"] = sum(1 for k in seen
+                            if db["jobs"][k].get("status") == lifecycle.STATUS_STALE)
+    stats["active"] = sum(1 for k in seen
+                          if db["jobs"][k].get("status") in lifecycle.ACTIVE_STATUSES)
+    stats["unverified_held"] = sum(1 for r in db["jobs"].values()
+                                   if r.get("unverified_run") == today)
+    # Derived from the DB rather than from the renderer, so the funnel is accurate for every
+    # profile — including Chad, who does not use the change digest.
+    stats["screened_out"] = sum(1 for k in seen
+                                if db["jobs"][k].get("recommendation") == "not_recommended")
+    stats["pending_score"] = sum(1 for k in seen if not db["jobs"][k].get("recommendation"))
+    return db, seen, newly_gone, stats
+
+
 def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=None,
-                settings=None):
+                settings=None, health_rows=None):
     # Run the local lane and (when enabled + opted-in) the US-remote and contract/staffing
     # lanes, then compose ALL into ONE report/email per person. Each lane keeps its own
     # snapshot so diffs are independent; `changed` is the OR of the lanes; logos are the union.
@@ -2420,35 +3416,97 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=N
     # Lanes are RUN here but ordered for DISPLAY below (email order != run order).
     settings = settings or {}
     age = lambda sfx: profile_age_window(profile, settings, sfx)
+    budget = {"left": int((settings.get("discovery") or {}).get(
+        "max_new_scored_per_run", 0) or 10 ** 9)}
     local_lane, changed = _run_lane(profile, local_src, client, "",
-                                    "📍 Local — Silicon Slopes", max_age_days=age(""))
+                                    "📍 Local — Silicon Slopes", max_age_days=age(""),
+                                    budget=budget)
     remote_lane = staffing_lane = None
     if remote_src is not None and profile.get("remote_search"):
         remote_lane, r_changed = _run_lane(profile, remote_src, client,
                                            "_remote", "🌎 US-Remote",
-                                           max_age_days=age("_remote"))
+                                           max_age_days=age("_remote"), budget=budget)
         changed = changed or r_changed
     if staffing_src is not None and profile.get("staffing_search"):
         staffing_lane, s_changed = _run_lane(profile, staffing_src, client,
                                              "_staffing", "🧑‍💼 Contract / Staffing",
-                                             max_age_days=age("_staffing"))
+                                             max_age_days=age("_staffing"), budget=budget)
         changed = changed or s_changed
     # Email display order: US-Remote, then Contract/Staffing, then Local Silicon Slopes.
     lanes = [lane for lane in (remote_lane, staffing_lane, local_lane) if lane is not None]
 
     feedback = load_feedback(profile["name"])
-    report = build_report(profile, lanes)
-    if profile.get("report_style") == "digest":
-        # Lisa's ranked daily digest (WS3). Chad keeps the original lane-by-lane email.
-        report_html = build_digest_html(profile, lanes, settings, feedback)
+    failed_sources = set()
+    for src in (local_src, remote_src, staffing_src):
+        if src:
+            failed_sources |= set(src.get("failed") or ())
+
+    db, seen, newly_gone, stats = update_lifecycle(profile, lanes, settings, failed_sources)
+
+    if profile.get("report_style") == "change":
+        # V3: the change digest, built from the lifecycle DB (requirement F).
+        sections, counts = change_sections(db, feedback, seen_keys=seen,
+                                           newly_gone=newly_gone)
+        report_html, shown = build_change_digest_html(profile, sections, counts,
+                                                      health_rows or [])
+        report = build_change_digest_md(profile, sections, counts, health_rows or [])
+        # ONLY roles the rendered email actually contains are marked shown — that is what
+        # makes them eligible for the removed section later, and nothing else does.
+        lifecycle.mark_shown(db, shown)
+        stats["shown"] = len(shown)
+        # The renderer's own tallies are authoritative for what it chose to hide; the DB
+        # supplies the rest (and the numbers for profiles that use another renderer).
+        stats.update({k: v for k, v in counts.items() if v or k not in stats})
+        # A change digest with nothing changed is not worth an email; a removal still is.
+        changed = bool(shown or sections["removed"])
     else:
-        report_html = build_html_report(profile, lanes)   # clears + repopulates _LOGOS_USED
+        report = build_report(profile, lanes)
+        if profile.get("report_style") == "digest":
+            # Lisa's original ranked digest (WS3). Chad keeps the lane-by-lane email.
+            report_html = build_digest_html(profile, lanes, settings, feedback)
+        else:
+            report_html = build_html_report(profile, lanes)  # clears + repopulates _LOGOS_USED
+        stats["shown"] = 0
+
+    lifecycle.prune(db, int(_lifecycle_cfg(settings)["prune_after_days"]))
+    lifecycle.strip_transient(db)
+    lifecycle.save_db(db, profile["name"], SNAPSHOT_DIR)
+    if (settings.get("sheets") or {}).get("enabled", True):
+        result = sheets_sync.export(db, OUT_DIR, profile["name"])
+        print(f"  [{profile['name']}] discovery log: {result['rows']} row(s) → "
+              f"{os.path.basename(result['csv'])}; sheet push {result['status']}"
+              + (f" ({result['detail']})" if result.get("detail") else ""))
+
     write_feedback_template(profile, lanes, feedback)
     write_rejects(profile, lanes)
     open(os.path.join(OUT_DIR, f"report_{profile['name']}.md"), "w").write(report)
     open(os.path.join(OUT_DIR, f"report_{profile['name']}.html"), "w").write(report_html)
     logos = sorted(_LOGOS_USED)   # union of logos referenced across all lanes
-    return changed, logos, report
+    return changed, logos, report, stats
+
+
+def run_stats_text(name, stats, health):
+    """The funnel, in one block, exactly as requirement K asks for it. Printed on every run
+    (not just test runs) because these are the numbers that tell you whether discovery is
+    working before anyone opens the email."""
+    return "\n".join([
+        f"--- {name}: discovery funnel ---",
+        f"  total discovered (feed appearances) : {stats.get('discovered', 0)}",
+        f"  deduplicated across feeds           : {stats.get('duplicates', 0)}",
+        f"  new jobs never seen before          : {stats.get('new', 0)}",
+        f"  excluded after scoring              : {stats.get('screened_out', 0)}",
+        f"  hidden by your decisions            : {stats.get('suppressed', 0)}",
+        f"  awaiting scoring (over budget)      : {stats.get('pending_score', 0)}",
+        f"  still active                        : {stats.get('active', 0)}",
+        f"  aged out (15+ days, not repeated)   : {stats.get('aged_out', 0)}",
+        f"  verified still open                 : {stats.get('verified_checked', 0)} checked, "
+        f"{stats.get('verified_closed', 0)} found closed",
+        f"  verified removed                    : {stats.get('removed', 0)}",
+        f"  held (source failed, status unknown): {stats.get('unverified_held', 0)}",
+        f"  shown in today's email              : {stats.get('shown', 0)}",
+        f"  feed errors                         : {health.get('temp_error', 0)} temporary, "
+        f"{health.get('config_error', 0)} needing attention",
+    ])
 
 
 DRYRUN_DIR = os.path.join(HERE, ".dryrun")
@@ -2486,8 +3544,11 @@ def _resolve_dirs(args):
     for d in {snap_dir, out_dir}:
         os.makedirs(d, exist_ok=True)
     if args.dry_run and not args.snapshot_dir:
-        for src in glob.glob(os.path.join(HERE, "snapshot_*.json")):
-            shutil.copy2(src, os.path.join(snap_dir, os.path.basename(src)))
+        # jobs_*.json is state too (it carries first_seen and ever_shown), so a dry run must
+        # see a realistic copy of it — otherwise every role reads as a first-time discovery.
+        for pattern in ("snapshot_*.json", "jobs_*.json"):
+            for src in glob.glob(os.path.join(HERE, pattern)):
+                shutil.copy2(src, os.path.join(snap_dir, os.path.basename(src)))
     if snap_dir != HERE or out_dir != HERE:
         print(f"[safe run] snapshots → {snap_dir}\n[safe run] reports   → {out_dir}\n"
               f"[safe run] production snapshots and reports are untouched.\n")
@@ -2535,8 +3596,8 @@ def main():
         print(f"Fetch window widened to {fetch_age}d to cover per-profile windows "
               f"({', '.join(f'{p['name']}={profile_age_window(p, settings)}d' for p in profiles)}).")
 
-    pool, errors, failed = collect_pool(max_age_days=fetch_age)
-    local_src = {"pool": pool, "errors": errors, "failed": failed}
+    local_src = collect_sources(max_age_days=fetch_age)
+    pool = local_src["pool"]
     age_note = f" ≤{fetch_age}d old" if fetch_age else ""
     print(f"Fetched {len(pool)} local roles{age_note} across all companies."
           f"{' Fit scoring: ON.' if client else ' Fit scoring: OFF.'}")
@@ -2547,10 +3608,9 @@ def main():
     remote_on = bool(settings.get("remote_search", {}).get("enabled")
                      and any(p.get("remote_search") for p in profiles))
     if remote_on:
-        r_pool, r_errors, r_failed = collect_pool(max_age_days=fetch_age,
-                                                  config_path=REMOTE_CONFIG, gate=is_us_remote)
-        remote_src = {"pool": r_pool, "errors": r_errors, "failed": r_failed}
-        print(f"Fetched {len(r_pool)} US-remote role(s) across the remote registry.")
+        remote_src = collect_sources(max_age_days=fetch_age, config_path=REMOTE_CONFIG,
+                                     gate=is_us_remote)
+        print(f"Fetched {len(remote_src['pool'])} US-remote role(s) across the remote registry.")
 
     # Contract/staffing lane: staffing-firm feeds (e.g. Aquent), fetched once and gated with
     # the local gate (is_local keeps Utah-local + US-remote roles, dropping other-metro on-site
@@ -2567,11 +3627,28 @@ def main():
         # falling back to it when unset.
         staffing_age = max([profile_age_window(p, settings, "_staffing") or 0
                             for p in profiles] or [0]) or None
-        s_pool, s_errors, s_failed = collect_pool(max_age_days=staffing_age,
-                                                  config_path=STAFFING_CONFIG, gate=is_local)
-        staffing_src = {"pool": s_pool, "errors": s_errors, "failed": s_failed}
+        staffing_src = collect_sources(max_age_days=staffing_age,
+                                       config_path=STAFFING_CONFIG, gate=is_local)
         s_note = f" ≤{staffing_age}d old" if staffing_age else ""
-        print(f"Fetched {len(s_pool)} contract/staffing role(s){s_note} across the staffing registry.")
+        print(f"Fetched {len(staffing_src['pool'])} contract/staffing role(s){s_note} "
+              f"across the staffing registry.")
+    print()
+
+    # Source health is computed BEFORE the profiles run, because the change digest shows it.
+    # It is still just a tally of fetches already made — no extra requests.
+    registries = [("local", local_src)]
+    if remote_src:
+        registries.append(("remote", remote_src))
+    if staffing_src:
+        registries.append(("staffing", staffing_src))
+    health_rows = write_source_health(registries)
+    health = source_health_summary(health_rows)
+    print(f"Source health: {health['ok']}/{health['total']} successful · "
+          f"{health['with_results']} with results · {health['zero']} zero · "
+          f"{health['temp_error']} temporary error(s) · "
+          f"{health['config_error']} needing attention")
+    if health["broken"]:
+        print("  needs attention: " + ", ".join(health["broken"]))
     print()
 
     changed_profiles = []
@@ -2579,32 +3656,23 @@ def main():
     for p in profiles:
         rs = remote_src if p.get("remote_search") else None
         ss = staffing_src if p.get("staffing_search") else None
-        changed, logos, report = run_profile(p, local_src, remote_src=rs,
-                                             staffing_src=ss, client=client,
-                                             settings=settings)
+        changed, logos, report, stats = run_profile(p, local_src, remote_src=rs,
+                                                    staffing_src=ss, client=client,
+                                                    settings=settings,
+                                                    health_rows=health_rows)
         if changed:
             changed_profiles.append(p["name"])
         logos_by_profile[p["name"]] = logos
         print("=" * 70)
         print(f"[{p['name']}] changes since last run: {'yes' if changed else 'no'}"
               f" · {len(logos)} logo(s) to embed")
+        print(run_stats_text(p["name"], stats, health))
         print(report)
 
     # Expose per-profile outputs to GitHub Actions: a "changed" flag so the workflow emails
     # only people whose (combined local+remote) report changed, and the exact list of logo
     # files to attach inline as CID images — only those the report references, so none show
     # as stray downloads. One report/email per person, so no separate remote-lane outputs.
-    # Per-company fetch health for the weekly audit (no extra requests — this is just a
-    # tally of the fetches the run already made).
-    registries = [("local", CONFIG, local_src["pool"], local_src["failed"])]
-    if remote_src:
-        registries.append(("remote", REMOTE_CONFIG, remote_src["pool"],
-                           remote_src["failed"]))
-    if staffing_src:
-        registries.append(("staffing", STAFFING_CONFIG, staffing_src["pool"],
-                           staffing_src["failed"]))
-    write_source_health(registries)
-
     summary = fit_usage_summary()
     if summary:
         print(summary)

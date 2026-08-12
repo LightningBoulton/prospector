@@ -27,6 +27,8 @@ import tempfile
 import unittest
 
 import jobmonitor as jm
+import lifecycle
+import sheets_sync
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -1482,9 +1484,12 @@ class TestDigestEmail(unittest.TestCase):
         self.assertNotIn("filled", html.lower())
 
     # ---- window ----
-    def test_lisa_uses_a_30_day_window_and_chad_stays_at_7(self):
+    def test_lisa_uses_a_wider_window_than_chad(self):
+        # V3: Lisa's window narrowed from 30 to 21 because it is now the FETCH/retention
+        # window, not the display window — display age is governed by the lifecycle bands.
+        # What must stay true is that one profile's window never widens another's.
         settings = {"max_posting_age_days": 7}
-        self.assertEqual(jm.profile_age_window(self.lisa, settings), 30)
+        self.assertEqual(jm.profile_age_window(self.lisa, settings), 21)
         self.assertEqual(jm.profile_age_window(load_real_profile("chad"), settings), 7)
 
     def test_staffing_lane_keeps_its_own_wider_window(self):
@@ -1593,13 +1598,18 @@ class TestAuditTrail(unittest.TestCase):
         self.assertLessEqual(len(doc["days"]), jm.MAX_REJECT_DAYS)
 
     def test_source_health_counts_and_tracks_zero_streaks(self):
-        cfg = os.path.join(self._tmp.name, "cfg.json")
-        json.dump({"companies": [{"name": "Busy", "ats": "greenhouse", "slug": "busy"},
-                                 {"name": "Quiet", "ats": "lever", "slug": "quiet"},
-                                 {"name": "Broken", "ats": "lever", "slug": "broken"}]},
-                  open(cfg, "w"))
+        # V3: registries are now (label, lane_source_dict) and each source carries its own
+        # run record, so "answered with nothing" and "never answered" are different states.
         pool = [posting("Busy", "1", "T")]
-        regs = [("local", cfg, pool, {"Broken"})]
+        regs = [("local", {"pool": pool, "errors": [], "failed": {"Broken"}, "runs": [
+            {"name": "Busy", "ats": "greenhouse", "slug": "busy",
+             "status": jm.SRC_OK_RESULTS, "fetched": 1, "attempts": 1, "error": ""},
+            {"name": "Quiet", "ats": "lever", "slug": "quiet",
+             "status": jm.SRC_OK_ZERO, "fetched": 0, "attempts": 1, "error": ""},
+            {"name": "Broken", "ats": "lever", "slug": "broken",
+             "status": jm.SRC_CONFIG_ERROR, "fetched": 0, "attempts": 1,
+             "error": "HTTPError: 404"},
+        ]})]
 
         jm.write_source_health(regs, directory=self._tmp.name)
         rows = {r["name"]: r for r in json.load(
@@ -1689,6 +1699,835 @@ class TestAgeHelpers(unittest.TestCase):
         self.assertEqual(jm._workday_date("Posted 30+ Days Ago"),
                          (today - jm.datetime.timedelta(days=30)).isoformat())
         self.assertEqual(jm._workday_date("nonsense"), "")
+
+
+# ======================================================================================
+# V3 — discovery gate, source status, lifecycle database, change digest, sheet export
+# ======================================================================================
+
+class TestDiscoveryGate(unittest.TestCase):
+    """Requirement A: search broadly, then judge. The regressions here are the exact roles
+    the old title gate threw away before the model ever saw them."""
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+
+    def _tier(self, title, description="", location="Remote"):
+        p = posting("ACo", "1", title, location=location, description=description)
+        return jm.classify_match(p, self.lisa)[0]
+
+    def test_core_titles_still_match_as_core(self):
+        # Requirement J: what already worked must keep working, and keep its confidence.
+        for title in ["Director, Business Transformation",
+                      "VP, Strategy & Operations",
+                      "Head of Customer Experience"]:
+            self.assertEqual(self._tier(title), jm.TIER_CORE, title)
+
+    def test_roles_the_old_gate_dropped_are_now_retrieved(self):
+        # Each of these was rejected as "missed match group [2]" in a real run, and each
+        # names one of the role families requirement A asked for.
+        for title in ["Director, Pipeline Excellence",
+                      "Program Manager",
+                      "Business Manager, Office of the CEO",
+                      "Enterprise Program Lead"]:
+            self.assertEqual(self._tier(title), jm.TIER_DISCOVERY,
+                             f"{title!r} must reach the model, not be dropped")
+
+    def test_titles_outside_the_named_role_families_still_need_a_description(self):
+        """Recall is widened, not abandoned. A title that names no role family and carries
+        no mandate text is still dropped — otherwise the model would be scoring the whole
+        internet. This is the KNOWN LIMIT of the broadened gate: SmartRecruiters and Workday
+        are title-only at list time, so a generically titled role at one of those sources
+        cannot be rescued by its description."""
+        self.assertIsNone(self._tier("Sr. Product Manager"))
+        self.assertIsNone(self._tier("Senior Director, Revenue Analytics"))
+
+    def test_generic_title_with_real_mandate_is_retrieved_on_description(self):
+        # "Senior Manager, ..." satisfies the existing mandate_rescue, so it comes back as
+        # CORE; a title outside that gate takes the discovery description path instead.
+        self.assertEqual(
+            self._tier("Senior Manager, Special Projects",
+                       description="You will own the target operating model and lead "
+                                   "organizational design across the enterprise."),
+            jm.TIER_CORE)
+        self.assertEqual(
+            self._tier("Enterprise Special Projects Partner",
+                       description="You will own the target operating model and lead "
+                                   "organizational design across the enterprise."),
+            jm.TIER_DISCOVERY)
+
+    def test_generic_title_without_mandate_is_not_retrieved(self):
+        # Recall must not become "keep everything" — the gate still has to say no.
+        self.assertIsNone(self._tier("Enterprise Special Projects Partner",
+                                     description="Answer phones and greet visitors."))
+
+    def test_hard_excludes_are_absolute(self):
+        for title in ["Senior Software Engineer", "Director of Engineering",
+                      "Registered Nurse", "Staff Accountant", "Warehouse Manager"]:
+            self.assertIsNone(self._tier(title), f"{title!r} is the wrong function entirely")
+
+    def test_hard_exclude_beats_a_core_match(self):
+        self.assertIsNone(self._tier("Director, Engineering Operations"))
+
+    def test_precision_exclusions_demote_rather_than_delete(self):
+        """The IC ladder that exclude_any was tuned to drop must not come back as a strong
+        new find — but it must not silently vanish either. It is demoted to wildcards."""
+        p = posting("Tines", "1", "Customer Success Manager II - West", location="Remote")
+        tier, reason = jm.classify_match(p, self.lisa)
+        self.assertEqual(tier, jm.TIER_DISCOVERY)
+        self.assertTrue(p.get("demoted"))
+        self.assertIn("customer success manager", reason)
+
+    def test_leadership_titles_are_not_demoted(self):
+        # The exclusion is word-order sensitive on purpose; leadership survives intact.
+        p = posting("Acme", "1", "Director, Customer Success", location="Remote")
+        tier, _ = jm.classify_match(p, self.lisa)
+        self.assertEqual(tier, jm.TIER_CORE)
+        self.assertFalse(p.get("demoted"))
+
+    def test_match_reason_is_recorded_for_traceability(self):
+        # Requirement H: explicit rules and traceability, not a black box.
+        p = posting("ACo", "1", "Director, Pipeline Excellence")
+        tier, reason = jm.classify_match(p, self.lisa)
+        self.assertTrue(reason)
+        self.assertIn("role family", reason)
+
+    def test_discovery_is_off_unless_configured(self):
+        # Chad has no discovery block, so his retrieval is byte-for-byte what it was.
+        chad = load_real_profile("chad")
+        self.assertFalse(jm.discovery_enabled(chad))
+        p = posting("ACo", "1", "Director, Pipeline Excellence")
+        self.assertIsNone(jm.classify_match(p, chad)[0])
+
+    def test_scoring_budget_defers_rather_than_drops(self):
+        """Requirement A widens the funnel; the budget must never narrow it by deleting."""
+        roles = [posting("ACo", str(i), f"Director, Ops {i}") for i in range(10)]
+        for i, r in enumerate(roles):
+            r["tier"] = jm.TIER_CORE if i < 3 else jm.TIER_DISCOVERY
+
+        class FakeClient:
+            def __init__(self):
+                self.calls = 0
+
+            class messages:
+                pass
+
+        calls = []
+
+        def fake_score(candidate, p, client):
+            calls.append(p["key"])
+            return {"opportunity_score": 50, "score": 50, "recommendation": "stretch"}
+
+        orig_score, orig_bg = jm.score_fit, jm.load_background
+        jm.score_fit = fake_score
+        jm.load_background = lambda prof: {"name": "x"}
+        try:
+            scored = jm.enrich_with_fit(roles, None, profile(), object(), max_new=4)
+        finally:
+            jm.score_fit, jm.load_background = orig_score, orig_bg
+        self.assertEqual(scored, 4)
+        self.assertEqual(len(roles), 10, "unscored roles are kept, not dropped")
+        self.assertEqual(sum(1 for r in roles if r.get("score_pending")), 6)
+        # Core tier is paid for first.
+        self.assertEqual(set(calls[:3]), {r["key"] for r in roles[:3]})
+
+
+class TestInternationalMarkersV3(unittest.TestCase):
+    """The aggregator sources surface far more international remote work than the curated
+    employer registries did, so the marker list had to grow — carefully."""
+
+    def setUp(self):
+        self._intl = jm.ALLOW_INTL_REMOTE
+        jm.ALLOW_INTL_REMOTE = False
+
+    def tearDown(self):
+        jm.ALLOW_INTL_REMOTE = self._intl
+
+    def test_newly_added_countries_are_dropped(self):
+        for loc in ["Costa Rica; CRI - Remote", "Remote - Uruguay", "Remote, Guatemala",
+                    "Ghana (Remote)", "Remote - Kazakhstan"]:
+            self.assertFalse(jm.is_us_remote(loc), f"should be dropped: {loc}")
+
+    def test_us_places_that_collide_are_still_kept(self):
+        # Each of these is why the colliding country name is NOT in the marker list.
+        for loc in ["South Jordan, UT", "Panama City, FL", "Jamaica, NY", "Lebanon, PA",
+                    "New Mexico (Remote)", "Atlanta, Georgia"]:
+            self.assertTrue(jm.is_local(loc) or not jm._matches_any(
+                loc.lower(), jm.INTERNATIONAL_MARKERS), f"must not be flagged foreign: {loc}")
+
+    def test_puerto_rico_is_never_treated_as_foreign(self):
+        self.assertNotIn("puerto rico", jm.INTERNATIONAL_MARKERS)
+
+    def test_us_remote_is_unaffected(self):
+        for loc in ["Remote - US", "USA (Remote)", "Remote", "United States (Remote)"]:
+            self.assertTrue(jm.is_us_remote(loc), loc)
+
+
+class TestSourceStatus(unittest.TestCase):
+    """Requirement E: a source that failed and a source with nothing to say are different
+    facts and must never be conflated."""
+
+    def test_permanent_http_codes_are_config_errors(self):
+        for code in (400, 401, 403, 404, 410):
+            e = jm.urllib.error.HTTPError("u", code, "m", {}, None)
+            self.assertEqual(jm.classify_fetch_error(e), jm.SRC_CONFIG_ERROR, code)
+
+    def test_transient_conditions_are_temporary(self):
+        for e in (jm.urllib.error.HTTPError("u", 500, "m", {}, None),
+                  jm.urllib.error.HTTPError("u", 429, "m", {}, None),
+                  TimeoutError("read timed out"),
+                  jm.urllib.error.URLError("connection reset")):
+            self.assertEqual(jm.classify_fetch_error(e), jm.SRC_TEMP_ERROR, repr(e))
+
+    def test_zero_results_is_a_success_not_a_failure(self):
+        jm.FETCHERS["_t_empty"] = lambda c: []
+        try:
+            got, run = jm.fetch_source({"name": "Quiet", "ats": "_t_empty", "slug": "q"})
+        finally:
+            del jm.FETCHERS["_t_empty"]
+        self.assertEqual(got, [])
+        self.assertEqual(run["status"], jm.SRC_OK_ZERO)
+        self.assertNotIn(run["status"], jm.SRC_ERROR_STATES)
+
+    def test_temporary_error_is_retried_then_succeeds(self):
+        state = {"n": 0}
+
+        def flaky(c):
+            state["n"] += 1
+            if state["n"] == 1:
+                raise TimeoutError("first attempt times out")
+            return [posting("A", "1", "T")]
+
+        jm.FETCHERS["_t_flaky"] = flaky
+        try:
+            got, run = jm.fetch_source({"name": "Flaky", "ats": "_t_flaky", "slug": "f"},
+                                       retries=1, wait=0)
+        finally:
+            del jm.FETCHERS["_t_flaky"]
+        self.assertEqual(len(got), 1)
+        self.assertEqual(run["status"], jm.SRC_OK_RESULTS)
+        self.assertEqual(run["attempts"], 2)
+
+    def test_config_error_is_not_retried(self):
+        state = {"n": 0}
+
+        def dead(c):
+            state["n"] += 1
+            raise jm.urllib.error.HTTPError("u", 404, "gone", {}, None)
+
+        jm.FETCHERS["_t_dead"] = dead
+        try:
+            got, run = jm.fetch_source({"name": "Dead", "ats": "_t_dead", "slug": "d"},
+                                       retries=2, wait=0)
+        finally:
+            del jm.FETCHERS["_t_dead"]
+        self.assertEqual(run["status"], jm.SRC_CONFIG_ERROR)
+        self.assertEqual(state["n"], 1, "a 404 will not fix itself; do not re-request it")
+
+    def test_failed_source_contributes_nothing_and_is_marked_failed(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        cfg = os.path.join(tmp.name, "cfg.json")
+        json.dump({"companies": [{"name": "Good", "ats": "_t_ok", "slug": "g"},
+                                 {"name": "Bad", "ats": "_t_bad", "slug": "b"}]},
+                  open(cfg, "w"))
+        jm.FETCHERS["_t_ok"] = lambda c: [posting("Good", "1", "T")]
+        jm.FETCHERS["_t_bad"] = lambda c: (_ for _ in ()).throw(
+            jm.urllib.error.HTTPError("u", 404, "m", {}, None))
+        try:
+            src = jm.collect_sources(config_path=cfg, gate=lambda loc: True)
+        finally:
+            del jm.FETCHERS["_t_ok"], jm.FETCHERS["_t_bad"]
+        self.assertEqual(len(src["pool"]), 1)
+        self.assertIn("Bad", src["failed"])
+        self.assertNotIn("Good", src["failed"])
+        self.assertEqual(len(src["runs"]), 2)
+
+    def test_zero_streak_advances_only_when_the_source_answered(self):
+        """The ATS-migration signal must not be polluted by outages."""
+        runs = [{"name": "Quiet", "ats": "lever", "slug": "q", "status": jm.SRC_OK_ZERO,
+                 "fetched": 0, "attempts": 1, "error": ""},
+                {"name": "Down", "ats": "lever", "slug": "d", "status": jm.SRC_TEMP_ERROR,
+                 "fetched": 0, "attempts": 2, "error": "TimeoutError"}]
+        regs = [("local", {"pool": [], "errors": [], "failed": {"Down"}, "runs": runs})]
+        rows = {r["name"]: r for r in jm.source_health_rows(
+            regs, prev_streak={"Quiet": 4, "Down": 4}, prev_error_streak={})}
+        self.assertEqual(rows["Quiet"]["consecutive_zero_runs"], 5)
+        self.assertEqual(rows["Down"]["consecutive_zero_runs"], 4,
+                         "an unanswered source tells us nothing; the streak must not move")
+        self.assertEqual(rows["Down"]["consecutive_error_runs"], 1)
+
+    def test_health_summary_counts_the_four_states(self):
+        rows = [{"name": "a", "status": jm.SRC_OK_RESULTS, "consecutive_zero_runs": 0},
+                {"name": "b", "status": jm.SRC_OK_ZERO, "consecutive_zero_runs": 1},
+                {"name": "c", "status": jm.SRC_TEMP_ERROR, "consecutive_zero_runs": 0},
+                {"name": "d", "status": jm.SRC_CONFIG_ERROR, "consecutive_zero_runs": 0}]
+        s = jm.source_health_summary(rows)
+        self.assertEqual((s["total"], s["ok"], s["temp_error"], s["config_error"]),
+                         (4, 2, 1, 1))
+        self.assertEqual(s["broken"], ["d"])
+
+    def test_aggregator_roles_are_attributed_to_the_board_not_the_employer(self):
+        pool = [posting("Acme Corp", "1", "T", _source="Himalayas (aggregator)"),
+                posting("Beta Inc", "2", "T", _source="Himalayas (aggregator)")]
+        runs = [{"name": "Himalayas (aggregator)", "ats": "himalayas", "slug": "h",
+                 "status": jm.SRC_OK_RESULTS, "fetched": 2, "attempts": 1, "error": ""}]
+        rows = jm.source_health_rows([("remote", {"pool": pool, "runs": runs})])
+        self.assertEqual(rows[0]["roles_returned"], 2)
+        self.assertEqual(rows[0]["consecutive_zero_runs"], 0)
+
+
+class TestLifecycleIdentity(unittest.TestCase):
+    """Requirement C: one record per real job, whatever feed carried it."""
+
+    def test_same_job_from_two_feeds_shares_one_key(self):
+        ats = {"company": "Sentry", "title": "Revenue Operations Manager",
+               "location": "San Francisco, California (Remote)", "_ats": "ashby"}
+        board = {"company": "Sentry, Inc.", "title": "Revenue Operations Manager (Remote)",
+                 "location": "United States (Remote)", "_ats": "himalayas"}
+        self.assertEqual(lifecycle.dedupe_key(ats), lifecycle.dedupe_key(board))
+
+    def test_different_seniority_is_a_different_job(self):
+        a = {"company": "Sentry", "title": "Revenue Operations Manager", "location": "Remote"}
+        b = {"company": "Sentry", "title": "Senior Revenue Operations Manager",
+             "location": "Remote"}
+        self.assertNotEqual(lifecycle.dedupe_key(a), lifecycle.dedupe_key(b))
+
+    def test_two_cities_are_two_jobs(self):
+        a = {"company": "Acme", "title": "Director, Operations", "location": "Lehi, UT"}
+        b = {"company": "Acme", "title": "Director, Operations", "location": "Austin, TX"}
+        self.assertNotEqual(lifecycle.dedupe_key(a), lifecycle.dedupe_key(b))
+
+    def test_employer_url_wins_over_aggregator_url(self):
+        db = {"jobs": {}}
+        board = posting("Sentry", "h1", "Revenue Operations Manager", location="Remote",
+                        _ats="himalayas", _source="Himalayas (aggregator)")
+        board["url"] = "https://himalayas.app/jobs/x"
+        ats = posting("Sentry", "a1", "Revenue Operations Manager", location="Remote",
+                      _ats="ashby", _source="Sentry")
+        ats["url"] = "https://jobs.ashbyhq.com/sentry/real"
+        seen = set()
+        lifecycle.upsert(db, [board], "🌎 US-Remote", "2026-08-11", run_seen=seen)
+        stats = lifecycle.upsert(db, [ats], "🌎 US-Remote", "2026-08-11", run_seen=seen)
+        self.assertEqual(len(db["jobs"]), 1, "one job, found twice")
+        self.assertEqual(stats["duplicates"], 1)
+        rec = list(db["jobs"].values())[0]
+        self.assertEqual(rec["canonical_url"], "https://jobs.ashbyhq.com/sentry/real")
+        self.assertEqual(sorted(rec["sources"]), ["Himalayas (aggregator)", "Sentry"])
+
+    def test_earliest_posted_date_wins(self):
+        db = {"jobs": {}}
+        late = posting("Acme", "1", "Director, Operations", location="Remote",
+                       posted="2026-08-10")
+        early = posting("Acme", "2", "Director, Operations", location="Remote",
+                        posted="2026-08-01")
+        lifecycle.upsert(db, [late, early], "lane", "2026-08-11")
+        self.assertEqual(list(db["jobs"].values())[0]["posted_date"], "2026-08-01")
+
+    def test_record_has_every_specified_field(self):
+        rec = lifecycle.new_record(posting("A", "1", "T"), "lane", "2026-08-11")
+        for field in ("job_key", "company", "title", "canonical_url", "sources",
+                      "posted_date", "first_seen", "last_verified", "location",
+                      "work_arrangement", "employment_type", "compensation", "fit_score",
+                      "recommendation", "priority", "why_fits", "top_concern", "status",
+                      "user_decision", "rejection_reason", "closed_date", "removal_reason"):
+            self.assertIn(field, rec)
+
+
+class TestLifecycleRules(unittest.TestCase):
+    """Requirement D: explicit age bands, and errors that never masquerade as removals."""
+
+    def _rec(self, posted, **extra):
+        p = posting("Acme", "1", "Director, Operations", location="Remote", posted=posted)
+        rec = lifecycle.new_record(p, "lane", "2026-08-11")
+        rec.update(extra)
+        return rec
+
+    def test_age_bands(self):
+        self.assertEqual(lifecycle.band_for(self._rec("2026-08-08"), "2026-08-11"),
+                         lifecycle.BAND_NEW)
+        self.assertEqual(lifecycle.band_for(self._rec("2026-08-01"), "2026-08-11"),
+                         lifecycle.BAND_APPLY)
+        self.assertEqual(lifecycle.band_for(self._rec("2026-07-01"), "2026-08-11"),
+                         lifecycle.BAND_OLD)
+
+    def test_undated_posting_ages_from_first_seen(self):
+        rec = self._rec("", first_seen="2026-07-01")
+        self.assertEqual(lifecycle.band_for(rec, "2026-08-11"), lifecycle.BAND_OLD)
+
+    def test_old_role_goes_stale_unless_exceptional_and_verified(self):
+        db = {"jobs": {}}
+        plain = self._rec("2026-07-01"); plain["fit_score"] = 70
+        strong_unverified = self._rec("2026-07-01"); strong_unverified["fit_score"] = 95
+        strong_verified = self._rec("2026-07-01")
+        strong_verified["fit_score"] = 95
+        strong_verified["verified_open_on"] = "2026-08-11"
+        db["jobs"] = {"a": plain, "b": strong_unverified, "c": strong_verified}
+        lifecycle.refresh_statuses(db, {"a", "b", "c"}, "2026-08-11",
+                                   exceptional_score=85)
+        self.assertEqual(plain["status"], lifecycle.STATUS_STALE)
+        self.assertEqual(strong_unverified["status"], lifecycle.STATUS_STALE,
+                         "strong is not enough on its own — it must be verified open")
+        self.assertEqual(strong_verified["status"], lifecycle.STATUS_ACTIVE)
+
+    def test_a_failed_source_never_marks_a_job_removed(self):
+        """The single most important rule in requirement D."""
+        db = {"jobs": {}}
+        p = posting("Acme", "1", "Director, Operations", location="Remote", _source="Acme")
+        lifecycle.upsert(db, [p], "lane", "2026-08-10")
+        gone = lifecycle.close_missing(db, seen_keys=set(), failed_sources={"Acme"},
+                                       today="2026-08-11")
+        rec = list(db["jobs"].values())[0]
+        self.assertEqual(gone, [])
+        self.assertNotIn(rec["status"], lifecycle.GONE_STATUSES)
+        self.assertEqual(rec["unverified_run"], "2026-08-11")
+
+    def test_a_healthy_source_dropping_a_job_does_mark_it_removed(self):
+        db = {"jobs": {}}
+        p = posting("Acme", "1", "Director, Operations", location="Remote", _source="Acme")
+        lifecycle.upsert(db, [p], "lane", "2026-08-10")
+        gone = lifecycle.close_missing(db, seen_keys=set(), failed_sources=set(),
+                                       today="2026-08-11")
+        self.assertEqual(len(gone), 1)
+        self.assertEqual(gone[0]["status"], lifecycle.STATUS_REMOVED)
+        self.assertEqual(gone[0]["closed_date"], "2026-08-11")
+
+    def test_verification_only_calls_out_to_old_strong_roles(self):
+        db = {"jobs": {}}
+        db["jobs"]["fresh"] = self._rec("2026-08-10", fit_score=95)
+        db["jobs"]["old_weak"] = self._rec("2026-07-01", fit_score=60)
+        db["jobs"]["old_strong"] = self._rec("2026-07-01", fit_score=95)
+        called = []
+
+        def fake_verify(url):
+            called.append(url)
+            return lifecycle.VERIFY_OPEN
+
+        checked, closed = lifecycle.run_verification(
+            db, {"fresh", "old_weak", "old_strong"}, limit=10, exceptional_score=85,
+            today="2026-08-11", verifier=fake_verify)
+        self.assertEqual(checked, 1, "only the old-AND-strong role is worth a request")
+        self.assertEqual(db["jobs"]["old_strong"]["verified_open_on"], "2026-08-11")
+
+    def test_verification_budget_is_respected(self):
+        db = {"jobs": {f"k{i}": self._rec("2026-07-01", fit_score=90) for i in range(20)}}
+        checked, _ = lifecycle.run_verification(
+            db, set(db["jobs"]), limit=5, exceptional_score=85, today="2026-08-11",
+            verifier=lambda url: lifecycle.VERIFY_OPEN)
+        self.assertEqual(checked, 5)
+
+    def test_verified_closed_marks_the_record_closed(self):
+        db = {"jobs": {"k": self._rec("2026-07-01", fit_score=95)}}
+        _, closed = lifecycle.run_verification(
+            db, {"k"}, limit=5, exceptional_score=85, today="2026-08-11",
+            verifier=lambda url: lifecycle.VERIFY_CLOSED)
+        self.assertEqual(closed, 1)
+        self.assertEqual(db["jobs"]["k"]["status"], lifecycle.STATUS_CLOSED)
+        self.assertEqual(db["jobs"]["k"]["removal_reason"], "verified_closed")
+
+    def test_unknown_verification_never_closes_a_role(self):
+        db = {"jobs": {"k": self._rec("2026-07-01", fit_score=95)}}
+        _, closed = lifecycle.run_verification(
+            db, {"k"}, limit=5, exceptional_score=85, today="2026-08-11",
+            verifier=lambda url: lifecycle.VERIFY_UNKNOWN)
+        self.assertEqual(closed, 0)
+        self.assertNotIn(db["jobs"]["k"]["status"], lifecycle.GONE_STATUSES)
+
+    def test_prune_keeps_anything_the_human_decided_on(self):
+        db = {"jobs": {
+            "old": self._rec("2026-01-01", status=lifecycle.STATUS_REMOVED,
+                             closed_date="2026-01-05"),
+            "decided": self._rec("2026-01-01", status=lifecycle.STATUS_REMOVED,
+                                 closed_date="2026-01-05", user_decision="applied")}}
+        lifecycle.prune(db, keep_days=30, today="2026-08-11")
+        self.assertNotIn("old", db["jobs"])
+        self.assertIn("decided", db["jobs"], "a role you acted on is history worth keeping")
+
+
+class TestChangeDigest(unittest.TestCase):
+    """Requirement F + the reported bug: what changed, and nothing the reader never saw."""
+
+    def setUp(self):
+        self.db = {"jobs": {}}
+        self.feedback = {"by_key": {}, "by_ident": {}}
+
+    def _add(self, key, **fields):
+        rec = lifecycle.new_record(
+            posting("Acme", key, fields.pop("title", "Director, Operations"),
+                    location="Remote", posted=fields.pop("posted", "2026-08-11")),
+            "lane", fields.pop("first_seen", "2026-08-11"))
+        rec["job_key"] = key
+        rec.setdefault("recommendation", "strong_fit")
+        rec["recommendation"] = fields.pop("recommendation", "strong_fit")
+        rec["fit_score"] = fields.pop("fit_score", 80)
+        rec.update(fields)
+        rec["band"] = lifecycle.band_for(rec, "2026-08-11")
+        self.db["jobs"][key] = rec
+        return rec
+
+    def test_removed_section_only_lists_roles_that_were_actually_emailed(self):
+        """THE reported bug: 'removed' listed jobs that had never been in an email."""
+        shown = self._add("shown", ever_shown=True, status=lifecycle.STATUS_REMOVED)
+        never = self._add("never", ever_shown=False, status=lifecycle.STATUS_REMOVED)
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                         seen_keys=set(), newly_gone=[shown, never])
+        keys = [r["job_key"] for r in sections["removed"]]
+        self.assertEqual(keys, ["shown"])
+
+    def test_mark_shown_is_what_makes_a_role_eligible_later(self):
+        rec = self._add("k", ever_shown=False)
+        self.assertFalse(rec["ever_shown"])
+        lifecycle.mark_shown(self.db, ["k"], today="2026-08-11")
+        self.assertTrue(rec["ever_shown"])
+        self.assertEqual(rec["first_shown"], "2026-08-11")
+        self.assertEqual(rec["times_shown"], 1)
+
+    def test_roles_over_14_days_are_not_repeated(self):
+        """The reported bug: >2-week-old jobs kept reappearing in the daily email."""
+        self._add("old", posted="2026-07-01", first_seen="2026-07-01", ever_shown=True,
+                  status=lifecycle.STATUS_STALE)
+        sections, counts = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                              seen_keys={"old"})
+        self.assertEqual(sum(len(v) for v in sections.values()), 0)
+        self.assertEqual(counts["stale_hidden"], 1)
+
+    def test_eight_to_fourteen_day_roles_appear_under_still_worth_applying(self):
+        self._add("mid", posted="2026-08-01", first_seen="2026-08-01", ever_shown=True,
+                  status=lifecycle.STATUS_AGING)
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                         seen_keys={"mid"})
+        self.assertEqual([r["job_key"] for r in sections["still"]], ["mid"])
+
+    def test_new_apply_first_roles_lead_the_email(self):
+        self._add("hot", recommendation="apply_first", fit_score=95,
+                  status=lifecycle.STATUS_NEW)
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                         seen_keys={"hot"})
+        self.assertEqual([r["job_key"] for r in sections["apply_first"]], ["hot"])
+
+    def test_low_confidence_roles_go_to_wildcards_not_the_bin(self):
+        """Requirement G: preserve uncertainty instead of over-filtering."""
+        self._add("odd", confidence="low", tier=jm.TIER_DISCOVERY, demoted=False,
+                  title="Business Manager, Office of the CEO", status=lifecycle.STATUS_NEW)
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                         seen_keys={"odd"})
+        self.assertEqual([r["job_key"] for r in sections["wildcards"]], ["odd"])
+
+    def test_demoted_roles_never_reach_the_primary_sections(self):
+        """A role a precision rule demoted (e.g. the IC 'Customer Success Manager II'
+        ladder) must stay in Wildcards even when Wildcards is full — presenting it as a
+        strong new find would resurrect a known bad recommendation."""
+        for i in range(10):
+            self._add(f"d{i}", demoted=True, recommendation="apply_first",
+                      fit_score=99 - i, status=lifecycle.STATUS_NEW,
+                      title="Customer Success Manager II - West")
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                         seen_keys={f"d{i}" for i in range(10)})
+        self.assertEqual(sections["apply_first"], [])
+        self.assertEqual(sections["new_review"], [])
+        self.assertLessEqual(len(sections["wildcards"]), jm.WILDCARD_MAX)
+
+    def test_wildcards_are_a_shortlist_not_a_dumping_ground(self):
+        for i in range(12):
+            self._add(f"w{i}", confidence="low", tier=jm.TIER_DISCOVERY,
+                      status=lifecycle.STATUS_NEW)
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                         seen_keys={f"w{i}" for i in range(12)})
+        self.assertLessEqual(len(sections["wildcards"]), jm.WILDCARD_MAX)
+
+    def test_a_role_never_appears_in_two_sections(self):
+        for i in range(6):
+            self._add(f"a{i}", recommendation="apply_first", fit_score=90 + i,
+                      status=lifecycle.STATUS_NEW)
+        for i in range(6):
+            self._add(f"m{i}", posted="2026-08-01", first_seen="2026-08-01",
+                      ever_shown=True, status=lifecycle.STATUS_AGING)
+        keys = set(self.db["jobs"])
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                         seen_keys=keys)
+        seen = [r["job_key"] for k in ("apply_first", "new_review", "wildcards", "still")
+                for r in sections[k]]
+        self.assertEqual(len(seen), len(set(seen)), "one role, one place")
+
+    def test_not_recommended_is_screened_out_and_counted(self):
+        self._add("no", recommendation="not_recommended")
+        sections, counts = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                              seen_keys={"no"})
+        self.assertEqual(sum(len(v) for v in sections.values()), 0)
+        self.assertEqual(counts["screened_out"], 1)
+
+    def test_a_decision_suppresses_the_role(self):
+        self._add("done", user_decision="not_interested", status=lifecycle.STATUS_NEW)
+        sections, counts = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                              seen_keys={"done"})
+        self.assertEqual(sum(len(v) for v in sections.values()), 0)
+        self.assertEqual(counts["suppressed"], 1)
+
+    def test_pursue_and_interested_keep_showing(self):
+        # These say "I want this", so silencing them would be exactly wrong.
+        for status in ("pursue", "interested"):
+            self.assertNotIn(status, jm.SUPPRESS_STATUSES)
+
+    def test_every_rejection_reason_is_an_accepted_status(self):
+        for reason in lifecycle.REJECTION_REASONS:
+            if reason == "closed":
+                continue
+            self.assertIn(reason, jm.FEEDBACK_STATUSES, reason)
+
+    def test_html_renders_and_reports_which_roles_it_showed(self):
+        self._add("hot", recommendation="apply_first", fit_score=95,
+                  status=lifecycle.STATUS_NEW, why_fits="Runs enterprise transformation",
+                  top_concern="Requires healthcare background", compensation="$180K – $210K")
+        sections, counts = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                              seen_keys={"hot"})
+        html, shown = jm.build_change_digest_html(
+            profile(name="lisa", label="Lisa — test"), sections, counts,
+            [{"name": "a", "status": jm.SRC_OK_RESULTS, "consecutive_zero_runs": 0}])
+        self.assertEqual(shown, ["hot"])
+        self.assertIn("Apply first", html)
+        self.assertIn("Runs enterprise transformation", html)
+        self.assertIn("Requires healthcare background", html)
+        self.assertIn("$180K", html)
+        self.assertIn("Source health", html)
+        self.assertNotIn("filled", html.lower(), "never claim a role was filled")
+
+    def test_markdown_mirror_carries_the_required_fields(self):
+        self._add("hot", recommendation="apply_first", fit_score=95,
+                  status=lifecycle.STATUS_NEW, why_fits="Owns the operating model",
+                  top_concern="Onsite three days")
+        sections, counts = jm.change_sections(self.db, self.feedback, today="2026-08-11",
+                                              seen_keys={"hot"})
+        md = jm.build_change_digest_md(profile(name="lisa", label="L"), sections, counts,
+                                       [{"name": "a", "status": jm.SRC_OK_RESULTS,
+                                         "consecutive_zero_runs": 0}])
+        for expected in ("APPLY FIRST", "95/100", "Owns the operating model",
+                         "Onsite three days", "SOURCE HEALTH"):
+            self.assertIn(expected, md)
+
+
+class TestSheetExport(unittest.TestCase):
+    """Requirement I: the Discovery Log tab, and nothing else."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.db = {"jobs": {}}
+        lifecycle.upsert(self.db, [posting("Acme", "1", "Director, Operations",
+                                           location="Remote", _source="Acme")],
+                         "lane", "2026-08-11")
+
+    def test_csv_is_written_with_the_agreed_columns(self):
+        rows = sheets_sync.rows_for_db(self.db)
+        path = sheets_sync.write_csv(rows, self._tmp.name)
+        header = open(path).readline().strip().split(",")
+        self.assertEqual(header, sheets_sync.COLUMNS)
+        self.assertIn("job_key", header)
+        self.assertIn("user_decision", header)
+
+    def test_push_without_a_webhook_is_a_clean_no_op(self):
+        result = sheets_sync.push(sheets_sync.rows_for_db(self.db), url=None)
+        self.assertEqual(result["status"], "not_configured")
+        self.assertEqual(result["pushed"], 0)
+
+    def test_a_broken_webhook_never_breaks_the_run(self):
+        def boom(req, timeout=None):
+            raise OSError("sheet is unreachable")
+        result = sheets_sync.push(sheets_sync.rows_for_db(self.db),
+                                  url="https://example.test/hook", opener=boom)
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("OSError", result["detail"])
+
+    def test_only_the_discovery_log_tab_is_ever_written(self):
+        sent = {}
+
+        class FakeResponse:
+            status = 200
+
+            def read(self, n=None):
+                return b"ok"
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def capture(req, timeout=None):
+            sent["payload"] = json.loads(req.data.decode())
+            return FakeResponse()
+
+        sheets_sync.push(sheets_sync.rows_for_db(self.db),
+                         url="https://example.test/hook", opener=capture)
+        self.assertEqual(sent["payload"]["tab"], "Prospector Discovery Log")
+        self.assertEqual(sent["payload"]["key_column"], "job_key")
+
+    def test_nothing_to_send_is_success_not_failure(self):
+        """Before the first V3 run the database is empty. "No rows" must report ok — and
+        still make one request, which is what the connectivity check relies on and what
+        writes the sheet's header row."""
+        posted = {}
+
+        class FakeResponse:
+            status = 200
+
+            def read(self, n=None):
+                return b'{"ok":true}'
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def capture(req, timeout=None):
+            posted["n"] = posted.get("n", 0) + 1
+            return FakeResponse()
+
+        result = sheets_sync.push([], url="https://example.test/hook", opener=capture)
+        self.assertEqual(result["status"], "ok")
+        self.assertEqual(result["batches"], 1)
+        self.assertEqual(posted["n"], 1)
+
+    def test_export_writes_the_csv_even_with_no_webhook(self):
+        result = sheets_sync.export(self.db, self._tmp.name, "lisa")
+        self.assertTrue(os.path.exists(result["csv"]))
+        self.assertEqual(result["rows"], 1)
+
+
+class TestNewFetchers(unittest.TestCase):
+    """Offline parsing tests for the V3 sources, built from real response shapes."""
+
+    def test_roberthalf_parses_the_embedded_search_payload(self):
+        job = {"unique_job_number": "04210-0013468335", "jobtitle": "Interim Sourcing Manager",
+               "description": "<p>Lead the sourcing function</p>", "skills": "Negotiation",
+               "date_posted": "2026-07-31T00:00:00Z", "emptype": "Temp", "city": "Salt Lake City",
+               "stateprovince": "UT", "remote": "No", "payrate_min": "50.0",
+               "payrate_max": "60.0", "payrate_period": "Hourly",
+               "job_detail_url": "https://www.roberthalf.com/us/en/job/x"}
+        orig = jm._rh_results
+        jm._rh_results = lambda params: {"jobs": [job], "found": 1}
+        try:
+            got = jm.fetch_roberthalf({"name": "Robert Half", "ats": "roberthalf",
+                                       "slug": "roberthalf", "contract_only": True,
+                                       "queries": [{"city": "Salt Lake City"}]})
+        finally:
+            jm._rh_results = orig
+        self.assertEqual(len(got), 1)
+        p = got[0]
+        self.assertEqual(p["title"], "Interim Sourcing Manager")
+        self.assertEqual(p["location"], "Salt Lake City, UT")
+        self.assertEqual(p["posted"], "2026-07-31")
+        self.assertEqual(p["salary"], "$50.00–$60.00/hr")
+        self.assertEqual(p["employment_type"], "Temp")
+        self.assertIn("sourcing function", p["description"])
+
+    def test_roberthalf_drops_permanent_placements_when_contract_only(self):
+        perm = {"unique_job_number": "1", "jobtitle": "Controller", "emptype": "Perm",
+                "city": "Lehi", "stateprovince": "UT", "date_posted": "2026-08-01T00:00:00Z",
+                "job_detail_url": "u", "description": "", "skills": "", "remote": "No"}
+        orig = jm._rh_results
+        jm._rh_results = lambda params: {"jobs": [perm]}
+        try:
+            got = jm.fetch_roberthalf({"name": "Robert Half", "ats": "roberthalf",
+                                       "slug": "rh", "contract_only": True,
+                                       "queries": [{"city": "Lehi"}]})
+        finally:
+            jm._rh_results = orig
+        self.assertEqual(got, [])
+
+    def test_roberthalf_marks_remote_roles(self):
+        j = {"unique_job_number": "1", "jobtitle": "Project Manager", "emptype": "Temp",
+             "city": "Denver", "stateprovince": "CO", "remote": "Yes",
+             "date_posted": "2026-08-05T00:00:00Z", "job_detail_url": "u",
+             "description": "", "skills": ""}
+        orig = jm._rh_results
+        jm._rh_results = lambda params: {"jobs": [j]}
+        try:
+            got = jm.fetch_roberthalf({"name": "Robert Half", "ats": "roberthalf",
+                                       "slug": "rh", "queries": [{"remote": "yes"}]})
+        finally:
+            jm._rh_results = orig
+        self.assertIn("(Remote)", got[0]["location"])
+
+    def test_aggregator_keeps_the_employer_as_company_and_records_the_board(self):
+        payload = {"totalCount": 1, "jobs": [
+            {"guid": "g1", "title": "Director, Business Operations", "companyName": "Acme",
+             "applicationLink": "https://himalayas.app/jobs/g1", "pubDate": 1786411074,
+             "locationRestrictions": ["United States"], "employmentType": "Full Time",
+             "minSalary": 150000, "maxSalary": 190000, "currency": "USD",
+             "salaryPeriod": "yearly", "description": "<p>Own the operating model</p>"}]}
+        orig = jm._get
+        jm._get = lambda url: payload
+        try:
+            got = jm.fetch_himalayas({"name": "Himalayas (aggregator)", "ats": "himalayas",
+                                      "slug": "himalayas", "max_pages": 1})
+        finally:
+            jm._get = orig
+        p = got[0]
+        self.assertEqual(p["company"], "Acme", "the EMPLOYER is the company")
+        self.assertEqual(p["_source"], "Himalayas (aggregator)", "the BOARD is the source")
+        self.assertEqual(p["key"], "Acme::g1")
+        self.assertIn("Remote", p["location"])
+        self.assertEqual(p["salary"], "$150,000–$190,000/yr")
+
+    def test_wwr_splits_company_from_title(self):
+        feed = b"""<?xml version="1.0"?><rss><channel><item>
+          <title>Kuno Creative: Senior Revenue Operations Strategist</title>
+          <region>Anywhere in the World</region><type>Full-Time</type>
+          <description>Own revenue operations</description>
+          <pubDate>Thu, 06 Aug 2026 10:00:00 +0000</pubDate>
+          <guid>wwr-123</guid><link>https://weworkremotely.com/remote-jobs/x</link>
+        </item></channel></rss>"""
+        orig = jm._get_text
+        jm._get_text = lambda url: feed
+        try:
+            got = jm.fetch_wwr({"name": "WWR", "ats": "wwr", "slug": "wwr",
+                                "categories": ["remote-management-and-finance-jobs"]})
+        finally:
+            jm._get_text = orig
+        self.assertEqual(got[0]["company"], "Kuno Creative")
+        self.assertEqual(got[0]["title"], "Senior Revenue Operations Strategist")
+        self.assertEqual(got[0]["posted"], "2026-08-06")
+
+    def test_jobicy_survives_one_bad_industry_filter(self):
+        calls = []
+
+        def fake_get(url):
+            calls.append(url)
+            if "industry=broken" in url:
+                raise jm.urllib.error.HTTPError(url, 400, "Bad Request", {}, None)
+            return {"jobs": [{"id": "1", "jobTitle": "Director, Change Management",
+                              "companyName": "Acme", "jobGeo": "USA",
+                              "url": "https://jobicy.com/jobs/1", "pubDate": "2026-08-10",
+                              "jobType": ["Full-Time"], "jobDescription": "Lead change"}]}
+
+        orig = jm._get
+        jm._get = fake_get
+        try:
+            got = jm.fetch_jobicy({"name": "Jobicy", "ats": "jobicy", "slug": "jobicy",
+                                   "industries": ["business", "broken"]})
+        finally:
+            jm._get = orig
+        self.assertEqual(len(got), 1, "one bad filter must not take the source down")
+
+    def test_jobicy_reports_failure_when_every_query_fails(self):
+        def always_400(url):
+            raise jm.urllib.error.HTTPError(url, 400, "Bad Request", {}, None)
+
+        orig = jm._get
+        jm._get = always_400
+        try:
+            with self.assertRaises(ValueError):
+                jm.fetch_jobicy({"name": "Jobicy", "ats": "jobicy", "slug": "jobicy",
+                                 "industries": ["a", "b"]})
+        finally:
+            jm._get = orig
+
+    def test_every_registry_row_names_a_real_fetcher(self):
+        for path in ("companies.json", "remote_companies.json", "staffing_companies.json"):
+            cfg = json.load(open(os.path.join(HERE, path)))
+            for c in cfg["companies"]:
+                self.assertIn(c["ats"], jm.FETCHERS, f"{path}: {c['name']}")
 
 
 if __name__ == "__main__":
