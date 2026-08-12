@@ -1548,12 +1548,17 @@ def classify_fetch_error(exc):
     return SRC_TEMP_ERROR
 
 
-def fetch_source(c, retries=FETCH_RETRIES, wait=FETCH_RETRY_WAIT):
+def fetch_source(c, retries=None, wait=None):
     """Fetch ONE registry row, with a bounded retry for temporary failures.
 
     Returns (postings, run) where `run` is the health record for this source. Postings are
     raw (ungated) — gating is the caller's job. A source that errors returns NO postings and
-    an error status; the caller must never read that as "this source has no jobs"."""
+    an error status; the caller must never read that as "this source has no jobs".
+
+    `retries`/`wait` default to the module constants at CALL time rather than in the
+    signature, so tests can set FETCH_RETRY_WAIT = 0 and not spend real seconds sleeping."""
+    retries = FETCH_RETRIES if retries is None else retries
+    wait = FETCH_RETRY_WAIT if wait is None else wait
     run = {"name": c["name"], "ats": c.get("ats"), "slug": c.get("slug"),
            "attempts": 0, "status": SRC_OK_ZERO, "error": "", "fetched": 0, "kept": 0}
     for attempt in range(retries + 1):
@@ -3450,9 +3455,10 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=N
         report_html, shown = build_change_digest_html(profile, sections, counts,
                                                       health_rows or [])
         report = build_change_digest_md(profile, sections, counts, health_rows or [])
-        # ONLY roles the rendered email actually contains are marked shown — that is what
-        # makes them eligible for the removed section later, and nothing else does.
-        lifecycle.mark_shown(db, shown)
+        # Marked PENDING, not shown. `--confirm-sent` promotes these once the workflow has
+        # actually delivered the email; see lifecycle.mark_pending_shown. Rendering is not
+        # delivering, and only delivery may make a role eligible for the removed section.
+        lifecycle.mark_pending_shown(db, shown)
         stats["shown"] = len(shown)
         # The renderer's own tallies are authoritative for what it chose to hide; the DB
         # supplies the rest (and the numbers for profiles that use another renderer).
@@ -3527,6 +3533,11 @@ def _parse_args(argv=None):
     p.add_argument("--out-dir", metavar="DIR", help="write report_<name>.md/.html here")
     p.add_argument("--no-fit", action="store_true",
                    help="skip all LLM fit scoring (no Anthropic API calls, no cost)")
+    p.add_argument("--confirm-sent", metavar="NAMES",
+                   help="comma-separated profile names whose email was actually DELIVERED. "
+                        "Promotes that run's pending 'shown' marks to permanent, which is "
+                        "what makes a role eligible for a later 'removed' section. Touches "
+                        "only jobs_<name>.json — no fetching, no scoring, no network.")
     p.add_argument("--fake-fit", action="store_true",
                    help="score locally with deterministic FAKE verdicts so the email layout can be previewed with no API key and no cost. Reports are stamped with a warning banner.")
     return p.parse_args(argv)
@@ -3563,6 +3574,18 @@ def main():
         for p in profiles:
             state = "on " if p.get("enabled", True) else "off"
             print(f"  [{state}] {p['name']:<8} {p['label']}")
+        return
+
+    if args.confirm_sent:
+        # Runs as a separate workflow step AFTER the email actions, so it knows something
+        # the main run cannot: whether the mail was really sent. Deliberately does nothing
+        # else — no fetch, no scoring, no report.
+        snap_dir = args.snapshot_dir or HERE
+        for name in [n.strip() for n in args.confirm_sent.split(",") if n.strip()]:
+            db = lifecycle.load_db(name, snap_dir)
+            n = lifecycle.confirm_shown(db)
+            lifecycle.save_db(db, name, snap_dir)
+            print(f"[{name}] confirmed {n} role(s) as delivered to the reader.")
         return
 
     if args.profile:

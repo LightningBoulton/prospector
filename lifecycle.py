@@ -454,11 +454,15 @@ def close_missing(db, seen_keys, failed_sources, today=None):
 
 
 def mark_shown(db, job_keys, today=None):
-    """Record that these jobs actually APPEARED in a digest.
+    """Record that these jobs actually REACHED the reader.
 
     This is the fix for "jobs in the removed section that were never in an email": the
-    removed section is built from `ever_shown`, and only this function sets it. It must be
-    called with the roles the rendered email really contained, not the roles considered."""
+    removed section is built from `ever_shown`, and only this function sets it.
+
+    Do not call this at render time — call `mark_pending_shown` there and promote with
+    `confirm_shown` once the email is known to have gone out. Rendering a report is not the
+    same as delivering it (the workflow can skip a recipient, and SMTP can fail), and
+    treating the two as equivalent reintroduces the exact bug this field exists to prevent."""
     today = today or _today()
     for key in job_keys:
         rec = db["jobs"].get(key)
@@ -469,6 +473,29 @@ def mark_shown(db, job_keys, today=None):
             rec["first_shown"] = today
         rec["last_shown"] = today
         rec["times_shown"] = int(rec.get("times_shown") or 0) + 1
+        rec.pop("pending_shown_on", None)
+
+
+def mark_pending_shown(db, job_keys, today=None):
+    """Record that these jobs are IN a report that has been generated but not yet sent.
+
+    Pending is not shown. If the email never goes out — `chad_only` skipped this person, or
+    SMTP failed — the marks simply stay pending, the roles are rendered again on the next
+    run, and they still cannot appear in a "removed" section, because nobody has seen them."""
+    today = today or _today()
+    for key in job_keys:
+        rec = db["jobs"].get(key)
+        if rec is not None:
+            rec["pending_shown_on"] = today
+
+
+def confirm_shown(db, today=None):
+    """Promote this run's pending marks to genuinely shown. Called only after the email for
+    this profile has actually been sent. Returns how many records were promoted."""
+    today = today or _today()
+    pending = [k for k, r in db["jobs"].items() if r.get("pending_shown_on")]
+    mark_shown(db, pending, today)
+    return len(pending)
 
 
 def strip_transient(db):

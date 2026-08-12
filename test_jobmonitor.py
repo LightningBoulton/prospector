@@ -32,6 +32,10 @@ import sheets_sync
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+# Retry backoff is real seconds in production. The suite must never actually sleep, so it is
+# zeroed here once for every test (fetch_source resolves this at call time, not import time).
+jm.FETCH_RETRY_WAIT = 0
+
 
 def posting(company, ext_id, title, location="Salt Lake City, UT", posted="2026-07-28",
             **extra):
@@ -2181,6 +2185,63 @@ class TestChangeDigest(unittest.TestCase):
         self.assertTrue(rec["ever_shown"])
         self.assertEqual(rec["first_shown"], "2026-08-11")
         self.assertEqual(rec["times_shown"], 1)
+
+    # ---- rendering is not delivering ----
+
+    def test_pending_is_not_shown(self):
+        """A rendered-but-unsent report must not make a role eligible for 'removed'."""
+        rec = self._add("k", ever_shown=False)
+        lifecycle.mark_pending_shown(self.db, ["k"], today="2026-08-11")
+        self.assertFalse(rec["ever_shown"])
+        self.assertEqual(rec["pending_shown_on"], "2026-08-11")
+
+    def test_confirming_delivery_promotes_pending_to_shown(self):
+        rec = self._add("k", ever_shown=False)
+        lifecycle.mark_pending_shown(self.db, ["k"], today="2026-08-11")
+        promoted = lifecycle.confirm_shown(self.db, today="2026-08-11")
+        self.assertEqual(promoted, 1)
+        self.assertTrue(rec["ever_shown"])
+        self.assertNotIn("pending_shown_on", rec)
+
+    def test_an_unsent_report_leaves_the_role_out_of_removed(self):
+        """The chad_only / SMTP-failure case, end to end: the report was built, the email
+        never went, so the role must NOT surface as removed later."""
+        rec = self._add("k", ever_shown=False, status=lifecycle.STATUS_REMOVED)
+        lifecycle.mark_pending_shown(self.db, ["k"], today="2026-08-11")
+        # No confirm_shown — delivery never happened.
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-12",
+                                         seen_keys=set(), newly_gone=[rec])
+        self.assertEqual(sections["removed"], [])
+        # ...whereas a delivered role does appear.
+        lifecycle.confirm_shown(self.db, today="2026-08-11")
+        sections, _ = jm.change_sections(self.db, self.feedback, today="2026-08-12",
+                                         seen_keys=set(), newly_gone=[rec])
+        self.assertEqual([r["job_key"] for r in sections["removed"]], ["k"])
+
+    def test_confirm_sent_cli_promotes_only_named_profiles(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        for name in ("lisa", "chad"):
+            db = {"jobs": {}}
+            lifecycle.upsert(db, [posting("Acme", "1", "Director, Operations",
+                                          location="Remote")], "lane", "2026-08-11")
+            lifecycle.mark_pending_shown(db, list(db["jobs"]), today="2026-08-11")
+            lifecycle.save_db(db, name, tmp.name)
+
+        jm.main.__wrapped__ if hasattr(jm.main, "__wrapped__") else None
+        argv = ["--confirm-sent", "lisa", "--snapshot-dir", tmp.name]
+        orig_argv = jm.sys.argv
+        jm.sys.argv = ["jobmonitor.py"] + argv
+        try:
+            jm.main()
+        finally:
+            jm.sys.argv = orig_argv
+
+        lisa = lifecycle.load_db("lisa", tmp.name)
+        chad = lifecycle.load_db("chad", tmp.name)
+        self.assertTrue(all(r["ever_shown"] for r in lisa["jobs"].values()))
+        self.assertFalse(any(r.get("ever_shown") for r in chad["jobs"].values()),
+                         "a profile whose email was not sent stays pending")
 
     def test_roles_over_14_days_are_not_repeated(self):
         """The reported bug: >2-week-old jobs kept reappearing in the daily email."""
