@@ -3360,6 +3360,32 @@ def profile_age_window(profile, settings, suffix=""):
     return settings.get("max_posting_age_days")
 
 
+def fit_enabled_for(profile, settings):
+    """Is LLM fit scoring on for THIS profile?
+
+    Two switches, both of which must be on: the run-wide `fit_scoring_enabled` in
+    settings.json, and the profile's own `fit_scoring` (default true). The per-profile one
+    exists because scoring is the entire Anthropic bill, and a profile that nobody is
+    actively job-hunting on should not be paying it. Turning it off is not the same as
+    disabling the profile — the person still gets their report, just without model
+    ranking."""
+    if not settings.get("fit_scoring_enabled", True):
+        return False
+    return bool(profile.get("fit_scoring", True))
+
+
+def sheet_export_for(profile, settings):
+    """Should THIS profile's records go to the shared Google Sheet?
+
+    Opt-IN per profile (default false), unlike most flags here, because the sheet has a human
+    audience: it is one person's tracking document, and quietly publishing a second person's
+    job search into it is the kind of mistake that is easy to make and awkward to undo. The
+    run-wide `sheets.enabled` is the master switch on top of that."""
+    if not (settings.get("sheets") or {}).get("enabled", True):
+        return False
+    return bool(profile.get("sheet_export", False))
+
+
 def _lifecycle_cfg(settings):
     cfg = dict(SETTINGS_DEFAULTS["lifecycle"])
     cfg.update(settings.get("lifecycle") or {})
@@ -3420,6 +3446,12 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=N
     # Each `*_src` is a lane source dict (see _run_lane); None means "lane off for this person".
     # Lanes are RUN here but ordered for DISPLAY below (email order != run order).
     settings = settings or {}
+    # Per-profile scoring switch. Done HERE rather than in main() so the decision is visible
+    # next to the profile it applies to, and so no lane can accidentally score around it.
+    if client is not None and not fit_enabled_for(profile, settings):
+        print(f"  [{profile['name']}] fit scoring OFF for this profile "
+              f"(fit_scoring: false) — no Anthropic calls will be made.")
+        client = None
     age = lambda sfx: profile_age_window(profile, settings, sfx)
     budget = {"left": int((settings.get("discovery") or {}).get(
         "max_new_scored_per_run", 0) or 10 ** 9)}
@@ -3477,11 +3509,14 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=N
     lifecycle.prune(db, int(_lifecycle_cfg(settings)["prune_after_days"]))
     lifecycle.strip_transient(db)
     lifecycle.save_db(db, profile["name"], SNAPSHOT_DIR)
-    if (settings.get("sheets") or {}).get("enabled", True):
+    if sheet_export_for(profile, settings):
         result = sheets_sync.export(db, OUT_DIR, profile["name"])
         print(f"  [{profile['name']}] discovery log: {result['rows']} row(s) → "
               f"{os.path.basename(result['csv'])}; sheet push {result['status']}"
               + (f" ({result['detail']})" if result.get("detail") else ""))
+    else:
+        print(f"  [{profile['name']}] discovery log: not exported "
+              f"(sheet_export: false) — records stay in jobs_{profile['name']}.json.")
 
     write_feedback_template(profile, lanes, feedback)
     write_rejects(profile, lanes)

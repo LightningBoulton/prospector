@@ -2366,6 +2366,52 @@ class TestChangeDigest(unittest.TestCase):
             self.assertIn(expected, md)
 
 
+class TestPerProfileToggles(unittest.TestCase):
+    """Scoring is the whole Anthropic bill and the sheet is one person's document, so both
+    are switchable per profile."""
+
+    def test_fit_scoring_defaults_to_on(self):
+        self.assertTrue(jm.fit_enabled_for(profile(), {}))
+
+    def test_profile_can_opt_out_of_scoring(self):
+        self.assertFalse(jm.fit_enabled_for(profile(fit_scoring=False), {}))
+
+    def test_global_switch_still_overrides_everything(self):
+        self.assertFalse(jm.fit_enabled_for(profile(fit_scoring=True),
+                                            {"fit_scoring_enabled": False}))
+
+    def test_sheet_export_is_opt_in_not_opt_out(self):
+        # Default FALSE on purpose: publishing someone's job search into another person's
+        # tracking sheet should require saying so.
+        self.assertFalse(jm.sheet_export_for(profile(), {}))
+        self.assertTrue(jm.sheet_export_for(profile(sheet_export=True), {}))
+
+    def test_sheets_master_switch_overrides_the_profile(self):
+        self.assertFalse(jm.sheet_export_for(profile(sheet_export=True),
+                                             {"sheets": {"enabled": False}}))
+
+    def test_shipped_config_matches_the_intended_setup(self):
+        """Lisa is the only active user: she is scored and exported, Chad is neither."""
+        lisa, chad = load_real_profile("lisa"), load_real_profile("chad")
+        settings = jm.load_settings()
+        self.assertTrue(jm.fit_enabled_for(lisa, settings))
+        self.assertTrue(jm.sheet_export_for(lisa, settings))
+        self.assertFalse(jm.fit_enabled_for(chad, settings),
+                         "Chad must not be spending Anthropic credit")
+        self.assertFalse(jm.sheet_export_for(chad, settings),
+                         "Chad's roles must not reach Lisa's spreadsheet")
+
+    def test_chad_still_gets_a_report_when_scoring_is_off(self):
+        """Off means unranked, NOT disabled — his email must still be produced."""
+        chad = load_real_profile("chad")
+        self.assertTrue(chad.get("enabled"), "the profile itself is still on")
+        roles = [posting("Acme", "1", "Senior Frontend Engineer")]
+        # client=None is what run_profile passes once scoring is off for the profile.
+        self.assertEqual(jm.enrich_with_fit(roles, None, chad, None), 0)
+        self.assertEqual(len(roles), 1, "roles survive; they are simply unscored")
+        self.assertIsNone(roles[0].get("fit_result"))
+
+
 class TestSheetExport(unittest.TestCase):
     """Requirement I: the Discovery Log tab, and nothing else."""
 

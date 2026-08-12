@@ -7,6 +7,9 @@
       "enabled": true,
       "background_file": "chad_background.json",
       "fit_mode": "rank",
+      "_v3_toggles_comment": "fit_scoring false: Chad is not actively job-hunting, and LLM scoring is the entire Anthropic bill (~150 calls/run for this profile). His report still generates and still emails — it just arrives unranked, which is what this profile's renderer did before scoring existed. Set true to turn ranking back on; background_file and fit_mode are left in place so that is a one-word change. sheet_export false: the tracking spreadsheet is Lisa's working document, and only her roles belong in it. His records are still kept in jobs_chad.json.",
+      "fit_scoring": false,
+      "sheet_export": false,
       "match_groups": [
         [
           "engineer",
@@ -43,6 +46,8 @@
       "enabled": true,
       "background_file": "lisa_background.json",
       "fit_mode": "rank",
+      "fit_scoring": true,
+      "sheet_export": true,
       "_v3_comment": "report_style 'change' switches Lisa to the V3 CHANGE DIGEST (build_change_digest_html), which reports what changed since the previous run instead of re-ranking the whole active inventory every morning. It reads the lifecycle database (jobs_lisa.json), not the lane snapshots, which is what lets it say 'new today' honestly, stop repeating roles past 14 days, and list a role as removed only if that role actually appeared in an earlier email. 'digest' is the previous ranked-inventory renderer and still works; Chad has no report_style and keeps the original lane-by-lane email. max_posting_age_days is now the FETCH/retention window, not the display window — display age is governed by the lifecycle bands (0-7 new, 8-14 still worth applying, 15+ suppressed unless exceptional AND verified open). It is 21 rather than 30 so that a 15-21 day role can still qualify for the verified exception without carrying a month of dead weight. fit_mode stays 'rank' on purpose: not_recommended roles are hidden at render time but retained for the weekly audit, which 'filter' would prevent.",
       "report_style": "change",
       "max_posting_age_days": 21,
