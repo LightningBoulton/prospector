@@ -10,34 +10,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote role at legal AI SaaS company",
-    "SRE focus differs from full-stack/frontend background",
-    "Some AWS/Kubernetes overlap with candidate skills",
-    "Not a hands-on product engineering role"
-   ],
-   "concerns": [
-    "SRE is infra/ops focused, not candidate's core strength",
-    "Unclear compensation details",
-    "Limited frontend/full-stack scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 85,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote role at legal AI SaaS company",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "DigiCert::8624428002",
@@ -50,31 +23,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Datacenter/infrastructure ops role, not software engineering",
-    "Requires hardware, virtualization, storage expertise mismatch"
-   ],
-   "concerns": [
-    "Not a software engineering role",
-    "Onsite hardware duties don't fit remote preference"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 45,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Datacenter/infrastructure ops role, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cricut::744000142970729",
@@ -87,32 +36,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "QA/systems quality role, not software engineering",
-    "Local Utah location matches preference",
-    "No description to assess mandate"
-   ],
-   "concerns": [
-    "Wrong function - quality engineering not dev",
-    "No description available"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 55,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "QA/systems quality role, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cricut::744000142735637",
@@ -125,31 +49,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "V&V engineering doesn't match software architecture background",
-    "Utah location is practical but role mismatch dominates"
-   ],
-   "concerns": [
-    "No description available to verify scope",
-    "Likely embedded/hardware focus, not software SaaS"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 50,
-   "opportunity_score": 12,
-   "score": 12,
-   "fit": "no",
-   "reason": "V&V engineering doesn't match software architecture background",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cricut::744000141575704",
@@ -162,34 +62,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "South Jordan UT location matches preference",
-    "Agentic/AI engineering aligns with AI interest",
-    "Lead role fits senior IC target",
-    "Title suggests hands-on technical ownership"
-   ],
-   "concerns": [
-    "No description to verify scope or tech stack",
-    "Unclear compensation and remote flexibility",
-    "Agentic AI focus may differ from core strengths"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 70,
-   "practical_fit": 75,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "maybe",
-   "reason": "South Jordan UT location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cricut::744000141577074",
@@ -202,34 +75,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah location matches preference",
-    "Lead engineering title fits seniority",
-    "AI/agentic focus aligns with interests",
-    "No description limits assessment"
-   ],
-   "concerns": [
-    "No job description provided",
-    "Unclear tech stack alignment",
-    "Connected devices/hardware focus uncertain"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 70,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cricut::744000140495670",
@@ -242,31 +88,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Materials quality engineering unrelated to software",
-    "Not a software engineering role"
-   ],
-   "concerns": [
-    "Wrong function entirely",
-    "No software/engineering mandate described"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 40,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Materials quality engineering unrelated to software",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cricut::744000139368229",
@@ -279,71 +101,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Staff engineering IC role matches seniority target",
-    "AI-native focus aligns with AI-assisted dev interest",
-    "Utah location, no relocation needed",
-    "Cricut is consumer product, not core B2B SaaS"
-   ],
-   "concerns": [
-    "No job description available to verify scope",
-    "Unclear tech stack match",
-    "Consumer hardware/software company, not enterprise SaaS"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 75,
-   "practical_fit": 80,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "maybe",
-   "reason": "Staff engineering IC role matches seniority target",
-   "bg": "b82045d5c9e1"
-  }
- },
- {
-  "key": "Cricut::744000139160279",
-  "company": "Cricut",
-  "title": "Firmware Test Engineer",
-  "location": "South Jordan, UT, United States",
-  "url": "https://jobs.smartrecruiters.com/cricut/744000139160279",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Firmware test engineering not candidate's domain",
-    "No frontend/full-stack scope evident"
-   ],
-   "concerns": [
-    "Wrong function entirely",
-    "No description to assess further"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 40,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Firmware test engineering not candidate's domain",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "MX::4361585009",
@@ -356,35 +114,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Lehi UT location fits Salt Lake Valley preference",
-    "Cloud-native modernization aligns with strengths",
-    "GCP focus vs AWS background gap",
-    "Platform engineering matches interests",
-    "Fintech domain unfamiliar but adjacent"
-   ],
-   "concerns": [
-    "Role is infra/platform-heavy, less full-stack/frontend",
-    "GCP not AWS could require ramp-up",
-    "Unclear seniority/IC scope from excerpt"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Lehi UT location fits Salt Lake Valley preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "MX::4339716009",
@@ -397,33 +127,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Local Utah role, fintech infra",
-    "Not core to full-stack/frontend background",
-    "Observability/SRE specialization mismatch"
-   ],
-   "concerns": [
-    "Requires deep observability/SRE expertise not in profile",
-    "Pager duty ops role, not hands-on product engineering",
-    "Diverges from React/.NET SaaS focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 80,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Local Utah role, fintech infra",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "BILL::6128903004",
@@ -436,31 +140,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Product management role, not engineering",
-    "Wrong function for candidate's IC engineering background"
-   ],
-   "concerns": [
-    "Not a hands-on software engineering role",
-    "Wrong career track entirely"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 20,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Product management role, not engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Domo::JR100285",
@@ -473,33 +153,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Utah remote location matches",
-    "CloudOps not core software engineering focus",
-    "AWS skills partially transferable"
-   ],
-   "concerns": [
-    "No job description provided",
-    "Infra/ops role vs hands-on dev role mismatch",
-    "Unclear seniority and scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Utah remote location matches",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Adobe::R170420",
@@ -512,35 +166,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah location matches preference",
-    "Data engineering may overlap skills",
-    "Adobe is reputable tech company",
-    "Title unclear on scope",
-    "No description to verify fit"
-   ],
-   "concerns": [
-    "No job description available",
-    "Data solution engineering may differ from core stack",
-    "Unclear seniority/mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 65,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Utah location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Adobe::R170972",
@@ -553,34 +179,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Lehi Utah location matches preference",
-    "Adobe strong engineering brand",
-    "AI infrastructure adjacent product",
-    "Full-stack likely web engineering role"
-   ],
-   "concerns": [
-    "No description available to confirm scope",
-    "Unclear seniority and compensation",
-    "Firefly may skew toward AI/ML specialization"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 75,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "maybe",
-   "reason": "Lehi Utah location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Adobe::R167498",
@@ -593,33 +192,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Marketing analytics engineering not core focus",
-    "Lehi UT location is practical",
-    "Title suggests martech, not platform eng"
-   ],
-   "concerns": [
-    "No description available to verify scope",
-    "Likely marketing-domain specific stack",
-    "Unclear if hands-on SaaS engineering"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 20,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Marketing analytics engineering not core focus",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Adobe::R169523",
@@ -632,32 +205,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Data science role, not software engineering",
-    "Lehi location workable",
-    "Thin posting, little detail"
-   ],
-   "concerns": [
-    "No description to assess mandate",
-    "Data science not core strength"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 60,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Data science role, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "BambooHR::6120089004",
@@ -670,34 +218,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Data engineering role, not software/frontend engineering",
-    "Utah hybrid location matches practical preference",
-    "AI infra interest overlaps slightly",
-    "Requires PySpark/data pipeline expertise not in background"
-   ],
-   "concerns": [
-    "Wrong function - data engineering vs full-stack/platform engineering",
-    "No React/.NET/frontend work",
-    "Credit check requirement unusual"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 40,
-   "practical_fit": 65,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Data engineering role, not software/frontend engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "BambooHR::6115974004",
@@ -710,34 +231,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Utah hybrid location matches preference",
-    "Uses AI coding tools",
-    "Heavy customer travel component",
-    "Forward-deployed/customer-facing role, not pure engineering"
-   ],
-   "concerns": [
-    "Requires travel to customer sites",
-    "Customer engagement/discovery focus vs hands-on engineering",
-    "Background/credit check contingency"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Utah hybrid location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "BambooHR::6127677004",
@@ -750,31 +244,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Product Manager role, not engineering",
-    "Wrong function despite Utah hybrid location"
-   ],
-   "concerns": [
-    "Not a hands-on IC engineering role",
-    "No coding/architecture ownership described"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Product Manager role, not engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Ancestry::R003377",
@@ -787,31 +257,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Co-op/entry-level role, not senior IC",
-    "Title suggests ML specialization mismatch"
-   ],
-   "concerns": [
-    "Likely entry-level pay and scope",
-    "No description to confirm seniority"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 20,
-   "practical_fit": 40,
-   "opportunity_score": 12,
-   "score": 12,
-   "fit": "no",
-   "reason": "Co-op/entry-level role, not senior IC",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Traeger::8081544",
@@ -824,29 +270,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Regulatory compliance engineering, not software"
-   ],
-   "concerns": [
-    "Wrong function entirely"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 5,
-   "practical_fit": 40,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Regulatory compliance engineering, not software",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Pattern::284fdb28-7c35-4168-91c8-4340c472eeba",
@@ -859,34 +283,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Lehi UT onsite/hybrid matches location",
-    "IAM/auth experience via OAuth/JWT/Cognito",
-    "Backend engineering aligns with skills",
-    "Specialized IAM focus narrower than generalist fit"
-   ],
-   "concerns": [
-    "Thin description, unclear seniority scope",
-    "IAM specialization not core strength",
-    "Possible onsite requirement"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 50,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Lehi UT onsite/hybrid matches location",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "NICE::4940087101",
@@ -899,34 +296,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah location matches preference",
-    "AI infrastructure aligns with interests",
-    "DevOps/SRE focus differs from full-stack background",
-    "Some cloud/AWS overlap with candidate skills"
-   ],
-   "concerns": [
-    "Heavy DevOps/SRE focus not core strength",
-    "Onsite likely required, unclear hybrid/remote",
-    "LLM/model training specialization gap"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 75,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "NICE::4951002101",
@@ -939,32 +309,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Sales engineering dealbreaker",
-    "Not hands-on software engineering",
-    "Contact center domain mismatch"
-   ],
-   "concerns": [
-    "Explicit dealbreaker: sales engineering",
-    "No coding/architecture ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Sales engineering dealbreaker",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "NICE::4931025101",
@@ -977,33 +322,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Customer-facing implementation/support role",
-    "Not hands-on software engineering",
-    "Resembles sales engineering/support dealbreaker"
-   ],
-   "concerns": [
-    "Support/customer-facing not engineering",
-    "Likely below comp target",
-    "No architecture ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Customer-facing implementation/support role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "NICE::4951008101",
@@ -1016,32 +335,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Sales engineering / partner enablement role",
-    "Not hands-on software engineering",
-    "Explicit dealbreaker: sales engineering"
-   ],
-   "concerns": [
-    "Wrong function entirely for candidate",
-    "Not IC engineering work"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Sales engineering / partner enablement role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "NICE::4940224101",
@@ -1054,33 +348,59 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Professional services/implementation role, not core engineering",
-    "Utah location matches but function mismatch",
-    "Client-facing configuration work, not architecture"
-   ],
-   "concerns": [
-    "Not hands-on product engineering",
-    "Junior-leaning implementation focus",
-    "Sales-engineering/support adjacent"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Professional services/implementation role, not core engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Western Governors University::JR-025709",
+  "company": "Western Governors University",
+  "title": "Software Engineer I - Full-Stack",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-Python-Angular_JR-025709",
+  "posted": "2026-08-13",
+  "salary": "$98,300.00 - $147,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Western Governors University::JR-025905",
+  "company": "Western Governors University",
+  "title": "UX/UI Designer, Salt Lake City, UT",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/UX-UI-Designer--Salt-Lake-City--UT_JR-025905",
+  "posted": "2026-08-12",
+  "salary": "$91,000.00 - $136,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Western Governors University::JR-025759",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025759",
+  "posted": "2026-08-12",
+  "salary": "$143,700.00 - $222,700.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Western Governors University::JR-025048",
+  "company": "Western Governors University",
+  "title": "Staff Software Engineer- Full-Stack Python and React",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048",
+  "posted": "2026-08-12",
+  "salary": "$161,000.00 - $249,500.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-024398",
@@ -1093,31 +413,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Assessment/education role, not software engineering",
-    "Local Utah location matches practical preference"
-   ],
-   "concerns": [
-    "Title suggests non-engineering function",
-    "No description to confirm scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Assessment/education role, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025892",
@@ -1130,33 +426,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Utah location matches preference",
-    "Title suggests mid-level, not principal",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "Software Engineer II likely below seniority target",
-    "Compensation unlikely to meet $190k minimum",
-    "No details on tech stack or mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 40,
-   "practical_fit": 70,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Utah location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025882",
@@ -1169,33 +439,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Staff engineer frontend focus matches strengths",
-    "SLC location matches preference",
-    "React/frontend architecture likely relevant"
-   ],
-   "concerns": [
-    "No description available to confirm scope",
-    "Comp and remote policy unknown",
-    "WGU may have limited AI/platform depth"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 80,
-   "interest_fit": 75,
-   "practical_fit": 85,
-   "opportunity_score": 75,
-   "score": 75,
-   "fit": "yes",
-   "reason": "Staff engineer frontend focus matches strengths",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025703",
@@ -1208,32 +452,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Salt Lake City location matches preference",
-    "IAM/cloud overlaps with AWS Cognito experience",
-    "Title suggests infra-focused, not full-stack dev"
-   ],
-   "concerns": [
-    "No description to confirm scope",
-    "May be narrow IAM specialist role, not engineering breadth"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Salt Lake City location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025876",
@@ -1246,33 +465,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Systems engineer role, not software engineering",
-    "Atlassian admin focus mismatches skillset",
-    "Salt Lake City location is practical"
-   ],
-   "concerns": [
-    "No description available",
-    "Likely IT ops not dev role",
-    "Title suggests tooling admin, not coding"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Systems engineer role, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025775",
@@ -1285,33 +478,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Local SLC role",
-    "Title suggests junior/mid IC level",
-    "Infrastructure/ops not core strength"
-   ],
-   "concerns": [
-    "Engineer II likely below Principal-level seniority",
-    "No description to confirm scope",
-    "Compensation likely below $190k"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 65,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Local SLC role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025732",
@@ -1324,34 +491,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "SLC location matches location preference",
-    "Full-stack senior engineer role",
-    "Java/Angular differs from core .NET/React stack",
-    "Thin posting, no description available"
-   ],
-   "concerns": [
-    "No description to verify seniority/scope",
-    "Java/Angular stack mismatch vs C#/.NET/React",
-    "Compensation unknown"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 75,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "SLC location matches location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025846",
@@ -1364,32 +504,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Associate-level title, likely junior",
-    "Learning systems not core stack match",
-    "Salt Lake City location matches preference"
-   ],
-   "concerns": [
-    "No description available to assess mandate",
-    "Associate title conflicts with seniority target"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 20,
-   "practical_fit": 60,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Associate-level title, likely junior",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025309",
@@ -1402,34 +517,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Salt Lake City location matches",
-    "Full-stack senior engineering role",
-    "Java/Angular differs from core stack",
-    "Thin posting, minimal detail"
-   ],
-   "concerns": [
-    "No .NET/React alignment stated",
-    "Unknown compensation",
-    "Unclear seniority/scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Salt Lake City location matches",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025827",
@@ -1442,33 +530,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Salt Lake City location matches preference",
-    "Cloud engineering aligns with AWS skills",
-    "Staff level fits seniority target",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "No details on tech stack or mandate",
-    "Cloud infra focus may lack frontend work"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Salt Lake City location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025615",
@@ -1481,31 +543,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "UX design role, not software engineering",
-    "Wrong function for candidate's skillset"
-   ],
-   "concerns": [
-    "Not a software engineering role",
-    "No description to verify scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "UX design role, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025286",
@@ -1518,33 +556,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Senior engineer title matches seniority target",
-    "Salt Lake City location fits preference",
-    "No description to assess tech stack or mandate"
-   ],
-   "concerns": [
-    "No job description available",
-    "Unknown compensation",
-    "Unknown tech stack fit"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 55,
-   "practical_fit": 75,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Senior engineer title matches seniority target",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025312",
@@ -1557,33 +569,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah location matches preference",
-    "Title too generic to assess seniority",
-    "No description of tech stack or scope"
-   ],
-   "concerns": [
-    "No details on seniority or compensation",
-    "Could be junior-level role",
-    "Education/nonprofit sector unclear fit"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 70,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025250",
@@ -1596,33 +582,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Title matches exactly",
-    "Local Salt Lake City location",
-    "Principal IC level fits background"
-   ],
-   "concerns": [
-    "No description available to verify scope",
-    "Unknown tech stack alignment",
-    "Compensation unstated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 65,
-   "practical_fit": 80,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "maybe",
-   "reason": "Title matches exactly",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025248",
@@ -1635,33 +595,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Matches exact seniority target title",
-    "Salt Lake City location matches preference",
-    "Principal IC role likely hands-on"
-   ],
-   "concerns": [
-    "No description available to verify tech stack",
-    "Unknown compensation and remote policy",
-    "WGU is higher-ed, not core enterprise SaaS"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 65,
-   "practical_fit": 80,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Matches exact seniority target title",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025290",
@@ -1674,33 +608,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Staff-level DevEx role matches strengths",
-    "Salt Lake City location fits",
-    "Developer experience is a named interest",
-    "Title suggests hands-on IC scope"
-   ],
-   "concerns": [
-    "No description to confirm tech stack",
-    "Compensation and remote policy unknown"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 82,
-   "practical_fit": 80,
-   "opportunity_score": 78,
-   "score": 78,
-   "fit": "yes",
-   "reason": "Staff-level DevEx role matches strengths",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025664",
@@ -1713,32 +621,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Product management, not software engineering",
-    "Salt Lake City location matches preference",
-    "No hands-on IC engineering role implied"
-   ],
-   "concerns": [
-    "Wrong function - PM not engineering",
-    "No description to verify scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 65,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Product management, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025614",
@@ -1751,31 +634,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Product management, not engineering role",
-    "Salt Lake City location matches preference"
-   ],
-   "concerns": [
-    "No engineering hands-on work",
-    "Thin posting details"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 20,
-   "practical_fit": 60,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Product management, not engineering role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025654",
@@ -1788,34 +647,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Cloud engineering overlaps AWS/K8s skills",
-    "Salt Lake City location matches preference",
-    "Title suggests infra-focused, not full-stack dev",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "Lacks job description detail",
-    "May be infrastructure-only, not software engineering",
-    "Unclear compensation"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Cloud engineering overlaps AWS/K8s skills",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025417",
@@ -1828,33 +660,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Salt Lake City location matches preference",
-    "Salesforce niche mismatches candidate's stack",
-    "Engineer II likely below Principal seniority target"
-   ],
-   "concerns": [
-    "No description; salary/level unclear",
-    "Salesforce specialization not in candidate's skillset",
-    "Title suggests junior-mid level, not Principal"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 25,
-   "practical_fit": 65,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Salt Lake City location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Western Governors University::JR-025416",
@@ -1867,33 +673,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Salesforce specialization not in candidate's stack",
-    "Salt Lake City location matches preference",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "No React/.NET/AWS alignment evident",
-    "Salesforce ecosystem is a different specialization",
-    "Thin posting details"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Salesforce specialization not in candidate's stack",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "iCapital::8662826002",
@@ -1906,33 +686,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Utah location matches",
-    "Backend role below seniority target",
-    "Comp far below $190k minimum"
-   ],
-   "concerns": [
-    "Salary range $80k-$140k too low",
-    "Associate/AVP level too junior",
-    "Different tech stack (Scala/Ruby)"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 60,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Utah location matches",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "iCapital::8631890002",
@@ -1945,32 +699,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Associate-level QA/test role, not engineering leadership",
-    "Salary far below $190k minimum",
-    "Wrong function - test automation not full-stack dev"
-   ],
-   "concerns": [
-    "Compensation ~$100k well below requirement",
-    "Associate seniority mismatch"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Associate-level QA/test role, not engineering leadership",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "iCapital::8662833002",
@@ -1983,34 +712,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Salt Lake City location matches preference",
-    "Backend engineering role, strong fundamentals fit",
-    "AI-assisted development emphasis aligns with interest",
-    "Enterprise SaaS platform work"
-   ],
-   "concerns": [
-    "Salary range below $190k minimum",
-    "Scala/Ruby stack differs from core .NET/React strengths",
-    "Onsite/hybrid requirement unclear"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 55,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Salt Lake City location matches preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LVT::5369362008",
@@ -2023,30 +725,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Manufacturing hardware QA, not software engineering"
-   ],
-   "concerns": [
-    "Wrong function entirely",
-    "Onsite manufacturing floor role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 5,
-   "practical_fit": 20,
-   "opportunity_score": 5,
-   "score": 5,
-   "fit": "no",
-   "reason": "Manufacturing hardware QA, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LVT::5371739008",
@@ -2059,32 +738,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "DevOps/infra role, not full-stack engineering",
-    "Onsite Utah location matches geography",
-    "IoT/edge fleet focus differs from candidate strengths"
-   ],
-   "concerns": [
-    "Not aligned with frontend/full-stack expertise",
-    "Role is infrastructure-focused, not application engineering"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "DevOps/infra role, not full-stack engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LVT::5368027008",
@@ -2097,35 +751,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Fullstack React work matches strengths",
-    "Senior IC role, hands-on engineering",
-    "Utah location (American Fork) fits preference",
-    "GraphQL/backend scaling aligns with skills",
-    "Growing AI-driven tech company"
-   ],
-   "concerns": [
-    "Onsite in American Fork, not remote-stated",
-    "Compensation not specified",
-    "GraphQL federation less matched to .NET background"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 80,
-   "interest_fit": 72,
-   "practical_fit": 65,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Fullstack React work matches strengths",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LVT::5372856008",
@@ -2138,34 +764,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Backend microservices/API role fits skillset",
-    "Senior IC role matches seniority target",
-    "Utah-onsite in American Fork, no relocation",
-    "AI-driven platform aligns with interests"
-   ],
-   "concerns": [
-    "Onsite likely required, not remote",
-    "Backend-only, less frontend/React emphasis",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 70,
-   "practical_fit": 75,
-   "opportunity_score": 72,
-   "score": 72,
-   "fit": "yes",
-   "reason": "Backend microservices/API role fits skillset",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LVT::5377974008",
@@ -2178,32 +777,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Hardware/sensor QA engineering, not software",
-    "No frontend/backend/cloud match",
-    "Wrong function entirely"
-   ],
-   "concerns": [
-    "Hardware sensor validation not software engineering",
-    "No match to skillset"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 10,
-   "practical_fit": 40,
-   "opportunity_score": 10,
-   "score": 10,
-   "fit": "no",
-   "reason": "Hardware/sensor QA engineering, not software",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LVT::5367884008",
@@ -2216,33 +790,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Utah onsite matches location preference",
-    "Full-stack TypeScript overlaps with skills",
-    "Engineer II is junior-level title/scope"
-   ],
-   "concerns": [
-    "Level II likely below Principal seniority target",
-    "Compensation likely below $190k minimum",
-    "Onsite, not remote"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 55,
-   "practical_fit": 60,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "no",
-   "reason": "Utah onsite matches location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LVT::5381423008",
@@ -2255,34 +803,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Staff-level backend IC role in Utah",
-    "AI-driven platform aligns with interests",
-    "Architecture and mentoring scope fits strengths",
-    "Onsite in American Fork, near Salt Lake Valley"
-   ],
-   "concerns": [
-    "Backend-only, less frontend/React emphasis",
-    "Compensation not stated",
-    "Onsite requirement, not remote"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 58,
-   "practical_fit": 75,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "yes",
-   "reason": "Staff-level backend IC role in Utah",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "BYU::JR-10391",
@@ -2295,33 +816,6 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Platform engineering matches skillset",
-    "Provo UT within Salt Lake Valley commute range",
-    "No description to verify seniority or scope",
-    "University employer may pay below $190k"
-   ],
-   "concerns": [
-    "No job description available",
-    "University salary likely below minimum requirement",
-    "Unclear if hands-on IC role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 55,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Platform engineering matches skillset",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  }
 ]

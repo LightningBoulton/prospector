@@ -2,803 +2,6 @@
  "_comment": "Roles that were fetched but filtered out, recorded by the daily run for the weekly audit (audit.py). Leadership-shaped titles only. Keeps the last 10 days. Safe to delete \u2014 it is diagnostic, not state.",
  "days": [
   {
-   "date": "2026-08-03",
-   "lanes": {
-    "\ud83c\udf0e US-Remote": [
-     {
-      "company": "GitLab",
-      "title": "Area Vice President - Financial Services",
-      "location": "Remote, US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Customer Success Manager- Public Sector",
-      "location": "Remote, United States",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Director, Pipeline Excellence",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Ecosystem Sales Manager, Carahsoft (Washington DC)",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Ecosystem Sales Manager: Scale",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Enablement Content Manager",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Engineering Manager, AI Engineering: Chat",
-      "location": "Remote, Americas; Remote, Canada; Remote, United Kingdom",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Engineering Manager, Tenant Scale:Git",
-      "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "FP&A Manager, R&D",
-      "location": "Remote, Canada; Remote, US",
-      "reason": "excluded by 'fp&a'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Lead Internal Events & Production Strategist",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Lead SEC Analyst",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Manager, Engineering, Git & Gitaly Operations",
-      "location": "Remote, Bangalore",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Manager, Engineering, Nonlinear Productivity (Friction Elimination & Solutions)",
-      "location": "Remote, Bangalore",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Manager, Solutions Architecture - East",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Manager, Strategic Finance",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Revenue Strategist Manager, Renewals",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Customer Success Manager- Public Sector",
-      "location": "Remote, US",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Director, Associate General Counsel",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Director, People Business Partner",
-      "location": "Remote, US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Engineering Manager, Non-Linear Productivity",
-      "location": "Remote, Canada; Remote, United Kingdom; Remote, US",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Lifecycle Marketing Manager",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Product Manager, Plan to Code",
-      "location": "Remote, Canada; Remote, US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Program Manager, Enterprise Technology & AI",
-      "location": "Remote, Bangalore",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Staff Account Based Marketing Manager",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cloudflare",
-      "title": "Director, Customer Engineering",
-      "location": "Hybrid or Remote",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Cloudflare",
-      "title": "Engineering Manager - Security Platform",
-      "location": "Distributed; Hybrid",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Cloudflare",
-      "title": "Senior Customer Engineering Manager, Majors - Texas",
-      "location": "Distributed",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Accounting Manager, GL Operations & Intercompany",
-      "location": "Remote - USA",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Compliance, Threat & Risk Assessment Manager",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "GFCO Program Manager",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Group Product Manager, Compliance Agent Experience",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Internal Audit Manager",
-      "location": "Remote - Luxembourg",
-      "reason": "excluded by 'audit'"
-     },
-     {
-      "company": "Coinbase",
-      "title": "M&A and Accounting Policy Manager",
-      "location": "Remote - USA",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Manager, Corporate Programs",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Senior Enterprise Product  Marketing Manager, Base",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Senior Manager, Recruiting",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Social Support Senior Manager",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Staff Technical Program Manager, CX Agent Experience",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Strategic Program Lead",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Technical Program Manager, GFCO Analytics",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Engineering Manager, Media Foundations and Delivery",
-      "location": "Remote - United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Reddit",
-      "title": "Lead Product Adoption Strategist, Mid-Market",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Machine Learning Manager, Feed Ecosystems",
-      "location": "Remote - United States",
-      "reason": "excluded by 'machine learning'"
-     },
-     {
-      "company": "Reddit",
-      "title": "Machine Learning Manager, Feed Relevance (Retrieval)",
-      "location": "Remote - United States",
-      "reason": "excluded by 'machine learning'"
-     },
-     {
-      "company": "Reddit",
-      "title": "Staff Product Manager, Ads Trust and Safety",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Staff Product Manager, Games Ecosystem",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Staff Technical Program Manager",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Datadog",
-      "title": "Director, Enterprise Sales",
-      "location": "Texas, USA, Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Datadog",
-      "title": "Regional Manager, Sales Engineering - Security (NORAM)",
-      "location": "Maryland, USA, Remote; Massachusetts, USA, Remote; New Jersey, USA, Remote; New York, New York, USA; Virginia, USA, Remote",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Airtable",
-      "title": "Delivery Consultant",
-      "location": "New York, NY; Remote - US",
-      "reason": "missed match group [1]"
-     },
-     {
-      "company": "Airtable",
-      "title": "Performance Marketing Lead",
-      "location": "San Francisco, CA; New York, NY; Austin, TX; Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Compensation Manager",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Director of Demand Generation",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Director, Revenue & CoGS Accounting",
-      "location": "Remote - US",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Twilio",
-      "title": "Global Events Marketing Manager",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Manager, Sales Development",
-      "location": "Remote - US",
-      "reason": "excluded by 'sales development'"
-     },
-     {
-      "company": "Twilio",
-      "title": "Manager, Sales Development-LATAM / NAMER Hybrid",
-      "location": "Remote - US",
-      "reason": "excluded by 'sales development'"
-     },
-     {
-      "company": "Twilio",
-      "title": "Principal, Design Researcher",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Principal Product Manager, Enterprise Commerce Platform",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Principal Product Manager - Product Catalog",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     }
-    ],
-    "\ud83e\uddd1\u200d\ud83d\udcbc Contract / Staffing": [
-     {
-      "company": "Eliassen",
-      "title": "Senior Marketing Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Kyriba Consultant",
-      "location": "Remote",
-      "reason": "missed match group [1]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Consultant, Sr. Field Clinical Engineer",
-      "location": "Remote",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Senior Data Manager, CRO Oversight, Early Phase Studies",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Technical Account Manager",
-      "location": "Remote",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Senior Project Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Compliance Project Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Technical Project Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Senior PMO Consultant",
-      "location": "Remote",
-      "reason": "missed match group [1]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Infrastructure Project Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Addison Group",
-      "title": "ServiceNow Product Manager \u2013  USA Remote Contractor  (Mainland USA Only)",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     }
-    ],
-    "\ud83d\udccd Local \u2014 Silicon Slopes": [
-     {
-      "company": "Filevine",
-      "title": "Head of Trust and Security",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Filevine",
-      "title": "Product Marketing Manager",
-      "location": "Salt Lake City, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Qualtrics",
-      "title": "State and Local Government Sales Manager",
-      "location": "Provo, Utah, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Manager, Software Engineering QA",
-      "location": "South Jordan, UT, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Cricut",
-      "title": "Associate Manager, Hardware Test Engineering",
-      "location": "South Jordan, UT, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Cricut",
-      "title": "Sr. Global Product Manager",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Digital Marketing Manager \u2013 Full Funnel Video Advertising",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Senior Marketing Manager, Growth",
-      "location": "South Jordan, UT, United States (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Art Director",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Senior Global Product Manager- Hardware",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Global Product Manager, Hardware",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Lead UX Designer",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Associate Influencer Marketing Manager",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Sr. Global Product Manager",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Lucid Software",
-      "title": "Compliance Manager",
-      "location": "Salt Lake City, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Lucid Software",
-      "title": "Sr. Product Manager",
-      "location": "Salt Lake City, Utah, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Lucid Software",
-      "title": "Sr. Product Manager",
-      "location": "Salt Lake City, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Lucid Software",
-      "title": "Sr. Product Manager, AI",
-      "location": "Salt Lake City, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Entrata",
-      "title": "Director of Procurement",
-      "location": "Lehi, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Galileo (SoFi)",
-      "title": "VP, Commercial Sales - Employers",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Awardco",
-      "title": "Principal AI Solutions Architect",
-      "location": "Lindon, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Route",
-      "title": "Sr. Product Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Director, Commercial Sales",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Senior Director of Curriculum",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Solutions Portfolio Lead, AI",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Solutions Portfolio Lead, Cloud and Security",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Director, Analytics Engineering and AI",
-      "location": "Remote - USA",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Podium",
-      "title": "Associate Manager, Onboarding",
-      "location": "Lehi, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Podium",
-      "title": "Field AI Launch Manager",
-      "location": "Remote, US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Podium",
-      "title": "Senior Compensation Manager",
-      "location": "Lehi, Utah, Open to Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "MX",
-      "title": "Director, Governance, Risk & Compliance",
-      "location": "Lehi, Utah, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "MX",
-      "title": "Enterprise Risk Manager",
-      "location": "Lehi, Utah, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "MX",
-      "title": "Senior Manager, Engineering",
-      "location": "Lehi, Utah, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "MX",
-      "title": "Staff Technical Program Manager",
-      "location": "Lehi, Utah, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "BILL",
-      "title": "Director - Strategic Partnerships",
-      "location": "Draper, Utah, United States; San Jose, California, United States; United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "BILL",
-      "title": "Lead Product Manager - Rewards Platform",
-      "location": "Draper, Utah, United States; San Jose, California, United States; United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "BILL",
-      "title": "Lead Product Manager - Risk Platform",
-      "location": "Draper, Utah, United States; San Jose, California, United States; United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "BILL",
-      "title": "Senior Lead Product Manager - Decisioning Platform",
-      "location": "Draper, Utah, United States; San Jose, California, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Recursion",
-      "title": "Director, Clinical Pharmacology",
-      "location": "New York, New York; Salt Lake City, Utah",
-      "reason": "excluded by 'clinical'"
-     },
-     {
-      "company": "Recursion",
-      "title": "Director, Clinical Science",
-      "location": "New York, New York; Salt Lake City, Utah",
-      "reason": "excluded by 'clinical'"
-     },
-     {
-      "company": "Canopy",
-      "title": "Account Development Manager",
-      "location": "South Jordan, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Canopy",
-      "title": "Account Manager, SMB",
-      "location": "South Jordan, UT",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "Adobe",
-      "title": "Internal Product Delivery Manager",
-      "location": "Lehi",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Procurement - Technology - Cloud Category Manager",
-      "location": "Lehi (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Senior Growth Product Manager",
-      "location": "Lehi (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Senior Product Manager,  Chief Accounting Office",
-      "location": "Lehi (+1 more)",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Adobe",
-      "title": "Director, Change and Release Management",
-      "location": "Lehi (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Transformation Communications & Engagement Manager",
-      "location": "Lehi (+1 more)",
-      "reason": "excluded by 'engagement manager'"
-     },
-     {
-      "company": "Adobe",
-      "title": "Technology Consultant",
-      "location": "Lehi (+1 more)",
-      "reason": "missed match group [1]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Cash Manager, Treasury",
-      "location": "Lehi (+1 more)",
-      "reason": "excluded by 'treasury'"
-     },
-     {
-      "company": "Adobe",
-      "title": "Senior Product Manager - Adobe.com Personalization",
-      "location": "Lehi (+2 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Senior Manager, Cyber Incident Response Team",
-      "location": "Lehi (+2 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Technology Services Sourcing Category Manager",
-      "location": "Lehi (+2 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Product Marketing Manager",
-      "location": "Lehi (+2 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Principal Product Manager",
-      "location": "Lehi (+2 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Regional Travel Manager - Americas",
-      "location": "Lehi (+3 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Senior Program Manager, GSO",
-      "location": "Lehi (+4 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Enterprise Account Director,Creativity & Productivity",
-      "location": "Lehi (+4 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Compliance Senior Program Manager",
-      "location": "Lehi (+5 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Project Manager",
-      "location": "Lehi (+5 more)",
-      "reason": "missed match group [2]"
-     }
-    ]
-   }
-  },
-  {
    "date": "2026-08-04",
    "lanes": {
     "\ud83c\udf0e US-Remote": [
@@ -9839,6 +9042,1097 @@
       "title": "Event Marketing Manager",
       "location": "Salt Lake City, Utah, United States",
       "reason": "missed match group [2]"
+     },
+     {
+      "company": "Brex",
+      "title": "GTM AI Revenue Enablement, Senior Manager",
+      "location": "Salt Lake City, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Kelso Industries",
+      "title": "Account Manager",
+      "location": "Ogden, UT",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Kelso Industries",
+      "title": "BAS and HVAC Controls Lead",
+      "location": "Provo, UT",
+      "reason": "missed match group [2]"
+     }
+    ]
+   }
+  },
+  {
+   "date": "2026-08-13",
+   "lanes": {
+    "\ud83c\udf0e US-Remote": [
+     {
+      "company": "GitLab",
+      "title": "Customer Success Manager- Public Sector",
+      "location": "Remote, United States",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "GitLab",
+      "title": "Ecosystem Sales Manager: Scale",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Lead Internal Events & Production Strategist",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Lead SEC Analyst",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Manager, Procurement",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Manager, Solutions Architecture - East",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Principal Product Manager, AI Software Factory",
+      "location": "Remote, Canada; Remote, United States",
+      "reason": "excluded by 'software'"
+     },
+     {
+      "company": "GitLab",
+      "title": "Principal Program Manager, Go-To-Market",
+      "location": "Remote, Canada; Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Renewals Manager - West",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Revenue Strategist Manager, Renewals",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Senior Director, Associate General Counsel",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Senior Product Manager, Growth",
+      "location": "Remote, Canada; Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cloudflare",
+      "title": "Senior Customer Engineering Manager, Majors - Texas",
+      "location": "Distributed",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Accounting Manager, GL Operations & Intercompany",
+      "location": "Remote - USA",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Engineering Manager, Core Automation (Platform)",
+      "location": "Remote - USA",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Enterprise Product  Marketing Manager, Base",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Manager, Recruiting",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Product Marketing Manager, Trading",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Social Support Senior Manager",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Staff Product Designer, Financial Services Lead",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Strategic Program Lead",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Group Product Manager, Finance Technology",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Machine Learning Manager, Feed Ecosystems",
+      "location": "Remote - United States",
+      "reason": "excluded by 'machine learning'"
+     },
+     {
+      "company": "Reddit",
+      "title": "Machine Learning Manager, Feed Relevance (Retrieval)",
+      "location": "Remote - United States",
+      "reason": "excluded by 'machine learning'"
+     },
+     {
+      "company": "Reddit",
+      "title": "Principal UX Engineer, Ads",
+      "location": "Remote - United States",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Reddit",
+      "title": "Senior Machine Learning Manager, Video Ranking",
+      "location": "Remote - United States",
+      "reason": "excluded by 'machine learning'"
+     },
+     {
+      "company": "Reddit",
+      "title": "Senior Product Manager, Ads -  Shopping Catalogs",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Datadog",
+      "title": "Director, Enterprise Sales",
+      "location": "Texas, USA, Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Datadog",
+      "title": "Regional Manager, Sales Engineering - Security (NORAM)",
+      "location": "Maryland, USA, Remote; Massachusetts, USA, Remote; New Jersey, USA, Remote; New York, New York, USA; Virginia, USA, Remote",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Airtable",
+      "title": "Delivery Consultant",
+      "location": "New York, NY; Remote - US",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Director of Demand Generation",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Manager, Deal Desk",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Manager, Personalized Support",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Principal Internal Communications Manager",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Principal Presales Engineer",
+      "location": "Remote - US",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Twilio",
+      "title": "Principal Product Manager: Talent Acquisition & Management Applications",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Principal Software Engineer",
+      "location": "Remote - US",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Twilio",
+      "title": "Senior HRBP Manager, GTM",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Senior Principal Field Architect - AI Agents",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Sr. Principal Product Manager",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Director, Legal - Commercial (Americas) | United States | Remote",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Majors Account Director - Key Customers | West Coast | Remote",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Regional Sales Director, Enterprise Growth | West | Remote",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Senior Director, Solutions Engineering | Americas | Remote",
+      "location": "United States (Remote)",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Senior Partner Development Manager | United States| Remote",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Webflow",
+      "title": "Customer Success Manager - Pacific Time",
+      "location": "CA Remote (BC & ON only); U.S. Remote",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "Webflow",
+      "title": "Manager, Corporate Sales",
+      "location": "CA Remote (BC & ON only); U.S. Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Webflow",
+      "title": "Senior Marketing Manager, Website Growth",
+      "location": "U.S. Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Webflow",
+      "title": "Senior Product Manager, AI",
+      "location": "CA Remote (BC & ON only); U.S. Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Mercury",
+      "title": "Head of Data Engineering & Platform",
+      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Mercury",
+      "title": "Head of Revenue Technology & Architecture",
+      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Mercury",
+      "title": "Senior Compliance Risk Manager - Prudential",
+      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Mercury",
+      "title": "Senior Manager - Data & AI Governance",
+      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Mercury",
+      "title": "Senior Product Manager - Dashboard Experience",
+      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Mercury",
+      "title": "Senior Product Marketing Manager - Cards & Spend Management",
+      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Doximity",
+      "title": "Client Success Manager, Hospital Solutions",
+      "location": "San Francisco, CA or Remote (U.S.)",
+      "reason": "excluded by 'client success manager'"
+     },
+     {
+      "company": "Doximity",
+      "title": "Senior Manager, Financial Reporting & Technical Accounting",
+      "location": "San Francisco, CA or Remote (U.S.)",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "Gusto",
+      "title": "Expansion Account Manager Leader",
+      "location": "Atlanta, GA - Remote; Denver, CO, United States; Phoenix, AZ - Remote",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Affirm",
+      "title": "Affirm Bank Strategic Finance Manager",
+      "location": "Remote US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Affirm",
+      "title": "Analytics Lead, Strategic Insights (Compliance)",
+      "location": "Remote US",
+      "reason": "missed match group [2]"
+     }
+    ],
+    "\ud83e\uddd1\u200d\ud83d\udcbc Contract / Staffing": [
+     {
+      "company": "Aquent",
+      "title": "Project Manager - Pharma",
+      "location": "Philadelphia, PA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Account Management, Director",
+      "location": "New York, NY, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Sr Project Manager",
+      "location": "Boston, MA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Senior Print Production Manager",
+      "location": "Hartford, CT, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Tradeshow Senior Manager",
+      "location": "San Francisco, CA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Event Manager",
+      "location": "San Francisco, CA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Consumer Product Licensing Project Manager",
+      "location": "Redmond, WA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Product Manager",
+      "location": "Atlanta, GA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Program Manager",
+      "location": "San Francisco, CA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Project Manager",
+      "location": "Austin, TX, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Marketing Manager",
+      "location": "Albany, NY, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Account Manager",
+      "location": "Hoboken, NJ, US (Remote)",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Aquent",
+      "title": "Search Performance Manager",
+      "location": "Hoboken, NJ, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Program Manager",
+      "location": "Austin, TX, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Project Manager",
+      "location": "Baltimore, MD, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Digital Asset Content Manager",
+      "location": "REDMOND, WA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Community Manager, Product Marketing",
+      "location": "New York, NY, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Creative Producer- Events- Strategic Lead",
+      "location": "Redmond, WA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Senior Technical Program Manager",
+      "location": "Phoenix, AZ, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Vendor Risk Manager",
+      "location": "Westlake, TX, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Customer Lifecycle Management Campaign Manager",
+      "location": "Cupertino, CA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Accounting Manager",
+      "location": "Seattle, WA, US (Remote)",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "Aquent",
+      "title": "Art Director IV",
+      "location": "Atlanta, GA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "TikTok Campaign Manager",
+      "location": "New York, NY, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Technical Program Manager",
+      "location": "REDMOND, WA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Sourcing Manager",
+      "location": "Austin, TX, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Marketing Manager",
+      "location": "REDMOND, WA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Business Continuity Manager",
+      "location": "Austin, TX, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Director of Search Engine Marketing",
+      "location": "Baltimore, MD, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Project Manager",
+      "location": "Chicago, IL, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Global Supply Manager IV",
+      "location": "Sunnyvale, CA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Digital Asset Manager Administrator",
+      "location": "Atlanta, GA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Associate Creative Director",
+      "location": "San Francisco, CA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Brand Manager",
+      "location": "San Francisco, CA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Project Manager - SCRUM",
+      "location": "New York, NY, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Privacy Program Manager",
+      "location": "Redmond, WA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Marketing Manager",
+      "location": "Seattle, WA, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Aquent",
+      "title": "Product Communications Manager",
+      "location": "Oberlin, OH, US (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Jr. Product Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Systems AI&T - Satellite Payload Lead",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Portfolio Project Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Senior Project Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Senior Data Manager, CRO Oversight, Early Phase Studies",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Consultant, Sr. Field Clinical Engineer",
+      "location": "Remote",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Kyriba Consultant",
+      "location": "Remote",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Compliance Project Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Senior Project Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Senior or Lead UX Designer",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Technical Project Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Senior PMO Consultant",
+      "location": "Remote",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Addison Group",
+      "title": "Director of Sales, Wind Energy - REMOTE",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Interim Sourcing Manager",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Interim Finance Director",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Lead Cable Technician",
+      "location": "Salt Lake City, UT",
+      "reason": "excluded by 'technician'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Sr. Digital Marketing Manager",
+      "location": "Hartford, CT (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Payroll Manager",
+      "location": "Hartford, CT (Remote)",
+      "reason": "excluded by 'payroll'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Contracts Manager",
+      "location": "Portland, ME (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Program Manager",
+      "location": "Princeton, NJ (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Fractional Director of Marketing (GTM & Product Marketing)",
+      "location": "Boston, MA (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Procurement Consultant",
+      "location": "New York, NY (Remote)",
+      "reason": "missed match group [1]"
+     }
+    ],
+    "\ud83d\udccd Local \u2014 Silicon Slopes": [
+     {
+      "company": "Filevine",
+      "title": "Executive Assistant, Chief Growth Officer",
+      "location": "Salt Lake City, Utah",
+      "reason": "excluded by 'executive assistant'"
+     },
+     {
+      "company": "Filevine",
+      "title": "Webinar Manager",
+      "location": "Salt Lake City, Utah",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cricut",
+      "title": "Senior Global Product Manager- Hardware Machines",
+      "location": "South Jordan, UT, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cricut",
+      "title": "Global Product Manager, Hardware",
+      "location": "South Jordan, UT, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cricut",
+      "title": "Senior Global Product Manager- Hardware",
+      "location": "South Jordan, UT, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cricut",
+      "title": "Manager, Digital Design",
+      "location": "South Jordan, UT, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cricut",
+      "title": "Lead Agentic Software Engineer",
+      "location": "South Jordan, UT, United States",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Cricut",
+      "title": "Lead Agentic Software Engineer, Connected Devices",
+      "location": "South Jordan, UT, United States",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Cricut",
+      "title": "Media Buyer Manager",
+      "location": "South Jordan, UT, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cricut",
+      "title": "Manager, Software Engineering QA",
+      "location": "South Jordan, UT, United States",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Lucid Software",
+      "title": "Sr. Product Manager",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Lucid Software",
+      "title": "Sr. Product Manager, AI",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Entrata",
+      "title": "Director of Engineering, Payments",
+      "location": "Lehi, Utah",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Galileo (SoFi)",
+      "title": "VP, Commercial Sales - Employers",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pluralsight",
+      "title": "Director, Commercial Sales",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pluralsight",
+      "title": "Product Marketing Manager",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pluralsight",
+      "title": "Director, Author Expertise & Success",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pluralsight",
+      "title": "Director, Paid Media and Digital Demand",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Podium",
+      "title": "Director of Founder Communications",
+      "location": "Lehi, Utah",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "MX",
+      "title": "Director, Governance, Risk & Compliance",
+      "location": "Lehi, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "MX",
+      "title": "Enterprise Risk Manager",
+      "location": "Lehi, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "MX",
+      "title": "Staff Technical Program Manager",
+      "location": "Lehi, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BILL",
+      "title": "Senior Lead Product Manager - Decisioning Platform",
+      "location": "Draper, Utah, United States; San Jose, California, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Recursion",
+      "title": "Director, Clinical Pharmacology",
+      "location": "New York, New York; Salt Lake City, Utah",
+      "reason": "excluded by 'clinical'"
+     },
+     {
+      "company": "Canopy",
+      "title": "Account Development Manager",
+      "location": "Draper, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Canopy",
+      "title": "Account Manager, SMB",
+      "location": "Draper, UT",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Canopy",
+      "title": "Manager of Enablement",
+      "location": "Draper, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Canopy",
+      "title": "Sales Manager",
+      "location": "Draper, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Canopy",
+      "title": "Senior Product Manager",
+      "location": "Draper, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Senior Engineering Manager \u2013 Agentic Product",
+      "location": "Lehi",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Adobe",
+      "title": "Manager, Deal Desk",
+      "location": "Lehi",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Technology Consultant",
+      "location": "Lehi (+1 more)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Cash Manager, Treasury",
+      "location": "Lehi (+1 more)",
+      "reason": "excluded by 'treasury'"
+     },
+     {
+      "company": "Adobe",
+      "title": "Senior Product Manager, Adobe.com for business",
+      "location": "Lehi (+2 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Lead Financial Analyst - Mobile",
+      "location": "Lehi (+2 more)",
+      "reason": "excluded by 'financial analyst'"
+     },
+     {
+      "company": "Adobe",
+      "title": "Senior Manager, Content Supply Chain/GenStudio",
+      "location": "Lehi (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Enterprise Account Director",
+      "location": "Lehi (+4 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BambooHR",
+      "title": "Product Design Lead, Customer Journey & Growth",
+      "location": "Utah | Hybrid",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BambooHR",
+      "title": "Sr. Product Manager, Core Data Platform",
+      "location": "Utah | Hybrid",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BambooHR",
+      "title": "Sr. Revenue Marketing Manager",
+      "location": "Utah | Hybrid",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Senior Director, Integrated Marketing",
+      "location": "Draper, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Workplace Experience Lead",
+      "location": "Draper, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Senior Strategic Partnerships Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Associate Technical Product Manager",
+      "location": "Draper, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Senior Manager, Tax",
+      "location": "Draper, UT",
+      "reason": "excluded by 'tax'"
+     },
+     {
+      "company": "Health Catalyst",
+      "title": "SVP, Channel Sales",
+      "location": "US Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Health Catalyst",
+      "title": "Product Marketing Manager",
+      "location": "US Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Health Catalyst",
+      "title": "Cost Management, Consultant",
+      "location": "US Remote",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Health Catalyst",
+      "title": "SVP Manager, Client Account Management",
+      "location": "US Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "Art Director",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "Creative Project Manager",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "Head of Procurement, Ops",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "Junior AI Art Director (Part-Time)",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "NICE",
+      "title": "Director, Integrated Demand Programs",
+      "location": "USA - Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "NICE",
+      "title": "Lead Program Manager",
+      "location": "USA - Sandy, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "NICE",
+      "title": "Principal Cloud Architect",
+      "location": "USA - Sandy, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "NICE",
+      "title": "Technical Account Manager",
+      "location": "USA - Remote",
+      "reason": "excluded by 'account manager'"
      },
      {
       "company": "Brex",

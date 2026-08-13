@@ -1,19 +1,5 @@
 [
  {
-  "key": "GitLab::8637426002",
-  "company": "GitLab",
-  "title": "Customer Success Engineer, LATAM (Spanish, Portugese)",
-  "location": "Remote, Brazil; Remote, Mexico; Remote, United States",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8637426002",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
   "key": "GitLab::8644569002",
   "company": "GitLab",
   "title": "Intermediate Backend Engineer, Platform Readiness",
@@ -24,8 +10,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "GitLab::8658878002",
@@ -38,8 +23,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "GitLab::8646556002",
@@ -52,33 +36,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location preference",
-    "AI-powered developer productivity aligns with interests",
-    "Backend engineering matches strong technical background",
-    "GitLab is strong enterprise platform company"
-   ],
-   "concerns": [
-    "Primarily backend-focused, less frontend/React",
-    "Ruby/Go stack likely differs from .NET/React expertise"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 78,
-   "practical_fit": 78,
-   "opportunity_score": 72,
-   "score": 72,
-   "fit": "yes",
-   "reason": "Remote US role fits location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "GitLab::8615319002",
@@ -91,8 +49,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "GitLab::8644572002",
@@ -105,8 +62,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "GitLab::8682707002",
@@ -119,33 +75,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote-friendly location fits",
-    "DevSecOps platform aligns with interests",
-    "Backend engineering role"
-   ],
-   "concerns": [
-    "No Ruby/Rails experience shown",
-    "Entirely different tech stack from .NET/React",
-    "Would require significant ramp-up"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 40,
-   "practical_fit": 70,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Remote-friendly location fits",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "GitLab::8646544002",
@@ -158,34 +88,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Remote-friendly, US-based",
-    "AI/dev productivity aligns with interests",
-    "Staff-level IC ownership",
-    "Platform/DevSecOps enterprise SaaS fit"
-   ],
-   "concerns": [
-    "Backend-heavy, less frontend focus",
-    "Ambiguous scope, no PM support",
-    "Ruby/Go stack likely, unlike candidate's stack"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 75,
-   "practical_fit": 80,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Remote-friendly, US-based",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "GitLab::8646573002",
@@ -198,48 +101,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote-friendly, AI infra interest match",
-    "Staff IC engineering role aligns with seniority target",
-    "Ruby backend not core strength (.NET/React)",
-    "AI Duo Agent Platform aligns with AI-assisted dev interest"
-   ],
-   "concerns": [
-    "Requires Ruby expertise, not in candidate stack",
-    "Comp not stated",
-    "Backend-only, less frontend focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 55,
-   "practical_fit": 65,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote-friendly, AI infra interest match",
-   "bg": "b82045d5c9e1"
-  }
- },
- {
-  "key": "GitLab::8638295002",
-  "company": "GitLab",
-  "title": "Staff Engineer, People Technology",
-  "location": "Remote, Canada; Remote, United States",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8638295002",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "GitLab::8654230002",
@@ -252,36 +114,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Cloudflare::8007815",
-  "company": "Cloudflare",
-  "title": "Engineering Manager - Security Platform",
-  "location": "Distributed; Hybrid",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8007815?gh_jid=8007815",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Cloudflare::8078129",
-  "company": "Cloudflare",
-  "title": "Senior Customer Engineer, Digital Native Enterprise - Los Angeles",
-  "location": "Distributed",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8078129?gh_jid=8078129",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Cloudflare::8122071",
@@ -294,32 +127,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Sales/customer engineering role",
-    "Not hands-on software engineering",
-    "Dealbreaker: sales engineering"
-   ],
-   "concerns": [
-    "Wrong function entirely",
-    "Location Canada, not remote-US/Utah"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 15,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Sales/customer engineering role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cloudflare::8078323",
@@ -332,8 +140,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Cloudflare::8121983",
@@ -346,32 +153,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Customer-facing sales engineering role",
-    "Not hands-on software engineering",
-    "Dealbreaker: sales engineering"
-   ],
-   "concerns": [
-    "Wrong function for candidate",
-    "Location Toronto, not remote-confirmed"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 20,
-   "opportunity_score": 10,
-   "score": 10,
-   "fit": "no",
-   "reason": "Customer-facing sales engineering role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cloudflare::8082834",
@@ -384,8 +166,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Cloudflare::8121827",
@@ -398,30 +179,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Sales engineering role, explicit dealbreaker",
-    "Not hands-on software engineering"
-   ],
-   "concerns": [
-    "Wrong function entirely"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 20,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Sales engineering role, explicit dealbreaker",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cloudflare::8087769",
@@ -434,8 +192,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Cloudflare::8115936",
@@ -448,32 +205,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Sales/customer-facing engineering role",
-    "Location Shenzhen/Singapore not remote-US",
-    "Dealbreaker: sales engineering/customer support"
-   ],
-   "concerns": [
-    "Wrong function - customer-facing sales",
-    "Location incompatible with Utah/remote-US preference"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 5,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Sales/customer-facing engineering role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cloudflare::8093023",
@@ -486,8 +218,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8099099",
@@ -500,22 +231,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Coinbase::8072932",
-  "company": "Coinbase",
-  "title": "Forward Deployed Engineer, Finance [Office of the CTO]",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8072932?gh_jid=8072932",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8097880",
@@ -528,8 +244,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8124224",
@@ -542,33 +257,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Pure people-management role, not IC",
-    "AI automation/compliance domain interesting but wrong fit",
-    "Remote-first matches location preference"
-   ],
-   "concerns": [
-    "Explicit management role, conflicts with IC preference",
-    "Compliance domain far from strengths",
-    "Quarterly in-person surges required"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Pure people-management role, not IC",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8095207",
@@ -581,8 +270,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8095252",
@@ -595,8 +283,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8082199",
@@ -609,8 +296,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8064873",
@@ -623,8 +309,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8088201",
@@ -637,8 +322,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8104873",
@@ -651,32 +335,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Remote matches location preference",
-    "Backend engineering overlaps skills"
-   ],
-   "concerns": [
-    "Requires production Solidity/smart contract experience",
-    "Crypto/blockchain domain not in background",
-    "No frontend/React work involved"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Remote matches location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8104148",
@@ -689,32 +348,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Analytics/data engineering, not core software engineering fit",
-    "Remote is practical but role mismatched",
-    "Compliance data modeling not aligned with strengths"
-   ],
-   "concerns": [
-    "Wrong function - data/analytics engineering not full-stack SWE",
-    "Requires compliance/data domain expertise not shown"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 55,
-   "opportunity_score": 22,
-   "score": 22,
-   "fit": "no",
-   "reason": "Analytics/data engineering, not core software engineering fit",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8064916",
@@ -727,8 +361,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::8114877",
@@ -741,34 +374,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Auth/identity infrastructure aligns with OAuth/JWT/Cognito experience",
-    "Remote-first matches location preference",
-    "Staff-level IC role fits seniority target",
-    "Go/gRPC specialization not in current stack"
-   ],
-   "concerns": [
-    "Requires deep Go expertise, candidate is C#/React focused",
-    "Quarterly in-person surges may require travel",
-    "Security/identity domain depth may be a gap"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 55,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Auth/identity infrastructure aligns with OAuth/JWT/Cognito experience",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::8122887",
@@ -781,34 +387,33 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Strong React/frontend craft alignment",
-    "Principal IC role matches seniority target",
-    "UX engineering hybrid design/eng focus differs from core SWE"
-   ],
-   "concerns": [
-    "Heavy design-partnership/UX research emphasis, less pure engineering",
-    "Ads domain unfamiliar to candidate background",
-    "Unclear comp vs $190k minimum"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
-   "practical_fit": 85,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Reddit::8084032",
+  "company": "Reddit",
+  "title": "Senior Machine Learning Engineer, Ads ML Platform",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8084032",
+  "posted": "2026-07-24",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Reddit::8127022",
+  "company": "Reddit",
+  "title": "Senior Machine Learning Infrastructure Engineer, Embedding Platform",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8127022",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::8112967",
@@ -821,32 +426,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "ML platform/distributed training focus mismatches candidate stack",
-    "Remote is workable location-wise",
-    "Requires deep ML infra expertise not demonstrated"
-   ],
-   "concerns": [
-    "No ML systems background",
-    "Highly specialized ML platform role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 40,
-   "practical_fit": 70,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "ML platform/distributed training focus mismatches candidate stack",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::8106246",
@@ -859,32 +439,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role matches location prefs",
-    "Backend distributed systems, not frontend-leaning fit",
-    "Deep infra specialization mismatch with candidate strengths"
-   ],
-   "concerns": [
-    "Requires deep messaging/streaming infra expertise not in profile",
-    "Not aligned with React/full-stack/frontend focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Remote US role matches location prefs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::8122606",
@@ -897,32 +452,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "ML/recommendation systems mismatch with core stack",
-    "Remote US practical fit good",
-    "Not frontend/full-stack engineering focus"
-   ],
-   "concerns": [
-    "Requires deep ML/recsys expertise candidate lacks",
-    "Wrong technical specialization"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 30,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "ML/recommendation systems mismatch with core stack",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Reddit::8127002",
+  "company": "Reddit",
+  "title": "Staff Android Engineer, Brand Ad Formats",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8127002",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::8082867",
@@ -935,8 +478,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::8115838",
@@ -949,30 +491,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Requires deep ML/ads ranking expertise, not candidate's background"
-   ],
-   "concerns": [
-    "Wrong function: ML engineering vs full-stack/frontend",
-    "No demonstrated ML modeling experience"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 8,
-   "interest_fit": 10,
-   "practical_fit": 60,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Requires deep ML/ads ranking expertise, not candidate's background",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Reddit::8126982",
+  "company": "Reddit",
+  "title": "Staff Machine Learning Infrastructure Engineer, Embedding Platform",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8126982",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::8094764",
@@ -985,8 +517,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::8115128",
@@ -999,30 +530,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Presales/sales engineering role",
-    "Explicit dealbreaker: sales engineering"
-   ],
-   "concerns": [
-    "Customer-facing sales role, not hands-on engineering"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 10,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Presales/sales engineering role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::8081530",
@@ -1035,8 +543,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::8096642",
@@ -1049,36 +556,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Twilio::8097672",
-  "company": "Twilio",
-  "title": "Software Engineer (L2)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8097672",
-  "posted": "2026-07-30",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Twilio::8100236",
-  "company": "Twilio",
-  "title": "Software Engineer (L2)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8100236",
-  "posted": "2026-07-31",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::7946610",
@@ -1091,8 +569,33 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Twilio::8097672",
+  "company": "Twilio",
+  "title": "Software Engineer (L2)",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8097672",
+  "posted": "2026-07-30",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Twilio::8100236",
+  "company": "Twilio",
+  "title": "Software Engineer (L2)",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8100236",
+  "posted": "2026-07-31",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::7689461",
@@ -1105,8 +608,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::8098945",
@@ -1119,8 +621,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::8103253",
@@ -1133,8 +634,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::8026207",
@@ -1147,34 +647,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role",
-    "Platform/backend engineering aligns with strengths",
-    "L2 title suggests junior-mid level",
-    "AWS/Kubernetes matches tech stack"
-   ],
-   "concerns": [
-    "L2 level likely below Principal seniority/comp",
-    "Title suggests junior positioning",
-    "Compensation likely below $190k minimum"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote US role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::8026203",
@@ -1187,53 +660,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
-   "confidence": "low",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": false,
-   "bg": "b82045d5c9e1"
-  }
- },
- {
-  "key": "Twilio::8076802",
-  "company": "Twilio",
-  "title": "Staff, Business Intelligence Engineer",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8076802",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Twilio::8074762",
-  "company": "Twilio",
-  "title": "Staff, Business Intelligence Engineer",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8074762",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Grafana Labs::6130907004",
@@ -1246,22 +673,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Grafana Labs::6121755004",
-  "company": "Grafana Labs",
-  "title": "Senior Machine Learning Engineer, Developer Advocacy | US | Remote",
-  "location": "United States (Remote)",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6121755004",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Grafana Labs::6137468004",
@@ -1274,32 +686,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Sales engineering role, explicit dealbreaker",
-    "Customer-facing pre-sales, not hands-on engineering",
-    "Remote US matches location preference"
-   ],
-   "concerns": [
-    "Sales engineering dealbreaker",
-    "Not a hands-on IC engineering role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Sales engineering role, explicit dealbreaker",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Grafana Labs::6127968004",
@@ -1312,8 +699,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Webflow::8122601",
+  "company": "Webflow",
+  "title": "Associate Infrastructure Engineer",
+  "location": "CA Remote (BC & ON only); U.S. Remote",
+  "url": "https://job-boards.greenhouse.io/webflow/jobs/8122601",
+  "posted": "2026-08-12",
+  "salary": "$ 158,300 - $ 190,000",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Webflow::8075059",
@@ -1326,8 +725,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Mercury::6141014004",
@@ -1340,32 +738,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Data engineering leadership, not software engineering IC",
-    "Head of function is people management, not hands-on",
-    "Remote option available"
-   ],
-   "concerns": [
-    "Pure management role, dealbreaker",
-    "Wrong function - data eng vs full-stack"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Data engineering leadership, not software engineering IC",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Mercury::6134310004",
@@ -1378,32 +751,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Security engineering not candidate's core focus",
-    "Remote option available",
-    "AWS overlap but different specialization"
-   ],
-   "concerns": [
-    "Wrong function - security vs product engineering",
-    "Not aligned with candidate's frontend/full-stack strengths"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 20,
-   "practical_fit": 60,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Security engineering not candidate's core focus",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Gusto::8077301",
@@ -1416,8 +764,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7817804003",
@@ -1430,8 +777,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7822387003",
@@ -1444,32 +790,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "ML engineering, not full-stack/frontend expertise",
-    "No ML/data science background shown",
-    "Wrong function despite remote appeal"
-   ],
-   "concerns": [
-    "Requires ML modeling expertise candidate lacks",
-    "Junior-ish 2+ years level mismatched to Principal"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "ML engineering, not full-stack/frontend expertise",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7796534003",
@@ -1482,8 +803,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7812982003",
@@ -1496,8 +816,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7785812003",
@@ -1510,33 +829,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US aligns with location preference",
-    "Backend infra role, not core frontend strength",
-    "Fintech batch infra less aligned with SaaS/frontend focus"
-   ],
-   "concerns": [
-    "Heavy backend/infra emphasis vs frontend strength",
-    "Team-lead/ownership scope may be more managerial",
-    "Limited data on compensation"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote US aligns with location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7808384003",
@@ -1549,8 +842,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7820306003",
@@ -1563,34 +855,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US matches location preference",
-    "Distributed systems and reliability platform work",
-    "AI-assisted development aligns with interests",
-    "Backend-heavy, less frontend/React focus"
-   ],
-   "concerns": [
-    "Backend-only role, less frontend architecture",
-    "Leadership/team ownership language beyond pure IC",
-    "Fintech domain differs from prior enterprise SaaS"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Remote US matches location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7819654003",
@@ -1603,8 +868,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7819999003",
@@ -1617,31 +881,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Analytics engineering not software engineering",
-    "dbt/data modeling mismatch with candidate's stack",
-    "Wrong function despite remote fit"
-   ],
-   "concerns": [
-    "Requires analytics engineering, not full-stack SWE"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 30,
-   "practical_fit": 75,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Analytics engineering not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7819449003",
@@ -1654,35 +894,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Backend distributed systems overlap with cloud architecture",
-    "Identity/auth (OAuth/JWT) aligns with his experience",
-    "Requires Python/Kotlin, not his core stack",
-    "Security specialization outside core expertise"
-   ],
-   "concerns": [
-    "Deep CIAM security specialization not demonstrated",
-    "Python/Kotlin vs his C#/React/TypeScript stack",
-    "Highly specialized identity domain requirement"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7813107003",
@@ -1695,34 +907,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US matches location preference",
-    "Staff IC role fits seniority target",
-    "Strong technical ownership and architecture scope",
-    "AI-native team aligns with AI interest"
-   ],
-   "concerns": [
-    "Banking/fintech infra domain differs from candidate's stack",
-    "Unclear tech stack match (.NET/React not mentioned)",
-    "High-stakes regulated banking may require deep domain ramp-up"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 65,
-   "practical_fit": 75,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Remote US matches location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7833950003",
@@ -1735,34 +920,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US matches location preference",
-    "Staff-level IC role",
-    "Backend infra not core strength",
-    "Database platform specialization mismatch"
-   ],
-   "concerns": [
-    "Deep OLTP/database infra expertise required, not core skillset",
-    "Little frontend/full-stack overlap",
-    "Highly specialized distributed database focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 85,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote US matches location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Affirm::7819704003",
@@ -1775,48 +933,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location preference",
-    "Staff-level backend platform ownership",
-    "Fintech backend heavy, less frontend/React",
-    "Strong technical leadership scope"
-   ],
-   "concerns": [
-    "Backend-only, less aligned with frontend strengths",
-    "No .NET/AWS stack mentioned, likely different stack",
-    "Financial platform domain unfamiliar"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 60,
-   "practical_fit": 80,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Remote US role fits location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
-  "key": "Affirm::7803078003",
-  "company": "Affirm",
-  "title": "Staff Software Engineer, Backend (Search)",
-  "location": "Remote US",
-  "url": "https://job-boards.greenhouse.io/affirm/jobs/7803078003",
-  "posted": "2026-07-22",
+  "key": "Discord::8694476002",
+  "company": "Discord",
+  "title": "Senior Software Engineer, Data Platform",
+  "location": "San Francisco Bay Area or Remote (U.S.)",
+  "url": "https://job-boards.greenhouse.io/discord/jobs/8694476002",
+  "posted": "2026-08-12",
   "salary": null,
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Supabase::dcf09dfe-55bc-44ba-b5db-1a2de7f33216",
@@ -1829,8 +959,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Supabase::f6035bf8-4f44-4425-9944-d5509a3c8652",
@@ -1843,8 +972,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Supabase::98ef6a11-9898-4960-9931-1264285849f3",
@@ -1857,8 +985,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Supabase::11beb619-0c25-4b11-9818-3f18e278c65b",
@@ -1871,8 +998,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Supabase::8229db66-dc3f-4ffe-8d86-90ce9ffb4c90",
@@ -1885,8 +1011,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Supabase::3b5d54ca-741b-45ac-bd3f-31605a0d3541",
@@ -1899,8 +1024,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Supabase::f048dd68-63f8-4f98-9860-3d5a43c09a01",
@@ -1913,8 +1037,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Supabase::f44742fb-18c6-478f-bf78-63707ed57db7",
@@ -1927,34 +1050,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote, matches JS/TS strengths",
-    "Developer tooling/DX aligns with interests",
-    "Public library-authoring differs from SaaS app work",
-    "Strong TypeScript type-system focus fits skillset"
-   ],
-   "concerns": [
-    "Requires deep OSS library maintenance experience",
-    "Different from enterprise SaaS full-stack background",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 60,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Remote, matches JS/TS strengths",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "PostHog::1803b1de-d33b-4542-8e38-b6c4954cb789",
@@ -1967,33 +1063,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Remote-friendly, matches location prefs",
-    "Backend engineering aligns with full-stack skills",
-    "Fast-growing product-led SaaS",
-    "Vague description gives little scope detail"
-   ],
-   "concerns": [
-    "Description cut off, unclear seniority/comp",
-    "Stack alignment (Python/analytics) uncertain vs .NET/React background"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Remote-friendly, matches location prefs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "PostHog::b4bc11c6-49a8-48e1-9815-950ce7eef84d",
@@ -2006,34 +1076,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "AI infrastructure/devtool company aligns with interests",
-    "Remote role fits location preference",
-    "Thin description obscures actual scope",
-    "AI-assisted development experience relevant"
-   ],
-   "concerns": [
-    "Role title 'Context Engineer' unclear mandate",
-    "Unclear if hands-on senior IC engineering",
-    "Unknown compensation, seniority match unverified"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "AI infrastructure/devtool company aligns with interests",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "PostHog::0d1b6a32-6a21-4933-a33a-303b0e49302e",
@@ -2046,33 +1089,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location needs",
-    "SRE not core to full-stack/frontend background",
-    "AI infra company aligns with interests",
-    "Limited overlap with app dev strengths"
-   ],
-   "concerns": [
-    "Role likely emphasizes infra/ops over product engineering",
-    "Unclear if compensation meets $190k minimum"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 40,
-   "practical_fit": 75,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Buffer::1ee8b707-48a0-40cc-a319-3fb7c665a1e8",
@@ -2085,8 +1102,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Linear::f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1",
@@ -2099,32 +1115,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Analytics engineering, not software engineering",
-    "dbt/SQL analytics focus mismatched with candidate",
-    "Remote NA aligns practically but wrong function"
-   ],
-   "concerns": [
-    "Not a full-stack/platform engineering role",
-    "Data analytics not candidate's core strength"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Analytics engineering, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Replit::2fa2d079-96a5-4d51-8718-04134ed39032",
@@ -2137,8 +1128,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Ramp::b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
@@ -2151,8 +1141,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Vanta::f7225fae-2203-4332-8ea4-8569c7e371d1",
@@ -2165,8 +1154,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Vanta::7600575b-fb06-485e-bc13-626e661a34aa",
@@ -2179,33 +1167,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Data engineering not core strength",
-    "Remote US matches location preference",
-    "Not aligned with frontend/full-stack focus"
-   ],
-   "concerns": [
-    "Requires deep data warehousing/ETL expertise",
-    "Not hands-on frontend/full-stack work",
-    "Different skill set than candidate's core stack"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 80,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Data engineering not core strength",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Vanta::1989a49f-227e-4928-b068-8ff24af88541",
@@ -2218,32 +1180,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Analytics engineering not core strength",
-    "Data warehouse/dbt focus mismatched",
-    "Remote US location works"
-   ],
-   "concerns": [
-    "Requires dbt/SQL analytics specialization",
-    "Not full-stack software engineering role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Analytics engineering not core strength",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Vanta::021cca9c-f937-4d97-8be7-bc83af8307be",
@@ -2256,33 +1193,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Platform engineering and developer tooling focus",
-    "Remote US role fits location preference",
-    "TypeScript-first foundations matches strengths",
-    "Senior IC role, no management required"
-   ],
-   "concerns": [
-    "Titled Senior not Principal, leveling unclear",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 82,
-   "practical_fit": 85,
-   "opportunity_score": 78,
-   "score": 78,
-   "fit": "yes",
-   "reason": "Platform engineering and developer tooling focus",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Render::06377f8a-a255-412a-8032-18ace1d005a5",
@@ -2295,34 +1206,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Cloud/dev platform aligns with infra interests",
-    "Remote US role fits location needs",
-    "Vague scope, thin job description",
-    "Strong company/mission fit for developer tools"
-   ],
-   "concerns": [
-    "Description lacks concrete responsibilities/stack details",
-    "Unclear seniority/level and compensation",
-    "May be more backend/infra than frontend-leaning"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 75,
-   "practical_fit": 85,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "maybe",
-   "reason": "Cloud/dev platform aligns with infra interests",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Render::88cb74a4-bc28-40b1-b792-d3041e3e17d3",
@@ -2335,8 +1219,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Render::b7508c39-c91f-405a-bdef-9c6b6eca1fee",
@@ -2349,8 +1232,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Render::8815f772-6895-4383-a9e5-6c7bdc2bf141",
@@ -2363,8 +1245,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Sentry::86e3e57e-6caf-446a-9208-1a614a138b10",
@@ -2377,8 +1258,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Sentry::5c3196c7-f3d6-4dba-9c41-c886df4b2421",
@@ -2391,8 +1271,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Notion::e3d8dc06-da05-4e9d-a143-2e9c51fa3d51",
@@ -2405,33 +1284,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Security engineering specialization, not core background",
-    "Requires onsite Anchor Days SF/NYC",
-    "AWS/IAM overlap but wrong domain focus"
-   ],
-   "concerns": [
-    "Not remote - hybrid onsite required",
-    "Infrastructure security is niche vs generalist fit",
-    "Would require relocation"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 25,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Security engineering specialization, not core background",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Notion::ca74504a-9b91-4ce3-b0df-97919b46e749",
@@ -2444,32 +1297,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Backend infra role, not frontend-leaning fit",
-    "Onsite Anchor Days conflict with remote need",
-    "Strong engineering culture but wrong tech stack alignment"
-   ],
-   "concerns": [
-    "Requires in-office SF/NYC, no relocation",
-    "Backend distributed systems focus, less React/.NET"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 20,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Backend infra role, not frontend-leaning fit",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Stripe::7811937",
@@ -2482,8 +1310,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Stripe::8089353",
@@ -2496,48 +1323,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Strong engineering org at Stripe",
-    "Security specialization not core background",
-    "Backend/infra skills partially transferable"
-   ],
-   "concerns": [
-    "No security/vulnerability management experience shown",
-    "Not aligned with frontend/full-stack interests",
-    "Specialized security domain expertise required"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 85,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
- },
- {
-  "key": "Instacart::8080512",
-  "company": "Instacart",
-  "title": "Detection Engineer II",
-  "location": "United States - Remote",
-  "url": "https://instacart.careers/job/?gh_jid=8080512",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Instacart::8097510",
@@ -2550,8 +1336,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Instacart::8091191",
@@ -2564,22 +1349,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Instacart::8080310",
-  "company": "Instacart",
-  "title": "Staff Software Engineer, Bazel & Go",
-  "location": "United States - Remote",
-  "url": "https://instacart.careers/job/?gh_jid=8080310",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Instacart::8110286",
@@ -2592,34 +1362,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote matches location preference",
-    "Staff-level IC platform architecture role",
-    "Distributed systems/scale matches interests",
-    "Backend-heavy but strong technical ownership"
-   ],
-   "concerns": [
-    "Backend/distributed-systems heavy vs frontend strength",
-    "Compensation not stated",
-    "High scale infra may require more backend depth than resume shows"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 75,
-   "practical_fit": 85,
-   "opportunity_score": 72,
-   "score": 72,
-   "fit": "yes",
-   "reason": "US-remote matches location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Fivetran::7822951003",
@@ -2632,48 +1375,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Fivetran::7823193003",
-  "company": "Fivetran",
-  "title": "Staff Software Engineer, Metadata",
-  "location": "Remote, California, United States, AMER",
-  "url": "https://www.fivetran.com/careers/job?gh_jid=7823193003",
-  "posted": "2026-08-10",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Backend/platform engineering aligns with strengths",
-    "Remote role but location listed California-specific",
-    "Staff-level IC role matches seniority target",
-    "Data infrastructure differs from core web/full-stack focus"
-   ],
-   "concerns": [
-    "Unclear tech stack match (likely different from .NET/React)",
-    "Location tied to California, remote status ambiguous",
-    "Metadata/data platform domain is less familiar"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 50,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Backend/platform engineering aligns with strengths",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Temporal::5209443007",
@@ -2686,46 +1388,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Support org leadership, not engineering IC",
-    "Remote matches location preference",
-    "Distributed systems domain overlaps tangentially"
-   ],
-   "concerns": [
-    "Pure people-management/support leadership role",
-    "Not hands-on engineering as required"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 20,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Support org leadership, not engineering IC",
-   "bg": "b82045d5c9e1"
-  }
- },
- {
-  "key": "Temporal::5193357007",
-  "company": "Temporal",
-  "title": "Senior Developer Advocate, Developer Education",
-  "location": "United States - Remote Opportunity",
-  "url": "https://job-boards.greenhouse.io/temporaltechnologies/jobs/5193357007",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Temporal::5207314007",
@@ -2738,33 +1401,46 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location",
-    "Distributed systems adjacent to Temporal",
-    "Role is customer-facing services, not product engineering"
-   ],
-   "concerns": [
-    "Primarily customer support/services role",
-    "Not hands-on product development",
-    "Sales-engineering-like technical services mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 40,
-   "practical_fit": 60,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Remote US role fits location",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Temporal::5210820007",
+  "company": "Temporal",
+  "title": "Senior Professional Services Engineer - East",
+  "location": "United States - Remote Opportunity",
+  "url": "https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210820007",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Temporal::5210771007",
+  "company": "Temporal",
+  "title": "Senior Professional Services Engineer - West",
+  "location": "United States - Remote Opportunity",
+  "url": "https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210771007",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Temporal::5210998007",
+  "company": "Temporal",
+  "title": "Senior Software Engineer, Infrastructure Foundations",
+  "location": "United States, Remote Opportunity",
+  "url": "https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210998007",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Temporal::5204483007",
@@ -2777,61 +1453,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "AI infra/dev tools aligns with interests",
-    "Remote US role fits location prefs",
-    "Staff-level IC fits seniority target",
-    "Truncated posting limits scope clarity"
-   ],
-   "concerns": [
-    "Description cut off, mandate unclear",
-    "May require deep AI/agent specialization gaps"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 65,
-   "practical_fit": 80,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "AI infra/dev tools aligns with interests",
-   "bg": "b82045d5c9e1"
-  }
- },
- {
-  "key": "Dropbox::8074709",
-  "company": "Dropbox",
-  "title": "Senior Fullstack Product Software Engineer, Web Experience",
-  "location": "Remote - Mexico",
-  "url": "https://jobs.dropbox.com/listing/8074709?gh_jid=8074709",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Dropbox::8074704",
-  "company": "Dropbox",
-  "title": "Senior Fullstack Product Software Engineer, Web Experience",
-  "location": "Remote - US: Select locations",
-  "url": "https://jobs.dropbox.com/listing/8074704?gh_jid=8074704",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Chime::8578967002",
@@ -2844,8 +1466,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Plaid::3f299587-7bed-4e59-9eb1-2d5d1df01821",
@@ -2858,31 +1479,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Customer support role - explicit dealbreaker",
-    "Not hands-on engineering ownership"
-   ],
-   "concerns": [
-    "Support function, not engineering",
-    "Career mismatch"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 5,
-   "practical_fit": 40,
-   "opportunity_score": 10,
-   "score": 10,
-   "fit": "no",
-   "reason": "Customer support role - explicit dealbreaker",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Plaid::41448609-24d6-44ea-a5ba-c87cf3dc3f0d",
+  "company": "Plaid",
+  "title": "Staff Software Engineer - AI & Intelligent Tooling",
+  "location": "San Francisco HQ (Remote)",
+  "url": "https://jobs.ashbyhq.com/plaid/41448609-24d6-44ea-a5ba-c87cf3dc3f0d",
+  "posted": "2026-08-12",
+  "salary": "$207.6K \u2013 $306.6K",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "1Password::c22ea4e6-f39b-448c-a9e9-a04445ba18e6",
@@ -2895,8 +1505,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "1Password::df6afe6a-7e62-4d57-be23-22583d0cdeb9",
@@ -2909,8 +1518,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "1Password::5cea0067-467b-4e1a-9ae5-089541ecd827",
@@ -2923,8 +1531,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "1Password::b50830bf-d475-4cd9-b89c-b2176a4d1465",
@@ -2937,31 +1544,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Security engineering role, not software engineering",
-    "Wrong function for candidate's background"
-   ],
-   "concerns": [
-    "No frontend/backend dev focus",
-    "Security specialization mismatch"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Security engineering role, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "1Password::7f885c41-7572-439c-886f-bc508eb9a3d7",
@@ -2974,48 +1557,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role",
-    "Some cloud/software engineering overlap",
-    "Privacy specialization not in candidate background",
-    "Not aligned with frontend/full-stack interests"
-   ],
-   "concerns": [
-    "Requires privacy/compliance domain expertise candidate lacks",
-    "Not a full-stack or platform engineering role",
-    "Different focus than career trajectory"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 25,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Remote US role",
-   "bg": "b82045d5c9e1"
-  }
- },
- {
-  "key": "Confluent::80a47c3e-a160-4277-a452-1eef9c689167",
-  "company": "Confluent",
-  "title": "Staff Software Engineer",
-  "location": "Mountain View, California (Remote)",
-  "url": "https://jobs.ashbyhq.com/confluent/80a47c3e-a160-4277-a452-1eef9c689167",
-  "posted": "2026-07-22",
-  "salary": "$235.7K \u2013 $277K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Docker::ec1eeb85-73bd-4956-bb67-93e0c42958e2",
@@ -3028,8 +1570,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Docker::8faa282d-9783-4957-bace-ab29abd9e470",
@@ -3042,34 +1583,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Developer tooling company aligns with interests",
-    "Remote-first culture",
-    "OS-level systems work differs from candidate stack",
-    "Restricted to East Coast timezone"
-   ],
-   "concerns": [
-    "Requires East Coast timezone, excludes Utah candidate",
-    "Low-level OS/installer work not core strength",
-    "Not React/.NET focused"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 40,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Developer tooling company aligns with interests",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Docker::c7d880eb-4fb5-48db-b325-595cc8a8d017",
@@ -3082,8 +1596,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Docker::57ccbca7-6818-4e34-8f31-bf762e1f4e00",
@@ -3096,8 +1609,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Airbyte::b59bbc91-fb77-4a08-9c47-0fca7f755942",
@@ -3110,8 +1622,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Airbyte::5930fed9-c4f6-43c3-87be-3402c2c46489",
@@ -3124,8 +1635,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Close::bbd78474-bee4-4fdc-a670-9234457bcf29",
@@ -3138,8 +1648,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Pinecone::7ef089cb-a721-4ad8-a6d0-c390e64991d2",
@@ -3152,34 +1661,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "AI infrastructure aligns with interests",
-    "US remote matches location preference",
-    "Backend distributed systems architecture role",
-    "Strong company/mandate in AI knowledge infra"
-   ],
-   "concerns": [
-    "Requires deep distributed systems/DB internals expertise not evident",
-    "Frontend-leaning background is not core strength here",
-    "Likely expects specialized IR/vector search experience"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 70,
-   "practical_fit": 90,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "AI infrastructure aligns with interests",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Pinecone::ad347d1a-93d7-4867-83bc-99b06d3b5f01",
@@ -3192,34 +1674,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Remote role fits location preference",
-    "AI infrastructure aligns with interests",
-    "Full-stack API/SDK ownership matches strengths",
-    "Developer-facing platform work matches DevEx passion"
-   ],
-   "concerns": [
-    "Heavy AI-agent/MCP specialization may be a gap",
-    "Compensation not stated",
-    "NYC-based team culture despite remote"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 66,
-   "interest_fit": 78,
-   "practical_fit": 88,
-   "opportunity_score": 70,
-   "score": 70,
-   "fit": "yes",
-   "reason": "Remote role fits location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Pinecone::8beaa81a-20be-4b3c-a38c-b85d13bf1df9",
@@ -3232,33 +1687,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "AI infrastructure aligns with interests",
-    "Backend distributed systems overlap",
-    "Remote listed but NYC-based team"
-   ],
-   "concerns": [
-    "Deep distributed retrieval/ML infra specialization not in background",
-    "Location says NYC remote, unclear true remote policy",
-    "Heavy backend/infra vs candidate's frontend-leaning strength"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 65,
-   "practical_fit": 45,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "AI infrastructure aligns with interests",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Tailscale::4710755005",
@@ -3271,8 +1700,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Tailscale::4715448005",
@@ -3285,8 +1713,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Tailscale::4721714005",
@@ -3299,34 +1726,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location preference",
-    "AI-native engineering culture matches interests",
-    "Production-grade platform work aligns with strengths",
-    "Infrastructure/dev tools company matches priorities"
-   ],
-   "concerns": [
-    "Networking/infra domain differs from frontend focus",
-    "Compensation not specified",
-    "Heavy coding-agent workflow may differ from current stack"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 70,
-   "practical_fit": 90,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Remote US role fits location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Tailscale::4722326005",
@@ -3339,30 +1739,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Sales engineering role, explicit dealbreaker",
-    "Not hands-on product engineering"
-   ],
-   "concerns": [
-    "Wrong function - sales, not engineering"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 70,
-   "opportunity_score": 12,
-   "score": 12,
-   "fit": "no",
-   "reason": "Sales engineering role, explicit dealbreaker",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "LaunchDarkly::7861151003",
+  "company": "LaunchDarkly",
+  "title": "Backend Engineer, Flag Delivery",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/7861151003",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "LaunchDarkly::7819879003",
@@ -3375,8 +1765,46 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "LaunchDarkly::7860525003",
+  "company": "LaunchDarkly",
+  "title": "Sr Backend Engineer, Billing",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/7860525003",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "LaunchDarkly::7861200003",
+  "company": "LaunchDarkly",
+  "title": "Sr Backend Engineer, Flag Delivery",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/7861200003",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "LaunchDarkly::7860487003",
+  "company": "LaunchDarkly",
+  "title": "Sr Backend Engineer, Identity & Access Management",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/7860487003",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "LaunchDarkly::7849596003",
@@ -3389,33 +1817,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Staff-level IC technical ownership",
-    "Distributed systems differs from frontend/full-stack focus",
-    "Edge/streaming infra not core strength"
-   ],
-   "concerns": [
-    "Deep distributed systems specialization vs generalist background",
-    "Heavy on-call/infra ops focus, less frontend"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "ClickHouse::6126897004",
@@ -3428,8 +1830,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "ClickHouse::5994727004",
@@ -3442,8 +1843,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "ClickHouse::6142784004",
+  "company": "ClickHouse",
+  "title": "Senior Cloud Software Engineer - Efficiency Engineering",
+  "location": "United States(Remote)",
+  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/6142784004",
+  "posted": "2026-08-13",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "ClickHouse::6140168004",
@@ -3456,33 +1869,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Consulting/support role not core engineering",
-    "Customer-facing consultative work",
-    "Not aligned with hands-on IC product engineering goals"
-   ],
-   "concerns": [
-    "Heavy customer support component",
-    "Database specialist domain (ClickHouse) mismatch",
-    "Consulting/project work, not product engineering"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 25,
-   "practical_fit": 65,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Consulting/support role not core engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "ClickHouse::6127775004",
@@ -3495,8 +1882,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "ClickHouse::6130149004",
@@ -3509,8 +1895,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4698956006",
@@ -3523,34 +1908,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Principal IC platform role",
-    "Strong technical scope and architecture ownership",
-    "Security/build systems not core background"
-   ],
-   "concerns": [
-    "Requires deep security/CVE/build pipeline expertise",
-    "Golang/Rust ecosystem focus not in stack",
-    "Heavy backend infra vs frontend strength"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4700281006",
@@ -3563,8 +1921,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4700287006",
@@ -3577,8 +1934,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4700937006",
@@ -3591,8 +1947,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4699416006",
@@ -3605,8 +1960,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4686153006",
@@ -3619,34 +1973,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Backend/infra focus, not frontend-leaning",
-    "Kubernetes/build systems outside core strengths",
-    "Strong engineering culture at innovative company"
-   ],
-   "concerns": [
-    "Heavy Go/Kubernetes package-build specialization mismatch",
-    "Little React/full-stack overlap",
-    "Deep systems/security domain expertise required"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4699210006",
@@ -3659,8 +1986,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4696743006",
@@ -3673,30 +1999,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Specialized security engineering, not candidate's domain",
-    "No frontend/full-stack alignment"
-   ],
-   "concerns": [
-    "Requires deep security/DevSecOps specialization candidate lacks"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 20,
-   "practical_fit": 70,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Specialized security engineering, not candidate's domain",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4700933006",
@@ -3709,8 +2012,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Chainguard::4700929006",
@@ -3723,8 +2025,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Cresta::5376093008",
@@ -3737,33 +2038,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role",
-    "AI platform company",
-    "DevRel involves customer-facing support/evangelism",
-    "Not hands-on core engineering role"
-   ],
-   "concerns": [
-    "DevRel leans toward community/support, dealbreaker adjacent",
-    "Thin description limits mandate clarity"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "no",
-   "reason": "Remote US role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Cresta::5376924008",
@@ -3776,8 +2051,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Cresta::5369032008",
@@ -3790,8 +2064,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Gemini::8099895",
@@ -3804,32 +2077,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Data infra/SRE role, not frontend/full-stack",
-    "Crypto industry not prioritized",
-    "Remote option available"
-   ],
-   "concerns": [
-    "Mismatch with React/full-stack strengths",
-    "Database SRE specialization not in profile"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Data infra/SRE role, not frontend/full-stack",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Together AI::5202015007",
@@ -3842,32 +2090,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Customer support role, explicit dealbreaker",
-    "Weekend/on-call shift work misaligned",
-    "Not software engineering role"
-   ],
-   "concerns": [
-    "Support function not engineering",
-    "Weekend/on-call schedule undesirable"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 35,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Customer support role, explicit dealbreaker",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Together AI::5202021007",
@@ -3880,8 +2103,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Baseten::c07eb44f-b5fa-4808-90b7-03b265d97836",
@@ -3894,8 +2116,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Baseten::db6477fc-111a-4340-bf00-525fe023e6f3",
@@ -3908,8 +2129,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Baseten::3e925ab1-2089-4a79-989e-50479b546eda",
@@ -3922,33 +2142,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Backend infra/observability, not frontend-leaning full-stack",
-    "AI infra industry alignment",
-    "Remote but SF-based team likely onsite bias"
-   ],
-   "concerns": [
-    "Mismatch with frontend/React strengths",
-    "No mention of remote-first policy explicitly",
-    "Compensation unspecified"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 40,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Backend infra/observability, not frontend-leaning full-stack",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Baseten::fb886b59-fdc3-4315-a9b3-c49808bcd2ce",
@@ -3961,33 +2155,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote-eligible AI infrastructure company",
-    "Platform/DevEx engineering aligns with background",
-    "Kubernetes/CI focus differs from frontend strength"
-   ],
-   "concerns": [
-    "Heavy DevOps/SRE focus, not full-stack/frontend",
-    "No compensation stated",
-    "Onsite SF-based team may prefer local presence"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 60,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote-eligible AI infrastructure company",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Baseten::78028a72-2431-4373-aaec-d6e2c9a1cc7d",
@@ -4000,34 +2168,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote infra role at hot AI company",
-    "Platform engineering aligns with strengths",
-    "Testing frameworks niche not core background",
-    "AI infrastructure industry match"
-   ],
-   "concerns": [
-    "Heavy focus on test tooling, not full-stack",
-    "Unclear compensation vs $190k min",
-    "SF-based team culture, remote may be secondary"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote infra role at hot AI company",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Baseten::e71e97a8-6367-4050-b6a9-42ce62ec78f1",
@@ -4040,34 +2181,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Developer productivity/tooling matches strengths",
-    "AI-assisted dev experience aligns with interests",
-    "Remote-friendly, likely fits comp target",
-    "Platform engineering mandate, not evangelism"
-   ],
-   "concerns": [
-    "Heavy AI/agent tooling focus vs full-stack background",
-    "SF-based company culture, remote fit unclear",
-    "May require deep AI infra specialization gaps"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 75,
-   "practical_fit": 80,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Developer productivity/tooling matches strengths",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Deepgram::17f95148-fa1c-4c34-82c8-333589bef789",
@@ -4080,8 +2194,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Deepgram::6f3d761e-4873-43af-a9b1-daeb147661f9",
@@ -4094,8 +2207,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "LangChain::937e131f-1055-4f1f-bd8a-f036e4ba0666",
@@ -4108,8 +2220,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "LangChain::8b533cc4-6654-44b4-b3fc-004def2a9927",
@@ -4122,8 +2233,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "LangChain::38947013-3d0c-4257-aa58-ab8fe247ea3e",
@@ -4136,32 +2246,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "AI infra interest matches but role is customer-facing",
-    "Resembles sales engineering, a stated dealbreaker",
-    "Not pure hands-on product engineering"
-   ],
-   "concerns": [
-    "Customer-facing pre-sales work conflicts with dealbreakers",
-    "Chicago location, unclear remote eligibility for Utah"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 45,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "AI infra interest matches but role is customer-facing",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LangChain::b8dead31-212a-4b92-82a7-c42df16ae877",
@@ -4174,33 +2259,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "AI infra interest aligns loosely",
-    "Role is enablement/teaching, not core engineering",
-    "Customer-facing advisory, not hands-on build"
-   ],
-   "concerns": [
-    "Not primarily software engineering",
-    "Customer support/training dealbreaker overlap",
-    "Unclear compensation and remote-only for SF-based role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "AI infra interest aligns loosely",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "LangChain::385313eb-bff4-4019-8106-42714dc9879a",
@@ -4213,8 +2272,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Sanity::4f892238-04a5-442e-ab36-7f1f60010abf",
@@ -4227,8 +2285,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Sardine::527bac62-7445-4942-b2df-575fcb93e182",
@@ -4241,8 +2298,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Circle::JR101101",
@@ -4255,8 +2311,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Circle::JR101085",
@@ -4269,8 +2324,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Samsara::7811931",
@@ -4283,32 +2337,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "People management role, not IC engineering",
-    "Data platform/lake mgmt not core strength",
-    "Remote US practical fit"
-   ],
-   "concerns": [
-    "Pure management role conflicts with IC preference",
-    "Data engineering focus not aligned with frontend/full-stack strength"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 65,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "People management role, not IC engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Samsara::8091855",
+  "company": "Samsara",
+  "title": "Senior AI Data Engineer",
+  "location": "Remote - US",
+  "url": "https://www.samsara.com/company/careers/roles/8091855?gh_jid=8091855",
+  "posted": "2026-08-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Samsara::8063736",
@@ -4321,8 +2363,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Samsara::8055217",
@@ -4335,8 +2376,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Samsara::8094156",
@@ -4349,8 +2389,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Samsara::8083352",
@@ -4363,34 +2402,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "AI-adjacent engineering role",
-    "Remote (CA-tagged, may exclude Utah)",
-    "Not core frontend/full-stack match",
-    "Sales/GTM AI focus differs from background"
-   ],
-   "concerns": [
-    "Location listed as Remote-CA, may require CA residency",
-    "Heavy GenAI/ML specialization not core strength",
-    "Sales ops domain mismatch"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "AI-adjacent engineering role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Samsara::8050373",
@@ -4403,8 +2415,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Samsara::8064742",
@@ -4417,33 +2428,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Staff IC role matches seniority target",
-    "IoT/data platform aligns with cloud/backend skills",
-    "Thin description limits mandate clarity"
-   ],
-   "concerns": [
-    "Description truncated, unclear tech stack fit",
-    "IoT/hardware domain differs from SaaS background"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
-   "practical_fit": 85,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "yes",
-   "reason": "Remote US role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Samsara::8068215",
@@ -4456,8 +2441,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::4fba45fc-b27f-4ac8-9eac-2b8ac66c0a58",
@@ -4470,8 +2454,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Hinge Health::62606e75-fd9f-4f9e-85c2-63a82e849db2",
+  "company": "Hinge Health",
+  "title": "Software Engineer II",
+  "location": "San Francisco-HQ (Remote)",
+  "url": "https://jobs.ashbyhq.com/hinge-health/62606e75-fd9f-4f9e-85c2-63a82e849db2",
+  "posted": "2026-08-13",
+  "salary": "$129.6K \u2013 $194.4K",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::aaef9501-f998-442b-882c-32d0e8023405",
@@ -4484,8 +2480,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::369dbd5f-0a12-4d57-9e96-8e1f38ba9ea2",
@@ -4498,8 +2493,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::96dbc789-0ea8-4c66-b70e-8ef21af7b55c",
@@ -4512,8 +2506,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::f7e949d1-fe6b-4357-bf1c-52cfe0f5f790",
@@ -4526,8 +2519,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::d7bba1dc-1f6d-4ad0-9ad0-e65aa0aae628",
@@ -4540,34 +2532,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Remote, senior IC staff engineer role",
-    "Full-stack ownership building new product",
-    "Enterprise/AI-powered platform aligns with interests",
-    "Cross-functional leadership without management"
-   ],
-   "concerns": [
-    "Healthcare domain unfamiliar vs SaaS background",
-    "Tech stack unspecified in posting",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
-   "practical_fit": 75,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "yes",
-   "reason": "Remote, senior IC staff engineer role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::b0583044-fe9f-4e3a-bdca-1a8cf53960d5",
@@ -4580,34 +2545,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "ML infra/CV focus mismatches full-stack background",
-    "Hybrid Montreal onsite 3 days/week",
-    "Not remote-eligible per policy",
-    "Requires ML/LLM ops specialization not in profile"
-   ],
-   "concerns": [
-    "Location requires relocation to Montreal",
-    "Specialized ML infra skills not demonstrated",
-    "Not aligned with hands-on full-stack/frontend focus"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 40,
-   "practical_fit": 30,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "ML infra/CV focus mismatches full-stack background",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::5e7401a9-405b-4bd6-866e-d5f008657e2d",
@@ -4620,34 +2558,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Remote senior IC engineering role",
-    "Greenfield product build from scratch",
-    "Cross-functional technical leadership opportunity",
-    "Enterprise SaaS-like healthtech platform"
-   ],
-   "concerns": [
-    "Domain (healthtech) mismatch vs enterprise SaaS background",
-    "Tech stack details not specified",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 58,
-   "score": 58,
-   "fit": "yes",
-   "reason": "Remote senior IC engineering role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::146a5143-c0af-4aef-b504-8c1f5ed6339a",
@@ -4660,34 +2571,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Remote role fits location needs",
-    "Staff IC role matches seniority target",
-    "React/Node-adjacent stack differs from .NET expertise",
-    "Healthcare domain outside stated industry preference"
-   ],
-   "concerns": [
-    "NestJS/PostgreSQL not core strengths vs .NET stack",
-    "Domain (MSK healthcare) not a listed interest",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
-   "practical_fit": 60,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Remote role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Hinge Health::940323e5-4b8a-4e42-830d-0850bfc07c39",
@@ -4700,49 +2584,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Staff engineering technical leadership role",
-    "Remote position matches location preference",
-    "Full-stack architecture but different stack (NestJS/React Native)",
-    "Greenfield product development aligns with interests",
-    "Healthcare vertical is unfamiliar domain"
-   ],
-   "concerns": [
-    "Node/NestJS and React Native, not core .NET/React stack",
-    "SF HQ company may have unstated onsite culture expectations",
-    "Compensation not specified in posting"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
-   "practical_fit": 55,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Staff engineering technical leadership role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
-  "key": "Included Health::e2a1f001-c4d3-4f5c-9fef-8e791332d36f",
-  "company": "Included Health",
-  "title": "Staff AI Solutions Engineer",
-  "location": "Remote",
-  "url": "https://jobs.lever.co/includedhealth/e2a1f001-c4d3-4f5c-9fef-8e791332d36f",
-  "posted": "2026-07-22",
-  "salary": null,
+  "key": "Hinge Health::e4ed90f9-06ad-425b-b974-e3ee990816dd",
+  "company": "Hinge Health",
+  "title": "Test Engineer II",
+  "location": "San Francisco-HQ (Remote)",
+  "url": "https://jobs.ashbyhq.com/hinge-health/e4ed90f9-06ad-425b-b974-e3ee990816dd",
+  "posted": "2026-08-12",
+  "salary": "$126.4K \u2013 $189.6K",
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Headway::c22233f6-3143-4cb4-9c0c-8119e7ae7629",
@@ -4755,34 +2610,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Remote role matches location preference",
-    "Staff-level IC engineering fits seniority target",
-    "Experimentation platform work somewhat aligns with platform engineering interest",
-    "Mission-driven healthtech, not core tech stack listed"
-   ],
-   "concerns": [
-    "No tech stack details to confirm React/.NET fit",
-    "Compensation not stated",
-    "Experimentation specialization may not match core strengths"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote role matches location preference",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Headway::d123a2aa-7c3c-4833-bfc2-4d3356db1041",
@@ -4795,33 +2623,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Remote, staff-level IC engineering role",
-    "Mission-driven enterprise SaaS platform",
-    "Full-stack platform work likely fits skillset",
-    "Series D funded, scaling engineering org"
-   ],
-   "concerns": [
-    "Job description cut off, unclear tech stack",
-    "Unclear compensation details"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 65,
-   "practical_fit": 80,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "Remote, staff-level IC engineering role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Headway::2c7faf60-19df-49c9-9e19-f1bbfa839dc2",
@@ -4834,35 +2636,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Remote role fits location needs",
-    "Staff IC engineering role",
-    "Complex distributed systems and scale problems",
-    "Domain (insurance claims) differs from prior experience",
-    "Backend-heavy, less frontend/React focus"
-   ],
-   "concerns": [
-    "Unclear tech stack alignment (React/.NET not mentioned)",
-    "Insurance domain complexity may require ramp-up",
-    "Compensation not stated"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Remote role fits location needs",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Headway::9ce97d23-19aa-4741-97cf-e8532ce747d3",
@@ -4875,32 +2649,20 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Engineering Manager title is people-management focused",
-    "Remote but NYC-based company",
-    "Not aligned with hands-on IC preference"
-   ],
-   "concerns": [
-    "Pure management role conflicts with dealbreakers",
-    "Title/mandate suggests less hands-on coding"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "no",
-   "reason": "Engineering Manager title is people-management focused",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Headway::c8fc48cc-f556-421f-b824-58b9c82644a6",
+  "company": "Headway",
+  "title": "Staff Infrastructure Engineer",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/headway/c8fc48cc-f556-421f-b824-58b9c82644a6",
+  "posted": "2026-08-12",
+  "salary": "$265K \u2013 $331K",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Angi::59a468ef-aef4-41a1-8bf2-5c920524e5d0",
@@ -4913,8 +2675,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Thumbtack::d98e63a2-bbfb-48eb-8b73-abd3a8eb5976",
@@ -4927,8 +2688,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Thumbtack::1ded15c4-4268-4565-b900-867807645823",
@@ -4941,8 +2701,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Omada Health::8074669",
@@ -4955,8 +2714,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Smartsheet::8083523",
@@ -4969,8 +2727,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Smartsheet::8112250",
@@ -4983,30 +2740,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "SEO/marketing strategy role, not engineering"
-   ],
-   "concerns": [
-    "Wrong function entirely",
-    "No hands-on software engineering"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 10,
-   "practical_fit": 60,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "SEO/marketing strategy role, not engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Smartsheet::8097667",
@@ -5019,8 +2753,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Smartsheet::8070067",
@@ -5033,8 +2766,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Smartsheet::8082218",
@@ -5047,8 +2779,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Smartsheet::8110111",
@@ -5061,30 +2792,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Compliance/security program lead, not engineering",
-    "Wrong function entirely"
-   ],
-   "concerns": [
-    "No software engineering scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 5,
-   "practical_fit": 40,
-   "opportunity_score": 5,
-   "score": 5,
-   "fit": "no",
-   "reason": "Compliance/security program lead, not engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Grow Therapy::058d3dd1-c7c7-421d-9ede-e7f9afdb6211",
@@ -5097,8 +2805,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Grow Therapy::76429bab-1895-4581-9785-4d3a3e670a02",
@@ -5111,8 +2818,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Marqeta::8077189",
@@ -5125,44 +2831,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "name::https://himalayas.app/companies/alten/jobs/3701-body-design-release-engineer-jr",
-  "company": "name",
-  "title": "3701 Body Design & Release Engineer Jr",
-  "location": "Mexico (Remote)",
-  "url": "https://himalayas.app/companies/alten/jobs/3701-body-design-release-engineer-jr",
-  "posted": "2026-08-12",
-  "salary": null,
-  "employment_type": "Full Time",
-  "expires": "2026-10-11",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Automotive mechanical design role, not software engineering"
-   ],
-   "concerns": [
-    "Entirely wrong field",
-    "Junior level, requires relocation to Mexico"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 3,
-   "interest_fit": 2,
-   "practical_fit": 5,
-   "opportunity_score": 2,
-   "score": 2,
-   "fit": "no",
-   "reason": "Automotive mechanical design role, not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Asana::https://weworkremotely.com/remote-jobs/asana-senior-privacy-engineer",
@@ -5175,8 +2844,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-09-01",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::https://weworkremotely.com/remote-jobs/twilio-senior-application-engineer-zuora-billing",
@@ -5189,22 +2857,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-08-22",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Twilio::https://weworkremotely.com/remote-jobs/twilio-associate-application-engineer",
-  "company": "Twilio",
-  "title": "Associate Application Engineer",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/twilio-associate-application-engineer",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-21",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::https://weworkremotely.com/remote-jobs/coinbase-forward-deployed-engineer-compliance-office-of-the-cto",
@@ -5217,33 +2870,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-09-06",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "AI-assisted dev interest but forward-deployed role",
-    "Requires deep compliance domain expertise",
-    "Not core software engineering, more consulting/embedding"
-   ],
-   "concerns": [
-    "Founding/forward-deployed role misaligned with IC preference",
-    "Requires quarterly in-person surges travel",
-    "No React/.NET stack relevance"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 40,
-   "practical_fit": 45,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "AI-assisted dev interest but forward-deployed role",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Jumio::https://weworkremotely.com/remote-jobs/jumio-customer-escalation-engineer",
@@ -5256,32 +2883,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-09-05",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Customer support role, explicit dealbreaker",
-    "Not hands-on engineering ownership",
-    "Wrong function for candidate"
-   ],
-   "concerns": [
-    "Customer support dealbreaker",
-    "Not IC engineering role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 10,
-   "practical_fit": 50,
-   "opportunity_score": 12,
-   "score": 12,
-   "fit": "no",
-   "reason": "Customer support role, explicit dealbreaker",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Truelogic::https://weworkremotely.com/remote-jobs/truelogic-senior-software-architect-c-angular-ai-first-govtech-saas-company",
@@ -5294,8 +2896,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-09-03",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Confiz::https://weworkremotely.com/remote-jobs/confiz-full-stack-engineer-lv-4-java-javascript",
@@ -5308,8 +2909,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-09-03",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Solvd::https://weworkremotely.com/remote-jobs/solvd-security-engineer-ii-iam-saas-governance",
@@ -5322,8 +2922,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-09-03",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Stability AI::https://weworkremotely.com/remote-jobs/stability-ai-senior-product-engineer-growth-lifecycle-infrastructure-music-audio",
@@ -5336,8 +2935,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-09-03",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Coinbase::https://weworkremotely.com/remote-jobs/coinbase-senior-software-engineer-trading",
@@ -5350,8 +2948,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-08-22",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Twilio::https://weworkremotely.com/remote-jobs/twilio-principal-product-manager-enterprise-commerce-platform",
@@ -5364,64 +2961,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-08-22",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Coinbase::https://weworkremotely.com/remote-jobs/coinbase-group-product-manager-developer-infrastructure",
-  "company": "Coinbase",
-  "title": "Group Product Manager, Developer Infrastructure",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/coinbase-group-product-manager-developer-infrastructure",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-21",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Datadog::https://weworkremotely.com/remote-jobs/datadog-senior-developer-advocate-modern-app-development",
-  "company": "Datadog",
-  "title": "Senior Developer Advocate - Modern App Development",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/datadog-senior-developer-advocate-modern-app-development",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-21",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Dropbox::https://weworkremotely.com/remote-jobs/dropbox-principal-software-engineer-core-sharing-collaboration",
-  "company": "Dropbox",
-  "title": "Principal Software Engineer, Core Sharing & Collaboration",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/dropbox-principal-software-engineer-core-sharing-collaboration",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-21",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Dropbox::https://weworkremotely.com/remote-jobs/dropbox-principal-software-engineer-core-sharing-collaboration",
-  "company": "Dropbox",
-  "title": "Principal Software Engineer, Core Sharing & Collaboration",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/dropbox-principal-software-engineer-core-sharing-collaboration",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-21",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Smartsheet::https://weworkremotely.com/remote-jobs/smartsheet-commercial-solutions-engineer",
@@ -5434,36 +2974,7 @@
   "employment_type": "Full-Time",
   "expires": "2026-08-23",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "HighLevel::https://weworkremotely.com/remote-jobs/highlevel-software-development-engineer-iii-core-crm",
-  "company": "HighLevel",
-  "title": "Software Development Engineer III - Core CRM",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/highlevel-software-development-engineer-iii-core-crm",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-21",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
- },
- {
-  "key": "Veripark::https://weworkremotely.com/remote-jobs/veripark-senior-software-developer-crm-ssis",
-  "company": "Veripark",
-  "title": "Senior Software Developer CRM+SSIS",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/veripark-senior-software-developer-crm-ssis",
-  "posted": "2026-07-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-21",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::144633",
@@ -5476,8 +2987,20 @@
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "YipitData::145919",
+  "company": "YipitData",
+  "title": "Product Manager, Quant Platform",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/145919-product-manager-quant-platform",
+  "posted": "2026-08-13",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::145336",
@@ -5490,32 +3013,7 @@
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "This is a Product Manager role, not engineering",
-    "Requires ML platform/PM background, not hands-on IC",
-    "Wrong function despite remote and tech alignment"
-   ],
-   "concerns": [
-    "Not a software engineering IC role",
-    "Requires product management experience"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 30,
-   "practical_fit": 65,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "This is a Product Manager role, not engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  },
  {
   "key": "Upstart::142530",
@@ -5528,8 +3026,7 @@
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "Reddit::144634",
@@ -5542,8 +3039,7 @@
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "LawnStarter::147510",
@@ -5556,8 +3052,7 @@
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "score_pending": true
+  "match_reason": "core title gate"
  },
  {
   "key": "TE Connectivity::149102",
@@ -5570,31 +3065,6 @@
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Project management role not software engineering",
-    "Hardware R&D domain mismatch",
-    "Not hands-on coding work"
-   ],
-   "concerns": [
-    "Wrong function - PM not engineer",
-    "No SaaS/cloud engineering scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Project management role not software engineering",
-   "bg": "b82045d5c9e1"
-  }
+  "match_reason": "core title gate"
  }
 ]
