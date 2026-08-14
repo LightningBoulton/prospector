@@ -39,19 +39,6 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "GitLab::8615319002",
-  "company": "GitLab",
-  "title": "Senior Backend Engineer - Monitoring and Anomaly Detection (Monetization)",
-  "location": "Remote, Bangalore",
-  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8615319002",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
   "key": "GitLab::8644572002",
   "company": "GitLab",
   "title": "Senior Backend Engineer, Platform Readiness",
@@ -123,19 +110,6 @@
   "location": "Distributed",
   "url": "https://boards.greenhouse.io/cloudflare/jobs/8122071?gh_jid=8122071",
   "posted": "2026-08-12",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Cloudflare::8078323",
-  "company": "Cloudflare",
-  "title": "Senior Customer Engineer, Majors - Detroit, MI",
-  "location": "Distributed",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8078323?gh_jid=8078323",
-  "posted": "2026-07-23",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -299,19 +273,6 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "Coinbase::8064873",
-  "company": "Coinbase",
-  "title": "Senior Software Engineer, Data Layer",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8064873?gh_jid=8064873",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
   "key": "Coinbase::8088201",
   "company": "Coinbase",
   "title": "Senior Software Engineer - Frontend - Coinbase Card team",
@@ -351,19 +312,6 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "Coinbase::8064916",
-  "company": "Coinbase",
-  "title": "Staff Software Engineer, Backend - FinHub (Ledger)",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8064916?gh_jid=8064916",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
   "key": "Coinbase::8114877",
   "company": "Coinbase",
   "title": "Staff Software Engineer (Platform - Access & Authorization)",
@@ -383,6 +331,19 @@
   "location": "Remote - United States",
   "url": "https://job-boards.greenhouse.io/reddit/jobs/8122887",
   "posted": "2026-08-11",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Reddit::8128860",
+  "company": "Reddit",
+  "title": "Senior Backend Engineer, Compliance Engineering",
+  "location": "Remote - United States",
+  "url": "https://job-boards.greenhouse.io/reddit/jobs/8128860",
+  "posted": "2026-08-13",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -468,19 +429,6 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "Reddit::8082867",
-  "company": "Reddit",
-  "title": "Staff Frontend Engineer, Ads Creative",
-  "location": "Remote - United States",
-  "url": "https://job-boards.greenhouse.io/reddit/jobs/8082867",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
   "key": "Reddit::8115838",
   "company": "Reddit",
   "title": "Staff Machine Learning Engineer, Shopping Ads",
@@ -546,6 +494,19 @@
   "match_reason": "core title gate"
  },
  {
+  "key": "Twilio::8044650",
+  "company": "Twilio",
+  "title": "Senior Analytics Engineer",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8044650",
+  "posted": "2026-07-28",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
   "key": "Twilio::8096642",
   "company": "Twilio",
   "title": "Senior Presales Engineer",
@@ -572,19 +533,6 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "Twilio::8097672",
-  "company": "Twilio",
-  "title": "Software Engineer (L2)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8097672",
-  "posted": "2026-07-30",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
   "key": "Twilio::8100236",
   "company": "Twilio",
   "title": "Software Engineer (L2)",
@@ -598,25 +546,12 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "Twilio::7689461",
+  "key": "Twilio::8097672",
   "company": "Twilio",
-  "title": "Software Engineer (L2) Email",
+  "title": "Software Engineer (L2)",
   "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/7689461",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Twilio::8098945",
-  "company": "Twilio",
-  "title": "Software Engineer (L4)",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8098945",
-  "posted": "2026-08-03",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8097672",
+  "posted": "2026-07-30",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -629,6 +564,19 @@
   "title": "Software Engineer (L4)",
   "location": "Remote - US",
   "url": "https://job-boards.greenhouse.io/twilio/jobs/8103253",
+  "posted": "2026-08-03",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Twilio::8098945",
+  "company": "Twilio",
+  "title": "Software Engineer (L4)",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8098945",
   "posted": "2026-08-03",
   "salary": null,
   "employment_type": "",
@@ -709,19 +657,6 @@
   "url": "https://job-boards.greenhouse.io/webflow/jobs/8122601",
   "posted": "2026-08-12",
   "salary": "$ 158,300 - $ 190,000",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Webflow::8075059",
-  "company": "Webflow",
-  "title": "Senior Partner Solutions Engineer - Pacific Time",
-  "location": "CA Remote (BC & ON only); U.S. Remote",
-  "url": "https://job-boards.greenhouse.io/webflow/jobs/8075059",
-  "posted": "2026-07-23",
-  "salary": "$178,000 - $210,000",
   "employment_type": "",
   "expires": "",
   "tier": "core",
@@ -886,7 +821,7 @@
  {
   "key": "Affirm::7819449003",
   "company": "Affirm",
-  "title": "Staff CIAM Security Engineer",
+  "title": "Staff CIAM Software Engineer",
   "location": "Remote US",
   "url": "https://job-boards.greenhouse.io/affirm/jobs/7819449003",
   "posted": "2026-08-12",
@@ -1053,19 +988,6 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "PostHog::1803b1de-d33b-4542-8e38-b6c4954cb789",
-  "company": "PostHog",
-  "title": "Backend Engineer",
-  "location": "Remote",
-  "url": "https://jobs.ashbyhq.com/posthog/1803b1de-d33b-4542-8e38-b6c4954cb789",
-  "posted": "2026-08-06",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
   "key": "PostHog::b4bc11c6-49a8-48e1-9815-950ce7eef84d",
   "company": "PostHog",
   "title": "Context Engineer",
@@ -1138,19 +1060,6 @@
   "url": "https://jobs.ashbyhq.com/ramp/b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
   "posted": "2026-07-28",
   "salary": "$189K \u2013 $330K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Vanta::f7225fae-2203-4332-8ea4-8569c7e371d1",
-  "company": "Vanta",
-  "title": "Staff Product Manager, Data Platform",
-  "location": "Remote U.S.",
-  "url": "https://jobs.ashbyhq.com/vanta/f7225fae-2203-4332-8ea4-8569c7e371d1",
-  "posted": "2026-07-23",
-  "salary": "$243K \u2013 $286K",
   "employment_type": "",
   "expires": "",
   "tier": "core",
@@ -1352,6 +1261,19 @@
   "match_reason": "core title gate"
  },
  {
+  "key": "Instacart::8121910",
+  "company": "Instacart",
+  "title": "Site Reliability Engineer II",
+  "location": "United States - Remote",
+  "url": "https://instacart.careers/job/?gh_jid=8121910",
+  "posted": "2026-08-14",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
   "key": "Instacart::8110286",
   "company": "Instacart",
   "title": "Staff Software Engineer, Orders Platform",
@@ -1536,7 +1458,7 @@
  {
   "key": "1Password::b50830bf-d475-4cd9-b89c-b2176a4d1465",
   "company": "1Password",
-  "title": "Senior Security Engineer, Vulnerability Management",
+  "title": "Senior Security Engineer, Vulnerability Management, PSIRT",
   "location": "Remote (United States | Canada)",
   "url": "https://jobs.ashbyhq.com/1password/b50830bf-d475-4cd9-b89c-b2176a4d1465",
   "posted": "2026-08-04",
@@ -1690,6 +1612,19 @@
   "match_reason": "core title gate"
  },
  {
+  "key": "Tailscale::4723221005",
+  "company": "Tailscale",
+  "title": "Senior Solutions Engineer - Partners",
+  "location": "Remote (United States)",
+  "url": "https://job-boards.greenhouse.io/tailscale/jobs/4723221005",
+  "posted": "2026-08-14",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
   "key": "Tailscale::4710755005",
   "company": "Tailscale",
   "title": "Software Engineer, AI Enablement",
@@ -1820,12 +1755,12 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "ClickHouse::6126897004",
-  "company": "ClickHouse",
-  "title": "Engineering Lead, Web Platform",
-  "location": "United States (Remote)",
-  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/6126897004",
-  "posted": "2026-07-27",
+  "key": "Amplitude::8709027002",
+  "company": "Amplitude",
+  "title": "Staff Software Engineer- UI Foundations Team",
+  "location": "Remote - USA",
+  "url": "https://job-boards.greenhouse.io/amplitude/jobs/8709027002",
+  "posted": "2026-08-13",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -1833,12 +1768,12 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "ClickHouse::5994727004",
+  "key": "ClickHouse::6126897004",
   "company": "ClickHouse",
-  "title": "Senior Cloud Engineer",
-  "location": "(Remote)",
-  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/5994727004",
-  "posted": "2026-07-23",
+  "title": "Engineering Lead, Web Platform",
+  "location": "United States (Remote)",
+  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/6126897004",
+  "posted": "2026-07-27",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -2002,11 +1937,11 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "Chainguard::4700933006",
+  "key": "Chainguard::4700929006",
   "company": "Chainguard",
   "title": "Staff Software Engineer (AI CICD)",
   "location": "Europe - Remote; United Kingdom - Remote; United States - Remote",
-  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700933006",
+  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700929006",
   "posted": "2026-07-29",
   "salary": null,
   "employment_type": "",
@@ -2015,11 +1950,11 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "Chainguard::4700929006",
+  "key": "Chainguard::4700933006",
   "company": "Chainguard",
   "title": "Staff Software Engineer (AI CICD)",
   "location": "Europe - Remote; United Kingdom - Remote; United States - Remote",
-  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700929006",
+  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4700933006",
   "posted": "2026-07-29",
   "salary": null,
   "employment_type": "",
@@ -2047,19 +1982,6 @@
   "location": "United States (Remote)",
   "url": "https://job-boards.greenhouse.io/cresta/jobs/5376924008",
   "posted": "2026-07-31",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Cresta::5369032008",
-  "company": "Cresta",
-  "title": "Solutions Engineer, AI Agent",
-  "location": "United States (Remote)",
-  "url": "https://job-boards.greenhouse.io/cresta/jobs/5369032008",
-  "posted": "2026-07-23",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -2210,6 +2132,19 @@
   "match_reason": "core title gate"
  },
  {
+  "key": "Deepgram::4f9648d7-e25c-440c-8ec6-566a405c7c23",
+  "company": "Deepgram",
+  "title": "Full Stack Web Developer, Marketing",
+  "location": "USA | Remote",
+  "url": "https://jobs.ashbyhq.com/deepgram/4f9648d7-e25c-440c-8ec6-566a405c7c23",
+  "posted": "2026-08-13",
+  "salary": "$125K \u2013 $160K",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
   "key": "LangChain::937e131f-1055-4f1f-bd8a-f036e4ba0666",
   "company": "LangChain",
   "title": "Deployed Engineer (Austin)",
@@ -2275,6 +2210,19 @@
   "match_reason": "core title gate"
  },
  {
+  "key": "LangChain::df7a4d66-2159-4dff-b5ff-92f6e835f242",
+  "company": "LangChain",
+  "title": "Solutions Engineer (Texas)",
+  "location": "Dallas, TX (Remote)",
+  "url": "https://jobs.ashbyhq.com/langchain/df7a4d66-2159-4dff-b5ff-92f6e835f242",
+  "posted": "2026-08-13",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
   "key": "Sanity::4f892238-04a5-442e-ab36-7f1f60010abf",
   "company": "Sanity",
   "title": "Solutions Engineer, PreSales - Senior to Staff level (US)",
@@ -2320,6 +2268,19 @@
   "location": "San Francisco, California, United States of America (Remote)",
   "url": "https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Senior-Site-Reliability-Engineer---Infra-Ops_JR101085/apply",
   "posted": "2026-08-04",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Circle::JR101103",
+  "company": "Circle",
+  "title": "Senior Site Reliability Engineer - CLO",
+  "location": "San Francisco, California, United States of America (Remote)",
+  "url": "https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Senior-Site-Reliability-Engineer---CLO_JR101103/apply",
+  "posted": "2026-08-13",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -2485,7 +2446,7 @@
  {
   "key": "Hinge Health::369dbd5f-0a12-4d57-9e96-8e1f38ba9ea2",
   "company": "Hinge Health",
-  "title": "Sr. Staff Engineer",
+  "title": "Senior Staff Engineer, Growth",
   "location": "San Francisco-HQ (Remote)",
   "url": "https://jobs.ashbyhq.com/hinge-health/369dbd5f-0a12-4d57-9e96-8e1f38ba9ea2",
   "posted": "2026-07-29",
@@ -2704,19 +2665,6 @@
   "match_reason": "core title gate"
  },
  {
-  "key": "Omada Health::8074669",
-  "company": "Omada Health",
-  "title": "Staff Software Engineer",
-  "location": "Remote, USA",
-  "url": "https://job-boards.greenhouse.io/omadahealth/jobs/8074669",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
   "key": "Smartsheet::8083523",
   "company": "Smartsheet",
   "title": "Enterprise Technical Solutions Engineer",
@@ -2762,19 +2710,6 @@
   "location": "-REMOTE, USA-",
   "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8070067",
   "posted": "2026-07-31",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Smartsheet::8082218",
-  "company": "Smartsheet",
-  "title": "Sr. Commercial Solutions Engineer",
-  "location": "-REMOTE, USA-",
-  "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8082218",
-  "posted": "2026-07-23",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -2834,6 +2769,45 @@
   "match_reason": "core title gate"
  },
  {
+  "key": "Elekta::https://himalayas.app/companies/elekta/jobs/software-integration-specialist",
+  "company": "Elekta",
+  "title": "Software Integration Specialist",
+  "location": "Georgia (Remote)",
+  "url": "https://himalayas.app/companies/elekta/jobs/software-integration-specialist",
+  "posted": "2026-08-14",
+  "salary": null,
+  "employment_type": "Full Time",
+  "expires": "2026-10-13",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "NICE::https://himalayas.app/companies/nice/jobs/cx-outbound-solution-engineer-5399156247",
+  "company": "NICE",
+  "title": "CX Outbound Solution Engineer",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/nice/jobs/cx-outbound-solution-engineer-5399156247",
+  "posted": "2026-08-14",
+  "salary": null,
+  "employment_type": "Full Time",
+  "expires": "2026-10-13",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Aflac::https://himalayas.app/companies/aflac/jobs/platform-engineer-iii-remote-us-31999",
+  "company": "Aflac",
+  "title": "Platform Engineer III (Remote, US, 31999)",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/aflac/jobs/platform-engineer-iii-remote-us-31999",
+  "posted": "2026-08-14",
+  "salary": "$95,000\u2013$145,000",
+  "employment_type": "Full Time",
+  "expires": "2026-10-13",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
   "key": "Asana::https://weworkremotely.com/remote-jobs/asana-senior-privacy-engineer",
   "company": "Asana",
   "title": "Senior Privacy Engineer",
@@ -2843,19 +2817,6 @@
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "2026-09-01",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Twilio::https://weworkremotely.com/remote-jobs/twilio-senior-application-engineer-zuora-billing",
-  "company": "Twilio",
-  "title": "Senior Application Engineer, Zuora Billing",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/twilio-senior-application-engineer-zuora-billing",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-22",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2934,32 +2895,6 @@
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "2026-09-03",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Coinbase::https://weworkremotely.com/remote-jobs/coinbase-senior-software-engineer-trading",
-  "company": "Coinbase",
-  "title": "Senior Software Engineer - Trading",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/coinbase-senior-software-engineer-trading",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-22",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Twilio::https://weworkremotely.com/remote-jobs/twilio-principal-product-manager-enterprise-commerce-platform",
-  "company": "Twilio",
-  "title": "Principal Product Manager, Enterprise Commerce Platform",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/twilio-principal-product-manager-enterprise-commerce-platform",
-  "posted": "2026-07-23",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-08-22",
   "tier": "core",
   "match_reason": "core title gate"
  },

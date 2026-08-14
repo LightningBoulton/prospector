@@ -32,7 +32,7 @@
   {
    "key": "1Password::b50830bf-d475-4cd9-b89c-b2176a4d1465",
    "company": "1Password",
-   "title": "Senior Security Engineer, Vulnerability Management",
+   "title": "Senior Security Engineer, Vulnerability Management, PSIRT",
    "status": "",
    "note": ""
   },
@@ -130,7 +130,7 @@
   {
    "key": "Affirm::7819449003",
    "company": "Affirm",
-   "title": "Staff CIAM Security Engineer",
+   "title": "Staff CIAM Software Engineer",
    "status": "",
    "note": ""
   },
@@ -156,6 +156,13 @@
    "note": ""
   },
   {
+   "key": "Aflac::https://himalayas.app/companies/aflac/jobs/platform-engineer-iii-remote-us-31999",
+   "company": "Aflac",
+   "title": "Platform Engineer III (Remote, US, 31999)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Airbyte::b59bbc91-fb77-4a08-9c47-0fca7f755942",
    "company": "Airbyte",
    "title": "Senior AI Platform Engineer",
@@ -166,6 +173,13 @@
    "key": "Airbyte::5930fed9-c4f6-43c3-87be-3402c2c46489",
    "company": "Airbyte",
    "title": "Senior Site Reliability Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Amplitude::8709027002",
+   "company": "Amplitude",
+   "title": "Staff Software Engineer- UI Foundations Team",
    "status": "",
    "note": ""
   },
@@ -331,14 +345,14 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4700933006",
+   "key": "Chainguard::4700929006",
    "company": "Chainguard",
    "title": "Staff Software Engineer (AI CICD)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Chainguard::4700929006",
+   "key": "Chainguard::4700933006",
    "company": "Chainguard",
    "title": "Staff Software Engineer (AI CICD)",
    "status": "",
@@ -348,6 +362,13 @@
    "key": "Chime::8578967002",
    "company": "Chime",
    "title": "Software Engineer, AI Enablement",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Circle::JR101103",
+   "company": "Circle",
+   "title": "Senior Site Reliability Engineer - CLO",
    "status": "",
    "note": ""
   },
@@ -369,13 +390,6 @@
    "key": "ClickHouse::6126897004",
    "company": "ClickHouse",
    "title": "Engineering Lead, Web Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "ClickHouse::5994727004",
-   "company": "ClickHouse",
-   "title": "Senior Cloud Engineer",
    "status": "",
    "note": ""
   },
@@ -432,13 +446,6 @@
    "key": "Cloudflare::8122071",
    "company": "Cloudflare",
    "title": "Senior Customer Engineer, Fed - Toronto, CA",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cloudflare::8078323",
-   "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Majors - Detroit, MI",
    "status": "",
    "note": ""
   },
@@ -513,13 +520,6 @@
    "note": ""
   },
   {
-   "key": "Coinbase::https://weworkremotely.com/remote-jobs/coinbase-senior-software-engineer-trading",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer - Trading",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Coinbase::8095252",
    "company": "Coinbase",
    "title": "Senior Software Engineer, Backend - Platform (Tokens & Wrapped Assets)",
@@ -530,13 +530,6 @@
    "key": "Coinbase::8082199",
    "company": "Coinbase",
    "title": "Senior Software Engineer, Data Engineering Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Coinbase::8064873",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer, Data Layer",
    "status": "",
    "note": ""
   },
@@ -562,13 +555,6 @@
    "note": ""
   },
   {
-   "key": "Coinbase::8064916",
-   "company": "Coinbase",
-   "title": "Staff Software Engineer, Backend - FinHub (Ledger)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Confiz::https://weworkremotely.com/remote-jobs/confiz-full-stack-engineer-lv-4-java-javascript",
    "company": "Confiz",
    "title": "Full Stack Engineer - Lv 4 / Java + JavaScript",
@@ -586,13 +572,6 @@
    "key": "Cresta::5376924008",
    "company": "Cresta",
    "title": "Growth Marketing Manager, Web & CRO",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cresta::5369032008",
-   "company": "Cresta",
-   "title": "Solutions Engineer, AI Agent",
    "status": "",
    "note": ""
   },
@@ -625,16 +604,16 @@
    "note": ""
   },
   {
-   "key": "Cricut::744000139368229",
+   "key": "Cricut::744000142735637",
    "company": "Cricut",
-   "title": "Staff AI-Native Software Engineer",
+   "title": "Systems Verification & Validation Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Cricut::744000142735637",
-   "company": "Cricut",
-   "title": "Systems Verification & Validation Engineer",
+   "key": "Deepgram::4f9648d7-e25c-440c-8ec6-566a405c7c23",
+   "company": "Deepgram",
+   "title": "Full Stack Web Developer, Marketing",
    "status": "",
    "note": ""
   },
@@ -702,6 +681,13 @@
    "note": ""
   },
   {
+   "key": "Elekta::https://himalayas.app/companies/elekta/jobs/software-integration-specialist",
+   "company": "Elekta",
+   "title": "Software Integration Specialist",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Filevine::e57a5f16-0711-4f50-a9a9-d19edf7b097a",
    "company": "Filevine",
    "title": "Staff Site Reliability Engineer",
@@ -740,13 +726,6 @@
    "key": "GitLab::8682707002",
    "company": "GitLab",
    "title": "Senior Backend Engineer (Ruby), Plan: Portfolio Experience",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "GitLab::8615319002",
-   "company": "GitLab",
-   "title": "Senior Backend Engineer - Monitoring and Anomaly Detection (Monetization)",
    "status": "",
    "note": ""
   },
@@ -870,6 +849,13 @@
    "note": ""
   },
   {
+   "key": "Hinge Health::369dbd5f-0a12-4d57-9e96-8e1f38ba9ea2",
+   "company": "Hinge Health",
+   "title": "Senior Staff Engineer, Growth",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Hinge Health::62606e75-fd9f-4f9e-85c2-63a82e849db2",
    "company": "Hinge Health",
    "title": "Software Engineer II",
@@ -887,13 +873,6 @@
    "key": "Hinge Health::5e7401a9-405b-4bd6-866e-d5f008657e2d",
    "company": "Hinge Health",
    "title": "Sr. Software Engineer, GI",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Hinge Health::369dbd5f-0a12-4d57-9e96-8e1f38ba9ea2",
-   "company": "Hinge Health",
-   "title": "Sr. Staff Engineer",
    "status": "",
    "note": ""
   },
@@ -961,6 +940,13 @@
    "note": ""
   },
   {
+   "key": "Instacart::8121910",
+   "company": "Instacart",
+   "title": "Site Reliability Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Instacart::8110286",
    "company": "Instacart",
    "title": "Staff Software Engineer, Orders Platform",
@@ -991,7 +977,7 @@
   {
    "key": "LVT::5368027008",
    "company": "LVT",
-   "title": "Senior Fullstack Software Engineer",
+   "title": "Senior Software Engineer - Backend",
    "status": "",
    "note": ""
   },
@@ -999,6 +985,13 @@
    "key": "LVT::5372856008",
    "company": "LVT",
    "title": "Senior Software Engineer II - Backend",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LVT::5369286008",
+   "company": "LVT",
+   "title": "Senior Staff Software Engineer - Project Matrix",
    "status": "",
    "note": ""
   },
@@ -1012,7 +1005,7 @@
   {
    "key": "LVT::5367884008",
    "company": "LVT",
-   "title": "Software Engineer II",
+   "title": "Software Engineer II - Backend",
    "status": "",
    "note": ""
   },
@@ -1055,6 +1048,13 @@
    "key": "LangChain::385313eb-bff4-4019-8106-42714dc9879a",
    "company": "LangChain",
    "title": "Deployed Engineer (Houston)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LangChain::df7a4d66-2159-4dff-b5ff-92f6e835f242",
+   "company": "LangChain",
+   "title": "Solutions Engineer (Texas)",
    "status": "",
    "note": ""
   },
@@ -1157,6 +1157,13 @@
    "note": ""
   },
   {
+   "key": "NICE::https://himalayas.app/companies/nice/jobs/cx-outbound-solution-engineer-5399156247",
+   "company": "NICE",
+   "title": "CX Outbound Solution Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "NICE::4951002101",
    "company": "NICE",
    "title": "CX Outbound Solution Engineer",
@@ -1195,13 +1202,6 @@
    "key": "Notion::e3d8dc06-da05-4e9d-a143-2e9c51fa3d51",
    "company": "Notion",
    "title": "Software Engineer, Infrastructure Security",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Omada Health::8074669",
-   "company": "Omada Health",
-   "title": "Staff Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1248,13 +1248,6 @@
    "note": ""
   },
   {
-   "key": "PostHog::1803b1de-d33b-4542-8e38-b6c4954cb789",
-   "company": "PostHog",
-   "title": "Backend Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "PostHog::b4bc11c6-49a8-48e1-9815-950ce7eef84d",
    "company": "PostHog",
    "title": "Context Engineer",
@@ -1279,6 +1272,13 @@
    "key": "Reddit::8122887",
    "company": "Reddit",
    "title": "Principal UX Engineer, Ads",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8128860",
+   "company": "Reddit",
+   "title": "Senior Backend Engineer, Compliance Engineering",
    "status": "",
    "note": ""
   },
@@ -1335,13 +1335,6 @@
    "key": "Reddit::8127002",
    "company": "Reddit",
    "title": "Staff Android Engineer, Brand Ad Formats",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::8082867",
-   "company": "Reddit",
-   "title": "Staff Frontend Engineer, Ads Creative",
    "status": "",
    "note": ""
   },
@@ -1535,13 +1528,6 @@
    "note": ""
   },
   {
-   "key": "Smartsheet::8082218",
-   "company": "Smartsheet",
-   "title": "Sr. Commercial Solutions Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Smartsheet::8110111",
    "company": "Smartsheet",
    "title": "Sr. Security Engineer II \u2013 IRAP Program Lead (Remote Eligible)",
@@ -1636,6 +1622,13 @@
    "key": "TE Connectivity::149102",
    "company": "TE Connectivity",
    "title": "Principal Project Manager Engineer - remote must be in the US",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Tailscale::4723221005",
+   "company": "Tailscale",
+   "title": "Senior Solutions Engineer - Partners",
    "status": "",
    "note": ""
   },
@@ -1759,13 +1752,6 @@
    "note": ""
   },
   {
-   "key": "Twilio::https://weworkremotely.com/remote-jobs/twilio-principal-product-manager-enterprise-commerce-platform",
-   "company": "Twilio",
-   "title": "Principal Product Manager, Enterprise Commerce Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8081530",
    "company": "Twilio",
    "title": "Principal Software Engineer",
@@ -1773,9 +1759,9 @@
    "note": ""
   },
   {
-   "key": "Twilio::https://weworkremotely.com/remote-jobs/twilio-senior-application-engineer-zuora-billing",
+   "key": "Twilio::8044650",
    "company": "Twilio",
-   "title": "Senior Application Engineer, Zuora Billing",
+   "title": "Senior Analytics Engineer",
    "status": "",
    "note": ""
   },
@@ -1794,13 +1780,6 @@
    "note": ""
   },
   {
-   "key": "Twilio::8097672",
-   "company": "Twilio",
-   "title": "Software Engineer (L2)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8100236",
    "company": "Twilio",
    "title": "Software Engineer (L2)",
@@ -1808,21 +1787,21 @@
    "note": ""
   },
   {
-   "key": "Twilio::7689461",
+   "key": "Twilio::8097672",
    "company": "Twilio",
-   "title": "Software Engineer (L2) Email",
+   "title": "Software Engineer (L2)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8098945",
+   "key": "Twilio::8103253",
    "company": "Twilio",
    "title": "Software Engineer (L4)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8103253",
+   "key": "Twilio::8098945",
    "company": "Twilio",
    "title": "Software Engineer (L4)",
    "status": "",
@@ -1871,23 +1850,9 @@
    "note": ""
   },
   {
-   "key": "Vanta::f7225fae-2203-4332-8ea4-8569c7e371d1",
-   "company": "Vanta",
-   "title": "Staff Product Manager, Data Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Webflow::8122601",
    "company": "Webflow",
    "title": "Associate Infrastructure Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Webflow::8075059",
-   "company": "Webflow",
-   "title": "Senior Partner Solutions Engineer - Pacific Time",
    "status": "",
    "note": ""
   },
@@ -1920,13 +1885,6 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025654",
-   "company": "Western Governors University",
-   "title": "Senior Cloud Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Western Governors University::JR-025703",
    "company": "Western Governors University",
    "title": "Senior Cloud Engineer (IAM)",
@@ -1944,27 +1902,6 @@
    "key": "Western Governors University::JR-025286",
    "company": "Western Governors University",
    "title": "Senior Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025416",
-   "company": "Western Governors University",
-   "title": "Senior Software Engineer - Salesforce",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025732",
-   "company": "Western Governors University",
-   "title": "Senior Software Engineer- Full Stack- Java/Angular",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025309",
-   "company": "Western Governors University",
-   "title": "Senior Software Engineer- Full-Stack- Java/Angular",
    "status": "",
    "note": ""
   },
@@ -1990,13 +1927,6 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025709",
-   "company": "Western Governors University",
-   "title": "Software Engineer I - Full-Stack",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Western Governors University::JR-025892",
    "company": "Western Governors University",
    "title": "Software Engineer II",
@@ -2007,13 +1937,6 @@
    "key": "Western Governors University::JR-025775",
    "company": "Western Governors University",
    "title": "Software Engineer II - Infrastructure & Operations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025417",
-   "company": "Western Governors University",
-   "title": "Software Engineer II - Salesforce",
    "status": "",
    "note": ""
   },
