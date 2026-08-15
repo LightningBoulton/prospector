@@ -1,55 +1,51 @@
-# Prospector — 2026-08-14
+# Prospector — 2026-08-15
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 0 closed/removed
+**14 new roles today** · 8 still worth applying · 1 closed/removed
 
 ## NEW — WORTH REVIEWING (10)
-- **Program Manager** — Robert Half · 68/100 · remote Sacramento, CA (Remote) · $65.00–$70.00/hr · posted 2026-08-06
-  - Why: M&A integration program leadership
-  - Concern: Requires active PMP certification, unclear if held
-  - https://www.roberthalf.com/us/en/job/sacramento-ca/program-manager/00390-9504375082-usen
-- **Manager, Customer Success Operations** — AlphaSense · 68/100 · remote USA (Remote) · posted 2026-08-09
-  - Why: CS operations mandate fits ops/CX background
-  - Concern: Manager title, may be narrower scope than desired
-  - https://jobicy.com/jobs/150341-manager-customer-success-operations
-- **VP, Customer Success** — NICE · 68/100 · remote USA - Remote · posted 2026-08-13
-  - Why: Customer experience/success leadership mandate
-  - Concern: Heavy CS/TAM domain vs her CX/transformation background
-  - https://boards.eu.greenhouse.io/nice/jobs/4952619101?gh_jid=4952619101
-- **Manager, Strategic Planning** — Grow Therapy · 66/100 · remote New York City (Remote) · $144K – $168K · posted 2026-08-06
-  - Why: Operating rhythm/OKR ownership fits operational excellence background
-  - Concern: Manager title with narrower BizOps scope than transformation roles
-  - https://jobs.ashbyhq.com/grow-therapy/2cf6b8af-4bc3-4faf-a41b-390a3ebeaa8d
-- **Director, Brand Operations** — Ramp · 65/100 · remote New York, NY (HQ) (Remote) · $200K – $352K · posted 2026-08-13
-  - Why: Operating system / process design mandate
-  - Concern: Brand/creative-specific domain not core background
-  - https://jobs.ashbyhq.com/ramp/2c101be9-f4b8-4a63-a634-9798d9a09eaa
-- **Sales Activation and Insights Leader** — GE Vernova · 62/100 · remote Mexico,  USA (Remote) · posted 2026-08-01
-  - Why: Process improvement and cross-functional program design mandate
-  - Concern: Sales-ops specific focus, not core transformation leadership
-  - https://jobicy.com/jobs/150016-sales-activation-and-insights-leader
-- **Senior Manager - Product Partner Operations** — Mercury · 62/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within United States · posted 2026-08-05
-  - Why: Ops leadership with cross-functional scaling mandate
-  - Concern: Fintech-specific partner ops domain is narrower fit
-  - https://job-boards.greenhouse.io/mercury/jobs/6135823004
-- **Project Manager – Customer Modeling & Anaplan Transformation** — Eliassen · 60/100 · remote Remote · $65.00 to $70.00 · posted 2026-08-12
-  - Why: Enterprise transformation PM with real cross-functional scope
-  - Concern: Anaplan/technical implementation specifics not her core expertise
-  - https://careers.eliassen.com/ZCrhvs/project-manager-customer-modeling-anaplan-transformation-programproject-management-anywhere-a1wuq000001o4iz2aa
-- **Solutions Consultant - East** — Smartsheet · 58/100 · remote -REMOTE, USA- · posted 2026-08-05
-  - Why: Professional services/consulting delivery role
-  - Concern: Heavily technical/platform implementation focus vs strategic leadership
-  - https://job-boards.greenhouse.io/smartsheet/jobs/8109667
-- **Senior Product Operations Specialist** — Mercury · 58/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-08-07
-  - Why: Program ownership and operating systems design
-  - Concern: Narrower scope than transformation/exec mandate
-  - https://job-boards.greenhouse.io/mercury/jobs/6138978004
+- **Project Manager** — Robert Half · 82/100 · remote San Diego, CA (Remote) · $61.75–$71.50/hr · posted 2026-08-13
+  - Why: Direct M&A/IMO integration mandate
+  - Concern: Temp through year-end only
+  - https://www.roberthalf.com/us/en/job/san-diego-ca/project-manager/00400-0013487684-usen
+- **Chief of Staff** — Coinbase · 78/100 · remote Remote - USA · posted 2026-08-14
+  - Why: Chief of Staff to CHRO fits org strategy/effectiveness background
+  - Concern: Quarterly in-person surges may add travel burden
+  - https://www.coinbase.com/careers/positions/8131316?gh_jid=8131316
+- **Senior Customer Support Operations Readiness Program Manager** — Mercury · 72/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-08-14
+  - Why: Operational readiness/change coordination matches transformation background
+  - Concern: Title suggests mid-level PM scope, not exec-facing
+  - https://job-boards.greenhouse.io/mercury/jobs/6144592004
+- **Global Workforce Planning & Transformation** — Chime · 68/100 · remote Remote, USA · posted 2026-08-14
+  - Why: Large-scale global operations leadership mandate
+  - Concern: Specialized WFM/scheduling expertise not core background
+  - https://boards.greenhouse.io/chime/jobs/8715079002?gh_jid=8715079002
+- **Creative AI & Innovation Enablement** — Aquent · 66/100 · remote Alpharetta, GA, US (Remote) · $62.90 / hourly as W2 · posted 2026-08-10
+  - Why: AI enablement/transformation mandate fits core interests
+  - Concern: Creative production domain is somewhat adjacent, not core
+  - https://aquent.com/find-work/212219
+- **Senior Customer Support Controls & Governance Program Manager** — Mercury · 66/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-08-14
+  - Why: Operating model/governance build during scaling transformation
+  - Concern: Requires banking/regulatory compliance depth not in background
+  - https://job-boards.greenhouse.io/mercury/jobs/6144590004
+- **Manager, Customer Success** — GitLab · 65/100 · remote Remote, United States · posted 2026-08-14
+  - Why: US-remote customer success leadership
+  - Concern: Manager-level, narrower scope than transformation roles
+  - https://job-boards.greenhouse.io/gitlab/jobs/8691859002
+- **Director, People Operations** — Sanity · 65/100 · remote Remote in the United States · posted 2026-08-14
+  - Why: Operating model and ops scaling mandate
+  - Concern: Heavily HR/People-ops specific, not core domain
+  - https://jobs.ashbyhq.com/sanity/f7488d1b-1542-4812-867b-b77fcc3bccc6
+- **Solutions Consultant - West** — Smartsheet · 58/100 · remote -REMOTE, USA- · posted 2026-08-12
+  - Why: Professional services delivery, consultative transformation work
+  - Concern: Remote eligibility limited to Eastern US region, not Utah
+  - https://job-boards.greenhouse.io/smartsheet/jobs/8122020
+- **Finance Systems & Transformation Manager** — ClickHouse · 55/100 · remote United States (remote) · posted 2026-08-03
+  - Why: Finance systems transformation aligns with operating model work
+  - Concern: Requires deep Finance systems/ERP technical expertise
+  - https://job-boards.greenhouse.io/clickhouse/jobs/6133891004
 
 ## DISCOVERY / WILDCARDS (4)
-- **Principal, Strategy and Operations** — Adobe · 75/100 · onsite Lehi (+1 more) · posted 2026-08-14
-  - Why: Strategy & Operations mandate fits core domains
-  - Concern: No description to confirm mandate
-  - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Principal--Strategy-and-Operations_R170949
 - **Sales Operations Manager, Foundry** — Instructure · 60/100 · remote USA (Remote) · posted 2026-08-04
   - Why: Revenue ops role within new AI-driven venture unit
   - Concern: Sales-quota adjacent function, not core strength
@@ -62,6 +58,10 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: US-remote fits practical constraints well
   - Concern: Individual account-management role, less strategic ownership
   - https://job-boards.greenhouse.io/chainguard/jobs/4694867006
+- **Principal Customer Success Manager** — Gainsight · 55/100 · remote USA - CA - Remote · posted 2026-08-07
+  - Why: Executive-facing CS strategy and ROI work
+  - Concern: Individual CSM role, not transformation/ops leadership
+  - https://jobs.ashbyhq.com/gainsight/662445a5-d9d3-4b34-bb26-25f9658fe317
 
 ## STILL WORTH APPLYING (8)
 - **Director of Business Planning & Strategic Initiatives - Office of the CPTO (Remote Eligible)** — Smartsheet · 90/100 · remote -REMOTE, USA- · posted 2026-08-06
@@ -97,8 +97,11 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Enterprise SaaS/security domain is new industry context
   - https://jobicy.com/jobs/150551-director-business-operations-customer-success
 
+## REMOVED SINCE PRIOR RUN (1)
+- Senior Partner Consultant, SI Programs — Ramp · No longer listed by its source
+
 ## SOURCE HEALTH
-- Sources checked: 129/129 successful
-- Temporary errors: 0
+- Sources checked: 128/129 successful
+- Temporary errors: 1
 - Needs attention: 11
   - Returning nothing for 10+ runs: AssemblyAI, Beyond (Overstock), Inngest, Instructure, Knock, Miro, Nav, Postman, Speechify, Vivint, Weave
