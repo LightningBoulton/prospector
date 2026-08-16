@@ -2,9 +2,51 @@
  "_comment": "Copy any row you want to act on into feedback_lisa.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_lisa.json is.",
  "entries": [
   {
-   "key": "AECOM::144476",
-   "company": "AECOM",
-   "title": "Program Manager Facility Design, Data Centers - Remote (U.S.)",
+   "key": "ANGI::150789",
+   "company": "ANGI",
+   "title": "Manager, Retail Partnerships",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R170411",
+   "company": "Adobe",
+   "title": "Director, Sales Operations, Technical Pre-Sales",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R170491",
+   "company": "Adobe",
+   "title": "Manager, Revenue Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R170949",
+   "company": "Adobe",
+   "title": "Principal, Strategy and Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R170971",
+   "company": "Adobe",
+   "title": "Project Manager (Professional Services)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R170576",
+   "company": "Adobe",
+   "title": "Senior Analyst, Revenue Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R170677",
+   "company": "Adobe",
+   "title": "Senior Manager, Business Process Optimization Program Management",
    "status": "",
    "note": ""
   },
@@ -30,30 +72,9 @@
    "note": ""
   },
   {
-   "key": "AlphaSense::150341",
-   "company": "AlphaSense",
-   "title": "Manager, Customer Success Operations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "AlphaSense::150339",
-   "company": "AlphaSense",
-   "title": "Senior Analyst, Customer Success Operations",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "AlphaSense::150539",
    "company": "AlphaSense",
    "title": "Senior Director, Customer Lifecycle Marketing - Usage & Engagement",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "AlphaSense::150340",
-   "company": "AlphaSense",
-   "title": "Senior Manager, Customer Success Operations",
    "status": "",
    "note": ""
   },
@@ -534,13 +555,6 @@
    "note": ""
   },
   {
-   "key": "Eliassen::08bf52f0-8c29-11f1-b76d-024201c20d84",
-   "company": "Eliassen",
-   "title": "Compliance Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Eliassen::733aaf65-94c5-11f1-9509-02420a6c7775",
    "company": "Eliassen",
    "title": "Lead Support Analyst",
@@ -586,13 +600,6 @@
    "key": "Five9::143422",
    "company": "Five9",
    "title": "Principal Product Manager, Google Gemini Enterprise for Customer Experience (GECX)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Fortive::147553",
-   "company": "Fortive",
-   "title": "ASC Regional Director - West",
    "status": "",
    "note": ""
   },
@@ -663,6 +670,13 @@
    "key": "GitLab::8686820002",
    "company": "GitLab",
    "title": "Senior Director, Revenue Analytics",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GiveDirectly::150791",
+   "company": "GiveDirectly",
+   "title": "Chief of Staff, Emergency Cash (Senior Manager)",
    "status": "",
    "note": ""
   },
@@ -863,6 +877,13 @@
    "note": ""
   },
   {
+   "key": "LaunchDarkly::150738",
+   "company": "LaunchDarkly",
+   "title": "AI Specialist - Enterprise & Strategic Accounts, AgentControl",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Liberty Mutual::148624",
    "company": "Liberty Mutual",
    "title": "Associate Product Owner-Data Strategy and Governance",
@@ -978,6 +999,13 @@
    "key": "Molina Healthcare::150195",
    "company": "Molina Healthcare",
    "title": "Director, Member Experience (Process Improvement)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Mural::150740",
+   "company": "Mural",
+   "title": "Senior Product Manager, Customer Insights",
    "status": "",
    "note": ""
   },
@@ -1234,7 +1262,7 @@
    "note": ""
   },
   {
-   "key": "Robert Half::02720-0013481284-usen",
+   "key": "Robert Half::00390-9504375082-usen",
    "company": "Robert Half",
    "title": "Program Manager",
    "status": "",
@@ -1472,13 +1500,6 @@
    "note": ""
   },
   {
-   "key": "Teladoc Health::https://himalayas.app/companies/teladoc-health/jobs/staff-technical-program-manager-devices",
-   "company": "Teladoc Health",
-   "title": "Staff Technical Program Manager - Devices",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Temporal Technologies::https://weworkremotely.com/remote-jobs/temporal-technologies-director-gtm-strategy-analytics",
    "company": "Temporal Technologies",
    "title": "Director, GTM Strategy & Analytics",
@@ -1503,6 +1524,13 @@
    "key": "Twilio::8128863",
    "company": "Twilio",
    "title": "Sr. Strategy & Operations Analyst, Deal Desk",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Typeform::https://weworkremotely.com/remote-jobs/typeform-customer-success-manager",
+   "company": "Typeform",
+   "title": "Customer Success Manager",
    "status": "",
    "note": ""
   },
@@ -1545,13 +1573,6 @@
    "key": "Vantage::f734c23c-fbaf-4c90-81ab-068349b2bea8",
    "company": "Vantage",
    "title": "Senior Customer Success Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Veeam Software::148754",
-   "company": "Veeam Software",
-   "title": "Manager, SEO AEO",
    "status": "",
    "note": ""
   },
@@ -1664,6 +1685,27 @@
    "key": "Zscaler::150332",
    "company": "Zscaler",
    "title": "Sr. Director, Strategy & Operations - Customer Success",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "dscout::150766",
+   "company": "dscout",
+   "title": "Enterprise Account Director",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "livingHR::150723",
+   "company": "livingHR",
+   "title": "HR Technology Consultant (Contract)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "name::https://himalayas.app/companies/cambridge-investment-research/jobs/managing-director-financial-planning",
+   "company": "name",
+   "title": "Managing Director, Financial Planning",
    "status": "",
    "note": ""
   },

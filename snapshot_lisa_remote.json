@@ -4586,33 +4586,42 @@
   }
  },
  {
-  "key": "Teladoc Health::https://himalayas.app/companies/teladoc-health/jobs/staff-technical-program-manager-devices",
-  "company": "Teladoc Health",
-  "title": "Staff Technical Program Manager - Devices",
+  "key": "name::https://himalayas.app/companies/cambridge-investment-research/jobs/managing-director-financial-planning",
+  "company": "name",
+  "title": "Managing Director, Financial Planning",
   "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/teladoc-health/jobs/staff-technical-program-manager-devices",
-  "posted": "2026-08-15",
-  "salary": "$180,000\u2013$200,000",
+  "url": "https://himalayas.app/companies/cambridge-investment-research/jobs/managing-director-financial-planning",
+  "posted": "2026-08-16",
+  "salary": null,
   "employment_type": "Full Time",
-  "expires": "2026-10-14",
+  "expires": "2026-10-15",
+  "demoted": true,
   "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
+  "match_reason": "role family 'planning' + seniority in title; demoted to wildcards by the precision rule 'financial planning'",
   "fit_result": {
    "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
    "confidence": "low",
+   "reasons": [
+    "Executive leadership and business development scope",
+    "US-remote fits practical constraints",
+    "Requires deep CFP financial planning industry expertise",
+    "Client experience and growth strategy elements align loosely"
+   ],
+   "concerns": [
+    "Requires CFP/financial planning domain credentials she lacks",
+    "Wrong core domain: financial advisory business, not transformation/ops"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 75,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Executive leadership and business development scope",
    "bg": "1451cb4bda95"
   }
  },
@@ -4770,6 +4779,45 @@
   }
  },
  {
+  "key": "Typeform::https://weworkremotely.com/remote-jobs/typeform-customer-success-manager",
+  "company": "Typeform",
+  "title": "Customer Success Manager",
+  "location": "Anywhere in the World (Remote)",
+  "url": "https://weworkremotely.com/remote-jobs/typeform-customer-success-manager",
+  "posted": "2026-08-16",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "2026-09-15",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Remote fits location needs",
+    "CX-adjacent but individual account-management role",
+    "Below her strategic/operating scope"
+   ],
+   "concerns": [
+    "Individual contributor CSM, not leadership",
+    "Limited strategic transformation mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 75,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "no",
+   "reason": "Remote fits location needs",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Mercury::https://weworkremotely.com/remote-jobs/mercury-customer-support-systems-analytics-architect",
   "company": "Mercury",
   "title": "Customer Support Systems & Analytics Architect",
@@ -4844,6 +4892,47 @@
    "reason": "CX-adjacent but frontline support queue management, not strategic CX",
    "bg": "1451cb4bda95"
   }
+ },
+ {
+  "key": "ANGI::150789",
+  "company": "ANGI",
+  "title": "Manager, Retail Partnerships",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/150789-manager-retail-partnerships",
+  "posted": "2026-08-15",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Cross-functional partnership management with strategic scope",
+    "US-remote fits practical constraints",
+    "Touches customer experience and operations",
+    "Growth strategy collaboration with senior leaders"
+   ],
+   "concerns": [
+    "Narrower operational/account focus vs transformation mandate",
+    "Title suggests tactical partner management, not strategic leadership",
+    "Unclear seniority/scope beyond manager-level execution"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Cross-functional partnership management with strategic scope",
+   "bg": "1451cb4bda95"
+  },
+  "rescued": true
  },
  {
   "key": "Archive::150709",
@@ -5116,6 +5205,83 @@
   }
  },
  {
+  "key": "GiveDirectly::150791",
+  "company": "GiveDirectly",
+  "title": "Chief of Staff, Emergency Cash (Senior Manager)",
+  "location": "UK,  USA (Remote)",
+  "url": "https://jobicy.com/jobs/150791-chief-of-staff-emergency-cash-senior-manager",
+  "posted": "2026-08-15",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Chief of Staff mandate with strategy+ops scope",
+    "Remote US role fits location preference",
+    "Cross-functional influence and performance systems ownership",
+    "Aligns with organizational effectiveness expertise"
+   ],
+   "concerns": [
+    "Nonprofit/humanitarian sector shift from corporate",
+    "Senior Manager title may signal narrower scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 82,
+   "interest_fit": 85,
+   "practical_fit": 80,
+   "opportunity_score": 82,
+   "score": 82,
+   "fit": "yes",
+   "reason": "Chief of Staff mandate with strategy+ops scope",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Mural::150740",
+  "company": "Mural",
+  "title": "Senior Product Manager, Customer Insights",
+  "location": "Canada,  UK,  USA (Remote)",
+  "url": "https://jobicy.com/jobs/150740-senior-product-manager-customer-insights",
+  "posted": "2026-08-15",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'customer' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "This is a hands-on product management IC role",
+    "Requires data/product technical ownership not her background",
+    "Remote is workable practically"
+   ],
+   "concerns": [
+    "Wrong function: core PM/data product role, not transformation/ops leadership",
+    "No strategic org or operations mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "This is a hands-on product management IC role",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "TE Connectivity::150561",
   "company": "TE Connectivity",
   "title": "Sr. Manager, Business Transformation & Operations",
@@ -5192,123 +5358,6 @@
    "score": 87,
    "fit": "yes",
    "reason": "Operating model design for new Business Operations function",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "AlphaSense::150341",
-  "company": "AlphaSense",
-  "title": "Manager, Customer Success Operations",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/150341-manager-customer-success-operations",
-  "posted": "2026-08-09",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "CS operations mandate fits ops/CX background",
-    "US-remote fits practical constraints",
-    "Revenue ops partnership with CS leadership",
-    "AlphaSense is scaling post-acquisition, growth context"
-   ],
-   "concerns": [
-    "Manager title, may be narrower scope than desired",
-    "Description cut off, unclear strategic breadth"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "CS operations mandate fits ops/CX background",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "AlphaSense::150340",
-  "company": "AlphaSense",
-  "title": "Senior Manager, Customer Success Operations",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/150340-senior-manager-customer-success-operations",
-  "posted": "2026-08-09",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Customer success operations scaling mandate",
-    "US-remote fits practical constraints",
-    "Cross-functional program leadership and process design",
-    "Post-acquisition scaling context (Tegus/AlphaSense)",
-    "Aligns with CX and ops excellence expertise"
-   ],
-   "concerns": [
-    "Senior Manager scope may be narrower than director-level mandates",
-    "CS-specific focus vs broader transformation scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 80,
-   "practical_fit": 90,
-   "opportunity_score": 78,
-   "score": 78,
-   "fit": "yes",
-   "reason": "Customer success operations scaling mandate",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "AlphaSense::150339",
-  "company": "AlphaSense",
-  "title": "Senior Analyst, Customer Success Operations",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/150339-senior-analyst-customer-success-operations",
-  "posted": "2026-08-09",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'operations' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Revenue/CS operations aligns with operations background",
-    "US-remote fits location preference",
-    "Cross-functional process improvement mandate"
-   ],
-   "concerns": [
-    "Senior Analyst title suggests limited scope/seniority",
-    "Likely IC role without strategic ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 90,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Revenue/CS operations aligns with operations background",
    "bg": "1451cb4bda95"
   }
  },
@@ -5819,80 +5868,45 @@
   }
  },
  {
-  "key": "Fortive::147553",
-  "company": "Fortive",
-  "title": "ASC Regional Director - West",
+  "key": "livingHR::150723",
+  "company": "livingHR",
+  "title": "HR Technology Consultant (Contract)",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/147553-asc-regional-director-west",
-  "posted": "2026-07-25",
-  "salary": null,
-  "employment_type": "Full-Time",
+  "url": "https://jobicy.com/jobs/150723-hr-technology-consultant-contract",
+  "posted": "2026-08-15",
+  "salary": "$50 - $75",
+  "employment_type": "Contract",
   "expires": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
+   "recommendation": "practical_contract",
+   "confidence": "medium",
    "reasons": [
-    "This is a quota-carrying sales role, not transformation/ops"
+    "Talent-pool contract, not guaranteed work",
+    "Change management and systems adoption align with skills",
+    "Remote-first fits practical constraints",
+    "HR tech specialization is narrower than core expertise"
    ],
    "concerns": [
-    "Wrong function: sales/account executive, not strategic ownership"
+    "Not an actual open role, just a pool",
+    "State list excludes Utah residents explicitly",
+    "Highly HR-systems specific vs broader transformation"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "This is a quota-carrying sales role, not transformation/ops",
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Talent-pool contract, not guaranteed work",
    "bg": "1451cb4bda95"
   },
   "rescued": true
- },
- {
-  "key": "AECOM::144476",
-  "company": "AECOM",
-  "title": "Program Manager Facility Design, Data Centers - Remote (U.S.)",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/144476-program-manager-facility-design-data-centers-remote-u-s-2",
-  "posted": "2026-07-25",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Remote US role fits location needs",
-    "Program leadership title aligns generally",
-    "Requires deep data center/facility design expertise",
-    "Technical construction/engineering domain mismatch"
-   ],
-   "concerns": [
-    "Requires hyperscale data center technical background",
-    "Client-facing construction PM, not org transformation",
-    "Unclear strategic/operating scope beyond project delivery"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote US role fits location needs",
-   "bg": "1451cb4bda95"
-  }
  },
  {
   "key": "Cint::150558",
@@ -5972,6 +5986,79 @@
    "bg": "1451cb4bda95"
   },
   "rescued": true
+ },
+ {
+  "key": "dscout::150766",
+  "company": "dscout",
+  "title": "Enterprise Account Director",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/150766-enterprise-account-director",
+  "posted": "2026-08-15",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (adoption, roi)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Core function is quota-carrying enterprise sales",
+    "Not transformation, operations or program leadership work"
+   ],
+   "concerns": [
+    "Wrong function - sales/account management, not strategy or ops"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 25,
+   "practical_fit": 80,
+   "opportunity_score": 22,
+   "score": 22,
+   "fit": "no",
+   "reason": "Core function is quota-carrying enterprise sales",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "LaunchDarkly::150738",
+  "company": "LaunchDarkly",
+  "title": "AI Specialist - Enterprise & Strategic Accounts, AgentControl",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/150738-ai-specialist-enterprise-strategic-accounts-agentcontrol",
+  "posted": "2026-08-15",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (stakeholder alignment, business case)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Quota-carrying sales role, not transformation/ops",
+    "Wrong function despite remote flexibility"
+   ],
+   "concerns": [
+    "No strategic/operational ownership",
+    "Sales quota accountability misaligned with profile"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 10,
+   "interest_fit": 15,
+   "practical_fit": 60,
+   "opportunity_score": 12,
+   "score": 12,
+   "fit": "no",
+   "reason": "Quota-carrying sales role, not transformation/ops",
+   "bg": "1451cb4bda95"
+  }
  },
  {
   "key": "AssetWatch::145855",
@@ -6198,44 +6285,6 @@
    "score": 25,
    "fit": "no",
    "reason": "Ad ops execution role, not strategic transformation",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Veeam Software::148754",
-  "company": "Veeam Software",
-  "title": "Manager, SEO AEO",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/148754-manager-seo-aeo",
-  "posted": "2026-08-06",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "SEO/AEO specialist role, not transformation/ops",
-    "Remote US matches location preference",
-    "Tangential to marketing ops adjacency only"
-   ],
-   "concerns": [
-    "Requires deep hands-on SEO technical expertise",
-    "Not aligned with core transformation/strategy mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 20,
-   "practical_fit": 75,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "SEO/AEO specialist role, not transformation/ops",
    "bg": "1451cb4bda95"
   }
  },

@@ -932,6 +932,45 @@
   }
  },
  {
+  "key": "Eliassen::e18382f7-9731-11f1-9509-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Supplier Operations Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/qQ0QUW/supplier-operations-manager-manufacturing-supply-chain-anywhere-a1wuq000001ovrf2au",
+  "posted": "2026-08-13",
+  "salary": "$75.00 to $85.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Remote, some ops coordination overlap",
+    "Part-time transactional PO/contract admin role",
+    "Not strategic transformation or leadership scope"
+   ],
+   "concerns": [
+    "Tactical procurement/PO tracking, not org strategy",
+    "Only 20 hrs/week, narrow mandate",
+    "Pharma/CDMO domain mismatch"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Remote, some ops coordination overlap",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Eliassen::733aaf65-94c5-11f1-9509-02420a6c7775",
   "company": "Eliassen",
   "title": "Lead Support Analyst",
@@ -971,41 +1010,42 @@
   "rescued": true
  },
  {
-  "key": "Eliassen::e18382f7-9731-11f1-9509-02420a6c7775",
+  "key": "Eliassen::870985ec-90e3-11f1-97a0-024201c20d84",
   "company": "Eliassen",
-  "title": "Supplier Operations Manager",
+  "title": "Portfolio Project Manager",
   "location": "Remote",
-  "url": "https://careers.eliassen.com/qQ0QUW/supplier-operations-manager-manufacturing-supply-chain-anywhere-a1wuq000001ovrf2au",
-  "posted": "2026-08-13",
-  "salary": "$75.00 to $85.00",
+  "url": "https://careers.eliassen.com/AMSrkn/portfolio-project-manager-programproject-management-anywhere-a1wuq000001iieh2aq",
+  "posted": "2026-08-05",
+  "salary": "$60.00 to $65.00",
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'portfolio' + seniority in title",
   "fit_result": {
-   "recommendation": "not_recommended",
+   "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Remote, some ops coordination overlap",
-    "Part-time transactional PO/contract admin role",
-    "Not strategic transformation or leadership scope"
+    "Remote contract W2 role",
+    "Program/portfolio leadership matches PMO skills",
+    "Restoring structure/discipline fits transformation strength",
+    "Technical Databricks/data scope somewhat narrow"
    ],
    "concerns": [
-    "Tactical procurement/PO tracking, not org strategy",
-    "Only 20 hrs/week, narrow mandate",
-    "Pharma/CDMO domain mismatch"
+    "Heavily technical data platform focus",
+    "Below her strategic/executive scope level",
+    "Contract-only, limited long-term growth"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Remote, some ops coordination overlap",
+   "qualification_fit": 60,
+   "interest_fit": 45,
+   "practical_fit": 70,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote contract W2 role",
    "bg": "1451cb4bda95"
   }
  },
@@ -1050,46 +1090,6 @@
   }
  },
  {
-  "key": "Eliassen::870985ec-90e3-11f1-97a0-024201c20d84",
-  "company": "Eliassen",
-  "title": "Portfolio Project Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/AMSrkn/portfolio-project-manager-programproject-management-anywhere-a1wuq000001iieh2aq",
-  "posted": "2026-08-05",
-  "salary": "$60.00 to $65.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'portfolio' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract W2 role",
-    "Program/portfolio leadership matches PMO skills",
-    "Restoring structure/discipline fits transformation strength",
-    "Technical Databricks/data scope somewhat narrow"
-   ],
-   "concerns": [
-    "Heavily technical data platform focus",
-    "Below her strategic/executive scope level",
-    "Contract-only, limited long-term growth"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 70,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote contract W2 role",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "Eliassen::798ec9dc-906a-11f1-97a0-024201c20d84",
   "company": "Eliassen",
   "title": "Senior Project Manager",
@@ -1125,85 +1125,6 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Remote W2 contract fits practical constraints",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Eliassen::08bf52f0-8c29-11f1-b76d-024201c20d84",
-  "company": "Eliassen",
-  "title": "Compliance Project Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/8tXGYR/compliance-project-manager-regulatorycompliance-anywhere-a1wuq000001mvuf2aa",
-  "posted": "2026-07-30",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract PM work",
-    "Project management transferable skills",
-    "Not core transformation or org strategy mandate"
-   ],
-   "concerns": [
-    "Highly specialized BSA/AML/OFAC regulatory compliance domain",
-    "W2 contract only, no strategic ownership",
-    "Not aligned with core transformation interests"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 60,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Remote contract PM work",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Robert Half::02720-0013481284-usen",
-  "company": "Robert Half",
-  "title": "Program Manager",
-  "location": "Princeton, NJ (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/princeton-nj/program-manager/02720-0013481284-usen",
-  "posted": "2026-08-06",
-  "salary": "$57.00\u2013$66.00/hr",
-  "employment_type": "Temp to Perm",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Program/PMO leadership matches core experience",
-    "Governance, portfolio reporting align with strengths",
-    "Remote listed but NJ-based, contract-to-perm",
-    "Cross-functional coordination fits operating style"
-   ],
-   "concerns": [
-    "Temp-to-perm uncertain long-term stability",
-    "Reinsurance/Lloyd's domain unfamiliar",
-    "Location NJ despite remote tag ambiguous"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 60,
-   "practical_fit": 55,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Program/PMO leadership matches core experience",
    "bg": "1451cb4bda95"
   }
  },
@@ -1280,6 +1201,46 @@
    "score": 35,
    "fit": "maybe",
    "reason": "Fully remote 4-month contract could provide income",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Robert Half::00390-9504375082-usen",
+  "company": "Robert Half",
+  "title": "Program Manager",
+  "location": "Sacramento, CA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/sacramento-ca/program-manager/00390-9504375082-usen",
+  "posted": "2026-08-06",
+  "salary": "$65.00\u2013$70.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "M&A integration mandate matches core domain",
+    "Executive-facing communication and risk management",
+    "Remote contract with FTE conversion potential",
+    "Cross-functional coordination across acquisition initiative"
+   ],
+   "concerns": [
+    "Requires active PMP certification not confirmed",
+    "Contract role via staffing agency",
+    "Healthcare industry specifics may be unfamiliar"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 78,
+   "practical_fit": 70,
+   "opportunity_score": 72,
+   "score": 72,
+   "fit": "yes",
+   "reason": "M&A integration mandate matches core domain",
    "bg": "1451cb4bda95"
   }
  },

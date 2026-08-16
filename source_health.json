@@ -1,12 +1,12 @@
 {
  "_comment": "Per-source fetch health from the most recent run. status is one of ok_results, ok_zero, temp_error, config_error. consecutive_zero_runs counts runs where the source ANSWERED with no in-window roles (an ATS-migration / dead-slug signal); an errored run does not advance it, because a source that never answered tells us nothing. consecutive_error_runs counts back-to-back failures instead.",
- "generated": "2026-08-15",
+ "generated": "2026-08-16",
  "summary": {
   "total": 129,
-  "ok": 128,
-  "with_results": 127,
+  "ok": 129,
+  "with_results": 128,
   "zero": 1,
-  "temp_error": 1,
+  "temp_error": 0,
   "config_error": 0,
   "stale": [
    "AssemblyAI",
@@ -147,7 +147,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -161,7 +161,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 4,
+   "consecutive_zero_runs": 5,
    "consecutive_error_runs": 0
   },
   {
@@ -175,7 +175,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -189,7 +189,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -287,7 +287,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -309,14 +309,14 @@
    "registry": "local",
    "ats": "workday",
    "slug": "adobe",
-   "status": "temp_error",
-   "roles_fetched": 0,
-   "roles_returned": 0,
-   "attempts": 2,
-   "error": "TimeoutError: The read operation timed out",
-   "fetch_failed": true,
+   "status": "ok_results",
+   "roles_fetched": 62,
+   "roles_returned": 27,
+   "attempts": 1,
+   "error": "",
+   "fetch_failed": false,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 1
+   "consecutive_error_runs": 0
   },
   {
    "name": "BambooHR",
@@ -385,7 +385,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 11,
+   "consecutive_zero_runs": 12,
    "consecutive_error_runs": 0
   },
   {
@@ -399,7 +399,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 4,
+   "consecutive_zero_runs": 5,
    "consecutive_error_runs": 0
   },
   {
@@ -469,7 +469,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -492,7 +492,7 @@
    "ats": "workday",
    "slug": "wgu",
    "status": "ok_results",
-   "roles_fetched": 113,
+   "roles_fetched": 112,
    "roles_returned": 61,
    "attempts": 1,
    "error": "",
@@ -647,7 +647,7 @@
    "slug": "twilio",
    "status": "ok_results",
    "roles_fetched": 157,
-   "roles_returned": 21,
+   "roles_returned": 20,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -693,7 +693,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -856,8 +856,8 @@
    "ats": "ashby",
    "slug": "replit",
    "status": "ok_results",
-   "roles_fetched": 75,
-   "roles_returned": 6,
+   "roles_fetched": 76,
+   "roles_returned": 7,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -969,7 +969,7 @@
    "slug": "stripe",
    "status": "ok_results",
    "roles_fetched": 578,
-   "roles_returned": 23,
+   "roles_returned": 22,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1122,7 +1122,7 @@
    "ats": "ashby",
    "slug": "1password",
    "status": "ok_results",
-   "roles_fetched": 63,
+   "roles_fetched": 61,
    "roles_returned": 14,
    "attempts": 1,
    "error": "",
@@ -1211,7 +1211,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -1281,7 +1281,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 5,
+   "consecutive_zero_runs": 6,
    "consecutive_error_runs": 0
   },
   {
@@ -1365,7 +1365,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -1393,7 +1393,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -1417,7 +1417,7 @@
    "slug": "deepgram",
    "status": "ok_results",
    "roles_fetched": 82,
-   "roles_returned": 12,
+   "roles_returned": 11,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1505,7 +1505,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 3,
+   "consecutive_zero_runs": 4,
    "consecutive_error_runs": 0
   },
   {
@@ -1519,7 +1519,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -1533,7 +1533,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 4,
+   "consecutive_zero_runs": 5,
    "consecutive_error_runs": 0
   },
   {
@@ -1556,8 +1556,8 @@
    "ats": "greenhouse",
    "slug": "samsara",
    "status": "ok_results",
-   "roles_fetched": 222,
-   "roles_returned": 31,
+   "roles_fetched": 270,
+   "roles_returned": 32,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1571,7 +1571,7 @@
    "slug": "hinge-health",
    "status": "ok_results",
    "roles_fetched": 74,
-   "roles_returned": 24,
+   "roles_returned": 23,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1739,7 +1739,7 @@
    "slug": "himalayas",
    "status": "ok_results",
    "roles_fetched": 20,
-   "roles_returned": 13,
+   "roles_returned": 10,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1752,8 +1752,8 @@
    "ats": "wwr",
    "slug": "weworkremotely",
    "status": "ok_results",
-   "roles_fetched": 145,
-   "roles_returned": 32,
+   "roles_fetched": 139,
+   "roles_returned": 34,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1766,8 +1766,8 @@
    "ats": "jobicy",
    "slug": "jobicy",
    "status": "ok_results",
-   "roles_fetched": 149,
-   "roles_returned": 134,
+   "roles_fetched": 156,
+   "roles_returned": 138,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1780,8 +1780,8 @@
    "ats": "aquent",
    "slug": "aquent",
    "status": "ok_results",
-   "roles_fetched": 398,
-   "roles_returned": 170,
+   "roles_fetched": 390,
+   "roles_returned": 167,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1794,8 +1794,8 @@
    "ats": "snaphop",
    "slug": "eliassen",
    "status": "ok_results",
-   "roles_fetched": 96,
-   "roles_returned": 23,
+   "roles_fetched": 94,
+   "roles_returned": 21,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1808,7 +1808,7 @@
    "ats": "snaphop",
    "slug": "addisongroup",
    "status": "ok_results",
-   "roles_fetched": 76,
+   "roles_fetched": 77,
    "roles_returned": 3,
    "attempts": 1,
    "error": "",
@@ -1822,8 +1822,8 @@
    "ats": "roberthalf",
    "slug": "roberthalf",
    "status": "ok_results",
-   "roles_fetched": 96,
-   "roles_returned": 96,
+   "roles_fetched": 97,
+   "roles_returned": 95,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
