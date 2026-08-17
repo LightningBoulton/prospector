@@ -116,6 +116,44 @@
   }
  },
  {
+  "key": "Aquent::212284",
+  "company": "Aquent",
+  "title": "Program Manager Tech",
+  "location": "REDMOND, WA, US (Remote)",
+  "url": "https://aquent.com/find-work/212284",
+  "posted": "2026-08-13",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Technical network infrastructure PM, not strategic transformation",
+    "Wrong domain despite program manager title",
+    "Contract staffing role via Aquent"
+   ],
+   "concerns": [
+    "Requires hands-on cabling/network technical knowledge",
+    "No strategic or org-effectiveness scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Technical network infrastructure PM, not strategic transformation",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Aquent::212266",
   "company": "Aquent",
   "title": "Customer Experience Project Manager",
@@ -856,80 +894,43 @@
   "rescued": true
  },
  {
-  "key": "Aquent::211639",
-  "company": "Aquent",
-  "title": "Project Manager - SCRUM",
-  "location": "New York, NY, US (Remote)",
-  "url": "https://aquent.com/find-work/211639",
-  "posted": "2026-07-17",
-  "salary": null,
+  "key": "Eliassen::733aaf65-94c5-11f1-9509-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Lead Support Analyst",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/RYsCuX/lead-support-analyst-support-anywhere-a1wuq000001owk52ae",
+  "posted": "2026-08-10",
+  "salary": "$55.00 to $60.00",
   "employment_type": "",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Scrum master tactical execution role, not strategic",
-    "Below her seniority and mandate level",
-    "Contract staffing placement, generic scope"
+    "IT application support role, not strategic scope",
+    "W2 contract, low rate for seniority",
+    "Mismatch with transformation/operations focus"
    ],
    "concerns": [
-    "No strategic ownership or transformation scope",
-    "Pure agile ceremony facilitation, not leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Scrum master tactical execution role, not strategic",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Aquent::211636",
-  "company": "Aquent",
-  "title": "Privacy Program Manager",
-  "location": "Redmond, WA, US (Remote)",
-  "url": "https://aquent.com/find-work/211636",
-  "posted": "2026-07-17",
-  "salary": "up to $52.00/hr",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Specialized privacy/legal compliance mandate",
-    "Remote is workable practically",
-    "Not aligned with transformation/ops leadership focus"
-   ],
-   "concerns": [
-    "Requires deep privacy/legal domain expertise she lacks",
-    "Narrow technical compliance role, not strategic scope"
+    "Hands-on technical support, wrong function",
+    "Low pay relative to experience level"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
-   "interest_fit": 25,
+   "interest_fit": 20,
    "practical_fit": 55,
    "opportunity_score": 25,
    "score": 25,
    "fit": "no",
-   "reason": "Specialized privacy/legal compliance mandate",
+   "reason": "IT application support role, not strategic scope",
    "bg": "1451cb4bda95"
-  }
+  },
+  "rescued": true
  },
  {
   "key": "Eliassen::e18382f7-9731-11f1-9509-02420a6c7775",
@@ -971,43 +972,44 @@
   }
  },
  {
-  "key": "Eliassen::733aaf65-94c5-11f1-9509-02420a6c7775",
+  "key": "Eliassen::bee1da82-9662-11f1-9509-02420a6c7775",
   "company": "Eliassen",
-  "title": "Lead Support Analyst",
+  "title": "Project Manager \u2013 Customer Modeling & Anaplan Transformation",
   "location": "Remote",
-  "url": "https://careers.eliassen.com/RYsCuX/lead-support-analyst-support-anywhere-a1wuq000001owk52ae",
-  "posted": "2026-08-10",
-  "salary": "$55.00 to $60.00",
+  "url": "https://careers.eliassen.com/ZCrhvs/project-manager-customer-modeling-anaplan-transformation-programproject-management-anywhere-a1wuq000001o4iz2aa",
+  "posted": "2026-08-12",
+  "salary": "$65.00 to $70.00",
   "employment_type": "",
   "expires": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "not_recommended",
+   "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "IT application support role, not strategic scope",
-    "W2 contract, low rate for seniority",
-    "Mismatch with transformation/operations focus"
+    "Enterprise transformation PM with real cross-functional scope",
+    "Remote W2 contract fits practical constraints",
+    "Executive/steering committee communication aligns with strengths",
+    "Program governance and adoption focus matches operations skillset"
    ],
    "concerns": [
-    "Hands-on technical support, wrong function",
-    "Low pay relative to experience level"
+    "Anaplan/technical implementation specifics not her core expertise",
+    "Contract rate modest for seniority level",
+    "Narrower technical scope than typical transformation mandates"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 20,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "IT application support role, not strategic scope",
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 75,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Enterprise transformation PM with real cross-functional scope",
    "bg": "1451cb4bda95"
-  },
-  "rescued": true
+  }
  },
  {
   "key": "Eliassen::870985ec-90e3-11f1-97a0-024201c20d84",
@@ -1046,46 +1048,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Remote contract W2 role",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Eliassen::bee1da82-9662-11f1-9509-02420a6c7775",
-  "company": "Eliassen",
-  "title": "Project Manager \u2013 Customer Modeling & Anaplan Transformation",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/ZCrhvs/project-manager-customer-modeling-anaplan-transformation-programproject-management-anywhere-a1wuq000001o4iz2aa",
-  "posted": "2026-08-12",
-  "salary": "$65.00 to $70.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Enterprise transformation PM with real cross-functional scope",
-    "Remote W2 contract fits practical constraints",
-    "Executive/steering committee communication aligns with strengths",
-    "Program governance and adoption focus matches operations skillset"
-   ],
-   "concerns": [
-    "Anaplan/technical implementation specifics not her core expertise",
-    "Contract rate modest for seniority level",
-    "Narrower technical scope than typical transformation mandates"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
-   "practical_fit": 75,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Enterprise transformation PM with real cross-functional scope",
    "bg": "1451cb4bda95"
   }
  },
@@ -1205,84 +1167,6 @@
   }
  },
  {
-  "key": "Robert Half::00390-9504375082-usen",
-  "company": "Robert Half",
-  "title": "Program Manager",
-  "location": "Sacramento, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/sacramento-ca/program-manager/00390-9504375082-usen",
-  "posted": "2026-08-06",
-  "salary": "$65.00\u2013$70.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "M&A integration mandate matches core domain",
-    "Executive-facing communication and risk management",
-    "Remote contract with FTE conversion potential",
-    "Cross-functional coordination across acquisition initiative"
-   ],
-   "concerns": [
-    "Requires active PMP certification not confirmed",
-    "Contract role via staffing agency",
-    "Healthcare industry specifics may be unfamiliar"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 78,
-   "practical_fit": 70,
-   "opportunity_score": 72,
-   "score": 72,
-   "fit": "yes",
-   "reason": "M&A integration mandate matches core domain",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Robert Half::00295-0013479119-usen",
-  "company": "Robert Half",
-  "title": "Recruiting Manager",
-  "location": "Beverly Hills, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/beverly-hills-ca/recruiting-manager/00295-0013479119-usen",
-  "posted": "2026-07-28",
-  "salary": "$47.50\u2013$60.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, adoption)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Operations/team leadership tangential fit",
-    "Recruiting-specific mandate not her core domain",
-    "Temp contract could offer income"
-   ],
-   "concerns": [
-    "Wrong function - TA leadership not transformation/strategy",
-    "Requires deep recruiting-specific expertise"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 50,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Operations/team leadership tangential fit",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "Robert Half::00400-0013487684-usen",
   "company": "Robert Half",
   "title": "Project Manager",
@@ -1323,40 +1207,78 @@
   "rescued": true
  },
  {
-  "key": "Robert Half::00400-0013487121-usen",
+  "key": "Robert Half::00295-0013479119-usen",
   "company": "Robert Half",
-  "title": "Finance Manager",
-  "location": "San Diego, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/san-diego-ca/finance-manager/00400-0013487121-usen",
-  "posted": "2026-08-12",
-  "salary": "$47.50\u2013$55.00/hr",
+  "title": "Recruiting Manager",
+  "location": "Beverly Hills, CA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/beverly-hills-ca/recruiting-manager/00295-0013479119-usen",
+  "posted": "2026-07-28",
+  "salary": "$47.50\u2013$60.00/hr",
   "employment_type": "Temp",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, adoption)",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "high",
+   "confidence": "medium",
    "reasons": [
-    "FP&A financial modeling role, not her domain",
-    "Requires advanced modeling/SQL skills she lacks",
-    "M&A integration angle present but finance-heavy"
+    "Operations/team leadership tangential fit",
+    "Recruiting-specific mandate not her core domain",
+    "Temp contract could offer income"
    ],
    "concerns": [
-    "Wrong function: hands-on FP&A modeling",
-    "Temp contract with narrow finance scope"
+    "Wrong function - TA leadership not transformation/strategy",
+    "Requires deep recruiting-specific expertise"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 40,
-   "opportunity_score": 20,
-   "score": 20,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 50,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "reason": "FP&A financial modeling role, not her domain",
+   "reason": "Operations/team leadership tangential fit",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Robert Half::02302-0013486271-usen",
+  "company": "Robert Half",
+  "title": "Senior Benefits Workday Implementation Consultant- remote",
+  "location": "Atlanta, GA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/atlanta-ga/senior-benefits-workday-implementation-consultant-remote/02302-0013486271-usen",
+  "posted": "2026-08-10",
+  "salary": "$50.00\u2013$65.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Remote temp role",
+    "HR project leadership overlaps with change/ops skills",
+    "Requires deep Workday/benefits technical expertise she lacks"
+   ],
+   "concerns": [
+    "Requires hands-on Workday benefits configuration expertise",
+    "Temp/contract HRIS specialist, not strategic transformation role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 40,
+   "practical_fit": 65,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Remote temp role",
    "bg": "1451cb4bda95"
   },
   "rescued": true

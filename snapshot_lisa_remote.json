@@ -3569,6 +3569,46 @@
   }
  },
  {
+  "key": "Samsara::8115905",
+  "company": "Samsara",
+  "title": "Senior Analyst, GTM Business Operations \u2013 Public Sector",
+  "location": "Remote - US",
+  "url": "https://www.samsara.com/company/careers/roles/8115905?gh_jid=8115905",
+  "posted": "2026-08-17",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'business operations' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "GTM analytics role, not transformation/org leadership",
+    "US-remote fits practical constraints",
+    "Business operations adjacent domain match",
+    "Limited strategic ownership at analyst level"
+   ],
+   "concerns": [
+    "Senior Analyst title lacks seniority/scope she targets",
+    "Heavy sales-ops/GTM analytics focus vs her transformation core",
+    "No clear people leadership or executive scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "GTM analytics role, not transformation/org leadership",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Samsara::8053884",
   "company": "Samsara",
   "title": "Senior Enablement Specialist",
@@ -4586,42 +4626,79 @@
   }
  },
  {
-  "key": "name::https://himalayas.app/companies/cambridge-investment-research/jobs/managing-director-financial-planning",
-  "company": "name",
-  "title": "Managing Director, Financial Planning",
+  "key": "M9 Solutions::https://himalayas.app/companies/m9-solutions/jobs/director-integration-data-migration",
+  "company": "M9 Solutions",
+  "title": "Director, Integration & Data Migration",
   "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/cambridge-investment-research/jobs/managing-director-financial-planning",
-  "posted": "2026-08-16",
-  "salary": null,
+  "url": "https://himalayas.app/companies/m9-solutions/jobs/director-integration-data-migration",
+  "posted": "2026-08-17",
+  "salary": "$60,000\u2013$180,000",
   "employment_type": "Full Time",
-  "expires": "2026-10-15",
-  "demoted": true,
+  "expires": "2026-10-16",
   "tier": "discovery",
-  "match_reason": "role family 'planning' + seniority in title; demoted to wildcards by the precision rule 'financial planning'",
+  "match_reason": "role family 'integration' + seniority in title",
   "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
+   "recommendation": "not_recommended",
+   "confidence": "medium",
    "reasons": [
-    "Executive leadership and business development scope",
-    "US-remote fits practical constraints",
-    "Requires deep CFP financial planning industry expertise",
-    "Client experience and growth strategy elements align loosely"
+    "Technical data migration/architecture role, not org integration",
+    "Requires federal clearance and payroll systems expertise",
+    "Remote is practical but domain mismatch severe"
    ],
    "concerns": [
-    "Requires CFP/financial planning domain credentials she lacks",
-    "Wrong core domain: financial advisory business, not transformation/ops"
+    "Deeply technical IT/data migration mandate",
+    "Requires active Public Trust clearance",
+    "Not organizational or M&A integration work"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 40,
-   "practical_fit": 75,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Executive leadership and business development scope",
+   "qualification_fit": 25,
+   "interest_fit": 30,
+   "practical_fit": 45,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Technical data migration/architecture role, not org integration",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "OX Security::https://himalayas.app/companies/ox-security/jobs/marketing-operations-manager",
+  "company": "OX Security",
+  "title": "Marketing Operations Manager",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/ox-security/jobs/marketing-operations-manager",
+  "posted": "2026-08-17",
+  "salary": null,
+  "employment_type": "Full Time",
+  "expires": "2026-10-16",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote practical fit",
+    "Marketing ops tooling not her core strength",
+    "Too tactical/hands-on for her level"
+   ],
+   "concerns": [
+    "Requires 2-3 yrs level, junior for her seniority",
+    "Heavy martech/CRM ownership mismatch"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 80,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "US-remote practical fit",
    "bg": "1451cb4bda95"
   }
  },
@@ -4775,6 +4852,46 @@
    "score": 55,
    "fit": "maybe",
    "reason": "CX/CS leadership and scaling ops mandate",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Braze::https://weworkremotely.com/remote-jobs/braze-customer-success-manager-ii",
+  "company": "Braze",
+  "title": "Customer Success Manager II",
+  "location": "Anywhere in the World (Remote)",
+  "url": "https://weworkremotely.com/remote-jobs/braze-customer-success-manager-ii",
+  "posted": "2026-08-17",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "2026-09-16",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "CSM II is individual quota-bearing account role",
+    "Below strategic/transformation scope she targets",
+    "Remote practical fit but based in Spain HQ"
+   ],
+   "concerns": [
+    "Renewal/retention quota ownership, not strategic mandate",
+    "Junior title level II lacks executive scope",
+    "Location tied to Spain team"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 30,
+   "practical_fit": 45,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "CSM II is individual quota-bearing account role",
    "bg": "1451cb4bda95"
   }
  },
@@ -5830,44 +5947,6 @@
   }
  },
  {
-  "key": "Five9::143422",
-  "company": "Five9",
-  "title": "Principal Product Manager, Google Gemini Enterprise for Customer Experience (GECX)",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/143422-principal-product-manager-google-gemini-enterprise-for-customer-experience-gecx",
-  "posted": "2026-07-26",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "CX/AI theme overlaps interests",
-    "But requires technical PM/product ownership expertise",
-    "Not org strategy or transformation leadership"
-   ],
-   "concerns": [
-    "Wrong function: product management, not operations/transformation",
-    "Requires deep AI/ML technical product background"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 40,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "CX/AI theme overlaps interests",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "livingHR::150723",
   "company": "livingHR",
   "title": "HR Technology Consultant (Contract)",
@@ -5986,6 +6065,44 @@
    "bg": "1451cb4bda95"
   },
   "rescued": true
+ },
+ {
+  "key": "Cloudflare, Inc.::149375",
+  "company": "Cloudflare, Inc.",
+  "title": "Senior Principal, Sales Compensation Design & Strategy",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/149375-senior-principal-sales-compensation-design-strategy",
+  "posted": "2026-08-17",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Highly specialized sales comp design, not her domain",
+    "US-remote is practically attractive",
+    "Adjacent to ops but core skill mismatch"
+   ],
+   "concerns": [
+    "Requires deep sales compensation/quota expertise",
+    "Not aligned with transformation or org-design mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 30,
+   "practical_fit": 85,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Highly specialized sales comp design, not her domain",
+   "bg": "1451cb4bda95"
+  }
  },
  {
   "key": "dscout::150766",

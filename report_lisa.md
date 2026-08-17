@@ -1,49 +1,49 @@
-# Prospector — 2026-08-16
+# Prospector — 2026-08-17
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 2 closed/removed
+**14 new roles today** · 8 still worth applying · 1 closed/removed
 
 ## NEW — WORTH REVIEWING (10)
-- **Chief of Staff, Emergency Cash (Senior Manager)** — GiveDirectly · 82/100 · remote UK,  USA (Remote) · posted 2026-08-15
-  - Why: Chief of Staff mandate with strategy+ops scope
-  - Concern: Nonprofit/humanitarian sector shift from corporate
-  - https://jobicy.com/jobs/150791-chief-of-staff-emergency-cash-senior-manager
-- **People Operations Program Manager** — Headway · 55/100 · remote Remote · $114K – $179K · posted 2026-08-03
-  - Why: AI enablement and workforce tooling mandate
-  - Concern: Narrower HR ops focus than typical target roles
-  - https://jobs.ashbyhq.com/headway/d754d0e2-2a1b-4906-88b5-6ed0bfb109f8
-- **Manager, WFM Operations** — Coinbase · 55/100 · hybrid Remote - USA · posted 2026-08-03
-  - Why: Operations/capacity planning leadership scope
-  - Concern: WFM/forecasting is specialized, not core proof point
-  - https://www.coinbase.com/careers/positions/8089161?gh_jid=8089161
-- **Head of Customer Success (SaaS)** — us Haut.AI · 55/100 · remote Anywhere in the World (Remote) · posted 2026-08-04
-  - Why: CX/CS leadership and scaling ops mandate
-  - Concern: Small startup, quota/revenue-owning CS role
-  - https://weworkremotely.com/remote-jobs/us-haut-ai-head-of-customer-success-saas
-- **Manager of Enablement** — Canopy · 55/100 · hybrid Draper, UT · posted 2026-08-04
-  - Why: Utah hybrid, workable location
-  - Concern: Sales enablement is narrower than her transformation focus
-  - https://job-boards.greenhouse.io/canopytax/jobs/4354755009
-- **Business Value Consultant** — Stripe · 55/100 · remote US-Remote · posted 2026-08-05
-  - Why: US-remote, strong practical fit
-  - Concern: Tied closely to sales cycle, not transformation leadership
-  - https://stripe.com/jobs/search?gh_jid=8097051
-- **Organizational Change Management (OCM) & Communications Support Specialist** — Aquent · 55/100 · remote REDMOND, WA, US (Remote) · up to $70.00/hr · posted 2026-08-07
-  - Why: OCM and communications mandate fits change background
-  - Concern: More execution/support than strategic leadership
-  - https://aquent.com/find-work/212185
-- **Lead, Payer Partnerships & Strategy** — Headway · 55/100 · remote Remote · $111,520 – $164,000 · posted 2026-08-07
-  - Why: Cross-functional strategic partnership ownership
-  - Concern: Requires deep payer/health plan domain expertise
-  - https://jobs.ashbyhq.com/headway/25fb5a86-4b94-41ef-8251-989d34fa1146
-- **Sr Project Manager** — Aquent · 55/100 · remote Boston, MA, US (Remote) · posted 2026-08-11
-  - Why: Program governance & executive-facing PM work
-  - Concern: Contract role via staffing agency
-  - https://aquent.com/find-work/212231
-- **Revenue Strategy & Operations Manager (Insights & AI)** — Headway · 55/100 · remote Remote · $121.6K – $190K · posted 2026-08-12
-  - Why: Remote, matches AI enablement interest
-  - Concern: Heavily analytical/IC role, not strategic leadership
-  - https://jobs.ashbyhq.com/headway/64998174-15cc-46e4-8a51-e67c131b94af
+- **Sr. Sales Enablement Program Manager** — Rubrik · 55/100 · remote USA (Remote) · posted 2026-08-12
+  - Why: US-remote, program management scope
+  - Concern: Heavy instructional design/content focus, not strategic transformation
+  - https://jobicy.com/jobs/150533-sr-sales-enablement-program-manager
+- **Manager, Retail Partnerships** — ANGI · 55/100 · remote USA (Remote) · posted 2026-08-15
+  - Why: Cross-functional partnership management with strategic scope
+  - Concern: Narrower operational/account focus vs transformation mandate
+  - https://jobicy.com/jobs/150789-manager-retail-partnerships
+- **Revenue Operations Manager (Process)** — Headway · 52/100 · remote Remote - New York · $121.6K – $190K · posted 2026-08-12
+  - Why: AI-native process/ops workflow design aligns with AI enablement interest
+  - Concern: Manager-level RevOps is narrower than her strategic scope
+  - https://jobs.ashbyhq.com/headway/3433bad6-2ae5-4451-9433-3a12b6f586e0
+- **Senior Manager, Marketing Operations** — Grow Therapy · 52/100 · remote New York City (Remote) · $155K – $190K · posted 2026-08-14
+  - Why: US-remote practical fit
+  - Concern: Narrow creative/marketing ops scope vs transformation mandate
+  - https://jobs.ashbyhq.com/grow-therapy/3b5eabca-f87b-4118-b82e-4f715cb11a46
+- **Senior Manager Product Operations, FCM Ops** — Coinbase · 50/100 · remote Remote - USA · posted 2026-08-06
+  - Why: Operating model design and process scaling mandate
+  - Concern: Requires deep FCM/futures regulatory expertise
+  - https://www.coinbase.com/careers/positions/8110496?gh_jid=8110496
+- **Group Product Manager, Finance Technology** — Reddit · 50/100 · remote Remote - United States · posted 2026-08-06
+  - Why: AI-first finance transformation mandate
+  - Concern: Requires deep technical product management/SaaS PM background
+  - https://job-boards.greenhouse.io/reddit/jobs/8075185
+- **Legal Operations Lead** — Headway · 50/100 · remote Remote · $95.2K – $140K · posted 2026-08-07
+  - Why: AI-native workflow design and operations mandate
+  - Concern: Legal domain expertise not part of background
+  - https://jobs.ashbyhq.com/headway/89bb9ef6-e490-4d35-949c-f4007a264f8a
+- **Senior Manager - Data & AI Governance** — Mercury · 50/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within United States · posted 2026-08-13
+  - Why: Operating model and governance framework design
+  - Concern: Requires deep data/AI risk & compliance domain expertise
+  - https://job-boards.greenhouse.io/mercury/jobs/6142625004
+- **Vendor Operations Senior Associate** — Instacart · 50/100 · remote United States - Remote · posted 2026-08-14
+  - Why: Vendor/BPO operations oversight aligns with ops excellence background
+  - Concern: Associate-level title suggests limited strategic scope
+  - https://instacart.careers/job/?gh_jid=8130849
+- **Customer Activation Manager | Commercial** — Ramp · 45/100 · remote New York, NY (HQ) (Remote) · $97.1K – $148.4K · posted 2026-08-04
+  - Why: Onboarding/implementation leadership touches CX and operations
+  - Concern: More execution/sales-adjacent than strategic
+  - https://jobs.ashbyhq.com/ramp/a4ecdd59-e379-4841-9bd3-c3f1f86da008
 
 ## DISCOVERY / WILDCARDS (4)
 - **Principal, Strategy and Operations** — Adobe · 75/100 · onsite Lehi (+1 more) · posted 2026-08-14
@@ -97,9 +97,8 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Enterprise SaaS/security domain is new industry context
   - https://jobicy.com/jobs/150551-director-business-operations-customer-success
 
-## REMOVED SINCE PRIOR RUN (2)
-- Manager, Customer Success Operations — AlphaSense · No longer listed by its source
-- Senior Manager, Customer Success Operations — AlphaSense · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (1)
+- Program Manager — Robert Half · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/129 successful
