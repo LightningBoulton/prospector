@@ -1,55 +1,73 @@
-# Prospector — 2026-08-17
+# Prospector — 2026-08-18
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 1 closed/removed
+**17 new roles today** · 8 still worth applying · 2 closed/removed
+
+## APPLY FIRST (3)
+- **Director, AI Center of Excellence** — Instructure · 87/100 · remote USA (Remote) · posted 2026-08-17
+  - Why: AI enablement/transformation core strength match
+  - Concern: May want deeper technical AI/data infra background
+  - https://jobicy.com/jobs/150914-director-ai-center-of-excellence
+- **Wholesale Operations Leader - GRS North America** — Liberty Mutual · 87/100 · remote USA (Remote) · posted 2026-08-18
+  - Why: Strategic operations leadership bridging strategy and execution
+  - Concern: Insurance/underwriting domain specificity unproven
+  - https://jobicy.com/jobs/149406-wholesale-operations-leader-grs-north-america
+- **Principal Business Operations Manager - Remote (USA)** — Instructure · 85/100 · remote USA (Remote) · posted 2026-08-17
+  - Why: US-remote operational excellence leadership role
+  - Concern: Title generic but scope strong
+  - https://jobicy.com/jobs/150900-principal-business-operations-manager-remote-usa
 
 ## NEW — WORTH REVIEWING (10)
-- **Sr. Sales Enablement Program Manager** — Rubrik · 55/100 · remote USA (Remote) · posted 2026-08-12
-  - Why: US-remote, program management scope
-  - Concern: Heavy instructional design/content focus, not strategic transformation
-  - https://jobicy.com/jobs/150533-sr-sales-enablement-program-manager
-- **Manager, Retail Partnerships** — ANGI · 55/100 · remote USA (Remote) · posted 2026-08-15
-  - Why: Cross-functional partnership management with strategic scope
-  - Concern: Narrower operational/account focus vs transformation mandate
-  - https://jobicy.com/jobs/150789-manager-retail-partnerships
-- **Revenue Operations Manager (Process)** — Headway · 52/100 · remote Remote - New York · $121.6K – $190K · posted 2026-08-12
-  - Why: AI-native process/ops workflow design aligns with AI enablement interest
-  - Concern: Manager-level RevOps is narrower than her strategic scope
-  - https://jobs.ashbyhq.com/headway/3433bad6-2ae5-4451-9433-3a12b6f586e0
-- **Senior Manager, Marketing Operations** — Grow Therapy · 52/100 · remote New York City (Remote) · $155K – $190K · posted 2026-08-14
+- **Director, Large Pro Operations** — Angi · 78/100 · remote Remote - United States · posted 2026-08-17
+  - Why: Strategic operations leadership with cross-functional scope
+  - Concern: Sales/account-heavy domain, less transformation-specific
+  - https://jobs.ashbyhq.com/angi/73e63e99-3da9-43ac-9317-c61bd549c172
+- **Senior Program Delivery Strategist** — Angi · 62/100 · remote Remote - United States · posted 2026-08-17
+  - Why: Program ownership with strategic scope
+  - Concern: IC role, sales-enablement focus not core transformation
+  - https://jobs.ashbyhq.com/angi/8f25c229-a480-4093-ae02-b96c64aa467b
+- **Sr. Manager, Commercial Customer Success (East Region)** — Vanta · 55/100 · remote Remote U.S. · $198K – $233K · posted 2026-08-17
+  - Why: Customer success leadership aligns with CX background
+  - Concern: Heavy SaaS/GRC domain specificity, less transformation focus
+  - https://jobs.ashbyhq.com/vanta/a0090ea4-5e19-439c-91e3-eb8a3f117eee
+- **Program Manager, Performance and Talent Planning** — Stripe · 55/100 · remote US-Remote · posted 2026-08-17
+  - Why: Program management ownership of talent/performance systems
+  - Concern: Deep HR/talent-systems specialization vs her generalist transformation profile
+  - https://stripe.com/jobs/search?gh_jid=8127890
+- **Senior Customer Technical Program Manager - AI Datacenter** — NVIDIA · 45/100 · remote USA (Remote) · posted 2026-08-05
+  - Why: Program leadership scope aligns with PMO strengths
+  - Concern: Requires deep technical engineering background in hardware/datacenter
+  - https://jobicy.com/jobs/148312-senior-customer-technical-program-manager-ai-datacenter
+- **Portfolio Project Manager** — Eliassen · 45/100 · remote Remote · $60.00 to $65.00 · posted 2026-08-05
+  - Why: Remote contract W2 role
+  - Concern: Heavily technical data platform focus
+  - https://careers.eliassen.com/AMSrkn/portfolio-project-manager-programproject-management-anywhere-a1wuq000001iieh2aq
+- **Senior Enablement Specialist** — Samsara · 45/100 · remote Remote - US · posted 2026-08-05
   - Why: US-remote practical fit
-  - Concern: Narrow creative/marketing ops scope vs transformation mandate
-  - https://jobs.ashbyhq.com/grow-therapy/3b5eabca-f87b-4118-b82e-4f715cb11a46
-- **Senior Manager Product Operations, FCM Ops** — Coinbase · 50/100 · remote Remote - USA · posted 2026-08-06
-  - Why: Operating model design and process scaling mandate
-  - Concern: Requires deep FCM/futures regulatory expertise
-  - https://www.coinbase.com/careers/positions/8110496?gh_jid=8110496
-- **Group Product Manager, Finance Technology** — Reddit · 50/100 · remote Remote - United States · posted 2026-08-06
-  - Why: AI-first finance transformation mandate
-  - Concern: Requires deep technical product management/SaaS PM background
-  - https://job-boards.greenhouse.io/reddit/jobs/8075185
-- **Legal Operations Lead** — Headway · 50/100 · remote Remote · $95.2K – $140K · posted 2026-08-07
-  - Why: AI-native workflow design and operations mandate
-  - Concern: Legal domain expertise not part of background
-  - https://jobs.ashbyhq.com/headway/89bb9ef6-e490-4d35-949c-f4007a264f8a
-- **Senior Manager - Data & AI Governance** — Mercury · 50/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within United States · posted 2026-08-13
-  - Why: Operating model and governance framework design
-  - Concern: Requires deep data/AI risk & compliance domain expertise
-  - https://job-boards.greenhouse.io/mercury/jobs/6142625004
-- **Vendor Operations Senior Associate** — Instacart · 50/100 · remote United States - Remote · posted 2026-08-14
-  - Why: Vendor/BPO operations oversight aligns with ops excellence background
-  - Concern: Associate-level title suggests limited strategic scope
-  - https://instacart.careers/job/?gh_jid=8130849
-- **Customer Activation Manager | Commercial** — Ramp · 45/100 · remote New York, NY (HQ) (Remote) · $97.1K – $148.4K · posted 2026-08-04
-  - Why: Onboarding/implementation leadership touches CX and operations
-  - Concern: More execution/sales-adjacent than strategic
-  - https://jobs.ashbyhq.com/ramp/a4ecdd59-e379-4841-9bd3-c3f1f86da008
+  - Concern: Individual specialist role, not leadership mandate
+  - https://www.samsara.com/company/careers/roles/8053884?gh_jid=8053884
+- **Senior Sales Operations Analyst** — Samsara · 45/100 · remote Remote - US · posted 2026-08-10
+  - Why: US-remote fits location preference
+  - Concern: Focused on partner/channel sales ops, not core transformation
+  - https://www.samsara.com/company/careers/roles/8103641?gh_jid=8103641
+- **Director, Sales Compensation** — Dropbox · 45/100 · remote Remote - US: All locations · posted 2026-08-11
+  - Why: US-remote practical fit
+  - Concern: Highly specialized sales comp expertise required
+  - https://jobs.dropbox.com/listing/8121667?gh_jid=8121667
+- **Senior Talent Program Manager** — Coinbase · 45/100 · remote Remote - USA · posted 2026-08-13
+  - Why: Program management and change management overlap
+  - Concern: Deep talent acquisition/HR specialization not her core domain
+  - https://www.coinbase.com/careers/positions/8126484?gh_jid=8126484
 
 ## DISCOVERY / WILDCARDS (4)
 - **Principal, Strategy and Operations** — Adobe · 75/100 · onsite Lehi (+1 more) · posted 2026-08-14
   - Why: Strategy & Operations mandate fits core domains
   - Concern: No description to confirm mandate
   - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Principal--Strategy-and-Operations_R170949
+- **Project Manager IV, Transformation** — Western Governors University · 62/100 · onsite Salt Lake City, UT · $109,900.00 - $170,400.00 · posted 2026-08-17
+  - Why: Transformation program title fits core domain
+  - Concern: No description available to confirm scope
+  - https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721
 - **Sales Operations Manager, Foundry** — Instructure · 60/100 · remote USA (Remote) · posted 2026-08-04
   - Why: Revenue ops role within new AI-driven venture unit
   - Concern: Sales-quota adjacent function, not core strength
@@ -58,10 +76,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: US-remote program leadership role
   - Concern: GTM-specific domain expertise unclear
   - https://job-boards.greenhouse.io/gitlab/jobs/8697215002
-- **Senior Customer Success Manager, Enterprise - East** — Chainguard · 55/100 · remote United States - Remote · posted 2026-08-04
-  - Why: US-remote fits practical constraints well
-  - Concern: Individual account-management role, less strategic ownership
-  - https://job-boards.greenhouse.io/chainguard/jobs/4694867006
 
 ## STILL WORTH APPLYING (8)
 - **Director of Business Planning & Strategic Initiatives - Office of the CPTO (Remote Eligible)** — Smartsheet · 90/100 · remote -REMOTE, USA- · posted 2026-08-06
@@ -97,8 +111,9 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Enterprise SaaS/security domain is new industry context
   - https://jobicy.com/jobs/150551-director-business-operations-customer-success
 
-## REMOVED SINCE PRIOR RUN (1)
-- Program Manager — Robert Half · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (2)
+- Senior Manager - Product Partner Operations — Mercury · No longer listed by its source
+- Sr. Sales Enablement Program Manager — Rubrik · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/129 successful
