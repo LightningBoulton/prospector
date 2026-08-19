@@ -1,510 +1,503 @@
 # Chad — Software / Frontend / Microservices
-### Job report — 2026-08-18
+### Job report — 2026-08-19
 _⭐ = posted in the last 1 days_
 
-**25 new today** · 🌎 16 US-Remote · 📍 9 Local
+**22 new today** · 🌎 15 US-Remote · 📍 7 Local
 
-# 🌎 US-Remote (223)
+# 🌎 US-Remote (221)
 ## What's changed
-**New (16)**
-- ⭐ **Cloudflare** — [Senior Customer Engineer, Named](https://boards.greenhouse.io/cloudflare/jobs/8132642?gh_jid=8132642) · Distributed · Posted Aug 17 · 1d ago
-- ⭐ **Coinbase** — [Engineering Manager - Platform (FinHub - Financial Intelligence)](https://www.coinbase.com/careers/positions/8138031?gh_jid=8138031) · Remote - USA · Posted Aug 17 · 1d ago
-- ⭐ **Coinbase** — [Senior Software Engineer, Simple Trade Experience](https://www.coinbase.com/careers/positions/8103569?gh_jid=8103569) · Remote - USA · Posted Aug 18 · today
-- ⭐ **Fivetran** — [Customer Solutions Engineer II](https://www.fivetran.com/careers/job?gh_jid=7818274003) · Remote, Colorado, United States, AMER · Posted Aug 17 · 1d ago
-- ⭐ **GitLab** — [Staff Systems Engineer, IT](https://job-boards.greenhouse.io/gitlab/jobs/8705017002) · Remote, United States · Posted Aug 17 · 1d ago
-- ⭐ **Instacart** — [Engineering Manager, Fraud & Identity Platform](https://instacart.careers/job/?gh_jid=8137846) · United States - Remote · Posted Aug 18 · today
-- ⭐ **Instacart** — [Senior Data Engineer II, Finance](https://instacart.careers/job/?gh_jid=8132846) · United States - Remote · Posted Aug 17 · 1d ago
-- ⭐ **Instructure** — [Product Specialist: Platform](https://jobicy.com/jobs/150898-product-specialist-platform) · USA (Remote) · Posted Aug 17 · 1d ago
-- ⭐ **LaunchDarkly** — [Staff Frontend Engineer, Feature Management](https://job-boards.greenhouse.io/launchdarkly/jobs/7886222003) · Remote - US · Posted Aug 17 · 1d ago
-- ⭐ **Sentry** — [Senior Software Engineer, Streaming Platform](https://jobs.ashbyhq.com/sentry/70b48ffb-b413-49d1-8557-acc37b0e407e) · San Francisco, California (Remote) · $155K – $400K · Posted Aug 17 · 1d ago
-- ⭐ **Stripe** — [Integration Engineer, Metronome](https://stripe.com/jobs/search?gh_jid=8080454) · Remote · Posted Aug 18 · today
-- ⭐ **Tailscale** — [Forward Deployed Engineer](https://job-boards.greenhouse.io/tailscale/jobs/4724897005) · Remote (United States) · Posted Aug 17 · 1d ago
-- ⭐ **name** — [ServiceNow Developer](https://himalayas.app/companies/general-dynamics-information-technology/jobs/servicenow-developer) · United States (Remote) · $97,750–$132,250 · Posted Aug 18 · today
-- ⭐ **name** — [Application Developer (Angular)](https://himalayas.app/companies/general-dynamics-information-technology/jobs/application-developer-angular-3811683805) · United States (Remote) · $64,230–$86,250 · Posted Aug 18 · today
-- ⭐ **name** — [Devops Engineer](https://himalayas.app/companies/resolve-tech-solutions-llc/jobs/devops-engineer-8395803472) · United States (Remote) · Posted Aug 18 · today
-- ⭐ **name** — [Senior Microgrid Control and Automation Engineer](https://himalayas.app/companies/leidos/jobs/senior-microgrid-control-and-automation-engineer) · United States (Remote) · $107,900–$195,050 · Posted Aug 18 · today
+**New (15)**
+- ⭐ **1Password** — [Solutions Engineer, SMB](https://jobs.ashbyhq.com/1password/a5b083d5-5f82-4316-b5ef-a577f2edb493) · Remote (United States | Canada) · Posted Aug 18 · 1d ago
+- ⭐ **1Password** — [Developer, Authorization](https://jobs.ashbyhq.com/1password/d8e8cf3f-c994-43a7-854c-86849b95db41) · Remote (United States | Canada) · Posted Aug 18 · 1d ago
+- ⭐ **Baseten** — [Forward Deployed Engineer (Training)](https://jobs.ashbyhq.com/baseten/11ab2593-6648-4943-ab4a-284fe7e89720) · San Francisco (Remote) · $200K – $400K · Posted Aug 19 · today
+- ⭐ **Datadog** — [Developer Advocate - Service Management](https://careers.datadoghq.com/detail/8139662/?gh_jid=8139662) · California, USA, Remote; New York, USA, Remote · Posted Aug 18 · 1d ago
+- ⭐ **Figma** — [Marketing Engineer](https://jobicy.com/jobs/151025-marketing-engineer) · USA (Remote) · Posted Aug 18 · 1d ago
+- ⭐ **Grafana Labs** — [Staff Backend Engineer - Mimir Query, Databases | USA | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6146604004) · United States (Remote) · Posted Aug 18 · 1d ago
+- ⭐ **Included Health** — [Senior Security Operations Engineer](https://jobs.lever.co/includedhealth/b3b5352c-0784-41c4-9e2f-062461aef44a) · Remote · Posted Aug 18 · 1d ago
+- ⭐ **LangChain** — [Solutions Engineer (Chicago)](https://jobs.ashbyhq.com/langchain/98fcaa18-d323-49cd-b231-b2d4b905419d) · Chicago, IL (Remote) · Posted Aug 18 · 1d ago
+- ⭐ **LaunchDarkly** — [Senior Full Stack Engineer, Enterprise, Feature Management](https://job-boards.greenhouse.io/launchdarkly/jobs/7887684003) · Remote - US · Posted Aug 18 · 1d ago
+- ⭐ **LaunchDarkly** — [Staff Enterprise Developer Advocate](https://job-boards.greenhouse.io/launchdarkly/jobs/7895529003) · Remote - US · Posted Aug 18 · 1d ago
+- ⭐ **Payabli** — [Senior Product Manager, Platform](https://weworkremotely.com/remote-jobs/payabli-senior-product-manager-platform) · Anywhere in the World (Remote) · Posted Aug 18 · 1d ago
+- ⭐ **RESPEC** — [BI Developer (Contractor)](https://himalayas.app/companies/respec/jobs/bi-developer-contractor) · United States (Remote) · Posted Aug 19 · today
+- ⭐ **Reddit** — [Senior Backend Engineer, Safety](https://job-boards.greenhouse.io/reddit/jobs/8093006) · Remote - United States · Posted Aug 18 · 1d ago
+- ⭐ **Reddit** — [Software Engineer, Content Platform](https://job-boards.greenhouse.io/reddit/jobs/8139781) · Remote - United States · Posted Aug 18 · 1d ago
+- ⭐ **Temporal** — [Staff Software Engineer, Traffic](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5214260007) · United States, Remote Opportunity · Posted Aug 18 · 1d ago
 **Changed titles (1)**
-- **Vanta** — "Sr. Backend Software Engineer, Integrations Platform" → [Senior Backend Software Engineer, Integrations Platform](https://jobs.ashbyhq.com/vanta/e76ea2d6-a514-458c-87fd-0792e50ae6bf)
+- **Cloudflare** — "Senior Customer Engineer, Named" → [Senior Customer Engineer, Named - Philadelphia, PA](https://boards.greenhouse.io/cloudflare/jobs/8132642?gh_jid=8132642)
 
-## All current matching roles (223)
+## All current matching roles (221)
 
 **1Password**
-- [Developer, Open Source](https://jobs.ashbyhq.com/1password/c22ea4e6-f39b-448c-a9e9-a04445ba18e6) · Remote (United States | Canada) · Posted Jul 29 · 20d ago
-- [Developer, Rust](https://jobs.ashbyhq.com/1password/c247ea98-bf31-45f0-a38b-1fe255909538) · Remote (United States | Canada) · Posted Aug 14 · 4d ago
-- [Privacy Engineer](https://jobs.ashbyhq.com/1password/7f885c41-7572-439c-886f-bc508eb9a3d7) · Remote (United States | Canada) · Posted Aug 11 · 7d ago
-- [Senior Developer, CI Architecture](https://jobs.ashbyhq.com/1password/5cea0067-467b-4e1a-9ae5-089541ecd827) · Remote (United States | Canada) · Posted Aug 3 · 15d ago
-- [Senior IT Engineer](https://jobs.ashbyhq.com/1password/df6afe6a-7e62-4d57-be23-22583d0cdeb9) · Remote (United States | Canada) · Posted Jul 30 · 19d ago
-- [Senior Security Engineer, Vulnerability Management, PSIRT](https://jobs.ashbyhq.com/1password/b50830bf-d475-4cd9-b89c-b2176a4d1465) · Remote (United States | Canada) · Posted Aug 4 · 14d ago
+- ⭐ [Developer, Authorization](https://jobs.ashbyhq.com/1password/d8e8cf3f-c994-43a7-854c-86849b95db41) · Remote (United States | Canada) · Posted Aug 18 · 1d ago
+- [Developer, Open Source](https://jobs.ashbyhq.com/1password/c22ea4e6-f39b-448c-a9e9-a04445ba18e6) · Remote (United States | Canada) · Posted Jul 29 · 21d ago
+- [Developer, Rust](https://jobs.ashbyhq.com/1password/c247ea98-bf31-45f0-a38b-1fe255909538) · Remote (United States | Canada) · Posted Aug 14 · 5d ago
+- [Privacy Engineer](https://jobs.ashbyhq.com/1password/7f885c41-7572-439c-886f-bc508eb9a3d7) · Remote (United States | Canada) · Posted Aug 11 · 8d ago
+- [Senior Developer, CI Architecture](https://jobs.ashbyhq.com/1password/5cea0067-467b-4e1a-9ae5-089541ecd827) · Remote (United States | Canada) · Posted Aug 3 · 16d ago
+- [Senior IT Engineer](https://jobs.ashbyhq.com/1password/df6afe6a-7e62-4d57-be23-22583d0cdeb9) · Remote (United States | Canada) · Posted Jul 30 · 20d ago
+- [Senior Security Engineer, Vulnerability Management, PSIRT](https://jobs.ashbyhq.com/1password/b50830bf-d475-4cd9-b89c-b2176a4d1465) · Remote (United States | Canada) · Posted Aug 4 · 15d ago
+- ⭐ [Solutions Engineer, SMB](https://jobs.ashbyhq.com/1password/a5b083d5-5f82-4316-b5ef-a577f2edb493) · Remote (United States | Canada) · Posted Aug 18 · 1d ago
 
 **Affirm**
-- [Machine Learning Engineer II (Underwriting ML)](https://job-boards.greenhouse.io/affirm/jobs/7822387003) · Remote US · Posted Aug 6 · 12d ago
-- [Senior Software Engineer, Backend (Batch Infrastructure)](https://job-boards.greenhouse.io/affirm/jobs/7785812003) · Remote US · Posted Aug 5 · 13d ago
-- [Senior Software Engineer, Backend (Reliability Platform)](https://job-boards.greenhouse.io/affirm/jobs/7820306003) · Remote US · Posted Aug 4 · 14d ago
-- [Senior Software Engineer, Fullstack (Card Acquisition)](https://job-boards.greenhouse.io/affirm/jobs/7819654003) · Remote US · Posted Jul 29 · 20d ago
-- [Staff Analytics Analyst, Full Stack (Revenue)](https://job-boards.greenhouse.io/affirm/jobs/7819999003) · Remote US · Posted Aug 5 · 13d ago
-- [Staff CIAM Software Engineer](https://job-boards.greenhouse.io/affirm/jobs/7819449003) · Remote US · Posted Aug 12 · 6d ago
-- [Staff Software Engineer, Affirm Bank](https://job-boards.greenhouse.io/affirm/jobs/7813107003) · Remote US · Posted Aug 6 · 12d ago
-- [Staff Software Engineer, Backend (Online Storage)](https://job-boards.greenhouse.io/affirm/jobs/7833950003) · Remote US · Posted Aug 10 · 8d ago
-- [Staff Software Engineer, Backend (Order Platform)](https://job-boards.greenhouse.io/affirm/jobs/7819704003) · Remote US · Posted Aug 10 · 8d ago
-- [Staff Software Engineer, Mobile (App Infrastructure)](https://job-boards.greenhouse.io/affirm/jobs/7829427003) · Remote US · Posted Aug 14 · 4d ago
+- [Machine Learning Engineer II (Underwriting ML)](https://job-boards.greenhouse.io/affirm/jobs/7822387003) · Remote US · Posted Aug 6 · 13d ago
+- [Senior Software Engineer, Backend (Batch Infrastructure)](https://job-boards.greenhouse.io/affirm/jobs/7785812003) · Remote US · Posted Aug 5 · 14d ago
+- [Senior Software Engineer, Backend (Reliability Platform)](https://job-boards.greenhouse.io/affirm/jobs/7820306003) · Remote US · Posted Aug 4 · 15d ago
+- [Senior Software Engineer, Fullstack (Card Acquisition)](https://job-boards.greenhouse.io/affirm/jobs/7819654003) · Remote US · Posted Jul 29 · 21d ago
+- [Staff Analytics Analyst, Full Stack (Revenue)](https://job-boards.greenhouse.io/affirm/jobs/7819999003) · Remote US · Posted Aug 5 · 14d ago
+- [Staff CIAM Software Engineer](https://job-boards.greenhouse.io/affirm/jobs/7819449003) · Remote US · Posted Aug 12 · 7d ago
+- [Staff Software Engineer, Affirm Bank](https://job-boards.greenhouse.io/affirm/jobs/7813107003) · Remote US · Posted Aug 6 · 13d ago
+- [Staff Software Engineer, Backend (Online Storage)](https://job-boards.greenhouse.io/affirm/jobs/7833950003) · Remote US · Posted Aug 10 · 9d ago
+- [Staff Software Engineer, Backend (Order Platform)](https://job-boards.greenhouse.io/affirm/jobs/7819704003) · Remote US · Posted Aug 10 · 9d ago
+- [Staff Software Engineer, Mobile (App Infrastructure)](https://job-boards.greenhouse.io/affirm/jobs/7829427003) · Remote US · Posted Aug 14 · 5d ago
 
 **Airbyte**
-- [Senior Site Reliability Engineer](https://jobs.ashbyhq.com/airbyte/5930fed9-c4f6-43c3-87be-3402c2c46489) · San Francisco (Remote) · $196K – $235K · Posted Jul 30 · 19d ago
+- [Senior Site Reliability Engineer](https://jobs.ashbyhq.com/airbyte/5930fed9-c4f6-43c3-87be-3402c2c46489) · San Francisco (Remote) · $196K – $235K · Posted Jul 30 · 20d ago
 
 **Amplitude**
-- [Staff Software Engineer- UI Foundations Team](https://job-boards.greenhouse.io/amplitude/jobs/8709027002) · Remote - USA · Posted Aug 13 · 5d ago
+- [Staff Software Engineer- UI Foundations Team](https://job-boards.greenhouse.io/amplitude/jobs/8709027002) · Remote - USA · Posted Aug 13 · 6d ago
 
 **Angi**
-- [Principal Product Manager, AI Platform](https://jobs.ashbyhq.com/angi/59a468ef-aef4-41a1-8bf2-5c920524e5d0) · Remote - United States · Posted Aug 4 · 14d ago
+- [Principal Product Manager, AI Platform](https://jobs.ashbyhq.com/angi/59a468ef-aef4-41a1-8bf2-5c920524e5d0) · Remote - United States · Posted Aug 4 · 15d ago
 
 **Asana**
-- [Senior Privacy Engineer](https://weworkremotely.com/remote-jobs/asana-senior-privacy-engineer) · Anywhere in the World (Remote) · Posted Aug 2 · 16d ago
+- [Senior Privacy Engineer](https://weworkremotely.com/remote-jobs/asana-senior-privacy-engineer) · Anywhere in the World (Remote) · Posted Aug 2 · 17d ago
 
 **Baseten**
-- [AI Inference Engineer](https://jobs.ashbyhq.com/baseten/db6477fc-111a-4340-bf00-525fe023e6f3) · San Francisco (Remote) · $165K – $330K · Posted Aug 3 · 15d ago
-- [IT Support / Operations Engineer](https://jobs.ashbyhq.com/baseten/c07eb44f-b5fa-4808-90b7-03b265d97836) · San Francisco (Remote) · $125K – $170K · Posted Jul 30 · 19d ago
-- [Software Engineer - AI Developer Productivity](https://jobs.ashbyhq.com/baseten/e71e97a8-6367-4050-b6a9-42ce62ec78f1) · San Francisco (Remote) · $165K – $330K · Posted Aug 11 · 7d ago
-- [Software Engineer - Continuous Delivery](https://jobs.ashbyhq.com/baseten/fb886b59-fdc3-4315-a9b3-c49808bcd2ce) · San Francisco (Remote) · $165K – $330K · Posted Aug 11 · 7d ago
-- [Software Engineer - Observability](https://jobs.ashbyhq.com/baseten/3e925ab1-2089-4a79-989e-50479b546eda) · San Francisco (Remote) · $165K – $330K · Posted Aug 10 · 8d ago
-- [Software Engineer - Testing Frameworks](https://jobs.ashbyhq.com/baseten/78028a72-2431-4373-aaec-d6e2c9a1cc7d) · San Francisco (Remote) · $165K – $330K · Posted Aug 11 · 7d ago
-
-**Buffer**
-- [Senior Infrastructure Engineer](https://jobs.ashbyhq.com/buffer/1ee8b707-48a0-40cc-a319-3fb7c665a1e8) · Remote · $164,595 – $212,744 · Posted Jul 28 · 21d ago
+- [AI Inference Engineer](https://jobs.ashbyhq.com/baseten/db6477fc-111a-4340-bf00-525fe023e6f3) · San Francisco (Remote) · $165K – $330K · Posted Aug 3 · 16d ago
+- ⭐ [Forward Deployed Engineer (Training)](https://jobs.ashbyhq.com/baseten/11ab2593-6648-4943-ab4a-284fe7e89720) · San Francisco (Remote) · $200K – $400K · Posted Aug 19 · today
+- [IT Support / Operations Engineer](https://jobs.ashbyhq.com/baseten/c07eb44f-b5fa-4808-90b7-03b265d97836) · San Francisco (Remote) · $125K – $170K · Posted Jul 30 · 20d ago
+- [Software Engineer - AI Developer Productivity](https://jobs.ashbyhq.com/baseten/e71e97a8-6367-4050-b6a9-42ce62ec78f1) · San Francisco (Remote) · $165K – $330K · Posted Aug 11 · 8d ago
+- [Software Engineer - Continuous Delivery](https://jobs.ashbyhq.com/baseten/fb886b59-fdc3-4315-a9b3-c49808bcd2ce) · San Francisco (Remote) · $165K – $330K · Posted Aug 11 · 8d ago
+- [Software Engineer - Observability](https://jobs.ashbyhq.com/baseten/3e925ab1-2089-4a79-989e-50479b546eda) · San Francisco (Remote) · $165K – $330K · Posted Aug 10 · 9d ago
+- [Software Engineer - Testing Frameworks](https://jobs.ashbyhq.com/baseten/78028a72-2431-4373-aaec-d6e2c9a1cc7d) · San Francisco (Remote) · $165K – $330K · Posted Aug 11 · 8d ago
 
 **Chainguard**
-- [Principal Software Engineer (Libraries Platform)](https://job-boards.greenhouse.io/chainguard/jobs/4698956006) · United States - Remote · Posted Aug 12 · 6d ago
-- [Senior Security Engineer (Cloud)](https://job-boards.greenhouse.io/chainguard/jobs/4700287006) · United States - Remote · Posted Jul 28 · 21d ago
-- [Senior Software Engineer  (Guarded OS)](https://job-boards.greenhouse.io/chainguard/jobs/4686153006) · United States - Remote · Posted Aug 4 · 14d ago
-- [Senior Software Engineer (AI CICD)](https://job-boards.greenhouse.io/chainguard/jobs/4700937006) · Europe - Remote; United Kingdom - Remote; United States - Remote · Posted Jul 29 · 20d ago
-- [Staff Product Security Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4696743006) · United States - Remote · Posted Aug 6 · 12d ago
-- [Staff Software Engineer (AI CICD)](https://job-boards.greenhouse.io/chainguard/jobs/4700933006) · Europe - Remote; United Kingdom - Remote; United States - Remote · Posted Jul 29 · 20d ago
-- [Staff Software Engineer (AI CICD)](https://job-boards.greenhouse.io/chainguard/jobs/4700929006) · Europe - Remote; United Kingdom - Remote; United States - Remote · Posted Jul 29 · 20d ago
-- [Staff Software Engineer (Customer Platform)](https://job-boards.greenhouse.io/chainguard/jobs/4705456006) · United States - Remote · Posted Aug 14 · 4d ago
-- [Staff Vulnerability Management Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4696736006) · United States - Remote · Posted Aug 14 · 4d ago
+- [Principal Software Engineer (Libraries Platform)](https://job-boards.greenhouse.io/chainguard/jobs/4698956006) · United States - Remote · Posted Aug 12 · 7d ago
+- [Senior Software Engineer  (Guarded OS)](https://job-boards.greenhouse.io/chainguard/jobs/4686153006) · United States - Remote · Posted Aug 4 · 15d ago
+- [Senior Software Engineer (AI CICD)](https://job-boards.greenhouse.io/chainguard/jobs/4700937006) · Europe - Remote; United Kingdom - Remote; United States - Remote · Posted Jul 29 · 21d ago
+- [Staff Product Security Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4696743006) · United States - Remote · Posted Aug 6 · 13d ago
+- [Staff Software Engineer (AI CICD)](https://job-boards.greenhouse.io/chainguard/jobs/4700933006) · Europe - Remote; United Kingdom - Remote; United States - Remote · Posted Jul 29 · 21d ago
+- [Staff Software Engineer (AI CICD)](https://job-boards.greenhouse.io/chainguard/jobs/4700929006) · Europe - Remote; United Kingdom - Remote; United States - Remote · Posted Jul 29 · 21d ago
+- [Staff Software Engineer (Customer Platform)](https://job-boards.greenhouse.io/chainguard/jobs/4705456006) · United States - Remote · Posted Aug 14 · 5d ago
+- [Staff Vulnerability Management Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4696736006) · United States - Remote · Posted Aug 14 · 5d ago
 
 **Chime**
-- [Software Engineer, AI Enablement](https://boards.greenhouse.io/chime/jobs/8578967002?gh_jid=8578967002) · Remote, USA · Posted Aug 3 · 15d ago
+- [Software Engineer, AI Enablement](https://boards.greenhouse.io/chime/jobs/8578967002?gh_jid=8578967002) · Remote, USA · Posted Aug 3 · 16d ago
 
 **Circle**
-- [Senior Site Reliability Engineer - CLO](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Senior-Site-Reliability-Engineer---CLO_JR101103/apply) · San Francisco, California, United States of America (Remote) · Posted Aug 13 · 5d ago
-- [Senior Site Reliability Engineer - Infra Ops](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Senior-Site-Reliability-Engineer---Infra-Ops_JR101085/apply) · San Francisco, California, United States of America (Remote) · Posted Aug 4 · 14d ago
-- [Staff Site Reliability Engineer](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Staff-Site-Reliability-Engineer_JR101101/apply) · San Francisco, California, United States of America (Remote) · Posted Aug 4 · 14d ago
+- [Senior Site Reliability Engineer - CLO](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Senior-Site-Reliability-Engineer---CLO_JR101103/apply) · San Francisco, California, United States of America (Remote) · Posted Aug 13 · 6d ago
+- [Senior Site Reliability Engineer - Infra Ops](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Senior-Site-Reliability-Engineer---Infra-Ops_JR101085/apply) · San Francisco, California, United States of America (Remote) · Posted Aug 4 · 15d ago
+- [Staff Site Reliability Engineer](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Staff-Site-Reliability-Engineer_JR101101/apply) · San Francisco, California, United States of America (Remote) · Posted Aug 4 · 15d ago
 
 **ClickHouse**
-- [Senior Cloud Software Engineer - Efficiency Engineering](https://job-boards.greenhouse.io/clickhouse/jobs/6142784004) · United States(Remote) · Posted Aug 13 · 5d ago
-- [Senior Consulting Engineer - AMER](https://job-boards.greenhouse.io/clickhouse/jobs/6140168004) · North America (Remote) · Posted Aug 10 · 8d ago
-- [Senior Product Security Engineer](https://job-boards.greenhouse.io/clickhouse/jobs/6130149004) · United States (remote) · Posted Jul 29 · 20d ago
-- [Senior Technical Customer Support Engineer](https://job-boards.greenhouse.io/clickhouse/jobs/6144487004) · United States (Remote) · Posted Aug 14 · 4d ago
+- [Senior Cloud Software Engineer - Efficiency Engineering](https://job-boards.greenhouse.io/clickhouse/jobs/6142784004) · United States(Remote) · Posted Aug 13 · 6d ago
+- [Senior Consulting Engineer - AMER](https://job-boards.greenhouse.io/clickhouse/jobs/6140168004) · North America (Remote) · Posted Aug 10 · 9d ago
+- [Senior Product Security Engineer](https://job-boards.greenhouse.io/clickhouse/jobs/6130149004) · United States (remote) · Posted Jul 29 · 21d ago
+- [Senior Technical Customer Support Engineer](https://job-boards.greenhouse.io/clickhouse/jobs/6144487004) · United States (Remote) · Posted Aug 14 · 5d ago
 
 **Close**
-- [Senior Frontend Engineer – Growth (USA Only - 100% Remote)](https://jobs.ashbyhq.com/close/bbd78474-bee4-4fdc-a670-9234457bcf29) · USA - Remote · Posted Aug 3 · 15d ago
+- [Senior Frontend Engineer – Growth (USA Only - 100% Remote)](https://jobs.ashbyhq.com/close/bbd78474-bee4-4fdc-a670-9234457bcf29) · USA - Remote · Posted Aug 3 · 16d ago
 
 **Cloudflare**
-- [Senior Customer Engineer - Nashville](https://boards.greenhouse.io/cloudflare/jobs/8087769?gh_jid=8087769) · Distributed · Posted Aug 3 · 15d ago
-- [Senior Customer Engineer - Vancouver, BC](https://boards.greenhouse.io/cloudflare/jobs/8093023?gh_jid=8093023) · Distributed · Posted Jul 29 · 20d ago
-- [Senior Customer Engineer, Fed - Toronto, CA](https://boards.greenhouse.io/cloudflare/jobs/8122071?gh_jid=8122071) · Distributed · Posted Aug 12 · 6d ago
-- [Senior Customer Engineer, Majors - Toronto, CA](https://boards.greenhouse.io/cloudflare/jobs/8121983?gh_jid=8121983) · Distributed · Posted Aug 12 · 6d ago
-- ⭐ [Senior Customer Engineer, Named](https://boards.greenhouse.io/cloudflare/jobs/8132642?gh_jid=8132642) · Distributed · Posted Aug 17 · 1d ago
-- [Senior Customer Engineer, Named - Minnesota](https://boards.greenhouse.io/cloudflare/jobs/8121827?gh_jid=8121827) · Distributed · Posted Aug 11 · 7d ago
-- [Senior Customer Engineer, Shenzhen](https://boards.greenhouse.io/cloudflare/jobs/8115936?gh_jid=8115936) · Distributed · Posted Aug 7 · 11d ago
+- [Senior Customer Engineer - Nashville](https://boards.greenhouse.io/cloudflare/jobs/8087769?gh_jid=8087769) · Distributed · Posted Aug 3 · 16d ago
+- [Senior Customer Engineer - Vancouver, BC](https://boards.greenhouse.io/cloudflare/jobs/8093023?gh_jid=8093023) · Distributed · Posted Jul 29 · 21d ago
+- [Senior Customer Engineer, Fed - Toronto, CA](https://boards.greenhouse.io/cloudflare/jobs/8122071?gh_jid=8122071) · Distributed · Posted Aug 12 · 7d ago
+- [Senior Customer Engineer, Majors - Toronto, CA](https://boards.greenhouse.io/cloudflare/jobs/8121983?gh_jid=8121983) · Distributed · Posted Aug 12 · 7d ago
+- [Senior Customer Engineer, Named - Minnesota](https://boards.greenhouse.io/cloudflare/jobs/8121827?gh_jid=8121827) · Distributed · Posted Aug 11 · 8d ago
+- [Senior Customer Engineer, Named - Philadelphia, PA](https://boards.greenhouse.io/cloudflare/jobs/8132642?gh_jid=8132642) · Distributed · Posted Aug 17 · 2d ago
+- [Senior Customer Engineer, Shenzhen](https://boards.greenhouse.io/cloudflare/jobs/8115936?gh_jid=8115936) · Distributed · Posted Aug 7 · 12d ago
 
 **Coinbase**
-- ⭐ [Engineering Manager - Platform (FinHub - Financial Intelligence)](https://www.coinbase.com/careers/positions/8138031?gh_jid=8138031) · Remote - USA · Posted Aug 17 · 1d ago
-- [Forward Deployed Engineer, Compliance [Office of the CTO]](https://www.coinbase.com/careers/positions/8099099?gh_jid=8099099) · Remote - USA · Posted Jul 31 · 18d ago
-- [Forward Deployed Engineer, Compliance [Office of the CTO]](https://weworkremotely.com/remote-jobs/coinbase-forward-deployed-engineer-compliance-office-of-the-cto) · Anywhere in the World (Remote) · Posted Aug 7 · 11d ago
-- [IT Service Desk Engineer](https://www.coinbase.com/careers/positions/8097880?gh_jid=8097880) · Remote - USA · Posted Jul 31 · 18d ago
-- [Senior Engineering Manager, Core Automation (Platform)](https://www.coinbase.com/careers/positions/8124224?gh_jid=8124224) · Remote - USA · Posted Aug 12 · 6d ago
-- [Senior IT Automation Engineer](https://www.coinbase.com/careers/positions/8095207?gh_jid=8095207) · Remote - USA · Posted Jul 29 · 20d ago
-- [Senior Software Engineer - Frontend - Coinbase Card team](https://www.coinbase.com/careers/positions/8088201?gh_jid=8088201) · Remote - USA · Posted Jul 28 · 21d ago
-- [Senior Software Engineer, Backend - Platform (Tokens & Wrapped Assets)](https://www.coinbase.com/careers/positions/8095252?gh_jid=8095252) · Remote - USA · Posted Jul 30 · 19d ago
-- ⭐ [Senior Software Engineer, Simple Trade Experience](https://www.coinbase.com/careers/positions/8103569?gh_jid=8103569) · Remote - USA · Posted Aug 18 · today
-- [Senior Software Engineer, Stablecoins](https://www.coinbase.com/careers/positions/8104873?gh_jid=8104873) · Remote - USA · Posted Aug 6 · 12d ago
-- [Staff Analytics Engineer, Compliance Data](https://www.coinbase.com/careers/positions/8104148?gh_jid=8104148) · Remote - USA · Posted Aug 6 · 12d ago
-- [Staff Software Engineer (Platform - Access & Authorization)](https://www.coinbase.com/careers/positions/8114877?gh_jid=8114877) · Remote - USA · Posted Aug 7 · 11d ago
+- [Engineering Manager - Platform (FinHub - Financial Intelligence)](https://www.coinbase.com/careers/positions/8138031?gh_jid=8138031) · Remote - USA · Posted Aug 17 · 2d ago
+- [Forward Deployed Engineer, Compliance [Office of the CTO]](https://www.coinbase.com/careers/positions/8099099?gh_jid=8099099) · Remote - USA · Posted Jul 31 · 19d ago
+- [Forward Deployed Engineer, Compliance [Office of the CTO]](https://weworkremotely.com/remote-jobs/coinbase-forward-deployed-engineer-compliance-office-of-the-cto) · Anywhere in the World (Remote) · Posted Aug 7 · 12d ago
+- [IT Service Desk Engineer](https://www.coinbase.com/careers/positions/8097880?gh_jid=8097880) · Remote - USA · Posted Jul 31 · 19d ago
+- [Senior Engineering Manager, Core Automation (Platform)](https://www.coinbase.com/careers/positions/8124224?gh_jid=8124224) · Remote - USA · Posted Aug 12 · 7d ago
+- [Senior IT Automation Engineer](https://www.coinbase.com/careers/positions/8095207?gh_jid=8095207) · Remote - USA · Posted Jul 29 · 21d ago
+- [Senior Software Engineer, Backend - Platform (Tokens & Wrapped Assets)](https://www.coinbase.com/careers/positions/8095252?gh_jid=8095252) · Remote - USA · Posted Jul 30 · 20d ago
+- ⭐ [Senior Software Engineer, Simple Trade Experience](https://www.coinbase.com/careers/positions/8103569?gh_jid=8103569) · Remote - USA · Posted Aug 18 · 1d ago
+- [Senior Software Engineer, Stablecoins](https://www.coinbase.com/careers/positions/8104873?gh_jid=8104873) · Remote - USA · Posted Aug 6 · 13d ago
+- [Staff Analytics Engineer, Compliance Data](https://www.coinbase.com/careers/positions/8104148?gh_jid=8104148) · Remote - USA · Posted Aug 6 · 13d ago
+- [Staff Software Engineer (Platform - Access & Authorization)](https://www.coinbase.com/careers/positions/8114877?gh_jid=8114877) · Remote - USA · Posted Aug 7 · 12d ago
 
 **Confiz**
-- [Full Stack Engineer - Lv 4 / Java + JavaScript](https://weworkremotely.com/remote-jobs/confiz-full-stack-engineer-lv-4-java-javascript) · NSA (Remote) · Posted Aug 4 · 14d ago
+- [Full Stack Engineer - Lv 4 / Java + JavaScript](https://weworkremotely.com/remote-jobs/confiz-full-stack-engineer-lv-4-java-javascript) · NSA (Remote) · Posted Aug 4 · 15d ago
 
 **Cresta**
-- [Growth Marketing Manager, Web & CRO](https://job-boards.greenhouse.io/cresta/jobs/5376924008) · United States (Remote) · Posted Jul 31 · 18d ago
-- [Senior Developer Relations Engineer](https://job-boards.greenhouse.io/cresta/jobs/5376093008) · United States (Remote) · Posted Aug 12 · 6d ago
+- [Growth Marketing Manager, Web & CRO](https://job-boards.greenhouse.io/cresta/jobs/5376924008) · United States (Remote) · Posted Jul 31 · 19d ago
+- [Senior Developer Relations Engineer](https://job-boards.greenhouse.io/cresta/jobs/5376093008) · United States (Remote) · Posted Aug 12 · 7d ago
+
+**Datadog**
+- ⭐ [Developer Advocate - Service Management](https://careers.datadoghq.com/detail/8139662/?gh_jid=8139662) · California, USA, Remote; New York, USA, Remote · Posted Aug 18 · 1d ago
 
 **Deepgram**
-- [Full Stack Web Developer, Marketing](https://jobs.ashbyhq.com/deepgram/4f9648d7-e25c-440c-8ec6-566a405c7c23) · USA | Remote · $125K – $160K · Posted Aug 13 · 5d ago
-- [Senior Software Engineer - Model Evaluation & AI Systems](https://jobs.ashbyhq.com/deepgram/6f3d761e-4873-43af-a9b1-daeb147661f9) · USA | Remote · $180K – $240K · Posted Jul 28 · 21d ago
-- [Staff Product Manager, Agentic Experiences (Former Engineer)](https://jobs.ashbyhq.com/deepgram/17f95148-fa1c-4c34-82c8-333589bef789) · USA | Remote · $200K – $268K · Posted Jul 29 · 20d ago
+- [Full Stack Web Developer, Marketing](https://jobs.ashbyhq.com/deepgram/4f9648d7-e25c-440c-8ec6-566a405c7c23) · USA | Remote · $125K – $160K · Posted Aug 13 · 6d ago
+- [Staff Product Manager, Agentic Experiences (Former Engineer)](https://jobs.ashbyhq.com/deepgram/17f95148-fa1c-4c34-82c8-333589bef789) · USA | Remote · $200K – $268K · Posted Jul 29 · 21d ago
 
 **Docker**
-- [Senior Principal Product Manager, AI & Agent Platform](https://jobs.ashbyhq.com/docker/ec1eeb85-73bd-4956-bb67-93e0c42958e2) · United States (Remote) · $300K – $340K · Posted Jul 30 · 19d ago
-- [Senior Software Engineer, Docker Desktop, Desktop Systems Focus (East Coast)](https://jobs.ashbyhq.com/docker/8faa282d-9783-4957-bace-ab29abd9e470) · United States (Remote) · Posted Aug 10 · 8d ago
+- [Senior Principal Product Manager, AI & Agent Platform](https://jobs.ashbyhq.com/docker/ec1eeb85-73bd-4956-bb67-93e0c42958e2) · United States (Remote) · $300K – $340K · Posted Jul 30 · 20d ago
+- [Senior Software Engineer, Docker Desktop, Desktop Systems Focus (East Coast)](https://jobs.ashbyhq.com/docker/8faa282d-9783-4957-bace-ab29abd9e470) · United States (Remote) · Posted Aug 10 · 9d ago
+
+**Figma**
+- ⭐ [Marketing Engineer](https://jobicy.com/jobs/151025-marketing-engineer) · USA (Remote) · Posted Aug 18 · 1d ago
 
 **Fivetran**
-- ⭐ [Customer Solutions Engineer II](https://www.fivetran.com/careers/job?gh_jid=7818274003) · Remote, Colorado, United States, AMER · Posted Aug 17 · 1d ago
-- [Senior Business Value Engineer](https://www.fivetran.com/careers/job?gh_jid=7822951003) · Remote, Washington, United States, AMER · Posted Jul 31 · 18d ago
+- [Customer Solutions Engineer II](https://www.fivetran.com/careers/job?gh_jid=7818274003) · Remote, Colorado, United States, AMER · Posted Aug 17 · 2d ago
+- [Senior Business Value Engineer](https://www.fivetran.com/careers/job?gh_jid=7822951003) · Remote, Washington, United States, AMER · Posted Jul 31 · 19d ago
 
 **Gainsight**
-- ⭐ [Staff Software Engineer](https://jobs.ashbyhq.com/gainsight/d6215748-758c-455a-b8b4-d55b51bc7cca) · IND - Bengaluru (Remote) · Posted Aug 17 · 1d ago
+- [Staff Software Engineer](https://jobs.ashbyhq.com/gainsight/d6215748-758c-455a-b8b4-d55b51bc7cca) · IND - Bengaluru (Remote) · Posted Aug 17 · 2d ago
 
 **Gemini**
-- [Senior Data Platform Engineer](https://boards.greenhouse.io/embed/job_app?for=gemini&token=8099895&gh_jid=8099895) · New York, New York; Miami, Florida; Remote (USA) · Posted Aug 4 · 14d ago
+- [Senior Data Platform Engineer](https://boards.greenhouse.io/embed/job_app?for=gemini&token=8099895&gh_jid=8099895) · New York, New York; Miami, Florida; Remote (USA) · Posted Aug 4 · 15d ago
 
 **GitLab**
-- [Intermediate Backend Engineer, Platform Readiness](https://job-boards.greenhouse.io/gitlab/jobs/8644569002) · Remote, Canada; Remote, United States · Posted Aug 3 · 15d ago
-- [Principal Product Manager, AI Software Factory](https://job-boards.greenhouse.io/gitlab/jobs/8658878002) · Remote, Canada; Remote, United States · Posted Aug 3 · 15d ago
-- [Senior Backend Engineer](https://job-boards.greenhouse.io/gitlab/jobs/8715968002) · Remote, Canada; Remote, United States · Posted Aug 14 · 4d ago
-- [Senior Backend Engineer (Ruby), Plan: Portfolio Experience](https://job-boards.greenhouse.io/gitlab/jobs/8682707002) · Remote, Canada; Remote, United States · Posted Aug 10 · 8d ago
-- [Senior Backend Engineer, Architecture Engineering: Nonlinear Productivity](https://job-boards.greenhouse.io/gitlab/jobs/8646556002) · Remote, Canada; Remote, United States · Posted Aug 5 · 13d ago
-- [Senior Backend Engineer, Platform Readiness](https://job-boards.greenhouse.io/gitlab/jobs/8644572002) · Remote, Canada; Remote, United States · Posted Aug 3 · 15d ago
-- [Staff Backend Engineer (Ruby), AI Engineering: DAP Repository Flows](https://job-boards.greenhouse.io/gitlab/jobs/8646573002) · Remote, Canada; Remote, United States · Posted Aug 7 · 11d ago
-- [Staff Backend Engineer, Architecture Engineering: Nonlinear Productivity](https://job-boards.greenhouse.io/gitlab/jobs/8646544002) · Remote, Canada; Remote, United States · Posted Aug 5 · 13d ago
-- ⭐ [Staff Systems Engineer, IT](https://job-boards.greenhouse.io/gitlab/jobs/8705017002) · Remote, United States · Posted Aug 17 · 1d ago
-- [Support Engineer (AMER)](https://job-boards.greenhouse.io/gitlab/jobs/8654230002) · Remote, Canada; Remote, United States · Posted Jul 31 · 18d ago
+- [Intermediate Backend Engineer, Platform Readiness](https://job-boards.greenhouse.io/gitlab/jobs/8644569002) · Remote, Canada; Remote, United States · Posted Aug 3 · 16d ago
+- [Principal Product Manager, AI Software Factory](https://job-boards.greenhouse.io/gitlab/jobs/8658878002) · Remote, Canada; Remote, United States · Posted Aug 3 · 16d ago
+- [Senior Backend Engineer](https://job-boards.greenhouse.io/gitlab/jobs/8715968002) · Remote, Canada; Remote, United States · Posted Aug 14 · 5d ago
+- [Senior Backend Engineer (Ruby), Plan: Portfolio Experience](https://job-boards.greenhouse.io/gitlab/jobs/8682707002) · Remote, Canada; Remote, United States · Posted Aug 10 · 9d ago
+- [Senior Backend Engineer, Architecture Engineering: Nonlinear Productivity](https://job-boards.greenhouse.io/gitlab/jobs/8646556002) · Remote, Canada; Remote, United States · Posted Aug 5 · 14d ago
+- [Senior Backend Engineer, Platform Readiness](https://job-boards.greenhouse.io/gitlab/jobs/8644572002) · Remote, Canada; Remote, United States · Posted Aug 3 · 16d ago
+- [Staff Backend Engineer (Ruby), AI Engineering: DAP Repository Flows](https://job-boards.greenhouse.io/gitlab/jobs/8646573002) · Remote, Canada; Remote, United States · Posted Aug 7 · 12d ago
+- [Staff Backend Engineer, Architecture Engineering: Nonlinear Productivity](https://job-boards.greenhouse.io/gitlab/jobs/8646544002) · Remote, Canada; Remote, United States · Posted Aug 5 · 14d ago
+- [Staff Systems Engineer, IT](https://job-boards.greenhouse.io/gitlab/jobs/8705017002) · Remote, United States · Posted Aug 17 · 2d ago
+- [Support Engineer (AMER)](https://job-boards.greenhouse.io/gitlab/jobs/8654230002) · Remote, Canada; Remote, United States · Posted Jul 31 · 19d ago
 
 **Grafana Labs**
-- [Senior FullStack Engineer - Grafana Cloud Observability| US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6130907004) · United States (Remote) · Posted Jul 31 · 18d ago
-- [Senior Solutions Engineer | West Coast | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6137468004) · United States (Remote) · Posted Aug 10 · 8d ago
+- [Senior FullStack Engineer - Grafana Cloud Observability| US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6130907004) · United States (Remote) · Posted Jul 31 · 19d ago
+- [Senior Solutions Engineer | West Coast | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6137468004) · United States (Remote) · Posted Aug 10 · 9d ago
+- ⭐ [Staff Backend Engineer - Mimir Query, Databases | USA | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6146604004) · United States (Remote) · Posted Aug 18 · 1d ago
 
 **Grow Therapy**
-- [Senior Software Engineer - Developer Experience & AI Enablement](https://jobs.ashbyhq.com/grow-therapy/058d3dd1-c7c7-421d-9ede-e7f9afdb6211) · San Francisco (Remote) · $182K – $250K · Posted Jul 31 · 18d ago
-- [Staff Software Engineer - Developer Experience & Ai Enablement](https://jobs.ashbyhq.com/grow-therapy/76429bab-1895-4581-9785-4d3a3e670a02) · San Francisco (Remote) · $217K – $289K · Posted Jul 31 · 18d ago
+- [Senior Software Engineer - Developer Experience & AI Enablement](https://jobs.ashbyhq.com/grow-therapy/058d3dd1-c7c7-421d-9ede-e7f9afdb6211) · San Francisco (Remote) · $182K – $250K · Posted Jul 31 · 19d ago
+- [Staff Software Engineer - Developer Experience & Ai Enablement](https://jobs.ashbyhq.com/grow-therapy/76429bab-1895-4581-9785-4d3a3e670a02) · San Francisco (Remote) · $217K – $289K · Posted Jul 31 · 19d ago
 
 **Gusto**
-- [Staff Software Engineer, Time and Scheduling](https://job-boards.greenhouse.io/gusto/jobs/8077301) · New York, NY;Toronto, Ontario, CAN - Remote · Posted Aug 3 · 15d ago
+- [Staff Software Engineer, Time and Scheduling](https://job-boards.greenhouse.io/gusto/jobs/8077301) · New York, NY;Toronto, Ontario, CAN - Remote · Posted Aug 3 · 16d ago
 
 **Headway**
-- [Senior Engineering Manager (Web Platform)](https://jobs.ashbyhq.com/headway/9ce97d23-19aa-4741-97cf-e8532ce747d3) · New York City (Remote) · $261.2K – $331.5K · Posted Aug 10 · 8d ago
-- [Staff Infrastructure Engineer](https://jobs.ashbyhq.com/headway/c8fc48cc-f556-421f-b824-58b9c82644a6) · Remote · $265K – $331K · Posted Aug 12 · 6d ago
-- [Staff Software Engineer (Journeys)](https://jobs.ashbyhq.com/headway/d123a2aa-7c3c-4833-bfc2-4d3356db1041) · Remote · $265K – $331K · Posted Aug 10 · 8d ago
-- [Staff Software Engineer - Experimentation](https://jobs.ashbyhq.com/headway/c22233f6-3143-4cb4-9c0c-8119e7ae7629) · Remote · $265K – $331K · Posted Aug 10 · 8d ago
-- [Staff Software Engineer - Insurance](https://jobs.ashbyhq.com/headway/2c7faf60-19df-49c9-9e19-f1bbfa839dc2) · Remote · $224K – $336K · Posted Aug 7 · 11d ago
+- [Senior Engineering Manager (Web Platform)](https://jobs.ashbyhq.com/headway/9ce97d23-19aa-4741-97cf-e8532ce747d3) · New York City (Remote) · $261.2K – $331.5K · Posted Aug 10 · 9d ago
+- [Staff Infrastructure Engineer](https://jobs.ashbyhq.com/headway/c8fc48cc-f556-421f-b824-58b9c82644a6) · Remote · $265K – $331K · Posted Aug 12 · 7d ago
+- [Staff Software Engineer (Journeys)](https://jobs.ashbyhq.com/headway/d123a2aa-7c3c-4833-bfc2-4d3356db1041) · Remote · $265K – $331K · Posted Aug 10 · 9d ago
+- [Staff Software Engineer - Experimentation](https://jobs.ashbyhq.com/headway/c22233f6-3143-4cb4-9c0c-8119e7ae7629) · Remote · $265K – $331K · Posted Aug 10 · 9d ago
+- [Staff Software Engineer - Insurance](https://jobs.ashbyhq.com/headway/2c7faf60-19df-49c9-9e19-f1bbfa839dc2) · Remote · $224K – $336K · Posted Aug 7 · 12d ago
 
 **Hightouch**
-- [Customer Success Engineer](https://weworkremotely.com/remote-jobs/hightouch-customer-success-engineer) · Anywhere in the World (Remote) · Posted Aug 16 · 2d ago
+- [Customer Success Engineer](https://weworkremotely.com/remote-jobs/hightouch-customer-success-engineer) · Anywhere in the World (Remote) · Posted Aug 16 · 3d ago
 
 **Hinge Health**
-- [Senior AI Developer](https://jobs.ashbyhq.com/hinge-health/b0583044-fe9f-4e3a-bdca-1a8cf53960d5) · Montreal-HQ (Remote) · CA$136.8K – CA$205.2K · Posted Aug 5 · 13d ago
-- [Senior Staff Engineer, Growth](https://jobs.ashbyhq.com/hinge-health/369dbd5f-0a12-4d57-9e96-8e1f38ba9ea2) · San Francisco-HQ (Remote) · $240K – $330K · Posted Jul 29 · 20d ago
-- [Software Engineer II](https://jobs.ashbyhq.com/hinge-health/62606e75-fd9f-4f9e-85c2-63a82e849db2) · San Francisco-HQ (Remote) · $129.6K – $194.4K · Posted Aug 13 · 5d ago
-- [Sr. Quality Engineer](https://jobs.ashbyhq.com/hinge-health/96dbc789-0ea8-4c66-b70e-8ef21af7b55c) · Montreal-HQ (Remote) · CA$90.4K – CA$135.6K · Posted Jul 31 · 18d ago
-- [Sr. Software Engineer, GI](https://jobs.ashbyhq.com/hinge-health/5e7401a9-405b-4bd6-866e-d5f008657e2d) · San Francisco-HQ (Remote) · $164K – $247K · Posted Aug 6 · 12d ago
-- [Staff Engineer, MSK Verticals](https://jobs.ashbyhq.com/hinge-health/146a5143-c0af-4aef-b504-8c1f5ed6339a) · San Francisco-HQ (Remote) · $192K – $264K · Posted Aug 11 · 7d ago
-- [Staff Engineer/Tech Lead, MSK Verticals](https://jobs.ashbyhq.com/hinge-health/940323e5-4b8a-4e42-830d-0850bfc07c39) · San Francisco-HQ (Remote) · $192K – $264K · Posted Aug 11 · 7d ago
-- [Staff Software Engineer, CV UX](https://jobs.ashbyhq.com/hinge-health/aaef9501-f998-442b-882c-32d0e8023405) · Montreal-HQ (Remote) · CA$134.4K – CA$201.6K · Posted Jul 29 · 20d ago
-- [Staff Software Engineer, GI](https://jobs.ashbyhq.com/hinge-health/d7bba1dc-1f6d-4ad0-9ad0-e65aa0aae628) · San Francisco-HQ (Remote) · $197K – $296K · Posted Aug 6 · 12d ago
-- [Staff Software Engineer, Home Pod (React Native)](https://jobs.ashbyhq.com/hinge-health/f7e949d1-fe6b-4357-bf1c-52cfe0f5f790) · San Francisco-HQ (Remote) · $192K – $288K · Posted Jul 31 · 18d ago
-- [Staff Software Engineer, Proactive Communications](https://jobs.ashbyhq.com/hinge-health/4fba45fc-b27f-4ac8-9eac-2b8ac66c0a58) · San Francisco-HQ (Remote) · $197.6K – $296.4K · Posted Jul 29 · 20d ago
-- [Test Engineer II](https://jobs.ashbyhq.com/hinge-health/e4ed90f9-06ad-425b-b974-e3ee990816dd) · San Francisco-HQ (Remote) · $126.4K – $189.6K · Posted Aug 12 · 6d ago
+- [Senior AI Developer](https://jobs.ashbyhq.com/hinge-health/b0583044-fe9f-4e3a-bdca-1a8cf53960d5) · Montreal-HQ (Remote) · CA$136.8K – CA$205.2K · Posted Aug 5 · 14d ago
+- [Senior Staff Engineer, Growth](https://jobs.ashbyhq.com/hinge-health/369dbd5f-0a12-4d57-9e96-8e1f38ba9ea2) · San Francisco-HQ (Remote) · $240K – $330K · Posted Jul 29 · 21d ago
+- [Software Engineer II](https://jobs.ashbyhq.com/hinge-health/62606e75-fd9f-4f9e-85c2-63a82e849db2) · San Francisco-HQ (Remote) · $129.6K – $194.4K · Posted Aug 13 · 6d ago
+- [Sr. Quality Engineer](https://jobs.ashbyhq.com/hinge-health/96dbc789-0ea8-4c66-b70e-8ef21af7b55c) · Montreal-HQ (Remote) · CA$90.4K – CA$135.6K · Posted Jul 31 · 19d ago
+- [Sr. Software Engineer, GI](https://jobs.ashbyhq.com/hinge-health/5e7401a9-405b-4bd6-866e-d5f008657e2d) · San Francisco-HQ (Remote) · $164K – $247K · Posted Aug 6 · 13d ago
+- [Staff Engineer, MSK Verticals](https://jobs.ashbyhq.com/hinge-health/146a5143-c0af-4aef-b504-8c1f5ed6339a) · San Francisco-HQ (Remote) · $192K – $264K · Posted Aug 11 · 8d ago
+- [Staff Engineer/Tech Lead, MSK Verticals](https://jobs.ashbyhq.com/hinge-health/940323e5-4b8a-4e42-830d-0850bfc07c39) · San Francisco-HQ (Remote) · $192K – $264K · Posted Aug 11 · 8d ago
+- [Staff Software Engineer, CV UX](https://jobs.ashbyhq.com/hinge-health/aaef9501-f998-442b-882c-32d0e8023405) · Montreal-HQ (Remote) · CA$134.4K – CA$201.6K · Posted Jul 29 · 21d ago
+- [Staff Software Engineer, GI](https://jobs.ashbyhq.com/hinge-health/d7bba1dc-1f6d-4ad0-9ad0-e65aa0aae628) · San Francisco-HQ (Remote) · $197K – $296K · Posted Aug 6 · 13d ago
+- [Staff Software Engineer, Home Pod (React Native)](https://jobs.ashbyhq.com/hinge-health/f7e949d1-fe6b-4357-bf1c-52cfe0f5f790) · San Francisco-HQ (Remote) · $192K – $288K · Posted Jul 31 · 19d ago
+- [Staff Software Engineer, Proactive Communications](https://jobs.ashbyhq.com/hinge-health/4fba45fc-b27f-4ac8-9eac-2b8ac66c0a58) · San Francisco-HQ (Remote) · $197.6K – $296.4K · Posted Jul 29 · 21d ago
+- [Test Engineer II](https://jobs.ashbyhq.com/hinge-health/e4ed90f9-06ad-425b-b974-e3ee990816dd) · San Francisco-HQ (Remote) · $126.4K – $189.6K · Posted Aug 12 · 7d ago
+
+**Included Health**
+- ⭐ [Senior Security Operations Engineer](https://jobs.lever.co/includedhealth/b3b5352c-0784-41c4-9e2f-062461aef44a) · Remote · Posted Aug 18 · 1d ago
 
 **Instacart**
-- ⭐ [Engineering Manager, Fraud & Identity Platform](https://instacart.careers/job/?gh_jid=8137846) · United States - Remote · Posted Aug 18 · today
-- [Forward Deployed Engineer](https://instacart.careers/job/?gh_jid=8097510) · United States - Remote · Posted Jul 30 · 19d ago
-- ⭐ [Senior Data Engineer II, Finance](https://instacart.careers/job/?gh_jid=8132846) · United States - Remote · Posted Aug 17 · 1d ago
-- [Senior Risk & Compliance Engineer - Data](https://instacart.careers/job/?gh_jid=8091191) · United States - Remote · Posted Jul 29 · 20d ago
-- [Site Reliability Engineer II](https://instacart.careers/job/?gh_jid=8121910) · United States - Remote · Posted Aug 14 · 4d ago
-- [Staff Software Engineer, Orders Platform](https://instacart.careers/job/?gh_jid=8110286) · United States - Remote · Posted Aug 10 · 8d ago
+- ⭐ [Engineering Manager, Fraud & Identity Platform](https://instacart.careers/job/?gh_jid=8137846) · United States - Remote · Posted Aug 18 · 1d ago
+- [Forward Deployed Engineer](https://instacart.careers/job/?gh_jid=8097510) · United States - Remote · Posted Jul 30 · 20d ago
+- [Senior Data Engineer II, Finance](https://instacart.careers/job/?gh_jid=8132846) · United States - Remote · Posted Aug 17 · 2d ago
+- [Senior Risk & Compliance Engineer - Data](https://instacart.careers/job/?gh_jid=8091191) · United States - Remote · Posted Jul 29 · 21d ago
+- [Site Reliability Engineer II](https://instacart.careers/job/?gh_jid=8121910) · United States - Remote · Posted Aug 14 · 5d ago
+- [Staff Software Engineer, Orders Platform](https://instacart.careers/job/?gh_jid=8110286) · United States - Remote · Posted Aug 10 · 9d ago
 
 **Instructure**
-- ⭐ [Product Specialist: Platform](https://jobicy.com/jobs/150898-product-specialist-platform) · USA (Remote) · Posted Aug 17 · 1d ago
-
-**Jumio**
-- [Customer Escalation Engineer](https://weworkremotely.com/remote-jobs/jumio-customer-escalation-engineer) · Anywhere in the World (Remote) · Posted Aug 6 · 12d ago
+- [Product Specialist: Platform](https://jobicy.com/jobs/150898-product-specialist-platform) · USA (Remote) · Posted Aug 17 · 2d ago
 
 **LangChain**
-- [AI Engineer, Enablement](https://jobs.ashbyhq.com/langchain/b8dead31-212a-4b92-82a7-c42df16ae877) · San Francisco, CA (Remote) · Posted Aug 5 · 13d ago
-- [Deployed Engineer (Austin)](https://jobs.ashbyhq.com/langchain/937e131f-1055-4f1f-bd8a-f036e4ba0666) · Austin, TX (Remote) · Posted Aug 3 · 15d ago
-- [Deployed Engineer (Chicago)](https://jobs.ashbyhq.com/langchain/38947013-3d0c-4257-aa58-ab8fe247ea3e) · Chicago, IL (Remote) · Posted Aug 5 · 13d ago
-- [Deployed Engineer (Dallas)](https://jobs.ashbyhq.com/langchain/8b533cc4-6654-44b4-b3fc-004def2a9927) · Dallas, TX (Remote) · Posted Aug 3 · 15d ago
-- [Deployed Engineer (Houston)](https://jobs.ashbyhq.com/langchain/385313eb-bff4-4019-8106-42714dc9879a) · Houston, TX (Remote) · Posted Aug 3 · 15d ago
-- [Solutions Engineer (Texas)](https://jobs.ashbyhq.com/langchain/df7a4d66-2159-4dff-b5ff-92f6e835f242) · Dallas, TX (Remote) · Posted Aug 13 · 5d ago
+- [AI Engineer, Enablement](https://jobs.ashbyhq.com/langchain/b8dead31-212a-4b92-82a7-c42df16ae877) · San Francisco, CA (Remote) · Posted Aug 5 · 14d ago
+- [Deployed Engineer (Austin)](https://jobs.ashbyhq.com/langchain/937e131f-1055-4f1f-bd8a-f036e4ba0666) · Austin, TX (Remote) · Posted Aug 3 · 16d ago
+- [Deployed Engineer (Chicago)](https://jobs.ashbyhq.com/langchain/38947013-3d0c-4257-aa58-ab8fe247ea3e) · Chicago, IL (Remote) · Posted Aug 5 · 14d ago
+- [Deployed Engineer (Dallas)](https://jobs.ashbyhq.com/langchain/8b533cc4-6654-44b4-b3fc-004def2a9927) · Dallas, TX (Remote) · Posted Aug 3 · 16d ago
+- [Deployed Engineer (Houston)](https://jobs.ashbyhq.com/langchain/385313eb-bff4-4019-8106-42714dc9879a) · Houston, TX (Remote) · Posted Aug 3 · 16d ago
+- ⭐ [Solutions Engineer (Chicago)](https://jobs.ashbyhq.com/langchain/98fcaa18-d323-49cd-b231-b2d4b905419d) · Chicago, IL (Remote) · Posted Aug 18 · 1d ago
+- [Solutions Engineer (Texas)](https://jobs.ashbyhq.com/langchain/df7a4d66-2159-4dff-b5ff-92f6e835f242) · Dallas, TX (Remote) · Posted Aug 13 · 6d ago
 
 **LaunchDarkly**
-- [Backend Engineer, Flag Delivery](https://job-boards.greenhouse.io/launchdarkly/jobs/7861151003) · Remote - US · Posted Aug 12 · 6d ago
-- [Developer Advocate, Growth](https://job-boards.greenhouse.io/launchdarkly/jobs/7819879003) · Remote - US · Posted Jul 28 · 21d ago
-- [Senior Backend Engineer, Billing](https://job-boards.greenhouse.io/launchdarkly/jobs/7860525003) · Remote - US · Posted Aug 12 · 6d ago
-- [Senior Backend Engineer, Identity & Access Management](https://job-boards.greenhouse.io/launchdarkly/jobs/7860487003) · Remote - US · Posted Aug 12 · 6d ago
-- [Sr Backend Engineer, Flag Delivery](https://job-boards.greenhouse.io/launchdarkly/jobs/7861200003) · Remote - US · Posted Aug 12 · 6d ago
-- [Staff Engineer, Distributed Systems / Flag Delivery](https://job-boards.greenhouse.io/launchdarkly/jobs/7849596003) · Remote - US · Posted Aug 10 · 8d ago
-- ⭐ [Staff Frontend Engineer, Feature Management](https://job-boards.greenhouse.io/launchdarkly/jobs/7886222003) · Remote - US · Posted Aug 17 · 1d ago
+- [Backend Engineer, Flag Delivery](https://job-boards.greenhouse.io/launchdarkly/jobs/7861151003) · Remote - US · Posted Aug 12 · 7d ago
+- [Senior Backend Engineer, Billing](https://job-boards.greenhouse.io/launchdarkly/jobs/7860525003) · Remote - US · Posted Aug 12 · 7d ago
+- [Senior Backend Engineer, Identity & Access Management](https://job-boards.greenhouse.io/launchdarkly/jobs/7860487003) · Remote - US · Posted Aug 12 · 7d ago
+- ⭐ [Senior Full Stack Engineer, Enterprise, Feature Management](https://job-boards.greenhouse.io/launchdarkly/jobs/7887684003) · Remote - US · Posted Aug 18 · 1d ago
+- [Sr Backend Engineer, Flag Delivery](https://job-boards.greenhouse.io/launchdarkly/jobs/7861200003) · Remote - US · Posted Aug 12 · 7d ago
+- [Staff Engineer, Distributed Systems / Flag Delivery](https://job-boards.greenhouse.io/launchdarkly/jobs/7849596003) · Remote - US · Posted Aug 10 · 9d ago
+- ⭐ [Staff Enterprise Developer Advocate](https://job-boards.greenhouse.io/launchdarkly/jobs/7895529003) · Remote - US · Posted Aug 18 · 1d ago
+- [Staff Frontend Engineer, Feature Management](https://job-boards.greenhouse.io/launchdarkly/jobs/7886222003) · Remote - US · Posted Aug 17 · 2d ago
 
 **Linear**
-- [Analytics Engineer](https://jobs.ashbyhq.com/linear/f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1) · North America (Remote) · Posted Aug 11 · 7d ago
-
-**Marqeta**
-- [Senior Production Support Engineer](https://job-boards.greenhouse.io/marqeta/jobs/8077189) · Remote, USA · Posted Jul 28 · 21d ago
+- [Analytics Engineer](https://jobs.ashbyhq.com/linear/f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1) · North America (Remote) · Posted Aug 11 · 8d ago
 
 **Mercury**
-- [Head of Data Engineering & Platform](https://job-boards.greenhouse.io/mercury/jobs/6141014004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Aug 11 · 7d ago
-- [Senior Cloud Security Engineer - InfoSec](https://job-boards.greenhouse.io/mercury/jobs/6134310004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Aug 4 · 14d ago
+- [Head of Data Engineering & Platform](https://job-boards.greenhouse.io/mercury/jobs/6141014004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Aug 11 · 8d ago
+- [Senior Cloud Security Engineer - InfoSec](https://job-boards.greenhouse.io/mercury/jobs/6134310004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Aug 4 · 15d ago
 
 **Notion**
-- [Software Engineer, Collections Infra](https://jobs.ashbyhq.com/notion/ca74504a-9b91-4ce3-b0df-97919b46e749) · San Francisco, California (Remote) · Posted Aug 10 · 8d ago
-- [Software Engineer, Infrastructure Security](https://jobs.ashbyhq.com/notion/e3d8dc06-da05-4e9d-a143-2e9c51fa3d51) · San Francisco, California (Remote) · Posted Aug 7 · 11d ago
-- [Software Engineer, New Grad (Dec 2026)](https://jobs.ashbyhq.com/notion/e32799d2-8ef8-4803-8189-c72514afa816) · San Francisco, California (Remote) · Posted Aug 14 · 4d ago
+- [Software Engineer, Collections Infra](https://jobs.ashbyhq.com/notion/ca74504a-9b91-4ce3-b0df-97919b46e749) · San Francisco, California (Remote) · Posted Aug 10 · 9d ago
+- [Software Engineer, Infrastructure Security](https://jobs.ashbyhq.com/notion/e3d8dc06-da05-4e9d-a143-2e9c51fa3d51) · San Francisco, California (Remote) · Posted Aug 7 · 12d ago
+- [Software Engineer, New Grad (Dec 2026)](https://jobs.ashbyhq.com/notion/e32799d2-8ef8-4803-8189-c72514afa816) · San Francisco, California (Remote) · Posted Aug 14 · 5d ago
+
+**Payabli**
+- ⭐ [Senior Product Manager, Platform](https://weworkremotely.com/remote-jobs/payabli-senior-product-manager-platform) · Anywhere in the World (Remote) · Posted Aug 18 · 1d ago
 
 **Pinecone**
-- [Senior/Staff Software Engineer, Experience](https://jobs.ashbyhq.com/pinecone/ad347d1a-93d7-4867-83bc-99b06d3b5f01) · New York City (Remote) · $190K – $270K · Posted Aug 5 · 13d ago
-- [Senior/Staff Software Engineer, Search & Retrieval Infrastructure](https://jobs.ashbyhq.com/pinecone/7ef089cb-a721-4ad8-a6d0-c390e64991d2) · US Remote · $190K – $270K · Posted Aug 5 · 13d ago
-- [Senior/Staff Software Engineer, Search & Retrieval Infrastructure](https://jobs.ashbyhq.com/pinecone/8beaa81a-20be-4b3c-a38c-b85d13bf1df9) · New York City (Remote) · $190K – $270K · Posted Aug 5 · 13d ago
+- [Senior/Staff Software Engineer, Experience](https://jobs.ashbyhq.com/pinecone/ad347d1a-93d7-4867-83bc-99b06d3b5f01) · New York City (Remote) · $190K – $270K · Posted Aug 5 · 14d ago
+- [Senior/Staff Software Engineer, Search & Retrieval Infrastructure](https://jobs.ashbyhq.com/pinecone/7ef089cb-a721-4ad8-a6d0-c390e64991d2) · US Remote · $190K – $270K · Posted Aug 5 · 14d ago
+- [Senior/Staff Software Engineer, Search & Retrieval Infrastructure](https://jobs.ashbyhq.com/pinecone/8beaa81a-20be-4b3c-a38c-b85d13bf1df9) · New York City (Remote) · $190K – $270K · Posted Aug 5 · 14d ago
 
 **Plaid**
-- [Staff Software Engineer - AI & Intelligent Tooling](https://jobs.ashbyhq.com/plaid/41448609-24d6-44ea-a5ba-c87cf3dc3f0d) · San Francisco HQ (Remote) · $207.6K – $306.6K · Posted Aug 12 · 6d ago
-- [Technical Support Engineer](https://jobs.ashbyhq.com/plaid/3f299587-7bed-4e59-9eb1-2d5d1df01821) · San Francisco HQ (Remote) · $73,872 – $110,000 · Posted Aug 11 · 7d ago
+- [Staff Software Engineer - AI & Intelligent Tooling](https://jobs.ashbyhq.com/plaid/41448609-24d6-44ea-a5ba-c87cf3dc3f0d) · San Francisco HQ (Remote) · $207.6K – $306.6K · Posted Aug 12 · 7d ago
+- [Technical Support Engineer](https://jobs.ashbyhq.com/plaid/3f299587-7bed-4e59-9eb1-2d5d1df01821) · San Francisco HQ (Remote) · $73,872 – $110,000 · Posted Aug 11 · 8d ago
 
 **PostHog**
-- [Site Reliability Engineer (US - Central/Eastern time)](https://jobs.ashbyhq.com/posthog/0d1b6a32-6a21-4933-a33a-303b0e49302e) · Remote (US) · Posted Aug 6 · 12d ago
+- [Site Reliability Engineer (US - Central/Eastern time)](https://jobs.ashbyhq.com/posthog/0d1b6a32-6a21-4933-a33a-303b0e49302e) · Remote (US) · Posted Aug 6 · 13d ago
 
-**Ramp**
-- [Software Engineer, Forward Deployed AI](https://jobs.ashbyhq.com/ramp/b614563f-3ce6-4dca-b5ba-0e5a6c8bda27) · New York, NY (HQ) (Remote) · $189K – $330K · Posted Jul 28 · 21d ago
+**RESPEC**
+- ⭐ [BI Developer (Contractor)](https://himalayas.app/companies/respec/jobs/bi-developer-contractor) · United States (Remote) · Posted Aug 19 · today
 
 **Reddit**
-- [Principal UX Engineer, Ads](https://job-boards.greenhouse.io/reddit/jobs/8122887) · Remote - United States · Posted Aug 11 · 7d ago
-- [Senior Backend Engineer, Compliance Engineering](https://job-boards.greenhouse.io/reddit/jobs/8128860) · Remote - United States · Posted Aug 13 · 5d ago
-- [Senior Machine Learning Infrastructure Engineer, Embedding Platform](https://job-boards.greenhouse.io/reddit/jobs/8127022) · Remote - United States · Posted Aug 12 · 6d ago
-- [Senior Machine Learning Systems Engineer, Ads ML Experience Platform](https://job-boards.greenhouse.io/reddit/jobs/8112967) · Remote - United States · Posted Aug 10 · 8d ago
-- [Senior Software Engineer - Messaging](https://job-boards.greenhouse.io/reddit/jobs/8106246) · Remote - United States · Posted Aug 4 · 14d ago
-- [Senior Staff Machine Learning Engineer, Feed Relevance](https://job-boards.greenhouse.io/reddit/jobs/8122606) · Remote - United States · Posted Aug 11 · 7d ago
-- [Staff Android Engineer, Brand Ad Formats](https://job-boards.greenhouse.io/reddit/jobs/8127002) · Remote - United States · Posted Aug 12 · 6d ago
-- [Staff Machine Learning Engineer, Shopping Ads](https://job-boards.greenhouse.io/reddit/jobs/8115838) · Remote - United States · Posted Aug 7 · 11d ago
-- [Staff Machine Learning Infrastructure Engineer, Embedding Platform](https://job-boards.greenhouse.io/reddit/jobs/8126982) · Remote - United States · Posted Aug 12 · 6d ago
-- [Staff Software Engineer , Observability](https://job-boards.greenhouse.io/reddit/jobs/8131228) · Remote - United States · Posted Aug 14 · 4d ago
-- [Staff Technical Product Manager, Ads ML Platform](https://jobicy.com/jobs/145336-staff-technical-product-manager-ads-ml-platform) · USA (Remote) · Posted Aug 5 · 13d ago
+- [Principal UX Engineer, Ads](https://job-boards.greenhouse.io/reddit/jobs/8122887) · Remote - United States · Posted Aug 11 · 8d ago
+- [Senior Backend Engineer, Compliance Engineering](https://job-boards.greenhouse.io/reddit/jobs/8128860) · Remote - United States · Posted Aug 13 · 6d ago
+- ⭐ [Senior Backend Engineer, Safety](https://job-boards.greenhouse.io/reddit/jobs/8093006) · Remote - United States · Posted Aug 18 · 1d ago
+- [Senior Machine Learning Infrastructure Engineer, Embedding Platform](https://job-boards.greenhouse.io/reddit/jobs/8127022) · Remote - United States · Posted Aug 12 · 7d ago
+- [Senior Machine Learning Systems Engineer, Ads ML Experience Platform](https://job-boards.greenhouse.io/reddit/jobs/8112967) · Remote - United States · Posted Aug 10 · 9d ago
+- [Senior Software Engineer - Messaging](https://job-boards.greenhouse.io/reddit/jobs/8106246) · Remote - United States · Posted Aug 4 · 15d ago
+- [Senior Staff Machine Learning Engineer, Feed Relevance](https://job-boards.greenhouse.io/reddit/jobs/8122606) · Remote - United States · Posted Aug 11 · 8d ago
+- ⭐ [Software Engineer, Content Platform](https://job-boards.greenhouse.io/reddit/jobs/8139781) · Remote - United States · Posted Aug 18 · 1d ago
+- [Staff Android Engineer, Brand Ad Formats](https://job-boards.greenhouse.io/reddit/jobs/8127002) · Remote - United States · Posted Aug 12 · 7d ago
+- [Staff Machine Learning Engineer, Shopping Ads](https://job-boards.greenhouse.io/reddit/jobs/8115838) · Remote - United States · Posted Aug 7 · 12d ago
+- [Staff Machine Learning Infrastructure Engineer, Embedding Platform](https://job-boards.greenhouse.io/reddit/jobs/8126982) · Remote - United States · Posted Aug 12 · 7d ago
+- [Staff Software Engineer , Observability](https://job-boards.greenhouse.io/reddit/jobs/8131228) · Remote - United States · Posted Aug 14 · 5d ago
+- [Staff Technical Product Manager, Ads ML Platform](https://jobicy.com/jobs/145336-staff-technical-product-manager-ads-ml-platform) · USA (Remote) · Posted Aug 5 · 14d ago
 
 **Render**
-- [Software Engineer, Expansion (all levels)](https://jobs.ashbyhq.com/render/06377f8a-a255-412a-8032-18ace1d005a5) · Remote: United States · $170K – $290K · Posted Aug 10 · 8d ago
-- [Staff Product Manager, CI/CD & Developer Productivity](https://jobs.ashbyhq.com/render/b7508c39-c91f-405a-bdef-9c6b6eca1fee) · Remote: United States · $218K – $300K · Posted Aug 3 · 15d ago
+- [Software Engineer, Expansion (all levels)](https://jobs.ashbyhq.com/render/06377f8a-a255-412a-8032-18ace1d005a5) · Remote: United States · $170K – $290K · Posted Aug 10 · 9d ago
+- [Staff Product Manager, CI/CD & Developer Productivity](https://jobs.ashbyhq.com/render/b7508c39-c91f-405a-bdef-9c6b6eca1fee) · Remote: United States · $218K – $300K · Posted Aug 3 · 16d ago
 
 **Replit**
-- [Product Engineer, New Products](https://jobs.ashbyhq.com/replit/2fa2d079-96a5-4d51-8718-04134ed39032) · Foster City, CA (Remote) · $180K – $250K · Posted Aug 3 · 15d ago
+- [Product Engineer, New Products](https://jobs.ashbyhq.com/replit/2fa2d079-96a5-4d51-8718-04134ed39032) · Foster City, CA (Remote) · $180K – $250K · Posted Aug 3 · 16d ago
 
 **Samsara**
-- [Manager II, Data Platform](https://www.samsara.com/company/careers/roles/7811931?gh_jid=7811931) · Remote - US · Posted Aug 6 · 12d ago
-- [Senior AI Data Engineer](https://www.samsara.com/company/careers/roles/8091855?gh_jid=8091855) · Remote - US · Posted Aug 12 · 6d ago
-- [Solutions Integration Engineer IV](https://www.samsara.com/company/careers/roles/8094156?gh_jid=8094156) · Remote - US · Posted Aug 4 · 14d ago
-- [Sr. AI Engineer](https://www.samsara.com/company/careers/roles/8083352?gh_jid=8083352) · Remote - CA · Posted Aug 11 · 7d ago
-- [Staff Firmware Engineer](https://www.samsara.com/company/careers/roles/8074536?gh_jid=8074536) · Remote - SF Bay Area · Posted Aug 16 · 2d ago
-- [Staff Software Engineer](https://www.samsara.com/company/careers/roles/8064742?gh_jid=8064742) · Remote - US · Posted Aug 7 · 11d ago
-- [Technical Support Engineer I - Mexico](https://www.samsara.com/company/careers/roles/8112694?gh_jid=8112694) · Remote - Mexico · Posted Aug 14 · 4d ago
+- [Manager II, Data Platform](https://www.samsara.com/company/careers/roles/7811931?gh_jid=7811931) · Remote - US · Posted Aug 6 · 13d ago
+- [Senior AI Data Engineer](https://www.samsara.com/company/careers/roles/8091855?gh_jid=8091855) · Remote - US · Posted Aug 12 · 7d ago
+- [Solutions Integration Engineer IV](https://www.samsara.com/company/careers/roles/8094156?gh_jid=8094156) · Remote - US · Posted Aug 4 · 15d ago
+- [Sr. AI Engineer](https://www.samsara.com/company/careers/roles/8083352?gh_jid=8083352) · Remote - CA · Posted Aug 11 · 8d ago
+- [Staff Firmware Engineer](https://www.samsara.com/company/careers/roles/8074536?gh_jid=8074536) · Remote - SF Bay Area · Posted Aug 16 · 3d ago
+- [Staff Software Engineer](https://www.samsara.com/company/careers/roles/8064742?gh_jid=8064742) · Remote - US · Posted Aug 7 · 12d ago
+- [Technical Support Engineer I - Mexico](https://www.samsara.com/company/careers/roles/8112694?gh_jid=8112694) · Remote - Mexico · Posted Aug 14 · 5d ago
 
 **Sanity**
-- [Solutions Engineer, PreSales - Senior to Staff level (US)](https://jobs.ashbyhq.com/sanity/4f892238-04a5-442e-ab36-7f1f60010abf) · Remote in the United States · Posted Aug 4 · 14d ago
+- [Solutions Engineer, PreSales - Senior to Staff level (US)](https://jobs.ashbyhq.com/sanity/4f892238-04a5-442e-ab36-7f1f60010abf) · Remote in the United States · Posted Aug 4 · 15d ago
 
 **Sardine**
-- [Data Engineer - Onboarding](https://jobs.ashbyhq.com/sardine/527bac62-7445-4942-b2df-575fcb93e182) · North America (Remote) · $150K – $205K · Posted Jul 30 · 19d ago
+- [Data Engineer - Onboarding](https://jobs.ashbyhq.com/sardine/527bac62-7445-4942-b2df-575fcb93e182) · North America (Remote) · $150K – $205K · Posted Jul 30 · 20d ago
 
 **Sentry**
-- [Engineering Manager, Events Analytics Platform](https://jobs.ashbyhq.com/sentry/86e3e57e-6caf-446a-9208-1a614a138b10) · San Francisco, California (Remote) · $220K – $450K · Posted Jul 31 · 18d ago
-- ⭐ [Senior Software Engineer, Streaming Platform](https://jobs.ashbyhq.com/sentry/70b48ffb-b413-49d1-8557-acc37b0e407e) · San Francisco, California (Remote) · $155K – $400K · Posted Aug 17 · 1d ago
+- [Engineering Manager, Events Analytics Platform](https://jobs.ashbyhq.com/sentry/86e3e57e-6caf-446a-9208-1a614a138b10) · San Francisco, California (Remote) · $220K – $450K · Posted Jul 31 · 19d ago
+- [Senior Software Engineer, Streaming Platform](https://jobs.ashbyhq.com/sentry/70b48ffb-b413-49d1-8557-acc37b0e407e) · San Francisco, California (Remote) · $155K – $400K · Posted Aug 17 · 2d ago
 
 **Smartsheet**
-- [Senior Manager, Web Strategy](https://job-boards.greenhouse.io/smartsheet/jobs/8112250) · -REMOTE, USA- · Posted Aug 6 · 12d ago
-- [Software Engineer I (Remote Eligible)](https://job-boards.greenhouse.io/smartsheet/jobs/8070067) · -REMOTE, USA- · Posted Jul 31 · 18d ago
-- [Software Engineer II - Full Stack (Remote Eligible)](https://job-boards.greenhouse.io/smartsheet/jobs/8097667) · -REMOTE, USA- · Posted Jul 30 · 19d ago
-- [Sr. Security Engineer II – IRAP Program Lead (Remote Eligible)](https://job-boards.greenhouse.io/smartsheet/jobs/8110111) · -REMOTE, USA- · Posted Aug 5 · 13d ago
+- [Senior Manager, Web Strategy](https://job-boards.greenhouse.io/smartsheet/jobs/8112250) · -REMOTE, USA- · Posted Aug 6 · 13d ago
+- [Software Engineer I (Remote Eligible)](https://job-boards.greenhouse.io/smartsheet/jobs/8070067) · -REMOTE, USA- · Posted Jul 31 · 19d ago
+- [Software Engineer II - Full Stack (Remote Eligible)](https://job-boards.greenhouse.io/smartsheet/jobs/8097667) · -REMOTE, USA- · Posted Jul 30 · 20d ago
+- [Sr. Security Engineer II – IRAP Program Lead (Remote Eligible)](https://job-boards.greenhouse.io/smartsheet/jobs/8110111) · -REMOTE, USA- · Posted Aug 5 · 14d ago
 
 **Solvd**
-- [Security Engineer II – IAM & SaaS Governance](https://weworkremotely.com/remote-jobs/solvd-security-engineer-ii-iam-saas-governance) · Anywhere in the World (Remote) · Posted Aug 4 · 14d ago
+- [Security Engineer II – IAM & SaaS Governance](https://weworkremotely.com/remote-jobs/solvd-security-engineer-ii-iam-saas-governance) · Anywhere in the World (Remote) · Posted Aug 4 · 15d ago
 
 **Stability AI**
-- [Senior Product Engineer, Growth & Lifecycle Infrastructure - Music & Audio](https://weworkremotely.com/remote-jobs/stability-ai-senior-product-engineer-growth-lifecycle-infrastructure-music-audio) · Anywhere in the World (Remote) · Posted Aug 4 · 14d ago
+- [Senior Product Engineer, Growth & Lifecycle Infrastructure - Music & Audio](https://weworkremotely.com/remote-jobs/stability-ai-senior-product-engineer-growth-lifecycle-infrastructure-music-audio) · Anywhere in the World (Remote) · Posted Aug 4 · 15d ago
 
 **Stripe**
-- ⭐ [Integration Engineer, Metronome](https://stripe.com/jobs/search?gh_jid=8080454) · Remote · Posted Aug 18 · today
-- [Risk Strategist, Platform Risk Strategy](https://stripe.com/jobs/search?gh_jid=7811937) · Chicago, US-Remote, Toronto · Posted Jul 29 · 20d ago
-- [Software Engineer, Vulnerability Management](https://stripe.com/jobs/search?gh_jid=8089353) · US - Remote · Posted Aug 4 · 14d ago
+- ⭐ [Integration Engineer, Metronome](https://stripe.com/jobs/search?gh_jid=8080454) · Remote · Posted Aug 18 · 1d ago
+- [Risk Strategist, Platform Risk Strategy](https://stripe.com/jobs/search?gh_jid=7811937) · Chicago, US-Remote, Toronto · Posted Jul 29 · 21d ago
+- [Software Engineer, Vulnerability Management](https://stripe.com/jobs/search?gh_jid=8089353) · US - Remote · Posted Aug 4 · 15d ago
 
 **Supabase**
-- [Engineering Productivity Engineer](https://jobs.ashbyhq.com/supabase/8229db66-dc3f-4ffe-8d86-90ce9ffb4c90) · Remote · Posted Aug 2 · 16d ago
-- [Frontend Engineer](https://jobs.ashbyhq.com/supabase/f048dd68-63f8-4f98-9860-3d5a43c09a01) · Remote · Posted Jul 29 · 20d ago
-- [Performance Engineer - Benchmarking](https://jobs.ashbyhq.com/supabase/11beb619-0c25-4b11-9818-3f18e278c65b) · Remote · Posted Jul 28 · 21d ago
-- [Performance Engineer - Performance Analysis & Tuning](https://jobs.ashbyhq.com/supabase/98ef6a11-9898-4960-9931-1264285849f3) · Remote · Posted Jul 28 · 21d ago
-- [SDK Engineer - JavaScript](https://jobs.ashbyhq.com/supabase/f44742fb-18c6-478f-bf78-63707ed57db7) · Remote · Posted Aug 5 · 13d ago
-- [Support Engineer (AMER - Weekends)](https://jobs.ashbyhq.com/supabase/dcf09dfe-55bc-44ba-b5db-1a2de7f33216) · Remote · Posted Jul 31 · 18d ago
+- [Engineering Productivity Engineer](https://jobs.ashbyhq.com/supabase/8229db66-dc3f-4ffe-8d86-90ce9ffb4c90) · Remote · Posted Aug 2 · 17d ago
+- [Frontend Engineer](https://jobs.ashbyhq.com/supabase/f048dd68-63f8-4f98-9860-3d5a43c09a01) · Remote · Posted Jul 29 · 21d ago
+- [SDK Engineer - JavaScript](https://jobs.ashbyhq.com/supabase/f44742fb-18c6-478f-bf78-63707ed57db7) · Remote · Posted Aug 5 · 14d ago
+- [Support Engineer (AMER - Weekends)](https://jobs.ashbyhq.com/supabase/dcf09dfe-55bc-44ba-b5db-1a2de7f33216) · Remote · Posted Jul 31 · 19d ago
 
 **Tailscale**
-- ⭐ [Forward Deployed Engineer](https://job-boards.greenhouse.io/tailscale/jobs/4724897005) · Remote (United States) · Posted Aug 17 · 1d ago
-- [Senior Solutions Engineer - Partners](https://job-boards.greenhouse.io/tailscale/jobs/4723221005) · Remote (United States) · Posted Aug 14 · 4d ago
-- [Software Engineer, Networking (Edge)](https://job-boards.greenhouse.io/tailscale/jobs/4715448005) · Remote (United States) · Posted Jul 29 · 20d ago
-- [Software Engineer, Strategic Projects](https://job-boards.greenhouse.io/tailscale/jobs/4721714005) · Remote (United States) · Posted Aug 5 · 13d ago
-- [Solutions Engineer - Commercial (New Business)](https://job-boards.greenhouse.io/tailscale/jobs/4722326005) · Remote (United States) · Posted Aug 7 · 11d ago
+- [Forward Deployed Engineer](https://job-boards.greenhouse.io/tailscale/jobs/4724897005) · Remote (United States) · Posted Aug 17 · 2d ago
+- [Senior Solutions Engineer - Partners](https://job-boards.greenhouse.io/tailscale/jobs/4723221005) · Remote (United States) · Posted Aug 14 · 5d ago
+- [Software Engineer, Networking (Edge)](https://job-boards.greenhouse.io/tailscale/jobs/4715448005) · Remote (United States) · Posted Jul 29 · 21d ago
+- [Software Engineer, Strategic Projects](https://job-boards.greenhouse.io/tailscale/jobs/4721714005) · Remote (United States) · Posted Aug 5 · 14d ago
+- [Solutions Engineer - Commercial (New Business)](https://job-boards.greenhouse.io/tailscale/jobs/4722326005) · Remote (United States) · Posted Aug 7 · 12d ago
 
 **Temporal**
-- [Director, Global Developer Success](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5209443007) · United States - Remote Opportunity · Posted Aug 11 · 7d ago
-- [Senior Platform Architect - West](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5207314007) · United States - Remote Opportunity · Posted Aug 7 · 11d ago
-- [Senior Professional Services Engineer - East](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210820007) · United States - Remote Opportunity · Posted Aug 12 · 6d ago
-- [Senior Professional Services Engineer - West](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210771007) · United States - Remote Opportunity · Posted Aug 12 · 6d ago
-- [Senior Software Engineer, Infrastructure Foundations](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210998007) · United States, Remote Opportunity · Posted Aug 12 · 6d ago
-- [Staff Software Engineer, AI Foundations (AI Agent Optimization)](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5204483007) · United States or Canada, Remote Opportunity · Posted Aug 5 · 13d ago
+- [Director, Global Developer Success](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5209443007) · United States - Remote Opportunity · Posted Aug 11 · 8d ago
+- [Senior Platform Architect - West](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5207314007) · United States - Remote Opportunity · Posted Aug 7 · 12d ago
+- [Senior Professional Services Engineer - East](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210820007) · United States - Remote Opportunity · Posted Aug 12 · 7d ago
+- [Senior Professional Services Engineer - West](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210771007) · United States - Remote Opportunity · Posted Aug 12 · 7d ago
+- [Senior Software Engineer, Infrastructure Foundations](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5210998007) · United States, Remote Opportunity · Posted Aug 12 · 7d ago
+- [Staff Software Engineer, AI Foundations (AI Agent Optimization)](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5204483007) · United States or Canada, Remote Opportunity · Posted Aug 5 · 14d ago
+- ⭐ [Staff Software Engineer, Traffic](https://job-boards.greenhouse.io/temporaltechnologies/jobs/5214260007) · United States, Remote Opportunity · Posted Aug 18 · 1d ago
 
 **Temporal Technologies**
-- [Director, Global Developer Success](https://weworkremotely.com/remote-jobs/temporal-technologies-director-global-developer-success) · Anywhere in the World (Remote) · Posted Aug 15 · 3d ago
+- [Director, Global Developer Success](https://weworkremotely.com/remote-jobs/temporal-technologies-director-global-developer-success) · Anywhere in the World (Remote) · Posted Aug 15 · 4d ago
 
 **Thumbtack**
-- [Senior Data Engineer](https://jobs.ashbyhq.com/thumbtack/d98e63a2-bbfb-48eb-8b73-abd3a8eb5976) · Remote, United States · Posted Jul 29 · 20d ago
-- [Senior Data Engineer](https://jobs.ashbyhq.com/thumbtack/1ded15c4-4268-4565-b900-867807645823) · Remote, Ontario · Posted Jul 29 · 20d ago
+- [Senior Data Engineer](https://jobs.ashbyhq.com/thumbtack/d98e63a2-bbfb-48eb-8b73-abd3a8eb5976) · Remote, United States · Posted Jul 29 · 21d ago
+- [Senior Data Engineer](https://jobs.ashbyhq.com/thumbtack/1ded15c4-4268-4565-b900-867807645823) · Remote, Ontario · Posted Jul 29 · 21d ago
 
 **Together AI**
-- [Technical Support Engineer (GPU Clusters) - US Weekends](https://job-boards.greenhouse.io/togetherai/jobs/5202015007) · Remote · Posted Aug 4 · 14d ago
-- [Technical Support Engineer (Inference) - US Weekends](https://job-boards.greenhouse.io/togetherai/jobs/5202021007) · Remote · Posted Aug 4 · 14d ago
+- [Technical Support Engineer (GPU Clusters) - US Weekends](https://job-boards.greenhouse.io/togetherai/jobs/5202015007) · Remote · Posted Aug 4 · 15d ago
+- [Technical Support Engineer (Inference) - US Weekends](https://job-boards.greenhouse.io/togetherai/jobs/5202021007) · Remote · Posted Aug 4 · 15d ago
 
 **Truelogic**
-- [Senior Software Architect (C#/Angular/AI First) - GovTech SaaS company](https://weworkremotely.com/remote-jobs/truelogic-senior-software-architect-c-angular-ai-first-govtech-saas-company) · Anywhere in the World (Remote) · Posted Aug 4 · 14d ago
+- [Senior Software Architect (C#/Angular/AI First) - GovTech SaaS company](https://weworkremotely.com/remote-jobs/truelogic-senior-software-architect-c-angular-ai-first-govtech-saas-company) · Anywhere in the World (Remote) · Posted Aug 4 · 15d ago
 
 **Twilio**
-- [Principal Presales Engineer](https://job-boards.greenhouse.io/twilio/jobs/8115128) · Remote - US · Posted Aug 10 · 8d ago
-- [Senior Analytics Engineer](https://job-boards.greenhouse.io/twilio/jobs/8044650) · Remote - US · Posted Jul 28 · 21d ago
-- [Senior Presales Engineer](https://job-boards.greenhouse.io/twilio/jobs/8096642) · Remote - Mexico · Posted Jul 30 · 19d ago
-- [Software Engineer (L2)](https://job-boards.greenhouse.io/twilio/jobs/8097672) · Remote - US · Posted Jul 30 · 19d ago
-- [Software Engineer (L2)](https://job-boards.greenhouse.io/twilio/jobs/8100236) · Remote - US · Posted Jul 31 · 18d ago
-- [Software Engineer (L4)](https://job-boards.greenhouse.io/twilio/jobs/8098945) · Remote - US · Posted Aug 3 · 15d ago
-- [Software Engineer (L4)](https://job-boards.greenhouse.io/twilio/jobs/8103253) · Remote - US · Posted Aug 3 · 15d ago
-- [Software Engineer, Platform Engineering (L2)](https://job-boards.greenhouse.io/twilio/jobs/8026207) · Remote - US · Posted Aug 4 · 14d ago
-- [Software Engineer-Platform Engineering (L3)](https://job-boards.greenhouse.io/twilio/jobs/8026203) · Remote - US · Posted Aug 4 · 14d ago
+- [Principal Presales Engineer](https://job-boards.greenhouse.io/twilio/jobs/8115128) · Remote - US · Posted Aug 10 · 9d ago
+- [Senior Presales Engineer](https://job-boards.greenhouse.io/twilio/jobs/8096642) · Remote - Mexico · Posted Jul 30 · 20d ago
+- [Software Engineer (L2)](https://job-boards.greenhouse.io/twilio/jobs/8100236) · Remote - US · Posted Jul 31 · 19d ago
+- [Software Engineer (L2)](https://job-boards.greenhouse.io/twilio/jobs/8097672) · Remote - US · Posted Jul 30 · 20d ago
+- [Software Engineer (L4)](https://job-boards.greenhouse.io/twilio/jobs/8098945) · Remote - US · Posted Aug 3 · 16d ago
+- [Software Engineer (L4)](https://job-boards.greenhouse.io/twilio/jobs/8103253) · Remote - US · Posted Aug 3 · 16d ago
+- [Software Engineer, Platform Engineering (L2)](https://job-boards.greenhouse.io/twilio/jobs/8026207) · Remote - US · Posted Aug 4 · 15d ago
+- [Software Engineer-Platform Engineering (L3)](https://job-boards.greenhouse.io/twilio/jobs/8026203) · Remote - US · Posted Aug 4 · 15d ago
 
 **Vanta**
-- [Senior Analytics Engineer](https://jobs.ashbyhq.com/vanta/1989a49f-227e-4928-b068-8ff24af88541) · Remote U.S. · $157K – $185K · Posted Aug 12 · 6d ago
-- [Senior Backend Software Engineer, Integrations Platform](https://jobs.ashbyhq.com/vanta/e76ea2d6-a514-458c-87fd-0792e50ae6bf) · Remote U.S. · $195K – $229K · Posted Aug 14 · 4d ago
-- ⭐ [Senior Backend Software Engineer, Integrations Platform](https://jobs.ashbyhq.com/vanta/092119bc-d640-46f4-b25f-b494d755af00) · Remote U.S. · $195K – $229K · Posted Aug 17 · 1d ago
-- [Senior Data Engineer](https://jobs.ashbyhq.com/vanta/7600575b-fb06-485e-bc13-626e661a34aa) · Remote U.S. · $190K – $224K · Posted Aug 12 · 6d ago
-- ⭐ [Senior Fullstack Software Engineer, Integrations Platform](https://jobs.ashbyhq.com/vanta/77aff9b6-4b9b-4ed6-b1fc-3b647227b16b) · Remote U.S. · $224K – $263K · Posted Aug 17 · 1d ago
-- [Senior Software Engineer, Product Platform](https://jobs.ashbyhq.com/vanta/021cca9c-f937-4d97-8be7-bc83af8307be) · Remote U.S. · $195K – $229K · Posted Aug 11 · 7d ago
-- [Sr. Fullstack Software Engineer, Integrations Platform](https://jobs.ashbyhq.com/vanta/539cb2a8-b704-4f39-af0d-2bee5b529d1d) · Remote U.S. · $224K – $263K · Posted Aug 14 · 4d ago
+- [Senior Analytics Engineer](https://jobs.ashbyhq.com/vanta/1989a49f-227e-4928-b068-8ff24af88541) · Remote U.S. · $157K – $185K · Posted Aug 12 · 7d ago
+- [Senior Backend Software Engineer, Integrations Platform](https://jobs.ashbyhq.com/vanta/e76ea2d6-a514-458c-87fd-0792e50ae6bf) · Remote U.S. · $224K – $263K · Posted Aug 14 · 5d ago
+- [Senior Data Engineer](https://jobs.ashbyhq.com/vanta/7600575b-fb06-485e-bc13-626e661a34aa) · Remote U.S. · $190K – $224K · Posted Aug 12 · 7d ago
+- [Senior Fullstack Software Engineer, Integrations Platform](https://jobs.ashbyhq.com/vanta/77aff9b6-4b9b-4ed6-b1fc-3b647227b16b) · Remote U.S. · $195K – $229K · Posted Aug 17 · 2d ago
+- [Senior Software Engineer, Product Platform](https://jobs.ashbyhq.com/vanta/021cca9c-f937-4d97-8be7-bc83af8307be) · Remote U.S. · $195K – $229K · Posted Aug 11 · 8d ago
 
 **Webflow**
-- [Associate Infrastructure Engineer](https://job-boards.greenhouse.io/webflow/jobs/8122601) · CA Remote (BC & ON only); U.S. Remote · $ 158,300 - $ 190,000 · Posted Aug 12 · 6d ago
+- [Associate Infrastructure Engineer](https://job-boards.greenhouse.io/webflow/jobs/8122601) · CA Remote (BC & ON only); U.S. Remote · $ 158,300 - $ 190,000 · Posted Aug 12 · 7d ago
 
 **YipitData**
-- [Product Manager, Quant Platform](https://jobicy.com/jobs/145919-product-manager-quant-platform) · USA (Remote) · Posted Aug 13 · 5d ago
-
-**name**
-- ⭐ [Application Developer (Angular)](https://himalayas.app/companies/general-dynamics-information-technology/jobs/application-developer-angular-3811683805) · United States (Remote) · $64,230–$86,250 · Posted Aug 18 · today
-- ⭐ [Devops Engineer](https://himalayas.app/companies/resolve-tech-solutions-llc/jobs/devops-engineer-8395803472) · United States (Remote) · Posted Aug 18 · today
-- ⭐ [Senior Microgrid Control and Automation Engineer](https://himalayas.app/companies/leidos/jobs/senior-microgrid-control-and-automation-engineer) · United States (Remote) · $107,900–$195,050 · Posted Aug 18 · today
-- ⭐ [ServiceNow Developer](https://himalayas.app/companies/general-dynamics-information-technology/jobs/servicenow-developer) · United States (Remote) · $97,750–$132,250 · Posted Aug 18 · today
+- [Product Manager, Quant Platform](https://jobicy.com/jobs/145919-product-manager-quant-platform) · USA (Remote) · Posted Aug 13 · 6d ago
 
 
-# 📍 Local — Silicon Slopes (49)
+# 📍 Local — Silicon Slopes (45)
 ## What's changed
-**New (9)**
-- ⭐ **Adobe** — [Senior SOAR Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-SOAR-Engineer_R171215) · Lehi (+2 more) · $180,600 - $261,450 · Posted Aug 17 · 1d ago
-- ⭐ **DigiCert** — [Software Engineering Manager](https://www.digicert.com/careers/?gh_jid=8689594002) · Lehi · Posted Aug 17 · 1d ago
-- ⭐ **Western Governors University** — [Senior Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025942) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 17 · 1d ago
-- ⭐ **Western Governors University** — [Senior Software Engineer - Salesforce](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 17 · 1d ago
-- ⭐ **Western Governors University** — [Staff Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer_JR-025936) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 17 · 1d ago
-- ⭐ **Western Governors University** — [Software Engineering | Mobile App](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Mobile_JR-025464) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Aug 17 · 1d ago
-- ⭐ **Western Governors University** — [Software Engineer II - Web Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025291) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Aug 17 · 1d ago
-- ⭐ **Western Governors University** — [Systems Engineer II- Atlassian Cloud Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Systems-Engineer-II--Atlassian-Cloud-Platform_JR-025876) · Salt Lake City, UT · $98,300.00 - $147,400.00 · Posted Aug 17 · 1d ago
-- ⭐ **Western Governors University** — [Systems Engineer - Linux](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Systems-Engineer---Linux_JR-025704-1) · Salt Lake City, UT · $73,800.00 - $110,700.00 · Posted Aug 17 · 1d ago
+**New (7)**
+- ⭐ **Adobe** — [Software Development Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Software-Development-Engineer_R170921) · Lehi · Posted Aug 19 · today
+- ⭐ **NICE** — [Public Safety Solutions Engineer](https://boards.eu.greenhouse.io/nice/jobs/4947999101?gh_jid=4947999101) · USA - Remote · Posted Aug 18 · 1d ago
+- ⭐ **NICE** — [Senior Software Engineer](https://boards.eu.greenhouse.io/nice/jobs/4955509101?gh_jid=4955509101) · USA - Sandy, UT · $153,192.00 to $215,599.00 · Posted Aug 18 · 1d ago
+- ⭐ **Pluralsight** — [VP, Marketing Operations & Digital Platform](https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/VP--Marketing-Operations---Digital-Platform_R0014395) · Remote - USA · $227,000-$270,000 · Posted Aug 18 · 1d ago
+- ⭐ **Western Governors University** — [Senior Software Engineer- Full Stack- Java/Angular](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer--Full-Stack--Java-Angular_JR-025732) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 18 · 1d ago
+- ⭐ **Western Governors University** — [Manager, Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Software-Engineer_JR-025952) · Salt Lake City, UT · $151,800.00 - $250,500.00 · Posted Aug 18 · 1d ago
+- ⭐ **Western Governors University** — [Senior Software Engineer - Identity Services](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Identity-Services_JR-025949) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 18 · 1d ago
+**Changed titles (1)**
+- **Adobe** — "Senior SOAR Engineer" → [Senior Security Automation Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-SOAR-Engineer_R171215)
 
-## All current matching roles (49)
+## All current matching roles (45)
 
 **Adobe**
-- ⭐ [Senior SOAR Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-SOAR-Engineer_R171215) · Lehi (+2 more) · $180,600 - $261,450 · Posted Aug 17 · 1d ago
-- [Software Development Engineer - Adobe Firefly Web](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Software-Development-Engineer---Adobe-Firefly-Web_R170972-1) · Lehi (+1 more) · $177,900 - $257,550 · Posted Aug 10 · 8d ago
-- [Sr Data Solution Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Sr-Data-Solution-Engineer_R170420) · Lehi · Posted Jul 28 · 21d ago
-
-**Ancestry**
-- [Machine Learning Engineer, Co-op](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote/Machine-Learning-Engineer--Co-op_R003377) · Remote · Posted Aug 11 · 7d ago
+- ⭐ [Senior Security Automation Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-SOAR-Engineer_R171215) · Lehi (+2 more) · $180,600 - $261,450 · Posted Aug 18 · 1d ago
+- ⭐ [Software Development Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Software-Development-Engineer_R170921) · Lehi · Posted Aug 19 · today
+- [Software Development Engineer - Adobe Firefly Web](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Software-Development-Engineer---Adobe-Firefly-Web_R170972-1) · Lehi (+1 more) · $177,900 - $257,550 · Posted Aug 10 · 9d ago
 
 **BYU**
-- [Platform Engineer](https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Platform-Engineer_JR-10391) · Provo, UT · $73,000-$95,000 · Posted Aug 10 · 8d ago
+- [Platform Engineer](https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Platform-Engineer_JR-10391) · Provo, UT · $73,000-$95,000 · Posted Aug 10 · 9d ago
 
 **BambooHR**
-- [Sr. Data Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6120089004) · Utah | Hybrid · Posted Jul 30 · 19d ago
-- [Sr. Forward Deployed Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6115974004) · Utah | Hybrid · Posted Aug 5 · 13d ago
-- [Sr. Product Manager, Core Data Platform](https://job-boards.greenhouse.io/bamboohr17/jobs/6127677004) · Utah | Hybrid · Posted Jul 28 · 21d ago
+- [Sr. Data Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6120089004) · Utah | Hybrid · Posted Jul 30 · 20d ago
+- [Sr. Forward Deployed Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6115974004) · Utah | Hybrid · Posted Aug 5 · 14d ago
 
 **Cricut**
-- [Lead Agentic Software Engineer](https://jobs.smartrecruiters.com/cricut/744000141575704) · South Jordan, UT, United States · Posted Aug 4 · 14d ago
-- [Lead Agentic Software Engineer, Connected Devices](https://jobs.smartrecruiters.com/cricut/744000141577074) · South Jordan, UT, United States · Posted Aug 4 · 14d ago
-- [Product Quality Engineer – Materials](https://jobs.smartrecruiters.com/cricut/744000140495670) · South Jordan, UT, United States · Posted Jul 29 · 20d ago
-- [Senior Systems Quality Engineer](https://jobs.smartrecruiters.com/cricut/744000142970729) · South Jordan, UT, United States · Posted Aug 11 · 7d ago
-- [Systems Verification & Validation Engineer](https://jobs.smartrecruiters.com/cricut/744000142735637) · South Jordan, UT, United States · Posted Aug 10 · 8d ago
+- [Lead Agentic Software Engineer](https://jobs.smartrecruiters.com/cricut/744000141575704) · South Jordan, UT, United States · Posted Aug 4 · 15d ago
+- [Lead Agentic Software Engineer, Connected Devices](https://jobs.smartrecruiters.com/cricut/744000141577074) · South Jordan, UT, United States · Posted Aug 4 · 15d ago
+- [Product Quality Engineer – Materials](https://jobs.smartrecruiters.com/cricut/744000140495670) · South Jordan, UT, United States · Posted Jul 29 · 21d ago
+- [Senior Systems Quality Engineer](https://jobs.smartrecruiters.com/cricut/744000142970729) · South Jordan, UT, United States · Posted Aug 11 · 8d ago
+- [Systems Verification & Validation Engineer](https://jobs.smartrecruiters.com/cricut/744000142735637) · South Jordan, UT, United States · Posted Aug 10 · 9d ago
 
 **DigiCert**
-- [Senior Infrastructure Engineer](https://www.digicert.com/careers/?gh_jid=8624428002) · Lehi · Posted Jul 29 · 20d ago
-- ⭐ [Software Engineering Manager](https://www.digicert.com/careers/?gh_jid=8689594002) · Lehi · Posted Aug 17 · 1d ago
+- [Senior Infrastructure Engineer](https://www.digicert.com/careers/?gh_jid=8624428002) · Lehi · Posted Jul 29 · 21d ago
+- [Software Engineering Manager](https://www.digicert.com/careers/?gh_jid=8689594002) · Lehi · Posted Aug 17 · 2d ago
 
 **Domo**
-- [Senior CloudOps Engineer](https://domo.wd12.myworkdayjobs.com/DomoCareers/job/US-UT-Remote/Senior-CloudOps-Engineer_JR100285) · US UT Remote · Posted Jul 31 · 18d ago
+- [Senior CloudOps Engineer](https://domo.wd12.myworkdayjobs.com/DomoCareers/job/US-UT-Remote/Senior-CloudOps-Engineer_JR100285) · US UT Remote · Posted Jul 31 · 19d ago
 
 **Filevine**
-- [Senior Site Reliability engineer](https://jobs.lever.co/filevine/9522044d-e855-4c22-abfe-d15c6e3aa377) · Remote · $175,000–$195,000/yr · Posted Aug 7 · 11d ago
-- [Staff Site Reliability Engineer](https://jobs.lever.co/filevine/e57a5f16-0711-4f50-a9a9-d19edf7b097a) · Remote · $235,000–$275,000/yr · Posted Aug 1 · 17d ago
+- [Senior Site Reliability engineer](https://jobs.lever.co/filevine/9522044d-e855-4c22-abfe-d15c6e3aa377) · Remote · $175,000–$195,000/yr · Posted Aug 7 · 12d ago
+- [Staff Site Reliability Engineer](https://jobs.lever.co/filevine/e57a5f16-0711-4f50-a9a9-d19edf7b097a) · Remote · $235,000–$275,000/yr · Posted Aug 1 · 18d ago
 
 **LVT**
-- [Senior Software Engineer - Backend](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5368027008) · American Fork, Utah, United States · Posted Jul 28 · 21d ago
-- [Senior Software Engineer II - Backend](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5372856008) · American Fork, Utah, United States · Posted Jul 29 · 20d ago
-- [Senior Staff Software Engineer - Project Matrix](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5369286008) · Remote · Posted Aug 13 · 5d ago
-- [Sensor Integration Engineer II](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5377974008) · American Fork, Utah, United States · Posted Aug 4 · 14d ago
-- [Software Engineer II - Backend](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5367884008) · American Fork, Utah, United States · Posted Jul 28 · 21d ago
-- [Staff Software Engineer - Backend](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5381423008) · American Fork, Utah, United States · Posted Aug 5 · 13d ago
-- [Technical Support Engineer III](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5389245008) · American Fork, Utah, United States · Posted Aug 14 · 4d ago
+- [Senior Software Engineer II - Backend](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5372856008) · American Fork, Utah, United States · Posted Jul 29 · 21d ago
+- [Senior Staff Software Engineer - Project Matrix](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5369286008) · Remote · Posted Aug 13 · 6d ago
+- [Sensor Integration Engineer II](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5377974008) · American Fork, Utah, United States · Posted Aug 4 · 15d ago
+- [Staff Software Engineer - Backend](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5381423008) · American Fork, Utah, United States · Posted Aug 5 · 14d ago
+- [Technical Support Engineer III](https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5389245008) · American Fork, Utah, United States · Posted Aug 14 · 5d ago
 
 **MX**
-- [Sr. Cloud Platform Engineer](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4361585009) · Lehi, Utah, United States · Posted Aug 10 · 8d ago
-- [Sr. Observability Engineer](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4339716009) · Lehi, Utah, United States · Posted Jul 31 · 18d ago
+- [Sr. Cloud Platform Engineer](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4361585009) · Lehi, Utah, United States · Posted Aug 10 · 9d ago
+- [Sr. Observability Engineer](https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4339716009) · Lehi, Utah, United States · Posted Jul 31 · 19d ago
 
 **NICE**
-- [AI DevOps Engineer](https://boards.eu.greenhouse.io/nice/jobs/4940087101?gh_jid=4940087101) · USA - Sandy, UT · Posted Aug 3 · 15d ago
-- [Partner Success Implementation Engineer](https://boards.eu.greenhouse.io/nice/jobs/4931025101?gh_jid=4931025101) · USA - Remote · Posted Aug 4 · 14d ago
-- [Partner Value Solution Engineer](https://boards.eu.greenhouse.io/nice/jobs/4951008101?gh_jid=4951008101) · USA - Remote · Posted Aug 12 · 6d ago
-- [Professional Services Engineer](https://boards.eu.greenhouse.io/nice/jobs/4940224101?gh_jid=4940224101) · USA - Sandy, UT · Posted Jul 28 · 21d ago
+- [AI DevOps Engineer](https://boards.eu.greenhouse.io/nice/jobs/4940087101?gh_jid=4940087101) · USA - Sandy, UT · Posted Aug 3 · 16d ago
+- [Partner Success Implementation Engineer](https://boards.eu.greenhouse.io/nice/jobs/4931025101?gh_jid=4931025101) · USA - Remote · Posted Aug 4 · 15d ago
+- [Partner Value Solution Engineer](https://boards.eu.greenhouse.io/nice/jobs/4951008101?gh_jid=4951008101) · USA - Remote · Posted Aug 12 · 7d ago
+- ⭐ [Public Safety Solutions Engineer](https://boards.eu.greenhouse.io/nice/jobs/4947999101?gh_jid=4947999101) · USA - Remote · Posted Aug 18 · 1d ago
+- ⭐ [Senior Software Engineer](https://boards.eu.greenhouse.io/nice/jobs/4955509101?gh_jid=4955509101) · USA - Sandy, UT · $153,192.00 to $215,599.00 · Posted Aug 18 · 1d ago
 
 **Pattern**
-- [Sr Software Engineer, Identity & Access Management (IAM)](https://jobs.lever.co/pattern/284fdb28-7c35-4168-91c8-4340c472eeba) · Lehi, UT, US · Posted Aug 5 · 13d ago
+- [Sr Software Engineer, Identity & Access Management (IAM)](https://jobs.lever.co/pattern/284fdb28-7c35-4168-91c8-4340c472eeba) · Lehi, UT, US · Posted Aug 5 · 14d ago
+
+**Pluralsight**
+- ⭐ [VP, Marketing Operations & Digital Platform](https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/VP--Marketing-Operations---Digital-Platform_R0014395) · Remote - USA · $227,000-$270,000 · Posted Aug 18 · 1d ago
 
 **Western Governors University**
-- [Associate Learning Systems Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Associate-Learning-Systems-Engineer_JR-025846) · Salt Lake City, UT · $62,100.00 - $93,200.00 · Posted Aug 5 · 13d ago
-- ⭐ [Senior Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025942) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 17 · 1d ago
-- [Senior Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025759) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 12 · 6d ago
-- [Senior Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025286) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 29 · 20d ago
-- ⭐ [Senior Software Engineer - Salesforce](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 17 · 1d ago
-- [Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer--WIS-to-Domestic-_JR-025312) · Salt Lake City, UT · $98,300.00 - $147,400.00 · Posted Jul 29 · 20d ago
-- ⭐ [Software Engineer II - Web Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025291) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Aug 17 · 1d ago
-- ⭐ [Software Engineering | Mobile App](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Mobile_JR-025464) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Aug 17 · 1d ago
-- [Staff Cloud Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Cloud-Engineer_JR-025827) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 3 · 15d ago
-- ⭐ [Staff Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer_JR-025936) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 17 · 1d ago
-- [Staff Software Engineer (Front end focus)](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Front-end-focus-_JR-025882) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 11 · 7d ago
-- [Staff Software Engineer- Full-Stack Python and React](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--Full-Stack-Python_JR-025048) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 12 · 6d ago
-- ⭐ [Systems Engineer - Linux](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Systems-Engineer---Linux_JR-025704-1) · Salt Lake City, UT · $73,800.00 - $110,700.00 · Posted Aug 17 · 1d ago
-- ⭐ [Systems Engineer II- Atlassian Cloud Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Systems-Engineer-II--Atlassian-Cloud-Platform_JR-025876) · Salt Lake City, UT · $98,300.00 - $147,400.00 · Posted Aug 17 · 1d ago
-- [UX/UI Designer, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/UX-UI-Designer--Salt-Lake-City--UT_JR-025905) · Salt Lake City, UT · $91,000.00 - $136,400.00 · Posted Aug 12 · 6d ago
+- [Associate Learning Systems Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Associate-Learning-Systems-Engineer_JR-025846) · Salt Lake City, UT · $62,100.00 - $93,200.00 · Posted Aug 5 · 14d ago
+- ⭐ [Manager, Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Software-Engineer_JR-025952) · Salt Lake City, UT · $151,800.00 - $250,500.00 · Posted Aug 18 · 1d ago
+- [Senior Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025942) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 17 · 2d ago
+- [Senior Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025286) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Jul 29 · 21d ago
+- ⭐ [Senior Software Engineer - Identity Services](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Identity-Services_JR-025949) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 18 · 1d ago
+- [Senior Software Engineer - Salesforce](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 17 · 2d ago
+- ⭐ [Senior Software Engineer- Full Stack- Java/Angular](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer--Full-Stack--Java-Angular_JR-025732) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 18 · 1d ago
+- [Software Engineer II - Web Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-025291) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Aug 17 · 2d ago
+- [Software Engineering | Mobile App](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II---Mobile_JR-025464) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Aug 17 · 2d ago
+- [Staff Cloud Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Cloud-Engineer_JR-025827) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 3 · 16d ago
+- [Staff Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer_JR-025936) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 17 · 2d ago
+- [Systems Engineer II- Atlassian Cloud Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Systems-Engineer-II--Atlassian-Cloud-Platform_JR-025876) · Salt Lake City, UT · $98,300.00 - $147,400.00 · Posted Aug 17 · 2d ago
+- [UX/UI Designer, Salt Lake City, UT](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/UX-UI-Designer--Salt-Lake-City--UT_JR-025905) · Salt Lake City, UT · $91,000.00 - $136,400.00 · Posted Aug 12 · 7d ago
 
 **iCapital**
-- [Software Engineer -  Vice President](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8662833002) · Salt Lake City, Utah, United States · $130,000 to $170,000 · Posted Aug 6 · 12d ago
-- [Software Engineer - Associate / Assistant Vice President](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8662826002) · Salt Lake City, Utah, United States · $80,000 to $140,000 · Posted Aug 6 · 12d ago
+- [Software Engineer -  Vice President](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8662833002) · Salt Lake City, Utah, United States · $130,000 to $170,000 · Posted Aug 6 · 13d ago
+- [Software Engineer - Associate / Assistant Vice President](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8662826002) · Salt Lake City, Utah, United States · $80,000 to $140,000 · Posted Aug 6 · 13d ago
 
 
 # Removed / filled
 
-## 🌎 US-Remote (20)
-- **1Password** — [Internal] Developer, Rust · Remote (United States | Canada) · Posted Aug 14 · 4d ago
-- **Affirm** — Product Security Engineer II · Remote US · Posted Jul 27 · 22d ago
-- **Affirm** — Senior Software Engineer, Affirm Bank · Remote US · Posted Jul 27 · 22d ago
-- **Airbyte** — Senior AI Platform Engineer · San Francisco (Remote) · $196K – $235K · Posted Jul 27 · 22d ago
-- **Bright Vision Technologies** — Java Developer – Windchill · United States (Remote) · $80,000–$110,000 · Posted Aug 17 · 1d ago
-- **Chainguard** — Security Engineer · United States - Remote · Posted Jul 27 · 22d ago
-- **Chainguard** — Software Engineer (Libraries Platform) · United States - Remote · Posted Jul 27 · 22d ago
-- **ClickHouse** — Engineering Lead, Web Platform · United States (Remote) · Posted Jul 27 · 22d ago
-- **ClickHouse** — Senior Curriculum Developer & Instructor · United States (Remote) · Posted Jul 27 · 22d ago
-- **Cresta** — Customer Engineer, APAC · United States (Remote) · Posted Aug 16 · 2d ago
-- **Discord** — Senior Software Engineer, Data Platform · San Francisco Bay Area or Remote (U.S.) · Posted Aug 12 · 6d ago
-- **Docker** — Principal Software Engineer, Networking (Seattle or SF Bay Area) · San Francisco Bay Area (Remote) · Posted Jul 27 · 22d ago
-- **Docker** — Staff Software Engineer, Networking (Seattle or SF Bay Area) · San Francisco Bay Area (Remote) · Posted Jul 27 · 22d ago
-- **Genuine Parts Company** — Autotech Training Content Developer · United States (Remote) · Posted Aug 17 · 1d ago
-- **Grafana Labs** — Solutions Engineer | East or Central US | Remote · United States (Remote) · Posted Jul 27 · 22d ago
-- **Render** — Software Engineer, Agent Auth Experience · Remote: United States · $170K – $290K · Posted Jul 27 · 22d ago
-- **Sentry** — Software Engineer, New Grad (2027) · San Francisco, California (Remote) · $145K – $150K · Posted Aug 1 · 17d ago
-- **Supabase** — Release Engineer · Remote · Posted Jul 27 · 22d ago
-- **Supabase** — AI Platform Engineer · Remote · Posted Jul 31 · 18d ago
-- **Twilio** — Principal Software Engineer · Remote - US · Posted Jul 27 · 22d ago
+## 🌎 US-Remote (17)
+- **Buffer** — Senior Infrastructure Engineer · Remote · $164,595 – $212,744 · Posted Jul 28 · 22d ago
+- **Chainguard** — Senior Security Engineer (Cloud) · United States - Remote · Posted Jul 28 · 22d ago
+- **Coinbase** — Senior Software Engineer - Frontend - Coinbase Card team · Remote - USA · Posted Jul 28 · 22d ago
+- **Deepgram** — Senior Software Engineer - Model Evaluation & AI Systems · USA | Remote · $180K – $240K · Posted Jul 28 · 22d ago
+- **Jumio** — Customer Escalation Engineer · Anywhere in the World (Remote) · Posted Aug 6 · 13d ago
+- **LaunchDarkly** — Developer Advocate, Growth · Remote - US · Posted Jul 28 · 22d ago
+- **Marqeta** — Senior Production Support Engineer · Remote, USA · Posted Jul 28 · 22d ago
+- **Ramp** — Software Engineer, Forward Deployed AI · New York, NY (HQ) (Remote) · $189K – $330K · Posted Jul 28 · 22d ago
+- **Supabase** — Performance Engineer - Performance Analysis & Tuning · Remote · Posted Jul 28 · 22d ago
+- **Supabase** — Performance Engineer - Benchmarking · Remote · Posted Jul 28 · 22d ago
+- **Twilio** — Senior Analytics Engineer · Remote - US · Posted Jul 28 · 22d ago
+- **Vanta** — Sr. Fullstack Software Engineer, Integrations Platform · Remote U.S. · $224K – $263K · Posted Aug 14 · 5d ago
+- **Vanta** — Senior Backend Software Engineer, Integrations Platform · Remote U.S. · $195K – $229K · Posted Aug 17 · 2d ago
+- **name** — ServiceNow Developer · United States (Remote) · $97,750–$132,250 · Posted Aug 18 · 1d ago
+- **name** — Application Developer (Angular) · United States (Remote) · $64,230–$86,250 · Posted Aug 18 · 1d ago
+- **name** — Devops Engineer · United States (Remote) · Posted Aug 18 · 1d ago
+- **name** — Senior Microgrid Control and Automation Engineer · United States (Remote) · $107,900–$195,050 · Posted Aug 18 · 1d ago
 
-## 📍 Local — Silicon Slopes (8)
-- **LVT** — Quality Engineer · Spanish Fork, Utah, United States · Posted Jul 27 · 22d ago
-- **LVT** — Senior DevOps Engineer I · American Fork, Utah, United States · Posted Jul 27 · 22d ago
-- **NICE** — CX Outbound Solution Engineer · USA - Remote · Posted Aug 11 · 7d ago
-- **Traeger** — Product Compliance Engineer · Salt Lake City · Posted Jul 27 · 22d ago
-- **Western Governors University** — Assessment Developer · Salt Lake City, UT · $66,800.00 - $100,100.00 · Posted Aug 11 · 7d ago
-- **Western Governors University** — Principal Software Engineer · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Jul 27 · 22d ago
-- **Western Governors University** — Principal Software Engineer · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Jul 27 · 22d ago
-- **Western Governors University** — Staff Software Engineer  | Developer Experience · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Jul 27 · 22d ago
+## 📍 Local — Silicon Slopes (11)
+- **Adobe** — Sr Data Solution Engineer · Lehi · Posted Jul 28 · 22d ago
+- **Ancestry** — Machine Learning Engineer, Co-op · Remote · Posted Aug 11 · 8d ago
+- **BambooHR** — Sr. Product Manager, Core Data Platform · Utah | Hybrid · Posted Jul 28 · 22d ago
+- **LVT** — Senior Software Engineer - Backend · American Fork, Utah, United States · Posted Jul 28 · 22d ago
+- **LVT** — Software Engineer II - Backend · American Fork, Utah, United States · Posted Jul 28 · 22d ago
+- **NICE** — Professional Services Engineer · USA - Sandy, UT · Posted Jul 28 · 22d ago
+- **Western Governors University** — Systems Engineer - Linux · Salt Lake City, UT · $73,800.00 - $110,700.00 · Posted Aug 17 · 2d ago
+- **Western Governors University** — Senior Software Engineer · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Aug 12 · 7d ago
+- **Western Governors University** — Staff Software Engineer- Full-Stack Python and React · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 12 · 7d ago
+- **Western Governors University** — Staff Software Engineer (Front end focus) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Aug 11 · 8d ago
+- **Western Governors University** — Software Engineer · Salt Lake City, UT · $98,300.00 - $147,400.00 · Posted Jul 29 · 21d ago

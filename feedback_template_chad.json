@@ -2,6 +2,13 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
+   "key": "1Password::d8e8cf3f-c994-43a7-854c-86849b95db41",
+   "company": "1Password",
+   "title": "Developer, Authorization",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::c22ea4e6-f39b-448c-a9e9-a04445ba18e6",
    "company": "1Password",
    "title": "Developer, Open Source",
@@ -44,9 +51,23 @@
    "note": ""
   },
   {
+   "key": "1Password::a5b083d5-5f82-4316-b5ef-a577f2edb493",
+   "company": "1Password",
+   "title": "Solutions Engineer, SMB",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Adobe::R171215",
    "company": "Adobe",
-   "title": "Senior SOAR Engineer",
+   "title": "Senior Security Automation Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R170921",
+   "company": "Adobe",
+   "title": "Software Development Engineer",
    "status": "",
    "note": ""
   },
@@ -54,13 +75,6 @@
    "key": "Adobe::R170972",
    "company": "Adobe",
    "title": "Software Development Engineer - Adobe Firefly Web",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Adobe::R170420",
-   "company": "Adobe",
-   "title": "Sr Data Solution Engineer",
    "status": "",
    "note": ""
   },
@@ -149,13 +163,6 @@
    "note": ""
   },
   {
-   "key": "Ancestry::R003377",
-   "company": "Ancestry",
-   "title": "Machine Learning Engineer, Co-op",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Angi::59a468ef-aef4-41a1-8bf2-5c920524e5d0",
    "company": "Angi",
    "title": "Principal Product Manager, AI Platform",
@@ -191,16 +198,16 @@
    "note": ""
   },
   {
-   "key": "BambooHR::6127677004",
-   "company": "BambooHR",
-   "title": "Sr. Product Manager, Core Data Platform",
+   "key": "Baseten::db6477fc-111a-4340-bf00-525fe023e6f3",
+   "company": "Baseten",
+   "title": "AI Inference Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Baseten::db6477fc-111a-4340-bf00-525fe023e6f3",
+   "key": "Baseten::11ab2593-6648-4943-ab4a-284fe7e89720",
    "company": "Baseten",
-   "title": "AI Inference Engineer",
+   "title": "Forward Deployed Engineer (Training)",
    "status": "",
    "note": ""
   },
@@ -240,23 +247,9 @@
    "note": ""
   },
   {
-   "key": "Buffer::1ee8b707-48a0-40cc-a319-3fb7c665a1e8",
-   "company": "Buffer",
-   "title": "Senior Infrastructure Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Chainguard::4698956006",
    "company": "Chainguard",
    "title": "Principal Software Engineer (Libraries Platform)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Chainguard::4700287006",
-   "company": "Chainguard",
-   "title": "Senior Security Engineer (Cloud)",
    "status": "",
    "note": ""
   },
@@ -401,16 +394,16 @@
    "note": ""
   },
   {
-   "key": "Cloudflare::8132642",
+   "key": "Cloudflare::8121827",
    "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Named",
+   "title": "Senior Customer Engineer, Named - Minnesota",
    "status": "",
    "note": ""
   },
   {
-   "key": "Cloudflare::8121827",
+   "key": "Cloudflare::8132642",
    "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Named - Minnesota",
+   "title": "Senior Customer Engineer, Named - Philadelphia, PA",
    "status": "",
    "note": ""
   },
@@ -460,13 +453,6 @@
    "key": "Coinbase::8095207",
    "company": "Coinbase",
    "title": "Senior IT Automation Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Coinbase::8088201",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer - Frontend - Coinbase Card team",
    "status": "",
    "note": ""
   },
@@ -562,16 +548,16 @@
    "note": ""
   },
   {
-   "key": "Deepgram::4f9648d7-e25c-440c-8ec6-566a405c7c23",
-   "company": "Deepgram",
-   "title": "Full Stack Web Developer, Marketing",
+   "key": "Datadog::8139662",
+   "company": "Datadog",
+   "title": "Developer Advocate - Service Management",
    "status": "",
    "note": ""
   },
   {
-   "key": "Deepgram::6f3d761e-4873-43af-a9b1-daeb147661f9",
+   "key": "Deepgram::4f9648d7-e25c-440c-8ec6-566a405c7c23",
    "company": "Deepgram",
-   "title": "Senior Software Engineer - Model Evaluation & AI Systems",
+   "title": "Full Stack Web Developer, Marketing",
    "status": "",
    "note": ""
   },
@@ -614,6 +600,13 @@
    "key": "Domo::JR100285",
    "company": "Domo",
    "title": "Senior CloudOps Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Figma::151025",
+   "company": "Figma",
+   "title": "Marketing Engineer",
    "status": "",
    "note": ""
   },
@@ -740,6 +733,13 @@
    "key": "Grafana Labs::6137468004",
    "company": "Grafana Labs",
    "title": "Senior Solutions Engineer | West Coast | Remote",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Grafana Labs::6146604004",
+   "company": "Grafana Labs",
+   "title": "Staff Backend Engineer - Mimir Query, Databases | USA | Remote",
    "status": "",
    "note": ""
   },
@@ -891,6 +891,13 @@
    "note": ""
   },
   {
+   "key": "Included Health::b3b5352c-0784-41c4-9e2f-062461aef44a",
+   "company": "Included Health",
+   "title": "Senior Security Operations Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Instacart::8137846",
    "company": "Instacart",
    "title": "Engineering Manager, Fraud & Identity Platform",
@@ -940,20 +947,6 @@
    "note": ""
   },
   {
-   "key": "Jumio::https://weworkremotely.com/remote-jobs/jumio-customer-escalation-engineer",
-   "company": "Jumio",
-   "title": "Customer Escalation Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "LVT::5368027008",
-   "company": "LVT",
-   "title": "Senior Software Engineer - Backend",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "LVT::5372856008",
    "company": "LVT",
    "title": "Senior Software Engineer II - Backend",
@@ -971,13 +964,6 @@
    "key": "LVT::5377974008",
    "company": "LVT",
    "title": "Sensor Integration Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "LVT::5367884008",
-   "company": "LVT",
-   "title": "Software Engineer II - Backend",
    "status": "",
    "note": ""
   },
@@ -1031,6 +1017,13 @@
    "note": ""
   },
   {
+   "key": "LangChain::98fcaa18-d323-49cd-b231-b2d4b905419d",
+   "company": "LangChain",
+   "title": "Solutions Engineer (Chicago)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "LangChain::df7a4d66-2159-4dff-b5ff-92f6e835f242",
    "company": "LangChain",
    "title": "Solutions Engineer (Texas)",
@@ -1041,13 +1034,6 @@
    "key": "LaunchDarkly::7861151003",
    "company": "LaunchDarkly",
    "title": "Backend Engineer, Flag Delivery",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "LaunchDarkly::7819879003",
-   "company": "LaunchDarkly",
-   "title": "Developer Advocate, Growth",
    "status": "",
    "note": ""
   },
@@ -1066,6 +1052,13 @@
    "note": ""
   },
   {
+   "key": "LaunchDarkly::7887684003",
+   "company": "LaunchDarkly",
+   "title": "Senior Full Stack Engineer, Enterprise, Feature Management",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "LaunchDarkly::7861200003",
    "company": "LaunchDarkly",
    "title": "Sr Backend Engineer, Flag Delivery",
@@ -1076,6 +1069,13 @@
    "key": "LaunchDarkly::7849596003",
    "company": "LaunchDarkly",
    "title": "Staff Engineer, Distributed Systems / Flag Delivery",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "LaunchDarkly::7895529003",
+   "company": "LaunchDarkly",
+   "title": "Staff Enterprise Developer Advocate",
    "status": "",
    "note": ""
   },
@@ -1104,13 +1104,6 @@
    "key": "MX::4339716009",
    "company": "MX",
    "title": "Sr. Observability Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Marqeta::8077189",
-   "company": "Marqeta",
-   "title": "Senior Production Support Engineer",
    "status": "",
    "note": ""
   },
@@ -1150,9 +1143,16 @@
    "note": ""
   },
   {
-   "key": "NICE::4940224101",
+   "key": "NICE::4947999101",
    "company": "NICE",
-   "title": "Professional Services Engineer",
+   "title": "Public Safety Solutions Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "NICE::4955509101",
+   "company": "NICE",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1181,6 +1181,13 @@
    "key": "Pattern::284fdb28-7c35-4168-91c8-4340c472eeba",
    "company": "Pattern",
    "title": "Sr Software Engineer, Identity & Access Management (IAM)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Payabli::https://weworkremotely.com/remote-jobs/payabli-senior-product-manager-platform",
+   "company": "Payabli",
+   "title": "Senior Product Manager, Platform",
    "status": "",
    "note": ""
   },
@@ -1220,6 +1227,13 @@
    "note": ""
   },
   {
+   "key": "Pluralsight::R0014395",
+   "company": "Pluralsight",
+   "title": "VP, Marketing Operations & Digital Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "PostHog::0d1b6a32-6a21-4933-a33a-303b0e49302e",
    "company": "PostHog",
    "title": "Site Reliability Engineer (US - Central/Eastern time)",
@@ -1227,9 +1241,9 @@
    "note": ""
   },
   {
-   "key": "Ramp::b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
-   "company": "Ramp",
-   "title": "Software Engineer, Forward Deployed AI",
+   "key": "RESPEC::https://himalayas.app/companies/respec/jobs/bi-developer-contractor",
+   "company": "RESPEC",
+   "title": "BI Developer (Contractor)",
    "status": "",
    "note": ""
   },
@@ -1244,6 +1258,13 @@
    "key": "Reddit::8128860",
    "company": "Reddit",
    "title": "Senior Backend Engineer, Compliance Engineering",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8093006",
+   "company": "Reddit",
+   "title": "Senior Backend Engineer, Safety",
    "status": "",
    "note": ""
   },
@@ -1272,6 +1293,13 @@
    "key": "Reddit::8122606",
    "company": "Reddit",
    "title": "Senior Staff Machine Learning Engineer, Feed Relevance",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8139781",
+   "company": "Reddit",
+   "title": "Software Engineer, Content Platform",
    "status": "",
    "note": ""
   },
@@ -1486,20 +1514,6 @@
    "note": ""
   },
   {
-   "key": "Supabase::11beb619-0c25-4b11-9818-3f18e278c65b",
-   "company": "Supabase",
-   "title": "Performance Engineer - Benchmarking",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Supabase::98ef6a11-9898-4960-9931-1264285849f3",
-   "company": "Supabase",
-   "title": "Performance Engineer - Performance Analysis & Tuning",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Supabase::f44742fb-18c6-478f-bf78-63707ed57db7",
    "company": "Supabase",
    "title": "SDK Engineer - JavaScript",
@@ -1591,6 +1605,13 @@
    "note": ""
   },
   {
+   "key": "Temporal::5214260007",
+   "company": "Temporal",
+   "title": "Staff Software Engineer, Traffic",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Temporal Technologies::https://weworkremotely.com/remote-jobs/temporal-technologies-director-global-developer-success",
    "company": "Temporal Technologies",
    "title": "Director, Global Developer Success",
@@ -1640,13 +1661,6 @@
    "note": ""
   },
   {
-   "key": "Twilio::8044650",
-   "company": "Twilio",
-   "title": "Senior Analytics Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8096642",
    "company": "Twilio",
    "title": "Senior Presales Engineer",
@@ -1654,14 +1668,14 @@
    "note": ""
   },
   {
-   "key": "Twilio::8097672",
+   "key": "Twilio::8100236",
    "company": "Twilio",
    "title": "Software Engineer (L2)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8100236",
+   "key": "Twilio::8097672",
    "company": "Twilio",
    "title": "Software Engineer (L2)",
    "status": "",
@@ -1710,13 +1724,6 @@
    "note": ""
   },
   {
-   "key": "Vanta::092119bc-d640-46f4-b25f-b494d755af00",
-   "company": "Vanta",
-   "title": "Senior Backend Software Engineer, Integrations Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Vanta::7600575b-fb06-485e-bc13-626e661a34aa",
    "company": "Vanta",
    "title": "Senior Data Engineer",
@@ -1738,13 +1745,6 @@
    "note": ""
   },
   {
-   "key": "Vanta::539cb2a8-b704-4f39-af0d-2bee5b529d1d",
-   "company": "Vanta",
-   "title": "Sr. Fullstack Software Engineer, Integrations Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Webflow::8122601",
    "company": "Webflow",
    "title": "Associate Infrastructure Engineer",
@@ -1759,14 +1759,14 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025942",
+   "key": "Western Governors University::JR-025952",
    "company": "Western Governors University",
-   "title": "Senior Software Engineer",
+   "title": "Manager, Software Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025759",
+   "key": "Western Governors University::JR-025942",
    "company": "Western Governors University",
    "title": "Senior Software Engineer",
    "status": "",
@@ -1780,6 +1780,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025949",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer - Identity Services",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025416",
    "company": "Western Governors University",
    "title": "Senior Software Engineer - Salesforce",
@@ -1787,9 +1794,9 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025312",
+   "key": "Western Governors University::JR-025732",
    "company": "Western Governors University",
-   "title": "Software Engineer",
+   "title": "Senior Software Engineer- Full Stack- Java/Angular",
    "status": "",
    "note": ""
   },
@@ -1818,27 +1825,6 @@
    "key": "Western Governors University::JR-025936",
    "company": "Western Governors University",
    "title": "Staff Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025882",
-   "company": "Western Governors University",
-   "title": "Staff Software Engineer (Front end focus)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025048",
-   "company": "Western Governors University",
-   "title": "Staff Software Engineer- Full-Stack Python and React",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025704",
-   "company": "Western Governors University",
-   "title": "Systems Engineer - Linux",
    "status": "",
    "note": ""
   },
@@ -1874,34 +1860,6 @@
    "key": "iCapital::8662826002",
    "company": "iCapital",
    "title": "Software Engineer - Associate / Assistant Vice President",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "name::https://himalayas.app/companies/general-dynamics-information-technology/jobs/application-developer-angular-3811683805",
-   "company": "name",
-   "title": "Application Developer (Angular)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "name::https://himalayas.app/companies/resolve-tech-solutions-llc/jobs/devops-engineer-8395803472",
-   "company": "name",
-   "title": "Devops Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "name::https://himalayas.app/companies/leidos/jobs/senior-microgrid-control-and-automation-engineer",
-   "company": "name",
-   "title": "Senior Microgrid Control and Automation Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "name::https://himalayas.app/companies/general-dynamics-information-technology/jobs/servicenow-developer",
-   "company": "name",
-   "title": "ServiceNow Developer",
    "status": "",
    "note": ""
   }

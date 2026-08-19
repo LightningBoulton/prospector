@@ -2,6 +2,13 @@
  "_comment": "Copy any row you want to act on into feedback_lisa.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_lisa.json is.",
  "entries": [
   {
+   "key": "1Password::c54f62fe-8a85-44c1-81ea-f3d1c1d3d060",
+   "company": "1Password",
+   "title": "Digital Customer Success Campaign Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "AECOM::147583",
    "company": "AECOM",
    "title": "Site Strategy Manager, Data Center Sites - Remote (U.S.)",
@@ -37,9 +44,9 @@
    "note": ""
   },
   {
-   "key": "Affirm::7819181003",
+   "key": "Affirm::7833171003",
    "company": "Affirm",
-   "title": "Chief of Staff Director, People",
+   "title": "GTM Strategy & Operations Lead",
    "status": "",
    "note": ""
   },
@@ -54,6 +61,13 @@
    "key": "Affirm::7822254003",
    "company": "Affirm",
    "title": "Senior Product Manager, Agent Enablement",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "AlphaSense::151052",
+   "company": "AlphaSense",
+   "title": "Sales Enablement Lead",
    "status": "",
    "note": ""
   },
@@ -86,191 +100,9 @@
    "note": ""
   },
   {
-   "key": "Aquent::211898",
-   "company": "Aquent",
-   "title": "Business Program Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212179",
-   "company": "Aquent",
-   "title": "Consumer Product Licensing Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212219",
-   "company": "Aquent",
-   "title": "Creative AI & Innovation Enablement",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212302",
-   "company": "Aquent",
-   "title": "Creative Operations Manager, Packaging",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212357",
-   "company": "Aquent",
-   "title": "Creative Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212266",
-   "company": "Aquent",
-   "title": "Customer Experience Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::211988",
-   "company": "Aquent",
-   "title": "Customer Lifecycle Management Campaign Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212332",
-   "company": "Aquent",
-   "title": "Figma Migration Program Lead",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::211825",
-   "company": "Aquent",
-   "title": "Marketing Operations Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212023",
-   "company": "Aquent",
-   "title": "Merchandise Planning & Allocation Analyst",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212185",
-   "company": "Aquent",
-   "title": "Organizational Change Management (OCM) & Communications Support Specialist",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212358",
-   "company": "Aquent",
-   "title": "Pharma - Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::211772",
-   "company": "Aquent",
-   "title": "Product Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212043",
-   "company": "Aquent",
-   "title": "Program Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212284",
-   "company": "Aquent",
-   "title": "Program Manager Tech",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::211800",
-   "company": "Aquent",
-   "title": "Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212287",
-   "company": "Aquent",
-   "title": "Project Manager - Pharma",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212168",
-   "company": "Aquent",
-   "title": "SEO/GEO Manager- BEAUTY",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::211929",
-   "company": "Aquent",
-   "title": "Senior Data Operations Specialist",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212135",
-   "company": "Aquent",
-   "title": "Senior Enterprise UX Researcher & Design Strategist",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::211799",
-   "company": "Aquent",
-   "title": "Senior Program Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212001",
-   "company": "Aquent",
-   "title": "Senior Technical Program Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212231",
-   "company": "Aquent",
-   "title": "Sr Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::211904",
-   "company": "Aquent",
-   "title": "Technical Program Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::212040",
-   "company": "Aquent",
-   "title": "Technical Writer (AI Enablement)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Archive::150709",
    "company": "Archive",
    "title": "Customer Growth, Director",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "AssetWatch::145855",
-   "company": "AssetWatch",
-   "title": "Sr. Manager, SEO/AEO",
    "status": "",
    "note": ""
   },
@@ -327,13 +159,6 @@
    "key": "Braze::https://weworkremotely.com/remote-jobs/braze-customer-success-manager-ii",
    "company": "Braze",
    "title": "Customer Success Manager II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Brex::8654459002",
-   "company": "Brex",
-   "title": "GTM AI Revenue Enablement, Senior Manager",
    "status": "",
    "note": ""
   },
@@ -492,6 +317,13 @@
    "note": ""
   },
   {
+   "key": "Colgate-Palmolive::146924",
+   "company": "Colgate-Palmolive",
+   "title": "Customer Development Manager - Wakefern",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Concept Plus::150198",
    "company": "Concept Plus",
    "title": "Capture Management Director",
@@ -520,16 +352,16 @@
    "note": ""
   },
   {
-   "key": "Customer.io::8090074",
-   "company": "Customer.io",
-   "title": "People Partner",
+   "key": "Deepgram::681c5324-1234-4222-b783-a8a7a9440005",
+   "company": "Deepgram",
+   "title": "Senior Program Manager, Data Operations",
    "status": "",
    "note": ""
   },
   {
-   "key": "Deepgram::681c5324-1234-4222-b783-a8a7a9440005",
-   "company": "Deepgram",
-   "title": "Senior Program Manager, Data Operations",
+   "key": "Docker::3de22da1-17d1-4887-a08e-c2177c1cd9f7",
+   "company": "Docker",
+   "title": "Staff Product Manager, Infrastructure & AI Dev Tools (Seattle, WA / West Coast Preferred)",
    "status": "",
    "note": ""
   },
@@ -604,6 +436,13 @@
    "note": ""
   },
   {
+   "key": "Eliassen::bbb9e65d-9b1f-11f1-a3dc-024201c20d84",
+   "company": "Eliassen",
+   "title": "Regulatory Operations Project Manager, Global Submissions Planning/ Management",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Eliassen::798ec9dc-906a-11f1-97a0-024201c20d84",
    "company": "Eliassen",
    "title": "Senior Project Manager",
@@ -614,6 +453,13 @@
    "key": "Eliassen::e18382f7-9731-11f1-9509-02420a6c7775",
    "company": "Eliassen",
    "title": "Supplier Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Eliassen::cb2417c1-9b38-11f1-a3dc-024201c20d84",
+   "company": "Eliassen",
+   "title": "Team Operations Integration Lead",
    "status": "",
    "note": ""
   },
@@ -642,13 +488,6 @@
    "key": "GitLab::8691859002",
    "company": "GitLab",
    "title": "Manager, Customer Success",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "GitLab::8643154002",
-   "company": "GitLab",
-   "title": "Manager, IT SOX PMO",
    "status": "",
    "note": ""
   },
@@ -709,6 +548,13 @@
    "note": ""
   },
   {
+   "key": "Gusto::8069947",
+   "company": "Gusto",
+   "title": "Expansion Account Manager Leader",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "HII::150377",
    "company": "HII",
    "title": "Part Time Project Manager - 29721",
@@ -719,6 +565,13 @@
    "key": "Headway::8c5c0e09-0b8b-4a6f-834d-1681846d055e",
    "company": "Headway",
    "title": "Business Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Headway::18261737-fed6-4203-aeaa-6068545f9f1e",
+   "company": "Headway",
+   "title": "Chief of Staff, R&D",
    "status": "",
    "note": ""
   },
@@ -754,6 +607,20 @@
    "key": "Headway::64998174-15cc-46e4-8a51-e67c131b94af",
    "company": "Headway",
    "title": "Revenue Strategy & Operations Manager (Insights & AI)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Headway::a79f6feb-afac-4f96-84e2-3cb7369d6c34",
+   "company": "Headway",
+   "title": "Senior Manager, Technical Recruiting",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Hinge Health::cd67cd2f-3a94-4eaf-9ad8-d067fdd18bf0",
+   "company": "Hinge Health",
+   "title": "Growth Marketing Manager",
    "status": "",
    "note": ""
   },
@@ -821,13 +688,6 @@
    "note": ""
   },
   {
-   "key": "Instructure::150906",
-   "company": "Instructure",
-   "title": "Manager Marketing, Customer Marketing NORAM K-12",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Instructure::150900",
    "company": "Instructure",
    "title": "Principal Business Operations Manager - Remote (USA)",
@@ -838,6 +698,13 @@
    "key": "Instructure::150240",
    "company": "Instructure",
    "title": "Sales Operations Manager, Foundry",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Integrated Hire::https://weworkremotely.com/remote-jobs/integrated-hire-account-manager-client-services",
+   "company": "Integrated Hire",
+   "title": "Account Manager \u2013 Client Services",
    "status": "",
    "note": ""
   },
@@ -912,27 +779,6 @@
    "note": ""
   },
   {
-   "key": "MX::4336014009",
-   "company": "MX",
-   "title": "Staff Technical Program Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Marqeta::8080804",
-   "company": "Marqeta",
-   "title": "Senior Manager, Benefits",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Marqeta::8096548",
-   "company": "Marqeta",
-   "title": "Staff Salesforce Architect",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Mercury::https://weworkremotely.com/remote-jobs/mercury-customer-support-systems-analytics-architect",
    "company": "Mercury",
    "title": "Customer Support Systems & Analytics Architect",
@@ -1003,6 +849,13 @@
    "note": ""
   },
   {
+   "key": "Mixpanel::https://weworkremotely.com/remote-jobs/mixpanel-revenue-strategy-operations-manager",
+   "company": "Mixpanel",
+   "title": "Revenue Strategy & Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Molina Healthcare::150195",
    "company": "Molina Healthcare",
    "title": "Director, Member Experience (Process Improvement)",
@@ -1045,13 +898,6 @@
    "note": ""
   },
   {
-   "key": "Notion::4967b1cf-a1f7-417b-b650-feebbff767a3",
-   "company": "Notion",
-   "title": "Enterprise Outcomes Architect",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Notion::f1585b12-8ae1-4807-85e0-800446c46ffc",
    "company": "Notion",
    "title": "Marketing Strategy & Operations Manager",
@@ -1087,9 +933,23 @@
    "note": ""
   },
   {
+   "key": "Oscar Health::8069503",
+   "company": "Oscar Health",
+   "title": "Senior Manager, Market Strategy Advisory",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Pattern::87f835ab-c5be-4db2-8a22-84607d9bd291",
    "company": "Pattern",
    "title": "Creative Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "PerfectServe::151087",
+   "company": "PerfectServe",
+   "title": "Customer & Field Marketing Manager - US Remote",
    "status": "",
    "note": ""
   },
@@ -1115,6 +975,20 @@
    "note": ""
   },
   {
+   "key": "Pluralsight::R0014281",
+   "company": "Pluralsight",
+   "title": "Senior Manager, Marketing Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Pluralsight::R0014395",
+   "company": "Pluralsight",
+   "title": "VP, Marketing Operations & Digital Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Postscript::8659896002",
    "company": "Postscript",
    "title": "Principal Customer Success Manager, Email",
@@ -1122,9 +996,9 @@
    "note": ""
   },
   {
-   "key": "Qualtrics::8099208",
-   "company": "Qualtrics",
-   "title": "Principal Analyst II Revenue Strategy & Operations, Enterprise (North America)",
+   "key": "RELX::https://himalayas.app/companies/relx/jobs/implementation-manager",
+   "company": "RELX",
+   "title": "Implementation Manager",
    "status": "",
    "note": ""
   },
@@ -1132,13 +1006,6 @@
    "key": "Ramp::2ddd97a8-70b2-4030-ba42-21124ad304d3",
    "company": "Ramp",
    "title": "Associate Manager, Premier Support (Customer Experience)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Ramp::ea9f6e2d-8981-417a-ac96-87d421ccbf4c",
-   "company": "Ramp",
-   "title": "Business Operations Lead, Compensation & Equity",
    "status": "",
    "note": ""
   },
@@ -1255,9 +1122,23 @@
    "note": ""
   },
   {
-   "key": "Robert Half::02100-0013481039-usen",
+   "key": "Robert Half::00400-0013487684-usen",
    "company": "Robert Half",
    "title": "Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Robert Half::02960-0013490653-usen",
+   "company": "Robert Half",
+   "title": "Project Manager - Systems",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Robert Half::01300-0013490681-usen",
+   "company": "Robert Half",
+   "title": "Project Manager/Sr. Consultant",
    "status": "",
    "note": ""
   },
@@ -1269,16 +1150,16 @@
    "note": ""
   },
   {
-   "key": "Robert Half::02100-0013483664-usen",
+   "key": "Robert Half::02300-0013489376-usen",
    "company": "Robert Half",
-   "title": "Sr. Digital Marketing Manager",
+   "title": "Senior Change Consultant",
    "status": "",
    "note": ""
   },
   {
-   "key": "Samsara::7580157",
-   "company": "Samsara",
-   "title": "Customer Success Manager II",
+   "key": "Robert Half::02100-0013483664-usen",
+   "company": "Robert Half",
+   "title": "Sr. Digital Marketing Manager",
    "status": "",
    "note": ""
   },
@@ -1360,6 +1241,13 @@
    "note": ""
   },
   {
+   "key": "Samsara::8104151",
+   "company": "Samsara",
+   "title": "Senior Strategic Implementation Consultant",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Sanity::f7488d1b-1542-4812-867b-b77fcc3bccc6",
    "company": "Sanity",
    "title": "Director, People Operations",
@@ -1377,6 +1265,13 @@
    "key": "Smartsheet::8120577",
    "company": "Smartsheet",
    "title": "Manager, Consulting - West",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Smartsheet::8139540",
+   "company": "Smartsheet",
+   "title": "Regional Customer Marketing Manager",
    "status": "",
    "note": ""
   },
@@ -1451,6 +1346,13 @@
    "note": ""
   },
   {
+   "key": "Stripe::8112456",
+   "company": "Stripe",
+   "title": "Strategic Program Manager, Support",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Supabase::f8fc6aae-d2b4-456a-97db-012a1970c398",
    "company": "Supabase",
    "title": "Partner Enablement + Program Manager, Startups",
@@ -1482,13 +1384,6 @@
    "key": "Temporal Technologies::https://weworkremotely.com/remote-jobs/temporal-technologies-director-gtm-strategy-analytics",
    "company": "Temporal Technologies",
    "title": "Director, GTM Strategy & Analytics",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Thumbtack::1defbc0d-71f7-4c08-919c-4eb49992727d",
-   "company": "Thumbtack",
-   "title": "Sr. Manager, Success Operations",
    "status": "",
    "note": ""
   },
@@ -1531,6 +1426,13 @@
    "key": "Vanta::40f80a35-39d7-4272-aceb-7ad91edabf4a",
    "company": "Vanta",
    "title": "Manager, Security Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Vanta::3caab04a-8548-442c-8c22-d670e7be2931",
+   "company": "Vanta",
+   "title": "Revenue Enablement Manager, Account Management",
    "status": "",
    "note": ""
   },
@@ -1654,23 +1556,9 @@
    "note": ""
   },
   {
-   "key": "dscout::150766",
-   "company": "dscout",
-   "title": "Enterprise Account Director",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "livingHR::150723",
    "company": "livingHR",
    "title": "HR Technology Consultant (Contract)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "name::https://himalayas.app/companies/leidos/jobs/material-project-manager",
-   "company": "name",
-   "title": "Material Project Manager",
    "status": "",
    "note": ""
   },
