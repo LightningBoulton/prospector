@@ -545,6 +545,83 @@
   }
  },
  {
+  "key": "Kelso Industries::5396087008",
+  "company": "Kelso Industries",
+  "title": "Assistant Project Manager",
+  "location": "Ogden, UT",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5396087008#job-board",
+  "posted": "2026-08-19",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Construction PM role, not strategic scope",
+    "No transformation or ops leadership mandate",
+    "Junior title, entry-level construction execution"
+   ],
+   "concerns": [
+    "Wrong function - construction project management",
+    "No executive or strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 40,
+   "opportunity_score": 12,
+   "score": 12,
+   "fit": "no",
+   "reason": "Construction PM role, not strategic scope",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Kelso Industries::5396102008",
+  "company": "Kelso Industries",
+  "title": "BAS Service Operations Manager",
+  "location": "Ogden, UT",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5396102008#job-board",
+  "posted": "2026-08-19",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Utah location matches practical preference",
+    "Operational leadership scope has some overlap",
+    "Requires deep BAS/HVAC technical domain expertise"
+   ],
+   "concerns": [
+    "Wrong industry/function: building automation field service",
+    "No transformation, CX or strategy mandate",
+    "Requires technical HVAC/BAS trade knowledge"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah location matches practical preference",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Kelso Industries::5380620008",
   "company": "Kelso Industries",
   "title": "HVAC Project Manager",
@@ -659,40 +736,116 @@
   }
  },
  {
-  "key": "Kelso Industries::5374101008",
-  "company": "Kelso Industries",
-  "title": "Workforce Program Manager",
+  "key": "Western Governors University::JR-025922",
+  "company": "Western Governors University",
+  "title": "Technical Program Manager-1",
   "location": "Salt Lake City, UT",
-  "url": "https://kelso-industries.com/careers/?gh_jid=5374101008#job-board",
-  "posted": "2026-07-29",
-  "salary": null,
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Program-Manager-1_JR-025922",
+  "posted": "2026-08-19",
+  "salary": "$130,900.00 - $196,300.00",
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
   "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
    "recommendation": "stretch",
-   "confidence": "medium",
+   "confidence": "low",
    "reasons": [
-    "Utah-local, program management ownership",
-    "Adjacent to L&D/org development",
-    "Workforce training scope less strategic than target roles"
+    "Program management role in Utah",
+    "Possible transformation/PMO scope unclear",
+    "Location matches Utah preference"
    ],
    "concerns": [
-    "Specialized apprenticeship/grant-funding domain expertise required",
-    "Narrower operational mandate than transformation-level roles"
+    "No description to confirm mandate",
+    "Technical PM may skew engineering-heavy"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 40,
-   "practical_fit": 90,
-   "opportunity_score": 42,
-   "score": 42,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
    "fit": "maybe",
-   "reason": "Utah-local, program management ownership",
+   "reason": "Program management role in Utah",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025928",
+  "company": "Western Governors University",
+  "title": "Technical Project Manager III",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-025928",
+  "posted": "2026-08-17",
+  "salary": "$108,200.00 - $162,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based, program/project leadership adjacent",
+    "Technical PM scope unclear without description",
+    "WGU is stable employer in target region"
+   ],
+   "concerns": [
+    "No description to confirm strategic scope",
+    "Title suggests technical/IT delivery focus, may lack transformation mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Utah-based, program/project leadership adjacent",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025576",
+  "company": "Western Governors University",
+  "title": "Project Manager II",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-II_JR-025576",
+  "posted": "2026-08-19",
+  "salary": "$75,200.00 - $112,700.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based employer, matches location preference",
+    "Project management aligns with program leadership background",
+    "Title generic, mandate unclear"
+   ],
+   "concerns": [
+    "No description to assess scope or seniority",
+    "Title suggests tactical PM, may lack strategic ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-based employer, matches location preference",
    "bg": "1451cb4bda95"
   }
  },
@@ -771,44 +924,6 @@
    "score": 50,
    "fit": "maybe",
    "reason": "Utah-based role, strong location fit",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Western Governors University::JR-025928",
-  "company": "Western Governors University",
-  "title": "Technical Project Manager III",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-025928",
-  "posted": "2026-08-17",
-  "salary": "$108,200.00 - $162,400.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-based, program/project leadership adjacent",
-    "Technical PM scope unclear without description",
-    "WGU is stable employer in target region"
-   ],
-   "concerns": [
-    "No description to confirm strategic scope",
-    "Title suggests technical/IT delivery focus, may lack transformation mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah-based, program/project leadership adjacent",
    "bg": "1451cb4bda95"
   }
  },
