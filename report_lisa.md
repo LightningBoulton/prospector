@@ -1,49 +1,55 @@
-# Prospector — 2026-08-20
+# Prospector — 2026-08-21
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 6 closed/removed
+**15 new roles today** · 8 still worth applying · 11 closed/removed
+
+## APPLY FIRST (1)
+- **Manager, Consulting - Central/East** — Smartsheet · 84/100 · remote -REMOTE, USA- · posted 2026-08-20
+  - Why: Professional services leadership with AI transformation mandate
+  - Concern: Business development quota expectations unclear
+  - https://job-boards.greenhouse.io/smartsheet/jobs/8145080
 
 ## NEW — WORTH REVIEWING (10)
-- **AI Transformation Owner, Product & Design** — GitLab · 82/100 · remote Remote, Canada; Remote, United Kingdom; Remote, United States · posted 2026-08-19
-  - Why: AI transformation mandate matches core domain
-  - Concern: Product & Design domain may require more technical product background
-  - https://job-boards.greenhouse.io/gitlab/jobs/8716179002
-- **Program Manager, Member Experience** — Chime · 76/100 · remote Remote, USA · posted 2026-08-19
+- **Renewals Strategy Principal Program Manager** — Dropbox · 80/100 · remote Remote - US: Select locations · posted 2026-08-20
+  - Why: Operating model design & transformation mandate
+  - Concern: Heavy SaaS renewals domain specificity
+  - https://jobs.dropbox.com/listing/8094537?gh_jid=8094537
+- **Director, Customer Experience** — Ramp · 74/100 · remote New York, NY (HQ) (Remote) · $190K – $290K · posted 2026-08-20
+  - Why: Director-level CX ownership across omni-channel operation
+  - Concern: Heavy operational/24-7 support focus, less transformation strategy
+  - https://jobs.ashbyhq.com/ramp/1285aefc-d2c4-4f7c-8357-6e8f97fb22d4
+- **Operations Manager (II)** — Aquent · 68/100 · remote Boulder, CO, US (Remote) · posted 2026-08-17
+  - Why: Ops process design/optimization matches core skills
+  - Concern: Contract via staffing agency, likely lower pay
+  - https://aquent.com/find-work/212365
+- **Director of Marketing Strategy** — Dropbox · 65/100 · remote Remote - US: Select locations · posted 2026-08-20
+  - Why: Chief-of-staff-like operating partner to CMO
+  - Concern: Requires deep marketing-specific financial modeling expertise
+  - https://jobs.dropbox.com/listing/8142720?gh_jid=8142720
+- **Senior Sales Enablement Strategist** — Angi · 62/100 · remote Remote - United States · posted 2026-08-17
+  - Why: Program ownership with strategic scope
+  - Concern: IC role, sales-enablement focus not core transformation
+  - https://jobs.ashbyhq.com/angi/8f25c229-a480-4093-ae02-b96c64aa467b
+- **Commercial Project Manager - Customer Management** — TE Connectivity · 62/100 · remote USA (Remote) · posted 2026-08-21
   - Why: US-remote, matches location preference
-  - Concern: Title/level may be below her typical scope
-  - https://boards.greenhouse.io/chime/jobs/8728271002?gh_jid=8728271002
-- **Marketing Manager II, Media Excellence** — Instacart · 74/100 · remote United States - Remote · posted 2026-08-19
-  - Why: Operating model design and process ownership mandate
-  - Concern: Marketing-specific domain, narrower than core transformation scope
-  - https://instacart.careers/job/?gh_jid=8142143
-- **Merchandising Operations Manager** — Grove Collaborative · 70/100 · remote USA (Remote) · posted 2026-08-19
-  - Why: Process redesign and operating model ownership
-  - Concern: Requires hands-on technical build, not just strategy
-  - https://jobicy.com/jobs/151122-merchandising-operations-manager
-- **Commercial Partnerships & Operations Director** — Clover Health · 66/100 · remote USA (Remote) · posted 2026-08-19
-  - Why: US-remote, strong practical fit
-  - Concern: Healthcare-specific commercial domain unfamiliar
-  - https://jobicy.com/jobs/151145-commercial-partnerships-operations-director
-- **Director, Revenue Operations** — Qventus · 62/100 · remote USA (Remote) · posted 2026-08-19
-  - Why: US-remote foundational operating role
-  - Concern: Heavy RevOps/sales-systems specialization not core strength
-  - https://jobicy.com/jobs/151160-director-revenue-operations
-- **Senior Manager, Sales Operations** — Angi · 60/100 · remote Remote - United States · posted 2026-08-19
-  - Why: Sales ops leadership with change management component
-  - Concern: Sales tech/Salesforce focus is narrower than core transformation work
-  - https://jobs.ashbyhq.com/angi/356a3836-97a6-452d-853e-ac7a554ecd5c
-- **Program Manager, Voice of the Member** — Chime · 55/100 · remote Remote, USA · posted 2026-08-19
-  - Why: CX/VoC insight work aligns with experience mandate
-  - Concern: Seems more IC analytics than strategic leadership
-  - https://boards.greenhouse.io/chime/jobs/8731531002?gh_jid=8731531002
-- **Head of Supply, Operations** — GOAT Group · 55/100 · remote USA (Remote) · posted 2026-08-19
-  - Why: Ops/process architecture aligns with operational excellence background
-  - Concern: Heavy sales-pipeline/CAC focus is more sales ops than transformation
-  - https://jobicy.com/jobs/151125-head-of-supply-operations
-- **Customer Value Architect III** — Mixpanel · 50/100 · remote San Francisco, US (Remote) · posted 2026-08-18
-  - Why: Customer value/ROI ownership aligns with CX background
-  - Concern: Individual account book, not org-wide strategic scope
-  - https://job-boards.greenhouse.io/mixpanel/jobs/8138187
+  - Concern: Title suggests narrower PM scope than her level
+  - https://jobicy.com/jobs/149440-commercial-project-manager-customer-management
+- **Strategy & Operations, Customer Success** — Ashby · 62/100 · remote Canada,  USA (Remote) · posted 2026-08-21
+  - Why: CS strategy/ops mandate fits transformation background
+  - Concern: Reports to Sr Manager, may be below her seniority level
+  - https://jobicy.com/jobs/149439-strategy-operations-customer-success
+- **Program Manager Contingent Workforce** — Instacart · 58/100 · remote United States - Remote · posted 2026-08-20
+  - Why: Program governance and operating model build-out
+  - Concern: Narrow contingent-workforce/VMS specialization vs broader transformation mandate
+  - https://instacart.careers/job/?gh_jid=8145958
+- **Service Delivery Manager** — Astronomer · 58/100 · remote USA (Remote) · posted 2026-08-21
+  - Why: Professional services delivery leadership fits background
+  - Concern: Highly technical data/AI platform domain unfamiliar
+  - https://jobicy.com/jobs/151309-service-delivery-manager-2
+- **Product Manager / Product Owner** — Aquent · 55/100 · hybrid New York, NY, US (Remote) · posted 2026-08-19
+  - Why: AI adoption/governance mandate matches interests
+  - Concern: Hybrid onsite NYC, not Utah/remote
+  - https://aquent.com/find-work/212414
 
 ## DISCOVERY / WILDCARDS (4)
 - **Principal, Strategy and Operations** — Adobe · 75/100 · onsite Lehi (+1 more) · posted 2026-08-14
@@ -54,10 +60,10 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: VP-level operations mandate likely broad
   - Concern: No description to confirm scope
   - https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/VP--Marketing-Operations---Digital-Platform_R0014395
-- **Delivery Excellence Manager- East** — name · 68/100 · remote United States (Remote) · $140,000–$200,000 · posted 2026-08-20
-  - Why: Delivery/customer success operations at fast-growing AI company
-  - Concern: Description truncated, scope unclear
-  - https://himalayas.app/companies/glean/jobs/delivery-excellence-manager-east
+- **Manager, Risk Management - AI Transformation** — Circle · 68/100 · remote San Francisco, California, United States of America (Remote) · posted 2026-08-20
+  - Why: AI transformation mandate within risk org
+  - Concern: Risk management domain expertise unclear
+  - https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Manager--Risk-Management---AI-Transformation_JR101118/apply
 - **Senior Manager, Marketing Operations** — Pluralsight · 65/100 · remote Remote - USA · $121,500-$160,000 · posted 2026-08-18
   - Why: Marketing operations is adjacent domain
   - Concern: No description to confirm strategic scope
@@ -92,21 +98,26 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: AI enablement/transformation core strength match
   - Concern: May want deeper technical AI/data infra background
   - https://jobicy.com/jobs/150914-director-ai-center-of-excellence
-- **Wholesale Operations Leader - GRS North America** — Liberty Mutual · 87/100 · remote USA (Remote) · posted 2026-08-18
-  - Why: Strategic operations leadership bridging strategy and execution
-  - Concern: Insurance/underwriting domain specificity unproven
-  - https://jobicy.com/jobs/149406-wholesale-operations-leader-grs-north-america
+- **Chief of Staff, R&D** — Headway · 87/100 · remote New York, NY (Remote) · $230K – $300K · posted 2026-08-18
+  - Why: Chief of Staff role with real operating ownership
+  - Concern: R&D-specific domain may require tech fluency
+  - https://jobs.ashbyhq.com/headway/18261737-fed6-4203-aeaa-6068545f9f1e
 
-## REMOVED SINCE PRIOR RUN (6)
-- Senior Manager of AI Enablement — CodePath · No longer listed by its source
-- Senior Program Manager, Data Operations — Deepgram · No longer listed by its source
-- Sales Activation and Insights Leader — GE Vernova · No longer listed by its source
-- Implementation Manager — RELX · No longer listed by its source
-- Project Manager — Robert Half · No longer listed by its source
-- Sr. Director, Strategy & Operations - Customer Success — Zscaler · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (11)
+- Senior Program Delivery Strategist — Angi · No longer listed by its source
+- Portfolio Project Manager — Eliassen · No longer listed by its source
+- Project Manager – Customer Modeling & Anaplan Transformation — Eliassen · No longer listed by its source
+- Sales Operations Manager, Foundry — Instructure · No longer listed by its source
+- Principal Business Operations Manager - Remote (USA) — Instructure · No longer listed by its source
+- Mergers & Acquisitions Project Manager — Kelso Industries · No longer listed by its source
+- Director, Member Experience (Process Improvement) — Molina Healthcare · No longer listed by its source
+- Delivery Excellence Manager- East — name · No longer listed by its source
+- Principal Customer Success Manager, Email — Postscript · No longer listed by its source
+- Solutions Consultant - East — Smartsheet · No longer listed by its source
+- Project Manager IV, Transformation — Western Governors University · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/129 successful
 - Temporary errors: 0
-- Needs attention: 11
-  - Returning nothing for 10+ runs: AssemblyAI, Beyond (Overstock), Inngest, Instructure, Knock, Miro, Nav, Postman, Speechify, Vivint, Weave
+- Needs attention: 14
+  - Returning nothing for 10+ runs: AssemblyAI, Beyond (Overstock), Inngest, Instructure, Knock, Metabase, Miro, Nav, Nomi Health, Postman, Route, Speechify, Vivint, Weave

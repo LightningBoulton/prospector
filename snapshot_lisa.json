@@ -505,46 +505,6 @@
   }
  },
  {
-  "key": "Brex::8659951002",
-  "company": "Brex",
-  "title": "Senior Manager, Supplier Enablement & Spend Conversion",
-  "location": "Salt Lake City, Utah, United States",
-  "url": "https://www.brex.com/careers/8659951002?gh_jid=8659951002",
-  "posted": "2026-07-30",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-based role, strong location fit",
-    "Involves process design and change management",
-    "Program/implementation leadership overlap",
-    "Narrower supplier/spend niche vs core transformation focus"
-   ],
-   "concerns": [
-    "Highly specific fintech/payments domain expertise may be required",
-    "Scope reads more operational/tactical than strategic",
-    "Unclear seniority/influence beyond program execution"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah-based role, strong location fit",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "Kelso Industries::5396087008",
   "company": "Kelso Industries",
   "title": "Assistant Project Manager",
@@ -583,12 +543,12 @@
   }
  },
  {
-  "key": "Kelso Industries::5396102008",
+  "key": "Kelso Industries::5396953008",
   "company": "Kelso Industries",
   "title": "BAS Service Operations Manager",
   "location": "Ogden, UT",
-  "url": "https://kelso-industries.com/careers/?gh_jid=5396102008#job-board",
-  "posted": "2026-08-19",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5396953008#job-board",
+  "posted": "2026-08-20",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -598,26 +558,63 @@
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Utah location matches practical preference",
-    "Operational leadership scope has some overlap",
-    "Requires deep BAS/HVAC technical domain expertise"
+    "Operational leadership scope but BAS/HVAC technical domain mismatch",
+    "Field technician management not her background",
+    "Utah location is practical positive"
    ],
    "concerns": [
-    "Wrong industry/function: building automation field service",
-    "No transformation, CX or strategy mandate",
-    "Requires technical HVAC/BAS trade knowledge"
+    "Requires deep BAS/controls technical expertise",
+    "Wrong function - trade services operations not transformation/strategy"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 65,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "no",
-   "reason": "Utah location matches practical preference",
+   "reason": "Operational leadership scope but BAS/HVAC technical domain mismatch",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Kelso Industries::5396976008",
+  "company": "Kelso Industries",
+  "title": "Benefits Manager @ Kelso Industries",
+  "location": "Draper, UT",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5396976008#job-board",
+  "posted": "2026-08-20",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, strategic initiatives)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Specialized benefits administration function",
+    "Not transformation or org strategy mandate",
+    "Utah location is practical positive only"
+   ],
+   "concerns": [
+    "Wrong functional domain - HR benefits ops",
+    "No strategic ownership scope described"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 15,
+   "practical_fit": 65,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Specialized benefits administration function",
    "bg": "1451cb4bda95"
   }
  },
@@ -655,45 +652,6 @@
    "score": 10,
    "fit": "no",
    "reason": "Wrong function: hands-on HVAC construction PM",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Kelso Industries::5374537008",
-  "company": "Kelso Industries",
-  "title": "Mergers & Acquisitions Project Manager",
-  "location": "Draper, UT",
-  "url": "https://kelso-industries.com/careers/?gh_jid=5374537008#job-board",
-  "posted": "2026-07-30",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Direct M&A integration/PMO mandate matches core domain",
-    "Utah location, likely onsite/hybrid",
-    "Cross-functional executive-facing coordination",
-    "Post-close integration is a strong signal"
-   ],
-   "concerns": [
-    "Title suggests PM execution vs strategic ownership",
-    "Unclear seniority/scope of decision authority"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 80,
-   "interest_fit": 85,
-   "practical_fit": 90,
-   "opportunity_score": 82,
-   "score": 82,
-   "fit": "yes",
-   "reason": "Direct M&A integration/PMO mandate matches core domain",
    "bg": "1451cb4bda95"
   }
  },
@@ -736,6 +694,44 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025971",
+  "company": "Western Governors University",
+  "title": "Senior Technical Program Manager",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Technical-Program-Manager_JR-025971",
+  "posted": "2026-08-20",
+  "salary": "$143,700.00 - $222,700.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Program management aligns with PMO/portfolio leadership background",
+    "Utah-based, strong location fit",
+    "Technical scope unclear, may skew engineering-heavy"
+   ],
+   "concerns": [
+    "No description available to assess mandate",
+    "'Technical' may require deep IT/software delivery expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 50,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Program management aligns with PMO/portfolio leadership background",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Western Governors University::JR-025922",
   "company": "Western Governors University",
   "title": "Technical Program Manager-1",
@@ -770,44 +766,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Program management role in Utah",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Western Governors University::JR-025928",
-  "company": "Western Governors University",
-  "title": "Technical Project Manager III",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-025928",
-  "posted": "2026-08-17",
-  "salary": "$108,200.00 - $162,400.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-based, program/project leadership adjacent",
-    "Technical PM scope unclear without description",
-    "WGU is stable employer in target region"
-   ],
-   "concerns": [
-    "No description to confirm strategic scope",
-    "Title suggests technical/IT delivery focus, may lack transformation mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah-based, program/project leadership adjacent",
    "bg": "1451cb4bda95"
   }
  },
@@ -928,40 +886,40 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025721",
+  "key": "Western Governors University::JR-025928",
   "company": "Western Governors University",
-  "title": "Project Manager IV, Transformation",
+  "title": "Technical Project Manager III",
   "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-025928",
   "posted": "2026-08-17",
-  "salary": "$109,900.00 - $170,400.00",
+  "salary": "$108,200.00 - $162,400.00",
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Transformation program title fits core domain",
-    "Utah location matches strong practical preference",
-    "WGU is credible established institution"
+    "Utah-based, program/project leadership adjacent",
+    "Technical PM scope unclear without description",
+    "WGU is stable employer in target region"
    ],
    "concerns": [
-    "No description available to confirm scope",
-    "Title level may be tactical PM, not strategic"
+    "No description to confirm strategic scope",
+    "Title suggests technical/IT delivery focus, may lack transformation mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 62,
-   "score": 62,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 50,
+   "score": 50,
    "fit": "maybe",
-   "reason": "Transformation program title fits core domain",
+   "reason": "Utah-based, program/project leadership adjacent",
    "bg": "1451cb4bda95"
   }
  },
@@ -1000,45 +958,6 @@
    "score": 40,
    "fit": "maybe",
    "reason": "Utah-based, operations role family",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Western Governors University::JR-025809",
-  "company": "Western Governors University",
-  "title": "Senior Educational Program Designer",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Educational-Product-Designer_JR-025809",
-  "posted": "2026-08-12",
-  "salary": "$80,700.00 - $121,000.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Utah location matches preference",
-    "Program title loosely related",
-    "No description to confirm real scope"
-   ],
-   "concerns": [
-    "Likely instructional design, not org transformation",
-    "No description available",
-    "Weak alignment with core domains"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 70,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Utah location matches preference",
    "bg": "1451cb4bda95"
   }
  },
