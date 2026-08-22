@@ -2,10 +2,6 @@
  "_comment": "Roles that were fetched but filtered out, recorded by the daily run for the weekly audit (audit.py). Leadership-shaped titles only. Keeps the last 10 days. Safe to delete \u2014 it is diagnostic, not state.",
  "days": [
   {
-   "date": "2026-08-12",
-   "lanes": {}
-  },
-  {
    "date": "2026-08-13",
    "lanes": {}
   },
@@ -39,6 +35,10 @@
   },
   {
    "date": "2026-08-21",
+   "lanes": {}
+  },
+  {
+   "date": "2026-08-22",
    "lanes": {}
   }
  ]
