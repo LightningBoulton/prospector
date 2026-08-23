@@ -240,6 +240,20 @@
    "note": ""
   },
   {
+   "key": "Canonical Ltd.::149561",
+   "company": "Canonical Ltd.",
+   "title": "Engineering Manager - Data Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Canonical Ltd.::149571",
+   "company": "Canonical Ltd.",
+   "title": "Software Engineering Director",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Canopy::4375806009",
    "company": "Canopy",
    "title": "Senior Full Stack Engineer",
@@ -565,13 +579,6 @@
    "key": "Filevine::9522044d-e855-4c22-abfe-d15c6e3aa377",
    "company": "Filevine",
    "title": "Senior Site Reliability engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Filevine::e57a5f16-0711-4f50-a9a9-d19edf7b097a",
-   "company": "Filevine",
-   "title": "Staff Site Reliability Engineer",
    "status": "",
    "note": ""
   },
@@ -1073,13 +1080,6 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8142657",
-   "company": "Mixpanel",
-   "title": "Customer Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Mixpanel::8142661",
    "company": "Mixpanel",
    "title": "Customer Engineer",
@@ -1087,7 +1087,14 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8148613",
+   "key": "Mixpanel::8142657",
+   "company": "Mixpanel",
+   "title": "Customer Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Mixpanel::8142656",
    "company": "Mixpanel",
    "title": "Delivery Engineer II",
    "status": "",
@@ -1101,7 +1108,7 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8142656",
+   "key": "Mixpanel::8148613",
    "company": "Mixpanel",
    "title": "Delivery Engineer II",
    "status": "",
@@ -1370,13 +1377,6 @@
    "key": "Reddit::8131228",
    "company": "Reddit",
    "title": "Staff Software Engineer , Observability",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::145336",
-   "company": "Reddit",
-   "title": "Staff Technical Product Manager, Ads ML Platform",
    "status": "",
    "note": ""
   },
@@ -1689,13 +1689,6 @@
    "note": ""
   },
   {
-   "key": "Twilio::8139748",
-   "company": "Twilio",
-   "title": "Principal Presales Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8115128",
    "company": "Twilio",
    "title": "Principal Presales Engineer",
@@ -1703,14 +1696,21 @@
    "note": ""
   },
   {
-   "key": "Twilio::8098945",
+   "key": "Twilio::8139748",
+   "company": "Twilio",
+   "title": "Principal Presales Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8103253",
    "company": "Twilio",
    "title": "Software Engineer (L4)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8103253",
+   "key": "Twilio::8098945",
    "company": "Twilio",
    "title": "Software Engineer (L4)",
    "status": "",
@@ -1783,6 +1783,13 @@
    "key": "Vanta::c752a8a1-5832-4d2a-a8c5-8b8308d6a7e2",
    "company": "Vanta",
    "title": "Staff Software Engineer, Vanta for Government",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "We are Tims::https://himalayas.app/companies/we-are-tims/jobs/desarrollador-fullstack",
+   "company": "We are Tims",
+   "title": "Desarrollador Fullstack",
    "status": "",
    "note": ""
   },
@@ -1930,13 +1937,6 @@
    "key": "Western Governors University::JR-025905",
    "company": "Western Governors University",
    "title": "UX/UI Designer, Salt Lake City, UT",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "YipitData::145919",
-   "company": "YipitData",
-   "title": "Product Manager, Quant Platform",
    "status": "",
    "note": ""
   },

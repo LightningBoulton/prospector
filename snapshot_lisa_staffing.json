@@ -1,43 +1,44 @@
 [
  {
-  "key": "Aquent::211800",
+  "key": "Aquent::211857",
   "company": "Aquent",
   "title": "Project Manager",
   "location": "Chicago, IL, US (Remote)",
-  "url": "https://aquent.com/find-work/211800",
-  "posted": "2026-07-23",
+  "url": "https://aquent.com/find-work/211857",
+  "posted": "2026-07-27",
   "salary": null,
   "employment_type": "",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Remote contract PM role",
-    "Content operations scaling mandate",
-    "Cross-functional coordination experience relevant",
-    "Below her typical seniority/scope"
+    "AI adoption/enablement mandate matches interests",
+    "Remote contract fits practical constraints",
+    "Cross-functional strategic initiative leadership",
+    "Staffing-firm contract useful for income"
    ],
    "concerns": [
-    "Tactical execution role, limited strategic scope",
-    "Contract staffing agency placement",
-    "Not aligned with transformation/M&A focus"
+    "Generic PM title, may lack strategic seniority",
+    "Contract via staffing firm, limited longevity",
+    "Unclear executive-facing scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 65,
-   "opportunity_score": 40,
-   "score": 40,
+   "qualification_fit": 65,
+   "interest_fit": 70,
+   "practical_fit": 70,
+   "opportunity_score": 60,
+   "score": 60,
    "fit": "maybe",
-   "reason": "Remote contract PM role",
+   "reason": "AI adoption/enablement mandate matches interests",
    "bg": "1451cb4bda95"
-  }
+  },
+  "rescued": true
  },
  {
   "key": "Aquent::212043",
@@ -1007,44 +1008,6 @@
   }
  },
  {
-  "key": "Eliassen::b7f08ed2-9cc2-11f1-9509-02420a6c7775",
-  "company": "Eliassen",
-  "title": "Security Program Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/tJo7nr/security-program-manager-programproject-management-anywhere-a1wuq000001qjxr2a2",
-  "posted": "2026-08-20",
-  "salary": "$70.00 to $80.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Program governance, KPIs, executive reporting mandate",
-    "Remote contract fits practical constraints",
-    "Value realization and stakeholder alignment align with skills"
-   ],
-   "concerns": [
-    "Security-specific technical domain not her background",
-    "Contract staffing role, not permanent leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 75,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Program governance, KPIs, executive reporting mandate",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "Eliassen::8db046ea-9d6a-11f1-9509-02420a6c7775",
   "company": "Eliassen",
   "title": "Product Manager \u2013 Portfolio Management",
@@ -1080,6 +1043,44 @@
    "score": 76,
    "fit": "yes",
    "reason": "Portfolio/operating model design matches operating model expertise",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Eliassen::b7f08ed2-9cc2-11f1-9509-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Security Program Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/tJo7nr/security-program-manager-programproject-management-anywhere-a1wuq000001qjxr2a2",
+  "posted": "2026-08-20",
+  "salary": "$70.00 to $80.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Program governance, KPIs, executive reporting mandate",
+    "Remote contract fits practical constraints",
+    "Value realization and stakeholder alignment align with skills"
+   ],
+   "concerns": [
+    "Security-specific technical domain not her background",
+    "Contract staffing role, not permanent leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 75,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Program governance, KPIs, executive reporting mandate",
    "bg": "1451cb4bda95"
   }
  },
@@ -1159,45 +1160,6 @@
   }
  },
  {
-  "key": "Eliassen::733aaf65-94c5-11f1-9509-02420a6c7775",
-  "company": "Eliassen",
-  "title": "Lead Support Analyst",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/RYsCuX/lead-support-analyst-support-anywhere-a1wuq000001owk52ae",
-  "posted": "2026-08-10",
-  "salary": "$55.00 to $60.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "IT application support role, not strategic scope",
-    "W2 contract, low rate for seniority",
-    "Mismatch with transformation/operations focus"
-   ],
-   "concerns": [
-    "Hands-on technical support, wrong function",
-    "Low pay relative to experience level"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 20,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "IT application support role, not strategic scope",
-   "bg": "1451cb4bda95"
-  },
-  "rescued": true
- },
- {
   "key": "Eliassen::e18382f7-9731-11f1-9509-02420a6c7775",
   "company": "Eliassen",
   "title": "Supplier Operations Manager",
@@ -1237,41 +1199,80 @@
   }
  },
  {
-  "key": "Robert Half::02100-0013483664-usen",
-  "company": "Robert Half",
-  "title": "Sr. Digital Marketing Manager",
-  "location": "Hartford, CT (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/hartford-ct/sr-digital-marketing-manager/02100-0013483664-usen",
-  "posted": "2026-08-11",
-  "salary": "$55.00\u2013$65.00/hr",
-  "employment_type": "Temp",
+  "key": "Eliassen::733aaf65-94c5-11f1-9509-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Lead Support Analyst",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/RYsCuX/lead-support-analyst-support-anywhere-a1wuq000001owk52ae",
+  "posted": "2026-08-10",
+  "salary": "$55.00 to $60.00",
+  "employment_type": "",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (operational excellence, continuous improvement)",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Fully remote 4-month contract",
-    "Team leadership and cross-functional ops",
-    "Not core transformation/strategy mandate",
-    "Content/demand-gen focus mismatched to profile"
+    "IT application support role, not strategic scope",
+    "W2 contract, low rate for seniority",
+    "Mismatch with transformation/operations focus"
    ],
    "concerns": [
-    "Deep B2B marketing execution skew, not transformation",
-    "Short-term contract, limited strategic scope"
+    "Hands-on technical support, wrong function",
+    "Low pay relative to experience level"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
+   "qualification_fit": 30,
+   "interest_fit": 20,
    "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "IT application support role, not strategic scope",
+   "bg": "1451cb4bda95"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Eliassen::f473e9e0-9cca-11f1-a3dc-024201c20d84",
+  "company": "Eliassen",
+  "title": "Senior Finance Transformation Consultant",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/lfGEEx/senior-finance-transformation-consultant-programproject-management-anywhere-a1wuq000001o6012aa",
+  "posted": "2026-08-20",
+  "salary": "$85.00 to $100.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "PMO and transformation program leadership",
+    "Remote-friendly contract work",
+    "Change management/operating model component"
+   ],
+   "concerns": [
+    "Heavy SOX/regulatory reporting finance specialization not her background",
+    "Requires hands-on controllership expertise",
+    "Periodic travel to Charlotte"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "maybe",
-   "reason": "Fully remote 4-month contract",
+   "reason": "PMO and transformation program leadership",
    "bg": "1451cb4bda95"
   }
  },
@@ -1356,6 +1357,45 @@
   }
  },
  {
+  "key": "Robert Half::02100-0013483664-usen",
+  "company": "Robert Half",
+  "title": "Sr. Digital Marketing Manager",
+  "location": "Hartford, CT (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/hartford-ct/sr-digital-marketing-manager/02100-0013483664-usen",
+  "posted": "2026-08-11",
+  "salary": "$55.00\u2013$65.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, continuous improvement)",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Fully remote 4-month contract",
+    "Team leadership and cross-functional ops",
+    "Not core transformation/strategy mandate",
+    "Content/demand-gen focus mismatched to profile"
+   ],
+   "concerns": [
+    "Deep B2B marketing execution skew, not transformation",
+    "Short-term contract, limited strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "maybe",
+   "reason": "Fully remote 4-month contract",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Robert Half::02300-0013489376-usen",
   "company": "Robert Half",
   "title": "Senior Change Consultant",
@@ -1397,6 +1437,45 @@
   "rescued": true
  },
  {
+  "key": "Robert Half::01340-0013482973-usen",
+  "company": "Robert Half",
+  "title": "Project Manager/Sr. Consultant",
+  "location": "Cincinnati, OH (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/cincinnati-oh/project-managersr-consultant/01340-0013482973-usen",
+  "posted": "2026-08-17",
+  "salary": "$65.00\u2013$80.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Change management leadership on enterprise integration",
+    "Training/adoption strategy matches CX/OD background",
+    "Remote long-term contract fits practical constraints",
+    "Cross-functional stakeholder alignment strength"
+   ],
+   "concerns": [
+    "Temp/contract via staffing agency, not permanent",
+    "Manufacturing environment somewhat outside core domains"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 82,
+   "interest_fit": 78,
+   "practical_fit": 78,
+   "opportunity_score": 76,
+   "score": 76,
+   "fit": "maybe",
+   "reason": "Change management leadership on enterprise integration",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Robert Half::00295-0013479119-usen",
   "company": "Robert Half",
   "title": "Recruiting Manager",
@@ -1431,46 +1510,6 @@
    "score": 30,
    "fit": "no",
    "reason": "Operations/team leadership tangential fit",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Robert Half::01300-0013490681-usen",
-  "company": "Robert Half",
-  "title": "Project Manager/Sr. Consultant",
-  "location": "Chicago, IL (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/chicago-il/project-managersr-consultant/01300-0013490681-usen",
-  "posted": "2026-08-19",
-  "salary": "$51.46\u2013$59.59/hr",
-  "employment_type": "Temp to Perm",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Program/project delivery leadership matches PMO skillset",
-    "Remote listed but tied to Chicago based role",
-    "Contract-to-perm fits her openness to contract work",
-    "eCommerce specificity narrows strategic scope"
-   ],
-   "concerns": [
-    "Heavily Shopify/eCommerce tactical focus, not transformation-level",
-    "Unclear true remote status vs Chicago onsite expectation",
-    "Below her strategic/executive positioning"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Program/project delivery leadership matches PMO skillset",
    "bg": "1451cb4bda95"
   }
  },
@@ -1512,41 +1551,37 @@
   "rescued": true
  },
  {
-  "key": "Robert Half::02100-0013481039-usen",
+  "key": "Robert Half::03200-0013490602-usen",
   "company": "Robert Half",
-  "title": "Project Manager",
-  "location": "Boston, MA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/boston-ma/project-manager/02100-0013481039-usen",
-  "posted": "2026-08-13",
-  "salary": "$40.00\u2013$45.00/hr",
+  "title": "Global Trade Compliance",
+  "location": "Charlotte, NC (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/charlotte-nc/global-trade-compliance/03200-0013490602-usen",
+  "posted": "2026-08-20",
+  "salary": "$34.00\u2013$37.00/hr",
   "employment_type": "Temp",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "match_reason": "mandate in description (continuous improvement, strategic initiatives)",
   "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
+   "recommendation": "not_recommended",
+   "confidence": "high",
    "reasons": [
-    "Marketing operations & program leadership fits background",
-    "US-remote satisfies location constraint",
-    "Contract work explicitly in scope",
-    "Cross-functional stakeholder alignment matches strengths"
+    "Specialized customs/trade compliance role, not her domain"
    ],
    "concerns": [
-    "Short 3-month contract, limited strategic scope",
-    "Marketing-execution focus narrower than transformation mandate"
+    "Wrong function - trade compliance specialist not transformation/ops leadership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 62,
-   "practical_fit": 70,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Marketing operations & program leadership fits background",
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Specialized customs/trade compliance role, not her domain",
    "bg": "1451cb4bda95"
   }
  }
