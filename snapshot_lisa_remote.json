@@ -893,45 +893,6 @@
   }
  },
  {
-  "key": "Supabase::f8fc6aae-d2b4-456a-97db-012a1970c398",
-  "company": "Supabase",
-  "title": "Partner Enablement + Program Manager, Startups",
-  "location": "Remote, San Francisco, CA",
-  "url": "https://jobs.ashbyhq.com/supabase/f8fc6aae-d2b4-456a-97db-012a1970c398",
-  "posted": "2026-08-17",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Program management skills transfer partially",
-    "Partner enablement is narrow vs her transformation scope",
-    "Startup ecosystem/VC focus not core domain"
-   ],
-   "concerns": [
-    "Onsite SF required, not remote/Utah",
-    "Tactical events/marketing role, low strategic ownership",
-    "Not aligned with transformation or operating model work"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 30,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Program management skills transfer partially",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "Supabase::7a5d81a2-c586-4d7f-a179-89c95869ca33",
   "company": "Supabase",
   "title": "Founding Technical Program Manager",
@@ -5134,116 +5095,42 @@
   }
  },
  {
-  "key": "Twin Health::https://himalayas.app/companies/twinhealth/jobs/senior-revenue-cycle-operations-analyst-306516232",
-  "company": "Twin Health",
-  "title": "Senior Revenue Cycle Operations Analyst",
+  "key": "Apex Service Partners::https://himalayas.app/companies/apex-service-partners/jobs/general-manager-nationwide-location-tbd",
+  "company": "Apex Service Partners",
+  "title": "General Manager - (Nationwide / Location TBD)",
   "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/twinhealth/jobs/senior-revenue-cycle-operations-analyst-306516232",
-  "posted": "2026-08-23",
-  "salary": "$80,000\u2013$95,000",
+  "url": "https://himalayas.app/companies/apex-service-partners/jobs/general-manager-nationwide-location-tbd",
+  "posted": "2026-08-24",
+  "salary": "$150,000\u2013$200,000",
   "employment_type": "Full Time",
-  "expires": "2026-10-22",
-  "tier": "discovery",
-  "match_reason": "role family 'operations' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Healthcare billing/claims domain, not transformation or strategy",
-    "US-remote is practical but role mandate misaligned"
-   ],
-   "concerns": [
-    "Wrong function - revenue cycle billing, not operations leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 70,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Healthcare billing/claims domain, not transformation or strategy",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "SCANA Energy::https://himalayas.app/companies/scana-energy/jobs/manager-customer-care-sales-enablement",
-  "company": "SCANA Energy",
-  "title": "Manager, Customer Care & Sales Enablement",
-  "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/scana-energy/jobs/manager-customer-care-sales-enablement",
-  "posted": "2026-08-23",
-  "salary": "$81,250\u2013$130,000",
-  "employment_type": "Full Time",
-  "expires": "2026-10-22",
-  "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
+  "expires": "2026-10-23",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "US-remote role matches practical needs",
-    "CX/employee effectiveness overlaps her expertise",
-    "Operational excellence and readiness mandate",
-    "Cross-functional leadership scope"
+    "P&L ownership and M&A growth mandate",
+    "General management aligns with operations/scaling skillset",
+    "Nationwide remote-ish but location TBD unclear",
+    "Home services trades industry is unfamiliar domain"
    ],
    "concerns": [
-    "Player-coach hands-on training/QA execution below her level",
-    "Narrower functional scope than transformation/strategy roles",
-    "Energy/call-center vertical is unfamiliar domain"
+    "Location TBD could mean relocation required",
+    "Hands-on trades operations not her background",
+    "Entrepreneurial roll-up risk vs stable strategic role"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
+   "qualification_fit": 55,
    "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 58,
-   "score": 58,
+   "practical_fit": 60,
+   "opportunity_score": 50,
+   "score": 50,
    "fit": "maybe",
-   "reason": "US-remote role matches practical needs",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Dun & Bradstreet::https://himalayas.app/companies/dun-bradstreet/jobs/client-success-director-r-19218",
-  "company": "Dun & Bradstreet",
-  "title": "Client Success Director (R-19218)",
-  "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/dun-bradstreet/jobs/client-success-director-r-19218",
-  "posted": "2026-08-23",
-  "salary": "$123,100\u2013$206,800",
-  "employment_type": "Full Time",
-  "expires": "2026-10-22",
-  "tier": "discovery",
-  "match_reason": "mandate in description (adoption, roi)",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Customer success/retention leadership overlaps CX experience",
-    "US-remote fits practical constraints",
-    "Value realization and adoption language matches interests"
-   ],
-   "concerns": [
-    "Sales/renewal quota-driven role, not strategic transformation",
-    "Account portfolio management lighter scope than target roles"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Customer success/retention leadership overlaps CX experience",
+   "reason": "P&L ownership and M&A growth mandate",
    "bg": "1451cb4bda95"
   }
  },
@@ -6322,46 +6209,6 @@
   }
  },
  {
-  "key": "Grove Collaborative::151122",
-  "company": "Grove Collaborative",
-  "title": "Merchandising Operations Manager",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/151122-merchandising-operations-manager",
-  "posted": "2026-08-19",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Process redesign and operating model ownership",
-    "Hands-on AI enablement matches AI adoption interest",
-    "US-remote fits practical constraints",
-    "Cross-functional ops scope, marketing/inventory alignment"
-   ],
-   "concerns": [
-    "Requires hands-on technical build, not just strategy",
-    "Merchandising domain expertise may be limited",
-    "Highly execution-heavy IC role, less strategic leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 72,
-   "practical_fit": 85,
-   "opportunity_score": 70,
-   "score": 70,
-   "fit": "yes",
-   "reason": "Process redesign and operating model ownership",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "Liberty Mutual::149406",
   "company": "Liberty Mutual",
   "title": "Wholesale Operations Leader - GRS North America",
@@ -6640,6 +6487,44 @@
   "rescued": true
  },
  {
+  "key": "Ramp::151434",
+  "company": "Ramp",
+  "title": "Account Manager | Mid-Market",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/151434-account-manager-mid-market",
+  "posted": "2026-08-23",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, adoption); demoted to wildcards by the precision rule 'account manager'",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Quota-carrying account management, not transformation work",
+    "US-remote is practically workable"
+   ],
+   "concerns": [
+    "Sales-quota ownership explicitly listed as weak fit",
+    "No strategic/operating scope described"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 70,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Quota-carrying account management, not transformation work",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Wpromote::149584",
   "company": "Wpromote",
   "title": "Group Director, Client Strategy (Group Media Director)",
@@ -6831,6 +6716,83 @@
    "score": 25,
    "fit": "no",
    "reason": "Social media strategy/execution not her domain",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Molina Healthcare::149667",
+  "company": "Molina Healthcare",
+  "title": "Associate Program Manager, Process & Performance Monitoring, Managed Care (Remote in FL Preferred)",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/149667-associate-program-manager-process-performance-monitoring-managed-care-remote-in-fl-preferred",
+  "posted": "2026-08-24",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Program manager title but healthcare case-tracking focus",
+    "Low strategic scope, mostly compliance tracking",
+    "Remote is practically workable"
+   ],
+   "concerns": [
+    "Not transformation or org strategy work",
+    "Below her seniority and mandate level",
+    "Healthcare case coordination not core domain"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 25,
+   "practical_fit": 65,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Program manager title but healthcare case-tracking focus",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Cologix, Inc.::151435",
+  "company": "Cologix, Inc.",
+  "title": "Director, Utility Delivery & Coordination",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/151435-director-utility-delivery-coordination",
+  "posted": "2026-08-23",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'delivery' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote practical fit",
+    "Program/schedule coordination echoes PMO skills",
+    "Highly specialized utility/energy engineering domain"
+   ],
+   "concerns": [
+    "Requires deep utility/energy infrastructure expertise",
+    "Not aligned with transformation or org strategy focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 75,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "US-remote practical fit",
    "bg": "1451cb4bda95"
   }
  },

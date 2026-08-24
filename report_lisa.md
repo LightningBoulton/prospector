@@ -1,49 +1,49 @@
-# Prospector — 2026-08-23
+# Prospector — 2026-08-24
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 8 closed/removed
+**14 new roles today** · 8 still worth applying · 4 closed/removed
 
 ## NEW — WORTH REVIEWING (10)
-- **Project Manager/Sr. Consultant** — Robert Half · 76/100 · remote Chicago, IL (Remote) · $51.46–$59.59/hr · posted 2026-08-17
-  - Why: Change management leadership on enterprise integration
-  - Concern: Temp/contract via staffing agency, not permanent
-  - https://www.roberthalf.com/us/en/job/chicago-il/project-managersr-consultant/01300-0013490681-usen
-- **Manager, Customer Care & Sales Enablement** — SCANA Energy · 58/100 · remote United States (Remote) · $81,250–$130,000 · posted 2026-08-23
-  - Why: US-remote role matches practical needs
-  - Concern: Player-coach hands-on training/QA execution below her level
-  - https://himalayas.app/companies/scana-energy/jobs/manager-customer-care-sales-enablement
-- **Sr. Manager, New Products Strategy** — Samsara · 55/100 · remote USA (Remote) · posted 2026-08-23
-  - Why: Strategic ops/BizOps mandate aligns with operational excellence
-  - Concern: Sales strategy focus, not core transformation/CX domain
-  - https://jobicy.com/jobs/149608-sr-manager-new-products-strategy
-- **Client Success Director (R-19218)** — Dun & Bradstreet · 55/100 · remote United States (Remote) · $123,100–$206,800 · posted 2026-08-23
-  - Why: Customer success/retention leadership overlaps CX experience
-  - Concern: Sales/renewal quota-driven role, not strategic transformation
-  - https://himalayas.app/companies/dun-bradstreet/jobs/client-success-director-r-19218
-- **HR Technology Consultant (Contract)** — livingHR · 45/100 · remote USA (Remote) · $50 - $75 · posted 2026-08-15
-  - Why: Talent-pool contract, not guaranteed work
-  - Concern: Not an actual open role, just a pool
-  - https://jobicy.com/jobs/150723-hr-technology-consultant-contract
-- **Senior Analyst, GTM Business Operations – Public Sector** — Samsara · 45/100 · remote Remote - US · posted 2026-08-17
-  - Why: GTM analytics role, not transformation/org leadership
-  - Concern: Senior Analyst title lacks seniority/scope she targets
-  - https://www.samsara.com/company/careers/roles/8115905?gh_jid=8115905
-- **Associate Product Operations Manager** — Best Egg · 45/100 · remote USA (Remote) · posted 2026-08-19
+- **Project Manager - Strategic Operations** — Robert Half · 50/100 · remote Charlotte, NC (Remote) · $76.00–$88.00/hr · posted 2026-08-24
+  - Why: Operational strategy coordination role
+  - Concern: Temp/contract with limited strategic ownership
+  - https://www.roberthalf.com/us/en/job/charlotte-nc/project-manager-strategic-operations/03200-0013491659-usen
+- **General Manager - (Nationwide / Location TBD)** — Apex Service Partners · 50/100 · remote United States (Remote) · $150,000–$200,000 · posted 2026-08-24
+  - Why: P&L ownership and M&A growth mandate
+  - Concern: Location TBD could mean relocation required
+  - https://himalayas.app/companies/apex-service-partners/jobs/general-manager-nationwide-location-tbd
+- **Director, Revenue Operations** — Digimarc · 45/100 · remote USA (Remote) · posted 2026-08-21
+  - Why: US-remote practical fit strong
+  - Concern: Heavy deal-desk/sales-ops specialization not her background
+  - https://jobicy.com/jobs/151280-director-revenue-operations-2
+- **Enterprise Project Manager** — Canonical Ltd. · 45/100 · remote Anywhere (Remote) · posted 2026-08-22
+  - Why: Fully remote fits location preference
+  - Concern: Technical open-source/software delivery focus is a gap
+  - https://jobicy.com/jobs/149549-enterprise-project-manager
+- **Group Director, Client Strategy (Group Media Director)** — Wpromote · 45/100 · remote USA (Remote) · posted 2026-08-23
+  - Why: Senior leadership scope with P&L accountability
+  - Concern: Deep digital media/paid channel expertise required, not her background
+  - https://jobicy.com/jobs/149584-group-director-client-strategy-group-media-director
+- **Health Services Manager (Enablement)** — Hinge Health · 42/100 · remote Remote US · $70,680 – $128,340 · posted 2026-08-11
+  - Why: Remote US fits location constraints
+  - Concern: Heavily sales pipeline/quota-adjacent focus
+  - https://jobs.ashbyhq.com/hinge-health/8177e5b7-30f6-4733-b09f-3183c8c4fdf3
+- **Enterprise Implementation Consultant** — Samsara · 42/100 · remote Remote - US · posted 2026-08-13
   - Why: US-remote practical fit
-  - Concern: Associate-level, works 'at direction of' others
-  - https://jobicy.com/jobs/151180-associate-product-operations-manager
-- **Senior Manager, Sales Operations** — Docker · 45/100 · remote United States (Remote) · $128.1K – $183K · posted 2026-08-20
-  - Why: Revenue operations adjacent domain
-  - Concern: Requires deep technical sales ops SME expertise
-  - https://jobs.ashbyhq.com/docker/80c2300a-75c6-4e8f-bc61-7342ff8061b4
-- **Senior People Operations Manager** — Mixpanel · 45/100 · remote San Francisco, US (Remote) · posted 2026-08-21
-  - Why: Process/systems ownership overlaps operations background
-  - Concern: Heavily HRIS/tech administration focused
-  - https://job-boards.greenhouse.io/mixpanel/jobs/8140707
-- **Deal Strategy & Operations Manager** — Cresta · 45/100 · remote United States (Remote) · posted 2026-08-21
-  - Why: US-remote practical fit
-  - Concern: Sales/deal-desk focus not core strength
-  - https://job-boards.greenhouse.io/cresta/jobs/5398116008
+  - Concern: More individual-contributor deployment role than strategic transformation
+  - https://www.samsara.com/company/careers/roles/8121332?gh_jid=8121332
+- **Regional Customer Marketing Manager** — Smartsheet · 42/100 · remote -REMOTE, USA- · posted 2026-08-18
+  - Why: Customer marketing, not experience/transformation ownership
+  - Concern: Narrow marketing execution role, not strategic transformation
+  - https://job-boards.greenhouse.io/smartsheet/jobs/8139540
+- **Project Manager - Systems** — Robert Half · 42/100 · hybrid Irvine, CA (Remote) · $59.38–$68.75/hr · posted 2026-08-18
+  - Why: Cross-functional program leadership
+  - Concern: Hands-on system configuration work not core strength
+  - https://www.roberthalf.com/us/en/job/irvine-ca/project-manager-systems/02960-0013490653-usen
+- **Senior PMO and Finance Controls Consultants** — Eliassen · 42/100 · remote Remote · $75.00 to $100.00 · posted 2026-08-20
+  - Why: PMO leadership role with real program ownership
+  - Concern: Heavy SOX/finance controls specialization outside her core
+  - https://careers.eliassen.com/C2NXC2/senior-pmo-and-finance-controls-consultants-accounting-finance-anywhere-a1wuq000001o5wn2aa
 
 ## DISCOVERY / WILDCARDS (4)
 - **Principal, Strategy and Operations** — Adobe · 75/100 · onsite Lehi (+1 more) · posted 2026-08-14
@@ -97,15 +97,11 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Title generic, unclear seniority level
   - https://stripe.com/jobs/search?gh_jid=8112456
 
-## REMOVED SINCE PRIOR RUN (8)
-- Manager, Retail Partnerships — ANGI · No longer listed by its source
-- Sales Operations Manager, Foundry — Instructure · No longer listed by its source
-- Energy Integration Manager — Meta · No longer listed by its source
-- Director, Member Experience (Process Improvement) — Molina Healthcare · No longer listed by its source
-- Project Manager — Robert Half · No longer listed by its source
-- Sr. Manager, Business Transformation & Operations — TE Connectivity · No longer listed by its source
-- Commercial Project Manager - Sales Operations — TE Connectivity · No longer listed by its source
-- Director, Business Operations - Customer Success — Zscaler · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (4)
+- Client Success Director (R-19218) — Dun & Bradstreet · No longer listed by its source
+- Merchandising Operations Manager — Grove Collaborative · No longer listed by its source
+- Senior Change Consultant — Robert Half · No longer listed by its source
+- Manager, Customer Care & Sales Enablement — SCANA Energy · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/129 successful
