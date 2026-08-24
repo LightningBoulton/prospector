@@ -1,6 +1,6 @@
-# Prospector — discovered companies (2026-08-17)
+# Prospector — discovered companies (2026-08-24)
 
-Scanned employers hiring within 50 mi of South Jordan. 384 new names after removing ones already tracked and known staffing firms; probed the top 80 (tech-industry first) against tier-1 ATS platforms.
+Scanned employers hiring within 50 mi of South Jordan. 382 new names after removing ones already tracked and known staffing firms; probed the top 80 (tech-industry first) against tier-1 ATS platforms.
 
 ## Ready to add — resolved to a tier-1 ATS (0)
 _Paste the good ones into `companies.json` (fill in `city`); each was confirmed to return live jobs._
@@ -19,18 +19,18 @@ _Likely Workday/iCIMS/custom — worth a manual careers-page check for the inter
 - Utah Division of Human Resource Management (~122 in-area roles)
 - The Church of Jesus Christ of Latter-day Saints (~114 in-area roles)
 - Williams International (~104 in-area roles)
+- Walmart (~102 in-area roles)
+- Cox Automotive (~97 in-area roles)
 - Stadler Deutschland GmbH (~94 in-area roles)
 - Precision Castparts Corp. (~77 in-area roles)
-- Stantec (~70 in-area roles)
-- Walmart (~68 in-area roles)
-- Cox Automotive (~65 in-area roles)
+- Stantec (~72 in-area roles)
 - Brigham Young University (~61 in-area roles)
 - AECOM (~60 in-area roles)
+- Harris (~59 in-area roles)
 - Utah Valley University (~58 in-area roles)
 - Rio Tinto (~57 in-area roles)
 - Kelso Building Services (~56 in-area roles)
 - Adobe, Inc. (~55 in-area roles)
-- Harris (~51 in-area roles)
 - Torus, Inc. (~50 in-area roles)
 - ECAM (~49 in-area roles)
 - TERRACON (~48 in-area roles)
