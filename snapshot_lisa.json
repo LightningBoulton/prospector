@@ -234,44 +234,6 @@
   }
  },
  {
-  "key": "BambooHR::6000282004",
-  "company": "BambooHR",
-  "title": "Product Design Lead, Customer Journey & Growth",
-  "location": "Utah | Hybrid",
-  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6000282004",
-  "posted": "2026-08-03",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'customer' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Utah hybrid location is workable",
-    "Customer-facing but pure UX/product design craft",
-    "Not organizational strategy or operations mandate"
-   ],
-   "concerns": [
-    "Requires hands-on product design expertise",
-    "Not a transformation or operations leadership role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 75,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Utah hybrid location is workable",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "Ancestry::R003425",
   "company": "Ancestry",
   "title": "Workplace Experience Lead",
@@ -350,41 +312,40 @@
   }
  },
  {
-  "key": "NICE::4943797101",
+  "key": "NICE::4856476101",
   "company": "NICE",
-  "title": "Partner Executive - SLED",
+  "title": "Renewal Account Manager, CX",
   "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4943797101?gh_jid=4943797101",
-  "posted": "2026-08-03",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4856476101?gh_jid=4856476101",
+  "posted": "2026-08-24",
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "demoted": true,
   "tier": "discovery",
-  "match_reason": "mandate in description (operational excellence, executive alignment)",
+  "match_reason": "role family 'cx' + seniority in title; demoted to wildcards by the precision rule 'account manager'",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "medium",
+   "confidence": "high",
    "reasons": [
-    "Alliance/sales quota-oriented partnership role",
-    "Not aligned with transformation/ops mandate",
-    "Requires Midwest/West Coast location"
+    "Remote US location is practical",
+    "Contract renewal/sales role, not strategic transformation"
    ],
    "concerns": [
-    "Sales pipeline and revenue quota ownership",
-    "CRM alliance-specific expertise required",
-    "Location restriction outside Utah"
+    "Sales-quota/account management focus is weak or wrong fit",
+    "No strategic or org-scale mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
+   "interest_fit": 20,
+   "practical_fit": 85,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Alliance/sales quota-oriented partnership role",
+   "reason": "Remote US location is practical",
    "bg": "1451cb4bda95"
   }
  },
@@ -656,6 +617,82 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025721",
+  "company": "Western Governors University",
+  "title": "Project Manager IV, Transformation",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721",
+  "posted": "2026-08-24",
+  "salary": "$109,900.00 - $170,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Transformation mandate matches core domain",
+    "Utah location fits practical constraints",
+    "Program/project leadership aligns with proof points"
+   ],
+   "concerns": [
+    "No job description available",
+    "Unclear seniority/scope of role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 70,
+   "practical_fit": 85,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Transformation mandate matches core domain",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025930",
+  "company": "Western Governors University",
+  "title": "Lead Academic Program Manager (Department Chair), WGU School of Technology \u2013 Cyber Security",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Lead-Academic-Program-Manager--Department-Chair---WGU-School-of-Technology---Cyber-Security_JR-025930",
+  "posted": "2026-08-24",
+  "salary": "$123,000.00 - $190,700.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Academic dept chair role, not transformation/ops",
+    "Requires cybersecurity academic credentials",
+    "Utah location is practically convenient"
+   ],
+   "concerns": [
+    "Wrong domain - academic administration, not business ops",
+    "No description to assess real scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 20,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Academic dept chair role, not transformation/ops",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "Western Governors University::JR-025888",
   "company": "Western Governors University",
   "title": "Project Manager II, Marketing, Salt Lake City, UT",
@@ -885,45 +922,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025147",
-  "company": "Western Governors University",
-  "title": "Senior Program Experience Strategist - Assessment Technology",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Program-Experience-Strategist---Assessment-Technology_JR-025147",
-  "posted": "2026-08-18",
-  "salary": "$109,900.00 - $170,400.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-based role, strong location fit",
-    "Program/strategist title suggests program leadership scope",
-    "Assessment technology may involve education-specific expertise"
-   ],
-   "concerns": [
-    "No description available to assess mandate",
-    "Unclear if strategic vs operational execution role",
-    "Possible narrow ed-tech assessment focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 50,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah-based role, strong location fit",
-   "bg": "1451cb4bda95"
-  }
- },
- {
   "key": "Western Governors University::JR-025928",
   "company": "Western Governors University",
   "title": "Technical Project Manager III",
@@ -1118,6 +1116,45 @@
   }
  },
  {
+  "key": "BYU::JR-11754",
+  "company": "BYU",
+  "title": "Writing Programs Project Manager - part-time",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Writing-Programs-Project-Manager---part-time_JR-11754",
+  "posted": "2026-08-24",
+  "salary": "$20.25-$26.50",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Utah location matches preference",
+    "Project manager title only weak signal",
+    "Likely academic/administrative scope, not transformation"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Part-time likely limited compensation/impact",
+    "Writing programs domain misaligned with core expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Utah location matches preference",
+   "bg": "1451cb4bda95"
+  }
+ },
+ {
   "key": "BYU::JR-11443",
   "company": "BYU",
   "title": "Business Manager-Wheatley Institute",
@@ -1191,45 +1228,6 @@
    "score": 20,
    "fit": "no",
    "reason": "Utah location matches",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "BYU::JR-11351",
-  "company": "BYU",
-  "title": "Director, Creative Content Strategy - Revenue & Brand",
-  "location": "Provo, UT",
-  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Director--Creative-Content-Strategy---Revenue---Brand_JR-11351",
-  "posted": "2026-08-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-local, high practical fit",
-    "Director-level strategic title",
-    "Content strategy adjacent to her background",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "Creative/brand content focus, not core transformation",
-    "No description available to verify mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah-local, high practical fit",
    "bg": "1451cb4bda95"
   }
  }
