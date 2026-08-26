@@ -5,11 +5,11 @@ on:
   workflow_dispatch:
     inputs:
       chad_only:
-        description: "Test run: email only Chad, skip Lisa"
+        description: "Test run: email only Chad, skip Lisa (still respects Chad's email switch, which is currently PAUSED)"
         type: boolean
         default: false
       force_email:
-        description: "Test run: send even if the report has no changes since last run"
+        description: "Test run: send even if the report has no changes since last run (does NOT override a paused email switch)"
         type: boolean
         default: false
 
@@ -54,9 +54,14 @@ jobs:
           git commit -m "Daily run: $(date -u +%Y-%m-%d)" || echo "No changes"
           git push
 
+      # `<name>_email` is the per-person delivery switch (profiles.json `email`, master
+      # switch settings.json `email.enabled`). It is ANDed, so it also overrides
+      # force_email: a deliberate pause must not be defeated by a manual test run. The
+      # profile still runs and still commits its state and report — only the send is
+      # withheld. See email_enabled_for in jobmonitor.py.
       - name: Email Chad's report
         id: mail_chad
-        if: ${{ steps.run.outputs.chad_changed == 'true' || inputs.force_email == true }}
+        if: ${{ steps.run.outputs.chad_email == 'true' && (steps.run.outputs.chad_changed == 'true' || inputs.force_email == true) }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -72,7 +77,7 @@ jobs:
 
       - name: Email Lisa's report
         id: mail_lisa
-        if: ${{ inputs.chad_only != true && (steps.run.outputs.lisa_changed == 'true' || inputs.force_email == true) }}
+        if: ${{ steps.run.outputs.lisa_email == 'true' && inputs.chad_only != true && (steps.run.outputs.lisa_changed == 'true' || inputs.force_email == true) }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -97,6 +102,9 @@ jobs:
       #
       # A skipped or failed email step leaves its profile's marks pending. Those roles are
       # simply rendered again on the next run; nothing is lost and nothing is over-claimed.
+      # A profile with email paused therefore never gets confirmed, which is correct: nobody
+      # saw those roles, so none of them may later appear in a "Removed since prior run"
+      # section. This falls out of the existing outcome check with no extra handling.
       - name: Confirm delivery
         if: ${{ always() }}
         run: |

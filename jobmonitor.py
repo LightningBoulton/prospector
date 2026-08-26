@@ -14,8 +14,9 @@ Usage:
 No Playwright, no HTML scraping — every source here is a structured JSON API.
 """
 
-import argparse, codecs, collections, glob, hashlib, html, http.client, json, os, re, \
-    shutil, socket, sys, time, urllib.error, urllib.parse, urllib.request, datetime
+import argparse, codecs, collections, glob, hashlib, html, http.client, http.cookiejar, \
+    json, os, re, shutil, socket, sys, time, urllib.error, urllib.parse, urllib.request, \
+    datetime
 
 import lifecycle
 import sheets_sync
@@ -24,6 +25,7 @@ HERE     = os.path.dirname(os.path.abspath(__file__))
 CONFIG   = os.path.join(HERE, "companies.json")
 REMOTE_CONFIG = os.path.join(HERE, "remote_companies.json")  # US-remote lane registry
 STAFFING_CONFIG = os.path.join(HERE, "staffing_companies.json")  # contract/staffing lane registry
+PRIORITY_CONFIG = os.path.join(HERE, "priority_companies.json")  # priority-employer lane registry
 PROFILES = os.path.join(HERE, "profiles.json")
 SETTINGS = os.path.join(HERE, "settings.json")
 
@@ -43,6 +45,15 @@ SETTINGS_DEFAULTS = {
     "lifecycle": {"exceptional_score": 85, "verify_limit": 15, "prune_after_days": 180},
     "discovery": {"max_new_scored_per_run": 150},
     "sheets": {"enabled": True},
+    # The reader's location / work-arrangement preference, best first. It is ONE setting
+    # doing two jobs on purpose, so the order can never disagree with itself: it is the
+    # geography of the priority-employer lane, and it is the tiebreak the digest ranks on
+    # within a fit score. Region names are the keys of REGION_GATES.
+    "location_priority": ["remote_us", "utah", "washington"],
+    "priority_search": {"enabled": True},
+    # Run-wide master switch for email delivery. The per-profile `email` flag in
+    # profiles.json sits under this one (see email_enabled_for).
+    "email": {"enabled": True},
 }
 
 # How recent a posting must be to earn a ⭐ in the report. Set from settings in main().
@@ -233,29 +244,44 @@ def fetch_workday(c):
     # Optional "search_text" scopes a large tenant server-side (e.g. "Lehi") so we don't
     # page through thousands of global roles. Multi-location hits return "N Locations";
     # we relabel those with the search term so the local gate keeps them and they read well.
+    #
+    # "search_texts" (LIST) runs several such scopes and unions the results, deduplicated by
+    # req number. It exists because a tenant can be too large to page AND relevant in more
+    # than one place: Salesforce is 1,530 roles globally (77 pages — Workday's `limit` is
+    # silently capped at 20 no matter what you send) but only a few hundred across
+    # Remote + Bellevue + Seattle. One term could not express that. `search_text` remains the
+    # single-term spelling and both may be given.
     host, tenant, site = c["wd_host"], c["slug"], c["site"]
-    search_text = c.get("search_text", "")
+    terms = list(c.get("search_texts") or [])
+    if c.get("search_text"):
+        terms.insert(0, c["search_text"])
     url = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
-    out, offset, total = [], 0, None
-    while True:
-        d = _post_json(url, {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": search_text})
-        if total is None:
-            total = d.get("total", 0)      # only the FIRST page reports the real total
-        page = d.get("jobPostings", [])
-        for j in page:
-            path = j.get("externalPath", "")
-            ext = (j.get("bulletFields") or [path])[0]        # req number is the stable id
-            loc = j.get("locationsText", "")
-            m = re.match(r"\s*(\d+)\s+locations", loc, re.I)
-            if search_text and m:
-                loc = f"{search_text} (+{int(m.group(1)) - 1} more)"
-            out.append(_norm(c, str(ext), j.get("title", ""), loc,
-                             f"https://{host}/{site}{path}", _workday_date(j.get("postedOn", "")),
-                             ats="workday",
-                             detail_url=f"https://{host}/wday/cxs/{tenant}/{site}{path}"))
-        offset += 20
-        if offset >= total or not page:
-            break
+    out, seen = [], set()
+    for search_text in (terms or [""]):
+        offset, total = 0, None
+        while True:
+            d = _post_json(url, {"appliedFacets": {}, "limit": 20, "offset": offset,
+                                 "searchText": search_text})
+            if total is None:
+                total = d.get("total", 0)  # only the FIRST page reports the real total
+            page = d.get("jobPostings", [])
+            for j in page:
+                path = j.get("externalPath", "")
+                ext = (j.get("bulletFields") or [path])[0]    # req number is the stable id
+                if str(ext) in seen:
+                    continue                # same role matched by two search terms
+                seen.add(str(ext))
+                loc = j.get("locationsText", "")
+                m = re.match(r"\s*(\d+)\s+locations", loc, re.I)
+                if search_text and m:
+                    loc = f"{search_text} (+{int(m.group(1)) - 1} more)"
+                out.append(_norm(c, str(ext), j.get("title", ""), loc,
+                                 f"https://{host}/{site}{path}",
+                                 _workday_date(j.get("postedOn", "")), ats="workday",
+                                 detail_url=f"https://{host}/wday/cxs/{tenant}/{site}{path}"))
+            offset += 20
+            if offset >= total or not page:
+                break
     return out
 
 
@@ -772,12 +798,250 @@ def fetch_jobicy(c):
     return out
 
 
+# ---- Oracle Recruiting Cloud (Fusion "CandidateExperience") ------------------------------
+#
+# A SHARED VENDOR, like SnapHop — one fetcher, many employers. Hilton and Marriott
+# International are both on it, and so are a large share of Fortune-500 careers sites, so a
+# new employer here is usually one registry row.
+#
+# `GET https://{oracle_host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions`
+#   ?onlyData=true&expand=requisitionList.secondaryLocations
+#   &finder=findReqs;siteNumber={site},facetsList=...,limit=N,offset=M,sortBy=POSTING_DATES_DESC
+# -> {items:[{TotalJobsCount, requisitionList:[{Id,Title,PostedDate,PrimaryLocation,
+#             PrimaryLocationCountry,WorkplaceType,ShortDescriptionStr}], organizationsFacet:[...]}]}
+#
+# No auth, no key. `limit` genuinely honours 200 (unlike Workday, which silently caps at 20),
+# so a whole board is a couple of requests.
+#
+# WHY `organizations` MATTERS (this is the "corporate roles, not property-level operations"
+# control): the ORGANIZATIONS facet on a hotel tenant separates the corporate entity from the
+# individual brands — Marriott exposes `Corporate` (337) alongside `Marriott Hotels & Resorts`
+# (2893), `The Ritz-Carlton` (1759) …, and Hilton exposes `US Corporate/Executive` (81) next to
+# the `AMERICAS`/`APAC`/`EMEA` property regions. Selecting the corporate org ids turns a
+# 13,301-posting property feed into a 373-posting corporate one, server-side, and does it on
+# the EMPLOYER'S OWN classification rather than on us guessing from job titles. Multiple ids
+# are joined with ";" — a comma silently keeps only the first, which reads as a working
+# filter and is the easy bug here.
+_ORACLE_FACETS = "ORGANIZATIONS;WORKPLACE_TYPES;CATEGORIES;LOCATIONS;POSTING_DATES"
+
+
+def _oracle_url(c, limit, offset):
+    finder = [f"findReqs;siteNumber={c['site']}", f"facetsList={_ORACLE_FACETS}",
+              f"limit={limit}", f"offset={offset}", "sortBy=POSTING_DATES_DESC"]
+    orgs = c.get("organizations") or []
+    if orgs:
+        finder.append("selectedOrganizationsFacet=" + ";".join(str(o) for o in orgs))
+    qs = urllib.parse.urlencode(
+        {"onlyData": "true", "expand": "requisitionList.secondaryLocations",
+         "finder": ",".join(finder)}, safe=";,=")
+    return (f"https://{c['oracle_host']}/hcmRestApi/resources/latest/"
+            f"recruitingCEJobRequisitions?{qs}")
+
+
+def fetch_oracle(c):
+    # Config: {"ats":"oracle","slug":<logo id>,"domain":...,"oracle_host":<*.oraclecloud.com>,
+    #          "site":<siteNumber, e.g. CX_1>[,"organizations":[ids],"max_pages":N]}
+    limit = int(c.get("page_size") or 200)
+    max_pages = int(c.get("max_pages") or 6)
+    out, offset, total = [], 0, None
+    for _ in range(max_pages):
+        d = _get(_oracle_url(c, limit, offset))
+        items = d.get("items") or [{}]
+        item = items[0]
+        if total is None:
+            total = int(item.get("TotalJobsCount") or 0)
+        page = item.get("requisitionList") or []
+        for j in page:
+            jid = str(j.get("Id") or "")
+            if not jid:
+                continue
+            # Drop non-US on the STRUCTURED country code, the way fetch_aquent does. The
+            # string gate cannot: INTERNATIONAL_MARKERS deliberately omits "Mexico" (it
+            # collides with New Mexico), so Hilton's "Chihuahua, CHH, Mexico (Remote)" reads
+            # as a US-remote role to `is_us_remote`. The feed states the country outright.
+            country = (j.get("PrimaryLocationCountry") or "").strip().upper()
+            if country and country != "US" and not ALLOW_INTL_REMOTE:
+                continue
+            loc = (j.get("PrimaryLocation") or "").strip()
+            # Oracle keeps the work arrangement in its OWN field, never in the location
+            # string, so the location gates would read a fully-remote role as onsite-in-HQ.
+            # Fold it in, the way fetch_phenom does for Phenom's applyUrl.
+            arrangement = (j.get("WorkplaceType") or "").strip()
+            if arrangement and arrangement.lower() != "on-site" \
+                    and arrangement.lower() not in loc.lower():
+                loc = f"{loc} ({arrangement})" if loc else arrangement
+            out.append(_norm(c, jid, j.get("Title", ""), loc,
+                             f"https://{c['oracle_host']}/hcmUI/CandidateExperience/en/"
+                             f"sites/{c['site']}/job/{jid}",
+                             (j.get("PostedDate") or "")[:10], ats="oracle",
+                             description=_clean_html(j.get("ShortDescriptionStr") or "")))
+        offset += limit
+        if not page or (total and offset >= total):
+            break
+    return out
+
+
+# ---- Paradox.ai careersites ---------------------------------------------------------------
+#
+# The second shared vendor added here. Marriott International's careers site runs on it.
+#
+# The page server-renders only the first 10 results into `window.__PRELOAD_STATE__` and
+# IGNORES page_size, so scraping the HTML would mean ~34 one-megabyte page loads for one
+# employer. The site's own XHR endpoint is far better behaved:
+#
+#   POST https://{host}/api/get-jobs?<query string>   body: {}
+#
+# with `filter[<facet>][<n>]=<value>`, `page_number` and `page_size` in the QUERY STRING.
+# Two gotchas, both of which cost a probe:
+#   * it answers 403 to a cold request — it needs the `ct` cookie that any page on the site
+#     sets, so we GET the careers page once per run and reuse the jar; and
+#   * `page_size` is clamped to 10 server-side, so `max_pages` (not page size) is the budget.
+#
+# `sort_by` accepts only the site's own vocabulary and 400s on anything else, so we do not
+# send it: the default order is stable enough for a diff, which is all we need.
+#
+# Marriott's `filter[brand][0]=Corporate` is the same corporate/property split the Oracle
+# `organizations` facet gives — but Paradox ALSO exposes `filter[is_remote][0]=true`, which
+# Marriott's Oracle tenant does not populate at all (every requisition there reads
+# `ORA_ON_SITE`). That is exactly why Marriott is fetched here and Hilton through Oracle.
+_PARADOX_PAGE = 10
+
+
+def _paradox_opener(host):
+    """One cookie jar per source: the API 403s without the `ct` cookie the site hands out."""
+    jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+    req = urllib.request.Request(f"https://{host}/jobs",
+                                 headers={"User-Agent": "prospector/1.0"})
+    opener.open(req, timeout=20).read()
+    return opener
+
+
+def _paradox_query(query, page):
+    parts = []
+    for facet, values in (query.get("filter") or {}).items():
+        for i, v in enumerate(values):
+            parts.append((f"filter[{facet}][{i}]", v))
+    if query.get("keyword"):
+        parts.append(("keyword", query["keyword"]))
+    parts += [("page_size", _PARADOX_PAGE), ("page_number", page)]
+    return urllib.parse.urlencode(parts)
+
+
+def _paradox_salary(j):
+    # Paradox has no pay field; Marriott puts the range in the `cf_titleinfo` custom field
+    # ("New York, NY, United States Pay Range: $111,000-$162,300 annually ..."). Reuse the
+    # shared pay regex rather than inventing a second one.
+    for f in (j.get("customFields") or []):
+        m = _PAY_RE.search(str(f.get("value") or ""))
+        if m:
+            return m.group(0).strip()
+    return None
+
+
+def fetch_paradox(c):
+    # Config: {"ats":"paradox","slug":<logo id>,"domain":...[,"paradox_host":<careers host>,
+    #          "queries":[{"filter":{"brand":["Corporate"]}}],"max_pages":N]}
+    host = c.get("paradox_host") or f"careers.{c['domain']}"
+    queries = c.get("queries") or [{}]
+    max_pages = int(c.get("max_pages") or 10)
+    opener = _paradox_opener(host)
+    out, seen = [], set()
+    for query in queries:
+        for page in range(1, max_pages + 1):
+            url = f"https://{host}/api/get-jobs?{_paradox_query(query, page)}"
+            req = urllib.request.Request(url, data=b"{}", headers={
+                "Content-Type": "application/json", "Accept": "application/json",
+                "User-Agent": "prospector/1.0", "Referer": f"https://{host}/jobs"})
+            d = json.load(opener.open(req, timeout=25))
+            jobs = d.get("jobs") or []
+            for j in jobs:
+                jid = str(j.get("requisitionID") or j.get("uniqueID") or "")
+                if not jid or jid in seen:
+                    continue
+                seen.add(jid)
+                place = (j.get("locations") or [{}])[0]
+                # Same structured-country rule as fetch_oracle above — Paradox states the
+                # ISO code, so we never have to infer nationality from the location prose.
+                code = (place.get("countryAbbr") or "").strip().upper()
+                if code and code != "US" and not ALLOW_INTL_REMOTE:
+                    continue
+                loc = place.get("cityStateAbbr") or place.get("locationName") or ""
+                country = (place.get("country") or "").strip()
+                if country and country != "United States":
+                    loc = f"{loc}, {country}".lstrip(", ")
+                if j.get("isRemote") and "remote" not in loc.lower():
+                    loc = f"{loc} (Remote)".lstrip(" )").strip() if loc else "Remote"
+                out.append(_norm(c, jid, j.get("title", ""), loc,
+                                 f"https://{host}/{j.get('originalURL', '')}"
+                                 if j.get("originalURL") else j.get("applyURL", ""),
+                                 # Paradox exposes no posting date at all. Leave `posted`
+                                 # empty rather than substituting a scrape timestamp: an
+                                 # unknown date is always kept by the age gate and the digest
+                                 # LABELS it as "first seen", so nothing is passed off as fresh.
+                                 "", salary=_paradox_salary(j), ats="paradox",
+                                 description=_clean_html(j.get("description") or ""),
+                                 employment_type=", ".join(j.get("employmentType") or [])))
+            if len(jobs) < _PARADOX_PAGE:
+                break
+    return out
+
+
+def _atlassian_location(locations):
+    """Condense Atlassian's location list to something a card can show and a gate can read.
+
+    Each entry is "<City> - <Country> - <full street address>", and a role lists every
+    eligible site plus a bare "Remote - Remote", so the raw join runs to 250+ characters of
+    postcodes. Keeping the first TWO segments is the whole trick: it is short, and it
+    PRESERVES THE COUNTRY. Trimming to the city alone would turn "Bengaluru - India - ..."
+    into "Bengaluru", which names no international marker, and `is_us_remote` would then read
+    an India-only remote role as US-eligible."""
+    seen, parts = set(), []
+    for entry in (locations or []):
+        short = " - ".join(str(entry).split(" - ")[:2]).strip()
+        if short and short.lower() not in seen:
+            seen.add(short.lower())
+            parts.append(short)
+    return "; ".join(parts[:5])
+
+
+def fetch_atlassian(c):
+    """Atlassian publishes its whole board as one JSON document — the only clean surface it
+    has (its portal is iCIMS, which exposes no public API). One request, ~250 roles, with the
+    full overview/responsibilities/qualifications prose that the discovery gate and the
+    scorer both want.
+
+    `posted` is deliberately left EMPTY: the feed carries only `updatedDate`, an edit
+    timestamp, and a two-year-old role re-touched yesterday would read as posted yesterday —
+    precisely the "stale roles resurfacing as new" failure V3 exists to remove. Unknown dates
+    are always kept and are labelled as first-seen in the digest."""
+    d = _get(c.get("feed_url") or "https://www.atlassian.com/endpoint/careers/listings")
+    out = []
+    for j in (d if isinstance(d, list) else d.get("listings") or []):
+        jid = str(j.get("id") or "")
+        if not jid:
+            continue
+        desc = " ".join(str(j.get(k) or "") for k in
+                        ("overview", "responsibilities", "qualifications"))
+        # `compensation` is NOT a pay range. It is a block of pay-zone and benefits prose,
+        # and only 1 of 248 postings had a parseable figure in it — passing it through as
+        # `salary` filled the digest's compensation slot with boilerplate. Keep it only when
+        # it actually states money, and let enrich_salary handle the rest.
+        pay = _PAY_RE.search(_clean_html(j.get("compensation") or ""))
+        out.append(_norm(c, jid, j.get("title", ""), _atlassian_location(j.get("locations")),
+                         j.get("applyUrl") or (j.get("portalJobPost") or {}).get("portalUrl", ""),
+                         "", salary=pay.group(0).strip() if pay else None, ats="atlassian",
+                         description=_clean_html(desc)))
+    return out
+
+
 FETCHERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday,
             "ashby": fetch_ashby, "recruitee": fetch_recruitee, "personio": fetch_personio,
             "aquent": fetch_aquent, "snaphop": fetch_snaphop, "phenom": fetch_phenom,
             "roberthalf": fetch_roberthalf, "himalayas": fetch_himalayas,
-            "wwr": fetch_wwr, "jobicy": fetch_jobicy}
+            "wwr": fetch_wwr, "jobicy": fetch_jobicy,
+            "oracle": fetch_oracle, "paradox": fetch_paradox, "atlassian": fetch_atlassian}
 
 
 def _norm(company, ext_id, title, location, url, posted,
@@ -844,6 +1108,67 @@ def is_us_remote(loc):
     if _matches_any(l, INTERNATIONAL_MARKERS):
         return ALLOW_INTL_REMOTE
     return True
+
+
+# ---- named regions (the priority-employer lane's geography) --------------------------------
+#
+# The local gate above is Utah-or-remote and is shared by every profile, so it is the wrong
+# place to add a third state: widening it would silently change Chad's report too. Regions are
+# named instead, and a lane composes the ones it wants — which is the per-profile geography
+# override the local gate's comment has always pointed at.
+WASHINGTON_KEYWORDS = [
+    "wa", "washington", "seattle", "bellevue", "redmond", "kirkland", "tacoma", "spokane",
+    "olympia", "everett", "renton", "bothell", "issaquah", "sammamish", "puget sound",
+]
+# "Washington" is the single most ambiguous place name in US job feeds: NPR, PBS, Marriott and
+# Salesforce all post heavily in Washington, DC, and Adobe's own `searchText=Washington` scope
+# returns DC roles. Matching the bare word would quietly import a whole second metro.
+_DC_MARKERS = ("district of columbia", "washington, dc", "washington dc",
+               "washington, d.c", "washington d.c")
+# Deliberately NOT in the keyword list: "vancouver" (Vancouver BC dwarfs Vancouver WA in job
+# feeds) and "camas"/"pasco" (too short / collide with surnames).
+
+
+def is_washington(loc):
+    """Washington STATE, not Washington DC."""
+    l = (loc or "").lower()
+    if any(m in l for m in _DC_MARKERS):
+        # A multi-site posting may legitimately name both ("Seattle, WA; Washington, DC").
+        # Fall back to the unambiguous city names so those are still kept.
+        return _matches_any(l, [k for k in WASHINGTON_KEYWORDS
+                                if k not in ("wa", "washington")])
+    return _matches_any(l, WASHINGTON_KEYWORDS)
+
+
+def is_utah(loc):
+    """Utah proper — the local gate WITHOUT its remote clause, so regions compose cleanly."""
+    return _matches_any((loc or "").lower(), LOCAL_KEYWORDS)
+
+
+REGION_GATES = {"remote_us": is_us_remote, "utah": is_utah, "washington": is_washington}
+# Lisa's stated order of preference, best first. Used both as the priority lane's geography
+# and as the ranking tiebreak inside the digest (see `location_rank`).
+DEFAULT_REGIONS = ["remote_us", "utah", "washington"]
+
+
+def region_gate(regions=None):
+    """Build a location gate that keeps a role in ANY of the named regions."""
+    gates = [REGION_GATES[r] for r in (regions or DEFAULT_REGIONS) if r in REGION_GATES]
+    return lambda loc: any(g(loc) for g in gates)
+
+
+def location_rank(loc, regions=None):
+    """Position of a location in the preference order — 0 is best, len(regions) is 'other'.
+
+    This is a TIEBREAK, never a filter: fit score still decides what leads the email. A
+    strong Utah-hybrid role must not be pushed below a weak remote one just for being in
+    tier 2, which is what ranking on location first would do."""
+    order = regions or DEFAULT_REGIONS
+    for i, region in enumerate(order):
+        gate = REGION_GATES.get(region)
+        if gate and gate(loc or ""):
+            return i
+    return len(order)
 
 
 # ---- posting-date + salary enrichment (Lever inline; others: description/detail regex) ----
@@ -1120,6 +1445,56 @@ def classify_match(posting, profile):
     # Generic title, real mandate: the "poorly titled but highly relevant" case.
     if senior and len(hits) >= min_hits:
         return keep(f"mandate in description ({', '.join(hits[:3])})")
+
+    # PRIORITY EMPLOYERS: retrieve on ONE signal instead of two.
+    #
+    # The standard discovery gate needs a role family AND seniority, or a mandate named twice
+    # in the description. That is the right bar across ~130 sources, but for a handful of
+    # employers the reader has deliberately targeted — a referral, a recruiting contact, a
+    # named ambition — the cost/benefit inverts: missing a good role at Adobe is expensive,
+    # and a few extra roles at eight employers is cheap. So ONE signal retrieves, and the
+    # MODEL decides on the actual responsibilities rather than the title deciding for it.
+    #
+    # SENIORITY ALONE IS NOT ONE OF THOSE SIGNALS, and that is the whole subtlety here.
+    # `seniority_any` contains "enterprise", "global", "senior", "manager" and "director" —
+    # words that appear in essentially every corporate job title, so accepting them on their
+    # own is not a relevance signal at all, it is "this posting is a job". Measured against
+    # the live pool it retrieved 231 roles, overwhelmingly enterprise SALES ("Enterprise
+    # Sales Account Director", "Account Director, Enterprise Sales - Auto") — a function
+    # Lisa's background lists under weak_or_wrong_fit, at real per-role scoring cost.
+    #
+    # So the two signals that count are the two the reader actually named: a role FAMILY in
+    # the title on its own, or the mandate showing up in the RESPONSIBILITIES. The second is
+    # the literal form of "surface unusually strong matches based on the role's actual
+    # responsibilities".
+    #
+    # The one-hit description path reads a DIFFERENT term list from the general gate, and
+    # that matters. `description_terms` is tuned for a two-hit threshold, so it can afford
+    # generic entries — "adoption", "governance", "okrs", "board", "roi". Accepting any ONE
+    # of those retrieved a run of "Solution Sales Executive" roles off Atlassian's board,
+    # which is precisely the failure the mandate_rescue comment in profiles.json documents
+    # ("generic manager-JD boilerplate ... rescued clear non-targets"). `mandate_rescue.terms`
+    # is the list that was already curated to be distinctive enough to justify a rescue on
+    # its own, so that is the list a single hit is read from. Override with
+    # `discovery.priority_terms` if the two ever need to diverge.
+    #
+    # KNOWN LIMIT: Workday exposes no description at list time, so for the Workday priority
+    # employers (Adobe, Salesforce, Zillow, PBS) this reduces to the role-family path. It is
+    # still materially wider than core, which demands family AND seniority together.
+    #
+    # What this deliberately does NOT do: bypass `hard_excluded` (checked at the top, so a
+    # priority employer's engineering and clinical roles are still dropped outright) or
+    # promote anything to the core tier. These land in the discovery tier like any other
+    # widened retrieval, and a precision-rule hit still demotes them to wildcards.
+    if posting.get("priority_employer") and cfg.get("priority_relax", True):
+        if families:
+            return keep(f"priority employer; role family '{families[0]}' in title")
+        strong_terms = (cfg.get("priority_terms")
+                        or (profile.get("mandate_rescue") or {}).get("terms") or [])
+        strong = [t for t in strong_terms if re.search(r"\b" + re.escape(t) + r"\b", desc)]
+        if strong:
+            return keep(f"priority employer; mandate in responsibilities "
+                        f"({', '.join(strong[:3])})")
     return None, "no role-family or mandate signal"
 
 
@@ -1581,6 +1956,34 @@ def fetch_source(c, retries=None, wait=None):
     return [], run
 
 
+def _apply_source_rules(c, postings):
+    """Per-REGISTRY-ROW rules, applied to a source's postings before any shared gate.
+
+    `exclude_titles` — titles this employer posts that the reader never wants, dropped by
+    word-boundary match on the title. It exists for the case a profile-wide rule cannot
+    express: Lisa wants Marriott's and Hilton's CORPORATE roles and not their property
+    operations, and "Director of Housekeeping" is a perfectly good leadership title that her
+    profile would otherwise keep. Scoping the rule to the employer is what keeps it from
+    quietly suppressing an ops role at a software company.
+
+    `priority` — an employer the reader has singled out (a referral, a contact, a deliberate
+    target). It rides on the posting rather than being looked up later, so every downstream
+    stage — retrieval, the digest, the discovery log — sees it without another registry read.
+    It is a plain data flag, so it survives into the snapshot and the lifecycle record."""
+    drop = c.get("exclude_titles") or []
+    if drop:
+        postings = [p for p in postings
+                    if not _any_term((p.get("title") or "").lower(), drop)]
+    if c.get("priority"):
+        for p in postings:
+            # NOT `priority`: lifecycle already uses that name on a record for its P1/P2/P3
+            # urgency band, and quietly overwriting it would break the digest's ordering.
+            p["priority_employer"] = True
+            if c.get("note"):
+                p["priority_note"] = c["note"]
+    return postings
+
+
 def collect_sources(max_age_days=None, config_path=CONFIG, gate=None):
     """Fetch + normalize every source in `config_path` once, apply a geography `gate`
     (defaults to the local gate `is_local` when None), then the age gate.
@@ -1605,6 +2008,7 @@ def collect_sources(max_age_days=None, config_path=CONFIG, gate=None):
             label = "needs attention" if run["status"] == SRC_CONFIG_ERROR else "temporary"
             errors.append(f"{c['name']} ({c['ats']}/{c['slug']}) [{label}]: {run['error']}")
         else:
+            got = _apply_source_rules(c, got)
             if keep:
                 got = [p for p in got if keep(p["location"])]
             got = [p for p in got if not _region_locked_by_title(p)]
@@ -2035,7 +2439,7 @@ def _company_slug(company):
     global _COMPANIES
     if _COMPANIES is None:
         _COMPANIES = {}
-        for path in (CONFIG, REMOTE_CONFIG, STAFFING_CONFIG):  # local + US-remote + staffing
+        for path in (CONFIG, REMOTE_CONFIG, STAFFING_CONFIG, PRIORITY_CONFIG):
             try:
                 for c in json.load(open(path)).get("companies", []):
                     _COMPANIES.setdefault(c["name"], c)
@@ -2921,7 +3325,8 @@ def _is_wildcard(rec):
         and rec.get("recommendation") not in ("", "not_recommended")
 
 
-def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None):
+def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None,
+                    regions=None):
     """Pick what today's email shows. Every record lands in AT MOST ONE section, and the
     order below is the precedence — a role cannot appear twice in one email."""
     today = today or datetime.date.today().isoformat()
@@ -2931,7 +3336,14 @@ def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None):
     counts = {"screened_out": 0, "suppressed": 0, "stale_hidden": 0, "pending_score": 0}
 
     def rank(rec):
-        return (-(rec.get("fit_score") or -1), rec.get("posted_date") or "")
+        # Fit score first, then the reader's location preference, then date. Location is a
+        # TIEBREAK by design: it separates equally-good roles without letting a mediocre
+        # remote role outrank a strong Utah one. A priority employer breaks a remaining tie —
+        # among roles that are otherwise equal, the ones the reader asked to watch lead.
+        return (-(rec.get("fit_score") or -1),
+                location_rank(rec.get("location"), regions),
+                0 if rec.get("priority_employer") else 1,
+                rec.get("posted_date") or "")
 
     live = [db["jobs"][k] for k in seen_keys if k in db["jobs"]]
     for rec in sorted(live, key=rank):
@@ -3022,6 +3434,11 @@ def _rec_card(rec):
         head += (f'<span style="display:inline-block;background-color:{_C["panel"]};'
                  f'color:{_C["muted"]};font-family:{_FONT};font-size:11px;font-weight:700;'
                  f'padding:3px 9px;border-radius:10px;margin-left:6px;">Discovery</span>')
+    if rec.get("priority_employer"):
+        head += (f'<span style="display:inline-block;background-color:{_C["green_bg"]};'
+                 f'color:{_C["green"]};font-family:{_FONT};font-size:11px;font-weight:800;'
+                 f'padding:3px 9px;border-radius:10px;margin-left:6px;">'
+                 f'\u2b50 PRIORITY EMPLOYER</span>')
     head += '</div>'
 
     title = (f'<div style="margin:3px 0 0;line-height:1.35;">'
@@ -3043,6 +3460,11 @@ def _rec_card(rec):
     if rec.get("top_concern"):
         body += (f'<div style="color:{_C["amber"]};font-family:{_FONT};font-size:12px;'
                  f'margin-top:4px;">Watch: {_esc(rec["top_concern"])}</div>')
+    if rec.get("priority_note"):
+        # The reader's OWN note about this employer (a referral, a contact). It is not a
+        # model judgment, so it is rendered plainly and never folded into why_fits.
+        body += (f'<div style="color:{_C["green"]};font-family:{_FONT};font-size:12px;'
+                 f'font-weight:700;margin-top:4px;">\u2b50 {_esc(rec["priority_note"])}</div>')
     inner = head + title + _rec_meta(rec) + body
     return _card(_icon_row(rec.get("company") or "", inner), _C[color])
 
@@ -3355,6 +3777,10 @@ def profile_age_window(profile, settings, suffix=""):
         cfg = settings.get("staffing_search") or {}
         if "max_age_days" in cfg:
             return cfg["max_age_days"]
+    if suffix == "_priority":
+        cfg = settings.get("priority_search") or {}
+        if "max_age_days" in cfg:
+            return cfg["max_age_days"]
     if "max_posting_age_days" in profile:
         return profile["max_posting_age_days"]
     return settings.get("max_posting_age_days")
@@ -3384,6 +3810,29 @@ def sheet_export_for(profile, settings):
     if not (settings.get("sheets") or {}).get("enabled", True):
         return False
     return bool(profile.get("sheet_export", False))
+
+
+def email_enabled_for(profile, settings):
+    """Should THIS profile's report actually be EMAILED?
+
+    Opt-OUT per profile (default true), with the run-wide `email.enabled` as the master
+    switch on top — the same two-level shape as `fit_scoring`/`fit_scoring_enabled`.
+
+    This is delivery only. A profile with `email:false` STILL RUNS: it fetches, diffs, writes
+    its snapshot and its lifecycle database, and writes report_<name>.md/.html into the repo.
+    That is the point of having it as a separate switch from `enabled` in profiles.json.
+    Pausing a search by not running it leaves the snapshot frozen at the day it stopped, so
+    the first run after switching back on diffs against a stale snapshot and produces a
+    months-long backlog as one enormous "new" email. Keeping the profile running and only
+    withholding the email means state stays current, the report is still there to read in the
+    repo whenever you want it, and turning delivery back on gives you an ordinary daily email
+    the next morning.
+
+    Use `enabled:false` in profiles.json instead when you want the WORK stopped as well and
+    accept the backlog on return."""
+    if not (settings.get("email") or {}).get("enabled", True):
+        return False
+    return bool(profile.get("email", True))
 
 
 def _lifecycle_cfg(settings):
@@ -3438,8 +3887,8 @@ def update_lifecycle(profile, lanes, settings, failed_sources):
     return db, seen, newly_gone, stats
 
 
-def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=None,
-                settings=None, health_rows=None):
+def run_profile(profile, local_src, remote_src=None, staffing_src=None, priority_src=None,
+                client=None, settings=None, health_rows=None):
     # Run the local lane and (when enabled + opted-in) the US-remote and contract/staffing
     # lanes, then compose ALL into ONE report/email per person. Each lane keeps its own
     # snapshot so diffs are independent; `changed` is the OR of the lanes; logos are the union.
@@ -3455,9 +3904,19 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=N
     age = lambda sfx: profile_age_window(profile, settings, sfx)
     budget = {"left": int((settings.get("discovery") or {}).get(
         "max_new_scored_per_run", 0) or 10 ** 9)}
+    # The priority lane runs FIRST so that, on a day when broadened discovery would otherwise
+    # exhaust the run's scoring budget, the employers the reader actually asked about are the
+    # ones that get scored. Roles the budget cannot reach are kept and scored next run.
+    priority_lane = None
+    if priority_src is not None and profile.get("priority_search"):
+        priority_lane, p_changed = _run_lane(profile, priority_src, client, "_priority",
+                                             "⭐ Priority employers",
+                                             max_age_days=age("_priority"), budget=budget)
     local_lane, changed = _run_lane(profile, local_src, client, "",
                                     "📍 Local — Silicon Slopes", max_age_days=age(""),
                                     budget=budget)
+    if priority_lane is not None:
+        changed = changed or p_changed
     remote_lane = staffing_lane = None
     if remote_src is not None and profile.get("remote_search"):
         remote_lane, r_changed = _run_lane(profile, remote_src, client,
@@ -3469,12 +3928,13 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=N
                                              "_staffing", "🧑‍💼 Contract / Staffing",
                                              max_age_days=age("_staffing"), budget=budget)
         changed = changed or s_changed
-    # Email display order: US-Remote, then Contract/Staffing, then Local Silicon Slopes.
-    lanes = [lane for lane in (remote_lane, staffing_lane, local_lane) if lane is not None]
+    # Email display order: Priority employers, US-Remote, Contract/Staffing, Local.
+    lanes = [lane for lane in (priority_lane, remote_lane, staffing_lane, local_lane)
+             if lane is not None]
 
     feedback = load_feedback(profile["name"])
     failed_sources = set()
-    for src in (local_src, remote_src, staffing_src):
+    for src in (local_src, remote_src, staffing_src, priority_src):
         if src:
             failed_sources |= set(src.get("failed") or ())
 
@@ -3483,7 +3943,8 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, client=N
     if profile.get("report_style") == "change":
         # V3: the change digest, built from the lifecycle DB (requirement F).
         sections, counts = change_sections(db, feedback, seen_keys=seen,
-                                           newly_gone=newly_gone)
+                                           newly_gone=newly_gone,
+                                           regions=settings.get("location_priority"))
         report_html, shown = build_change_digest_html(profile, sections, counts,
                                                       health_rows or [])
         report = build_change_digest_md(profile, sections, counts, health_rows or [])
@@ -3601,14 +4062,49 @@ def _resolve_dirs(args):
     return snap_dir, out_dir
 
 
+def github_output_lines(profiles, changed_profiles, logos_by_profile, settings):
+    """The per-profile outputs the GitHub Actions workflow gates on, as one text block.
+
+    Three per person:
+      <name>_changed  — did the (combined) report change since last run? The workflow only
+                        emails someone whose report actually changed; first run counts.
+      <name>_email    — is delivery switched ON for this person? (profiles.json `email`,
+                        master switch settings.json `email.enabled`.)
+      <name>_logos    — the exact logo files the report referenced, attached inline as CID
+                        images. Only referenced files, so none show as stray downloads.
+
+    `<name>_email` is deliberately a SEPARATE output rather than forcing `<name>_changed`
+    to false. Two reasons: the log would otherwise claim a report did not change when it
+    did, and the workflow's `force_email` input ORs against `_changed`, so folding the two
+    together would let a manual force-send silently defeat a deliberate pause.
+
+    Extracted from main() to be testable. A typo in one of these key names does not fail
+    anything — it silently stops that person's email, and would stop EVERYONE's if the
+    mistake were in the shared f-string, so it is worth binding to a test.
+    """
+    out = []
+    for p in profiles:
+        name = p["name"]
+        out.append(f"{name}_changed="
+                   f"{'true' if name in changed_profiles else 'false'}")
+        out.append(f"{name}_email="
+                   f"{'true' if email_enabled_for(p, settings) else 'false'}")
+        out.append(f"{name}_logos={','.join(logos_by_profile.get(name, []))}")
+    return "".join(line + "\n" for line in out)
+
+
 def main():
     args = _parse_args()
     profiles = json.load(open(PROFILES))["profiles"]
 
     if args.list:
+        # Email state is shown here because "is my report still being sent?" is the question
+        # a paused profile creates, and profiles.json is not where a non-developer looks.
+        listing_settings = load_settings()
         for p in profiles:
             state = "on " if p.get("enabled", True) else "off"
-            print(f"  [{state}] {p['name']:<8} {p['label']}")
+            mail = "email on " if email_enabled_for(p, listing_settings) else "EMAIL PAUSED"
+            print(f"  [{state}] [{mail}] {p['name']:<8} {p['label']}")
         return
 
     if args.confirm_sent:
@@ -3690,6 +4186,26 @@ def main():
         s_note = f" ≤{staffing_age}d old" if staffing_age else ""
         print(f"Fetched {len(staffing_src['pool'])} contract/staffing role(s){s_note} "
               f"across the staffing registry.")
+
+    # Priority-employer lane: a short, hand-picked registry of employers the reader has
+    # singled out. Its geography is the union of the configured regions — by default
+    # US-remote, Utah and Washington — rather than the local gate, because the whole point is
+    # that these employers are worth following wherever the reader would actually work.
+    priority_src = None
+    priority_cfg = settings.get("priority_search", {})
+    priority_on = bool(priority_cfg.get("enabled")
+                       and any(p.get("priority_search") for p in profiles))
+    if priority_on:
+        regions = (priority_cfg.get("regions")
+                   or settings.get("location_priority") or DEFAULT_REGIONS)
+        priority_age = max([profile_age_window(p, settings, "_priority") or 0
+                            for p in profiles] or [0]) or None
+        priority_src = collect_sources(max_age_days=priority_age,
+                                       config_path=PRIORITY_CONFIG,
+                                       gate=region_gate(regions))
+        p_note = f" ≤{priority_age}d old" if priority_age else ""
+        print(f"Fetched {len(priority_src['pool'])} priority-employer role(s){p_note} "
+              f"across {', '.join(regions)}.")
     print()
 
     # Source health is computed BEFORE the profiles run, because the change digest shows it.
@@ -3699,6 +4215,8 @@ def main():
         registries.append(("remote", remote_src))
     if staffing_src:
         registries.append(("staffing", staffing_src))
+    if priority_src:
+        registries.append(("priority", priority_src))
     health_rows = write_source_health(registries)
     health = source_health_summary(health_rows)
     print(f"Source health: {health['ok']}/{health['total']} successful · "
@@ -3714,9 +4232,10 @@ def main():
     for p in profiles:
         rs = remote_src if p.get("remote_search") else None
         ss = staffing_src if p.get("staffing_search") else None
+        ps = priority_src if p.get("priority_search") else None
         changed, logos, report, stats = run_profile(p, local_src, remote_src=rs,
-                                                    staffing_src=ss, client=client,
-                                                    settings=settings,
+                                                    staffing_src=ss, priority_src=ps,
+                                                    client=client, settings=settings,
                                                     health_rows=health_rows)
         if changed:
             changed_profiles.append(p["name"])
@@ -3724,13 +4243,13 @@ def main():
         print("=" * 70)
         print(f"[{p['name']}] changes since last run: {'yes' if changed else 'no'}"
               f" · {len(logos)} logo(s) to embed")
+        if not email_enabled_for(p, settings):
+            print(f"[{p['name']}] EMAIL PAUSED (email: false) — the report was still "
+                  f"generated and state is up to date; it just will not be sent. "
+                  f"Set email: true in profiles.json to resume.")
         print(run_stats_text(p["name"], stats, health))
         print(report)
 
-    # Expose per-profile outputs to GitHub Actions: a "changed" flag so the workflow emails
-    # only people whose (combined local+remote) report changed, and the exact list of logo
-    # files to attach inline as CID images — only those the report references, so none show
-    # as stray downloads. One report/email per person, so no separate remote-lane outputs.
     summary = fit_usage_summary()
     if summary:
         print(summary)
@@ -3739,11 +4258,8 @@ def main():
     gh_out = None if args.dry_run else os.environ.get("GITHUB_OUTPUT")
     if gh_out:
         with open(gh_out, "a") as fh:
-            for p in profiles:
-                name = p["name"]
-                fh.write(f"{name}_changed="
-                         f"{'true' if name in changed_profiles else 'false'}\n")
-                fh.write(f"{name}_logos={','.join(logos_by_profile.get(name, []))}\n")
+            fh.write(github_output_lines(profiles, changed_profiles, logos_by_profile,
+                                         settings))
 
 
 if __name__ == "__main__":

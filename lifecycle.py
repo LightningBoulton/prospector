@@ -283,6 +283,10 @@ def new_record(posting, lane, today):
         "why_fits": "",
         "top_concern": "",
         "tier": posting.get("tier") or "",
+        # An employer the reader singled out (registry `priority: true`). Deliberately NOT
+        # called `priority` — that key below is the P1/P2/P3 urgency band.
+        "priority_employer": bool(posting.get("priority_employer")),
+        "priority_note": posting.get("priority_note") or "",
         "demoted": bool(posting.get("demoted")),
         "match_reason": posting.get("match_reason") or "",
         "lane": lane,
@@ -331,6 +335,11 @@ def _merge_posting(rec, posting, lane, today):
         rec["tier"] = posting.get("tier") or ""
         rec["demoted"] = bool(posting.get("demoted"))
         rec["match_reason"] = posting.get("match_reason") or ""
+    # Once a job is known to come from a priority employer it stays flagged: the same role
+    # can also arrive via an aggregator row that carries no flag.
+    if posting.get("priority_employer"):
+        rec["priority_employer"] = True
+        rec["priority_note"] = posting.get("priority_note") or rec.get("priority_note", "")
     if lane and lane not in (rec.get("lane") or ""):
         rec["lane"] = f"{rec['lane']}+{lane}" if rec.get("lane") else lane
     if not rec.get("work_arrangement") or rec["work_arrangement"] == "unknown":

@@ -22,13 +22,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CONFIG = os.path.join(HERE, "companies.json")
 REMOTE_CONFIG = os.path.join(HERE, "remote_companies.json")
 STAFFING_CONFIG = os.path.join(HERE, "staffing_companies.json")
+PRIORITY_CONFIG = os.path.join(HERE, "priority_companies.json")
 LOGO_DIR = os.path.join(HERE, "logos")
 
 
 def _load_companies():
-    # Union of the local, US-remote, and contract/staffing registries, deduped by slug.
+    # Union of the local, US-remote, contract/staffing and priority registries,
+    # deduped by slug.
     seen, out = set(), []
-    for path in (CONFIG, REMOTE_CONFIG, STAFFING_CONFIG):
+    for path in (CONFIG, REMOTE_CONFIG, STAFFING_CONFIG, PRIORITY_CONFIG):
         if not os.path.exists(path):
             continue
         for c in json.load(open(path)).get("companies", []):

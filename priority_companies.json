@@ -1,0 +1,108 @@
+{
+  "_comment": "Registry for the PRIORITY-EMPLOYER lane. Same entry shape as companies.json, plus three fields only this lane uses. These are employers the reader named explicitly — a referral, a recruiting contact, a deliberate target — so they are followed wherever she would actually work rather than only where she lives. Read only when settings.priority_search.enabled and a profile sets priority_search:true. The lane's geography is settings.location_priority (US-remote + Utah + Washington), NOT the Utah-only local gate. Every row here was probed live on 2026-08-25; see CLAUDE.md > Priority-employer lane for what each surface is and why it was chosen.",
+
+  "_fields_comment": "priority:true stamps each posting so the discovery gate retrieves it on ONE signal instead of two (see classify_match) and the digest badges it. note is the reader's own sentence about the employer, rendered on the card verbatim — it is not a model judgment. exclude_titles drops titles this specific employer posts that she never wants; it is per-employer on purpose, because 'Director of Housekeeping' is a real leadership title that a profile-wide rule would have to keep. MATCHING IS WHOLE-WORD (the same \\bterm\\b rule as everywhere else in the engine), so write COMPLETE words: 'housekeep' silently matches nothing at all, 'housekeeping' and 'housekeeper' are what work.",
+
+  "companies": [
+    {
+      "name": "Adobe",
+      "ats": "workday",
+      "slug": "adobe",
+      "domain": "adobe.com",
+      "wd_host": "adobe.wd5.myworkdayjobs.com",
+      "site": "external_experienced",
+      "search_texts": ["Remote", "Seattle", "Bellevue"],
+      "priority": true,
+      "note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+      "_comment": "Adobe's tenant is 750 roles globally (38 pages, since Workday caps `limit` at 20), so it is scoped server-side. Lehi is deliberately ABSENT from search_texts: Adobe is already in companies.json with search_text 'Lehi', and the local lane covers it. Repeating it here would score the same Utah roles twice, once per lane snapshot. The companies.json row carries priority:true so those Lehi roles get the same relaxed retrieval."
+    },
+    {
+      "name": "Salesforce",
+      "ats": "workday",
+      "slug": "salesforce",
+      "domain": "salesforce.com",
+      "wd_host": "salesforce.wd12.myworkdaysite.com",
+      "site": "External_Career_Site",
+      "search_texts": ["Remote", "Bellevue", "Seattle", "Utah"],
+      "priority": true,
+      "_comment": "1,530 roles globally = 77 pages unscoped. Note the host is myworkdaySITE, not myworkdayJOBS — the cxs path is otherwise identical. 'Washington' is NOT a search term: it returns Washington DC in bulk, and the WA city names are the precise cut."
+    },
+    {
+      "name": "Zillow Group",
+      "ats": "workday",
+      "slug": "zillow",
+      "domain": "zillow.com",
+      "wd_host": "zillow.wd5.myworkdayjobs.com",
+      "site": "Zillow_Group_External",
+      "priority": true,
+      "_comment": "117 roles, small enough to page whole. www.zillow.com/careers/ answers 403 to any non-browser client; the Workday tenant behind it does not. Zillow labels remote roles 'Remote-USA', which is_us_remote reads correctly."
+    },
+    {
+      "name": "Atlassian",
+      "ats": "atlassian",
+      "slug": "atlassian",
+      "domain": "atlassian.com",
+      "priority": true,
+      "_comment": "One request for the whole board (~250 roles) with full prose. Its actual ATS is iCIMS (globalcareers-atlassian.icims.com), which has no public API — this endpoint is the supported surface."
+    },
+    {
+      "name": "NPR",
+      "ats": "greenhouse",
+      "slug": "nationalpublicradioinc",
+      "domain": "npr.org",
+      "priority": true,
+      "exclude_titles": ["producer", "reporter", "correspondent", "photojournalist",
+                         "audio engineer", "newscaster", "anchor"],
+      "_comment": "Plain Greenhouse board, ~14 roles. Most are Washington DC, which this lane's geography excludes by design (is_washington guards against DC), so in practice its Remote roles are what surface. exclude_titles drops production CRAFT only: 'Managing Editor', 'Director, Digital Insights' and every strategy/ops title still come through, which is the 'beyond media-production positions' ask."
+    },
+    {
+      "name": "PBS",
+      "ats": "workday",
+      "slug": "vhr_pbs",
+      "domain": "pbs.org",
+      "wd_host": "vhr-pbs.wd115.myworkdayjobs.com",
+      "site": "PBSCareers",
+      "priority": true,
+      "exclude_titles": ["producer", "videographer", "camera operator", "audio engineer"],
+      "_comment": "GOTCHA: `slug` here is the Workday TENANT and it is vhr_pbs with an UNDERSCORE, while the host is vhr-pbs with a hyphen, and wd5 (which the careers page also advertises) 422s — only wd115 answers. Tiny board, 8 roles."
+    },
+    {
+      "name": "Marriott International",
+      "ats": "paradox",
+      "slug": "marriott",
+      "domain": "marriott.com",
+      "paradox_host": "careers.marriott.com",
+      "max_pages": 10,
+      "queries": [
+        { "filter": { "brand": ["Corporate"], "is_remote": ["true"] } },
+        { "filter": { "brand": ["Corporate"], "state": ["Washington"] } },
+        { "filter": { "brand": ["Corporate"], "state": ["Utah"] } }
+      ],
+      "priority": true,
+      "exclude_titles": ["housekeeping", "housekeeper", "front desk", "guest services",
+                         "guest service", "bellman", "valet", "banquet", "concierge",
+                         "night audit", "room attendant", "rooms", "steward", "stewarding",
+                         "spa", "culinary", "chef", "cook", "server", "bartender",
+                         "food and beverage", "hotel manager", "general manager - hotel"],
+      "_comment": "filter[brand][0]=Corporate is Marriott's OWN corporate/property split (337 corporate vs 12,900+ property), which is why this reads as 'corporate roles, not property-level operations' rather than us guessing from titles. is_remote is the reason Marriott is on Paradox and not on its Oracle tenant: Oracle has the same corporate cut but reports every one of its 13,301 requisitions as ORA_ON_SITE, so the remote roles would all be dropped as Bethesda-only. exclude_titles is belt-and-braces for property titles that leak into the corporate brand."
+    },
+    {
+      "name": "Hilton",
+      "ats": "oracle",
+      "slug": "hilton",
+      "domain": "hilton.com",
+      "oracle_host": "efet.fa.us2.oraclecloud.com",
+      "site": "CX_1",
+      "organizations": [300000011653160, 1],
+      "priority": true,
+      "exclude_titles": ["housekeeping", "housekeeper", "front desk", "guest services",
+                         "guest service", "bellman", "valet", "banquet", "concierge",
+                         "night audit", "room attendant", "rooms", "steward", "stewarding",
+                         "spa", "culinary", "chef", "cook", "server", "bartender",
+                         "food and beverage", "hotel manager", "general manager - hotel"],
+      "_comment": "organizations = 'US Corporate/Executive' (81) + 'Hilton' (41), out of 4,390 total — the corporate cut, on Hilton's own classification. The EMEA/APAC corporate orgs (300005400802363 / 300005400802339) are deliberately left out as out-of-geography. Unlike Marriott, Hilton DOES populate WorkplaceType, so fetch_oracle folds Remote/Hybrid into the location and the gates see it."
+    }
+  ],
+
+  "_rejected_comment": "Zillow's own careers page (www.zillow.com/careers/) 403s every non-browser client and is not needed. Marriott's Oracle tenant (ejwl.fa.us2.oraclecloud.com / MI_CS_1) works and is cheaper (2 requests for all 373 corporate roles vs ~10) but reports no work arrangement at all, so it cannot find the remote corporate roles that are the point. Marriott's Paradox page HTML server-renders only 10 results and ignores page_size, so the /api/get-jobs endpoint is the only sane surface. Salesforce and Adobe both cap Workday `limit` at 20 regardless of what is sent — do not try raising it again."
+}

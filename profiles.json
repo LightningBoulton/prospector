@@ -10,6 +10,8 @@
       "_v3_toggles_comment": "fit_scoring false: Chad is not actively job-hunting, and LLM scoring is the entire Anthropic bill (~150 calls/run for this profile). His report still generates and still emails — it just arrives unranked, which is what this profile's renderer did before scoring existed. Set true to turn ranking back on; background_file and fit_mode are left in place so that is a one-word change. sheet_export false: the tracking spreadsheet is Lisa's working document, and only her roles belong in it. His records are still kept in jobs_chad.json.",
       "fit_scoring": false,
       "sheet_export": false,
+      "_email_comment": "email false = PAUSED. Chad's search is on hold, so his report is not delivered. This is DELIVERY ONLY and is deliberately not the same as enabled:false. The profile still runs every morning, so snapshot_chad*.json and jobs_chad.json stay current and report_chad.md/.html are still written into the repo (read them there any time). Flip this back to true and the next morning's email is an ordinary one-day diff. Setting enabled:false instead would freeze the snapshot at the day it stopped, and the first run after switching back on would diff against that stale snapshot and arrive as one enormous months-long 'new roles' email. The run-wide master switch is settings.json email.enabled.",
+      "email": false,
       "match_groups": [
         [
           "engineer",
@@ -48,6 +50,7 @@
       "fit_mode": "rank",
       "fit_scoring": true,
       "sheet_export": true,
+      "email": true,
       "_v3_comment": "report_style 'change' switches Lisa to the V3 CHANGE DIGEST (build_change_digest_html), which reports what changed since the previous run instead of re-ranking the whole active inventory every morning. It reads the lifecycle database (jobs_lisa.json), not the lane snapshots, which is what lets it say 'new today' honestly, stop repeating roles past 14 days, and list a role as removed only if that role actually appeared in an earlier email. 'digest' is the previous ranked-inventory renderer and still works; Chad has no report_style and keeps the original lane-by-lane email. max_posting_age_days is now the FETCH/retention window, not the display window — display age is governed by the lifecycle bands (0-7 new, 8-14 still worth applying, 15+ suppressed unless exceptional AND verified open). It is 21 rather than 30 so that a 15-21 day role can still qualify for the verified exception without carrying a month of dead weight. fit_mode stays 'rank' on purpose: not_recommended roles are hidden at render time but retained for the weekly audit, which 'filter' would prevent.",
       "report_style": "change",
       "max_posting_age_days": 21,
@@ -394,6 +397,8 @@
       },
       "remote_search": true,
       "staffing_search": true,
+      "_priority_comment": "priority_search opts this profile into the PRIORITY-EMPLOYER lane (priority_companies.json): eight employers named explicitly rather than found by search — Adobe, Salesforce, Zillow Group, Atlassian, NPR, PBS, Marriott International, Hilton. The lane changes retrieval, not judgment: a posting from one of these employers is retrieved on a role family in its title OR the mandate appearing in its responsibilities, instead of needing both a family and a seniority word, so a well-matched role with an off-pattern title still reaches the model. Everything downstream is unchanged — hard exclusions still apply, nothing is promoted to the core tier, and the model still scores it on the same rubric.",
+      "priority_search": true,
       "dedupe_same_title": true,
       "_ic_comment": "Leveled individual-contributor tracks excluded by exact word order: 'customer success manager' drops 'Customer Success Manager II/III/V', 'Enterprise CSM' and 'Strategic CSM' (book-of-business IC roles) while KEEPING 'Sr. Manager, Customer Success', 'Director, Customer Success' and 'Head of Customer Success', because those put the seniority word before the function. Found by probing Samsara, which alone would have added ~8 IC CSM roles. dedupe_same_title collapses one-req-per-city duplicates (see dedupe_same_role)."
     }

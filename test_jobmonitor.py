@@ -2631,10 +2631,547 @@ class TestNewFetchers(unittest.TestCase):
             jm._get = orig
 
     def test_every_registry_row_names_a_real_fetcher(self):
-        for path in ("companies.json", "remote_companies.json", "staffing_companies.json"):
+        for path in ("companies.json", "remote_companies.json", "staffing_companies.json",
+                     "priority_companies.json"):
             cfg = json.load(open(os.path.join(HERE, path)))
             for c in cfg["companies"]:
                 self.assertIn(c["ats"], jm.FETCHERS, f"{path}: {c['name']}")
+
+
+class TestEmailSwitch(unittest.TestCase):
+    """Per-person delivery switch. Chad's search is paused, so his report is generated but
+    not sent; Lisa's still goes out."""
+
+    def test_default_is_on_when_unset(self):
+        # Opt-OUT, like fit_scoring — a profile that says nothing still gets its email.
+        self.assertTrue(jm.email_enabled_for(profile("x"), {}))
+
+    def test_profile_flag_turns_delivery_off(self):
+        self.assertFalse(jm.email_enabled_for(profile("x", email=False), {}))
+
+    def test_run_wide_master_switch_overrides_an_enabled_profile(self):
+        self.assertFalse(jm.email_enabled_for(profile("x", email=True),
+                                              {"email": {"enabled": False}}))
+
+    def test_master_switch_on_leaves_the_profile_flag_in_charge(self):
+        settings = {"email": {"enabled": True}}
+        self.assertTrue(jm.email_enabled_for(profile("x", email=True), settings))
+        self.assertFalse(jm.email_enabled_for(profile("x", email=False), settings))
+
+    def test_committed_profiles_are_chad_paused_lisa_on(self):
+        settings = jm.load_settings()
+        self.assertFalse(jm.email_enabled_for(load_real_profile("chad"), settings))
+        self.assertTrue(jm.email_enabled_for(load_real_profile("lisa"), settings))
+
+    def test_paused_profile_still_runs_and_keeps_its_state(self):
+        """The whole reason this is separate from `enabled`. A paused profile must keep
+        fetching and diffing, or the snapshot freezes and the first email after resuming
+        arrives as one enormous months-long backlog."""
+        chad = load_real_profile("chad")
+        self.assertTrue(chad.get("enabled", True))
+        self.assertFalse(chad.get("email", True))
+
+
+class TestGithubOutputs(unittest.TestCase):
+    """These key names are the entire contract with the workflow. A typo in one does not
+    fail anything — it silently stops somebody's email."""
+
+    def setUp(self):
+        self.profiles = [profile("chad", email=False), profile("lisa", email=True)]
+        self.settings = {}
+
+    def _lines(self, changed=(), logos=None):
+        text = jm.github_output_lines(self.profiles, list(changed), logos or {},
+                                      self.settings)
+        return dict(line.split("=", 1) for line in text.strip().splitlines())
+
+    def test_every_profile_gets_all_three_outputs(self):
+        out = self._lines(changed=["lisa"], logos={"lisa": ["adobe.png", "npr.png"]})
+        self.assertEqual(sorted(out), ["chad_changed", "chad_email", "chad_logos",
+                                       "lisa_changed", "lisa_email", "lisa_logos"])
+
+    def test_email_flag_is_independent_of_the_changed_flag(self):
+        # Chad's report DID change; delivery is off. Both facts must be reported honestly —
+        # folding them together would make the run log lie about the diff.
+        out = self._lines(changed=["chad", "lisa"])
+        self.assertEqual(out["chad_changed"], "true")
+        self.assertEqual(out["chad_email"], "false")
+        self.assertEqual(out["lisa_changed"], "true")
+        self.assertEqual(out["lisa_email"], "true")
+
+    def test_values_are_the_lowercase_strings_the_workflow_compares_against(self):
+        out = self._lines(changed=["lisa"])
+        for key, value in out.items():
+            if key.endswith(("_changed", "_email")):
+                self.assertIn(value, ("true", "false"), key)
+
+    def test_logos_are_comma_joined_and_empty_when_none(self):
+        out = self._lines(logos={"chad": ["a.png", "b.png"]})
+        self.assertEqual(out["chad_logos"], "a.png,b.png")
+        self.assertEqual(out["lisa_logos"], "")
+
+
+class TestWorkflowGating(unittest.TestCase):
+    """Binds the committed workflow to the outputs the engine emits. The two drift silently
+    otherwise: nothing errors, the email just stops arriving."""
+
+    def setUp(self):
+        self.yml = open(os.path.join(HERE, ".github/workflows/prospector.yml")).read()
+
+    def _if_line(self, step_id):
+        # The `if:` immediately following the step's id.
+        after = self.yml.split(f"id: {step_id}", 1)[1]
+        return after.split("\n")[1]
+
+    def test_each_email_step_is_gated_on_its_own_email_output(self):
+        for name in ("chad", "lisa"):
+            self.assertIn(f"steps.run.outputs.{name}_email == 'true'",
+                          self._if_line(f"mail_{name}"), name)
+
+    def test_each_email_step_is_still_gated_on_changed(self):
+        for name in ("chad", "lisa"):
+            self.assertIn(f"steps.run.outputs.{name}_changed == 'true'",
+                          self._if_line(f"mail_{name}"), name)
+
+    def test_force_email_cannot_defeat_a_pause(self):
+        """force_email ORs against `changed`; the email switch must be ANDed OUTSIDE that
+        group, or a manual test run would send mail to somebody who paused it."""
+        for name in ("chad", "lisa"):
+            line = self._if_line(f"mail_{name}")
+            self.assertRegex(line, rf"{name}_email == 'true' &&.*force_email", name)
+            # The pause must sit before the parenthesised force_email group, not inside it.
+            self.assertLess(line.index(f"{name}_email"), line.index("force_email"), name)
+
+    def test_workflow_emails_exactly_the_committed_profiles(self):
+        names = {p["name"] for p in
+                 json.load(open(os.path.join(HERE, "profiles.json")))["profiles"]}
+        for name in names:
+            self.assertIn(f"id: mail_{name}", self.yml,
+                          f"profile {name!r} has no email step in the workflow")
+
+
+class TestWashingtonRegion(unittest.TestCase):
+    """Washington STATE is the reader's third location tier. Washington DC is not, and the
+    two are the single most confusable pair in US job feeds — NPR, PBS, Marriott and
+    Salesforce all post heavily in DC."""
+
+    def test_washington_state_locations_match(self):
+        for loc in ["Seattle, WA", "Bellevue, Washington", "Redmond, WA, United States",
+                    "Washington - Bellevue", "Remote Washington", "Spokane, WA"]:
+            self.assertTrue(jm.is_washington(loc), loc)
+
+    def test_washington_dc_is_not_washington_state(self):
+        for loc in ["Washington, District of Columbia, United States",
+                    "Washington, DC", "Washington DC Metro",
+                    "Virginia - Washington DC Metro"]:
+            self.assertFalse(jm.is_washington(loc), loc)
+
+    def test_a_posting_naming_both_is_kept_on_the_state_city(self):
+        # Multi-site reqs legitimately list both; the unambiguous city decides.
+        self.assertTrue(jm.is_washington("Seattle, WA; Washington, DC"))
+
+    def test_other_states_do_not_match(self):
+        for loc in ["Salt Lake City, UT", "Austin, TX", "Bethesda, MD", "Remote"]:
+            self.assertFalse(jm.is_washington(loc), loc)
+
+    def test_short_token_does_not_match_inside_a_word(self):
+        # Same word-boundary discipline as is_local's "ut" — "wa" must not hit "Warsaw".
+        self.assertFalse(jm.is_washington("Warsaw, Poland"))
+        self.assertFalse(jm.is_washington("Wallingford, Connecticut"))
+
+
+class TestRegionGate(unittest.TestCase):
+    """The priority lane's geography is composed from named regions rather than by widening
+    the shared local gate — widening it would have changed Chad's report too."""
+
+    def test_gate_keeps_any_configured_region(self):
+        keep = jm.region_gate(["remote_us", "utah", "washington"])
+        for loc in ["Remote - USA", "Lehi, UT", "Seattle, WA", "Remote"]:
+            self.assertTrue(keep(loc), loc)
+        for loc in ["Austin, TX", "Bethesda, MD", "London, United Kingdom"]:
+            self.assertFalse(keep(loc), loc)
+
+    def test_narrower_region_list_narrows_the_gate(self):
+        keep = jm.region_gate(["remote_us"])
+        self.assertTrue(keep("Remote - USA"))
+        self.assertFalse(keep("Seattle, WA"))
+
+    def test_local_gate_is_unchanged_by_the_new_regions(self):
+        # The regression that matters: Chad's lane must not gain Washington.
+        self.assertFalse(jm.is_local("Seattle, WA"))
+        self.assertTrue(jm.is_local("Lehi, UT"))
+        self.assertTrue(jm.is_local("Remote"))
+
+    def test_location_rank_orders_by_preference_and_is_not_a_filter(self):
+        order = ["remote_us", "utah", "washington"]
+        self.assertEqual(jm.location_rank("Remote - USA", order), 0)
+        self.assertEqual(jm.location_rank("Lehi, UT", order), 1)
+        self.assertEqual(jm.location_rank("Seattle, WA", order), 2)
+        # Anything outside the preference list still gets a rank — it is a tiebreak, so an
+        # out-of-region role that reached the digest is ordered, never silently dropped.
+        self.assertEqual(jm.location_rank("Austin, TX", order), 3)
+
+
+class TestPriorityEmployers(unittest.TestCase):
+    """Lisa's ask: for a named handful of employers, do not depend on exact title matches —
+    surface strong matches on the role's actual responsibilities."""
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+
+    def _tier(self, title, description="", priority=False):
+        p = posting("ACo", "1", title, location="Remote", description=description)
+        if priority:
+            p["priority_employer"] = True
+        return jm.classify_match(p, self.lisa)
+
+    def test_role_family_alone_retrieves_only_for_a_priority_employer(self):
+        # "Agentic Operations Consultant" names a family but no seniority word, so the
+        # standard gate drops it. At a priority employer it reaches the model.
+        self.assertIsNone(self._tier("Agentic Operations Consultant")[0])
+        tier, reason = self._tier("Agentic Operations Consultant", priority=True)
+        self.assertEqual(tier, jm.TIER_DISCOVERY)
+        self.assertIn("priority employer", reason)
+
+    def test_responsibilities_alone_retrieve_for_a_priority_employer(self):
+        desc = "You will lead post-merger integration for newly acquired businesses."
+        self.assertIsNone(self._tier("Special Assignments Partner", description=desc)[0])
+        tier, reason = self._tier("Special Assignments Partner", description=desc,
+                                  priority=True)
+        self.assertEqual(tier, jm.TIER_DISCOVERY)
+        self.assertIn("responsibilities", reason)
+
+    def test_seniority_alone_is_not_enough_even_at_a_priority_employer(self):
+        """The measured regression. `seniority_any` contains "enterprise", "global" and
+        "director" — words in almost every corporate title — so accepting seniority on its
+        own retrieved 231 roles off the live pool, overwhelmingly enterprise SALES, a
+        function Lisa's background lists under weak_or_wrong_fit."""
+        for title in ["Enterprise Sales Account Director",
+                      "Account Director, Enterprise Sales - Auto",
+                      "Senior Corporate Account Manager"]:
+            self.assertIsNone(self._tier(title, priority=True)[0], title)
+
+    def test_generic_description_boilerplate_does_not_retrieve_on_one_hit(self):
+        """The one-hit path reads mandate_rescue.terms, not description_terms: the latter is
+        tuned for a two-hit threshold and carries generic words ("adoption", "governance",
+        "okrs") that retrieved Atlassian sales roles when any single one counted."""
+        self.assertIsNone(
+            self._tier("Solution Sales Executive, JSM",
+                       description="Drive adoption and governance against quarterly OKRs.",
+                       priority=True)[0])
+
+    def test_hard_exclusions_still_apply_to_a_priority_employer(self):
+        for title in ["Senior Software Engineer, Operations",
+                      "Staff Nurse, Clinical Operations"]:
+            self.assertIsNone(self._tier(title, priority=True)[0], title)
+
+    def test_priority_never_promotes_to_the_core_tier(self):
+        tier, _ = self._tier("Agentic Operations Consultant", priority=True)
+        self.assertNotEqual(tier, jm.TIER_CORE)
+
+    def test_flag_is_inert_for_a_profile_without_a_discovery_block(self):
+        # Adobe carries priority:true in companies.json, which Chad also fetches. His
+        # retrieval must be byte-for-byte what it was.
+        chad = load_real_profile("chad")
+        p = posting("Adobe", "1", "Director, Business Operations", location="Lehi, UT")
+        p["priority_employer"] = True
+        self.assertIsNone(jm.classify_match(p, chad)[0])
+
+    def test_source_rules_stamp_the_flag_and_the_note(self):
+        row = {"name": "ACo", "ats": "greenhouse", "slug": "a", "priority": True,
+               "note": "You have a referral here."}
+        out = jm._apply_source_rules(row, [posting("ACo", "1", "Director, Operations")])
+        self.assertTrue(out[0]["priority_employer"])
+        self.assertEqual(out[0]["priority_note"], "You have a referral here.")
+
+    def test_source_rules_do_not_stamp_an_unflagged_row(self):
+        row = {"name": "BCo", "ats": "greenhouse", "slug": "b"}
+        out = jm._apply_source_rules(row, [posting("BCo", "1", "Director, Operations")])
+        self.assertNotIn("priority_employer", out[0])
+
+    def test_exclude_titles_drops_property_operations_for_that_employer_only(self):
+        row = {"name": "Hotel Co", "ats": "oracle", "slug": "h",
+               "exclude_titles": ["housekeeping", "front desk"]}
+        rows = [posting("Hotel Co", "1", "Director of Housekeeping"),
+                posting("Hotel Co", "2", "Front Desk Manager"),
+                posting("Hotel Co", "3", "Director, Business Transformation")]
+        out = jm._apply_source_rules(row, rows)
+        self.assertEqual([p["title"] for p in out], ["Director, Business Transformation"])
+
+    def test_exclude_titles_is_word_boundary_aware(self):
+        # "rooms" must not swallow "Mushrooms" or, more to the point, "Boardrooms".
+        row = {"name": "Hotel Co", "ats": "oracle", "slug": "h", "exclude_titles": ["rooms"]}
+        out = jm._apply_source_rules(
+            row, [posting("Hotel Co", "1", "Director, Boardrooms Technology")])
+        self.assertEqual(len(out), 1)
+
+    def test_priority_flag_survives_into_the_lifecycle_record(self):
+        p = posting("Adobe", "1", "Director, Operations", location="Remote")
+        p.update({"priority_employer": True, "priority_note": "Referral here."})
+        db = {"version": lifecycle.DB_VERSION, "jobs": {}}
+        lifecycle.upsert(db, [p], "\u2b50 Priority employers", today="2026-08-25")
+        rec = list(db["jobs"].values())[0]
+        self.assertTrue(rec["priority_employer"])
+        self.assertEqual(rec["priority_note"], "Referral here.")
+        # It must NOT collide with lifecycle's own P1/P2/P3 urgency field.
+        self.assertIn(rec["priority"], (lifecycle.PRIORITY_P1, lifecycle.PRIORITY_P2,
+                                        lifecycle.PRIORITY_P3))
+
+
+class TestPriorityRegistry(unittest.TestCase):
+    """The committed registry is config, and config regressions are silent. These bind to
+    the shipped file so a typo in a Workday tenant or an Oracle org id fails a test rather
+    than a 6am cron."""
+
+    def setUp(self):
+        self.rows = json.load(open(os.path.join(HERE, "priority_companies.json")))["companies"]
+
+    def test_all_eight_named_employers_are_present(self):
+        names = {c["name"] for c in self.rows}
+        self.assertEqual(names, {"Adobe", "Salesforce", "Zillow Group", "Atlassian", "NPR",
+                                 "PBS", "Marriott International", "Hilton"})
+
+    def test_every_row_is_flagged_priority(self):
+        for c in self.rows:
+            self.assertTrue(c.get("priority"), c["name"])
+
+    def test_workday_rows_carry_host_and_site(self):
+        for c in self.rows:
+            if c["ats"] == "workday":
+                self.assertIn("wd_host", c, c["name"])
+                self.assertIn("site", c, c["name"])
+
+    def test_pbs_tenant_keeps_its_underscore(self):
+        # The host is vhr-pbs (hyphen) but the TENANT is vhr_pbs (underscore); the hyphen
+        # form 422s, and wd5 422s regardless of tenant. Probed 2026-08-25.
+        pbs = next(c for c in self.rows if c["name"] == "PBS")
+        self.assertEqual(pbs["slug"], "vhr_pbs")
+        self.assertEqual(pbs["wd_host"], "vhr-pbs.wd115.myworkdayjobs.com")
+
+    def test_hotel_rows_are_scoped_to_corporate_and_exclude_property_titles(self):
+        hilton = next(c for c in self.rows if c["name"] == "Hilton")
+        self.assertTrue(hilton["organizations"])          # the corporate org cut
+        marriott = next(c for c in self.rows if c["name"] == "Marriott International")
+        self.assertEqual(marriott["queries"][0]["filter"]["brand"], ["Corporate"])
+        for c in (hilton, marriott):
+            self.assertIn("housekeeping", c["exclude_titles"], c["name"])
+            self.assertTrue(jm._any_term("director of housekeeping", c["exclude_titles"]))
+            self.assertTrue(jm._any_term("front desk manager", c["exclude_titles"]))
+            # A corporate leadership title must survive the property filter.
+            self.assertFalse(jm._any_term("director, business transformation",
+                                          c["exclude_titles"]), c["name"])
+
+    def test_no_exclude_title_is_a_dead_stem(self):
+        """Matching is whole-word (\\bterm\\b), so a STEM can never fire: "housekeep" does
+        not match "Housekeeping". A dead term is invisible — the list looks like it is
+        filtering and silently is not. This is a real defect in the committed
+        profiles.json discovery.exclude_any list ("housekeep", "veterinar", "phlebotom",
+        "radiolog" are all dead there); it must not be reintroduced here."""
+        for c in self.rows:
+            for term in c.get("exclude_titles") or []:
+                self.assertTrue(jm._any_term(term, [term]),
+                                f"{c['name']}: {term!r} is a stem and matches nothing")
+
+    def test_adobe_does_not_search_lehi_in_both_registries(self):
+        """Adobe is in companies.json (Lehi) AND here. Repeating Lehi would score the same
+        Utah roles twice, once per lane snapshot."""
+        adobe = next(c for c in self.rows if c["name"] == "Adobe")
+        self.assertNotIn("Lehi", adobe["search_texts"])
+        local = json.load(open(os.path.join(HERE, "companies.json")))["companies"]
+        local_adobe = next(c for c in local if c["name"] == "Adobe")
+        self.assertEqual(local_adobe["search_text"], "Lehi")
+        self.assertTrue(local_adobe.get("priority"))
+
+
+class TestNewFetchers(unittest.TestCase):
+    """Offline shape tests for the three surfaces added for the priority employers. No
+    network: each injects a canned payload the way the rest of the suite does."""
+
+    def _canned(self, payload):
+        orig = jm._get
+        jm._get = lambda url: payload
+        return orig
+
+    def test_oracle_folds_work_arrangement_into_the_location(self):
+        """Oracle keeps the arrangement in its own field, never in the location string, so a
+        fully-remote role would otherwise read as onsite-at-HQ to the gates."""
+        payload = {"items": [{"TotalJobsCount": 1, "requisitionList": [
+            {"Id": "220550", "Title": "Director, Commercial Product",
+             "PostedDate": "2026-08-14", "PrimaryLocation": "McLean, VA, United States",
+             "PrimaryLocationCountry": "US", "WorkplaceType": "Remote",
+             "ShortDescriptionStr": "Own the operating model."}]}]}
+        orig = self._canned(payload)
+        try:
+            out = jm.fetch_oracle({"name": "Hilton", "ats": "oracle", "slug": "hilton",
+                                   "oracle_host": "h.example", "site": "CX_1"})
+        finally:
+            jm._get = orig
+        self.assertEqual(len(out), 1)
+        self.assertIn("(Remote)", out[0]["location"])
+        self.assertTrue(jm.is_us_remote(out[0]["location"]))
+        self.assertEqual(out[0]["posted"], "2026-08-14")
+        self.assertEqual(out[0]["key"], "Hilton::220550")
+
+    def test_oracle_drops_non_us_on_the_structured_country_code(self):
+        """The string gate cannot do this: INTERNATIONAL_MARKERS deliberately omits "Mexico"
+        (it collides with New Mexico), so "Chihuahua, CHH, Mexico (Remote)" reads as a
+        US-remote role. The feed states the country outright."""
+        payload = {"items": [{"TotalJobsCount": 1, "requisitionList": [
+            {"Id": "1", "Title": "Manager, Total Account Management",
+             "PrimaryLocation": "Chihuahua, CHH, Mexico", "PrimaryLocationCountry": "MX",
+             "WorkplaceType": "Remote", "PostedDate": "2026-08-19"}]}]}
+        orig = self._canned(payload)
+        try:
+            out = jm.fetch_oracle({"name": "Hilton", "ats": "oracle", "slug": "hilton",
+                                   "oracle_host": "h.example", "site": "CX_1"})
+        finally:
+            jm._get = orig
+        self.assertEqual(out, [])
+
+    def test_oracle_joins_multiple_organizations_with_a_semicolon(self):
+        # A comma silently keeps only the FIRST org, which reads as a working filter.
+        url = jm._oracle_url({"oracle_host": "h.example", "site": "CX_1",
+                              "organizations": [300000011653160, 1]}, 200, 0)
+        self.assertIn("selectedOrganizationsFacet=300000011653160;1", url)
+
+    def test_atlassian_leaves_posted_empty_rather_than_using_an_edit_timestamp(self):
+        """The feed carries only updatedDate. A two-year-old role re-touched yesterday would
+        read as posted yesterday — the exact "stale roles resurfacing as new" failure V3
+        exists to remove. Unknown dates are kept and labelled as first-seen."""
+        payload = [{"id": 25583, "title": "Program Manager, Enterprise",
+                    "locations": ["Seattle - United States", "Remote - Remote"],
+                    "applyUrl": "https://example.test/apply", "overview": "<p>Own it.</p>",
+                    "responsibilities": "Lead change management.", "qualifications": "",
+                    "portalJobPost": {"updatedDate": "2026-08-18 08:11 AM"}}]
+        orig = self._canned(payload)
+        try:
+            out = jm.fetch_atlassian({"name": "Atlassian", "ats": "atlassian",
+                                      "slug": "atlassian"})
+        finally:
+            jm._get = orig
+        self.assertEqual(out[0]["posted"], "")
+        self.assertTrue(jm._within_age(out[0]["posted"], 21))   # unknown dates are kept
+        self.assertIn("Seattle", out[0]["location"])
+        self.assertIn("change management", out[0]["description"])
+
+    def test_atlassian_location_is_condensed_but_keeps_the_country(self):
+        """Trimming to the city alone would turn "Bengaluru - India - ..." into "Bengaluru",
+        which names no international marker — and is_us_remote would then read an India-only
+        remote role as US-eligible."""
+        loc = jm._atlassian_location(["Bengaluru - India -   Bengaluru,  560071 India",
+                                      "Remote - India - Remote", "Remote - Remote"])
+        self.assertEqual(loc, "Bengaluru - India; Remote - India; Remote - Remote")
+        self.assertLess(len(loc), 80)
+        self.assertFalse(jm.is_us_remote(loc))
+        us = jm._atlassian_location(["Seattle - United States -   Seattle, WA 98104 "
+                                     "United States", "Remote - Remote"])
+        self.assertTrue(jm.is_us_remote(us))
+        self.assertTrue(jm.is_washington(us))
+
+    def test_atlassian_compensation_prose_is_not_passed_off_as_a_salary(self):
+        """`compensation` is pay-zone and benefits prose; only 1 of 248 live postings had a
+        parseable figure. Passing it through filled the digest's compensation slot with
+        boilerplate."""
+        payload = [{"id": 1, "title": "Program Manager", "locations": ["Remote - Remote"],
+                    "applyUrl": "https://example.test/a", "overview": "",
+                    "compensation": "<p>Please visit go.atlassian.com/payzones for more "
+                                    "information on our geographic pay zones.</p>"}]
+        orig = self._canned(payload)
+        try:
+            out = jm.fetch_atlassian({"name": "Atlassian", "ats": "atlassian",
+                                      "slug": "atlassian"})
+        finally:
+            jm._get = orig
+        self.assertIsNone(out[0]["salary"])
+
+    def test_atlassian_compensation_with_a_real_range_is_kept(self):
+        payload = [{"id": 2, "title": "Program Manager", "locations": ["Remote - Remote"],
+                    "applyUrl": "https://example.test/b", "overview": "",
+                    "compensation": "<p>Zone A: $130,000 - $175,000</p>"}]
+        orig = self._canned(payload)
+        try:
+            out = jm.fetch_atlassian({"name": "Atlassian", "ats": "atlassian",
+                                      "slug": "atlassian"})
+        finally:
+            jm._get = orig
+        self.assertIn("130,000", out[0]["salary"])
+
+    def test_paradox_query_string_shape(self):
+        qs = jm._paradox_query({"filter": {"brand": ["Corporate"], "is_remote": ["true"]}}, 3)
+        self.assertIn("filter%5Bbrand%5D%5B0%5D=Corporate", qs)
+        self.assertIn("filter%5Bis_remote%5D%5B0%5D=true", qs)
+        self.assertIn("page_number=3", qs)
+        # page_size is clamped to 10 server-side, so max_pages is the real budget.
+        self.assertIn(f"page_size={jm._PARADOX_PAGE}", qs)
+
+    def test_paradox_salary_is_read_from_the_custom_title_field(self):
+        j = {"customFields": [{"cfKey": "cf_titleinfo",
+                               "value": "New York, NY Pay Range: $111,000-$162,300 annually"}]}
+        self.assertIsNotNone(jm._paradox_salary(j))
+
+    def test_paradox_salary_absent_is_none(self):
+        self.assertIsNone(jm._paradox_salary({"customFields": [{"value": "Management"}]}))
+
+
+class TestWorkdayMultiSearch(unittest.TestCase):
+    """Salesforce is 1,530 roles globally and Workday silently caps `limit` at 20, so a big
+    tenant has to be scoped server-side — and one term cannot express "remote OR Bellevue OR
+    Seattle"."""
+
+    def _fake_workday(self, pages_by_term):
+        calls = []
+
+        def fake_post(url, payload):
+            term = payload["searchText"]
+            calls.append((term, payload["offset"]))
+            rows = pages_by_term.get(term, [])
+            page = rows[payload["offset"]:payload["offset"] + 20]
+            return {"total": len(rows), "jobPostings": page}
+        return fake_post, calls
+
+    def _row(self, req, title):
+        return {"title": title, "externalPath": f"/job/{req}", "locationsText": "Remote",
+                "postedOn": "Posted Today", "bulletFields": [req]}
+
+    def test_search_texts_are_unioned_and_deduplicated(self):
+        shared = self._row("JR1", "Director, Operations")
+        fake, calls = self._fake_workday({"Remote": [shared],
+                                          "Seattle": [shared, self._row("JR2", "Lead, CX")]})
+        orig = jm._post_json
+        jm._post_json = fake
+        try:
+            out = jm.fetch_workday({"name": "ACo", "ats": "workday", "slug": "a",
+                                    "wd_host": "h.example", "site": "S",
+                                    "search_texts": ["Remote", "Seattle"]})
+        finally:
+            jm._post_json = orig
+        self.assertEqual([p["key"] for p in out], ["ACo::JR1", "ACo::JR2"])
+        self.assertEqual({t for t, _ in calls}, {"Remote", "Seattle"})
+
+    def test_single_search_text_still_works_unchanged(self):
+        fake, calls = self._fake_workday({"Lehi": [self._row("JR9", "Deal Desk Analyst")]})
+        orig = jm._post_json
+        jm._post_json = fake
+        try:
+            out = jm.fetch_workday({"name": "Adobe", "ats": "workday", "slug": "adobe",
+                                    "wd_host": "h.example", "site": "S",
+                                    "search_text": "Lehi"})
+        finally:
+            jm._post_json = orig
+        self.assertEqual(len(out), 1)
+        self.assertEqual({t for t, _ in calls}, {"Lehi"})
+
+    def test_no_search_text_pages_the_whole_tenant(self):
+        fake, calls = self._fake_workday({"": [self._row(f"JR{i}", "Role") for i in range(25)]})
+        orig = jm._post_json
+        jm._post_json = fake
+        try:
+            out = jm.fetch_workday({"name": "Zillow Group", "ats": "workday",
+                                    "slug": "zillow", "wd_host": "h.example", "site": "S"})
+        finally:
+            jm._post_json = orig
+        self.assertEqual(len(out), 25)
+        self.assertEqual(sorted(o for _, o in calls), [0, 20])
 
 
 if __name__ == "__main__":

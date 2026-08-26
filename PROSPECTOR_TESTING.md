@@ -17,7 +17,8 @@ cd ~/Documents/git-hub/prospector
 | File | What it does |
 |---|---|
 | `feedback_lisa.json` | Tells Prospector which roles to stop showing, and which you applied to |
-| `settings.json` | Run-wide switches (age window, whether AI scoring is on) |
+| `settings.json` | Run-wide switches (age window, whether AI scoring is on, whether email is sent at all) |
+| `profiles.json` | One line per person — including `email`, which pauses just that person's daily email |
 
 Everything else is either generated or is code. You should not need to edit Python.
 
@@ -212,6 +213,61 @@ Open the **Run prospector** step and look for:
 
 ---
 
+## 4b. Pausing (and resuming) one person's daily email
+
+**Chad's email is currently PAUSED. Lisa's is on.**
+
+To change it, open `profiles.json`, find the person, and set:
+
+```json
+"email": false     // paused — no daily email
+"email": true      // on — daily email as usual
+```
+
+Check it took effect:
+
+```bash
+python3 jobmonitor.py --list
+#   [on ] [EMAIL PAUSED] chad     Chad — Software / Frontend / Microservices
+#   [on ] [email on ]    lisa     Lisa — Transformation / Operations / Experience Leadership
+```
+
+To silence **everyone** at once, set `"email": { "enabled": false }` in `settings.json`
+instead. That is the master switch; the per-person setting sits underneath it.
+
+### What pausing does and does not do
+
+A paused person's search **keeps running every morning.** Prospector still checks every
+company, still works out what is new, and still writes their report into the repo — you can
+open `report_chad.html` any day you feel like looking. The only thing that stops is the
+email landing in the inbox.
+
+That is on purpose, and it is why you should **not** use `"enabled": false` to pause
+someone. `enabled: false` stops the work entirely, which freezes their snapshot on the day
+it stopped. Switch it back on three months later and Prospector compares today against a
+three-month-old picture, so the first email is a giant dump of everything that happened in
+between. With `email: false`, you flip it back to `true` and the next morning's email is an
+ordinary one-day list.
+
+### Does pausing save money?
+
+**Not on its own.** The only thing in Prospector that costs money is the AI fit scoring, and
+Chad's profile already had scoring turned off (`"fit_scoring": false`), so his daily run
+costs nothing to begin with. Pausing his email saves inbox noise, not dollars.
+
+The AI spend is entirely Lisa's scoring. The knobs for that, cheapest first, are in
+`settings.json`:
+
+| Knob | Effect |
+|---|---|
+| `discovery.max_new_scored_per_run` | Hard ceiling on how many NEW roles get scored per day. Roles over the cap are kept and scored the next day — nothing is lost. Lower it to spend less per day. |
+| `fit_scoring_enabled: false` | Stops **all** AI scoring. Reports still arrive, just unranked. |
+
+Changing `FIT_MODEL` in `jobmonitor.py` to a cheaper model is the other lever, but that one
+is code, so ask before touching it.
+
+---
+
 ## 5. Reading the weekly audit
 
 ```bash
@@ -296,7 +352,7 @@ git diff v1-pre-v2 --stat
 python3 test_jobmonitor.py                      # run the tests
 python3 jobmonitor.py --dry-run --fake-fit      # safe sample report, no cost
 open .dryrun/report_lisa.html                   # look at it
-python3 jobmonitor.py --list                    # list profiles
+python3 jobmonitor.py --list                    # list profiles + who is getting email
 python3 audit.py                                # regenerate the audit now
 git diff v1-pre-v2 --stat                       # what changed since V1
 ```
