@@ -1,5 +1,44 @@
 [
  {
+  "key": "Aquent::212538",
+  "company": "Aquent",
+  "title": "Digital Project Manager",
+  "location": "New York, NY, US (Remote)",
+  "url": "https://aquent.com/find-work/212538",
+  "posted": "2026-08-25",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Part-time tactical PM work, not strategic",
+    "Remote is practically fine",
+    "Below her seniority and mandate level"
+   ],
+   "concerns": [
+    "Very narrow creative-ops scope",
+    "Part-time 20hrs/week low value",
+    "No transformation or strategic ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Part-time tactical PM work, not strategic",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Aquent::212357",
   "company": "Aquent",
   "title": "Creative Project Manager",
@@ -12,30 +51,29 @@
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Remote contract role via staffing firm",
-    "Operational/process structure aligns with her strengths",
-    "Below her strategic/transformation scope",
-    "AI tool adoption angle mentioned"
+    "Tactical creative project management, not strategic transformation",
+    "Remote but staffing contract, execution-focused role",
+    "Below her strategic/operating scope"
    ],
    "concerns": [
-    "Tactical creative-ops PM, not strategic transformation",
-    "Contract via staffing agency, lower seniority mandate"
+    "Lacks strategic ownership or transformation mandate",
+    "Title and scope skew operational/tactical, not leadership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 65,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote contract role via staffing firm",
-   "bg": "1451cb4bda95"
+   "qualification_fit": 45,
+   "interest_fit": 30,
+   "practical_fit": 40,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Tactical creative project management, not strategic transformation",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -54,28 +92,28 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "AI-driven workflow transformation mandate",
-    "Direct COO strategic partner scope",
-    "Change management and adoption responsibility",
-    "Remote contract role via staffing firm"
+    "Operational transformation and AI enablement mandate",
+    "Process automation and change management scope",
+    "Remote contract role via staffing firm",
+    "COO-facing strategic delivery partner"
    ],
    "concerns": [
-    "Associate-level title suggests junior scope/pay",
-    "Contract role via staffing agency, not permanent",
-    "Heavy hands-on technical AI build expectation"
+    "Associate-level title suggests junior scope",
+    "Contract/temp via staffing agency",
+    "Hands-on AI build work beyond her core strengths"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 78,
+   "qualification_fit": 60,
+   "interest_fit": 65,
    "practical_fit": 55,
-   "opportunity_score": 62,
-   "score": 62,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "reason": "AI-driven workflow transformation mandate",
-   "bg": "1451cb4bda95"
+   "reason": "Operational transformation and AI enablement mandate",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -94,28 +132,28 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "AI adoption/enablement mandate matches interests",
-    "Remote contract fits practical constraints",
-    "Cross-functional strategic initiative leadership",
-    "Staffing-firm contract useful for income"
+    "AI transformation initiative with real strategic scope",
+    "Contract PM work fits explicit employment flexibility",
+    "Remote listed but tied to Chicago-based org",
+    "Cross-functional leadership supporting AI adoption"
    ],
    "concerns": [
-    "Generic PM title, may lack strategic seniority",
-    "Contract via staffing firm, limited longevity",
-    "Unclear executive-facing scope"
+    "Vague employer identity, generic staffing posting",
+    "Remote status unclear vs Chicago base",
+    "Likely tactical PM tracking, not strategic ownership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 70,
-   "practical_fit": 70,
-   "opportunity_score": 60,
-   "score": 60,
+   "qualification_fit": 70,
+   "interest_fit": 65,
+   "practical_fit": 55,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "reason": "AI adoption/enablement mandate matches interests",
-   "bg": "1451cb4bda95"
+   "reason": "AI transformation initiative with real strategic scope",
+   "bg": "d192ce659668"
   },
   "rescued": true
  },
@@ -132,107 +170,70 @@
   "tier": "discovery",
   "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "AI enablement program leadership mandate",
-    "US-remote contract role",
-    "Strategy-to-execution translation fits positioning",
-    "Cross-functional coordination and roadmap ownership"
-   ],
-   "concerns": [
-    "Staffing firm contract, likely temporary",
-    "Scope/seniority unclear beyond PM title"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 82,
-   "practical_fit": 65,
-   "opportunity_score": 72,
-   "score": 72,
-   "fit": "yes",
-   "reason": "AI enablement program leadership mandate",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Aquent::211898",
-  "company": "Aquent",
-  "title": "Business Program Manager",
-  "location": "REDMOND, WA, US (Remote)",
-  "url": "https://aquent.com/find-work/211898",
-  "posted": "2026-07-28",
-  "salary": "up to $67.00/hr",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Executive-facing operations/program leadership",
-    "Strategic initiatives and OKR ownership",
-    "Remote contract fits practical constraints",
-    "Rhythm-of-business/chief-of-staff-like mandate"
+    "AI enablement program leadership mandate",
+    "Enterprise-wide AI transformation scope",
+    "Roadmap and workstream ownership",
+    "Remote contract role",
+    "Matches transformation/PMO strengths"
    ],
    "concerns": [
-    "Contract role via staffing firm",
-    "May be more coordination than strategy ownership"
+    "Contract via staffing firm, not permanent",
+    "Financial services domain unspecified fit",
+    "Austin-based client, remote unclear duration"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 65,
-   "practical_fit": 70,
-   "opportunity_score": 65,
-   "score": 65,
+   "qualification_fit": 80,
+   "interest_fit": 85,
+   "practical_fit": 65,
+   "opportunity_score": 72,
+   "score": 72,
    "fit": "maybe",
-   "reason": "Executive-facing operations/program leadership",
-   "bg": "1451cb4bda95"
-  },
-  "rescued": true
+   "reason": "AI enablement program leadership mandate",
+   "bg": "d192ce659668"
+  }
  },
  {
-  "key": "Aquent::212440",
+  "key": "Aquent::212450",
   "company": "Aquent",
-  "title": "Search Performance Manager",
-  "location": "Hoboken, NJ, US (Remote)",
-  "url": "https://aquent.com/find-work/212440",
+  "title": "Business Program Manager (Junior II)",
+  "location": "San Francisco, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/212450",
   "posted": "2026-08-20",
-  "salary": null,
+  "salary": "up to $58.31/hr",
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'performance' + seniority in title",
+  "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "SEM campaign optimization, not transformation/ops leadership",
-    "Individual contributor tactical ad-ops role"
+    "Junior-level, administrative compliance tracking, not strategic",
+    "No real ownership or transformation scope",
+    "Below her seniority and skill level"
    ],
    "concerns": [
-    "Wrong function - digital marketing execution not strategy",
-    "No org/transformation scope"
+    "Junior title matches junior actual scope, not misleading",
+    "Not a career-advancing move"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "score": 15,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "SEM campaign optimization, not transformation/ops leadership",
-   "bg": "1451cb4bda95"
+   "reason": "Junior-level, administrative compliance tracking, not strategic",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -252,26 +253,25 @@
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Coordinator-level, low ownership/strategic scope",
-    "Contract staffing role via Aquent",
-    "Not aligned with Director-level transformation mandate"
+    "Coordinator-level, no real ownership or strategic scope",
+    "Remote but likely Apple via staffing firm, low seniority"
    ],
    "concerns": [
-    "Title and duties are tactical/administrative not strategic",
-    "Likely below her seniority and compensation expectations"
+    "Below her seniority stance despite framing",
+    "Contract coordinator work, not leadership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 45,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
-   "reason": "Coordinator-level, low ownership/strategic scope",
-   "bg": "1451cb4bda95"
+   "reason": "Coordinator-level, no real ownership or strategic scope",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -287,31 +287,31 @@
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "AI adoption/governance mandate matches interests",
-    "Change management and rollout ownership",
-    "Contract work fits practical constraints",
-    "Bridges business and technical teams"
+    "AI adoption/enablement mandate in customer ops",
+    "Cross-functional bridge role fits transformation background",
+    "Remote contract fits employment flexibility",
+    "Product Owner title is a narrower IC scope than typical fit"
    ],
    "concerns": [
-    "Hybrid onsite NYC, not Utah/remote",
-    "Product Owner/Agile PM skew, not strategic transformation",
-    "Staffing firm contract, likely lower ownership scope"
+    "Heavily tactical Agile/PO duties vs strategic leadership",
+    "Contract/temporary via staffing firm",
+    "Utility industry unfamiliar domain"
    ],
-   "relocation_required": true,
+   "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 68,
-   "practical_fit": 40,
+   "qualification_fit": 55,
+   "interest_fit": 65,
+   "practical_fit": 55,
    "opportunity_score": 55,
    "score": 55,
    "fit": "maybe",
-   "reason": "AI adoption/governance mandate matches interests",
-   "bg": "1451cb4bda95"
+   "reason": "AI adoption/enablement mandate in customer ops",
+   "bg": "d192ce659668"
   },
   "rescued": true
  },
@@ -331,27 +331,28 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Ops process design/optimization matches core skills",
-    "Remote contract fits practical constraints",
-    "CX ownership aligns with interests",
-    "Staffing-firm contract useful for income"
+    "Operational excellence and process design mandate",
+    "Customer experience ownership at scale",
+    "Remote contract role",
+    "Aquent staffing for likely major tech client"
    ],
    "concerns": [
-    "Contract via staffing agency, likely lower pay",
-    "Title/level below usual target seniority"
+    "Contract/temporary via staffing agency",
+    "Unclear seniority/scope, company anonymized",
+    "Manager-level title may cap strategic influence"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 80,
-   "interest_fit": 70,
-   "practical_fit": 75,
-   "opportunity_score": 68,
-   "score": 68,
+   "qualification_fit": 78,
+   "interest_fit": 68,
+   "practical_fit": 70,
+   "opportunity_score": 66,
+   "score": 66,
    "fit": "maybe",
-   "reason": "Ops process design/optimization matches core skills",
-   "bg": "1451cb4bda95"
+   "reason": "Operational excellence and process design mandate",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -367,31 +368,29 @@
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Program/project leadership fits generalist ops skills",
-    "Remote contract role usable for income",
-    "Content/agency vendor management overlaps experience",
-    "Pharma HCP domain is unfamiliar specialization"
+    "Project coordination role, narrow pharma marketing scope",
+    "Remote but staffing-firm contract, low strategic scope",
+    "Not aligned to transformation/ops leadership goals"
    ],
    "concerns": [
-    "Highly specialized pharma regulatory/medical domain",
-    "Contract staffing role, limited strategic scope",
-    "Not aligned with transformation/M&A focus"
+    "Highly specialized pharma/medical education domain",
+    "Lacks executive or transformation mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
+   "qualification_fit": 35,
+   "interest_fit": 25,
    "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Program/project leadership fits generalist ops skills",
-   "bg": "1451cb4bda95"
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Project coordination role, narrow pharma marketing scope",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -410,28 +409,28 @@
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Program leadership + change management overlap",
-    "Governance/adoption strategy resembles her transformation work",
-    "Remote contract via staffing firm",
-    "Narrow tool-specific scope (Figma) limits strategic breadth"
+    "Program lead + change management + adoption strategy aligns with skills",
+    "Remote work listed, though onsite-adjacent Cupertino base",
+    "Contract role fits stated openness to contract work",
+    "Design tool migration is niche, not core transformation domain"
    ],
    "concerns": [
-    "Highly tool-specific, not organizational transformation",
-    "Staffing agency contract, likely lower seniority/pay",
-    "Limited executive-facing scope"
+    "Highly tool-specific (Figma) scope narrower than her strategic mandate",
+    "Staffing firm contract role, likely limited strategic influence",
+    "Unclear duration/compensation details"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
+   "qualification_fit": 45,
    "interest_fit": 45,
    "practical_fit": 55,
    "opportunity_score": 40,
    "score": 40,
    "fit": "maybe",
-   "reason": "Program leadership + change management overlap",
-   "bg": "1451cb4bda95"
+   "reason": "Program lead + change management + adoption strategy aligns with skills",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -450,64 +449,27 @@
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Creative production PM, not transformation/ops strategy",
-    "Narrow packaging creative workflow scope",
-    "Below her strategic leadership positioning"
+    "Creative production management, not strategic transformation",
+    "Remote but NY-based staffing contract",
+    "Packaging/creative ops is adjacent but narrow scope"
    ],
    "concerns": [
-    "Tactical creative-ops role, not executive scope",
-    "Contract staffing role via Aquent"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 45,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Creative production PM, not transformation/ops strategy",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Aquent::212287",
-  "company": "Aquent",
-  "title": "Project Manager - Pharma",
-  "location": "Philadelphia, PA, US (Remote)",
-  "url": "https://aquent.com/find-work/212287",
-  "posted": "2026-08-13",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote, contract fits practical constraints",
-    "PM title but tactical content-ops mandate",
-    "Lacks transformation/strategy scope"
-   ],
-   "concerns": [
-    "Narrow pharma content-production role, not strategic",
-    "Below her operating level, execution-only"
+    "Below her strategic/transformation mandate level",
+    "Hands-on creative production, not org strategy",
+    "Contract role via staffing agency"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 45,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
+   "interest_fit": 40,
+   "practical_fit": 35,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
-   "reason": "Remote, contract fits practical constraints",
-   "bg": "1451cb4bda95"
+   "reason": "Creative production management, not strategic transformation",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -526,26 +488,26 @@
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Program manager title but deeply technical network infra scope",
-    "Not aligned with transformation/org strategy focus",
-    "Contract staffing role, low strategic ownership"
+    "Program manager title but pure network infrastructure deployment",
+    "Not org strategy, transformation, or CX work",
+    "Washington State location acceptable practically"
    ],
    "concerns": [
-    "Highly technical telecom/cabling domain mismatch",
-    "No executive or transformation scope"
+    "Technical low-voltage cabling/network deployment focus",
+    "No strategic or transformation scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 60,
-   "opportunity_score": 25,
-   "score": 25,
+   "qualification_fit": 25,
+   "interest_fit": 15,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "reason": "Program manager title but deeply technical network infra scope",
-   "bg": "1451cb4bda95"
+   "reason": "Program manager title but pure network infrastructure deployment",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -564,27 +526,26 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "CX project management aligns with experience domain",
-    "Remote contract role fits practical constraints",
-    "Cross-functional stakeholder coordination matches skillset"
+    "CX project leadership matches core domain",
+    "Remote contract role, staffing firm",
+    "Cross-functional coordination and stakeholder bridging fit"
    ],
    "concerns": [
-    "Contract/temp staffing role, limited strategic scope",
-    "PM-level not director-level ownership",
-    "Vague client identity, unclear mandate depth"
+    "Contract via staffing firm, not permanent",
+    "Title suggests more tactical PM than strategic ownership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
-   "practical_fit": 55,
-   "opportunity_score": 50,
-   "score": 50,
+   "qualification_fit": 75,
+   "interest_fit": 65,
+   "practical_fit": 70,
+   "opportunity_score": 60,
+   "score": 60,
    "fit": "maybe",
-   "reason": "CX project management aligns with experience domain",
-   "bg": "1451cb4bda95"
+   "reason": "CX project leadership matches core domain",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -603,28 +564,28 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "PM/governance/operations leadership mandate",
-    "Cross-functional, executive-facing scope",
-    "Remote, contract role fits practical constraints",
-    "Staffing firm placement, likely time-limited"
+    "Remote contract PM role with governance and cross-functional scope",
+    "Executive-facing stakeholder engagement",
+    "Program/PMO leadership aligns with core skills",
+    "Contract work explicitly acceptable for income/experience"
    ],
    "concerns": [
-    "Contract via staffing firm, less strategic ownership",
-    "Defense/aerospace domain unfamiliar",
-    "Not core transformation/M&A work"
+    "Staffing firm contract, not permanent leadership",
+    "Communications-specific focus narrower than transformation mandate",
+    "Defense/aerospace domain unfamiliar"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 60,
-   "practical_fit": 75,
-   "opportunity_score": 62,
-   "score": 62,
+   "qualification_fit": 72,
+   "interest_fit": 58,
+   "practical_fit": 70,
+   "opportunity_score": 58,
+   "score": 58,
    "fit": "maybe",
-   "reason": "PM/governance/operations leadership mandate",
-   "bg": "1451cb4bda95"
+   "reason": "Remote contract PM role with governance and cross-functional scope",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -643,28 +604,28 @@
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "AI enablement + transformation mandate",
-    "Remote contract role fits practical constraints",
-    "Financial services enterprise scope",
-    "Bridges creative/tech/business - operating model work"
+    "AI enablement + transformation mandate matches core interests",
+    "Remote role reduces relocation concern",
+    "Operational excellence framing aligns with her positioning",
+    "Financial services client suggests scale and structure"
    ],
    "concerns": [
-    "Creative production domain is outside core expertise",
-    "Contract via staffing firm, uncertain duration",
-    "Unclear seniority/scope beyond description cutoff"
+    "Creative production domain is more specialized than her core background",
+    "Contract/staffing role via Aquent, uncertain duration",
+    "Unclear seniority/ownership level from description"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 68,
+   "qualification_fit": 65,
+   "interest_fit": 75,
    "practical_fit": 65,
-   "opportunity_score": 58,
-   "score": 58,
+   "opportunity_score": 62,
+   "score": 62,
    "fit": "maybe",
-   "reason": "AI enablement + transformation mandate",
-   "bg": "1451cb4bda95"
+   "reason": "AI enablement + transformation mandate matches core interests",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -683,28 +644,28 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "OCM/comms support role, contract via staffing firm",
-    "Remote, aligns with practical constraints",
-    "Change management overlaps core domain",
-    "But execution-level, not leadership/strategic ownership"
+    "OCM/comms specialist role, contract via staffing firm",
+    "Remote-eligible, WA location acceptable",
+    "Change management is core strength but role is tactical/IC-level",
+    "Could provide income and Washington state foothold"
    ],
    "concerns": [
-    "Specialist-level, limited strategic scope",
-    "Contract role via Aquent, likely lower comp",
-    "Not a leadership mandate"
+    "Below her strategic leadership level",
+    "Contract staffing role, limited scope/authority",
+    "Heavy content/comms production focus vs strategic ownership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 60,
+   "qualification_fit": 65,
    "interest_fit": 55,
-   "practical_fit": 60,
-   "opportunity_score": 45,
-   "score": 45,
+   "practical_fit": 70,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "reason": "OCM/comms support role, contract via staffing firm",
-   "bg": "1451cb4bda95"
+   "reason": "OCM/comms specialist role, contract via staffing firm",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -720,67 +681,31 @@
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "not_recommended",
+   "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Program/project management adjacent but licensing-specific",
-    "Not transformation, ops, or org strategy mandate",
-    "Remote practical fit is decent"
+    "Program/PM leadership overlaps skills",
+    "Washington State location acceptable per preference",
+    "Contract role fits stated openness",
+    "Licensing domain not core interest area"
    ],
    "concerns": [
-    "Niche licensing domain outside core expertise",
-    "Contract staffing role with narrow scope"
+    "Niche licensing domain, not transformation/strategy",
+    "Unclear seniority or strategic scope",
+    "Contract staffing firm role"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Program/project management adjacent but licensing-specific",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Aquent::212168",
-  "company": "Aquent",
-  "title": "SEO/GEO Manager- BEAUTY",
-  "location": "New York City, NY, US (Remote)",
-  "url": "https://aquent.com/find-work/212168",
-  "posted": "2026-08-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "SEO/GEO is adjacent but too specialized/technical",
-    "Contract remote role, not strategic transformation",
-    "Doesn't match core transformation/ops mandate"
-   ],
-   "concerns": [
-    "Highly specialized SEO/AI-search technical role",
-    "Not aligned with executive transformation goals"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
+   "qualification_fit": 45,
    "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "SEO/GEO is adjacent but too specialized/technical",
-   "bg": "1451cb4bda95"
+   "practical_fit": 60,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Program/PM leadership overlaps skills",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -797,27 +722,28 @@
   "match_reason": "role family 'planning' + mandate in description (operational excellence, customer experience)",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "high",
+   "confidence": "medium",
    "reasons": [
-    "Tactical merchandise analyst role, not strategic",
-    "Wrong function: hands-on retail planning/allocation"
+    "Tactical merchandise allocation, not strategic transformation",
+    "Analyst-level execution work below her scope",
+    "Onsite/hybrid Ohio location, not remote as claimed"
    ],
    "concerns": [
-    "No leadership or transformation scope",
-    "Below candidate's seniority and domain fit"
+    "Wrong function - retail inventory analytics",
+    "No strategic ownership or transformation mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "score": 15,
+   "interest_fit": 20,
+   "practical_fit": 35,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "reason": "Tactical merchandise analyst role, not strategic",
-   "bg": "1451cb4bda95"
+   "reason": "Tactical merchandise allocation, not strategic transformation",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -836,26 +762,26 @@
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Highly technical engineering-focused TPM role",
-    "Requires software architecture depth she lacks",
-    "Remote contract via staffing firm"
+    "Deeply technical software engineering PM role",
+    "Requires hands-on architecture/engineering expertise she lacks",
+    "Not aligned with transformation/ops strategy focus"
    ],
    "concerns": [
-    "Mismatch: needs hands-on engineering background",
-    "Not aligned with transformation/org strategy focus"
+    "Highly technical software delivery focus mismatched to profile",
+    "Contract staffing role, generic mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 30,
+   "qualification_fit": 25,
+   "interest_fit": 25,
    "practical_fit": 45,
-   "opportunity_score": 30,
-   "score": 30,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Highly technical engineering-focused TPM role",
-   "bg": "1451cb4bda95"
+   "reason": "Deeply technical software engineering PM role",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -874,62 +800,25 @@
    "recommendation": "not_recommended",
    "confidence": "high",
    "reasons": [
-    "Hands-on data engineering role, not strategic ops"
+    "Hands-on tagging/analytics IC work, not her domain",
+    "No strategic or transformation mandate present"
    ],
    "concerns": [
-    "Requires deep SQL/Python engineering skills",
-    "No leadership or transformation scope"
+    "Wrong function: technical web analytics execution",
+    "Part-time contract with unclear conversion terms"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "score": 15,
+   "interest_fit": 10,
+   "practical_fit": 30,
+   "opportunity_score": 12,
+   "score": 12,
    "fit": "no",
-   "reason": "Hands-on data engineering role, not strategic ops",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Aquent::211904",
-  "company": "Aquent",
-  "title": "Technical Program Manager",
-  "location": "REDMOND, WA, US (Remote)",
-  "url": "https://aquent.com/find-work/211904",
-  "posted": "2026-07-28",
-  "salary": "up to $47/hr",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Technical content/repo management, not strategic PM",
-    "Requires hands-on technical/developer skills",
-    "Contract role via staffing firm"
-   ],
-   "concerns": [
-    "Wrong function - technical community management not transformation",
-    "No strategic ownership or org-level scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Technical content/repo management, not strategic PM",
-   "bg": "1451cb4bda95"
+   "reason": "Hands-on tagging/analytics IC work, not her domain",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -945,17 +834,17 @@
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Remote contract PM work for income",
-    "Tactical IT/infosec PM, not transformation-scope",
-    "W2 hourly rate, no strategic ownership"
+    "Remote contract PM role",
+    "Technical infra/security PM not her domain",
+    "Lacks strategic transformation mandate"
    ],
    "concerns": [
-    "Highly technical infrastructure/security domain mismatch",
-    "Low strategic scope vs her positioning",
-    "Hourly contract rate modest"
+    "Requires deep IT infrastructure/security technical expertise",
+    "Low pay rate for her level",
+    "Narrow tactical PM scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -966,9 +855,9 @@
    "practical_fit": 55,
    "opportunity_score": 30,
    "score": 30,
-   "fit": "maybe",
-   "reason": "Remote contract PM work for income",
-   "bg": "1451cb4bda95"
+   "fit": "no",
+   "reason": "Remote contract PM role",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -987,27 +876,28 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Remote contract, decent rate",
-    "Governance/documentation leadership tangential to core strategy work",
-    "Risk/compliance documentation is narrow mandate"
+    "Remote contract, governance/documentation leadership",
+    "Some overlap with operational excellence",
+    "Team lead role narrower than usual scope",
+    "Could provide income/experience"
    ],
    "concerns": [
-    "Not transformation or strategic scope",
-    "Technical writing team lead is niche",
-    "Limited growth or executive exposure"
+    "Narrow documentation-writer team leadership",
+    "Not strategic transformation scope",
+    "Contract-only, staffing firm role"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 45,
-   "interest_fit": 35,
+   "interest_fit": 40,
    "practical_fit": 65,
-   "opportunity_score": 35,
-   "score": 35,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "maybe",
-   "reason": "Remote contract, decent rate",
-   "bg": "1451cb4bda95"
+   "reason": "Remote contract, governance/documentation leadership",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1023,30 +913,30 @@
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Portfolio/operating model design matches operating model expertise",
-    "Strategic planning & governance mandate",
-    "Remote W2 contract fits practical constraints",
-    "Cross-functional operational excellence focus"
+    "Portfolio/operating model design matches strategy background",
+    "Remote contract fits stated flexibility",
+    "Operational excellence and governance focus align",
+    "W2 contract, decent hourly rate"
    ],
    "concerns": [
-    "Contract via staffing firm, not permanent",
-    "Product Manager title may undersell scope"
+    "Contract/temporary via staffing firm, not permanent",
+    "Product Manager title may undersell strategic scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 80,
-   "interest_fit": 78,
-   "practical_fit": 80,
-   "opportunity_score": 76,
-   "score": 76,
-   "fit": "yes",
-   "reason": "Portfolio/operating model design matches operating model expertise",
-   "bg": "1451cb4bda95"
+   "qualification_fit": 75,
+   "interest_fit": 70,
+   "practical_fit": 65,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "maybe",
+   "reason": "Portfolio/operating model design matches strategy background",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1065,65 +955,26 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Program governance, KPIs, executive reporting mandate",
+    "Program governance, executive reporting, value realization align with skills",
     "Remote contract fits practical constraints",
-    "Value realization and stakeholder alignment align with skills"
+    "Security-specific domain is not core expertise"
    ],
    "concerns": [
-    "Security-specific technical domain not her background",
-    "Contract staffing role, not permanent leadership"
+    "Requires cybersecurity technical background",
+    "Contract staffing role, not long-term strategic ownership"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 60,
+   "qualification_fit": 55,
    "interest_fit": 55,
-   "practical_fit": 75,
-   "opportunity_score": 55,
-   "score": 55,
+   "practical_fit": 70,
+   "opportunity_score": 50,
+   "score": 50,
    "fit": "maybe",
-   "reason": "Program governance, KPIs, executive reporting mandate",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Eliassen::cb2417c1-9b38-11f1-a3dc-024201c20d84",
-  "company": "Eliassen",
-  "title": "Team Operations Integration Lead",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/LC4xjW/team-operations-integration-lead-programproject-management-anywhere-a1wuq000001q2et2ai",
-  "posted": "2026-08-18",
-  "salary": "$75.00 to $85.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Operating model design and enterprise transformation mandate",
-    "Change leadership without authority matches positioning",
-    "US-remote practical fit",
-    "Contract-to-hire fits open employment types"
-   ],
-   "concerns": [
-    "Heavy agile/scrum framing narrower than her core focus",
-    "Contract-to-hire uncertainty on permanence"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 80,
-   "practical_fit": 60,
-   "opportunity_score": 70,
-   "score": 70,
-   "fit": "yes",
-   "reason": "Operating model design and enterprise transformation mandate",
-   "bg": "1451cb4bda95"
+   "reason": "Program governance, executive reporting, value realization align with skills",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1142,11 +993,12 @@
    "recommendation": "not_recommended",
    "confidence": "high",
    "reasons": [
-    "Regulatory affairs/eCTD submissions specialist role, not transformation or ops leadership"
+    "Highly specialized regulatory affairs/eCTD domain, not her field",
+    "No transformation, ops strategy or org design mandate"
    ],
    "concerns": [
-    "Requires deep regulatory/eCTD domain expertise candidate lacks",
-    "Not aligned to core transformation/strategy interests"
+    "Wrong function - regulatory submissions expertise required",
+    "Contract W2 role outside core competencies"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -1154,12 +1006,52 @@
    "valid": true,
    "qualification_fit": 15,
    "interest_fit": 15,
-   "practical_fit": 55,
+   "practical_fit": 40,
    "opportunity_score": 15,
    "score": 15,
    "fit": "no",
-   "reason": "Regulatory affairs/eCTD submissions specialist role, not transformation or ops leadership",
-   "bg": "1451cb4bda95"
+   "reason": "Highly specialized regulatory affairs/eCTD domain, not her field",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Eliassen::cb2417c1-9b38-11f1-a3dc-024201c20d84",
+  "company": "Eliassen",
+  "title": "Team Operations Integration Lead",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/LC4xjW/team-operations-integration-lead-programproject-management-anywhere-a1wuq000001q2et2ai",
+  "posted": "2026-08-18",
+  "salary": "$75.00 to $85.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Change management and operating model design mandate",
+    "Remote-eligible contract-to-hire role",
+    "Cross-functional transformation leadership fits her profile",
+    "Coaching leaders and building internal capability"
+   ],
+   "concerns": [
+    "Contract-to-hire with W2 conversion required",
+    "Heavy enterprise agile specialization may not match depth",
+    "Rate is modest for seniority level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 75,
+   "practical_fit": 65,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Change management and operating model design mandate",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1175,147 +1067,31 @@
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "AI-enabled experience transformation aligns with interests",
-    "Remote contract role fits practical constraints",
-    "Requires hands-on product management not her core background"
+    "AI-enabled member experience aligns with AI adoption interest",
+    "Remote contract role via staffing firm",
+    "Hands-on PM/technical scope beyond her strategic operating level",
+    "CX transformation angle fits background"
    ],
    "concerns": [
-    "Deep technical PM/UX skillset requirement mismatch",
-    "W2 contract with modest hourly rate",
-    "Not a strategic/operations leadership mandate"
+    "Requires hands-on product management/technical fluency not her core strength",
+    "W2 contract at hourly rate, lower seniority than target roles",
+    "Staffing firm placement, uncertain long-term trajectory"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 60,
-   "opportunity_score": 42,
-   "score": 42,
+   "qualification_fit": 55,
+   "interest_fit": 60,
+   "practical_fit": 65,
+   "opportunity_score": 50,
+   "score": 50,
    "fit": "maybe",
-   "reason": "AI-enabled experience transformation aligns with interests",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Eliassen::e18382f7-9731-11f1-9509-02420a6c7775",
-  "company": "Eliassen",
-  "title": "Supplier Operations Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/qQ0QUW/supplier-operations-manager-manufacturing-supply-chain-anywhere-a1wuq000001ovrf2au",
-  "posted": "2026-08-13",
-  "salary": "$75.00 to $85.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote, some ops coordination overlap",
-    "Part-time transactional PO/contract admin role",
-    "Not strategic transformation or leadership scope"
-   ],
-   "concerns": [
-    "Tactical procurement/PO tracking, not org strategy",
-    "Only 20 hrs/week, narrow mandate",
-    "Pharma/CDMO domain mismatch"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Remote, some ops coordination overlap",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Eliassen::733aaf65-94c5-11f1-9509-02420a6c7775",
-  "company": "Eliassen",
-  "title": "Lead Support Analyst",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/RYsCuX/lead-support-analyst-support-anywhere-a1wuq000001owk52ae",
-  "posted": "2026-08-10",
-  "salary": "$55.00 to $60.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "IT application support role, not strategic scope",
-    "W2 contract, low rate for seniority",
-    "Mismatch with transformation/operations focus"
-   ],
-   "concerns": [
-    "Hands-on technical support, wrong function",
-    "Low pay relative to experience level"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 20,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "IT application support role, not strategic scope",
-   "bg": "1451cb4bda95"
-  },
-  "rescued": true
- },
- {
-  "key": "Eliassen::f473e9e0-9cca-11f1-a3dc-024201c20d84",
-  "company": "Eliassen",
-  "title": "Senior Finance Transformation Consultant",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/lfGEEx/senior-finance-transformation-consultant-programproject-management-anywhere-a1wuq000001o6012aa",
-  "posted": "2026-08-20",
-  "salary": "$85.00 to $100.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "PMO and transformation program leadership",
-    "Remote-friendly contract work",
-    "Change management/operating model component"
-   ],
-   "concerns": [
-    "Heavy SOX/regulatory reporting finance specialization not her background",
-    "Requires hands-on controllership expertise",
-    "Periodic travel to Charlotte"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "PMO and transformation program leadership",
-   "bg": "1451cb4bda95"
+   "reason": "AI-enabled member experience aligns with AI adoption interest",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1334,39 +1110,78 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Cross-functional program leadership",
-    "Temp-to-perm contract fits income flexibility",
-    "Executive-facing reporting component",
-    "Remote listed but California-based org"
+    "Cross-functional PM leadership matches operations background",
+    "Remote option noted despite Irvine location",
+    "Contract-to-perm fits open employment stance"
    ],
    "concerns": [
-    "Hands-on system configuration work not core strength",
-    "Pharma/IT technical specificity mismatch",
-    "Temp role with unclear strategic scope"
+    "Hands-on system implementation/configuration is more IT-execution than her focus",
+    "Pharma-specific background requirement is a mismatch",
+    "Temp-to-perm PM role lacks strategic transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Cross-functional PM leadership matches operations background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::04838-0013493801-usen",
+  "company": "Robert Half",
+  "title": "Project Manager II",
+  "location": "Philadelphia, PA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/philadelphia-pa/project-manager-ii/04838-0013493801-usen",
+  "posted": "2026-08-25",
+  "salary": "$35.00\u2013$40.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Transformation initiative with process/change scope",
+    "Remote temp contract fits contract-work openness",
+    "Long duration through 2027 provides stability",
+    "Tactical PM level below her strategic scope"
+   ],
+   "concerns": [
+    "Highly tactical, documentation-heavy role",
+    "Below her typical seniority and strategic influence",
+    "Staffing agency temp placement, limited growth"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 45,
-   "opportunity_score": 42,
-   "score": 42,
+   "interest_fit": 45,
+   "practical_fit": 65,
+   "opportunity_score": 45,
+   "score": 45,
    "fit": "maybe",
-   "reason": "Cross-functional program leadership",
-   "bg": "1451cb4bda95"
+   "reason": "Transformation initiative with process/change scope",
+   "bg": "d192ce659668"
   }
  },
  {
-  "key": "Robert Half::00390-9504375082-usen",
+  "key": "Robert Half::02720-0013481284-usen",
   "company": "Robert Half",
   "title": "Program Manager",
-  "location": "Sacramento, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/sacramento-ca/program-manager/00390-9504375082-usen",
+  "location": "Princeton, NJ (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/princeton-nj/program-manager/02720-0013481284-usen",
   "posted": "2026-08-06",
-  "salary": "$65.00\u2013$70.00/hr",
-  "employment_type": "Temp",
+  "salary": "$57.00\u2013$66.00/hr",
+  "employment_type": "Temp to Perm",
   "expires": "",
   "tier": "discovery",
   "match_reason": "role family 'program manager' + seniority in title",
@@ -1374,27 +1189,27 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "M&A acquisition/integration program leadership",
-    "Executive stakeholder communication required",
-    "Remote contract, potential FTE conversion",
-    "Cross-functional coordination matches operating background"
+    "Program/PMO leadership matches core experience",
+    "Governance, roadmaps, executive reporting align with skills",
+    "Remote noted but NJ-based role, temp-to-perm contract"
    ],
    "concerns": [
-    "Requires active PMP certification, unclear if held",
-    "Temp/contract only, healthcare-specific domain"
+    "Insurance/reinsurance domain unfamiliar",
+    "Temp-to-perm may lack long-term strategic scope",
+    "Unclear if fully remote or NJ-tied"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 75,
-   "practical_fit": 75,
-   "opportunity_score": 72,
-   "score": 72,
+   "qualification_fit": 75,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "reason": "M&A acquisition/integration program leadership",
-   "bg": "1451cb4bda95"
+   "reason": "Program/PMO leadership matches core experience",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1410,30 +1225,30 @@
   "tier": "discovery",
   "match_reason": "mandate in description (operational excellence, continuous improvement)",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Fully remote 4-month contract",
-    "Team leadership and cross-functional ops",
-    "Not core transformation/strategy mandate",
-    "Content/demand-gen focus mismatched to profile"
+    "Remote, short contract could work for income",
+    "Team leadership and cross-functional scope present",
+    "Not core transformation/ops strategy mandate",
+    "Digital marketing content focus outside core domains"
    ],
    "concerns": [
-    "Deep B2B marketing execution skew, not transformation",
-    "Short-term contract, limited strategic scope"
+    "4-month temp with narrow marketing focus",
+    "Not aligned with transformation/M&A/ops goals"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 65,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "maybe",
-   "reason": "Fully remote 4-month contract",
-   "bg": "1451cb4bda95"
+   "reason": "Remote, short contract could work for income",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1452,69 +1267,68 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Operational strategy coordination role",
-    "Executive-facing reporting and structure-building",
-    "Remote, contract work fits practical constraints",
-    "Below her typical seniority level"
+    "Operational program leadership and executive support",
+    "Cross-functional coordination matches operations background",
+    "Remote listed despite Charlotte location",
+    "Long-term contract could offer near-term income"
    ],
    "concerns": [
-    "Temp/contract with limited strategic ownership",
-    "Charlotte-based team, not Utah",
-    "Title suggests tactical PM, not leadership"
+    "Temp/contract via staffing agency, not permanent",
+    "Below her typical seniority and scope",
+    "Compensation not stated"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
+   "qualification_fit": 70,
    "interest_fit": 55,
    "practical_fit": 55,
    "opportunity_score": 50,
    "score": 50,
    "fit": "maybe",
-   "reason": "Operational strategy coordination role",
-   "bg": "1451cb4bda95"
+   "reason": "Operational program leadership and executive support",
+   "bg": "d192ce659668"
   }
  },
  {
-  "key": "Robert Half::02300-0013489376-usen",
+  "key": "Robert Half::01300-0013492710-usen",
   "company": "Robert Half",
-  "title": "Senior Change Consultant",
-  "location": "Minneapolis, MN (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/minneapolis-mn/senior-change-consultant/02300-0013489376-usen",
-  "posted": "2026-08-19",
-  "salary": "$60.00\u2013$70.00/hr",
+  "title": "Learning and Development Coordinator",
+  "location": "Chicago, IL (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/chicago-il/learning-and-development-coordinator/01300-0013492710-usen",
+  "posted": "2026-08-25",
+  "salary": "$25.00\u2013$30.00/hr",
   "employment_type": "Temp",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'learning and development' + mandate in description (organizational change, adoption); demoted to wildcards by the precision rule 'coordinator'",
   "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
+   "recommendation": "not_recommended",
+   "confidence": "high",
    "reasons": [
-    "Enterprise change and transformation mandate",
-    "AI adoption and enablement focus",
-    "Remote contract fits practical constraints",
-    "Executive stakeholder engagement scope"
+    "Entry-level coordinator role, not leadership",
+    "Far below her seniority and scope",
+    "Temp staffing role with minimal ownership"
    ],
    "concerns": [
-    "Temp/contract engagement not permanent",
-    "Non-Utah remote may have timezone overlap"
+    "Massive seniority mismatch",
+    "1+ years experience required vs her 15"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 88,
-   "interest_fit": 90,
-   "practical_fit": 75,
-   "opportunity_score": 82,
-   "score": 82,
-   "fit": "yes",
-   "reason": "Enterprise change and transformation mandate",
-   "bg": "1451cb4bda95"
-  },
-  "rescued": true
+   "qualification_fit": 25,
+   "interest_fit": 30,
+   "practical_fit": 45,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Entry-level coordinator role, not leadership",
+   "bg": "d192ce659668"
+  }
  },
  {
   "key": "Robert Half::01300-0013490681-usen",
@@ -1532,28 +1346,26 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "PM/delivery leadership matches operations experience",
-    "Temp-to-perm contract fits income/experience goal",
-    "Remote listed but tied to Chicago org",
-    "Narrow eCommerce/Shopify focus vs broader transformation"
+    "PM/delivery leadership role, cross-functional coordination",
+    "Remote listed, temp-to-perm gives income optionality",
+    "Shopify/eCommerce specialization not her core domain"
    ],
    "concerns": [
-    "Very Shopify/eCommerce niche-specific requirement",
-    "Limited strategic or org-design scope",
-    "Remote status ambiguous given Chicago location"
+    "Narrow eCommerce/Shopify technical focus",
+    "Temp-to-perm via staffing agency, uncertain long-term scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
+   "qualification_fit": 55,
+   "interest_fit": 40,
    "practical_fit": 55,
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "PM/delivery leadership matches operations experience",
-   "bg": "1451cb4bda95"
+   "reason": "PM/delivery leadership role, cross-functional coordination",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1562,7 +1374,7 @@
   "title": "Finance Manager",
   "location": "San Diego, CA (Remote)",
   "url": "https://www.roberthalf.com/us/en/job/san-diego-ca/finance-manager/00400-0013487121-usen",
-  "posted": "2026-08-12",
+  "posted": "2026-08-25",
   "salary": "$47.50\u2013$55.00/hr",
   "employment_type": "Temp",
   "expires": "",
@@ -1570,28 +1382,27 @@
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "medium",
+   "confidence": "high",
    "reasons": [
-    "FP&A/financial modeling role, not her domain",
-    "Requires SQL, Adaptive Planning finance skills",
-    "M&A support angle but wrong function"
+    "FP&A/financial modeling role, wrong function",
+    "M&A integration touch but heavy finance/SQL skillset mismatch"
    ],
    "concerns": [
-    "Core is finance/accounting, wrong fit",
-    "Not leadership/transformation scope"
+    "Requires advanced FP&A modeling, Adaptive Planning expertise",
+    "Not a strategy/operations/transformation leadership role"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 45,
-   "opportunity_score": 20,
-   "score": 20,
+   "qualification_fit": 25,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "FP&A/financial modeling role, not her domain",
-   "bg": "1451cb4bda95"
+   "reason": "FP&A/financial modeling role, wrong function",
+   "bg": "d192ce659668"
   },
   "rescued": true
  },
@@ -1611,139 +1422,25 @@
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Operations/team leadership tangential fit",
-    "Recruiting-specific mandate not her core domain",
-    "Temp contract could offer income"
+    "Recruiting management is outside core transformation focus",
+    "Onsite/CA temp role, not remote for her"
    ],
    "concerns": [
-    "Wrong function - TA leadership not transformation/strategy",
-    "Requires deep recruiting-specific expertise"
+    "Wrong functional domain - TA leadership not transformation",
+    "Temp contract in CA, location mismatch"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 50,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 35,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Operations/team leadership tangential fit",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Robert Half::03200-0013490602-usen",
-  "company": "Robert Half",
-  "title": "Global Trade Compliance",
-  "location": "Charlotte, NC (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/charlotte-nc/global-trade-compliance/03200-0013490602-usen",
-  "posted": "2026-08-20",
-  "salary": "$34.00\u2013$37.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, strategic initiatives)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Specialized customs/trade compliance role, not her domain"
-   ],
-   "concerns": [
-    "Wrong function - trade compliance specialist not transformation/ops leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Specialized customs/trade compliance role, not her domain",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Robert Half::01300-0013440601-usen",
-  "company": "Robert Half",
-  "title": "Senior Project / Program Manager",
-  "location": "Chicago, IL (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/chicago-il/senior-project-program-manager/01300-0013440601-usen",
-  "posted": "2026-08-24",
-  "salary": "$61.25\u2013$72.50/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Program leadership fits background",
-    "Remote listed, contract via staffing agency",
-    "Heavy IT/Agile/Jira focus not core strength"
-   ],
-   "concerns": [
-    "IT delivery-heavy, less strategic/transformation scope",
-    "Temp/contract via staffing agency",
-    "Chicago-based team, not Utah"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Program leadership fits background",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Robert Half::02100-0013481039-usen",
-  "company": "Robert Half",
-  "title": "Project Manager",
-  "location": "Boston, MA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/boston-ma/project-manager/02100-0013481039-usen",
-  "posted": "2026-08-13",
-  "salary": "$40.00\u2013$45.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Marketing ops/program leadership matches background",
-    "US-remote, EST hours workable",
-    "Cross-functional stakeholder alignment fits skillset",
-    "Contract fits stated flexibility"
-   ],
-   "concerns": [
-    "Temp/contract, not strategic transformation scope",
-    "Marketing-specific focus narrower than target roles"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 60,
-   "practical_fit": 75,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Marketing ops/program leadership matches background",
-   "bg": "1451cb4bda95"
+   "reason": "Recruiting management is outside core transformation focus",
+   "bg": "d192ce659668"
   }
  }
 ]

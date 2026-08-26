@@ -15,27 +15,28 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "VP-level operations mandate likely broad",
-    "Marketing ops adjacent to her core domains",
-    "US-remote fits practical constraints",
-    "Utah-based company (Pluralsight)"
+    "Marketing operations aligns with adjacent domain expertise",
+    "VP-level scope suggests real ownership",
+    "Fully remote US matches top location preference",
+    "Thin posting limits confidence in fit"
    ],
    "concerns": [
-    "No description to confirm scope",
-    "Marketing-specific focus may narrow fit"
+    "No description to confirm mandate or scope",
+    "Marketing ops is adjacent, not core domain",
+    "Unclear if strategic transformation or purely tactical"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
+   "qualification_fit": 65,
+   "interest_fit": 60,
    "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
+   "opportunity_score": 62,
+   "score": 62,
    "fit": "maybe",
-   "reason": "VP-level operations mandate likely broad",
-   "bg": "1451cb4bda95"
+   "reason": "Marketing operations aligns with adjacent domain expertise",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -51,16 +52,16 @@
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "strong_fit",
    "confidence": "low",
    "reasons": [
-    "Marketing operations is adjacent domain",
-    "US-remote fits practical constraints",
-    "Senior Manager scope could carry real ownership",
-    "Pluralsight known Utah-based company"
+    "Marketing operations is named adjacent domain",
+    "US-remote matches top location preference",
+    "Senior Manager level fits seniority stance",
+    "Utah-based employer, likely familiar market"
    ],
    "concerns": [
-    "No description to confirm strategic scope",
+    "No description to confirm scope or mandate",
     "Marketing ops narrower than core transformation focus"
    ],
    "relocation_required": false,
@@ -72,47 +73,124 @@
    "practical_fit": 90,
    "opportunity_score": 65,
    "score": 65,
-   "fit": "maybe",
-   "reason": "Marketing operations is adjacent domain",
-   "bg": "1451cb4bda95"
+   "fit": "yes",
+   "reason": "Marketing operations is named adjacent domain",
+   "bg": "d192ce659668"
   }
  },
  {
-  "key": "Canopy::4354755009",
-  "company": "Canopy",
-  "title": "Manager of Enablement",
-  "location": "Draper, UT",
-  "url": "https://job-boards.greenhouse.io/canopytax/jobs/4354755009",
-  "posted": "2026-08-04",
+  "key": "Podium::8157904",
+  "company": "Podium",
+  "title": "Chief of Staff - Sales",
+  "location": "Lehi, Utah",
+  "url": "https://job-boards.greenhouse.io/podium81/jobs/8157904",
+  "posted": "2026-08-25",
   "salary": null,
   "employment_type": "",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "strong_fit",
    "confidence": "medium",
    "reasons": [
-    "Utah hybrid, workable location",
-    "Enablement strategy and program ownership",
-    "GTM cross-functional collaboration"
+    "Utah-local role, hybrid/onsite feasible",
+    "Chief of Staff mandate aligns with strategy execution skillset",
+    "Cross-functional GTM operations scope fits operational excellence background",
+    "AI-driven company aligns with AI enablement interest"
    ],
    "concerns": [
-    "Sales enablement is narrower than her transformation focus",
-    "Manager-level GTM tactical scope, less strategic breadth"
+    "Sales-specific GTM focus is narrower than core transformation experience",
+    "May require deep sales/RevOps metrics fluency"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 58,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Utah hybrid, workable location",
-   "bg": "1451cb4bda95"
+   "qualification_fit": 70,
+   "interest_fit": 65,
+   "practical_fit": 88,
+   "opportunity_score": 72,
+   "score": 72,
+   "fit": "yes",
+   "reason": "Utah-local role, hybrid/onsite feasible",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Recursion::8155679",
+  "company": "Recursion",
+  "title": "Staff AI Researcher",
+  "location": "Remote Opportunity - United States",
+  "url": "https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/8155679",
+  "posted": "2026-08-25",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (digital transformation, lean)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Deep technical AI research role, not transformation/ops"
+   ],
+   "concerns": [
+    "Requires hands-on AI research expertise she lacks",
+    "Wrong function entirely"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 10,
+   "practical_fit": 60,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Deep technical AI research role, not transformation/ops",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R170317",
+  "company": "Adobe",
+  "title": "Technology Asset Planning Analyst",
+  "location": "Lehi",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Purchasing-Analyst_R170317",
+  "posted": "2026-08-11",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "discovery",
+  "match_reason": "priority employer; role family 'planning' in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Adobe priority employer with referral advantage",
+    "Utah location matches preference",
+    "Title suggests asset/IT planning, not her domain"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Sounds like IT asset management, not transformation/strategy"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 75,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Adobe priority employer with referral advantage",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -125,33 +203,35 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "strong_fit",
    "confidence": "low",
    "reasons": [
-    "Strategy & Operations mandate fits core domains",
-    "Utah location (Lehi) matches preference",
-    "Adobe is credible large employer",
-    "Principal level suggests real scope"
+    "Strategy & Ops mandate fits core domains",
+    "Lehi, UT location matches preference",
+    "Adobe is priority employer with referral",
+    "Principal level fits seniority stance"
    ],
    "concerns": [
-    "No description to confirm mandate",
-    "Unclear team scope or seniority level"
+    "No description to confirm scope",
+    "Title vague on transformation focus"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 75,
-   "interest_fit": 80,
-   "practical_fit": 90,
-   "opportunity_score": 75,
-   "score": 75,
+   "interest_fit": 75,
+   "practical_fit": 85,
+   "opportunity_score": 78,
+   "score": 78,
    "fit": "yes",
-   "reason": "Strategy & Operations mandate fits core domains",
-   "bg": "1451cb4bda95"
+   "reason": "Strategy & Ops mandate fits core domains",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -164,73 +244,35 @@
   "salary": "$118,100 - $171,100",
   "employment_type": "",
   "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "strong_fit",
    "confidence": "low",
    "reasons": [
-    "Lehi/Utah location fits location preference",
-    "Project management aligns with program leadership",
-    "Adobe professional services could offer scope",
-    "Thin posting, mandate unclear"
+    "Utah-local Adobe role, priority employer target",
+    "Professional services PM aligns with delivery leadership",
+    "Has referral/contact advantage at Adobe",
+    "Thin posting, no description to confirm scope"
    ],
    "concerns": [
-    "No description to assess scope or seniority",
-    "Title suggests possibly narrower PM role"
+    "No description available to confirm seniority or mandate",
+    "Title suggests PM-level, could be below target scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Lehi/Utah location fits location preference",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Adobe::R170411",
-  "company": "Adobe",
-  "title": "Director, Sales Operations, Technical Pre-Sales",
-  "location": "Lehi (+6 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Director--TPS-Strategy---Business-Operations_R170411",
-  "posted": "2026-08-04",
-  "salary": "$225,100 - $325,900",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Sales ops director title has some ops overlap",
-    "Utah location (Lehi) fits practical constraints",
-    "Technical pre-sales focus is a weaker match",
-    "No description to confirm strategic scope"
-   ],
-   "concerns": [
-    "No job description available",
-    "Technical pre-sales may be too sales-specific",
-    "Unclear organizational scope or ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 75,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Sales ops director title has some ops overlap",
-   "bg": "1451cb4bda95"
+   "qualification_fit": 70,
+   "interest_fit": 65,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Utah-local Adobe role, priority employer target",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -249,27 +291,26 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah-based role near her location",
-    "Experience/ops leadership overlap possible",
-    "Title suggests facilities-type scope, unclear mandate"
+    "Utah local role, workable location",
+    "Workplace experience adjacent to CX/EX background",
+    "No description to confirm scope or mandate"
    ],
    "concerns": [
-    "No description available to assess scope",
-    "Could be facilities/office-ops rather than strategic",
-    "Title suggests narrower workplace-services focus"
+    "Title suggests facilities/workplace ops, not strategic transformation",
+    "No details on seniority or scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 75,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "maybe",
-   "reason": "Utah-based role near her location",
-   "bg": "1451cb4bda95"
+   "reason": "Utah local role, workable location",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -288,14 +329,15 @@
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Utah-based onsite role, practical fit",
-    "Project management skill overlap",
-    "Creative production scope too narrow",
-    "Lacks strategic transformation mandate"
+    "Utah-local matches location preference",
+    "Project management overlaps skills but narrow creative scope",
+    "Lacks transformation/strategy/operations mandate",
+    "Tactical execution role, not strategic ownership"
    ],
    "concerns": [
-    "Tactical creative ops role, not strategic",
-    "Below her seniority and scope target"
+    "Creative production focus not core domain",
+    "Likely junior scope under Director",
+    "No clear path to strategic influence"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -303,12 +345,12 @@
    "valid": true,
    "qualification_fit": 40,
    "interest_fit": 35,
-   "practical_fit": 80,
+   "practical_fit": 70,
    "opportunity_score": 35,
    "score": 35,
    "fit": "no",
-   "reason": "Utah-based onsite role, practical fit",
-   "bg": "1451cb4bda95"
+   "reason": "Utah-local matches location preference",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -326,27 +368,28 @@
   "match_reason": "role family 'cx' + seniority in title; demoted to wildcards by the precision rule 'account manager'",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "high",
+   "confidence": "medium",
    "reasons": [
-    "Remote US location is practical",
-    "Contract renewal/sales role, not strategic transformation"
+    "US-remote practical fit is strong",
+    "But role is quota/renewal sales, not transformation",
+    "No strategic or org-design ownership described"
    ],
    "concerns": [
-    "Sales-quota/account management focus is weak or wrong fit",
-    "No strategic or org-scale mandate"
+    "Account management/renewal sales, weak fit",
+    "No leadership or transformation mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
+   "qualification_fit": 25,
    "interest_fit": 20,
    "practical_fit": 85,
    "opportunity_score": 25,
    "score": 25,
    "fit": "no",
-   "reason": "Remote US location is practical",
-   "bg": "1451cb4bda95"
+   "reason": "US-remote practical fit is strong",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -365,27 +408,27 @@
    "recommendation": "apply_first",
    "confidence": "medium",
    "reasons": [
-    "C-suite transformation mandate",
-    "AI adoption/enablement core focus",
-    "US-remote fits practical constraints",
-    "Change management and roadmap ownership"
+    "C-suite transformation and AI enablement mandate",
+    "Fully remote US role fits top preference",
+    "Enterprise-wide operating model and change design scope",
+    "Aligns with M&A/transformation/change core domains"
    ],
    "concerns": [
-    "May require contact-center/CX platform expertise",
-    "Heavy consulting travel possible"
+    "Heavy CX/contact-center tech specificity may require ramp-up",
+    "Consulting-style client-facing travel likely expected"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 78,
-   "interest_fit": 92,
+   "interest_fit": 88,
    "practical_fit": 90,
-   "opportunity_score": 87,
-   "score": 87,
+   "opportunity_score": 83,
+   "score": 83,
    "fit": "yes",
-   "reason": "C-suite transformation mandate",
-   "bg": "1451cb4bda95"
+   "reason": "C-suite transformation and AI enablement mandate",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -404,27 +447,27 @@
    "recommendation": "strong_fit",
    "confidence": "medium",
    "reasons": [
-    "Customer experience/success leadership mandate",
-    "Executive-facing, P&L ownership",
-    "Cross-functional strategic scope",
-    "US-remote fits practical constraints"
+    "US-remote VP role with real P&L ownership",
+    "Strong customer experience and org leadership overlap",
+    "Cross-functional transformation-adjacent mandate",
+    "Team building and operational excellence focus"
    ],
    "concerns": [
-    "Heavy CS/TAM domain vs her CX/transformation background",
-    "Enterprise SaaS metrics focus narrower than her scope"
+    "Heavy SaaS/technical account management domain specificity",
+    "May require deep enterprise software CS background"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 70,
+   "qualification_fit": 68,
+   "interest_fit": 72,
    "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
+   "opportunity_score": 74,
+   "score": 74,
    "fit": "yes",
-   "reason": "Customer experience/success leadership mandate",
-   "bg": "1451cb4bda95"
+   "reason": "US-remote VP role with real P&L ownership",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -443,13 +486,12 @@
    "recommendation": "not_recommended",
    "confidence": "high",
    "reasons": [
-    "Construction PM role, not strategic scope",
-    "No transformation or ops leadership mandate",
-    "Junior title, entry-level construction execution"
+    "Entry-level construction PM, not strategic scope",
+    "Wrong domain: HVAC/mechanical construction ops"
    ],
    "concerns": [
-    "Wrong function - construction project management",
-    "No executive or strategic scope"
+    "No transformation, strategy, or leadership mandate",
+    "Junior title with tactical subcontractor admin work"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -461,8 +503,8 @@
    "opportunity_score": 12,
    "score": 12,
    "fit": "no",
-   "reason": "Construction PM role, not strategic scope",
-   "bg": "1451cb4bda95"
+   "reason": "Entry-level construction PM, not strategic scope",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -481,26 +523,26 @@
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Operational leadership scope but BAS/HVAC technical domain mismatch",
-    "Field technician management not her background",
-    "Utah location is practical positive"
+    "Utah onsite location matches preference",
+    "Some operational leadership scope"
    ],
    "concerns": [
-    "Requires deep BAS/controls technical expertise",
-    "Wrong function - trade services operations not transformation/strategy"
+    "Deeply technical BAS/HVAC field service domain",
+    "Not transformation or strategy mandate",
+    "Wrong function for candidate's core expertise"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 65,
-   "opportunity_score": 40,
-   "score": 40,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Operational leadership scope but BAS/HVAC technical domain mismatch",
-   "bg": "1451cb4bda95"
+   "reason": "Utah onsite location matches preference",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -519,13 +561,13 @@
    "recommendation": "not_recommended",
    "confidence": "high",
    "reasons": [
-    "Specialized benefits administration function",
-    "Not transformation or org strategy mandate",
-    "Utah location is practical positive only"
+    "Hands-on benefits administration, not strategy/transformation",
+    "Wrong function despite Utah location",
+    "Player-coach operational HR role, not her domain"
    ],
    "concerns": [
-    "Wrong functional domain - HR benefits ops",
-    "No strategic ownership scope described"
+    "Requires deep benefits/compliance expertise she lacks",
+    "Not an ownership or transformation mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -537,8 +579,8 @@
    "opportunity_score": 20,
    "score": 20,
    "fit": "no",
-   "reason": "Specialized benefits administration function",
-   "bg": "1451cb4bda95"
+   "reason": "Hands-on benefits administration, not strategy/transformation",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -557,12 +599,10 @@
    "recommendation": "not_recommended",
    "confidence": "high",
    "reasons": [
-    "Wrong function: hands-on HVAC construction PM",
-    "No org strategy or transformation mandate",
-    "Requires technical HVAC trade expertise"
+    "Field HVAC construction PM, not her domain"
    ],
    "concerns": [
-    "Not aligned with candidate's domain at all"
+    "Requires technical HVAC construction expertise she lacks"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -571,11 +611,11 @@
    "qualification_fit": 10,
    "interest_fit": 5,
    "practical_fit": 30,
-   "opportunity_score": 10,
-   "score": 10,
+   "opportunity_score": 8,
+   "score": 8,
    "fit": "no",
-   "reason": "Wrong function: hands-on HVAC construction PM",
-   "bg": "1451cb4bda95"
+   "reason": "Field HVAC construction PM, not her domain",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -591,29 +631,69 @@
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
+   "recommendation": "stretch",
+   "confidence": "medium",
    "reasons": [
-    "Utah location matches but wrong function",
-    "Deep technical BAS/HVAC field ops expertise required",
-    "Not organizational strategy or transformation work"
+    "National operations leadership scope",
+    "Standardization and scaling mandate",
+    "Utah location among options",
+    "Building consistent service processes nationally"
    ],
    "concerns": [
-    "Requires specialized building automation technical background",
-    "Field technician management, not candidate's core domain"
+    "Deeply technical BAS/HVAC field service domain",
+    "Heavy travel 30-50%",
+    "No transformation or org-strategy framing"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 25,
-   "practical_fit": 45,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Utah location matches but wrong function",
-   "bg": "1451cb4bda95"
+   "qualification_fit": 35,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "National operations leadership scope",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025451",
+  "company": "Western Governors University",
+  "title": "HR Program Manager - Performance",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Performance-Management-Lead_JR-025451",
+  "posted": "2026-08-25",
+  "salary": "$100,000.00 - $150,000.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Program management title matches core PMO skillset",
+    "Utah local role fits location preference",
+    "HR performance focus narrower than core transformation mandate"
+   ],
+   "concerns": [
+    "No description; scope and seniority unclear",
+    "May be tactical HR ops rather than strategic transformation"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 48,
+   "score": 48,
+   "fit": "maybe",
+   "reason": "Program management title matches core PMO skillset",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -629,29 +709,29 @@
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Transformation mandate matches core domain",
-    "Utah location fits practical constraints",
-    "Program/project leadership aligns with proof points"
+    "Utah-based, transformation title fits core domain",
+    "PM IV likely senior program leadership",
+    "Location matches Utah preference strongly"
    ],
    "concerns": [
-    "No job description available",
-    "Unclear seniority/scope of role"
+    "No description to confirm mandate scope",
+    "Title could be tactical PM, not strategic"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 70,
-   "practical_fit": 85,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Transformation mandate matches core domain",
-   "bg": "1451cb4bda95"
+   "qualification_fit": 70,
+   "interest_fit": 65,
+   "practical_fit": 80,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "maybe",
+   "reason": "Utah-based, transformation title fits core domain",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -670,26 +750,26 @@
    "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Academic dept chair role, not transformation/ops",
-    "Requires cybersecurity academic credentials",
-    "Utah location is practically convenient"
+    "Utah local location matches preference",
+    "Academic dept chair role outside her domain",
+    "Requires cybersecurity academic credentials"
    ],
    "concerns": [
-    "Wrong domain - academic administration, not business ops",
-    "No description to assess real scope"
+    "Likely requires subject-matter academic expertise",
+    "No description to confirm scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
+   "qualification_fit": 25,
    "interest_fit": 20,
-   "practical_fit": 60,
-   "opportunity_score": 20,
-   "score": 20,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Academic dept chair role, not transformation/ops",
-   "bg": "1451cb4bda95"
+   "reason": "Utah local location matches preference",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -708,14 +788,15 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah-local role",
-    "Marketing project management adjacent to ops",
-    "Title suggests limited strategic scope",
-    "No description to assess mandate"
+    "Utah-local role, matches location preference",
+    "PM titles can carry real ownership",
+    "Marketing ops adjacent to her background",
+    "No description to confirm scope"
    ],
    "concerns": [
-    "Thin posting details",
-    "PM II title may lack seniority/ownership"
+    "Title suggests tactical PM, not strategic mandate",
+    "No description available to verify seniority",
+    "Level II may be below her target scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -727,8 +808,8 @@
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "Utah-local role",
-   "bg": "1451cb4bda95"
+   "reason": "Utah-local role, matches location preference",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -747,13 +828,13 @@
    "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Utah location matches practical constraints",
+    "Utah local location matches preference",
     "Program title but likely instructional design focus",
-    "No description to confirm strategic scope"
+    "No transformation or ops mandate evident"
    ],
    "concerns": [
-    "Likely curriculum/instructional design, not transformation",
-    "No details on org scope or ownership"
+    "No description to confirm scope",
+    "Likely education/curriculum specialist role, not strategic"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -765,8 +846,8 @@
    "opportunity_score": 30,
    "score": 30,
    "fit": "no",
-   "reason": "Utah location matches practical constraints",
-   "bg": "1451cb4bda95"
+   "reason": "Utah local location matches preference",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -785,26 +866,27 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah-based, matches location preference",
-    "PM role could carry program leadership scope",
-    "Technical PM may lack strategic mandate"
+    "Utah-local role fits location preference",
+    "PM role adjacent to program leadership",
+    "Technical focus may limit strategic scope",
+    "Thin posting, hard to assess mandate"
    ],
    "concerns": [
-    "No description to assess real scope",
-    "Title suggests tactical/technical execution, not transformation"
+    "No description available to judge scope",
+    "Technical PM may be execution-only, not strategic"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 55,
-   "interest_fit": 40,
+   "interest_fit": 45,
    "practical_fit": 80,
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "Utah-based, matches location preference",
-   "bg": "1451cb4bda95"
+   "reason": "Utah-local role fits location preference",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -823,26 +905,27 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Program management aligns with PMO/portfolio leadership background",
-    "Utah-based, strong location fit",
-    "Technical scope unclear, may skew engineering-heavy"
+    "Program leadership overlap",
+    "Utah local location",
+    "Technical PM slant unclear vs her ops/strategy focus",
+    "No description to confirm mandate"
    ],
    "concerns": [
-    "No description available to assess mandate",
-    "'Technical' may require deep IT/software delivery expertise"
+    "Title suggests technical/IT-heavy PM role",
+    "No description available to verify scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 55,
-   "interest_fit": 50,
+   "interest_fit": 45,
    "practical_fit": 80,
    "opportunity_score": 55,
    "score": 55,
    "fit": "maybe",
-   "reason": "Program management aligns with PMO/portfolio leadership background",
-   "bg": "1451cb4bda95"
+   "reason": "Program leadership overlap",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -862,63 +945,26 @@
    "confidence": "low",
    "reasons": [
     "Program management role in Utah",
-    "Possible transformation/PMO scope unclear",
-    "Location matches Utah preference"
+    "Local/hybrid location likely favorable",
+    "Technical focus may not match background",
+    "No description to assess mandate scope"
    ],
    "concerns": [
-    "No description to confirm mandate",
-    "Technical PM may skew engineering-heavy"
+    "Title suggests technical/engineering PM, not strategic transformation",
+    "No description available to confirm scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
+   "qualification_fit": 45,
+   "interest_fit": 40,
    "practical_fit": 80,
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
    "reason": "Program management role in Utah",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "Western Governors University::JR-025576",
-  "company": "Western Governors University",
-  "title": "Project Manager II",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-II_JR-025576",
-  "posted": "2026-08-19",
-  "salary": "$75,200.00 - $112,700.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-based employer, matches location preference",
-    "Project management aligns with program leadership background",
-    "Title generic, mandate unclear"
-   ],
-   "concerns": [
-    "No description to assess scope or seniority",
-    "Title suggests tactical PM, may lack strategic ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah-based employer, matches location preference",
-   "bg": "1451cb4bda95"
+   "bg": "d192ce659668"
   }
  },
  {
@@ -937,26 +983,27 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah-based, program/project leadership adjacent",
-    "Technical PM scope unclear without description",
-    "WGU is stable employer in target region"
+    "Utah local role",
+    "PM title adjacent to program leadership",
+    "Technical PM scope unclear from title",
+    "No description to confirm mandate"
    ],
    "concerns": [
-    "No description to confirm strategic scope",
-    "Title suggests technical/IT delivery focus, may lack transformation mandate"
+    "No posting details to assess strategic scope",
+    "Technical focus may skew IT execution not transformation"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
+   "qualification_fit": 45,
+   "interest_fit": 35,
    "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "maybe",
-   "reason": "Utah-based, program/project leadership adjacent",
-   "bg": "1451cb4bda95"
+   "reason": "Utah local role",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -975,13 +1022,14 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah-based, operations role family",
-    "Title suggests analytics-heavy not strategy/transformation",
+    "Utah-local role, operations title",
+    "Analytics ops may lack strategic scope",
     "Thin posting, hard to assess mandate"
    ],
    "concerns": [
-    "No description to assess scope",
-    "May be tactical/analytical rather than strategic ownership"
+    "No description available",
+    "Title suggests analyst-level, not leadership",
+    "May be too tactical/data-focused"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -993,8 +1041,8 @@
    "opportunity_score": 40,
    "score": 40,
    "fit": "maybe",
-   "reason": "Utah-based, operations role family",
-   "bg": "1451cb4bda95"
+   "reason": "Utah-local role, operations title",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1013,26 +1061,27 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah-based role, strong location fit",
-    "Delivery/quality ownership plausible transformation angle",
-    "No description to confirm scope or mandate"
+    "Utah local, senior manager scope",
+    "Delivery/quality could touch program leadership",
+    "Technical delivery may skew IT-heavy",
+    "Thin posting, hard to assess mandate"
    ],
    "concerns": [
-    "Technical delivery could be IT/engineering-heavy",
-    "No description available to verify fit"
+    "No description to confirm strategic scope",
+    "Title suggests technical/IT delivery focus"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
+   "qualification_fit": 40,
    "interest_fit": 40,
-   "practical_fit": 80,
+   "practical_fit": 75,
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "Utah-based role, strong location fit",
-   "bg": "1451cb4bda95"
+   "reason": "Utah local, senior manager scope",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1048,30 +1097,29 @@
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Utah-local location fits practical constraints",
-    "Operations title matches keyword but niche retail context",
-    "No description to confirm strategic scope"
+    "Utah local location",
+    "Operations title but retail-specific",
+    "No transformation or strategic mandate visible"
    ],
    "concerns": [
-    "Likely retail store-level operations, not transformation",
-    "Thin posting with no mandate detail",
-    "May lack strategic or enterprise scope"
+    "Likely retail store operations, not enterprise scope",
+    "No description to confirm strategic scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 80,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Utah-local location fits practical constraints",
-   "bg": "1451cb4bda95"
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 70,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah local location",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1091,15 +1139,15 @@
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Utah onsite location fits practical constraints",
-    "Customer success/retention overlaps CX experience",
-    "Fast-growing AI company could offer transformation angle",
-    "Book-of-business CSM role is narrower than her target scope"
+    "Utah onsite matches location preference",
+    "CX/account management overlaps her CX background",
+    "Book-of-business CSM role lacks strategic transformation scope",
+    "Fast-growing company but tactical individual-contributor mandate"
    ],
    "concerns": [
-    "Individual account management, not strategic/org-level mandate",
-    "Fully in-office, less senior scope than target titles",
-    "Limited transformation or operating model ownership"
+    "Fully in-office, no hybrid flexibility mentioned",
+    "Seniority/scope below her target level",
+    "Primarily account management, not org transformation"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -1107,12 +1155,12 @@
    "valid": true,
    "qualification_fit": 55,
    "interest_fit": 45,
-   "practical_fit": 80,
+   "practical_fit": 70,
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "Utah onsite location fits practical constraints",
-   "bg": "1451cb4bda95"
+   "reason": "Utah onsite matches location preference",
+   "bg": "d192ce659668"
   }
  },
  {
@@ -1132,103 +1180,26 @@
    "confidence": "low",
    "reasons": [
     "Utah location matches preference",
-    "Project manager title only weak signal",
-    "Likely academic/administrative scope, not transformation"
+    "Part-time academic project role, weak mandate",
+    "No transformation or strategic scope evident"
    ],
    "concerns": [
-    "No description to confirm scope",
+    "No description available to assess scope",
     "Part-time likely limited compensation/impact",
-    "Writing programs domain misaligned with core expertise"
+    "Academic writing program unrelated to core domains"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
+   "qualification_fit": 30,
    "interest_fit": 25,
    "practical_fit": 55,
    "opportunity_score": 25,
    "score": 25,
    "fit": "no",
    "reason": "Utah location matches preference",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "BYU::JR-11443",
-  "company": "BYU",
-  "title": "Business Manager-Wheatley Institute",
-  "location": "Provo, UT",
-  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Business-Manager-Wheatley-Institute_JR-11443",
-  "posted": "2026-08-11",
-  "salary": "$73,000-$95,000",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'business manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-local role",
-    "Business manager title suggests operations scope",
-    "No description to confirm mandate"
-   ],
-   "concerns": [
-    "Thin posting, no responsibilities listed",
-    "Title suggests admin/finance, not transformation",
-    "Academic institute may lack strategic scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 75,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Utah-local role",
-   "bg": "1451cb4bda95"
-  }
- },
- {
-  "key": "BYU::JR-11401",
-  "company": "BYU",
-  "title": "Lead Academic Learning Specialist - School of Medicine",
-  "location": "Provo, UT",
-  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Academic-Learning-Specialist--Lead_JR-11401",
-  "posted": "2026-08-10",
-  "salary": "$73,000 - $95,000",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'learning' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Utah location matches",
-    "Learning-adjacent title but academic/clinical focus",
-    "No transformation or operations mandate evident"
-   ],
-   "concerns": [
-    "Likely requires academic/education credentials",
-    "No description to confirm scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 20,
-   "practical_fit": 60,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Utah location matches",
-   "bg": "1451cb4bda95"
+   "bg": "d192ce659668"
   }
  }
 ]
