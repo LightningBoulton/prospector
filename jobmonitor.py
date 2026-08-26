@@ -1069,6 +1069,27 @@ def _matches_any(l, terms):
     return any(re.search(r"\b" + re.escape(t) + r"\b", l) for t in terms)
 
 
+# Locations that name the United States as a WHOLE and pin the role to nowhere more
+# specific. Compared against the location with every non-letter stripped, so "U.S.",
+# "US", "united states" and "United States of America" all collapse to one entry.
+_US_NATIONAL_NORM = frozenset(
+    {"us", "usa", "unitedstates", "unitedstatesofamerica", "nationwide"})
+
+
+def _is_nationwide_us(loc):
+    """True only when the WHOLE location string is a US-national label.
+
+    A nationwide role includes Utah, so "United States" is local — that is how Weave, a
+    Lehi employer, posts its sales roles, and all 8 of them were invisible because the
+    string names no local city and no remote marker.
+
+    The whole-string test is what keeps this safe. "San Francisco Bay Area, California"
+    and "San Francisco, CA, United States" both still fail it, so this cannot smuggle in
+    another metro — the moment the employer names a specific place, the normal keyword
+    rules apply again."""
+    return re.sub(r"[^a-z]", "", (loc or "").lower()) in _US_NATIONAL_NORM
+
+
 def is_local(loc):
     l = loc.lower()
     # Remote roles pass — unless a non-US country is named and international remote is off,
@@ -1076,6 +1097,8 @@ def is_local(loc):
     if KEEP_REMOTE and "remote" in l:
         if ALLOW_INTL_REMOTE or not _matches_any(l, INTERNATIONAL_MARKERS):
             return True
+    if _is_nationwide_us(l):
+        return True
     return _matches_any(l, LOCAL_KEYWORDS)
 
 
@@ -2174,17 +2197,35 @@ def write_rejects(profile, lanes, directory=None):
     json.dump(doc, open(path, "w"), indent=1)
 
 
-def source_health_rows(registries, prev_streak=None, prev_error_streak=None):
+def source_health_rows(registries, prev_streak=None, prev_error_streak=None,
+                       prev_silent_streak=None):
     """Build the per-source health rows for `registries` = [(label, lane_source_dict)].
 
     Kept separate from the file write so the email's source-health block and the committed
     diagnostics file are guaranteed to describe the same run.
 
-    `consecutive_zero_runs` counts only runs where the source ANSWERED and had nothing —
-    an errored run leaves the streak untouched, because an unanswered source tells us
-    nothing about whether it has jobs. Error runs get their own streak instead."""
+    THREE streaks, because "we saw no roles from this source" has three very different
+    causes and only one of them is a human's problem:
+
+    `consecutive_error_runs` — back-to-back FAILURES. The source never answered.
+
+    `consecutive_silent_runs` — the board ANSWERED and its whole listing was empty. This,
+    and only this, is the ATS-migration / dead-slug signal, so it is what "needs attention"
+    fires on.
+
+    `consecutive_zero_runs` — the board answered with real postings but NONE survived this
+    lane's location and age gates. That is the system working: Miro answering with 41
+    Copenhagen/Amsterdam/Tokyo roles is not a broken feed, it is an employer that does not
+    hire here. It is recorded because it is genuinely useful ("this row earns nothing"), but
+    it must NOT raise an alarm — it can never clear on its own, so alerting on it trains the
+    reader to ignore the whole block. Conflating the two put 16 healthy sources on the
+    "needs attention" line, 15 of which had answered normally that morning.
+
+    An errored run leaves both non-error streaks untouched: a source that never answered
+    tells us nothing about whether it has jobs."""
     prev_streak = prev_streak or {}
     prev_error_streak = prev_error_streak or {}
+    prev_silent_streak = prev_silent_streak or {}
     rows = []
     for label, src in registries:
         # Aggregator postings carry `_source` = the registry row that produced them; normal
@@ -2195,18 +2236,22 @@ def source_health_rows(registries, prev_streak=None, prev_error_streak=None):
             name = run["name"]
             errored = run["status"] in SRC_ERROR_STATES
             kept = counts.get(name, 0)
+            fetched = run.get("fetched", 0)
             if errored:
                 zero_streak = prev_streak.get(name, 0)          # unchanged: unknown, not zero
+                silent_streak = prev_silent_streak.get(name, 0)  # ditto
                 err_streak = prev_error_streak.get(name, 0) + 1
             else:
                 zero_streak = 0 if kept else prev_streak.get(name, 0) + 1
+                silent_streak = 0 if fetched else prev_silent_streak.get(name, 0) + 1
                 err_streak = 0
             rows.append({"name": name, "registry": label, "ats": run.get("ats"),
                          "slug": run.get("slug"), "status": run["status"],
-                         "roles_fetched": run.get("fetched", 0), "roles_returned": kept,
+                         "roles_fetched": fetched, "roles_returned": kept,
                          "attempts": run.get("attempts", 1), "error": run.get("error", ""),
                          "fetch_failed": errored,
                          "consecutive_zero_runs": zero_streak,
+                         "consecutive_silent_runs": silent_streak,
                          "consecutive_error_runs": err_streak})
     return rows
 
@@ -2220,10 +2265,19 @@ def source_health_summary(rows):
             "zero": sum(1 for r in rows if r["status"] == SRC_OK_ZERO),
             "temp_error": sum(1 for r in rows if r["status"] == SRC_TEMP_ERROR),
             "config_error": sum(1 for r in rows if r["status"] == SRC_CONFIG_ERROR),
-            # A source answering "nothing" for many days running is the ATS-migration signal;
-            # it is NOT an error, so it is surfaced separately as "needs attention".
+            # A board whose whole LISTING has been empty for many runs running is the
+            # ATS-migration / dead-slug signal; it is NOT an error, so it is surfaced
+            # separately as "needs attention". Read `consecutive_silent_runs`, never
+            # `consecutive_zero_runs` — see the streak docs in source_health_rows.
             "stale": sorted(r["name"] for r in rows
-                            if r["consecutive_zero_runs"] >= STALE_SOURCE_RUNS),
+                            if r.get("consecutive_silent_runs",
+                                     r["consecutive_zero_runs"]) >= STALE_SOURCE_RUNS),
+            # Healthy boards that simply post nothing this lane can use (wrong region, or
+            # everything older than the age window). Informational only: nobody has anything
+            # to fix, and these can never clear themselves.
+            "filtered_out": sorted(r["name"] for r in rows
+                                   if r.get("roles_fetched", 0)
+                                   and r["consecutive_zero_runs"] >= STALE_SOURCE_RUNS),
             "broken": sorted(r["name"] for r in rows
                              if r["status"] == SRC_CONFIG_ERROR)}
 
@@ -2235,20 +2289,29 @@ def write_source_health(registries, directory=None):
     """Registry-wide health snapshot. `registries` is [(label, lane_source_dict)]. Returns
     the rows so the caller can render the same data into the email."""
     path = os.path.join(directory or OUT_DIR, "source_health.json")
-    prev_streak, prev_error = {}, {}
+    prev_streak, prev_error, prev_silent = {}, {}, {}
     try:
         for row in json.load(open(path)).get("sources", []):
             prev_streak[row["name"]] = row.get("consecutive_zero_runs", 0)
             prev_error[row["name"]] = row.get("consecutive_error_runs", 0)
+            # Back-compat: a file written before the split has no silent streak. Seeding it
+            # from the old post-gate streak would re-raise the false alarms the split
+            # removes, so an unknown source starts its silent streak at zero and earns the
+            # alert honestly over the next STALE_SOURCE_RUNS runs.
+            prev_silent[row["name"]] = row.get("consecutive_silent_runs", 0)
     except Exception:
         pass
-    rows = source_health_rows(registries, prev_streak, prev_error)
+    rows = source_health_rows(registries, prev_streak, prev_error, prev_silent)
     json.dump({"_comment": (
         "Per-source fetch health from the most recent run. status is one of ok_results, "
-        "ok_zero, temp_error, config_error. consecutive_zero_runs counts runs where the "
-        "source ANSWERED with no in-window roles (an ATS-migration / dead-slug signal); an "
-        "errored run does not advance it, because a source that never answered tells us "
-        "nothing. consecutive_error_runs counts back-to-back failures instead."),
+        "ok_zero, temp_error, config_error. THREE streaks, and they mean different things: "
+        "consecutive_silent_runs counts runs where the board ANSWERED and its listing was "
+        "empty — that is the ATS-migration / dead-slug signal and the only one that raises "
+        "'needs attention'. consecutive_zero_runs counts runs where the board answered with "
+        "real postings but none survived this lane's location/age gates — informational "
+        "only (an employer that does not hire here is not a broken feed). "
+        "consecutive_error_runs counts back-to-back failures. An errored run advances "
+        "neither of the first two, because a source that never answered tells us nothing."),
         "generated": datetime.date.today().isoformat(),
         "summary": source_health_summary(rows), "sources": rows},
         open(path, "w"), indent=1)
@@ -3520,6 +3583,16 @@ def _source_health_html(rows):
                                             if len(attention) > 6 else "")
         B.append(f'<div style="color:{_C["red"]};font-family:{_FONT};font-size:13px;'
                  f'margin:2px 0;">Needs attention: {len(attention)} — {_esc(shown)}</div>')
+    # Healthy boards with nothing this lane can use. Deliberately muted and worded as a
+    # fact rather than a fault: there is nothing to fix, and mixing these into "needs
+    # attention" is what made that line unreadable.
+    quiet = [n for n in s.get("filtered_out", []) if n not in attention]
+    if quiet:
+        shown = ", ".join(quiet[:6]) + (f" +{len(quiet) - 6} more" if len(quiet) > 6 else "")
+        B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:12px;'
+                 f'margin:2px 0;">No roles matching this search: {len(quiet)} — '
+                 f'{_esc(shown)} (feeds healthy; postings are out of region or out of the '
+                 f'age window)</div>')
     return "".join(B)
 
 
@@ -3645,7 +3718,13 @@ def build_change_digest_md(profile, sections, counts, health_rows):
     if s["broken"]:
         L.append(f"  - Broken config: {', '.join(s['broken'])}")
     if s["stale"]:
-        L.append(f"  - Returning nothing for {STALE_SOURCE_RUNS}+ runs: {', '.join(s['stale'])}")
+        L.append(f"  - Empty listing for {STALE_SOURCE_RUNS}+ runs "
+                 f"(likely ATS migration): {', '.join(s['stale'])}")
+    quiet = [n for n in s.get("filtered_out", []) if n not in s["broken"] + s["stale"]]
+    if quiet:
+        L.append(f"- No roles matching this search for {STALE_SOURCE_RUNS}+ runs "
+                 f"(feeds healthy, postings out of region or out of the age window): "
+                 f"{', '.join(quiet)}")
     return "\n".join(L) + "\n"
 
 

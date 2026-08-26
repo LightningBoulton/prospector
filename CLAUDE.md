@@ -66,7 +66,8 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
   Don't "unify" them without a reason; Chad's email is deliberately unchanged.
 - The daily run writes diagnostics for the weekly audit: `rejects_<name>.json` (fetched but
   filtered out, with the rule that dropped each) and `source_health.json`
-  (`consecutive_zero_runs` = ATS-migration signal). `audit.py` reads ONLY those + snapshots
+  (**`consecutive_silent_runs`** = ATS-migration signal; see Source health below).
+  `audit.py` reads ONLY those + snapshots
   + feedback. Keeping the audit network-free is a deliberate constraint — a re-fetching
   audit would double our ATS traffic and risk the daily run.
 
@@ -332,6 +333,27 @@ Workday priority employers (Adobe, Salesforce, Zillow, PBS) the relaxation reduc
 role-family path — the same limit V3 documents for SmartRecruiters/Workday generally. It is
 still materially wider than core, which demands family AND seniority together.
 
+## Source health — THREE streaks, and they are not interchangeable
+
+`source_health.json` carries three per-source counters. Reading the wrong one is the bug this
+section exists to prevent (it put **16 sources on "Needs attention", 15 of which had answered
+normally that morning**):
+
+- **`consecutive_error_runs`** — back-to-back FAILURES. The source never answered.
+- **`consecutive_silent_runs`** — the board ANSWERED and its whole listing was empty. This,
+  and ONLY this, is the ATS-migration / dead-slug signal, and it is what "Needs attention"
+  fires on (`summary["stale"]`) alongside `config_error`.
+- **`consecutive_zero_runs`** — the board answered with real postings but NONE survived the
+  lane's location/age gates. **Informational only** (`summary["filtered_out"]`, rendered as a
+  muted "No roles matching this search"). Miro answering with 41 Copenhagen/Amsterdam/Tokyo
+  roles is not a broken feed, it is an employer that does not hire here — and that can never
+  clear itself, so alerting on it trains the reader to ignore the whole block.
+
+An errored run advances neither of the first two: a source that never answered tells us
+nothing about whether it has jobs. **Back-compat:** a `source_health.json` written before the
+split has no silent streak, and it is deliberately NOT seeded from the old post-gate streak —
+a source starts at zero and earns the alert over the next `STALE_SOURCE_RUNS` (10) runs.
+
 ## Location + age gates
 
 Global, applied once to the pool in `collect_pool` before profiles. Location:
@@ -345,6 +367,19 @@ places are intentionally omitted (Georgia, Mexico→New Mexico, Jordan→South J
 `max_posting_age_days` from `settings.json` (`_within_age`) — drops confidently-too-old
 postings, saving downstream salary/LLM calls. If a future profile needs its own geography,
 add a per-profile override rather than widening the global list.
+
+**Nationwide US counts as local** (`_is_nationwide_us`, checked inside `is_local` after the
+remote check). A role open to the whole US includes Utah, and that is how several local
+employers post: **all 8 of Weave's (Lehi) live roles carried the bare location `"United
+States"`** — no local city, no remote marker — and were invisible. The test is on the WHOLE
+location string, normalized to letters only (`us`, `usa`, `unitedstates`,
+`unitedstatesofamerica`, `nationwide`). **That whole-string test is the safety property, not a
+shortcut:** `"San Francisco, CA, United States"` and `"San Francisco Bay Area, California"`
+still fail it, so the moment an employer names a specific place the normal keyword rules apply
+again and no second metro can be smuggled in. Measured on the live local registry: **+76 of
+3,287 postings, 8 companies, 15 of them inside the 21-day window, none engineering** — so it
+did not move Chad's report. `is_us_remote` is deliberately NOT changed: it still requires a
+remote marker, or the remote lane would start keeping onsite-anywhere-in-the-US roles.
 
 **Named regions (V4)** are that per-profile override, now built: `REGION_GATES` maps
 `remote_us`/`utah`/`washington` to `is_us_remote`/`is_utah`/`is_washington`, `region_gate(regions)`

@@ -1867,6 +1867,37 @@ class TestInternationalMarkersV3(unittest.TestCase):
             self.assertTrue(jm.is_us_remote(loc), loc)
 
 
+class TestNationwideUsIsLocal(unittest.TestCase):
+    """A US-national posting includes Utah. Weave (Lehi) posts its sales roles with the bare
+    location "United States", and all 8 were invisible: the string names no local city and
+    no remote marker, so the shared local gate dropped them."""
+
+    def test_bare_national_labels_are_local(self):
+        for loc in ["United States", "USA", "US", "U.S.", "united states of america",
+                    "Nationwide"]:
+            self.assertTrue(jm.is_local(loc), f"nationwide should be local: {loc}")
+
+    def test_a_named_metro_is_still_dropped(self):
+        """The whole-string test is the safety property: the moment an employer names a
+        specific place, the normal keyword rules apply again. Without this, the change
+        would quietly import every other US metro."""
+        for loc in ["San Francisco, CA, United States", "San Francisco Bay Area, California",
+                    "New York, NY, USA", "Austin, TX, United States", "Seattle, WA (US)"]:
+            self.assertFalse(jm.is_local(loc), f"named metro must stay dropped: {loc}")
+
+    def test_utah_and_remote_behaviour_is_unchanged(self):
+        for loc in ["Lehi, Utah, United States", "Salt Lake City, UT", "Remote",
+                    "Remote - US"]:
+            self.assertTrue(jm.is_local(loc), loc)
+        for loc in ["London, UK", "Remote - Spain", "Budapest, , Hungary"]:
+            self.assertFalse(jm.is_local(loc), loc)
+
+    def test_it_does_not_widen_the_us_remote_lane(self):
+        """is_us_remote is a separate gate and must still require a remote marker, or the
+        remote lane would start keeping onsite-anywhere-in-the-US roles."""
+        self.assertFalse(jm.is_us_remote("United States"))
+
+
 class TestSourceStatus(unittest.TestCase):
     """Requirement E: a source that failed and a source with nothing to say are different
     facts and must never be conflated."""
@@ -1960,6 +1991,41 @@ class TestSourceStatus(unittest.TestCase):
         self.assertEqual(rows["Down"]["consecutive_zero_runs"], 4,
                          "an unanswered source tells us nothing; the streak must not move")
         self.assertEqual(rows["Down"]["consecutive_error_runs"], 1)
+
+    def test_a_gate_filtered_source_is_not_an_ats_migration_signal(self):
+        """The bug this splits apart: a healthy board whose roles are simply out of region
+        answered normally, so it must never reach 'needs attention'. Miro answering with 41
+        Copenhagen/Amsterdam/Tokyo roles is an employer that does not hire here."""
+        runs = [{"name": "Foreign", "ats": "ashby", "slug": "f", "status": jm.SRC_OK_RESULTS,
+                 "fetched": 41, "attempts": 1, "error": ""},
+                {"name": "Empty", "ats": "greenhouse", "slug": "e", "status": jm.SRC_OK_ZERO,
+                 "fetched": 0, "attempts": 1, "error": ""}]
+        regs = [("local", {"pool": [], "errors": [], "failed": set(), "runs": runs})]
+        prev = {"Foreign": 40, "Empty": 40}
+        rows = {r["name"]: r for r in jm.source_health_rows(
+            regs, prev_streak=prev, prev_error_streak={}, prev_silent_streak=prev)}
+        # Both kept nothing, so the post-gate streak advances for both...
+        self.assertEqual(rows["Foreign"]["consecutive_zero_runs"], 41)
+        self.assertEqual(rows["Empty"]["consecutive_zero_runs"], 41)
+        # ...but only the genuinely empty listing advances the silent streak.
+        self.assertEqual(rows["Foreign"]["consecutive_silent_runs"], 0,
+                         "a board that answered with 41 postings is not going silent")
+        self.assertEqual(rows["Empty"]["consecutive_silent_runs"], 41)
+
+        s = jm.source_health_summary(list(rows.values()))
+        self.assertEqual(s["stale"], ["Empty"],
+                         "only an empty listing is the ATS-migration signal")
+        self.assertEqual(s["filtered_out"], ["Foreign"],
+                         "the out-of-region board is reported, but as information")
+
+    def test_silent_streak_is_not_advanced_by_an_outage(self):
+        runs = [{"name": "Down", "ats": "lever", "slug": "d", "status": jm.SRC_TEMP_ERROR,
+                 "fetched": 0, "attempts": 2, "error": "TimeoutError"}]
+        regs = [("local", {"pool": [], "errors": [], "failed": {"Down"}, "runs": runs})]
+        rows = {r["name"]: r for r in jm.source_health_rows(
+            regs, prev_streak={}, prev_error_streak={}, prev_silent_streak={"Down": 7})}
+        self.assertEqual(rows["Down"]["consecutive_silent_runs"], 7,
+                         "a source that never answered cannot be called silent")
 
     def test_health_summary_counts_the_four_states(self):
         rows = [{"name": "a", "status": jm.SRC_OK_RESULTS, "consecutive_zero_runs": 0},
