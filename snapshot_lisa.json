@@ -1,5 +1,161 @@
 [
  {
+  "key": "Filevine::54cdfccc-5535-43d5-8c03-5cf48e75e5d0",
+  "company": "Filevine",
+  "title": "Manager, Data Analytics",
+  "location": "Salt Lake City, Utah",
+  "url": "https://jobs.lever.co/filevine/54cdfccc-5535-43d5-8c03-5cf48e75e5d0",
+  "posted": "2026-08-21",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, executive stakeholders)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Utah-local role, strong location fit",
+    "Executive-facing analytics touches operational excellence",
+    "Hands-on data analytics is outside core expertise"
+   ],
+   "concerns": [
+    "Role is technical/analytics-heavy, not transformation leadership",
+    "Likely requires SQL/BI tool depth she doesn't emphasize",
+    "Manager-level IC analytics work, not strategic ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 45,
+   "practical_fit": 90,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah-local role, strong location fit",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Pluralsight::R0014386",
+  "company": "Pluralsight",
+  "title": "Customer Education Manager",
+  "location": "Remote - USA",
+  "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Customer-Education-Manager_R0014386",
+  "posted": "2026-08-27",
+  "salary": "$91,200 - $120,000",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'customer' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Customer/education focus adjacent to CX expertise",
+    "Fully remote US matches top location preference",
+    "Manager title with unclear scope",
+    "No description to confirm strategic mandate"
+   ],
+   "concerns": [
+    "Thin posting, hard to assess real ownership",
+    "Could be tactical/L&D-only, not transformation-level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Customer/education focus adjacent to CX expertise",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Pluralsight::R0014425",
+  "company": "Pluralsight",
+  "title": "Principal Solutions Portfolio Lead, AI",
+  "location": "Remote - USA",
+  "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Principal-Solutions-Portfolio-Lead--AI_R0014425",
+  "posted": "2026-08-26",
+  "salary": "$133,000 - $175,000",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'portfolio' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "AI portfolio leadership aligns with AI enablement interest",
+    "US-remote matches top location preference",
+    "Thin posting limits confidence",
+    "Title suggests strategic scope"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Could be product-specific rather than transformation-focused"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 60,
+   "practical_fit": 85,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "AI portfolio leadership aligns with AI enablement interest",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Pluralsight::R0014424",
+  "company": "Pluralsight",
+  "title": "Principal Solutions Portfolio Lead, Cloud and Security",
+  "location": "Remote - USA",
+  "url": "https://pluralsight.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Principal-Solutions-Portfolio-Lead--Cloud-and-Security_R0014424",
+  "posted": "2026-08-26",
+  "salary": "$133,000 - $175,000",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'portfolio' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Portfolio leadership adjacent to program/PMO experience",
+    "Remote US matches top location preference",
+    "Title suggests domain-specific (cloud/security) content focus",
+    "Unclear strategic scope without description"
+   ],
+   "concerns": [
+    "No description to confirm transformation/ops mandate",
+    "May require deep cloud/security subject expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Portfolio leadership adjacent to program/PMO experience",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Pluralsight::R0014395",
   "company": "Pluralsight",
   "title": "VP, Marketing Operations & Digital Platform",
@@ -118,42 +274,6 @@
   }
  },
  {
-  "key": "Recursion::8155679",
-  "company": "Recursion",
-  "title": "Staff AI Researcher",
-  "location": "Remote Opportunity - United States",
-  "url": "https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/8155679",
-  "posted": "2026-08-25",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (digital transformation, lean)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Deep technical AI research role, not transformation/ops"
-   ],
-   "concerns": [
-    "Requires hands-on AI research expertise she lacks",
-    "Wrong function entirely"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 10,
-   "practical_fit": 60,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Deep technical AI research role, not transformation/ops",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Adobe::R170317",
   "company": "Adobe",
   "title": "Technology Asset Planning Analyst",
@@ -235,13 +355,54 @@
   }
  },
  {
-  "key": "Adobe::R170971",
+  "key": "Adobe::R169255",
   "company": "Adobe",
-  "title": "Project Manager (Professional Services)",
-  "location": "Lehi (+4 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Chicago/Project-Manager--Professional-Services-_R170971",
-  "posted": "2026-08-05",
-  "salary": "$118,100 - $171,100",
+  "title": "Director, Change and Release Management",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Director--Change-and-Release-Management_R169255",
+  "posted": "2026-08-26",
+  "salary": "$207,900 - $301,050",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "discovery",
+  "match_reason": "role family 'change' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Adobe priority employer with referral advantage",
+    "Utah (Lehi) location matches preference strongly",
+    "Change management is a named strong signal",
+    "Title suggests IT release ops, not org change"
+   ],
+   "concerns": [
+    "No description; may be technical release management not org change",
+    "Could be narrower ITSM-focused role than her scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Adobe priority employer with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R171052",
+  "company": "Adobe",
+  "title": "Program Manager, Transformation",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Program-Manager--Transformation_R171052",
+  "posted": "2026-08-26",
+  "salary": "$153,600 - $222,450",
   "employment_type": "",
   "expires": "",
   "priority_employer": true,
@@ -249,29 +410,151 @@
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
+   "recommendation": "apply_first",
+   "confidence": "medium",
    "reasons": [
-    "Utah-local Adobe role, priority employer target",
-    "Professional services PM aligns with delivery leadership",
-    "Has referral/contact advantage at Adobe",
-    "Thin posting, no description to confirm scope"
+    "Transformation program leadership matches core expertise",
+    "Adobe is a named priority employer with referral",
+    "Utah (Lehi) location fits location preference strongly",
+    "Program Manager title likely undersells real scope"
    ],
    "concerns": [
-    "No description available to confirm seniority or mandate",
-    "Title suggests PM-level, could be below target scope"
+    "No description available, scope unclear",
+    "Title suggests possible IC-level scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
+   "qualification_fit": 82,
+   "interest_fit": 88,
    "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
+   "opportunity_score": 85,
+   "score": 85,
    "fit": "yes",
-   "reason": "Utah-local Adobe role, priority employer target",
+   "reason": "Transformation program leadership matches core expertise",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R170602",
+  "company": "Adobe",
+  "title": "Finance Transformation Manager, Business Architecture",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Finance-Transformation-Manager--Business-Architecture_R170602",
+  "posted": "2026-08-26",
+  "salary": "$154,000 - $223,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Business architecture/transformation mandate fits",
+    "Adobe priority employer with referral advantage",
+    "Utah (Lehi) location matches practical preference",
+    "Finance-specific scope may narrow fit"
+   ],
+   "concerns": [
+    "No description; unclear finance specialization depth",
+    "Manager title scope unclear",
+    "May require finance domain expertise she lacks"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 65,
+   "practical_fit": 85,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "maybe",
+   "reason": "Business architecture/transformation mandate fits",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R167579",
+  "company": "Adobe",
+  "title": "Senior\u00a0Global\u00a0Total Rewards Operations & Project Manager",
+  "location": "Lehi (+5 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Global-Total-Rewards-Operations---Project-Manager_R167579",
+  "posted": "2026-08-26",
+  "salary": "$180,300 - $261,150",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Adobe priority employer with referral advantage",
+    "Utah location, Lehi likely hybrid/onsite",
+    "Project/program management overlap with her PMO skills",
+    "Total Rewards is specialized HR domain, not core fit"
+   ],
+   "concerns": [
+    "No description; scope unclear",
+    "Total Rewards/comp ops is outside core domains",
+    "Title suggests HR-ops specialist, not transformation"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Adobe priority employer with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "BambooHR::6137945004",
+  "company": "BambooHR",
+  "title": "Technical Program Manager",
+  "location": "Utah | Hybrid",
+  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6137945004",
+  "posted": "2026-08-26",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Utah hybrid location matches preference",
+    "Program leadership and cross-functional coordination fit background",
+    "Operating model and business systems alignment resonate with strengths"
+   ],
+   "concerns": [
+    "Technical program manager scope may skew more IT/engineering than strategic",
+    "Individual contributor title with no direct authority"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 80,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Utah hybrid location matches preference",
    "bg": "d192ce659668"
   }
  },
@@ -354,6 +637,45 @@
   }
  },
  {
+  "key": "NICE::4959402101",
+  "company": "NICE",
+  "title": "AI Transformation Strategist",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4959402101?gh_jid=4959402101",
+  "posted": "2026-08-26",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote AI transformation mandate",
+    "Executive-facing strategic advisory role",
+    "Matches AI adoption/enablement interest area",
+    "Operating model and transformation scope"
+   ],
+   "concerns": [
+    "Requires hands-on agent-building/technical delivery skills",
+    "Unclear how much actual AI engineering expected"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 78,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "US-remote AI transformation mandate",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "NICE::4856476101",
   "company": "NICE",
   "title": "Renewal Account Manager, CX",
@@ -389,6 +711,85 @@
    "score": 25,
    "fit": "no",
    "reason": "US-remote practical fit is strong",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "NICE::4959449101",
+  "company": "NICE",
+  "title": "Senior Customer Success Manager",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4959449101?gh_jid=4959449101",
+  "posted": "2026-08-26",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote practical fit",
+    "CX/CS adjacent domain",
+    "Renewal/retention role lacks transformation scope",
+    "Individual account management not org-level"
+   ],
+   "concerns": [
+    "Quota-driven renewal role, not strategic",
+    "Limited strategic ownership vs her target scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 90,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "US-remote practical fit",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "NICE::4962210101",
+  "company": "NICE",
+  "title": "Senior Partner Enablement Manager",
+  "location": "USA - Sandy, UT",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4962210101?gh_jid=4962210101",
+  "posted": "2026-08-27",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'enablement' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Utah-local role, strong practical fit",
+    "Adjacent to enablement/change/CX experience",
+    "Partner-specific enablement is narrower than her core scope",
+    "Program coordination angle overlaps operational excellence"
+   ],
+   "concerns": [
+    "Heavily sales/partner-channel focused, not transformation",
+    "Likely mid-level scope, less strategic ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Utah-local role, strong practical fit",
    "bg": "d192ce659668"
   }
  },
@@ -432,11 +833,11 @@
   }
  },
  {
-  "key": "NICE::4952619101",
+  "key": "NICE::4952634101",
   "company": "NICE",
   "title": "VP, Customer Success",
   "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4952619101?gh_jid=4952619101",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/4952634101?gh_jid=4952634101",
   "posted": "2026-08-13",
   "salary": null,
   "employment_type": "",
@@ -447,26 +848,25 @@
    "recommendation": "strong_fit",
    "confidence": "medium",
    "reasons": [
-    "US-remote VP role with real P&L ownership",
-    "Strong customer experience and org leadership overlap",
-    "Cross-functional transformation-adjacent mandate",
-    "Team building and operational excellence focus"
+    "US-remote VP role with real P&L and team scope",
+    "Strong CX leadership and org-development alignment",
+    "Cross-functional executive-facing mandate"
    ],
    "concerns": [
-    "Heavy SaaS/technical account management domain specificity",
-    "May require deep enterprise software CS background"
+    "Heavier account/CS metrics focus than transformation",
+    "Large enterprise SaaS domain may require ramp-up"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 72,
+   "qualification_fit": 65,
+   "interest_fit": 65,
    "practical_fit": 90,
-   "opportunity_score": 74,
-   "score": 74,
+   "opportunity_score": 68,
+   "score": 68,
    "fit": "yes",
-   "reason": "US-remote VP role with real P&L ownership",
+   "reason": "US-remote VP role with real P&L and team scope",
    "bg": "d192ce659668"
   }
  },
@@ -504,44 +904,6 @@
    "score": 12,
    "fit": "no",
    "reason": "Entry-level construction PM, not strategic scope",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Kelso Industries::5396953008",
-  "company": "Kelso Industries",
-  "title": "BAS Service Operations Manager",
-  "location": "Ogden, UT",
-  "url": "https://kelso-industries.com/careers/?gh_jid=5396953008#job-board",
-  "posted": "2026-08-20",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Utah onsite location matches preference",
-    "Some operational leadership scope"
-   ],
-   "concerns": [
-    "Deeply technical BAS/HVAC field service domain",
-    "Not transformation or strategy mandate",
-    "Wrong function for candidate's core expertise"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Utah onsite location matches preference",
    "bg": "d192ce659668"
   }
  },
@@ -584,12 +946,49 @@
   }
  },
  {
-  "key": "Kelso Industries::5380620008",
+  "key": "Kelso Industries::5406692008",
   "company": "Kelso Industries",
-  "title": "HVAC Project Manager",
-  "location": "Atlanta, GA; Ogden, UT; Tampa, FL",
-  "url": "https://kelso-industries.com/careers/?gh_jid=5380620008#job-board",
-  "posted": "2026-08-05",
+  "title": "Building Automation Project Manager",
+  "location": "Ogden, UT",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5406692008#job-board",
+  "posted": "2026-08-26",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Utah location matches preference",
+    "Wrong function: technical HVAC/BAS project management"
+   ],
+   "concerns": [
+    "Requires building automation/controls technical expertise",
+    "Not aligned with transformation/strategy mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 60,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Utah location matches preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Kelso Industries::5406991008",
+  "company": "Kelso Industries",
+  "title": "Experienced Project Manager",
+  "location": "Ogden, UT",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5406991008#job-board",
+  "posted": "2026-08-26",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -599,22 +998,25 @@
    "recommendation": "not_recommended",
    "confidence": "high",
    "reasons": [
-    "Field HVAC construction PM, not her domain"
+    "Construction/mechanical PM role, wrong domain",
+    "Utah location is practically convenient",
+    "No transformation or org-strategy mandate"
    ],
    "concerns": [
-    "Requires technical HVAC construction expertise she lacks"
+    "Requires hands-on construction/HVAC project management expertise",
+    "Not aligned with candidate's core domains"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 30,
-   "opportunity_score": 8,
-   "score": 8,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "reason": "Field HVAC construction PM, not her domain",
+   "reason": "Construction/mechanical PM role, wrong domain",
    "bg": "d192ce659668"
   }
  },
@@ -659,6 +1061,45 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025854",
+  "company": "Western Governors University",
+  "title": "Senior Learning Product Owner",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Learning-Product-Owner_JR-025854",
+  "posted": "2026-08-27",
+  "salary": "$91,000.00 - $136,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'learning' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-local role, strong location fit",
+    "L&D is adjacent domain, not core",
+    "Title suggests product/curriculum focus, unclear scope",
+    "No description to confirm strategic mandate"
+   ],
+   "concerns": [
+    "Thin posting, hard to judge real scope",
+    "May be tactical product ownership vs strategic leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 42,
+   "score": 42,
+   "fit": "maybe",
+   "reason": "Utah-local role, strong location fit",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Western Governors University::JR-025451",
   "company": "Western Governors University",
   "title": "HR Program Manager - Performance",
@@ -693,44 +1134,6 @@
    "score": 48,
    "fit": "maybe",
    "reason": "Program management title matches core PMO skillset",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Western Governors University::JR-025721",
-  "company": "Western Governors University",
-  "title": "Project Manager IV, Transformation",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721",
-  "posted": "2026-08-24",
-  "salary": "$109,900.00 - $170,400.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-based, transformation title fits core domain",
-    "PM IV likely senior program leadership",
-    "Location matches Utah preference strongly"
-   ],
-   "concerns": [
-    "No description to confirm mandate scope",
-    "Title could be tactical PM, not strategic"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 80,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "maybe",
-   "reason": "Utah-based, transformation title fits core domain",
    "bg": "d192ce659668"
   }
  },
@@ -809,44 +1212,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Utah-local role, matches location preference",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Western Governors University::JR-025809",
-  "company": "Western Governors University",
-  "title": "Senior Educational Program Designer",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Educational-Product-Designer_JR-025809",
-  "posted": "2026-08-21",
-  "salary": "$80,700.00 - $121,000.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Utah local location matches preference",
-    "Program title but likely instructional design focus",
-    "No transformation or ops mandate evident"
-   ],
-   "concerns": [
-    "No description to confirm scope",
-    "Likely education/curriculum specialist role, not strategic"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 70,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Utah local location matches preference",
    "bg": "d192ce659668"
   }
  },
@@ -1160,6 +1525,45 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Utah onsite matches location preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "LVT::5405554008",
+  "company": "LVT",
+  "title": "Success Program Manager",
+  "location": "American Fork, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5405554008",
+  "posted": "2026-08-26",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Utah-local role, strong practical fit",
+    "Customer success program mandate aligns partially",
+    "CX ownership overlaps candidate strengths",
+    "Title suggests more tactical CSM work"
+   ],
+   "concerns": [
+    "May be too individual-contributor/tactical",
+    "Book-of-business CSM work below her seniority"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Utah-local role, strong practical fit",
    "bg": "d192ce659668"
   }
  },
