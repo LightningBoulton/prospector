@@ -1,55 +1,55 @@
-# Prospector — 2026-08-27
+# Prospector — 2026-08-28
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**15 new roles today** · 8 still worth applying · 10 closed/removed
+**15 new roles today** · 8 still worth applying · 11 closed/removed
 
 ## APPLY FIRST (1)
-- **Program Manager, Transformation** — Adobe · 85/100 · onsite Lehi (+1 more) · $153,600 - $222,450 · posted 2026-08-26
-  - Why: Transformation program leadership matches core expertise
-  - Concern: No description available, scope unclear
-  - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Program-Manager--Transformation_R171052
+- **Director of Customer Experience Operations** — Headway · 87/100 · remote Remote · $160K – $250K · posted 2026-08-28
+  - Why: Director-level CX operations leadership at scale
+  - Concern: Healthcare/insurance domain is new vertical
+  - https://jobs.ashbyhq.com/headway/31fd4aaa-e22a-42be-b47e-7c4c9bb886ba
 
 ## NEW — WORTH REVIEWING (10)
-- **Senior Program Manager, Enterprise Technology & AI** — GitLab · 76/100 · remote Remote, United States · posted 2026-08-25
-  - Why: Cross-functional program leadership mandate
-  - Concern: May be more technical/DevSecOps-specific than her background
-  - https://job-boards.greenhouse.io/gitlab/jobs/8742113002
-- **CX Technology Program Manager** — Instacart · 72/100 · remote United States - Remote · posted 2026-08-26
-  - Why: CX technology program leadership at scale
-  - Concern: Smaller team scope, may be more IC-heavy
-  - https://instacart.careers/job/?gh_jid=8160738
-- **AI Transformation Strategist** — NICE · 68/100 · remote USA - Remote · posted 2026-08-26
-  - Why: US-remote AI transformation mandate
-  - Concern: Requires hands-on agent-building/technical delivery skills
-  - https://boards.eu.greenhouse.io/nice/jobs/4959402101?gh_jid=4959402101
-- **Director, Revenue Enablement** — Wpromote · 68/100 · remote USA (Remote) · $157,000 - $175,000 · posted 2026-08-26
-  - Why: Remote US role, strong practical fit
-  - Concern: Sales/revenue enablement is narrower than transformation mandate
-  - https://jobicy.com/jobs/151689-director-revenue-enablement
-- **FLEX Director, Product Management Coach** — Marriott International · 66/100 · remote Bethesda, MD (Remote) · $57.16-$91.87 · first seen 2026-08-26
-  - Why: Priority employer Marriott with named contact
-  - Concern: Product management coaching skews more tactical/specialized
-  - https://careers.marriott.com/flex-director-product-management-coach/job/7BCFDD2250380F99712939A010937FF6
-- **Product & Solutions Enablement Manager** — Atlassian · 65/100 · remote Remote - Americas; Remote - Remote · first seen 2026-08-26
-  - Why: Atlassian priority employer with real connections
-  - Concern: Narrower scope than her transformation/strategy focus
-  - https://careers-americas.icims.com/jobs/25371/product-%26-solutions-enablement-manager/job?mode=apply
-- **Senior Solution Consultant, Teamwork Foundations + AI** — Atlassian · 65/100 · remote Remote - Americas; Remote - Remote · first seen 2026-08-26
-  - Why: Value realization mandate fits background
-  - Concern: Requires deep Atlassian product expertise she may lack
-  - https://careers-americas.icims.com/jobs/25307/senior-solution-consultant%2c-teamwork-foundations-%2b-ai/job?mode=apply
-- **Manager, Legal Operations** — Hinge Health · 65/100 · remote San Francisco-HQ (Remote) · $198.4K – $297.6K · posted 2026-08-27
-  - Why: Operations/program leadership mandate, GC-facing
-  - Concern: Legal-domain specific (contracts, outside counsel) not core background
-  - https://jobs.ashbyhq.com/hinge-health/60471c3d-2b64-49ae-a256-2903bfdce449
-- **Senior Enterprise Delivery Manager, Migrations** — Atlassian · 62/100 · remote New York - United States; Remote - Remote · first seen 2026-08-27
-  - Why: Priority employer Atlassian with referral advantage
-  - Concern: Requires deep technical cloud migration fluency
-  - https://careers-americas.icims.com/jobs/26851/senior-enterprise-delivery-manager%2c-migrations/job?mode=apply
-- **Head of GTM Enablement** — Obsidian Security · 62/100 · remote USA (Remote) · posted 2026-08-26
+- **Director, Organizational Development** — Thumbtack · 78/100 · remote Remote, United States · posted 2026-08-28
+  - Why: Org design, leadership development, enterprise change mandate
+  - Concern: Heavier HR/talent-systems focus than her core transformation background
+  - https://jobs.ashbyhq.com/thumbtack/3d3a24fc-588c-4a11-972a-f9fd46ff0f06
+- **Sr. Manager, Business Operations** — Samsara · 78/100 · remote Remote - US · posted 2026-08-28
   - Why: US-remote, strong practical fit
-  - Concern: Heavier sales enablement focus than her core transformation background
-  - https://jobicy.com/jobs/151670-head-of-gtm-enablement
+  - Concern: Support-org specific, narrower scope than transformation
+  - https://www.samsara.com/company/careers/roles/8112696?gh_jid=8112696
+- **Technical Program Manager** — BambooHR · 62/100 · hybrid Utah | Hybrid · posted 2026-08-26
+  - Why: Utah hybrid location matches preference
+  - Concern: Technical program manager scope may skew more IT/engineering than strategic
+  - https://job-boards.greenhouse.io/bamboohr17/jobs/6137945004
+- **FLEX Senior Director, Ecommerce Boutiques** — Marriott International · 60/100 · remote Bethesda, MD (Remote) · $72.64-$107.21 · first seen 2026-08-26
+  - Why: Priority employer Marriott, named target
+  - Concern: Requires deep ecommerce product/platform expertise not her core
+  - https://careers.marriott.com/flex-senior-director-ecommerce-boutiques/job/EBB5936DB84CAD2B8FF83B5D1C24CF35
+- **Services Solutions Advocate** — Atlassian · 60/100 · remote New York - United States; Remote - Remote; San Francisco - United States; Washington DC - United States · first seen 2026-08-26
+  - Why: Priority employer with referral advantage
+  - Concern: Sales-cycle/pipeline ownership resembles quota role
+  - https://careers-americas.icims.com/jobs/25740/services-solutions-advocate/job?mode=apply
+- **Senior Technical Program Manager** — GitLab · 60/100 · remote Remote, Canada; Remote, United States · posted 2026-08-25
+  - Why: Fully remote US-based role
+  - Concern: Highly technical DevSecOps/engineering domain
+  - https://job-boards.greenhouse.io/gitlab/jobs/8693068002
+- **Program Manager - Branding** — Robert Half · 60/100 · remote Boston, MA (Remote) · $40.00–$50.00/hr · posted 2026-08-28
+  - Why: Program leadership with executive stakeholder scope
+  - Concern: Temp/contract only, no long-term stability
+  - https://www.roberthalf.com/us/en/job/boston-ma/program-manager-branding/02100-0013497234-usen
+- **Program Manager, People Operations** — Dropbox · 60/100 · remote Remote - US: All locations · posted 2026-08-28
+  - Why: Fully remote US role
+  - Concern: Narrow contingent workforce program scope
+  - https://jobs.dropbox.com/listing/8144634?gh_jid=8144634
+- **Principal Strategist, AI Sales Strategy** — Atlassian · 58/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-08-26
+  - Why: Priority employer Atlassian with referral advantage
+  - Concern: Deeply sales-strategy/SaaS quantitative focus, not her core
+  - https://careers-americas.icims.com/jobs/25128/principal-strategist%2c-ai-sales-strategy/job?mode=apply
+- **Technical Program Manager, Finance Systems & Compliance** — Notion · 58/100 · remote San Francisco, California (Remote) · posted 2026-08-24
+  - Why: Program leadership across finance/eng systems transformation
+  - Concern: Highly finance/accounting-systems specific domain
+  - https://jobs.ashbyhq.com/notion/7ec83090-7c5b-4691-bf20-e11e892cede1
 
 ## DISCOVERY / WILDCARDS (4)
 - **Senior Director Service Strategy, Core, and AI** — Salesforce · 82/100 · onsite Bellevue (+1 more) · $181,700 - $304,700 · posted 2026-08-19
@@ -70,10 +70,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Business-Strategy-Director---Services_JR355649
 
 ## STILL WORTH APPLYING (8)
-- **Director of Business Planning & Strategic Initiatives - Office of the CPTO (Remote Eligible)** — Smartsheet · 90/100 · remote -REMOTE, USA- · posted 2026-08-06
-  - Why: Chief of Staff/right-hand to CPTO
-  - Concern: Highly competitive high-profile role
-  - https://job-boards.greenhouse.io/smartsheet/jobs/8112556
 - **Principal, Success Portfolio Design & Transformation** — Atlassian · 88/100 · remote Mountain View - United States or Remote; Remote - Remote · first seen 2026-08-26
   - Why: Priority employer Atlassian, remote-eligible
   - Concern: Heavier CS/GTM specialization than her past scope
@@ -90,10 +86,10 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Professional services leadership with AI transformation mandate
   - Concern: Sales/business development component may be heavier than her background
   - https://job-boards.greenhouse.io/smartsheet/jobs/8120577
-- **Chief of Staff, Online Grocery** — Instacart · 85/100 · remote United States - Remote · posted 2026-08-06
-  - Why: Chief of Staff mandate with real ownership
-  - Concern: Product/R&D domain specificity may require ramp-up
-  - https://instacart.careers/job/?gh_jid=8112136
+- **Program Manager, Transformation** — Adobe · 85/100 · onsite Lehi (+1 more) · $153,600 - $222,450 · posted 2026-08-26
+  - Why: Transformation program leadership matches core expertise
+  - Concern: No description available, scope unclear
+  - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Program-Manager--Transformation_R171052
 - **Manager, Consulting - Central/East** — Smartsheet · 84/100 · remote -REMOTE, USA- · posted 2026-08-20
   - Why: Professional services leadership mandate
   - Concern: Manager title may underlevel scope
@@ -102,21 +98,27 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Chief of Staff mandate with real operating ownership
   - Concern: R&D/engineering-specific context may require ramp-up
   - https://jobs.ashbyhq.com/headway/18261737-fed6-4203-aeaa-6068545f9f1e
+- **Renewals Strategy Principal Program Manager** — Dropbox · 82/100 · remote Remote - US: Select locations · posted 2026-08-20
+  - Why: Operating model design and transformation mandate
+  - Concern: Renewals/revenue-ops specifics are less proven in her background
+  - https://jobs.dropbox.com/listing/8094537?gh_jid=8094537
 
-## REMOVED SINCE PRIOR RUN (10)
-- Project Manager (Professional Services) — Adobe · No longer listed by its source
-- Program Manager, Voice of the Member — Chime · No longer listed by its source
-- Quality Improvement Lead — Included Health · No longer listed by its source
-- Strategic GTM Programs Director — LaunchDarkly · No longer listed by its source
-- Senior Customer Technical Program Manager - AI Datacenter — NVIDIA · No longer listed by its source
-- Project Manager/Sr. Consultant — Robert Half · No longer listed by its source
-- Senior Enablement Specialist — Samsara · No longer listed by its source
-- Director, People Operations — Sanity · No longer listed by its source
-- Business Value Consultant — Stripe · No longer listed by its source
-- Project Manager IV, Transformation — Western Governors University · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (11)
+- Sr Project Manager — Aquent · No longer listed by its source
+- Program Manager — Aquent · No longer listed by its source
+- Cloud Professional Services Manager — Canonical Ltd. · No longer listed by its source
+- People Operations Manager — Cint · No longer listed by its source
+- Senior Manager Product Operations, FCM Ops — Coinbase · No longer listed by its source
+- Manager, Strategic Planning — Grow Therapy · No longer listed by its source
+- Chief of Staff, Online Grocery — Instacart · No longer listed by its source
+- Revenue Strategy & Operations Manager — Mixpanel · No longer listed by its source
+- Customer Experience Enablement Senior Manager — Omada Health · No longer listed by its source
+- Director of Business Planning & Strategic Initiatives - Office of the CPTO (Remote Eligible) — Smartsheet · No longer listed by its source
+- Commercial Project Manager - Customer Management — TE Connectivity · No longer listed by its source
 
 ## SOURCE HEALTH
-- Sources checked: 137/137 successful
+- Sources checked: 136/137 successful
 - Temporary errors: 0
-- Needs attention: 17
-  - Returning nothing for 10+ runs: AssemblyAI, Beyond (Overstock), Doppler, Inngest, Instructure, Knock, Metabase, Miro, Nav, Netlify, Nomi Health, Postman, Route, Speechify, Traeger, Vivint, Weave
+- Needs attention: 21
+  - Broken config: Temporal
+  - Returning nothing for 10+ runs: Airtable, AssemblyAI, Beyond (Overstock), Buffer, Doppler, Inngest, Instructure, Knock, Marqeta, Metabase, Miro, Nav, Netlify, Nomi Health, Postman, Route, Speechify, Traeger, Vivint, Weave
