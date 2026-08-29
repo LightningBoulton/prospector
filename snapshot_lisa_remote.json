@@ -310,44 +310,6 @@
   }
  },
  {
-  "key": "Coinbase::8114684",
-  "company": "Coinbase",
-  "title": "Internal Audit Senior Associate, Operations & Compliance",
-  "location": "Remote - USA",
-  "url": "https://www.coinbase.com/careers/positions/8114684?gh_jid=8114684",
-  "posted": "2026-08-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'operations' + seniority in title; demoted to wildcards by the precision rule 'audit'",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Hands-on internal audit execution role, not transformation/strategy",
-    "Remote-USA practical fit is good but mandate mismatch dominates"
-   ],
-   "concerns": [
-    "Wrong function: audit/compliance testing, not org strategy or ops leadership",
-    "No strategic ownership or transformation scope described"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 70,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Hands-on internal audit execution role, not transformation/strategy",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Coinbase::8162911",
   "company": "Coinbase",
   "title": "Senior Internal Communications Manager",
@@ -732,46 +694,6 @@
    "score": 55,
    "fit": "maybe",
    "reason": "AI governance/operating model aligns with transformation interest",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Mercury::6138978004",
-  "company": "Mercury",
-  "title": "Senior Product Operations Specialist",
-  "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
-  "url": "https://job-boards.greenhouse.io/mercury/jobs/6138978004",
-  "posted": "2026-08-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'operations' + seniority in title",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote option fits location priority",
-    "Program ownership and operating system design",
-    "Cross-functional operational leadership mandate",
-    "Operational excellence and scaling focus"
-   ],
-   "concerns": [
-    "Narrower PM-specific scope than typical transformation roles",
-    "Titled Specialist, may be below usual seniority level",
-    "Less strategic/executive scope than target roles"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 62,
-   "practical_fit": 85,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "yes",
-   "reason": "US-remote option fits location priority",
    "bg": "d192ce659668"
   }
  },
@@ -1387,45 +1309,6 @@
    "reason": "Operating-system/process design mandate fits ops strength",
    "bg": "d192ce659668"
   }
- },
- {
-  "key": "Ramp::c826e3bf-f165-4b7c-af8e-301ad7e2dcda",
-  "company": "Ramp",
-  "title": "Senior Manager, Deal Desk",
-  "location": "New York, NY (HQ) (Remote)",
-  "url": "https://jobs.ashbyhq.com/ramp/c826e3bf-f165-4b7c-af8e-301ad7e2dcda",
-  "posted": "2026-08-07",
-  "salary": "$240K \u2013 $300K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Cross-functional operating model ownership fits transformation profile",
-    "Sales/quote-to-cash function is adjacent, not core",
-    "Remote option viable practically"
-   ],
-   "concerns": [
-    "Deal Desk/pricing specialization not her core background",
-    "Heavily sales-ops focused rather than transformation or CX"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 65,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Cross-functional operating model ownership fits transformation profile",
-   "bg": "d192ce659668"
-  },
-  "rescued": true
  },
  {
   "key": "Ramp::2ddd97a8-70b2-4030-ba42-21124ad304d3",
@@ -3402,44 +3285,6 @@
   }
  },
  {
-  "key": "Chainguard::4703060006",
-  "company": "Chainguard",
-  "title": "Senior Solutions Architect - Central (Professional Services)",
-  "location": "Texas - Remote",
-  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4703060006",
-  "posted": "2026-08-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'professional services' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Requires hands-on technical architecture/engineering skills",
-    "Not aligned with transformation/ops leadership background",
-    "Remote but wrong function"
-   ],
-   "concerns": [
-    "Deep technical implementation role, not strategic",
-    "No org design or transformation mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 40,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Requires hands-on technical architecture/engineering skills",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Chainguard::4703071006",
   "company": "Chainguard",
   "title": "Senior Solutions Architect - East (Professional Services)",
@@ -3512,44 +3357,6 @@
    "score": 25,
    "fit": "no",
    "reason": "US-remote practical fit is strong",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Chainguard::4703283006",
-  "company": "Chainguard",
-  "title": "Senior Solutions Architect - West (Professional Services)",
-  "location": "United States - Remote",
-  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4703283006",
-  "posted": "2026-08-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'professional services' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Deep technical hands-on engineering role",
-    "Not organizational strategy or transformation",
-    "Fully remote US is practically attractive"
-   ],
-   "concerns": [
-    "Requires hands-on software/security engineering skills",
-    "Wrong function despite professional services label"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 85,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Deep technical hands-on engineering role",
    "bg": "d192ce659668"
   }
  },
@@ -4792,45 +4599,6 @@
   }
  },
  {
-  "key": "Headway::89bb9ef6-e490-4d35-949c-f4007a264f8a",
-  "company": "Headway",
-  "title": "Legal Operations Lead",
-  "location": "Remote",
-  "url": "https://jobs.ashbyhq.com/headway/89bb9ef6-e490-4d35-949c-f4007a264f8a",
-  "posted": "2026-08-07",
-  "salary": "$95.2K \u2013 $140K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "AI-native operations design work",
-    "Remote-eligible role",
-    "Process/workflow ownership relevant experience",
-    "Legal domain specificity is a gap"
-   ],
-   "concerns": [
-    "Requires legal domain expertise she lacks",
-    "Prefers NY candidates, may deprioritize remote"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "AI-native operations design work",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Headway::e52a31cc-8593-4eb7-ae13-ee99d427549d",
   "company": "Headway",
   "title": "Lead, Payer Partnerships & Strategy",
@@ -5619,46 +5387,6 @@
   "rescued": true
  },
  {
-  "key": "Gainsight::662445a5-d9d3-4b34-bb26-25f9658fe317",
-  "company": "Gainsight",
-  "title": "Principal Customer Success Manager",
-  "location": "USA - CA - Remote",
-  "url": "https://jobs.ashbyhq.com/gainsight/662445a5-d9d3-4b34-bb26-25f9658fe317",
-  "posted": "2026-08-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote strong practical fit",
-    "CX/CS strategic account leadership aligns with experience",
-    "AI-driven CS platform fits AI adoption interest",
-    "Executive-facing ROI and advisory work"
-   ],
-   "concerns": [
-    "Individual account-management IC role, not org-transformation mandate",
-    "Narrower scope than her transformation/operations positioning"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 90,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "US-remote strong practical fit",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Gainsight::7a9d0c57-1382-4898-b9c7-47152c5196eb",
   "company": "Gainsight",
   "title": "Lead, Product Security",
@@ -5812,41 +5540,154 @@
   }
  },
  {
-  "key": "My Amazon Guy::https://himalayas.app/companies/my-amazon-guy/jobs/project-manager",
-  "company": "My Amazon Guy",
-  "title": "Project Manager",
+  "key": "Fifth Third Bank::https://himalayas.app/companies/fifth-third-bank/jobs/commercial-portfolio-manager-i-healthcare-g-i",
+  "company": "Fifth Third Bank",
+  "title": "Commercial Portfolio Manager I - Healthcare/G&I",
   "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/my-amazon-guy/jobs/project-manager",
-  "posted": "2026-08-28",
-  "salary": null,
+  "url": "https://himalayas.app/companies/fifth-third-bank/jobs/commercial-portfolio-manager-i-healthcare-g-i",
+  "posted": "2026-08-29",
+  "salary": "$71,100\u2013$145,900",
   "employment_type": "Full Time",
-  "expires": "2026-09-27",
+  "expires": "2026-10-28",
   "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "match_reason": "role family 'portfolio' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "medium",
+   "confidence": "high",
    "reasons": [
-    "Remote US location matches practical preference",
-    "Tactical PM role, not strategic transformation",
-    "Junior scope, task delegation focus not leadership mandate"
+    "Credit/lending portfolio management, not her domain"
    ],
    "concerns": [
-    "Far below her seniority and strategic scope",
-    "Agency execution role, not organizational strategy",
-    "Compensation/level likely mismatched to experience"
+    "Wrong function: commercial credit underwriting",
+    "No transformation, ops or strategy mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 20,
-   "practical_fit": 75,
-   "opportunity_score": 25,
-   "score": 25,
+   "qualification_fit": 10,
+   "interest_fit": 5,
+   "practical_fit": 50,
+   "opportunity_score": 8,
+   "score": 8,
    "fit": "no",
-   "reason": "Remote US location matches practical preference",
+   "reason": "Credit/lending portfolio management, not her domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Novakid School::https://himalayas.app/companies/novakid-school/jobs/creative-project-manager-youtube-short-form-distribution-remote",
+  "company": "Novakid School",
+  "title": "Creative Project Manager (YouTube+ Short-Form Distribution) - Remote",
+  "location": "Anywhere (Remote)",
+  "url": "https://himalayas.app/companies/novakid-school/jobs/creative-project-manager-youtube-short-form-distribution-remote",
+  "posted": "2026-08-29",
+  "salary": null,
+  "employment_type": "Full Time",
+  "expires": "2026-10-27",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Content/creative production role, not transformation or ops",
+    "Requires hands-on YouTube/short-form production expertise",
+    "Wrong function despite remote and PM keyword match"
+   ],
+   "concerns": [
+    "Not aligned with organizational strategy or operations mandate",
+    "Highly specialized content creator skillset required"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 60,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Content/creative production role, not transformation or ops",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Humana::https://himalayas.app/companies/humana/jobs/learning-design-lead",
+  "company": "Humana",
+  "title": "Learning Design Lead",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/humana/jobs/learning-design-lead",
+  "posted": "2026-08-29",
+  "salary": "$94,900\u2013$130,500",
+  "employment_type": "Full Time",
+  "expires": "2026-10-28",
+  "tier": "discovery",
+  "match_reason": "role family 'learning' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Fully remote US role",
+    "L&D/instructional design focus, not her core",
+    "Tech-specific skilling scope narrow",
+    "Adjacent to org development but not transformation"
+   ],
+   "concerns": [
+    "IC instructional design role, not strategic leadership",
+    "Weak match to transformation/ops core domains"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 90,
+   "opportunity_score": 38,
+   "score": 38,
+   "fit": "no",
+   "reason": "Fully remote US role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "HubSpot::https://himalayas.app/companies/hubspot/jobs/principal-technical-program-manager-product-fintech",
+  "company": "HubSpot",
+  "title": "Principal Technical Program Manager, Product FinTech",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/hubspot/jobs/principal-technical-program-manager-product-fintech",
+  "posted": "2026-08-29",
+  "salary": "$172,700\u2013$246,700",
+  "employment_type": "Full Time",
+  "expires": "2026-10-28",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Fully remote US role",
+    "Program leadership and cross-functional mandate",
+    "Executive-facing, transformation-adjacent scope"
+   ],
+   "concerns": [
+    "Highly technical fintech/billing domain expertise required",
+    "Craft Track technical PM, not her core background",
+    "SOX/revenue recognition specifics outside her proof points"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 45,
+   "practical_fit": 90,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Fully remote US role",
    "bg": "d192ce659668"
   }
  },
@@ -5997,46 +5838,6 @@
    "score": 20,
    "fit": "no",
    "reason": "Hands-on product management, not transformation/ops leadership",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Reddit::https://weworkremotely.com/remote-jobs/reddit-group-product-manager-finance-technology",
-  "company": "Reddit",
-  "title": "Group Product Manager, Finance Technology",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/reddit-group-product-manager-finance-technology",
-  "posted": "2026-08-07",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-09-06",
-  "tier": "discovery",
-  "match_reason": "mandate in description (adoption, ai transformation)",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "AI transformation and finance systems mandate",
-    "Fully remote role",
-    "Strategic orchestration across finance functions",
-    "Executive-facing influence role"
-   ],
-   "concerns": [
-    "Requires hands-on Product Manager/SaaS PM background",
-    "Finance domain depth (treasury, quote-to-cash) not her expertise",
-    "Title is technical PM, not transformation/ops leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "AI transformation and finance systems mandate",
    "bg": "d192ce659668"
   }
  },
