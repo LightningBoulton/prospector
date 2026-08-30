@@ -666,44 +666,6 @@
   }
  },
  {
-  "key": "Eliassen::08bf52f0-8c29-11f1-b76d-024201c20d84",
-  "company": "Eliassen",
-  "title": "Compliance Project Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/8tXGYR/compliance-project-manager-regulatorycompliance-anywhere-a1wuq000001mvuf2aa",
-  "posted": "2026-08-29",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote W2 contract, program/project management scope",
-    "Regulatory compliance domain not her core expertise",
-    "Some transferable PMO/project delivery skills"
-   ],
-   "concerns": [
-    "Deep BSA/AML/OFAC regulatory expertise required, not her background",
-    "Contract-only staffing role with narrow compliance mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 65,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Remote W2 contract, program/project management scope",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Eliassen::95a9af7f-8d03-11f1-b76d-024201c20d84",
   "company": "Eliassen",
   "title": "Senior Project Manager",
@@ -743,13 +705,13 @@
   }
  },
  {
-  "key": "Eliassen::08b7b180-8c29-11f1-b76d-024201c20d84",
+  "key": "Eliassen::08bf52f0-8c29-11f1-b76d-024201c20d84",
   "company": "Eliassen",
-  "title": "Technical Project Manager",
+  "title": "Compliance Project Manager",
   "location": "Remote",
-  "url": "https://careers.eliassen.com/8H3WtD/technical-project-manager-programproject-management-anywhere-a1wuq000001mlqt2aq",
-  "posted": "2026-08-28",
-  "salary": "$50.00 to $55.00",
+  "url": "https://careers.eliassen.com/8tXGYR/compliance-project-manager-regulatorycompliance-anywhere-a1wuq000001mvuf2aa",
+  "posted": "2026-08-29",
+  "salary": null,
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
@@ -758,26 +720,25 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Remote contract work",
-    "PM ownership but tactical, not strategic",
-    "Regulatory/software R&D domain not core fit"
+    "Remote W2 contract, program/project management scope",
+    "Regulatory compliance domain not her core expertise",
+    "Some transferable PMO/project delivery skills"
    ],
    "concerns": [
-    "Low seniority, execution-heavy role",
-    "Rate modest for her level",
-    "Not aligned with transformation/strategy goals"
+    "Deep BSA/AML/OFAC regulatory expertise required, not her background",
+    "Contract-only staffing role with narrow compliance mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 30,
-   "practical_fit": 60,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 65,
    "opportunity_score": 35,
    "score": 35,
    "fit": "maybe",
-   "reason": "Remote contract work",
+   "reason": "Remote W2 contract, program/project management scope",
    "bg": "d192ce659668"
   }
  },
@@ -1054,46 +1015,6 @@
   }
  },
  {
-  "key": "Robert Half::04838-0013493801-usen",
-  "company": "Robert Half",
-  "title": "Project Manager II",
-  "location": "Philadelphia, PA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/philadelphia-pa/project-manager-ii/04838-0013493801-usen",
-  "posted": "2026-08-25",
-  "salary": "$35.00\u2013$40.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Transformation initiative with process/change scope",
-    "Remote temp contract fits contract-work openness",
-    "Long duration through 2027 provides stability",
-    "Tactical PM level below her strategic scope"
-   ],
-   "concerns": [
-    "Highly tactical, documentation-heavy role",
-    "Below her typical seniority and strategic influence",
-    "Staffing agency temp placement, limited growth"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 65,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Transformation initiative with process/change scope",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::02960-0013490653-usen",
   "company": "Robert Half",
   "title": "Project Manager - Systems",
@@ -1208,6 +1129,86 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Program/PMO leadership matches core experience",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::02100-0013497234-usen",
+  "company": "Robert Half",
+  "title": "Program Manager - Branding",
+  "location": "Boston, MA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/boston-ma/program-manager-branding/02100-0013497234-usen",
+  "posted": "2026-08-28",
+  "salary": "$40.00\u2013$50.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract program management role",
+    "Executive stakeholder coordination fits skillset",
+    "Cross-functional strategic initiative management",
+    "Contract through year-end offers income bridge"
+   ],
+   "concerns": [
+    "Temp/contract, no long-term ownership",
+    "Branding focus is narrower than core transformation work",
+    "Below typical seniority/scope she targets"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 60,
+   "practical_fit": 75,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Remote contract program management role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::04838-0013493801-usen",
+  "company": "Robert Half",
+  "title": "Project Manager II",
+  "location": "Philadelphia, PA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/philadelphia-pa/project-manager-ii/04838-0013493801-usen",
+  "posted": "2026-08-25",
+  "salary": "$35.00\u2013$40.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Transformation initiative with process/change scope",
+    "Remote temp contract fits contract-work openness",
+    "Long duration through 2027 provides stability",
+    "Tactical PM level below her strategic scope"
+   ],
+   "concerns": [
+    "Highly tactical, documentation-heavy role",
+    "Below her typical seniority and strategic influence",
+    "Staffing agency temp placement, limited growth"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 65,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Transformation initiative with process/change scope",
    "bg": "d192ce659668"
   }
  },
@@ -1330,6 +1331,46 @@
   }
  },
  {
+  "key": "Robert Half::04400-0013495171-usen",
+  "company": "Robert Half",
+  "title": "IT Project Manager",
+  "location": "Redmond, WA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/redmond-wa/it-project-manager/04400-0013495171-usen",
+  "posted": "2026-08-27",
+  "salary": "$65.00\u2013$75.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "PM/vendor coordination fits operations background",
+    "Washington State location acceptable per preferences",
+    "Contract work explicitly in scope",
+    "Modest scope vs transformation-level mandate"
+   ],
+   "concerns": [
+    "Part-time, 6-month contract only",
+    "Fairly tactical IT vendor PM, not strategic",
+    "Low pay rate relative to seniority"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 40,
+   "practical_fit": 65,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "PM/vendor coordination fits operations background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Robert Half::00400-0013487121-usen",
   "company": "Robert Half",
   "title": "Finance Manager",
@@ -1363,46 +1404,6 @@
    "score": 25,
    "fit": "no",
    "reason": "FP&A/financial modeling role, wrong function",
-   "bg": "d192ce659668"
-  },
-  "rescued": true
- },
- {
-  "key": "Robert Half::02100-0013480905-usen",
-  "company": "Robert Half",
-  "title": "Marketing Project Manager",
-  "location": "Boston, MA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/boston-ma/marketing-project-manager/02100-0013480905-usen",
-  "posted": "2026-08-18",
-  "salary": "$40.00\u2013$45.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US contract fits practical constraints",
-    "Marketing ops/PM aligns with adjacent domain experience",
-    "Below her strategic seniority level",
-    "Temp income opportunity"
-   ],
-   "concerns": [
-    "Tactical PM role, limited strategic scope",
-    "Below her typical leadership level"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote US contract fits practical constraints",
    "bg": "d192ce659668"
   },
   "rescued": true

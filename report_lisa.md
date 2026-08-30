@@ -1,49 +1,55 @@
-# Prospector — 2026-08-29
+# Prospector — 2026-08-30
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 5 closed/removed
+**15 new roles today** · 8 still worth applying · 0 closed/removed
+
+## APPLY FIRST (1)
+- **Business Operations & Chief of Staff** — Waymark · 90/100 · remote USA (Remote) · posted 2026-08-29
+  - Why: Chief of Staff mandate with strategic planning ownership
+  - Concern: Healthcare/Medicaid domain is new area
+  - https://jobicy.com/jobs/152055-business-operations-chief-of-staff
 
 ## NEW — WORTH REVIEWING (10)
-- **Manager, Customer Success** — Gainsight · 58/100 · remote USA - CA - Remote · posted 2026-08-28
-  - Why: CX/CS leadership aligns with experience
-  - Concern: Quota/retention-metric ownership more operational than strategic
-  - https://jobs.ashbyhq.com/gainsight/60752d51-77dc-4bf8-b8d9-089f97b50bc6
-- **Principal Enterprise Delivery Manager, Migrations** — Atlassian · 55/100 · remote Remote - Americas; Remote - Remote; San Francisco - United States; New York - United States; Seattle - United States · first seen 2026-08-26
-  - Why: Remote US role
-  - Concern: Requires deep technical cloud/migration fluency
-  - https://careers-americas.icims.com/jobs/25321/principal-enterprise-delivery-manager%2c-migrations/job?mode=apply
-- **FLEX Senior Manager, Resiliency & Recoverability** — Marriott International · 55/100 · remote Bethesda, MD (Remote) · $48.26-$80.76 · first seen 2026-08-27
-  - Why: Priority employer Marriott, referral network advantage
-  - Concern: Deep DR/BC/technology risk domain specialization required
-  - https://careers.marriott.com/flex-senior-manager-resiliency-recoverability/job/6D61E7BF2F02720F4D687590955E1D35
-- **Principal HRBP, GTM** — Atlassian · 55/100 · remote Remote - Americas; Remote - Remote · first seen 2026-08-26
-  - Why: Org design and workforce planning mandate fits her strengths
-  - Concern: Core function is HRBP, not her demonstrated background
-  - https://careers-americas.icims.com/jobs/26772/principal-hrbp%2c-gtm/job?mode=apply
-- **Commercial Strategy Senior Manager** — Grow Therapy · 55/100 · remote New York City (Remote) · $134K – $215K · posted 2026-08-20
-  - Why: Strategic partnership ownership resembles operating model design
-  - Concern: Payor/health-plan commercial negotiation not her core background
-  - https://jobs.ashbyhq.com/grow-therapy/e147bc25-009b-40b2-ad02-2f8a957a7398
-- **Senior Field Enablement Business Partner** — Twilio · 55/100 · remote Remote - US · posted 2026-08-25
-  - Why: US-remote fits practical constraints well
-  - Concern: Focused on SDR/DSR sales enablement, not core mandate
-  - https://job-boards.greenhouse.io/twilio/jobs/8155298
-- **Senior Manager, Revenue Operations** — Omada Health · 55/100 · remote Remote, USA · posted 2026-08-25
-  - Why: Fully remote US role
-  - Concern: Heavily analytics/data-modeling focused, less transformation strategy
-  - https://job-boards.greenhouse.io/omadahealth/jobs/8114215
-- **Manager, Fraud Operations** — Affirm · 55/100 · remote Remote US · posted 2026-08-27
-  - Why: Fully remote US role
-  - Concern: Deep fraud/compliance specialization not her background
-  - https://job-boards.greenhouse.io/affirm/jobs/7821076003
-- **Senior Principal, Technical Program Management - Regulatory Compliance** — Twilio · 55/100 · remote Remote - US · posted 2026-08-27
-  - Why: US-remote strong practical fit
-  - Concern: Needs specialized SaaS regulatory compliance expertise
-  - https://job-boards.greenhouse.io/twilio/jobs/8157707
-- **Senior Technical Program Manager** — Chainguard · 55/100 · remote United States - Remote · posted 2026-08-27
-  - Why: Program leadership with strategic scope
-  - Concern: Deeply technical security domain, not her background
-  - https://job-boards.greenhouse.io/chainguard/jobs/4707825006
+- **Knowledge Management & Training Lead** — Mercury · 55/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-08-28
+  - Why: Governance, standards, AI-enabled knowledge system design
+  - Concern: Narrower knowledge-management/training scope than typical target
+  - https://job-boards.greenhouse.io/mercury/jobs/6174117004
+- **Success Program Manager** — LVT · 55/100 · onsite American Fork, Utah, United States · posted 2026-08-26
+  - Why: Utah-local role, strong practical fit
+  - Concern: May be too individual-contributor/tactical
+  - https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5405554008
+- **FLEX Director, Digital Analytics** — Marriott International · 50/100 · remote Bethesda, MD (Remote) · $61.05-$98.55 · first seen 2026-08-29
+  - Why: Priority employer Marriott
+  - Concern: Heavy quantitative/analytics specialization mismatch
+  - https://careers.marriott.com/flex-director-digital-analytics/job/2C49E04D5F0227A35D7D41F06251AB09
+- **Brand Marketing Program Manager** — Plaid · 50/100 · remote San Francisco HQ (Remote) · $152.4K – $189.6K · posted 2026-08-26
+  - Why: Marketing ops program management touches operational excellence
+  - Concern: Focused on brand marketing campaigns, not transformation/strategy
+  - https://jobs.ashbyhq.com/plaid/75512514-c532-44d7-8df2-49b3cfda0ad0
+- **Senior Internal Communications Manager** — Coinbase · 50/100 · remote Remote - USA · posted 2026-08-27
+  - Why: US-remote role fits location preference
+  - Concern: Core function is internal comms, not her specialty
+  - https://www.coinbase.com/careers/positions/8162911?gh_jid=8162911
+- **Senior Partner Enablement Manager** — NICE · 50/100 · onsite USA - Sandy, UT · posted 2026-08-27
+  - Why: Utah-local role, strong practical fit
+  - Concern: Heavily sales/partner-channel focused, not transformation
+  - https://boards.eu.greenhouse.io/nice/jobs/4962210101?gh_jid=4962210101
+- **Sr Manager, Technology Product Management - Unified Experience Layer (UXL)** — Marriott International · 45/100 · remote Bethesda, MD (Remote) · $110,400-$157,000 · first seen 2026-08-26
+  - Why: Priority employer Marriott
+  - Concern: Requires deep technical API/platform product background
+  - https://careers.marriott.com/sr-manager-technology-product-management-unified-experience-layer-uxl/job/8E6370686AEBC193B128BC5CB44F8809
+- **FLEX Director, Data Products – Shop & Book** — Marriott International · 45/100 · remote Bethesda, MD (Remote) · $57.21-$95.67 · first seen 2026-08-26
+  - Why: Priority employer Marriott, remote
+  - Concern: Requires deep data engineering/analytics product expertise
+  - https://careers.marriott.com/flex-director-data-products-shop-book/job/DAB38D4176D7B8B3610A2C949967C581
+- **Senior Manager, Customer Marketing Boutiques** — Marriott International · 45/100 · remote Bethesda, MD (Remote) · $110,400-$159,000 · first seen 2026-08-26
+  - Why: Priority employer Marriott
+  - Concern: Heavily CRM/lifecycle marketing execution, not transformation/ops
+  - https://careers.marriott.com/senior-manager-customer-marketing-boutiques/job/8317368351650C08F7002B9FDBE0DD0A
+- **FLEX Senior Program Specialist - Lodging Product & Services** — Marriott International · 45/100 · remote Bethesda, MD (Remote) · $22.64-$39.71 · first seen 2026-08-26
+  - Why: Priority employer Marriott raises visibility
+  - Concern: Temporary role, expires 2026
+  - https://careers.marriott.com/flex-senior-program-specialist-lodging-product-services/job/76CBE1CAB949FD6E30197907349543D2
 
 ## DISCOVERY / WILDCARDS (4)
 - **Senior Director Service Strategy, Core, and AI** — Salesforce · 82/100 · onsite Bellevue (+1 more) · $181,700 - $304,700 · posted 2026-08-19
@@ -96,13 +102,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Chief of Staff mandate with real operating ownership
   - Concern: R&D/engineering-specific context may require ramp-up
   - https://jobs.ashbyhq.com/headway/18261737-fed6-4203-aeaa-6068545f9f1e
-
-## REMOVED SINCE PRIOR RUN (5)
-- Principal Customer Success Manager — Gainsight · No longer listed by its source
-- Legal Operations Lead — Headway · No longer listed by its source
-- Senior Product Operations Specialist — Mercury · No longer listed by its source
-- Group Product Manager, Finance Technology — Reddit · No longer listed by its source
-- Program Manager - Branding — Robert Half · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 136/137 successful

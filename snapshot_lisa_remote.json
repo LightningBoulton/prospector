@@ -2041,45 +2041,6 @@
   }
  },
  {
-  "key": "Stripe::8160754",
-  "company": "Stripe",
-  "title": "Hardware Program Manager, Terminal Logistics",
-  "location": "Chicago, Atlanta, US-Remote",
-  "url": "https://stripe.com/jobs/search?gh_jid=8160754",
-  "posted": "2026-08-27",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Program management ownership over supply chain operations",
-    "US-remote option fits practical constraints",
-    "Adjacent to operational excellence and process design",
-    "Not core transformation/strategy mandate"
-   ],
-   "concerns": [
-    "Hardware supply chain domain is niche vs her background",
-    "Heavy vendor/logistics ops focus, not org strategy"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 75,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Program management ownership over supply chain operations",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Stripe::8128634",
   "company": "Stripe",
   "title": "Head of AEO & SEO",
@@ -3623,6 +3584,45 @@
    "score": 20,
    "fit": "no",
    "reason": "Marketing tech/systems ownership, not transformation or strategy",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Baseten::40bce839-10ad-4274-a988-7cee8e0f795e",
+  "company": "Baseten",
+  "title": "Technical Program Manager, Model Performance",
+  "location": "San Francisco (Remote)",
+  "url": "https://jobs.ashbyhq.com/baseten/40bce839-10ad-4274-a988-7cee8e0f795e",
+  "posted": "2026-08-29",
+  "salary": "$165K \u2013 $330K",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Program leadership and zero-to-one structure building",
+    "Remote-eligible role",
+    "Cross-functional execution ownership"
+   ],
+   "concerns": [
+    "Deeply technical AI/ML inference domain, not her background",
+    "Requires technical credibility with engineers",
+    "No transformation/org-design mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 70,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Program leadership and zero-to-one structure building",
    "bg": "d192ce659668"
   }
  },
@@ -5540,158 +5540,6 @@
   }
  },
  {
-  "key": "Fifth Third Bank::https://himalayas.app/companies/fifth-third-bank/jobs/commercial-portfolio-manager-i-healthcare-g-i",
-  "company": "Fifth Third Bank",
-  "title": "Commercial Portfolio Manager I - Healthcare/G&I",
-  "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/fifth-third-bank/jobs/commercial-portfolio-manager-i-healthcare-g-i",
-  "posted": "2026-08-29",
-  "salary": "$71,100\u2013$145,900",
-  "employment_type": "Full Time",
-  "expires": "2026-10-28",
-  "tier": "discovery",
-  "match_reason": "role family 'portfolio' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Credit/lending portfolio management, not her domain"
-   ],
-   "concerns": [
-    "Wrong function: commercial credit underwriting",
-    "No transformation, ops or strategy mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 50,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Credit/lending portfolio management, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Novakid School::https://himalayas.app/companies/novakid-school/jobs/creative-project-manager-youtube-short-form-distribution-remote",
-  "company": "Novakid School",
-  "title": "Creative Project Manager (YouTube+ Short-Form Distribution) - Remote",
-  "location": "Anywhere (Remote)",
-  "url": "https://himalayas.app/companies/novakid-school/jobs/creative-project-manager-youtube-short-form-distribution-remote",
-  "posted": "2026-08-29",
-  "salary": null,
-  "employment_type": "Full Time",
-  "expires": "2026-10-27",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Content/creative production role, not transformation or ops",
-    "Requires hands-on YouTube/short-form production expertise",
-    "Wrong function despite remote and PM keyword match"
-   ],
-   "concerns": [
-    "Not aligned with organizational strategy or operations mandate",
-    "Highly specialized content creator skillset required"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Content/creative production role, not transformation or ops",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Humana::https://himalayas.app/companies/humana/jobs/learning-design-lead",
-  "company": "Humana",
-  "title": "Learning Design Lead",
-  "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/humana/jobs/learning-design-lead",
-  "posted": "2026-08-29",
-  "salary": "$94,900\u2013$130,500",
-  "employment_type": "Full Time",
-  "expires": "2026-10-28",
-  "tier": "discovery",
-  "match_reason": "role family 'learning' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Fully remote US role",
-    "L&D/instructional design focus, not her core",
-    "Tech-specific skilling scope narrow",
-    "Adjacent to org development but not transformation"
-   ],
-   "concerns": [
-    "IC instructional design role, not strategic leadership",
-    "Weak match to transformation/ops core domains"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 90,
-   "opportunity_score": 38,
-   "score": 38,
-   "fit": "no",
-   "reason": "Fully remote US role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "HubSpot::https://himalayas.app/companies/hubspot/jobs/principal-technical-program-manager-product-fintech",
-  "company": "HubSpot",
-  "title": "Principal Technical Program Manager, Product FinTech",
-  "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/hubspot/jobs/principal-technical-program-manager-product-fintech",
-  "posted": "2026-08-29",
-  "salary": "$172,700\u2013$246,700",
-  "employment_type": "Full Time",
-  "expires": "2026-10-28",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Fully remote US role",
-    "Program leadership and cross-functional mandate",
-    "Executive-facing, transformation-adjacent scope"
-   ],
-   "concerns": [
-    "Highly technical fintech/billing domain expertise required",
-    "Craft Track technical PM, not her core background",
-    "SOX/revenue recognition specifics outside her proof points"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Fully remote US role",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Chime Financial, Inc::https://weworkremotely.com/remote-jobs/chime-financial-inc-genesys-platform-program-lead",
   "company": "Chime Financial, Inc",
   "title": "Genesys Platform Program Lead",
@@ -6226,6 +6074,45 @@
    "score": 45,
    "fit": "maybe",
    "reason": "US-remote practical fit is strong",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Waymark::152055",
+  "company": "Waymark",
+  "title": "Business Operations & Chief of Staff",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/152055-business-operations-chief-of-staff",
+  "posted": "2026-08-29",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "apply_first",
+   "confidence": "high",
+   "reasons": [
+    "Chief of Staff mandate with strategic planning ownership",
+    "US-remote matches top location preference",
+    "Cross-functional exec-facing scope",
+    "Business process and communications ownership",
+    "Scaling organization coordination fits transformation background"
+   ],
+   "concerns": [
+    "Healthcare/Medicaid domain is new area"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 90,
+   "interest_fit": 90,
+   "practical_fit": 95,
+   "opportunity_score": 90,
+   "score": 90,
+   "fit": "yes",
+   "reason": "Chief of Staff mandate with strategic planning ownership",
    "bg": "d192ce659668"
   }
  },
