@@ -116,46 +116,6 @@
   }
  },
  {
-  "key": "Aquent::212497",
-  "company": "Aquent",
-  "title": "Business Transformation Associate",
-  "location": "Atlanta, GA, US (Remote)",
-  "url": "https://aquent.com/find-work/212497",
-  "posted": "2026-08-24",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Operational transformation and AI enablement mandate",
-    "Process automation and change management scope",
-    "Remote contract role via staffing firm",
-    "COO-facing strategic delivery partner"
-   ],
-   "concerns": [
-    "Associate-level title suggests junior scope",
-    "Contract/temp via staffing agency",
-    "Hands-on AI build work beyond her core strengths"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 65,
-   "practical_fit": 55,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Operational transformation and AI enablement mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Aquent::212493",
   "company": "Aquent",
   "title": "Real Estate and Wealth Advisory Manager",
@@ -471,45 +431,6 @@
   }
  },
  {
-  "key": "Aquent::212302",
-  "company": "Aquent",
-  "title": "Creative Operations Manager, Packaging",
-  "location": "New York, NY, US (Remote)",
-  "url": "https://aquent.com/find-work/212302",
-  "posted": "2026-08-13",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Creative production management, not strategic transformation",
-    "Remote but NY-based staffing contract",
-    "Packaging/creative ops is adjacent but narrow scope"
-   ],
-   "concerns": [
-    "Below her strategic/transformation mandate level",
-    "Hands-on creative production, not org strategy",
-    "Contract role via staffing agency"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 35,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Creative production management, not strategic transformation",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Aquent::212284",
   "company": "Aquent",
   "title": "Program Manager Tech",
@@ -662,83 +583,6 @@
    "score": 55,
    "fit": "maybe",
    "reason": "OCM/comms specialist role, contract via staffing firm",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Eliassen::95a9af7f-8d03-11f1-b76d-024201c20d84",
-  "company": "Eliassen",
-  "title": "Senior Project Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/itKMUh/senior-project-manager-programproject-management-anywhere-a1wuq000001n7cf2ai",
-  "posted": "2026-08-29",
-  "salary": "$70.00 to $80.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract PM work",
-    "Program governance and stakeholder management transferable",
-    "Heavy AML/technical domain specificity not her background"
-   ],
-   "concerns": [
-    "Requires deep AML/regulatory/technical platform expertise",
-    "W2 contract only, narrow specialization",
-    "Not aligned with transformation/strategy focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 50,
-   "interest_fit": 35,
-   "practical_fit": 65,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Remote contract PM work",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Eliassen::08bf52f0-8c29-11f1-b76d-024201c20d84",
-  "company": "Eliassen",
-  "title": "Compliance Project Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/8tXGYR/compliance-project-manager-regulatorycompliance-anywhere-a1wuq000001mvuf2aa",
-  "posted": "2026-08-29",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote W2 contract, program/project management scope",
-    "Regulatory compliance domain not her core expertise",
-    "Some transferable PMO/project delivery skills"
-   ],
-   "concerns": [
-    "Deep BSA/AML/OFAC regulatory expertise required, not her background",
-    "Contract-only staffing role with narrow compliance mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 65,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Remote W2 contract, program/project management scope",
    "bg": "d192ce659668"
   }
  },
@@ -898,6 +742,43 @@
   }
  },
  {
+  "key": "Eliassen::bbb9e65d-9b1f-11f1-a3dc-024201c20d84",
+  "company": "Eliassen",
+  "title": "Regulatory Operations Project Manager, Global Submissions Planning/ Management",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/N4Y9xx/regulatory-operations-project-manager-global-submissions-planning-management-qr-anywhere-a1wuq000001pzs52aa",
+  "posted": "2026-08-18",
+  "salary": "$65.00 to $75.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Highly specialized regulatory affairs/eCTD domain, not her field",
+    "No transformation, ops strategy or org design mandate"
+   ],
+   "concerns": [
+    "Wrong function - regulatory submissions expertise required",
+    "Contract W2 role outside core competencies"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Highly specialized regulatory affairs/eCTD domain, not her field",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Eliassen::cb2417c1-9b38-11f1-a3dc-024201c20d84",
   "company": "Eliassen",
   "title": "Team Operations Integration Lead",
@@ -938,158 +819,42 @@
   }
  },
  {
-  "key": "Eliassen::bbb9e65d-9b1f-11f1-a3dc-024201c20d84",
-  "company": "Eliassen",
-  "title": "Regulatory Operations Project Manager, Global Submissions Planning/ Management",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/N4Y9xx/regulatory-operations-project-manager-global-submissions-planning-management-qr-anywhere-a1wuq000001pzs52aa",
-  "posted": "2026-08-18",
-  "salary": "$65.00 to $75.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Highly specialized regulatory affairs/eCTD domain, not her field",
-    "No transformation, ops strategy or org design mandate"
-   ],
-   "concerns": [
-    "Wrong function - regulatory submissions expertise required",
-    "Contract W2 role outside core competencies"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Highly specialized regulatory affairs/eCTD domain, not her field",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Eliassen::c3af4a41-9fe8-11f1-ad55-024201c20d84",
-  "company": "Eliassen",
-  "title": "Product Manager, AI-Enabled Member Experience",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/W3Lbm9/product-manager-ai-enabled-member-experience-product-management-anywhere-a1wuq000001ptgd2aq",
-  "posted": "2026-08-24",
-  "salary": "$65.00 to $75.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "AI-enabled member experience aligns with AI adoption interest",
-    "Remote contract role via staffing firm",
-    "Hands-on PM/technical scope beyond her strategic operating level",
-    "CX transformation angle fits background"
-   ],
-   "concerns": [
-    "Requires hands-on product management/technical fluency not her core strength",
-    "W2 contract at hourly rate, lower seniority than target roles",
-    "Staffing firm placement, uncertain long-term trajectory"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 60,
-   "practical_fit": 65,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "AI-enabled member experience aligns with AI adoption interest",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::02960-0013490653-usen",
+  "key": "Robert Half::02100-0013497234-usen",
   "company": "Robert Half",
-  "title": "Project Manager - Systems",
-  "location": "Irvine, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/irvine-ca/project-manager-systems/02960-0013490653-usen",
-  "posted": "2026-08-18",
-  "salary": "$59.38\u2013$68.75/hr",
-  "employment_type": "Temp to Perm",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Cross-functional PM leadership matches operations background",
-    "Remote option noted despite Irvine location",
-    "Contract-to-perm fits open employment stance"
-   ],
-   "concerns": [
-    "Hands-on system implementation/configuration is more IT-execution than her focus",
-    "Pharma-specific background requirement is a mismatch",
-    "Temp-to-perm PM role lacks strategic transformation scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Cross-functional PM leadership matches operations background",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::03200-0013491659-usen",
-  "company": "Robert Half",
-  "title": "Project Manager - Strategic Operations",
-  "location": "Charlotte, NC (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/charlotte-nc/project-manager-strategic-operations/03200-0013491659-usen",
-  "posted": "2026-08-24",
-  "salary": "$76.00\u2013$88.00/hr",
+  "title": "Program Manager - Branding",
+  "location": "Boston, MA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/boston-ma/program-manager-branding/02100-0013497234-usen",
+  "posted": "2026-08-28",
+  "salary": "$40.00\u2013$50.00/hr",
   "employment_type": "Temp",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Operational program leadership and executive support",
-    "Cross-functional coordination matches operations background",
-    "Remote listed despite Charlotte location",
-    "Long-term contract could offer near-term income"
+    "Remote contract program management role",
+    "Executive stakeholder coordination fits skillset",
+    "Cross-functional strategic initiative management",
+    "Contract through year-end offers income bridge"
    ],
    "concerns": [
-    "Temp/contract via staffing agency, not permanent",
-    "Below her typical seniority and scope",
-    "Compensation not stated"
+    "Temp/contract, no long-term ownership",
+    "Branding focus is narrower than core transformation work",
+    "Below typical seniority/scope she targets"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 55,
-   "practical_fit": 55,
-   "opportunity_score": 50,
-   "score": 50,
+   "qualification_fit": 75,
+   "interest_fit": 60,
+   "practical_fit": 75,
+   "opportunity_score": 62,
+   "score": 62,
    "fit": "maybe",
-   "reason": "Operational program leadership and executive support",
+   "reason": "Remote contract program management role",
    "bg": "d192ce659668"
   }
  },
@@ -1129,46 +894,6 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Program/PMO leadership matches core experience",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::02100-0013497234-usen",
-  "company": "Robert Half",
-  "title": "Program Manager - Branding",
-  "location": "Boston, MA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/boston-ma/program-manager-branding/02100-0013497234-usen",
-  "posted": "2026-08-28",
-  "salary": "$40.00\u2013$50.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract program management role",
-    "Executive stakeholder coordination fits skillset",
-    "Cross-functional strategic initiative management",
-    "Contract through year-end offers income bridge"
-   ],
-   "concerns": [
-    "Temp/contract, no long-term ownership",
-    "Branding focus is narrower than core transformation work",
-    "Below typical seniority/scope she targets"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 60,
-   "practical_fit": 75,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Remote contract program management role",
    "bg": "d192ce659668"
   }
  },
@@ -1248,6 +973,85 @@
    "score": 40,
    "fit": "maybe",
    "reason": "Remote, short contract could work for income",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::02960-0013490653-usen",
+  "company": "Robert Half",
+  "title": "Project Manager - Systems",
+  "location": "Irvine, CA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/irvine-ca/project-manager-systems/02960-0013490653-usen",
+  "posted": "2026-08-18",
+  "salary": "$59.38\u2013$68.75/hr",
+  "employment_type": "Temp to Perm",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Cross-functional PM leadership matches operations background",
+    "Remote option noted despite Irvine location",
+    "Contract-to-perm fits open employment stance"
+   ],
+   "concerns": [
+    "Hands-on system implementation/configuration is more IT-execution than her focus",
+    "Pharma-specific background requirement is a mismatch",
+    "Temp-to-perm PM role lacks strategic transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Cross-functional PM leadership matches operations background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::03200-0013491659-usen",
+  "company": "Robert Half",
+  "title": "Project Manager - Strategic Operations",
+  "location": "Charlotte, NC (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/charlotte-nc/project-manager-strategic-operations/03200-0013491659-usen",
+  "posted": "2026-08-24",
+  "salary": "$76.00\u2013$88.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Operational program leadership and executive support",
+    "Cross-functional coordination matches operations background",
+    "Remote listed despite Charlotte location",
+    "Long-term contract could offer near-term income"
+   ],
+   "concerns": [
+    "Temp/contract via staffing agency, not permanent",
+    "Below her typical seniority and scope",
+    "Compensation not stated"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Operational program leadership and executive support",
    "bg": "d192ce659668"
   }
  },
@@ -1336,7 +1140,7 @@
   "title": "IT Project Manager",
   "location": "Redmond, WA (Remote)",
   "url": "https://www.roberthalf.com/us/en/job/redmond-wa/it-project-manager/04400-0013495171-usen",
-  "posted": "2026-08-27",
+  "posted": "2026-08-31",
   "salary": "$65.00\u2013$75.00/hr",
   "employment_type": "Temp",
   "expires": "",

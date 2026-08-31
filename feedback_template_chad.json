@@ -226,37 +226,9 @@
    "note": ""
   },
   {
-   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/backend-developer-go-2202957279",
-   "company": "Bright Vision Technologies",
-   "title": "Backend Developer \u2013 Go",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/full-stack-solutions-developer-java-7796102315",
-   "company": "Bright Vision Technologies",
-   "title": "Full Stack Solutions Developer \u2013 Java",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/react-developer-333873131",
-   "company": "Bright Vision Technologies",
-   "title": "React Developer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Canonical::149561",
    "company": "Canonical",
    "title": "Engineering Manager - Data Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Canonical::149571",
-   "company": "Canonical",
-   "title": "Software Engineering Director",
    "status": "",
    "note": ""
   },
@@ -492,6 +464,13 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8166218",
+   "company": "Coinbase",
+   "title": "Staff Software Engineer, Enterprise Apps",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8148248",
    "company": "Coinbase",
    "title": "Strategic Finance Manager, Platform",
@@ -583,6 +562,13 @@
    "note": ""
   },
   {
+   "key": "Deepgram::1645ceac-3ef9-45ba-8386-49c7c43b14f0",
+   "company": "Deepgram",
+   "title": "Senior Forward Deployed Engineer, Strategic Accounts",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Deepgram::4a6b5eb2-4720-4ec8-8d7d-4ae0f7bbe2cc",
    "company": "Deepgram",
    "title": "Software Test Engineer",
@@ -653,6 +639,13 @@
    "note": ""
   },
   {
+   "key": "General Dynamics Information Technology::https://himalayas.app/companies/general-dynamics-information-technology/jobs/cyber-systems-integration-engineer-sr-principal",
+   "company": "General Dynamics Information Technology",
+   "title": "Cyber Systems Integration Engineer Sr Principal",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "GitLab::8698314002",
    "company": "GitLab",
    "title": "Backend Engineer, AI Engineering: Duo Chat",
@@ -698,6 +691,13 @@
    "key": "GitLab::8734888002",
    "company": "GitLab",
    "title": "Staff Corporate Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8761409002",
+   "company": "GitLab",
+   "title": "Staff Security Engineer, IAM",
    "status": "",
    "note": ""
   },
@@ -1108,13 +1108,6 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8142657",
-   "company": "Mixpanel",
-   "title": "Customer Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Mixpanel::8142661",
    "company": "Mixpanel",
    "title": "Customer Engineer",
@@ -1122,7 +1115,14 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8126545",
+   "key": "Mixpanel::8142657",
+   "company": "Mixpanel",
+   "title": "Customer Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Mixpanel::8148613",
    "company": "Mixpanel",
    "title": "Delivery Engineer II",
    "status": "",
@@ -1136,7 +1136,7 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8148613",
+   "key": "Mixpanel::8126545",
    "company": "Mixpanel",
    "title": "Delivery Engineer II",
    "status": "",
@@ -1556,6 +1556,13 @@
    "note": ""
   },
   {
+   "key": "Stripe::8130913",
+   "company": "Stripe",
+   "title": "Designer, Web, Presence & Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Stripe::8080454",
    "company": "Stripe",
    "title": "Integration Engineer, Metronome",
@@ -1612,13 +1619,6 @@
    "note": ""
   },
   {
-   "key": "Tailscale::4727446005",
-   "company": "Tailscale",
-   "title": "Security Operations Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Tailscale::4725185005",
    "company": "Tailscale",
    "title": "Senior Manager, Developer Relations",
@@ -1640,14 +1640,14 @@
    "note": ""
   },
   {
-   "key": "Twilio::8139748",
+   "key": "Twilio::8115128",
    "company": "Twilio",
    "title": "Principal Presales Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8115128",
+   "key": "Twilio::8139748",
    "company": "Twilio",
    "title": "Principal Presales Engineer",
    "status": "",
@@ -1671,6 +1671,13 @@
    "key": "Upstart::142530",
    "company": "Upstart",
    "title": "Senior Engineering Manager, Platform Delivery",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Vanta::b6064c79-c142-430f-9dbc-1bed9b2023c9",
+   "company": "Vanta",
+   "title": "Principal Software Engineer, Program Structure",
    "status": "",
    "note": ""
   },
@@ -1747,7 +1754,7 @@
   {
    "key": "Vanta::87d75493-1d6e-490e-b5ac-d807f5fb5621",
    "company": "Vanta",
-   "title": "Staff Software Engineer, Foundations",
+   "title": "Staff Software Engineer, Foundations Data Platform",
    "status": "",
    "note": ""
   },
@@ -1839,13 +1846,6 @@
    "key": "Western Governors University::JR-026019",
    "company": "Western Governors University",
    "title": "Principal Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025703",
-   "company": "Western Governors University",
-   "title": "Senior Cloud Engineer (IAM)",
    "status": "",
    "note": ""
   },

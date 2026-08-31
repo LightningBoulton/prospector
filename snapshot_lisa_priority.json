@@ -249,42 +249,83 @@
   }
  },
  {
-  "key": "Salesforce::JR355677",
+  "key": "Salesforce::JR355276",
   "company": "Salesforce",
-  "title": "Engagement Delivery Leader - Public Sector",
-  "location": "Remote (+5 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---Irvine/Engagement-Delivery-Leader---Public-Sector_JR355677",
-  "posted": "2026-08-29",
-  "salary": "$143,400 - $216,900",
+  "title": "Senior Technical Consultant - PubSec",
+  "location": "Remote (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Canada---Toronto/Senior-Technical-Consultant---PubSec_JR355276",
+  "posted": "2026-08-31",
+  "salary": null,
   "employment_type": "",
   "expires": "",
   "priority_employer": true,
   "tier": "discovery",
-  "match_reason": "role family 'delivery' + seniority in title",
+  "match_reason": "role family 'consultant' + seniority in title",
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Delivery leadership matches professional services background",
-    "Salesforce is priority employer",
-    "Remote fits location preference",
-    "Public sector scope unclear"
+    "Priority employer Salesforce with referral advantage",
+    "Remote role fits location preference",
+    "Title suggests hands-on technical consulting, not her domain",
+    "No description to confirm strategic scope"
    ],
    "concerns": [
-    "Thin posting, no description",
-    "Public sector focus may be narrower than her domain"
+    "Likely requires deep Salesforce technical/config expertise",
+    "PubSec focus may require clearance or niche experience",
+    "Thin posting, high uncertainty"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 68,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 70,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR346225",
+  "company": "Salesforce",
+  "title": "Program Delivery Leader (Multiple Levels)",
+  "location": "Remote (+5 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Remote/Engagement-Delivery-Director_JR346225",
+  "posted": "2026-08-31",
+  "salary": "$117,400 - $261,500",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'program' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Program leadership matches PMO/program experience",
+    "Salesforce is a named priority employer",
+    "US remote location aligns with top preference",
+    "Title suggests delivery/program ownership scope"
+   ],
+   "concerns": [
+    "No description to confirm mandate or seniority",
+    "Could be delivery execution role, not strategic"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
    "interest_fit": 65,
    "practical_fit": 85,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Delivery leadership matches professional services background",
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "maybe",
+   "reason": "Program leadership matches PMO/program experience",
    "bg": "d192ce659668"
   }
  },
@@ -816,12 +857,12 @@
   }
  },
  {
-  "key": "Salesforce::JR350308",
+  "key": "Salesforce::JR356729",
   "company": "Salesforce",
   "title": "Customer Success Manager, Senior Manager - Global Public Sector (State & Local)",
   "location": "Remote (+4 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Customer-Success-Manager---Global-Public-Sector--Education-_JR350308-1",
-  "posted": "2026-08-18",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Customer-Success-Manager--Senior-Manager---Global-Public-Sector--State---Local-_JR356729",
+  "posted": "2026-08-19",
   "salary": "$123,100 - $227,000",
   "employment_type": "",
   "expires": "",
@@ -833,15 +874,15 @@
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Salesforce priority employer",
-    "Remote role fits location preference",
-    "Customer success leadership adjacent domain",
-    "Senior Manager level fits seniority stance"
+    "Customer success leadership at priority employer Salesforce",
+    "Remote-eligible posting",
+    "Senior Manager scope may carry real ownership",
+    "Public sector focus may narrow relevance",
+    "Thin posting limits confidence"
    ],
    "concerns": [
-    "No description to confirm scope",
-    "Public sector niche may not match background",
-    "Title suggests CSM ops not transformation"
+    "No description to confirm strategic scope",
+    "Public sector/state & local niche may not match background"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -849,11 +890,11 @@
    "valid": true,
    "qualification_fit": 55,
    "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
    "fit": "maybe",
-   "reason": "Salesforce priority employer",
+   "reason": "Customer success leadership at priority employer Salesforce",
    "bg": "d192ce659668"
   }
  },
@@ -935,47 +976,6 @@
    "score": 65,
    "fit": "maybe",
    "reason": "Salesforce is a priority employer target",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR355276",
-  "company": "Salesforce",
-  "title": "Senior Technical Consultant - PubSec",
-  "location": "Remote (+3 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Canada---Toronto/Senior-Technical-Consultant---PubSec_JR355276",
-  "posted": "2026-08-17",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'consultant' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Salesforce with referral advantage",
-    "Remote role fits location preference",
-    "Title suggests hands-on technical consulting, not her domain",
-    "No description to confirm strategic scope"
-   ],
-   "concerns": [
-    "Likely requires deep Salesforce technical/config expertise",
-    "PubSec focus may require clearance or niche experience",
-    "Thin posting, high uncertainty"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 70,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Priority employer Salesforce with referral advantage",
    "bg": "d192ce659668"
   }
  },
@@ -1188,7 +1188,7 @@
   "title": "Customer Success Manager, Senior Manager - Healthcare & Life Sciences (Multiple Levels)",
   "location": "Bellevue (+10 more)",
   "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Customer-Success-Manager--Senior-Manager---Healthcare---Life-Sciences--Multiple-Levels-_JR326962",
-  "posted": "2026-08-27",
+  "posted": "2026-08-31",
   "salary": "$123,100 - $273,000",
   "employment_type": "",
   "expires": "",
@@ -1917,13 +1917,54 @@
   }
  },
  {
-  "key": "Zillow Group::P751158",
+  "key": "Zillow Group::P751279",
   "company": "Zillow Group",
   "title": "Principal Strategic GTM Program Manager",
   "location": "Remote-USA",
-  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Principal-Strategic-GTM-Program-Manager_P751158-1",
-  "posted": "2026-08-27",
+  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Principal-Strategic-GTM-Program-Manager_P751279-1",
+  "posted": "2026-08-31",
   "salary": "$131,700.00 - $210,300.00",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Zillow Group",
+    "US-remote matches top location preference",
+    "Program leadership aligns with PMO strength",
+    "GTM strategy adjacent to transformation work"
+   ],
+   "concerns": [
+    "No description; GTM focus may skew sales-ops not transformation",
+    "Principal IC scope unclear",
+    "Title suggests narrower go-to-market focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 90,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Priority employer Zillow Group",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Zillow Group::P751129",
+  "company": "Zillow Group",
+  "title": "Senior Strategic GTM Program Manager",
+  "location": "Remote-USA",
+  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Senior-Strategic-GTM-Program-Manager_P751129-1",
+  "posted": "2026-08-31",
+  "salary": "$109,000.00 - $174,000.00",
   "employment_type": "",
   "expires": "",
   "priority_employer": true,
@@ -1934,23 +1975,23 @@
    "confidence": "low",
    "reasons": [
     "Priority employer Zillow Group",
-    "US-remote fits practical preferences",
-    "Program leadership aligns with core domain",
-    "GTM strategy scope plausible fit"
+    "Remote US matches location preference",
+    "Program leadership aligns with PMO experience",
+    "GTM strategy adjacent to transformation work"
    ],
    "concerns": [
-    "No description; scope unclear",
-    "GTM-specific may differ from transformation focus"
+    "No description available to confirm mandate",
+    "GTM focus may be more sales-ops than transformation"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
+   "qualification_fit": 70,
+   "interest_fit": 65,
    "practical_fit": 90,
-   "opportunity_score": 65,
-   "score": 65,
+   "opportunity_score": 68,
+   "score": 68,
    "fit": "yes",
    "reason": "Priority employer Zillow Group",
    "bg": "d192ce659668"
@@ -2276,6 +2317,47 @@
   }
  },
  {
+  "key": "Atlassian::26633",
+  "company": "Atlassian",
+  "title": "Customer Success Architect (AI)",
+  "location": "Austin - United States; Remote - Remote",
+  "url": "https://careers-americas.icims.com/jobs/26633/customer-success-architect-%28ai%29/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + mandate in description (adoption, value realization)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "AI adoption/value realization mandate fits interests",
+    "US-remote practical fit is excellent",
+    "Priority employer (Atlassian) raises pursuit value",
+    "Role is hands-on technical AI configuration, not her strength"
+   ],
+   "concerns": [
+    "Requires deep technical AI/agent-building skills she lacks",
+    "Not a strategic/leadership mandate, individual technical delivery",
+    "Title says architect but is IC technical implementation role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "AI adoption/value realization mandate fits interests",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Atlassian::25395",
   "company": "Atlassian",
   "title": "Customer Success Manager",
@@ -2434,6 +2516,46 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Org design and workforce planning mandate fits her strengths",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Atlassian::26237",
+  "company": "Atlassian",
+  "title": "Principal Operations Analyst, Partners & Alliances",
+  "location": "Remote - Americas; Remote - Remote; San Francisco - United States; Seattle - United States; New York - United States",
+  "url": "https://careers-americas.icims.com/jobs/26237/principal-operations-analyst%2c-partners-%26-alliances/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote role reduces relocation risk",
+    "Operating rhythms and planning mandate fits ops leadership",
+    "Cross-functional coordination matches transformation background",
+    "Atlassian is a named priority employer"
+   ],
+   "concerns": [
+    "Title reads more IC analyst than director-level ownership",
+    "Heavy analytics/reporting tooling focus vs strategic leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 85,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "US-remote role reduces relocation risk",
    "bg": "d192ce659668"
   }
  },
@@ -2716,6 +2838,48 @@
   }
  },
  {
+  "key": "Atlassian::25780",
+  "company": "Atlassian",
+  "title": "Senior Forward Deployed Architect",
+  "location": "Austin - United States; Remote - Remote; San Francisco - United States; Seattle - United States; New York - United States",
+  "url": "https://careers-americas.icims.com/jobs/25780/senior-forward-deployed-architect/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "mandate in description (operating model, business transformation, change management)",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Operating model design, change management, transformation narrative",
+    "Remote option available in US",
+    "Atlassian is priority employer with contact advantage",
+    "Cross-functional business transformation scope",
+    "AI adoption enablement matches interest"
+   ],
+   "concerns": [
+    "Requires deep technical architecture depth she may lack",
+    "50% travel and embedded deployment model",
+    "Not clear titled architect background matches"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 82,
+   "practical_fit": 80,
+   "opportunity_score": 78,
+   "score": 78,
+   "fit": "yes",
+   "reason": "Operating model design, change management, transformation narrative",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Atlassian::26297",
   "company": "Atlassian",
   "title": "Senior Manager, Onboarding, TWC",
@@ -2913,87 +3077,6 @@
    "score": 78,
    "fit": "yes",
    "reason": "Value realization/enablement mandate matches core domains",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Atlassian::25740",
-  "company": "Atlassian",
-  "title": "Services Solutions Advocate",
-  "location": "New York - United States; Remote - Remote; San Francisco - United States; Washington DC - United States",
-  "url": "https://careers-americas.icims.com/jobs/25740/services-solutions-advocate/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "priority employer; mandate in responsibilities (professional services)",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Priority employer with referral advantage",
-    "Professional services mandate fits background",
-    "Remote US role",
-    "But is quota/sales-cycle-driven commercial role",
-    "Less strategic/transformation ownership than target roles"
-   ],
-   "concerns": [
-    "Sales-cycle/pipeline ownership resembles quota role",
-    "Less org-design/transformation scope than ideal"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Priority employer with referral advantage",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "PBS::JR1000311",
-  "company": "PBS",
-  "title": "Platform and Content Operations Associate",
-  "location": "Remote",
-  "url": "https://vhr-pbs.wd115.myworkdayjobs.com/PBSCareers/job/Remote/Platform-and-Content-Operations-Associate_JR1000311",
-  "posted": "2026-08-18",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "priority employer; role family 'operations' in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer PBS",
-    "Operations in title but likely junior scope",
-    "Remote fits location preference",
-    "No description to confirm mandate"
-   ],
-   "concerns": [
-    "Title suggests associate-level, below her seniority",
-    "No details on strategic scope or ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 35,
-   "practical_fit": 80,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Priority employer PBS",
    "bg": "d192ce659668"
   }
  },
