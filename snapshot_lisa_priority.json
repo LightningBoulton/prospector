@@ -249,6 +249,170 @@
   }
  },
  {
+  "key": "Salesforce::JR342302",
+  "company": "Salesforce",
+  "title": "Customer Success Manager - Core (Sales & Service) Clouds - Missionforce - TS/SCI Clearance",
+  "location": "Remote (+4 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/District-of-Columbia---Washington/Customer-Success-Manager---Core--Sales---Service--Clouds---TS-SCI-Clearance_JR342302",
+  "posted": "2026-09-01",
+  "salary": "$123,100 - $273,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Salesforce priority employer with referral advantage",
+    "Customer success aligns with CX experience",
+    "Remote listed as option",
+    "Title suggests IC-level scope"
+   ],
+   "concerns": [
+    "Requires TS/SCI clearance, likely unmet",
+    "No description to confirm strategic scope",
+    "Government/defense niche vertical unclear fit"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 60,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Salesforce priority employer with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR351285",
+  "company": "Salesforce",
+  "title": "Account Partner Director - Retail Professional Services",
+  "location": "Remote (+6 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Atlanta/Account-Partner-Director---Retail-Professional-Services_JR351285",
+  "posted": "2026-08-31",
+  "salary": "$182,715 - $244,465",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Salesforce priority employer",
+    "Professional services alignment possible",
+    "Remote-friendly location",
+    "Title suggests sales-quota ownership"
+   ],
+   "concerns": [
+    "Account Partner suggests sales/quota role, weak fit",
+    "No description to confirm scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 45,
+   "practical_fit": 75,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Salesforce priority employer",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR351324",
+  "company": "Salesforce",
+  "title": "Strategic Sales Director, Agentforce Operations",
+  "location": "Remote (+52 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Strategic-Sales-Director--Agentforce-Operations_JR351324",
+  "posted": "2026-08-31",
+  "salary": "$157,640 - $244,510",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Salesforce is a named priority employer",
+    "Fully remote aligns with top location preference",
+    "Title suggests quota-owning sales role",
+    "Agentforce/AI angle could carry some enablement mandate"
+   ],
+   "concerns": [
+    "Sales Director title implies quota/account ownership, weak fit",
+    "No description to confirm actual mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 80,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Salesforce is a named priority employer",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR357612",
+  "company": "Salesforce",
+  "title": "Director, Product Marketing, Agentforce Sales Portfolio Storytelling & Keynote Lead",
+  "location": "Remote (+2 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Director--Product-Marketing--Agentforce-Sales-Portfolio-Storytelling---Keynote-Lead_JR357612",
+  "posted": "2026-08-31",
+  "salary": "$164,000 - $261,500",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'portfolio' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce",
+    "Remote-friendly location",
+    "Director-level scope possible",
+    "Product marketing not core domain",
+    "Thin posting detail"
+   ],
+   "concerns": [
+    "No description to verify mandate",
+    "Product marketing/storytelling not core strength",
+    "Title suggests specialized marketing role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Salesforce::JR355276",
   "company": "Salesforce",
   "title": "Senior Technical Consultant - PubSec",
@@ -286,46 +450,6 @@
    "score": 40,
    "fit": "maybe",
    "reason": "Priority employer Salesforce with referral advantage",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR346225",
-  "company": "Salesforce",
-  "title": "Program Delivery Leader (Multiple Levels)",
-  "location": "Remote (+5 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Remote/Engagement-Delivery-Director_JR346225",
-  "posted": "2026-08-31",
-  "salary": "$117,400 - $261,500",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'program' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Program leadership matches PMO/program experience",
-    "Salesforce is a named priority employer",
-    "US remote location aligns with top preference",
-    "Title suggests delivery/program ownership scope"
-   ],
-   "concerns": [
-    "No description to confirm mandate or seniority",
-    "Could be delivery execution role, not strategic"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "maybe",
-   "reason": "Program leadership matches PMO/program experience",
    "bg": "d192ce659668"
   }
  },
@@ -607,46 +731,6 @@
    "opportunity_score": 30,
    "score": 30,
    "fit": "no",
-   "reason": "Priority employer Salesforce",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR357407",
-  "company": "Salesforce",
-  "title": "Migration Delivery, Deployment Strategist",
-  "location": "Remote (+31 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Migration-Delivery--Deployment-Strategist_JR357407",
-  "posted": "2026-08-25",
-  "salary": "$150,100 - $273,000",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "priority employer; role family 'delivery' in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Salesforce",
-    "Remote role fits location preference",
-    "Delivery/deployment strategy aligns with PS leadership",
-    "Title suggests program/delivery scope"
-   ],
-   "concerns": [
-    "No job description available",
-    "Title may be more technical/migration-specific than strategic"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
    "reason": "Priority employer Salesforce",
    "bg": "d192ce659668"
   }
@@ -1141,54 +1225,12 @@
   }
  },
  {
-  "key": "Salesforce::JR332446",
-  "company": "Salesforce",
-  "title": "Customer Success Manager - Global Public Sector (State, Local Government and Education)",
-  "location": "Remote (+6 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager---Global-Public-Sector--State---Local-Gov-_JR332446",
-  "posted": "2026-08-10",
-  "salary": "$123,100 - $227,000",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Customer success leadership adjacent to CX expertise",
-    "Salesforce is a named priority employer",
-    "Remote role fits location preference",
-    "Public sector focus is unfamiliar niche"
-   ],
-   "concerns": [
-    "No description to confirm strategic scope",
-    "CSM title may lack transformation mandate",
-    "Public sector specialization unclear fit"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Customer success leadership adjacent to CX expertise",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Salesforce::JR326962",
   "company": "Salesforce",
   "title": "Customer Success Manager, Senior Manager - Healthcare & Life Sciences (Multiple Levels)",
   "location": "Bellevue (+10 more)",
   "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Customer-Success-Manager--Senior-Manager---Healthcare---Life-Sciences--Multiple-Levels-_JR326962",
-  "posted": "2026-08-31",
+  "posted": "2026-09-01",
   "salary": "$123,100 - $273,000",
   "employment_type": "",
   "expires": "",
@@ -1301,6 +1343,49 @@
    "score": 82,
    "fit": "yes",
    "reason": "Priority employer Salesforce",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR356918",
+  "company": "Salesforce",
+  "title": "Customer Success Manager, Commerce Cloud",
+  "location": "Seattle (+6 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager--Commerce-Cloud_JR356918",
+  "posted": "2026-09-01",
+  "salary": "$123,100 - $186,300",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Salesforce priority employer",
+    "Customer success adjacent to CX leadership",
+    "Seattle WA location acceptable",
+    "Title suggests IC-level, not strategic scope",
+    "No description to confirm mandate"
+   ],
+   "concerns": [
+    "Likely tactical account management, not transformation",
+    "Title below her target seniority",
+    "No posting details available"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 65,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Salesforce priority employer",
    "bg": "d192ce659668"
   }
  },
@@ -1424,47 +1509,6 @@
    "score": 60,
    "fit": "maybe",
    "reason": "Salesforce is a named priority employer",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR357336",
-  "company": "Salesforce",
-  "title": "Principal Researcher, Product Advisory Councils",
-  "location": "Seattle (+2 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Principal-Researcher--Product-Advisory-Councils_JR357336",
-  "posted": "2026-08-26",
-  "salary": "$197,300 - $313,700",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'advisory' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Salesforce is priority employer",
-    "Seattle aligns with WA preference",
-    "Advisory councils touch strategy/CX",
-    "Title suggests research not transformation leadership"
-   ],
-   "concerns": [
-    "Thin description, unclear mandate",
-    "Principal Researcher may be specialized IC research role",
-    "Unclear if strategic ownership or pure UX research"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 40,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Salesforce is priority employer",
    "bg": "d192ce659668"
   }
  },
@@ -1875,48 +1919,6 @@
   }
  },
  {
-  "key": "Salesforce::JR347795",
-  "company": "Salesforce",
-  "title": "Customer Success Manager \u2013 Tableau",
-  "location": "Seattle (+5 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager---Tableau_JR347795",
-  "posted": "2026-08-10",
-  "salary": "$123,100 - $186,300",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Customer success aligns with CX experience",
-    "Salesforce is a priority employer",
-    "Seattle matches WA location preference",
-    "Thin posting, unclear seniority/scope"
-   ],
-   "concerns": [
-    "No description to judge actual mandate",
-    "CSM title may lack strategic scope",
-    "Could be individual-contributor account management"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 65,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Customer success aligns with CX experience",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Zillow Group::P751279",
   "company": "Zillow Group",
   "title": "Principal Strategic GTM Program Manager",
@@ -2033,46 +2035,6 @@
    "opportunity_score": 60,
    "score": 60,
    "fit": "maybe",
-   "reason": "Priority employer Zillow Group",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Zillow Group::P750886",
-  "company": "Zillow Group",
-  "title": "Manager, Customer Success - Enterprise",
-  "location": "Remote-USA",
-  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Manager--Enterprise-Customer-Success_P750886-1",
-  "posted": "2026-08-25",
-  "salary": "$109,700.00 - $175,300.00",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Zillow Group",
-    "Remote US matches location preference",
-    "Customer success leadership adjacent domain",
-    "Manager title may carry real scope"
-   ],
-   "concerns": [
-    "No description to confirm mandate",
-    "Title suggests narrower CS ops focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
    "reason": "Priority employer Zillow Group",
    "bg": "d192ce659668"
   }
@@ -2203,7 +2165,7 @@
   "company": "Atlassian",
   "title": "SMB Solution Sales Executive, JSM",
   "location": "Remote - Americas; Remote - Remote; San Francisco - United States; Austin - United States; Mountain View - United States or Remote",
-  "url": "https://careers-americas.icims.com/jobs/26012/smb-solution-sales-executive%2c-jsm/job?mode=apply",
+  "url": "https://globalcareers-atlassian.icims.com/jobs/26012/smb-solution-sales-executive%2c-jsm/job?mode=apply",
   "posted": "",
   "salary": null,
   "employment_type": "",
@@ -2242,7 +2204,7 @@
   "company": "Atlassian",
   "title": "SMB Solution Sales Executive, LATAM",
   "location": "New York - United States; Remote - Remote; Austin - United States; Washington DC - United States; Remote - Americas",
-  "url": "https://careers-americas.icims.com/jobs/26007/smb-solution-sales-executive%2c-latam/job?mode=apply",
+  "url": "https://globalcareers-atlassian.icims.com/jobs/26007/smb-solution-sales-executive%2c-latam/job?mode=apply",
   "posted": "",
   "salary": null,
   "employment_type": "",
@@ -2720,6 +2682,45 @@
   }
  },
  {
+  "key": "Atlassian::26665",
+  "company": "Atlassian",
+  "title": "Risk and Compliance Senior Manager",
+  "location": "San Francisco - United States; Mountain View - United States or Remote; Remote - Remote",
+  "url": "https://careers-americas.icims.com/jobs/26665/risk-and-compliance-senior-manager/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "priority employer; mandate in responsibilities (process excellence)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Remote-friendly, priority employer Atlassian",
+    "Requires deep compliance/audit/SOC2/ISO expertise she lacks",
+    "Not aligned to transformation or CX mandate"
+   ],
+   "concerns": [
+    "Wrong function: risk/compliance, not transformation",
+    "Requires specialized regulatory expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 25,
+   "practical_fit": 80,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Remote-friendly, priority employer Atlassian",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Atlassian::26293",
   "company": "Atlassian",
   "title": "Senior Corporate Finance Analyst",
@@ -2960,46 +2961,6 @@
   }
  },
  {
-  "key": "Atlassian::25389",
-  "company": "Atlassian",
-  "title": "Senior Solution Architect",
-  "location": "Austin - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/25389/senior-solution-architect/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "mandate in description (operating model, adoption, value realization)",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Operating model adoption and value realization mandate",
-    "Change leadership with enterprise PMO/strategy stakeholders",
-    "US-remote eligible",
-    "Atlassian is a named priority employer"
-   ],
-   "concerns": [
-    "Requires deep technical product architecture depth",
-    "Individual-contributor solution architect, not strategy leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 70,
-   "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Operating model adoption and value realization mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Atlassian::25307",
   "company": "Atlassian",
   "title": "Senior Solution Consultant, Teamwork Foundations + AI",
@@ -3081,6 +3042,87 @@
   }
  },
  {
+  "key": "Atlassian::26841",
+  "company": "Atlassian",
+  "title": "Sr Principal Program Manager (Technical) - Enterprise and Emerging",
+  "location": "Mountain View - United States or Remote; Seattle - United States",
+  "url": "https://careers-americas.icims.com/jobs/26841/sr-principal-program-manager-%28technical%29---enterprise-and-emerging/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Portfolio-level transformation and operating model mandate",
+    "Cross-functional executive alignment matches her strengths",
+    "Priority employer with referral advantage",
+    "Remote/Seattle option fits location preference"
+   ],
+   "concerns": [
+    "Technical PM title may need engineering-heavy delivery depth",
+    "Highly competitive senior IC role at large tech company"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 80,
+   "practical_fit": 85,
+   "opportunity_score": 78,
+   "score": 78,
+   "fit": "yes",
+   "reason": "Portfolio-level transformation and operating model mandate",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Atlassian::26839",
+  "company": "Atlassian",
+  "title": "Strategy & Business Operations Principal, Teamwork Collection",
+  "location": "San Francisco - United States; Remote - Remote; Sydney - Australia; Mountain View - United States or Remote; Seattle - United States",
+  "url": "https://careers-americas.icims.com/jobs/26839/strategy-%26-business-operations-principal%2c-teamwork-collection/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Remote option available in US",
+    "Strategy/business ops mandate fits operations background",
+    "Priority employer Atlassian named target",
+    "Cross-functional exec-facing scope",
+    "Strategic planning and OKR ownership"
+   ],
+   "concerns": [
+    "Highly analytical/data-heavy role may differ from her strengths",
+    "Principal-level strategy ops title, less transformation-specific"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 70,
+   "practical_fit": 80,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Remote option available in US",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Marriott International::26097531",
   "company": "Marriott International",
   "title": "Architect \u2013 Infrastructure & Policy Automation",
@@ -3115,6 +3157,46 @@
    "score": 10,
    "fit": "no",
    "reason": "Deep hands-on software/infrastructure engineering role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Marriott International::26109897",
+  "company": "Marriott International",
+  "title": "Director, Contract Management & Tools Administration",
+  "location": "Bethesda, MD (Remote)",
+  "url": "https://careers.marriott.com/director-contract-management-tools-administration/job/77CC738A62ED7762D9D45228E7AB89E6",
+  "posted": "",
+  "salary": "$127,000-$192,000",
+  "employment_type": "Full Time",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "mandate in description (change management, governance)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Priority employer Marriott",
+    "AI tooling/change management overlap",
+    "Remote but requires legal contracting expertise gap"
+   ],
+   "concerns": [
+    "Requires deep contract law/legal expertise she lacks",
+    "Core mandate is legal/procurement, not transformation",
+    "Not Utah or WA location"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 45,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Priority employer Marriott",
    "bg": "d192ce659668"
   }
  },
@@ -3274,6 +3356,47 @@
    "score": 66,
    "fit": "maybe",
    "reason": "Priority employer Marriott with named contact",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Marriott International::26081572",
+  "company": "Marriott International",
+  "title": "FLEX Director, Service Excellence & Performance",
+  "location": "Bethesda, MD (Remote)",
+  "url": "https://careers.marriott.com/flex-director-service-excellence-performance/job/41314471EB4FC8FBC012B6D644F7A0B6",
+  "posted": "",
+  "salary": "$57.21-$87.01",
+  "employment_type": "Full Time",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'excellence' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Priority employer Marriott raises visibility",
+    "Service excellence theme aligns loosely",
+    "But requires hospitality operations expertise she lacks",
+    "90% travel and temp role limit practicality"
+   ],
+   "concerns": [
+    "Requires deep hotel operations/SOP background",
+    "Temporary, 90% travel is demanding",
+    "Not a strategic transformation mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 40,
+   "opportunity_score": 38,
+   "score": 38,
+   "fit": "no",
+   "reason": "Priority employer Marriott raises visibility",
    "bg": "d192ce659668"
   }
  },
