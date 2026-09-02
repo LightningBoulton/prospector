@@ -1,55 +1,49 @@
-# Prospector — 2026-09-01
+# Prospector — 2026-09-02
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**15 new roles today** · 8 still worth applying · 10 closed/removed
-
-## APPLY FIRST (1)
-- **Manager of Enterprise AI Success.** — Cresta · 84/100 · hybrid United States (Remote) · posted 2026-09-01
-  - Why: AI adoption/enablement leadership mandate
-  - Concern: Manager title with CS quota/retention pressure
-  - https://job-boards.greenhouse.io/cresta/jobs/5412192008
+**14 new roles today** · 8 still worth applying · 12 closed/removed
 
 ## NEW — WORTH REVIEWING (10)
-- **Sr Principal Program Manager (Technical) - Enterprise and Emerging** — Atlassian · 78/100 · remote Mountain View - United States or Remote; Seattle - United States · first seen 2026-09-01
-  - Why: Portfolio-level transformation and operating model mandate
-  - Concern: Technical PM title may need engineering-heavy delivery depth
-  - https://careers-americas.icims.com/jobs/26841/sr-principal-program-manager-%28technical%29---enterprise-and-emerging/job?mode=apply
-- **Senior AI Operations Lead** — CodePath · 74/100 · remote USA (Remote) · $110,000 to $150,000 · posted 2026-09-01
-  - Why: AI adoption/enablement mandate matches core interest
-  - Concern: Compensation below typical senior director level
-  - https://jobicy.com/jobs/152285-senior-ai-operations-lead
-- **Strategy & Business Operations Principal, Teamwork Collection** — Atlassian · 68/100 · remote San Francisco - United States; Remote - Remote; Sydney - Australia; Mountain View - United States or Remote; Seattle - United States · first seen 2026-09-01
-  - Why: Remote option available in US
-  - Concern: Highly analytical/data-heavy role may differ from her strengths
-  - https://careers-americas.icims.com/jobs/26839/strategy-%26-business-operations-principal%2c-teamwork-collection/job?mode=apply
-- **Vice President, BizOps** — Atomic · 62/100 · remote USA (Remote) · posted 2026-08-31
-  - Why: AI-first operating system adoption mandate
-  - Concern: Heavy FP&A/demand planning ownership outside core strength
-  - https://jobicy.com/jobs/152225-vice-president-bizops
-- **Principal Technical Program Manager** — GitLab · 60/100 · remote Remote, Canada; Remote, United States · posted 2026-08-25
-  - Why: Fully remote US-based role
-  - Concern: Highly technical DevSecOps/engineering domain
-  - https://job-boards.greenhouse.io/gitlab/jobs/8693068002
-- **Data Excellence Manager** — Stripe · 60/100 · remote US Remote, Chicago, SF, Seattle, NYC · posted 2026-08-31
-  - Why: US remote option
-  - Concern: Narrow focus on data quality vs broader transformation
-  - https://stripe.com/jobs/search?gh_jid=8106026
-- **Manager, Implementation - Enterprise Select** — Samsara · 58/100 · remote Remote - US · posted 2026-09-01
-  - Why: Remote US role, strong practical fit
-  - Concern: Narrower technical/hardware implementation scope than her background
-  - https://www.samsara.com/company/careers/roles/8146261?gh_jid=8146261
-- **Senior GTM Strategy & Operations Manager, Top of Funnel** — Vanta · 45/100 · remote Remote U.S. · $161K – $189K · posted 2026-08-24
-  - Why: Remote US role fits location preference
-  - Concern: Heavily sales-ops specific, not her core domain
-  - https://jobs.ashbyhq.com/vanta/ffdee1c4-c463-4e6f-a98a-ef8240e34868
-- **Customer Success Architect** — GitLab · 45/100 · remote Remote, United States · posted 2026-08-24
-  - Why: Remote US role, strong practical fit
-  - Concern: Highly technical, engineering-adjacent role
-  - https://job-boards.greenhouse.io/gitlab/jobs/8742716002
-- **Principal Consultant, Sales Effectiveness** — Forma.ai · 45/100 · remote Canada,  USA (Remote) · posted 2026-08-27
-  - Why: Remote US role, professional services delivery
-  - Concern: Requires deep sales compensation/territory domain expertise
-  - https://jobicy.com/jobs/151911-principal-consultant-sales-effectiveness
+- **Director HWS Operations** — Hilton · 78/100 · remote McLean, VA, United States (Remote) · posted 2026-09-01
+  - Why: Priority employer (Hilton) named target
+  - Concern: Sales-ops adjacent rather than core transformation
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/220815
+- **Senior Business Operations Manager** — Samsara · 78/100 · remote Remote - US · posted 2026-08-28
+  - Why: US-remote, strong practical fit
+  - Concern: Support-org specific, narrower scope than transformation
+  - https://www.samsara.com/company/careers/roles/8112696?gh_jid=8112696
+- **Business Development Manager 3** — Aquent · 65/100 · remote REDMOND, WA, US (Remote) · up to $42/hr · posted 2026-08-28
+  - Why: Business ops/exec support role at Microsoft-scale org
+  - Concern: Contract via staffing firm, not permanent
+  - https://aquent.com/find-work/212661
+- **Chief of Staff, Sales** — Notion · 60/100 · remote San Francisco, California (Remote) · posted 2026-09-01
+  - Why: Chief of Staff mandate matches target titles
+  - Concern: Onsite SF/NYC hybrid, not remote or Utah
+  - https://jobs.ashbyhq.com/notion/c5c69246-74db-4960-a0e0-7945be6c30ae
+- **Team Lead, SEO and AEO** — Atlassian · 55/100 · remote Austin - United States; Remote - Remote · first seen 2026-09-02
+  - Why: Priority employer with referral advantage
+  - Concern: Deep SEO/AEO technical specialization not her core strength
+  - https://careers-americas.icims.com/jobs/25342/team-lead%2c-seo-and-aeo/job?mode=apply
+- **Knowledge & Enablement Lead** — Mercury · 55/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-08-28
+  - Why: Governance, standards, AI-enabled knowledge system design
+  - Concern: Narrower knowledge-management/training scope than typical target
+  - https://job-boards.greenhouse.io/mercury/jobs/6174117004
+- **Sr. Customer Engagement Marketing Manager (US)** — PointClickCare · 55/100 · hybrid USA (Remote) · posted 2026-09-02
+  - Why: US-remote with occasional SLC travel fits location prefs
+  - Concern: Titled marketing manager, may be narrower than strategic scope
+  - https://jobicy.com/jobs/150032-sr-customer-engagement-marketing-manager-us
+- **Manager, Partner Operations** — Thumbtack · 55/100 · remote Remote, Ontario · posted 2026-09-02
+  - Why: Program leadership and operational scaling mandate
+  - Concern: Remote Ontario, Canada - not US-remote or Utah
+  - https://jobs.ashbyhq.com/thumbtack/499fc892-28ad-489d-83eb-e1d1d9842305
+- **Customer Experience Insights Consultant** — Aquent · 50/100 · remote Please note: Actual location may vary., RI, US (Remote) · posted 2026-09-01
+  - Why: CX measurement governance aligns with CX leadership background
+  - Concern: Role is analytics/reporting-heavy, more IC than leadership
+  - https://aquent.com/find-work/212702
+- **Manager, Enablement Programs** — Notion · 50/100 · remote San Francisco, California (Remote) · posted 2026-09-01
+  - Why: Enablement program ownership touches transformation & AI adoption
+  - Concern: Sales enablement/GTM specific, not her core domain
+  - https://jobs.ashbyhq.com/notion/98bb09a8-2fdf-4c12-84dd-8568553159d8
 
 ## DISCOVERY / WILDCARDS (4)
 - **Senior Director Service Strategy, Core, and AI** — Salesforce · 82/100 · onsite Bellevue (+1 more) · $181,700 - $304,700 · posted 2026-08-19
@@ -103,21 +97,23 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: No description available, scope unclear
   - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Program-Manager--Transformation_R171052
 
-## REMOVED SINCE PRIOR RUN (10)
-- Operations Enablement Manager — Affirm · No longer listed by its source
-- Senior Solution Architect — Atlassian · No longer listed by its source
-- Senior Technical Program Manager — GitLab · No longer listed by its source
-- Business Operations Manager — Headway · No longer listed by its source
-- CX Technology Program Manager — Instacart · No longer listed by its source
-- Transformation Consultant — NICE · No longer listed by its source
-- Director, Customer Growth & Lifecycle — Pendo · No longer listed by its source
-- Senior Sales Operations Analyst — Samsara · No longer listed by its source
-- Sr. Manager, New Products Strategy — Samsara · No longer listed by its source
-- Senior Field Enablement Business Partner — Twilio · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (12)
+- Product & Solutions Enablement Manager — Atlassian · No longer listed by its source
+- Director, Sales Compensation — Dropbox · No longer listed by its source
+- Team Operations Integration Lead — Eliassen · No longer listed by its source
+- Product Manager, AI-Enabled Member Experience — Eliassen · No longer listed by its source
+- Principal Program Manager, Go-To-Market — GitLab · No longer listed by its source
+- Health Services Manager (Enablement) — Hinge Health · No longer listed by its source
+- Senior Manager, Legal Technology, Operations & AI Enablement — Instacart · No longer listed by its source
+- Knowledge Management & Enablement Lead — Mercury · No longer listed by its source
+- Product Operations Lead — Qventus · No longer listed by its source
+- Sr. Manager, Business Operations — Samsara · No longer listed by its source
+- Manager, Consulting - Central/East — Smartsheet · No longer listed by its source
+- Program Manager, GTM Strategic Programs — Stripe · No longer listed by its source
 
 ## SOURCE HEALTH
-- Sources checked: 133/137 successful
-- Temporary errors: 1
+- Sources checked: 134/137 successful
+- Temporary errors: 0
 - Needs attention: 22
   - Broken config: ClickHouse, Marqeta, Temporal
   - Returning nothing for 10+ runs: Airtable, Beyond (Overstock), Buffer, Domo, Doppler, Inngest, Instructure, Marqeta, Metabase, Miro, Nav, Netlify, Nomi Health, Postman, Route, Speechify, Traeger, Vivint, Weave

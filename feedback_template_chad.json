@@ -23,13 +23,6 @@
    "note": ""
   },
   {
-   "key": "1Password::7f885c41-7572-439c-886f-bc508eb9a3d7",
-   "company": "1Password",
-   "title": "Privacy Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::c6933be3-80a6-41f0-8e37-e70f72cae134",
    "company": "1Password",
    "title": "Senior .NET Developer, SaaS Manager",
@@ -72,9 +65,23 @@
    "note": ""
   },
   {
+   "key": "Affirm::7872398003",
+   "company": "Affirm",
+   "title": "Analytics Lead, Full Stack",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Affirm::7918497003",
    "company": "Affirm",
    "title": "Manager, Software Engineering (App Experiences)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7980264003",
+   "company": "Affirm",
+   "title": "Senior Software Engineer, Backend (Card Ledger & Money Movement)",
    "status": "",
    "note": ""
   },
@@ -184,30 +191,9 @@
    "note": ""
   },
   {
-   "key": "Baseten::e71e97a8-6367-4050-b6a9-42ce62ec78f1",
+   "key": "Baseten::19972142-ec0b-4049-8d8f-6a341f57f938",
    "company": "Baseten",
-   "title": "Software Engineer - AI Developer Productivity",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Baseten::fb886b59-fdc3-4315-a9b3-c49808bcd2ce",
-   "company": "Baseten",
-   "title": "Software Engineer - Continuous Delivery",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Baseten::78028a72-2431-4373-aaec-d6e2c9a1cc7d",
-   "company": "Baseten",
-   "title": "Software Engineer - Testing Frameworks",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Brain Co.::151474",
-   "company": "Brain Co.",
-   "title": "Builder/Architect/Engineer Expert Consultant (Part-Time Contractor)",
+   "title": "Software Engineer - Identity and Authorization",
    "status": "",
    "note": ""
   },
@@ -275,6 +261,20 @@
    "note": ""
   },
   {
+   "key": "Close::5bf4629b-d2ee-4129-980f-e31b96185c9c",
+   "company": "Close",
+   "title": "Senior Backend Engineer - Backend Platform (USA Only, 100% Remote)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Close::1022d31e-238a-4236-a44d-9d59c94f1ccd",
+   "company": "Close",
+   "title": "Senior Backend Engineer - CRM (USA Only, 100% Remote)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Close::6d680d21-e779-4b3d-9771-23eb04d65f81",
    "company": "Close",
    "title": "Senior Software Engineer \u2013 Marketing (USA Only & 100% Remote)",
@@ -310,9 +310,23 @@
    "note": ""
   },
   {
-   "key": "Cloudflare::8121827",
+   "key": "Cloudflare::8172117",
    "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Named - Minnesota",
+   "title": "Senior Customer Engineer, Named - Houston, TX",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8171942",
+   "company": "Cloudflare",
+   "title": "Senior Customer Engineer, Named - LA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8172023",
+   "company": "Cloudflare",
+   "title": "Senior Customer Engineer, Named - Seattle",
    "status": "",
    "note": ""
   },
@@ -422,6 +436,13 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8170956",
+   "company": "Coinbase",
+   "title": "Staff Software Engineer, Developer Infrastructure",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8166218",
    "company": "Coinbase",
    "title": "Staff Software Engineer, Enterprise Apps",
@@ -467,13 +488,6 @@
    "key": "Cricut::744000146544629",
    "company": "Cricut",
    "title": "Senior Hardware Test Engineer - Machines",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cricut::744000142970729",
-   "company": "Cricut",
-   "title": "Senior Systems Quality Engineer",
    "status": "",
    "note": ""
   },
@@ -730,20 +744,6 @@
    "note": ""
   },
   {
-   "key": "Hinge Health::146a5143-c0af-4aef-b504-8c1f5ed6339a",
-   "company": "Hinge Health",
-   "title": "Staff Engineer, MSK Verticals",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Hinge Health::940323e5-4b8a-4e42-830d-0850bfc07c39",
-   "company": "Hinge Health",
-   "title": "Staff Engineer/Tech Lead, MSK Verticals",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Hinge Health::8bfabfb5-5e65-4781-9991-accef77b4295",
    "company": "Hinge Health",
    "title": "Staff Software Engineer- Backend",
@@ -761,13 +761,6 @@
    "key": "Included Health::b3b5352c-0784-41c4-9e2f-062461aef44a",
    "company": "Included Health",
    "title": "Senior Security Operations Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Included Health::11e68ef6-c38e-40db-af57-44ea32d87786",
-   "company": "Included Health",
-   "title": "Senior Software Engineer, Web",
    "status": "",
    "note": ""
   },
@@ -844,7 +837,7 @@
   {
    "key": "LVT::5369286008",
    "company": "LVT",
-   "title": "Senior Staff Software Engineer - Project Matrix",
+   "title": "Senior Staff Embedded Software Engineer - Cameras",
    "status": "",
    "note": ""
   },
@@ -982,13 +975,6 @@
    "note": ""
   },
   {
-   "key": "Linear::f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1",
-   "company": "Linear",
-   "title": "Analytics Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "MX::4385268009",
    "company": "MX",
    "title": "Senior Software Engineer II",
@@ -999,13 +985,6 @@
    "key": "Maven Clinic::8761422002",
    "company": "Maven Clinic",
    "title": "Staff Software Engineer, Infrastructure",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Mercury::6141014004",
-   "company": "Mercury",
-   "title": "Head of Data Engineering & Platform",
    "status": "",
    "note": ""
   },
@@ -1033,28 +1012,28 @@
   {
    "key": "Mixpanel::8126545",
    "company": "Mixpanel",
-   "title": "Delivery Engineer II",
+   "title": "Delivery Engineer II (GTM)",
    "status": "",
    "note": ""
   },
   {
    "key": "Mixpanel::8148613",
    "company": "Mixpanel",
-   "title": "Delivery Engineer II",
+   "title": "Delivery Engineer II (GTM)",
    "status": "",
    "note": ""
   },
   {
    "key": "Mixpanel::8142656",
    "company": "Mixpanel",
-   "title": "Delivery Engineer II",
+   "title": "Delivery Engineer II (GTM)",
    "status": "",
    "note": ""
   },
   {
    "key": "Mixpanel::8142644",
    "company": "Mixpanel",
-   "title": "Delivery Engineer III",
+   "title": "Delivery Engineer III (GTM)",
    "status": "",
    "note": ""
   },
@@ -1111,13 +1090,6 @@
    "key": "Omada Health::8157230",
    "company": "Omada Health",
    "title": "Software Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Orca Security::https://himalayas.app/companies/orca-security/jobs/devops-lead-fedramp",
-   "company": "Orca Security",
-   "title": "DevOps Lead (FedRAMP)",
    "status": "",
    "note": ""
   },
@@ -1192,16 +1164,16 @@
    "note": ""
   },
   {
-   "key": "PostHog::43dbf072-0fc1-48c9-8c1e-7416db7d4a14",
-   "company": "PostHog",
-   "title": "ClickHouse Operations Engineer",
+   "key": "Podium::8172144",
+   "company": "Podium",
+   "title": "Technical Support Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Qventus::151489",
-   "company": "Qventus",
-   "title": "Lead Product Manager, Application Platform",
+   "key": "PostHog::43dbf072-0fc1-48c9-8c1e-7416db7d4a14",
+   "company": "PostHog",
+   "title": "ClickHouse Operations Engineer",
    "status": "",
    "note": ""
   },
@@ -1227,9 +1199,9 @@
    "note": ""
   },
   {
-   "key": "Reddit::8122887",
+   "key": "Reddit::8088720",
    "company": "Reddit",
-   "title": "Principal UX Engineer, Ads",
+   "title": "Product Manager, Developer Ecosystem",
    "status": "",
    "note": ""
   },
@@ -1286,13 +1258,6 @@
    "key": "Reddit::8048988",
    "company": "Reddit",
    "title": "Senior Software Engineer, Media Experience",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::8122606",
-   "company": "Reddit",
-   "title": "Senior Staff Machine Learning Engineer, Feed Relevance",
    "status": "",
    "note": ""
   },
@@ -1367,13 +1332,6 @@
    "note": ""
   },
   {
-   "key": "Samsara::8083352",
-   "company": "Samsara",
-   "title": "Sr. AI Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Samsara::8074536",
    "company": "Samsara",
    "title": "Staff Firmware Engineer",
@@ -1444,6 +1402,13 @@
    "note": ""
   },
   {
+   "key": "Serve Robotics::152347",
+   "company": "Serve Robotics",
+   "title": "Sr. Technical Program Manager, Hardware/Software Integration",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Smartsheet::8142799",
    "company": "Smartsheet",
    "title": "Marketing Platform Operations Manager",
@@ -1500,6 +1465,20 @@
    "note": ""
   },
   {
+   "key": "Supabase::4eb14408-51e6-4c58-812a-3782d5c0b045",
+   "company": "Supabase",
+   "title": "Platform Engineer - Compute Capacity",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Supabase::06752423-eebb-472c-95b5-c7ff2559fd60",
+   "company": "Supabase",
+   "title": "Software Engineer - Branching",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Tailscale::4724309005",
    "company": "Tailscale",
    "title": "Customer Support Engineer (Tier 1)",
@@ -1521,13 +1500,6 @@
    "note": ""
   },
   {
-   "key": "Tailscale::4725185005",
-   "company": "Tailscale",
-   "title": "Senior Manager, Developer Relations",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Tailscale::4723221005",
    "company": "Tailscale",
    "title": "Senior Solutions Engineer - Partners",
@@ -1542,13 +1514,6 @@
    "note": ""
   },
   {
-   "key": "Tenstorrent::https://himalayas.app/companies/tenstorrent/jobs/physical-design-engineer-die-to-die-interface-rtl-to-gdsii-4169274740",
-   "company": "Tenstorrent",
-   "title": "Physical Design Engineer: Die-to-Die Interface (RTL to GDSII)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8139748",
    "company": "Twilio",
    "title": "Principal Presales Engineer",
@@ -1559,6 +1524,20 @@
    "key": "Twilio::8145984",
    "company": "Twilio",
    "title": "Principal Presales Engineer - ISV",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8171110",
+   "company": "Twilio",
+   "title": "Senior Solutions Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Twilio::8164891",
+   "company": "Twilio",
+   "title": "Senior Solutions Engineer",
    "status": "",
    "note": ""
   },
@@ -1612,30 +1591,9 @@
    "note": ""
   },
   {
-   "key": "Vanta::ad10bda4-f02d-4682-9dc4-b374fa647c99",
-   "company": "Vanta",
-   "title": "Senior Fullstack Software Engineer, Expansion",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Vanta::77aff9b6-4b9b-4ed6-b1fc-3b647227b16b",
-   "company": "Vanta",
-   "title": "Senior Fullstack Software Engineer, Integrations Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Vanta::b5c4b58a-0b6b-40a2-b0de-328e4f943060",
    "company": "Vanta",
    "title": "Senior Software Engineer, Evaluation Engine",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Vanta::021cca9c-f937-4d97-8be7-bc83af8307be",
-   "company": "Vanta",
-   "title": "Senior Software Engineer, Product Platform",
    "status": "",
    "note": ""
   },
@@ -1752,6 +1710,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025976",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025759",
    "company": "Western Governors University",
    "title": "Senior Software Engineer",
@@ -1815,6 +1780,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025775",
+   "company": "Western Governors University",
+   "title": "Software Engineer II - Infrastructure & Operations",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025291",
    "company": "Western Governors University",
    "title": "Software Engineer II - Web Platform",
@@ -1843,16 +1815,16 @@
    "note": ""
   },
   {
-   "key": "ZoomInfo Technologies LLC::https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-manager-data-platform",
-   "company": "ZoomInfo Technologies LLC",
-   "title": "Manager, Data Platform",
+   "key": "Western Governors University::JR-025664",
+   "company": "Western Governors University",
+   "title": "Staff Software Product Manager",
    "status": "",
    "note": ""
   },
   {
-   "key": "micro1::https://himalayas.app/companies/micro1/jobs/ai-engineer-7982880650",
-   "company": "micro1",
-   "title": "AI Engineer",
+   "key": "ZoomInfo Technologies LLC::https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-manager-data-platform",
+   "company": "ZoomInfo Technologies LLC",
+   "title": "Manager, Data Platform",
    "status": "",
    "note": ""
   }
