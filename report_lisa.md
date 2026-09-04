@@ -1,49 +1,49 @@
-# Prospector — 2026-09-03
+# Prospector — 2026-09-04
 _Lisa — Transformation / Operations / Experience Leadership_
 
 **14 new roles today** · 8 still worth applying · 12 closed/removed
 
 ## NEW — WORTH REVIEWING (10)
-- **Manager Planning & Business Operations Americas** — Hilton · 82/100 · remote McLean, VA, United States (Remote) · posted 2026-09-03
-  - Why: Priority employer (Hilton) named target
-  - Concern: Listed as remote but based McLean VA, unclear hybrid requirement
-  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/220888
-- **Customer Experience Strategy Manager** — Samsara · 80/100 · remote Remote - US · posted 2026-09-02
-  - Why: Customer experience strategy mandate fits core domain
-  - Concern: Manager title may mean narrower scope than desired
-  - https://www.samsara.com/company/careers/roles/8145056?gh_jid=8145056
-- **FLEX Senior Manager, Deployment Edge Cases + New Openings, CALA** — Marriott International · 74/100 · remote Bethesda, MD (Remote) · $48.26-$65.86 · first seen 2026-09-03
-  - Why: Priority employer Marriott with named contacts
-  - Concern: Temporary assignment through 2027
-  - https://careers.marriott.com/flex-senior-manager-deployment-edge-cases-new-openings-cala/job/6AC5E5B7E704DAC67763F8433BD553E8
-- **Senior Partner Consultant, Systems Integrators** — Ramp · 62/100 · remote Remote (US) · $174K – $266K · posted 2026-09-02
-  - Why: Operating model design and scaling a partner program
-  - Concern: Heavy fintech/ERP technical specificity may be a gap
-  - https://jobs.ashbyhq.com/ramp/7fcef38b-5e90-4d71-9e59-d26d29de027f
-- **Revenue Enablement Leader** — Plaid · 62/100 · remote Remote United States · $201.6K – $272.4K · posted 2026-09-02
-  - Why: Remote US aligns with location preference
-  - Concern: Sales enablement domain differs from core background
-  - https://jobs.ashbyhq.com/plaid/e7536a96-d3d5-4f20-bbeb-aef633be45e0
-- **Lead Client Services Project Manager, CX** — NICE · 60/100 · remote USA - Remote · posted 2026-09-02
-  - Why: Remote US role fits location preference
-  - Concern: Heavier on tactical PM execution than transformation/strategy
-  - https://boards.eu.greenhouse.io/nice/jobs/4962550101?gh_jid=4962550101
-- **Senior Technical Program Manager** — Affirm · 58/100 · remote Remote US · posted 2026-09-02
-  - Why: Remote US role, strong practical fit
-  - Concern: Technical TPM engineering-adjacent scope, less strategic
-  - https://job-boards.greenhouse.io/affirm/jobs/7832310003
-- **FLEX Senior Product Manager** — Marriott International · 55/100 · remote Bethesda, MD (Remote) · $48.26-$80.76 · first seen 2026-09-03
-  - Why: Priority employer Marriott
-  - Concern: Temporary role through 2027
-  - https://careers.marriott.com/flex-senior-product-manager/job/14392AE2991AE8BFF7E537968D0664FB
-- **Product Operations - Technical Program Manager** — Eliassen · 55/100 · remote Remote · $70.00 to $80.00 · posted 2026-09-02
-  - Why: Remote W2 contract, program coordination role
-  - Concern: Tactical TPM scope, below her seniority
-  - https://careers.eliassen.com/0QwbfM/product-operations-technical-program-manager-programproject-management-anywhere-a1wuq000001setr2au
-- **Internal Communications Manager** — Coinbase · 50/100 · remote Remote - USA · posted 2026-08-27
-  - Why: US-remote role fits location preference
-  - Concern: Core function is internal comms, not her specialty
-  - https://www.coinbase.com/careers/positions/8162911?gh_jid=8162911
+- **Director of Launch Operations** — Luxury Presence · 82/100 · remote USA (Remote) · posted 2026-09-03
+  - Why: Operating model redesign at scale
+  - Concern: Owns a software platform directly, more product-heavy than typical
+  - https://jobicy.com/jobs/152444-director-of-launch-operations
+- **Chief of Staff, Payer** — Headway · 82/100 · remote Remote · $180K – $225K · posted 2026-09-03
+  - Why: Chief of Staff role with cross-functional strategic scope
+  - Concern: Healthcare payer domain is unfamiliar territory
+  - https://jobs.ashbyhq.com/headway/17b19c5c-36e8-429d-9815-9f95b3586c1e
+- **Business Operations Director** — HackerOne · 82/100 · remote USA (Remote) · posted 2026-09-04
+  - Why: US-remote Business Operations Director role
+  - Concern: Description cut off before full responsibilities listed
+  - https://jobicy.com/jobs/152530-business-operations-director
+- **Program Manager, Customers** — Dropbox · 68/100 · remote Remote - US: Select locations · posted 2026-09-04
+  - Why: Cross-functional program leadership mandate
+  - Concern: Execution-heavy, may lack strategic seniority
+  - https://jobs.dropbox.com/listing/8177609?gh_jid=8177609
+- **Vice President, Go-To-Market Operations** — HackerOne · 68/100 · remote USA (Remote) · posted 2026-09-04
+  - Why: US-remote VP-level ops leadership
+  - Concern: Sales/GTM ops is more specialized than her core CX/transformation focus
+  - https://jobicy.com/jobs/152509-vice-president-go-to-market-operations
+- **Operations Program Manager** — Aquent · 62/100 · remote REDMOND, WA, US (Remote) · up to $76.00/hr · posted 2026-09-03
+  - Why: Operational excellence and program management mandate
+  - Concern: Contract/temp staffing role, likely lower seniority
+  - https://aquent.com/find-work/212771
+- **Program Manager Tech 2** — Aquent · 58/100 · remote REDMOND, WA, US (Remote) · up to $68.00/hr · posted 2026-09-03
+  - Why: Program/launch management aligns with PMO experience
+  - Concern: Tactical PM role, less strategic ownership
+  - https://aquent.com/find-work/212764
+- **Manager, Enterprise Customer Success** — Atlassian · 45/100 · remote New York - United States; Remote - Remote · first seen 2026-09-02
+  - Why: CX leadership adjacent experience
+  - Concern: Heavily renewal/ARR-driven CSM role
+  - https://careers-americas.icims.com/jobs/26307/manager%2c-enterprise-customer-success/job?mode=apply
+- **Senior Project Manager, AD&C – Luxury Brands** — Hilton · 45/100 · remote United States (Remote) · posted 2026-09-01
+  - Why: Priority employer Hilton
+  - Concern: Highly specialized construction/design PM expertise not her background
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/220797
+- **Project Manager II** — Robert Half · 45/100 · remote Philadelphia, PA (Remote) · $35.00–$40.00/hr · posted 2026-08-25
+  - Why: Transformation initiative with process/change scope
+  - Concern: Highly tactical, documentation-heavy role
+  - https://www.roberthalf.com/us/en/job/philadelphia-pa/project-manager-ii/04838-0013493801-usen
 
 ## DISCOVERY / WILDCARDS (4)
 - **Manager, Corporate Development M&A Integration** — Salesforce · 82/100 · onsite Seattle (+2 more) · $123,100 - $227,000 · posted 2026-08-24
@@ -54,14 +54,14 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Priority employer Salesforce
   - Concern: No description to confirm mandate
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Business-Strategy-Director---Services_JR355649
-- **Human Centered Change Director** — Salesforce · 78/100 · remote Remote (+5 more) · $171,200 - $273,800 · posted 2026-08-27
-  - Why: Change management director title matches core domain
-  - Concern: No description available to confirm scope
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Human-Centered-Change-Director_JR355654
 - **Sr. Business & Program Operations, Firefly Foundry** — Adobe · 78/100 · remote Remote (+4 more) · $139,700 - $202,250 · posted 2026-08-27
   - Why: Priority employer Adobe with referral advantage
   - Concern: No description to confirm scope
   - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Remote-Oregon/Principal-Business---Program-Operations--Firefly-Foundry_R168911-1
+- **Human Centered Change Director** — Salesforce · 78/100 · remote Remote (+5 more) · $171,200 - $273,800 · posted 2026-08-27
+  - Why: Change management director title matches core domain
+  - Concern: No description available to confirm scope
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Human-Centered-Change-Director_JR355654
 
 ## STILL WORTH APPLYING (8)
 - **Business Operations & Chief of Staff** — Waymark · 90/100 · remote USA (Remote) · posted 2026-08-29
@@ -80,10 +80,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Chief of Staff mandate matches target titles directly
   - Concern: Sales/revenue org context is somewhat adjacent to core expertise
   - https://job-boards.greenhouse.io/gitlab/jobs/8700245002
-- **Chief of Staff to GM & Chief Operating Officer** — Upwork · 88/100 · remote USA (Remote) · posted 2026-08-26
-  - Why: True Chief of Staff mandate to COO/GM
-  - Concern: High-bar competitive role at public company
-  - https://jobicy.com/jobs/151729-chief-of-staff-to-gm-chief-operating-officer
 - **Director of Customer Experience Operations** — Headway · 87/100 · remote Remote · $160K – $250K · posted 2026-08-28
   - Why: Director-level CX operations leadership at scale
   - Concern: Healthcare/insurance domain is new vertical
@@ -96,24 +92,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Transformation program leadership matches core expertise
   - Concern: No description available, scope unclear
   - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Program-Manager--Transformation_R171052
+- **Manager of Enterprise AI Success.** — Cresta · 84/100 · hybrid United States (Remote) · posted 2026-09-01
+  - Why: AI adoption/enablement leadership mandate
+  - Concern: Manager title with CS quota/retention pressure
+  - https://job-boards.greenhouse.io/cresta/jobs/5412192008
 
 ## REMOVED SINCE PRIOR RUN (12)
-- Sr Principal Program Manager (Technical) - Enterprise and Emerging — Atlassian · No longer listed by its source
-- Senior Internal Communications Manager — Coinbase · No longer listed by its source
-- Program Manager, People Operations — Dropbox · No longer listed by its source
-- Security Program Manager — Eliassen · No longer listed by its source
-- Product Manager – Portfolio Management — Eliassen · No longer listed by its source
-- Manager, Customer Success — GitLab · No longer listed by its source
-- Revenue Operations Manager (Process) — Headway · No longer listed by its source
-- Revenue Strategy & Operations Manager (Insights & AI) — Headway · No longer listed by its source
-- Sr Manager, Technology Product Management - Unified Experience Layer (UXL) — Marriott International · No longer listed by its source
-- Program Manager — Robert Half · No longer listed by its source
-- Manager, Consulting - West — Smartsheet · No longer listed by its source
-- Solutions Consultant - West — Smartsheet · No longer listed by its source
+- Senior Talent Program Manager — Coinbase · No longer listed by its source
+- Program Manager Contingent Workforce — Instacart · No longer listed by its source
+- FLEX Senior Director, Ecommerce Boutiques — Marriott International · No longer listed by its source
+- FLEX Senior Program Specialist - Lodging Product & Services — Marriott International · No longer listed by its source
+- Senior Manager, Customer Marketing Boutiques — Marriott International · No longer listed by its source
+- Senior Manager - Data & AI Governance — Mercury · No longer listed by its source
+- VP, Customer Success — NICE · No longer listed by its source
+- Product Operations Lead — Qventus · No longer listed by its source
+- Director, Brand Operations — Ramp · No longer listed by its source
+- Project Manager — Robert Half · No longer listed by its source
+- Senior Change Consultant — Robert Half · No longer listed by its source
+- Chief of Staff to GM & Chief Operating Officer — Upwork · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 134/137 successful
 - Temporary errors: 0
 - Needs attention: 22
   - Broken config: ClickHouse, Marqeta, Temporal
-  - Returning nothing for 10+ runs: Airtable, Beyond (Overstock), Buffer, Confluent, Domo, Doppler, Inngest, Instructure, Marqeta, Metabase, Miro, Nav, Netlify, Postman, Route, Speechify, Traeger, Vivint, Weave
+  - Returning nothing for 10+ runs: Airtable, Beyond (Overstock), Cockroach Labs, Confluent, Domo, Doppler, Inngest, Instructure, Marqeta, Metabase, Miro, Nav, Netlify, Postman, Route, Speechify, Together AI, Vivint, Weave
