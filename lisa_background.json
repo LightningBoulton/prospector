@@ -61,6 +61,31 @@
 
   "working_style": "Systems thinker; evidence-based; connects business strategy to execution; explains technology in business terms; structured executive communication.",
 
+  "_technical_boundary_comment": "This is the hard line, not a preference. Prospector also enforces it deterministically before a role is ever scored (screening.technical_screen), so the two must not disagree.",
+  "technical_boundary": {
+    "out_of_scope": "Roles requiring HER PERSONALLY to have substantial expertise in software engineering, architecture or infrastructure, APIs or integrations, data engineering, ML/AI engineering, automation development, or technical implementation. This holds regardless of title — a role called Program Manager, Transformation, Operations, AI or Customer Success is still out of scope if the work is engineering work. A Senior Forward Deployed Architect is never a recommendation.",
+    "in_scope": "Business-side AI and technology leadership is a TARGET, not an exception: AI adoption and enablement, workforce transformation, change management, process redesign, operating models, AI governance, organizational adoption, and business-side AI strategy. She explains technology in business terms; she does not build it.",
+    "the_distinction": "Would she be BUILDING the technology, or leading its adoption? The second is her work."
+  },
+
+  "hard_requirements_she_does_not_support": [
+    "a required number of years in a specialist function she has not held",
+    "a required industry specialization",
+    "a required license or certification",
+    "SQL or programming proficiency",
+    "CRM or MarTech administration",
+    "engineering or architecture depth",
+    "dedicated RevOps or Sales Ops ownership",
+    "deep SaaS renewals and forecasting",
+    "full-cycle recruiting execution",
+    "manufacturing or production expertise"
+  ],
+  "_hard_requirements_comment": "A stated requirement from this list OUTRANKS semantic similarity. Generic overlap in strategy, transformation, operations, CX or leadership does not compensate for one — do not average them against each other. Such a role is at best a stretch.",
+
+  "recruiting_and_talent_stance": "Do NOT exclude recruiting or talent roles on title history — judge the actual duties. Genuinely relevant: recruiting operations, talent strategy, workforce planning, recruiting-process design, talent analytics, hiring-manager enablement, recruiting transformation. These are operating-model and process work, which is her work. But flag the direct-execution gap where the posting asks for 5+ years of full-cycle recruiting, specialized recruiting tenure, advanced sourcing, requisition ownership, offer negotiation and closing, or extensive hands-on ATS execution — and for a promising recruiting role, name the SPECIFIC skills she would need to bridge.",
+
+  "seo_and_content": "Actively wanted, and not required to carry transformation language: SEO Director / Head / Lead / Manager, Enterprise SEO, Organic Search and Organic Growth, Search Strategy, SEO Content Strategy, Content Strategy, Content Operations, Digital Content Strategy, and SEO in the age of AI search (GEO / AEO). Treat these as squarely in scope on their own terms — do not require them to also describe transformation, operating-model or change work, and do not down-rank them for lacking it.",
+
   "weak_or_wrong_fit": [
     "Hands-on software / data / security engineering, IT administration, technician work",
     "Accounting, FP&A, tax, treasury, audit, controller, payroll",
@@ -71,7 +96,8 @@
   ],
 
   "practical_constraints": {
-    "location_preference": "Ranked, best first: (1) FULLY REMOTE within the United States — the strongest option and the default target; (2) UTAH LOCAL (Salt Lake / Silicon Slopes corridor) on a hybrid or flexible arrangement — fully onsite five days in Utah is workable but less attractive than hybrid; (3) WASHINGTON STATE (Seattle / Bellevue / Redmond corridor), which is acceptable and would be relocated for. Score practical_fit against this order. Anywhere else onsite or hybrid is a real constraint and should be scored down on practical_fit — but still surfaced when the role itself is strong. Washington DC is NOT Washington State and gets no preference.",
+    "location_preference": "Ranked, best first: (1) FULLY REMOTE within the United States — the strongest option and the default target; (2) UTAH LOCAL (Salt Lake / Silicon Slopes corridor) on a hybrid or flexible arrangement — fully onsite five days in Utah is workable but less attractive than hybrid; (3) WASHINGTON STATE (Seattle / Bellevue / Redmond corridor); (4) CALIFORNIA; (5) OREGON. Tiers 3-5 are acceptable and would be relocated for. Score practical_fit against this order. Anywhere else onsite or hybrid is a real constraint and should be scored down on practical_fit — but still surfaced when the role itself is strong. Washington DC is NOT Washington State and gets no preference.",
+    "remote_eligibility": "A location LABEL is not an eligibility statement. 'Remote - California', 'Remote - Seattle' and the like can mean a residence requirement, a pay zone, an associated office, a preferred location, or genuine nationwide US remote — read the posting and say which. Never call a role nationwide US remote when the posting restricts the eligible states, and answer 'unclear' rather than guessing when the posting does not say.",
     "priority_employers": "Adobe, Salesforce, Zillow Group, Atlassian, NPR, PBS, Marriott International and Hilton are employers she has named as deliberate targets and is actively watching. At Adobe specifically she holds an employee referral, a recruiting contact, and a Women Tech Council connection, which materially raises her odds of a real conversation. Let this lift opportunity_score for these employers — it is a genuine advantage in getting seen. Do NOT let it lift qualification_fit or interest_fit: whether she can do the job, and whether she wants it, are unchanged by who she knows. A poorly matched role at Adobe is still a poorly matched role.",
     "title_vs_responsibilities": "Roles from those priority employers are deliberately retrieved on a looser title filter than the rest of the search, so more of them will arrive with titles that do not obviously match. Judge them on the responsibilities described in the posting, and say so plainly when a title is misleading in either direction.",
     "employment_types": "Open to permanent, contract, interim and temporary. Contract leadership work is explicitly in scope and can be valuable for income and experience.",

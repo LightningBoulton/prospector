@@ -1,7 +1,23 @@
 name: prospector
+
+# DELIVERY TIMING — read this before touching the schedule.
+#
+# The target is: start 06:45 America/Denver, email in the reader's hands by 07:15-07:30.
+# GitHub cron is UTC-only and has no notion of DST, so a single fixed expression is 07:00
+# Mountain in summer and 06:00 in winter. Both candidate UTC times are therefore scheduled,
+# and a guard step decides which one is actually 06:45 in Denver TODAY (delivery.should_run_now).
+# There is no date in March or November to remember.
+#
+# The third entry is a catch-up. GitHub delays scheduled runs under load — that is what turned
+# a 07:45 email into an 11:00-17:00 one — and a run can also simply fail. The catch-up does the
+# work only if no run has SUCCEEDED today (delivery.completed_today), and the email is gated
+# separately on the delivery ledger (delivery.already_delivered), so it can never produce a
+# second email. One canonical daily email, whatever happens to the schedule.
 on:
   schedule:
-    - cron: "0 13 * * *"   # 7:00 AM Mountain (MDT); use "0 14 * * *" to hold at 7 in winter
+    - cron: "45 12 * * *"   # 06:45 America/Denver while MDT (UTC-6)
+    - cron: "45 13 * * *"   # 06:45 America/Denver while MST (UTC-7)
+    - cron: "30 16 * * *"   # catch-up: runs ONLY if neither of the above succeeded today
   workflow_dispatch:
     inputs:
       chad_only:
@@ -9,12 +25,19 @@ on:
         type: boolean
         default: false
       force_email:
-        description: "Test run: send even if the report has no changes since last run (does NOT override a paused email switch)"
+        description: "Test run: send even if the report has no changes since last run (does NOT override a paused email switch, and does NOT override the once-a-day delivery ledger)"
         type: boolean
         default: false
 
 permissions:
   contents: write
+
+concurrency:
+  # Two cron entries fire on the same day and the catch-up may overlap a slow run. Serialize
+  # them: the guard reads run_log.json, so a second job starting mid-run would read a log that
+  # says "running" and could not tell it apart from a crashed one.
+  group: prospector-daily
+  cancel-in-progress: false
 
 jobs:
   prospect:
@@ -24,12 +47,41 @@ jobs:
       - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
 
+      # Cheap, offline, and first: is this the invocation that should do the day's work?
+      # Exits 0 either way — every later step gates on the OUTPUT, not on an exit code, so a
+      # skipped day is a green run rather than a red one nobody investigates.
+      - name: Should this run happen now?
+        id: gate
+        run: |
+          python jobmonitor.py --check-schedule \
+            ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }} \
+            ${{ github.event.schedule == '30 16 * * *' && '--catchup' || '' }}
+
       - name: Install optional deps (LLM fit scoring)
+        if: ${{ steps.gate.outputs.should_run == 'true' }}
         run: pip install -r requirements.txt   # only needed for the optional LLM fit-scoring
 
+      # One retry, and only one. Almost every failure here is a transient network problem on
+      # the way to an ATS, and a second attempt three minutes later usually clears it — which
+      # is the difference between a 07:15 email and none at all. A THIRD attempt would not:
+      # by then the failure is real, and the catch-up slot is the right place to try again
+      # with a fresh checkout. The run is safely repeatable because state is only written at
+      # the end and the fit-verdict cache means a retry re-scores nothing.
       - name: Run prospector (all profiles)
         id: run
-        run: python jobmonitor.py
+        if: ${{ steps.gate.outputs.should_run == 'true' }}
+        run: |
+          set -o pipefail
+          python jobmonitor.py \
+            --scheduled-for "${{ github.event.schedule || github.event_name }}" \
+            --trigger "${{ github.event_name }}" \
+          || {
+            echo "::warning::first attempt failed; retrying once in 180s"
+            sleep 180
+            python jobmonitor.py \
+              --scheduled-for "${{ github.event.schedule || github.event_name }}" \
+              --trigger "${{ github.event_name }}-retry"
+          }
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # omit/unset to disable fit scoring
           # Optional: the Google Apps Script Web App bound to the tracking spreadsheet.
@@ -38,6 +90,7 @@ jobs:
           SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
 
       - name: Commit updated snapshots
+        if: ${{ steps.gate.outputs.should_run == 'true' }}
         run: |
           git config user.name  "prospector-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -46,22 +99,25 @@ jobs:
           # first_seen, ever_shown and the human decision fields, and the digest's
           # "removed since prior run" section is derived from it, so losing it would
           # reintroduce the bug where roles nobody had been shown appeared as removed.
+          # run_log.json is STATE as well: it is the timing record AND the delivery ledger
+          # that keeps the daily email canonical across runs on different machines.
           # rejects_*/source_health/feedback_template_*/discovery_log_* are diagnostics.
           # feedback_<name>.json is hand-edited and is never written by the run.
-          git add snapshot_*.json jobs_*.json report_*.md report_*.html \
+          git add snapshot_*.json jobs_*.json run_log.json report_*.md report_*.html \
                   rejects_*.json source_health.json feedback_template_*.json \
                   discovery_log_*.csv
           git commit -m "Daily run: $(date -u +%Y-%m-%d)" || echo "No changes"
           git push
 
       # `<name>_email` is the per-person delivery switch (profiles.json `email`, master
-      # switch settings.json `email.enabled`). It is ANDed, so it also overrides
-      # force_email: a deliberate pause must not be defeated by a manual test run. The
-      # profile still runs and still commits its state and report — only the send is
-      # withheld. See email_enabled_for in jobmonitor.py.
+      # switch settings.json `email.enabled`) ANDed with the once-a-day delivery ledger
+      # (run_log.json). It is ANDed OUTSIDE the force_email group, so neither a deliberate
+      # pause nor the canonical-email guarantee can be defeated by a manual test run. The
+      # profile still runs and still commits its state and report — only the send is withheld.
+      # See email_enabled_for and github_output_lines in jobmonitor.py.
       - name: Email Chad's report
         id: mail_chad
-        if: ${{ steps.run.outputs.chad_email == 'true' && (steps.run.outputs.chad_changed == 'true' || inputs.force_email == true) }}
+        if: ${{ steps.gate.outputs.should_run == 'true' && steps.run.outputs.chad_email == 'true' && (steps.run.outputs.chad_changed == 'true' || inputs.force_email == true) }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -77,7 +133,7 @@ jobs:
 
       - name: Email Lisa's report
         id: mail_lisa
-        if: ${{ steps.run.outputs.lisa_email == 'true' && inputs.chad_only != true && (steps.run.outputs.lisa_changed == 'true' || inputs.force_email == true) }}
+        if: ${{ steps.gate.outputs.should_run == 'true' && steps.run.outputs.lisa_email == 'true' && inputs.chad_only != true && (steps.run.outputs.lisa_changed == 'true' || inputs.force_email == true) }}
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
@@ -100,13 +156,18 @@ jobs:
       # would put roles nobody ever saw into the removed section — the exact bug the
       # ever_shown field exists to prevent.
       #
-      # A skipped or failed email step leaves its profile's marks pending. Those roles are
-      # simply rendered again on the next run; nothing is lost and nothing is over-claimed.
-      # A profile with email paused therefore never gets confirmed, which is correct: nobody
-      # saw those roles, so none of them may later appear in a "Removed since prior run"
-      # section. This falls out of the existing outcome check with no extra handling.
+      # This step also writes the DELIVERY LEDGER (run_log.json), which is what makes today's
+      # email the canonical one: a later run today reads it and withholds a second send.
+      # Both facts come from the same signal for the same reason, so they are recorded here
+      # together, from the one place that knows the mail actually went out.
+      #
+      # A skipped or failed email step leaves its profile's marks pending and writes no
+      # ledger entry. Those roles are simply rendered again on the next run; nothing is lost
+      # and nothing is over-claimed. A profile with email paused therefore never gets
+      # confirmed, which is correct: nobody saw those roles, so none of them may later appear
+      # in a "Removed since prior run" section.
       - name: Confirm delivery
-        if: ${{ always() }}
+        if: ${{ always() && steps.gate.outputs.should_run == 'true' }}
         run: |
           # Written as explicit ifs rather than `[ ... ] && VAR=x`: that form happens to be
           # safe under `bash -e` (a failing test inside a && list does not trip errexit) but
@@ -120,12 +181,13 @@ jobs:
           fi
           if [ -z "$SENT" ]; then
             echo "No email was delivered this run; leaving all 'shown' marks pending."
+            python jobmonitor.py --timing
             exit 0
           fi
           echo "Delivered to: $SENT"
           python jobmonitor.py --confirm-sent "$SENT"
           git config user.name  "prospector-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add jobs_*.json
+          git add jobs_*.json run_log.json
           git diff --staged --quiet || git commit -m "Confirm delivery: $(date -u +%Y-%m-%d) [$SENT]"
           git push
