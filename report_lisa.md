@@ -1,63 +1,59 @@
-# Prospector — 2026-09-05
+# Prospector — 2026-09-06
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 10 closed/removed
+**13 new roles today** · 8 still worth applying · 2 closed/removed
 
-## NEW — WORTH REVIEWING (10)
-- **Professional Services Consultant, AI Transformation** — Lucid Software · 82/100 · hybrid Salt Lake City, UT · posted 2026-08-26
-  - Why: Professional services delivery leadership matches core domain
-  - Concern: Title suggests IC consultant, unclear seniority/scope
-  - https://job-boards.greenhouse.io/lucidsoftware/jobs/6164364004
-- **Sr Principal Technical Program Manager - Enterprise and Emerging** — Atlassian · 74/100 · remote Seattle - United States; San Francisco - United States; Mountain View - United States or Remote · first seen 2026-09-05
-  - Why: Priority employer Atlassian with referral advantage
-  - Concern: Highly technical TPM framing may not match her background
-  - https://careers-americas.icims.com/jobs/27072/sr-principal-technical-program-manager---enterprise-and-emerging/job?mode=apply
-- **Senior Program Manager, High Volume Recruiting** — Included Health · 65/100 · remote Remote · posted 2026-09-04
-  - Why: Program ownership with operational excellence mandate
-  - Concern: Recruiting-specific domain narrower than her core transformation focus
-  - https://jobs.lever.co/includedhealth/5bf80233-c305-47b1-b9bd-c692a580487e
-- **Program Manager, Executive Experiences** — Stripe · 62/100 · remote San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US · posted 2026-09-05
-  - Why: Program leadership and operational excellence mandate
-  - Concern: Heavy event/hospitality logistics focus
-  - https://stripe.com/jobs/search?gh_jid=8175629
-- **IT Project Manager** — Robert Half · 45/100 · remote Redmond, WA (Remote) · $65.00–$75.00/hr · posted 2026-08-27
-  - Why: PM/vendor coordination fits operations background
-  - Concern: Part-time, 6-month contract only
-  - https://www.roberthalf.com/us/en/job/redmond-wa/it-project-manager/04400-0013495171-usen
-- **Genesys Platform Program Lead** — Chime Financial, Inc · 45/100 · remote Anywhere in the World (Remote) · posted 2026-08-28
-  - Why: US remote strongly fits location preference
-  - Concern: Highly specialized contact-center platform engineering skillset
-  - https://weworkremotely.com/remote-jobs/chime-financial-inc-genesys-platform-program-lead
-- **GTM Strategy & Operations Analyst, Account Management** — Vanta · 45/100 · remote Remote U.S. · $114K – $134K · posted 2026-08-28
-  - Why: Remote US role
-  - Concern: Title/level below her typical scope
-  - https://jobs.ashbyhq.com/vanta/0e82974a-0023-49a2-b1ec-a0fa89636dd5
-- **Technical Enablement Director** — Sentry · 45/100 · remote San Francisco, California (Remote) · $180K – $200K · posted 2026-08-28
-  - Why: Program/enablement leadership overlaps her PMO/CX skills
-  - Concern: Highly technical product evangelist role, narrow fit
-  - https://jobs.ashbyhq.com/sentry/ee7542d4-f478-4aa0-8da9-3583845d8269
-- **Director, Marketing Operations** — Maven Clinic · 45/100 · remote New York, NY; Remote, US (Hub cities) · posted 2026-08-31
-  - Why: Marketing operations leadership role
-  - Concern: Heavily martech/HubSpot/Salesforce specific, not core strength
-  - https://job-boards.greenhouse.io/mavenclinic/jobs/8760173002
-- **Senior Manager, Talent & People Operations, Claude Corps** — CodePath · 45/100 · remote USA (Remote) · $110,000 to $150,000 · posted 2026-09-01
-  - Why: Remote US role, strong practical fit
-  - Concern: Heavily recruiting/HR ops focused, not transformation
-  - https://jobicy.com/jobs/152292-senior-manager-talent-people-operations-claude-corps
+## NEW — WORTH REVIEWING (9)
+- **Senior Analyst, Service Operations** — Angi · 45/100 · remote Remote - United States · posted 2026-09-04
+  - Why: Remote US role fits location preference
+  - Concern: Title suggests IC analyst, not leadership mandate
+  - https://jobs.ashbyhq.com/angi/94745ec1-80a4-4e01-983f-22ab66abe894
+- **Lifecycle Marketing Operations Manager** — Flex · 45/100 · remote USA (Remote) · $3–$200 · posted 2026-09-06
+  - Why: US-remote practical fit
+  - Concern: More tactical marketing ops than org transformation
+  - https://jobicy.com/jobs/152674-lifecycle-marketing-operations-manager
+- **Associate Manager, Customer Success (Home Services)** — Podium · 45/100 · onsite Lehi, Utah · posted 2026-09-03
+  - Why: Utah onsite matches location preference
+  - Concern: Associate Manager title suggests limited scope
+  - https://job-boards.greenhouse.io/podium81/jobs/8176930
+- **Director, Contract Management & Tools Administration** — Marriott International · 40/100 · remote Bethesda, MD (Remote) · $127,000-$192,000 · first seen 2026-09-01
+  - Why: Priority employer Marriott
+  - Concern: Requires deep contract law/legal expertise she lacks
+  - https://careers.marriott.com/director-contract-management-tools-administration/job/77CC738A62ED7762D9D45228E7AB89E6
+- **Senior Analyst, Planning & Forecasting** — Hilton · 40/100 · remote Addison, TX, United States (Remote) · posted 2026-09-04
+  - Why: Hilton priority employer
+  - Concern: Analyst title likely lacks strategic ownership scope
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/213421
+- **Digital Marketing Project Manager** — Eliassen · 40/100 · remote Remote · $59.00 to $65.00 · posted 2026-09-02
+  - Why: Remote contract, program coordination scope
+  - Concern: Title/scope is tactical delivery coordination, not strategic
+  - https://careers.eliassen.com/VniWIA/digital-marketing-project-manager-programproject-management-anywhere-a1wuq000001s1ht2ai
+- **General Manager - Mexico** — Sardine · 40/100 · remote Mexico (Remote) · posted 2026-09-02
+  - Why: GM title but revenue/sales-driven mandate
+  - Concern: Heavily sales and revenue-quota driven, not her core strength
+  - https://jobs.ashbyhq.com/sardine/703c168c-956a-4e6c-ad62-0db65cd73ff6
+- **Data Product Manager (Manufacturing)** — Eliassen · 40/100 · remote Remote · $70.00 to $80.00 · posted 2026-09-02
+  - Why: Value realization and adoption mandate matches interests
+  - Concern: Highly technical data engineering/product owner role, not her core strength
+  - https://careers.eliassen.com/RJHWuI/data-product-manager-manufacturing-product-management-anywhere-a1wuq000001s1cr2aa
+- **Senior Scaled Customer Education Specialist** — Samsara · 40/100 · remote Remote - US · posted 2026-09-03
+  - Why: Customer education/training, adjacent to CX
+  - Concern: Lacks strategic/ownership scope she targets
+  - https://www.samsara.com/company/careers/roles/8177646?gh_jid=8177646
 
 ## DISCOVERY / WILDCARDS (4)
 - **Manager, Corporate Development M&A Integration** — Salesforce · 82/100 · onsite Seattle (+2 more) · $123,100 - $227,000 · posted 2026-08-24
   - Why: M&A integration is core domain expertise
   - Concern: No description available to confirm mandate
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Sr-Manager--M-A-Integration_JR339658
-- **Human Centered Change Director** — Salesforce · 78/100 · remote Remote (+5 more) · $171,200 - $273,800 · posted 2026-08-27
-  - Why: Change management director title matches core domain
-  - Concern: No description available to confirm scope
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Human-Centered-Change-Director_JR355654
 - **Sr. Business & Program Operations, Firefly Foundry** — Adobe · 78/100 · remote Remote (+4 more) · $139,700 - $202,250 · posted 2026-08-27
   - Why: Priority employer Adobe with referral advantage
   - Concern: No description to confirm scope
   - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Remote-Oregon/Principal-Business---Program-Operations--Firefly-Foundry_R168911-1
+- **Human Centered Change Director** — Salesforce · 78/100 · remote Remote (+5 more) · $171,200 - $273,800 · posted 2026-08-27
+  - Why: Change management director title matches core domain
+  - Concern: No description available to confirm scope
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Human-Centered-Change-Director_JR355654
 - **Human Centered Change Senior Manager- Public Sector** — Salesforce · 75/100 · remote Virginia - Washington DC Metro - Remote · $150,100 - $227,000 · posted 2026-08-25
   - Why: Change management senior manager mandate
   - Concern: No description to confirm scope
@@ -97,21 +93,13 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Manager title with CS quota/retention pressure
   - https://job-boards.greenhouse.io/cresta/jobs/5412192008
 
-## REMOVED SINCE PRIOR RUN (10)
-- Principal, Strategy and Operations — Adobe · No longer listed by its source
-- Principal, Strategy and Operations — Adobe · No longer listed by its source
-- Global Workforce Planning & Transformation — Chime · No longer listed by its source
-- Chief of Staff — Coinbase · No longer listed by its source
-- Portfolio Project Manager — Eliassen · No longer listed by its source
-- Senior Manager, Marketing Operations — Grow Therapy · No longer listed by its source
-- Vendor Operations Senior Associate — Instacart · No longer listed by its source
-- FLEX Manager, Business Transformation Office - Deployment — Marriott International · No longer listed by its source
-- Sr. Customer Engagement Marketing Manager (US) — PointClickCare · No longer listed by its source
-- Enterprise Core Implementation Consultant - West — Samsara · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (2)
+- HR Technology Consultant (Contract) — livingHR · No longer listed by its source
+- Head of GTM Enablement — Obsidian Security · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 134/137 successful
 - Temporary errors: 0
-- Needs attention: 24
+- Needs attention: 25
   - Broken config: ClickHouse, Marqeta, Temporal
-  - Returning nothing for 10+ runs: Airtable, Beyond (Overstock), Cockroach Labs, Confluent, Domo, Doppler, Inngest, Instructure, Marqeta, Metabase, Miro, Nav, Netlify, Pinecone, Postman, Route, Speechify, Together AI, Vercel, Vivint, Weave
+  - Returning nothing for 10+ runs: Airtable, Beyond (Overstock), Calendly, Cockroach Labs, Confluent, Domo, Doppler, Inngest, Instructure, Marqeta, Metabase, Miro, Nav, Netlify, Pinecone, Postman, Route, Speechify, Together AI, Vercel, Vivint, Weave

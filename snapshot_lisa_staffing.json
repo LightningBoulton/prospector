@@ -829,7 +829,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'organizational change' + mandate in description (continuous improvement, change management, organizational change)",
+  "match_reason": "role family 'organizational change' + mandate in description (change management, organizational change, adoption)",
   "fit_result": {
    "recommendation": "practical_contract",
    "confidence": "medium",
@@ -855,6 +855,84 @@
    "score": 55,
    "fit": "maybe",
    "reason": "OCM/comms specialist role, contract via staffing firm",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Eliassen::733aaf65-94c5-11f1-9509-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Lead Support Analyst",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/RYsCuX/lead-support-analyst-support-anywhere-a1wuq000001owk52ae",
+  "posted": "2026-09-06",
+  "salary": "$55.00 to $60.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "IT support/helpdesk leadership, not strategic transformation",
+    "Remote and contract but wrong function",
+    "Application support ops, not org strategy"
+   ],
+   "concerns": [
+    "Mismatch with core transformation/strategy focus",
+    "Hourly W2 rate far below her level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "IT support/helpdesk leadership, not strategic transformation",
+   "bg": "d192ce659668"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Eliassen::e18382f7-9731-11f1-9509-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Supplier Operations Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/qQ0QUW/supplier-operations-manager-manufacturing-supply-chain-anywhere-a1wuq000001ovrf2au",
+  "posted": "2026-09-06",
+  "salary": "$75.00 to $85.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Remote and contract, flexible practically",
+    "Transactional procurement/PO coordination, not strategic",
+    "Below her seniority and mandate level"
+   ],
+   "concerns": [
+    "Part-time 20 hrs/week limits income value",
+    "Narrow scope: PO/contract tracking, not transformation",
+    "Low strategic ownership or influence"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Remote and contract, flexible practically",
    "bg": "d192ce659668"
   }
  },
@@ -893,45 +971,6 @@
    "score": 40,
    "fit": "maybe",
    "reason": "PMO leadership scope fits program leadership experience",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Eliassen::bee1da82-9662-11f1-9509-02420a6c7775",
-  "company": "Eliassen",
-  "title": "Project Manager \u2013 Customer Modeling & Anaplan Transformation",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/ZCrhvs/project-manager-customer-modeling-anaplan-transformation-programproject-management-anywhere-a1wuq000001o4iz2aa",
-  "posted": "2026-09-04",
-  "salary": "$65.00 to $70.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract PM role, transformation-flavored",
-    "Cross-functional stakeholder coordination fits her profile",
-    "W2 contract fits her openness to contract work",
-    "Anaplan/technical tool specificity is a gap"
-   ],
-   "concerns": [
-    "Very tool/technical PM focus, less strategic ownership",
-    "Staffing agency contract, limited long-term scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 60,
-   "practical_fit": 78,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Remote contract PM role, transformation-flavored",
    "bg": "d192ce659668"
   }
  },
@@ -975,6 +1014,45 @@
   }
  },
  {
+  "key": "Eliassen::bee1da82-9662-11f1-9509-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Project Manager \u2013 Customer Modeling & Anaplan Transformation",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/ZCrhvs/project-manager-customer-modeling-anaplan-transformation-programproject-management-anywhere-a1wuq000001o4iz2aa",
+  "posted": "2026-09-04",
+  "salary": "$65.00 to $70.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract PM role, transformation-flavored",
+    "Cross-functional stakeholder coordination fits her profile",
+    "W2 contract fits her openness to contract work",
+    "Anaplan/technical tool specificity is a gap"
+   ],
+   "concerns": [
+    "Very tool/technical PM focus, less strategic ownership",
+    "Staffing agency contract, limited long-term scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 60,
+   "practical_fit": 78,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Remote contract PM role, transformation-flavored",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Eliassen::f60f68d7-a6f1-11f1-b939-02420a6c7775",
   "company": "Eliassen",
   "title": "Product Operations - Technical Program Manager",
@@ -1014,6 +1092,44 @@
   }
  },
  {
+  "key": "Eliassen::3ee0498a-a88c-11f1-8336-024201c20d84",
+  "company": "Eliassen",
+  "title": "Project Manager / Business Analyst \u2013 Real Estate Records Management System",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/Od8EfY/project-manager-business-analyst-real-estate-records-management-system-programproject-management-anywhere-a1wuq000001rrsd2ay",
+  "posted": "2026-09-04",
+  "salary": "$130,000.00 to $150,000.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract PM role",
+    "Requires niche real estate/land-management systems expertise",
+    "Not aligned with transformation/org strategy focus"
+   ],
+   "concerns": [
+    "Highly specialized domain (utility land-management systems)",
+    "W2 contract, not core interest area"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Remote contract PM role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Eliassen::13c3c03d-a6d0-11f1-8336-024201c20d84",
   "company": "Eliassen",
   "title": "Data Product Manager (Manufacturing)",
@@ -1049,44 +1165,6 @@
    "score": 40,
    "fit": "maybe",
    "reason": "Value realization and adoption mandate matches interests",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Eliassen::5f08abca-a689-11f1-b939-02420a6c7775",
-  "company": "Eliassen",
-  "title": "AI Visibility / SEO / Content Lead",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/bHH5im/ai-visibility-seo-content-lead-marketing-anywhere-a1wuq000001s1hh2aa",
-  "posted": "2026-09-02",
-  "salary": "$79.00 to $85.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Adjacent SEO/content domain listed but not core",
-    "Remote contract fits practical constraints",
-    "Highly specialized SEO/AI-search execution role, not transformation leadership"
-   ],
-   "concerns": [
-    "Requires deep hands-on SEO expertise, not her strength",
-    "Individual specialist role lacks strategic ownership scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Adjacent SEO/content domain listed but not core",
    "bg": "d192ce659668"
   }
  },
@@ -1131,40 +1209,40 @@
   }
  },
  {
-  "key": "Eliassen::3ee0498a-a88c-11f1-8336-024201c20d84",
+  "key": "Eliassen::5f08abca-a689-11f1-b939-02420a6c7775",
   "company": "Eliassen",
-  "title": "Project Manager / Business Analyst \u2013 Real Estate Records Management System",
+  "title": "AI Visibility / SEO / Content Lead",
   "location": "Remote",
-  "url": "https://careers.eliassen.com/Od8EfY/project-manager-business-analyst-real-estate-records-management-system-programproject-management-anywhere-a1wuq000001rrsd2ay",
-  "posted": "2026-09-04",
-  "salary": "$130,000.00 to $150,000.00",
+  "url": "https://careers.eliassen.com/bHH5im/ai-visibility-seo-content-lead-marketing-anywhere-a1wuq000001s1hh2aa",
+  "posted": "2026-09-02",
+  "salary": "$79.00 to $85.00",
   "employment_type": "",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Remote contract PM role",
-    "Requires niche real estate/land-management systems expertise",
-    "Not aligned with transformation/org strategy focus"
+    "Adjacent SEO/content domain listed but not core",
+    "Remote contract fits practical constraints",
+    "Highly specialized SEO/AI-search execution role, not transformation leadership"
    ],
    "concerns": [
-    "Highly specialized domain (utility land-management systems)",
-    "W2 contract, not core interest area"
+    "Requires deep hands-on SEO expertise, not her strength",
+    "Individual specialist role lacks strategic ownership scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
-   "interest_fit": 25,
+   "interest_fit": 35,
    "practical_fit": 55,
    "opportunity_score": 30,
    "score": 30,
    "fit": "no",
-   "reason": "Remote contract PM role",
+   "reason": "Adjacent SEO/content domain listed but not core",
    "bg": "d192ce659668"
   }
  },
@@ -1203,6 +1281,45 @@
    "score": 20,
    "fit": "no",
    "reason": "GAAP accounting/investment accounting role, wrong domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::02960-0013490653-usen",
+  "company": "Robert Half",
+  "title": "Project Manager - Systems",
+  "location": "Irvine, CA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/irvine-ca/project-manager-systems/02960-0013490653-usen",
+  "posted": "2026-08-18",
+  "salary": "$59.38\u2013$68.75/hr",
+  "employment_type": "Temp to Perm",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Cross-functional PM leadership matches operations background",
+    "Remote option noted despite Irvine location",
+    "Contract-to-perm fits open employment stance"
+   ],
+   "concerns": [
+    "Hands-on system implementation/configuration is more IT-execution than her focus",
+    "Pharma-specific background requirement is a mismatch",
+    "Temp-to-perm PM role lacks strategic transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Cross-functional PM leadership matches operations background",
    "bg": "d192ce659668"
   }
  },
@@ -1283,45 +1400,6 @@
    "score": 50,
    "fit": "maybe",
    "reason": "Operational program leadership and executive support",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::02960-0013490653-usen",
-  "company": "Robert Half",
-  "title": "Project Manager - Systems",
-  "location": "Irvine, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/irvine-ca/project-manager-systems/02960-0013490653-usen",
-  "posted": "2026-08-18",
-  "salary": "$59.38\u2013$68.75/hr",
-  "employment_type": "Temp to Perm",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Cross-functional PM leadership matches operations background",
-    "Remote option noted despite Irvine location",
-    "Contract-to-perm fits open employment stance"
-   ],
-   "concerns": [
-    "Hands-on system implementation/configuration is more IT-execution than her focus",
-    "Pharma-specific background requirement is a mismatch",
-    "Temp-to-perm PM role lacks strategic transformation scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Cross-functional PM leadership matches operations background",
    "bg": "d192ce659668"
   }
  },
@@ -1521,5 +1599,81 @@
    "bg": "d192ce659668"
   },
   "rescued": true
+ },
+ {
+  "key": "Robert Half::03200-0013490602-usen",
+  "company": "Robert Half",
+  "title": "Global Trade Compliance",
+  "location": "Charlotte, NC (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/charlotte-nc/global-trade-compliance/03200-0013490602-usen",
+  "posted": "2026-08-20",
+  "salary": "$34.00\u2013$37.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, strategic initiatives)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Wrong function: customs/trade compliance specialist role",
+    "Not organizational strategy or transformation work",
+    "Highly specialized regulatory domain expertise required"
+   ],
+   "concerns": [
+    "No evidence of trade compliance background",
+    "Temp role in unrelated specialty"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 55,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Wrong function: customs/trade compliance specialist role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::04860-0013498140-usen",
+  "company": "Robert Half",
+  "title": "Project/Program Manager I - Marketing Operations",
+  "location": "Hanover, MD (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/hanover-md/projectprogram-manager-i-marketing-operations/04860-0013498140-usen",
+  "posted": "2026-09-01",
+  "salary": "$37.00\u2013$40.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Junior-level operations coordination role",
+    "Far below her seniority and scope",
+    "Temp staffing role via Robert Half"
+   ],
+   "concerns": [
+    "Requires only 1-3 years experience, huge mismatch",
+    "No strategic or leadership scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Junior-level operations coordination role",
+   "bg": "d192ce659668"
+  }
  }
 ]

@@ -2907,44 +2907,6 @@
   }
  },
  {
-  "key": "Baseten::43b6c299-d5df-4cf4-a816-142ba3014a9d",
-  "company": "Baseten",
-  "title": "Marketing Technology & Operations Lead",
-  "location": "New York (Remote)",
-  "url": "https://jobs.ashbyhq.com/baseten/43b6c299-d5df-4cf4-a816-142ba3014a9d",
-  "posted": "2026-08-15",
-  "salary": "$190K \u2013 $210K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Marketing tech/systems ownership, not transformation or strategy",
-    "Highly technical/tooling-focused role mismatched to profile",
-    "Remote but NY-based team, not core priority"
-   ],
-   "concerns": [
-    "Wrong function: hands-on marketing ops tooling not strategic ops",
-    "No transformation, M&A, or org design scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 30,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Marketing tech/systems ownership, not transformation or strategy",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Baseten::40bce839-10ad-4274-a988-7cee8e0f795e",
   "company": "Baseten",
   "title": "Technical Program Manager, Model Performance",
@@ -5010,83 +4972,6 @@
   }
  },
  {
-  "key": "Unison Infrastructure::https://himalayas.app/companies/unison-infrastructure/jobs/acquisitions-director-1700873590",
-  "company": "Unison Infrastructure",
-  "title": "Acquisitions Director",
-  "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/unison-infrastructure/jobs/acquisitions-director-1700873590",
-  "posted": "2026-09-05",
-  "salary": "$100,000\u2013$100,000",
-  "employment_type": "Full Time",
-  "expires": "2026-11-04",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Actually a sales/origination quota role, not strategy",
-    "Title misleading - real work is B2C acquisitions sales",
-    "Wrong function despite remote appeal"
-   ],
-   "concerns": [
-    "Quota-driven sales role",
-    "No transformation or ops leadership scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 60,
-   "opportunity_score": 12,
-   "score": 12,
-   "fit": "no",
-   "reason": "Actually a sales/origination quota role, not strategy",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Zocks::https://himalayas.app/companies/zocks/jobs/trust-compliance-operations-manager",
-  "company": "Zocks",
-  "title": "Trust & Compliance Operations Manager",
-  "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/zocks/jobs/trust-compliance-operations-manager",
-  "posted": "2026-09-05",
-  "salary": "$150,000\u2013$175,000",
-  "employment_type": "Full Time",
-  "expires": "2026-11-04",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote fits preference strongly",
-    "Operations ownership role, process/system building",
-    "Compliance-specific domain not core expertise"
-   ],
-   "concerns": [
-    "Narrow compliance/trust operations focus, not transformation",
-    "Small startup scope may lack strategic breadth",
-    "Requires security/compliance domain knowledge she lacks"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "US-remote fits preference strongly",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Discord::151751",
   "company": "Discord",
   "title": "Advertising Operations Manager",
@@ -5508,6 +5393,37 @@
   }
  },
  {
+  "key": "Eightfold::148328",
+  "company": "Eightfold",
+  "title": "Senior Manager, Deal Desk",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/148328-senior-manager-deal-desk",
+  "posted": "2026-09-06",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, cross-functional leadership, governance)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "confidence": "low",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Concept Plus::150198",
   "company": "Concept Plus",
   "title": "Capture Management Director",
@@ -5737,39 +5653,80 @@
   }
  },
  {
-  "key": "Archive::150709",
-  "company": "Archive",
-  "title": "Customer Growth, Director",
+  "key": "Meta::145132",
+  "company": "Meta",
+  "title": "Product Manager, Central Products",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/150709-customer-growth-director",
-  "posted": "2026-08-15",
+  "url": "https://jobicy.com/jobs/145132-product-manager-central-products",
+  "posted": "2026-09-06",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'customer' + seniority in title",
+  "match_reason": "mandate in description (continuous improvement, ai transformation)",
   "fit_result": {
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "US-remote practical fit is strong",
-    "Executive relationship ownership aligns with her scope",
-    "But role is sales/GMV quota-driven, not transformation"
+    "Remote US role fits location preference",
+    "AI transformation theme matches interest",
+    "Requires hands-on technical PM/software product background",
+    "Generic posting spanning many Meta PM roles"
    ],
    "concerns": [
-    "Core mandate is revenue/renewal ownership, not her domain",
-    "Quota-adjacent account growth role, weak strategic fit"
+    "Core requirement is technical product management, not her background",
+    "Highly competitive, engineering-heavy role",
+    "Unclear seniority/scope, ambiguous mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 40,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
+   "qualification_fit": 35,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "maybe",
+   "reason": "Remote US role fits location preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Meta::148135",
+  "company": "Meta",
+  "title": "Data Center Location Strategy Manager",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/148135-data-center-location-strategy-manager",
+  "posted": "2026-09-06",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote practical fit is strong",
+    "Requires deep real estate/energy/infra site-selection expertise",
+    "Not aligned with her transformation/ops/CX background"
+   ],
+   "concerns": [
+    "Highly specialized site-selection domain expertise required",
+    "No transformation or org-effectiveness mandate",
+    "Would be steep qualification stretch"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 30,
+   "practical_fit": 85,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
    "reason": "US-remote practical fit is strong",
    "bg": "d192ce659668"
   }
@@ -6440,158 +6397,6 @@
   }
  },
  {
-  "key": "Obsidian Security::151670",
-  "company": "Obsidian Security",
-  "title": "Head of GTM Enablement",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/151670-head-of-gtm-enablement",
-  "posted": "2026-08-26",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote, strong practical fit",
-    "Enablement leadership touches operations/change skills",
-    "GTM-specific mandate is somewhat sales-centric",
-    "Scaling company with transformation flavor"
-   ],
-   "concerns": [
-    "Heavier sales enablement focus than her core transformation background",
-    "Less strategic/org-design scope than target roles"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 90,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "US-remote, strong practical fit",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Fortive::147553",
-  "company": "Fortive",
-  "title": "ASC Regional Director - West",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/147553-asc-regional-director-west",
-  "posted": "2026-08-26",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "This is a quota-carrying sales role, not transformation/ops"
-   ],
-   "concerns": [
-    "Wrong function: AE-style sales cycle ownership",
-    "No strategic/operating scope match"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "This is a quota-carrying sales role, not transformation/ops",
-   "bg": "d192ce659668"
-  },
-  "rescued": true
- },
- {
-  "key": "AECOM::144476",
-  "company": "AECOM",
-  "title": "Program Manager Facility Design, Data Centers - Remote (U.S.)",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/144476-program-manager-facility-design-data-centers-remote-u-s-2",
-  "posted": "2026-08-26",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Program management scope but technical/facility design domain",
-    "Remote US aligns with location preference",
-    "Not core transformation/org strategy mandate"
-   ],
-   "concerns": [
-    "Requires hyperscale data center technical expertise",
-    "Unclear strategic/org-effectiveness scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 42,
-   "score": 42,
-   "fit": "maybe",
-   "reason": "Program management scope but technical/facility design domain",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Gopuff::151631",
-  "company": "Gopuff",
-  "title": "Senior Director of Fresh Grocery (Produce, Meat & Seafood)",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/151631-senior-director-of-fresh-grocery-produce-meat-seafood",
-  "posted": "2026-08-25",
-  "salary": "$180,000 - $240,000 K",
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (cross-functional leadership, p&l)",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Full P&L ownership and cross-functional leadership",
-    "US-remote practical fit",
-    "Category-specific grocery expertise not her background"
-   ],
-   "concerns": [
-    "Requires deep fresh food/grocery merchandising domain expertise",
-    "Not aligned with transformation/org-strategy focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 30,
-   "practical_fit": 85,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Full P&L ownership and cross-functional leadership",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "CodePath::152292",
   "company": "CodePath",
   "title": "Senior Manager, Talent & People Operations, Claude Corps",
@@ -6670,95 +6475,13 @@
   }
  },
  {
-  "key": "livingHR::150723",
-  "company": "livingHR",
-  "title": "HR Technology Consultant (Contract)",
+  "key": "Flex::152674",
+  "company": "Flex",
+  "title": "Lifecycle Marketing Operations Manager",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/150723-hr-technology-consultant-contract",
-  "posted": "2026-08-15",
-  "salary": "$50 - $75",
-  "employment_type": "Contract",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Contract HR tech consulting fits professional services background",
-    "Remote-first, talent pool not guaranteed role",
-    "Change management and adoption work aligns with skills",
-    "State list excludes Utah residency"
-   ],
-   "concerns": [
-    "Not a guaranteed opening, just a talent pool",
-    "HR systems specialization is narrower than her core scope",
-    "Location list doesn't explicitly include Utah"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 55,
-   "practical_fit": 55,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Contract HR tech consulting fits professional services background",
-   "bg": "d192ce659668"
-  },
-  "rescued": true
- },
- {
-  "key": "Stripe::152487",
-  "company": "Stripe",
-  "title": "Head of AEO & SEO",
-  "location": "Canada,  USA (Remote)",
-  "url": "https://jobicy.com/jobs/152487-head-of-aeo-seo",
-  "posted": "2026-09-03",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US role fits location",
-    "AI adoption angle touches her interests",
-    "But highly specialized SEO/AEO execution role",
-    "Not org transformation or ops leadership",
-    "Requires deep technical SEO expertise she lacks"
-   ],
-   "concerns": [
-    "Wrong functional domain - specialist SEO not transformation",
-    "No evidence of hands-on SEO/AEO expertise",
-    "Title and mandate both highly specialized"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "no",
-   "reason": "Remote US role fits location",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Harness::152486",
-  "company": "Harness",
-  "title": "Web Strategy, SEO & AI Lead",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152486-web-strategy-seo-ai-lead",
-  "posted": "2026-09-03",
-  "salary": null,
+  "url": "https://jobicy.com/jobs/152674-lifecycle-marketing-operations-manager",
+  "posted": "2026-09-06",
+  "salary": "$3\u2013$200",
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "core",
@@ -6767,89 +6490,52 @@
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "US-remote practical fit strong",
-    "SEO/AEO tactical specialization mismatch",
-    "Adjacent to content/digital strategy background",
-    "Not core transformation or operations mandate"
+    "US-remote practical fit",
+    "Adjacent to marketing operations experience",
+    "Lacks strategic/transformation scope",
+    "Hands-on lifecycle marketing execution role"
    ],
    "concerns": [
-    "Highly specialized SEO/AEO execution role, not strategic leadership",
-    "Limited transformation or org-effectiveness scope"
+    "More tactical marketing ops than org transformation",
+    "Startup pace may not match strategic leadership positioning"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
+   "qualification_fit": 45,
    "interest_fit": 40,
-   "practical_fit": 85,
-   "opportunity_score": 40,
-   "score": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
    "fit": "maybe",
-   "reason": "US-remote practical fit strong",
+   "reason": "US-remote practical fit",
    "bg": "d192ce659668"
   }
  },
  {
-  "key": "Formic::152414",
-  "company": "Formic",
-  "title": "Automation Sales Manager",
+  "key": "NVIDIA::148312",
+  "company": "NVIDIA",
+  "title": "Senior Customer Technical Program Manager - AI Datacenter",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152414-automation-sales-manager",
-  "posted": "2026-09-03",
+  "url": "https://jobicy.com/jobs/148312-senior-customer-technical-program-manager-ai-datacenter",
+  "posted": "2026-09-06",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'automation' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Quota-carrying sales role, wrong function",
-    "No transformation or operations mandate"
-   ],
-   "concerns": [
-    "Pure sales-quota ownership, explicitly weak fit"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 60,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Quota-carrying sales role, wrong function",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Fleetio::152392",
-  "company": "Fleetio",
-  "title": "Director, Product Marketing, GTM Strategy",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152392-director-product-marketing-gtm-strategy",
-  "posted": "2026-09-02",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "US-remote role fits location preference",
-    "Involves cross-functional operating system building",
-    "GTM/commercialization is adjacent, not core expertise",
-    "Product marketing specialization not her background"
+    "Program management scope aligns with PMO/program leadership background",
+    "US-remote fits top location preference",
+    "Deep hardware engineering focus is a mismatch"
    ],
    "concerns": [
-    "Requires deep product marketing/GTM craft, not her core strength",
-    "Heavy sales enablement focus outside her domain"
+    "Requires deep technical/engineering datacenter expertise she lacks",
+    "Heavy hardware/manufacturing focus outside her domain"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
@@ -6861,7 +6547,7 @@
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "US-remote role fits location preference",
+   "reason": "Program management scope aligns with PMO/program leadership background",
    "bg": "d192ce659668"
   }
  },
