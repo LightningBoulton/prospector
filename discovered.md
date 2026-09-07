@@ -1,64 +1,12 @@
-# Prospector — discovered companies (2026-08-31)
+# Prospector — discovered companies (2026-09-07)
 
-Scanned employers hiring within 50 mi of South Jordan. 380 new names after removing ones already tracked and known staffing firms; probed the top 80 (tech-industry first) against tier-1 ATS platforms.
+Scanned employers hiring within 50 mi of South Jordan. 0 new names after removing ones already tracked and known staffing firms; probed the top 0 (tech-industry first) against tier-1 ATS platforms.
 
-## Ready to add — resolved to a tier-1 ATS (1)
+## Ready to add — resolved to a tier-1 ATS (0)
 _Paste the good ones into `companies.json` (fill in `city`); each was confirmed to return live jobs._
 
-```json
-{ "name": "1 800 Contacts", "city": "TODO", "ats": "greenhouse", "slug": "1800contacts" },   // ~26 in-area roles; ATS shows 8
-```
+_None this run._
 
-## Seen in-area but no tier-1 ATS (77)
+## Seen in-area but no tier-1 ATS (0)
 _Likely Workday/iCIMS/custom — worth a manual careers-page check for the interesting ones._
 
-- Northrop Grumman (~1077 in-area roles)
-- Layton Construction (~345 in-area roles)
-- L3Harris Technologies (~278 in-area roles)
-- University of Utah (~252 in-area roles)
-- Albany International Corp. (~154 in-area roles)
-- Utah Division of Human Resource Management (~139 in-area roles)
-- The Air Force Civilian Service (~138 in-area roles)
-- The Church of Jesus Christ of Latter-day Saints (~132 in-area roles)
-- Stadler Deutschland GmbH (~113 in-area roles)
-- Williams International (~112 in-area roles)
-- Walmart (~101 in-area roles)
-- Precision Castparts Corp. (~87 in-area roles)
-- Stantec (~84 in-area roles)
-- Brigham Young University (~70 in-area roles)
-- AECOM (~69 in-area roles)
-- Utah Valley University (~68 in-area roles)
-- Kelso Building Services (~64 in-area roles)
-- Rio Tinto (~61 in-area roles)
-- Adobe, Inc. (~61 in-area roles)
-- Actalent (~60 in-area roles)
-- Quanta Services (~54 in-area roles)
-- Quality Electrical Systems (~54 in-area roles)
-- Torus, Inc. (~53 in-area roles)
-- Dennis Group (~53 in-area roles)
-- WSP (~52 in-area roles)
-- TERRACON (~52 in-area roles)
-- M. A. Mortenson Company (~52 in-area roles)
-- Lancesoft Inc. (~51 in-area roles)
-- Zions Bancorporation (~50 in-area roles)
-- ECAM (~49 in-area roles)
-- Texas Instruments (~48 in-area roles)
-- Zions Bank (~47 in-area roles)
-- Big D (~45 in-area roles)
-- Harris (~45 in-area roles)
-- Kesta IT (~45 in-area roles)
-- PacifiCorp (~45 in-area roles)
-- WesTech Engineering (~44 in-area roles)
-- Goldman Sachs, Inc. (~43 in-area roles)
-- OC Tanner (~41 in-area roles)
-- Cynet Systems (~41 in-area roles)
-- millenniumsoft (~41 in-area roles)
-- ARUP Laboratories (~41 in-area roles)
-- Bechtel (~40 in-area roles)
-- HelloTech (~40 in-area roles)
-- MarketStar (~39 in-area roles)
-- Gulfstream Strategic Placements, Llc (~39 in-area roles)
-- HDR (~38 in-area roles)
-- Cushman & Wakefield (~38 in-area roles)
-- QTS Realty Trust, Inc. (~38 in-area roles)
-- Belcan (~37 in-area roles)
