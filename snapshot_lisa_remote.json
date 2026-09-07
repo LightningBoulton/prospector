@@ -4972,41 +4972,154 @@
   }
  },
  {
-  "key": "Discord::151751",
-  "company": "Discord",
-  "title": "Advertising Operations Manager",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/151751-advertising-operations-manager",
-  "posted": "2026-08-26",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "key": "JLL::https://himalayas.app/companies/jll/jobs/project-manager-signage",
+  "company": "JLL",
+  "title": "Project Manager Signage",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/jll/jobs/project-manager-signage",
+  "posted": "2026-09-07",
+  "salary": "$90,000\u2013$100,000",
+  "employment_type": "Full Time",
+  "expires": "2026-11-06",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Tactical signage/fabrication PM role",
+    "No strategic transformation or org mandate",
+    "Field execution focus, not her domain"
+   ],
+   "concerns": [
+    "Wrong function despite remote appeal",
+    "Not a career-fit despite PM title"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 70,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Tactical signage/fabrication PM role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Guidehouse::https://himalayas.app/companies/guidehouse/jobs/state-health-managing-consultant",
+  "company": "Guidehouse",
+  "title": "State Health - Managing Consultant",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/guidehouse/jobs/state-health-managing-consultant",
+  "posted": "2026-09-07",
+  "salary": "$102,000\u2013$170,000",
+  "employment_type": "Full Time",
+  "expires": "2026-11-06",
+  "tier": "discovery",
+  "match_reason": "role family 'consultant' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Fully remote US role",
-    "Operations title but ad-tech execution focus",
-    "Not aligned with transformation/strategy mandate"
+    "Remote US-based role",
+    "Consulting title but wrong domain"
    ],
    "concerns": [
-    "Hands-on campaign trafficking, not strategic ops",
-    "Narrow ad-sales support function",
-    "Weak match to core domains"
+    "Requires Medicaid/CMS finance expertise she lacks",
+    "Highly specialized regulatory reporting, not transformation"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 75,
+   "opportunity_score": 22,
+   "score": 22,
+   "fit": "no",
+   "reason": "Remote US-based role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "ezCater::https://himalayas.app/companies/ezcater/jobs/senior-product-manager-delivery",
+  "company": "ezCater",
+  "title": "Senior Product Manager, Delivery",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/ezcater/jobs/senior-product-manager-delivery",
+  "posted": "2026-09-07",
+  "salary": "$161,000\u2013$213,000",
+  "employment_type": "Full Time",
+  "expires": "2026-11-06",
+  "tier": "discovery",
+  "match_reason": "role family 'delivery' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote is practically attractive",
+    "But role is hands-on technical product management",
+    "Not aligned with transformation/ops leadership focus"
+   ],
+   "concerns": [
+    "Requires deep product management/technical delivery expertise",
+    "No strategic org/transformation mandate",
+    "Wrong function vs core domains"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
-   "interest_fit": 25,
+   "interest_fit": 30,
    "practical_fit": 85,
    "opportunity_score": 30,
    "score": 30,
    "fit": "no",
-   "reason": "Fully remote US role",
+   "reason": "US-remote is practically attractive",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Discord::https://weworkremotely.com/remote-jobs/discord-advertising-operations-manager",
+  "company": "Discord",
+  "title": "Advertising Operations Manager",
+  "location": "Anywhere in the World (Remote)",
+  "url": "https://weworkremotely.com/remote-jobs/discord-advertising-operations-manager",
+  "posted": "2026-09-05",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "2026-10-05",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Fully remote but wrong function match",
+    "Hands-on ad ops execution, not transformation/strategy",
+    "Below her ownership and strategic scope level"
+   ],
+   "concerns": [
+    "Tactical campaign execution role, not leadership mandate",
+    "No org design, transformation or M&A scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 25,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Fully remote but wrong function match",
    "bg": "d192ce659668"
   }
  },
@@ -5354,45 +5467,6 @@
   }
  },
  {
-  "key": "Typeform::https://weworkremotely.com/remote-jobs/typeform-customer-success-manager",
-  "company": "Typeform",
-  "title": "Customer Success Manager",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/typeform-customer-success-manager",
-  "posted": "2026-08-16",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-09-15",
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote US-based role",
-    "CX-adjacent but IC account management, not strategic scope",
-    "Below seniority/ownership level she targets"
-   ],
-   "concerns": [
-    "No transformation, operations or strategic mandate",
-    "Individual contributor account management, not leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 70,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Remote US-based role",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Eightfold::148328",
   "company": "Eightfold",
   "title": "Senior Manager, Deal Desk",
@@ -5406,20 +5480,29 @@
   "match_reason": "mandate in description (operational excellence, cross-functional leadership, governance)",
   "fit_result": {
    "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: JSONDecodeError)",
-   "confidence": "low",
+   "confidence": "medium",
+   "reasons": [
+    "Cross-functional operational governance overlaps her ops background",
+    "Fully remote US role",
+    "AI company aligns with adoption interest",
+    "Deal desk is finance/sales-ops specific, not core domain"
+   ],
+   "concerns": [
+    "Requires deep quote-to-cash/pricing/contract expertise she lacks",
+    "Narrower functional scope than transformation/strategy roles",
+    "Title below strategic mandate she targets"
+   ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 90,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Cross-functional operational governance overlaps her ops background",
    "bg": "d192ce659668"
   }
  },
@@ -6510,6 +6593,37 @@
    "score": 45,
    "fit": "maybe",
    "reason": "US-remote practical fit",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Fleetio::152733",
+  "company": "Fleetio",
+  "title": "Partner Enablement Manager",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/152733-partner-enablement-manager-2",
+  "posted": "2026-09-07",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'enablement' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "confidence": "low",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
    "bg": "d192ce659668"
   }
  },

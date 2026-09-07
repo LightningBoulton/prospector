@@ -1,45 +1,13 @@
-# Prospector — 2026-09-06
+# Prospector — 2026-09-07
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**13 new roles today** · 8 still worth applying · 2 closed/removed
+**5 new roles today** · 8 still worth applying · 3 closed/removed
 
-## NEW — WORTH REVIEWING (9)
-- **Senior Analyst, Service Operations** — Angi · 45/100 · remote Remote - United States · posted 2026-09-04
-  - Why: Remote US role fits location preference
-  - Concern: Title suggests IC analyst, not leadership mandate
-  - https://jobs.ashbyhq.com/angi/94745ec1-80a4-4e01-983f-22ab66abe894
-- **Lifecycle Marketing Operations Manager** — Flex · 45/100 · remote USA (Remote) · $3–$200 · posted 2026-09-06
-  - Why: US-remote practical fit
-  - Concern: More tactical marketing ops than org transformation
-  - https://jobicy.com/jobs/152674-lifecycle-marketing-operations-manager
-- **Associate Manager, Customer Success (Home Services)** — Podium · 45/100 · onsite Lehi, Utah · posted 2026-09-03
-  - Why: Utah onsite matches location preference
-  - Concern: Associate Manager title suggests limited scope
-  - https://job-boards.greenhouse.io/podium81/jobs/8176930
-- **Director, Contract Management & Tools Administration** — Marriott International · 40/100 · remote Bethesda, MD (Remote) · $127,000-$192,000 · first seen 2026-09-01
-  - Why: Priority employer Marriott
-  - Concern: Requires deep contract law/legal expertise she lacks
-  - https://careers.marriott.com/director-contract-management-tools-administration/job/77CC738A62ED7762D9D45228E7AB89E6
-- **Senior Analyst, Planning & Forecasting** — Hilton · 40/100 · remote Addison, TX, United States (Remote) · posted 2026-09-04
-  - Why: Hilton priority employer
-  - Concern: Analyst title likely lacks strategic ownership scope
-  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/213421
-- **Digital Marketing Project Manager** — Eliassen · 40/100 · remote Remote · $59.00 to $65.00 · posted 2026-09-02
-  - Why: Remote contract, program coordination scope
-  - Concern: Title/scope is tactical delivery coordination, not strategic
-  - https://careers.eliassen.com/VniWIA/digital-marketing-project-manager-programproject-management-anywhere-a1wuq000001s1ht2ai
-- **General Manager - Mexico** — Sardine · 40/100 · remote Mexico (Remote) · posted 2026-09-02
-  - Why: GM title but revenue/sales-driven mandate
-  - Concern: Heavily sales and revenue-quota driven, not her core strength
-  - https://jobs.ashbyhq.com/sardine/703c168c-956a-4e6c-ad62-0db65cd73ff6
-- **Data Product Manager (Manufacturing)** — Eliassen · 40/100 · remote Remote · $70.00 to $80.00 · posted 2026-09-02
-  - Why: Value realization and adoption mandate matches interests
-  - Concern: Highly technical data engineering/product owner role, not her core strength
-  - https://careers.eliassen.com/RJHWuI/data-product-manager-manufacturing-product-management-anywhere-a1wuq000001s1cr2aa
-- **Senior Scaled Customer Education Specialist** — Samsara · 40/100 · remote Remote - US · posted 2026-09-03
-  - Why: Customer education/training, adjacent to CX
-  - Concern: Lacks strategic/ownership scope she targets
-  - https://www.samsara.com/company/careers/roles/8177646?gh_jid=8177646
+## NEW — WORTH REVIEWING (1)
+- **Principal Analyst, Sales Strategy & Operations** — Atlassian · 45/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-09-07
+  - Why: Remote option available, US-based
+  - Concern: Deeply sales-forecasting specific, not transformation/strategy
+  - https://careers-americas.icims.com/jobs/26279/principal-analyst%2c-sales-strategy-%26-operations/job?mode=apply
 
 ## DISCOVERY / WILDCARDS (4)
 - **Manager, Corporate Development M&A Integration** — Salesforce · 82/100 · onsite Seattle (+2 more) · $123,100 - $227,000 · posted 2026-08-24
@@ -93,9 +61,10 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Manager title with CS quota/retention pressure
   - https://job-boards.greenhouse.io/cresta/jobs/5412192008
 
-## REMOVED SINCE PRIOR RUN (2)
-- HR Technology Consultant (Contract) — livingHR · No longer listed by its source
-- Head of GTM Enablement — Obsidian Security · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (3)
+- Organizational Change Management (OCM) & Communications Support Specialist — Aquent · No longer listed by its source
+- Strategy & Business Operations Principal, Teamwork Collection — Atlassian · No longer listed by its source
+- Project Manager II — Robert Half · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 134/137 successful
