@@ -170,13 +170,6 @@
    "note": ""
   },
   {
-   "key": "BYU::JR-11764",
-   "company": "BYU",
-   "title": "AV Events Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "BYU::JR-11889",
    "company": "BYU",
    "title": "Linux End-User Systems Engineer",
@@ -345,13 +338,6 @@
    "note": ""
   },
   {
-   "key": "Cloudflare::8132642",
-   "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Territory - Philadelphia, PA",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "CodePath::152297",
    "company": "CodePath",
    "title": "Senior Product Manager, Learner Platform Experience",
@@ -362,13 +348,6 @@
    "key": "Coinbase::8154270",
    "company": "Coinbase",
    "title": "Engineer Manager, HR Applications",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Coinbase::8138031",
-   "company": "Coinbase",
-   "title": "Engineering Manager - Platform (FinHub - Financial Intelligence)",
    "status": "",
    "note": ""
   },
@@ -506,6 +485,13 @@
    "note": ""
   },
   {
+   "key": "Concept Plus::https://himalayas.app/companies/concept-plus/jobs/oracle-oci-engineer-8871966589",
+   "company": "Concept Plus",
+   "title": "Oracle OCI Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Cresta::5397262008",
    "company": "Cresta",
    "title": "Solutions Engineer, AI Agent",
@@ -590,13 +576,6 @@
    "note": ""
   },
   {
-   "key": "DigiCert::8689594002",
-   "company": "DigiCert",
-   "title": "Software Engineering Manager",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Discord::8700605002",
    "company": "Discord",
    "title": "Staff Software Engineer, Experimentation Platform",
@@ -642,13 +621,6 @@
    "key": "Gainsight::8595c304-2f80-4b76-81c2-0b8599a5b937",
    "company": "Gainsight",
    "title": "Lead Security Operations Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Gainsight::d6215748-758c-455a-b8b4-d55b51bc7cca",
-   "company": "Gainsight",
-   "title": "Staff Software Engineer",
    "status": "",
    "note": ""
   },
@@ -772,13 +744,6 @@
    "note": ""
   },
   {
-   "key": "GitLab::8705017002",
-   "company": "GitLab",
-   "title": "Staff Systems Engineer, IT",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "GitLab::8707353002",
    "company": "GitLab",
    "title": "Support Engineer, U.S. Government Support",
@@ -842,9 +807,23 @@
    "note": ""
   },
   {
+   "key": "Hinge Health::b2964f69-23d0-4fe9-af0b-7466cdd051ee",
+   "company": "Hinge Health",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Hinge Health::c829f5e8-463b-421a-a30b-79d3abdaf773",
    "company": "Hinge Health",
    "title": "Senior Software Engineer - Full Stack",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Hinge Health::861316e2-8b23-43bc-85c4-5b0b93ca6bd0",
+   "company": "Hinge Health",
+   "title": "Staff Software Engineer",
    "status": "",
    "note": ""
   },
@@ -866,13 +845,6 @@
    "key": "Instacart::8147298",
    "company": "Instacart",
    "title": "Senior Android Engineer II, Digital Twin Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Instacart::8132846",
-   "company": "Instacart",
-   "title": "Senior Data Engineer II, Finance",
    "status": "",
    "note": ""
   },
@@ -950,6 +922,13 @@
    "key": "Instacart::8178568",
    "company": "Instacart",
    "title": "Senior Software Engineer, Growth",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Klaviyo::152747",
+   "company": "Klaviyo",
+   "title": "Senior Product Manager, Profiles Platform",
    "status": "",
    "note": ""
   },
@@ -1052,23 +1031,9 @@
    "note": ""
   },
   {
-   "key": "LaunchDarkly::7886222003",
-   "company": "LaunchDarkly",
-   "title": "Staff Frontend Engineer, Feature Management",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "MX::4385268009",
    "company": "MX",
    "title": "Senior Software Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Mattress Firm::https://himalayas.app/companies/mattress-firm/jobs/senior-crm-developer",
-   "company": "Mattress Firm",
-   "title": "Senior CRM Developer",
    "status": "",
    "note": ""
   },
@@ -1083,6 +1048,13 @@
    "key": "Mercury::6183014004",
    "company": "Mercury",
    "title": "Senior Software Engineer - Investments",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Mercury::6184992004",
+   "company": "Mercury",
+   "title": "Senior Software Engineer - SRE",
    "status": "",
    "note": ""
   },
@@ -1115,14 +1087,14 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8142656",
+   "key": "Mixpanel::8148613",
    "company": "Mixpanel",
    "title": "Delivery Engineer II (GTM)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Mixpanel::8148613",
+   "key": "Mixpanel::8142656",
    "company": "Mixpanel",
    "title": "Delivery Engineer II (GTM)",
    "status": "",
@@ -1395,13 +1367,6 @@
    "note": ""
   },
   {
-   "key": "Reddit::8180636",
-   "company": "Reddit",
-   "title": "Staff Software Engineer, Developer Ecosystem",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Reddit::145336",
    "company": "Reddit",
    "title": "Staff Technical Product Manager, Ads ML Platform",
@@ -1423,6 +1388,13 @@
    "note": ""
   },
   {
+   "key": "Replit::f2f56292-890e-498c-844c-07f2bea8ea7a",
+   "company": "Replit",
+   "title": "Senior Software Engineer, Growth Enablement",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Samsara::8141615",
    "company": "Samsara",
    "title": "Solutions Integration Engineer II",
@@ -1432,7 +1404,7 @@
   {
    "key": "Samsara::7852183",
    "company": "Samsara",
-   "title": "Staff Offensive Security Engineer",
+   "title": "Staff Application Security Engineer",
    "status": "",
    "note": ""
   },
@@ -1535,13 +1507,6 @@
    "note": ""
   },
   {
-   "key": "Stripe::8142302",
-   "company": "Stripe",
-   "title": "Security Incident Response Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Stripe::8127182",
    "company": "Stripe",
    "title": "Software Engineer, Platform Infrastructure",
@@ -1591,13 +1556,6 @@
    "note": ""
   },
   {
-   "key": "Tailscale::4724897005",
-   "company": "Tailscale",
-   "title": "Forward Deployed Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Tailscale::4726153005",
    "company": "Tailscale",
    "title": "Security Infrastructure Engineer",
@@ -1626,14 +1584,14 @@
    "note": ""
   },
   {
-   "key": "Twilio::8164891",
+   "key": "Twilio::8171110",
    "company": "Twilio",
    "title": "Senior Solutions Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8171110",
+   "key": "Twilio::8164891",
    "company": "Twilio",
    "title": "Senior Solutions Engineer",
    "status": "",
@@ -1759,13 +1717,6 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026040",
-   "company": "Western Governors University",
-   "title": "NOC Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Western Governors University::JR-026020",
    "company": "Western Governors University",
    "title": "Principal Software Engineer",
@@ -1794,6 +1745,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025976",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025759",
    "company": "Western Governors University",
    "title": "Senior Software Engineer",
@@ -1804,13 +1762,6 @@
    "key": "Western Governors University::JR-026036",
    "company": "Western Governors University",
    "title": "Senior Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025416",
-   "company": "Western Governors University",
-   "title": "Senior Software Engineer - Salesforce",
    "status": "",
    "note": ""
   },
@@ -1832,6 +1783,13 @@
    "key": "Western Governors University::JR-025614",
    "company": "Western Governors University",
    "title": "Senior Software Product Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-026034",
+   "company": "Western Governors University",
+   "title": "Staff Software Engineer",
    "status": "",
    "note": ""
   },

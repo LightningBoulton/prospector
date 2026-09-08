@@ -1,31 +1,47 @@
-# Prospector — 2026-09-07
+# Prospector — 2026-09-08
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**5 new roles today** · 8 still worth applying · 3 closed/removed
+**9 new roles today** · 8 still worth applying · 9 closed/removed
 
-## NEW — WORTH REVIEWING (1)
-- **Principal Analyst, Sales Strategy & Operations** — Atlassian · 45/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-09-07
-  - Why: Remote option available, US-based
-  - Concern: Deeply sales-forecasting specific, not transformation/strategy
-  - https://careers-americas.icims.com/jobs/26279/principal-analyst%2c-sales-strategy-%26-operations/job?mode=apply
+## NEW — WORTH REVIEWING (5)
+- **Communications Lead III** — Robert Half · 55/100 · remote Providence, RI (Remote) · $35.00–$40.00/hr · posted 2026-09-08
+  - Why: Change communications for IT/operational transformation
+  - Concern: Heavier on tactical writing than strategic ownership
+  - https://www.roberthalf.com/us/en/job/providence-ri/communications-lead-iii/03720-0013429952-usen
+- **Sr. Project Manager** — Eliassen · 50/100 · hybrid Remote · $65.00 to $75.00 · posted 2026-09-08
+  - Why: Remote W2 contract
+  - Concern: Heavy finance/tax domain expertise required
+  - https://careers.eliassen.com/oeSgt5/sr-project-manager-programproject-management-anywhere-a1wuq000001s55n2aq
+- **Fraud Operations Manager** — Stripe · 45/100 · remote US-Remote · posted 2026-09-08
+  - Why: US-remote practical fit is excellent
+  - Concern: Requires fraud/risk domain specialization
+  - https://stripe.com/jobs/search?gh_jid=8175832
+- **Director, IT Operations** — Instacart · 45/100 · remote San Francisco- Remote · posted 2026-09-08
+  - Why: Ops leadership scope, remote
+  - Concern: Heavily IT support/AV focused, not strategic transformation
+  - https://instacart.careers/job/?gh_jid=8177874
+- **Business Operations Specialist** — Aquent · 40/100 · remote Los Angeles, CA, US (Remote) · up to $55.00/hr · posted 2026-09-03
+  - Why: Business operations contract role
+  - Concern: Highly transactional/administrative, not strategic
+  - https://aquent.com/find-work/212751
 
 ## DISCOVERY / WILDCARDS (4)
-- **Manager, Corporate Development M&A Integration** — Salesforce · 82/100 · onsite Seattle (+2 more) · $123,100 - $227,000 · posted 2026-08-24
-  - Why: M&A integration is core domain expertise
-  - Concern: No description available to confirm mandate
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Sr-Manager--M-A-Integration_JR339658
-- **Sr. Business & Program Operations, Firefly Foundry** — Adobe · 78/100 · remote Remote (+4 more) · $139,700 - $202,250 · posted 2026-08-27
-  - Why: Priority employer Adobe with referral advantage
-  - Concern: No description to confirm scope
-  - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Remote-Oregon/Principal-Business---Program-Operations--Firefly-Foundry_R168911-1
+- **Business Planning & Operations Lead, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+5 more) · $123,100 - $186,300 · posted 2026-09-08
+  - Why: Priority employer Salesforce
+  - Concern: No description available to confirm scope
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Business-Planning---Operations-Lead--Agentforce-Operations_JR358867-1
 - **Human Centered Change Director** — Salesforce · 78/100 · remote Remote (+5 more) · $171,200 - $273,800 · posted 2026-08-27
   - Why: Change management director title matches core domain
   - Concern: No description available to confirm scope
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Human-Centered-Change-Director_JR355654
-- **Human Centered Change Senior Manager- Public Sector** — Salesforce · 75/100 · remote Virginia - Washington DC Metro - Remote · $150,100 - $227,000 · posted 2026-08-25
-  - Why: Change management senior manager mandate
+- **Sr. Business & Program Operations, Firefly Foundry** — Adobe · 78/100 · remote Remote (+4 more) · $139,700 - $202,250 · posted 2026-08-27
+  - Why: Priority employer Adobe with referral advantage
   - Concern: No description to confirm scope
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Virginia---Washington-DC-Metro---Remote/Human-Centered-Change-Senior-Manager--Public-Sector_JR352952
+  - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Remote-Oregon/Principal-Business---Program-Operations--Firefly-Foundry_R168911-1
+- **Sr. Program & Portfolio Manager (IT)** — Adobe · 78/100 · onsite Lehi (+1 more) · $179,800 - $260,350 · posted 2026-09-08
+  - Why: Program/portfolio leadership matches core PMO domain
+  - Concern: No description available, scope unclear
+  - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sr-Program---Portfolio-Manager--IT-_R171323
 
 ## STILL WORTH APPLYING (8)
 - **Business Operations & Chief of Staff** — Waymark · 90/100 · remote USA (Remote) · posted 2026-08-29
@@ -61,10 +77,16 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Manager title with CS quota/retention pressure
   - https://job-boards.greenhouse.io/cresta/jobs/5412192008
 
-## REMOVED SINCE PRIOR RUN (3)
-- Organizational Change Management (OCM) & Communications Support Specialist — Aquent · No longer listed by its source
-- Strategy & Business Operations Principal, Teamwork Collection — Atlassian · No longer listed by its source
-- Project Manager II — Robert Half · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (9)
+- Director, Large Pro Operations — Angi · No longer listed by its source
+- Senior Sales Enablement Strategist — Angi · No longer listed by its source
+- Principal Strategist, AI Sales Strategy — Atlassian · No longer listed by its source
+- Director, Contract Management & Tools Administration — Marriott International · No longer listed by its source
+- Senior Customer Support Controls & Governance Program Manager — Mercury · No longer listed by its source
+- Senior Customer Support Operations Readiness Program Manager — Mercury · No longer listed by its source
+- Senior Analyst, GTM Business Operations – Public Sector — Samsara · No longer listed by its source
+- Program Manager, Performance and Talent Planning — Stripe · No longer listed by its source
+- Sr. Manager, Commercial Customer Success (East Region) — Vanta · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 134/137 successful
