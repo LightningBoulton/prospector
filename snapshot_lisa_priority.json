@@ -124,47 +124,6 @@
   }
  },
  {
-  "key": "Adobe::R171513",
-  "company": "Adobe",
-  "title": "Sales Operations Manager",
-  "location": "Remote (+1 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/London/Sales-Operations-Manager_R171513",
-  "posted": "2026-09-04",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Adobe is priority employer with referral contact",
-    "Remote aligns with top location preference",
-    "Sales ops adjacent to revenue operations",
-    "Thin posting, mandate scope unclear"
-   ],
-   "concerns": [
-    "No description to assess strategic scope",
-    "Sales ops may be narrower than transformation work"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Adobe is priority employer with referral contact",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Adobe::R170602",
   "company": "Adobe",
   "title": "Finance Transformation Manager, Business Architecture",
@@ -244,6 +203,127 @@
    "score": 60,
    "fit": "maybe",
    "reason": "Priority employer Adobe with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR339783",
+  "company": "Salesforce",
+  "title": "Salesforce Program Executive -  Senior Director (Consumer Goods/ Manufacturing)",
+  "location": "Remote (+7 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Atlanta/Program-Executive---Senior-Director--Consumer-Goods-_JR339783",
+  "posted": "2026-09-09",
+  "salary": "$181,700 - $304,700",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'program' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Program leadership at priority employer Salesforce",
+    "Senior Director scope likely strategic",
+    "Remote aligns with top location preference",
+    "Program/portfolio leadership is core domain"
+   ],
+   "concerns": [
+    "No job description to verify mandate",
+    "Consumer Goods/Manufacturing vertical unfamiliar"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 70,
+   "practical_fit": 85,
+   "opportunity_score": 72,
+   "score": 72,
+   "fit": "yes",
+   "reason": "Program leadership at priority employer Salesforce",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR332573",
+  "company": "Salesforce",
+  "title": "Customer Success Manager \u2013 Digital (Marketing & Commerce) Clouds",
+  "location": "Remote (+4 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Indianapolis/Customer-Success-Manager---Digital--Marketing---Commerce--Clouds_JR332573",
+  "posted": "2026-09-09",
+  "salary": "$123,100 - $227,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Customer success leadership adjacent to CX expertise",
+    "Remote-eligible posting",
+    "Priority employer Salesforce",
+    "Title suggests IC-level scope, not strategic"
+   ],
+   "concerns": [
+    "No description to confirm strategic scope",
+    "May be tactical account management, not transformation"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Customer success leadership adjacent to CX expertise",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR359227",
+  "company": "Salesforce",
+  "title": "Senior Manager, SOX Advisory & Process Improvement",
+  "location": "Remote (+1 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Indianapolis/Senior-Manager--SOX-Advisory---Process-Improvement_JR359227",
+  "posted": "2026-09-08",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Process improvement mandate aligns loosely",
+    "Salesforce priority employer connection",
+    "US-remote practical fit",
+    "SOX/compliance focus is not core strength"
+   ],
+   "concerns": [
+    "No description; SOX-specific expertise unclear",
+    "Compliance-heavy role may mismatch experience"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Process improvement mandate aligns loosely",
    "bg": "d192ce659668"
   }
  },
@@ -1144,6 +1224,130 @@
   }
  },
  {
+  "key": "Salesforce::JR353112",
+  "company": "Salesforce",
+  "title": "Customer Success Manager, Director - Core (Sales & Service) Clouds - TMT",
+  "location": "Seattle (+2 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Customer-Success-Manager--Director---Core--Sales---Service--Clouds---TMT_JR353112",
+  "posted": "2026-09-08",
+  "salary": "$171,200 - $273,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Director-level CS leadership at priority employer Salesforce",
+    "Seattle location fits Washington State preference",
+    "CX/customer success aligns with core domain",
+    "No description limits scope assessment"
+   ],
+   "concerns": [
+    "No job description available to verify mandate",
+    "CSM titles can be quota/renewal-driven, not strategic",
+    "Location may require onsite/hybrid presence"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 65,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Director-level CS leadership at priority employer Salesforce",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR332336",
+  "company": "Salesforce",
+  "title": "Customer Success Manager - Core (Sales & Service) Clouds",
+  "location": "Seattle (+7 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Indianapolis/Customer-Success-Manager---Core--Sales---Service--Clouds_JR332336-1",
+  "posted": "2026-09-08",
+  "salary": "$123,100 - $186,300",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce named target",
+    "Customer success aligns with CX background",
+    "Seattle location acceptable per preferences",
+    "No description to confirm scope"
+   ],
+   "concerns": [
+    "Title suggests IC/account-level role, not strategic",
+    "No description available to verify mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce named target",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR354750",
+  "company": "Salesforce",
+  "title": "Financial Services Program Executive VP",
+  "location": "Seattle (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Financial-Services-Program-Executive-VP_JR354750",
+  "posted": "2026-09-08",
+  "salary": "$212,700 - $374,400",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'program' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce",
+    "Program executive scope plausible fit",
+    "Seattle matches WA preference",
+    "No description to confirm mandate"
+   ],
+   "concerns": [
+    "No job description available",
+    "Financial services vertical unclear fit",
+    "Title suggests niche sales/industry focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 65,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Salesforce::JR358730",
   "company": "Salesforce",
   "title": "Manager, Global P2C Innovation Readiness & Enablement",
@@ -1221,47 +1425,6 @@
    "score": 60,
    "fit": "maybe",
    "reason": "Program management mandate fits background",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR351524",
-  "company": "Salesforce",
-  "title": "Senior Director, Product Strategy and Operations",
-  "location": "Seattle (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Product-Strategy-and-Operations_JR351524",
-  "posted": "2026-09-02",
-  "salary": "$218,400 - $365,200",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Senior Director strategy/ops mandate likely fits",
-    "Salesforce is priority employer",
-    "Seattle within Washington State preference",
-    "Title suggests operating model/strategy scope"
-   ],
-   "concerns": [
-    "No description available to confirm mandate",
-    "Seattle onsite/hybrid requirements unclear",
-    "May require relocation"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 75,
-   "practical_fit": 65,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Senior Director strategy/ops mandate likely fits",
    "bg": "d192ce659668"
   }
  },
@@ -1513,86 +1676,6 @@
   }
  },
  {
-  "key": "Salesforce::JR351058",
-  "company": "Salesforce",
-  "title": "Director, SOX Advisory & Process Improvement",
-  "location": "Seattle (+3 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Atlanta/Director--SOX-Advisory---Process-Improvement_JR351058",
-  "posted": "2026-08-18",
-  "salary": "$164,000 - $261,500",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Salesforce",
-    "Washington State location acceptable",
-    "Process improvement angle possible fit",
-    "SOX/audit focus outside core expertise"
-   ],
-   "concerns": [
-    "Title suggests audit/compliance-heavy mandate",
-    "No description to confirm transformation scope"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Priority employer Salesforce",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR355639",
-  "company": "Salesforce",
-  "title": "Campaign Planning Operations Senior Manager",
-  "location": "Seattle (+3 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Campaign-Planning-Operations-Senior-Manager_JR355639",
-  "posted": "2026-08-18",
-  "salary": "$143,400 - $216,900",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Marketing/campaign ops adjacent to her operations background",
-    "Salesforce not a priority employer",
-    "Seattle location acceptable per WA preference",
-    "No description; scope unclear"
-   ],
-   "concerns": [
-    "Thin posting, cannot verify strategic scope",
-    "May be narrowly marketing-execution focused"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 50,
-   "practical_fit": 65,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Marketing/campaign ops adjacent to her operations background",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Zillow Group::P751190",
   "company": "Zillow Group",
   "title": "Senior Support Consultant, Follow Up Boss",
@@ -1628,46 +1711,6 @@
    "score": 35,
    "fit": "maybe",
    "reason": "Priority employer Zillow Group",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Zillow Group::P751279",
-  "company": "Zillow Group",
-  "title": "Principal Strategic GTM Program Manager",
-  "location": "Remote-USA",
-  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Principal-Strategic-GTM-Program-Manager_P751279-1",
-  "posted": "2026-09-04",
-  "salary": "$131,700.00 - $210,300.00",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "US-remote at priority employer Zillow Group",
-    "Program leadership aligns with PMO/transformation experience",
-    "GTM strategy scope plausibly executive-facing",
-    "Title suggests strategic ownership"
-   ],
-   "concerns": [
-    "No description available to confirm scope",
-    "GTM focus may skew more sales-ops than transformation"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "US-remote at priority employer Zillow Group",
    "bg": "d192ce659668"
   }
  },
@@ -2478,47 +2521,6 @@
   }
  },
  {
-  "key": "Atlassian::26297",
-  "company": "Atlassian",
-  "title": "Senior Manager, Onboarding, TWC",
-  "location": "Mountain View - United States or Remote; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/26297/senior-manager%2c-onboarding%2c-twc/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Priority employer Atlassian with referral advantage",
-    "Customer onboarding/value realization aligns with CX expertise",
-    "Change management and success planning mandate fits",
-    "Fully remote option matches top location preference"
-   ],
-   "concerns": [
-    "Senior Manager scope may be narrower than prior Sr Director roles",
-    "CSM-specific onboarding is adjacent, not core transformation work"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 72,
-   "practical_fit": 90,
-   "opportunity_score": 76,
-   "score": 76,
-   "fit": "yes",
-   "reason": "Priority employer Atlassian with referral advantage",
-   "bg": "d192ce659668"
-  },
-  "rescued": true
- },
- {
   "key": "Atlassian::25307",
   "company": "Atlassian",
   "title": "Senior Solution Consultant, Teamwork Foundations + AI",
@@ -2715,6 +2717,46 @@
    "score": 10,
    "fit": "no",
    "reason": "Deep hands-on software/infrastructure engineering role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Marriott International::26115386",
+  "company": "Marriott International",
+  "title": "Director, Property Experience & Salesforce Solutions",
+  "location": "Bethesda, MD (Remote)",
+  "url": "https://careers.marriott.com/director-property-experience-salesforce-solutions/job/2BB04AA37CD5FFDC2863344F819536DF",
+  "posted": "",
+  "salary": "$127,000-$215,000",
+  "employment_type": "Full Time",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, continuous improvement, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Priority employer Marriott",
+    "Mismatched to hands-on Salesforce engineering role",
+    "Not operations/transformation leadership mandate"
+   ],
+   "concerns": [
+    "Requires deep Salesforce technical certification",
+    "Hands-on engineering, not strategic ownership",
+    "Wrong function despite priority employer"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 20,
+   "practical_fit": 40,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Priority employer Marriott",
    "bg": "d192ce659668"
   }
  },
@@ -3205,43 +3247,85 @@
   }
  },
  {
-  "key": "Marriott International::26100680",
+  "key": "Marriott International::26112254",
   "company": "Marriott International",
-  "title": "VP, Luxury Client Relationship Management",
+  "title": "Senior Manager, Technology Product Management - Unified Experience Layer (UXL)",
   "location": "Bethesda, MD (Remote)",
-  "url": "https://careers.marriott.com/vp-luxury-client-relationship-management/job/29BAEC62EB4A864E576FE682205AB7B7",
+  "url": "https://careers.marriott.com/senior-manager-technology-product-management-unified-experience-layer-uxl/job/F3C5AA3F0C338B176FE30F80A13EA4F2",
   "posted": "",
-  "salary": "$216,000-$390,000",
+  "salary": "$110,400-$188,000",
   "employment_type": "Full Time",
   "expires": "",
   "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "mandate in description (operating model, adoption)",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Operating model design and enterprise transformation mandate",
-    "Priority employer Marriott named target",
-    "Cross-functional, executive-facing strategic scope",
-    "Customer experience and lifetime value focus aligns"
+    "Marriott priority employer target",
+    "Platform/product leadership adjacent to ops excellence",
+    "Value realization and stakeholder alignment match strengths",
+    "Remote-flagged despite Bethesda listing"
    ],
    "concerns": [
-    "CRM/luxury clienteling domain is a specialty gap",
-    "Listed as remote but Bethesda HQ likely expects presence",
-    "VP scope may require deep hospitality luxury network"
+    "Requires technical product management/API platform expertise",
+    "Not core transformation or org-effectiveness mandate",
+    "Bethesda location may imply hybrid despite remote tag"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 65,
-   "practical_fit": 55,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Operating model design and enterprise transformation mandate",
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 65,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Marriott priority employer target",
+   "bg": "d192ce659668"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Hilton::218732",
+  "company": "Hilton",
+  "title": "Senior Manager, Content Strategy and Customer Engagement, All-Inclusive & Resorts",
+  "location": "McLean, VA, United States (Remote)",
+  "url": "https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/218732",
+  "posted": "2026-09-08",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Priority employer (Hilton)",
+    "Remote role reduces relocation concern",
+    "Content/marketing strategy adjacent, not core transformation",
+    "Customer engagement angle loosely aligned with CX experience"
+   ],
+   "concerns": [
+    "Marketing/content focus, not operations or transformation",
+    "Narrow brand-marketing mandate vs strategic ownership",
+    "Title level below her typical scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 65,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Priority employer (Hilton)",
    "bg": "d192ce659668"
   }
  },

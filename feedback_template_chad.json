@@ -2,9 +2,9 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
-   "key": "1Password::d8e8cf3f-c994-43a7-854c-86849b95db41",
+   "key": "1Password::f51cc73a-fde2-4686-b54b-f183cdaedb45",
    "company": "1Password",
-   "title": "Developer, Authorization",
+   "title": "Developer, Full Stack/iOS",
    "status": "",
    "note": ""
   },
@@ -37,13 +37,6 @@
    "note": ""
   },
   {
-   "key": "1Password::a5b083d5-5f82-4316-b5ef-a577f2edb493",
-   "company": "1Password",
-   "title": "Solutions Engineer, SMB",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::c03b0c63-a5e1-49ad-9063-b05e50020acb",
    "company": "1Password",
    "title": "Staff AI Marketing Systems Engineer",
@@ -58,16 +51,16 @@
    "note": ""
   },
   {
-   "key": "Adobe::R171395",
-   "company": "Adobe",
-   "title": "Senior Manager, Software Development \u2013 Meta Factory",
+   "key": "6sense::152837",
+   "company": "6sense",
+   "title": "Product Lead, AI Platform",
    "status": "",
    "note": ""
   },
   {
-   "key": "Adobe::R171215",
+   "key": "Adobe::R171395",
    "company": "Adobe",
-   "title": "Senior Security Automation Engineer",
+   "title": "Senior Manager, Software Development \u2013 Meta Factory",
    "status": "",
    "note": ""
   },
@@ -103,6 +96,13 @@
    "key": "Affirm::7980264003",
    "company": "Affirm",
    "title": "Senior Software Engineer, Backend (Card Ledger & Money Movement)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::7832324003",
+   "company": "Affirm",
+   "title": "Senior Software Engineer, Backend (Partner Merchant Interface)",
    "status": "",
    "note": ""
   },
@@ -208,20 +208,6 @@
    "key": "Baseten::19972142-ec0b-4049-8d8f-6a341f57f938",
    "company": "Baseten",
    "title": "Software Engineer - Identity and Authorization",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Buffer::3cc29ce6-6336-4a62-bf3b-b3d307f92f6d",
-   "company": "Buffer",
-   "title": "Senior Design Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Buffer::6ee07995-2738-4cee-b16d-fc8967674346",
-   "company": "Buffer",
-   "title": "Senior Growth Engineer",
    "status": "",
    "note": ""
   },
@@ -394,13 +380,6 @@
    "note": ""
   },
   {
-   "key": "Coinbase::8103569",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer, Simple Trade Experience",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Coinbase::8162237",
    "company": "Coinbase",
    "title": "Senior Staff Software Engineer, Finhub",
@@ -485,13 +464,6 @@
    "note": ""
   },
   {
-   "key": "Concept Plus::https://himalayas.app/companies/concept-plus/jobs/oracle-oci-engineer-8871966589",
-   "company": "Concept Plus",
-   "title": "Oracle OCI Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Cresta::5397262008",
    "company": "Cresta",
    "title": "Solutions Engineer, AI Agent",
@@ -523,13 +495,6 @@
    "key": "Databricks::https://weworkremotely.com/remote-jobs/databricks-ai-engineer-fde-forward-deployed-engineer",
    "company": "Databricks",
    "title": "AI Engineer - FDE (Forward Deployed Engineer)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Datadog::8139662",
-   "company": "Datadog",
-   "title": "Developer Advocate - Service Management",
    "status": "",
    "note": ""
   },
@@ -569,16 +534,16 @@
    "note": ""
   },
   {
-   "key": "DigiCert::8722548002",
+   "key": "DigiCert::8762020002",
    "company": "DigiCert",
-   "title": "Senior Solutions Engineer",
+   "title": "Head of Web Content Strategy",
    "status": "",
    "note": ""
   },
   {
-   "key": "Discord::8700605002",
-   "company": "Discord",
-   "title": "Staff Software Engineer, Experimentation Platform",
+   "key": "DigiCert::8722548002",
+   "company": "DigiCert",
+   "title": "Senior Solutions Engineer",
    "status": "",
    "note": ""
   },
@@ -814,6 +779,13 @@
    "note": ""
   },
   {
+   "key": "Hinge Health::aa95bbce-a6d7-46e6-9dd5-e3fba3aafd74",
+   "company": "Hinge Health",
+   "title": "Senior Software Engineer - Backend",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Hinge Health::c829f5e8-463b-421a-a30b-79d3abdaf773",
    "company": "Hinge Health",
    "title": "Senior Software Engineer - Full Stack",
@@ -831,13 +803,6 @@
    "key": "Hinge Health::8bfabfb5-5e65-4781-9991-accef77b4295",
    "company": "Hinge Health",
    "title": "Staff Software Engineer- Backend",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Included Health::b3b5352c-0784-41c4-9e2f-062461aef44a",
-   "company": "Included Health",
-   "title": "Senior Security Operations Engineer",
    "status": "",
    "note": ""
   },
@@ -901,13 +866,6 @@
    "key": "Instacart::8175843",
    "company": "Instacart",
    "title": "Senior Software Engineer, Caper AI",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Instacart::8155585",
-   "company": "Instacart",
-   "title": "Senior Software Engineer, Core Experience",
    "status": "",
    "note": ""
   },
@@ -982,13 +940,6 @@
    "note": ""
   },
   {
-   "key": "LangChain::98fcaa18-d323-49cd-b231-b2d4b905419d",
-   "company": "LangChain",
-   "title": "Solutions Engineer (Chicago)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "LaunchDarkly::7985794003",
    "company": "LaunchDarkly",
    "title": "Full Stack Engineer, Observability",
@@ -1003,13 +954,6 @@
    "note": ""
   },
   {
-   "key": "LaunchDarkly::7887684003",
-   "company": "LaunchDarkly",
-   "title": "Senior Full Stack Engineer, Enterprise, Feature Management",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "LaunchDarkly::7978505003",
    "company": "LaunchDarkly",
    "title": "Senior Solutions Engineer - West",
@@ -1020,13 +964,6 @@
    "key": "LaunchDarkly::7919873003",
    "company": "LaunchDarkly",
    "title": "Staff Engineer, Experience Engineering",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "LaunchDarkly::7895529003",
-   "company": "LaunchDarkly",
-   "title": "Staff Enterprise Developer Advocate",
    "status": "",
    "note": ""
   },
@@ -1066,6 +1003,13 @@
    "note": ""
   },
   {
+   "key": "Mixpanel::8142657",
+   "company": "Mixpanel",
+   "title": "Customer Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Mixpanel::8142661",
    "company": "Mixpanel",
    "title": "Customer Engineer",
@@ -1073,9 +1017,9 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8142657",
+   "key": "Mixpanel::8142656",
    "company": "Mixpanel",
-   "title": "Customer Engineer",
+   "title": "Delivery Engineer II (GTM)",
    "status": "",
    "note": ""
   },
@@ -1094,13 +1038,6 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8142656",
-   "company": "Mixpanel",
-   "title": "Delivery Engineer II (GTM)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Mixpanel::8142644",
    "company": "Mixpanel",
    "title": "Delivery Engineer III (GTM)",
@@ -1108,9 +1045,16 @@
    "note": ""
   },
   {
-   "key": "NICE::4947999101",
+   "key": "Molina Healthcare::https://himalayas.app/companies/molina-healthcare/jobs/lead-engineer-big-data-databricks-remote",
+   "company": "Molina Healthcare",
+   "title": "Lead Engineer, Big Data - Databricks - Remote",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "NICE::4968269101",
    "company": "NICE",
-   "title": "Public Safety Solutions Engineer",
+   "title": "Technical Support Engineer",
    "status": "",
    "note": ""
   },
@@ -1146,13 +1090,6 @@
    "key": "Pattern::090855a4-cbb0-4de6-a8f4-c2422ab0c03f",
    "company": "Pattern",
    "title": "Senior Data Platform Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Payabli::https://weworkremotely.com/remote-jobs/payabli-senior-product-manager-platform",
-   "company": "Payabli",
-   "title": "Senior Product Manager, Platform",
    "status": "",
    "note": ""
   },
@@ -1227,13 +1164,6 @@
    "note": ""
   },
   {
-   "key": "Pluralsight::R0014395",
-   "company": "Pluralsight",
-   "title": "VP, Marketing Operations & Digital Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Podium::8172144",
    "company": "Podium",
    "title": "Technical Support Engineer",
@@ -1269,6 +1199,13 @@
    "note": ""
   },
   {
+   "key": "Ramp::9916e9da-7491-4c99-afd1-e4b8158fa58b",
+   "company": "Ramp",
+   "title": "Software Engineer, Forward Deployed",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8148431",
    "company": "Reddit",
    "title": "Backend Software Engineer, PDP Experience",
@@ -1286,13 +1223,6 @@
    "key": "Reddit::8088720",
    "company": "Reddit",
    "title": "Product Manager, Developer Ecosystem",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::8093006",
-   "company": "Reddit",
-   "title": "Senior Backend Engineer, Safety",
    "status": "",
    "note": ""
   },
@@ -1353,13 +1283,6 @@
    "note": ""
   },
   {
-   "key": "Reddit::8139781",
-   "company": "Reddit",
-   "title": "Software Engineer, Content Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Reddit::8175131",
    "company": "Reddit",
    "title": "Staff Software Engineer - Site Defense",
@@ -1388,9 +1311,37 @@
    "note": ""
   },
   {
+   "key": "Replit::a45ca7ba-21f9-464d-8c00-eb5361b3c9f4",
+   "company": "Replit",
+   "title": "Premium Support Engineer (Foster City, Weekend Shift)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Replit::df65b94a-2273-4e65-aead-fac409839e30",
+   "company": "Replit",
+   "title": "Premium Support Engineer (London, Weekend)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Replit::0a94327b-52c0-41d1-931f-b2aca5e90c1f",
+   "company": "Replit",
+   "title": "Premium Support Engineer (NYC, Weekend Shift)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Replit::f2f56292-890e-498c-844c-07f2bea8ea7a",
    "company": "Replit",
    "title": "Senior Software Engineer, Growth Enablement",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8186992",
+   "company": "Samsara",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1479,6 +1430,13 @@
    "note": ""
   },
   {
+   "key": "Sigma Computing::152798",
+   "company": "Sigma Computing",
+   "title": "Enterprise Solution Engineer - Central",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Smartsheet::8142799",
    "company": "Smartsheet",
    "title": "Marketing Platform Operations Manager",
@@ -1493,23 +1451,16 @@
    "note": ""
   },
   {
+   "key": "Stripe::8172503",
+   "company": "Stripe",
+   "title": "Abuse Research Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Stripe::8130913",
    "company": "Stripe",
    "title": "Designer, Web, Presence & Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Stripe::8080454",
-   "company": "Stripe",
-   "title": "Integration Engineer, Metronome",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Stripe::8127182",
-   "company": "Stripe",
-   "title": "Software Engineer, Platform Infrastructure",
    "status": "",
    "note": ""
   },
@@ -1563,6 +1514,27 @@
    "note": ""
   },
   {
+   "key": "Traeger::8180049",
+   "company": "Traeger",
+   "title": "Jr. Mechanical Design Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Traeger::8180039",
+   "company": "Traeger",
+   "title": "Sr. Electrical Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Tremendous::152860",
+   "company": "Tremendous",
+   "title": "Senior Product Manager - Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Twilio::8139748",
    "company": "Twilio",
    "title": "Principal Presales Engineer",
@@ -1584,14 +1556,14 @@
    "note": ""
   },
   {
-   "key": "Twilio::8171110",
+   "key": "Twilio::8164891",
    "company": "Twilio",
    "title": "Senior Solutions Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8164891",
+   "key": "Twilio::8171110",
    "company": "Twilio",
    "title": "Senior Solutions Engineer",
    "status": "",
@@ -1608,13 +1580,6 @@
    "key": "Twilio::8157344",
    "company": "Twilio",
    "title": "Staff Security Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Upstart::142530",
-   "company": "Upstart",
-   "title": "Senior Engineering Manager, Platform Delivery",
    "status": "",
    "note": ""
   },
@@ -1675,6 +1640,13 @@
    "note": ""
   },
   {
+   "key": "Webflow::8186854",
+   "company": "Webflow",
+   "title": "Senior Forward Deployed Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Webflow::8148362",
    "company": "Webflow",
    "title": "Senior Platform Engineer, Infrastructure",
@@ -1710,9 +1682,23 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-026018",
+   "company": "Western Governors University",
+   "title": "Distinguished Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025952",
    "company": "Western Governors University",
    "title": "Manager, Software Engineer Student LifeCycle Services",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-026040",
+   "company": "Western Governors University",
+   "title": "NOC Engineer",
    "status": "",
    "note": ""
   },
@@ -1780,9 +1766,23 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025288",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer | Developer Experience",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025614",
    "company": "Western Governors University",
    "title": "Senior Software Product Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025312",
+   "company": "Western Governors University",
+   "title": "Software Engineer",
    "status": "",
    "note": ""
   },
