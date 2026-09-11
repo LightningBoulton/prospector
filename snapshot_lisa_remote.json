@@ -465,41 +465,33 @@
   }
  },
  {
-  "key": "Gusto::8143034",
-  "company": "Gusto",
-  "title": "Relationship Manager, CX",
-  "location": "Chicago, IL - Remote; Denver, CO - Hybrid",
-  "url": "https://job-boards.greenhouse.io/gusto/jobs/8143034",
-  "posted": "2026-08-20",
+  "key": "Mercury::6190280004",
+  "company": "Mercury",
+  "title": "Senior Technical Program Manager - Credit & Lending",
+  "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+  "url": "https://job-boards.greenhouse.io/mercury/jobs/6190280004",
+  "posted": "2026-09-11",
   "salary": null,
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'cx' + seniority in title",
+  "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "CX title but frontline account management, not strategy",
-    "No transformation, operations, or program ownership",
-    "US-remote option is practical",
-    "Not aligned with target seniority/scope"
-   ],
-   "concerns": [
-    "Tier 2 support/account management, not strategic CX leadership",
-    "Below target seniority and scope"
-   ],
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "confidence": "low",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "CX title but frontline account management, not strategy",
+   "valid": false,
    "bg": "d192ce659668"
   }
  },
@@ -852,44 +844,6 @@
   }
  },
  {
-  "key": "Replit::72866fb1-d377-4d3e-9851-f3d705449190",
-  "company": "Replit",
-  "title": "AEO/GEO/SEO Lead",
-  "location": "Foster City, CA (Remote)",
-  "url": "https://jobs.ashbyhq.com/replit/72866fb1-d377-4d3e-9851-f3d705449190",
-  "posted": "2026-08-20",
-  "salary": "$125K \u2013 $170K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "SEO/AEO/GEO channel ownership, not transformation or ops",
-    "Highly specialized marketing execution role",
-    "Wrong function despite senior scope"
-   ],
-   "concerns": [
-    "No org design, M&A, or operating model mandate",
-    "Requires hands-on SEO expertise she lacks"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 55,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "SEO/AEO/GEO channel ownership, not transformation or ops",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Replit::bc400684-41a1-4a16-9e0b-6fb6a11be921",
   "company": "Replit",
   "title": "Sr. Learning Experience Lead, Onboarding & Enablement",
@@ -1039,45 +993,6 @@
    "score": 62,
    "fit": "yes",
    "reason": "Operating model design and scaling a partner program",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Ramp::1285aefc-d2c4-4f7c-8357-6e8f97fb22d4",
-  "company": "Ramp",
-  "title": "Director, Customer Experience",
-  "location": "New York, NY (HQ) (Remote)",
-  "url": "https://jobs.ashbyhq.com/ramp/1285aefc-d2c4-4f7c-8357-6e8f97fb22d4",
-  "posted": "2026-08-20",
-  "salary": "$190K \u2013 $290K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Director-level CX ownership with scaling org",
-    "Cross-functional, AI-influenced service model",
-    "Remote-friendly but HQ NY orientation",
-    "Matches operational excellence and CX strengths"
-   ],
-   "concerns": [
-    "Heavy contact-center/ops focus vs strategic transformation",
-    "NY HQ culture may expect onsite presence"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 74,
-   "interest_fit": 65,
-   "practical_fit": 60,
-   "opportunity_score": 66,
-   "score": 66,
-   "fit": "yes",
-   "reason": "Director-level CX ownership with scaling org",
    "bg": "d192ce659668"
   }
  },
@@ -1548,6 +1463,45 @@
   }
  },
  {
+  "key": "Stripe::8190030",
+  "company": "Stripe",
+  "title": "Executive Advisory Programs Manager",
+  "location": "South San Francisco HQ, New York, Remote US",
+  "url": "https://stripe.com/jobs/search?gh_jid=8190030",
+  "posted": "2026-09-10",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'advisory' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Executive-facing program leadership role",
+    "Remote US option fits location preference",
+    "Strategic customer-experience/relationship program design",
+    "Adjacent to CX and stakeholder engagement strengths"
+   ],
+   "concerns": [
+    "More executive-relations/event focus than transformation/ops mandate",
+    "Limited P&L or org-design scope described"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 60,
+   "practical_fit": 80,
+   "opportunity_score": 62,
+   "score": 62,
+   "fit": "maybe",
+   "reason": "Executive-facing program leadership role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Stripe::8175832",
   "company": "Stripe",
   "title": "Fraud Operations Manager",
@@ -1620,6 +1574,45 @@
    "score": 35,
    "fit": "no",
    "reason": "Partnership/BD role, not transformation or ops",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Stripe::8173467",
+  "company": "Stripe",
+  "title": "People Project Manager",
+  "location": "Chicago, Atlanta, US-Remote",
+  "url": "https://stripe.com/jobs/search?gh_jid=8173467",
+  "posted": "2026-09-10",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote option fits location preference",
+    "PMO/program leadership across People function",
+    "Cross-functional org dynamics matches skillset",
+    "Strong employer brand and scale"
+   ],
+   "concerns": [
+    "Title suggests IC-level PM, may lack strategic scope",
+    "Unclear seniority/ownership level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 65,
+   "practical_fit": 80,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "US-remote option fits location preference",
    "bg": "d192ce659668"
   }
  },
@@ -1894,45 +1887,6 @@
   }
  },
  {
-  "key": "Instacart::8142341",
-  "company": "Instacart",
-  "title": "Customer Experience Systems Senior Associate",
-  "location": "United States - Remote",
-  "url": "https://instacart.careers/job/?gh_jid=8142341",
-  "posted": "2026-08-20",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'customer experience' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "CRM systems/data analyst role, not strategic CX",
-    "Remote US location is practically ideal",
-    "Lacks transformation or organizational scope",
-    "Title inflated relative to hands-on technical duties"
-   ],
-   "concerns": [
-    "Requires CRM/database technical skills not core strength",
-    "No leadership or strategic ownership evident"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 85,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "CRM systems/data analyst role, not strategic CX",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Instacart::8177874",
   "company": "Instacart",
   "title": "Director, IT Operations",
@@ -2050,45 +2004,6 @@
   "rescued": true
  },
  {
-  "key": "Dropbox::8142720",
-  "company": "Dropbox",
-  "title": "Director of Marketing Strategy",
-  "location": "Remote - US: Select locations",
-  "url": "https://jobs.dropbox.com/listing/8142720?gh_jid=8142720",
-  "posted": "2026-08-20",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Chief of staff-like operating partner to CMO",
-    "Strategic planning and budget governance mandate",
-    "US remote select locations fits practical constraints",
-    "Cross-functional transformation-style tiger teams"
-   ],
-   "concerns": [
-    "Heavy quantitative finance modeling (NPV, LTV/CAC) not core strength",
-    "Marketing-specific domain expertise may be tested"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 68,
-   "practical_fit": 88,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "maybe",
-   "reason": "Chief of staff-like operating partner to CMO",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Dropbox::8177609",
   "company": "Dropbox",
   "title": "Program Manager, Customers",
@@ -2124,46 +2039,6 @@
    "score": 68,
    "fit": "yes",
    "reason": "Cross-functional program leadership mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Dropbox::8094537",
-  "company": "Dropbox",
-  "title": "Renewals Strategy Principal Program Manager",
-  "location": "Remote - US: Select locations",
-  "url": "https://jobs.dropbox.com/listing/8094537?gh_jid=8094537",
-  "posted": "2026-08-20",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Operating model design and transformation mandate",
-    "Cross-functional strategy and program leadership",
-    "US-remote role fits location preference",
-    "Retention/CX ownership aligns with core domains",
-    "AI and automation enablement focus"
-   ],
-   "concerns": [
-    "Renewals/revenue-ops specifics are less proven in her background",
-    "Principal PM title may signal narrower scope than Director-level"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 82,
-   "practical_fit": 90,
-   "opportunity_score": 82,
-   "score": 82,
-   "fit": "yes",
-   "reason": "Operating model design and transformation mandate",
    "bg": "d192ce659668"
   }
  },
@@ -2436,46 +2311,6 @@
   }
  },
  {
-  "key": "Docker::80c2300a-75c6-4e8f-bc61-7342ff8061b4",
-  "company": "Docker",
-  "title": "Senior Manager, Sales Operations",
-  "location": "United States (Remote)",
-  "url": "https://jobs.ashbyhq.com/docker/80c2300a-75c6-4e8f-bc61-7342ff8061b4",
-  "posted": "2026-08-20",
-  "salary": "$128.1K \u2013 $200K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Revenue operations adjacency to core domains",
-    "Fully remote US role",
-    "Leadership and team-building scope",
-    "Player-coach with strategic execution"
-   ],
-   "concerns": [
-    "Requires deep sales ops technical expertise (quota/territory design)",
-    "Not core transformation or M&A mandate",
-    "Narrower functional scope than target roles"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Revenue operations adjacency to core domains",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Docker::df188fe3-d975-4c52-8ea2-225f1806d07c",
   "company": "Docker",
   "title": "Principal GSI & SI Partnerships",
@@ -2594,46 +2429,6 @@
    "bg": "d192ce659668"
   },
   "rescued": true
- },
- {
-  "key": "Mixpanel::8143101",
-  "company": "Mixpanel",
-  "title": "Customer Value Architect",
-  "location": "Remote, US (Remote)",
-  "url": "https://job-boards.greenhouse.io/mixpanel/jobs/8143101",
-  "posted": "2026-08-20",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'customer' + mandate in description (adoption, roi)",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Customer value/adoption mandate touches CX experience",
-    "US-remote matches top location preference",
-    "Junior individual-contributor account-book role",
-    "Weak strategic/transformation scope vs her level"
-   ],
-   "concerns": [
-    "Role seems entry-to-mid level, not senior/strategic",
-    "Quota/book-of-accounts orientation resembles CS/sales",
-    "Limited organizational or transformation ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Customer value/adoption mandate touches CX experience",
-   "bg": "d192ce659668"
-  }
  },
  {
   "key": "Mixpanel::8140707",
@@ -3061,6 +2856,46 @@
   }
  },
  {
+  "key": "Baseten::768bca5d-287f-405a-b677-605317607178",
+  "company": "Baseten",
+  "title": "Capacity Strategy & Operations",
+  "location": "San Francisco (Remote)",
+  "url": "https://jobs.ashbyhq.com/baseten/768bca5d-287f-405a-b677-605317607178",
+  "posted": "2026-09-10",
+  "salary": "$190K \u2013 $235K",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Cross-functional strategy/operations ownership",
+    "US-remote practical fit",
+    "Operational excellence and forecasting scope",
+    "Not her AI enablement/transformation focus"
+   ],
+   "concerns": [
+    "Highly technical GPU/hardware supply domain",
+    "Narrower operational scope than transformation roles",
+    "Unclear seniority/strategic latitude"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 48,
+   "score": 48,
+   "fit": "maybe",
+   "reason": "Cross-functional strategy/operations ownership",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Sanity::57aa0802-8509-47b7-aa0e-b2dc69c5dea7",
   "company": "Sanity",
   "title": "Director, Sales Enablement",
@@ -3218,46 +3053,6 @@
   }
  },
  {
-  "key": "Circle::JR101118",
-  "company": "Circle",
-  "title": "Manager, Risk Management - AI Transformation",
-  "location": "San Francisco, California, United States of America (Remote)",
-  "url": "https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Manager--Risk-Management---AI-Transformation_JR101118/apply",
-  "posted": "2026-08-20",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "AI transformation mandate fits core interest",
-    "Operating model redesign for risk org",
-    "Remote role, US-based",
-    "Transformation leadership scope"
-   ],
-   "concerns": [
-    "Risk management domain expertise unclear",
-    "Thin description limits assessment",
-    "Manager title may limit scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 70,
-   "practical_fit": 70,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "AI transformation mandate fits core interest",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Samsara::8145056",
   "company": "Samsara",
   "title": "Customer Experience Strategy Manager",
@@ -3333,6 +3128,45 @@
    "score": 42,
    "fit": "maybe",
    "reason": "US-remote matches location preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Samsara::8195249",
+  "company": "Samsara",
+  "title": "CX Strategy Manager, AI Transformation",
+  "location": "Remote - US",
+  "url": "https://www.samsara.com/company/careers/roles/8195249?gh_jid=8195249",
+  "posted": "2026-09-11",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "apply_first",
+   "confidence": "medium",
+   "reasons": [
+    "AI-forward CX transformation mandate",
+    "Remote US aligns with top location preference",
+    "Builder role bridging strategy and execution",
+    "Matches CX and AI enablement interests"
+   ],
+   "concerns": [
+    "Manager title may involve narrower scope",
+    "Heavy technical build focus vs pure strategy"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 82,
+   "interest_fit": 92,
+   "practical_fit": 90,
+   "opportunity_score": 87,
+   "score": 87,
+   "fit": "yes",
+   "reason": "AI-forward CX transformation mandate",
    "bg": "d192ce659668"
   }
  },
@@ -3527,6 +3361,84 @@
    "score": 58,
    "fit": "maybe",
    "reason": "Remote US role, strong practical fit",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Samsara::8168027",
+  "company": "Samsara",
+  "title": "Sales Operations Manager",
+  "location": "Remote - US",
+  "url": "https://www.samsara.com/company/careers/roles/8168027?gh_jid=8168027",
+  "posted": "2026-09-10",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote fits location priority",
+    "Cross-functional transformation and process ownership",
+    "Scaling operations at large tech company"
+   ],
+   "concerns": [
+    "Sales ops domain narrower than her core transformation scope",
+    "Manager title may mean less strategic scope than desired"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 90,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "US-remote fits location priority",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Samsara::8192409",
+  "company": "Samsara",
+  "title": "Senior AMS Field Enablement Activation Partner (Bilingual Spanish)",
+  "location": "Remote - Mexico",
+  "url": "https://www.samsara.com/company/careers/roles/8192409?gh_jid=8192409",
+  "posted": "2026-09-10",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'enablement' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Enablement/adoption angle overlaps change management skills",
+    "Requires firsthand sales experience she lacks",
+    "Bilingual Spanish fluency required, unclear fit",
+    "Remote Mexico location outside stated preferences"
+   ],
+   "concerns": [
+    "Sales-specific enablement not core background",
+    "Location remote Mexico not US/Utah/WA",
+    "Language requirement may exclude"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 45,
+   "practical_fit": 25,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Enablement/adoption angle overlaps change management skills",
    "bg": "d192ce659668"
   }
  },
@@ -4004,10 +3916,10 @@
  {
   "key": "Headway::e52a31cc-8593-4eb7-ae13-ee99d427549d",
   "company": "Headway",
-  "title": "Lead, Payer Partnerships & Strategy",
+  "title": "Payer Partnerships Lead, Strategy & Operations",
   "location": "Remote",
   "url": "https://jobs.ashbyhq.com/headway/e52a31cc-8593-4eb7-ae13-ee99d427549d",
-  "posted": "2026-08-31",
+  "posted": "2026-09-10",
   "salary": "$111,520 \u2013 $164,000",
   "employment_type": "",
   "expires": "",
@@ -4397,43 +4309,6 @@
   "rescued": true
  },
  {
-  "key": "Angi::3494df9f-0ec4-43a9-8bee-560bfd37f392",
-  "company": "Angi",
-  "title": "Finance Manager",
-  "location": "Remote - United States",
-  "url": "https://jobs.ashbyhq.com/angi/3494df9f-0ec4-43a9-8bee-560bfd37f392",
-  "posted": "2026-09-04",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (strategic initiatives, p&l)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Core FP&A/finance role, not transformation",
-    "Remote US fits location preference"
-   ],
-   "concerns": [
-    "Wrong function - finance/accounting focus",
-    "Not aligned with core domains"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 85,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Core FP&A/finance role, not transformation",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Angi::94745ec1-80a4-4e01-983f-22ab66abe894",
   "company": "Angi",
   "title": "Senior Analyst, Service Operations",
@@ -4744,40 +4619,42 @@
   }
  },
  {
-  "key": "Grow Therapy::e147bc25-009b-40b2-ad02-2f8a957a7398",
-  "company": "Grow Therapy",
-  "title": "Commercial Strategy Senior Manager",
-  "location": "New York City (Remote)",
-  "url": "https://jobs.ashbyhq.com/grow-therapy/e147bc25-009b-40b2-ad02-2f8a957a7398",
-  "posted": "2026-08-20",
-  "salary": "$134K \u2013 $215K",
-  "employment_type": "",
-  "expires": "",
+  "key": "Upstream USA::https://himalayas.app/companies/upstream-usa/jobs/ai-enablement-manager-reproductive-healthcare-12-month-fixed-term",
+  "company": "Upstream USA",
+  "title": "AI Enablement Manager (Reproductive Healthcare - 12 month fixed term)",
+  "location": "United States (Remote)",
+  "url": "https://himalayas.app/companies/upstream-usa/jobs/ai-enablement-manager-reproductive-healthcare-12-month-fixed-term",
+  "posted": "2026-09-11",
+  "salary": "$140,000\u2013$155,000",
+  "employment_type": "Full Time",
+  "expires": "2026-11-10",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
-   "confidence": "medium",
+   "confidence": "low",
    "reasons": [
-    "Strategic partnership ownership resembles operating model design",
-    "Fully remote, strong practical fit",
-    "Executive-facing relationship work aligns with her style"
+    "AI enablement/adoption matches core interest",
+    "Fully remote US role fits top preference",
+    "Nonprofit healthcare domain is adjacent, not core",
+    "Fixed-term 12mo role limits long-term value"
    ],
    "concerns": [
-    "Payor/health-plan commercial negotiation not her core background",
-    "More sales/partnership strategy than transformation or ops"
+    "Unclear seniority/scope of 'Manager' title",
+    "Fixed-term contract, uncertain extension",
+    "Domain (reproductive healthcare) is unfamiliar territory"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 48,
-   "interest_fit": 55,
-   "practical_fit": 90,
-   "opportunity_score": 55,
-   "score": 55,
+   "qualification_fit": 60,
+   "interest_fit": 75,
+   "practical_fit": 85,
+   "opportunity_score": 65,
+   "score": 65,
    "fit": "maybe",
-   "reason": "Strategic partnership ownership resembles operating model design",
+   "reason": "AI enablement/adoption matches core interest",
    "bg": "d192ce659668"
   }
  },
@@ -4854,42 +4731,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "US remote strongly fits location preference",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "6sense::https://weworkremotely.com/remote-jobs/6sense-benefits-partner",
-  "company": "6sense",
-  "title": "Benefits Partner",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/6sense-benefits-partner",
-  "posted": "2026-08-20",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-09-19",
-  "tier": "discovery",
-  "match_reason": "mandate in description (service delivery, governance)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Benefits administration is HR specialist function, not her domain",
-    "No transformation, strategy, or operations leadership scope"
-   ],
-   "concerns": [
-    "Wrong function entirely"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 75,
-   "opportunity_score": 15,
-   "score": 15,
-   "fit": "no",
-   "reason": "Benefits administration is HR specialist function, not her domain",
    "bg": "d192ce659668"
   }
  },
@@ -5353,6 +5194,43 @@
    "score": 25,
    "fit": "no",
    "reason": "Fully remote US role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Luna Physical Therapy::153046",
+  "company": "Luna Physical Therapy",
+  "title": "Manager, RTM Operations- Physical Therapy",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/153046-manager-rtm-operations-physical-therapy",
+  "posted": "2026-09-11",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Requires licensed PT credential",
+    "Ops leadership scope but clinical license mandatory"
+   ],
+   "concerns": [
+    "Candidate lacks PT license requirement",
+    "Wrong function despite operations framing"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 30,
+   "practical_fit": 70,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Requires licensed PT credential",
    "bg": "d192ce659668"
   }
  },
@@ -5987,80 +5865,38 @@
   }
  },
  {
-  "key": "CodePath::147984",
-  "company": "CodePath",
-  "title": "Senior Manager of AI Enablement",
+  "key": "6sense::152586",
+  "company": "6sense",
+  "title": "Benefits Partner",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/147984-senior-manager-of-ai-enablement",
-  "posted": "2026-08-31",
-  "salary": "$110,000 to $150,000",
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "apply_first",
-   "confidence": "medium",
-   "reasons": [
-    "Direct AI enablement/adoption mandate",
-    "Fully remote US role fits top preference",
-    "Cross-functional operational transformation scope",
-    "Aligns with change management/workforce transformation interests"
-   ],
-   "concerns": [
-    "Senior Manager reporting to Director may limit executive scope",
-    "Compensation likely below her senior-level range"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 90,
-   "practical_fit": 90,
-   "opportunity_score": 85,
-   "score": 85,
-   "fit": "yes",
-   "reason": "Direct AI enablement/adoption mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "GitLab::144921",
-  "company": "GitLab",
-  "title": "Manager, Solutions Architects - SF Bay area",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/144921-manager-solutions-architects-sf-bay-area",
-  "posted": "2026-08-30",
+  "url": "https://jobicy.com/jobs/152586-benefits-partner",
+  "posted": "2026-09-05",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "mandate in description (digital transformation, adoption)",
+  "match_reason": "mandate in description (service delivery, governance)",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "medium",
+   "confidence": "high",
    "reasons": [
-    "Remote US eligible",
-    "Sales-engineering management, not her domain",
-    "Requires deep technical DevSecOps expertise"
+    "Core benefits administration, not transformation leadership",
+    "Wrong functional domain despite remote appeal"
    ],
    "concerns": [
-    "Wrong function: technical pre-sales leadership",
-    "No transformation/ops ownership mandate",
-    "Requires hands-on technical credibility she lacks"
+    "HR benefits specialist role, not strategic scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 60,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 70,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "reason": "Remote US eligible",
+   "reason": "Core benefits administration, not transformation leadership",
    "bg": "d192ce659668"
   }
  },
@@ -6139,6 +5975,79 @@
    "score": 35,
    "fit": "no",
    "reason": "Fully remote US-eligible",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Semperis::153036",
+  "company": "Semperis",
+  "title": "Senior Pre-Sales Solutions Architect \u2013 West Coast",
+  "location": "Canada,  USA (Remote)",
+  "url": "https://jobicy.com/jobs/153036-senior-pre-sales-solutions-architect-west-coast",
+  "posted": "2026-09-11",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (roi, employee experience)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Technical pre-sales engineering role",
+    "Requires deep security/identity product expertise",
+    "Not a transformation or ops leadership mandate"
+   ],
+   "concerns": [
+    "Wrong function - sales engineering not strategy/ops",
+    "No organizational or transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Technical pre-sales engineering role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Cloudbeds::152978",
+  "company": "Cloudbeds",
+  "title": "Customer Growth Manager",
+  "location": "Canada,  USA (Remote)",
+  "url": "https://jobicy.com/jobs/152978-customer-growth-manager",
+  "posted": "2026-09-10",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'customer' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Sales quota-carrying role, not transformation/ops"
+   ],
+   "concerns": [
+    "Wrong function: account-based upsell sales, not strategy/ops"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 55,
+   "opportunity_score": 15,
+   "score": 15,
+   "fit": "no",
+   "reason": "Sales quota-carrying role, not transformation/ops",
    "bg": "d192ce659668"
   }
  },
@@ -6295,41 +6204,79 @@
   }
  },
  {
-  "key": "Ironclad::152791",
-  "company": "Ironclad",
-  "title": "Director, Revenue Enablement",
+  "key": "Precision Medicine Group::152980",
+  "company": "Precision Medicine Group",
+  "title": "Associate Project Manager - Healthcare Advertising",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152791-director-revenue-enablement-2",
-  "posted": "2026-09-08",
+  "url": "https://jobicy.com/jobs/152980-associate-project-manager-healthcare-advertising",
+  "posted": "2026-09-10",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
+   "recommendation": "not_recommended",
+   "confidence": "high",
    "reasons": [
-    "Enablement/transformation mandate fits operational excellence skills",
-    "AI adoption emphasis matches her interest area",
-    "Cross-functional leadership scope aligns with her strengths",
-    "Sales enablement is adjacent, not core, domain"
+    "Junior entry-level PM role, not strategic",
+    "Remote is practically attractive",
+    "Far below her seniority and scope"
    ],
    "concerns": [
-    "Hybrid twice/week, location unclear if outside Utah/remote-friendly",
-    "Revenue/sales enablement specialization somewhat outside core expertise"
+    "No strategic ownership or transformation mandate",
+    "Title and scope mismatch too large"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 62,
-   "practical_fit": 55,
-   "opportunity_score": 62,
-   "score": 62,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Junior entry-level PM role, not strategic",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Precision Medicine Group::152976",
+  "company": "Precision Medicine Group",
+  "title": "Associate Manager, Client Services",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/152976-associate-manager-client-services",
+  "posted": "2026-09-10",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Client-facing project leadership, professional services adjacent",
+    "Coaching/mentoring and delivery ownership",
+    "Remote but location-restricted to Indy/Northeast"
+   ],
+   "concerns": [
+    "Niche pharma cost/coverage domain, no direct experience",
+    "Title/level below her target seniority",
+    "Restrictive geographic requirement despite remote label"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 50,
+   "practical_fit": 60,
+   "opportunity_score": 45,
+   "score": 45,
    "fit": "maybe",
-   "reason": "Enablement/transformation mandate fits operational excellence skills",
+   "reason": "Client-facing project leadership, professional services adjacent",
    "bg": "d192ce659668"
   }
  },

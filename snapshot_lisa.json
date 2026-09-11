@@ -828,44 +828,6 @@
   }
  },
  {
-  "key": "Kelso Industries::5396976008",
-  "company": "Kelso Industries",
-  "title": "Benefits Manager",
-  "location": "Draper, UT",
-  "url": "https://kelso-industries.com/careers/?gh_jid=5396976008#job-board",
-  "posted": "2026-08-20",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, strategic initiatives)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Hands-on benefits administration, not strategy/transformation",
-    "Wrong function despite Utah location",
-    "Player-coach operational HR role, not her domain"
-   ],
-   "concerns": [
-    "Requires deep benefits/compliance expertise she lacks",
-    "Not an ownership or transformation mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 15,
-   "practical_fit": 65,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Hands-on benefits administration, not strategy/transformation",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Kelso Industries::5406991008",
   "company": "Kelso Industries",
   "title": "Experienced Project Manager",
@@ -900,6 +862,122 @@
    "score": 20,
    "fit": "no",
    "reason": "Construction/mechanical PM role, wrong domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-026113",
+  "company": "Western Governors University",
+  "title": "Lead Apprenticeship Program Manager",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Lead-Apprenticeship-Program-Manager_JR-026113",
+  "posted": "2026-09-11",
+  "salary": "$109,900.00 - $170,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Program leadership title",
+    "Utah local role",
+    "Thin description limits assessment"
+   ],
+   "concerns": [
+    "No description to confirm strategic scope",
+    "Apprenticeship focus may be narrow/operational"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 42,
+   "score": 42,
+   "fit": "maybe",
+   "reason": "Program leadership title",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025784",
+  "company": "Western Governors University",
+  "title": "Senior Manager, Enterprise Partnerships - Institution Strategy & Ventures",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Enterprise-Partnerships---Institution-Strategy---Ventures_JR-025784-1",
+  "posted": "2026-09-10",
+  "salary": "$130,600.00 - $235,100.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah local role, strong location fit",
+    "Senior Manager with strategic partnerships scope",
+    "No description to confirm mandate depth"
+   ],
+   "concerns": [
+    "Title suggests partnerships/BD, not core transformation work",
+    "No description available to verify scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah local role, strong location fit",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025874",
+  "company": "Western Governors University",
+  "title": "Senior Manager, Technical Program Management",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Technical-Delivery-and-Quality_JR-025874",
+  "posted": "2026-09-10",
+  "salary": "$151,800.00 - $250,500.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah local role, strong practical fit",
+    "Program management aligns with PMO strengths",
+    "Technical scope unclear, may not match profile",
+    "No description to assess mandate depth"
+   ],
+   "concerns": [
+    "No job description available",
+    "Technical PM may require engineering background",
+    "Title suggests narrower scope than target roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Utah local role, strong practical fit",
    "bg": "d192ce659668"
   }
  },
@@ -1131,45 +1209,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Utah local, matches location preference",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Western Governors University::JR-026064",
-  "company": "Western Governors University",
-  "title": "Deputy Chief of Staff",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Deputy-Chief-of-Staff_JR-026064",
-  "posted": "2026-09-03",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Chief of Staff is a named target title",
-    "Utah location matches practical preference",
-    "Likely strategic/executive-facing scope",
-    "WGU is a large complex org needing operations leadership"
-   ],
-   "concerns": [
-    "No description to confirm scope",
-    "Deputy level may limit true authority"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 75,
-   "interest_fit": 78,
-   "practical_fit": 90,
-   "opportunity_score": 75,
-   "score": 75,
-   "fit": "yes",
-   "reason": "Chief of Staff is a named target title",
    "bg": "d192ce659668"
   }
  },
