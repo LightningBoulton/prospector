@@ -1,6 +1,6 @@
 {
  "_comment": "Per-source fetch health from the most recent run. status is one of ok_results, ok_zero, temp_error, config_error. consecutive_zero_runs counts runs where the source ANSWERED with no in-window roles (an ATS-migration / dead-slug signal); an errored run does not advance it, because a source that never answered tells us nothing. consecutive_error_runs counts back-to-back failures instead.",
- "generated": "2026-09-12",
+ "generated": "2026-09-13",
  "summary": {
   "total": 137,
   "ok": 134,
@@ -161,7 +161,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 47,
+   "consecutive_zero_runs": 48,
    "consecutive_error_runs": 0
   },
   {
@@ -175,7 +175,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 32,
+   "consecutive_zero_runs": 33,
    "consecutive_error_runs": 0
   },
   {
@@ -189,7 +189,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 47,
+   "consecutive_zero_runs": 48,
    "consecutive_error_runs": 0
   },
   {
@@ -203,7 +203,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 47,
+   "consecutive_zero_runs": 48,
    "consecutive_error_runs": 0
   },
   {
@@ -212,7 +212,7 @@
    "ats": "workday",
    "slug": "pluralsight",
    "status": "ok_results",
-   "roles_fetched": 15,
+   "roles_fetched": 16,
    "roles_returned": 1,
    "attempts": 1,
    "error": "",
@@ -301,7 +301,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 47,
+   "consecutive_zero_runs": 48,
    "consecutive_error_runs": 0
   },
   {
@@ -315,7 +315,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 22,
+   "consecutive_zero_runs": 23,
    "consecutive_error_runs": 0
   },
   {
@@ -399,7 +399,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 39,
+   "consecutive_zero_runs": 40,
    "consecutive_error_runs": 0
   },
   {
@@ -483,7 +483,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 47,
+   "consecutive_zero_runs": 48,
    "consecutive_error_runs": 0
   },
   {
@@ -506,7 +506,7 @@
    "ats": "workday",
    "slug": "wgu",
    "status": "ok_results",
-   "roles_fetched": 102,
+   "roles_fetched": 101,
    "roles_returned": 56,
    "attempts": 1,
    "error": "",
@@ -651,7 +651,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 25,
+   "consecutive_zero_runs": 26,
    "consecutive_error_runs": 0
   },
   {
@@ -679,7 +679,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 17,
+   "consecutive_zero_runs": 18,
    "consecutive_error_runs": 0
   },
   {
@@ -707,7 +707,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 47,
+   "consecutive_zero_runs": 48,
    "consecutive_error_runs": 0
   },
   {
@@ -749,7 +749,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 27,
+   "consecutive_zero_runs": 28,
    "consecutive_error_runs": 0
   },
   {
@@ -759,7 +759,7 @@
    "slug": "doximity",
    "status": "ok_results",
    "roles_fetched": 14,
-   "roles_returned": 5,
+   "roles_returned": 4,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -847,7 +847,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 4,
+   "consecutive_zero_runs": 5,
    "consecutive_error_runs": 0
   },
   {
@@ -870,7 +870,7 @@
    "ats": "ashby",
    "slug": "replit",
    "status": "ok_results",
-   "roles_fetched": 77,
+   "roles_fetched": 76,
    "roles_returned": 18,
    "attempts": 1,
    "error": "",
@@ -973,7 +973,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 10,
+   "consecutive_zero_runs": 11,
    "consecutive_error_runs": 0
   },
   {
@@ -982,8 +982,8 @@
    "ats": "greenhouse",
    "slug": "stripe",
    "status": "ok_results",
-   "roles_fetched": 634,
-   "roles_returned": 27,
+   "roles_fetched": 633,
+   "roles_returned": 26,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1044,7 +1044,7 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 16
+   "consecutive_error_runs": 17
   },
   {
    "name": "Dropbox",
@@ -1099,7 +1099,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 2,
+   "consecutive_zero_runs": 3,
    "consecutive_error_runs": 0
   },
   {
@@ -1108,12 +1108,12 @@
    "ats": "greenhouse",
    "slug": "cockroachlabs",
    "status": "ok_results",
-   "roles_fetched": 20,
+   "roles_fetched": 21,
    "roles_returned": 0,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 18,
+   "consecutive_zero_runs": 19,
    "consecutive_error_runs": 0
   },
   {
@@ -1123,7 +1123,7 @@
    "slug": "plaid",
    "status": "ok_results",
    "roles_fetched": 110,
-   "roles_returned": 25,
+   "roles_returned": 24,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1136,7 +1136,7 @@
    "ats": "ashby",
    "slug": "1password",
    "status": "ok_results",
-   "roles_fetched": 60,
+   "roles_fetched": 59,
    "roles_returned": 17,
    "attempts": 1,
    "error": "",
@@ -1155,7 +1155,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 19,
+   "consecutive_zero_runs": 20,
    "consecutive_error_runs": 0
   },
   {
@@ -1211,7 +1211,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 17,
+   "consecutive_zero_runs": 18,
    "consecutive_error_runs": 0
   },
   {
@@ -1225,7 +1225,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 47,
+   "consecutive_zero_runs": 48,
    "consecutive_error_runs": 0
   },
   {
@@ -1295,7 +1295,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 1,
+   "consecutive_zero_runs": 2,
    "consecutive_error_runs": 0
   },
   {
@@ -1310,7 +1310,7 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 12
+   "consecutive_error_runs": 13
   },
   {
    "name": "Chainguard",
@@ -1365,7 +1365,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 18,
+   "consecutive_zero_runs": 19,
    "consecutive_error_runs": 0
   },
   {
@@ -1444,8 +1444,8 @@
    "ats": "ashby",
    "slug": "langchain",
    "status": "ok_results",
-   "roles_fetched": 109,
-   "roles_returned": 14,
+   "roles_fetched": 108,
+   "roles_returned": 13,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1519,7 +1519,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 31,
+   "consecutive_zero_runs": 32,
    "consecutive_error_runs": 0
   },
   {
@@ -1533,7 +1533,7 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 47,
+   "consecutive_zero_runs": 48,
    "consecutive_error_runs": 0
   },
   {
@@ -1570,7 +1570,7 @@
    "ats": "greenhouse",
    "slug": "samsara",
    "status": "ok_results",
-   "roles_fetched": 262,
+   "roles_fetched": 260,
    "roles_returned": 48,
    "attempts": 1,
    "error": "",
@@ -1626,8 +1626,8 @@
    "ats": "greenhouse",
    "slug": "mavenclinic",
    "status": "ok_results",
-   "roles_fetched": 34,
-   "roles_returned": 10,
+   "roles_fetched": 35,
+   "roles_returned": 11,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1744,7 +1744,7 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 13,
-   "consecutive_error_runs": 12
+   "consecutive_error_runs": 13
   },
   {
    "name": "Himalayas (aggregator)",
@@ -1753,7 +1753,7 @@
    "slug": "himalayas",
    "status": "ok_results",
    "roles_fetched": 20,
-   "roles_returned": 14,
+   "roles_returned": 12,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1766,7 +1766,7 @@
    "ats": "wwr",
    "slug": "weworkremotely",
    "status": "ok_results",
-   "roles_fetched": 65,
+   "roles_fetched": 64,
    "roles_returned": 32,
    "attempts": 1,
    "error": "",
@@ -1780,8 +1780,8 @@
    "ats": "jobicy",
    "slug": "jobicy",
    "status": "ok_results",
-   "roles_fetched": 198,
-   "roles_returned": 174,
+   "roles_fetched": 197,
+   "roles_returned": 173,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1794,8 +1794,8 @@
    "ats": "aquent",
    "slug": "aquent",
    "status": "ok_results",
-   "roles_fetched": 309,
-   "roles_returned": 131,
+   "roles_fetched": 304,
+   "roles_returned": 129,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1809,7 +1809,7 @@
    "slug": "eliassen",
    "status": "ok_results",
    "roles_fetched": 95,
-   "roles_returned": 31,
+   "roles_returned": 30,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1822,12 +1822,12 @@
    "ats": "snaphop",
    "slug": "addisongroup",
    "status": "ok_results",
-   "roles_fetched": 80,
-   "roles_returned": 0,
+   "roles_fetched": 82,
+   "roles_returned": 1,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 1,
+   "consecutive_zero_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1836,8 +1836,8 @@
    "ats": "roberthalf",
    "slug": "roberthalf",
    "status": "ok_results",
-   "roles_fetched": 96,
-   "roles_returned": 96,
+   "roles_fetched": 107,
+   "roles_returned": 107,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1864,8 +1864,8 @@
    "ats": "workday",
    "slug": "salesforce",
    "status": "ok_results",
-   "roles_fetched": 432,
-   "roles_returned": 150,
+   "roles_fetched": 433,
+   "roles_returned": 151,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
@@ -1878,7 +1878,7 @@
    "ats": "workday",
    "slug": "zillow",
    "status": "ok_results",
-   "roles_fetched": 112,
+   "roles_fetched": 110,
    "roles_returned": 32,
    "attempts": 1,
    "error": "",
@@ -1892,7 +1892,7 @@
    "ats": "atlassian",
    "slug": "atlassian",
    "status": "ok_results",
-   "roles_fetched": 237,
+   "roles_fetched": 239,
    "roles_returned": 103,
    "attempts": 1,
    "error": "",
@@ -1948,7 +1948,7 @@
    "ats": "oracle",
    "slug": "hilton",
    "status": "ok_results",
-   "roles_fetched": 101,
+   "roles_fetched": 98,
    "roles_returned": 10,
    "attempts": 1,
    "error": "",
