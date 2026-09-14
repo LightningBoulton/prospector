@@ -1,4 +1,4 @@
-# Prospector — discovered companies (2026-09-07)
+# Prospector — discovered companies (2026-09-14)
 
 Scanned employers hiring within 50 mi of South Jordan. 0 new names after removing ones already tracked and known staffing firms; probed the top 0 (tech-industry first) against tier-1 ATS platforms.
 
