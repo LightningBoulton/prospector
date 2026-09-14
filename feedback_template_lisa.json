@@ -2,6 +2,13 @@
  "_comment": "Copy any row you want to act on into feedback_lisa.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_lisa.json is.",
  "entries": [
   {
+   "key": "1Password::c54f62fe-8a85-44c1-81ea-f3d1c1d3d060",
+   "company": "1Password",
+   "title": "Digital Customer Success Campaign Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::f3d9b9cf-7a0d-4f6c-a259-72c33e16d1fc",
    "company": "1Password",
    "title": "Senior Customer Success Manager",
@@ -128,6 +135,13 @@
    "note": ""
   },
   {
+   "key": "Angi::84db1e65-9cfd-4229-969b-30d7a9b051be",
+   "company": "Angi",
+   "title": "Chief of Staff",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Angi::4c5dd5ea-9dd5-4026-97e4-04e712f28d3e",
    "company": "Angi",
    "title": "Manager, Retail Partnerships",
@@ -152,6 +166,13 @@
    "key": "Aquent::212793",
    "company": "Aquent",
    "title": "Campaign Manager, Ad Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::212996",
+   "company": "Aquent",
+   "title": "Creative & Marketing Operations Specialist",
    "status": "",
    "note": ""
   },
@@ -240,6 +261,13 @@
    "note": ""
   },
   {
+   "key": "Aquent::212994",
+   "company": "Aquent",
+   "title": "Project Manager Non Tech",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Aquent::212493",
    "company": "Aquent",
    "title": "Real Estate and Wealth Advisory Manager",
@@ -278,6 +306,13 @@
    "key": "Aquent::212657",
    "company": "Aquent",
    "title": "Technical Program Manager: Hardware & Sensor Systems",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::212426",
+   "company": "Aquent",
+   "title": "Worldwide Program Coordinator",
    "status": "",
    "note": ""
   },
@@ -443,6 +478,13 @@
    "note": ""
   },
   {
+   "key": "Baseten::5bf99d98-8df7-4d8e-b040-42a66c28cd67",
+   "company": "Baseten",
+   "title": "Product Enablement Lead",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Baseten::5fdfe98f-c926-4af8-891a-79610b52ff96",
    "company": "Baseten",
    "title": "Revenue Strategy & Operations, Sr. Analyst",
@@ -467,13 +509,6 @@
    "key": "Brex::8787029002",
    "company": "Brex",
    "title": "Senior Marketing Operations Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "CACI International Inc::https://himalayas.app/companies/caci-international-inc/jobs/senior-principal-consultant-hcm-change-management-training",
-   "company": "CACI International Inc",
-   "title": "Senior Principal Consultant - HCM Change Management & Training",
    "status": "",
    "note": ""
   },
@@ -534,30 +569,9 @@
    "note": ""
   },
   {
-   "key": "Cloudbeds::152978",
-   "company": "Cloudbeds",
-   "title": "Customer Growth Manager",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Cloudbeds::152159",
    "company": "Cloudbeds",
    "title": "Manager, Global Talent Acquisition",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "CodePath::152285",
-   "company": "CodePath",
-   "title": "Senior AI Operations Lead",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "CodePath::152292",
-   "company": "CodePath",
-   "title": "Senior Manager, Talent & People Operations, Claude Corps",
    "status": "",
    "note": ""
   },
@@ -597,13 +611,6 @@
    "note": ""
   },
   {
-   "key": "Cologix, Inc.::151435",
-   "company": "Cologix, Inc.",
-   "title": "Director, Utility Delivery & Coordination",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Concept Plus::150198",
    "company": "Concept Plus",
    "title": "Capture Management Director",
@@ -639,6 +646,13 @@
    "note": ""
   },
   {
+   "key": "Databricks::153207",
+   "company": "Databricks",
+   "title": "Delivery Solutions Architect - Startups & Emerging Enterprise",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Datadog::151733",
    "company": "Datadog",
    "title": "Partner Manager - Channels",
@@ -663,6 +677,13 @@
    "key": "Docker::df188fe3-d975-4c52-8ea2-225f1806d07c",
    "company": "Docker",
    "title": "Principal GSI & SI Partnerships",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Dropbox::8137895",
+   "company": "Dropbox",
+   "title": "Customer Evidence Manager",
    "status": "",
    "note": ""
   },
@@ -730,13 +751,6 @@
    "note": ""
   },
   {
-   "key": "Eliassen::7a40cd20-ad1d-11f1-8ed2-02420a6c7775",
-   "company": "Eliassen",
-   "title": "Project Manager -Business Operations, Bio Services",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Eliassen::f2fa8c29-ac60-11f1-8ed2-02420a6c7775",
    "company": "Eliassen",
    "title": "Salesforce Product Manager",
@@ -761,6 +775,13 @@
    "key": "Eliassen::6f197669-ae12-11f1-8ed2-02420a6c7775",
    "company": "Eliassen",
    "title": "Target Operating Model Consultant",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Eliassen::e48bb2d5-b03d-11f1-9a74-024201c20d84",
+   "company": "Eliassen",
+   "title": "Workforce Planning Data & AI Lead",
    "status": "",
    "note": ""
   },
@@ -814,13 +835,6 @@
    "note": ""
   },
   {
-   "key": "GitLab::https://weworkremotely.com/remote-jobs/gitlab-ai-transformation-owner-product-design",
-   "company": "GitLab",
-   "title": "AI Transformation Owner, Product & Design",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "GitLab::8700245002",
    "company": "GitLab",
    "title": "Chief of Staff, CRO",
@@ -842,16 +856,16 @@
    "note": ""
   },
   {
-   "key": "GitLab::8795736002",
+   "key": "GitLab::8790705002",
    "company": "GitLab",
-   "title": "Senior Professional Services Technical Architect - Security",
+   "title": "Senior Executive Business Partner, CFO",
    "status": "",
    "note": ""
   },
   {
-   "key": "GitLab::8742113002",
+   "key": "GitLab::8795736002",
    "company": "GitLab",
-   "title": "Senior Program Manager, Enterprise Technology & AI",
+   "title": "Senior Professional Services Technical Architect - Security",
    "status": "",
    "note": ""
   },
@@ -915,6 +929,20 @@
    "key": "Headway::3fa4cb70-1839-4c63-824e-6e1ee96e6139",
    "company": "Headway",
    "title": "Senior Associate, Payer Strategy & Ops",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Help Scout::153204",
+   "company": "Help Scout",
+   "title": "Director, Performance Marketing",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Help Scout::153221",
+   "company": "Help Scout",
+   "title": "Head of Product, Conversations",
    "status": "",
    "note": ""
   },
@@ -1020,6 +1048,27 @@
    "key": "Kelso Industries::5406991008",
    "company": "Kelso Industries",
    "title": "Experienced Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Kelso Industries::5399917008",
+   "company": "Kelso Industries",
+   "title": "Mechanical Project Manager (Onsite) - St Louis",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Kelso Industries::5400117008",
+   "company": "Kelso Industries",
+   "title": "Mechanical Senior Project Manager (Onsite) - St Louis",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Kelso Industries::5400102008",
+   "company": "Kelso Industries",
+   "title": "Senior Project Manager (Onsite - HVAC, Plumbing, Mechanical) - St Louis",
    "status": "",
    "note": ""
   },
@@ -1167,6 +1216,13 @@
    "key": "Marriott International::26112254",
    "company": "Marriott International",
    "title": "Senior Manager, Technology Product Management - Unified Experience Layer (UXL)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Marriott International::26100680",
+   "company": "Marriott International",
+   "title": "VP, Luxury Client Relationship Management",
    "status": "",
    "note": ""
   },
@@ -1549,6 +1605,13 @@
    "note": ""
   },
   {
+   "key": "Robert Half::00410-0013490011-usen",
+   "company": "Robert Half",
+   "title": "Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Robert Half::03200-0013491659-usen",
    "company": "Robert Half",
    "title": "Project Manager - Strategic Operations",
@@ -1584,6 +1647,13 @@
    "note": ""
   },
   {
+   "key": "Robert Half::00700-0013501410-usen",
+   "company": "Robert Half",
+   "title": "ServiceNow Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Robert Half::04120-0013502529-usen",
    "company": "Robert Half",
    "title": "interim Senior Program Estimator (contract)",
@@ -1594,13 +1664,6 @@
    "key": "Rockbot::152346",
    "company": "Rockbot",
    "title": "Enterprise Business Development Representative",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Salesforce::JR351285",
-   "company": "Salesforce",
-   "title": "Account Partner Director - Retail Professional Services",
    "status": "",
    "note": ""
   },
@@ -1675,16 +1738,16 @@
    "note": ""
   },
   {
-   "key": "Salesforce::JR326962",
+   "key": "Salesforce::JR349284",
    "company": "Salesforce",
-   "title": "Customer Success Manager, Senior Manager - Healthcare & Life Sciences (Multiple Levels)",
+   "title": "Customer Success Manager, Senior Manager - Core Clouds (Sales & Service)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Salesforce::JR356276",
+   "key": "Salesforce::JR326962",
    "company": "Salesforce",
-   "title": "Delivery Account Management Team Leader, Director",
+   "title": "Customer Success Manager, Senior Manager - Healthcare & Life Sciences (Multiple Levels)",
    "status": "",
    "note": ""
   },
@@ -1801,6 +1864,13 @@
    "note": ""
   },
   {
+   "key": "Salesforce::JR359021",
+   "company": "Salesforce",
+   "title": "Senior Director, Security Vendor & Technology Strategy",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Salesforce::JR359227",
    "company": "Salesforce",
    "title": "Senior Manager, SOX Advisory & Process Improvement",
@@ -1811,6 +1881,13 @@
    "key": "Salesforce::JR355276",
    "company": "Salesforce",
    "title": "Senior Technical Consultant - PubSec",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Salesforce::JR359685",
+   "company": "Salesforce",
+   "title": "Sr. Analyst, Sales Operations",
    "status": "",
    "note": ""
   },
@@ -1955,23 +2032,9 @@
    "note": ""
   },
   {
-   "key": "Semperis::153036",
-   "company": "Semperis",
-   "title": "Senior Pre-Sales Solutions Architect \u2013 West Coast",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Sentry::ee7542d4-f478-4aa0-8da9-3583845d8269",
    "company": "Sentry",
    "title": "Technical Enablement Director",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Solventum::150012",
-   "company": "Solventum",
-   "title": "HIS Sales Strategy Executive \u2013 Ambulatory Care Revenue Cycle",
    "status": "",
    "note": ""
   },
@@ -2018,6 +2081,13 @@
    "note": ""
   },
   {
+   "key": "Stripe::8160754",
+   "company": "Stripe",
+   "title": "Hardware Program Manager, Terminal Logistics",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Stripe::8155164",
    "company": "Stripe",
    "title": "Partner Development Manager, Strategic Payment Partnerships",
@@ -2049,6 +2119,13 @@
    "key": "Stripe::8147961",
    "company": "Stripe",
    "title": "Program Manager, GTM Planning",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Stripe::8181036",
+   "company": "Stripe",
+   "title": "Sales Manager, Product- Fraud & Risk",
    "status": "",
    "note": ""
   },
@@ -2098,6 +2175,13 @@
    "key": "Thumbtack::152413",
    "company": "Thumbtack",
    "title": "Sr. Manager, Success Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Tines::153226",
+   "company": "Tines",
+   "title": "Senior Performance Marketing Manager",
    "status": "",
    "note": ""
   },
@@ -2168,13 +2252,6 @@
    "key": "Western Governors University::JR-025930",
    "company": "Western Governors University",
    "title": "Lead Academic Program Manager (Department Chair), WGU School of Technology \u2013 Cyber Security",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-026113",
-   "company": "Western Governors University",
-   "title": "Lead Apprenticeship Program Manager",
    "status": "",
    "note": ""
   },
@@ -2256,13 +2333,6 @@
    "note": ""
   },
   {
-   "key": "Zillow Group::P751130",
-   "company": "Zillow Group",
-   "title": "Senior Sales Enablement Manager",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Zillow Group::P751129",
    "company": "Zillow Group",
    "title": "Senior Strategic GTM Program Manager",
@@ -2277,9 +2347,9 @@
    "note": ""
   },
   {
-   "key": "Zscaler::152255",
-   "company": "Zscaler",
-   "title": "Director, Product Management, Customer Security Outcomes",
+   "key": "goPro Consultancy Group ltd.::https://himalayas.app/companies/gopro-consultancy-group-ltd/jobs/senior-qa-automation-specialist-selenium-full-remote-3757221795",
+   "company": "goPro Consultancy Group ltd.",
+   "title": "Senior QA Automation Specialist - Selenium - Full Remote",
    "status": "",
    "note": ""
   }

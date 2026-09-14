@@ -2,6 +2,13 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
+   "key": "1Password::b9ff2259-517c-4ec2-b92f-646be8bf12b6",
+   "company": "1Password",
+   "title": "Developer, Enterprise Tenants and Policies",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::f51cc73a-fde2-4686-b54b-f183cdaedb45",
    "company": "1Password",
    "title": "Developer, Full Stack/iOS",
@@ -86,6 +93,20 @@
    "note": ""
   },
   {
+   "key": "Adobe::R171604",
+   "company": "Adobe",
+   "title": "Sr Cloud Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R171268",
+   "company": "Adobe",
+   "title": "Sr Web Analytics & Insights Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Affirm::7872398003",
    "company": "Affirm",
    "title": "Analytics Lead, Full Stack",
@@ -163,13 +184,6 @@
    "note": ""
   },
   {
-   "key": "Allegion::https://himalayas.app/companies/allegion/jobs/it-platform-analyst",
-   "company": "Allegion",
-   "title": "IT Platform Analyst",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Ancestry::R003448",
    "company": "Ancestry",
    "title": "Site Reliability Engineer",
@@ -180,13 +194,6 @@
    "key": "Ancestry::R003434",
    "company": "Ancestry",
    "title": "Software Engineer \u2013 Observability, Co-op",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "AssemblyAI::4732736005",
-   "company": "AssemblyAI",
-   "title": "Security Operations Engineer",
    "status": "",
    "note": ""
   },
@@ -240,23 +247,16 @@
    "note": ""
   },
   {
+   "key": "Booker DiMaio, LLC::https://himalayas.app/companies/booker-dimaio-llc/jobs/remote-senior-power-bi-developer-data-analyst-federal-us-citizenship-or",
+   "company": "Booker DiMaio, LLC",
+   "title": "Remote - Senior Power BI Developer / Data Analyst - Federal - US Citizenship or",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Boulevard::153135",
    "company": "Boulevard",
    "title": "GTM Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/coupa-integration-engineer-4821710881",
-   "company": "Bright Vision Technologies",
-   "title": "Coupa Integration Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/data-platform-architect-4487016853",
-   "company": "Bright Vision Technologies",
-   "title": "Data Platform Architect",
    "status": "",
    "note": ""
   },
@@ -541,6 +541,13 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8197831",
+   "company": "Coinbase",
+   "title": "Staff Software Engineer- Wallets, Liquidity & Bridging",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8177619",
    "company": "Coinbase",
    "title": "Threat Intelligence Platform Engineer",
@@ -579,13 +586,6 @@
    "key": "Deepgram::bf8ea79f-f380-467e-8349-ea1ea8281316",
    "company": "Deepgram",
    "title": "People AI & Automation Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Deepgram::9a030b32-d671-43e0-a221-4653bb73ba29",
-   "company": "Deepgram",
-   "title": "Research Engineer, Machine Learning Systems",
    "status": "",
    "note": ""
   },
@@ -632,9 +632,9 @@
    "note": ""
   },
   {
-   "key": "Flex::4730285005",
-   "company": "Flex",
-   "title": "Senior Software Engineer - Partner Integrations",
+   "key": "Exceptionly::https://himalayas.app/companies/exceptionly/jobs/senior-sre-x2f-devops-engineer-x28-remote-australia-x29-min-x24-165k-593300332",
+   "company": "Exceptionly",
+   "title": "Senior SRE&#x2f;DevOps Engineer &#x28;Remote, Australia&#x29; - Min. &#x24;165k",
    "status": "",
    "note": ""
   },
@@ -649,6 +649,13 @@
    "key": "Gemini::8144366",
    "company": "Gemini",
    "title": "Senior Software Engineer, Invest / Trade",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8806017002",
+   "company": "GitLab",
+   "title": "Director of Product Management, Agentic Software Delivery",
    "status": "",
    "note": ""
   },
@@ -877,6 +884,13 @@
    "note": ""
   },
   {
+   "key": "Kimmel & Associates::https://himalayas.app/companies/kimmel-associates/jobs/building-automations-engineer-mechanical-construction-452072599",
+   "company": "Kimmel & Associates",
+   "title": "Building Automations Engineer-Mechanical Construction",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Klaviyo::152747",
    "company": "Klaviyo",
    "title": "Senior Product Manager, Profiles Platform",
@@ -947,13 +961,6 @@
    "note": ""
   },
   {
-   "key": "MGM Resorts International::https://himalayas.app/companies/mgm-resorts-international/jobs/sr-data-commercial-engineer",
-   "company": "MGM Resorts International",
-   "title": "Sr Data Commercial Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "MX::4385268009",
    "company": "MX",
    "title": "Senior Software Engineer II",
@@ -999,13 +1006,6 @@
    "key": "NICE::4968269101",
    "company": "NICE",
    "title": "Technical Support Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Nationwide IT Services::https://himalayas.app/companies/nationwide-it-services/jobs/software-developer",
-   "company": "Nationwide IT Services",
-   "title": "Software Developer",
    "status": "",
    "note": ""
   },
@@ -1500,6 +1500,13 @@
    "note": ""
   },
   {
+   "key": "Supabase::6c9de03c-e289-4612-9045-492985d0274b",
+   "company": "Supabase",
+   "title": "Platform Engineer, Edge & Networking",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Supabase::06752423-eebb-472c-95b5-c7ff2559fd60",
    "company": "Supabase",
    "title": "Software Engineer - Branching",
@@ -1510,6 +1517,13 @@
    "key": "Tailscale::4733183005",
    "company": "Tailscale",
    "title": "Backend Engineer, Control Plane",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Tailscale::4733571005",
+   "company": "Tailscale",
+   "title": "Manager, Developer Relations",
    "status": "",
    "note": ""
   },
@@ -1654,9 +1668,9 @@
    "note": ""
   },
   {
-   "key": "Verisma::https://himalayas.app/companies/verisma/jobs/lead-healthcare-integration-engineer-9864867769",
-   "company": "Verisma",
-   "title": "Lead Healthcare Integration Engineer",
+   "key": "Veralto::https://himalayas.app/companies/videojet/jobs/field-service-engineer-chicago-il-company-vehicle",
+   "company": "Veralto",
+   "title": "Field Service Engineer - Chicago, IL (Company Vehicle)",
    "status": "",
    "note": ""
   },
@@ -1664,13 +1678,6 @@
    "key": "Webflow::8186854",
    "company": "Webflow",
    "title": "Senior Forward Deployed Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Webflow::8148362",
-   "company": "Webflow",
-   "title": "Senior Platform Engineer, Infrastructure",
    "status": "",
    "note": ""
   },
@@ -1745,6 +1752,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-026036",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-026120",
    "company": "Western Governors University",
    "title": "Senior Software Engineer",
@@ -1753,13 +1767,6 @@
   },
   {
    "key": "Western Governors University::JR-025759",
-   "company": "Western Governors University",
-   "title": "Senior Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-026036",
    "company": "Western Governors University",
    "title": "Senior Software Engineer",
    "status": "",
@@ -1776,13 +1783,6 @@
    "key": "Western Governors University::JR-025999",
    "company": "Western Governors University",
    "title": "Senior Software Engineer - Web Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025312",
-   "company": "Western Governors University",
-   "title": "Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1811,6 +1811,13 @@
    "key": "Western Governors University::JR-025048",
    "company": "Western Governors University",
    "title": "Staff Software Engineer- Full-Stack Python and React",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "goPro Consultancy Group ltd.::https://himalayas.app/companies/gopro-consultancy-group-ltd/jobs/senior-mean-full-stack-developer-remote-2187417903",
+   "company": "goPro Consultancy Group ltd.",
+   "title": "Senior MEAN Full-Stack Developer -Remote",
    "status": "",
    "note": ""
   },

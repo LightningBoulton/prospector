@@ -1,41 +1,37 @@
-# Prospector — 2026-09-13
+# Prospector — 2026-09-14
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**12 new roles today** · 8 still worth applying · 6 closed/removed
+**11 new roles today** · 8 still worth applying · 6 closed/removed
 
-## NEW — WORTH REVIEWING (8)
-- **Senior Principal Consultant - HCM Change Management & Training** — CACI International Inc · 68/100 · remote United States (Remote) · $95,500–$210,100 · posted 2026-09-13
-  - Why: Strong change management and org adoption mandate
-  - Concern: Federal clearance and Oracle HCM domain specificity
-  - https://himalayas.app/companies/caci-international-inc/jobs/senior-principal-consultant-hcm-change-management-training
-- **Senior Technical Program Manager - Credit & Lending** — Mercury · 55/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-09-11
-  - Why: Program leadership across cross-functional regulated org
-  - Concern: Highly technical fintech/credit domain, less her background
-  - https://job-boards.greenhouse.io/mercury/jobs/6190280004
-- **Sr. Learning Experience Lead, Onboarding & Enablement** — Replit · 40/100 · remote Foster City, CA (Remote) · $160K – $190K · posted 2026-09-08
-  - Why: Enablement and onboarding overlaps with change/learning experience
-  - Concern: Hands-on instructional design, not strategic ownership
-  - https://jobs.ashbyhq.com/replit/bc400684-41a1-4a16-9e0b-6fb6a11be921
-- **Salesforce Product Manager** — Eliassen · 40/100 · remote Remote · $75.00 to $80.00 · posted 2026-09-09
-  - Why: Product/technical Salesforce PM role, not her core transformation lane
-  - Concern: Requires Salesforce/Financial Services Cloud expertise not evidenced
-  - https://careers.eliassen.com/n2pHWi/salesforce-product-manager-product-management-anywhere-a1wuq000001t47f2aq
-- **Director, Sales Enablement** — Sanity · 40/100 · remote Remote in the United States · posted 2026-09-09
-  - Why: Remote US role fits location preference
-  - Concern: Sales enablement is a specialized domain outside core experience
-  - https://jobs.ashbyhq.com/sanity/57aa0802-8509-47b7-aa0e-b2dc69c5dea7
-- **Senior Project Manager / Scrum Master** — Eliassen · 35/100 · remote Remote · $65.00 to $75.00 · posted 2026-09-11
-  - Why: Remote W2 contract
-  - Concern: Below her strategic/org-effectiveness level
-  - https://careers.eliassen.com/7jys7W/senior-project-manager-scrum-master-programproject-management-anywhere-a1wuq000001tyez2am
-- **FLEX Manager - Quality Assurance, Business Process Validation** — Marriott International · 30/100 · remote Bethesda, MD (Remote) · $46.15-$72.11 · first seen 2026-09-11
-  - Why: Priority employer Marriott raises visibility
-  - Concern: Deep QA/testing technical specificity, not her domain
-  - https://careers.marriott.com/flex-manager-quality-assurance-business-process-validation/job/A3849BDC0C5961803BB7A118783D17C2
-- **Operations Manager** — Aquent · 30/100 · hybrid Irvine, CA, US (Remote) · $49 - $53/hr · posted 2026-09-08
-  - Why: Operations coordination role, below her strategic level
-  - Concern: Hybrid Irvine CA requires commuting distance, not remote
-  - https://aquent.com/find-work/212845
+## NEW — WORTH REVIEWING (7)
+- **Chief of Staff** — Angi · 78/100 · remote Remote - United States · posted 2026-09-14
+  - Why: True Chief of Staff mandate with cross-functional scope
+  - Concern: Talent Acquisition-specific domain is narrower than core background
+  - https://jobs.ashbyhq.com/angi/84db1e65-9cfd-4229-969b-30d7a9b051be
+- **Senior Executive Business Partner, CFO** — GitLab · 60/100 · remote Remote · posted 2026-09-13
+  - Why: Remote US role
+  - Concern: Executive Business Partner is more admin/EA hybrid role
+  - https://job-boards.greenhouse.io/gitlab/jobs/8790705002
+- **Head of Product, Conversations** — Help Scout · 60/100 · remote USA (Remote) · posted 2026-09-14
+  - Why: US-remote, strong location fit
+  - Concern: Head of Product is a product-management role, not ops/transformation
+  - https://jobicy.com/jobs/153221-head-of-product-conversations
+- **Product Enablement Lead** — Baseten · 42/100 · remote San Francisco (Remote) · $185K – $205K · posted 2026-09-14
+  - Why: Cross-functional program leadership between product/sales/marketing
+  - Concern: Deeply technical AI/GPU domain outside her experience
+  - https://jobs.ashbyhq.com/baseten/5bf99d98-8df7-4d8e-b040-42a66c28cd67
+- **Workforce Planning Data & AI Lead** — Eliassen · 40/100 · remote Remote · $85.00 to $100.00 · posted 2026-09-14
+  - Why: Workforce planning/operating model design fits org strategy background
+  - Concern: Requires deep technical data architecture and AI engineering skills
+  - https://careers.eliassen.com/sK3gYq/workforce-planning-data-ai-lead-data-anywhere-a1wuq000001tlc22aa
+- **Creative & Marketing Operations Specialist** — Aquent · 40/100 · remote New York, NY, US (Remote) · up to $48/HR · posted 2026-09-14
+  - Why: Remote contract role
+  - Concern: Below her seniority level
+  - https://aquent.com/find-work/212996
+- **Project Manager Non Tech** — Aquent · 35/100 · remote REDMOND, WA, US (Remote) · up to $63/hr · posted 2026-09-14
+  - Why: Contract op-ops role, WA-remote acceptable
+  - Concern: Requires hands-on SQL/KQL skills
+  - https://aquent.com/find-work/212994
 
 ## DISCOVERY / WILDCARDS (4)
 - **Business Planning & Operations Lead, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+5 more) · $123,100 - $186,300 · posted 2026-09-08
@@ -90,12 +86,12 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - https://jobicy.com/jobs/152444-director-of-launch-operations
 
 ## REMOVED SINCE PRIOR RUN (6)
-- Enterprise Project Manager — Canonical Ltd. · No longer listed by its source
-- Senior Manager of AI Enablement — CodePath · No longer listed by its source
-- Marketing Operations Manager — Cordance · No longer listed by its source
-- Senior PMO and Finance Controls Consultants — Eliassen · No longer listed by its source
-- Project Manager — Robert Half · No longer listed by its source
-- Vice Chair Office, Strategy & Operations — Stripe · No longer listed by its source
+- Senior Principal Consultant - HCM Change Management & Training — CACI International Inc · No longer listed by its source
+- Senior AI Operations Lead — CodePath · No longer listed by its source
+- Senior Manager, Talent & People Operations, Claude Corps — CodePath · No longer listed by its source
+- Project Manager -Business Operations, Bio Services — Eliassen · No longer listed by its source
+- AI Transformation Owner, Product & Design — GitLab · No longer listed by its source
+- Senior Program Manager, Enterprise Technology & AI — GitLab · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 134/137 successful

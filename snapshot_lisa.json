@@ -908,40 +908,113 @@
   }
  },
  {
-  "key": "Western Governors University::JR-026113",
-  "company": "Western Governors University",
-  "title": "Lead Apprenticeship Program Manager",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Lead-Apprenticeship-Program-Manager_JR-026113",
-  "posted": "2026-09-11",
-  "salary": "$109,900.00 - $170,400.00",
+  "key": "Kelso Industries::5399917008",
+  "company": "Kelso Industries",
+  "title": "Mechanical Project Manager (Onsite) - St Louis",
+  "location": "Remote",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5399917008#job-board",
+  "posted": "2026-09-14",
+  "salary": null,
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
+   "recommendation": "not_recommended",
+   "confidence": "high",
    "reasons": [
-    "Program leadership title",
-    "Utah local role",
-    "Thin description limits assessment"
+    "Construction/mechanical PM, wrong domain",
+    "Onsite St Louis, heavy travel"
    ],
    "concerns": [
-    "No description to confirm strategic scope",
-    "Apprenticeship focus may be narrow/operational"
+    "No transformation or org strategy scope",
+    "Field construction management, not her field"
    ],
-   "relocation_required": false,
+   "relocation_required": true,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 42,
-   "score": 42,
-   "fit": "maybe",
-   "reason": "Program leadership title",
+   "qualification_fit": 10,
+   "interest_fit": 5,
+   "practical_fit": 10,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Construction/mechanical PM, wrong domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Kelso Industries::5400117008",
+  "company": "Kelso Industries",
+  "title": "Mechanical Senior Project Manager (Onsite) - St Louis",
+  "location": "Remote",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5400117008#job-board",
+  "posted": "2026-09-14",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Construction/mechanical PM role, wrong domain"
+   ],
+   "concerns": [
+    "Onsite in St Louis, not remote despite listing",
+    "No transformation or strategy mandate"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 10,
+   "opportunity_score": 5,
+   "score": 5,
+   "fit": "no",
+   "reason": "Construction/mechanical PM role, wrong domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Kelso Industries::5400102008",
+  "company": "Kelso Industries",
+  "title": "Senior Project Manager (Onsite - HVAC, Plumbing, Mechanical) - St Louis",
+  "location": "Remote",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5400102008#job-board",
+  "posted": "2026-09-14",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Construction/mechanical PM, wrong domain",
+    "Requires HVAC technical expertise she lacks",
+    "40% travel, onsite St. Louis"
+   ],
+   "concerns": [
+    "Wrong function entirely",
+    "Not org/strategy/transformation work"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 10,
+   "interest_fit": 5,
+   "practical_fit": 10,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Construction/mechanical PM, wrong domain",
    "bg": "d192ce659668"
   }
  },
