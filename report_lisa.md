@@ -1,49 +1,41 @@
-# Prospector — 2026-09-15
+# Prospector — 2026-09-16
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 12 closed/removed
+**12 new roles today** · 8 still worth applying · 11 closed/removed
 
-## NEW — WORTH REVIEWING (10)
-- **Principal Value Advisor, DX** — Atlassian · 78/100 · remote Salt Lake City - United States; Remote - Remote · first seen 2026-09-15
-  - Why: Atlassian priority employer with referral advantage
-  - Concern: Deep financial/business-case modeling may be less proven
-  - https://careers-americas.icims.com/jobs/26966/principal-value-advisor%2c-dx/job?mode=apply
-- **Senior Manager Service Improvement Program (Coach)** — Hilton · 78/100 · remote McLean, VA, United States (Remote) · posted 2026-09-15
-  - Why: Priority employer Hilton, named target
-  - Concern: Narrower scope than transformation/strategy roles
-  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/222072
-- **Head of Operations @ Koast.ai** — Koast.ai · 72/100 · remote Anywhere in the World (Remote) · posted 2026-09-09
-  - Why: Real cross-functional ops ownership
-  - Concern: Very early-stage startup risk
-  - https://weworkremotely.com/remote-jobs/koast-ai-head-of-operations-koast-ai
-- **Staff Technical Program Manager - Data Products** — MX · 72/100 · onsite Lehi, Utah, United States · posted 2026-09-14
-  - Why: Utah-local role, strong location fit
-  - Concern: Technical TPM skew may require deeper product/eng fluency
-  - https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4405825009
-- **Manager, Customer Success Architects (AI)** — Atlassian · 68/100 · remote Austin - United States; Remote - Remote · first seen 2026-09-15
-  - Why: Priority employer Atlassian with referral network
-  - Concern: Requires deep technical AI/agent-building expertise
-  - https://careers-americas.icims.com/jobs/26995/manager%2c-customer-success-architects-%28ai%29/job?mode=apply
-- **Principal Strategist, Sales & Success Strategy - Public Sector** — Atlassian · 62/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-09-15
-  - Why: Remote-eligible, strong practical fit
-  - Concern: Heavy sales/GTM strategy focus vs her ops/transformation core
-  - https://careers-americas.icims.com/jobs/25128/principal-strategist%2c-sales-%26-success-strategy---public-sector-/job?mode=apply
-- **Strategy & Operations, Infrastructure** — Stripe · 62/100 · remote Remote US · posted 2026-09-14
-  - Why: Strategy & Ops mandate fits operating model/transformation skills
-  - Concern: Heavy technical infrastructure/engineering context may be a stretch
-  - https://stripe.com/jobs/search?gh_jid=8171095
-- **Senior Manager, Learning, Content, and Quality** — Grow Therapy · 58/100 · remote Remote · $130K – $190K · posted 2026-09-08
-  - Why: Remote US role fits location preference
-  - Concern: Learning/L&D/quality function is narrower than her core transformation scope
-  - https://jobs.ashbyhq.com/grow-therapy/9b3c8be2-9f0e-4d01-8138-42f6fc05c135
-- **Business Operations Manager I** — Samsara · 55/100 · remote Remote - US · posted 2026-09-14
+## NEW — WORTH REVIEWING (8)
+- **Senior Program Manager** — Eliassen · 72/100 · remote Remote · $95.00 to $110.00 · posted 2026-09-15
+  - Why: Remote contract
+  - Concern: Deep ERP system implementation experience not confirmed
+  - https://careers.eliassen.com/hXJg6r/senior-program-manager-programproject-management-anywhere-a1wuq000001txjp2ai
+- **Senior Manager, Sales Operations** — Dropbox · 55/100 · remote Remote - US: Select locations · posted 2026-09-08
+  - Why: Remote US role fits location priority
+  - Concern: Heavy sales ops/quota focus outside core transformation expertise
+  - https://jobs.dropbox.com/listing/8075211?gh_jid=8075211
+- **Marketplace Operations Manager II** — Wheel · 50/100 · remote USA (Remote) · posted 2026-09-15
+  - Why: Fully remote US role fits location preference
+  - Concern: Highly operational/tactical, less strategic transformation focus
+  - https://jobicy.com/jobs/153335-marketplace-operations-manager-ii
+- **Principal Product Manager - Focus** — Atlassian · 45/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-09-15
+  - Why: Priority employer with referral advantage
+  - Concern: Requires deep PM/SaaS product craft, not her background
+  - https://careers-americas.icims.com/jobs/27092/principal-product-manager---focus/job?mode=apply
+- **Sr. Marketing Strategy and Analytics Manager** — Twilio · 45/100 · remote Remote - US · posted 2026-09-15
   - Why: US-remote role fits location preference
-  - Concern: IT vendor/hardware ops narrower than target scope
-  - https://www.samsara.com/company/careers/roles/8180371?gh_jid=8180371
-- **Sr HR Project Manager SAP SuccessFactors (Contract Remote)** — Robert Half · 55/100 · remote Atlanta, GA (Remote) · $125.00–$130.00/hr · posted 2026-09-14
-  - Why: Process design and org transformation leadership
-  - Concern: Deep SAP SuccessFactors specificity may not match her background
-  - https://www.roberthalf.com/us/en/job/atlanta-ga/sr-hr-project-manager-sap-successfactors-contract-remote/00902-0013505725-usen
+  - Concern: Heavy technical analytics/SQL/Python requirement mismatch
+  - https://job-boards.greenhouse.io/twilio/jobs/8189769
+- **Staff Technical Program Manager - Mobile** — MX · 42/100 · onsite Lehi, Utah, United States · posted 2026-09-15
+  - Why: Utah onsite location matches preference
+  - Concern: Heavily technical mobile engineering mandate
+  - https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4405827009
+- **Marketing Project Manager** — Aquent · 40/100 · remote Chicago, IL, US (Remote) · posted 2026-09-15
+  - Why: Marketing PM lacks transformation/strategy scope
+  - Concern: Tactical execution role, not strategic
+  - https://aquent.com/find-work/213049
+- **Support Project Manager/Lead** — Robert Half · 35/100 · remote Houston, TX (Remote) · $57.00–$66.00/hr · posted 2026-09-16
+  - Why: PM/change management overlap
+  - Concern: Houston onsite despite remote note
+  - https://www.roberthalf.com/us/en/job/houston-tx/support-project-managerlead/04130-0013507659-usen
 
 ## DISCOVERY / WILDCARDS (4)
 - **Business Planning & Operations Lead, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+5 more) · $123,100 - $186,300 · posted 2026-09-08
@@ -84,36 +76,35 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Transformation program leadership matches core expertise
   - Concern: No description available, scope unclear
   - https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Program-Manager--Transformation_R171052
-- **Manager of Enterprise AI Success.** — Cresta · 84/100 · hybrid United States (Remote) · posted 2026-09-01
-  - Why: AI adoption/enablement leadership mandate
-  - Concern: Manager title with CS quota/retention pressure
-  - https://job-boards.greenhouse.io/cresta/jobs/5412192008
-- **Chief of Staff, Payer** — Headway · 82/100 · remote Remote · $180K – $225K · posted 2026-09-03
-  - Why: Chief of Staff role with cross-functional strategic scope
-  - Concern: Healthcare payer domain is unfamiliar territory
-  - https://jobs.ashbyhq.com/headway/17b19c5c-36e8-429d-9815-9f95b3586c1e
 - **Director of Launch Operations** — Luxury Presence · 82/100 · remote USA (Remote) · posted 2026-09-03
   - Why: Operating model redesign at scale
   - Concern: Owns a software platform directly, more product-heavy than typical
   - https://jobicy.com/jobs/152444-director-of-launch-operations
+- **Chief of Staff, Payer** — Headway · 82/100 · remote Remote · $180K – $225K · posted 2026-09-03
+  - Why: Chief of Staff role with cross-functional strategic scope
+  - Concern: Healthcare payer domain is unfamiliar territory
+  - https://jobs.ashbyhq.com/headway/17b19c5c-36e8-429d-9815-9f95b3586c1e
+- **Business Operations Director** — HackerOne · 82/100 · remote USA (Remote) · posted 2026-09-04
+  - Why: US-remote Business Operations Director role
+  - Concern: Description cut off before full responsibilities listed
+  - https://jobicy.com/jobs/152530-business-operations-director
 
-## REMOVED SINCE PRIOR RUN (12)
-- Operations Enablement Lead — Affirm · No longer listed by its source
-- Target Operating Model Consultant — Eliassen · No longer listed by its source
-- Product Manager — Eliassen · No longer listed by its source
-- Chief of Staff, CRO — GitLab · No longer listed by its source
-- Customer Success Architect — GitLab · No longer listed by its source
-- FLEX Manager - Quality Assurance, Business Process Validation — Marriott International · No longer listed by its source
-- Technical Program Manager — NetBox Labs · No longer listed by its source
-- Technical Program Manager, Finance Systems & Compliance — Notion · No longer listed by its source
-- Senior Technical Implementation Partner — Qventus · No longer listed by its source
-- Senior Manager, Strategic Technical Consulting — Ramp · No longer listed by its source
-- Communications Lead III — Robert Half · No longer listed by its source
-- Manager, Corporate Development M&A Integration — Salesforce · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (11)
+- Chief of Staff — Angi · No longer listed by its source
+- Customer Success Architect (AI) — Atlassian · No longer listed by its source
+- Director, GTM Business Systems — Dropbox · No longer listed by its source
+- ET Senior Technical Program Manager II — Eliassen · No longer listed by its source
+- Principal Technical Program Manager — GitLab · No longer listed by its source
+- Project Manager, Growth Operations — Hinge Health · No longer listed by its source
+- Senior Manager, Revenue Operations — Omada Health · No longer listed by its source
+- Chief of Staff - Sales — Podium · No longer listed by its source
+- Sr HR Project Manager SAP SuccessFactors (Contract Remote) — Robert Half · No longer listed by its source
+- Human Centered Change Senior Manager- Public Sector — Salesforce · No longer listed by its source
+- People Project Manager — Stripe · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 134/137 successful
 - Temporary errors: 0
-- Needs attention: 23
+- Needs attention: 22
   - Broken config: ClickHouse, Marqeta, Temporal
-  - Returning nothing for 10+ runs: Airtable, Beyond (Overstock), Cockroach Labs, Confluent, Domo, Doppler, Inngest, Instructure, Marqeta, Miro, Nav, Netlify, Pinecone, Postman, Route, Together AI, Toptal, Vercel, Vivint, Weave
+  - Returning nothing for 10+ runs: Airtable, Beyond (Overstock), Cockroach Labs, Confluent, Domo, Doppler, Inngest, Instructure, Marqeta, Miro, Nav, Netlify, Pinecone, Postman, Route, Together AI, Toptal, Vivint, Weave

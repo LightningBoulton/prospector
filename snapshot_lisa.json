@@ -155,45 +155,6 @@
   }
  },
  {
-  "key": "Podium::8157904",
-  "company": "Podium",
-  "title": "Chief of Staff - Sales",
-  "location": "Lehi, Utah",
-  "url": "https://job-boards.greenhouse.io/podium81/jobs/8157904",
-  "posted": "2026-08-25",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Utah-local role, hybrid/onsite feasible",
-    "Chief of Staff mandate aligns with strategy execution skillset",
-    "Cross-functional GTM operations scope fits operational excellence background",
-    "AI-driven company aligns with AI enablement interest"
-   ],
-   "concerns": [
-    "Sales-specific GTM focus is narrower than core transformation experience",
-    "May require deep sales/RevOps metrics fluency"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 88,
-   "opportunity_score": 72,
-   "score": 72,
-   "fit": "yes",
-   "reason": "Utah-local role, hybrid/onsite feasible",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Podium::8176930",
   "company": "Podium",
   "title": "Manager, Customer Success (Home Services)",
@@ -1134,6 +1095,42 @@
   }
  },
  {
+  "key": "Kelso Industries::5425076008",
+  "company": "Kelso Industries",
+  "title": "Project Manager (Onsite-HVAC, Plumbing, Mechanical) - Huntersville, NC",
+  "location": "Remote",
+  "url": "https://kelso-industries.com/careers/?gh_jid=5425076008#job-board",
+  "posted": "2026-09-15",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Construction/HVAC project management, wrong domain"
+   ],
+   "concerns": [
+    "Requires trade construction expertise she lacks",
+    "Onsite in NC, heavy travel required"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 3,
+   "practical_fit": 10,
+   "opportunity_score": 5,
+   "score": 5,
+   "fit": "no",
+   "reason": "Construction/HVAC project management, wrong domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Kelso Industries::5400090008",
   "company": "Kelso Industries",
   "title": "Project Manager (Onsite-HVAC, Plumbing, Mechanical) - St Louis",
@@ -1204,6 +1201,159 @@
    "score": 8,
    "fit": "no",
    "reason": "Construction/mechanical PM, wrong domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025721",
+  "company": "Western Governors University",
+  "title": "Project Manager IV, Transformation",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721",
+  "posted": "2026-09-16",
+  "salary": "$109,900.00 - $170,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Transformation PM title matches core domain",
+    "Salt Lake City location fits Utah preference",
+    "Program leadership likely involves strategic scope"
+   ],
+   "concerns": [
+    "No description to confirm mandate scope",
+    "Title level IV may be more execution-focused"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 75,
+   "practical_fit": 85,
+   "opportunity_score": 70,
+   "score": 70,
+   "fit": "yes",
+   "reason": "Transformation PM title matches core domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025381",
+  "company": "Western Governors University",
+  "title": "Technical Project Manager III",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-025381",
+  "posted": "2026-09-16",
+  "salary": "$108,200.00 - $162,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah local, matches location preference",
+    "Project management adjacent to program leadership",
+    "Technical PM scope unclear from title alone"
+   ],
+   "concerns": [
+    "No description available to assess mandate",
+    "Technical PM may skew toward IT delivery, not transformation",
+    "Title suggests narrower scope than target roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah local, matches location preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-025809",
+  "company": "Western Governors University",
+  "title": "Senior Educational Program Designer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Educational-Product-Designer_JR-025809",
+  "posted": "2026-09-15",
+  "salary": "$80,700.00 - $121,000.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Utah local location matches preference",
+    "Program title but likely instructional design focus",
+    "No description to confirm scope"
+   ],
+   "concerns": [
+    "Likely curriculum/instructional design, not org transformation",
+    "No details available to verify mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 70,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah local location matches preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-026151",
+  "company": "Western Governors University",
+  "title": "Business Applications Administrator - Transformation & Corporate Operations",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Business-Applications-Administrator---Transformation---Corporate-Operations_JR-026151",
+  "posted": "2026-09-15",
+  "salary": "$98,300.00 - $147,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Title suggests hands-on systems admin work",
+    "Utah location is practical fit",
+    "No transformation leadership mandate evident"
+   ],
+   "concerns": [
+    "Likely IT/application admin, not strategic role",
+    "No description to confirm scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 75,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Title suggests hands-on systems admin work",
    "bg": "d192ce659668"
   }
  },
@@ -1516,41 +1666,40 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025381",
-  "company": "Western Governors University",
-  "title": "Technical Project Manager III",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-025381",
-  "posted": "2026-09-08",
-  "salary": "$118,900.00 - $178,500.00",
+  "key": "iCapital::8811646002",
+  "company": "iCapital",
+  "title": "HR Total Rewards Operations - Assistant Vice President",
+  "location": "Salt Lake City, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8811646002",
+  "posted": "2026-09-15",
+  "salary": null,
   "employment_type": "",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
+   "recommendation": "not_recommended",
+   "confidence": "medium",
    "reasons": [
-    "Utah local, matches location preference",
-    "Project management adjacent to program leadership",
-    "Technical PM scope unclear from title alone"
+    "Utah-local role location match",
+    "But HRIS/payroll systems config not her domain",
+    "Hands-on technical HR ops, not strategic"
    ],
    "concerns": [
-    "No description available to assess mandate",
-    "Technical PM may skew toward IT delivery, not transformation",
-    "Title suggests narrower scope than target roles"
+    "Wrong function - HR technology/payroll operations",
+    "Not transformation or org strategy work"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah local, matches location preference",
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 75,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Utah-local role location match",
    "bg": "d192ce659668"
   }
  },
@@ -1631,6 +1780,122 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Utah-local role, strong practical fit",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "BYU::JR-12433",
+  "company": "BYU",
+  "title": "Research Project Manager (part-time 17.5 hours/week,  one-year position)",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Research-Project-Manager--part-time-175-hours-week---one-year-position-_JR-12433",
+  "posted": "2026-09-15",
+  "salary": "$20.00-$24.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Utah local location",
+    "Project management overlap",
+    "Part-time limits strategic scope",
+    "One-year term limits value"
+   ],
+   "concerns": [
+    "Part-time 17.5 hrs likely below her level",
+    "No description to confirm scope",
+    "Academic research context unclear fit"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah local location",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "BYU::JR-12469",
+  "company": "BYU",
+  "title": "Simulation Program Manager, Standardized Patients - School of Medicine",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Simulation-Program-Manager--Standardized-Patients---School-of-Medicine_JR-12469",
+  "posted": "2026-09-16",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Program management keyword match",
+    "Utah location",
+    "But healthcare/clinical simulation domain mismatch"
+   ],
+   "concerns": [
+    "Clinical/medical education context, not core domain",
+    "No description to verify scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Program management keyword match",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "BYU::JR-12468",
+  "company": "BYU",
+  "title": "Simulation Program Manager, Simulation - School of Medicine",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Simulation-Program-Manager--Simulation---School-of-Medicine_JR-12468-1",
+  "posted": "2026-09-16",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Utah location matches preference",
+    "Program manager title only weak signal",
+    "No description to assess mandate"
+   ],
+   "concerns": [
+    "Likely clinical/simulation-lab operations, not transformation",
+    "No details on scope or seniority"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 60,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Utah location matches preference",
    "bg": "d192ce659668"
   }
  },

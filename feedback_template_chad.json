@@ -37,13 +37,6 @@
    "note": ""
   },
   {
-   "key": "1Password::977a7202-3aef-4ccb-a493-6042c6327f2c",
-   "company": "1Password",
-   "title": "Senior IT Support Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::2cbe185d-e8d7-47f9-9a1a-5314470ef4f5",
    "company": "1Password",
    "title": "Staff IT Engineer",
@@ -61,6 +54,13 @@
    "key": "6sense::152837",
    "company": "6sense",
    "title": "Product Lead, AI Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Adobe::R171468",
+   "company": "Adobe",
+   "title": "Dir, Software Development",
    "status": "",
    "note": ""
   },
@@ -170,13 +170,6 @@
    "note": ""
   },
   {
-   "key": "Airbyte::5930fed9-c4f6-43c3-87be-3402c2c46489",
-   "company": "Airbyte",
-   "title": "Senior Site Reliability Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Alchemy::b6b29a64-508c-4712-9b0f-08a5ff0ddb2d",
    "company": "Alchemy",
    "title": "Product Lead, Developer Experience",
@@ -208,6 +201,27 @@
    "key": "Ancestry::R003434",
    "company": "Ancestry",
    "title": "Software Engineer \u2013 Observability, Co-op",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Angi::a22feaa0-7586-44ee-9a1f-266d50b4ca46",
+   "company": "Angi",
+   "title": "Senior Machine Learning Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Angi::5a44e43f-56bc-4f6c-80df-f0b3344b7fd6",
+   "company": "Angi",
+   "title": "Staff Machine Learning Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "AssemblyAI::4728788005",
+   "company": "AssemblyAI",
+   "title": "Senior GTM AI Engineer",
    "status": "",
    "note": ""
   },
@@ -247,13 +261,6 @@
    "note": ""
   },
   {
-   "key": "Baseten::5cd2f489-b9ee-428b-b252-94e83d55f107",
-   "company": "Baseten",
-   "title": "GTM Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Baseten::19972142-ec0b-4049-8d8f-6a341f57f938",
    "company": "Baseten",
    "title": "Software Engineer - Identity & Authorization",
@@ -268,6 +275,13 @@
    "note": ""
   },
   {
+   "key": "Bruker::https://himalayas.app/companies/bruker/jobs/software-development-engineer-iv-algorithms-and-scientific-data",
+   "company": "Bruker",
+   "title": "Software Development Engineer IV - Algorithms and Scientific Data",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Chainguard::4711370006",
    "company": "Chainguard",
    "title": "Senior Analytics Engineer",
@@ -275,16 +289,16 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4712233006",
+   "key": "Chainguard::4713200006",
    "company": "Chainguard",
-   "title": "Senior Software Engineer",
+   "title": "Senior Software Engineer (Athena)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Chainguard::4713200006",
+   "key": "Chainguard::4712233006",
    "company": "Chainguard",
-   "title": "Senior Software Engineer (Athena)",
+   "title": "Senior Software Engineer, Sustaining Automation",
    "status": "",
    "note": ""
   },
@@ -298,7 +312,7 @@
   {
    "key": "Chainguard::4712228006",
    "company": "Chainguard",
-   "title": "Staff Software Engineer, Sustaining",
+   "title": "Staff Software Engineer, Sustaining Automation",
    "status": "",
    "note": ""
   },
@@ -341,6 +355,20 @@
    "key": "Cloudflare::8043339",
    "company": "Cloudflare",
    "title": "Forward Deployed Engineer, Professional Services",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8185549",
+   "company": "Cloudflare",
+   "title": "Principal Customer Engineer, Digital Natives",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8200786",
+   "company": "Cloudflare",
+   "title": "Principal Customer Engineer, Majors",
    "status": "",
    "note": ""
   },
@@ -646,16 +674,16 @@
    "note": ""
   },
   {
-   "key": "GitLab::8786095002",
+   "key": "GitLab::8773006002",
    "company": "GitLab",
-   "title": "Distinguished Engineer, Agentic SDLC & Non\u2011Linear Productivity",
+   "title": "Intermediate Backend Engineer, AMER",
    "status": "",
    "note": ""
   },
   {
-   "key": "GitLab::8773006002",
+   "key": "GitLab::8786095002",
    "company": "GitLab",
-   "title": "Intermediate Backend Engineer, AMER",
+   "title": "Principal Engineer, Duo Agent Platform",
    "status": "",
    "note": ""
   },
@@ -730,9 +758,9 @@
    "note": ""
   },
   {
-   "key": "GitLab::8761409002",
-   "company": "GitLab",
-   "title": "Staff Security Engineer, IAM",
+   "key": "Grafana Labs::6194871004",
+   "company": "Grafana Labs",
+   "title": "Staff Frontend Engineer - Grafana DataViz | US | Remote",
    "status": "",
    "note": ""
   },
@@ -751,16 +779,16 @@
    "note": ""
   },
   {
-   "key": "Hightouch::6186892004",
-   "company": "Hightouch",
-   "title": "Customer Success Engineer",
+   "key": "Headway::75017946-1062-40fb-a78f-9e1edf5424a7",
+   "company": "Headway",
+   "title": "Senior Data Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Hightouch::6167699004",
+   "key": "Hightouch::6186892004",
    "company": "Hightouch",
-   "title": "Senior GTM Systems Engineer",
+   "title": "Customer Success Engineer",
    "status": "",
    "note": ""
   },
@@ -891,16 +919,16 @@
    "note": ""
   },
   {
-   "key": "LaunchDarkly::7992639003",
+   "key": "LaunchDarkly::7985794003",
    "company": "LaunchDarkly",
-   "title": "Engineering Manager, Data Platform",
+   "title": "Backend Engineer, Observability",
    "status": "",
    "note": ""
   },
   {
-   "key": "LaunchDarkly::7985794003",
+   "key": "LaunchDarkly::7992639003",
    "company": "LaunchDarkly",
-   "title": "Full Stack Engineer, Observability",
+   "title": "Engineering Manager, Data Platform",
    "status": "",
    "note": ""
   },
@@ -912,16 +940,16 @@
    "note": ""
   },
   {
-   "key": "MX::4385268009",
-   "company": "MX",
-   "title": "Senior Software Engineer II",
+   "key": "Linear::f04f398b-6320-499d-8a60-290239d62da8",
+   "company": "Linear",
+   "title": "Design Engineer (Web & Brand)",
    "status": "",
    "note": ""
   },
   {
-   "key": "ManTech::https://himalayas.app/companies/mantech/jobs/oracle-software-developer-4097269499",
-   "company": "ManTech",
-   "title": "Oracle Software Developer",
+   "key": "MX::4385268009",
+   "company": "MX",
+   "title": "Senior Software Engineer II",
    "status": "",
    "note": ""
   },
@@ -961,13 +989,6 @@
    "note": ""
   },
   {
-   "key": "NICE::4975980101",
-   "company": "NICE",
-   "title": "Software Engineer, AI Solutions",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "NICE::4968269101",
    "company": "NICE",
    "title": "Technical Support Engineer",
@@ -982,6 +1003,13 @@
    "note": ""
   },
   {
+   "key": "O.C. Tanner::JR26-210",
+   "company": "O.C. Tanner",
+   "title": "Manager, Software Engineering (Platform Services)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Omada Health::8157230",
    "company": "Omada Health",
    "title": "Software Engineer II",
@@ -991,7 +1019,7 @@
   {
    "key": "Pattern::090855a4-cbb0-4de6-a8f4-c2422ab0c03f",
    "company": "Pattern",
-   "title": "Senior Data Platform Engineer",
+   "title": "Senior Data Infrastructure Engineer",
    "status": "",
    "note": ""
   },
@@ -1073,9 +1101,9 @@
    "note": ""
   },
   {
-   "key": "PostHog::43dbf072-0fc1-48c9-8c1e-7416db7d4a14",
-   "company": "PostHog",
-   "title": "ClickHouse Operations Engineer",
+   "key": "Quantum Metric::153333",
+   "company": "Quantum Metric",
+   "title": "Solutions Engineer - US",
    "status": "",
    "note": ""
   },
@@ -1185,6 +1213,13 @@
    "note": ""
   },
   {
+   "key": "Reddit::8187247",
+   "company": "Reddit",
+   "title": "Senior Software Engineer, Consumer Engineering",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8155661",
    "company": "Reddit",
    "title": "Senior Software Engineer, Home Experience",
@@ -1192,23 +1227,9 @@
    "note": ""
   },
   {
-   "key": "Reddit::8100220",
+   "key": "Reddit::8201359",
    "company": "Reddit",
-   "title": "Senior Software Engineer, Media Creation",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::8048988",
-   "company": "Reddit",
-   "title": "Senior Software Engineer, Media Experience",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::8157275",
-   "company": "Reddit",
-   "title": "Senior Staff Machine Learning Systems Engineer, Ads ML Platform",
+   "title": "Senior Staff Machine Learning Engineer, Ads Ranking",
    "status": "",
    "note": ""
   },
@@ -1227,9 +1248,23 @@
    "note": ""
   },
   {
+   "key": "Reddit::8205402",
+   "company": "Reddit",
+   "title": "Staff Software Engineer - Ingestion Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8175131",
    "company": "Reddit",
    "title": "Staff Software Engineer - Site Defense",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8205702",
+   "company": "Reddit",
+   "title": "Staff Software Engineer, Consumer Engineering",
    "status": "",
    "note": ""
   },
@@ -1325,7 +1360,28 @@
    "note": ""
   },
   {
-   "key": "Samsara::7852183",
+   "key": "Samsara::8205149",
+   "company": "Samsara",
+   "title": "Staff Application Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8205146",
+   "company": "Samsara",
+   "title": "Staff Application Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8205139",
+   "company": "Samsara",
+   "title": "Staff Application Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8205118",
    "company": "Samsara",
    "title": "Staff Application Security Engineer",
    "status": "",
@@ -1402,6 +1458,13 @@
    "note": ""
   },
   {
+   "key": "Smartsheet::8204940",
+   "company": "Smartsheet",
+   "title": "Sr. Software Engineer II - Billing & Subscriptions Engineering (Remote Eligible)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Sourcegraph::6185008004",
    "company": "Sourcegraph",
    "title": "ML & Agentic Systems Engineer [IC4]",
@@ -1418,7 +1481,7 @@
   {
    "key": "Stripe::8130913",
    "company": "Stripe",
-   "title": "Designer, Web, Presence & Platform",
+   "title": "Designer, Web Presence & Platform",
    "status": "",
    "note": ""
   },
@@ -1447,13 +1510,6 @@
    "key": "Supabase::06752423-eebb-472c-95b5-c7ff2559fd60",
    "company": "Supabase",
    "title": "Software Engineer - Branching",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Tailscale::4733183005",
-   "company": "Tailscale",
-   "title": "Backend Engineer, Control Plane",
    "status": "",
    "note": ""
   },
@@ -1514,6 +1570,13 @@
    "note": ""
   },
   {
+   "key": "Twilio::8178588",
+   "company": "Twilio",
+   "title": "Machine Learning Engineer L2",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Twilio::8171112",
    "company": "Twilio",
    "title": "Principal Presales Engineer, ISV HLS",
@@ -1521,14 +1584,14 @@
    "note": ""
   },
   {
-   "key": "Twilio::8164891",
+   "key": "Twilio::8171110",
    "company": "Twilio",
    "title": "Senior Solutions Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Twilio::8171110",
+   "key": "Twilio::8164891",
    "company": "Twilio",
    "title": "Senior Solutions Engineer",
    "status": "",
@@ -1591,6 +1654,20 @@
    "note": ""
   },
   {
+   "key": "Vaya Health::https://himalayas.app/companies/vaya-health/jobs/senior-business-intelligence-developer",
+   "company": "Vaya Health",
+   "title": "Senior Business Intelligence Developer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Vercel::6129441004",
+   "company": "Vercel",
+   "title": "Design Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Webflow::8186854",
    "company": "Webflow",
    "title": "Senior Forward Deployed Engineer",
@@ -1612,23 +1689,23 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-025987",
+   "company": "Western Governors University",
+   "title": "Associate Data Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025988",
+   "company": "Western Governors University",
+   "title": "Data Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-025952",
    "company": "Western Governors University",
    "title": "Manager, Software Engineer Student LifeCycle Services",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-026040",
-   "company": "Western Governors University",
-   "title": "NOC Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-026019",
-   "company": "Western Governors University",
-   "title": "Principal Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1685,6 +1762,13 @@
    "key": "Western Governors University::JR-026053",
    "company": "Western Governors University",
    "title": "Senior Software Engineer - WGU Labs",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-025312",
+   "company": "Western Governors University",
+   "title": "Software Engineer",
    "status": "",
    "note": ""
   },

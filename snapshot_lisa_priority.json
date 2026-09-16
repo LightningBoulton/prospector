@@ -332,6 +332,90 @@
   }
  },
  {
+  "key": "Salesforce::JR343794",
+  "company": "Salesforce",
+  "title": "Agentic Customer Success Manager, Senior Manager",
+  "location": "Remote (+1 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Agentic-Customer-Success-Manager--Senior-Manager_JR343794",
+  "posted": "2026-09-16",
+  "salary": "$123,100 - $227,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce",
+    "Remote-eligible location",
+    "Senior Manager CS scope plausible",
+    "Customer success adjacent to CX",
+    "AI/agentic angle fits AI enablement interest"
+   ],
+   "concerns": [
+    "No job description available",
+    "May be individual account management, not strategic",
+    "Title suggests narrower CSM scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR347839",
+  "company": "Salesforce",
+  "title": "Agentic Operations Consultant - Healthcare",
+  "location": "Remote (+54 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Agentic-Operations-Consultant_JR347839",
+  "posted": "2026-09-15",
+  "salary": "$134,750 - $244,510",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "priority employer; role family 'operations' in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce with referral advantage",
+    "Operations/AI-adjacent title fits core domains",
+    "Remote-eligible aligns with top location preference",
+    "Consultant title may signal narrower IC scope"
+   ],
+   "concerns": [
+    "No description; scope and seniority unclear",
+    "'Consultant' may be less senior than target titles",
+    "Could be delivery-focused vs strategic"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 65,
+   "practical_fit": 85,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Salesforce::JR359990",
   "company": "Salesforce",
   "title": "Slack Strategic Operations Senior Director",
@@ -449,47 +533,6 @@
    "score": 65,
    "fit": "maybe",
    "reason": "Salesforce priority employer",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR347839",
-  "company": "Salesforce",
-  "title": "Agentic Operations Consultant",
-  "location": "Remote (+54 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Agentic-Operations-Consultant_JR347839",
-  "posted": "2026-09-11",
-  "salary": "$134,750 - $244,510",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "priority employer; role family 'operations' in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Salesforce with referral advantage",
-    "Operations/AI-adjacent title fits core domains",
-    "Remote-eligible aligns with top location preference",
-    "Consultant title may signal narrower IC scope"
-   ],
-   "concerns": [
-    "No description; scope and seniority unclear",
-    "'Consultant' may be less senior than target titles",
-    "Could be delivery-focused vs strategic"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Priority employer Salesforce with referral advantage",
    "bg": "d192ce659668"
   }
  },
@@ -1063,47 +1106,6 @@
   }
  },
  {
-  "key": "Salesforce::JR352952",
-  "company": "Salesforce",
-  "title": "Human Centered Change Senior Manager- Public Sector",
-  "location": "Virginia - Washington DC Metro - Remote",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Virginia---Washington-DC-Metro---Remote/Human-Centered-Change-Senior-Manager--Public-Sector_JR352952",
-  "posted": "2026-08-25",
-  "salary": "$150,100 - $227,000",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'change' + seniority in title",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Change management senior manager mandate",
-    "Salesforce is a named priority employer",
-    "Remote listing reduces relocation concern",
-    "Aligns with org change/employee experience strength"
-   ],
-   "concerns": [
-    "No description to confirm scope",
-    "Public sector focus may need domain ramp",
-    "Remote but tied to DC metro region"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 82,
-   "practical_fit": 70,
-   "opportunity_score": 75,
-   "score": 75,
-   "fit": "yes",
-   "reason": "Change management senior manager mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Salesforce::JR359240",
   "company": "Salesforce",
   "title": "Sr. Director  - Product Strategy",
@@ -1310,6 +1312,89 @@
   }
  },
  {
+  "key": "Salesforce::JR359991",
+  "company": "Salesforce",
+  "title": "Product Strategy Lead - Revenue Forecasting",
+  "location": "Seattle (+1 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Product-Strategy-Lead---Revenue-Forecast-Modeling_JR359991",
+  "posted": "2026-09-16",
+  "salary": "$123,100 - $186,300",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Salesforce priority employer",
+    "Seattle location acceptable (WA)",
+    "Strategy-adjacent title",
+    "No description to confirm scope"
+   ],
+   "concerns": [
+    "No job description available",
+    "May be quant/forecasting-heavy, not her core strength",
+    "Title suggests narrower product-analytics focus"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 60,
+   "practical_fit": 65,
+   "opportunity_score": 58,
+   "score": 58,
+   "fit": "maybe",
+   "reason": "Salesforce priority employer",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR356759",
+  "company": "Salesforce",
+  "title": "Technical Learning Experience & Delivery",
+  "location": "Seattle (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Technical-Learning-Experience---Delivery_JR356759",
+  "posted": "2026-09-15",
+  "salary": "$117,400 - $177,600",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "priority employer; role family 'delivery' in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce",
+    "Learning/delivery could touch org development",
+    "Seattle aligns with WA preference",
+    "Title suggests possible L&D scope",
+    "No description to confirm mandate"
+   ],
+   "concerns": [
+    "No description available",
+    "Title suggests training delivery, not strategy",
+    "Unclear seniority or scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 50,
+   "practical_fit": 55,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Salesforce::JR359685",
   "company": "Salesforce",
   "title": "Sr. Analyst, Sales Operations",
@@ -1347,47 +1432,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Priority employer Salesforce",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR359991",
-  "company": "Salesforce",
-  "title": "Product Strategy Lead - Revenue Forecast Modeling",
-  "location": "Seattle (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Product-Strategy-Lead---Revenue-Forecast-Modeling_JR359991",
-  "posted": "2026-09-13",
-  "salary": "$123,100 - $186,300",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Salesforce priority employer",
-    "Seattle location acceptable (WA)",
-    "Strategy-adjacent title",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "No job description available",
-    "May be quant/forecasting-heavy, not her core strength",
-    "Title suggests narrower product-analytics focus"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 60,
-   "practical_fit": 65,
-   "opportunity_score": 58,
-   "score": 58,
-   "fit": "maybe",
-   "reason": "Salesforce priority employer",
    "bg": "d192ce659668"
   }
  },
@@ -1680,6 +1724,88 @@
   }
  },
  {
+  "key": "Zillow Group::P751351",
+  "company": "Zillow Group",
+  "title": "Workforce Capability Lead",
+  "location": "Remote-USA",
+  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Workforce-Capability-Lead_P751351-2",
+  "posted": "2026-09-15",
+  "salary": "$90,900.00 - $145,100.00",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'capability' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Zillow Group",
+    "US-remote matches top location preference",
+    "Capability/workforce transformation aligns with L&D and org development",
+    "Title suggests workforce transformation mandate"
+   ],
+   "concerns": [
+    "No description available to confirm scope",
+    "Title could be narrower L&D role than expected"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 65,
+   "practical_fit": 90,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "yes",
+   "reason": "Priority employer Zillow Group",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Zillow Group::P750643",
+  "company": "Zillow Group",
+  "title": "Technical Customer Success Manager, API",
+  "location": "Remote-CA",
+  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-CA/Technical-Customer-Success-Manager--API_P750643",
+  "posted": "2026-09-15",
+  "salary": "$40.00 - $63.80",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Zillow Group",
+    "Customer success adjacent domain",
+    "US-remote practical fit",
+    "Technical API focus may not match background"
+   ],
+   "concerns": [
+    "Title suggests technical/hands-on API support role",
+    "No description to confirm strategic scope",
+    "May be individual-contributor support role, not leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Priority employer Zillow Group",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Zillow Group::P751326",
   "company": "Zillow Group",
   "title": "Program Manager, HR Compliance",
@@ -1877,47 +2003,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Atlassian priority employer with SLC onsite",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Atlassian::26633",
-  "company": "Atlassian",
-  "title": "Customer Success Architect (AI)",
-  "location": "Austin - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/26633/customer-success-architect-%28ai%29/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + mandate in description (adoption, value realization)",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "AI adoption/value realization mandate fits interests",
-    "US-remote practical fit is excellent",
-    "Priority employer (Atlassian) raises pursuit value",
-    "Role is hands-on technical AI configuration, not her strength"
-   ],
-   "concerns": [
-    "Requires deep technical AI/agent-building skills she lacks",
-    "Not a strategic/leadership mandate, individual technical delivery",
-    "Title says architect but is IC technical implementation role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 55,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "AI adoption/value realization mandate fits interests",
    "bg": "d192ce659668"
   }
  },
@@ -2207,7 +2292,7 @@
   "company": "Atlassian",
   "title": "Principal Strategist, Sales & Success Strategy - Public Sector",
   "location": "San Francisco - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/25128/principal-strategist%2c-sales-%26-success-strategy---public-sector-/job?mode=apply",
+  "url": "https://careers-americas.icims.com/jobs/25128/principal-strategist%2c-sales-%26-success-strategy---public-sector/job?mode=apply",
   "posted": "",
   "salary": null,
   "employment_type": "",
