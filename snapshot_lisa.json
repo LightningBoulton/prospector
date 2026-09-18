@@ -77,6 +77,38 @@
   }
  },
  {
+  "key": "Podium::8141620",
+  "company": "Podium",
+  "title": "Strategic Customer Success Manager - Enterprise (OEM)",
+  "location": "Remote, US",
+  "url": "https://job-boards.greenhouse.io/podium81/jobs/8141620",
+  "posted": "2026-09-18",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: JSONDecodeError)",
+   "confidence": "low",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "MX::4405825009",
   "company": "MX",
   "title": "Staff Technical Program Manager - Data Products",
@@ -191,6 +223,336 @@
   }
  },
  {
+  "key": "Adobe::R170317",
+  "company": "Adobe",
+  "title": "Technology Asset Planning Analyst",
+  "location": "Lehi",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Purchasing-Analyst_R170317",
+  "posted": "2026-09-18",
+  "salary": "$86,900 - $183,975",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "discovery",
+  "match_reason": "priority employer; role family 'planning' in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Adobe, Utah location",
+    "Title suggests IT asset management, not her domain",
+    "No description to confirm scope"
+   ],
+   "concerns": [
+    "Likely hands-on asset/inventory work, weak fit",
+    "No description available to verify mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 70,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Priority employer Adobe, Utah location",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R170677",
+  "company": "Adobe",
+  "title": "Senior Manager, Business Process Optimization Program Management",
+  "location": "Lehi",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-Manager--Business-Process-Optimization-Program-Management_R170677-1",
+  "posted": "2026-09-18",
+  "salary": "$127,500 - $250,875",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Adobe priority employer with referral/contact",
+    "Utah local (Lehi) matches location preference",
+    "Process optimization/program mgmt fits core domains",
+    "Senior Manager level carries real ownership signal"
+   ],
+   "concerns": [
+    "No description available, judged from title only",
+    "Onsite/hybrid nature unclear"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 80,
+   "interest_fit": 80,
+   "practical_fit": 85,
+   "opportunity_score": 82,
+   "score": 82,
+   "fit": "yes",
+   "reason": "Adobe priority employer with referral/contact",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R170576",
+  "company": "Adobe",
+  "title": "Senior Analyst, Revenue Operations",
+  "location": "Lehi",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-Analyst--Revenue-Operations_R170576",
+  "posted": "2026-09-18",
+  "salary": "$75,500 - $174,400",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "discovery",
+  "match_reason": "role family 'operations' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "RevOps aligns with operations background",
+    "Adobe priority employer with referral advantage",
+    "Lehi UT location is local",
+    "Senior Analyst title likely below her scope"
+   ],
+   "concerns": [
+    "Title suggests IC-level, possibly under-leveled",
+    "No description to confirm mandate or scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "RevOps aligns with operations background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R170650",
+  "company": "Adobe",
+  "title": "Senior Learning Architect",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Senior-Learning-Architect_R170650",
+  "posted": "2026-09-18",
+  "salary": "$105,300 - $178,400",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "discovery",
+  "match_reason": "role family 'learning' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Adobe priority employer with referral advantage",
+    "Lehi, UT location matches preference",
+    "L&D adjacent to org development background",
+    "Title suggests learning design, not transformation",
+    "No description to confirm scope/mandate"
+   ],
+   "concerns": [
+    "No description available, high uncertainty",
+    "Learning architecture may be too specialized/technical",
+    "Unclear seniority/ownership level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Adobe priority employer with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R170949",
+  "company": "Adobe",
+  "title": "Principal, Strategy and Operations",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Principal--Strategy-and-Operations_R170949",
+  "posted": "2026-09-18",
+  "salary": "$130,800 - $262,025",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Strategy & Ops mandate fits core domain",
+    "Adobe priority employer with referral advantage",
+    "Lehi, Utah location matches preference",
+    "Principal-level ownership likely substantial"
+   ],
+   "concerns": [
+    "No description; scope unclear",
+    "Title-only judgment increases uncertainty"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 80,
+   "practical_fit": 85,
+   "opportunity_score": 78,
+   "score": 78,
+   "fit": "yes",
+   "reason": "Strategy & Ops mandate fits core domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R169255",
+  "company": "Adobe",
+  "title": "Director, Change and Release Management",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Director--Change-and-Release-Management_R169255",
+  "posted": "2026-09-18",
+  "salary": "$151,500 - $301,050",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "discovery",
+  "match_reason": "role family 'change' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Change management is core strength",
+    "Utah location (Lehi) fits well",
+    "Adobe priority employer with referral contact",
+    "Director title carries real scope",
+    "No description to confirm mandate"
+   ],
+   "concerns": [
+    "Could be ITSM/release-engineering focused, not org change",
+    "No description available to verify fit"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Change management is core strength",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R169572",
+  "company": "Adobe",
+  "title": "M&A Finance Integration Lead",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Sr-M-A-Finance-Integration-Analyst_R169572-1",
+  "posted": "2026-09-18",
+  "salary": "$117,900 - $245,300",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "M&A integration matches core domain",
+    "Adobe priority employer with referral",
+    "Utah/Lehi location ideal",
+    "Title suggests finance-specific scope"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Finance-specific integration may need accounting depth she lacks"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 75,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "maybe",
+   "reason": "M&A integration matches core domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R169610",
+  "company": "Adobe",
+  "title": "Technology Consultant",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Technology-Consultant_R169610",
+  "posted": "2026-09-18",
+  "salary": "$117,300 - $210,200",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "discovery",
+  "match_reason": "priority employer; role family 'consultant' in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Adobe with referral advantage",
+    "Utah (Lehi) location fits practical preference",
+    "Title vague, likely technical consulting scope",
+    "No description to confirm strategic mandate"
+   ],
+   "concerns": [
+    "Title suggests hands-on technical consulting, weak fit",
+    "No details to verify seniority or ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Priority employer Adobe with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Adobe::R171323",
   "company": "Adobe",
   "title": "Sr. Program & Portfolio Manager (IT)",
@@ -232,12 +594,137 @@
   }
  },
  {
+  "key": "Adobe::R171052",
+  "company": "Adobe",
+  "title": "Program Manager, Transformation",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Program-Manager--Transformation_R171052",
+  "posted": "2026-09-18",
+  "salary": "$111,000 - $222,450",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Transformation program mandate fits core domain",
+    "Utah location (Lehi) matches preference",
+    "Adobe priority employer with referral advantage",
+    "Program leadership aligns with proof points"
+   ],
+   "concerns": [
+    "No description available, scope unclear",
+    "Title-only judgment limits confidence"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 82,
+   "interest_fit": 88,
+   "practical_fit": 90,
+   "opportunity_score": 84,
+   "score": 84,
+   "fit": "yes",
+   "reason": "Transformation program mandate fits core domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R170602",
+  "company": "Adobe",
+  "title": "Finance Transformation Manager, Business Architecture",
+  "location": "Lehi (+1 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Finance-Transformation-Manager--Business-Architecture_R170602",
+  "posted": "2026-09-18",
+  "salary": "$111,800 - $223,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Business architecture/transformation mandate fits skillset",
+    "Utah location (Lehi) matches preference",
+    "Adobe is priority employer with referral advantage",
+    "Finance-specific scope may narrow fit",
+    "Title suggests transformation ownership"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Finance domain specificity unclear",
+    "Manager title scope unknown"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 65,
+   "practical_fit": 85,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "maybe",
+   "reason": "Business architecture/transformation mandate fits skillset",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R164092",
+  "company": "Adobe",
+  "title": "Sr. Sales Operations Manager",
+  "location": "Lehi (+2 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Sr-Sales-Operations-Manager_R164092",
+  "posted": "2026-09-18",
+  "salary": "$106,100 - $220,650",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah/Lehi location matches her preference",
+    "Adobe is a named priority employer",
+    "Sales Ops adjacent to operations background",
+    "No description to confirm strategic scope"
+   ],
+   "concerns": [
+    "Sales ops may be tactical/quota-support, not transformation",
+    "No description available to verify mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Utah/Lehi location matches her preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Adobe::R171344",
   "company": "Adobe",
   "title": "People Manager Consultant and Coach",
   "location": "Lehi (+2 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Manager-Success-Partner_R171344-1",
-  "posted": "2026-09-16",
+  "posted": "2026-09-18",
   "salary": "$101,300 - $209,950",
   "employment_type": "",
   "expires": "",
@@ -273,12 +760,96 @@
   }
  },
  {
+  "key": "Adobe::R170122",
+  "company": "Adobe",
+  "title": "Senior Program Manager, GSO",
+  "location": "Lehi (+4 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Program-Manager--GSO_R170122",
+  "posted": "2026-09-18",
+  "salary": "$133,400 - $248,400",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Adobe priority employer with referral advantage",
+    "Program leadership matches PMO/program experience",
+    "Lehi Utah location fits location preference",
+    "Senior title suggests real ownership scope"
+   ],
+   "concerns": [
+    "No description; GSO scope unclear",
+    "Could be narrowly technical/ops function"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 60,
+   "practical_fit": 85,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "yes",
+   "reason": "Adobe priority employer with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Adobe::R170411",
+  "company": "Adobe",
+  "title": "Director, Sales Operations, Technical Pre-Sales",
+  "location": "Lehi (+6 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Francisco/Director--TPS-Strategy---Business-Operations_R170411",
+  "posted": "2026-09-18",
+  "salary": "$159,900 - $325,900",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Adobe priority employer with referral advantage",
+    "Utah location matches preference strongly",
+    "Director title suggests real scope",
+    "Sales ops adjacent to operations expertise",
+    "Thin description limits confidence"
+   ],
+   "concerns": [
+    "No description to assess mandate",
+    "Technical pre-sales domain unclear fit",
+    "Sales ops may be narrower than transformation work"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 58,
+   "score": 58,
+   "fit": "maybe",
+   "reason": "Adobe priority employer with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Adobe::R171927",
   "company": "Adobe",
   "title": "Senior Business Consultant - Content Supply Chain",
   "location": "Lehi (+6 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Business-Consultant---Content-Supply-Chain_R171927",
-  "posted": "2026-09-16",
+  "posted": "2026-09-18",
   "salary": "$134,400 - $245,300",
   "employment_type": "",
   "expires": "",
@@ -314,12 +885,53 @@
   }
  },
  {
+  "key": "Adobe::R167579",
+  "company": "Adobe",
+  "title": "Senior\u00a0Global\u00a0Total Rewards Operations & Project Manager",
+  "location": "Lehi (+5 more)",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Global-Total-Rewards-Operations---Project-Manager_R167579",
+  "posted": "2026-09-18",
+  "salary": "$139,000 - $261,150",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah/Lehi location fits practical preference",
+    "Adobe is priority employer with referral advantage",
+    "Project management operations may have transferable scope",
+    "No description to confirm transformation mandate"
+   ],
+   "concerns": [
+    "Total Rewards/HR compensation specialization not core domain",
+    "Title suggests narrow HR ops focus, not strategy leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah/Lehi location fits practical preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Adobe::R171799",
   "company": "Adobe",
   "title": "Senior Customer Success Manager",
   "location": "Lehi (+6 more)",
   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Customer-Success-Manager_R171799",
-  "posted": "2026-09-11",
+  "posted": "2026-09-18",
   "salary": "$135,200 - $234,150",
   "employment_type": "",
   "expires": "",
@@ -550,45 +1162,6 @@
    "score": 55,
    "fit": "maybe",
    "reason": "US-remote practical fit is strong",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "NICE::4962210101",
-  "company": "NICE",
-  "title": "Senior Partner Enablement Manager",
-  "location": "USA - Sandy, UT",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4962210101?gh_jid=4962210101",
-  "posted": "2026-08-27",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Utah-local role, strong practical fit",
-    "Adjacent to enablement/change/CX experience",
-    "Partner-specific enablement is narrower than her core scope",
-    "Program coordination angle overlaps operational excellence"
-   ],
-   "concerns": [
-    "Heavily sales/partner-channel focused, not transformation",
-    "Likely mid-level scope, less strategic ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah-local role, strong practical fit",
    "bg": "d192ce659668"
   }
  },
@@ -1006,44 +1579,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-026093",
-  "company": "Western Governors University",
-  "title": "Project Manager II - WGU Salt Lake City Office",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-II---WGU-Salt-Lake-City-Office_JR-026093-1",
-  "posted": "2026-09-15",
-  "salary": "$75,200.00 - $112,700.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah local role, matches location preference",
-    "Project management aligns with program leadership background",
-    "Title suggests lower scope than target roles"
-   ],
-   "concerns": [
-    "No description to assess mandate scope",
-    "Title level (II) suggests limited strategic ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah local role, matches location preference",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Western Governors University::JR-025854",
   "company": "Western Governors University",
   "title": "Senior Learning Product Owner",
@@ -1198,79 +1733,41 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025980",
-  "company": "Western Governors University",
-  "title": "Project Manager III - Technical",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-III---Technical_JR-025980",
-  "posted": "2026-09-09",
-  "salary": "$108,200.00 - $162,400.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah local role",
-    "PM title aligns with program leadership background",
-    "Thin description limits assessment"
-   ],
-   "concerns": [
-    "No description available to judge scope",
-    "Technical PM may skew IT-execution heavy"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah local role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Western Governors University::JR-025922",
-  "company": "Western Governors University",
-  "title": "Technical Program Manager-1",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Program-Manager-1_JR-025922",
-  "posted": "2026-09-09",
+  "key": "O.C. Tanner::JR26-243",
+  "company": "O.C. Tanner",
+  "title": "Director of Operations, Jewelry Store",
+  "location": "USA - Utah-Salt Lake City-Jewelry Store",
+  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Jewelry-Store/Director-of-Operations--Jewelry-Store_JR26-243",
+  "posted": "2026-09-18",
   "salary": null,
   "employment_type": "",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Program management overlaps her PMO background",
-    "Utah-local role fits location preference",
-    "Technical scope may not match her strengths"
+    "Utah local location fits practical preference",
+    "Operations title loosely aligns",
+    "Likely retail store operations, not strategic transformation"
    ],
    "concerns": [
-    "No description to assess mandate",
-    "Title suggests engineering-adjacent technical focus",
-    "Possibly junior/IC scope"
+    "Jewelry store retail ops likely narrow scope",
+    "No description to confirm strategic mandate",
+    "Possibly store-level, not enterprise level"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Program management overlaps her PMO background",
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 70,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah local location fits practical preference",
    "bg": "d192ce659668"
   }
  },
@@ -1390,6 +1887,45 @@
    "score": 30,
    "fit": "no",
    "reason": "Utah local location",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "BYU::JR-12538",
+  "company": "BYU",
+  "title": "Talent Development Office Manager - part-time/28 hrs per week",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Talent-Development-Office-Manager---part-time-28-hrs-per-week_JR-12538",
+  "posted": "2026-09-17",
+  "salary": "$20.75-$27.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Part-time office manager role, minimal strategic scope",
+    "Utah location matches preference",
+    "Title suggests administrative not transformation work"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Likely below seniority/mandate fit",
+    "Part-time (28 hrs) limits compensation and impact"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Part-time office manager role, minimal strategic scope",
    "bg": "d192ce659668"
   }
  },
