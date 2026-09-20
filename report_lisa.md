@@ -1,41 +1,25 @@
-# Prospector — 2026-09-19
+# Prospector — 2026-09-20
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**12 new roles today** · 8 still worth applying · 12 closed/removed
+**8 new roles today** · 8 still worth applying · 7 closed/removed
 
-## NEW — WORTH REVIEWING (8)
-- **Staff Program Manager, CCO Programs** — GitLab · 76/100 · remote Remote, Canada; Remote, United States · posted 2026-09-18
-  - Why: Cross-functional program leadership for CCO priorities
-  - Concern: SaaS/DevSecOps domain unfamiliar
-  - https://job-boards.greenhouse.io/gitlab/jobs/8822279002
-- **Sales Enablement Manager** — Revvity · 55/100 · remote United States (Remote) · $106,500–$150,000 · posted 2026-09-19
-  - Why: US-remote role, matches location preference
-  - Concern: Sales-specific function narrower than her core domains
-  - https://himalayas.app/companies/revvity/jobs/sales-enablement-manager
-- **Director, Customer Marketing** — Keyfactor, Inc. · 45/100 · remote Canada,  USA (Remote) · posted 2026-09-17
-  - Why: Customer value/expansion mandate echoes CX experience
-  - Concern: Marketing-specific function, not core transformation/ops
-  - https://jobicy.com/jobs/153509-director-customer-marketing
-- **Onboarding Operations Tech Lead** — Twilio · 45/100 · remote Remote - US · posted 2026-09-18
-  - Why: US-remote role fits practical preference
-  - Concern: Likely too technical/tactical for her seniority
-  - https://job-boards.greenhouse.io/twilio/jobs/8213541
-- **Associate Director, Market Strategy Advisory** — Oscar Health · 45/100 · remote Remote · $163,944- $215,177 · posted 2026-09-18
-  - Why: Strategic market growth mandate fits transformation background
-  - Concern: Utah not in eligible state list
-  - https://job-boards.greenhouse.io/oscar/jobs/8202916
-- **Associate Director, B2B Strategy** — Wpromote · 45/100 · remote USA (Remote) · posted 2026-09-19
-  - Why: Remote fits location preference well
-  - Concern: Requires deep B2B media/martech domain expertise
-  - https://jobicy.com/jobs/153628-associate-director-b2b-strategy
-- **Technical Program Manager** — Sardine · 40/100 · remote North America (Remote) · $175K – $215K · posted 2026-09-08
-  - Why: Program management rigor and client governance overlap her PMO skills
-  - Concern: Highly technical integration/engineering focus, not her core strength
-  - https://jobs.ashbyhq.com/sardine/04c1a171-3321-4764-9435-98de1a61bd59
-- **Senior Event Operations Manager** — Docker · 40/100 · remote United States (Remote) · posted 2026-09-17
-  - Why: Operational excellence and process/playbook building overlap
-  - Concern: Narrow event-ops scope vs her transformation/strategy focus
-  - https://jobs.ashbyhq.com/docker/c9fffb9d-ca8d-4702-b364-a2b58125a273
+## NEW — WORTH REVIEWING (4)
+- **Program Manager Non Tech** — Aquent · 72/100 · remote REDMOND, WA, US (Remote) · up to $76/hr · posted 2026-09-10
+  - Why: Operational excellence and process optimization mandate
+  - Concern: Contract/temporary via staffing firm
+  - https://aquent.com/find-work/212938
+- **Director of Human Resources Operations - Remote** — Marriott International · 40/100 · remote Solon, OH (Remote) · $91,000 - $121,000 · first seen 2026-09-20
+  - Why: Priority employer Marriott, referral advantage
+  - Concern: Core mandate is HR compliance/payroll, not strategy
+  - https://careers.marriott.com/director-of-human-resources-operations-remote/job/P1-6886617-0
+- **Director of Operations — Full-Time | Remote (North America)** — Passive Income Dentist · 40/100 · remote Anywhere in the World (Remote) · posted 2026-09-19
+  - Why: Real operations ownership and org-building mandate
+  - Concern: Requires niche online coaching/education background
+  - https://weworkremotely.com/remote-jobs/passive-income-dentist-director-of-operations-full-time-remote-north-america
+- **Project Manager** — Echodyne · 40/100 · remote USA (Remote) · posted 2026-09-20
+  - Why: US-remote role fits location preference
+  - Concern: Hardware/radar technical domain is unfamiliar
+  - https://jobicy.com/jobs/153722-project-manager-5
 
 ## DISCOVERY / WILDCARDS (4)
 - **Business Planning & Operations Lead, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+5 more) · $123,100 - $186,300 · posted 2026-09-08
@@ -76,32 +60,27 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Operational excellence program leadership matches core domain
   - Concern: Quarterly in-person surges add travel
   - https://www.coinbase.com/careers/positions/8198059?gh_jid=8198059
-- **Sr. Program Manager, Member Experience** — Chime · 80/100 · remote Remote, USA · posted 2026-09-09
-  - Why: Member/CX operational excellence mandate
-  - Concern: Title below Director level
-  - https://boards.greenhouse.io/chime/jobs/8790458002?gh_jid=8790458002
 - **VP of Business Operations** — Maven Clinic · 80/100 · remote New York, NY; Remote, US (Hub cities) · posted 2026-09-09
   - Why: VP-level operating engine ownership
   - Concern: Enrollment/growth-metrics focus narrower than transformation mandate
   - https://job-boards.greenhouse.io/mavenclinic/jobs/8790269002
+- **Sr. Program Manager, Member Experience** — Chime · 80/100 · remote Remote, USA · posted 2026-09-09
+  - Why: Member/CX operational excellence mandate
+  - Concern: Title below Director level
+  - https://boards.greenhouse.io/chime/jobs/8790458002?gh_jid=8790458002
 - **Principal Value Advisor, DX** — Atlassian · 78/100 · remote Salt Lake City - United States; Remote - Remote · first seen 2026-09-15
   - Why: Atlassian priority employer with referral advantage
   - Concern: Deep financial/business-case modeling may be less proven
   - https://careers-americas.icims.com/jobs/26966/principal-value-advisor%2c-dx/job?mode=apply
 
-## REMOVED SINCE PRIOR RUN (12)
-- Product Manager / Product Owner — Aquent · No longer listed by its source
-- Principal Value Advisor, Value Management Office — Atlassian · No longer listed by its source
-- Genesys Platform Program Lead — Chime Financial, Inc · No longer listed by its source
-- Enterprise Open Source Management Program Lead — Eliassen · No longer listed by its source
-- IT Project Manager — Eliassen · No longer listed by its source
-- Senior Project Manager / Scrum Master — Eliassen · No longer listed by its source
-- Manager, Customer Success — Gainsight · No longer listed by its source
-- Director of Customer Experience Operations — Headway · No longer listed by its source
-- Knowledge & Enablement Lead — Mercury · No longer listed by its source
-- Sales & CX Enablement Partner — Osano · No longer listed by its source
-- AVP, Enterprise Program Portfolio Management - REMOTE — Prime Therapeutics · No longer listed by its source
-- Project Manager II — Robert Half · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (7)
+- Business Operations Director — HackerOne · No longer listed by its source
+- Sales Operations Manager, Foundry — Instructure · No longer listed by its source
+- Director, Customer Marketing — Keyfactor, Inc. · No longer listed by its source
+- Sales Enablement Manager — Revvity · No longer listed by its source
+- Program Manager - Branding — Robert Half · No longer listed by its source
+- Sr HR Project Manager SAP SuccessFactors (Contract Remote) — Robert Half · No longer listed by its source
+- Support Project Manager/Lead — Robert Half · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 133/137 successful
