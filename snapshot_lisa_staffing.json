@@ -78,90 +78,11 @@
   }
  },
  {
-  "key": "Robert Half::04838-0013493801-usen",
-  "company": "Robert Half",
-  "title": "Project Manager II",
-  "location": "Philadelphia, PA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/philadelphia-pa/project-manager-ii/04838-0013493801-usen",
-  "posted": "2026-09-17",
-  "salary": "$35.00\u2013$40.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote long-term contract role",
-    "Transformation and process documentation mandate",
-    "Cross-functional coordination fits background"
-   ],
-   "concerns": [
-    "Tactical PM/documentation-heavy, below her strategic level",
-    "Temp/contract through Robert Half staffing",
-    "Below typical seniority target"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 65,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote long-term contract role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::02100-0013497234-usen",
-  "company": "Robert Half",
-  "title": "Program Manager - Branding",
-  "location": "Boston, MA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/boston-ma/program-manager-branding/02100-0013497234-usen",
-  "posted": "2026-09-10",
-  "salary": "$40.00\u2013$50.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote program management with executive stakeholder work",
-    "Cross-functional strategic initiative ownership",
-    "Fits contract/temp employment openness",
-    "Solid fallback income/experience opportunity"
-   ],
-   "concerns": [
-    "Contract through year-end only",
-    "Branding focus is peripheral interest",
-    "Staffing agency intermediated role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 62,
-   "practical_fit": 75,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "maybe",
-   "reason": "Remote program management with executive stakeholder work",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::02960-0013490653-usen",
   "company": "Robert Half",
   "title": "Project Manager - Systems",
-  "location": "Irvine, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/irvine-ca/project-manager-systems/02960-0013490653-usen",
+  "location": "Suite 2040, California (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/suite-2040-california/project-manager-systems/02960-0013490653-usen",
   "posted": "2026-09-18",
   "salary": "$59.38\u2013$68.75/hr",
   "employment_type": "Temp to Perm",
@@ -196,11 +117,126 @@
   }
  },
  {
+  "key": "Robert Half::04838-0013510590-usen",
+  "company": "Robert Half",
+  "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
+  "location": "Philadelphia, Pennsylvania (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/philadelphia-pennsylvania/technical-project-manager-agile-scrum-iii-contractor/04838-0013510590-usen",
+  "posted": "2026-09-21",
+  "salary": "$53.00\u2013$58.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "HR transformation program mgmt fits background",
+    "Remote contract, 3-6 months",
+    "Cross-functional stakeholder coordination",
+    "Executive reporting experience aligns"
+   ],
+   "concerns": [
+    "Hands-on execution role, less strategic ownership",
+    "Short-term contract, not long-term fit"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 55,
+   "practical_fit": 75,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "HR transformation program mgmt fits background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::04838-0013493801-usen",
+  "company": "Robert Half",
+  "title": "Project Manager II",
+  "location": "Philadelphia, Pennsylvania (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/philadelphia-pennsylvania/project-manager-ii/04838-0013493801-usen",
+  "posted": "2026-09-17",
+  "salary": "$35.00\u2013$40.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote long-term contract role",
+    "Transformation and process documentation mandate",
+    "Cross-functional coordination fits background"
+   ],
+   "concerns": [
+    "Tactical PM/documentation-heavy, below her strategic level",
+    "Temp/contract through Robert Half staffing",
+    "Below typical seniority target"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 45,
+   "practical_fit": 65,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote long-term contract role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::02210-0013510672-usen",
+  "company": "Robert Half",
+  "title": "Endpoint Lead",
+  "location": "Troy, Michigan (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/troy-michigan/endpoint-lead/02210-0013510672-usen",
+  "posted": "2026-09-21",
+  "salary": "$47.50\u2013$55.00/hr",
+  "employment_type": "Temp to Perm",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Hands-on IT/endpoint engineering role, not transformation",
+    "Wrong function for candidate's profile"
+   ],
+   "concerns": [
+    "Requires deep technical Intune/Autopilot expertise",
+    "Not aligned with strategic/operations mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 15,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Hands-on IT/endpoint engineering role, not transformation",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Robert Half::04130-0013507659-usen",
   "company": "Robert Half",
   "title": "Support Project Manager/Lead",
-  "location": "Houston, TX (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/houston-tx/support-project-managerlead/04130-0013507659-usen",
+  "location": "Houston, Texas (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/houston-texas/support-project-managerlead/04130-0013507659-usen",
   "posted": "2026-09-16",
   "salary": "$57.00\u2013$66.00/hr",
   "employment_type": "Temp",
@@ -239,8 +275,8 @@
   "key": "Robert Half::00400-0013487121-usen",
   "company": "Robert Half",
   "title": "Finance Manager",
-  "location": "San Diego, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/san-diego-ca/finance-manager/00400-0013487121-usen",
+  "location": "San Diego, California (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/san-diego-california/finance-manager/00400-0013487121-usen",
   "posted": "2026-09-21",
   "salary": "$47.50\u2013$55.00/hr",
   "employment_type": "Temp",
@@ -274,166 +310,11 @@
   "rescued": true
  },
  {
-  "key": "Robert Half::00410-0013490011-usen",
-  "company": "Robert Half",
-  "title": "Project Manager",
-  "location": "Pleasanton, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/pleasanton-ca/project-manager/00410-0013490011-usen",
-  "posted": "2026-09-21",
-  "salary": "$30.00\u2013$35.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Marketing campaign PM work, tangential to core transformation focus",
-    "Temp contract could provide income",
-    "Remote listed but agency staffing role",
-    "Cross-functional coordination matches skillset"
-   ],
-   "concerns": [
-    "Below her strategic/transformation scope",
-    "Marketing execution focus, not org strategy",
-    "Staffing agency temp role, unclear duration"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Marketing campaign PM work, tangential to core transformation focus",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::02210-0013510672-usen",
-  "company": "Robert Half",
-  "title": "Endpoint Lead",
-  "location": "Troy, MI (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/troy-mi/endpoint-lead/02210-0013510672-usen",
-  "posted": "2026-09-21",
-  "salary": "$47.50\u2013$55.00/hr",
-  "employment_type": "Temp to Perm",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Hands-on IT/endpoint engineering role, not transformation",
-    "Wrong function for candidate's profile"
-   ],
-   "concerns": [
-    "Requires deep technical Intune/Autopilot expertise",
-    "Not aligned with strategic/operations mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 5,
-   "practical_fit": 15,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Hands-on IT/endpoint engineering role, not transformation",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::04838-0013510590-usen",
-  "company": "Robert Half",
-  "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
-  "location": "Philadelphia, PA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/philadelphia-pa/technical-project-manager-agile-scrum-iii-contractor/04838-0013510590-usen",
-  "posted": "2026-09-21",
-  "salary": "$53.00\u2013$58.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "HR transformation program mgmt fits background",
-    "Remote contract, 3-6 months",
-    "Cross-functional stakeholder coordination",
-    "Executive reporting experience aligns"
-   ],
-   "concerns": [
-    "Hands-on execution role, less strategic ownership",
-    "Short-term contract, not long-term fit"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 68,
-   "interest_fit": 55,
-   "practical_fit": 75,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "HR transformation program mgmt fits background",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::04510-0013502184-usen",
-  "company": "Robert Half",
-  "title": "ERP Project Manager",
-  "location": "Centreville, VA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/centreville-va/erp-project-manager/04510-0013502184-usen",
-  "posted": "2026-09-08",
-  "salary": "$79.16\u2013$91.66/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "ERP/finance functional PM role, not her domain",
-    "Requires deep Oracle Fusion accounting expertise",
-    "Not Utah/remote-US preferred location",
-    "Temp contract in narrow technical niche"
-   ],
-   "concerns": [
-    "Requires specific accounting/ERP system expertise she lacks",
-    "Onsite-flavored Virginia role despite remote label"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 30,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "ERP/finance functional PM role, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::00700-0013501410-usen",
   "company": "Robert Half",
   "title": "ServiceNow Manager",
-  "location": "New York, NY (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/new-york-ny/servicenow-manager/00700-0013501410-usen",
+  "location": "New York City, New York (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/new-york-city-new-york/servicenow-manager/00700-0013501410-usen",
   "posted": "2026-09-15",
   "salary": "$68.00\u2013$81.00/hr",
   "employment_type": "Temp",
@@ -467,42 +348,41 @@
   }
  },
  {
-  "key": "Robert Half::00902-0013505725-usen",
+  "key": "Robert Half::04510-0013502184-usen",
   "company": "Robert Half",
-  "title": "Sr HR Project Manager SAP SuccessFactors (Contract Remote)",
-  "location": "Atlanta, GA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/atlanta-ga/sr-hr-project-manager-sap-successfactors-contract-remote/00902-0013505725-usen",
-  "posted": "2026-09-16",
-  "salary": "$125.00\u2013$130.00/hr",
+  "title": "ERP Project Manager",
+  "location": "Centerville, Virginia (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/centerville-virginia/erp-project-manager/04510-0013502184-usen",
+  "posted": "2026-09-08",
+  "salary": "$79.16\u2013$91.66/hr",
   "employment_type": "Temp",
   "expires": "",
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "HR process design and transformation leadership",
-    "Remote contract fits practical constraints",
-    "Cross-functional stakeholder facilitation matches skillset",
-    "12-month contract useful for income/experience"
+    "ERP/finance functional PM role, not her domain",
+    "Requires deep Oracle Fusion accounting expertise",
+    "Not Utah/remote-US preferred location",
+    "Temp contract in narrow technical niche"
    ],
    "concerns": [
-    "Requires SAP SuccessFactors technical depth not evidenced",
-    "Intermittent travel to east coast client",
-    "Narrower systems-implementation focus than her core mandate"
+    "Requires specific accounting/ERP system expertise she lacks",
+    "Onsite-flavored Virginia role despite remote label"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
-   "practical_fit": 75,
-   "opportunity_score": 58,
-   "score": 58,
-   "fit": "maybe",
-   "reason": "HR process design and transformation leadership",
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 30,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "ERP/finance functional PM role, not her domain",
    "bg": "d192ce659668"
   }
  }

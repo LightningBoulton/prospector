@@ -58,13 +58,6 @@
    "note": ""
   },
   {
-   "key": "Acquia, Inc.::151261",
-   "company": "Acquia, Inc.",
-   "title": "Senior Product Marketing Manager, Cloud Platform & Drupal",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Adobe::R171468",
    "company": "Adobe",
    "title": "Dir, Software Development",
@@ -282,13 +275,6 @@
    "note": ""
   },
   {
-   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/ai-learning-systems-engineer-2611888472",
-   "company": "Bright Vision Technologies",
-   "title": "AI Learning Systems Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Calendly::8817389002",
    "company": "Calendly",
    "title": "Senior Full Stack Engineer, Notetaker",
@@ -334,13 +320,6 @@
    "key": "Chainguard::4712228006",
    "company": "Chainguard",
    "title": "Staff Software Engineer, Sustaining Automation",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Circle::JR101099",
-   "company": "Circle",
-   "title": "Senior Software Engineer, Frontend",
    "status": "",
    "note": ""
   },
@@ -438,7 +417,7 @@
   {
    "key": "Coinbase::8211490",
    "company": "Coinbase",
-   "title": "Senior Machine Learning Platform Engineer(Platform - Identity)",
+   "title": "Senior Machine Learning Platform Engineer",
    "status": "",
    "note": ""
   },
@@ -460,6 +439,13 @@
    "key": "Coinbase::8174949",
    "company": "Coinbase",
    "title": "Senior Software Engineer, Agent Verification",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8193862",
+   "company": "Coinbase",
+   "title": "Senior Software Engineer, Backend (Institutional -",
    "status": "",
    "note": ""
   },
@@ -555,13 +541,6 @@
    "note": ""
   },
   {
-   "key": "Cricut::744000150759989",
-   "company": "Cricut",
-   "title": "Mechanical Engineer, Test Development Engineering",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Customer.io::8191498",
    "company": "Customer.io",
    "title": "Staff Software Engineer, Backend",
@@ -579,13 +558,6 @@
    "key": "Deepgram::bf8ea79f-f380-467e-8349-ea1ea8281316",
    "company": "Deepgram",
    "title": "People AI & Automation Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Deepgram::1645ceac-3ef9-45ba-8386-49c7c43b14f0",
-   "company": "Deepgram",
-   "title": "Senior Forward Deployed Engineer (FDE), Strategic Accounts",
    "status": "",
    "note": ""
   },
@@ -611,9 +583,37 @@
    "note": ""
   },
   {
+   "key": "Discord::8823881002",
+   "company": "Discord",
+   "title": "Software Engineer, Safety Processing",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Discord::8802354002",
+   "company": "Discord",
+   "title": "Staff Software Engineer, Machine Learning (Consumer Revenue)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Doximity::8155070",
    "company": "Doximity",
    "title": "Senior Software Engineer, Data",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Dropbox::8211529",
+   "company": "Dropbox",
+   "title": "Data Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Engine::https://himalayas.app/companies/engine/jobs/senior-software-engineer-backend-1820649071",
+   "company": "Engine",
+   "title": "Senior Software Engineer, Backend",
    "status": "",
    "note": ""
   },
@@ -744,13 +744,6 @@
    "note": ""
   },
   {
-   "key": "GitLab::8739391002",
-   "company": "GitLab",
-   "title": "Staff Fullstack Engineer (Ruby/Vue.js) Monetization Engineering: Purchase",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "GitLab::8769103002",
    "company": "GitLab",
    "title": "Staff Infrastructure Security Engineer (USA)",
@@ -796,13 +789,6 @@
    "key": "Grow Therapy::f405e3d3-6eb3-46ec-9366-993b0f5e63dc",
    "company": "Grow Therapy",
    "title": "Staff Android Engineer (Founding)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Guidehouse::https://himalayas.app/companies/guidehouse/jobs/servicenow-developer",
-   "company": "Guidehouse",
-   "title": "ServiceNow Developer",
    "status": "",
    "note": ""
   },
@@ -975,6 +961,20 @@
    "note": ""
   },
   {
+   "key": "Moonlite::https://himalayas.app/companies/moonlite/jobs/senior-software-engineer-platform-infrastructure-2130760459",
+   "company": "Moonlite",
+   "title": "Senior Software Engineer, Platform Infrastructure",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "NICE::4981984101",
+   "company": "NICE",
+   "title": "Professional Services Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "NICE::4979749101",
    "company": "NICE",
    "title": "Senior Partner Success Implementation Engineer",
@@ -1139,6 +1139,13 @@
    "key": "Ramp::9916e9da-7491-4c99-afd1-e4b8158fa58b",
    "company": "Ramp",
    "title": "Software Engineer, Forward Deployed",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::7cd46077-05fe-4cd7-816f-5528638342f1",
+   "company": "Ramp",
+   "title": "Software Engineer, Frontend, Growth",
    "status": "",
    "note": ""
   },
@@ -1388,9 +1395,23 @@
    "note": ""
   },
   {
+   "key": "Samsara::8212787",
+   "company": "Samsara",
+   "title": "Senior Security Engineer - Threat Detection",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Samsara::8212286",
    "company": "Samsara",
-   "title": "Senior Security Operations Engineer I",
+   "title": "Senior Security Operations Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8223613",
+   "company": "Samsara",
+   "title": "Senior Security Operations Engineer",
    "status": "",
    "note": ""
   },
@@ -1416,7 +1437,14 @@
    "note": ""
   },
   {
-   "key": "Samsara::8205139",
+   "key": "Samsara::8205118",
+   "company": "Samsara",
+   "title": "Staff Application Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8205146",
    "company": "Samsara",
    "title": "Staff Application Security Engineer",
    "status": "",
@@ -1430,14 +1458,7 @@
    "note": ""
   },
   {
-   "key": "Samsara::8205118",
-   "company": "Samsara",
-   "title": "Staff Application Security Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8205146",
+   "key": "Samsara::8205139",
    "company": "Samsara",
    "title": "Staff Application Security Engineer",
    "status": "",
@@ -1517,13 +1538,6 @@
    "key": "Stripe::8172503",
    "company": "Stripe",
    "title": "Abuse Research Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Stripe::8130913",
-   "company": "Stripe",
-   "title": "Designer, Web Presence & Platform",
    "status": "",
    "note": ""
   },
@@ -1647,13 +1661,6 @@
    "note": ""
   },
   {
-   "key": "Twilio::8178588",
-   "company": "Twilio",
-   "title": "Machine Learning Engineer L2",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8171112",
    "company": "Twilio",
    "title": "Principal Presales Engineer, ISV HLS",
@@ -1685,13 +1692,6 @@
    "key": "Twilio::8157344",
    "company": "Twilio",
    "title": "Staff Security Engineer, Threat Hunting",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Vanta::b6064c79-c142-430f-9dbc-1bed9b2023c9",
-   "company": "Vanta",
-   "title": "Principal Software Engineer, Program Structure",
    "status": "",
    "note": ""
   },
@@ -1780,9 +1780,23 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-026095",
+   "company": "Western Governors University",
+   "title": "Principal Software Product Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-026169",
    "company": "Western Governors University",
    "title": "Senior Business Process Engineer - Transformation & Corporate Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-026160",
+   "company": "Western Governors University",
+   "title": "Senior Learning Systems Engineer- Salt Lake City, Utah",
    "status": "",
    "note": ""
   },
@@ -1794,16 +1808,16 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026182",
+   "key": "Western Governors University::JR-026038",
    "company": "Western Governors University",
-   "title": "Senior Software Engineer - Academy",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026053",
+   "key": "Western Governors University::JR-026182",
    "company": "Western Governors University",
-   "title": "Senior Software Engineer - WGU Labs",
+   "title": "Senior Software Engineer - Academy",
    "status": "",
    "note": ""
   },
@@ -1815,9 +1829,9 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025312",
+   "key": "Western Governors University::JR-025985",
    "company": "Western Governors University",
-   "title": "Software Engineer",
+   "title": "Software Engineer II - Academy",
    "status": "",
    "note": ""
   },
@@ -1843,6 +1857,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-026194",
+   "company": "Western Governors University",
+   "title": "Staff Software Engineer - Salesforce",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-026187",
    "company": "Western Governors University",
    "title": "Systems Engineer | Infrastructure",
@@ -1860,6 +1881,13 @@
    "key": "iCapital::8653759002",
    "company": "iCapital",
    "title": "Application Security Engineer - Assistant Vice President",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "infisical::153833",
+   "company": "infisical",
+   "title": "Solutions Engineer",
    "status": "",
    "note": ""
   },
