@@ -39,44 +39,6 @@
   }
  },
  {
-  "key": "DigiCert::8762020002",
-  "company": "DigiCert",
-  "title": "Head of Web Content Strategy",
-  "location": "US, Remote",
-  "url": "https://www.digicert.com/careers/?gh_jid=8762020002",
-  "posted": "2026-09-01",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote is practically strong",
-    "But role is web content/editorial, not transformation ops",
-    "Adjacent to content strategy skillset only marginally"
-   ],
-   "concerns": [
-    "Hands-on copywriting/editorial mandate, not strategic leadership",
-    "Weak match to core transformation/ops/M&A focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 90,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "US-remote is practically strong",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Cricut::744000149429449",
   "company": "Cricut",
   "title": "Project Manager, Hardware Development",
@@ -385,48 +347,6 @@
    "score": 78,
    "fit": "yes",
    "reason": "Strategy & Ops mandate fits core domain",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Adobe::R169255",
-  "company": "Adobe",
-  "title": "Director, Change and Release Management",
-  "location": "Lehi (+1 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Director--Change-and-Release-Management_R169255",
-  "posted": "2026-09-18",
-  "salary": "$151,500 - $301,050",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
-  "tier": "discovery",
-  "match_reason": "role family 'change' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Change management is core strength",
-    "Utah location (Lehi) fits well",
-    "Adobe priority employer with referral contact",
-    "Director title carries real scope",
-    "No description to confirm mandate"
-   ],
-   "concerns": [
-    "Could be ITSM/release-engineering focused, not org change",
-    "No description available to verify fit"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Change management is core strength",
    "bg": "d192ce659668"
   }
  },
@@ -1383,6 +1303,122 @@
    "score": 8,
    "fit": "no",
    "reason": "Construction/mechanical PM, wrong domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-023826",
+  "company": "Western Governors University",
+  "title": "Director Academic Delivery",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Director-Academic-Delivery_JR-023826-1",
+  "posted": "2026-09-23",
+  "salary": "$130,600.00 - $235,100.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'delivery' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-based director role",
+    "Delivery leadership could involve program ownership",
+    "Thin posting, education-sector specific"
+   ],
+   "concerns": [
+    "No description to assess mandate",
+    "Academic delivery may be domain-specific, not transformation-focused",
+    "Unclear strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 75,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Utah-based director role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-026183",
+  "company": "Western Governors University",
+  "title": "Staff Product Manager, Marketing Automation",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Product-Manager--Marketing-Automation_JR-026183",
+  "posted": "2026-09-23",
+  "salary": "$161,000.00 - $249,500.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'automation' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Product management, not transformation/ops leadership",
+    "Utah local location is practically attractive",
+    "Marketing automation adjacent to marketing ops"
+   ],
+   "concerns": [
+    "Wrong function - product manager IC-style role",
+    "No description to confirm scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 75,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Product management, not transformation/ops leadership",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-026195",
+  "company": "Western Governors University",
+  "title": "Technical Project Manager III",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-026195",
+  "posted": "2026-09-23",
+  "salary": "$108,200.00 - $162,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-local role, matches location preference",
+    "PM title has some scope overlap",
+    "No description to confirm transformation mandate",
+    "Technical PM may skew IT-execution not strategy"
+   ],
+   "concerns": [
+    "Title suggests technical/IT delivery focus, not strategic",
+    "No description available to verify true scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-local role, matches location preference",
    "bg": "d192ce659668"
   }
  },
