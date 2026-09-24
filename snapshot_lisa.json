@@ -1009,42 +1009,41 @@
   }
  },
  {
-  "key": "NICE::4962550101",
-  "company": "NICE",
-  "title": "Lead Client Services Project Manager, CX",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4962550101?gh_jid=4962550101",
-  "posted": "2026-09-02",
+  "key": "Pattern::1fbe2fb1-3f8c-4de3-8e47-de6a4c0dd3d7",
+  "company": "Pattern",
+  "title": "Customer Support Continuous Improvement Specialist",
+  "location": "Lehi, UT, US",
+  "url": "https://jobs.lever.co/pattern/1fbe2fb1-3f8c-4de3-8e47-de6a4c0dd3d7",
+  "posted": "2026-09-22",
   "salary": null,
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'customer' + mandate in description (operational excellence, continuous improvement, employee experience)",
   "fit_result": {
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Remote US role fits location preference",
-    "Client services/PM leadership overlaps operations experience",
-    "CX-adjacent but more delivery/PM than strategy",
-    "Professional services delivery aligns with core domains"
+    "Utah hybrid, strong practical fit",
+    "Operational excellence and continuous improvement mandate",
+    "Customer experience overlap with her CX background",
+    "Fast-growing tech company"
    ],
    "concerns": [
-    "Heavier on tactical PM execution than transformation/strategy",
-    "Title below her target seniority band",
-    "Less emphasis on org design or change leadership"
+    "Specialist title suggests limited scope/seniority",
+    "Frontline CS focus narrower than her strategic remit"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
+   "qualification_fit": 68,
+   "interest_fit": 65,
    "practical_fit": 90,
-   "opportunity_score": 60,
-   "score": 60,
+   "opportunity_score": 62,
+   "score": 62,
    "fit": "maybe",
-   "reason": "Remote US role fits location preference",
+   "reason": "Utah hybrid, strong practical fit",
    "bg": "d192ce659668"
   }
  },
@@ -1125,6 +1124,43 @@
   }
  },
  {
+  "key": "Kelso Industries::5433280008",
+  "company": "Kelso Industries",
+  "title": "Commercial HVAC Project Manager",
+  "location": "Atlanta, GA; Nashville, TN; Ogden, UT; Tampa, FL",
+  "url": "https://careers.kelso-industries.com/?gh_jid=5433280008",
+  "posted": "2026-09-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Wrong function: hands-on HVAC construction PM",
+    "Requires technical trade expertise, not transformation"
+   ],
+   "concerns": [
+    "No strategic/org transformation scope",
+    "Wrong domain entirely"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 30,
+   "opportunity_score": 12,
+   "score": 12,
+   "fit": "no",
+   "reason": "Wrong function: hands-on HVAC construction PM",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Kelso Industries::5424680008",
   "company": "Kelso Industries",
   "title": "HVAC Assistant Project Manager",
@@ -1158,6 +1194,45 @@
    "score": 15,
    "fit": "no",
    "reason": "Construction/trades project coordination, not her domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Kelso Industries::5434002008",
+  "company": "Kelso Industries",
+  "title": "Operational Systems Manager",
+  "location": "Draper, UT",
+  "url": "https://careers.kelso-industries.com/?gh_jid=5434002008",
+  "posted": "2026-09-24",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, adoption)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Utah-local role, strong practical fit",
+    "Adoption/continuous improvement mandate fits change background",
+    "Player-coach admin work not her core strength",
+    "Heavy Salesforce technical admin skew"
+   ],
+   "concerns": [
+    "Requires hands-on Salesforce admin expertise, not clearly demonstrated",
+    "More IT platform ops than transformation/strategy leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-local role, strong practical fit",
    "bg": "d192ce659668"
   }
  },
@@ -1342,44 +1417,6 @@
    "score": 40,
    "fit": "maybe",
    "reason": "Utah-based director role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Western Governors University::JR-026183",
-  "company": "Western Governors University",
-  "title": "Staff Product Manager, Marketing Automation",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Product-Manager--Marketing-Automation_JR-026183",
-  "posted": "2026-09-23",
-  "salary": "$161,000.00 - $249,500.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'automation' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Product management, not transformation/ops leadership",
-    "Utah local location is practically attractive",
-    "Marketing automation adjacent to marketing ops"
-   ],
-   "concerns": [
-    "Wrong function - product manager IC-style role",
-    "No description to confirm scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 75,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Product management, not transformation/ops leadership",
    "bg": "d192ce659668"
   }
  },
