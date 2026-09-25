@@ -1,5 +1,44 @@
 [
  {
+  "key": "Aquent::213283",
+  "company": "Aquent",
+  "title": "Project Manager",
+  "location": "Foster City, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213283",
+  "posted": "2026-09-24",
+  "salary": "up to $54.33/hr",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Operational process ownership and scaling fit her background",
+    "Remote contract role, practical for income",
+    "Cross-functional coordination aligns with transformation skills"
+   ],
+   "concerns": [
+    "Tactical PM ticket-triage work, below her strategic level",
+    "Staffing-firm contract, no leadership scope",
+    "Niche AV domain, limited long-term relevance"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 65,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Operational process ownership and scaling fit her background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Aquent::213238",
   "company": "Aquent",
   "title": "Content Strategy Producer - Beauty",
@@ -973,80 +1012,6 @@
   }
  },
  {
-  "key": "Eliassen::47658e37-b3bb-11f1-9a74-024201c20d84",
-  "company": "Eliassen",
-  "title": "Senior Workforce Management Product Lead",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/ZXIOsE/senior-workforce-management-product-lead-product-management-anywhere-a1wuq000001ups52aa",
-  "posted": "2026-09-21",
-  "salary": "$43.00 to $48.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (change management, adoption)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract role",
-    "Change management/adoption component present",
-    "Requires deep WFS/HRIS technical config expertise"
-   ],
-   "concerns": [
-    "Highly technical HRIS/payroll systems specialization mismatch",
-    "Low hourly rate contract",
-    "Not a strategic transformation mandate, more system implementation"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Remote contract role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::02210-0013510672-usen",
-  "company": "Robert Half",
-  "title": "Endpoint Lead",
-  "location": "Troy, Michigan (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/troy-michigan/endpoint-lead/02210-0013510672-usen",
-  "posted": "2026-09-21",
-  "salary": "$47.50\u2013$55.00/hr",
-  "employment_type": "Temp to Perm",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Hands-on IT endpoint engineering, not her domain"
-   ],
-   "concerns": [
-    "Wrong function entirely - technical IT ops"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 8,
-   "interest_fit": 10,
-   "practical_fit": 30,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Hands-on IT endpoint engineering, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::04838-0013510590-usen",
   "company": "Robert Half",
   "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
@@ -1086,81 +1051,75 @@
   }
  },
  {
-  "key": "Robert Half::04838-0013493801-usen",
+  "key": "Robert Half::02210-0013510672-usen",
   "company": "Robert Half",
-  "title": "Project Manager II",
-  "location": "Philadelphia, Pennsylvania (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/philadelphia-pennsylvania/project-manager-ii/04838-0013493801-usen",
-  "posted": "2026-09-17",
-  "salary": "$35.00\u2013$40.00/hr",
-  "employment_type": "Temp",
+  "title": "Endpoint Lead",
+  "location": "Troy, Michigan (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/troy-michigan/endpoint-lead/02210-0013510672-usen",
+  "posted": "2026-09-21",
+  "salary": "$47.50\u2013$55.00/hr",
+  "employment_type": "Temp to Perm",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
   "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
+   "recommendation": "not_recommended",
+   "confidence": "high",
    "reasons": [
-    "Remote long-term contract role",
-    "Transformation and process documentation mandate",
-    "Cross-functional coordination fits background"
+    "Hands-on IT endpoint engineering, not her domain"
    ],
    "concerns": [
-    "Tactical PM/documentation-heavy, below her strategic level",
-    "Temp/contract through Robert Half staffing",
-    "Below typical seniority target"
+    "Wrong function entirely - technical IT ops"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 65,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote long-term contract role",
+   "qualification_fit": 8,
+   "interest_fit": 10,
+   "practical_fit": 30,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Hands-on IT endpoint engineering, not her domain",
    "bg": "d192ce659668"
   }
  },
  {
-  "key": "Robert Half::04130-0013507659-usen",
+  "key": "Robert Half::00610-0013511666-usen",
   "company": "Robert Half",
-  "title": "Support Project Manager/Lead",
-  "location": "Houston, Texas (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/houston-texas/support-project-managerlead/04130-0013507659-usen",
-  "posted": "2026-09-22",
-  "salary": "$57.00\u2013$66.00/hr",
+  "title": "Project Manager (Non-IT): I (Junior)",
+  "location": "Mequon, Wisconsin (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/mequon-wisconsin/project-manager-non-it-i-junior/00610-0013511666-usen",
+  "posted": "2026-09-24",
+  "salary": "$25.00\u2013$28.00/hr",
   "employment_type": "Temp",
   "expires": "",
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Contract PM role could provide income",
-    "Remote noted but Houston-based temp role",
-    "Infrastructure/IT focus not core strength",
-    "Some change management overlap"
+    "Entry-level PM role far below her seniority",
+    "Temp/junior coordination work, no strategic ownership",
+    "Remote is a plus but scope too junior"
    ],
    "concerns": [
-    "Heavy technical/cloud infrastructure focus",
-    "Not aligned with strategic transformation goals",
-    "Temp contract, likely lower compensation"
+    "Junior title, tactical coordination not leadership",
+    "Would be significant step down in scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 45,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Contract PM role could provide income",
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 40,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Entry-level PM role far below her seniority",
    "bg": "d192ce659668"
   }
  },
@@ -1203,12 +1162,52 @@
   "rescued": true
  },
  {
+  "key": "Robert Half::04510-0013502184-usen",
+  "company": "Robert Half",
+  "title": "ERP Project Manager",
+  "location": "Centerville, Virginia (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/centerville-virginia/erp-project-manager/04510-0013502184-usen",
+  "posted": "2026-09-08",
+  "salary": "$79.16\u2013$91.66/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "ERP program leadership adjacent to transformation work",
+    "Remote-ish but Virginia-based contract",
+    "Requires deep Oracle Fusion/finance specialization",
+    "Contract work fits practical constraints"
+   ],
+   "concerns": [
+    "Heavy accounting/ERP technical depth not her core",
+    "Location Virginia despite remote label unclear",
+    "Narrow functional scope vs strategic mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 60,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "ERP program leadership adjacent to transformation work",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Robert Half::00902-0013505725-usen",
   "company": "Robert Half",
   "title": "Sr HR Project Manager SAP SuccessFactors (Contract Remote)",
   "location": "Atlanta, Georgia (Remote)",
   "url": "https://www.roberthalf.com/us/en/job/atlanta-georgia/sr-hr-project-manager-sap-successfactors-contract-remote/00902-0013505725-usen",
-  "posted": "2026-09-23",
+  "posted": "2026-09-24",
   "salary": "$125.00\u2013$130.00/hr",
   "employment_type": "Temp",
   "expires": "",
