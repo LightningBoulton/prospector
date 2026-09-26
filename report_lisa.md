@@ -1,49 +1,25 @@
-# Prospector — 2026-09-25
+# Prospector — 2026-09-26
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 12 closed/removed
+**8 new roles today** · 8 still worth applying · 5 closed/removed
 
-## NEW — WORTH REVIEWING (10)
-- **Senior Director, Capacity Planning, Workforce Operations & Analytics** — Omada Health · 68/100 · remote Remote, USA · posted 2026-09-24
-  - Why: US-remote role, strong practical fit
-  - Concern: Requires deep workforce capacity planning/analytics specialization
-  - https://job-boards.greenhouse.io/omadahealth/jobs/8221941
-- **AI Operations Lead, Toast IQ** — Toast · 68/100 · remote USA (Remote) · posted 2026-09-24
-  - Why: Fully remote US role
-  - Concern: Highly product/engineering-embedded, less strategy/M&A
-  - https://jobicy.com/jobs/154052-ai-operations-lead-toast-iq
-- **Senior Director, Sales and Revenue Operations** — Omada Health · 60/100 · remote Remote, USA · posted 2026-09-24
-  - Why: Fully remote US role
-  - Concern: Heavy sales-ops/comp-plan specialization not core background
-  - https://job-boards.greenhouse.io/omadahealth/jobs/8185092
-- **Commercial Finance and Operations Manager** — Grow Therapy · 58/100 · remote New York City (Remote) · $144K – $180.5K · posted 2026-09-24
-  - Why: Operating model and ops infrastructure build resonates
-  - Concern: Heavy finance/forecasting skew outside core strengths
-  - https://jobs.ashbyhq.com/grow-therapy/940b4a64-62d1-4f22-8c91-983244ef82a9
-- **Senior Director, Service Operations** — Marriott International · 55/100 · remote Bethesda, MD (Remote) · $146,000-$248,000 · first seen 2026-09-25
-  - Why: Marriott priority employer with referral advantage
-  - Concern: Deep IT service management/technical requirements not her core
-  - https://careers.marriott.com/senior-director-service-operations/job/P1-6926672-0
-- **Technical Program Manager** — Webflow · 55/100 · remote U.S. Remote · $212,500 - $255,000 · posted 2026-09-24
-  - Why: US-remote program leadership role
-  - Concern: Highly technical PM scope (engineering-native product launches)
-  - https://job-boards.greenhouse.io/webflow/jobs/8230796
-- **Billing Operations Lead** — Instacart · 45/100 · remote United States - Remote · posted 2026-09-24
-  - Why: Fully remote US role
-  - Concern: Heavy finance/billing specialization not her background
-  - https://instacart.careers/job/?gh_jid=8232310
-- **Legal Project Manager III** — Samsara · 45/100 · remote Remote - CA · posted 2026-09-24
-  - Why: Legal ops workflow design and AI adoption mandate
-  - Concern: Legal-specific domain expertise likely required
-  - https://www.samsara.com/company/careers/roles/8189002?gh_jid=8189002
-- **Senior Enterprise Implementation Consultant** — Samsara · 42/100 · remote Remote - US · posted 2026-09-24
-  - Why: Remote US role fits location preference
-  - Concern: More tactical deployment/IoT than transformation strategy
-  - https://www.samsara.com/company/careers/roles/8121968?gh_jid=8121968
-- **Director Of RevOps (SMSO046)** — Defense Unicorns · 40/100 · remote USA (Remote) · posted 2026-09-23
-  - Why: US-remote practical fit
-  - Concern: Very tactical, tool-administration heavy role
-  - https://jobicy.com/jobs/153955-director-of-revops-smso046
+## NEW — WORTH REVIEWING (4)
+- **Senior Program Manager, Vendor and Scaled Operations** — Thumbtack · 78/100 · remote Remote, United States · posted 2026-09-25
+  - Why: US-remote role matches location priority
+  - Concern: Vendor/BPO specialization narrower than broad transformation experience
+  - https://jobs.ashbyhq.com/thumbtack/b99ba30b-4339-4323-ac3e-9b6b0e21bb83
+- **Senior Channel Partner Manager, Strategic Advisory** — Ramp · 55/100 · remote New York, NY (HQ) (Remote) · $194K – $297K · posted 2026-09-25
+  - Why: Strategic partnership building resembles transformation ecosystem work
+  - Concern: Heavily biz-dev/channel sales oriented, not ops/transformation leadership
+  - https://jobs.ashbyhq.com/ramp/d2beca4a-7409-404b-8382-761e5db6e917
+- **FLEX Director of Design Operations, Design Systems** — Marriott International · 45/100 · remote Bethesda, MD (Remote) · $61.05-$81.25 · first seen 2026-09-26
+  - Why: Priority employer Marriott, referral advantage
+  - Concern: Requires deep UX/design-system domain expertise she lacks
+  - https://careers.marriott.com/flex-director-of-design-operations-design-systems/job/P1-6894858-0
+- **Senior Manager, Global Property Management Systems** — Marriott International · 40/100 · remote Bethesda, MD (Remote) · $110,400-$129,500 · first seen 2026-09-26
+  - Why: Priority employer with referral advantage
+  - Concern: Requires specific hotel systems expertise (Opera/FOSSE)
+  - https://careers.marriott.com/senior-manager-global-property-management-systems/job/P1-6938325-0
 
 ## DISCOVERY / WILDCARDS (4)
 - **Customer Strategy & Planning Director, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-09-24
@@ -72,10 +48,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: CX strategy + program ownership matches core domain
   - Concern: Coinbase intense culture with quarterly onsite surges
   - https://www.coinbase.com/careers/positions/8198065?gh_jid=8198065
-- **Operational Excellence Senior Program Lead** — Coinbase · 82/100 · remote Remote - USA · posted 2026-09-11
-  - Why: Operational excellence program leadership matches core domain
-  - Concern: Quarterly in-person surges add travel
-  - https://www.coinbase.com/careers/positions/8198059?gh_jid=8198059
 - **Staff Professional Services Operations Manager** — GitLab · 82/100 · remote Remote, Canada; Remote, United States · posted 2026-09-23
   - Why: Professional services operations leadership mandate
   - Concern: Staff level may be narrower than Director scope
@@ -88,32 +60,29 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Cross-functional program leadership with customer experience focus
   - Concern: Title is Program Manager, may be below her target seniority
   - https://stripe.com/jobs/search?gh_jid=8181030
-- **Strategic Technical Project Manager, AI Deployments** — Gainsight · 78/100 · remote USA - FL - Remote · posted 2026-09-23
-  - Why: Fully US-remote role
-  - Concern: Technical PM title may be narrower than her strategic scope
-  - https://jobs.ashbyhq.com/gainsight/b93d429b-fb79-4005-bbaf-422e274d401f
 - **Senior Staff Operations Manager, Office of the President (PED)** — Squarespace · 78/100 · remote Anywhere in the World (Remote) · posted 2026-09-23
   - Why: Chief-of-Staff style operating model ownership
   - Concern: Remote limited to California or NYC HQ, not fully US-remote
   - https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped
+- **Strategic Technical Project Manager, AI Deployments** — Gainsight · 78/100 · remote USA - FL - Remote · posted 2026-09-23
+  - Why: Fully US-remote role
+  - Concern: Technical PM title may be narrower than her strategic scope
+  - https://jobs.ashbyhq.com/gainsight/b93d429b-fb79-4005-bbaf-422e274d401f
+- **Resource & Workflow Transformation Manager** — Aquent · 76/100 · remote San Francisco, CA, US (Remote) · posted 2026-09-15
+  - Why: Operating model/workflow transformation mandate
+  - Concern: Contract/temporary via staffing firm
+  - https://aquent.com/find-work/213042
 
-## REMOVED SINCE PRIOR RUN (12)
-- Sr. Program & Portfolio Manager (IT) — Adobe · No longer listed by its source
-- Senior Enterprise Delivery Manager, Migrations — Atlassian · No longer listed by its source
-- Senior Digital Success Manager — Atlassian · No longer listed by its source
-- Chief of Staff, Payer — Headway · No longer listed by its source
-- Director, AI Center of Excellence — Instructure · No longer listed by its source
-- FLEX Director, Digital Analytics — Marriott International · No longer listed by its source
-- FLEX Senior Manager, Operational Performance — Marriott International · No longer listed by its source
-- Director of Human Resources Operations - Remote — Marriott International · No longer listed by its source
-- Senior Manager, GTM Enablement — NetBox Labs · No longer listed by its source
-- Project Manager II — Robert Half · No longer listed by its source
-- Support Project Manager/Lead — Robert Half · No longer listed by its source
-- Senior Scaled Customer Education Specialist — Samsara · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (5)
+- Manager, Customer Success Operations — AlphaSense · No longer listed by its source
+- Senior Manager, Customer Success Operations — AlphaSense · No longer listed by its source
+- Senior Analyst, Service Operations — Angi · No longer listed by its source
+- Program Manager, Customers — Dropbox · No longer listed by its source
+- Program Manager, Competitive Programs — Stripe · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 133/137 successful
 - Temporary errors: 0
-- Needs attention: 26
+- Needs attention: 27
   - Broken config: ClickHouse, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Mixpanel, Nav, PBS, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
+  - Returning nothing for 10+ runs: Airtable, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Mixpanel, Nav, PBS, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
