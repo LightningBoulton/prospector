@@ -1,25 +1,7 @@
-# Prospector — 2026-09-26
+# Prospector — 2026-09-27
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**8 new roles today** · 8 still worth applying · 5 closed/removed
-
-## NEW — WORTH REVIEWING (4)
-- **Senior Program Manager, Vendor and Scaled Operations** — Thumbtack · 78/100 · remote Remote, United States · posted 2026-09-25
-  - Why: US-remote role matches location priority
-  - Concern: Vendor/BPO specialization narrower than broad transformation experience
-  - https://jobs.ashbyhq.com/thumbtack/b99ba30b-4339-4323-ac3e-9b6b0e21bb83
-- **Senior Channel Partner Manager, Strategic Advisory** — Ramp · 55/100 · remote New York, NY (HQ) (Remote) · $194K – $297K · posted 2026-09-25
-  - Why: Strategic partnership building resembles transformation ecosystem work
-  - Concern: Heavily biz-dev/channel sales oriented, not ops/transformation leadership
-  - https://jobs.ashbyhq.com/ramp/d2beca4a-7409-404b-8382-761e5db6e917
-- **FLEX Director of Design Operations, Design Systems** — Marriott International · 45/100 · remote Bethesda, MD (Remote) · $61.05-$81.25 · first seen 2026-09-26
-  - Why: Priority employer Marriott, referral advantage
-  - Concern: Requires deep UX/design-system domain expertise she lacks
-  - https://careers.marriott.com/flex-director-of-design-operations-design-systems/job/P1-6894858-0
-- **Senior Manager, Global Property Management Systems** — Marriott International · 40/100 · remote Bethesda, MD (Remote) · $110,400-$129,500 · first seen 2026-09-26
-  - Why: Priority employer with referral advantage
-  - Concern: Requires specific hotel systems expertise (Opera/FOSSE)
-  - https://careers.marriott.com/senior-manager-global-property-management-systems/job/P1-6938325-0
+**4 new roles today** · 8 still worth applying · 4 closed/removed
 
 ## DISCOVERY / WILDCARDS (4)
 - **Customer Strategy & Planning Director, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-09-24
@@ -60,29 +42,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Cross-functional program leadership with customer experience focus
   - Concern: Title is Program Manager, may be below her target seniority
   - https://stripe.com/jobs/search?gh_jid=8181030
-- **Senior Staff Operations Manager, Office of the President (PED)** — Squarespace · 78/100 · remote Anywhere in the World (Remote) · posted 2026-09-23
-  - Why: Chief-of-Staff style operating model ownership
-  - Concern: Remote limited to California or NYC HQ, not fully US-remote
-  - https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped
 - **Strategic Technical Project Manager, AI Deployments** — Gainsight · 78/100 · remote USA - FL - Remote · posted 2026-09-23
   - Why: Fully US-remote role
   - Concern: Technical PM title may be narrower than her strategic scope
   - https://jobs.ashbyhq.com/gainsight/b93d429b-fb79-4005-bbaf-422e274d401f
-- **Resource & Workflow Transformation Manager** — Aquent · 76/100 · remote San Francisco, CA, US (Remote) · posted 2026-09-15
-  - Why: Operating model/workflow transformation mandate
-  - Concern: Contract/temporary via staffing firm
-  - https://aquent.com/find-work/213042
+- **Senior Staff Operations Manager, Office of the President (PED)** — Squarespace · 78/100 · remote Anywhere in the World (Remote) · posted 2026-09-23
+  - Why: Chief-of-Staff style operating model ownership
+  - Concern: Remote limited to California or NYC HQ, not fully US-remote
+  - https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped
+- **Senior Program Manager, Vendor and Scaled Operations** — Thumbtack · 78/100 · remote Remote, United States · posted 2026-09-25
+  - Why: US-remote role matches location priority
+  - Concern: Vendor/BPO specialization narrower than broad transformation experience
+  - https://jobs.ashbyhq.com/thumbtack/b99ba30b-4339-4323-ac3e-9b6b0e21bb83
 
-## REMOVED SINCE PRIOR RUN (5)
-- Manager, Customer Success Operations — AlphaSense · No longer listed by its source
-- Senior Manager, Customer Success Operations — AlphaSense · No longer listed by its source
-- Senior Analyst, Service Operations — Angi · No longer listed by its source
-- Program Manager, Customers — Dropbox · No longer listed by its source
-- Program Manager, Competitive Programs — Stripe · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (4)
+- Senior Analyst, Customer Success Operations — AlphaSense · No longer listed by its source
+- Product Manager, AI Transformation & Salesforce — Goodleap · No longer listed by its source
+- Director, Partner Programs, Enablement, and Operations — Ping Identity · No longer listed by its source
+- Lead Revenue Operations Analyst — Spreedly · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 133/137 successful
 - Temporary errors: 0
-- Needs attention: 27
+- Needs attention: 28
   - Broken config: ClickHouse, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Mixpanel, Nav, PBS, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
+  - Returning nothing for 10+ runs: Airtable, Alchemy, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Mixpanel, Nav, PBS, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave

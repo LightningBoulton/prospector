@@ -1052,41 +1052,6 @@
   }
  },
  {
-  "key": "Robert Half::02210-0013510672-usen",
-  "company": "Robert Half",
-  "title": "Endpoint Lead",
-  "location": "Troy, Michigan (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/troy-michigan/endpoint-lead/02210-0013510672-usen",
-  "posted": "2026-09-21",
-  "salary": "$47.50\u2013$55.00/hr",
-  "employment_type": "Temp to Perm",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Hands-on IT endpoint engineering, not her domain"
-   ],
-   "concerns": [
-    "Wrong function entirely - technical IT ops"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 8,
-   "interest_fit": 10,
-   "practical_fit": 30,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Hands-on IT endpoint engineering, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::04838-0013510590-usen",
   "company": "Robert Half",
   "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
@@ -1122,6 +1087,41 @@
    "score": 55,
    "fit": "maybe",
    "reason": "HR transformation program mgmt fits background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::02210-0013510672-usen",
+  "company": "Robert Half",
+  "title": "Endpoint Lead",
+  "location": "Troy, Michigan (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/troy-michigan/endpoint-lead/02210-0013510672-usen",
+  "posted": "2026-09-21",
+  "salary": "$47.50\u2013$55.00/hr",
+  "employment_type": "Temp to Perm",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Hands-on IT endpoint engineering, not her domain"
+   ],
+   "concerns": [
+    "Wrong function entirely - technical IT ops"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 8,
+   "interest_fit": 10,
+   "practical_fit": 30,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Hands-on IT endpoint engineering, not her domain",
    "bg": "d192ce659668"
   }
  },
@@ -1241,46 +1241,6 @@
   "rescued": true
  },
  {
-  "key": "Robert Half::00902-0013505725-usen",
-  "company": "Robert Half",
-  "title": "Sr HR Project Manager SAP SuccessFactors (Contract Remote)",
-  "location": "Atlanta, Georgia (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/atlanta-georgia/sr-hr-project-manager-sap-successfactors-contract-remote/00902-0013505725-usen",
-  "posted": "2026-09-24",
-  "salary": "$125.00\u2013$130.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract fits flexibility needs",
-    "HR process design and transformation overlap",
-    "Project leadership and stakeholder facilitation match skills",
-    "SuccessFactors specialization is a gap"
-   ],
-   "concerns": [
-    "Requires deep SAP SuccessFactors technical expertise",
-    "12-month contract, not permanent",
-    "Intermittent travel required"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 50,
-   "practical_fit": 65,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Remote contract fits flexibility needs",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::00700-0013501410-usen",
   "company": "Robert Half",
   "title": "ServiceNow Manager",
@@ -1319,40 +1279,42 @@
   }
  },
  {
-  "key": "Robert Half::00700-0013510110-usen",
+  "key": "Robert Half::00902-0013505725-usen",
   "company": "Robert Half",
-  "title": "Senior Solutions Architect",
-  "location": "Newington, Connecticut (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/newington-connecticut/senior-solutions-architect/00700-0013510110-usen",
-  "posted": "2026-09-25",
-  "salary": "$50.00\u2013$50.00/hr",
+  "title": "Sr HR Project Manager SAP SuccessFactors (Contract Remote)",
+  "location": "Atlanta, Georgia (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/atlanta-georgia/sr-hr-project-manager-sap-successfactors-contract-remote/00902-0013505725-usen",
+  "posted": "2026-09-24",
+  "salary": "$125.00\u2013$130.00/hr",
   "employment_type": "Temp",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "mandate in description (change management, adoption)",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
+   "recommendation": "practical_contract",
+   "confidence": "medium",
    "reasons": [
-    "Requires deep technical WFM/payroll systems expertise",
-    "Not her domain despite change management overlap",
-    "Highly technical solution architecture role"
+    "Remote contract fits flexibility needs",
+    "HR process design and transformation overlap",
+    "Project leadership and stakeholder facilitation match skills",
+    "SuccessFactors specialization is a gap"
    ],
    "concerns": [
-    "Wrong function - technical systems architecture, not organizational strategy",
-    "Requires specific workforce management platform expertise she lacks"
+    "Requires deep SAP SuccessFactors technical expertise",
+    "12-month contract, not permanent",
+    "Intermittent travel required"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 30,
-   "practical_fit": 40,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Requires deep technical WFM/payroll systems expertise",
+   "qualification_fit": 55,
+   "interest_fit": 50,
+   "practical_fit": 65,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote contract fits flexibility needs",
    "bg": "d192ce659668"
   }
  }

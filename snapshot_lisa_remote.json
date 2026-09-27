@@ -1814,44 +1814,6 @@
   }
  },
  {
-  "key": "Baseten::28291849-b57f-4813-a7e0-66b1050b2d1b",
-  "company": "Baseten",
-  "title": "Capacity Manager, Operations",
-  "location": "San Francisco (Remote)",
-  "url": "https://jobs.ashbyhq.com/baseten/28291849-b57f-4813-a7e0-66b1050b2d1b",
-  "posted": "2026-09-05",
-  "salary": "$225K \u2013 $235K",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Highly technical GPU fleet ops, not strategic mandate",
-    "Not org transformation, CX, or program leadership work",
-    "Vendor SLA/technical operator role mismatched to background"
-   ],
-   "concerns": [
-    "Requires deep infrastructure/GPU domain expertise",
-    "No strategic or organizational scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 28,
-   "interest_fit": 22,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Highly technical GPU fleet ops, not strategic mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Baseten::768bca5d-287f-405a-b677-605317607178",
   "company": "Baseten",
   "title": "Capacity Strategy & Operations",
@@ -3223,43 +3185,43 @@
   }
  },
  {
-  "key": "Turner & Townsend::https://himalayas.app/companies/turner-townsend/jobs/associate-project-manager-program-management-office",
-  "company": "Turner & Townsend",
-  "title": "Associate Project Manager, Program Management Office",
+  "key": "STACK Construction Technologies::https://himalayas.app/companies/stack-construction-technologies/jobs/vice-president-of-corporate-development-strategic-partnerships-3746066411",
+  "company": "STACK Construction Technologies",
+  "title": "Vice President of Corporate Development & Strategic Partnerships",
   "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/turner-townsend/jobs/associate-project-manager-program-management-office",
-  "posted": "2026-09-26",
-  "salary": "$100,000\u2013$125,000",
+  "url": "https://himalayas.app/companies/stack-construction-technologies/jobs/vice-president-of-corporate-development-strategic-partnerships-3746066411",
+  "posted": "2026-09-27",
+  "salary": "$165,000\u2013$200,000",
   "employment_type": "Full Time",
-  "expires": "2026-11-25",
+  "expires": "2026-11-26",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Junior generalist PMO execution role",
-    "Below her seniority and strategic scope",
-    "Remote but requires clearance/travel"
+    "M&A integration adjacent but role is deal-sourcing focused",
+    "Remote US fits location preference",
+    "Requires corp dev/banking deal skills not her background"
    ],
    "concerns": [
-    "Not executive-facing, tactical/task-level work",
-    "Federal clearance requirement adds friction",
-    "Underuses transformation/strategy experience"
+    "Primary mandate is sourcing/structuring deals, not integration",
+    "Little emphasis on org design or transformation execution"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
-   "reason": "Junior generalist PMO execution role",
+   "reason": "M&A integration adjacent but role is deal-sourcing focused",
    "bg": "d192ce659668"
-  }
+  },
+  "rescued": true
  },
  {
   "key": "Squarespace::https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped",
@@ -3537,6 +3499,85 @@
   }
  },
  {
+  "key": "Expel::https://weworkremotely.com/remote-jobs/expel-customer-success-manager-scale",
+  "company": "Expel",
+  "title": "Customer Success Manager, Scale",
+  "location": "Anywhere in the World (Remote)",
+  "url": "https://weworkremotely.com/remote-jobs/expel-customer-success-manager-scale",
+  "posted": "2026-09-27",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "2026-10-27",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Operating model design for scale CS",
+    "Fully remote US role",
+    "Below her seniority/scope level",
+    "Individual contributor execution focus"
+   ],
+   "concerns": [
+    "Not a leadership/strategic mandate",
+    "Narrow CSM IC role despite ops-design framing"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 50,
+   "interest_fit": 45,
+   "practical_fit": 90,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Operating model design for scale CS",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "PagerDuty::https://weworkremotely.com/remote-jobs/pagerduty-account-manager-boston",
+  "company": "PagerDuty",
+  "title": "Account Manager - Boston",
+  "location": "Anywhere in the World (Remote)",
+  "url": "https://weworkremotely.com/remote-jobs/pagerduty-account-manager-boston",
+  "posted": "2026-09-27",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "2026-10-27",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "mandate in description (adoption, value realization); demoted to wildcards by the precision rule 'account manager'",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Quota-carrying sales/renewals role",
+    "Not a transformation or ops leadership mandate",
+    "Account management not core fit"
+   ],
+   "concerns": [
+    "Sales-quota ownership flagged as weak fit",
+    "Not aligned with strategic scope goals"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 25,
+   "practical_fit": 60,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Quota-carrying sales/renewals role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Ping Identity::https://weworkremotely.com/remote-jobs/ping-identity-customer-success-manager",
   "company": "Ping Identity",
   "title": "Customer Success Manager",
@@ -3773,45 +3814,6 @@
   }
  },
  {
-  "key": "PagerDuty::https://weworkremotely.com/remote-jobs/pagerduty-account-manager-dc",
-  "company": "PagerDuty",
-  "title": "Account Manager- DC",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/pagerduty-account-manager-dc",
-  "posted": "2026-09-05",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-10-05",
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "mandate in description (adoption, value realization); demoted to wildcards by the precision rule 'account manager'",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Sales/renewals-quota account management role",
-    "Not transformation or operations leadership mandate",
-    "Remote practical fit is strong but role type mismatched"
-   ],
-   "concerns": [
-    "Quota-carrying sales role, not strategic scope",
-    "Weak alignment with core domains"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Sales/renewals-quota account management role",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "DeleteMe::153790",
   "company": "DeleteMe",
   "title": "Partner Business Manager",
@@ -3965,40 +3967,80 @@
   }
  },
  {
-  "key": "Concept Plus::150198",
-  "company": "Concept Plus",
-  "title": "Capture Management Director",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/150198-capture-management-director",
-  "posted": "2026-09-05",
+  "key": "Forma.ai::151911",
+  "company": "Forma.ai",
+  "title": "Principal Consultant, Sales Effectiveness",
+  "location": "Canada,  USA (Remote)",
+  "url": "https://jobicy.com/jobs/151911-principal-consultant-sales-effectiveness",
+  "posted": "2026-09-27",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (digital transformation, p&l)",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "not_recommended",
+   "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Business capture/BD role, not transformation ownership",
-    "Remote US aligns practically",
-    "Federal proposal/capture skillset mismatch"
+    "Remote US-eligible role",
+    "Consulting/implementation leadership fits transferable skills",
+    "Sales comp/territory domain is niche and specialized",
+    "Client-facing transformation-adjacent work"
    ],
    "concerns": [
-    "Core mandate is sales capture, not her domain",
-    "No org design or transformation ownership described"
+    "Deep sales compensation/quota domain expertise required",
+    "Narrower scope than her transformation/ops mandate"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 30,
-   "practical_fit": 85,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Business capture/BD role, not transformation ownership",
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote US-eligible role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "AECOM::144476",
+  "company": "AECOM",
+  "title": "Program Manager Facility Design, Data Centers - Remote (U.S.)",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/144476-program-manager-facility-design-data-centers-remote-u-s-2",
+  "posted": "2026-09-27",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Program management scope",
+    "US-remote practical fit",
+    "Data center technical domain mismatch",
+    "Requires hands-on facility design expertise"
+   ],
+   "concerns": [
+    "Highly technical construction/engineering focus",
+    "Not organizational transformation or CX work"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 75,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Program management scope",
    "bg": "d192ce659668"
   }
  },
@@ -4354,162 +4396,6 @@
   }
  },
  {
-  "key": "Ping Identity::153830",
-  "company": "Ping Identity",
-  "title": "Director, Partner Programs, Enablement, and Operations",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/153830-director-partner-programs-enablement-and-operations",
-  "posted": "2026-09-21",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote role fits location preference",
-    "Chief-of-staff style operating leadership matches strengths",
-    "Program design and enablement align with core domains",
-    "Cross-functional strategy-to-execution scope"
-   ],
-   "concerns": [
-    "Partner/channel program specialization is a gap",
-    "Less direct CX/transformation mandate than target roles"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 68,
-   "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "US-remote role fits location preference",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Goodleap::153824",
-  "company": "Goodleap",
-  "title": "Product Manager, AI Transformation & Salesforce",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/153824-product-manager-ai-transformation-salesforce",
-  "posted": "2026-09-21",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "AI enablement and transformation mandate",
-    "Remote US role matches top location preference",
-    "Employee/customer experience focus aligns",
-    "Cross-functional stakeholder alignment fits strengths"
-   ],
-   "concerns": [
-    "Product Manager title suggests hands-on PM/technical scope",
-    "Requires Salesforce platform expertise not evidenced",
-    "May need deep technical PM background"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 75,
-   "practical_fit": 90,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "maybe",
-   "reason": "AI enablement and transformation mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Spreedly::153789",
-  "company": "Spreedly",
-  "title": "Lead Revenue Operations Analyst",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/153789-lead-revenue-operations-analyst",
-  "posted": "2026-09-21",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Fully remote US role",
-    "RevOps touches operations and GTM strategy",
-    "Senior IC scope with real influence",
-    "Not core transformation or org design"
-   ],
-   "concerns": [
-    "Heavy quantitative sales forecasting focus",
-    "Narrow revenue ops specialization vs her broader mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Fully remote US role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "AlphaSense::150339",
-  "company": "AlphaSense",
-  "title": "Senior Analyst, Customer Success Operations",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/150339-senior-analyst-customer-success-operations",
-  "posted": "2026-09-21",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'operations' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Customer success operations aligns with ops/CX experience",
-    "Fully remote US role fits top location preference",
-    "Cross-functional process improvement matches strengths"
-   ],
-   "concerns": [
-    "Senior Analyst level is below her typical scope",
-    "Title suggests IC/analyst tactical work, not leadership mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
-   "practical_fit": 90,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Customer success operations aligns with ops/CX experience",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Articulate::153775",
   "company": "Articulate",
   "title": "Principal People Experience Partner",
@@ -4707,38 +4593,80 @@
   }
  },
  {
-  "key": "6sense::152586",
-  "company": "6sense",
-  "title": "Benefits Partner",
+  "key": "Medely::154100",
+  "company": "Medely",
+  "title": "Revenue Enablement Lead",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152586-benefits-partner",
-  "posted": "2026-09-05",
+  "url": "https://jobicy.com/jobs/154100-revenue-enablement-lead-2",
+  "posted": "2026-09-27",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "mandate in description (service delivery, governance)",
+  "match_reason": "role family 'enablement' + seniority in title",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
+   "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "Core benefits administration, not transformation leadership",
-    "Wrong functional domain despite remote appeal"
+    "US-remote practical fit is strong",
+    "Enablement/coaching adjacent to org effectiveness",
+    "Sales enablement is not core expertise",
+    "Some transferable program-building skills"
    ],
    "concerns": [
-    "HR benefits specialist role, not strategic scope"
+    "Sales-specific enablement, not her core domain",
+    "Quota-driven sales culture mismatch",
+    "Limited strategic/transformation scope described"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 70,
-   "opportunity_score": 20,
-   "score": 20,
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 42,
+   "score": 42,
+   "fit": "maybe",
+   "reason": "US-remote practical fit is strong",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Obsidian Security::151648",
+  "company": "Obsidian Security",
+  "title": "Senior Customer Marketing Manager",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/151648-senior-customer-marketing-manager-4",
+  "posted": "2026-09-27",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'customer' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Customer marketing/advocacy, not transformation or ops",
+    "Remote US location is practical",
+    "Narrow functional scope vs her strategic mandate"
+   ],
+   "concerns": [
+    "Wrong function: marketing execution not strategy/ops leadership",
+    "No transformation, M&A, or operating model scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 35,
+   "practical_fit": 90,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "reason": "Core benefits administration, not transformation leadership",
+   "reason": "Customer marketing/advocacy, not transformation or ops",
    "bg": "d192ce659668"
   }
  },
@@ -4928,44 +4856,6 @@
    "score": 32,
    "fit": "no",
    "reason": "US-remote, Utah-adjacent employer",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Acceleration Partners::154035",
-  "company": "Acceleration Partners",
-  "title": "Director, Influencer Strategy",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/154035-director-influencer-strategy",
-  "posted": "2026-09-24",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote practical fit is strong",
-    "But mandate is influencer marketing sales enablement",
-    "Not org transformation or operations work"
-   ],
-   "concerns": [
-    "Wrong domain: influencer/marketing strategy not core fit",
-    "No operating model or transformation scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 85,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "US-remote practical fit is strong",
    "bg": "d192ce659668"
   }
  },
