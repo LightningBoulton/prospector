@@ -1,7 +1,33 @@
-# Prospector — 2026-09-27
+# Prospector — 2026-09-28
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**4 new roles today** · 8 still worth applying · 4 closed/removed
+**10 new roles today** · 8 still worth applying · 12 closed/removed
+
+## NEW — WORTH REVIEWING (6)
+- **Manager of Sales Enablement** — Canopy · 58/100 · hybrid Draper · posted 2026-09-28
+  - Why: Utah hybrid location matches strong practical preference
+  - Concern: Sales enablement is narrower than her transformation/CX focus
+  - https://job-boards.greenhouse.io/canopytax/jobs/4423089009
+- **Senior Principal Outbound Product Manager - Service Collection** — Atlassian · 55/100 · remote New York - United States; San Francisco - United States; Austin - United States; Mountain View - United States or Remote; Washington DC - United States · first seen 2026-09-28
+  - Why: Priority employer Atlassian, referral advantage
+  - Concern: Requires deep enterprise product management experience
+  - https://careers-americas.icims.com/jobs/27426/senior-principal-outbound-product-manager---service-collection/job?mode=apply
+- **Solution Design Consultant** — Gainsight · 55/100 · remote USA - TN - Remote · posted 2026-09-28
+  - Why: Diagnostic-to-business-case design mirrors transformation consulting skills
+  - Concern: Deep renewal/subscription revenue ops specialization may be a gap
+  - https://jobs.ashbyhq.com/gainsight/d29817bf-1ca2-49e0-bc8d-4a469d0c1db9
+- **Senior Manager, Technical Program Management** — GitLab · 55/100 · remote Remote · posted 2026-09-28
+  - Why: Program management leadership, PMO build-out
+  - Concern: Highly technical software engineering program context
+  - https://job-boards.greenhouse.io/gitlab/jobs/8845972002
+- **Associate Director, Appeals & Grievances** — Oscar Health · 45/100 · remote Remote · $ 123,372.00- $161,925.75 · posted 2026-09-25
+  - Why: Operational excellence and Lean mandate
+  - Concern: Deep regulatory/compliance specialization in health insurance appeals
+  - https://job-boards.greenhouse.io/oscar/jobs/8227025
+- **Sr Technical Project/Program Manager** — Eliassen · 45/100 · remote Remote · $50.00 to $55.00 · posted 2026-09-28
+  - Why: Remote W2 contract fits income/experience option
+  - Concern: No healthcare payer experience demonstrated
+  - https://careers.eliassen.com/oqqL9j/sr-technical-projectprogram-manager-programproject-management-anywhere-a1wuq000001veg52aa
 
 ## DISCOVERY / WILDCARDS (4)
 - **Customer Strategy & Planning Director, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-09-24
@@ -12,14 +38,14 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Transformation & strategic programs mandate matches core domain
   - Concern: No job description available to confirm scope
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Indianapolis/Strategic---Transformation-Programs--Senior-Manager--Customer-Success-_JR361415
+- **Human-Centered Change Senior Manager** — Salesforce · 78/100 · remote Remote (+6 more) · $150,100 - $227,000 · posted 2026-09-28
+  - Why: Change management senior manager mandate
+  - Concern: No description available to confirm scope
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Remote/Human-Centered-Change-Senior-Manager_JR359449-1
 - **Senior Director, Chief Operating Officer, Maestro** — Salesforce · 72/100 · remote Indiana - Remote · posted 2026-09-22
   - Why: Salesforce priority employer
   - Concern: No description to confirm scope
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Remote/Senior-Director--Chief-Operating-Officer--Maestro_JR360274
-- **Senior Experience Architect (Professional Services)** — Salesforce · 68/100 · remote Remote (+4 more) · $172,500 - $260,100 · posted 2026-09-24
-  - Why: Professional services leadership at priority employer
-  - Concern: No description to confirm scope
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Senior-Experience-Architect--Professional-Services-_JR361440-1
 
 ## STILL WORTH APPLYING (8)
 - **Principal, Success Portfolio Design & Transformation** — Atlassian · 88/100 · remote Mountain View - United States or Remote; Remote - Remote · first seen 2026-08-26
@@ -55,15 +81,23 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Vendor/BPO specialization narrower than broad transformation experience
   - https://jobs.ashbyhq.com/thumbtack/b99ba30b-4339-4323-ac3e-9b6b0e21bb83
 
-## REMOVED SINCE PRIOR RUN (4)
-- Senior Analyst, Customer Success Operations — AlphaSense · No longer listed by its source
-- Product Manager, AI Transformation & Salesforce — Goodleap · No longer listed by its source
-- Director, Partner Programs, Enablement, and Operations — Ping Identity · No longer listed by its source
-- Lead Revenue Operations Analyst — Spreedly · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (12)
+- Principal, Strategy and Operations — Adobe · No longer listed by its source
+- Principal, Strategy and Operations — Adobe · No longer listed by its source
+- Customer Experience Insights Consultant — Aquent · No longer listed by its source
+- Operations Program Manager — Aquent · No longer listed by its source
+- Program Manager Tech 2 — Aquent · No longer listed by its source
+- Program Manager - Consumer — Aquent · No longer listed by its source
+- Senior Transformation & Change Lead — Aquent · No longer listed by its source
+- Operations Manager — Aquent · No longer listed by its source
+- Business Operations Manager — Aquent · No longer listed by its source
+- Project Manager, Creative & Marketing Ops — Aquent · No longer listed by its source
+- Operational Excellence Specialist — Aquent · No longer listed by its source
+- Resource & Workflow Transformation Manager — Aquent · No longer listed by its source
 
 ## SOURCE HEALTH
-- Sources checked: 133/137 successful
+- Sources checked: 132/137 successful
 - Temporary errors: 0
-- Needs attention: 28
-  - Broken config: ClickHouse, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Alchemy, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Mixpanel, Nav, PBS, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
+- Needs attention: 27
+  - Broken config: Amplitude, ClickHouse, Marqeta, Postman, Temporal
+  - Returning nothing for 10+ runs: Airtable, Alchemy, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Nav, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave

@@ -80,6 +80,45 @@
   }
  },
  {
+  "key": "GitLab::8845972002",
+  "company": "GitLab",
+  "title": "Senior Manager, Technical Program Management",
+  "location": "Remote",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8845972002",
+  "posted": "2026-09-28",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Program management leadership, PMO build-out",
+    "Fully remote US role",
+    "Cross-functional exec-facing scope with Product/Eng"
+   ],
+   "concerns": [
+    "Highly technical software engineering program context",
+    "Requires deep technical/DevSecOps domain fluency",
+    "TPM leadership skews more engineering-specific than her background"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Program management leadership, PMO build-out",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "GitLab::8795736002",
   "company": "GitLab",
   "title": "Senior Professional Services Technical Architect - Security",
@@ -1390,45 +1429,6 @@
   }
  },
  {
-  "key": "Dropbox::8186675",
-  "company": "Dropbox",
-  "title": "Customer Success Manager",
-  "location": "Remote - US: Select locations",
-  "url": "https://jobs.dropbox.com/listing/8186675?gh_jid=8186675",
-  "posted": "2026-09-15",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Value realization and CX overlap with her experience",
-    "US-remote practical fit is strong",
-    "But quota/renewal ownership skews sales-adjacent"
-   ],
-   "concerns": [
-    "Individual portfolio-owner role, not strategic/transformation scope",
-    "Renewal/NRR ownership closer to sales than her core domains"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Value realization and CX overlap with her experience",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Dropbox::8207874",
   "company": "Dropbox",
   "title": "Senior Financial Planning & Analysis Partner - Product & Growth",
@@ -2446,7 +2446,7 @@
   "location": "San Francisco-HQ (Remote)",
   "url": "https://jobs.ashbyhq.com/hinge-health/d307173d-281d-4d9a-b7cf-75c3066ef09b",
   "posted": "2026-09-25",
-  "salary": "$166.4K \u2013 $249.6K",
+  "salary": "$137.6K \u2013 $206.4K",
   "employment_type": "",
   "expires": "",
   "tier": "core",
@@ -2834,6 +2834,46 @@
   }
  },
  {
+  "key": "Oscar Health::8227025",
+  "company": "Oscar Health",
+  "title": "Associate Director, Appeals & Grievances",
+  "location": "Remote",
+  "url": "https://job-boards.greenhouse.io/oscar/jobs/8227025",
+  "posted": "2026-09-25",
+  "salary": "$ 123,372.00- $161,925.75",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, lean)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Operational excellence and Lean mandate",
+    "Cross-functional leadership across Claims/Legal/Compliance",
+    "Remote role fits location preference",
+    "Healthcare appeals domain is niche/unfamiliar"
+   ],
+   "concerns": [
+    "Deep regulatory/compliance specialization in health insurance appeals",
+    "Not in core transformation/strategy domain",
+    "Utah not in eligible remote state list"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Operational excellence and Lean mandate",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Oscar Health::8202916",
   "company": "Oscar Health",
   "title": "Associate Director, Market Strategy Advisory",
@@ -3030,6 +3070,46 @@
   }
  },
  {
+  "key": "Gainsight::d29817bf-1ca2-49e0-bc8d-4a469d0c1db9",
+  "company": "Gainsight",
+  "title": "Solution Design Consultant",
+  "location": "USA - TN - Remote",
+  "url": "https://jobs.ashbyhq.com/gainsight/d29817bf-1ca2-49e0-bc8d-4a469d0c1db9",
+  "posted": "2026-09-28",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'consultant' + mandate in description (adoption, business case)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Diagnostic-to-business-case design mirrors transformation consulting skills",
+    "Executive-facing scope with cross-functional ownership",
+    "Remote US role fits location preference",
+    "Revenue operations focus is adjacent, not core"
+   ],
+   "concerns": [
+    "Deep renewal/subscription revenue ops specialization may be a gap",
+    "Sales-team reporting line and quota-adjacent context",
+    "Narrow product-specific mandate vs broader transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Diagnostic-to-business-case design mirrors transformation consulting skills",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Gainsight::24760960-2c54-4483-a518-ba765d45048b",
   "company": "Gainsight",
   "title": "Principal Product Marketing Manager, Customer Success and Staircase",
@@ -3185,43 +3265,42 @@
   }
  },
  {
-  "key": "STACK Construction Technologies::https://himalayas.app/companies/stack-construction-technologies/jobs/vice-president-of-corporate-development-strategic-partnerships-3746066411",
-  "company": "STACK Construction Technologies",
-  "title": "Vice President of Corporate Development & Strategic Partnerships",
-  "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/stack-construction-technologies/jobs/vice-president-of-corporate-development-strategic-partnerships-3746066411",
-  "posted": "2026-09-27",
-  "salary": "$165,000\u2013$200,000",
-  "employment_type": "Full Time",
-  "expires": "2026-11-26",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "key": "Grow Therapy::9b239cba-bec2-4a95-88e9-8aef1eefcde5",
+  "company": "Grow Therapy",
+  "title": "People Business Partner, Operations",
+  "location": "New York City (Remote)",
+  "url": "https://jobs.ashbyhq.com/grow-therapy/9b239cba-bec2-4a95-88e9-8aef1eefcde5",
+  "posted": "2026-09-28",
+  "salary": "$144K \u2013 $180.5K",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'operations' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "M&A integration adjacent but role is deal-sourcing focused",
-    "Remote US fits location preference",
-    "Requires corp dev/banking deal skills not her background"
+    "HRBP/people-partner role, not transformation or strategy",
+    "Remote US aligns with location preference",
+    "Heavy day-to-day HR casework, not her core domain"
    ],
    "concerns": [
-    "Primary mandate is sourcing/structuring deals, not integration",
-    "Little emphasis on org design or transformation execution"
+    "Core function is HR business partnering not operations leadership",
+    "Little strategic/transformation scope evident"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
+   "qualification_fit": 45,
    "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 35,
-   "score": 35,
+   "practical_fit": 70,
+   "opportunity_score": 40,
+   "score": 40,
    "fit": "no",
-   "reason": "M&A integration adjacent but role is deal-sourcing focused",
+   "reason": "HRBP/people-partner role, not transformation or strategy",
    "bg": "d192ce659668"
-  },
-  "rescued": true
+  }
  },
  {
   "key": "Squarespace::https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped",
@@ -3495,6 +3574,43 @@
    "score": 35,
    "fit": "no",
    "reason": "Fully remote matches location preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Algolia::https://weworkremotely.com/remote-jobs/algolia-account-manager-dutch-speaking",
+  "company": "Algolia",
+  "title": "Account Manager - Dutch speaking",
+  "location": "Anywhere in the World (Remote)",
+  "url": "https://weworkremotely.com/remote-jobs/algolia-account-manager-dutch-speaking",
+  "posted": "2026-09-28",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "2026-10-28",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "mandate in description (adoption, customer experience); demoted to wildcards by the precision rule 'account manager'",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Quota-carrying account management, not transformation/ops leadership",
+    "Wrong function despite CX language in description"
+   ],
+   "concerns": [
+    "Sales/renewal revenue ownership is core weak-fit area"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Quota-carrying account management, not transformation/ops leadership",
    "bg": "d192ce659668"
   }
  },
@@ -3927,46 +4043,6 @@
   }
  },
  {
-  "key": "Eightfold::148328",
-  "company": "Eightfold",
-  "title": "Senior Manager, Deal Desk",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/148328-senior-manager-deal-desk",
-  "posted": "2026-09-06",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (operational excellence, cross-functional leadership, governance)",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Cross-functional operational governance overlaps her ops background",
-    "Fully remote US role",
-    "AI company aligns with adoption interest",
-    "Deal desk is finance/sales-ops specific, not core domain"
-   ],
-   "concerns": [
-    "Requires deep quote-to-cash/pricing/contract expertise she lacks",
-    "Narrower functional scope than transformation/strategy roles",
-    "Title below strategic mandate she targets"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Cross-functional operational governance overlaps her ops background",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Forma.ai::151911",
   "company": "Forma.ai",
   "title": "Principal Consultant, Sales Effectiveness",
@@ -4314,84 +4390,6 @@
    "score": 35,
    "fit": "no",
    "reason": "Fully remote US role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Databricks::153863",
-  "company": "Databricks",
-  "title": "Manager, Delivery Solutions Architects - Emerging Enterprise",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/153863-manager-delivery-solutions-architects-emerging-enterprise",
-  "posted": "2026-09-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'delivery' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Fully remote US role",
-    "Professional services delivery leadership adjacent",
-    "Requires deep technical Data/AI architecture expertise"
-   ],
-   "concerns": [
-    "Needs hands-on Databricks/technical engineering credibility",
-    "Not org-strategy or transformation mandate",
-    "Requires managing highly technical ICs"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 45,
-   "practical_fit": 90,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "no",
-   "reason": "Fully remote US role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Databricks::153868",
-  "company": "Databricks",
-  "title": "Manager, Delivery Solutions Architects - Public Sector",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/153868-manager-delivery-solutions-architects-public-sector",
-  "posted": "2026-09-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'delivery' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Deep technical Data+AI architecture expertise required, not her background",
-    "US citizenship/public sector clearance requirement is a hard constraint",
-    "Remote-US aligns with location preference",
-    "Delivery/professional services leadership loosely matches interests"
-   ],
-   "concerns": [
-    "Requires hands-on technical architecture credibility she lacks",
-    "Citizenship/clearance requirement is a hard gate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 45,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "no",
-   "reason": "Deep technical Data+AI architecture expertise required, not her background",
    "bg": "d192ce659668"
   }
  },
@@ -4818,44 +4816,6 @@
    "score": 8,
    "fit": "no",
    "reason": "Quota-carrying sales role, not transformation/ops",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Instructure::154058",
-  "company": "Instructure",
-  "title": "Sr Global Events Marketing Specialist",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/154058-sr-global-events-marketing-specialist",
-  "posted": "2026-09-24",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (adoption, strategic initiatives)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote, Utah-adjacent employer",
-    "Event marketing execution, not transformation",
-    "Below her strategic ownership level"
-   ],
-   "concerns": [
-    "Function is events marketing, not core domain",
-    "Limited strategic/org scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 80,
-   "opportunity_score": 32,
-   "score": 32,
-   "fit": "no",
-   "reason": "US-remote, Utah-adjacent employer",
    "bg": "d192ce659668"
   }
  },
@@ -5481,44 +5441,6 @@
    "score": 50,
    "fit": "maybe",
    "reason": "Program management and cross-functional enablement mandate fits skillset",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "NVIDIA::148312",
-  "company": "NVIDIA",
-  "title": "Senior Customer Technical Program Manager - AI Datacenter",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/148312-senior-customer-technical-program-manager-ai-datacenter",
-  "posted": "2026-09-06",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Program management scope aligns with PMO/program leadership background",
-    "US-remote fits top location preference",
-    "Deep hardware engineering focus is a mismatch"
-   ],
-   "concerns": [
-    "Requires deep technical/engineering datacenter expertise she lacks",
-    "Heavy hardware/manufacturing focus outside her domain"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 90,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Program management scope aligns with PMO/program leadership background",
    "bg": "d192ce659668"
   }
  }
