@@ -1,43 +1,5 @@
 [
  {
-  "key": "Eliassen::8604ea79-bb51-11f1-ab76-02420a6c7775",
-  "company": "Eliassen",
-  "title": "EMR/EHR Application Support Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/vV8c3F/emrehr-application-support-manager-support-anywhere-a1wuq000001vc9d2aa",
-  "posted": "2026-09-28",
-  "salary": "$70.00 to $80.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (operational excellence, continuous improvement)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "EMR/EHR technical application support, not her domain",
-    "Requires deep clinical systems/SQL/HL7 expertise",
-    "Remote contract but wrong functional fit"
-   ],
-   "concerns": [
-    "Highly technical IT support role, not strategic transformation",
-    "No org design/transformation mandate present"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "EMR/EHR technical application support, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Eliassen::8cb590d5-bb46-11f1-b265-024201c20d84",
   "company": "Eliassen",
   "title": "Sr Technical Project/Program Manager",
@@ -74,6 +36,44 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Remote W2 contract fits income/experience option",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Eliassen::8604ea79-bb51-11f1-ab76-02420a6c7775",
+  "company": "Eliassen",
+  "title": "EMR/EHR Application Support Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/vV8c3F/emrehr-application-support-manager-support-anywhere-a1wuq000001vc9d2aa",
+  "posted": "2026-09-28",
+  "salary": "$70.00 to $80.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, continuous improvement)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "EMR/EHR technical application support, not her domain",
+    "Requires deep clinical systems/SQL/HL7 expertise",
+    "Remote contract but wrong functional fit"
+   ],
+   "concerns": [
+    "Highly technical IT support role, not strategic transformation",
+    "No org design/transformation mandate present"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "EMR/EHR technical application support, not her domain",
    "bg": "d192ce659668"
   }
  },
@@ -308,79 +308,81 @@
   }
  },
  {
-  "key": "Robert Half::00400-0013487121-usen",
+  "key": "Robert Half::02750-0013508658-usen",
   "company": "Robert Half",
-  "title": "Finance Manager",
-  "location": "San Diego, California (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/san-diego-california/finance-manager/00400-0013487121-usen",
+  "title": "Customer Experience Specialist",
+  "location": "Parsippany, New Jersey (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/parsippany-new-jersey/customer-experience-specialist/02750-0013508658-usen",
   "posted": "2026-09-28",
-  "salary": "$47.50\u2013$55.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "FP&A finance modeling role, not transformation ownership",
-    "Requires FP&A/SQL technical finance skills she lacks"
-   ],
-   "concerns": [
-    "Wrong function - hands-on FP&A modeling",
-    "Not a strategic ownership role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "FP&A finance modeling role, not transformation ownership",
-   "bg": "d192ce659668"
-  },
-  "rescued": true
- },
- {
-  "key": "Robert Half::00700-0013510110-usen",
-  "company": "Robert Half",
-  "title": "Senior Solutions Architect",
-  "location": "Newington, Connecticut (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/newington-connecticut/senior-solutions-architect/00700-0013510110-usen",
-  "posted": "2026-09-25",
-  "salary": "$50.00\u2013$50.00/hr",
-  "employment_type": "Temp",
+  "salary": "$25.00\u2013$49.50/hr",
+  "employment_type": "Temp to Perm",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "mandate in description (change management, adoption)",
+  "match_reason": "role family 'customer experience' + mandate in description (continuous improvement, customer experience)",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Highly technical solutions architecture role",
-    "Requires deep WFM/payroll system expertise",
-    "Not aligned with strategy/org transformation background"
+    "Tactical HVAC technical support role, not strategic",
+    "No transformation or org-design ownership",
+    "Below her seniority and mandate level"
    ],
    "concerns": [
-    "Wrong function - technical systems architecture, not organizational leadership",
-    "Requires specialized WFM/payroll technical skillset she lacks",
-    "Temp contract in Connecticut, not remote-first fit"
+    "Requires HVAC technical expertise she lacks",
+    "Temp-to-perm, low-level individual contributor scope",
+    "NJ location, not remote-friendly per profile"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
+   "qualification_fit": 25,
    "interest_fit": 25,
    "practical_fit": 30,
    "opportunity_score": 20,
    "score": 20,
    "fit": "no",
-   "reason": "Highly technical solutions architecture role",
+   "reason": "Tactical HVAC technical support role, not strategic",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::00902-0013505725-usen",
+  "company": "Robert Half",
+  "title": "Sr HR Project Manager SAP SuccessFactors (Contract Remote)",
+  "location": "Atlanta, Georgia (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/atlanta-georgia/sr-hr-project-manager-sap-successfactors-contract-remote/00902-0013505725-usen",
+  "posted": "2026-09-28",
+  "salary": "$125.00\u2013$130.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "HR process design and org effectiveness overlap",
+    "Remote contract fits stated openness to contract work",
+    "Project leadership and stakeholder facilitation match skills",
+    "Requires deep SAP SuccessFactors systems expertise"
+   ],
+   "concerns": [
+    "Heavy SuccessFactors technical/systems focus vs her generalist background",
+    "Intermittent east coast travel not fully remote",
+    "12-month contract, not strategic transformation ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 50,
+   "practical_fit": 65,
+   "opportunity_score": 52,
+   "score": 52,
+   "fit": "maybe",
+   "reason": "HR process design and org effectiveness overlap",
    "bg": "d192ce659668"
   }
  },

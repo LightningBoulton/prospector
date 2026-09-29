@@ -237,6 +237,85 @@
   "rescued": true
  },
  {
+  "key": "Coinbase::8238573",
+  "company": "Coinbase",
+  "title": "Capacity Planning Lead",
+  "location": "Remote - USA",
+  "url": "https://www.coinbase.com/careers/positions/8238573?gh_jid=8238573",
+  "posted": "2026-09-28",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'planning' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "US-remote fits location preference",
+    "Operations/workforce planning adjacent to her ops background",
+    "Not a strategic transformation or org design mandate",
+    "Highly specialized WFM/forecasting domain expertise required"
+   ],
+   "concerns": [
+    "Deep technical WFM/forecasting expertise likely required",
+    "Narrow operational execution role, limited strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 85,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "US-remote fits location preference",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Coinbase::8232211",
+  "company": "Coinbase",
+  "title": "Manager, Strategic Programs",
+  "location": "Remote - USA",
+  "url": "https://www.coinbase.com/careers/positions/8232211?gh_jid=8232211",
+  "posted": "2026-09-28",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Program ownership with cross-functional operating model",
+    "Remote US role fits location preference",
+    "CX strategy and retention mandate aligns with experience",
+    "Executive-facing stakeholder influence"
+   ],
+   "concerns": [
+    "Crypto/trading domain is unfamiliar territory",
+    "Manager title may be narrower scope than desired"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 65,
+   "practical_fit": 90,
+   "opportunity_score": 66,
+   "score": 66,
+   "fit": "yes",
+   "reason": "Program ownership with cross-functional operating model",
+   "bg": "d192ce659668"
+  },
+  "rescued": true
+ },
+ {
   "key": "Coinbase::8186586",
   "company": "Coinbase",
   "title": "Manager, WFM CX Operations",
@@ -3930,6 +4009,46 @@
   }
  },
  {
+  "key": "Harness::147874",
+  "company": "Harness",
+  "title": "Professional Services Engagement Manager",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/147874-professional-services-engagement-manager",
+  "posted": "2026-09-29",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'professional services' + seniority in title; demoted to wildcards by the precision rule 'engagement manager'",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Professional services delivery leadership mandate",
+    "Customer-facing transformation and value realization",
+    "Fully remote US role",
+    "Bridges sales, delivery, PS teams"
+   ],
+   "concerns": [
+    "Technical DevOps domain may be unfamiliar",
+    "Engagement Manager title may signal narrower scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 75,
+   "practical_fit": 90,
+   "opportunity_score": 74,
+   "score": 74,
+   "fit": "yes",
+   "reason": "Professional services delivery leadership mandate",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "DeleteMe::153790",
   "company": "DeleteMe",
   "title": "Partner Business Manager",
@@ -4039,6 +4158,44 @@
    "score": 35,
    "fit": "no",
    "reason": "Remote US-eligible",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Waymark::152055",
+  "company": "Waymark",
+  "title": "Business Operations & Chief of Staff",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/152055-business-operations-chief-of-staff",
+  "posted": "2026-09-29",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "apply_first",
+   "confidence": "high",
+   "reasons": [
+    "Chief of Staff mandate with strategic planning ownership",
+    "Remote US role matches top location preference",
+    "Cross-functional operating cadence and comms ownership",
+    "Executive-facing scope with CEO and leadership team"
+   ],
+   "concerns": [
+    "Healthcare/Medicaid domain is new context"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 88,
+   "interest_fit": 90,
+   "practical_fit": 92,
+   "opportunity_score": 89,
+   "score": 89,
+   "fit": "yes",
+   "reason": "Chief of Staff mandate with strategic planning ownership",
    "bg": "d192ce659668"
   }
  },
@@ -4356,44 +4513,6 @@
   }
  },
  {
-  "key": "PadSplit::153870",
-  "company": "PadSplit",
-  "title": "Director of Technology Operations (Fully Remote)",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/153870-director-of-technology-operations-fully-remote",
-  "posted": "2026-09-22",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Fully remote US role",
-    "Technical QA/IT/Security leadership mismatch",
-    "Not transformation or org strategy mandate"
-   ],
-   "concerns": [
-    "Requires deep technical QA/IT/Security expertise",
-    "Not her core domain despite leadership scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 30,
-   "practical_fit": 85,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Fully remote US role",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Articulate::153775",
   "company": "Articulate",
   "title": "Principal People Experience Partner",
@@ -4591,6 +4710,82 @@
   }
  },
  {
+  "key": "Superside::154194",
+  "company": "Superside",
+  "title": "Lead Creative Strategist (Performance Marketing)",
+  "location": "Anywhere (Remote)",
+  "url": "https://jobicy.com/jobs/154194-lead-creative-strategist-performance-marketing",
+  "posted": "2026-09-29",
+  "salary": null,
+  "employment_type": "Contract",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'performance' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Performance marketing creative strategy, not transformation/ops",
+    "Wrong core domain despite remote appeal"
+   ],
+   "concerns": [
+    "Requires hands-on paid media/creative expertise she lacks",
+    "Contract role outside her strategic mandate focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Performance marketing creative strategy, not transformation/ops",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Superside::154189",
+  "company": "Superside",
+  "title": "Director of Creative Strategy",
+  "location": "Anywhere (Remote)",
+  "url": "https://jobicy.com/jobs/154189-director-of-creative-strategy",
+  "posted": "2026-09-29",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Fully remote US role",
+    "Operating model and team leadership scope",
+    "AI-enablement angle fits interests",
+    "Requires deep creative/brand agency strategy background"
+   ],
+   "concerns": [
+    "Heavily creative/advertising strategy focus, not her core",
+    "8+ years agency creative strategy specifically required"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 90,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Fully remote US role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Medely::154100",
   "company": "Medely",
   "title": "Revenue Enablement Lead",
@@ -4781,41 +4976,6 @@
    "score": 40,
    "fit": "no",
    "reason": "Remote US-based role, strong practical fit",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Actian::151623",
-  "company": "Actian",
-  "title": "Enterprise Sales Director- Southeast Region",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/151623-enterprise-sales-director-southeast-region",
-  "posted": "2026-09-25",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (roi, governance)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Quota-carrying sales role, not transformation/ops"
-   ],
-   "concerns": [
-    "Wrong function entirely for candidate's profile"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 5,
-   "practical_fit": 60,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Quota-carrying sales role, not transformation/ops",
    "bg": "d192ce659668"
   }
  },
@@ -5094,45 +5254,6 @@
   }
  },
  {
-  "key": "Echodyne::153722",
-  "company": "Echodyne",
-  "title": "Project Manager",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/153722-project-manager-5",
-  "posted": "2026-09-20",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote role fits location preference",
-    "Program/project coordination echoes PMO experience",
-    "Client-facing delivery aligns with CX background"
-   ],
-   "concerns": [
-    "Hardware/radar technical domain is unfamiliar",
-    "Individual delivery PM role lacks strategic scope",
-    "Not a transformation or org-strategy mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 85,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "US-remote role fits location preference",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Clover Health::151145",
   "company": "Clover Health",
   "title": "Commercial Partnerships & Operations Director",
@@ -5402,45 +5523,6 @@
    "score": 74,
    "fit": "yes",
    "reason": "Remote US role",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Fleetio::152733",
-  "company": "Fleetio",
-  "title": "Partner Enablement Manager",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152733-partner-enablement-manager-2",
-  "posted": "2026-09-07",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Program management and cross-functional enablement mandate fits skillset",
-    "Fully remote US role matches top location preference",
-    "Change/curriculum ownership aligns with enablement experience"
-   ],
-   "concerns": [
-    "Narrower partner-sales enablement focus vs strategic transformation scope",
-    "Less executive-facing than target roles",
-    "Product/sales training focus not core interest area"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 90,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Program management and cross-functional enablement mandate fits skillset",
    "bg": "d192ce659668"
   }
  }
