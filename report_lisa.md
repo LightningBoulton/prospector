@@ -1,25 +1,29 @@
-# Prospector — 2026-09-29
+# Prospector — 2026-09-30
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**8 new roles today** · 8 still worth applying · 2 closed/removed
+**9 new roles today** · 8 still worth applying · 12 closed/removed
 
-## NEW — WORTH REVIEWING (4)
-- **Manager, Strategic Programs** — Coinbase · 66/100 · remote Remote - USA · posted 2026-09-28
-  - Why: Program ownership with cross-functional operating model
-  - Concern: Crypto/trading domain is unfamiliar territory
-  - https://www.coinbase.com/careers/positions/8232211?gh_jid=8232211
-- **FLEX Senior Manager, Distribution Connectivity** — Marriott International · 60/100 · remote Bethesda, MD (Remote) · $48.26-$71.15 · first seen 2026-09-29
-  - Why: Priority employer Marriott
-  - Concern: Requires deep CRS/OTA technical domain knowledge
-  - https://careers.marriott.com/flex-senior-manager-distribution-connectivity/job/P1-7060644-0
-- **Director of Creative Strategy** — Superside · 55/100 · remote Anywhere (Remote) · posted 2026-09-29
-  - Why: Fully remote US role
-  - Concern: Heavily creative/advertising strategy focus, not her core
-  - https://jobicy.com/jobs/154189-director-of-creative-strategy
-- **Capacity Planning Lead** — Coinbase · 40/100 · hybrid Remote - USA · posted 2026-09-28
-  - Why: US-remote fits location preference
-  - Concern: Deep technical WFM/forecasting expertise likely required
-  - https://www.coinbase.com/careers/positions/8238573?gh_jid=8238573
+## NEW — WORTH REVIEWING (5)
+- **Strategy and Business Operations Principal - Rovo and AI** — Atlassian · 75/100 · remote San Francisco - United States; Remote - Remote; Seattle - United States; New York - United States · first seen 2026-09-30
+  - Why: Priority employer Atlassian with referral advantage
+  - Concern: Principal strategy/ops role may skew analytical over people-leadership
+  - https://careers-americas.icims.com/jobs/27486/strategy-and-business-operations-principal---rovo-and-ai/job?mode=apply
+- **Technical Program Manager** — Zapier · 62/100 · remote NAMER (Remote) · $143.9K – $181.7K · posted 2026-09-29
+  - Why: US-remote, strong practical fit
+  - Concern: Technical engineering environment may require deeper tech fluency
+  - https://jobs.ashbyhq.com/zapier/2f03a9e7-25fa-410b-8a77-1387d8fd6039
+- **Program Manager, Deal Operations** — Stripe · 58/100 · remote San Francisco, CA / Chicago, IL / Seattle, WA / NYC / Remote · posted 2026-09-25
+  - Why: Program/process ownership fits ops background
+  - Concern: Deep GTM/deal-desk domain expertise expected
+  - https://stripe.com/jobs/search?gh_jid=8209633
+- **Principal Outbound Product Manager, Service Collection** — Atlassian · 55/100 · remote New York - United States; San Francisco - United States; Austin - United States; Mountain View - United States or Remote; Washington DC - United States · first seen 2026-09-30
+  - Why: Priority employer Atlassian, referral advantage
+  - Concern: Requires deep enterprise product management experience
+  - https://careers-americas.icims.com/jobs/27426/principal-outbound-product-manager%2c-service-collection/job?mode=apply
+- **Senior Manager/Director, Customer Success (Enterprise)** — PermitFlow · 55/100 · hybrid United States (Remote) · $150,000–$250,000 · posted 2026-09-30
+  - Why: Customer success leadership matches CX/ops experience
+  - Concern: Hybrid NYC in-office 3 days conflicts with remote/Utah preference
+  - https://himalayas.app/companies/permitflow/jobs/senior-manager-director-customer-success-enterprise-2068548363
 
 ## DISCOVERY / WILDCARDS (4)
 - **Customer Strategy & Planning Director, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-09-24
@@ -56,30 +60,40 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Professional services operations leadership mandate
   - Concern: Staff level may be narrower than Director scope
   - https://job-boards.greenhouse.io/gitlab/jobs/8691770002
-- **Principal Value Advisor, DX** — Atlassian · 78/100 · remote Salt Lake City - United States; Remote - Remote · first seen 2026-09-15
-  - Why: Atlassian priority employer with referral advantage
-  - Concern: Deep financial/business-case modeling may be less proven
-  - https://careers-americas.icims.com/jobs/26966/principal-value-advisor%2c-dx/job?mode=apply
 - **Program Manager, Customer Advocacy & Programs** — Stripe · 78/100 · remote US-ATL, US-CHI, US-Remote · posted 2026-09-17
   - Why: Cross-functional program leadership with customer experience focus
   - Concern: Title is Program Manager, may be below her target seniority
   - https://stripe.com/jobs/search?gh_jid=8181030
-- **Senior Staff Operations Manager, Office of the President (PED)** — Squarespace · 78/100 · remote Anywhere in the World (Remote) · posted 2026-09-23
-  - Why: Chief-of-Staff style operating model ownership
-  - Concern: Remote limited to California or NYC HQ, not fully US-remote
-  - https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped
 - **Strategic Technical Project Manager, AI Deployments** — Gainsight · 78/100 · remote USA - FL - Remote · posted 2026-09-23
   - Why: Fully US-remote role
   - Concern: Technical PM title may be narrower than her strategic scope
   - https://jobs.ashbyhq.com/gainsight/b93d429b-fb79-4005-bbaf-422e274d401f
+- **Senior Staff Operations Manager, Office of the President (PED)** — Squarespace · 78/100 · remote Anywhere in the World (Remote) · posted 2026-09-23
+  - Why: Chief-of-Staff style operating model ownership
+  - Concern: Remote limited to California or NYC HQ, not fully US-remote
+  - https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped
+- **Senior Program Manager, Vendor and Scaled Operations** — Thumbtack · 78/100 · remote Remote, United States · posted 2026-09-25
+  - Why: US-remote role matches location priority
+  - Concern: Vendor/BPO specialization narrower than broad transformation experience
+  - https://jobs.ashbyhq.com/thumbtack/b99ba30b-4339-4323-ac3e-9b6b0e21bb83
 
-## REMOVED SINCE PRIOR RUN (2)
-- Project Manager — Echodyne · No longer listed by its source
-- Partner Enablement Manager — Fleetio · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (12)
+- Senior Value Advisor, Value Management Office — Atlassian · No longer listed by its source
+- Senior Principal Outbound Product Manager - Service Collection — Atlassian · No longer listed by its source
+- Senior Marketing Operations Manager — Brex · No longer listed by its source
+- Cloud Professional Services Manager — Canonical Ltd. · No longer listed by its source
+- Manager, WFM CX Operations — Coinbase · No longer listed by its source
+- Senior Event Operations Manager — Docker · No longer listed by its source
+- Senior Manager, Sales Operations — Dropbox · No longer listed by its source
+- Principal Customer Success Manager — Gainsight · No longer listed by its source
+- Senior Manager, Learning, Content, and Quality — Grow Therapy · No longer listed by its source
+- Director, IT Operations — Instacart · No longer listed by its source
+- Sr HR Project Manager SAP SuccessFactors (Contract Remote) — Robert Half · No longer listed by its source
+- Support Project Manager/Lead — Robert Half · No longer listed by its source
 
 ## SOURCE HEALTH
-- Sources checked: 132/137 successful
-- Temporary errors: 0
-- Needs attention: 26
-  - Broken config: Amplitude, ClickHouse, Marqeta, Postman, Temporal
+- Sources checked: 130/137 successful
+- Temporary errors: 1
+- Needs attention: 27
+  - Broken config: Amplitude, ClickHouse, LVT, Marqeta, Postman, Temporal
   - Returning nothing for 10+ runs: Airtable, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Nav, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave

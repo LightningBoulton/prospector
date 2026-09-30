@@ -1,5 +1,81 @@
 [
  {
+  "key": "Eliassen::3ee0498a-a88c-11f1-8336-024201c20d84",
+  "company": "Eliassen",
+  "title": "Project Manager / Business Analyst \u2013 Real Estate Records Management System",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/Od8EfY/project-manager-business-analyst-real-estate-records-management-system-programproject-management-anywhere-a1wuq000001rrsd2ay",
+  "posted": "2026-09-30",
+  "salary": "$130,000.00 to $150,000.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "PM/BA role but niche real estate/land-management system domain",
+    "W2 contract via staffing firm",
+    "Requires specialized ROW software experience she lacks"
+   ],
+   "concerns": [
+    "Highly specialized domain mismatch",
+    "W2 only, no flexibility"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 50,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "PM/BA role but niche real estate/land-management system domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Eliassen::13c3c03d-a6d0-11f1-8336-024201c20d84",
+  "company": "Eliassen",
+  "title": "Data Product Manager (Manufacturing)",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/RJHWuI/data-product-manager-manufacturing-product-management-anywhere-a1wuq000001s1cr2aa",
+  "posted": "2026-09-30",
+  "salary": "$70.00 to $80.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (adoption, value realization, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Value realization and adoption language overlaps interests",
+    "But requires deep technical data product/GCP expertise",
+    "Manufacturing domain and data engineering not her background"
+   ],
+   "concerns": [
+    "Requires hands-on technical data architecture skills",
+    "Contract-to-hire W2 staffing role with narrow scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Value realization and adoption language overlaps interests",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Eliassen::8cb590d5-bb46-11f1-b265-024201c20d84",
   "company": "Eliassen",
   "title": "Sr Technical Project/Program Manager",
@@ -157,6 +233,41 @@
   }
  },
  {
+  "key": "Robert Half::02210-0013510672-usen",
+  "company": "Robert Half",
+  "title": "Endpoint Lead",
+  "location": "Troy, Michigan (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/troy-michigan/endpoint-lead/02210-0013510672-usen",
+  "posted": "2026-09-21",
+  "salary": "$47.50\u2013$55.00/hr",
+  "employment_type": "Temp to Perm",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Hands-on IT endpoint engineering, not her domain"
+   ],
+   "concerns": [
+    "Wrong function entirely - technical IT ops"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 8,
+   "interest_fit": 10,
+   "practical_fit": 30,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Hands-on IT endpoint engineering, not her domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Robert Half::04838-0013510590-usen",
   "company": "Robert Half",
   "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
@@ -196,114 +307,79 @@
   }
  },
  {
-  "key": "Robert Half::02210-0013510672-usen",
+  "key": "Robert Half::04510-0013502184-usen",
   "company": "Robert Half",
-  "title": "Endpoint Lead",
-  "location": "Troy, Michigan (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/troy-michigan/endpoint-lead/02210-0013510672-usen",
-  "posted": "2026-09-21",
-  "salary": "$47.50\u2013$55.00/hr",
-  "employment_type": "Temp to Perm",
+  "title": "ERP Project Manager",
+  "location": "Centerville, Virginia (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/centerville-virginia/erp-project-manager/04510-0013502184-usen",
+  "posted": "2026-09-08",
+  "salary": "$79.16\u2013$91.66/hr",
+  "employment_type": "Temp",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Program/project leadership overlaps her PMO experience",
+    "Contract work fits her stated employment flexibility",
+    "Remote listed but geographically tied to Virginia",
+    "Requires deep Oracle Fusion/accounting specialization"
+   ],
+   "concerns": [
+    "Heavy finance/ERP technical depth not her core strength",
+    "Location tied to Northern Virginia despite remote label"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Program/project leadership overlaps her PMO experience",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::00700-0013501410-usen",
+  "company": "Robert Half",
+  "title": "ServiceNow Manager",
+  "location": "New York City, New York (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/new-york-city-new-york/servicenow-manager/00700-0013501410-usen",
+  "posted": "2026-09-25",
+  "salary": "$68.00\u2013$81.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, governance)",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "high",
    "reasons": [
-    "Hands-on IT endpoint engineering, not her domain"
+    "Requires deep hands-on ServiceNow technical expertise",
+    "Not her domain despite governance language",
+    "Platform architecture role, not org transformation"
    ],
    "concerns": [
-    "Wrong function entirely - technical IT ops"
+    "Wrong function: IT platform engineering leadership",
+    "No transformation/strategy mandate beyond tool"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 8,
-   "interest_fit": 10,
-   "practical_fit": 30,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Hands-on IT endpoint engineering, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::04130-0013507659-usen",
-  "company": "Robert Half",
-  "title": "Support Project Manager/Lead",
-  "location": "Houston, Texas (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/houston-texas/support-project-managerlead/04130-0013507659-usen",
-  "posted": "2026-09-22",
-  "salary": "$57.00\u2013$66.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Contract PM role but IT infrastructure focus",
-    "Remote but low strategic scope",
-    "Not aligned to transformation/org strategy mandate"
-   ],
-   "concerns": [
-    "Requires hands-on technical/Azure infrastructure expertise",
-    "Staffing agency temp role, limited ownership",
-    "Not a strong career-goal match"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Contract PM role but IT infrastructure focus",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::00610-0013511666-usen",
-  "company": "Robert Half",
-  "title": "Project Manager (Non-IT): I (Junior)",
-  "location": "Mequon, Wisconsin (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/mequon-wisconsin/project-manager-non-it-i-junior/00610-0013511666-usen",
-  "posted": "2026-09-28",
-  "salary": "$25.00\u2013$28.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Entry-level PM role far below her seniority",
-    "Temp/junior coordination work, no strategic ownership",
-    "Remote is a plus but scope too junior"
-   ],
-   "concerns": [
-    "Junior title, tactical coordination not leadership",
-    "Would be significant step down in scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
+   "qualification_fit": 20,
    "interest_fit": 25,
    "practical_fit": 40,
    "opportunity_score": 20,
    "score": 20,
    "fit": "no",
-   "reason": "Entry-level PM role far below her seniority",
+   "reason": "Requires deep hands-on ServiceNow technical expertise",
    "bg": "d192ce659668"
   }
  },
@@ -343,85 +419,6 @@
    "score": 20,
    "fit": "no",
    "reason": "Tactical HVAC technical support role, not strategic",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::00902-0013505725-usen",
-  "company": "Robert Half",
-  "title": "Sr HR Project Manager SAP SuccessFactors (Contract Remote)",
-  "location": "Atlanta, Georgia (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/atlanta-georgia/sr-hr-project-manager-sap-successfactors-contract-remote/00902-0013505725-usen",
-  "posted": "2026-09-28",
-  "salary": "$125.00\u2013$130.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "HR process design and org effectiveness overlap",
-    "Remote contract fits stated openness to contract work",
-    "Project leadership and stakeholder facilitation match skills",
-    "Requires deep SAP SuccessFactors systems expertise"
-   ],
-   "concerns": [
-    "Heavy SuccessFactors technical/systems focus vs her generalist background",
-    "Intermittent east coast travel not fully remote",
-    "12-month contract, not strategic transformation ownership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 50,
-   "practical_fit": 65,
-   "opportunity_score": 52,
-   "score": 52,
-   "fit": "maybe",
-   "reason": "HR process design and org effectiveness overlap",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::04510-0013502184-usen",
-  "company": "Robert Half",
-  "title": "ERP Project Manager",
-  "location": "Centerville, Virginia (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/centerville-virginia/erp-project-manager/04510-0013502184-usen",
-  "posted": "2026-09-08",
-  "salary": "$79.16\u2013$91.66/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Program/project leadership overlaps her PMO experience",
-    "Contract work fits her stated employment flexibility",
-    "Remote listed but geographically tied to Virginia",
-    "Requires deep Oracle Fusion/accounting specialization"
-   ],
-   "concerns": [
-    "Heavy finance/ERP technical depth not her core strength",
-    "Location tied to Northern Virginia despite remote label"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 40,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Program/project leadership overlaps her PMO experience",
    "bg": "d192ce659668"
   }
  }
