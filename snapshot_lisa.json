@@ -348,49 +348,6 @@
   }
  },
  {
-  "key": "Adobe::R171905",
-  "company": "Adobe",
-  "title": "Revenue Operations Analyst 3",
-  "location": "Lehi",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Revenue-Operations-Analyst-3_R171905",
-  "posted": "2026-10-02",
-  "salary": "$63,800 - $151,950",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
-  "tier": "discovery",
-  "match_reason": "priority employer; role family 'operations' in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Adobe with referral advantage",
-    "Revenue operations is adjacent domain",
-    "Utah location strong practical fit",
-    "Title suggests analyst-level, below target seniority",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "Title implies IC/analyst level, not leadership",
-    "No description to verify strategic scope",
-    "Could be narrower than her target mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 50,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Priority employer Adobe with referral advantage",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Adobe::R172117",
   "company": "Adobe",
   "title": "Business Process Analyst",
@@ -1201,44 +1158,6 @@
   }
  },
  {
-  "key": "NICE::4948120101",
-  "company": "NICE",
-  "title": "Senior AI Project Manager, CX",
-  "location": "USA - Remote",
-  "url": "https://boards.eu.greenhouse.io/nice/jobs/4948120101?gh_jid=4948120101",
-  "posted": "2026-09-11",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote matches top location preference",
-    "AI delivery and CX align with interests",
-    "Project delivery scope narrower than her strategic mandate"
-   ],
-   "concerns": [
-    "Title/level is tactical PM, not strategic leadership",
-    "Limited P&L or org-design ownership described"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 65,
-   "practical_fit": 90,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "US-remote matches top location preference",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "NICE::4996424101",
   "company": "NICE",
   "title": "Senior Customer Success Manager",
@@ -1320,40 +1239,41 @@
   }
  },
  {
-  "key": "Brex::8802224002",
+  "key": "Brex::8865089002",
   "company": "Brex",
-  "title": "Manager, Broker Dealer Operations",
+  "title": "Director, Revenue Operations",
   "location": "Salt Lake City, Utah, United States",
-  "url": "https://www.brex.com/careers/8802224002?gh_jid=8802224002",
-  "posted": "2026-09-11",
+  "url": "https://www.brex.com/careers/8865089002?gh_jid=8865089002",
+  "posted": "2026-10-02",
   "salary": null,
   "employment_type": "",
   "expires": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "not_recommended",
+   "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Broker-dealer compliance/trading ops is specialized finance domain",
-    "Not aligned with transformation/org strategy background",
-    "Utah location is practically convenient though"
+    "Operating model, incentive design, strategic ops leadership",
+    "Utah location matches local preference",
+    "Sales RevOps is adjacent not core domain",
+    "Team leadership and operational cadence ownership"
    ],
    "concerns": [
-    "Requires securities/trading regulatory expertise she lacks",
-    "Narrow functional scope, not strategic transformation"
+    "Sales-specific RevOps, quota-driven function",
+    "Less transformation/M&A/CX mandate than target roles"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 20,
-   "practical_fit": 65,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Broker-dealer compliance/trading ops is specialized finance domain",
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 85,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Operating model, incentive design, strategic ops leadership",
    "bg": "d192ce659668"
   }
  },
@@ -1505,6 +1425,44 @@
    "score": 15,
    "fit": "no",
    "reason": "Construction/trades project coordination, not her domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Kelso Industries::5442668008",
+  "company": "Kelso Industries",
+  "title": "M&A Project Manager",
+  "location": "Draper, UT",
+  "url": "https://careers.kelso-industries.com/?gh_jid=5442668008",
+  "posted": "2026-10-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "apply_first",
+   "confidence": "high",
+   "reasons": [
+    "M&A integration mandate matches core domain",
+    "Utah-local role, Draper HQ",
+    "Cross-functional executive liaison scope",
+    "Program/PMO leadership strength applies directly"
+   ],
+   "concerns": [
+    "Title is PM-level, may underuse strategic experience"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 80,
+   "interest_fit": 85,
+   "practical_fit": 90,
+   "opportunity_score": 85,
+   "score": 85,
+   "fit": "yes",
+   "reason": "M&A integration mandate matches core domain",
    "bg": "d192ce659668"
   }
  },
@@ -1736,45 +1694,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-026273",
-  "company": "Western Governors University",
-  "title": "Project Manager V Skills Intelligence & LER Ecosystem",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-V-Skills-Intelligence---LER-Ecosystem_JR-026273",
-  "posted": "2026-09-30",
-  "salary": "$123,000.00 - $190,700.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Program/project leadership overlaps her PMO background",
-    "Utah local - strong practical fit",
-    "Title suggests niche skills-ecosystem initiative",
-    "No description to confirm transformation scope"
-   ],
-   "concerns": [
-    "No posting detail to assess true mandate",
-    "May be narrower technical/program execution role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Program/project leadership overlaps her PMO background",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Western Governors University::JR-026227",
   "company": "Western Governors University",
   "title": "Project Manager IV",
@@ -1851,45 +1770,6 @@
   }
  },
  {
-  "key": "Western Governors University::JR-026195",
-  "company": "Western Governors University",
-  "title": "Technical Project Manager III",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-026195",
-  "posted": "2026-09-23",
-  "salary": "$108,200.00 - $162,400.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah-local role, matches location preference",
-    "PM title has some scope overlap",
-    "No description to confirm transformation mandate",
-    "Technical PM may skew IT-execution not strategy"
-   ],
-   "concerns": [
-    "Title suggests technical/IT delivery focus, not strategic",
-    "No description available to verify true scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah-local role, matches location preference",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Western Governors University::JR-023826",
   "company": "Western Governors University",
   "title": "Director Academic Delivery",
@@ -1925,6 +1805,45 @@
    "score": 40,
    "fit": "maybe",
    "reason": "Utah-based director role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-026195",
+  "company": "Western Governors University",
+  "title": "Technical Project Manager III",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-026195",
+  "posted": "2026-09-23",
+  "salary": "$108,200.00 - $162,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-local role, matches location preference",
+    "PM title has some scope overlap",
+    "No description to confirm transformation mandate",
+    "Technical PM may skew IT-execution not strategy"
+   ],
+   "concerns": [
+    "Title suggests technical/IT delivery focus, not strategic",
+    "No description available to verify true scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 40,
+   "practical_fit": 80,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Utah-local role, matches location preference",
    "bg": "d192ce659668"
   }
  },
@@ -2001,6 +1920,44 @@
    "score": 25,
    "fit": "no",
    "reason": "Utah-local role location match",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "BYU::JR-12921",
+  "company": "BYU",
+  "title": "Director, Building Operations",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Director--Building-Operations_JR-12921",
+  "posted": "2026-10-02",
+  "salary": "$84,000 to $109,000",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Likely facilities/building operations, not business operations",
+    "Utah location is practical",
+    "Title suggests wrong function"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Likely facilities management not strategic ops"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Likely facilities/building operations, not business operations",
    "bg": "d192ce659668"
   }
  },

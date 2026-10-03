@@ -1,49 +1,55 @@
-# Prospector — 2026-10-02
+# Prospector — 2026-10-03
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 11 closed/removed
+**15 new roles today** · 8 still worth applying · 12 closed/removed
+
+## APPLY FIRST (1)
+- **M&A Project Manager** — Kelso Industries · 85/100 · onsite Draper, UT · posted 2026-10-02
+  - Why: M&A integration mandate matches core domain
+  - Concern: Title is PM-level, may underuse strategic experience
+  - https://careers.kelso-industries.com/?gh_jid=5442668008
 
 ## NEW — WORTH REVIEWING (10)
-- **FLEX Director, Technology Ecosystem Change Communications** — Marriott International · 78/100 · remote Bethesda, MD (Remote) · $61.05-$85.09 · first seen 2026-10-02
-  - Why: Priority employer Marriott with referral advantage
-  - Concern: Temporary FLEX position
-  - https://careers.marriott.com/flex-director-technology-ecosystem-change-communications/job/P1-7112944-0
-- **Director, Revenue Operations (Fundraising)** — GiveDirectly · 75/100 · remote USA (Remote) · posted 2026-10-01
-  - Why: Revenue ops backbone across fundraising verticals
-  - Concern: Fundraising/nonprofit sector is new domain
-  - https://jobicy.com/jobs/154360-director-revenue-operations-fundraising
-- **Senior Manager, Strategic Operations - Technology Strategy & Roadmap** — Hilton · 72/100 · remote Dallas, TX, United States (Remote) · posted 2026-10-02
-  - Why: Priority employer Hilton, remote role
-  - Concern: Technology/data roadmap depth may require more technical specificity
-  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/222569
-- **Senior Manager, Build Operations** — Zapier · 72/100 · remote NAMER (Remote) · $191.5K – $241.8K · posted 2026-09-29
-  - Why: Operational excellence & cross-functional alignment mandate
-  - Concern: Engineering/product-specific context less core to her background
-  - https://jobs.ashbyhq.com/zapier/2a7f0bd6-c5c0-4f1c-b4b0-ffcc024e83e7
-- **Director, Strategic Initiatives** — GiveDirectly · 72/100 · remote UK,  USA (Remote) · posted 2026-10-01
-  - Why: Internal consulting/strategic initiatives mandate
-  - Concern: Nonprofit/global development sector shift
-  - https://jobicy.com/jobs/154363-director-strategic-initiatives
-- **Director, People Partnering** — GiveDirectly · 65/100 · remote UK,  USA (Remote) · posted 2026-10-01
-  - Why: Org design and workforce planning mandate
-  - Concern: Heavy HRBP/employee relations focus, not core OD
-  - https://jobicy.com/jobs/154356-director-people-partnering
-- **FLEX Senior Manager, Talent Acquisition Support Services and Enablement** — Marriott International · 62/100 · remote Bethesda, MD (Remote) · $48.26-$77.40 · first seen 2026-10-02
-  - Why: Priority employer Marriott
-  - Concern: Temporary assignment, not permanent
-  - https://careers.marriott.com/flex-senior-manager-talent-acquisition-support-services-and-enablement/job/P1-7110595-0
-- **Manager, Customer Success - Upmarket** — 6sense · 60/100 · remote Anywhere in the World (Remote) · $100K to $500K · posted 2026-10-02
-  - Why: US-remote role fits location preference strongly
-  - Concern: Primarily SaaS CS management, not strategy/transformation
-  - https://weworkremotely.com/remote-jobs/6sense-manager-customer-success-upmarket
-- **Sr. Program Manager - Implementation** — Alkami Technology, Inc. · 60/100 · remote United States (Remote) · $115,000–$140,000 · posted 2026-10-02
+- **Senior Program Manager, Health Coaching** — Omada Health · 75/100 · remote Remote, USA · posted 2026-10-02
+  - Why: Operational excellence & program leadership mandate
+  - Concern: Healthcare coaching domain is unfamiliar
+  - https://job-boards.greenhouse.io/omadahealth/jobs/8232149
+- **Sr. Director, Revenue Operations Planning and Execution** — impact.com · 72/100 · remote USA (Remote) · posted 2026-10-02
+  - Why: Full US-remote role matches top location preference
+  - Concern: RevOps/GTM domain is adjacent not core expertise
+  - https://jobicy.com/jobs/154425-sr-director-revenue-operations-planning-and-execution
+- **IT Project Manager** — Auberge Resorts · 62/100 · remote United States (Remote) · $120,000–$160,000 · posted 2026-10-03
   - Why: US-remote matches top location preference
-  - Concern: Primarily execution-focused PM, less strategic scope
-  - https://himalayas.app/companies/alkami-technology-inc/jobs/sr-program-manager-implementation
-- **Marketing Strategy & Operations Manager** — Traeger · 58/100 · onsite Salt Lake City · posted 2026-10-02
-  - Why: Utah onsite HQ, strong practical fit
-  - Concern: Heavily retail-media/analytics specific, not her core expertise
-  - https://job-boards.greenhouse.io/traegergrills/jobs/8211439
+  - Concern: Heavily IT-systems focused, less strategic/operations ownership
+  - https://himalayas.app/companies/auberge-resorts/jobs/it-project-manager
+- **Senior Design Program Manager II** — Instacart · 58/100 · remote United States - Remote · posted 2026-10-02
+  - Why: Program management with AI enablement angle
+  - Concern: Requires design systems/tooling technical fluency
+  - https://instacart.careers/job/?gh_jid=8249751
+- **Director, Revenue Operations** — Brex · 55/100 · onsite Salt Lake City, Utah, United States · posted 2026-10-02
+  - Why: Operating model, incentive design, strategic ops leadership
+  - Concern: Sales-specific RevOps, quota-driven function
+  - https://www.brex.com/careers/8865089002?gh_jid=8865089002
+- **Group Product Manager, Customer Engagement & Experience** — Coinbase · 50/100 · remote Remote - USA · posted 2026-10-01
+  - Why: CX ownership and AI enablement align with her background
+  - Concern: Requires deep product management/technical PM background
+  - https://www.coinbase.com/careers/positions/8247881?gh_jid=8247881
+- **Program Manager (Ops)** — Pearl Homes · 50/100 · remote United States (Remote) · $120,000–$140,000 · posted 2026-10-03
+  - Why: Remote US fits location preference
+  - Concern: Role is tactical/execution-heavy, not strategic
+  - https://himalayas.app/companies/pearl-homes/jobs/program-manager-ops
+- **Sr. Principal Technical Program Manager - Sales & Finance Products** — Atlassian · 45/100 · onsite San Francisco - United States; Seattle - United States · first seen 2026-10-01
+  - Why: Atlassian priority employer with referral advantage
+  - Concern: Requires deep technical architecture fluency she lacks
+  - https://careers-americas.icims.com/jobs/27380/sr.-principal-technical-program-manager---sales-%26-finance-products/job?mode=apply
+- **Sr Finance Program Manager** — Samsara · 42/100 · remote Remote - US · posted 2026-10-01
+  - Why: US-remote matches top location preference
+  - Concern: Heavily finance/billing escalation focus, not transformation
+  - https://www.samsara.com/company/careers/roles/8223708?gh_jid=8223708
+- **Contact Center/CX Quality Assurance Lead (Houston)** — Clover Health · 42/100 · remote USA (Remote) · posted 2026-10-02
+  - Why: CX quality program leadership touches her CX domain
+  - Concern: Heavily call-center QA operational focus, not strategic
+  - https://jobicy.com/jobs/154427-contact-center-cx-quality-assurance-lead-houston
 
 ## DISCOVERY / WILDCARDS (4)
 - **Customer Strategy & Planning Director, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-09-24
@@ -58,10 +64,10 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Change management senior manager mandate
   - Concern: No description available to confirm scope
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Remote/Human-Centered-Change-Senior-Manager_JR359449-1
-- **Director, Business Value Services** — Salesforce · 75/100 · remote Remote (+3 more) · $142,800 - $266,070 · posted 2026-10-01
-  - Why: Value realization aligns with core domain
-  - Concern: No description to confirm scope
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Business-Value-Services_JR362116
+- **Chief of Staff** — Salesforce · 78/100 · remote Colorado - Remote · $191,100 - $320,600 · posted 2026-10-02
+  - Why: Chief of Staff is a named target title
+  - Concern: No description to verify mandate
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Colorado---Remote/Chief-of-Staff_JR362577
 
 ## STILL WORTH APPLYING (8)
 - **Senior Business Transformation & Sales Operations Partner** — Atlassian · 90/100 · remote Remote - Americas; Remote - Remote · first seen 2026-10-01
@@ -80,10 +86,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Transformation/operating model mandate matches core domains
   - Concern: Principal PM title may skew toward execution over strategy ownership
   - https://careers-americas.icims.com/jobs/27365/principal-program-manager%2c-sales-%26-success-strategy/job?mode=apply
-- **Senior Strategic Program Lead** — Coinbase · 85/100 · remote Remote - USA · posted 2026-09-11
-  - Why: CX strategy + program ownership matches core domain
-  - Concern: Coinbase intense culture with quarterly onsite surges
-  - https://www.coinbase.com/careers/positions/8198065?gh_jid=8198065
 - **Senior Program Manager,  Employee Experience** — Dropbox · 85/100 · remote Remote - US: Select locations · posted 2026-10-01
   - Why: Employee experience + AI enablement mandate
   - Concern: Research-heavy role may differ from her consulting background
@@ -96,23 +98,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Professional services operations leadership mandate
   - Concern: Staff level may be narrower than Director scope
   - https://job-boards.greenhouse.io/gitlab/jobs/8691770002
+- **Senior Staff Operations Manager, Office of the President (PED)** — Squarespace · 78/100 · remote Anywhere in the World (Remote) · posted 2026-09-23
+  - Why: Chief-of-Staff style operating model ownership
+  - Concern: Remote limited to California or NYC HQ, not fully US-remote
+  - https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped
 
-## REMOVED SINCE PRIOR RUN (11)
-- Senior Solution Consultant — Atlassian · No longer listed by its source
-- Capacity Strategy & Operations — Baseten · No longer listed by its source
-- Product Operations - Technical Program Manager — Eliassen · No longer listed by its source
-- Project Manager - HRIS Implementation — Eliassen · No longer listed by its source
-- AI Transformation Owner, Product & Design — GitLab · No longer listed by its source
-- Payer Partnerships Lead, Strategy & Operations — Headway · No longer listed by its source
-- Senior Manager Service Improvement Program (Coach) — Hilton · No longer listed by its source
-- Senior Director, Service Operations — Marriott International · No longer listed by its source
-- Head of GTM Enablement — Obsidian Security · No longer listed by its source
-- Executive Advisory Programs Manager — Stripe · No longer listed by its source
-- AI Operations Lead, Toast IQ — Toast · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (12)
+- Sr. Program Manager - Implementation — Alkami Technology, Inc. · No longer listed by its source
+- Operations Program Manager — Aquent · No longer listed by its source
+- Program Manager Tech 2 — Aquent · No longer listed by its source
+- Program Manager - Consumer — Aquent · No longer listed by its source
+- Senior Transformation & Change Lead — Aquent · No longer listed by its source
+- Operations Manager — Aquent · No longer listed by its source
+- Business Operations Manager — Aquent · No longer listed by its source
+- Project Manager, Creative & Marketing Ops — Aquent · No longer listed by its source
+- Operational Excellence Specialist — Aquent · No longer listed by its source
+- Program Manager Non Tech — Aquent · No longer listed by its source
+- Brand Marketing Manager IV (Brand Operations Manager) — Aquent · No longer listed by its source
+- Operational Excellence Senior Program Lead — Coinbase · No longer listed by its source
 
 ## SOURCE HEALTH
-- Sources checked: 130/137 successful
+- Sources checked: 129/137 successful
 - Temporary errors: 1
-- Needs attention: 28
-  - Broken config: Amplitude, ClickHouse, LVT, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Amplitude, AssemblyAI, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Nav, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
+- Needs attention: 30
+  - Broken config: Amplitude, ClickHouse, Hightouch, LVT, Marqeta, Postman, Temporal
+  - Returning nothing for 10+ runs: Addison Group, Airtable, Amplitude, AssemblyAI, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Nav, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
