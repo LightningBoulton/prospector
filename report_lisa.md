@@ -1,55 +1,21 @@
-# Prospector — 2026-10-03
+# Prospector — 2026-10-04
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**15 new roles today** · 8 still worth applying · 12 closed/removed
+**7 new roles today** · 8 still worth applying · 3 closed/removed
 
-## APPLY FIRST (1)
-- **M&A Project Manager** — Kelso Industries · 85/100 · onsite Draper, UT · posted 2026-10-02
-  - Why: M&A integration mandate matches core domain
-  - Concern: Title is PM-level, may underuse strategic experience
-  - https://careers.kelso-industries.com/?gh_jid=5442668008
-
-## NEW — WORTH REVIEWING (10)
-- **Senior Program Manager, Health Coaching** — Omada Health · 75/100 · remote Remote, USA · posted 2026-10-02
-  - Why: Operational excellence & program leadership mandate
-  - Concern: Healthcare coaching domain is unfamiliar
-  - https://job-boards.greenhouse.io/omadahealth/jobs/8232149
-- **Sr. Director, Revenue Operations Planning and Execution** — impact.com · 72/100 · remote USA (Remote) · posted 2026-10-02
-  - Why: Full US-remote role matches top location preference
-  - Concern: RevOps/GTM domain is adjacent not core expertise
-  - https://jobicy.com/jobs/154425-sr-director-revenue-operations-planning-and-execution
-- **IT Project Manager** — Auberge Resorts · 62/100 · remote United States (Remote) · $120,000–$160,000 · posted 2026-10-03
-  - Why: US-remote matches top location preference
-  - Concern: Heavily IT-systems focused, less strategic/operations ownership
-  - https://himalayas.app/companies/auberge-resorts/jobs/it-project-manager
-- **Senior Design Program Manager II** — Instacart · 58/100 · remote United States - Remote · posted 2026-10-02
-  - Why: Program management with AI enablement angle
-  - Concern: Requires design systems/tooling technical fluency
-  - https://instacart.careers/job/?gh_jid=8249751
-- **Director, Revenue Operations** — Brex · 55/100 · onsite Salt Lake City, Utah, United States · posted 2026-10-02
-  - Why: Operating model, incentive design, strategic ops leadership
-  - Concern: Sales-specific RevOps, quota-driven function
-  - https://www.brex.com/careers/8865089002?gh_jid=8865089002
-- **Group Product Manager, Customer Engagement & Experience** — Coinbase · 50/100 · remote Remote - USA · posted 2026-10-01
-  - Why: CX ownership and AI enablement align with her background
-  - Concern: Requires deep product management/technical PM background
-  - https://www.coinbase.com/careers/positions/8247881?gh_jid=8247881
-- **Program Manager (Ops)** — Pearl Homes · 50/100 · remote United States (Remote) · $120,000–$140,000 · posted 2026-10-03
-  - Why: Remote US fits location preference
-  - Concern: Role is tactical/execution-heavy, not strategic
-  - https://himalayas.app/companies/pearl-homes/jobs/program-manager-ops
-- **Sr. Principal Technical Program Manager - Sales & Finance Products** — Atlassian · 45/100 · onsite San Francisco - United States; Seattle - United States · first seen 2026-10-01
-  - Why: Atlassian priority employer with referral advantage
-  - Concern: Requires deep technical architecture fluency she lacks
-  - https://careers-americas.icims.com/jobs/27380/sr.-principal-technical-program-manager---sales-%26-finance-products/job?mode=apply
-- **Sr Finance Program Manager** — Samsara · 42/100 · remote Remote - US · posted 2026-10-01
-  - Why: US-remote matches top location preference
-  - Concern: Heavily finance/billing escalation focus, not transformation
-  - https://www.samsara.com/company/careers/roles/8223708?gh_jid=8223708
-- **Contact Center/CX Quality Assurance Lead (Houston)** — Clover Health · 42/100 · remote USA (Remote) · posted 2026-10-02
-  - Why: CX quality program leadership touches her CX domain
-  - Concern: Heavily call-center QA operational focus, not strategic
-  - https://jobicy.com/jobs/154427-contact-center-cx-quality-assurance-lead-houston
+## NEW — WORTH REVIEWING (3)
+- **Corporate Development Manager** — Coinbase · 42/100 · remote Remote - USA · posted 2026-10-02
+  - Why: M&A mandate aligns with integration interest
+  - Concern: Heavy financial/deal analysis skillset not clearly demonstrated
+  - https://www.coinbase.com/careers/positions/8238602?gh_jid=8238602
+- **Agentic Success Portfolio Lead** — Atlassian · 35/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-10-02
+  - Why: Priority employer Atlassian with referral advantage
+  - Concern: Requires data engineering/pipeline ownership, not her background
+  - https://careers-americas.icims.com/jobs/26052/agentic-success-portfolio-lead/job?mode=apply
+- **Senior Technical Program Manager, AI Platform** — Sentry · 35/100 · remote San Francisco, California (Remote) · $150K – $240K · posted 2026-10-04
+  - Why: Program coordination mandate fits PMO/program leadership background
+  - Concern: Requires SF onsite 3 days/week, not remote as stated
+  - https://jobs.ashbyhq.com/sentry/278476b1-87c5-461f-ad7e-950cd31e5f31
 
 ## DISCOVERY / WILDCARDS (4)
 - **Customer Strategy & Planning Director, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-09-24
@@ -86,36 +52,27 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Transformation/operating model mandate matches core domains
   - Concern: Principal PM title may skew toward execution over strategy ownership
   - https://careers-americas.icims.com/jobs/27365/principal-program-manager%2c-sales-%26-success-strategy/job?mode=apply
+- **Director of Launch Operations** — Luxury Presence · 85/100 · remote USA (Remote) · posted 2026-09-03
+  - Why: Operating model redesign at scale
+  - Concern: Requires hands-on platform/product ownership skills
+  - https://jobicy.com/jobs/152444-director-of-launch-operations
 - **Senior Program Manager,  Employee Experience** — Dropbox · 85/100 · remote Remote - US: Select locations · posted 2026-10-01
   - Why: Employee experience + AI enablement mandate
   - Concern: Research-heavy role may differ from her consulting background
   - https://jobs.dropbox.com/listing/8234201?gh_jid=8234201
+- **M&A Project Manager** — Kelso Industries · 85/100 · onsite Draper, UT · posted 2026-10-02
+  - Why: M&A integration mandate matches core domain
+  - Concern: Title is PM-level, may underuse strategic experience
+  - https://careers.kelso-industries.com/?gh_jid=5442668008
 - **Global Head of Customer Success Operations** — Atlassian · 82/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-10-01
   - Why: CX/CS operations leadership mandate
   - Concern: Deep enterprise SaaS CS motion expertise may be gap
   - https://careers-americas.icims.com/jobs/27386/global-head-of-customer-success-operations/job?mode=apply
-- **Staff Professional Services Operations Manager** — GitLab · 82/100 · remote Remote, Canada; Remote, United States · posted 2026-09-23
-  - Why: Professional services operations leadership mandate
-  - Concern: Staff level may be narrower than Director scope
-  - https://job-boards.greenhouse.io/gitlab/jobs/8691770002
-- **Senior Staff Operations Manager, Office of the President (PED)** — Squarespace · 78/100 · remote Anywhere in the World (Remote) · posted 2026-09-23
-  - Why: Chief-of-Staff style operating model ownership
-  - Concern: Remote limited to California or NYC HQ, not fully US-remote
-  - https://weworkremotely.com/remote-jobs/squarespace-senior-staff-operations-manager-office-of-the-president-ped
 
-## REMOVED SINCE PRIOR RUN (12)
-- Sr. Program Manager - Implementation — Alkami Technology, Inc. · No longer listed by its source
-- Operations Program Manager — Aquent · No longer listed by its source
-- Program Manager Tech 2 — Aquent · No longer listed by its source
-- Program Manager - Consumer — Aquent · No longer listed by its source
-- Senior Transformation & Change Lead — Aquent · No longer listed by its source
-- Operations Manager — Aquent · No longer listed by its source
-- Business Operations Manager — Aquent · No longer listed by its source
-- Project Manager, Creative & Marketing Ops — Aquent · No longer listed by its source
-- Operational Excellence Specialist — Aquent · No longer listed by its source
-- Program Manager Non Tech — Aquent · No longer listed by its source
-- Brand Marketing Manager IV (Brand Operations Manager) — Aquent · No longer listed by its source
-- Operational Excellence Senior Program Lead — Coinbase · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (3)
+- IT Project Manager — Auberge Resorts · No longer listed by its source
+- Principal Consultant, Sales Effectiveness — Forma.ai · No longer listed by its source
+- Program Manager (Ops) — Pearl Homes · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
