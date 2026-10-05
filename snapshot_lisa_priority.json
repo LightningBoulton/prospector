@@ -373,48 +373,6 @@
   }
  },
  {
-  "key": "Adobe::R167979",
-  "company": "Adobe",
-  "title": "Principal Technical Program Manager",
-  "location": "Seattle (+2 more)",
-  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Principal-Technical-Program-Manager_R167979",
-  "posted": "2026-09-18",
-  "salary": "$146,300 - $277,400",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Adobe with referral advantage",
-    "Seattle matches Washington State preference",
-    "Program leadership aligns with PMO background",
-    "Technical PM scope unclear, may skew engineering-heavy"
-   ],
-   "concerns": [
-    "No description to confirm mandate or scope",
-    "'Technical' may require deep engineering fluency",
-    "Onsite/hybrid Seattle requires relocation"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 65,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Priority employer Adobe with referral advantage",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Adobe::R171588",
   "company": "Adobe",
   "title": "Senior Manager, Legal Operations",
@@ -663,6 +621,87 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Adobe priority employer with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR361440",
+  "company": "Salesforce",
+  "title": "Senior Experience Architect (Professional Services)",
+  "location": "Remote (+8 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Senior-Experience-Architect--Professional-Services-_JR361440-1",
+  "posted": "2026-10-05",
+  "salary": "$172,500 - $260,100",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'professional services' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Professional services leadership at priority employer",
+    "Remote US-based role",
+    "Experience architecture aligns with CX/EX background",
+    "Salesforce is named target employer"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Title suggests possibly technical/solution-architect focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 65,
+   "practical_fit": 85,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Professional services leadership at priority employer",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR361332",
+  "company": "Salesforce",
+  "title": "Senior Customer Marketing Manager",
+  "location": "Remote (+4 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---Remote/Senior-Customer-Marketing-Manager_JR361332",
+  "posted": "2026-10-05",
+  "salary": "$143,400 - $216,900",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce",
+    "Remote role fits location preference",
+    "Customer-facing but marketing-specific focus",
+    "Title suggests narrower marketing mandate",
+    "No description to confirm scope"
+   ],
+   "concerns": [
+    "Thin posting, little scope detail",
+    "May be tactical marketing, not transformation/ops"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 85,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce",
    "bg": "d192ce659668"
   }
  },
@@ -1195,47 +1234,6 @@
   }
  },
  {
-  "key": "Salesforce::JR360283",
-  "company": "Salesforce",
-  "title": "Customer Success Manager, Director - Retail",
-  "location": "California - San Francisco Metro - Remote",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco-Metro---Remote/Customer-Success-Manager--Director---Retail_JR360283-1",
-  "posted": "2026-09-28",
-  "salary": "$171,200 - $273,000",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Salesforce",
-    "Director-level customer success leadership",
-    "Remote role fits location preference",
-    "CX ownership aligns with her background"
-   ],
-   "concerns": [
-    "No description to confirm strategic scope",
-    "Retail vertical CSM may be narrower than transformation mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 55,
-   "practical_fit": 80,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Priority employer Salesforce",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Salesforce::JR359449",
   "company": "Salesforce",
   "title": "Human-Centered Change Senior Manager",
@@ -1436,46 +1434,6 @@
   }
  },
  {
-  "key": "Salesforce::JR361440",
-  "company": "Salesforce",
-  "title": "Senior Experience Architect (Professional Services)",
-  "location": "Remote (+4 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Senior-Experience-Architect--Professional-Services-_JR361440-1",
-  "posted": "2026-09-24",
-  "salary": "$172,500 - $260,100",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'professional services' + seniority in title",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "low",
-   "reasons": [
-    "Professional services leadership at priority employer",
-    "Remote US-based role",
-    "Experience architecture aligns with CX/EX background",
-    "Salesforce is named target employer"
-   ],
-   "concerns": [
-    "No description to confirm scope",
-    "Title suggests possibly technical/solution-architect focus"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Professional services leadership at priority employer",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Salesforce::JR361367",
   "company": "Salesforce",
   "title": "Customer Strategy & Planning Director, Agentforce Operations",
@@ -1671,47 +1629,6 @@
    "score": 42,
    "fit": "maybe",
    "reason": "Salesforce is a named priority employer",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Salesforce::JR347839",
-  "company": "Salesforce",
-  "title": "Agentic Operations Consultant - Healthcare",
-  "location": "Remote (+54 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Agentic-Operations-Consultant_JR347839",
-  "posted": "2026-09-15",
-  "salary": "$134,750 - $244,510",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "priority employer; role family 'operations' in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Salesforce with referral advantage",
-    "Operations/AI-adjacent title fits core domains",
-    "Remote-eligible aligns with top location preference",
-    "Consultant title may signal narrower IC scope"
-   ],
-   "concerns": [
-    "No description; scope and seniority unclear",
-    "'Consultant' may be less senior than target titles",
-    "Could be delivery-focused vs strategic"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Priority employer Salesforce with referral advantage",
    "bg": "d192ce659668"
   }
  },
@@ -1957,6 +1874,87 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Customer success leadership adjacent to CX expertise",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR362341",
+  "company": "Salesforce",
+  "title": "Manager, Global P2C Change Strategy & Activation",
+  "location": "Seattle (+1 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Indianapolis/Manager--Global-P2C-Change-Strategy---Activation_JR362341",
+  "posted": "2026-10-05",
+  "salary": "$117,400 - $177,600",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Change management mandate fits core domain",
+    "Salesforce is a named priority employer",
+    "Seattle aligns with Washington State preference",
+    "Manager level still ownership-focused per profile"
+   ],
+   "concerns": [
+    "No description to confirm scope",
+    "Title vague on actual responsibilities"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 75,
+   "practical_fit": 70,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Change management mandate fits core domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR353112",
+  "company": "Salesforce",
+  "title": "Customer Success Manager, Director - Core (Sales & Service) Clouds - TMT",
+  "location": "Seattle (+2 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Customer-Success-Manager--Director---Core--Sales---Service--Clouds---TMT_JR353112",
+  "posted": "2026-10-05",
+  "salary": "$171,200 - $273,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce",
+    "Director-level customer success leadership",
+    "Seattle matches WA preference",
+    "CX ownership aligns with background"
+   ],
+   "concerns": [
+    "No description to confirm mandate scope",
+    "Title suggests account-level CSM not strategic leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 60,
+   "practical_fit": 70,
+   "opportunity_score": 65,
+   "score": 65,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce",
    "bg": "d192ce659668"
   }
  },
@@ -2889,44 +2887,6 @@
    "score": 15,
    "fit": "no",
    "reason": "Requires hands-on ML/engineering leadership, not her background",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Atlassian::27233",
-  "company": "Atlassian",
-  "title": "Account Associate, Mid-Market (Renewals)",
-  "location": "San Francisco - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/27233/account-associate%2c-mid-market-%28renewals%29/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "priority employer; mandate in responsibilities (value realization)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Sales renewals/quota role, not transformation",
-    "Priority employer but wrong function",
-    "No strategic ownership or org scope"
-   ],
-   "concerns": [
-    "Quota-carrying sales role, weak_or_wrong_fit match"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 75,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Sales renewals/quota role, not transformation",
    "bg": "d192ce659668"
   }
  },

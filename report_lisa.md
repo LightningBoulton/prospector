@@ -1,21 +1,51 @@
-# Prospector — 2026-10-04
+# Prospector — 2026-10-05
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**7 new roles today** · 8 still worth applying · 3 closed/removed
+**14 new roles today** · 8 still worth applying · 5 closed/removed
 
-## NEW — WORTH REVIEWING (3)
-- **Corporate Development Manager** — Coinbase · 42/100 · remote Remote - USA · posted 2026-10-02
-  - Why: M&A mandate aligns with integration interest
-  - Concern: Heavy financial/deal analysis skillset not clearly demonstrated
-  - https://www.coinbase.com/careers/positions/8238602?gh_jid=8238602
-- **Agentic Success Portfolio Lead** — Atlassian · 35/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-10-02
-  - Why: Priority employer Atlassian with referral advantage
-  - Concern: Requires data engineering/pipeline ownership, not her background
-  - https://careers-americas.icims.com/jobs/26052/agentic-success-portfolio-lead/job?mode=apply
-- **Senior Technical Program Manager, AI Platform** — Sentry · 35/100 · remote San Francisco, California (Remote) · $150K – $240K · posted 2026-10-04
-  - Why: Program coordination mandate fits PMO/program leadership background
-  - Concern: Requires SF onsite 3 days/week, not remote as stated
-  - https://jobs.ashbyhq.com/sentry/278476b1-87c5-461f-ad7e-950cd31e5f31
+## APPLY FIRST (1)
+- **Principal, Business Operations and Strategy** — Instructure · 88/100 · remote USA (Remote) · posted 2026-10-05
+  - Why: Strategy-to-execution mandate matches transformation background
+  - Concern: Principal title scope vs prior Director/Senior Director level
+  - https://jobicy.com/jobs/154569-principal-business-operations-and-strategy
+
+## NEW — WORTH REVIEWING (9)
+- **Senior Project Manager, GTM Launch** — Dutchie · 75/100 · remote USA (Remote) · posted 2026-10-05
+  - Why: US-remote full-time role
+  - Concern: Title is more tactical PM than strategic transformation
+  - https://jobicy.com/jobs/154623-senior-project-manager-gtm-launch
+- **Program Manager, Carrier Operations & Governance** — Twilio · 74/100 · remote Remote - US · posted 2026-10-05
+  - Why: New governance/ops function being built from scratch
+  - Concern: Telecom carrier domain is unfamiliar specialty
+  - https://job-boards.greenhouse.io/twilio/jobs/8190721
+- **Global Workforce Planning & Transformation** — Chime Financial, Inc · 62/100 · remote Anywhere in the World (Remote) · posted 2026-10-05
+  - Why: Fully remote US role
+  - Concern: Deep WFM/scheduling specialization not core background
+  - https://weworkremotely.com/remote-jobs/chime-financial-inc-global-workforce-planning-transformation
+- **Head of AI Native Operations** — Supabase · 62/100 · remote Remote, Global · posted 2026-10-05
+  - Why: AI-native operating model mandate fits transformation background
+  - Concern: Highly technical AI/engineering-native culture may be a stretch
+  - https://jobs.ashbyhq.com/supabase/9c04bc60-78a1-4529-950d-4704ab475764
+- **Content Manager** — Aquent · 50/100 · remote Westlake, TX, US (Remote) · posted 2026-10-01
+  - Why: Change communications supports transformation work she leads
+  - Concern: 2-4 years experience level is below her seniority
+  - https://aquent.com/find-work/213424
+- **Customer Support Manager - Risk** — Mercury · 50/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-10-05
+  - Why: CX operations leadership
+  - Concern: Fincrime/risk support is narrow specialized domain
+  - https://job-boards.greenhouse.io/mercury/jobs/6217058004
+- **Digital Marketing Program Manager** — Aquent · 45/100 · remote Seattle, WA, US (Remote) · posted 2026-09-30
+  - Why: Program/project management of marketing initiatives
+  - Concern: Tactical execution role, not strategic leadership
+  - https://aquent.com/find-work/213412
+- **General Manager, Collibra Public Sector** — Collibra · 42/100 · remote USA (Remote) · posted 2026-10-05
+  - Why: Remote US role aligns with location preference
+  - Concern: No demonstrated federal/defense sector experience
+  - https://jobicy.com/jobs/154596-general-manager-collibra-public-sector
+- **Producer/Project Manager** — Aquent · 35/100 · remote New York, NY, US (Remote) · posted 2026-10-05
+  - Why: Remote contract via staffing firm
+  - Concern: Below strategic/transformation mandate she targets
+  - https://aquent.com/find-work/213506
 
 ## DISCOVERY / WILDCARDS (4)
 - **Customer Strategy & Planning Director, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-09-24
@@ -44,18 +74,14 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Chief of Staff mandate with strategic planning ownership
   - Concern: Healthcare/Medicaid domain is new context
   - https://jobicy.com/jobs/152055-business-operations-chief-of-staff
-- **Principal, Success Portfolio Design & Transformation** — Atlassian · 88/100 · remote Mountain View - United States or Remote; Remote - Remote · first seen 2026-08-26
-  - Why: Priority employer Atlassian, remote-eligible
-  - Concern: Heavier CS/GTM specialization than her past scope
-  - https://careers-americas.icims.com/jobs/26037/principal%2c-success-portfolio-design-%26-transformation/job?mode=apply
 - **Principal Program Manager, Sales & Success Strategy** — Atlassian · 88/100 · remote Austin - United States; Remote - Remote · first seen 2026-10-01
   - Why: Transformation/operating model mandate matches core domains
   - Concern: Principal PM title may skew toward execution over strategy ownership
   - https://careers-americas.icims.com/jobs/27365/principal-program-manager%2c-sales-%26-success-strategy/job?mode=apply
-- **Director of Launch Operations** — Luxury Presence · 85/100 · remote USA (Remote) · posted 2026-09-03
-  - Why: Operating model redesign at scale
-  - Concern: Requires hands-on platform/product ownership skills
-  - https://jobicy.com/jobs/152444-director-of-launch-operations
+- **Principal, Success Portfolio Design & Transformation** — Atlassian · 88/100 · remote Mountain View - United States or Remote; Remote - Remote · first seen 2026-08-26
+  - Why: Priority employer Atlassian, remote-eligible
+  - Concern: Heavier CS/GTM specialization than her past scope
+  - https://careers-americas.icims.com/jobs/26037/principal%2c-success-portfolio-design-%26-transformation/job?mode=apply
 - **Senior Program Manager,  Employee Experience** — Dropbox · 85/100 · remote Remote - US: Select locations · posted 2026-10-01
   - Why: Employee experience + AI enablement mandate
   - Concern: Research-heavy role may differ from her consulting background
@@ -68,11 +94,17 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: CX/CS operations leadership mandate
   - Concern: Deep enterprise SaaS CS motion expertise may be gap
   - https://careers-americas.icims.com/jobs/27386/global-head-of-customer-success-operations/job?mode=apply
+- **Staff Professional Services Operations Manager** — GitLab · 82/100 · remote Remote, Canada; Remote, United States · posted 2026-09-23
+  - Why: Professional services operations leadership mandate
+  - Concern: Staff level may be narrower than Director scope
+  - https://job-boards.greenhouse.io/gitlab/jobs/8691770002
 
-## REMOVED SINCE PRIOR RUN (3)
-- IT Project Manager — Auberge Resorts · No longer listed by its source
-- Principal Consultant, Sales Effectiveness — Forma.ai · No longer listed by its source
-- Program Manager (Ops) — Pearl Homes · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (5)
+- Senior Executive Business Partner, CFO — GitLab · No longer listed by its source
+- Knowledge Program Manager — Instacart · No longer listed by its source
+- Director of Launch Operations — Luxury Presence · No longer listed by its source
+- Project Manager — Robert Half · No longer listed by its source
+- Program Manager, Customer Advocacy & Programs — Stripe · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
