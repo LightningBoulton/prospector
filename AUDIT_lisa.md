@@ -1,56 +1,55 @@
 # Prospector audit — Lisa — Transformation / Operations / Experience Leadership
 
-_Generated 2026-09-28 by `audit.py` from committed files only. No ATS fetch, no Anthropic API call, nothing modified._
+_Generated 2026-10-05 by `audit.py` from committed files only. No ATS fetch, no Anthropic API call, nothing modified._
 
 ## Current picture
 
-- Roles tracked across all lanes: **203**
-- `apply_first`: **1**
-- `strong_fit`: **26**
-- `stretch`: **94**
-- `practical_contract`: **4**
-- `not_recommended`: **78**
-- Local: 52
-- US-Remote: 140
-- Contract/Staffing: 11
+- Roles tracked across all lanes: **225**
+- `apply_first`: **4**
+- `strong_fit`: **32**
+- `stretch`: **85**
+- `practical_contract`: **12**
+- `not_recommended`: **92**
+- Local: 53
+- US-Remote: 134
+- Contract/Staffing: 38
 
 ## Possible false negatives
 _Highest-scoring roles the model still marked `not_recommended`. If any of these look right to you, the scoring profile or the prompt may be too strict._
 
 - **BambooHR** — Partner Program Manager · Local · score 40 · _Remote and Utah-eligible_
 - **Ramp** — Enterprise Customer Activation Manager | Bill Pay & Procurement · US-Remote · score 40 · _Customer implementation/onboarding role, not strategic ownership_
-- **Calendly** — Staff Product Manager, Intelligent Customer Experience · US-Remote · score 40 · _Technical PM role for AI support product, not transformation leadership_
 - **Chainguard** — Director of People Operations · US-Remote · score 40 · _US-remote is practically ideal_
 - **Grow Therapy** — People Business Partner, Operations · US-Remote · score 40 · _HRBP/people-partner role, not transformation or strategy_
-- **Abnormal** — Customer Success Manager, Enterprise (Missouri Valley) · US-Remote · score 40 · _Fully remote US role_
-- **NetBox Labs** — People Operations Manager · US-Remote · score 40 · _US-remote practical fit is strong_
-- **Wpromote** — Director, Client Strategy (Media Director) · US-Remote · score 40 · _Remote US-based role, strong practical fit_
+- **Nextiva** — Principal Product Manager (Omnichannel CX) · US-Remote · score 40 · _CX-adjacent but core work is product management_
+- **Fleetio** — Director, Product Marketing, GTM Strategy · US-Remote · score 38 · _US-remote is strong practical fit_
+- **Filevine** — VP, Performance Marketing · Local · score 35 · _Utah-local role, strong location fit_
+- **BambooHR** — Digital Customer Education Specialist, Premium & Paid Programs · Local · score 35 · _Utah hybrid location matches practical preference_
+- **Coinbase** — Senior Marketing Manager, Brand Strategy · US-Remote · score 35 · _Brand/product marketing strategy, not her core domain_
 - **Ramp** — Senior Channel Partner Manager, Global Advisory / GSI · US-Remote · score 35 · _Sales/channel partnership role, not transformation ownership_
 - **Ramp** — Technical Consultant, Enterprise · US-Remote · score 35 · _Customer-facing technical solutioning, not transformation/strategy_
 - **Render** — Talent Operations Manager · US-Remote · score 35 · _Fully remote US role_
 - **Stripe** — Scale Partner Marketing Lead · US-Remote · score 35 · _Partner marketing execution role, not transformation/ops leadership_
 - **Dropbox** — Customer Evidence Manager · US-Remote · score 35 · _US-remote practical fit_
-- **Docker** — Senior Event Operations Manager · US-Remote · score 35 · _Remote US role fits location preference_
-- **Gainsight** — Principal Product Marketing Manager, Customer Success and Staircase · US-Remote · score 35 · _Product marketing specialist role, not transformation/ops leadership_
+- **Headway** — Staff Product Manager, Growth Automation & Enablement · US-Remote · score 35 · _Remote-friendly practical fit_
 
 ## Fetched but filtered out
 _Leadership-shaped titles the filter dropped, across the last 10 recorded run(s). Recorded by the daily run, so this needs no extra fetching. Use it to spot an over-tight exclusion._
 
-**336** distinct role(s) rejected. Most common rules:
-- missed match group [2] — 1493 occurrence(s)
-- excluded by 'engineering' — 171 occurrence(s)
-- missed match group [1] — 143 occurrence(s)
-- excluded by 'engineer' — 122 occurrence(s)
-- excluded by 'account manager' — 63 occurrence(s)
-- excluded by 'accounting' — 55 occurrence(s)
-- excluded by 'customer success manager' — 39 occurrence(s)
-- excluded by 'clinical' — 31 occurrence(s)
+**340** distinct role(s) rejected. Most common rules:
+- missed match group [2] — 1464 occurrence(s)
+- excluded by 'engineering' — 159 occurrence(s)
+- missed match group [1] — 146 occurrence(s)
+- excluded by 'engineer' — 135 occurrence(s)
+- excluded by 'accounting' — 71 occurrence(s)
+- excluded by 'account manager' — 65 occurrence(s)
+- excluded by 'clinical' — 27 occurrence(s)
+- excluded by 'customer success manager' — 23 occurrence(s)
 - excluded by 'developer' — 18 occurrence(s)
-- excluded by 'software' — 16 occurrence(s)
+- excluded by 'treasury' — 15 occurrence(s)
 
 | Company | Title | Rule that dropped it | Runs |
 |---|---|---|---|
-| Adobe | Senior Customer Success Manager | excluded by 'customer success manager' | 20 |
 | Adobe | Engineering Program Manager | excluded by 'engineering' | 20 |
 | Adobe | Principal Product Manager, Adobe Express | missed match group [2] | 20 |
 | Adobe | Sr. Manager, Cyber Threat Research & Intelligence | missed match group [2] | 20 |
@@ -59,50 +58,54 @@ _Leadership-shaped titles the filter dropped, across the last 10 recorded run(s)
 | Adobe | Sr. Product Marketing Manager, Higher Education | missed match group [2] | 20 |
 | Adobe | Senior Program Manager, GSO | missed match group [2] | 20 |
 | Adobe | Senior Business Consultant - Content Supply Chain | missed match group [1] | 20 |
-| Adobe | Senior Technical Consultant - Data & Insights | missed match group [1] | 16 |
-| Adobe | Senior Business Consultant - Content & Commerce | missed match group [1] | 16 |
-| Adobe | Senior Technical Consultant - Customer Journeys | missed match group [1] | 16 |
-| Aquent | Product Marketing Manager | missed match group [2] | 14 |
-| Aquent | Creative Project Manager | missed match group [2] | 12 |
-| Aquent | Marketing Manager (III) | missed match group [2] | 12 |
+| Adobe | Senior Technical Consultant - Data & Insights | missed match group [1] | 20 |
+| Adobe | Senior Business Consultant - Content & Commerce | missed match group [1] | 20 |
+| Adobe | Senior Technical Consultant - Customer Journeys | missed match group [1] | 20 |
+| Eliassen | Sr Technical Project/Program Manager | missed match group [2] | 15 |
+| Adobe | Program Manager (IT) | missed match group [2] | 14 |
 | Salesforce | Associate Technical Consultant | missed match group [1] | 12 |
+| Aquent | Product Marketing Manager | missed match group [2] | 12 |
 | Adobe | Enterprise Sales Account Manager - State & Local Government | excluded by 'account manager' | 10 |
 | Adobe | Enterprise Sales Account Manager, Digital Learning | excluded by 'account manager' | 10 |
-| Adobe | Senior Corporate Account Manager | excluded by 'account manager' | 10 |
 | Adobe | Senior Solutions Consultant | missed match group [1] | 10 |
-| Adobe | Manager, Enterprise Architecture | missed match group [2] | 10 |
-| Adobe | Senior Engineering Manager  | iOS Video Applications | excluded by 'engineering' | 10 |
-| Adobe | Director of Product Management, Adobe Lightroom Creative Pro | missed match group [2] | 10 |
-| Adobe | Principal Enterprise Architect | missed match group [2] | 10 |
-| Adobe | Enterprise Sales Account Director - State & Local Government - Northwest | missed match group [2] | 10 |
 | Adobe | Director, Partner Sales - Accenture | missed match group [2] | 10 |
 | Adobe | Director of Product Marketing | missed match group [2] | 10 |
-| Adobe | Sr. Manager, Partner Sales – PWC | missed match group [2] | 10 |
-| Adobe | Sr. Sales Manager, Corporate Accounts | missed match group [2] | 10 |
+| Adobe | Enterprise Sales Account Director - State & Local Government - Northwest | missed match group [2] | 10 |
+| Adobe | Senior Engineering Manager  | iOS Video Applications | excluded by 'engineering' | 10 |
+| Adobe | Principal Enterprise Architect | missed match group [2] | 10 |
 | Adobe | Global Agency Lead WPP – Director Partner Sales | missed match group [2] | 10 |
 | Adobe | Principal Product Marketing Manager, Firefly | missed match group [2] | 10 |
 | Adobe | Editorial Lead | missed match group [2] | 10 |
-| Adobe | Sr. Applied AI Product Manager | missed match group [2] | 10 |
 | Adobe | Director of Product Management - Adobe Builders eXperience (ABX) | missed match group [2] | 10 |
 | Adobe | Principal Service Engineer, Adobe Firefly | excluded by 'engineer' | 10 |
-| Adobe | Principal Technical Program Manager | missed match group [2] | 10 |
 | Adobe | Principal Scientist - Data Pipeline Engineer | excluded by 'engineer' | 10 |
 | Adobe | Sr. Director, Engineering - Digital Video & Audio (DVA) | excluded by 'engineering' | 10 |
-| Adobe | Principal Machine Learning Engineer | excluded by 'engineer' | 10 |
 | Adobe | Finance Lead | missed match group [2] | 10 |
+| Adobe | Product Manager | missed match group [2] | 10 |
+| Adobe | Principal Product Marketing Manager, Photoshop | missed match group [2] | 10 |
+| Adobe | Principal Product Manager - AI for Engineering | excluded by 'engineering' | 10 |
+| Adobe | Principal Product Marketing Manager, Pro Design | missed match group [2] | 10 |
+| Adobe | Principal Digital Growth Manager | missed match group [2] | 10 |
+| Salesforce | Accounting Manager | excluded by 'accounting' | 10 |
+| Salesforce | Senior Technical Architect / Technical Architect Director - Data Foundation Delivery | missed match group [2] | 10 |
+| Salesforce | Lead Solution Engineer | excluded by 'engineer' | 10 |
+| GitLab | Director of Product Management, Agentic Software Delivery | excluded by 'software' | 10 |
 
-_…and 296 more._
+_…and 300 more._
 
 ## Repeated false-positive patterns
 
 _No feedback recorded yet. Mark a few roles in `feedback_lisa.json` and this section becomes the most useful one here._
 ## Source health
 
-_From the run on 2026-09-28._
+_From the run on 2026-10-05._
 
 ### Sources that FAILED to respond on the last run
 
+- **Podium** (greenhouse/podium81) — roles from this company were held, not reported as removed
+- **LVT** (greenhouse/liveviewtechnologiesinc) — roles from this company were held, not reported as removed
 - **Postman** (greenhouse/postman) — roles from this company were held, not reported as removed
+- **Hightouch** (greenhouse/hightouch) — roles from this company were held, not reported as removed
 - **Temporal** (greenhouse/temporaltechnologies) — roles from this company were held, not reported as removed
 - **Amplitude** (greenhouse/amplitude) — roles from this company were held, not reported as removed
 - **ClickHouse** (greenhouse/clickhouse) — roles from this company were held, not reported as removed
@@ -112,31 +115,28 @@ _From the run on 2026-09-28._
 
 | Company | Registry | ATS / slug | Runs with zero results |
 |---|---|---|---|
-| Weave | local | greenhouse/weave | 63 ⚠️ |
-| Vivint | local | smartrecruiters/vivint | 63 ⚠️ |
-| Instructure | local | smartrecruiters/instructure | 63 ⚠️ |
-| Nav | local | greenhouse/navtechnologies | 63 ⚠️ |
-| Miro | remote | ashby/miro | 63 ⚠️ |
-| Inngest | remote | ashby/inngest | 63 ⚠️ |
-| Beyond (Overstock) | local | greenhouse/beyond | 55 ⚠️ |
-| Doppler | remote | ashby/doppler | 47 ⚠️ |
-| Airtable | remote | greenhouse/airtable | 41 ⚠️ |
-| Domo | local | workday/domo | 38 ⚠️ |
-| Confluent | remote | ashby/confluent | 35 ⚠️ |
-| Cockroach Labs | remote | greenhouse/cockroachlabs | 34 ⚠️ |
-| Together AI | remote | greenhouse/togetherai | 34 ⚠️ |
-| Pinecone | remote | ashby/pinecone | 33 ⚠️ |
-| Toptal | remote | lever/toptal | 26 ⚠️ |
-| Buffer | remote | ashby/buffer | 20 ⚠️ |
-| Health Catalyst | local | workday/healthcatalyst | 13 ⚠️ |
-| Vantage | remote | ashby/vantage | 13 ⚠️ |
-| Alchemy | remote | ashby/alchemy | 11 ⚠️ |
-| Entrata | local | lever/entrata | 6 ⚠️ |
-| Chime | remote | greenhouse/chime | 6 ⚠️ |
-| AssemblyAI | remote | greenhouse/assemblyai | 6 ⚠️ |
-| Addison Group | staffing | snaphop/addisongroup | 5 ⚠️ |
-| Nomi Health | local | lever/nomihealth | 1 |
-| Aquent | staffing | aquent/aquent | 1 |
+| Weave | local | greenhouse/weave | 70 ⚠️ |
+| Vivint | local | smartrecruiters/vivint | 70 ⚠️ |
+| Instructure | local | smartrecruiters/instructure | 70 ⚠️ |
+| Nav | local | greenhouse/navtechnologies | 70 ⚠️ |
+| Miro | remote | ashby/miro | 70 ⚠️ |
+| Inngest | remote | ashby/inngest | 70 ⚠️ |
+| Beyond (Overstock) | local | greenhouse/beyond | 62 ⚠️ |
+| Doppler | remote | ashby/doppler | 54 ⚠️ |
+| Airtable | remote | greenhouse/airtable | 48 ⚠️ |
+| Domo | local | workday/domo | 45 ⚠️ |
+| Confluent | remote | ashby/confluent | 42 ⚠️ |
+| Cockroach Labs | remote | greenhouse/cockroachlabs | 41 ⚠️ |
+| Together AI | remote | greenhouse/togetherai | 41 ⚠️ |
+| Pinecone | remote | ashby/pinecone | 40 ⚠️ |
+| Toptal | remote | lever/toptal | 33 ⚠️ |
+| Buffer | remote | ashby/buffer | 27 ⚠️ |
+| Health Catalyst | local | workday/healthcatalyst | 20 ⚠️ |
+| Vantage | remote | ashby/vantage | 20 ⚠️ |
+| AssemblyAI | remote | greenhouse/assemblyai | 13 ⚠️ |
+| Addison Group | staffing | snaphop/addisongroup | 12 ⚠️ |
+| Nomi Health | local | lever/nomihealth | 8 ⚠️ |
+| Metabase | remote | lever/metabase | 3 |
 
 _A company returning zero for many consecutive runs usually means an ATS migration or a changed slug — worth checking its careers page. A ⚠️ marks 5+ runs._
 
