@@ -1,49 +1,49 @@
-# Prospector — 2026-10-07
+# Prospector — 2026-10-08
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 10 closed/removed
+**14 new roles today** · 8 still worth applying · 7 closed/removed
 
 ## NEW — WORTH REVIEWING (10)
-- **Director, Chief of Staff – R&D** — Headway · 82/100 · remote New York, NY (Remote) · $230K – $300K · posted 2026-10-05
-  - Why: Chief of Staff with real operating mandate
-  - Concern: R&D/tech-specific domain may require ramp-up
-  - https://jobs.ashbyhq.com/headway/18261737-fed6-4203-aeaa-6068545f9f1e
-- **Director, HR Technology Portfolio & Program Management** — Hilton · 78/100 · remote Dallas, TX, United States (Remote) · posted 2026-10-07
-  - Why: Priority employer Hilton
-  - Concern: Remote but Dallas-based, not fully US-remote confirmed
-  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/226036
-- **Campaign Strategy & Operations Manager** — Stripe · 65/100 · remote USA (Remote) · posted 2026-10-06
-  - Why: Marketing ops/strategy scaling mandate fits ops-excellence background
-  - Concern: Marketing-specific scope narrower than her broader transformation remit
-  - https://jobicy.com/jobs/154729-campaign-strategy-operations-manager
-- **Director, Global People Operations & Compliance** — GitLab · 62/100 · remote Remote, Canada; Remote, United States · posted 2026-10-06
-  - Why: Global ops leadership with AI/transformation mandate
-  - Concern: HR/People Ops compliance specialization not her core background
-  - https://job-boards.greenhouse.io/gitlab/jobs/8872500002
-- **Director, Mid Market Customer Success** — Abnormal · 58/100 · remote Anywhere in the World (Remote) · posted 2026-10-07
-  - Why: CX/customer success leadership aligns with her experience
-  - Concern: Heavy SaaS/security CS-specific domain expertise expected
-  - https://weworkremotely.com/remote-jobs/abnormal-director-mid-market-customer-success
-- **Senior Solution Consultant, Cloud Platform and AI** — Atlassian · 55/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-10-07
-  - Why: Priority employer Atlassian with remote option
-  - Concern: Heavy product-specific technical depth required
-  - https://careers-americas.icims.com/jobs/27413/senior-solution-consultant%2c-cloud-platform-and-ai/job?mode=apply
-- **Staff Renewals Operations Manager** — GitLab · 55/100 · remote Remote · posted 2026-10-06
+- **Lead Business Consultant, VRS, CX** — NICE · 85/100 · remote USA - Remote · posted 2026-07-22
+  - Why: Value realization/consulting mandate matches core domain
+  - Concern: Title 'Lead' may be IC-level scope
+  - https://boards.eu.greenhouse.io/nice/jobs/4934082101?gh_jid=4934082101
+- **Principal Forward Deployed Architect** — Atlassian · 78/100 · remote Austin - United States; Remote - Remote; San Francisco - United States; Seattle - United States; New York - United States · first seen 2026-10-08
+  - Why: Operating model design, change management, transformation narrative
+  - Concern: Requires deep technical architecture depth she may lack
+  - https://careers-americas.icims.com/jobs/25780/principal-forward-deployed-architect/job?mode=apply
+- **Director, People Operations** — LaunchDarkly · 68/100 · remote Remote - US · posted 2026-10-08
+  - Why: Operating model ownership across lifecycle
+  - Concern: HR/People Ops specific domain, not her core background
+  - https://job-boards.greenhouse.io/launchdarkly/jobs/8017033003
+- **Senior Director, Global Real Estate** — Avantor · 55/100 · remote United States (Remote) · $184,000–$311,075 · posted 2026-10-08
   - Why: Remote US role, strong practical fit
-  - Concern: Narrow renewals/subscription focus, not transformation
-  - https://job-boards.greenhouse.io/gitlab/jobs/8868652002
-- **Senior Technical Program Manager, Consumer** — Coinbase · 50/100 · remote Remote - USA · posted 2026-10-06
-  - Why: Program leadership and cross-functional delivery match skills
-  - Concern: Highly technical TPM scope, not strategic transformation
-  - https://www.coinbase.com/careers/positions/8259801?gh_jid=8259801
-- **Senior Project Manager (Remote, US, Remote)** — Computacenter · 50/100 · remote United States (Remote) · posted 2026-10-07
-  - Why: Fully remote US role
-  - Concern: Tactical PM role, less strategic ownership
-  - https://himalayas.app/companies/computacenter/jobs/senior-project-manager-remote-us-remote
-- **Partner Marketing Leader, Alliances & Channel** — Stripe · 48/100 · remote Seattle, San Francisco, or US-Remote · posted 2026-10-06
-  - Why: Operating model/investment strategy mandate fits ops background
-  - Concern: Deep channel/partner marketing domain expertise required
-  - https://stripe.com/jobs/search?gh_jid=8257500
+  - Concern: Real estate/facilities domain expertise not demonstrated
+  - https://himalayas.app/companies/avantor/jobs/senior-director-global-real-estate
+- **Senior Partner Solutions Architect - Cloud Platform** — Atlassian · 50/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-10-02
+  - Why: Atlassian priority employer, remote option
+  - Concern: Needs hands-on SA/engineering technical depth she lacks
+  - https://careers-americas.icims.com/jobs/27278/senior-partner-solutions-architect---cloud-platform/job?mode=apply
+- **Process Improvement Analyst** — Hilton · 50/100 · remote Dallas, TX, United States (Remote) · posted 2026-10-07
+  - Why: Priority employer Hilton
+  - Concern: Title suggests individual analyst role, not strategic leadership
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/226206
+- **Resource Manager** — Aquent · 50/100 · remote Plano, TX, US (Remote) · posted 2026-10-08
+  - Why: Operational excellence and capacity planning mandate
+  - Concern: Resource Manager title is narrower than typical fit
+  - https://aquent.com/find-work/213585
+- **Director, Distribution Strategy CALA** — Hilton · 45/100 · remote Dallas, TX, United States (Remote) · posted 2026-10-05
+  - Why: Priority employer (Hilton)
+  - Concern: Requires distribution/revenue management domain expertise
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/224025
+- **Senior Associate GDCM Deployment PEP** — Hilton · 45/100 · remote Memphis, TN, United States (Remote) · posted 2026-10-08
+  - Why: Priority employer Hilton
+  - Concern: Title suggests tactical/technical IC role not strategic
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/224242
+- **Workday Supply Chain Management Lead** — Aquent · 45/100 · remote PALO ALTO, CA, US (Remote) · posted 2026-10-02
+  - Why: WMS/Workday technical scope outside core expertise
+  - Concern: Requires specific Workday/WMS implementation expertise
+  - https://aquent.com/find-work/213461
 
 ## DISCOVERY / WILDCARDS (4)
 - **Customer Strategy & Planning Director, Agentforce Operations** — Salesforce · 82/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-09-24
@@ -88,26 +88,23 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: M&A integration mandate matches core domain
   - Concern: Title is PM-level, may underuse strategic experience
   - https://careers.kelso-industries.com/?gh_jid=5442668008
-- **Global Head of Customer Success Operations** — Atlassian · 82/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-10-01
-  - Why: CX/CS operations leadership mandate
-  - Concern: Deep enterprise SaaS CS motion expertise may be gap
-  - https://careers-americas.icims.com/jobs/27386/global-head-of-customer-success-operations/job?mode=apply
-- **Staff Professional Services Operations Manager** — GitLab · 82/100 · remote Remote, Canada; Remote, United States · posted 2026-09-23
-  - Why: Professional services operations leadership mandate
-  - Concern: Staff level may be narrower than Director scope
-  - https://job-boards.greenhouse.io/gitlab/jobs/8691770002
+- **Director, HR Technology Portfolio & Program Management** — Hilton · 82/100 · remote Dallas, TX, United States (Remote) · posted 2026-10-07
+  - Why: Priority employer Hilton
+  - Concern: Remote but based McLean VA, not Utah/WA
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/226036
+- **Director, Chief of Staff – R&D** — Headway · 82/100 · remote New York, NY (Remote) · $230K – $300K · posted 2026-10-05
+  - Why: Chief of Staff with real operating mandate
+  - Concern: R&D/tech-specific domain may require ramp-up
+  - https://jobs.ashbyhq.com/headway/18261737-fed6-4203-aeaa-6068545f9f1e
 
-## REMOVED SINCE PRIOR RUN (10)
-- Manager Assistant -Merchant Operations — American Express Company · No longer listed by its source
-- Manager, Retail Partnerships — ANGI · No longer listed by its source
-- Principal Analyst, Sales Strategy & Operations — Atlassian · No longer listed by its source
-- Sr Technical Project/Program Manager — Eliassen · No longer listed by its source
-- Chief of Staff, R&D — Headway · No longer listed by its source
-- Staff Technical Program Manager - Mobile — MX · No longer listed by its source
-- Sr HR Project Manager SAP SuccessFactors (Contract Remote) — Robert Half · No longer listed by its source
-- Chief of Staff — Salesforce · No longer listed by its source
-- Technical Program Manager - Enterprise Security — Samsara · No longer listed by its source
-- Sr. Marketing Strategy and Analytics Manager — Twilio · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (7)
+- Senior Forward Deployed Architect — Atlassian · No longer listed by its source
+- Strategy and Business Operations Principal - Rovo and AI — Atlassian · No longer listed by its source
+- Global Head of Customer Success Operations — Atlassian · No longer listed by its source
+- Senior Project Manager (Remote, US, Remote) — Computacenter · No longer listed by its source
+- Finance Transformation Program Lead — Eliassen · No longer listed by its source
+- Technology Change Manager — Eliassen · No longer listed by its source
+- Program Manager, Carrier Operations & Governance — Twilio · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful

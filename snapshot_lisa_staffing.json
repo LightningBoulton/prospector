@@ -1,5 +1,164 @@
 [
  {
+  "key": "Aquent::213608",
+  "company": "Aquent",
+  "title": "Content Project Manager",
+  "location": "Seattle, WA, US (Remote)",
+  "url": "https://aquent.com/find-work/213608",
+  "posted": "2026-10-08",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Operational coordination/process role",
+    "Remote, contract via staffing firm",
+    "Below her strategic/transformation scope",
+    "Could offer income/experience bridge"
+   ],
+   "concerns": [
+    "Tactical PM work, not strategic ownership",
+    "Contract via staffing agency, not direct hire"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 35,
+   "practical_fit": 70,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Operational coordination/process role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213585",
+  "company": "Aquent",
+  "title": "Resource Manager",
+  "location": "Plano, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213585",
+  "posted": "2026-10-08",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Operational excellence and capacity planning mandate",
+    "Change management support component",
+    "Remote contract fits flexible employment preference",
+    "Executive reporting visibility aligns with experience"
+   ],
+   "concerns": [
+    "Resource Manager title is narrower than typical fit",
+    "Staffing firm contract, limited strategic ownership",
+    "Likely below her seniority level"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 55,
+   "practical_fit": 70,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Operational excellence and capacity planning mandate",
+   "bg": "d192ce659668"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Aquent::213584",
+  "company": "Aquent",
+  "title": "Project Manager, Delivery",
+  "location": "Plano, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213584",
+  "posted": "2026-10-08",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Fully remote contract role",
+    "Program/delivery oversight aligns with ops background",
+    "Below her strategic scope level",
+    "Staffing firm placement, fixed-term"
+   ],
+   "concerns": [
+    "Tactical PM work, not transformation-level",
+    "Contract only, no strategic ownership",
+    "Generic delivery coordination role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 38,
+   "score": 38,
+   "fit": "maybe",
+   "reason": "Fully remote contract role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213583",
+  "company": "Aquent",
+  "title": "Creative Project Manager",
+  "location": "Plano, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213583",
+  "posted": "2026-10-08",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Tactical creative project management, not strategic",
+    "Below her seniority and scope level",
+    "Remote contract work could provide income"
+   ],
+   "concerns": [
+    "Narrow production-tracking scope",
+    "Staffing firm contract, limited strategic ownership",
+    "Mismatch with transformation/strategy focus"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 35,
+   "practical_fit": 50,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Tactical creative project management, not strategic",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Aquent::213563",
   "company": "Aquent",
   "title": "Creative Ops: Project Manager",
@@ -1016,43 +1175,45 @@
   }
  },
  {
-  "key": "Eliassen::16a9928b-c18c-11f1-ab76-02420a6c7775",
+  "key": "Eliassen::f2fa8c29-ac60-11f1-8ed2-02420a6c7775",
   "company": "Eliassen",
-  "title": "Technology Change Manager",
+  "title": "Salesforce Product Manager",
   "location": "Remote",
-  "url": "https://careers.eliassen.com/eBwkjK/technology-change-manager-organizational-change-management-anywhere-a1wuq000001wdur2aa",
-  "posted": "2026-10-06",
-  "salary": "$70.00 to $75.00",
+  "url": "https://careers.eliassen.com/n2pHWi/salesforce-product-manager-product-management-anywhere-a1wuq000001t47f2aq",
+  "posted": "2026-10-08",
+  "salary": "$75.00 to $80.00",
   "employment_type": "",
   "expires": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Change management and adoption mandate fits well",
-    "Hospitality portfolio aligns with Marriott/Hilton interest",
-    "Remote W2 contract fits practical constraints",
-    "Value realization and enablement are core strengths"
+    "Operating model/process design elements fit her background",
+    "Requires deep Salesforce product/technical specifics",
+    "Contract-to-hire W2 only, specific NC locations implied",
+    "Banking domain is adjacent not core"
    ],
    "concerns": [
-    "Fairly tactical/execution-heavy, less strategic ownership",
-    "Hourly contract rate may be below target comp"
+    "Not fully remote - tied to Raleigh/Charlotte NC",
+    "Heavy Salesforce platform expertise required",
+    "W2 contract-to-hire limits flexibility"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 80,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 72,
-   "score": 72,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 45,
+   "opportunity_score": 38,
+   "score": 38,
    "fit": "maybe",
-   "reason": "Change management and adoption mandate fits well",
+   "reason": "Operating model/process design elements fit her background",
    "bg": "d192ce659668"
-  }
+  },
+  "rescued": true
  },
  {
   "key": "Eliassen::3d6514f3-abb9-11f1-8084-024201c20d84",
@@ -1133,45 +1294,6 @@
   }
  },
  {
-  "key": "Eliassen::8722d907-c19d-11f1-ab76-02420a6c7775",
-  "company": "Eliassen",
-  "title": "Senior Facilitator / Business Analyst",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/j4AW5L/senior-facilitator-business-analyst-business-analysis-anywhere-a1wuq000001wmar2am",
-  "posted": "2026-10-06",
-  "salary": "$90.00 to $100.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (process excellence, adoption, stakeholder alignment)",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote W2 contract fits practical constraints",
-    "Facilitation/transformation/AI adoption mandate matches core domains",
-    "Executive workshop leadership plays to her strengths",
-    "Process excellence and operating model work aligned"
-   ],
-   "concerns": [
-    "Contract role, not permanent leadership",
-    "Procurement/media domain expertise may be specialized"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 75,
-   "practical_fit": 75,
-   "opportunity_score": 72,
-   "score": 72,
-   "fit": "maybe",
-   "reason": "Remote W2 contract fits practical constraints",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Eliassen::0ce7dc75-c18c-11f1-a385-024201c20d84",
   "company": "Eliassen",
   "title": "Enterprise Change Management Consultant",
@@ -1211,40 +1333,41 @@
   "rescued": true
  },
  {
-  "key": "Eliassen::1a8dc1a0-bd35-11f1-b265-024201c20d84",
+  "key": "Eliassen::8722d907-c19d-11f1-ab76-02420a6c7775",
   "company": "Eliassen",
-  "title": "SAP Vistex Project Manager",
+  "title": "Senior Facilitator / Business Analyst",
   "location": "Remote",
-  "url": "https://careers.eliassen.com/23feMD/sap-vistex-project-manager-programproject-management-anywhere-a1wuq000001w8jb2ay",
-  "posted": "2026-10-01",
-  "salary": "$55.00 to $65.00",
+  "url": "https://careers.eliassen.com/j4AW5L/senior-facilitator-business-analyst-business-analysis-anywhere-a1wuq000001wmar2am",
+  "posted": "2026-10-06",
+  "salary": "$90.00 to $100.00",
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "match_reason": "mandate in description (process excellence, adoption, stakeholder alignment)",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
+   "recommendation": "practical_contract",
+   "confidence": "medium",
    "reasons": [
-    "Requires deep hands-on SAP Vistex expertise",
-    "Highly technical ERP delivery, not her domain",
-    "No strategic/organizational transformation mandate"
+    "Remote W2 contract fits practical constraints",
+    "Facilitation/transformation/AI adoption mandate matches core domains",
+    "Executive workshop leadership plays to her strengths",
+    "Process excellence and operating model work aligned"
    ],
    "concerns": [
-    "Lacks required SAP Vistex technical background",
-    "W2 contract rate low relative to scope"
+    "Contract role, not permanent leadership",
+    "Procurement/media domain expertise may be specialized"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 20,
-   "practical_fit": 55,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Requires deep hands-on SAP Vistex expertise",
+   "qualification_fit": 78,
+   "interest_fit": 75,
+   "practical_fit": 75,
+   "opportunity_score": 72,
+   "score": 72,
+   "fit": "maybe",
+   "reason": "Remote W2 contract fits practical constraints",
    "bg": "d192ce659668"
   }
  },
@@ -1289,42 +1412,40 @@
   }
  },
  {
-  "key": "Eliassen::be62536b-bdae-11f1-ab76-02420a6c7775",
+  "key": "Eliassen::1a8dc1a0-bd35-11f1-b265-024201c20d84",
   "company": "Eliassen",
-  "title": "Finance Transformation Program Lead",
+  "title": "SAP Vistex Project Manager",
   "location": "Remote",
-  "url": "https://careers.eliassen.com/lw9bKo/finance-transformation-program-lead-programproject-management-anywhere-a1wuq000001w0tv2aq",
+  "url": "https://careers.eliassen.com/23feMD/sap-vistex-project-manager-programproject-management-anywhere-a1wuq000001w8jb2ay",
   "posted": "2026-10-01",
-  "salary": "$75.00 to $85.00",
+  "salary": "$55.00 to $65.00",
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
+   "recommendation": "not_recommended",
+   "confidence": "high",
    "reasons": [
-    "Transformation program leadership mandate",
-    "Remote US contract fits constraints",
-    "Process/operating model work matches skillset",
-    "Finance-domain specifics are a gap"
+    "Requires deep hands-on SAP Vistex expertise",
+    "Highly technical ERP delivery, not her domain",
+    "No strategic/organizational transformation mandate"
    ],
    "concerns": [
-    "Deep finance/tax/accounting subject expertise required",
-    "Contract staffing role, not permanent",
-    "Narrower functional scope than her usual mandate"
+    "Lacks required SAP Vistex technical background",
+    "W2 contract rate low relative to scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 60,
-   "practical_fit": 75,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Transformation program leadership mandate",
+   "qualification_fit": 20,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Requires deep hands-on SAP Vistex expertise",
    "bg": "d192ce659668"
   }
  },
@@ -1368,12 +1489,50 @@
   }
  },
  {
+  "key": "Robert Half::00320-0013522366-usen",
+  "company": "Robert Half",
+  "title": "Program Manager",
+  "location": "Culver City, CA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/culver-city-ca/program-manager/00320-0013522366-usen",
+  "posted": "2026-10-08",
+  "salary": "$39.59\u2013$45.84/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Technical PM role requiring deep engineering/media platform expertise",
+    "Not aligned with transformation/org strategy focus",
+    "Remote but media/streaming technical domain mismatch"
+   ],
+   "concerns": [
+    "Requires hands-on technical program management, not her background",
+    "Temp contract in niche media tech vertical"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Technical PM role requiring deep engineering/media platform expertise",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Robert Half::02210-0013510672-usen",
   "company": "Robert Half",
   "title": "Endpoint Lead",
   "location": "Troy, MI (Remote)",
   "url": "https://www.roberthalf.com/us/en/job/troy-mi/endpoint-lead/02210-0013510672-usen",
-  "posted": "2026-09-21",
+  "posted": "2026-10-08",
   "salary": "$47.50\u2013$55.00/hr",
   "employment_type": "Temp to Perm",
   "expires": "",
@@ -1477,6 +1636,45 @@
    "score": 28,
    "fit": "no",
    "reason": "Deep technical workforce management/payroll architecture mandate",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::02100-0013521865-usen",
+  "company": "Robert Half",
+  "title": "Project Manager/Sr. Consultant",
+  "location": "Cambridge, MA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/cambridge-ma/project-managersr-consultant/02100-0013521865-usen",
+  "posted": "2026-10-07",
+  "salary": "$59.38\u2013$68.75/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Program/project leadership with governance structure-building",
+    "Remote contract fits employment flexibility",
+    "Cross-functional coordination matches operations strength"
+   ],
+   "concerns": [
+    "Vendor/IT contract governance is niche, not core domain",
+    "Staffing agency temp role, limited strategic scope",
+    "Not aligned with transformation/CX interests"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 58,
+   "interest_fit": 45,
+   "practical_fit": 68,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Program/project leadership with governance structure-building",
    "bg": "d192ce659668"
   }
  }
