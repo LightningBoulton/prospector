@@ -1,49 +1,49 @@
-# Prospector — 2026-10-09
+# Prospector — 2026-10-10
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 12 closed/removed
+**14 new roles today** · 8 still worth applying · 9 closed/removed
 
 ## NEW — WORTH REVIEWING (10)
-- **Senior Manager, Programs - Global Expansion and New Initiatives** — Affirm · 80/100 · remote Remote US · posted 2026-10-09
-  - Why: Global expansion program leadership
-  - Concern: Requires deep fintech/servicing domain expertise
-  - https://job-boards.greenhouse.io/affirm/jobs/8001621003
-- **Chief of Staff to the CEO** — Thumbtack · 75/100 · remote Remote, Ontario · posted 2026-10-08
-  - Why: Direct Chief of Staff / executive operating mandate
-  - Concern: Remote Ontario location, not US-remote
-  - https://jobs.ashbyhq.com/thumbtack/5e63219a-4949-44d5-b15e-a2657bc85ac3
-- **Principal Strategist, Sales & Success Strategy** — Atlassian · 65/100 · remote Seattle - United States; Remote - Remote; Mountain View - United States or Remote; San Francisco - United States · first seen 2026-10-09
-  - Why: Remote-eligible, matches location priority
-  - Concern: Heavy SaaS sales/GTM quant focus not core strength
-  - https://careers-americas.icims.com/jobs/27414/principal-strategist%2c-sales-%26-success-strategy/job?mode=apply
-- **Senior Manager, AI Customer Success** — Webflow · 65/100 · remote U.S. Remote · $204,000 - $255,000 · posted 2026-10-09
-  - Why: US-remote, strong comp, AI adoption focus
-  - Concern: Requires hands-on enterprise account ownership, quota-adjacent
-  - https://job-boards.greenhouse.io/webflow/jobs/8265958
-- **Senior Solutions Architect Operations Manager** — GitLab · 65/100 · remote Remote, Canada; Remote, United States · posted 2026-10-09
-  - Why: US-remote operations role
-  - Concern: Senior IC with no direct reports
-  - https://job-boards.greenhouse.io/gitlab/jobs/8770661002
-- **GTM Enablement Program Manager - Solutions & Product** — Qualtrics · 62/100 · onsite Provo, Utah, United States · posted 2026-10-08
-  - Why: Utah onsite/hybrid location fits preference
-  - Concern: Sales enablement domain narrower than transformation focus
-  - https://www.qualtrics.com/careers/us/en/job/8264886?gh_jid=8264886
-- **Product Operations Manager (Remote Eligible)** — Smartsheet · 55/100 · remote -REMOTE, USA- · posted 2026-10-08
-  - Why: Remote US role, strong practical fit
-  - Concern: Seniority/level (2-4 yrs) far below her experience
-  - https://job-boards.greenhouse.io/smartsheet/jobs/8265320
-- **(737) Program Manager** — Arlo Solutions · 55/100 · remote USA (Remote) · posted 2026-10-08
-  - Why: Program/PMO leadership, operational scaling mandate
-  - Concern: DC-area preference for meetings, not pure remote
-  - https://jobicy.com/jobs/154854-737-program-manager
-- **Learning Design and Enablement Manager** — 1Password · 55/100 · remote Remote (United States | Canada) · posted 2026-10-09
-  - Why: AI enablement and capability-building mandate
-  - Concern: Manager-level IC instructional design focus, less strategic ownership
-  - https://jobs.ashbyhq.com/1password/c0843e63-51ce-4c21-8ac0-55a6219c6ab6
-- **Business Process Analyst** — Veracyte · 55/100 · remote USA (Remote) · posted 2026-10-09
-  - Why: US-remote role
-  - Concern: Title suggests individual-contributor analyst work, not leadership
-  - https://jobicy.com/jobs/154886-business-process-analyst-2
+- **Sr. Commercial Strategy Manager** — Thumbtack · 65/100 · remote Remote, United States · posted 2026-10-09
+  - Why: US-remote strategic initiatives role
+  - Concern: More commercial/partnerships-focused than her core transformation work
+  - https://jobs.ashbyhq.com/thumbtack/3a1de9bc-2fe6-4c87-a68d-2e22234d81df
+- **Senior Risk Program Manager - Fraud & Disputes Enablement** — Mercury · 55/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-10-09
+  - Why: Program leadership, operating reviews, zero-to-one build
+  - Concern: Deep fintech/bank regulatory domain specificity
+  - https://job-boards.greenhouse.io/mercury/jobs/6221555004
+- **Staff Technical Program Manager, Consumer** — Coinbase · 50/100 · remote Remote - USA · posted 2026-10-06
+  - Why: Program leadership and cross-functional delivery match skills
+  - Concern: Highly technical TPM scope, not strategic transformation
+  - https://www.coinbase.com/careers/positions/8259801?gh_jid=8259801
+- **Senior Learning Experience Designer** — Twilio · 50/100 · remote Remote - US · posted 2026-10-08
+  - Why: US-remote role fits location preference
+  - Concern: Heavy instructional design hands-on execution focus
+  - https://job-boards.greenhouse.io/twilio/jobs/8261442
+- **Senior Manager, Affirm Bank Operations Enablement** — Affirm · 50/100 · remote Remote US · posted 2026-10-08
+  - Why: Operating model and launch readiness mandate fits transformation skills
+  - Concern: Requires deep core banking/Finxact technical platform expertise
+  - https://job-boards.greenhouse.io/affirm/jobs/8015158003
+- **Agency Operations Manager** — Aquent · 50/100 · remote Culver City, CA, US (Remote) · posted 2026-10-09
+  - Why: Operations role with real coordination scope
+  - Concern: Not local to Utah, must be near Culver City
+  - https://aquent.com/find-work/213618
+- **Senior Revenue Operations Manager** — GitLab · 50/100 · remote Remote, Canada; Remote, United States · posted 2026-10-09
+  - Why: Revenue ops touches operational excellence interests
+  - Concern: Deep sales-forecast/Deal Desk specialization not her core strength
+  - https://job-boards.greenhouse.io/gitlab/jobs/8882059002
+- **Sr. Program Manager, Talent Development** — Twilio · 45/100 · remote Remote - US · posted 2026-10-07
+  - Why: US-remote role fits location preference
+  - Concern: Needs expert facilitator/coach credentials, not her core strength
+  - https://job-boards.greenhouse.io/twilio/jobs/8262150
+- **Content Project Manager** — Aquent · 45/100 · remote Seattle, WA, US (Remote) · posted 2026-10-08
+  - Why: Operational coordination role, below strategic scope
+  - Concern: Tactical PM work, limited strategic ownership
+  - https://aquent.com/find-work/213608
+- **AI Operations Lead** — Karbon · 45/100 · remote USA (Remote) · posted 2026-10-09
+  - Why: US-remote role fits location preference
+  - Concern: Highly technical build/engineering role, not strategic
+  - https://jobicy.com/jobs/154931-ai-operations-lead
 
 ## DISCOVERY / WILDCARDS (4)
 - **Human-Centered Change Senior Manager** — Salesforce · 78/100 · remote Remote (+6 more) · $150,100 - $227,000 · posted 2026-09-28
@@ -92,24 +92,21 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Chief of Staff with real operating mandate
   - Concern: R&D/tech-specific domain may require ramp-up
   - https://jobs.ashbyhq.com/headway/18261737-fed6-4203-aeaa-6068545f9f1e
-- **Principal Forward Deployed Architect** — Atlassian · 78/100 · remote Austin - United States; Remote - Remote; San Francisco - United States; Seattle - United States; New York - United States · first seen 2026-10-08
-  - Why: Operating model design, change management, transformation narrative
-  - Concern: Requires deep technical architecture depth she may lack
-  - https://careers-americas.icims.com/jobs/25780/principal-forward-deployed-architect/job?mode=apply
+- **Senior Manager, Programs - Global Expansion and New Initiatives** — Affirm · 80/100 · remote Remote US · posted 2026-10-09
+  - Why: Global expansion program leadership
+  - Concern: Requires deep fintech/servicing domain expertise
+  - https://job-boards.greenhouse.io/affirm/jobs/8001621003
 
-## REMOVED SINCE PRIOR RUN (12)
-- Operations Program Manager — Aquent · No longer listed by its source
-- Program Manager - Consumer — Aquent · No longer listed by its source
-- Senior Transformation & Change Lead — Aquent · No longer listed by its source
-- Operations Manager — Aquent · No longer listed by its source
-- Business Operations Manager — Aquent · No longer listed by its source
-- Project Manager, Creative & Marketing Ops — Aquent · No longer listed by its source
-- Operational Excellence Specialist — Aquent · No longer listed by its source
-- Program Manager Non Tech — Aquent · No longer listed by its source
-- Brand Marketing Manager IV (Brand Operations Manager) — Aquent · No longer listed by its source
-- Workday Supply Chain Management Lead — Aquent · No longer listed by its source
-- Content Manager — Aquent · No longer listed by its source
-- Digital Marketing Program Manager — Aquent · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (9)
+- Program Manager, Transformation — Adobe · No longer listed by its source
+- M&A Finance Integration Lead — Adobe · No longer listed by its source
+- Principal Forward Deployed Architect — Atlassian · No longer listed by its source
+- Staff Program Manager, CCO Programs — GitLab · No longer listed by its source
+- Senior Analyst, Planning & Forecasting — Hilton · No longer listed by its source
+- Associate Director, Market Strategy Advisory — Oscar Health · No longer listed by its source
+- Project Manager/Sr. Consultant — Robert Half · No longer listed by its source
+- Partner Marketing Leader, Alliances & Channel — Stripe · No longer listed by its source
+- Onboarding Operations Tech Lead — Twilio · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
