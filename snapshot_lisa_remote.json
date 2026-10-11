@@ -3540,42 +3540,42 @@
   }
  },
  {
-  "key": "Passive Income Dentist::https://weworkremotely.com/remote-jobs/passive-income-dentist-director-of-operations-full-time-remote-north-america",
-  "company": "Passive Income Dentist",
-  "title": "Director of Operations \u2014 Full-Time | Remote (North America)",
+  "key": "Maven Clinic::https://weworkremotely.com/remote-jobs/maven-clinic-customer-success-director",
+  "company": "Maven Clinic",
+  "title": "Customer Success Director",
   "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/passive-income-dentist-director-of-operations-full-time-remote-north-america",
-  "posted": "2026-09-19",
+  "url": "https://weworkremotely.com/remote-jobs/maven-clinic-customer-success-director",
+  "posted": "2026-10-11",
   "salary": null,
   "employment_type": "Full-Time",
-  "expires": "2026-10-19",
+  "expires": "2026-11-10",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
-   "confidence": "medium",
+   "confidence": "low",
    "reasons": [
-    "Real operations ownership and org-building mandate",
-    "Fully remote, flexible location",
-    "Small founder-led coaching business, not enterprise scale",
-    "Niche online coaching industry experience required"
+    "Customer success leadership adjacent to CX expertise",
+    "Fully remote US-friendly role",
+    "Enterprise partnership scope plausible fit",
+    "Mission-driven healthcare company"
    ],
    "concerns": [
-    "Requires niche online coaching/education background",
-    "Small company, less strategic complexity than her target roles",
-    "Compensation and stability unclear"
+    "Description truncated, mandate unclear",
+    "May be more account-management than transformation-focused",
+    "Unclear seniority/scope details"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 70,
-   "opportunity_score": 40,
-   "score": 40,
+   "qualification_fit": 62,
+   "interest_fit": 58,
+   "practical_fit": 90,
+   "opportunity_score": 60,
+   "score": 60,
    "fit": "maybe",
-   "reason": "Real operations ownership and org-building mandate",
+   "reason": "Customer success leadership adjacent to CX expertise",
    "bg": "d192ce659668"
   }
  },
@@ -4752,118 +4752,40 @@
   }
  },
  {
-  "key": "Best Egg::151180",
-  "company": "Best Egg",
-  "title": "Associate Product Operations Manager",
+  "key": "Fieldguide::154963",
+  "company": "Fieldguide",
+  "title": "Senior Product Marketing Manager, Risk Advisory",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/151180-associate-product-operations-manager",
-  "posted": "2026-10-04",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Operational process/efficiency focus matches her skills",
-    "Fully remote US role",
-    "Junior-level associate title with limited strategic scope",
-    "Works 'at the direction of' others, less ownership"
-   ],
-   "concerns": [
-    "Title and seniority below her target level",
-    "Limited strategic/executive scope described"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 90,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Operational process/efficiency focus matches her skills",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Nextiva::152461",
-  "company": "Nextiva",
-  "title": "Principal Product Manager (Omnichannel CX)",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152461-principal-product-manager-omnichannel-cx",
-  "posted": "2026-10-04",
+  "url": "https://jobicy.com/jobs/154963-senior-product-marketing-manager-risk-advisory",
+  "posted": "2026-10-10",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'cx' + seniority in title",
+  "match_reason": "role family 'advisory' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "CX-adjacent but core work is product management",
-    "Requires deep product roadmap/technical ownership not her background",
-    "Remote-friendly but onsite 4x if near Scottsdale"
+    "US-remote is practically attractive",
+    "Role is product marketing, not her domain",
+    "No transformation or operating scope"
    ],
    "concerns": [
-    "Wrong function: product management, not CX strategy/operations leadership",
-    "Requires hands-on product discipline she lacks"
+    "Wrong function: product marketing vs transformation/ops",
+    "Would require pivot into GTM marketing specialization"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 55,
-   "practical_fit": 70,
-   "opportunity_score": 40,
-   "score": 40,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 85,
+   "opportunity_score": 30,
+   "score": 30,
    "fit": "no",
-   "reason": "CX-adjacent but core work is product management",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Thumbtack::152413",
-  "company": "Thumbtack",
-  "title": "Sr. Manager, Success Operations",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152413-sr-manager-success-operations",
-  "posted": "2026-10-04",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "US-remote full-time role",
-    "Operations strategy and process design mandate",
-    "Cross-functional leadership, team ownership",
-    "Builds structure in ambiguous scaling environment"
-   ],
-   "concerns": [
-    "Marketplace ops domain narrower than typical transformation scope",
-    "Sr. Manager title, team size unclear"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 78,
-   "interest_fit": 72,
-   "practical_fit": 95,
-   "opportunity_score": 78,
-   "score": 78,
-   "fit": "yes",
-   "reason": "US-remote full-time role",
+   "reason": "US-remote is practically attractive",
    "bg": "d192ce659668"
   }
  },
@@ -5020,83 +4942,42 @@
   }
  },
  {
-  "key": "Ironclad::152791",
-  "company": "Ironclad",
-  "title": "Director, Revenue Enablement",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/152791-director-revenue-enablement-2",
-  "posted": "2026-10-09",
+  "key": "Canonical::150369",
+  "company": "Canonical",
+  "title": "Junior Project Manager",
+  "location": "APAC,  LATAM,  Canada,  USA (Remote)",
+  "url": "https://jobicy.com/jobs/150369-junior-project-manager",
+  "posted": "2026-10-11",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "AI adoption and enablement mandate",
-    "Director-level strategic scope",
-    "Cross-functional influence over sales org",
-    "Operational rigor and program building"
-   ],
-   "concerns": [
-    "Sales enablement not core background",
-    "Hybrid in-office twice weekly, location unclear",
-    "Likely requires relocation if not remote-eligible"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 65,
-   "practical_fit": 40,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "AI adoption and enablement mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Veriff::154848",
-  "company": "Veriff",
-  "title": "VP of Revenue Marketing",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/154848-vp-of-revenue-marketing",
-  "posted": "2026-10-08",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Remote US role is practically attractive",
-    "But demand gen/ABM marketing not core expertise",
-    "Wrong functional domain despite ops overlap"
+    "Junior title, no strategic ownership",
+    "Below seniority and scope level",
+    "Not transformation or org leadership work"
    ],
    "concerns": [
-    "Requires deep B2B demand-gen/ABM specialist experience",
-    "Not aligned with transformation/ops positioning"
+    "Too junior for 15yr exec background",
+    "No strategic mandate described"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
-   "interest_fit": 30,
-   "practical_fit": 90,
-   "opportunity_score": 30,
-   "score": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Remote US role is practically attractive",
+   "reason": "Junior title, no strategic ownership",
    "bg": "d192ce659668"
-  },
-  "rescued": true
+  }
  },
  {
   "key": "Summation::152933",
