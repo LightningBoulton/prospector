@@ -1,44 +1,28 @@
-# Prospector — 2026-10-11
+# Prospector — 2026-10-12
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**11 new roles today** · 8 still worth applying · 12 closed/removed
+**7 new roles today** · 8 still worth applying · 12 closed/removed
 
-## NEW — WORTH REVIEWING (7)
-- **AI Product Manager** — Gainsight · 45/100 · remote USA - TN - Remote · posted 2026-10-09
-  - Why: AI adoption/enablement mandate fits interests
-  - Concern: Highly technical hands-on implementation, not strategic leadership
-  - https://jobs.ashbyhq.com/gainsight/c575ed9d-9fa8-4ccd-b948-3f12925bfe38
-- **Sales Enablement Specialist, DX** — Atlassian · 42/100 · remote Salt Lake City - United States; Remote - Remote · first seen 2026-10-06
-  - Why: Priority employer Atlassian with referral advantage
-  - Concern: Specialist-level IC role, not strategic/leadership scope
-  - https://careers-americas.icims.com/jobs/27636/sales-enablement-specialist%2c-dx/job?mode=apply
-- **Legal Program Manager, Launch Readiness** — Stripe · 42/100 · hybrid Remote or Hybrid · posted 2026-10-06
-  - Why: Program management ownership
-  - Concern: Highly legal/contracting-systems specific domain
-  - https://stripe.com/jobs/search?gh_jid=8248518
-- **Manager, Professional Services** — Collibra · 42/100 · remote USA (Remote) · posted 2026-10-09
-  - Why: Professional services leadership role
-  - Concern: Needs deep federal compliance/data governance domain knowledge
-  - https://jobicy.com/jobs/154887-manager-professional-services
-- **Senior Creative Program Manager** — Samsara · 42/100 · remote Remote - Seattle · posted 2026-10-09
-  - Why: Program management rigor matches operations background
-  - Concern: Highly creative/marketing domain-specific, not core transformation
-  - https://www.samsara.com/company/careers/roles/8261809?gh_jid=8261809
-- **Marketing Operations Manager, AMER Events** — Stripe · 42/100 · remote US Remote; Canada · posted 2026-10-09
-  - Why: US remote aligns with location preference
-  - Concern: Primarily tactical campaign/event ops, not strategic
-  - https://stripe.com/jobs/search?gh_jid=8250483
-- **Sales Operations Manager | United States | Remote** — Grafana Labs · 40/100 · remote United States (Remote) · posted 2026-10-09
-  - Why: Fully remote US role
-  - Concern: Highly quantitative sales ops, not transformation
-  - https://job-boards.greenhouse.io/grafanalabs/jobs/6221389004
+## NEW — WORTH REVIEWING (3)
+- **Senior Strategic Program Lead, GFCO** — Coinbase · 62/100 · remote Remote - USA · posted 2026-10-12
+  - Why: Program ownership, cross-functional leadership mandate
+  - Concern: Deep financial crimes compliance domain expertise expected
+  - https://www.coinbase.com/careers/positions/8230848?gh_jid=8230848
+- **Senior Director, Enablement** — LaunchDarkly · 50/100 · remote Remote - US · posted 2026-10-12
+  - Why: Remote US fits location preference
+  - Concern: Requires deep sales enablement domain expertise
+  - https://job-boards.greenhouse.io/launchdarkly/jobs/8019784003
+- **Customer Resilience Manager - Customer Success (Remote)** — Rubrik Job Board · 45/100 · remote Anywhere in the World (Remote) · posted 2026-10-12
+  - Why: Customer success/experience ownership aligns with CX background
+  - Concern: Title suggests single-account CSM role, not leadership
+  - https://weworkremotely.com/remote-jobs/rubrik-job-board-customer-resilience-manager-customer-success-remote
 
 ## DISCOVERY / WILDCARDS (4)
-- **Human-Centered Change Senior Manager** — Salesforce · 78/100 · remote Remote (+6 more) · $150,100 - $227,000 · posted 2026-09-28
-  - Why: Change management senior manager mandate
-  - Concern: No description available to confirm scope
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Remote/Human-Centered-Change-Senior-Manager_JR359449-1
-- **Executive Operations & Leadership Engagement DirectorDirector** — Salesforce · 78/100 · onsite Seattle (+4 more) · $164,000 - $161,500 · posted 2026-10-09
+- **Chief of Staff, CRO** — Salesforce · 82/100 · remote Washington - Seattle Metro - Remote · $164,000 - $261,500 · posted 2026-10-12
+  - Why: Chief of Staff role at priority employer Salesforce
+  - Concern: No description to verify mandate
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Washington---Seattle-Metro---Remote/Chief-of-Staff--CRO_JR363112
+- **Executive Operations & Leadership Engagement Director** — Salesforce · 78/100 · onsite Seattle (+4 more) · $164,000 - $261,500 · posted 2026-10-12
   - Why: Priority employer Salesforce
   - Concern: No description to verify mandate
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Atlanta/Executive-Operations---Leadership-Engagement-DirectorDirector_JR363410
@@ -60,10 +44,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Transformation/operating model mandate matches core domains
   - Concern: Principal PM title may skew toward execution over strategy ownership
   - https://careers-americas.icims.com/jobs/27365/principal-program-manager%2c-sales-%26-success-strategy/job?mode=apply
-- **Principal, Business Operations and Strategy** — Instructure · 88/100 · remote USA (Remote) · posted 2026-10-05
-  - Why: Strategy-to-execution mandate matches transformation background
-  - Concern: Principal title scope vs prior Director/Senior Director level
-  - https://jobicy.com/jobs/154569-principal-business-operations-and-strategy
 - **AI Transformation Owner, CRO** — GitLab · 85/100 · remote Remote, United States · posted 2026-07-22
   - Why: AI transformation/enablement mandate matches core interest
   - Concern: CRO/sales-org context less familiar than her consulting background
@@ -84,24 +64,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Global expansion program leadership
   - Concern: Requires deep fintech/servicing domain expertise
   - https://job-boards.greenhouse.io/affirm/jobs/8001621003
+- **Sr. Program Manager** — BambooHR · 78/100 · hybrid Utah | Hybrid · posted 2026-10-06
+  - Why: CX program leadership matches core domain
+  - Concern: Senior IC role, no direct reports
+  - https://job-boards.greenhouse.io/bamboohr17/jobs/6200796004
 
 ## REMOVED SINCE PRIOR RUN (12)
-- Operations Program Manager — Aquent · No longer listed by its source
-- Business Operations Manager — Aquent · No longer listed by its source
-- Project Manager, Creative & Marketing Ops — Aquent · No longer listed by its source
-- Operational Excellence Specialist — Aquent · No longer listed by its source
-- Program Manager Non Tech — Aquent · No longer listed by its source
-- Brand Marketing Manager IV (Brand Operations Manager) — Aquent · No longer listed by its source
-- Workday Supply Chain Management Lead — Aquent · No longer listed by its source
-- Content Manager — Aquent · No longer listed by its source
-- Digital Marketing Program Manager — Aquent · No longer listed by its source
-- Producer/Project Manager — Aquent · No longer listed by its source
-- Content Project Manager — Aquent · No longer listed by its source
-- Resource Manager — Aquent · No longer listed by its source
+- General Manager, Collibra Public Sector — Collibra · No longer listed by its source
+- Senior Project Manager, GTM Launch — Dutchie · No longer listed by its source
+- Senior Facilitator / Business Analyst — Eliassen · No longer listed by its source
+- Enterprise Change Management Consultant — Eliassen · No longer listed by its source
+- Vice President, Go-To-Market Operations — HackerOne · No longer listed by its source
+- Process Improvement Analyst — Hilton · No longer listed by its source
+- Principal, Business Operations and Strategy — Instructure · No longer listed by its source
+- Program Manager — Robert Half · No longer listed by its source
+- Sr HR Project Manager SAP SuccessFactors (Contract Remote) — Robert Half · No longer listed by its source
+- Human-Centered Change Senior Manager — Salesforce · No longer listed by its source
+- Executive Operations & Leadership Engagement DirectorDirector — Salesforce · No longer listed by its source
+- Product Operations Manager (Remote Eligible) — Smartsheet · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
 - Temporary errors: 1
-- Needs attention: 30
+- Needs attention: 31
   - Broken config: Amplitude, ClickHouse, Hightouch, LVT, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Amplitude, AssemblyAI, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
+  - Returning nothing for 10+ runs: Airtable, Amplitude, AssemblyAI, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Metabase, Miro, Nav, Nomi Health, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
