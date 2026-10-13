@@ -2,23 +2,9 @@
  "_comment": "Copy any row you want to act on into feedback_lisa.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_lisa.json is.",
  "entries": [
   {
-   "key": "1Password::c54f62fe-8a85-44c1-81ea-f3d1c1d3d060",
-   "company": "1Password",
-   "title": "Digital Customer Success Campaign Manager",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::c0843e63-51ce-4c21-8ac0-55a6219c6ab6",
    "company": "1Password",
    "title": "Learning Design and Enablement Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "6sense::https://weworkremotely.com/remote-jobs/6sense-manager-customer-success-upmarket",
-   "company": "6sense",
-   "title": "Manager, Customer Success - Upmarket",
    "status": "",
    "note": ""
   },
@@ -44,13 +30,6 @@
    "note": ""
   },
   {
-   "key": "Adobe::R172032",
-   "company": "Adobe",
-   "title": "Senior Technical Consultant - Customer Journeys",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Affirm::8015158003",
    "company": "Affirm",
    "title": "Senior Manager, Affirm Bank Operations Enablement",
@@ -65,9 +44,240 @@
    "note": ""
   },
   {
+   "key": "Airbnb::https://weworkremotely.com/remote-jobs/airbnb-senior-manager-quality-volume-tiers",
+   "company": "Airbnb",
+   "title": "Senior Manager, Quality, Volume Tiers",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Algolia::https://weworkremotely.com/remote-jobs/algolia-account-manager-dutch-speaking",
    "company": "Algolia",
    "title": "Account Manager - Dutch speaking",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213618",
+   "company": "Aquent",
+   "title": "Agency Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213212",
+   "company": "Aquent",
+   "title": "Brand Marketing Manager IV (Brand Operations Manager)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213136",
+   "company": "Aquent",
+   "title": "Business Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213424",
+   "company": "Aquent",
+   "title": "Content Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213538",
+   "company": "Aquent",
+   "title": "Content Marketing Manager- SEO/AEO",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213608",
+   "company": "Aquent",
+   "title": "Content Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213238",
+   "company": "Aquent",
+   "title": "Content Strategy Producer - Beauty",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213563",
+   "company": "Aquent",
+   "title": "Creative Ops: Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213583",
+   "company": "Aquent",
+   "title": "Creative Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213057",
+   "company": "Aquent",
+   "title": "Customer Service Representative",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213412",
+   "company": "Aquent",
+   "title": "Digital Marketing Program Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213663",
+   "company": "Aquent",
+   "title": "Job Title: Communications Writer \u2013 Microsoft 365 Change & Adoption",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213137",
+   "company": "Aquent",
+   "title": "Lifecycle Marketing Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213072",
+   "company": "Aquent",
+   "title": "Manager, Account Strategy",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213474",
+   "company": "Aquent",
+   "title": "MarTech Mobile Messaging Delivery Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213639",
+   "company": "Aquent",
+   "title": "Media Planning & Strategy Lead - NYC",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213638",
+   "company": "Aquent",
+   "title": "Media Planning & Strategy Lead - SF",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213062",
+   "company": "Aquent",
+   "title": "Operational Excellence Specialist",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213189",
+   "company": "Aquent",
+   "title": "Operations Program Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213506",
+   "company": "Aquent",
+   "title": "Producer/Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213391",
+   "company": "Aquent",
+   "title": "Product Owner: General Analytics Use Case Delivery",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213579",
+   "company": "Aquent",
+   "title": "Program Manager (II)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213283",
+   "company": "Aquent",
+   "title": "Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213338",
+   "company": "Aquent",
+   "title": "Project Manager Marketing Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213115",
+   "company": "Aquent",
+   "title": "Project Manager, Creative & Marketing Ops",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213584",
+   "company": "Aquent",
+   "title": "Project Manager, Delivery",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213585",
+   "company": "Aquent",
+   "title": "Resource Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213491",
+   "company": "Aquent",
+   "title": "Senior Reinsurance Analyst",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213336",
+   "company": "Aquent",
+   "title": "Strategic Sourcing Manager - Retail Operations & Facilities",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213411",
+   "company": "Aquent",
+   "title": "Strategic Sourcing Manager, IT & Technology",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213664",
+   "company": "Aquent",
+   "title": "Training Specialist \u2013 Microsoft 365 / Viva (Design & Delivery)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213461",
+   "company": "Aquent",
+   "title": "Workday Supply Chain Management Lead",
    "status": "",
    "note": ""
   },
@@ -229,6 +439,13 @@
    "key": "Atlassian::27515",
    "company": "Atlassian",
    "title": "Senior Business Transformation & Sales Operations Partner",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Atlassian::27282",
+   "company": "Atlassian",
+   "title": "Senior Design Manager, Strategy Collection",
    "status": "",
    "note": ""
   },
@@ -415,6 +632,13 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8269049",
+   "company": "Coinbase",
+   "title": "Manager, SEC Reporting",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8232211",
    "company": "Coinbase",
    "title": "Manager, Strategic Programs",
@@ -453,13 +677,6 @@
    "key": "Collibra::154887",
    "company": "Collibra",
    "title": "Manager, Professional Services",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Concept Plus::150198",
-   "company": "Concept Plus",
-   "title": "Capture Management Director",
    "status": "",
    "note": ""
   },
@@ -541,9 +758,9 @@
    "note": ""
   },
   {
-   "key": "Eliassen::3d6514f3-abb9-11f1-8084-024201c20d84",
-   "company": "Eliassen",
-   "title": "ET Senior Technical Program Manager II",
+   "key": "Engine::https://weworkremotely.com/remote-jobs/engine-vp-finance",
+   "company": "Engine",
+   "title": "VP, Finance",
    "status": "",
    "note": ""
   },
@@ -576,13 +793,6 @@
    "note": ""
   },
   {
-   "key": "GOAT Group::154939",
-   "company": "GOAT Group",
-   "title": "Senior Performance Marketing Specialist",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Gainsight::c575ed9d-9fa8-4ccd-b948-3f12925bfe38",
    "company": "Gainsight",
    "title": "AI Product Manager",
@@ -611,16 +821,16 @@
    "note": ""
   },
   {
-   "key": "GitLab::152562",
+   "key": "GitLab::8872500002",
    "company": "GitLab",
-   "title": "AI Transformation Owner, CRO",
+   "title": "Director, Global People Operations & Compliance",
    "status": "",
    "note": ""
   },
   {
-   "key": "GitLab::8872500002",
+   "key": "GitLab::8871798002",
    "company": "GitLab",
-   "title": "Director, Global People Operations & Compliance",
+   "title": "Principal Product Manager, Orbit",
    "status": "",
    "note": ""
   },
@@ -656,6 +866,13 @@
    "key": "GitLab::8770661002",
    "company": "GitLab",
    "title": "Senior Solutions Architect Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8871820002",
+   "company": "GitLab",
+   "title": "Staff Product Manager, Agentic Test Intelligence",
    "status": "",
    "note": ""
   },
@@ -807,6 +1024,20 @@
    "note": ""
   },
   {
+   "key": "Huble::https://weworkremotely.com/remote-jobs/huble-technical-crm-project-manager-french-speaking",
+   "company": "Huble",
+   "title": "Technical CRM Project Manager (French Speaking)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Instacart::8275352",
+   "company": "Instacart",
+   "title": "Associate Product Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Instacart::8257641",
    "company": "Instacart",
    "title": "Bilingual CX Specialist (French)",
@@ -835,16 +1066,9 @@
    "note": ""
   },
   {
-   "key": "Instructure::150240",
-   "company": "Instructure",
-   "title": "Sales Operations Manager, Foundry",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Instrument::152911",
-   "company": "Instrument",
-   "title": "Senior Strategist / Strategy Lead (contract)",
+   "key": "Instacart::8275403",
+   "company": "Instacart",
+   "title": "Senior Manager, CPG Customer Success",
    "status": "",
    "note": ""
   },
@@ -898,13 +1122,6 @@
    "note": ""
   },
   {
-   "key": "Kong Inc.::154683",
-   "company": "Kong Inc.",
-   "title": "Senior AI Enablement Specialist - FE",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "LaunchDarkly::8017033003",
    "company": "LaunchDarkly",
    "title": "Director, People Operations",
@@ -922,20 +1139,6 @@
    "key": "LaunchDarkly::8020085003",
    "company": "LaunchDarkly",
    "title": "Senior Director, GTM Systems",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Lightspeed Commerce::154676",
-   "company": "Lightspeed Commerce",
-   "title": "Head of Revenue Operations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Luxury Presence::154945",
-   "company": "Luxury Presence",
-   "title": "Staff Product Manager, SEO and AI Visibility - US",
    "status": "",
    "note": ""
   },
@@ -1059,6 +1262,13 @@
    "note": ""
   },
   {
+   "key": "M\u00fcller`s Solutions::https://weworkremotely.com/remote-jobs/muller-s-solutions-pre-sales-senior-consultant-erp-crm-remote",
+   "company": "M\u00fcller`s Solutions",
+   "title": "Pre-Sales Senior Consultant (ERP/CRM)/Remote",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "NICE::4981651101",
    "company": "NICE",
    "title": "Director, Customer Success",
@@ -1122,23 +1332,9 @@
    "note": ""
   },
   {
-   "key": "Netlify::8823312002",
-   "company": "Netlify",
-   "title": "Senior Marketing Operations Manager",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Notion::e7c18c11-c8ab-47cf-afb6-6bfc61b5e74f",
    "company": "Notion",
    "title": "Global Security Program Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Notion::576401b9-66e7-4407-a9e2-8aafaa590082",
-   "company": "Notion",
-   "title": "Lifecycle Marketing Manager, Campaign Strategy & Execution",
    "status": "",
    "note": ""
   },
@@ -1185,6 +1381,13 @@
    "note": ""
   },
   {
+   "key": "Plaid::4c4af954-2c70-4a3c-acc2-97c58211f920",
+   "company": "Plaid",
+   "title": "Senior Security Analyst, Security Risk Management",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Pluralsight::R0014441",
    "company": "Pluralsight",
    "title": "Senior Digital Customer Experience Manager",
@@ -1199,23 +1402,9 @@
    "note": ""
   },
   {
-   "key": "Pluralsight::R0014448",
-   "company": "Pluralsight",
-   "title": "Sr. Manager, Revenue Operations",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Qualtrics::8264886",
    "company": "Qualtrics",
    "title": "GTM Enablement Program Manager - Solutions & Product",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Quince::154751",
-   "company": "Quince",
-   "title": "Head of Planning",
    "status": "",
    "note": ""
   },
@@ -1255,6 +1444,13 @@
    "note": ""
   },
   {
+   "key": "Ramp::150478",
+   "company": "Ramp",
+   "title": "Senior Customer Activation Manager | Partnerships",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::7995207",
    "company": "Reddit",
    "title": "Staff Technical Program Manager, Infrastructure",
@@ -1283,16 +1479,16 @@
    "note": ""
   },
   {
-   "key": "Robert Half::02100-0013521865-usen",
+   "key": "Robert Half::00320-0013522366-usen",
    "company": "Robert Half",
-   "title": "Project Manager/Sr. Consultant",
+   "title": "Program Manager",
    "status": "",
    "note": ""
   },
   {
-   "key": "Robert Half::00700-0013510110-usen",
+   "key": "Robert Half::02100-0013521865-usen",
    "company": "Robert Half",
-   "title": "Senior Solutions Architect",
+   "title": "Project Manager/Sr. Consultant",
    "status": "",
    "note": ""
   },
@@ -1402,7 +1598,7 @@
    "note": ""
   },
   {
-   "key": "Salesforce::JR362578",
+   "key": "Salesforce::JR359066",
    "company": "Salesforce",
    "title": "Customer Success Manager, Senior Manager",
    "status": "",
@@ -1493,16 +1689,16 @@
    "note": ""
   },
   {
-   "key": "Salesforce::JR362056",
+   "key": "Salesforce::JR363200",
    "company": "Salesforce",
-   "title": "Manager, Social Content & Influence Strategy",
+   "title": "Manager, M&A Integration",
    "status": "",
    "note": ""
   },
   {
-   "key": "Salesforce::JR357407",
+   "key": "Salesforce::JR362056",
    "company": "Salesforce",
-   "title": "Migration Delivery, Deployment Strategist",
+   "title": "Manager, Social Content & Influence Strategy",
    "status": "",
    "note": ""
   },
@@ -1587,6 +1783,13 @@
    "key": "Salesforce::JR360149",
    "company": "Salesforce",
    "title": "Senior Manager, Revenue Strategy",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Salesforce::JR362005",
+   "company": "Salesforce",
+   "title": "Senior Product Marketing Manager, Sales Enablement (Qualified)",
    "status": "",
    "note": ""
   },
@@ -1696,13 +1899,6 @@
    "note": ""
   },
   {
-   "key": "SeatGeek::154697",
-   "company": "SeatGeek",
-   "title": "Lead Entertainment Consultant, Tour Performance",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Sentry::278476b1-87c5-461f-ad7e-950cd31e5f31",
    "company": "Sentry",
    "title": "Senior Technical Program Manager, AI Platform",
@@ -1713,6 +1909,13 @@
    "key": "Smartsheet::8247675",
    "company": "Smartsheet",
    "title": "Technology Alliances Leader",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Solace::155204",
+   "company": "Solace",
+   "title": "Performance Creative Manager",
    "status": "",
    "note": ""
   },
@@ -1731,16 +1934,16 @@
    "note": ""
   },
   {
-   "key": "Stripe::8213951",
-   "company": "Stripe",
-   "title": "Credit Operations Manager",
+   "key": "StackAdapt::149104",
+   "company": "StackAdapt",
+   "title": "Manager, Ad Operations",
    "status": "",
    "note": ""
   },
   {
-   "key": "Stripe::8209649",
+   "key": "Stripe::8213951",
    "company": "Stripe",
-   "title": "Engagement Manager, Professional Services",
+   "title": "Credit Operations Manager",
    "status": "",
    "note": ""
   },
@@ -1832,13 +2035,6 @@
    "key": "Veracyte::154886",
    "company": "Veracyte",
    "title": "Business Process Analyst",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Veriff::152906",
-   "company": "Veriff",
-   "title": "Head of Product Marketing",
    "status": "",
    "note": ""
   },

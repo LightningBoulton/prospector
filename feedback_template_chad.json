@@ -2,13 +2,6 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
-   "key": "1Password::154951",
-   "company": "1Password",
-   "title": "Principal Solutions Engineer, Emerging Technologies",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::804f6fcb-e244-4734-b3c9-029c108359f4",
    "company": "1Password",
    "title": "Senior Developer Advocate",
@@ -19,13 +12,6 @@
    "key": "1Password::7be137ff-3841-49ba-afd1-d116e22b2c9c",
    "company": "1Password",
    "title": "Senior Developer Events & Community Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "1Password::8f1fc129-cab2-4077-be7e-e2a406ec3f2b",
-   "company": "1Password",
-   "title": "Senior Developer, Authentication Enablement",
    "status": "",
    "note": ""
   },
@@ -47,6 +33,13 @@
    "key": "6sense::https://weworkremotely.com/remote-jobs/6sense-product-lead-predictive-platform",
    "company": "6sense",
    "title": "Product Lead, Predictive Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Addepar::https://himalayas.app/companies/addepar/jobs/staff-ai-security-engineer",
+   "company": "Addepar",
+   "title": "Staff AI Security Engineer",
    "status": "",
    "note": ""
   },
@@ -226,6 +219,27 @@
    "note": ""
   },
   {
+   "key": "Alchemy::a04294fa-aadb-40c4-ace9-4db84e0f1a7a",
+   "company": "Alchemy",
+   "title": "Senior Blockchain Engineer, Moonshot",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Alchemy::37fa4765-8e1d-4c61-ba52-071e2d6bead0",
+   "company": "Alchemy",
+   "title": "Senior Data Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Alchemy::bca25725-dbdf-4786-9af9-aa793766d2b5",
+   "company": "Alchemy",
+   "title": "Senior Software Engineer, Data Services",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Alchemy::fd8debdc-fc1f-4f37-95f5-75f6b62b5798",
    "company": "Alchemy",
    "title": "Senior Software Engineer, Developer Experience",
@@ -233,16 +247,16 @@
    "note": ""
   },
   {
-   "key": "Ancestry::R003377",
-   "company": "Ancestry",
-   "title": "Machine Learning Engineer, Co-op",
+   "key": "AmeriSave Mortgage Corp.::https://himalayas.app/companies/amerisave-mortgage-corp/jobs/senior-ai-full-stack-engineer-2867830146",
+   "company": "AmeriSave Mortgage Corp.",
+   "title": "Senior AI Full Stack Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Ancestry::R003448",
+   "key": "Ancestry::R003377",
    "company": "Ancestry",
-   "title": "Senior Site Reliability Engineer",
+   "title": "Machine Learning Engineer, Co-op",
    "status": "",
    "note": ""
   },
@@ -317,6 +331,13 @@
    "note": ""
   },
   {
+   "key": "Boulevard::153135",
+   "company": "Boulevard",
+   "title": "GTM Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Calendly::8846049002",
    "company": "Calendly",
    "title": "Senior Full Stack Engineer, Website Development",
@@ -345,13 +366,6 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4715630006",
-   "company": "Chainguard",
-   "title": "Senior Software Engineer (Repository)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Chainguard::4716831006",
    "company": "Chainguard",
    "title": "Senior Technical Support Engineer",
@@ -369,6 +383,13 @@
    "key": "Chainguard::4713044006",
    "company": "Chainguard",
    "title": "Staff Platform Database Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4720009006",
+   "company": "Chainguard",
+   "title": "Staff Software Engineer (Customer Platform)",
    "status": "",
    "note": ""
   },
@@ -422,6 +443,13 @@
    "note": ""
   },
   {
+   "key": "Cloudflare::8264043",
+   "company": "Cloudflare",
+   "title": "Senior Specialist Solutions Engineer, Cloudflare One",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8265721",
    "company": "Coinbase",
    "title": "Enterprise Engineer",
@@ -439,6 +467,13 @@
    "key": "Coinbase::8238716",
    "company": "Coinbase",
    "title": "Senior Software Engineer (Institutional, Settlements & Transfers)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8243520",
+   "company": "Coinbase",
+   "title": "Senior Software Engineer, Backend (Retail DEX)",
    "status": "",
    "note": ""
   },
@@ -527,6 +562,13 @@
    "note": ""
   },
   {
+   "key": "Converge Technology Solutions::https://himalayas.app/companies/converge-technology-solutions/jobs/senior-software-engineer-ip4g",
+   "company": "Converge Technology Solutions",
+   "title": "Senior Software Engineer, IP4G",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Cresta::5437843008",
    "company": "Cresta",
    "title": "Enterprise Solutions Engineer",
@@ -544,6 +586,13 @@
    "key": "Cricut::744000153568549",
    "company": "Cricut",
    "title": "Analytics Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cricut::744000155306769",
+   "company": "Cricut",
+   "title": "Firmware Engineer",
    "status": "",
    "note": ""
   },
@@ -572,6 +621,13 @@
    "key": "Cricut::744000154791609",
    "company": "Cricut",
    "title": "Senior Electrical Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cricut::744000155305159",
+   "company": "Cricut",
+   "title": "Senior Firmware Engineer",
    "status": "",
    "note": ""
   },
@@ -618,13 +674,6 @@
    "note": ""
   },
   {
-   "key": "Discord::8802354002",
-   "company": "Discord",
-   "title": "Staff Software Engineer, Machine Learning (Consumer Revenue)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Docker::ffc42c1a-64d9-4754-b380-d2ac62052d09",
    "company": "Docker",
    "title": "Senior Principal Engineer, Docker and Ecosystem",
@@ -660,16 +709,16 @@
    "note": ""
   },
   {
-   "key": "Fivetran::7999916003",
-   "company": "Fivetran",
-   "title": "Staff Solutions Engineer",
+   "key": "Elation Health::https://weworkremotely.com/remote-jobs/elation-health-case-resolution-engineer",
+   "company": "Elation Health",
+   "title": "Case Resolution Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Gemini::8186546",
-   "company": "Gemini",
-   "title": "Staff Platform Engineer",
+   "key": "Fivetran::7999916003",
+   "company": "Fivetran",
+   "title": "Staff Solutions Engineer",
    "status": "",
    "note": ""
   },
@@ -814,9 +863,9 @@
    "note": ""
   },
   {
-   "key": "Hinge Health::efa6b737-c6f6-4069-b542-3e13ff2272bf",
+   "key": "Hinge Health::9f06df99-a5c6-47bf-92c1-e92c725e6a5a",
    "company": "Hinge Health",
-   "title": "Senior Product Manager, Developer Enablement",
+   "title": "Senior Site Reliability Engineer",
    "status": "",
    "note": ""
   },
@@ -835,13 +884,6 @@
    "note": ""
   },
   {
-   "key": "Hinge Health::8390aad0-ade1-4875-92d1-28a7ff4676a1",
-   "company": "Hinge Health",
-   "title": "Senior Software Engineer-Backend",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Hinge Health::8d0cd648-ee10-4058-9bf7-1728be9fabab",
    "company": "Hinge Health",
    "title": "Staff Software Engineer - RnD Enablement.",
@@ -852,13 +894,6 @@
    "key": "Hinge Health::9ff95165-df99-48b3-9a94-d55bd31d7227",
    "company": "Hinge Health",
    "title": "Staff Software Engineer, GI",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Instacart::8249894",
-   "company": "Instacart",
-   "title": "Data Analyst, Platform Excellence Ops Analytics",
    "status": "",
    "note": ""
   },
@@ -989,6 +1024,13 @@
    "note": ""
   },
   {
+   "key": "MX::4444275009",
+   "company": "MX",
+   "title": "Senior Software Engineer I",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Maven Clinic::8845343002",
    "company": "Maven Clinic",
    "title": "Staff Security Engineer, Detection & Response",
@@ -1024,14 +1066,14 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8222214",
+   "key": "Mixpanel::8248501",
    "company": "Mixpanel",
    "title": "Senior Customer Engineer - LATAM",
    "status": "",
    "note": ""
   },
   {
-   "key": "Mixpanel::8248501",
+   "key": "Mixpanel::8222214",
    "company": "Mixpanel",
    "title": "Senior Customer Engineer - LATAM",
    "status": "",
@@ -1041,6 +1083,13 @@
    "key": "NICE::4988812101",
    "company": "NICE",
    "title": "Portfolio Solution Engineer, Actimize",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "NICE::4999222101",
+   "company": "NICE",
+   "title": "Professional Services Engineer",
    "status": "",
    "note": ""
   },
@@ -1076,13 +1125,6 @@
    "key": "Notion::06e1d3a8-2706-4ed9-9fe6-8b69607de18e",
    "company": "Notion",
    "title": "Security Engineer, Detection and Response",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Notion::e9bf7ffa-9cf2-4360-a2e4-e9fa66859927",
-   "company": "Notion",
-   "title": "Software Engineer, Data Platform (Foundations Lead)",
    "status": "",
    "note": ""
   },
@@ -1171,13 +1213,6 @@
    "note": ""
   },
   {
-   "key": "Prequel Solutions::https://himalayas.app/companies/prequel-solutions/jobs/as400-developer",
-   "company": "Prequel Solutions",
-   "title": "AS400 Developer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Ramp::2888b101-b1da-4e53-a02e-1bb9b1b5a951",
    "company": "Ramp",
    "title": "Machine Learning Engineer",
@@ -1188,13 +1223,6 @@
    "key": "Ramp::a13ae586-f4cb-4385-8822-c42b9b54ed74",
    "company": "Ramp",
    "title": "Software Engineer Internship, Frontend",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Ramp::7cd46077-05fe-4cd7-816f-5528638342f1",
-   "company": "Ramp",
-   "title": "Software Engineer, Frontend, Growth",
    "status": "",
    "note": ""
   },
@@ -1223,6 +1251,13 @@
    "key": "Reddit::8243010",
    "company": "Reddit",
    "title": "Senior Staff Machine Learning Engineer, ML Understanding",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8275143",
+   "company": "Reddit",
+   "title": "Staff Android Engineer, Android Platform",
    "status": "",
    "note": ""
   },
@@ -1283,13 +1318,6 @@
    "note": ""
   },
   {
-   "key": "Replit::22e99380-e48c-4bc3-a870-721411b22957",
-   "company": "Replit",
-   "title": "Staff Software Engineer, Agentic Commerce & Payments",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Replit::951e0ebb-a957-45fa-8763-d56ba46750b4",
    "company": "Replit",
    "title": "Support Engineer I (FC, Weekend Shift)",
@@ -1325,6 +1353,20 @@
    "note": ""
   },
   {
+   "key": "Samsara::8223369",
+   "company": "Samsara",
+   "title": "Senior Security Engineer - Enterprise Security",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8237426",
+   "company": "Samsara",
+   "title": "Senior Security Engineer - Threat Detection",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Samsara::8212787",
    "company": "Samsara",
    "title": "Senior Security Engineer - Threat Detection",
@@ -1333,13 +1375,6 @@
   },
   {
    "key": "Samsara::8237427",
-   "company": "Samsara",
-   "title": "Senior Security Engineer - Threat Detection",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8237426",
    "company": "Samsara",
    "title": "Senior Security Engineer - Threat Detection",
    "status": "",
@@ -1374,7 +1409,7 @@
    "note": ""
   },
   {
-   "key": "Samsara::8247432",
+   "key": "Samsara::8247424",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
    "status": "",
@@ -1395,14 +1430,14 @@
    "note": ""
   },
   {
-   "key": "Samsara::8247429",
+   "key": "Samsara::8247432",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
    "status": "",
    "note": ""
   },
   {
-   "key": "Samsara::8247424",
+   "key": "Samsara::8247429",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
    "status": "",
@@ -1493,6 +1528,13 @@
    "note": ""
   },
   {
+   "key": "Sentry::ccbee884-5fc1-492e-ba18-df568587ccc2",
+   "company": "Sentry",
+   "title": "Senior Software Engineer, Foundational Storage",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Sentry::278476b1-87c5-461f-ad7e-950cd31e5f31",
    "company": "Sentry",
    "title": "Senior Technical Program Manager, AI Platform",
@@ -1524,6 +1566,13 @@
    "key": "Sentry::c00e77f5-bd58-49da-b4a8-3b6249529747",
    "company": "Sentry",
    "title": "Staff Software Engineer, AI Developer Tooling",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Service Management Group (SMG)::https://himalayas.app/companies/service-management-group-smg/jobs/associate-support-engineer",
+   "company": "Service Management Group (SMG)",
+   "title": "Associate Support Engineer",
    "status": "",
    "note": ""
   },
@@ -1591,6 +1640,13 @@
    "note": ""
   },
   {
+   "key": "Supabase::6b314e83-6617-49fc-8c73-021ebae9a757",
+   "company": "Supabase",
+   "title": "Platform Engineer - Compute",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Supabase::9073c0cd-2545-473a-b2ac-63e4615c69b5",
    "company": "Supabase",
    "title": "Platform Engineer, Managed Postgres",
@@ -1601,6 +1657,13 @@
    "key": "Supabase::48950725-e0d9-4025-92d9-f75e1b60ce45",
    "company": "Supabase",
    "title": "Postgres Deployment Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "TRBITIX::https://himalayas.app/companies/trbitix/jobs/senior-java-developer",
+   "company": "TRBITIX",
+   "title": "Senior Java Developer",
    "status": "",
    "note": ""
   },
@@ -1745,6 +1808,13 @@
    "note": ""
   },
   {
+   "key": "Twilio::8247182",
+   "company": "Twilio",
+   "title": "Software Engineer (L2) Messaging Channels Team",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Twilio::8026211",
    "company": "Twilio",
    "title": "Software Engineer, Platform Access (L2)",
@@ -1808,20 +1878,6 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026334",
-   "company": "Western Governors University",
-   "title": "Data Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-026111",
-   "company": "Western Governors University",
-   "title": "Principal Software Engineer-Student LifeCycle Services",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Western Governors University::JR-026281",
    "company": "Western Governors University",
    "title": "Senior Network Engineer",
@@ -1865,13 +1921,6 @@
   },
   {
    "key": "Western Governors University::JR-026321",
-   "company": "Western Governors University",
-   "title": "Staff Software Engineer, AI",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-026231",
    "company": "Western Governors University",
    "title": "Staff Software Engineer, AI",
    "status": "",

@@ -1,27 +1,31 @@
-# Prospector — 2026-10-12
+# Prospector — 2026-10-13
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**7 new roles today** · 8 still worth applying · 12 closed/removed
+**7 new roles today** · 8 still worth applying · 7 closed/removed
 
 ## NEW — WORTH REVIEWING (3)
-- **Senior Strategic Program Lead, GFCO** — Coinbase · 62/100 · remote Remote - USA · posted 2026-10-12
-  - Why: Program ownership, cross-functional leadership mandate
-  - Concern: Deep financial crimes compliance domain expertise expected
-  - https://www.coinbase.com/careers/positions/8230848?gh_jid=8230848
-- **Senior Director, Enablement** — LaunchDarkly · 50/100 · remote Remote - US · posted 2026-10-12
-  - Why: Remote US fits location preference
-  - Concern: Requires deep sales enablement domain expertise
-  - https://job-boards.greenhouse.io/launchdarkly/jobs/8019784003
-- **Customer Resilience Manager - Customer Success (Remote)** — Rubrik Job Board · 45/100 · remote Anywhere in the World (Remote) · posted 2026-10-12
-  - Why: Customer success/experience ownership aligns with CX background
-  - Concern: Title suggests single-account CSM role, not leadership
-  - https://weworkremotely.com/remote-jobs/rubrik-job-board-customer-resilience-manager-customer-success-remote
+- **Senior Manager, CPG Customer Success** — Instacart · 68/100 · remote United States - Remote · posted 2026-10-13
+  - Why: CX/CS leadership with team oversight
+  - Concern: CPG/retail SaaS vertical expertise not confirmed in background
+  - https://instacart.careers/job/?gh_jid=8275403
+- **Senior Manager, Quality, Volume Tiers** — Airbnb · 65/100 · remote Anywhere in the World (Remote) · posted 2026-10-13
+  - Why: Fully remote US role
+  - Concern: Quality/CS ops focus narrower than core transformation experience
+  - https://weworkremotely.com/remote-jobs/airbnb-senior-manager-quality-volume-tiers
+- **MarTech Mobile Messaging Delivery Manager** — Aquent · 40/100 · remote Alpharetta, GA, US (Remote) · $50.37 / hourly as W2 · posted 2026-10-02
+  - Why: Operational delivery leadership, some program mgmt overlap
+  - Concern: Very tactical SAFe/Jira backlog focus, not strategic
+  - https://aquent.com/find-work/213474
 
 ## DISCOVERY / WILDCARDS (4)
 - **Chief of Staff, CRO** — Salesforce · 82/100 · remote Washington - Seattle Metro - Remote · $164,000 - $261,500 · posted 2026-10-12
   - Why: Chief of Staff role at priority employer Salesforce
   - Concern: No description to verify mandate
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Washington---Seattle-Metro---Remote/Chief-of-Staff--CRO_JR363112
+- **Manager, M&A Integration** — Salesforce · 82/100 · onsite Bellevue (+8 more) · $117,400 - $177,600 · posted 2026-10-13
+  - Why: M&A integration is core domain
+  - Concern: No description to verify mandate
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Manager--M-A-Integration_JR363200
 - **Executive Operations & Leadership Engagement Director** — Salesforce · 78/100 · onsite Seattle (+4 more) · $164,000 - $261,500 · posted 2026-10-12
   - Why: Priority employer Salesforce
   - Concern: No description to verify mandate
@@ -30,10 +34,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Value realization aligns with core domain
   - Concern: No description to confirm scope
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Business-Value-Services_JR362116
-- **Portfolio Leader (Manager/Director Levels)** — Salesforce · 72/100 · remote Remote (+27 more) · $155,190 - $299,390 · posted 2026-09-30
-  - Why: Portfolio/program leadership matches PMO strength
-  - Concern: No job description available
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Portfolio-Leader--Manager-Sr-Manager-Director-_JR349478
 
 ## STILL WORTH APPLYING (8)
 - **Senior Business Transformation & Sales Operations Partner** — Atlassian · 90/100 · remote Remote - Americas; Remote - Remote · first seen 2026-10-01
@@ -44,10 +44,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Transformation/operating model mandate matches core domains
   - Concern: Principal PM title may skew toward execution over strategy ownership
   - https://careers-americas.icims.com/jobs/27365/principal-program-manager%2c-sales-%26-success-strategy/job?mode=apply
-- **AI Transformation Owner, CRO** — GitLab · 85/100 · remote Remote, United States · posted 2026-07-22
-  - Why: AI transformation/enablement mandate matches core interest
-  - Concern: CRO/sales-org context less familiar than her consulting background
-  - https://job-boards.greenhouse.io/gitlab/jobs/8638232002
 - **Lead Business Consultant, VRS, CX** — NICE · 85/100 · remote USA - Remote · posted 2026-07-22
   - Why: Value realization/consulting mandate matches core domain
   - Concern: Title 'Lead' may be IC-level scope
@@ -68,20 +64,19 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: CX program leadership matches core domain
   - Concern: Senior IC role, no direct reports
   - https://job-boards.greenhouse.io/bamboohr17/jobs/6200796004
+- **Senior Program Manager, Health Coaching** — Omada Health · 75/100 · remote Remote, USA · posted 2026-10-02
+  - Why: Operational excellence & program leadership mandate
+  - Concern: Healthcare coaching domain is unfamiliar
+  - https://job-boards.greenhouse.io/omadahealth/jobs/8232149
 
-## REMOVED SINCE PRIOR RUN (12)
-- General Manager, Collibra Public Sector — Collibra · No longer listed by its source
-- Senior Project Manager, GTM Launch — Dutchie · No longer listed by its source
-- Senior Facilitator / Business Analyst — Eliassen · No longer listed by its source
-- Enterprise Change Management Consultant — Eliassen · No longer listed by its source
-- Vice President, Go-To-Market Operations — HackerOne · No longer listed by its source
-- Process Improvement Analyst — Hilton · No longer listed by its source
-- Principal, Business Operations and Strategy — Instructure · No longer listed by its source
-- Program Manager — Robert Half · No longer listed by its source
-- Sr HR Project Manager SAP SuccessFactors (Contract Remote) — Robert Half · No longer listed by its source
-- Human-Centered Change Senior Manager — Salesforce · No longer listed by its source
-- Executive Operations & Leadership Engagement DirectorDirector — Salesforce · No longer listed by its source
-- Product Operations Manager (Remote Eligible) — Smartsheet · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (7)
+- Manager, Customer Success - Upmarket — 6sense · No longer listed by its source
+- ET Senior Technical Program Manager II — Eliassen · No longer listed by its source
+- AI Transformation Owner, CRO — GitLab · No longer listed by its source
+- Sales Operations Manager, Foundry — Instructure · No longer listed by its source
+- Senior AI Enablement Specialist - FE — Kong Inc. · No longer listed by its source
+- Head of Revenue Operations — Lightspeed Commerce · No longer listed by its source
+- Senior Marketing Operations Manager — Netlify · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
