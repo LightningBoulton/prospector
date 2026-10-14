@@ -1,21 +1,29 @@
-# Prospector — 2026-10-13
+# Prospector — 2026-10-14
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**7 new roles today** · 8 still worth applying · 7 closed/removed
+**9 new roles today** · 8 still worth applying · 12 closed/removed
 
-## NEW — WORTH REVIEWING (3)
-- **Senior Manager, CPG Customer Success** — Instacart · 68/100 · remote United States - Remote · posted 2026-10-13
-  - Why: CX/CS leadership with team oversight
-  - Concern: CPG/retail SaaS vertical expertise not confirmed in background
-  - https://instacart.careers/job/?gh_jid=8275403
-- **Senior Manager, Quality, Volume Tiers** — Airbnb · 65/100 · remote Anywhere in the World (Remote) · posted 2026-10-13
-  - Why: Fully remote US role
-  - Concern: Quality/CS ops focus narrower than core transformation experience
-  - https://weworkremotely.com/remote-jobs/airbnb-senior-manager-quality-volume-tiers
-- **MarTech Mobile Messaging Delivery Manager** — Aquent · 40/100 · remote Alpharetta, GA, US (Remote) · $50.37 / hourly as W2 · posted 2026-10-02
-  - Why: Operational delivery leadership, some program mgmt overlap
-  - Concern: Very tactical SAFe/Jira backlog focus, not strategic
-  - https://aquent.com/find-work/213474
+## NEW — WORTH REVIEWING (5)
+- **Sr. Director, Renewals Operations** — Skillsoft · 72/100 · remote USA (Remote) · posted 2026-10-14
+  - Why: Operating model design and process redesign mandate
+  - Concern: Deep pricing/deal-desk/CPQ specialization not core background
+  - https://jobicy.com/jobs/155293-sr-director-renewals-operations
+- **Senior Director, Commercial Operations** — Skillsoft · 72/100 · remote USA (Remote) · posted 2026-10-14
+  - Why: US-remote full-time role
+  - Concern: Deal desk/pricing/CPQ specifics are domain-specific
+  - https://jobicy.com/jobs/155290-senior-director-commercial-operations
+- **Lead Enterprise Revenue Architect (Customer Success)** — Gong.io · 65/100 · remote Anywhere in the World (Remote) · posted 2026-10-14
+  - Why: Value realization and transformation mandate
+  - Concern: Requires deep SaaS/revenue-ops domain expertise
+  - https://weworkremotely.com/remote-jobs/gong-io-lead-enterprise-revenue-architect-customer-success
+- **North America Solutions & Services Leader** — Skillsoft · 58/100 · remote USA (Remote) · posted 2026-10-14
+  - Why: US-remote role
+  - Concern: Heavy sales quota/MEDDPICC focus mismatched to profile
+  - https://jobicy.com/jobs/155281-north-america-solutions-services-leader
+- **Director of Revenue Coaching and Enablement** — MX · 42/100 · onsite Lehi, Utah, United States · posted 2026-10-14
+  - Why: Utah-based, onsite likely
+  - Concern: Highly sales-metric focused, not transformation/ops
+  - https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4451115009
 
 ## DISCOVERY / WILDCARDS (4)
 - **Chief of Staff, CRO** — Salesforce · 82/100 · remote Washington - Seattle Metro - Remote · $164,000 - $261,500 · posted 2026-10-12
@@ -69,18 +77,23 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Concern: Healthcare coaching domain is unfamiliar
   - https://job-boards.greenhouse.io/omadahealth/jobs/8232149
 
-## REMOVED SINCE PRIOR RUN (7)
-- Manager, Customer Success - Upmarket — 6sense · No longer listed by its source
-- ET Senior Technical Program Manager II — Eliassen · No longer listed by its source
-- AI Transformation Owner, CRO — GitLab · No longer listed by its source
-- Sales Operations Manager, Foundry — Instructure · No longer listed by its source
-- Senior AI Enablement Specialist - FE — Kong Inc. · No longer listed by its source
-- Head of Revenue Operations — Lightspeed Commerce · No longer listed by its source
-- Senior Marketing Operations Manager — Netlify · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (12)
+- Operations Program Manager — Aquent · No longer listed by its source
+- Business Operations Manager — Aquent · No longer listed by its source
+- Project Manager, Creative & Marketing Ops — Aquent · No longer listed by its source
+- Operational Excellence Specialist — Aquent · No longer listed by its source
+- Brand Marketing Manager IV (Brand Operations Manager) — Aquent · No longer listed by its source
+- Workday Supply Chain Management Lead — Aquent · No longer listed by its source
+- Content Manager — Aquent · No longer listed by its source
+- Digital Marketing Program Manager — Aquent · No longer listed by its source
+- Producer/Project Manager — Aquent · No longer listed by its source
+- MarTech Mobile Messaging Delivery Manager — Aquent · No longer listed by its source
+- Content Project Manager — Aquent · No longer listed by its source
+- Resource Manager — Aquent · No longer listed by its source
 
 ## SOURCE HEALTH
-- Sources checked: 129/137 successful
-- Temporary errors: 1
-- Needs attention: 31
+- Sources checked: 128/137 successful
+- Temporary errors: 2
+- Needs attention: 30
   - Broken config: Amplitude, ClickHouse, Hightouch, LVT, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Amplitude, AssemblyAI, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Metabase, Miro, Nav, Nomi Health, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
+  - Returning nothing for 10+ runs: Airtable, Amplitude, AssemblyAI, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Pinecone, Postman, Together AI, Toptal, Vantage, Vivint, Weave
