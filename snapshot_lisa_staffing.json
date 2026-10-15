@@ -1,11 +1,87 @@
 [
  {
+  "key": "Eliassen::ae2907ee-c8bb-11f1-b23b-024201c20d84",
+  "company": "Eliassen",
+  "title": "Senior Technical Project/Program Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/kv6jpY/senior-technical-projectprogram-manager-programproject-management-anywhere-a1wuq000001xp7z2aq",
+  "posted": "2026-10-15",
+  "salary": "$49.00 to $54.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote W2 contract fits practical constraints",
+    "Program/risk/stakeholder leadership overlaps her skills",
+    "Healthcare domain and FEP specifics are a gap",
+    "Lower-rate technical PM role, not strategic transformation"
+   ],
+   "concerns": [
+    "Healthcare/FEP specialization not in her background",
+    "Hourly W2 rate is modest vs her seniority",
+    "Limited strategic/transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 45,
+   "practical_fit": 70,
+   "opportunity_score": 45,
+   "score": 45,
+   "fit": "maybe",
+   "reason": "Remote W2 contract fits practical constraints",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Eliassen::7f6fac72-c742-11f1-b23b-024201c20d84",
+  "company": "Eliassen",
+  "title": "SAP S/4HANA Implementation and Testing Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/GAB9sZ/sap-s4hana-implementation-and-testing-manager-programproject-management-anywhere-a1wuq000001xc772aa",
+  "posted": "2026-10-13",
+  "salary": "$85.00 to $95.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Requires deep accounting/SAP testing expertise",
+    "Not her domain despite transformation framing"
+   ],
+   "concerns": [
+    "Needs hands-on accounting SME, not strategy/ops leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 25,
+   "practical_fit": 60,
+   "opportunity_score": 22,
+   "score": 22,
+   "fit": "no",
+   "reason": "Requires deep accounting/SAP testing expertise",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Robert Half::04838-0013510590-usen",
   "company": "Robert Half",
   "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
   "location": "Philadelphia, PA (Remote)",
   "url": "https://www.roberthalf.com/us/en/job/philadelphia-pa/technical-project-manager-agile-scrum-iii-contractor/04838-0013510590-usen",
-  "posted": "2026-10-13",
+  "posted": "2026-10-14",
   "salary": "$53.00\u2013$58.00/hr",
   "employment_type": "Temp",
   "expires": "",
@@ -74,42 +150,80 @@
   }
  },
  {
-  "key": "Robert Half::03710-0013525478-usen",
+  "key": "Robert Half::02160-9504411999-usen",
   "company": "Robert Half",
-  "title": "Program Manager",
-  "location": "Chesterbrook, PA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/chesterbrook-pa/program-manager/03710-0013525478-usen",
+  "title": "Talent Management Lead",
+  "location": "Westborough, MA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/westborough-ma/talent-management-lead/02160-9504411999-usen",
   "posted": "2026-10-14",
-  "salary": null,
+  "salary": "$50.00\u2013$60.00/hr",
   "employment_type": "Temp",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "practical_contract",
+   "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "Program/project leadership matches core skills",
-    "Cross-functional coordination fits operations background",
-    "Remote listed despite PA location",
-    "Contract role useful for income"
+    "Org development and talent program leadership overlap",
+    "Change management and stakeholder influence fit",
+    "Remote-friendly though temp role",
+    "Narrower HR specialization than core transformation focus"
    ],
    "concerns": [
-    "Manufacturing domain less aligned with interests",
-    "Temp/contract, not strategic leadership scope",
-    "Limited transformation or org-design mandate"
+    "Temp/contract Robert Half staffing role",
+    "HR-specific scope narrower than her strategic mandate",
+    "Westborough MA location despite remote tag"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 70,
+   "qualification_fit": 55,
    "interest_fit": 55,
    "practical_fit": 55,
-   "opportunity_score": 50,
-   "score": 50,
+   "opportunity_score": 48,
+   "score": 48,
    "fit": "maybe",
-   "reason": "Program/project leadership matches core skills",
+   "reason": "Org development and talent program leadership overlap",
+   "bg": "d192ce659668"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Robert Half::02750-0013508658-usen",
+  "company": "Robert Half",
+  "title": "Customer Experience Specialist",
+  "location": "Parsippany, NJ (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/parsippany-nj/customer-experience-specialist/02750-0013508658-usen",
+  "posted": "2026-09-28",
+  "salary": "$25.00\u2013$49.50/hr",
+  "employment_type": "Temp to Perm",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'customer experience' + mandate in description (continuous improvement, customer experience)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Mismatched mandate: HVAC technical support, not strategic CX leadership",
+    "Individual-contributor technical training role, not ownership scope"
+   ],
+   "concerns": [
+    "Requires HVAC domain expertise she lacks",
+    "Low-level temp-to-perm role, not strategic"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 35,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Mismatched mandate: HVAC technical support, not strategic CX leadership",
    "bg": "d192ce659668"
   }
  }
