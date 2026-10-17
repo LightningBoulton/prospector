@@ -2,9 +2,37 @@
  "_comment": "Copy any row you want to act on into feedback_lisa.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_lisa.json is.",
  "entries": [
   {
+   "key": "1Password::4e58afec-6145-4fde-afdc-37792a095a3f",
+   "company": "1Password",
+   "title": "Director, Global Field Sales Operations",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::c0843e63-51ce-4c21-8ac0-55a6219c6ab6",
    "company": "1Password",
    "title": "Learning Design and Enablement Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "1Password::6639ae84-8af4-4dfb-931c-bdce0704e5e3",
+   "company": "1Password",
+   "title": "Senior Digital Customer Success Campaign Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Acumatica::https://himalayas.app/companies/acumatica/jobs/talent-development-manager-learning-leadership-development",
+   "company": "Acumatica",
+   "title": "Talent Development Manager (Learning& Leadership Development)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Addison Group::90a20ab7-c9b8-11f1-b23b-024201c20d84",
+   "company": "Addison Group",
+   "title": "MGA Systems Project Manager",
    "status": "",
    "note": ""
   },
@@ -68,13 +96,6 @@
    "key": "Atlassian::26052",
    "company": "Atlassian",
    "title": "Agentic Success Portfolio Lead",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Atlassian::26301",
-   "company": "Atlassian",
-   "title": "Associate Customer Success Manager",
    "status": "",
    "note": ""
   },
@@ -173,13 +194,6 @@
    "key": "Atlassian::27092",
    "company": "Atlassian",
    "title": "Principal Product Manager, Focus",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Atlassian::27365",
-   "company": "Atlassian",
-   "title": "Principal Program Manager, Sales & Success Strategy",
    "status": "",
    "note": ""
   },
@@ -317,6 +331,13 @@
    "note": ""
   },
   {
+   "key": "Atlassian::27486",
+   "company": "Atlassian",
+   "title": "Strategy and Business Operations Principal - Rovo and AI",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Atlassian::27424",
    "company": "Atlassian",
    "title": "Technical Head of Enginering",
@@ -324,16 +345,16 @@
    "note": ""
   },
   {
-   "key": "BambooHR::6199645004",
-   "company": "BambooHR",
-   "title": "Digital Customer Education Specialist, Premium & Paid Programs",
+   "key": "BYU::JR-13196",
+   "company": "BYU",
+   "title": "Recruiting Operations Manager",
    "status": "",
    "note": ""
   },
   {
-   "key": "BambooHR::6190324004",
+   "key": "BambooHR::6199645004",
    "company": "BambooHR",
-   "title": "Manager, AI-Native Security Operations",
+   "title": "Digital Customer Education Specialist, Premium & Paid Programs",
    "status": "",
    "note": ""
   },
@@ -352,16 +373,16 @@
    "note": ""
   },
   {
-   "key": "Brex::8865089002",
+   "key": "Brex::8895350002",
    "company": "Brex",
-   "title": "Director, Revenue Operations",
+   "title": "Director, Marketing Operations",
    "status": "",
    "note": ""
   },
   {
-   "key": "Brex::8846003002",
+   "key": "Brex::8865089002",
    "company": "Brex",
-   "title": "Manager, Payment Operations",
+   "title": "Director, Revenue Operations",
    "status": "",
    "note": ""
   },
@@ -464,13 +485,6 @@
    "note": ""
   },
   {
-   "key": "Coinbase::8242207",
-   "company": "Coinbase",
-   "title": "Senior Marketing Manager, Brand Strategy",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Coinbase::8230848",
    "company": "Coinbase",
    "title": "Senior Strategic Program Lead, GFCO",
@@ -492,20 +506,6 @@
    "note": ""
   },
   {
-   "key": "Cordance::152956",
-   "company": "Cordance",
-   "title": "President - Business Unit",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cresta::155323",
-   "company": "Cresta",
-   "title": "Customer Strategy Director",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Cricut::744000154538669",
    "company": "Cricut",
    "title": "Director of Strategy & Business, Creative Labs",
@@ -516,6 +516,13 @@
    "key": "Cricut::744000152287219",
    "company": "Cricut",
    "title": "Hardware Development Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Dandy::155529",
+   "company": "Dandy",
+   "title": "Senior Manager, Customer Expansion",
    "status": "",
    "note": ""
   },
@@ -569,7 +576,7 @@
    "note": ""
   },
   {
-   "key": "Dropbox::8233086",
+   "key": "Dropbox::https://weworkremotely.com/remote-jobs/dropbox-scaled-customer-success-manager",
    "company": "Dropbox",
    "title": "Scaled Customer Success Manager",
    "status": "",
@@ -597,6 +604,13 @@
    "note": ""
   },
   {
+   "key": "Fieldguide::153411",
+   "company": "Fieldguide",
+   "title": "Senior Performance Marketing Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Filevine::6a3a9f5b-c380-4c03-b6a8-eab125f176c2",
    "company": "Filevine",
    "title": "VP, Performance Marketing",
@@ -607,13 +621,6 @@
    "key": "Fleetio::155330",
    "company": "Fleetio",
    "title": "Manager, Revenue Operations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Fleetio::155360",
-   "company": "Fleetio",
-   "title": "Senior Lifecycle Marketing Manager",
    "status": "",
    "note": ""
   },
@@ -653,9 +660,9 @@
    "note": ""
   },
   {
-   "key": "Garner Health::154952",
-   "company": "Garner Health",
-   "title": "Consultant Relations VP",
+   "key": "GitLab::8877426002",
+   "company": "GitLab",
+   "title": "Customer Success Architect",
    "status": "",
    "note": ""
   },
@@ -663,6 +670,13 @@
    "key": "GitLab::8872500002",
    "company": "GitLab",
    "title": "Director, Global People Operations & Compliance",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8896290002",
+   "company": "GitLab",
+   "title": "Manager, Customer Success",
    "status": "",
    "note": ""
   },
@@ -751,13 +765,6 @@
    "note": ""
   },
   {
-   "key": "Grafana Labs::155266",
-   "company": "Grafana Labs",
-   "title": "Demand Generation Program Manager | United States | Remote",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Grafana Labs::6218141004",
    "company": "Grafana Labs",
    "title": "Director, Strategy & Planning | United States | Remote",
@@ -793,9 +800,9 @@
    "note": ""
   },
   {
-   "key": "Headway::18261737-fed6-4203-aeaa-6068545f9f1e",
+   "key": "Headway::ca065802-07db-449d-983d-8239958d2f07",
    "company": "Headway",
-   "title": "Director, Chief of Staff \u2013 R&D",
+   "title": "Director, People Operations",
    "status": "",
    "note": ""
   },
@@ -807,9 +814,9 @@
    "note": ""
   },
   {
-   "key": "Help Scout::153204",
-   "company": "Help Scout",
-   "title": "Director, Performance Marketing",
+   "key": "Headway::dd8fd8f1-ef3a-4212-96f6-a94bca1e428f",
+   "company": "Headway",
+   "title": "Vendor Operations Lead, CX",
    "status": "",
    "note": ""
   },
@@ -898,6 +905,13 @@
    "note": ""
   },
   {
+   "key": "Instacart::8292840",
+   "company": "Instacart",
+   "title": "CX Vendor Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Instacart::8265981",
    "company": "Instacart",
    "title": "Director, AI Solutions Strategy & Planning",
@@ -919,9 +933,23 @@
    "note": ""
   },
   {
-   "key": "Karbon::154931",
-   "company": "Karbon",
-   "title": "AI Operations Lead",
+   "key": "Kaseya::155507",
+   "company": "Kaseya",
+   "title": "Business Process Lead, Digital & Service Experience",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Kaseya::155510",
+   "company": "Kaseya",
+   "title": "Business Process Lead, Finance & Corporate Services",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Kaseya::155513",
+   "company": "Kaseya",
+   "title": "Business Process Lead, Lead-to-Quote (L2Q) & Customer Lifecycle",
    "status": "",
    "note": ""
   },
@@ -1038,16 +1066,9 @@
    "note": ""
   },
   {
-   "key": "Marriott International::26121156",
+   "key": "Marriott International::26127399",
    "company": "Marriott International",
-   "title": "Senior Manager, Global Property Management Systems",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Marriott International::26108129",
-   "company": "Marriott International",
-   "title": "Senior Manager, Strategic Accounts",
+   "title": "Senior Manager, Payment and Fraud Products",
    "status": "",
    "note": ""
   },
@@ -1094,6 +1115,20 @@
    "note": ""
   },
   {
+   "key": "Mercury::6227550004",
+   "company": "Mercury",
+   "title": "Senior Customer Support Service Delivery Program Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Mercury::6111944004",
+   "company": "Mercury",
+   "title": "Senior Revenue Enablement Specialist - Product",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Mercury::6221555004",
    "company": "Mercury",
    "title": "Senior Risk Program Manager - Fraud & Disputes Enablement",
@@ -1111,6 +1146,13 @@
    "key": "Motive::155401",
    "company": "Motive",
    "title": "Business Operations Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Motive::155446",
+   "company": "Motive",
+   "title": "Business Strategy & Operations Manager",
    "status": "",
    "note": ""
   },
@@ -1164,9 +1206,9 @@
    "note": ""
   },
   {
-   "key": "NetBox Labs::152946",
+   "key": "NetBox Labs::153396",
    "company": "NetBox Labs",
-   "title": "Senior Sales Operations Manager",
+   "title": "People Operations Manager",
    "status": "",
    "note": ""
   },
@@ -1185,6 +1227,20 @@
    "note": ""
   },
   {
+   "key": "Oddball::155569",
+   "company": "Oddball",
+   "title": "Delivery Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Oddball::155577",
+   "company": "Oddball",
+   "title": "Program Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Omada Health::8232149",
    "company": "Omada Health",
    "title": "Senior Program Manager, Health Coaching",
@@ -1192,9 +1248,9 @@
    "note": ""
   },
   {
-   "key": "Oscar Health::8227025",
-   "company": "Oscar Health",
-   "title": "Associate Director, Appeals & Grievances",
+   "key": "Osano::153441",
+   "company": "Osano",
+   "title": "Sales & CX Enablement Partner",
    "status": "",
    "note": ""
   },
@@ -1234,20 +1290,6 @@
    "note": ""
   },
   {
-   "key": "Pluralsight::R0014441",
-   "company": "Pluralsight",
-   "title": "Senior Digital Customer Experience Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Pluralsight::R0014444",
-   "company": "Pluralsight",
-   "title": "Senior Project Manager, Digital Customer Success",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Qualtrics::8264886",
    "company": "Qualtrics",
    "title": "GTM Enablement Program Manager - Solutions & Product",
@@ -1258,6 +1300,13 @@
    "key": "Ramp::40295bb5-3b56-4544-b7fb-5c1b20383525",
    "company": "Ramp",
    "title": "Account Manager | Strategic",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::abd1360f-bd9d-4649-ac02-9af2a437ff98",
+   "company": "Ramp",
+   "title": "Chief Compliance Officer, Ramp Advisory LLC",
    "status": "",
    "note": ""
   },
@@ -1276,23 +1325,23 @@
    "note": ""
   },
   {
-   "key": "Ramp::b4908db8-ac21-4c7f-b544-a66fffbfb97e",
-   "company": "Ramp",
-   "title": "Senior Channel Partner Manager, Global Advisory / GSI",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Ramp::d2beca4a-7409-404b-8382-761e5db6e917",
-   "company": "Ramp",
-   "title": "Senior Channel Partner Manager, Strategic Advisory",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Ramp::150478",
    "company": "Ramp",
    "title": "Senior Customer Activation Manager | Partnerships",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::8be55ffc-d512-4ef3-a14d-3a4cb29a60d4",
+   "company": "Ramp",
+   "title": "Senior Technical Program Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Recorded Future, Inc.::153444",
+   "company": "Recorded Future, Inc.",
+   "title": "Senior Product Manager, Digital Risk Protection Takedowns",
    "status": "",
    "note": ""
   },
@@ -1353,20 +1402,6 @@
    "note": ""
   },
   {
-   "key": "Rubrik Job Board::https://weworkremotely.com/remote-jobs/rubrik-job-board-customer-resilience-manager-customer-success-remote",
-   "company": "Rubrik Job Board",
-   "title": "Customer Resilience Manager - Customer Success (Remote)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "SHI International Corp.::https://himalayas.app/companies/shi-international-corp/jobs/director-global-sales-strategy",
-   "company": "SHI International Corp.",
-   "title": "Director - Global Sales Strategy",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Salesforce::JR343794",
    "company": "Salesforce",
    "title": "Agentic Customer Success Manager, Senior Manager",
@@ -1419,13 +1454,6 @@
    "key": "Salesforce::JR363080",
    "company": "Salesforce",
    "title": "Customer Marketing Senior Analyst",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Salesforce::JR358659",
-   "company": "Salesforce",
-   "title": "Customer Risk Manager",
    "status": "",
    "note": ""
   },
@@ -1549,6 +1577,13 @@
    "note": ""
   },
   {
+   "key": "Salesforce::JR359449",
+   "company": "Salesforce",
+   "title": "Human-Centered Change Senior Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Salesforce::JR362741",
    "company": "Salesforce",
    "title": "Life Sciences Program Manager/Program Executive",
@@ -1566,6 +1601,13 @@
    "key": "Salesforce::JR363200",
    "company": "Salesforce",
    "title": "Manager, M&A Integration",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Salesforce::JR362479",
+   "company": "Salesforce",
+   "title": "Manager, Revenue Recognition Strategy",
    "status": "",
    "note": ""
   },
@@ -1647,13 +1689,6 @@
    "note": ""
   },
   {
-   "key": "Salesforce::JR360149",
-   "company": "Salesforce",
-   "title": "Senior Manager, Revenue Strategy",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Salesforce::JR362005",
    "company": "Salesforce",
    "title": "Senior Product Marketing Manager, Sales Enablement (Qualified)",
@@ -1664,13 +1699,6 @@
    "key": "Salesforce::JR363488",
    "company": "Salesforce",
    "title": "Senior Technical Program Manager, Trust & Infrastructure",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Salesforce::JR361968",
-   "company": "Salesforce",
-   "title": "Sr. Account Partner / Account Partner Director, Professional Services \u2014 Manufacturing",
    "status": "",
    "note": ""
   },
@@ -1794,13 +1822,6 @@
    "note": ""
   },
   {
-   "key": "Stripe::8209633",
-   "company": "Stripe",
-   "title": "Program Manager, Deal Operations",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Stripe::8248507",
    "company": "Stripe",
    "title": "SaaS Platform and AI Partner Marketing Lead",
@@ -1815,13 +1836,6 @@
    "note": ""
   },
   {
-   "key": "Summation::152933",
-   "company": "Summation",
-   "title": "Solution Lead",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Supabase::9c04bc60-78a1-4529-950d-4704ab475764",
    "company": "Supabase",
    "title": "Head of AI Native Operations",
@@ -1829,16 +1843,9 @@
    "note": ""
   },
   {
-   "key": "Thumbtack::5e63219a-4949-44d5-b15e-a2657bc85ac3",
-   "company": "Thumbtack",
-   "title": "Chief of Staff to the CEO",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Thumbtack::b99ba30b-4339-4323-ac3e-9b6b0e21bb83",
-   "company": "Thumbtack",
-   "title": "Senior Program Manager, Vendor and Scaled Operations",
+   "key": "Tailscale::4744878005",
+   "company": "Tailscale",
+   "title": "Program Manager, EPD Operations",
    "status": "",
    "note": ""
   },
@@ -1878,9 +1885,16 @@
    "note": ""
   },
   {
-   "key": "Webflow::8265958",
-   "company": "Webflow",
-   "title": "Senior Manager, AI Customer Success",
+   "key": "Western Governors University::JR-026395",
+   "company": "Western Governors University",
+   "title": "Enterprise Partnerships Director - Institution Strategy & Ventures",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-026341",
+   "company": "Western Governors University",
+   "title": "Project Manager II - Technical",
    "status": "",
    "note": ""
   },
@@ -1892,7 +1906,7 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025721",
+   "key": "Western Governors University::JR-026315",
    "company": "Western Governors University",
    "title": "Project Manager IV, Transformation",
    "status": "",
@@ -1906,16 +1920,23 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025381",
-   "company": "Western Governors University",
-   "title": "Technical Project Manager III",
+   "key": "Wheel::153335",
+   "company": "Wheel",
+   "title": "Marketplace Operations Manager II",
    "status": "",
    "note": ""
   },
   {
-   "key": "Wheel::153335",
-   "company": "Wheel",
-   "title": "Marketplace Operations Manager II",
+   "key": "Wpromote::155538",
+   "company": "Wpromote",
+   "title": "Director, Revenue Systems",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Wrapbook::155493",
+   "company": "Wrapbook",
+   "title": "Senior Sales Operations & Compensation Manager",
    "status": "",
    "note": ""
   },

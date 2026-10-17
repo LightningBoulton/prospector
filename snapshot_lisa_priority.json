@@ -84,6 +84,46 @@
   }
  },
  {
+  "key": "Salesforce::JR359449",
+  "company": "Salesforce",
+  "title": "Human-Centered Change Senior Manager",
+  "location": "Remote (+6 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Remote/Human-Centered-Change-Senior-Manager_JR359449-1",
+  "posted": "2026-10-16",
+  "salary": "$150,100 - $227,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'change' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "low",
+   "reasons": [
+    "Change management mandate fits core expertise",
+    "Priority employer Salesforce",
+    "Remote location aligns with preference",
+    "Senior Manager level with likely real scope"
+   ],
+   "concerns": [
+    "No job description available",
+    "Scope and seniority unclear from title alone"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 80,
+   "interest_fit": 85,
+   "practical_fit": 90,
+   "opportunity_score": 80,
+   "score": 80,
+   "fit": "yes",
+   "reason": "Change management mandate fits core expertise",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Salesforce::JR361440",
   "company": "Salesforce",
   "title": "Senior Experience Architect (Design Consultant)",
@@ -1141,46 +1181,6 @@
   }
  },
  {
-  "key": "Salesforce::JR361968",
-  "company": "Salesforce",
-  "title": "Sr. Account Partner / Account Partner Director, Professional Services \u2014 Manufacturing",
-  "location": "Remote (+5 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Remote/Sr-Account-Partner---Account-Partner-Director--Professional-Services---Manufacturing_JR361968",
-  "posted": "2026-09-28",
-  "salary": "$155,545 - $244,465",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Salesforce is a named priority employer",
-    "Professional Services keyword aligns loosely",
-    "Account Partner likely sales/quota-carrying role",
-    "Remote location fits practical preference"
-   ],
-   "concerns": [
-    "Title suggests sales ownership, not delivery/transformation",
-    "No description to confirm real scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 30,
-   "practical_fit": 65,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Salesforce is a named priority employer",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Salesforce::JR362634",
   "company": "Salesforce",
   "title": "Customer Success Manager, Tableau - Public Sector",
@@ -1463,47 +1463,6 @@
   }
  },
  {
-  "key": "Salesforce::JR358659",
-  "company": "Salesforce",
-  "title": "Customer Risk Manager",
-  "location": "Bellevue (+5 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Atlanta/Customer-Risk-Manager_JR358659",
-  "posted": "2026-10-01",
-  "salary": "$117,400 - $177,600",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Washington location acceptable",
-    "Salesforce is priority employer",
-    "Title suggests risk/compliance, not transformation",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "Risk management is outside core domains",
-    "No posting details available",
-    "Title may signal narrow functional role"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 25,
-   "practical_fit": 60,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Washington location acceptable",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Salesforce::JR359240",
   "company": "Salesforce",
   "title": "Technical Product Strategist - Product Strategy & Innovation",
@@ -1540,6 +1499,45 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Salesforce is priority employer target",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Salesforce::JR362479",
+  "company": "Salesforce",
+  "title": "Manager, Revenue Recognition Strategy",
+  "location": "Seattle (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Atlanta/Manager--Revenue-Recognition-Strategy_JR362479",
+  "posted": "2026-10-17",
+  "salary": "$117,400 - $177,600",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Revenue recognition is accounting/finance, not her domain",
+    "Priority employer Salesforce raises visibility only",
+    "Seattle location acceptable per preferences"
+   ],
+   "concerns": [
+    "Finance/accounting mandate, outside core expertise",
+    "No description to verify scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Revenue recognition is accounting/finance, not her domain",
    "bg": "d192ce659668"
   }
  },
@@ -2032,46 +2030,6 @@
   }
  },
  {
-  "key": "Salesforce::JR360149",
-  "company": "Salesforce",
-  "title": "Senior Manager, Revenue Strategy",
-  "location": "Seattle (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Senior-Manager--Revenue-Strategy_JR360149",
-  "posted": "2026-09-25",
-  "salary": "$143,400 - $216,900",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Salesforce priority employer, Seattle matches WA preference",
-    "Revenue strategy adjacent to ops/transformation experience",
-    "Senior Manager scope could carry real influence",
-    "No description available to confirm mandate"
-   ],
-   "concerns": [
-    "No job description to verify actual responsibilities",
-    "Revenue strategy may skew sales-ops rather than transformation"
-   ],
-   "relocation_required": true,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 55,
-   "practical_fit": 75,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "maybe",
-   "reason": "Salesforce priority employer, Seattle matches WA preference",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Zillow Group::P751594",
   "company": "Zillow Group",
   "title": "Sales Enablement Manager",
@@ -2344,48 +2302,6 @@
    "score": 35,
    "fit": "maybe",
    "reason": "Priority employer Atlassian with referral advantage",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Atlassian::26301",
-  "company": "Atlassian",
-  "title": "Associate Customer Success Manager",
-  "location": "Salt Lake City - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/26301/associate-customer-success-manager/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Associate-level CSM below her seniority",
-    "Priority employer Atlassian with referral network",
-    "Utah onsite location matches practical preference",
-    "Customer success adjacent to her CX domain"
-   ],
-   "concerns": [
-    "Title/level junior relative to her experience",
-    "4 days onsite required, not remote",
-    "Narrow account-management scope vs strategic mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 60,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Associate-level CSM below her seniority",
    "bg": "d192ce659668"
   }
  },
@@ -2912,47 +2828,6 @@
   }
  },
  {
-  "key": "Atlassian::27365",
-  "company": "Atlassian",
-  "title": "Principal Program Manager, Sales & Success Strategy",
-  "location": "Austin - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/27365/principal-program-manager%2c-sales-%26-success-strategy/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "apply_first",
-   "confidence": "medium",
-   "reasons": [
-    "Transformation/operating model mandate matches core domains",
-    "Remote US option fits top location preference",
-    "Priority employer with referral connection",
-    "Executive-facing, cross-functional program ownership",
-    "Strategic problem-solving aligns with positioning"
-   ],
-   "concerns": [
-    "Principal PM title may skew toward execution over strategy ownership",
-    "Heavy GTM/sales focus is slightly adjacent to core experience"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 85,
-   "interest_fit": 88,
-   "practical_fit": 90,
-   "opportunity_score": 88,
-   "score": 88,
-   "fit": "yes",
-   "reason": "Transformation/operating model mandate matches core domains",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Atlassian::25128",
   "company": "Atlassian",
   "title": "Principal Strategist, Sales & Success Strategy - Public Sector",
@@ -2994,45 +2869,6 @@
   }
  },
  {
-  "key": "Atlassian::27552",
-  "company": "Atlassian",
-  "title": "Principal Technical Program Manager,",
-  "location": "San Francisco - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/27552/principal-technical-program-manager%2c/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Priority employer Atlassian, remote eligible",
-    "Deep technical infra/data TPM mandate mismatches background",
-    "Program leadership interest present but wrong domain"
-   ],
-   "concerns": [
-    "Requires deep technical data infrastructure expertise",
-    "Not org/transformation/CX focused"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 35,
-   "practical_fit": 80,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Priority employer Atlassian, remote eligible",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Atlassian::27224",
   "company": "Atlassian",
   "title": "Principal Technical Program Manager - Trust",
@@ -3069,6 +2905,45 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Priority employer Atlassian with real network advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Atlassian::27552",
+  "company": "Atlassian",
+  "title": "Principal Technical Program Manager,",
+  "location": "San Francisco - United States; Remote - Remote",
+  "url": "https://careers-americas.icims.com/jobs/27552/principal-technical-program-manager%2c/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Priority employer Atlassian, remote eligible",
+    "Deep technical infra/data TPM mandate mismatches background",
+    "Program leadership interest present but wrong domain"
+   ],
+   "concerns": [
+    "Requires deep technical data infrastructure expertise",
+    "Not org/transformation/CX focused"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 35,
+   "practical_fit": 80,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Priority employer Atlassian, remote eligible",
    "bg": "d192ce659668"
   }
  },
@@ -3235,7 +3110,7 @@
   "key": "Atlassian::27282",
   "company": "Atlassian",
   "title": "Senior Design Manager, Strategy Collection",
-  "location": "Seattle - United States; Remote - Remote",
+  "location": "Mountain View - United States or Remote; Remote - Remote",
   "url": "https://careers-americas.icims.com/jobs/27282/senior-design-manager%2c-strategy-collection/job?mode=apply",
   "posted": "",
   "salary": null,
@@ -3710,6 +3585,46 @@
   }
  },
  {
+  "key": "Atlassian::27486",
+  "company": "Atlassian",
+  "title": "Strategy and Business Operations Principal - Rovo and AI",
+  "location": "San Francisco - United States; Remote - Remote; Seattle - United States",
+  "url": "https://careers-americas.icims.com/jobs/27486/strategy-and-business-operations-principal---rovo-and-ai/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Priority employer Atlassian with referral advantage",
+    "AI enablement and strategy mandate fits interests",
+    "Remote option listed, strong practical fit",
+    "Strategic/business ops scope aligns with background"
+   ],
+   "concerns": [
+    "Principal strategy ops may need deep quant/analytics rigor",
+    "Highly technical AI platform context may require more hands-on data skills"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 58,
+   "interest_fit": 80,
+   "practical_fit": 70,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Priority employer Atlassian with referral advantage",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "NPR::4742625005",
   "company": "NPR",
   "title": "Insights Analyst, Implementation & QA",
@@ -4148,82 +4063,40 @@
   }
  },
  {
-  "key": "Marriott International::26121156",
+  "key": "Marriott International::26127399",
   "company": "Marriott International",
-  "title": "Senior Manager, Global Property Management Systems",
+  "title": "Senior Manager, Payment and Fraud Products",
   "location": "Bethesda, MD (Remote)",
-  "url": "https://careers.marriott.com/senior-manager-global-property-management-systems/job/P1-6938325-0",
+  "url": "https://careers.marriott.com/senior-manager-payment-and-fraud-products/job/P1-7394608-0",
   "posted": "",
-  "salary": "$110,400-$129,500",
+  "salary": "$100,400-$171,000",
   "employment_type": "Full Time",
   "expires": "",
   "priority_employer": true,
   "tier": "discovery",
-  "match_reason": "priority employer; mandate in responsibilities (change management)",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Priority employer with referral advantage",
-    "Remote role reduces relocation concern",
-    "Change management component fits background",
-    "Otherwise deep hotel PMS domain mismatch"
-   ],
-   "concerns": [
-    "Requires specific hotel systems expertise (Opera/FOSSE)",
-    "Operational/technical SME role, not strategic transformation ownership",
-    "Bethesda base, though remote"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "maybe",
-   "reason": "Priority employer with referral advantage",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Marriott International::26108129",
-  "company": "Marriott International",
-  "title": "Senior Manager, Strategic Accounts",
-  "location": "Bethesda, MD (Remote)",
-  "url": "https://careers.marriott.com/senior-manager-strategic-accounts/job/P1-6609595-0",
-  "posted": "",
-  "salary": "$100,400-$154,000",
-  "employment_type": "Full Time",
-  "expires": "",
-  "priority_employer": true,
-  "tier": "discovery",
-  "match_reason": "mandate in description (adoption, value realization, executive stakeholders)",
+  "match_reason": "priority employer; mandate in responsibilities (operating model)",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
     "Priority employer Marriott raises visibility",
-    "Quota-driven sales/account management role",
-    "Not transformation or operations leadership",
-    "Heavy travel requirement reduces fit"
+    "Payment/fraud product management is wrong domain",
+    "Requires technical product management expertise",
+    "Not transformation or org-strategy mandate"
    ],
    "concerns": [
-    "Core function is sales/procurement account origination",
-    "50% travel required",
-    "Not remote-friendly despite listing"
+    "Deep payments/fraud technical domain mismatch",
+    "Product management skillset not her core strength"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 25,
-   "practical_fit": 40,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 30,
+   "interest_fit": 30,
+   "practical_fit": 65,
+   "opportunity_score": 35,
+   "score": 35,
    "fit": "no",
    "reason": "Priority employer Marriott raises visibility",
    "bg": "d192ce659668"
