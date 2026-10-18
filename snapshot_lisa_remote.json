@@ -2318,6 +2318,45 @@
   }
  },
  {
+  "key": "LaunchDarkly::8017033003",
+  "company": "LaunchDarkly",
+  "title": "Director, People Operations",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/8017033003",
+  "posted": "2026-10-08",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Operating model and service delivery ownership",
+    "Remote US aligns with top location preference",
+    "Cross-functional operational leadership mandate",
+    "Process excellence and continuous improvement focus"
+   ],
+   "concerns": [
+    "HR/People Ops specific, not core transformation domain",
+    "Less strategic/executive scope than target roles"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 68,
+   "interest_fit": 60,
+   "practical_fit": 90,
+   "opportunity_score": 68,
+   "score": 68,
+   "fit": "yes",
+   "reason": "Operating model and service delivery ownership",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "LaunchDarkly::8019784003",
   "company": "LaunchDarkly",
   "title": "Senior Director, Enablement",
@@ -3603,42 +3642,82 @@
   }
  },
  {
-  "key": "Acumatica::https://himalayas.app/companies/acumatica/jobs/talent-development-manager-learning-leadership-development",
-  "company": "Acumatica",
-  "title": "Talent Development Manager (Learning& Leadership Development)",
+  "key": "Consilio LLC::https://himalayas.app/companies/consilio-llc/jobs/senior-manager-advisory",
+  "company": "Consilio LLC",
+  "title": "Senior Manager, Advisory",
   "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/acumatica/jobs/talent-development-manager-learning-leadership-development",
-  "posted": "2026-10-17",
-  "salary": "$120,000\u2013$135,000",
+  "url": "https://himalayas.app/companies/consilio-llc/jobs/senior-manager-advisory",
+  "posted": "2026-10-18",
+  "salary": null,
   "employment_type": "Full Time",
-  "expires": "2026-12-16",
+  "expires": "2026-12-17",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "strong_fit",
    "confidence": "medium",
    "reasons": [
-    "Remote US role fits location preference",
-    "Org capability-building adjacent to her strategy work",
-    "Organizational development is adjacent domain",
-    "Scaling and culture work aligns with positioning"
+    "Operating model design and transformation mandate",
+    "Executive-facing advisory to GC/legal ops leaders",
+    "US-remote fully matches practical preference",
+    "Change/process/GenAI enablement alignment"
    ],
    "concerns": [
-    "Heavily L&D/instructional-design focused, not her core",
-    "Individual-contributor with narrow functional scope",
-    "Limited strategic/transformation ownership vs her target roles"
+    "Legal domain specificity may require ramp-up",
+    "Billable consulting pressure not confirmed in posting"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
+   "qualification_fit": 70,
+   "interest_fit": 80,
    "practical_fit": 90,
-   "opportunity_score": 55,
-   "score": 55,
+   "opportunity_score": 75,
+   "score": 75,
+   "fit": "yes",
+   "reason": "Operating model design and transformation mandate",
+   "bg": "d192ce659668"
+  },
+  "rescued": true
+ },
+ {
+  "key": "Alloy::https://weworkremotely.com/remote-jobs/alloy-client-enablement-lead",
+  "company": "Alloy",
+  "title": "Client Enablement Lead",
+  "location": "Anywhere in the World (Remote)",
+  "url": "https://weworkremotely.com/remote-jobs/alloy-client-enablement-lead",
+  "posted": "2026-10-18",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "2026-11-17",
+  "tier": "discovery",
+  "match_reason": "role family 'enablement' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Customer enablement program ownership",
+    "Cross-functional, customer-facing scope",
+    "Fully remote role fits location preference",
+    "Overlaps with CX and knowledge operations work"
+   ],
+   "concerns": [
+    "Not a transformation/strategy mandate",
+    "Reports to Product Design, narrower scope",
+    "Heavier emphasis on training content vs strategic leadership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 58,
+   "score": 58,
    "fit": "maybe",
-   "reason": "Remote US role fits location preference",
+   "reason": "Customer enablement program ownership",
    "bg": "d192ce659668"
   }
  },
@@ -4339,42 +4418,40 @@
   }
  },
  {
-  "key": "Ping Identity::https://weworkremotely.com/remote-jobs/ping-identity-customer-success-manager",
-  "company": "Ping Identity",
-  "title": "Customer Success Manager",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/ping-identity-customer-success-manager",
-  "posted": "2026-09-26",
+  "key": "Cribl::155607",
+  "company": "Cribl",
+  "title": "Cloud Partner Sales Manager (Northeast)",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/155607-cloud-partner-sales-manager-northeast",
+  "posted": "2026-10-17",
   "salary": null,
   "employment_type": "Full-Time",
-  "expires": "2026-10-26",
-  "demoted": true,
+  "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "match_reason": "mandate in description (adoption, governance)",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "medium",
+   "confidence": "high",
    "reasons": [
-    "Fully remote US role",
-    "CX-adjacent but individual account-level support",
-    "Lacks strategic/transformation scope"
+    "Quota-carrying partner sales role",
+    "Not operations/transformation mandate",
+    "Wrong function despite remote fit"
    ],
    "concerns": [
-    "Technical CSM day-to-day support role, not strategic",
-    "No org design or transformation mandate",
-    "Below her leadership/ownership level"
+    "Sales ownership, not strategy/ops",
+    "Mismatch with core domains"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 85,
-   "opportunity_score": 35,
-   "score": 35,
+   "qualification_fit": 20,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 20,
+   "score": 20,
    "fit": "no",
-   "reason": "Fully remote US role",
+   "reason": "Quota-carrying partner sales role",
    "bg": "d192ce659668"
   }
  },
@@ -5201,6 +5278,44 @@
   "rescued": true
  },
  {
+  "key": "PerfectServe::155598",
+  "company": "PerfectServe",
+  "title": "Customer & Field Marketing Manager - US Remote",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/155598-customer-field-marketing-manager-us-remote-3",
+  "posted": "2026-10-17",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'customer' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Field marketing role, not transformation/ops",
+    "Remote US fits location preference",
+    "Weak mandate alignment with core domains"
+   ],
+   "concerns": [
+    "Marketing execution role, not strategic leadership",
+    "No transformation or operating-model scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 90,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Field marketing role, not transformation/ops",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Fieldguide::153411",
   "company": "Fieldguide",
   "title": "Senior Performance Marketing Manager",
@@ -5315,39 +5430,42 @@
   "rescued": true
  },
  {
-  "key": "dscout::150766",
-  "company": "dscout",
-  "title": "Enterprise Account Director",
+  "key": "PerfectServe::155605",
+  "company": "PerfectServe",
+  "title": "Enterprise Implementation Consultant - US Remote",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/150766-enterprise-account-director",
-  "posted": "2026-10-16",
+  "url": "https://jobicy.com/jobs/155605-enterprise-implementation-consultant-us-remote",
+  "posted": "2026-10-17",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "mandate in description (adoption, roi)",
+  "match_reason": "role family 'implementation' + seniority in title",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
+   "recommendation": "stretch",
+   "confidence": "medium",
    "reasons": [
-    "Quota-carrying sales role, not transformation/ops",
-    "Account Director title but core is new business sales"
+    "US-remote matches preference strongly",
+    "Implementation involves customer delivery/process work",
+    "Healthcare IT not core domain",
+    "Likely IC-level implementation, limited strategic scope"
    ],
    "concerns": [
-    "Wrong function - sales quota ownership",
-    "Not aligned with strategic/operational background"
+    "Unclear seniority/scope from posting",
+    "Healthcare clinical workflow focus outside core expertise",
+    "May be tactical rather than transformational"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 70,
-   "opportunity_score": 20,
-   "score": 20,
-   "fit": "no",
-   "reason": "Quota-carrying sales role, not transformation/ops",
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 90,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "US-remote matches preference strongly",
    "bg": "d192ce659668"
   }
  },
@@ -5508,44 +5626,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Operational scaling and capacity building mandate",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Canonical::150369",
-  "company": "Canonical",
-  "title": "Junior Project Manager",
-  "location": "APAC,  LATAM,  Canada,  USA (Remote)",
-  "url": "https://jobicy.com/jobs/150369-junior-project-manager",
-  "posted": "2026-10-11",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Junior title, no strategic ownership",
-    "Below seniority and scope level",
-    "Not transformation or org leadership work"
-   ],
-   "concerns": [
-    "Too junior for 15yr exec background",
-    "No strategic mandate described"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Junior title, no strategic ownership",
    "bg": "d192ce659668"
   }
  }

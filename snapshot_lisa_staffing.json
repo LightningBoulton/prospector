@@ -114,41 +114,6 @@
   }
  },
  {
-  "key": "Robert Half::02210-0013510672-usen",
-  "company": "Robert Half",
-  "title": "Endpoint Lead",
-  "location": "Troy, MI (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/troy-mi/endpoint-lead/02210-0013510672-usen",
-  "posted": "2026-10-08",
-  "salary": "$47.50\u2013$55.00/hr",
-  "employment_type": "Temp to Perm",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, service delivery, governance)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Hands-on IT endpoint engineering, not her domain"
-   ],
-   "concerns": [
-    "Wrong function entirely - technical IT ops"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 8,
-   "interest_fit": 10,
-   "practical_fit": 30,
-   "opportunity_score": 8,
-   "score": 8,
-   "fit": "no",
-   "reason": "Hands-on IT endpoint engineering, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::04838-0013510590-usen",
   "company": "Robert Half",
   "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
@@ -226,45 +191,6 @@
   }
  },
  {
-  "key": "Robert Half::00700-0013510110-usen",
-  "company": "Robert Half",
-  "title": "Senior Solutions Architect",
-  "location": "Newington, CT (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/newington-ct/senior-solutions-architect/00700-0013510110-usen",
-  "posted": "2026-10-02",
-  "salary": "$50.00\u2013$50.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (change management, adoption)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Deep WFM/payroll technical architecture, not her domain",
-    "Change management element is minor piece",
-    "Highly technical system configuration focus"
-   ],
-   "concerns": [
-    "Requires hands-on WFM/payroll systems expertise",
-    "Onsite-flagged location despite remote note",
-    "Temp contract with narrow technical scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 30,
-   "practical_fit": 35,
-   "opportunity_score": 25,
-   "score": 25,
-   "fit": "no",
-   "reason": "Deep WFM/payroll technical architecture, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::02100-0013521865-usen",
   "company": "Robert Half",
   "title": "Project Manager/Sr. Consultant",
@@ -300,6 +226,45 @@
    "score": 50,
    "fit": "maybe",
    "reason": "Remote contract program/project leadership",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::00700-0013510110-usen",
+  "company": "Robert Half",
+  "title": "Senior Solutions Architect",
+  "location": "Newington, CT (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/newington-ct/senior-solutions-architect/00700-0013510110-usen",
+  "posted": "2026-10-02",
+  "salary": "$50.00\u2013$50.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (change management, adoption)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Deep WFM/payroll technical architecture, not her domain",
+    "Change management element is minor piece",
+    "Highly technical system configuration focus"
+   ],
+   "concerns": [
+    "Requires hands-on WFM/payroll systems expertise",
+    "Onsite-flagged location despite remote note",
+    "Temp contract with narrow technical scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 30,
+   "practical_fit": 35,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Deep WFM/payroll technical architecture, not her domain",
    "bg": "d192ce659668"
   }
  },
