@@ -702,6 +702,84 @@
   "rescued": true
  },
  {
+  "key": "Western Governors University::JR-025874",
+  "company": "Western Governors University",
+  "title": "Senior Manager, Technical Program Management",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Technical-Delivery-and-Quality_JR-025874",
+  "posted": "2026-10-19",
+  "salary": "$151,800.00 - $250,500.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah-local role, strong practical fit",
+    "Program management aligns with PMO background",
+    "Technical PM scope unclear, no description",
+    "Could be more technical than her profile"
+   ],
+   "concerns": [
+    "No description to assess true mandate",
+    "Title suggests technical depth she may lack"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 50,
+   "practical_fit": 80,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Utah-local role, strong practical fit",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-026195",
+  "company": "Western Governors University",
+  "title": "Technical Project Manager III",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-026195",
+  "posted": "2026-10-19",
+  "salary": "$108,200.00 - $162,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah local, possibly hybrid",
+    "PM scope could carry real ownership",
+    "Thin posting, lacks detail"
+   ],
+   "concerns": [
+    "No description to verify mandate",
+    "Technical PM may be too execution-focused",
+    "Title suggests narrower IT scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Utah local, possibly hybrid",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Western Governors University::JR-026395",
   "company": "Western Governors University",
   "title": "Enterprise Partnerships Director - Institution Strategy & Ventures",
@@ -936,7 +1014,7 @@
   "location": "Provo, UT",
   "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Recruiting-Operations-Manager_JR-13196-1",
   "posted": "2026-10-16",
-  "salary": "$67,000.00 to $87,000.00",
+  "salary": null,
   "employment_type": "",
   "expires": "",
   "tier": "core",

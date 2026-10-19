@@ -2,20 +2,6 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
-   "key": "1Password::a492badd-a02f-4360-aa15-7ea8c6e2c85e",
-   "company": "1Password",
-   "title": "Junior Developer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "1Password::49f0fe51-fcdc-46d8-a046-35f357b0cf6e",
-   "company": "1Password",
-   "title": "Junior Security Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::804f6fcb-e244-4734-b3c9-029c108359f4",
    "company": "1Password",
    "title": "Senior Developer Advocate",
@@ -254,6 +240,13 @@
    "note": ""
   },
   {
+   "key": "Alloy::https://weworkremotely.com/remote-jobs/alloy-senior-technical-support-engineer",
+   "company": "Alloy",
+   "title": "Senior Technical Support Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Ancestry::R003377",
    "company": "Ancestry",
    "title": "Machine Learning Engineer, Co-op",
@@ -320,6 +313,13 @@
    "key": "Boulevard::153135",
    "company": "Boulevard",
    "title": "GTM Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Calendly::8895903002",
+   "company": "Calendly",
+   "title": "Full Stack Engineer - Trust and Safety",
    "status": "",
    "note": ""
   },
@@ -439,6 +439,13 @@
    "key": "Coinbase::8292793",
    "company": "Coinbase",
    "title": "Senior Machine Learning Engineer, CX",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8301285",
+   "company": "Coinbase",
+   "title": "Senior Product Designer, Developer Foundations",
    "status": "",
    "note": ""
   },
@@ -653,6 +660,13 @@
    "note": ""
   },
   {
+   "key": "Deepgram::dcea53a5-5650-406d-a154-fad077c4b81b",
+   "company": "Deepgram",
+   "title": "Research Engineer, Post-Training",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Deepgram::89c0ef18-7433-4c0e-b136-4b03f326c86f",
    "company": "Deepgram",
    "title": "Security Engineer",
@@ -677,13 +691,6 @@
    "key": "DigiCert::8889446002",
    "company": "DigiCert",
    "title": "Senior Solutions Engineer - Northeast US",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "DigiCert::8890918002",
-   "company": "DigiCert",
-   "title": "Solutions Engineer",
    "status": "",
    "note": ""
   },
@@ -772,6 +779,20 @@
    "note": ""
   },
   {
+   "key": "EnthuZiastic::https://himalayas.app/companies/enthuziastic/jobs/devops-trainer-technical-trainer-remote-job",
+   "company": "EnthuZiastic",
+   "title": "DevOps Trainer - Technical Trainer - Remote Job",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Figma::151025",
+   "company": "Figma",
+   "title": "Marketing Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Fivetran::7999916003",
    "company": "Fivetran",
    "title": "Staff Solutions Engineer",
@@ -782,6 +803,27 @@
    "key": "Flex::4743803005",
    "company": "Flex",
    "title": "Senior Software Development Engineer in Test (SDET)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Get My Course::https://himalayas.app/companies/get-my-course/jobs/data-engineer",
+   "company": "Get My Course",
+   "title": "Data Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8889193002",
+   "company": "GitLab",
+   "title": "Cloud Platform Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8895468002",
+   "company": "GitLab",
+   "title": "Principal Engineer, Monetization Engineering",
    "status": "",
    "note": ""
   },
@@ -856,6 +898,13 @@
    "note": ""
   },
   {
+   "key": "Grafana Labs::6228094004",
+   "company": "Grafana Labs",
+   "title": "Senior Full-Stack Engineer - Grafana Analytics| NASA | (Remote, USA)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Grafana Labs::6223924004",
    "company": "Grafana Labs",
    "title": "Senior Fullstack Engineer - Grafana Data Source Plugins | NASA | (Remote, USA)",
@@ -884,6 +933,13 @@
    "note": ""
   },
   {
+   "key": "Grafana Labs::6227875004",
+   "company": "Grafana Labs",
+   "title": "Staff Fullstack Engineer - Platform - App Core Usage | US | Remote",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Gusto::8205075",
    "company": "Gusto",
    "title": "Staff Software Engineer, Retirement Financial Platform",
@@ -908,13 +964,6 @@
    "key": "Headway::68970a75-e57d-4092-840b-a84dc9f167a5",
    "company": "Headway",
    "title": "Senior Software Engineer - Infrastructure",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Hinge Health::7564ec75-617b-4065-8da6-72210460a6ef",
-   "company": "Hinge Health",
-   "title": "AI Engineer II",
    "status": "",
    "note": ""
   },
@@ -1164,6 +1213,13 @@
    "note": ""
   },
   {
+   "key": "Notion::8c0bf773-e536-45c9-9a6c-8ee478148cc8",
+   "company": "Notion",
+   "title": "Software Engineer, Developer Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Notion::d82a0b31-59b8-4699-ae8d-6fb3fe47518c",
    "company": "Notion",
    "title": "Software Engineer, Mobile Core (Android)",
@@ -1248,13 +1304,6 @@
    "note": ""
   },
   {
-   "key": "Quantum Metric::153333",
-   "company": "Quantum Metric",
-   "title": "Solutions Engineer - US",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Recursion::8262864",
    "company": "Recursion",
    "title": "Staff Engineer, Identity & Access Management (IAM)",
@@ -1283,6 +1332,13 @@
    "note": ""
   },
   {
+   "key": "Reddit::8299781",
+   "company": "Reddit",
+   "title": "Machine Learning Engineer, Answers Relevance",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8263407",
    "company": "Reddit",
    "title": "Senior Android Software Engineer, Consumer Engineering",
@@ -1300,6 +1356,13 @@
    "key": "Reddit::8243010",
    "company": "Reddit",
    "title": "Senior Staff Machine Learning Engineer, ML Understanding",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8275745",
+   "company": "Reddit",
+   "title": "Software Engineer, Agent Optimization & Evaluation",
    "status": "",
    "note": ""
   },
@@ -1360,7 +1423,7 @@
    "note": ""
   },
   {
-   "key": "Samsara::8281479",
+   "key": "Samsara::8281491",
    "company": "Samsara",
    "title": "Senior AI Data & Analytics Engineer II",
    "status": "",
@@ -1374,7 +1437,7 @@
    "note": ""
   },
   {
-   "key": "Samsara::8281483",
+   "key": "Samsara::8281490",
    "company": "Samsara",
    "title": "Senior AI Data & Analytics Engineer II",
    "status": "",
@@ -1388,14 +1451,14 @@
    "note": ""
   },
   {
-   "key": "Samsara::8281490",
+   "key": "Samsara::8281483",
    "company": "Samsara",
    "title": "Senior AI Data & Analytics Engineer II",
    "status": "",
    "note": ""
   },
   {
-   "key": "Samsara::8281491",
+   "key": "Samsara::8281479",
    "company": "Samsara",
    "title": "Senior AI Data & Analytics Engineer II",
    "status": "",
@@ -1416,14 +1479,14 @@
    "note": ""
   },
   {
-   "key": "Samsara::8237427",
+   "key": "Samsara::8237426",
    "company": "Samsara",
    "title": "Senior Security Engineer - Threat Detection",
    "status": "",
    "note": ""
   },
   {
-   "key": "Samsara::8237426",
+   "key": "Samsara::8237427",
    "company": "Samsara",
    "title": "Senior Security Engineer - Threat Detection",
    "status": "",
@@ -1444,13 +1507,6 @@
    "note": ""
   },
   {
-   "key": "Samsara::8247424",
-   "company": "Samsara",
-   "title": "Sr Offensive AI Security Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Samsara::8264748",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
@@ -1458,7 +1514,7 @@
    "note": ""
   },
   {
-   "key": "Samsara::8247432",
+   "key": "Samsara::8247424",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
    "status": "",
@@ -1466,6 +1522,13 @@
   },
   {
    "key": "Samsara::8247429",
+   "company": "Samsara",
+   "title": "Sr Offensive AI Security Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8247432",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
    "status": "",
@@ -1773,13 +1836,6 @@
    "note": ""
   },
   {
-   "key": "Twilio::8067027",
-   "company": "Twilio",
-   "title": "Staff Mobile Software Engineer (P4)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Vanta::795ab93b-57d9-4387-9cc1-ea7615721ec6",
    "company": "Vanta",
    "title": "Senior Analytics Engineer",
@@ -1797,6 +1853,20 @@
    "key": "Vanta::9962b3c8-f1c4-4ad1-9308-7c8df6a28b28",
    "company": "Vanta",
    "title": "Staff Software Engineer, Program Structure & Trust",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Veeva Systems::https://weworkremotely.com/remote-jobs/veeva-systems-senior-consultant-crm-data-software",
+   "company": "Veeva Systems",
+   "title": "Senior Consultant - CRM Data Software",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "VetsEZ::https://himalayas.app/companies/vetsez/jobs/healthshare-application-engineer-remote-opportunity",
+   "company": "VetsEZ",
+   "title": "HealthShare Application Engineer (Remote Opportunity)",
    "status": "",
    "note": ""
   },
@@ -1860,6 +1930,13 @@
    "key": "Western Governors University::JR-025048",
    "company": "Western Governors University",
    "title": "Staff Software Engineer- Full-Stack Python and React",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Zapier::904eb3dd-2cc0-48af-bb54-8ade5f7db686",
+   "company": "Zapier",
+   "title": "Sr. Engineer, Database Reliability",
    "status": "",
    "note": ""
   },
