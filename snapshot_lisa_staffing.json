@@ -1,9 +1,48 @@
 [
  {
+  "key": "Aquent::213831",
+  "company": "Aquent",
+  "title": "Senior Product Operations Analyst",
+  "location": "Southlake, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213831",
+  "posted": "2026-10-19",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'operations' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Process improvement and operating model mandate fits background",
+    "Remote work aligns with location preference",
+    "Contract role usable for income/experience",
+    "Cross-functional influence on product operations"
+   ],
+   "concerns": [
+    "Contract/temp via staffing firm, not permanent",
+    "Analyst-level title may underuse strategic leadership experience"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 65,
+   "practical_fit": 70,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Process improvement and operating model mandate fits background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Aquent::213820",
   "company": "Aquent",
   "title": "Major Incident and Problem Manager",
-  "location": "Boston, MA, US (Remote)",
+  "location": "Wellesley Hills, MA, US (Remote)",
   "url": "https://aquent.com/find-work/213820",
   "posted": "2026-10-19",
   "salary": null,
@@ -1203,7 +1242,7 @@
   "title": "Program Manager",
   "location": "Culver City, CA (Remote)",
   "url": "https://www.roberthalf.com/us/en/job/culver-city-ca/program-manager/00320-0013522366-usen",
-  "posted": "2026-10-16",
+  "posted": "2026-10-20",
   "salary": "$39.59\u2013$45.84/hr",
   "employment_type": "Temp",
   "expires": "",
@@ -1232,45 +1271,6 @@
    "score": 30,
    "fit": "no",
    "reason": "Highly technical TPM role, not her background",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::02100-0013521865-usen",
-  "company": "Robert Half",
-  "title": "Project Manager/Sr. Consultant",
-  "location": "Cambridge, MA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/cambridge-ma/project-managersr-consultant/02100-0013521865-usen",
-  "posted": "2026-10-07",
-  "salary": "$59.38\u2013$68.75/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract program/project leadership",
-    "Governance and process-building mandate",
-    "Cross-functional stakeholder coordination",
-    "Vendor risk is adjacent not core expertise"
-   ],
-   "concerns": [
-    "Vendor/IT contract governance is niche, not core strength",
-    "Temp long-term contract, not strategic transformation scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Remote contract program/project leadership",
    "bg": "d192ce659668"
   }
  },
@@ -1310,6 +1310,45 @@
    "score": 25,
    "fit": "no",
    "reason": "Deep WFM/payroll technical architecture, not her domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::02100-0013521865-usen",
+  "company": "Robert Half",
+  "title": "Project Manager/Sr. Consultant",
+  "location": "Cambridge, MA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/cambridge-ma/project-managersr-consultant/02100-0013521865-usen",
+  "posted": "2026-10-07",
+  "salary": "$59.38\u2013$68.75/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract program/project leadership",
+    "Governance and process-building mandate",
+    "Cross-functional stakeholder coordination",
+    "Vendor risk is adjacent not core expertise"
+   ],
+   "concerns": [
+    "Vendor/IT contract governance is niche, not core strength",
+    "Temp long-term contract, not strategic transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 45,
+   "practical_fit": 75,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Remote contract program/project leadership",
    "bg": "d192ce659668"
   }
  },

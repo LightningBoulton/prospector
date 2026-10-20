@@ -2,6 +2,20 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
+   "key": "1Password::443f9ef6-13a7-4edb-ace5-16be7e630041",
+   "company": "1Password",
+   "title": "Developer, Device Trust Reliability",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "1Password::49f0fe51-fcdc-46d8-a046-35f357b0cf6e",
+   "company": "1Password",
+   "title": "Junior Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::804f6fcb-e244-4734-b3c9-029c108359f4",
    "company": "1Password",
    "title": "Senior Developer Advocate",
@@ -12,6 +26,13 @@
    "key": "1Password::7be137ff-3841-49ba-afd1-d116e22b2c9c",
    "company": "1Password",
    "title": "Senior Developer Events & Community Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "1Password::6d3c1adb-7100-4a28-9f3f-11af3427f71d",
+   "company": "1Password",
+   "title": "Senior Developer Marketing Manager, Social & Content",
    "status": "",
    "note": ""
   },
@@ -58,16 +79,16 @@
    "note": ""
   },
   {
-   "key": "Affirm::7999870003",
+   "key": "Affirm::8005075003",
    "company": "Affirm",
-   "title": "Manager, Software Engineering (Marketplace Performance)",
+   "title": "Senior Software Engineer, Backend (Card Loan Platform)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Affirm::8005075003",
+   "key": "Affirm::8017503003",
    "company": "Affirm",
-   "title": "Senior Software Engineer, Backend (Card Loan Platform)",
+   "title": "Senior Software Engineer, Backend (Identity Data)",
    "status": "",
    "note": ""
   },
@@ -156,13 +177,6 @@
    "note": ""
   },
   {
-   "key": "Affirm::8003799003",
-   "company": "Affirm",
-   "title": "Staff Software Engineer, Backend (Identity Decisioning)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Affirm::8005406003",
    "company": "Affirm",
    "title": "Staff Software Engineer, Backend (Search)",
@@ -201,13 +215,6 @@
    "key": "Airbyte::735d5deb-ba6e-49b2-88ba-5ebdf8d315a0",
    "company": "Airbyte",
    "title": "Senior Software Engineer, Platform Fullstack",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Alchemy::dce25389-91c4-4919-ac88-bcd1e5f4c5b0",
-   "company": "Alchemy",
-   "title": "Product Marketing Manager, Platform",
    "status": "",
    "note": ""
   },
@@ -261,13 +268,6 @@
    "note": ""
   },
   {
-   "key": "BYU::JR-12557",
-   "company": "BYU",
-   "title": "Electrical Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "BambooHR::6204296004",
    "company": "BambooHR",
    "title": "Sr. Agentic Engineer",
@@ -310,23 +310,9 @@
    "note": ""
   },
   {
-   "key": "Boulevard::153135",
-   "company": "Boulevard",
-   "title": "GTM Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Calendly::8895903002",
    "company": "Calendly",
    "title": "Full Stack Engineer - Trust and Safety",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Calendly::8846049002",
-   "company": "Calendly",
-   "title": "Senior Full Stack Engineer, Website Development",
    "status": "",
    "note": ""
   },
@@ -478,13 +464,6 @@
    "note": ""
   },
   {
-   "key": "Coinbase::8238630",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer, Backend - Overseer (Platform)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Coinbase::8247401",
    "company": "Coinbase",
    "title": "Senior Software Engineer, Backend - Payments Platform",
@@ -548,9 +527,30 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8233500",
+   "company": "Coinbase",
+   "title": "Staff Software Engineer, Developer Infrastructure",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8241720",
    "company": "Coinbase",
    "title": "Staff Software Engineer, Native Mobile",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8302189",
+   "company": "Coinbase",
+   "title": "Staff Software Enginer, Backend - Payments Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Collibra::https://weworkremotely.com/remote-jobs/collibra-senior-customer-engineer-collibra-public-sector",
+   "company": "Collibra",
+   "title": "Senior Customer Engineer - Collibra Public Sector",
    "status": "",
    "note": ""
   },
@@ -654,6 +654,13 @@
   },
   {
    "key": "Datadog::8282140",
+   "company": "Datadog",
+   "title": "Manager II, Developer Advocacy",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Datadog::https://weworkremotely.com/remote-jobs/datadog-manager-ii-developer-advocacy",
    "company": "Datadog",
    "title": "Manager II, Developer Advocacy",
    "status": "",
@@ -779,13 +786,6 @@
    "note": ""
   },
   {
-   "key": "EnthuZiastic::https://himalayas.app/companies/enthuziastic/jobs/devops-trainer-technical-trainer-remote-job",
-   "company": "EnthuZiastic",
-   "title": "DevOps Trainer - Technical Trainer - Remote Job",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Figma::151025",
    "company": "Figma",
    "title": "Marketing Engineer",
@@ -803,13 +803,6 @@
    "key": "Flex::4743803005",
    "company": "Flex",
    "title": "Senior Software Development Engineer in Test (SDET)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Get My Course::https://himalayas.app/companies/get-my-course/jobs/data-engineer",
-   "company": "Get My Course",
-   "title": "Data Engineer",
    "status": "",
    "note": ""
   },
@@ -1066,6 +1059,13 @@
    "note": ""
   },
   {
+   "key": "LaunchDarkly::8015117003",
+   "company": "LaunchDarkly",
+   "title": "Backend Software Engineer, SDK",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "LaunchDarkly::8008528003",
    "company": "LaunchDarkly",
    "title": "Senior Backend Engineer (Multiple Positions)",
@@ -1150,21 +1150,7 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8237751",
-   "company": "Mixpanel",
-   "title": "Senior Customer Engineer - LATAM",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Mixpanel::8248501",
-   "company": "Mixpanel",
-   "title": "Senior Customer Engineer - LATAM",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Mixpanel::8222214",
    "company": "Mixpanel",
    "title": "Senior Customer Engineer - LATAM",
    "status": "",
@@ -1185,30 +1171,9 @@
    "note": ""
   },
   {
-   "key": "NICE::4999222101",
-   "company": "NICE",
-   "title": "Professional Services Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "NICE::4987767101",
-   "company": "NICE",
-   "title": "Staff Machine Learning Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Notion::57b88701-42ce-4c7d-901d-bf65a6256ebc",
    "company": "Notion",
    "title": "Global Demo Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Notion::06e1d3a8-2706-4ed9-9fe6-8b69607de18e",
-   "company": "Notion",
-   "title": "Security Engineer, Detection and Response",
    "status": "",
    "note": ""
   },
@@ -1237,6 +1202,13 @@
    "key": "Omada Health::8257928",
    "company": "Omada Health",
    "title": "Staff Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Pinecone::4433b308-1ff4-4b5f-9184-810e5d9844f6",
+   "company": "Pinecone",
+   "title": "Developer Advocate",
    "status": "",
    "note": ""
   },
@@ -1304,6 +1276,20 @@
    "note": ""
   },
   {
+   "key": "Ramp::47a75895-24af-49b7-9858-1be0ec0e7c71",
+   "company": "Ramp",
+   "title": "Senior Backend Engineer | Accounts Receivable",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::b7514711-8a29-4bd2-a97a-967be14e336f",
+   "company": "Ramp",
+   "title": "Senior Backend Engineer | Token Spend Management",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Recursion::8262864",
    "company": "Recursion",
    "title": "Staff Engineer, Identity & Access Management (IAM)",
@@ -1332,6 +1318,13 @@
    "note": ""
   },
   {
+   "key": "Reddit::8301736",
+   "company": "Reddit",
+   "title": "Lead Forward Deployed Engineer (AI Enablement)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8299781",
    "company": "Reddit",
    "title": "Machine Learning Engineer, Answers Relevance",
@@ -1346,9 +1339,23 @@
    "note": ""
   },
   {
+   "key": "Reddit::8301784",
+   "company": "Reddit",
+   "title": "Senior Forward Deployed Engineer (AI Enablement)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8283770",
    "company": "Reddit",
    "title": "Senior Machine Learning Systems Engineer, ML Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8303798",
+   "company": "Reddit",
+   "title": "Senior Software Engineer, Web Platform",
    "status": "",
    "note": ""
   },
@@ -1409,6 +1416,13 @@
    "note": ""
   },
   {
+   "key": "Roblox::https://weworkremotely.com/remote-jobs/roblox-developer-engagement-team-contract",
+   "company": "Roblox",
+   "title": "Developer Engagement Team  (Contract)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Samsara::8141959",
    "company": "Samsara",
    "title": "Data Engineer",
@@ -1423,35 +1437,7 @@
    "note": ""
   },
   {
-   "key": "Samsara::8281491",
-   "company": "Samsara",
-   "title": "Senior AI Data & Analytics Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8281482",
-   "company": "Samsara",
-   "title": "Senior AI Data & Analytics Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8281490",
-   "company": "Samsara",
-   "title": "Senior AI Data & Analytics Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8281489",
-   "company": "Samsara",
-   "title": "Senior AI Data & Analytics Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8281483",
+   "key": "Samsara::8302004",
    "company": "Samsara",
    "title": "Senior AI Data & Analytics Engineer II",
    "status": "",
@@ -1465,30 +1451,44 @@
    "note": ""
   },
   {
+   "key": "Samsara::8281482",
+   "company": "Samsara",
+   "title": "Senior AI Data & Analytics Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8281483",
+   "company": "Samsara",
+   "title": "Senior AI Data & Analytics Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8281489",
+   "company": "Samsara",
+   "title": "Senior AI Data & Analytics Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8281490",
+   "company": "Samsara",
+   "title": "Senior AI Data & Analytics Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8281491",
+   "company": "Samsara",
+   "title": "Senior AI Data & Analytics Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Samsara::8261992",
    "company": "Samsara",
    "title": "Senior Product Manager, Monetization Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8223369",
-   "company": "Samsara",
-   "title": "Senior Security Engineer - Enterprise Security",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8237426",
-   "company": "Samsara",
-   "title": "Senior Security Engineer - Threat Detection",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8237427",
-   "company": "Samsara",
-   "title": "Senior Security Engineer - Threat Detection",
    "status": "",
    "note": ""
   },
@@ -1507,14 +1507,14 @@
    "note": ""
   },
   {
-   "key": "Samsara::8264748",
+   "key": "Samsara::8247424",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
    "status": "",
    "note": ""
   },
   {
-   "key": "Samsara::8247424",
+   "key": "Samsara::8247432",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
    "status": "",
@@ -1528,7 +1528,7 @@
    "note": ""
   },
   {
-   "key": "Samsara::8247432",
+   "key": "Samsara::8264748",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
    "status": "",
@@ -1580,6 +1580,13 @@
    "key": "Sardine::e4e52261-16bf-4285-aced-636fa7f6c28d",
    "company": "Sardine",
    "title": "Senior Application Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Sardine::098c40d6-40c5-43be-bdde-c1e2b74c61db",
+   "company": "Sardine",
+   "title": "Senior Software Engineer, Backend - KYC",
    "status": "",
    "note": ""
   },
@@ -1647,13 +1654,6 @@
    "note": ""
   },
   {
-   "key": "Smartsheet::8265318",
-   "company": "Smartsheet",
-   "title": "Principal Software Engineer, Core Experiences (Remote Eligible)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Smartsheet::8239800",
    "company": "Smartsheet",
    "title": "Senior Software Engineer II - Solution Lifecycle (Remote Eligible)",
@@ -1664,6 +1664,1021 @@
    "key": "Smartsheet::8250247",
    "company": "Smartsheet",
    "title": "Sr. Software Engineer I (Remote Eligible)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229014004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6228378004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229168004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Albuquerque, NM, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229095004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Alexandria, VA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229055004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Anaheim, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229173004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Anchorage, AK, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229075004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Ann Arbor, MI, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229094004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Arlington, VA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229026004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Atlanta, GA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229020004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Austin, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229159004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Bakersfield, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229098004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Baltimore, MD, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229205004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Baton Rouge, LA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229019004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Bellevue, WA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229163004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Bend, OR, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229046004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Berkeley, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229203004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Birmingham, AL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229178004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Bloomington, IN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229164004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Boise, ID, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229023004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Boston, MA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229071004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Boulder, CO, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229184004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Buffalo, NY, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229190004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Burlington, VT, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229085004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Cambridge, MA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229105004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Cary, NC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229174004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Champaign, IL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229104004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Chapel Hill, NC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229196004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Charleston, SC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229101004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Charlotte, NC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229200004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Chattanooga, TN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229024004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Chicago, IL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229078004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Cincinnati, OH, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229079004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Cleveland, OH, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229099004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - College Park, MD, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229171004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - College Station, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229166004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Colorado Springs, CO, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229197004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Columbia, SC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229077004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Columbus, OH, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229051004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Culver City, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229042004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Cupertino, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229021004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Dallas, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229177004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Dayton, OH, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229025004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Denver, CO, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229181004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Des Moines, IA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229076004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Detroit, MI, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229103004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Durham, NC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229170004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - El Paso, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229162004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Eugene, OR, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229084004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Evanston, IL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229165004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Fort Collins, CO, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229111004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Fort Lauderdale, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229065004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Fort Worth, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229048004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Fremont, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229158004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Fresno, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229067004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Frisco, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229208004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Gainesville, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229176004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Grand Rapids, MI, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229194004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Greensboro, NC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229189004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Hartford, CT, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229172004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Honolulu, HI, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229068004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Houston, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229107004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Huntsville, AL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229080004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Indianapolis, IN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229182004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Iowa City, IA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229052004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Irvine, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229187004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Ithaca, NY, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229112004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Jacksonville, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229086004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Jersey City, NJ, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229081004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Kansas City, MO, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229058004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Kirkland, WA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229199004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Knoxville, TN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229070004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Las Vegas, NV, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229202004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Lexington, KY, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229054004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Long Beach, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229022004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Los Angeles, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229201004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Louisville, KY, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229074004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Madison, WI, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229198004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Memphis, TN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229040004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Menlo Park, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229108004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Miami, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229175004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Milwaukee, WI, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229072004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Minneapolis, MN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229039004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Mountain View, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229083004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Naperville, IL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229106004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Nashville, TN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229092004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - New Haven, CT, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229204004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - New Orleans, LA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229017004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - New York, NY, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229087004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Newark, NJ, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229192004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Norfolk, VA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229045004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Oakland, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229210004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Oklahoma City, OK, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229180004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Omaha, NE, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229109004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Orlando, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229016004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Palo Alto, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229053004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Pasadena, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229089004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Philadelphia, PA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229062004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Phoenix, AZ, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229090004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Pittsburgh, PA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229066004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Plano, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229059004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Portland, OR, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229088004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Princeton, NJ, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229093004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Providence, RI, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229061004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Provo, UT, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229102004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Raleigh, NC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229057004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Redmond, WA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229167004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Reno, NV, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229096004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Reston, VA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229097004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Richmond, VA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229157004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Riverside, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229185004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Rochester, NY, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229049004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Sacramento, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229073004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Saint Paul, MN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229060004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Salt Lake City, UT, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229069004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - San Antonio, TX, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229056004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - San Diego, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229015004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - San Francisco, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229038004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - San Jose, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229047004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - San Mateo, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229044004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Santa Clara, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229156004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Santa Cruz, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229050004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Santa Monica, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229193004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Savannah, GA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229063004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Scottsdale, AZ, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229018004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Seattle, WA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229100004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Silver Spring, MD, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229161004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Spokane, WA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229082004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - St. Louis, MO, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229206004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - St. Petersburg, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229091004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Stamford, CT, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229183004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - State College, PA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229188004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Stony Brook, NY, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229043004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Sunnyvale, CA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229186004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Syracuse, NY, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229160004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Tacoma, WA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229209004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Tallahassee, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229110004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Tampa, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229064004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Tempe, AZ, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229169004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Tucson, AZ, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229211004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Tulsa, OK, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229191004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Virginia Beach, VA, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229027004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Washington, DC, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229179004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - West Lafayette, IN, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229207004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - West Palm Beach, FL, USA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Speechify::6229195004",
+   "company": "Speechify",
+   "title": "Software Engineer, AI Data - Winston-Salem, NC, USA",
    "status": "",
    "note": ""
   },
@@ -1766,6 +2781,13 @@
    "note": ""
   },
   {
+   "key": "TechBiz Global::https://himalayas.app/companies/techbiz-global/jobs/senior-monetization-specialist-android-developer",
+   "company": "TechBiz Global",
+   "title": "Senior Monetization Specialist Android Developer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Thumbtack::73f01c2f-103a-4627-928b-4dedcc2a3013",
    "company": "Thumbtack",
    "title": "Application Security Engineer II",
@@ -1836,6 +2858,13 @@
    "note": ""
   },
   {
+   "key": "Twilio::8067027",
+   "company": "Twilio",
+   "title": "Staff Mobile Software Engineer (P4)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Vanta::795ab93b-57d9-4387-9cc1-ea7615721ec6",
    "company": "Vanta",
    "title": "Senior Analytics Engineer",
@@ -1864,23 +2893,9 @@
    "note": ""
   },
   {
-   "key": "VetsEZ::https://himalayas.app/companies/vetsez/jobs/healthshare-application-engineer-remote-opportunity",
-   "company": "VetsEZ",
-   "title": "HealthShare Application Engineer (Remote Opportunity)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Webflow::https://weworkremotely.com/remote-jobs/webflow-senior-developer-educator",
    "company": "Webflow",
    "title": "Senior Developer Educator",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-025979",
-   "company": "Western Governors University",
-   "title": "AI Software Product Manager",
    "status": "",
    "note": ""
   },
@@ -1906,9 +2921,9 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026187",
+   "key": "Western Governors University::JR-025288",
    "company": "Western Governors University",
-   "title": "Sharepoint and Power Platform Engineer",
+   "title": "Senior Software Engineer | Developer Experience",
    "status": "",
    "note": ""
   },
