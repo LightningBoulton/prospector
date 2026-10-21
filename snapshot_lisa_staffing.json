@@ -1,5 +1,159 @@
 [
  {
+  "key": "Aquent::213890",
+  "company": "Aquent",
+  "title": "Project Manager - Pharma",
+  "location": "Philadelphia, PA, US (Remote)",
+  "url": "https://aquent.com/find-work/213890",
+  "posted": "2026-10-21",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Low-level content production role",
+    "Not strategic or transformation scope",
+    "Below her seniority and mandate level"
+   ],
+   "concerns": [
+    "Junior tactical role, 2-3 yrs exp target",
+    "No strategic ownership described"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 25,
+   "practical_fit": 50,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Low-level content production role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213889",
+  "company": "Aquent",
+  "title": "Art Director",
+  "location": "Denver, CO, US (Remote)",
+  "url": "https://aquent.com/find-work/213889",
+  "posted": "2026-10-21",
+  "salary": "$55- $65",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (digital transformation, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Hands-on graphic design role, not transformation leadership",
+    "Wrong function despite 'transformation' keyword"
+   ],
+   "concerns": [
+    "No strategic/operational ownership",
+    "Pure creative execution role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 8,
+   "interest_fit": 10,
+   "practical_fit": 20,
+   "opportunity_score": 8,
+   "score": 8,
+   "fit": "no",
+   "reason": "Hands-on graphic design role, not transformation leadership",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213875",
+  "company": "Aquent",
+  "title": "Project Manager, Workplace & Sustainability",
+  "location": "San Francisco, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213875",
+  "posted": "2026-10-20",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Facilities/workplace PM, not transformation or strategy",
+    "Contract staffing role via Aquent",
+    "Hybrid onsite SF, not Utah or remote-friendly"
+   ],
+   "concerns": [
+    "Scope is tactical facilities/construction, not strategic",
+    "No org design, M&A or operating model mandate",
+    "Relocation implied for SF onsite requirement"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 40,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Facilities/workplace PM, not transformation or strategy",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213872",
+  "company": "Aquent",
+  "title": "Senior Digital Project Manager- Director Level",
+  "location": "Boston, MA, US (Remote)",
+  "url": "https://aquent.com/find-work/213872",
+  "posted": "2026-10-20",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract PM role, part-time hours",
+    "Tactical website delivery, not strategic transformation",
+    "Some program leadership overlap but narrow scope",
+    "Contract work fits practical constraints"
+   ],
+   "concerns": [
+    "Part-time 20-30hrs limits income value",
+    "Hands-on web delivery below her strategic positioning",
+    "Title says Director but mandate is tactical PM"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 50,
+   "interest_fit": 35,
+   "practical_fit": 45,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "maybe",
+   "reason": "Remote contract PM role, part-time hours",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Aquent::213831",
   "company": "Aquent",
   "title": "Senior Product Operations Analyst",
@@ -113,6 +267,44 @@
    "reason": "Requires hands-on Anaplan/SAP technical expertise",
    "bg": "d192ce659668"
   }
+ },
+ {
+  "key": "Aquent::213784",
+  "company": "Aquent",
+  "title": "Area Schedule Lead",
+  "location": "Kansas City, MO, US (Remote)",
+  "url": "https://aquent.com/find-work/213784",
+  "posted": "2026-10-16",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Construction schedule management, not her domain",
+    "Technical scheduling expertise required, not transformation"
+   ],
+   "concerns": [
+    "Wrong function: construction/engineering scheduling",
+    "No org strategy or transformation mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 30,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Construction schedule management, not her domain",
+   "bg": "d192ce659668"
+  },
+  "rescued": true
  },
  {
   "key": "Aquent::213579",
@@ -305,45 +497,6 @@
    "score": 30,
    "fit": "no",
    "reason": "Training/content delivery role, not strategic ownership",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Aquent::213663",
-  "company": "Aquent",
-  "title": "Job Title: Communications Writer \u2013 Microsoft 365 Change & Adoption",
-  "location": "Spring, TX, US (Remote)",
-  "url": "https://aquent.com/find-work/213663",
-  "posted": "2026-10-12",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'change' + mandate in description (organizational effectiveness, operational excellence, change management)",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Change management and adoption mandate aligns",
-    "Contract role fits income/experience goal",
-    "Remote work",
-    "Writing-heavy role narrower than her strategic scope"
-   ],
-   "concerns": [
-    "Individual-contributor writer role, not leadership",
-    "Staffing agency contract, limited scope/influence"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 65,
-   "opportunity_score": 42,
-   "score": 42,
-   "fit": "maybe",
-   "reason": "Change management and adoption mandate aligns",
    "bg": "d192ce659668"
   }
  },
@@ -968,46 +1121,6 @@
   }
  },
  {
-  "key": "Aquent::213212",
-  "company": "Aquent",
-  "title": "Brand Marketing Manager IV (Brand Operations Manager)",
-  "location": "Menlo Park, CA, US (Remote)",
-  "url": "https://aquent.com/find-work/213212",
-  "posted": "2026-09-22",
-  "salary": "up to $81.19/hr",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Brand operations/governance mandate fits ops excellence skillset",
-    "Cross-functional process and scaling work matches experience",
-    "Remote role reduces relocation concerns",
-    "Contract fits stated openness to contract work"
-   ],
-   "concerns": [
-    "Likely large tech company not in priority list",
-    "Marketing-specific focus narrower than core transformation mandate",
-    "Contract/temp via staffing agency, uncertain duration"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 60,
-   "practical_fit": 65,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "yes",
-   "reason": "Brand operations/governance mandate fits ops excellence skillset",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Aquent::213189",
   "company": "Aquent",
   "title": "Operations Program Manager",
@@ -1275,6 +1388,45 @@
   }
  },
  {
+  "key": "Robert Half::02720-0013528460-usen",
+  "company": "Robert Half",
+  "title": "Project Manager - Mergers & Acquisition",
+  "location": "Princeton, NJ (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/princeton-nj/project-manager-mergers-acquisition/02720-0013528460-usen",
+  "posted": "2026-10-21",
+  "salary": "$57.00\u2013$66.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "M&A integration domain match",
+    "Remote listed but entry-level scope",
+    "Below her seniority and ownership level"
+   ],
+   "concerns": [
+    "Entry-level project coordinator role",
+    "Temp contract, likely low pay/scope",
+    "No strategic or leadership mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "no",
+   "reason": "M&A integration domain match",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Robert Half::00700-0013510110-usen",
   "company": "Robert Half",
   "title": "Senior Solutions Architect",
@@ -1351,46 +1503,5 @@
    "reason": "Remote contract program/project leadership",
    "bg": "d192ce659668"
   }
- },
- {
-  "key": "Robert Half::02160-9504411999-usen",
-  "company": "Robert Half",
-  "title": "Talent Management Lead",
-  "location": "Westborough, MA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/westborough-ma/talent-management-lead/02160-9504411999-usen",
-  "posted": "2026-10-14",
-  "salary": "$50.00\u2013$60.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Org development and talent program leadership overlap",
-    "Change management and stakeholder influence fit",
-    "Remote-friendly though temp role",
-    "Narrower HR specialization than core transformation focus"
-   ],
-   "concerns": [
-    "Temp/contract Robert Half staffing role",
-    "HR-specific scope narrower than her strategic mandate",
-    "Westborough MA location despite remote tag"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 55,
-   "opportunity_score": 48,
-   "score": 48,
-   "fit": "maybe",
-   "reason": "Org development and talent program leadership overlap",
-   "bg": "d192ce659668"
-  },
-  "rescued": true
  }
 ]

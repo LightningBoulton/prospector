@@ -1,29 +1,55 @@
-# Prospector — 2026-10-20
+# Prospector — 2026-10-21
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**9 new roles today** · 8 still worth applying · 7 closed/removed
+**15 new roles today** · 8 still worth applying · 12 closed/removed
 
-## NEW — WORTH REVIEWING (5)
-- **Strategy & Operations Manager** — Twilio · 68/100 · remote Remote - US · posted 2026-10-19
-  - Why: US-remote role fits location preference strongly
-  - Concern: Manager-level scope may be narrower than prior roles
-  - https://job-boards.greenhouse.io/twilio/jobs/8281078
-- **Senior Program Manager** — Juniper Square · 68/100 · remote Canada,  USA (Remote) · posted 2026-10-19
-  - Why: US-remote program management role
-  - Concern: Title generic, scope details truncated
-  - https://jobicy.com/jobs/155920-senior-program-manager-2
-- **Senior Product Operations Analyst** — Aquent · 60/100 · remote Southlake, TX, US (Remote) · posted 2026-10-19
-  - Why: Process improvement and operating model mandate fits background
-  - Concern: Contract/temp via staffing firm, not permanent
-  - https://aquent.com/find-work/213831
-- **Marketing Technology Program Manager** — Stripe · 58/100 · remote US Remote · posted 2026-10-19
-  - Why: US remote role, strong practical fit
-  - Concern: Marketing-tech specific domain narrower than her core transformation scope
-  - https://stripe.com/jobs/search?gh_jid=8257939
-- **Director, Project Management - Oncology** — Precision Medicine Group · 45/100 · remote USA (Remote) · posted 2026-10-19
-  - Why: US-remote matches location preference
-  - Concern: Requires deep clinical trial/CRO domain expertise
-  - https://jobicy.com/jobs/155877-director-project-management-oncology
+## APPLY FIRST (1)
+- **Executive Operations Partner** — MX · 86/100 · onsite Lehi, Utah, United States · posted 2026-10-21
+  - Why: Utah-local role, strong practical fit
+  - Concern: Title generic, scope depth unclear
+  - https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4460235009
+
+## NEW — WORTH REVIEWING (10)
+- **Chief of Staff, CCO** — Ping Identity · 85/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
+  - Why: Chief of Staff to CCO is executive-facing scope
+  - Concern: Heavy finance/ARR metrics emphasis
+  - https://weworkremotely.com/remote-jobs/ping-identity-chief-of-staff-cco
+- **Senior Manager, Strategic Operations** — 1Password · 82/100 · remote Remote (United States | Canada) · posted 2026-10-21
+  - Why: Cross-functional strategic initiative leadership
+  - Concern: Reports to Director, one layer below her typical scope
+  - https://jobs.ashbyhq.com/1password/59c03a18-a50d-4ef0-adf5-a0e132024784
+- **Customer Enablement Manager** — Asana · 78/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
+  - Why: Change management and adoption strategy core mandate
+  - Concern: West Coast time zone restriction may exclude Utah/Mountain edge cases
+  - https://weworkremotely.com/remote-jobs/asana-customer-enablement-manager
+- **Chief of Staff, Science** — Datavant · 72/100 · remote USA (Remote) · posted 2026-10-20
+  - Why: Chief of Staff with real strategic/operations mandate
+  - Concern: Requires scientific domain depth she may lack
+  - https://jobicy.com/jobs/156048-chief-of-staff-science
+- **Senior Director, Revenue Strategy** — Mural · 68/100 · remote USA (Remote) · posted 2026-10-20
+  - Why: Strategic ops leadership reporting to CRO
+  - Concern: Revenue/sales-ops specialization not core background
+  - https://jobicy.com/jobs/155982-senior-director-revenue-strategy
+- **Senior Program Manager I** — Affirm · 68/100 · remote Remote US · posted 2026-10-20
+  - Why: Operations/vendor strategy with cross-functional leadership
+  - Concern: BPO/vendor management niche not core proof point
+  - https://job-boards.greenhouse.io/affirm/jobs/8012093003
+- **Manager, Recruiting Operations and Planning** — Hilton · 65/100 · remote McLean, VA, United States (Remote) · posted 2026-10-20
+  - Why: Priority employer Hilton
+  - Concern: Recruiting-specific scope narrower than core transformation focus
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/226630
+- **Director of People Programs, Systems & Analytics** — LaunchDarkly · 65/100 · remote Remote - US · posted 2026-10-20
+  - Why: Fully remote US role
+  - Concern: HRIS/People systems technical depth not confirmed in background
+  - https://job-boards.greenhouse.io/launchdarkly/jobs/8039686003
+- **Senior Strategy & Ops Lead, Post-Sale Product Adoption** — Samsara · 58/100 · remote Remote - SF Bay Area · posted 2026-10-20
+  - Why: Cross-functional post-sale adoption strategy work
+  - Concern: Individual contributor, hands-on execution focus
+  - https://www.samsara.com/company/careers/roles/8300580?gh_jid=8300580
+- **Implementation Manager** — Clover Health · 55/100 · remote USA (Remote) · posted 2026-10-20
+  - Why: Remote US fits location preference
+  - Concern: Healthcare clinical data fluency not her core background
+  - https://jobicy.com/jobs/156061-implementation-manager-3
 
 ## DISCOVERY / WILDCARDS (4)
 - **Chief of Staff, CRO** — Salesforce · 82/100 · remote Washington - Seattle Metro - Remote · $164,000 - $261,500 · posted 2026-10-12
@@ -52,10 +78,10 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Value realization/consulting mandate matches core domain
   - Concern: Title 'Lead' may be IC-level scope
   - https://boards.eu.greenhouse.io/nice/jobs/4934082101?gh_jid=4934082101
-- **Director, Enterprise Portfolio Management** — Clover Health · 85/100 · remote USA (Remote) · posted 2026-10-14
-  - Why: Enterprise change management and portfolio leadership
-  - Concern: Title somewhat PMO-flavored vs strategy
-  - https://jobicy.com/jobs/155334-director-enterprise-portfolio-management
+- **Senior Program Manager,  Employee Experience** — Dropbox · 85/100 · remote Remote - US: Select locations · posted 2026-10-01
+  - Why: Employee experience + AI enablement mandate
+  - Concern: Research/behavioral science emphasis less central to her background
+  - https://jobs.dropbox.com/listing/8234201?gh_jid=8234201
 - **Chief of Staff, CEO** — Gainsight · 82/100 · remote USA - CA - Remote · posted 2026-10-15
   - Why: Executive-facing strategic scope, CEO-adjacent
   - Concern: Heavy emphasis on executive writing/comms, less operations
@@ -68,23 +94,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Global expansion program leadership
   - Concern: Requires deep fintech/servicing domain expertise
   - https://job-boards.greenhouse.io/affirm/jobs/8001621003
-- **Sr. Program Manager** — BambooHR · 78/100 · hybrid Utah | Hybrid · posted 2026-10-06
-  - Why: CX program leadership matches core domain
-  - Concern: Senior IC role, no direct reports
-  - https://job-boards.greenhouse.io/bamboohr17/jobs/6200796004
 - **Senior Customer Support Service Delivery Program Manager** — Mercury · 76/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-10-16
   - Why: Service delivery transformation and operating model design
   - Concern: Program manager title may undersell scope
   - https://job-boards.greenhouse.io/mercury/jobs/6227550004
+- **Population Health Strategy & Operations Senior Manager** — Included Health · 72/100 · remote Remote · posted 2026-10-15
+  - Why: Operational excellence and strategy mandate
+  - Concern: Healthcare domain experience not evident
+  - https://jobs.lever.co/includedhealth/f10d4b0a-c417-48f4-a332-53581a4e335d
 
-## REMOVED SINCE PRIOR RUN (7)
-- Customer Success Architect (AI) — Atlassian · No longer listed by its source
-- Manager of Sales Enablement — Canopy · No longer listed by its source
-- Program Manager, Performance Effectiveness — Chime · No longer listed by its source
-- Capacity Planning Lead — Coinbase · No longer listed by its source
-- Senior Manager, Technical Program Management — GitLab · No longer listed by its source
-- Sales & CX Enablement Partner — Osano · No longer listed by its source
-- Human-Centered Change Senior Manager — Salesforce · No longer listed by its source
+## REMOVED SINCE PRIOR RUN (12)
+- Brand Marketing Manager IV (Brand Operations Manager) — Aquent · No longer listed by its source
+- Job Title: Communications Writer – Microsoft 365 Change & Adoption — Aquent · No longer listed by its source
+- Director, Enterprise Portfolio Management — Clover Health · No longer listed by its source
+- Manager, Revenue Operations — Fleetio · No longer listed by its source
+- Solution Design Consultant — Gainsight · No longer listed by its source
+- Senior Program Manager, Revenue Operations — LaunchDarkly · No longer listed by its source
+- FLEX Senior Manager, Distribution Connectivity — Marriott International · No longer listed by its source
+- Senior Revenue Enablement Specialist - Product — Mercury · No longer listed by its source
+- Director, Customer Success — NICE · No longer listed by its source
+- Talent Management Lead — Robert Half · No longer listed by its source
+- Sr. Director, Renewals Operations — Skillsoft · No longer listed by its source
+- Senior Director, Commercial Operations — Skillsoft · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
