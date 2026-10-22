@@ -307,45 +307,6 @@
   "rescued": true
  },
  {
-  "key": "Aquent::213579",
-  "company": "Aquent",
-  "title": "Program Manager (II)",
-  "location": "Sunnyvale, CA, US (Remote)",
-  "url": "https://aquent.com/find-work/213579",
-  "posted": "2026-10-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Program management title",
-    "Onboarding event logistics, not strategic transformation",
-    "Remote contract via staffing firm",
-    "Below her scope and ownership level"
-   ],
-   "concerns": [
-    "Event logistics coordinator, not strategic leadership",
-    "Contract staffing role with limited influence"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 65,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Program management title",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Aquent::213737",
   "company": "Aquent",
   "title": "Digital Project Manager",
@@ -472,7 +433,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "role family 'delivery' + mandate in description (digital transformation, continuous improvement, change management)",
+  "match_reason": "role family 'delivery' + mandate in description (digital transformation, adoption)",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
@@ -734,6 +695,45 @@
   }
  },
  {
+  "key": "Aquent::213579",
+  "company": "Aquent",
+  "title": "Program Manager (II)",
+  "location": "Sunnyvale, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213579",
+  "posted": "2026-10-07",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Program management title",
+    "Onboarding event logistics, not strategic transformation",
+    "Remote contract via staffing firm",
+    "Below her scope and ownership level"
+   ],
+   "concerns": [
+    "Event logistics coordinator, not strategic leadership",
+    "Contract staffing role with limited influence"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 65,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Program management title",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Aquent::213563",
   "company": "Aquent",
   "title": "Creative Ops: Project Manager",
@@ -806,44 +806,6 @@
    "score": 25,
    "fit": "no",
    "reason": "SEO/AEO content writing not core strength",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Aquent::213506",
-  "company": "Aquent",
-  "title": "Producer/Project Manager",
-  "location": "New York, NY, US (Remote)",
-  "url": "https://aquent.com/find-work/213506",
-  "posted": "2026-10-05",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Creative production PM, not transformation/strategy",
-    "Remote contract via staffing agency",
-    "Below her strategic ownership level"
-   ],
-   "concerns": [
-    "Tactical creative ops role, not strategic mandate",
-    "Staffing agency contract, likely lower comp"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Creative production PM, not transformation/strategy",
    "bg": "d192ce659668"
   }
  },
@@ -974,8 +936,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, change management, adoption)",
   "fit_result": {
    "recommendation": "practical_contract",
    "confidence": "medium",
@@ -1002,8 +964,7 @@
    "fit": "maybe",
    "reason": "Change communications for enterprise transformation",
    "bg": "d192ce659668"
-  },
-  "rescued": true
+  }
  },
  {
   "key": "Aquent::213412",
@@ -1121,45 +1082,6 @@
   }
  },
  {
-  "key": "Aquent::213189",
-  "company": "Aquent",
-  "title": "Operations Program Manager",
-  "location": "REDMOND, WA, US (Remote)",
-  "url": "https://aquent.com/find-work/213189",
-  "posted": "2026-09-21",
-  "salary": "up to $45.00/hr",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "WA location acceptable",
-    "Contract program role",
-    "Mandate is tactical device/logistics ops, not strategic"
-   ],
-   "concerns": [
-    "Low-level operational coordination, not transformation",
-    "Below her seniority and scope",
-    "Likely low compensation contract"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "WA location acceptable",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Eliassen::9f21cae7-cbe4-11f1-96f9-024201c20d84",
   "company": "Eliassen",
   "title": "Contract CRM Data Lead / Project Manager",
@@ -1239,42 +1161,6 @@
   }
  },
  {
-  "key": "Eliassen::7f6fac72-c742-11f1-b23b-024201c20d84",
-  "company": "Eliassen",
-  "title": "SAP S/4HANA Implementation and Testing Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/GAB9sZ/sap-s4hana-implementation-and-testing-manager-programproject-management-anywhere-a1wuq000001xc772aa",
-  "posted": "2026-10-13",
-  "salary": "$85.00 to $95.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Requires deep accounting/SAP testing expertise",
-    "Not her domain despite transformation framing"
-   ],
-   "concerns": [
-    "Needs hands-on accounting SME, not strategy/ops leadership"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 60,
-   "opportunity_score": 22,
-   "score": 22,
-   "fit": "no",
-   "reason": "Requires deep accounting/SAP testing expertise",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::04838-0013510590-usen",
   "company": "Robert Half",
   "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
@@ -1310,6 +1196,45 @@
    "score": 55,
    "fit": "maybe",
    "reason": "HR transformation program mgmt fits background",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Robert Half::02720-0013528460-usen",
+  "company": "Robert Half",
+  "title": "Project Manager - Mergers & Acquisition",
+  "location": "Princeton, NJ (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/princeton-nj/project-manager-mergers-acquisition/02720-0013528460-usen",
+  "posted": "2026-10-21",
+  "salary": "$57.00\u2013$66.00/hr",
+  "employment_type": "Temp",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "M&A integration domain match",
+    "Remote listed but entry-level scope",
+    "Below her seniority and ownership level"
+   ],
+   "concerns": [
+    "Entry-level project coordinator role",
+    "Temp contract, likely low pay/scope",
+    "No strategic or leadership mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 40,
+   "score": 40,
+   "fit": "no",
+   "reason": "M&A integration domain match",
    "bg": "d192ce659668"
   }
  },
@@ -1388,45 +1313,6 @@
   }
  },
  {
-  "key": "Robert Half::02720-0013528460-usen",
-  "company": "Robert Half",
-  "title": "Project Manager - Mergers & Acquisition",
-  "location": "Princeton, NJ (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/princeton-nj/project-manager-mergers-acquisition/02720-0013528460-usen",
-  "posted": "2026-10-21",
-  "salary": "$57.00\u2013$66.00/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "M&A integration domain match",
-    "Remote listed but entry-level scope",
-    "Below her seniority and ownership level"
-   ],
-   "concerns": [
-    "Entry-level project coordinator role",
-    "Temp contract, likely low pay/scope",
-    "No strategic or leadership mandate"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 55,
-   "opportunity_score": 40,
-   "score": 40,
-   "fit": "no",
-   "reason": "M&A integration domain match",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::00700-0013510110-usen",
   "company": "Robert Half",
   "title": "Senior Solutions Architect",
@@ -1462,45 +1348,6 @@
    "score": 25,
    "fit": "no",
    "reason": "Deep WFM/payroll technical architecture, not her domain",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Robert Half::02100-0013521865-usen",
-  "company": "Robert Half",
-  "title": "Project Manager/Sr. Consultant",
-  "location": "Cambridge, MA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/cambridge-ma/project-managersr-consultant/02100-0013521865-usen",
-  "posted": "2026-10-07",
-  "salary": "$59.38\u2013$68.75/hr",
-  "employment_type": "Temp",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract program/project leadership",
-    "Governance and process-building mandate",
-    "Cross-functional stakeholder coordination",
-    "Vendor risk is adjacent not core expertise"
-   ],
-   "concerns": [
-    "Vendor/IT contract governance is niche, not core strength",
-    "Temp long-term contract, not strategic transformation scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 75,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Remote contract program/project leadership",
    "bg": "d192ce659668"
   }
  }

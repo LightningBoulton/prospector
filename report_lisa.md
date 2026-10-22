@@ -1,61 +1,61 @@
-# Prospector — 2026-10-21
+# Prospector — 2026-10-22
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**15 new roles today** · 8 still worth applying · 12 closed/removed
+**16 new roles today** · 8 still worth applying · 12 closed/removed
 
-## APPLY FIRST (1)
-- **Executive Operations Partner** — MX · 86/100 · onsite Lehi, Utah, United States · posted 2026-10-21
-  - Why: Utah-local role, strong practical fit
-  - Concern: Title generic, scope depth unclear
-  - https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4460235009
+## APPLY FIRST (2)
+- **Program Manager, OMX SOTO** — Chime · 90/100 · remote Remote, USA · posted 2026-10-21
+  - Why: Strategic program leadership with GM-level ownership
+  - Concern: Fintech domain is new industry context
+  - https://boards.greenhouse.io/chime/jobs/8895837002?gh_jid=8895837002
+- **Staff Program Manager, CX Operations & Programs** — 1Password · 85/100 · remote Remote (United States | Canada) · posted 2026-10-21
+  - Why: CX operations and program leadership mandate
+  - Concern: Staff title may mean less org-wide scope than Director
+  - https://jobs.ashbyhq.com/1password/86c4d000-e4f2-439f-be85-5018767e5cc1
 
 ## NEW — WORTH REVIEWING (10)
-- **Chief of Staff, CCO** — Ping Identity · 85/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
-  - Why: Chief of Staff to CCO is executive-facing scope
-  - Concern: Heavy finance/ARR metrics emphasis
-  - https://weworkremotely.com/remote-jobs/ping-identity-chief-of-staff-cco
-- **Senior Manager, Strategic Operations** — 1Password · 82/100 · remote Remote (United States | Canada) · posted 2026-10-21
-  - Why: Cross-functional strategic initiative leadership
-  - Concern: Reports to Director, one layer below her typical scope
-  - https://jobs.ashbyhq.com/1password/59c03a18-a50d-4ef0-adf5-a0e132024784
-- **Customer Enablement Manager** — Asana · 78/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
-  - Why: Change management and adoption strategy core mandate
-  - Concern: West Coast time zone restriction may exclude Utah/Mountain edge cases
-  - https://weworkremotely.com/remote-jobs/asana-customer-enablement-manager
-- **Chief of Staff, Science** — Datavant · 72/100 · remote USA (Remote) · posted 2026-10-20
-  - Why: Chief of Staff with real strategic/operations mandate
-  - Concern: Requires scientific domain depth she may lack
-  - https://jobicy.com/jobs/156048-chief-of-staff-science
-- **Senior Director, Revenue Strategy** — Mural · 68/100 · remote USA (Remote) · posted 2026-10-20
-  - Why: Strategic ops leadership reporting to CRO
-  - Concern: Revenue/sales-ops specialization not core background
-  - https://jobicy.com/jobs/155982-senior-director-revenue-strategy
-- **Senior Program Manager I** — Affirm · 68/100 · remote Remote US · posted 2026-10-20
-  - Why: Operations/vendor strategy with cross-functional leadership
-  - Concern: BPO/vendor management niche not core proof point
-  - https://job-boards.greenhouse.io/affirm/jobs/8012093003
-- **Manager, Recruiting Operations and Planning** — Hilton · 65/100 · remote McLean, VA, United States (Remote) · posted 2026-10-20
-  - Why: Priority employer Hilton
-  - Concern: Recruiting-specific scope narrower than core transformation focus
-  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/226630
-- **Director of People Programs, Systems & Analytics** — LaunchDarkly · 65/100 · remote Remote - US · posted 2026-10-20
-  - Why: Fully remote US role
-  - Concern: HRIS/People systems technical depth not confirmed in background
-  - https://job-boards.greenhouse.io/launchdarkly/jobs/8039686003
-- **Senior Strategy & Ops Lead, Post-Sale Product Adoption** — Samsara · 58/100 · remote Remote - SF Bay Area · posted 2026-10-20
-  - Why: Cross-functional post-sale adoption strategy work
-  - Concern: Individual contributor, hands-on execution focus
-  - https://www.samsara.com/company/careers/roles/8300580?gh_jid=8300580
-- **Implementation Manager** — Clover Health · 55/100 · remote USA (Remote) · posted 2026-10-20
-  - Why: Remote US fits location preference
-  - Concern: Healthcare clinical data fluency not her core background
-  - https://jobicy.com/jobs/156061-implementation-manager-3
+- **Senior Consultant, Patient Experience** — Qualtrics · 78/100 · remote United States (Remote) · posted 2026-10-22
+  - Why: US-remote consulting role
+  - Concern: Healthcare/patient domain is new vertical
+  - https://www.qualtrics.com/careers/us/en/job/8279148?gh_jid=8279148
+- **HR Business Partner** — Cordance · 62/100 · remote USA (Remote) · posted 2026-10-21
+  - Why: M&A integration and org effectiveness mandate
+  - Concern: Core function is HRBP/employee relations, not her specialty
+  - https://jobicy.com/jobs/156230-hr-business-partner
+- **People Business Partner** — Salesloft · 55/100 · remote USA (Remote) · posted 2026-10-21
+  - Why: Org design, workforce planning, change management mandate
+  - Concern: Core function is HR/People Business Partner, not transformation
+  - https://jobicy.com/jobs/156099-people-business-partner-2
+- **Director, GTM Strategy, Planning & Analytics** — Articulate · 50/100 · remote USA (Remote) · posted 2026-10-20
+  - Why: US-remote strong practical fit
+  - Concern: Heavy quantitative GTM analytics/compensation expertise required
+  - https://jobicy.com/jobs/156044-director-gtm-strategy-planning-analytics
+- **Sales Enablement Program Manager** — WorkWave · 50/100 · remote USA (Remote) · posted 2026-10-20
+  - Why: Program management ownership and cross-functional coordination
+  - Concern: Sales enablement domain is narrow vs her transformation focus
+  - https://jobicy.com/jobs/155980-sales-enablement-program-manager
+- **Principal, R&D Learning Products & Enablement** — Samsara · 50/100 · remote Remote - US · posted 2026-10-20
+  - Why: US-remote role fits location preference
+  - Concern: Deeply technical R&D/engineering focus may not match background
+  - https://www.samsara.com/company/careers/roles/8268030?gh_jid=8268030
+- **Senior Manager, Lifecycle Marketing** — Dropbox · 50/100 · remote Remote - US: Select locations · posted 2026-10-21
+  - Why: Remote US role, operating model building
+  - Concern: Deep lifecycle/email marketing specialization not core background
+  - https://jobs.dropbox.com/listing/8279631?gh_jid=8279631
+- **Staff Global Partner Programs Manager** — GitLab · 50/100 · remote Remote, United States · posted 2026-10-21
+  - Why: US-remote, matches location preference
+  - Concern: Deep channel/partner-program domain expertise required
+  - https://job-boards.greenhouse.io/gitlab/jobs/8907028002
+- **Senior Ecosystem Operations Manager** — GitLab · 50/100 · remote Remote, Canada; Remote, United States · posted 2026-10-22
+  - Why: US-remote role fits practical preferences
+  - Concern: Deep channel/partner-sales ops specialization outside core expertise
+  - https://job-boards.greenhouse.io/gitlab/jobs/8907680002
+- **Principal Analyst, Sales Strategy & Operations - Public Sector Sales** — Atlassian · 45/100 · remote Remote - Americas; Remote - Remote · first seen 2026-10-21
+  - Why: Atlassian priority employer with referral advantage
+  - Concern: Heavy sales forecasting/analyst focus vs her transformation background
+  - https://careers-americas.icims.com/jobs/27561/principal-analyst%2c-sales-strategy-%26-operations---public-sector-sales/job?mode=apply
 
 ## DISCOVERY / WILDCARDS (4)
-- **Chief of Staff, CRO** — Salesforce · 82/100 · remote Washington - Seattle Metro - Remote · $164,000 - $261,500 · posted 2026-10-12
-  - Why: Chief of Staff role at priority employer Salesforce
-  - Concern: No description to verify mandate
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Washington---Seattle-Metro---Remote/Chief-of-Staff--CRO_JR363112
 - **Manager, M&A Integration** — Salesforce · 82/100 · onsite Bellevue (+8 more) · $117,400 - $177,600 · posted 2026-10-13
   - Why: M&A integration is core domain
   - Concern: No description to verify mandate
@@ -64,12 +64,20 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Salesforce priority employer
   - Concern: No description to confirm mandate
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/VP--COO--Strategic-Technology-and-Consulting-Partners_JR361263
-- **Health & Life Sciences Program Manager** — Salesforce · 68/100 · remote Remote (+4 more) · $164,000 - $261,500 · posted 2026-10-09
+- **Forward Deployed (Value Acceleration) Consultant** — Salesforce · 68/100 · remote Remote (+1 more) · $148,500 - $223,900 · posted 2026-10-21
   - Why: Priority employer Salesforce
   - Concern: No description to confirm mandate
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-Jersey---New-York-City-Metro---Remote/Health---Life-Sciences-Program-Advisory-Director_JR361668
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-Jersey---New-York-City-Metro---Remote/Forward-Deployed--Value-Acceleration--Consultant_JR364817
+- **Business Strategy Director (Financial Services, Healthcare & Life Sciences)** — Salesforce · 68/100 · remote Remote (+7 more) · $197,300 - $313,700 · posted 2026-10-22
+  - Why: Salesforce is priority employer target
+  - Concern: No description to confirm mandate
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Remote/Business-Strategy-Director--Financial-Services--Healthcare---Life-Sciences-_JR365063
 
 ## STILL WORTH APPLYING (8)
+- **Executive Operations Partner** — MX · 86/100 · onsite Lehi, Utah, United States · posted 2026-10-21
+  - Why: Utah-local role, strong practical fit
+  - Concern: Title generic, scope depth unclear
+  - https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4460235009
 - **Principal Program Manager, Sales & Success Strategy** — Atlassian · 85/100 · remote Austin - United States; Remote - Remote · first seen 2026-10-01
   - Why: Remote-eligible, strong practical fit
   - Concern: Principal PM title may carry less org authority than Director roles
@@ -82,6 +90,10 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Employee experience + AI enablement mandate
   - Concern: Research/behavioral science emphasis less central to her background
   - https://jobs.dropbox.com/listing/8234201?gh_jid=8234201
+- **Chief of Staff, CCO** — Ping Identity · 85/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
+  - Why: Chief of Staff to CCO is executive-facing scope
+  - Concern: Heavy finance/ARR metrics emphasis
+  - https://weworkremotely.com/remote-jobs/ping-identity-chief-of-staff-cco
 - **Chief of Staff, CEO** — Gainsight · 82/100 · remote USA - CA - Remote · posted 2026-10-15
   - Why: Executive-facing strategic scope, CEO-adjacent
   - Concern: Heavy emphasis on executive writing/comms, less operations
@@ -90,36 +102,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: US-remote full-time role
   - Concern: Commerce/product-led growth specifics may be unfamiliar
   - https://jobicy.com/jobs/155507-business-process-lead-digital-service-experience
-- **Senior Manager, Programs - Global Expansion and New Initiatives** — Affirm · 80/100 · remote Remote US · posted 2026-10-09
-  - Why: Global expansion program leadership
-  - Concern: Requires deep fintech/servicing domain expertise
-  - https://job-boards.greenhouse.io/affirm/jobs/8001621003
-- **Senior Customer Support Service Delivery Program Manager** — Mercury · 76/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-10-16
-  - Why: Service delivery transformation and operating model design
-  - Concern: Program manager title may undersell scope
-  - https://job-boards.greenhouse.io/mercury/jobs/6227550004
-- **Population Health Strategy & Operations Senior Manager** — Included Health · 72/100 · remote Remote · posted 2026-10-15
-  - Why: Operational excellence and strategy mandate
-  - Concern: Healthcare domain experience not evident
-  - https://jobs.lever.co/includedhealth/f10d4b0a-c417-48f4-a332-53581a4e335d
+- **Senior Manager, Strategic Operations** — 1Password · 82/100 · remote Remote (United States | Canada) · posted 2026-10-21
+  - Why: Cross-functional strategic initiative leadership
+  - Concern: Reports to Director, one layer below her typical scope
+  - https://jobs.ashbyhq.com/1password/59c03a18-a50d-4ef0-adf5-a0e132024784
 
 ## REMOVED SINCE PRIOR RUN (12)
-- Brand Marketing Manager IV (Brand Operations Manager) — Aquent · No longer listed by its source
-- Job Title: Communications Writer – Microsoft 365 Change & Adoption — Aquent · No longer listed by its source
-- Director, Enterprise Portfolio Management — Clover Health · No longer listed by its source
-- Manager, Revenue Operations — Fleetio · No longer listed by its source
-- Solution Design Consultant — Gainsight · No longer listed by its source
-- Senior Program Manager, Revenue Operations — LaunchDarkly · No longer listed by its source
-- FLEX Senior Manager, Distribution Connectivity — Marriott International · No longer listed by its source
-- Senior Revenue Enablement Specialist - Product — Mercury · No longer listed by its source
-- Director, Customer Success — NICE · No longer listed by its source
-- Talent Management Lead — Robert Half · No longer listed by its source
-- Sr. Director, Renewals Operations — Skillsoft · No longer listed by its source
-- Senior Director, Commercial Operations — Skillsoft · No longer listed by its source
+- Operations Program Manager — Aquent · No longer listed by its source
+- Producer/Project Manager — Aquent · No longer listed by its source
+- Sales Operations Manager, DX — Atlassian · No longer listed by its source
+- Solution Sales Center of Excellence, Teamwork Collection — Atlassian · No longer listed by its source
+- Sr. Program Manager — BambooHR · No longer listed by its source
+- Head of Product, Conversations — Help Scout · No longer listed by its source
+- Business Operations Manager — Motive · No longer listed by its source
+- Project Manager/Sr. Consultant — Robert Half · No longer listed by its source
+- Portfolio Leader (Manager/Director Levels) — Salesforce · No longer listed by its source
+- Director, Business Value Services — Salesforce · No longer listed by its source
+- Health & Life Sciences Program Manager — Salesforce · No longer listed by its source
+- Chief of Staff, CRO — Salesforce · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
 - Temporary errors: 1
 - Needs attention: 29
   - Broken config: Amplitude, ClickHouse, Hightouch, LVT, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Galileo (SoFi), Health Catalyst, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Postman, Together AI, Traeger, Vantage, Vivint, Weave
+  - Returning nothing for 10+ runs: Airtable, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Galileo (SoFi), Gemini, Health Catalyst, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Postman, Together AI, Vantage, Vivint, Weave
