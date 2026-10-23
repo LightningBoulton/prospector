@@ -77,6 +77,45 @@
   }
  },
  {
+  "key": "Qualtrics::8279293",
+  "company": "Qualtrics",
+  "title": "Managing Consultant, Safety and Reliability",
+  "location": "United States (Remote)",
+  "url": "https://www.qualtrics.com/careers/us/en/job/8279293?gh_jid=8279293",
+  "posted": "2026-10-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'consultant' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Transformation/consulting leadership mandate fits",
+    "Remote US aligns with top location preference",
+    "Healthcare safety specialization is a gap",
+    "Change/culture frameworks align with experience"
+   ],
+   "concerns": [
+    "Requires deep healthcare/clinical safety domain expertise",
+    "HRO/RCA frameworks are specialized, not in background"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 55,
+   "practical_fit": 85,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Transformation/consulting leadership mandate fits",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Qualtrics::8279148",
   "company": "Qualtrics",
   "title": "Senior Consultant, Patient Experience",
@@ -113,6 +152,47 @@
    "score": 78,
    "fit": "yes",
    "reason": "US-remote consulting role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Qualtrics::8279230",
+  "company": "Qualtrics",
+  "title": "Senior Consultant, Safety and Reliability",
+  "location": "United States (Remote)",
+  "url": "https://www.qualtrics.com/careers/us/en/job/8279230?gh_jid=8279230",
+  "posted": "2026-10-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'consultant' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Remote US role fits location",
+    "Change/safety culture work loosely adjacent",
+    "Requires clinical/healthcare domain expertise",
+    "Needs HRO/CRP specialized background",
+    "Not aligned with core transformation expertise"
+   ],
+   "concerns": [
+    "Healthcare clinical safety specialization not in profile",
+    "Requires SQL/SAS analytics proficiency",
+    "Clinical stakeholder credibility likely required"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 85,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Remote US role fits location",
    "bg": "d192ce659668"
   }
  },
@@ -226,44 +306,6 @@
    "score": 10,
    "fit": "no",
    "reason": "Deep technical AI research role, wrong function",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "BambooHR::6199645004",
-  "company": "BambooHR",
-  "title": "Digital Customer Education Specialist, Premium & Paid Programs",
-  "location": "Utah | Hybrid",
-  "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6199645004",
-  "posted": "2026-10-01",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'customer' + mandate in description (adoption, governance)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Utah hybrid location matches practical preference",
-    "Education/content specialist, not strategic ownership",
-    "Mismatch with transformation/operations mandate"
-   ],
-   "concerns": [
-    "IC-level content production role, not leadership",
-    "No strategic or operating scope described"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 38,
-   "interest_fit": 35,
-   "practical_fit": 70,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "no",
-   "reason": "Utah hybrid location matches practical preference",
    "bg": "d192ce659668"
   }
  },
@@ -538,6 +580,44 @@
   }
  },
  {
+  "key": "Western Governors University::JR-025809",
+  "company": "Western Governors University",
+  "title": "Senior Educational Program Designer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Educational-Product-Designer_JR-025809",
+  "posted": "2026-10-23",
+  "salary": "$80,700.00 - $121,000.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Utah local location",
+    "Program title but likely instructional design",
+    "No description to confirm scope"
+   ],
+   "concerns": [
+    "Likely curriculum/instructional design, not org transformation",
+    "No description available"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 75,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Utah local location",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Western Governors University::JR-026406",
   "company": "Western Governors University",
   "title": "Manager, Proctoring Operations",
@@ -727,82 +807,6 @@
    "score": 45,
    "fit": "maybe",
    "reason": "PM role may lack strategic scope",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Western Governors University::JR-026315",
-  "company": "Western Governors University",
-  "title": "Project Manager IV, Transformation",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Facilities_JR-026315",
-  "posted": "2026-10-15",
-  "salary": "$109,900.00 - $170,400.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Transformation title matches core domain",
-    "Utah local location strong practical fit",
-    "PM title may carry real transformation scope"
-   ],
-   "concerns": [
-    "No description to confirm scope",
-    "Could be narrow tactical PM role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 65,
-   "practical_fit": 85,
-   "opportunity_score": 65,
-   "score": 65,
-   "fit": "maybe",
-   "reason": "Transformation title matches core domain",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Western Governors University::JR-025809",
-  "company": "Western Governors University",
-  "title": "Senior Educational Program Designer",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Educational-Product-Designer_JR-025809",
-  "posted": "2026-10-15",
-  "salary": "$80,700.00 - $121,000.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Utah local location",
-    "Program title but likely instructional design",
-    "No description to confirm scope"
-   ],
-   "concerns": [
-    "Likely curriculum/instructional design, not org transformation",
-    "No description available"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Utah local location",
    "bg": "d192ce659668"
   }
  },

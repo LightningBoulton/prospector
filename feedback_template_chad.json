@@ -2,6 +2,13 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
+   "key": "1Password::005d4b48-d31e-449f-90b7-83313f98a907",
+   "company": "1Password",
+   "title": ".NET Developer, SaaS Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::443f9ef6-13a7-4edb-ace5-16be7e630041",
    "company": "1Password",
    "title": "Developer, Device Trust Reliability",
@@ -240,6 +247,13 @@
    "note": ""
   },
   {
+   "key": "Anaergia::https://himalayas.app/companies/anaergia/jobs/commissioning-engineer",
+   "company": "Anaergia",
+   "title": "Commissioning Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Ancestry::R003377",
    "company": "Ancestry",
    "title": "Machine Learning Engineer, Co-op",
@@ -261,16 +275,9 @@
    "note": ""
   },
   {
-   "key": "BambooHR::6204296004",
+   "key": "BambooHR::6202767004",
    "company": "BambooHR",
-   "title": "Sr. Agentic Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "BambooHR::6147522004",
-   "company": "BambooHR",
-   "title": "Staff Agentic Engineer",
+   "title": "Senior Product Manager, Payroll Platform",
    "status": "",
    "note": ""
   },
@@ -285,6 +292,20 @@
    "key": "Baseten::7428d7cc-36d7-4d02-b19a-bd558fba6751",
    "company": "Baseten",
    "title": "Product Platform - Product Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Baseten::26af6cd9-6ef1-4d6b-b5f6-77a581e45dc4",
+   "company": "Baseten",
+   "title": "Product Platform: Backend Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Baseten::34fd4416-49f3-4ef7-b9f8-5883f8d0710c",
+   "company": "Baseten",
+   "title": "Software Engineer - Billing & Internal Tooling",
    "status": "",
    "note": ""
   },
@@ -310,9 +331,16 @@
    "note": ""
   },
   {
-   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/storage-engineer-7935851257",
+   "key": "Baseten::08bededd-d362-453e-b014-384a2003cbf1",
+   "company": "Baseten",
+   "title": "Software Engineer - Partner Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/cuda-developer-9677024754",
    "company": "Bright Vision Technologies",
-   "title": "Storage Engineer",
+   "title": "CUDA Developer",
    "status": "",
    "note": ""
   },
@@ -320,6 +348,13 @@
    "key": "Calendly::8895903002",
    "company": "Calendly",
    "title": "Full Stack Engineer - Trust and Safety",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Chainguard::4719783006",
+   "company": "Chainguard",
+   "title": "Principal Product Security Engineer",
    "status": "",
    "note": ""
   },
@@ -352,6 +387,13 @@
    "note": ""
   },
   {
+   "key": "Chainguard::4724287006",
+   "company": "Chainguard",
+   "title": "Staff Product Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Chainguard::4720009006",
    "company": "Chainguard",
    "title": "Staff Software Engineer (Customer Platform)",
@@ -369,13 +411,6 @@
    "key": "Circle::JR101170",
    "company": "Circle",
    "title": "Engineering Manager, Identity & Access Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Circle::JR101142",
-   "company": "Circle",
-   "title": "Senior Site Reliability Engineer - Infra Ops",
    "status": "",
    "note": ""
   },
@@ -478,13 +513,6 @@
    "note": ""
   },
   {
-   "key": "Coinbase::8247401",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer, Backend - Payments Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Coinbase::8174232",
    "company": "Coinbase",
    "title": "Senior Software Engineer, Backend/Fullstack (Coinbase Advisor - Agentic Trading)",
@@ -502,13 +530,6 @@
    "key": "Coinbase::8304038",
    "company": "Coinbase",
    "title": "Software Engineer - Crypto Data Foundations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Coinbase::8234278",
-   "company": "Coinbase",
-   "title": "Software Engineer, CDP - Stablecoin",
    "status": "",
    "note": ""
   },
@@ -639,13 +660,6 @@
    "note": ""
   },
   {
-   "key": "Deepgram::89c0ef18-7433-4c0e-b136-4b03f326c86f",
-   "company": "Deepgram",
-   "title": "Security Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Deepgram::7992391d-a890-41f7-85c8-849e0b878981",
    "company": "Deepgram",
    "title": "Senior Analytics Engineer - Decision Intelligence",
@@ -667,16 +681,16 @@
    "note": ""
   },
   {
-   "key": "Docker::ffc42c1a-64d9-4754-b380-d2ac62052d09",
+   "key": "Docker::f50260bc-5da2-475d-bc4b-172ad7c5aa01",
    "company": "Docker",
-   "title": "Senior Principal Engineer, Docker and Ecosystem",
+   "title": "Principal Forward Deployed Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Docker::2a2f7652-d832-4729-bb6e-84fe0aaf6892",
+   "key": "Docker::ffc42c1a-64d9-4754-b380-d2ac62052d09",
    "company": "Docker",
-   "title": "Senior Security Engineer, Offensive Security",
+   "title": "Senior Principal Engineer, Docker and Ecosystem",
    "status": "",
    "note": ""
   },
@@ -709,13 +723,6 @@
    "note": ""
   },
   {
-   "key": "Docker::6651fe75-ccdc-4837-8374-4aa8053b714d",
-   "company": "Docker",
-   "title": "Staff Software Engineer, Billing",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Dropbox::8280093",
    "company": "Dropbox",
    "title": "Senior Corporate Enterprise Platform Engineer, Windows",
@@ -740,13 +747,6 @@
    "key": "Emerging Travel Group::https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
    "company": "Emerging Travel Group",
    "title": "Senior Python Developer (CRM - AI/LLM)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Fivetran::7999916003",
-   "company": "Fivetran",
-   "title": "Staff Solutions Engineer",
    "status": "",
    "note": ""
   },
@@ -828,13 +828,6 @@
    "note": ""
   },
   {
-   "key": "Grafana Labs::6228094004",
-   "company": "Grafana Labs",
-   "title": "Senior Full-Stack Engineer - Grafana Analytics| NASA | (Remote, USA)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Grafana Labs::6223924004",
    "company": "Grafana Labs",
    "title": "Senior Fullstack Engineer - Grafana Data Source Plugins | NASA | (Remote, USA)",
@@ -891,13 +884,6 @@
    "note": ""
   },
   {
-   "key": "Gusto::8205075",
-   "company": "Gusto",
-   "title": "Staff Software Engineer, Retirement Financial Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Headway::03326a1d-f7de-4c71-a4e0-68b575d43ec0",
    "company": "Headway",
    "title": "Security Engineer (Product)",
@@ -926,6 +912,13 @@
    "note": ""
   },
   {
+   "key": "Hinge Health::cec75e13-9794-4ce1-8158-eae78a5e975e",
+   "company": "Hinge Health",
+   "title": "Senior Design Quality Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Hinge Health::9f06df99-a5c6-47bf-92c1-e92c725e6a5a",
    "company": "Hinge Health",
    "title": "Senior Site Reliability Engineer",
@@ -936,6 +929,13 @@
    "key": "Hinge Health::fa22327c-9984-4ea5-9994-fd2459dec8e1",
    "company": "Hinge Health",
    "title": "Staff Software Engineer, Growth",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Hinge Health::6f03efe9-17b3-4aec-8c53-50a815edf9b2",
+   "company": "Hinge Health",
+   "title": "Staff Software Engineer, Member Records",
    "status": "",
    "note": ""
   },
@@ -961,16 +961,9 @@
    "note": ""
   },
   {
-   "key": "Instacart::8246054",
-   "company": "Instacart",
-   "title": "Senior Software Engineer II, Ads Data Solutions Engineering",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "KDCI::https://himalayas.app/companies/kdci/jobs/back-end-developer",
-   "company": "KDCI",
-   "title": "Back-End Developer",
+   "key": "LTS Corporation::https://himalayas.app/companies/lts-corporation/jobs/application-packaging-engineer",
+   "company": "LTS Corporation",
+   "title": "Application Packaging Engineer",
    "status": "",
    "note": ""
   },
@@ -1066,6 +1059,13 @@
    "note": ""
   },
   {
+   "key": "Mercury::6233238004",
+   "company": "Mercury",
+   "title": "Software Engineer - Mercury Command",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Mercury::6221407004",
    "company": "Mercury",
    "title": "Staff Software Engineer - Services Platform",
@@ -1080,13 +1080,6 @@
    "note": ""
   },
   {
-   "key": "Mixpanel::8248501",
-   "company": "Mixpanel",
-   "title": "Senior Customer Engineer - LATAM",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "NICE::4999115101",
    "company": "NICE",
    "title": "Professional Services Engineer",
@@ -1097,6 +1090,20 @@
    "key": "NICE::5011751101",
    "company": "NICE",
    "title": "Senior Partner Success Implementation Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Natera::https://himalayas.app/companies/natera/jobs/principal-ai-engineer",
+   "company": "Natera",
+   "title": "Principal AI Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Nortal::https://himalayas.app/companies/nortal/jobs/1534-senior-fullstack-software-engineer-react-node-js-python",
+   "company": "Nortal",
+   "title": "(1534) Senior Fullstack Software Engineer (React, Node.js & Python)",
    "status": "",
    "note": ""
   },
@@ -1118,20 +1125,6 @@
    "key": "Notion::8c0bf773-e536-45c9-9a6c-8ee478148cc8",
    "company": "Notion",
    "title": "Software Engineer, Developer Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Notion::d82a0b31-59b8-4699-ae8d-6fb3fe47518c",
-   "company": "Notion",
-   "title": "Software Engineer, Mobile Core (Android)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Notion::95800771-37a4-4226-b03f-d4fc6ea88f65",
-   "company": "Notion",
-   "title": "Software Engineer, Mobile Platform (iOS)",
    "status": "",
    "note": ""
   },
@@ -1234,9 +1227,9 @@
    "note": ""
   },
   {
-   "key": "PureLogics::https://himalayas.app/companies/purelogics/jobs/senior-full-stack-engineer-9940041591",
-   "company": "PureLogics",
-   "title": "Senior Full Stack Engineer",
+   "key": "Prospex CRM::https://weworkremotely.com/remote-jobs/prospex-crm-senior-software-engineer",
+   "company": "Prospex CRM",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1258,6 +1251,20 @@
    "key": "Ramp::b7514711-8a29-4bd2-a97a-967be14e336f",
    "company": "Ramp",
    "title": "Senior Backend Engineer | Token Spend Management",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::09360e92-fc95-4ba6-9611-dfefd60b13ce",
+   "company": "Ramp",
+   "title": "Software Engineer, Enterprise Product",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::29a5da77-37f0-402a-92bc-072778e77ed8",
+   "company": "Ramp",
+   "title": "Software Engineer, Forward Deployed",
    "status": "",
    "note": ""
   },
@@ -1360,13 +1367,6 @@
    "note": ""
   },
   {
-   "key": "Reddit::8247280",
-   "company": "Reddit",
-   "title": "Staff Machine Learning Engineer, Ads ML Efficiency",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Reddit::8237636",
    "company": "Reddit",
    "title": "Staff Software Engineer, Android Design System",
@@ -1416,13 +1416,6 @@
    "note": ""
   },
   {
-   "key": "Samsara::8281482",
-   "company": "Samsara",
-   "title": "Senior AI Data & Analytics Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Samsara::8281479",
    "company": "Samsara",
    "title": "Senior AI Data & Analytics Engineer II",
@@ -1431,20 +1424,6 @@
   },
   {
    "key": "Samsara::8302004",
-   "company": "Samsara",
-   "title": "Senior AI Data & Analytics Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8281483",
-   "company": "Samsara",
-   "title": "Senior AI Data & Analytics Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8281489",
    "company": "Samsara",
    "title": "Senior AI Data & Analytics Engineer II",
    "status": "",
@@ -1465,6 +1444,27 @@
    "note": ""
   },
   {
+   "key": "Samsara::8281482",
+   "company": "Samsara",
+   "title": "Senior AI Data & Analytics Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8281489",
+   "company": "Samsara",
+   "title": "Senior AI Data & Analytics Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8281483",
+   "company": "Samsara",
+   "title": "Senior AI Data & Analytics Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Samsara::8261992",
    "company": "Samsara",
    "title": "Senior Product Manager, Monetization Platform",
@@ -1472,37 +1472,9 @@
    "note": ""
   },
   {
-   "key": "Samsara::8247429",
-   "company": "Samsara",
-   "title": "Sr Offensive AI Security Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8247424",
-   "company": "Samsara",
-   "title": "Sr Offensive AI Security Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Samsara::8264748",
    "company": "Samsara",
    "title": "Sr Offensive AI Security Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8247432",
-   "company": "Samsara",
-   "title": "Sr Offensive AI Security Engineer II",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Samsara::8237131",
-   "company": "Samsara",
-   "title": "Sr. Software Engineer II, DevEx",
    "status": "",
    "note": ""
   },
@@ -1622,6 +1594,13 @@
    "key": "Smartsheet::8250247",
    "company": "Smartsheet",
    "title": "Sr. Software Engineer I (Remote Eligible)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Smartsheet::8315902",
+   "company": "Smartsheet",
+   "title": "Web Producer II",
    "status": "",
    "note": ""
   },
@@ -2655,6 +2634,13 @@
    "note": ""
   },
   {
+   "key": "Stripe::8282859",
+   "company": "Stripe",
+   "title": "Technical Program Manager, Extensibility Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Supabase::5d09daeb-2d7e-42de-9151-81a1341195c4",
    "company": "Supabase",
    "title": "Cloud Platform Engineer",
@@ -2816,13 +2802,6 @@
    "note": ""
   },
   {
-   "key": "Vanta::795ab93b-57d9-4387-9cc1-ea7615721ec6",
-   "company": "Vanta",
-   "title": "Senior Analytics Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Vanta::9962b3c8-f1c4-4ad1-9308-7c8df6a28b28",
    "company": "Vanta",
    "title": "Staff Software Engineer, Program Structure & Trust",
@@ -2900,13 +2879,6 @@
    "note": ""
   },
   {
-   "key": "Zillow Group::https://himalayas.app/companies/zillow-group/jobs/principal-machine-learning-engineer-memory-context",
-   "company": "Zillow Group",
-   "title": "Principal Machine Learning Engineer (Memory & Context)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "iCapital::8880561002",
    "company": "iCapital",
    "title": "Service Desk Engineer - Associate",
@@ -2917,6 +2889,13 @@
    "key": "iCapital::8889477002",
    "company": "iCapital",
    "title": "Structured Investments Distribution Engineer - Assistant Vice President",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "iTech AG::https://himalayas.app/companies/itech-ag/jobs/servicenow-platform-developer-396",
+   "company": "iTech AG",
+   "title": "ServiceNow Platform Developer (396)",
    "status": "",
    "note": ""
   },
