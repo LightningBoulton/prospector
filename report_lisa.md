@@ -1,49 +1,45 @@
-# Prospector — 2026-10-23
+# Prospector — 2026-10-24
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**14 new roles today** · 8 still worth applying · 12 closed/removed
+**13 new roles today** · 8 still worth applying · 12 closed/removed
 
-## NEW — WORTH REVIEWING (10)
-- **Program Manager, Commercial Solutions** — Stripe · 78/100 · remote US-Remote · posted 2026-10-22
-  - Why: US-remote matches top location preference
-  - Concern: Sales/revenue-ops focus narrower than typical enterprise transformation roles
-  - https://stripe.com/jobs/search?gh_jid=8279867
-- **Head of Customer Operations** — Happy Money · 78/100 · remote USA (Remote) · posted 2026-10-23
-  - Why: Full ownership of operations function
-  - Concern: Lending/collections domain is new to her
-  - https://jobicy.com/jobs/156494-head-of-customer-operations
-- **Head of People Operations** — Notion · 58/100 · remote San Francisco, California (Remote) · posted 2026-10-22
-  - Why: HR ops leadership touches org effectiveness and employee experience
-  - Concern: Heavy HR/People Ops specialization, not core transformation
-  - https://jobs.ashbyhq.com/notion/c413d063-add4-4c55-aebd-704d49fb54c1
-- **Senior Customer Success Architect (AI)** — Atlassian · 55/100 · remote San Francisco - United States; Remote - Remote · first seen 2026-10-23
-  - Why: Priority employer Atlassian with referral advantage
-  - Concern: Requires deep hands-on technical AI/product expertise
-  - https://careers-americas.icims.com/jobs/27514/senior-customer-success-architect-%28ai%29/job?mode=apply
-- **Program Manager (III) | Executive Engagement** — Aquent · 50/100 · remote Sunnyvale, CA, US (Remote) · posted 2026-10-20
-  - Why: Executive engagement program leadership
-  - Concern: Short-term contract covering leave
-  - https://aquent.com/find-work/213871
-- **Managing Consultant, Safety and Reliability** — Qualtrics · 50/100 · remote United States (Remote) · posted 2026-10-23
-  - Why: Transformation/consulting leadership mandate fits
-  - Concern: Requires deep healthcare/clinical safety domain expertise
-  - https://www.qualtrics.com/careers/us/en/job/8279293?gh_jid=8279293
-- **Senior Strategic Implementation Specialist - Americas** — Ashby · 50/100 · remote Canada,  USA (Remote) · posted 2026-10-23
-  - Why: Professional services/customer onboarding leadership
-  - Concern: Individual-contributor delivery role, not strategic ownership
-  - https://jobicy.com/jobs/156596-senior-strategic-implementation-specialist-americas
-- **Business Continuity Management Lead** — Mercury · 45/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · posted 2026-10-21
-  - Why: Remote-eligible US role
-  - Concern: Highly specialized BCM/regulatory domain expertise required
-  - https://job-boards.greenhouse.io/mercury/jobs/6230246004
-- **Senior Manager of Marketing Operations** — Proof · 45/100 · remote USA (Remote) · posted 2026-10-22
-  - Why: US-remote fits practical preference
-  - Concern: Heavy marketing technology/tool specialization mismatch
-  - https://jobicy.com/jobs/156401-senior-manager-of-marketing-operations
-- **Presales Consultant** — Ada · 45/100 · remote Canada,  USA (Remote) · posted 2026-10-22
-  - Why: AI enablement/transformation theme fits interests
-  - Concern: Presales/demo-building is sales-engineering, not her core strength
-  - https://jobicy.com/jobs/156328-presales-consultant
+## NEW — WORTH REVIEWING (9)
+- **Manager, Professional Services Federal** — Collibra · 75/100 · remote USA (Remote) · posted 2026-10-23
+  - Why: Professional services leadership with operational excellence mandate
+  - Concern: Federal/public sector domain is new territory
+  - https://jobicy.com/jobs/156648-manager-professional-services-federal
+- **Regional General Manager, Market Performance Central US** — Luna Physical Therapy · 68/100 · remote USA (Remote) · posted 2026-10-23
+  - Why: Regional GM with real P&L ownership
+  - Concern: Healthcare/PT industry domain unfamiliar
+  - https://jobicy.com/jobs/156618-regional-general-manager-market-performance-central-us
+- **Regional General Manager, Market Performance Western US** — Luna Physical Therapy · 58/100 · remote USA (Remote) · posted 2026-10-23
+  - Why: P&L ownership and regional operating model mandate
+  - Concern: Remote but restricted to WA/OR/NV/CA, not nationwide
+  - https://jobicy.com/jobs/156620-regional-general-manager-market-performance-western-us
+- **Senior Client-Side part-time Project Manager** — Eliassen · 50/100 · remote Remote · $65.00 to $75.00 · posted 2026-10-23
+  - Why: Remote contract PM work
+  - Concern: Part-time, narrow scope
+  - https://careers.eliassen.com/caTbSy/senior-client-side-part-time-project-manager-programproject-management-anywhere-a1wuq000001yhbb2ay
+- **Customer Onboarding Operations Manager** — Dandy · 50/100 · remote USA (Remote) · posted 2026-10-23
+  - Why: US remote role matches location preference
+  - Concern: Narrow operational scope vs strategic transformation mandate
+  - https://jobicy.com/jobs/156635-customer-onboarding-operations-manager
+- **Revenue Enablement Manager - Product** — Mercury · 42/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within United States · posted 2026-10-16
+  - Why: Remote-US option fits location preference
+  - Concern: Primarily sales readiness, not strategic transformation
+  - https://job-boards.greenhouse.io/mercury/jobs/6111944004
+- **Manager, Customer Activation, Mid-Market** — Ramp · 42/100 · remote New York, NY (HQ) (Remote) · $174K – $266K · posted 2026-10-22
+  - Why: Customer success/onboarding leadership overlaps CX expertise
+  - Concern: Quota-driven CSM people management, not transformation/strategy scope
+  - https://jobs.ashbyhq.com/ramp/6a508863-352b-4f39-b299-5a3b6693605a
+- **Senior Digital Project Manager- Director Level** — Aquent · 35/100 · hybrid Boston, MA, US (Remote) · posted 2026-10-20
+  - Why: Remote contract PM role, part-time hours
+  - Concern: Part-time 20-30hrs limits income value
+  - https://aquent.com/find-work/213872
+- **FLEX OSR Enterprise Program Support Services – Project Manager** — Marriott International · 30/100 · remote Bethesda, MD (Remote) · $36.53-$58.17 · first seen 2026-10-21
+  - Why: Priority employer Marriott
+  - Concern: Requires hands-on hotel operations experience she lacks
+  - https://careers.marriott.com/flex-osr-enterprise-program-support-services-project-manager/job/P1-7427647-0
 
 ## DISCOVERY / WILDCARDS (4)
 - **Manager, M&A Integration** — Salesforce · 82/100 · onsite Bellevue (+8 more) · $117,400 - $177,600 · posted 2026-10-13
@@ -72,10 +68,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Utah-local role, strong practical fit
   - Concern: Title generic, scope depth unclear
   - https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4460235009
-- **Lead Business Consultant, VRS, CX** — NICE · 85/100 · remote USA - Remote · posted 2026-07-22
-  - Why: Value realization/consulting mandate matches core domain
-  - Concern: Title 'Lead' may be IC-level scope
-  - https://boards.eu.greenhouse.io/nice/jobs/4934082101?gh_jid=4934082101
 - **Staff Program Manager, CX Operations & Programs** — 1Password · 85/100 · remote Remote (United States | Canada) · posted 2026-10-21
   - Why: CX operations and program leadership mandate
   - Concern: Staff title may mean less org-wide scope than Director
@@ -92,24 +84,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Cross-functional strategic initiative leadership
   - Concern: Reports to Director, one layer below her typical scope
   - https://jobs.ashbyhq.com/1password/59c03a18-a50d-4ef0-adf5-a0e132024784
-- **Senior Manager, Programs - Global Expansion and New Initiatives** — Affirm · 80/100 · remote Remote US · posted 2026-10-09
-  - Why: Global expansion program leadership
-  - Concern: Requires deep fintech/servicing domain expertise
-  - https://job-boards.greenhouse.io/affirm/jobs/8001621003
+- **Customer Enablement Manager** — Asana · 78/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
+  - Why: Change management and adoption strategy core mandate
+  - Concern: West Coast time zone restriction may exclude Utah/Mountain edge cases
+  - https://weworkremotely.com/remote-jobs/asana-customer-enablement-manager
+- **Senior Consultant, Patient Experience** — Qualtrics · 78/100 · remote United States (Remote) · posted 2026-10-22
+  - Why: US-remote consulting role
+  - Concern: Healthcare/patient domain is new vertical
+  - https://www.qualtrics.com/careers/us/en/job/8279148?gh_jid=8279148
 
 ## REMOVED SINCE PRIOR RUN (12)
-- Content Project Manager — Aquent · No longer listed by its source
-- Resource Manager — Aquent · No longer listed by its source
-- Principal Program Manager, Sales & Success Strategy — Atlassian · No longer listed by its source
-- Group Product Manager, Customer Engagement & Experience — Coinbase · No longer listed by its source
-- Director of Product Operations — Deepgram · No longer listed by its source
-- Senior Program Manager,  Employee Experience — Dropbox · No longer listed by its source
-- Manager, Customer Operations Automation — Grow Therapy · No longer listed by its source
-- Senior Associate GDCM Deployment PEP — Hilton · No longer listed by its source
-- Manager, Recruiting Operations and Planning — Hilton · No longer listed by its source
-- Business Process Lead, Finance & Corporate Services — Kaseya · No longer listed by its source
-- Business Process Lead, Digital & Service Experience — Kaseya · No longer listed by its source
-- Business Process Lead, Lead-to-Quote (L2Q) & Customer Lifecycle — Kaseya · No longer listed by its source
+- Senior Partner Solutions Architect - Cloud Platform — Atlassian · No longer listed by its source
+- Director, Revenue Operations — Brex · No longer listed by its source
+- Corporate Development Senior Manager — Coinbase · No longer listed by its source
+- Senior Technical Project/Program Manager — Eliassen · No longer listed by its source
+- Senior Manager, Strategic Operations - Technology Strategy & Roadmap — Hilton · No longer listed by its source
+- Senior Design Program Manager II — Instacart · No longer listed by its source
+- Senior Director, Revenue Strategy — Mural · No longer listed by its source
+- Lead Business Consultant, VRS, CX — NICE · No longer listed by its source
+- Program Manager — Oddball · No longer listed by its source
+- Delivery Manager — Oddball · No longer listed by its source
+- Senior Program Manager, Health Coaching — Omada Health · No longer listed by its source
+- Enterprise Implementation Consultant - US Remote — PerfectServe · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful

@@ -282,7 +282,7 @@
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, service delivery)",
+  "match_reason": "mandate in description (operational excellence, continuous improvement)",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
@@ -891,39 +891,41 @@
   }
  },
  {
-  "key": "Aquent::213238",
-  "company": "Aquent",
-  "title": "Content Strategy Producer - Beauty",
-  "location": "New York, NY, US (Remote)",
-  "url": "https://aquent.com/find-work/213238",
-  "posted": "2026-09-23",
-  "salary": "up to $51.84/hr",
+  "key": "Eliassen::650e6704-b92f-11f1-ab76-02420a6c7775",
+  "company": "Eliassen",
+  "title": "Scrum Master / Project Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/24WLWW/scrum-master-project-manager-programproject-management-anywhere-a1wuq000001vusd2a2",
+  "posted": "2026-10-24",
+  "salary": "$60.00 to $70.00",
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "high",
+   "confidence": "medium",
    "reasons": [
-    "Hands-on content/photo production, not strategy leadership",
-    "Wrong function despite 'strategy' in title"
+    "Tactical SAP scrum master role",
+    "Narrow technical PM scope, not transformation leadership",
+    "Remote is practically fine"
    ],
    "concerns": [
-    "Not transformation or ops leadership work",
-    "Producer-level execution role"
+    "Mismatched seniority/strategic scope",
+    "Requires deep SAP OTC domain expertise",
+    "Staffing-firm contract-to-hire, low leverage"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 15,
-   "practical_fit": 30,
-   "opportunity_score": 15,
-   "score": 15,
+   "qualification_fit": 35,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
    "fit": "no",
-   "reason": "Hands-on content/photo production, not strategy leadership",
+   "reason": "Tactical SAP scrum master role",
    "bg": "d192ce659668"
   }
  },
@@ -967,6 +969,46 @@
   }
  },
  {
+  "key": "Eliassen::dcdcc915-cf0c-11f1-96f9-024201c20d84",
+  "company": "Eliassen",
+  "title": "Senior Client-Side part-time Project Manager",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/caTbSy/senior-client-side-part-time-project-manager-programproject-management-anywhere-a1wuq000001yhbb2ay",
+  "posted": "2026-10-23",
+  "salary": "$65.00 to $75.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract PM work",
+    "Vendor oversight and governance mandate",
+    "Part-time staffing engagement",
+    "Some program leadership relevance"
+   ],
+   "concerns": [
+    "Part-time, narrow scope",
+    "Not strategic transformation leadership",
+    "Staffing agency contract role"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 50,
+   "practical_fit": 70,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Remote contract PM work",
+   "bg": "d192ce659668"
+  }
+ },
+ {
   "key": "Eliassen::9f21cae7-cbe4-11f1-96f9-024201c20d84",
   "company": "Eliassen",
   "title": "Contract CRM Data Lead / Project Manager",
@@ -1002,46 +1044,6 @@
    "score": 40,
    "fit": "maybe",
    "reason": "PM/stakeholder alignment matches her program leadership skill",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Eliassen::ae2907ee-c8bb-11f1-b23b-024201c20d84",
-  "company": "Eliassen",
-  "title": "Senior Technical Project/Program Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/kv6jpY/senior-technical-projectprogram-manager-programproject-management-anywhere-a1wuq000001xp7z2aq",
-  "posted": "2026-10-15",
-  "salary": "$49.00 to $54.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote W2 contract fits practical constraints",
-    "Program/risk/stakeholder leadership overlaps her skills",
-    "Healthcare domain and FEP specifics are a gap",
-    "Lower-rate technical PM role, not strategic transformation"
-   ],
-   "concerns": [
-    "Healthcare/FEP specialization not in her background",
-    "Hourly W2 rate is modest vs her seniority",
-    "Limited strategic/transformation scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 45,
-   "practical_fit": 70,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Remote W2 contract fits practical constraints",
    "bg": "d192ce659668"
   }
  },
@@ -1085,41 +1087,43 @@
   }
  },
  {
-  "key": "Robert Half::00320-0013522366-usen",
+  "key": "Robert Half::02160-9504411999-usen",
   "company": "Robert Half",
-  "title": "Program Manager",
-  "location": "Culver City, CA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/culver-city-ca/program-manager/00320-0013522366-usen",
-  "posted": "2026-10-20",
-  "salary": "$39.59\u2013$45.84/hr",
+  "title": "Talent Management Lead",
+  "location": "Westborough, MA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/westborough-ma/talent-management-lead/02160-9504411999-usen",
+  "posted": "2026-10-14",
+  "salary": "$50.00\u2013$60.00/hr",
   "employment_type": "Temp",
   "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "not_recommended",
+   "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "Highly technical TPM role, not her background",
-    "Requires media/streaming engineering domain expertise",
-    "Remote but temp contract via staffing agency"
+    "Remote temp role",
+    "Org effectiveness & employee development overlap",
+    "Talent/performance program leadership",
+    "Change management alignment"
    ],
    "concerns": [
-    "Needs deep technical platform/API experience",
-    "Media/streaming domain requirement not met"
+    "HR-specialist focus, not transformation/ops",
+    "Temp Robert Half staffing role, limited scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "score": 30,
-   "fit": "no",
-   "reason": "Highly technical TPM role, not her background",
+   "qualification_fit": 55,
+   "interest_fit": 60,
+   "practical_fit": 70,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Remote temp role",
    "bg": "d192ce659668"
-  }
+  },
+  "rescued": true
  }
 ]
