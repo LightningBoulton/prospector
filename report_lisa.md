@@ -1,45 +1,13 @@
-# Prospector — 2026-10-24
+# Prospector — 2026-10-25
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**13 new roles today** · 8 still worth applying · 12 closed/removed
+**5 new roles today** · 8 still worth applying · 12 closed/removed
 
-## NEW — WORTH REVIEWING (9)
-- **Manager, Professional Services Federal** — Collibra · 75/100 · remote USA (Remote) · posted 2026-10-23
-  - Why: Professional services leadership with operational excellence mandate
-  - Concern: Federal/public sector domain is new territory
-  - https://jobicy.com/jobs/156648-manager-professional-services-federal
-- **Regional General Manager, Market Performance Central US** — Luna Physical Therapy · 68/100 · remote USA (Remote) · posted 2026-10-23
-  - Why: Regional GM with real P&L ownership
-  - Concern: Healthcare/PT industry domain unfamiliar
-  - https://jobicy.com/jobs/156618-regional-general-manager-market-performance-central-us
-- **Regional General Manager, Market Performance Western US** — Luna Physical Therapy · 58/100 · remote USA (Remote) · posted 2026-10-23
-  - Why: P&L ownership and regional operating model mandate
-  - Concern: Remote but restricted to WA/OR/NV/CA, not nationwide
-  - https://jobicy.com/jobs/156620-regional-general-manager-market-performance-western-us
-- **Senior Client-Side part-time Project Manager** — Eliassen · 50/100 · remote Remote · $65.00 to $75.00 · posted 2026-10-23
-  - Why: Remote contract PM work
-  - Concern: Part-time, narrow scope
-  - https://careers.eliassen.com/caTbSy/senior-client-side-part-time-project-manager-programproject-management-anywhere-a1wuq000001yhbb2ay
-- **Customer Onboarding Operations Manager** — Dandy · 50/100 · remote USA (Remote) · posted 2026-10-23
-  - Why: US remote role matches location preference
-  - Concern: Narrow operational scope vs strategic transformation mandate
-  - https://jobicy.com/jobs/156635-customer-onboarding-operations-manager
-- **Revenue Enablement Manager - Product** — Mercury · 42/100 · remote San Francisco, CA, New York, NY, Portland, OR, or Remote within United States · posted 2026-10-16
-  - Why: Remote-US option fits location preference
-  - Concern: Primarily sales readiness, not strategic transformation
-  - https://job-boards.greenhouse.io/mercury/jobs/6111944004
-- **Manager, Customer Activation, Mid-Market** — Ramp · 42/100 · remote New York, NY (HQ) (Remote) · $174K – $266K · posted 2026-10-22
-  - Why: Customer success/onboarding leadership overlaps CX expertise
-  - Concern: Quota-driven CSM people management, not transformation/strategy scope
-  - https://jobs.ashbyhq.com/ramp/6a508863-352b-4f39-b299-5a3b6693605a
-- **Senior Digital Project Manager- Director Level** — Aquent · 35/100 · hybrid Boston, MA, US (Remote) · posted 2026-10-20
-  - Why: Remote contract PM role, part-time hours
-  - Concern: Part-time 20-30hrs limits income value
-  - https://aquent.com/find-work/213872
-- **FLEX OSR Enterprise Program Support Services – Project Manager** — Marriott International · 30/100 · remote Bethesda, MD (Remote) · $36.53-$58.17 · first seen 2026-10-21
-  - Why: Priority employer Marriott
-  - Concern: Requires hands-on hotel operations experience she lacks
-  - https://careers.marriott.com/flex-osr-enterprise-program-support-services-project-manager/job/P1-7427647-0
+## APPLY FIRST (1)
+- **Director, Travel Services** — TripActions · 85/100 · remote USA (Remote) · posted 2026-10-24
+  - Why: Operational excellence & CX leadership mandate
+  - Concern: Travel industry domain not prior background
+  - https://jobicy.com/jobs/156859-director-travel-services
 
 ## DISCOVERY / WILDCARDS (4)
 - **Manager, M&A Integration** — Salesforce · 82/100 · onsite Bellevue (+8 more) · $117,400 - $177,600 · posted 2026-10-13
@@ -88,24 +56,24 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Change management and adoption strategy core mandate
   - Concern: West Coast time zone restriction may exclude Utah/Mountain edge cases
   - https://weworkremotely.com/remote-jobs/asana-customer-enablement-manager
-- **Senior Consultant, Patient Experience** — Qualtrics · 78/100 · remote United States (Remote) · posted 2026-10-22
-  - Why: US-remote consulting role
-  - Concern: Healthcare/patient domain is new vertical
-  - https://www.qualtrics.com/careers/us/en/job/8279148?gh_jid=8279148
+- **Program Manager, Commercial Solutions** — Stripe · 78/100 · remote US-Remote · posted 2026-10-22
+  - Why: US-remote matches top location preference
+  - Concern: Sales/revenue-ops focus narrower than typical enterprise transformation roles
+  - https://stripe.com/jobs/search?gh_jid=8279867
 
 ## REMOVED SINCE PRIOR RUN (12)
-- Senior Partner Solutions Architect - Cloud Platform — Atlassian · No longer listed by its source
-- Director, Revenue Operations — Brex · No longer listed by its source
-- Corporate Development Senior Manager — Coinbase · No longer listed by its source
-- Senior Technical Project/Program Manager — Eliassen · No longer listed by its source
-- Senior Manager, Strategic Operations - Technology Strategy & Roadmap — Hilton · No longer listed by its source
-- Senior Design Program Manager II — Instacart · No longer listed by its source
-- Senior Director, Revenue Strategy — Mural · No longer listed by its source
-- Lead Business Consultant, VRS, CX — NICE · No longer listed by its source
-- Program Manager — Oddball · No longer listed by its source
-- Delivery Manager — Oddball · No longer listed by its source
-- Senior Program Manager, Health Coaching — Omada Health · No longer listed by its source
-- Enterprise Implementation Consultant - US Remote — PerfectServe · No longer listed by its source
+- Presales Consultant — Ada · No longer listed by its source
+- Senior Manager, Customer Success Operations — AlphaSense · No longer listed by its source
+- Senior Analyst, Customer Success Operations — AlphaSense · No longer listed by its source
+- Director, GTM Strategy, Planning & Analytics — Articulate · No longer listed by its source
+- Principal Product Manager - Focus — Atlassian · No longer listed by its source
+- Chief of Staff, Science — Datavant · No longer listed by its source
+- Contract CRM Data Lead / Project Manager — Eliassen · No longer listed by its source
+- Product Manager, AI Transformation & Salesforce — Goodleap · No longer listed by its source
+- Director, Partner Programs, Enablement, and Operations — Ping Identity · No longer listed by its source
+- Senior Manager of Marketing Operations — Proof · No longer listed by its source
+- Talent Management Lead — Robert Half · No longer listed by its source
+- Lead Revenue Operations Analyst — Spreedly · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
