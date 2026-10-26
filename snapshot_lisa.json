@@ -500,41 +500,79 @@
   }
  },
  {
-  "key": "Western Governors University::JR-025721",
+  "key": "Western Governors University::JR-025477",
   "company": "Western Governors University",
-  "title": "Project Manager IV, Transformation",
+  "title": "Cost Controls Project Manager - Real Estate Development",
   "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-IV--Transformation_JR-025721",
-  "posted": "2026-10-23",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Quantity-Surveyor--Cost-Manager---Real-Estate-Development_JR-025477",
+  "posted": "2026-10-26",
   "salary": "$109,900.00 - $170,400.00",
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Transformation program leadership",
-    "Utah local location",
-    "Project/program leadership experience aligns",
-    "WGU is a large complex org"
+    "Utah local location is practical",
+    "Cost controls/real estate construction is outside core expertise",
+    "Title suggests financial/construction PM, not transformation"
    ],
    "concerns": [
     "No description to confirm scope",
-    "Title level unclear vs seniority"
+    "Likely requires construction cost estimating expertise"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 70,
-   "interest_fit": 70,
-   "practical_fit": 85,
-   "opportunity_score": 68,
-   "score": 68,
-   "fit": "yes",
-   "reason": "Transformation program leadership",
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 70,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Utah local location is practical",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Western Governors University::JR-026195",
+  "company": "Western Governors University",
+  "title": "Technical Project Manager III",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-026195",
+  "posted": "2026-10-19",
+  "salary": "$108,200.00 - $162,400.00",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Utah local, possibly hybrid",
+    "PM scope could carry real ownership",
+    "Thin posting, lacks detail"
+   ],
+   "concerns": [
+    "No description to verify mandate",
+    "Technical PM may be too execution-focused",
+    "Title suggests narrower IT scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 80,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Utah local, possibly hybrid",
    "bg": "d192ce659668"
   }
  },
@@ -689,45 +727,6 @@
    "score": 55,
    "fit": "maybe",
    "reason": "Utah-local role, strong practical fit",
-   "bg": "d192ce659668"
-  }
- },
- {
-  "key": "Western Governors University::JR-026195",
-  "company": "Western Governors University",
-  "title": "Technical Project Manager III",
-  "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-026195",
-  "posted": "2026-10-19",
-  "salary": "$108,200.00 - $162,400.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Utah local, possibly hybrid",
-    "PM scope could carry real ownership",
-    "Thin posting, lacks detail"
-   ],
-   "concerns": [
-    "No description to verify mandate",
-    "Technical PM may be too execution-focused",
-    "Title suggests narrower IT scope"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Utah local, possibly hybrid",
    "bg": "d192ce659668"
   }
  },
