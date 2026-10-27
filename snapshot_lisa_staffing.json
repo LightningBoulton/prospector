@@ -1,12 +1,243 @@
 [
  {
-  "key": "Eliassen::cd3a33f6-d16d-11f1-bde9-0242db9b5dbc",
-  "company": "Eliassen",
-  "title": "Technical Project Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/TOpiTu/technical-project-manager-programproject-management-mclean-va-a1wuq000001yqw12aa",
+  "key": "Aquent::214021",
+  "company": "Aquent",
+  "title": "Strategic Planning Lead (B2B)",
+  "location": "Culver City, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/214021",
   "posted": "2026-10-26",
-  "salary": "$50.00 to $60.00",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Media planning role, not transformation/ops",
+    "Marketing/media strategy mismatch with core domain",
+    "Remote but contract staffing placement"
+   ],
+   "concerns": [
+    "Not org strategy or transformation mandate",
+    "Media buying/planning is different discipline"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 45,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Media planning role, not transformation/ops",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213984",
+  "company": "Aquent",
+  "title": "Program Manager",
+  "location": "Phoenix, AZ, US (Remote)",
+  "url": "https://aquent.com/find-work/213984",
+  "posted": "2026-10-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Program manager title but operational/technical validation work",
+    "Requires local depot travel in Phoenix",
+    "Not aligned with transformation/strategy mandate"
+   ],
+   "concerns": [
+    "Onsite depot presence required, not remote relocation fit",
+    "Low-level operational execution, not strategic scope",
+    "Contract staffing role with narrow technical focus"
+   ],
+   "relocation_required": true,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 25,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Program manager title but operational/technical validation work",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213986",
+  "company": "Aquent",
+  "title": "Program Manager II",
+  "location": "Washington, DC, US (Remote)",
+  "url": "https://aquent.com/find-work/213986",
+  "posted": "2026-10-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Operational tracking role, not strategic",
+    "Depot/fleet-ops focus mismatches her transformation profile",
+    "DC location requires onsite presence, not Utah/remote fit"
+   ],
+   "concerns": [
+    "Low-level operational tracking, not leadership scope",
+    "Requires local commuting to vehicle depots",
+    "Contract staffing role with narrow mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 25,
+   "opportunity_score": 28,
+   "score": 28,
+   "fit": "no",
+   "reason": "Operational tracking role, not strategic",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213936",
+  "company": "Aquent",
+  "title": "Project Coordinator - Real Estate | Planning & Development",
+  "location": "New York, NY, US (Remote)",
+  "url": "https://aquent.com/find-work/213936",
+  "posted": "2026-10-22",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'planning' + mandate in description (operational excellence, customer experience); demoted to wildcards by the precision rule 'coordinator'",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Facilities coordination, not strategic transformation",
+    "Low-level ticketing/tracking work",
+    "No ownership or strategic scope"
+   ],
+   "concerns": [
+    "Mismatched seniority and mandate",
+    "Onsite NY coordination despite remote tag"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 35,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Facilities coordination, not strategic transformation",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213890",
+  "company": "Aquent",
+  "title": "Project Manager - Pharma",
+  "location": "Philadelphia, PA, US (Remote)",
+  "url": "https://aquent.com/find-work/213890",
+  "posted": "2026-10-21",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Junior-level PM scope mismatched to seniority",
+    "Tactical content production not strategic transformation",
+    "Remote fits location preference"
+   ],
+   "concerns": [
+    "2-3 years experience level far below candidate's",
+    "No strategic ownership or transformation scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 25,
+   "practical_fit": 60,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Junior-level PM scope mismatched to seniority",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213875",
+  "company": "Aquent",
+  "title": "Project Manager, Workplace & Sustainability",
+  "location": "San Francisco, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213875",
+  "posted": "2026-10-20",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Project management ownership but facilities/construction-heavy",
+    "Not org strategy or transformation mandate",
+    "Contract staffing role, low leverage"
+   ],
+   "concerns": [
+    "Weak alignment with core transformation/ops strategy focus",
+    "Facilities/construction domain outside core expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Project management ownership but facilities/construction-heavy",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213872",
+  "company": "Aquent",
+  "title": "Senior Digital Project Manager- Director Level",
+  "location": "Boston, MA, US (Remote)",
+  "url": "https://aquent.com/find-work/213872",
+  "posted": "2026-10-20",
+  "salary": null,
   "employment_type": "",
   "expires": "",
   "tier": "discovery",
@@ -15,25 +246,767 @@
    "recommendation": "practical_contract",
    "confidence": "medium",
    "reasons": [
-    "M&A integration coordination aligns with core domain",
-    "Fully remote contract role",
-    "Lower-rate tactical PM work, not strategic"
+    "Remote contract work for income/experience",
+    "Program leadership and cross-functional orchestration",
+    "Director-level title, real scope",
+    "AI tool innovation mentioned"
    ],
    "concerns": [
-    "Hourly W2 contract rate quite low for her level",
-    "Heavily tactical Jira/Confluence execution, not leadership"
+    "Tactical web PM work, not strategic transformation",
+    "Staffing firm contract, uncertain conversion",
+    "Narrower than her core transformation/strategy focus"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 55,
-   "interest_fit": 50,
+   "interest_fit": 45,
+   "practical_fit": 70,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Remote contract work for income/experience",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213871",
+  "company": "Aquent",
+  "title": "Program Manager (III) | Executive Engagement",
+  "location": "Sunnyvale, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213871",
+  "posted": "2026-10-20",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Executive engagement program management fits operations/PMO skills",
+    "Remote contract role usable for income",
+    "Customer experience and executive relationship scope aligns",
+    "Contract staffing role, not strategic leadership"
+   ],
+   "concerns": [
+    "Narrow tactical event/program scope vs transformation leadership",
+    "Contract via staffing agency, limited long-term growth",
+    "California-based client though remote"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 55,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Executive engagement program management fits operations/PMO skills",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213831",
+  "company": "Aquent",
+  "title": "Senior Product Operations Analyst",
+  "location": "Southlake, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213831",
+  "posted": "2026-10-19",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'operations' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Process/operating model work matches strengths",
+    "Remote contract fits practical constraints",
+    "Cross-functional influence and governance scope",
+    "Financial services transformation context"
+   ],
+   "concerns": [
+    "Contract/temporary staffing role via Aquent",
+    "Analyst-level title may underrepresent scope",
+    "Limited strategic/executive exposure unclear"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 65,
+   "practical_fit": 70,
+   "opportunity_score": 60,
+   "score": 60,
+   "fit": "maybe",
+   "reason": "Process/operating model work matches strengths",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213820",
+  "company": "Aquent",
+  "title": "Major Incident and Problem Manager",
+  "location": "Wellesley Hills, MA, US (Remote)",
+  "url": "https://aquent.com/find-work/213820",
+  "posted": "2026-10-19",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, continuous improvement)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Operational excellence framing but IT incident/problem management specific",
+    "Requires deep ITIL/technical incident coordination not her background",
+    "1-year contract, remote"
+   ],
+   "concerns": [
+    "Heavily technical IT ops role, not strategic transformation",
+    "Mismatch with core consulting/org strategy expertise"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "score": 30,
+   "fit": "no",
+   "reason": "Operational excellence framing but IT incident/problem management specific",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213794",
+  "company": "Aquent",
+  "title": "Senior Manager, Finance Transformation & Systems_USD",
+  "location": "San Francisco, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213794",
+  "posted": "2026-10-16",
+  "salary": "up to $87.00/hr",
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Finance systems/ERP hands-on work, not her domain",
+    "Requires FP&A technical expertise she lacks",
+    "Transformation framing is superficial fit only"
+   ],
+   "concerns": [
+    "Core work is finance systems implementation, not org/ops transformation",
+    "Contract staffing role, unclear strategic ownership"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 35,
+   "practical_fit": 45,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Finance systems/ERP hands-on work, not her domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213737",
+  "company": "Aquent",
+  "title": "Digital Project Manager",
+  "location": "Austin, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213737",
+  "posted": "2026-10-14",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Remote contract role",
+    "Digital experience/journey mapping aligns with CX background",
+    "Cross-functional program leadership",
+    "Staffing firm contract, useful for income"
+   ],
+   "concerns": [
+    "Contract/temporary via staffing firm",
+    "Project manager title is narrower than strategic scope she targets",
+    "Unclear seniority/executive exposure"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 70,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Remote contract role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213727",
+  "company": "Aquent",
+  "title": "Senior Strategic Sourcing Consultant",
+  "location": "Dallas, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213727",
+  "posted": "2026-10-14",
+  "salary": "$85 -88 hourly as W2",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'consultant' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Procurement/sourcing specialist role, not her domain",
+    "Remote but contract staffing placement",
+    "No transformation or org leadership mandate"
+   ],
+   "concerns": [
+    "Wrong functional fit: tactical sourcing/negotiation",
+    "Not aligned with strategic/transformation goals"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 25,
+   "practical_fit": 45,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Procurement/sourcing specialist role, not her domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213712",
+  "company": "Aquent",
+  "title": "Marketing Specialist (Senior II)",
+  "location": "Mountain View, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213712",
+  "posted": "2026-10-14",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (continuous improvement, roi)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Hands-on marketing campaign execution role",
+    "Not transformation/operations leadership mandate",
+    "Contract staffing role, generic title"
+   ],
+   "concerns": [
+    "Wrong function vs core domains",
+    "Lacks strategic ownership scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Hands-on marketing campaign execution role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213664",
+  "company": "Aquent",
+  "title": "Training Specialist \u2013 Microsoft 365 / Viva (Design & Delivery)",
+  "location": "Spring, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213664",
+  "posted": "2026-10-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'delivery' + mandate in description (digital transformation, adoption)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Training delivery is hands-on L&D, not strategic",
+    "Remote and contract fits practical constraints",
+    "Adjacent to adoption/enablement but narrow execution role",
+    "Lacks ownership, strategy or transformation leadership scope"
+   ],
+   "concerns": [
+    "Pure content delivery/facilitation role, not strategic",
+    "Contract staffing role with limited career leverage"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 40,
+   "practical_fit": 60,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Training delivery is hands-on L&D, not strategic",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213658",
+  "company": "Aquent",
+  "title": "Project Manager",
+  "location": "Philadelphia, PA, US (Remote)",
+  "url": "https://aquent.com/find-work/213658",
+  "posted": "2026-10-12",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Pure project coordination, not strategic",
+    "Remote contract via staffing firm",
+    "Limited ownership/transformation scope"
+   ],
+   "concerns": [
+    "Below her strategic/operating level",
+    "Tactical MLR workflow role",
+    "Staffing agency contract, low leverage"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Pure project coordination, not strategic",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213650",
+  "company": "Aquent",
+  "title": "UGC Marketing Manager",
+  "location": "Marina Del Rey, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213650",
+  "posted": "2026-10-11",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (roi, strategic initiatives)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "UGC/influencer marketing ops, not transformation/strategy work",
+    "Contract role, mismatched domain expertise",
+    "Remote fits practical constraints"
+   ],
+   "concerns": [
+    "Wrong functional domain - creator/influencer marketing",
+    "No strategic transformation or operating mandate"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 45,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "UGC/influencer marketing ops, not transformation/strategy work",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213647",
+  "company": "Aquent",
+  "title": "Creative Project Manager",
+  "location": "Cleveland, OH, US (Remote)",
+  "url": "https://aquent.com/find-work/213647",
+  "posted": "2026-10-10",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Tactical creative production PM, not strategic",
+    "Below her seniority and scope level",
+    "Remote but contract staffing placement"
+   ],
+   "concerns": [
+    "No transformation/strategy mandate",
+    "Limited ownership or influence",
+    "Not aligned with target domains"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "score": 25,
+   "fit": "no",
+   "reason": "Tactical creative production PM, not strategic",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213563",
+  "company": "Aquent",
+  "title": "Creative Ops: Project Manager",
+  "location": "New York, NY, US (Remote)",
+  "url": "https://aquent.com/find-work/213563",
+  "posted": "2026-10-07",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Creative project coordination, not strategic ownership",
+    "Remote US but contract staffing role",
+    "Below her seniority and mandate level"
+   ],
+   "concerns": [
+    "Task-level creative ops, not transformation scope",
+    "Limited strategic influence",
+    "Contract staffing role with narrow scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 30,
+   "practical_fit": 65,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Creative project coordination, not strategic ownership",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213538",
+  "company": "Aquent",
+  "title": "Content Marketing Manager- SEO/AEO",
+  "location": "Chicago, IL, US (Remote)",
+  "url": "https://aquent.com/find-work/213538",
+  "posted": "2026-10-06",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Hands-on SEO/content writing role",
+    "Not strategic transformation or ops leadership",
+    "Below her ownership/scope level"
+   ],
+   "concerns": [
+    "Execution-level content marketing, not leadership mandate",
+    "Contract staffing role with narrow scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 55,
+   "opportunity_score": 20,
+   "score": 20,
+   "fit": "no",
+   "reason": "Hands-on SEO/content writing role",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213491",
+  "company": "Aquent",
+  "title": "Senior Reinsurance Analyst",
+  "location": "Wellesley Hills, MA, US (Remote)",
+  "url": "https://aquent.com/find-work/213491",
+  "posted": "2026-10-05",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (operational excellence, process redesign)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Reinsurance/actuarial analyst work, not her domain",
+    "Remote but contract staffing role",
+    "Heavy technical insurance expertise required"
+   ],
+   "concerns": [
+    "Mismatch with transformation/strategy background",
+    "Requires specialized reinsurance/accounting skillset"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 50,
+   "opportunity_score": 22,
+   "score": 22,
+   "fit": "no",
+   "reason": "Reinsurance/actuarial analyst work, not her domain",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213474",
+  "company": "Aquent",
+  "title": "MarTech Mobile Messaging Delivery Manager",
+  "location": "Alpharetta, GA, US (Remote)",
+  "url": "https://aquent.com/find-work/213474",
+  "posted": "2026-10-02",
+  "salary": "$50.37 / hourly as W2",
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'delivery' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Delivery/Agile ops role, not strategic transformation",
+    "Martech execution focus, narrower than her mandate",
+    "Remote is practically workable",
+    "Contract staffing role, lower ownership scope"
+   ],
+   "concerns": [
+    "Title/scope is tactical campaign delivery, not org strategy",
+    "Likely below her strategic/executive positioning"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 40,
+   "practical_fit": 55,
+   "opportunity_score": 38,
+   "score": 38,
+   "fit": "no",
+   "reason": "Delivery/Agile ops role, not strategic transformation",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213461",
+  "company": "Aquent",
+  "title": "Workday Supply Chain Management Lead",
+  "location": "PALO ALTO, CA, US (Remote)",
+  "url": "https://aquent.com/find-work/213461",
+  "posted": "2026-10-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (digital transformation, operational excellence)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Transformation/program leadership mandate fits",
+    "Remote role reduces relocation concerns",
+    "Lacks deep Workday/WMS technical specificity",
+    "Contract role via staffing firm"
+   ],
+   "concerns": [
+    "Requires specific Workday SCM/WMS technical expertise not evidenced",
+    "Contract/temporary via staffing agency",
+    "Healthcare supply chain domain is unfamiliar"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 50,
+   "interest_fit": 55,
+   "practical_fit": 60,
+   "opportunity_score": 50,
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Transformation/program leadership mandate fits",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213424",
+  "company": "Aquent",
+  "title": "Content Manager",
+  "location": "Westlake, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/213424",
+  "posted": "2026-10-01",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (change management, adoption)",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Change comms role within enterprise transformation",
+    "Remote contract fits practical constraints",
+    "Adjacent to change management strength",
+    "Staffing firm placement, financial services client"
+   ],
+   "concerns": [
+    "Title is content/comms-focused, below strategic ownership level",
+    "Contract role, likely limited scope and duration"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 58,
+   "practical_fit": 60,
+   "opportunity_score": 55,
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Change comms role within enterprise transformation",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213412",
+  "company": "Aquent",
+  "title": "Digital Marketing Program Manager",
+  "location": "Seattle, WA, US (Remote)",
+  "url": "https://aquent.com/find-work/213412",
+  "posted": "2026-09-30",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "practical_contract",
+   "confidence": "medium",
+   "reasons": [
+    "Program management scope matches skillset",
+    "Contract work fits practical constraints",
+    "Seattle remote aligns with WA preference",
+    "Digital marketing tactical focus below her level"
+   ],
+   "concerns": [
+    "Narrower tactical marketing ops vs transformation mandate",
+    "Staffing firm contract, likely limited strategic scope"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 45,
    "practical_fit": 70,
    "opportunity_score": 45,
    "score": 45,
    "fit": "maybe",
-   "reason": "M&A integration coordination aligns with core domain",
+   "reason": "Program management scope matches skillset",
+   "bg": "d192ce659668"
+  }
+ },
+ {
+  "key": "Aquent::213391",
+  "company": "Aquent",
+  "title": "Product Owner: General Analytics Use Case Delivery",
+  "location": "New York, NY, US (Remote)",
+  "url": "https://aquent.com/find-work/213391",
+  "posted": "2026-09-30",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "tier": "discovery",
+  "match_reason": "role family 'delivery' + mandate in description (operational excellence, customer experience)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Agile Product Owner role is technical delivery, not strategy",
+    "Remote is workable practically",
+    "Some CX/operational excellence language present",
+    "Requires detailed backlog/epic/user story ownership",
+    "Not a transformation or org design mandate"
+   ],
+   "concerns": [
+    "Primarily hands-on product owner/backlog work, not leadership scope",
+    "Technical data platform focus mismatched to candidate strengths",
+    "Contract staffing role with limited strategic influence"
+   ],
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 38,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "score": 35,
+   "fit": "no",
+   "reason": "Agile Product Owner role is technical delivery, not strategy",
    "bg": "d192ce659668"
   }
  },
@@ -154,52 +1127,12 @@
   }
  },
  {
-  "key": "Eliassen::dcdcc915-cf0c-11f1-96f9-024201c20d84",
-  "company": "Eliassen",
-  "title": "Senior Client-Side part-time Project Manager",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/caTbSy/senior-client-side-part-time-project-manager-programproject-management-anywhere-a1wuq000001yhbb2ay",
-  "posted": "2026-10-23",
-  "salary": "$65.00 to $75.00",
-  "employment_type": "",
-  "expires": "",
-  "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "practical_contract",
-   "confidence": "medium",
-   "reasons": [
-    "Remote contract PM work",
-    "Vendor oversight and governance mandate",
-    "Part-time staffing engagement",
-    "Some program leadership relevance"
-   ],
-   "concerns": [
-    "Part-time, narrow scope",
-    "Not strategic transformation leadership",
-    "Staffing agency contract role"
-   ],
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 50,
-   "practical_fit": 70,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Remote contract PM work",
-   "bg": "d192ce659668"
-  }
- },
- {
   "key": "Robert Half::02720-0013528460-usen",
   "company": "Robert Half",
   "title": "Project Manager - Mergers & Acquisition",
   "location": "Princeton, NJ (Remote)",
   "url": "https://www.roberthalf.com/us/en/job/princeton-nj/project-manager-mergers-acquisition/02720-0013528460-usen",
-  "posted": "2026-10-21",
+  "posted": "2026-10-26",
   "salary": "$57.00\u2013$66.00/hr",
   "employment_type": "Temp",
   "expires": "",
@@ -271,13 +1204,13 @@
   }
  },
  {
-  "key": "Robert Half::04835-0013530624-usen",
+  "key": "Robert Half::02160-9504411999-usen",
   "company": "Robert Half",
-  "title": "Project Manager/Sr. Consultant",
-  "location": "Redmond, WA (Remote)",
-  "url": "https://www.roberthalf.com/us/en/job/redmond-wa/project-managersr-consultant/04835-0013530624-usen",
-  "posted": "2026-10-23",
-  "salary": "$80.00\u2013$100.00/hr",
+  "title": "Talent Management Lead",
+  "location": "Westborough, MA (Remote)",
+  "url": "https://www.roberthalf.com/us/en/job/westborough-ma/talent-management-lead/02160-9504411999-usen",
+  "posted": "2026-10-14",
+  "salary": "$50.00\u2013$60.00/hr",
   "employment_type": "Temp",
   "expires": "",
   "tier": "core",
@@ -286,28 +1219,27 @@
    "recommendation": "stretch",
    "confidence": "medium",
    "reasons": [
-    "PM/process ownership fits some skills",
-    "Remote within Washington state acceptable",
-    "Narrow tactical Excel-reverse-engineering scope",
-    "Temp contract could provide income"
+    "Remote, talent/HR program leadership",
+    "Adjacent to org development and change management",
+    "Temp contract fits income/experience goals"
    ],
    "concerns": [
-    "Very tactical, low strategic scope",
-    "Not aligned with transformation/org strategy focus",
-    "Short-term contract, limited career leverage"
+    "HR-specialist focus, not core transformation/ops",
+    "Temp staffing agency role, limited strategic scope"
    ],
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 45,
-   "interest_fit": 35,
+   "interest_fit": 50,
    "practical_fit": 70,
-   "opportunity_score": 40,
-   "score": 40,
+   "opportunity_score": 42,
+   "score": 42,
    "fit": "maybe",
-   "reason": "PM/process ownership fits some skills",
+   "reason": "Remote, talent/HR program leadership",
    "bg": "d192ce659668"
-  }
+  },
+  "rescued": true
  }
 ]

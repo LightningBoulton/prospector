@@ -1,33 +1,29 @@
-# Prospector — 2026-10-26
+# Prospector — 2026-10-27
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**10 new roles today** · 8 still worth applying · 12 closed/removed
+**9 new roles today** · 8 still worth applying · 12 closed/removed
 
-## NEW — WORTH REVIEWING (6)
-- **Strategy & Operations Senior Manager (Security and Technology)** — Chainguard · 78/100 · remote United States - Remote · posted 2026-10-26
-  - Why: Chief-of-staff style ops/strategy role for CISO org
-  - Concern: Security/technology domain is less familiar territory
-  - https://job-boards.greenhouse.io/chainguard/jobs/4708770006
-- **Operations Manager** — TripActions · 62/100 · remote USA (Remote) · posted 2026-10-25
-  - Why: US-remote operations role
-  - Concern: Narrower scope than transformation/strategy roles
-  - https://jobicy.com/jobs/157012-operations-manager
-- **Senior Manager, Client Experience (Pre-Sales Solutions & Scoping)** — TripActions · 60/100 · remote USA (Remote) · posted 2026-10-25
-  - Why: US-remote role fits location priority
-  - Concern: Heavily sales-cycle facing, not core transformation
-  - https://jobicy.com/jobs/157017-senior-manager-client-experience-pre-sales-solutions-scoping
-- **Strategy Director (Temp)** — Instrument · 58/100 · remote USA (Remote) · posted 2026-10-26
-  - Why: Senior client-facing strategy leadership role
-  - Concern: West Coast-based requirement limits remote flexibility
-  - https://jobicy.com/jobs/157080-strategy-director-temp
-- **Senior Delivery Manager** — Imprint · 55/100 · remote USA (Remote) · posted 2026-10-26
-  - Why: Program/delivery leadership mandate fits ops background
-  - Concern: Technical solutions engineering focus may require domain depth
-  - https://jobicy.com/jobs/157201-senior-delivery-manager
-- **Senior Customer Lifecycle Marketing Manager** — Demandbase, Inc. · 42/100 · remote USA (Remote) · posted 2026-10-26
-  - Why: Customer lifecycle marketing adjacent to CX work
-  - Concern: Hands-on marketing execution role, not strategic leadership
-  - https://jobicy.com/jobs/157042-senior-customer-lifecycle-marketing-manager
+## NEW — WORTH REVIEWING (5)
+- **Manager, Customer Onboarding & Success** — Veracode · 58/100 · remote Anywhere in the World (Remote) · posted 2026-10-27
+  - Why: Customer onboarding/success leadership fits CX experience
+  - Concern: Narrower scope than transformation/strategy mandate
+  - https://weworkremotely.com/remote-jobs/veracode-manager-customer-onboarding-success
+- **Director, Project Management** — Precision Medicine Group · 58/100 · remote USA (Remote) · posted 2026-10-27
+  - Why: Program/portfolio leadership matches core domain
+  - Concern: Clinical trials domain is specialized, no biotech background
+  - https://jobicy.com/jobs/157396-director-project-management
+- **Sales Enablement Manager** — Cresta · 50/100 · remote United States (Remote) · posted 2026-10-27
+  - Why: US-remote role, strong practical fit
+  - Concern: Sales-specific enablement narrower than her core transformation focus
+  - https://job-boards.greenhouse.io/cresta/jobs/5464615008
+- **Senior Director, Product Management – Unified Communications** — Vonage · 48/100 · remote USA (Remote) · posted 2026-10-27
+  - Why: Remote US role fits location preference
+  - Concern: Requires deep technical UCaaS/product management domain expertise
+  - https://jobicy.com/jobs/157321-senior-director-product-management-unified-communications
+- **Digital Project Manager II** — Wpromote · 45/100 · remote USA (Remote) · posted 2026-10-27
+  - Why: Remote US fits location preference
+  - Concern: Title/level below her target seniority
+  - https://jobicy.com/jobs/157286-digital-project-manager-ii
 
 ## DISCOVERY / WILDCARDS (4)
 - **Manager, M&A Integration** — Salesforce · 82/100 · onsite Bellevue (+8 more) · $117,400 - $177,600 · posted 2026-10-13
@@ -64,10 +60,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: CX operations and program leadership mandate
   - Concern: Staff title may mean less org-wide scope than Director
   - https://jobs.ashbyhq.com/1password/86c4d000-e4f2-439f-be85-5018767e5cc1
-- **Chief of Staff, CCO** — Ping Identity · 85/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
-  - Why: Chief of Staff to CCO is executive-facing scope
-  - Concern: Heavy finance/ARR metrics emphasis
-  - https://weworkremotely.com/remote-jobs/ping-identity-chief-of-staff-cco
 - **Director, Travel Services** — TripActions · 85/100 · remote USA (Remote) · posted 2026-10-24
   - Why: Operational excellence & CX leadership mandate
   - Concern: Travel industry domain not prior background
@@ -80,24 +72,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Cross-functional strategic initiative leadership
   - Concern: Reports to Director, one layer below her typical scope
   - https://jobs.ashbyhq.com/1password/59c03a18-a50d-4ef0-adf5-a0e132024784
+- **Customer Enablement Manager** — Asana · 78/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
+  - Why: Change management and adoption strategy core mandate
+  - Concern: West Coast time zone restriction may exclude Utah/Mountain edge cases
+  - https://weworkremotely.com/remote-jobs/asana-customer-enablement-manager
 
 ## REMOVED SINCE PRIOR RUN (12)
-- Workday Supply Chain Management Lead — Aquent · No longer listed by its source
-- Content Manager — Aquent · No longer listed by its source
-- Digital Marketing Program Manager — Aquent · No longer listed by its source
-- MarTech Mobile Messaging Delivery Manager — Aquent · No longer listed by its source
-- Senior Product Operations Analyst — Aquent · No longer listed by its source
-- Senior Digital Project Manager- Director Level — Aquent · No longer listed by its source
-- Program Manager (III) | Executive Engagement — Aquent · No longer listed by its source
-- Head of Customer Operations — Happy Money · No longer listed by its source
-- Senior Program Manager — Juniper Square · No longer listed by its source
-- Regional General Manager, Market Performance Western US — Luna Physical Therapy · No longer listed by its source
-- HR Enablement Lead — Salesloft · No longer listed by its source
-- Principal, R&D Learning Products & Enablement — Samsara · No longer listed by its source
+- Senior Solution Consultant, Strategy Collection — Atlassian · No longer listed by its source
+- Cloud Professional Services Manager — Canonical Ltd. · No longer listed by its source
+- Manager, Professional Services Federal — Collibra · No longer listed by its source
+- Customer Onboarding Operations Manager — Dandy · No longer listed by its source
+- Senior Customer Lifecycle Marketing Manager — Demandbase, Inc. · No longer listed by its source
+- Senior Client-Side part-time Project Manager — Eliassen · No longer listed by its source
+- Director, Distribution Strategy CALA — Hilton · No longer listed by its source
+- Regional General Manager, Market Performance Central US — Luna Physical Therapy · No longer listed by its source
+- Chief of Staff, CCO — Ping Identity · No longer listed by its source
+- Senior Consultant, Patient Experience — Qualtrics · No longer listed by its source
+- Project Manager/Sr. Consultant — Robert Half · No longer listed by its source
+- Head of AI Native Operations — Supabase · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
 - Temporary errors: 1
-- Needs attention: 28
+- Needs attention: 27
   - Broken config: Amplitude, ClickHouse, Hightouch, LVT, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Doppler, Galileo (SoFi), Gemini, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Postman, Together AI, Vivint, Weave, Webflow
+  - Returning nothing for 10+ runs: Airtable, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Galileo (SoFi), Gemini, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Postman, Together AI, Vivint, Weave, Webflow
