@@ -1,35 +1,39 @@
-# Prospector — 2026-10-27
+# Prospector — 2026-10-28
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**9 new roles today** · 8 still worth applying · 12 closed/removed
+**11 new roles today** · 8 still worth applying · 12 closed/removed
 
-## NEW — WORTH REVIEWING (5)
-- **Manager, Customer Onboarding & Success** — Veracode · 58/100 · remote Anywhere in the World (Remote) · posted 2026-10-27
-  - Why: Customer onboarding/success leadership fits CX experience
-  - Concern: Narrower scope than transformation/strategy mandate
-  - https://weworkremotely.com/remote-jobs/veracode-manager-customer-onboarding-success
-- **Director, Project Management** — Precision Medicine Group · 58/100 · remote USA (Remote) · posted 2026-10-27
-  - Why: Program/portfolio leadership matches core domain
-  - Concern: Clinical trials domain is specialized, no biotech background
-  - https://jobicy.com/jobs/157396-director-project-management
-- **Sales Enablement Manager** — Cresta · 50/100 · remote United States (Remote) · posted 2026-10-27
-  - Why: US-remote role, strong practical fit
-  - Concern: Sales-specific enablement narrower than her core transformation focus
-  - https://job-boards.greenhouse.io/cresta/jobs/5464615008
-- **Senior Director, Product Management – Unified Communications** — Vonage · 48/100 · remote USA (Remote) · posted 2026-10-27
-  - Why: Remote US role fits location preference
-  - Concern: Requires deep technical UCaaS/product management domain expertise
-  - https://jobicy.com/jobs/157321-senior-director-product-management-unified-communications
-- **Digital Project Manager II** — Wpromote · 45/100 · remote USA (Remote) · posted 2026-10-27
-  - Why: Remote US fits location preference
-  - Concern: Title/level below her target seniority
-  - https://jobicy.com/jobs/157286-digital-project-manager-ii
+## NEW — WORTH REVIEWING (7)
+- **Marketing Strategy & Operations Business Partner** — Stripe · 82/100 · remote San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US · posted 2026-10-28
+  - Why: Strategic ops partnering with CMO leadership
+  - Concern: Title generic for marketing ops specifically
+  - https://stripe.com/jobs/search?gh_jid=8329719
+- **Senior Customer Experience Strategist** — ŌURA · 80/100 · remote USA (Remote) · posted 2026-10-28
+  - Why: Strong CX strategy and journey mapping mandate
+  - Concern: Reports to Director, below her current level
+  - https://jobicy.com/jobs/157476-senior-customer-experience-strategist
+- **Senior GTM Program Manager** — 1Password · 72/100 · remote Toronto, ON (Remote) · posted 2026-10-27
+  - Why: Cross-functional program leadership mandate
+  - Concern: Remote but Canadian company, visa/tax ambiguity
+  - https://jobs.ashbyhq.com/1password/89f1ecd1-0bcd-4cbf-aaf9-337e0c0568e1
+- **Chief of Staff, Office of the President** — Replit · 68/100 · remote Foster City, CA (Remote) · $200K – $300K · posted 2026-10-27
+  - Why: True Chief of Staff mandate with executive proximity
+  - Concern: Deeply technical engineering/product context may be a stretch
+  - https://jobs.ashbyhq.com/replit/a8aa0921-38e1-4015-bb95-a08b090e218e
+- **Senior Business Value Strategist** — Samsara · 58/100 · remote Remote - US · posted 2026-10-28
+  - Why: Value realization and ROI strategy aligns with transformation focus
+  - Concern: Sales-adjacent value selling, not pure ops/transformation
+  - https://www.samsara.com/company/careers/roles/8315202?gh_jid=8315202
+- **Director AD&C Project Management - Full Service Brands** — Hilton · 42/100 · remote Memphis, TN, United States (Remote) · posted 2026-10-27
+  - Why: Priority employer Hilton
+  - Concern: Construction/design PM is specialized, different skillset
+  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/228240
+- **Senior Applied AI Lead, Talent** — Netflix · 40/100 · remote United States (Remote) · $265,000–$450,000 · posted 2026-10-28
+  - Why: AI adoption mandate matches interest area
+  - Concern: Requires hands-on AI prototyping/build skills
+  - https://himalayas.app/companies/netflix/jobs/senior-applied-ai-lead-talent?utm_source=api
 
 ## DISCOVERY / WILDCARDS (4)
-- **Manager, M&A Integration** — Salesforce · 82/100 · onsite Bellevue (+8 more) · $117,400 - $177,600 · posted 2026-10-13
-  - Why: M&A integration is core domain
-  - Concern: No description to verify mandate
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Manager--M-A-Integration_JR363200
 - **Forward Deployed (Value Acceleration) Consultant** — Salesforce · 68/100 · remote Remote (+1 more) · $148,500 - $223,900 · posted 2026-10-21
   - Why: Priority employer Salesforce
   - Concern: No description to confirm mandate
@@ -42,6 +46,10 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Transformation + change communications mandate fits core domains
   - Concern: No description to confirm seniority or scope
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Transformation-Communications-Lead_JR363268
+- **Engagement Delivery Senior Manager - LSC** — Salesforce · 65/100 · remote Remote (+1 more) · posted 2026-10-16
+  - Why: Salesforce priority employer
+  - Concern: No job description to verify mandate
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Spain---Madrid/Engagement-Delivery-Senior-Manager---LSC_JR364258
 
 ## STILL WORTH APPLYING (8)
 - **Program Manager, OMX SOTO** — Chime · 90/100 · remote Remote, USA · posted 2026-10-21
@@ -52,10 +60,6 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Chief of Staff executive-facing strategic role
   - Concern: CRO/sales-ops context is adjacent, not core domain
   - https://job-boards.greenhouse.io/gitlab/jobs/8700245002
-- **Executive Operations Partner** — MX · 86/100 · onsite Lehi, Utah, United States · posted 2026-10-21
-  - Why: Utah-local role, strong practical fit
-  - Concern: Title generic, scope depth unclear
-  - https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4460235009
 - **Staff Program Manager, CX Operations & Programs** — 1Password · 85/100 · remote Remote (United States | Canada) · posted 2026-10-21
   - Why: CX operations and program leadership mandate
   - Concern: Staff title may mean less org-wide scope than Director
@@ -76,24 +80,28 @@ _Lisa — Transformation / Operations / Experience Leadership_
   - Why: Change management and adoption strategy core mandate
   - Concern: West Coast time zone restriction may exclude Utah/Mountain edge cases
   - https://weworkremotely.com/remote-jobs/asana-customer-enablement-manager
+- **Program Manager, Commercial Solutions** — Stripe · 78/100 · remote US-Remote · posted 2026-10-22
+  - Why: US-remote matches top location preference
+  - Concern: Sales/revenue-ops focus narrower than typical enterprise transformation roles
+  - https://stripe.com/jobs/search?gh_jid=8279867
 
 ## REMOVED SINCE PRIOR RUN (12)
-- Senior Solution Consultant, Strategy Collection — Atlassian · No longer listed by its source
-- Cloud Professional Services Manager — Canonical Ltd. · No longer listed by its source
-- Manager, Professional Services Federal — Collibra · No longer listed by its source
-- Customer Onboarding Operations Manager — Dandy · No longer listed by its source
-- Senior Customer Lifecycle Marketing Manager — Demandbase, Inc. · No longer listed by its source
-- Senior Client-Side part-time Project Manager — Eliassen · No longer listed by its source
-- Director, Distribution Strategy CALA — Hilton · No longer listed by its source
-- Regional General Manager, Market Performance Central US — Luna Physical Therapy · No longer listed by its source
-- Chief of Staff, CCO — Ping Identity · No longer listed by its source
-- Senior Consultant, Patient Experience — Qualtrics · No longer listed by its source
-- Project Manager/Sr. Consultant — Robert Half · No longer listed by its source
-- Head of AI Native Operations — Supabase · No longer listed by its source
+- Program Manager — Aquent · No longer listed by its source
+- Workday Supply Chain Management Lead — Aquent · No longer listed by its source
+- Content Manager — Aquent · No longer listed by its source
+- Digital Marketing Program Manager — Aquent · No longer listed by its source
+- MarTech Mobile Messaging Delivery Manager — Aquent · No longer listed by its source
+- Senior Product Operations Analyst — Aquent · No longer listed by its source
+- Senior Digital Project Manager- Director Level — Aquent · No longer listed by its source
+- Program Manager (III) | Executive Engagement — Aquent · No longer listed by its source
+- Implementation Manager — Clover Health · No longer listed by its source
+- Staff Technical Program Manager, Consumer — Coinbase · No longer listed by its source
+- HR Business Partner — Cordance · No longer listed by its source
+- Staff Renewals Operations Manager — GitLab · No longer listed by its source
 
 ## SOURCE HEALTH
 - Sources checked: 129/137 successful
 - Temporary errors: 1
-- Needs attention: 27
+- Needs attention: 26
   - Broken config: Amplitude, ClickHouse, Hightouch, LVT, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Airtable, Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Galileo (SoFi), Gemini, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Postman, Together AI, Vivint, Weave, Webflow
+  - Returning nothing for 10+ runs: Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Galileo (SoFi), Gemini, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Postman, Together AI, Vivint, Weave, Webflow

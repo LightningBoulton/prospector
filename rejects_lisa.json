@@ -2,1255 +2,6 @@
  "_comment": "Roles that were fetched but filtered out, recorded by the daily run for the weekly audit (audit.py). Leadership-shaped titles only. Keeps the last 10 days. Safe to delete \u2014 it is diagnostic, not state.",
  "days": [
   {
-   "date": "2026-10-18",
-   "lanes": {
-    "\u2b50 Priority employers": [
-     {
-      "company": "Adobe",
-      "title": "Enterprise Technical Account Manager",
-      "location": "Remote (+1 more)",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "Adobe",
-      "title": "Group Manager, Product Marketing - Creative Cloud Portfolio and Monetization",
-      "location": "Remote (+4 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Program Manager (IT)",
-      "location": "Seattle (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Sr. Manager Risk & Controls",
-      "location": "Seattle (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Senior Technical Account Manager",
-      "location": "Seattle (+1 more)",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "Adobe",
-      "title": "Principal Scientist - Data Pipeline Engineer",
-      "location": "Seattle (+2 more)",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Applied AI Architect (Principal/Lead)",
-      "location": "Remote (+61 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Data Analytics Lead",
-      "location": "Remote (+5 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Human-Centered Change Senior Manager",
-      "location": "Remote (+6 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Senior Experience Architect (Design Consultant)",
-      "location": "Remote (+8 more)",
-      "reason": "missed match group [1]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Engagement Delivery Senior Manager - LSC",
-      "location": "Remote (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Portfolio Delivery Leader - Public Sector/ PubSec",
-      "location": "Remote (+2 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Event Manager",
-      "location": "Remote (+5 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Customer Success Manager - State East & Local",
-      "location": "Remote (+10 more)",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Security Practices Director",
-      "location": "Remote (+13 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Life Sciences Program Manager/Program Executive",
-      "location": "Remote (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Lead, Account SE -  Manufacturing Industry",
-      "location": "Remote (+5 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Strategic Partner Account Sr. Manager",
-      "location": "Remote (+2 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Lead, Specialist Solution Engineer Marketing Cloud",
-      "location": "Remote (+1 more)",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Cyber Defense & Executive Engagement Lead",
-      "location": "Remote (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Strategic Partner Account Sr. Manager",
-      "location": "Remote (+2 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Sales Director, Non-Profit: Analytics",
-      "location": "Remote (+3 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Engagement Delivery Director",
-      "location": "Mexico - Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Engagement Delivery Manager",
-      "location": "Mexico - Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Engagement Delivery Senior Manager",
-      "location": "Mexico - Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Manager/Sr. Manager - Product Marketing, Missionforce (Public Sector)",
-      "location": "Remote (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Lead Product Designer - Qualified, AI Products",
-      "location": "Washington - Seattle",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Senior Product Marketing Manager, Sales Enablement (Qualified)",
-      "location": "Remote (+3 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Missionforce - Senior Product Manager, Agentforce Public Sector",
-      "location": "Remote (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Senior Product Marketing Manager, GTM (Qualified)",
-      "location": "Remote (+3 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Customer Success Manager - Global Public Sector",
-      "location": "Remote (+2 more)",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Principal Partner Account Manager",
-      "location": "Remote (+4 more)",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Services Sales Solutions Architect Senior Director",
-      "location": "Virginia - Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Life Sciences Product Liaison Director",
-      "location": "Remote (+4 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Health & Life Sciences Program Manager",
-      "location": "Remote (+4 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Customer Success Manager - Global Public Sector (State, Local Government and Education)",
-      "location": "Remote (+6 more)",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Lead Client Solution Engineer",
-      "location": "Remote (+3 more)",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Principal, Technical Architect",
-      "location": "Remote (+9 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Customer Success Manager, Senior Manager",
-      "location": "Remote (+1 more)",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Agentic Customer Success Manager, Senior Manager",
-      "location": "Remote (+8 more)",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Director, AgentExchange Security & Labs",
-      "location": "Remote (+3 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Principal Solution Engineer, Global Private Equity & Startups Practice",
-      "location": "Remote (+7 more)",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Customer Success Manager \u2013 Digital (Marketing & Commerce) Clouds",
-      "location": "Remote (+4 more)",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Forward Deployed Consultant / Senior Consultant (Value Acceleration)",
-      "location": "Remote (+6 more)",
-      "reason": "missed match group [1]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Engagement Delivery, Senior Manager- Missionforce (Cleared)",
-      "location": "Virginia - Washington DC Metro - Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Director, Business Value Services",
-      "location": "Remote (+3 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Senior Director, BVS, Customer Financial Officer",
-      "location": "Remote (+7 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Engagement Delivery Director- HLS- Health & Life Sciences",
-      "location": "Remote (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Senior / Lead / Principal Software Engineer - Foundations Team (Infrastructure/Platform)",
-      "location": "Remote (+2 more)",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Portfolio Leader (Manager/Director Levels)",
-      "location": "Remote (+27 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Accounting Manager",
-      "location": "Remote (+1 more)",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Sr. Technical Architect / Technical Architect Director - PACE (Products, Auto, Consumer, Or Energy Industry)",
-      "location": "Remote (+35 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Distributed Systems Software Engineer - Public Cloud (Mid/Senior/Lead/Principal)",
-      "location": "Bellevue (+2 more)",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Customer Success Manager, Tableau - Public Sector",
-      "location": "Bellevue (+6 more)",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Security GRC Lead, Governance Engineering",
-      "location": "Bellevue (+2 more)",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Principal Software Engineer -  PMTS",
-      "location": "Washington - Bellevue",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Senior Software Engineering Manager - Full Stack (Slack)",
-      "location": "Bellevue (+4 more)",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Director, Product Marketing GTM (Service Cloud)",
-      "location": "Bellevue (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Lead Machine Learning Engineer",
-      "location": "Bellevue (+1 more)",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Salesforce",
-      "title": "Critical Incident Center, Manager",
-      "location": "Bellevue (+3 more)",
-      "reason": "missed match group [2]"
-     }
-    ],
-    "\ud83c\udf0e US-Remote": [
-     {
-      "company": "GitLab",
-      "title": "Associate Renewals Manager",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Director, Analytics Engineering",
-      "location": "Remote, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Director, FP&A",
-      "location": "Remote, United States",
-      "reason": "excluded by 'fp&a'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Director of Engineering, Database Excellence",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Engineering Manager, Dedicated Infrastructure",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Global Sales Director of SMB, New Business",
-      "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Lead Legal Counsel, Corporate",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Manager, Customer Success Engineering",
-      "location": "Remote, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Manager, Support Engineering (AMER)",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "GitLab",
-      "title": "Pipeline Programs Manager",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Principal Product Manager, Orbit",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Principal Product Marketing Manager, Competitive",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Regional Sales Director",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Regional Sales Director, Enterprise - Southeast",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Regional Sales Director, Financial Services",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Regional Sales Director, National Security Group",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Director, Global SME Solutions Architecture",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Product Manager, Billing Engine & Platforms Monetization",
-      "location": "Remote, United Kingdom; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Senior Product Manager, CRM & GTM Systems",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Social Impact Manager",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Sr. Manager, Solutions Architect SME",
-      "location": "Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Staff Product Manager, Agentic Test Intelligence",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "GitLab",
-      "title": "Staff Product Manager, AI Software Factory PLG",
-      "location": "Remote, Canada; Remote, United States",
-      "reason": "excluded by 'software'"
-     },
-     {
-      "company": "Cloudflare",
-      "title": "Director, Growth Sales (AI & Digital Natives)",
-      "location": "Distributed",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cloudflare",
-      "title": "Principal Campaign Manager",
-      "location": "Distributed; Hybrid",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cloudflare",
-      "title": "Senior GTM Analytics Manager",
-      "location": "Distributed; Hybrid",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cloudflare",
-      "title": "Technical Product Marketing Manager",
-      "location": "Distributed",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Capacity Planning Lead",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Corporate Development Senior Manager",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Group Product Manager, Customer Engagement & Experience",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Head of KYC",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Manager, SEC Reporting",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Principal Recruiter",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Product Manager II, Advanced Trade",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Product Manager II, DeFi Borrow",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Senior Engineering Manager, AI Foundations",
-      "location": "Remote - USA",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Senior Manager, Digital Securities & Market Structure Policy",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Senior Product Marketing Manager, Infrastructure",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Senior Strategic Program Lead, GFCO",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Social Media Manager, Predictions",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Coinbase",
-      "title": "Staff Technical Program Manager, Consumer",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Engineering Manager, Knowledge Graph Platform",
-      "location": "Remote - United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Reddit",
-      "title": "Frontend Engineer, Ads Campaign Manager",
-      "location": "Remote - United States",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Reddit",
-      "title": "Senior Product Manager, Notifications",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Staff Product Manager, Community Builders",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Staff Product Manager, Moderation",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Staff Technical Program Manager, Infrastructure",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Reddit",
-      "title": "Strategic Finance Senior Manager",
-      "location": "Remote - United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Datadog",
-      "title": "Manager II, Developer Advocacy",
-      "location": "California, USA, Remote; New York, USA, Remote; Washington, USA, Remote",
-      "reason": "excluded by 'developer'"
-     },
-     {
-      "company": "Datadog",
-      "title": "Regional Manager, Sales Engineering - Majors (West)",
-      "location": "California, USA, Remote; Washington, USA, Remote",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Datadog",
-      "title": "Regional Vice President, Enterprise Sales, Public Sector - US State and Local",
-      "location": "Boston, Massachusetts, USA; Chicago, Illinois, USA; New York, New York, USA; North Carolina, USA, Remote; San Francisco, California, USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Carrier Deal Desk Manager",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Principal Presales Engineer",
-      "location": "Remote - US",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Twilio",
-      "title": "Principal Product Manager",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Senior Financial Manager, Partnerships",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Senior Manager, Accounting",
-      "location": "Remote - Mexico",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Twilio",
-      "title": "Senior Partner Marketing Manager",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Twilio",
-      "title": "Senior Product Manager",
-      "location": "Remote - US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Grafana Labs",
-      "title": "Regional Sales Director, Commercial, Acquisition | West | Remote",
-      "location": "United States (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Mercury",
-      "title": "Creative Director - Brand Narrative",
-      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
-      "reason": "missed match group [2]"
-     }
-    ],
-    "\ud83e\uddd1\u200d\ud83d\udcbc Contract / Staffing": [
-     {
-      "company": "Eliassen",
-      "title": "Investment Accounting Senior Manager or Manager",
-      "location": "Remote",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Investment Accounting Manager",
-      "location": "Remote",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Workday Time & Absence Product Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Principal Business Systems Analyst",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Senior Technical Project/Program Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Consultant, Software Engineering Power BI Architecture Project",
-      "location": "Remote",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Eliassen",
-      "title": "IT Audit Manager",
-      "location": "Remote",
-      "reason": "excluded by 'audit'"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Senior Manager - Research and Development Accounting",
-      "location": "Remote",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Eliassen",
-      "title": "Dynamics Development Lead",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Addison Group",
-      "title": "MGA Systems Project Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Addison Group",
-      "title": "Business Intelligence Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Addison Group",
-      "title": "Remote Communications & Content Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Addison Group",
-      "title": "Remote Marketing Manager",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Office Manager",
-      "location": "Draper, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "VP/Director of Finance",
-      "location": "River Falls, WI (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Reinsurance Accounting Consultant",
-      "location": "Indianapolis, IN (Remote)",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Robert Half",
-      "title": "AI Business Analyst/Consultant",
-      "location": "Edison, NJ (Remote)",
-      "reason": "missed match group [1]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Technical Project Manager (Agile, Scrum) III (Contractor)",
-      "location": "Philadelphia, PA (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "FP&A Manager",
-      "location": "Washington, DC (Remote)",
-      "reason": "excluded by 'fp&a'"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Growth Marketing Manager",
-      "location": "Nashville, TN (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Director of Accounting",
-      "location": "Chandler, AZ (Remote)",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Payer Contracting Lead",
-      "location": "Emeryville, CA (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Tax Manager",
-      "location": "Los Angeles, CA (Remote)",
-      "reason": "excluded by 'tax'"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Program Manager",
-      "location": "Culver City, CA (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "Sr. Art Director",
-      "location": "Atlanta, GA (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Robert Half",
-      "title": "HRIS Manager",
-      "location": "Westborough, MA (Remote)",
-      "reason": "missed match group [2]"
-     }
-    ],
-    "\ud83d\udccd Local \u2014 Silicon Slopes": [
-     {
-      "company": "Filevine",
-      "title": "Director, Communications",
-      "location": "Salt Lake City, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Filevine",
-      "title": "SVP, Channel Partnerships and Strategic Alliances",
-      "location": "Salt Lake City, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Filevine",
-      "title": "VP, Performance Marketing",
-      "location": "Salt Lake City, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Qualtrics",
-      "title": "GTM Enablement Program Manager - Solutions & Product",
-      "location": "Provo, Utah, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Qualtrics",
-      "title": "State and Local Government Sales Manager",
-      "location": "United States (Remote)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "DigiCert",
-      "title": "Senior Manager, Revenue and Billing Assurance",
-      "location": "Lehi, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Lead Software Engineer (API/Agentic)",
-      "location": "South Jordan, UT, United States",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Cricut",
-      "title": "Associate Global Product Manager - Hardware",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Senior Global Product Manager- Hardware Machines",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "AI Engineering Lead/Manager",
-      "location": "South Jordan, UT, United States",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "Cricut",
-      "title": "Lead Agentic Software Engineer, Connected Devices",
-      "location": "South Jordan, UT, United States",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Cricut",
-      "title": "Lead Agentic Software Engineer",
-      "location": "South Jordan, UT, United States",
-      "reason": "excluded by 'engineer'"
-     },
-     {
-      "company": "Cricut",
-      "title": "Sr. Global Product Manager",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Senior Product Manager, Creative Labs",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Hardware Development Project Manager",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Cricut",
-      "title": "Design Lead \u2013 Parametric Models",
-      "location": "South Jordan, UT, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Entrata",
-      "title": "Carrier Relations Manager",
-      "location": "Lehi, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Entrata",
-      "title": "Senior Director of Cyber Defense",
-      "location": "Lehi, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Awardco",
-      "title": "VP, Marketing",
-      "location": "Lindon, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Senior Manager, Employee Communications & Employer Branding",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Senior Director of Information Security (CISO)",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Sr. Director, Revenue Marketing \u2014 North America",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pluralsight",
-      "title": "Director, Growth & Digital Marketing",
-      "location": "Remote - USA",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "MX",
-      "title": "Creative Director",
-      "location": "Lehi, Utah, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "BILL",
-      "title": "Product Manager - Risk Experiences",
-      "location": "Draper, Utah, United States; San Jose, California, United States",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Recursion",
-      "title": "Executive Director, Chemical Biology/Drug Design",
-      "location": "Salt Lake City, Utah",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Canopy",
-      "title": "Customer Support Team Lead",
-      "location": "Draper, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Canopy",
-      "title": "Demand Generation Manager - Paid Social",
-      "location": "Draper, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Canopy",
-      "title": "Manager of Sales Enablement",
-      "location": "Draper",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Canopy",
-      "title": "Senior Product Manager",
-      "location": "Draper, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Adobe",
-      "title": "Senior Product Manager,  Chief Accounting Office",
-      "location": "Lehi (+1 more)",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Adobe",
-      "title": "Program Manager (IT)",
-      "location": "Lehi (+1 more)",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "BambooHR",
-      "title": "Agentic Engineering Manager",
-      "location": "Utah | Hybrid",
-      "reason": "excluded by 'engineering'"
-     },
-     {
-      "company": "BambooHR",
-      "title": "Executive Assistant to the Chief Customer Experience Officer",
-      "location": "Utah | On-Site",
-      "reason": "excluded by 'executive assistant'"
-     },
-     {
-      "company": "BambooHR",
-      "title": "Executive Assistant to the Chief Marketing Officer",
-      "location": "Utah | On-Site",
-      "reason": "excluded by 'executive assistant'"
-     },
-     {
-      "company": "BambooHR",
-      "title": "Manager, Outbound",
-      "location": "Utah | Hybrid",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "BambooHR",
-      "title": "Sr. Program Manager",
-      "location": "Utah | Hybrid",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Ancestry",
-      "title": "Sr. Director, Information Security",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Ancestry",
-      "title": "Product Manager",
-      "location": "Draper, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Ancestry",
-      "title": "Director of Product Design, Engage",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pattern",
-      "title": "Community Manager - TikTok Shop",
-      "location": "Lehi, UT, US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pattern",
-      "title": "Director of Beauty",
-      "location": "Lehi, UT, US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pattern",
-      "title": "Manager, DTC Business",
-      "location": "Lehi, UT, US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Pattern",
-      "title": "Manager, Organic Growth & Conversion",
-      "location": "Lehi, UT, US",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "NICE",
-      "title": "Accounting Manager",
-      "location": "USA - Sandy, UT",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "NICE",
-      "title": "Lead Technical Account Manager",
-      "location": "USA - Remote",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "NICE",
-      "title": "Lead Technical Account Manager",
-      "location": "USA - Remote",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "NICE",
-      "title": "Partner Sales Manager, Actimize",
-      "location": "USA - Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "NICE",
-      "title": "Principal Technical Account Manager",
-      "location": "USA - Remote",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "NICE",
-      "title": "Senior Customer Success Manager",
-      "location": "USA - Remote",
-      "reason": "excluded by 'customer success manager'"
-     },
-     {
-      "company": "NICE",
-      "title": "Senior Product Manager, Actimize",
-      "location": "USA - Atlanta, GA; USA - Hoboken, NJ; USA - Sandy, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "NICE",
-      "title": "Senior Technical Account Manager",
-      "location": "USA - Remote",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "NICE",
-      "title": "Senior Technical Account Manager",
-      "location": "USA - Remote",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "NICE",
-      "title": "Senior Technical Account Manager",
-      "location": "USA - Remote",
-      "reason": "excluded by 'account manager'"
-     },
-     {
-      "company": "Kelso Industries",
-      "title": "Corporate Assistant Quality Manager  (CWI) - Remote",
-      "location": "Abernathy, TX; Amarillo, TX; Atlanta, GA; Austin, TX; Dallas, TX; Dallas-Fort Worth, TX; El Paso, TX; Fort Worth, TX; Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Kelso Industries",
-      "title": "Director of Accounting",
-      "location": "Draper, UT",
-      "reason": "excluded by 'accounting'"
-     },
-     {
-      "company": "Kelso Industries",
-      "title": "Director of Tax",
-      "location": "Draper, UT",
-      "reason": "excluded by 'tax'"
-     },
-     {
-      "company": "Kelso Industries",
-      "title": "Project Manager (Onsite-HVAC, Plumbing, Mechanical) - Huntersville, NC",
-      "location": "Remote",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Western Governors University",
-      "title": "Senior Manager, Content & Social Media",
-      "location": "Salt Lake City, UT",
-      "reason": "missed match group [2]"
-     },
-     {
-      "company": "Western Governors University",
-      "title": "Project Manager II - Technical",
-      "location": "Salt Lake City, UT",
-      "reason": "missed match group [2]"
-     }
-    ]
-   }
-  },
-  {
    "date": "2026-10-19",
    "lanes": {
     "\u2b50 Priority employers": [
@@ -14089,6 +12840,1237 @@
       "title": "Business Solutions Consultant II - Associate",
       "location": "Salt Lake City, Utah, United States",
       "reason": "missed match group [1]"
+     }
+    ]
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "lanes": {
+    "\u2b50 Priority employers": [
+     {
+      "company": "Adobe",
+      "title": "Sr. Director, Enterprise Sales",
+      "location": "Remote (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Sr. Director, Enterprise Sales",
+      "location": "Remote (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Sr. Director, Enterprise Sales",
+      "location": "Remote (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Global\u00a0Alliance Director - WPP",
+      "location": "Remote (+2 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Sr. Manager Risk & Controls",
+      "location": "Seattle (+1 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Adobe",
+      "title": "Senior Technical Account Manager",
+      "location": "Seattle (+1 more)",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Adobe",
+      "title": "Principal Scientist - Data Pipeline Engineer",
+      "location": "Seattle (+2 more)",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Adobe",
+      "title": "Director of Engineering, Real Time Experience (RTX)",
+      "location": "Seattle (+2 more)",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Manager, Accounting",
+      "location": "Remote (+2 more)",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior Manager, Global Consulting Partners - Partner Account Manager",
+      "location": "Virginia - Washington DC Metro - Remote",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Missionforce - Senior Product Manager, Agentforce Public Sector",
+      "location": "Remote (+2 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Salesforce Senior/ Director Technical Architect, FINS/LSC",
+      "location": "Remote (+11 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Life Sciences Program Manager/Program Executive",
+      "location": "Remote (+2 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Partner Account Sales Manager - Retail",
+      "location": "Remote (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Engagement Delivery Director - HLS - Health & Life Sciences",
+      "location": "Remote (+7 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Lead, Specialist Solution Engineer Marketing Cloud",
+      "location": "Remote (+1 more)",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Forward Deployed (Value Acceleration) Consultant",
+      "location": "Remote (+4 more)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Account SE, Lead",
+      "location": "Illinois - Chicago Metro - Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Customer Success Manager, Director - Marketing Cloud",
+      "location": "Remote (+4 more)",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Customer Success Manager - Marketing Cloud",
+      "location": "Remote (+4 more)",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Customer Success Manager \u2013 Digital (Marketing & Commerce) Clouds",
+      "location": "Remote (+4 more)",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Customer Success Manager",
+      "location": "Remote (+1 more)",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Lead Solution Engineer, ECS, Public Sector",
+      "location": "Remote (+1 more)",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior Experience Design Lead",
+      "location": "Remote (+13 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Principal Partner Account Manager",
+      "location": "Remote (+4 more)",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior Technical Architect / Technical Architect Director - Data Foundation Delivery",
+      "location": "Remote (+7 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Engagement Delivery Director",
+      "location": "Remote (+1 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Customer Success Manager, Senior Manager - Core Clouds (Sales & Service)",
+      "location": "Remote (+3 more)",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Principal Architect",
+      "location": "Texas - Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Renewals / Senior Renewals Manager",
+      "location": "Remote (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Applied AI Architect (Principal/Lead)",
+      "location": "Remote (+61 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Engagement Delivery Senior Manager - LSC",
+      "location": "Remote (+1 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Customer Success Manager - State East & Local",
+      "location": "Remote (+10 more)",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Lead, Account SE -  Manufacturing Industry",
+      "location": "Remote (+5 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Cyber Defense & Executive Engagement Lead",
+      "location": "Remote (+1 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Strategic Partner Account Sr. Manager",
+      "location": "Remote (+2 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Sales Director, Non-Profit: Analytics",
+      "location": "Remote (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Engagement Delivery Director",
+      "location": "Mexico - Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Engagement Delivery Manager",
+      "location": "Mexico - Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Engagement Delivery Senior Manager",
+      "location": "Mexico - Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Manager/Sr. Manager - Product Marketing, Missionforce (Public Sector)",
+      "location": "Remote (+1 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Lead Product Designer - Qualified, AI Products",
+      "location": "Washington - Seattle",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior Product Marketing Manager, Sales Enablement (Qualified)",
+      "location": "Remote (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior Product Marketing Manager, GTM (Qualified)",
+      "location": "Remote (+3 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Life Sciences Product Liaison Director",
+      "location": "Remote (+4 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Principal, Technical Architect",
+      "location": "Remote (+9 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Security GRC Lead, Forward Deployed Assurance",
+      "location": "Bellevue (+2 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Product Security Lead - Core Platform Security",
+      "location": "Bellevue (+1 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior Director, Software Engineering",
+      "location": "Bellevue (+1 more)",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Distributed Systems Software Engineer, GovCloud - Senior/Lead",
+      "location": "Bellevue (+3 more)",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Lead Data Scientist \u2013 Cyber Security Operations Center",
+      "location": "Bellevue (+2 more)",
+      "reason": "excluded by 'data scientist'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior/Lead Engineer, Performance Engineering",
+      "location": "Bellevue (+1 more)",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Staff Technical Program Manager, Growth",
+      "location": "Bellevue (+5 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Full Stack Engineer - Senior/Lead - Office of the CEO",
+      "location": "Bellevue (+4 more)",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Customer Risk Manager",
+      "location": "Bellevue (+5 more)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior Engineering Manager, AgentExchange Go To Market App",
+      "location": "Bellevue (+2 more)",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Distributed Systems Software Engineer - Public Cloud (Mid/Senior/Lead/Principal)",
+      "location": "Bellevue (+2 more)",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Customer Success Manager, Tableau - Public Sector",
+      "location": "Bellevue (+6 more)",
+      "reason": "excluded by 'customer success manager'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Principal Software Engineer -  PMTS",
+      "location": "Washington - Bellevue",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Salesforce",
+      "title": "Senior Software Engineering Manager - Full Stack (Slack)",
+      "location": "Bellevue (+4 more)",
+      "reason": "excluded by 'engineering'"
+     }
+    ],
+    "\ud83c\udf0e US-Remote": [
+     {
+      "company": "GitLab",
+      "title": "Director, Analytics Engineering",
+      "location": "Remote, United States",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "GitLab",
+      "title": "Director, FP&A",
+      "location": "Remote, United States",
+      "reason": "excluded by 'fp&a'"
+     },
+     {
+      "company": "GitLab",
+      "title": "Engineering Manager, Tenant Scale: Gitaly",
+      "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "GitLab",
+      "title": "Lead Investor Relations",
+      "location": "Remote, Canada; Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Lead Legal Counsel, Corporate",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Manager, Customer Success Engineering",
+      "location": "Remote, United States",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "GitLab",
+      "title": "Manager, Support Engineering (AMER)",
+      "location": "Remote, Canada; Remote, United States",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "GitLab",
+      "title": "Principal Engineer, Monetization Engineering",
+      "location": "Remote, Canada; Remote, United States",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "GitLab",
+      "title": "Regional Sales Director, Enterprise - Southeast",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Senior Director, Dedicated Infrastructure & Platforms",
+      "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Senior Director, Global SME Solutions Architecture",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Senior Partner Solutions Manager, Strategic Partnerships",
+      "location": "Remote, Canada; Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Senior Product Manager, Switchboard",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Sr. Manager, Solutions Architect - SMB",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Sr. Manager, Solutions Architect SME",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Staff Global Partner Programs Manager",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Staff Product Manager, Agentic Planning",
+      "location": "Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "GitLab",
+      "title": "Staff Product Manager, Agentic Test Intelligence",
+      "location": "Remote, Canada; Remote, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cloudflare",
+      "title": "Program Lead Strategic CDN Accounts GTM",
+      "location": "Distributed",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cloudflare",
+      "title": "Senior GTM Analytics Manager",
+      "location": "Distributed; Hybrid",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cloudflare",
+      "title": "Senior Manager, Demand Marketing",
+      "location": "Distributed",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cloudflare",
+      "title": "Senior Partner Account Manager, Southeast & MidAtlantic Region",
+      "location": "Distributed",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Manager, SEC Reporting",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Principal Recruiter",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Product Manager II, Wallets and DeFi",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Engineering Manager, AI Foundations",
+      "location": "Remote - USA",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Enterprise Product Manager, FP&A",
+      "location": "Remote - USA",
+      "reason": "excluded by 'fp&a'"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Manager, Digital Securities & Market Structure Policy",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Product Marketing Manager, Infrastructure",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Senior Strategic Program Lead, GFCO",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Social Media Manager, Predictions",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Coinbase",
+      "title": "Sr Manager, Infrastructure Sales",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Engineering Manager, Knowledge Graph Platform",
+      "location": "Remote - United States",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Reddit",
+      "title": "Lead Forward Deployed Engineer (AI Enablement)",
+      "location": "Remote - United States",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Reddit",
+      "title": "Machine Learning Engineering Manager -  Core Ads Ranking",
+      "location": "Remote - United States",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Reddit",
+      "title": "Principal Data Scientist, User Ecosystem",
+      "location": "Remote - United States",
+      "reason": "excluded by 'data scientist'"
+     },
+     {
+      "company": "Reddit",
+      "title": "Senior Director of Design, Search & Feeds",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Senior Product Business Development Manager",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Staff Community Product Marketing Manager, Trust & Safety",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Staff Product Manager, Community Builders",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Staff Product Manager, Moderation",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Staff Product Manager, Youth",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Reddit",
+      "title": "Staff Technical Program Manager, Infrastructure",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Datadog",
+      "title": "Manager II, Developer Advocacy",
+      "location": "California, USA, Remote; New York, USA, Remote; Washington, USA, Remote",
+      "reason": "excluded by 'developer'"
+     },
+     {
+      "company": "Datadog",
+      "title": "Regional Manager, Sales Engineering - AI Accounts",
+      "location": "California, USA, Remote; Illinois, USA, Remote; Massachusetts, USA, Remote; New York, USA, Remote",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "Twilio",
+      "title": "Americas Sales Business Partner Manager",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Partner Program Manager",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Principal Pricing and Monetization Manager",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Senior Director, Developer Relations",
+      "location": "Remote - US",
+      "reason": "excluded by 'developer'"
+     },
+     {
+      "company": "Twilio",
+      "title": "Senior Manager, Accounting",
+      "location": "Remote - Mexico",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "Twilio",
+      "title": "Senior Product Manager",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Twilio",
+      "title": "Staff, Product Manager - Identity",
+      "location": "Remote - US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Vercel",
+      "title": "Product Manager, Storage",
+      "location": "Remote - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Netsuite Systems Manager | EST United States | Remote",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Principal Technical Marketing Engineer | US | Remote",
+      "location": "United States (Remote)",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Senior Director, Corporate FP&A | United States | Remote",
+      "location": "United States (Remote)",
+      "reason": "excluded by 'fp&a'"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Senior Product Marketing Manager  | US | Remote",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Grafana Labs",
+      "title": "Staff Product Manager, Enterprise Deployment Solutions |  USA | Remote",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Mercury",
+      "title": "Business Continuity Management Lead",
+      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Mercury",
+      "title": "Creative Director - Brand Narrative",
+      "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+      "reason": "missed match group [2]"
+     }
+    ],
+    "\ud83e\uddd1\u200d\ud83d\udcbc Contract / Staffing": [
+     {
+      "company": "Eliassen",
+      "title": "Scrum Master / Project Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Consultant, Medical Monitor (MD), Metabolic Phase III Study",
+      "location": "Remote",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Eliassen",
+      "title": "Technical Program Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "VP/Director of Finance",
+      "location": "River Falls, WI (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "AI Business Analyst/Consultant",
+      "location": "Edison, NJ (Remote)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Reinsurance Accounting Consultant",
+      "location": "Indianapolis, IN (Remote)",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "ERP/CRM Consultant",
+      "location": "Brookfield, CT (Remote)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Payroll Manager/Director",
+      "location": "Marlborough, MA (Remote)",
+      "reason": "excluded by 'payroll'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "FP&A Manager",
+      "location": "Glen Rock, NJ (Remote)",
+      "reason": "excluded by 'fp&a'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Accounting Manager/Supervisor",
+      "location": "Knoxville, TN (Remote)",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "HR Systems Consultant - Exempt",
+      "location": "Danvers, MA (Remote)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Fixed Asset Manager",
+      "location": "Joplin, MO (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Treasury Manager",
+      "location": "Scottsdale, AZ (Remote)",
+      "reason": "excluded by 'treasury'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Compensation Manager",
+      "location": "Mesa, AZ (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Payer Contracting Lead",
+      "location": "Emeryville, CA (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Program Manager",
+      "location": "Culver City, CA (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Senior Linux /GPU Infrastructure Implementation Consultant",
+      "location": "Houston, TX (Remote)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Tax Manager",
+      "location": "Los Angeles, CA (Remote)",
+      "reason": "excluded by 'tax'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Executive Finance & Business Intelligence Consultant",
+      "location": "Tempe, AZ (Remote)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Director of Accounting",
+      "location": "Chandler, AZ (Remote)",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "IT Audit Manager - Global Markets",
+      "location": "New York, NY (Remote)",
+      "reason": "excluded by 'audit'"
+     },
+     {
+      "company": "Robert Half",
+      "title": "VP/Director of Finance",
+      "location": "San Ramon, CA (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Robert Half",
+      "title": "Accounting Manager",
+      "location": "Atlanta, GA (Remote)",
+      "reason": "excluded by 'accounting'"
+     }
+    ],
+    "\ud83d\udccd Local \u2014 Silicon Slopes": [
+     {
+      "company": "Filevine",
+      "title": "Director, Communications",
+      "location": "Salt Lake City, Utah",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Filevine",
+      "title": "SVP, Channel Partnerships and Strategic Alliances",
+      "location": "Salt Lake City, Utah",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Qualtrics",
+      "title": "Federal Sales Manager",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Qualtrics",
+      "title": "Front Line Sales Leader - Life Sciences - Corporate",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Qualtrics",
+      "title": "GTM Enablement Program Manager - Solutions & Product",
+      "location": "Provo, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Qualtrics",
+      "title": "Managing Consultant, Safety and Reliability",
+      "location": "United States (Remote)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Qualtrics",
+      "title": "Senior Consultant, Safety and Reliability",
+      "location": "United States (Remote)",
+      "reason": "missed match group [1]"
+     },
+     {
+      "company": "Qualtrics",
+      "title": "State and Local Government Sales Manager",
+      "location": "United States (Remote)",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "DigiCert",
+      "title": "Senior Manager, Revenue and Billing Assurance",
+      "location": "Lehi, Utah",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Cricut",
+      "title": "Lead Software Engineer (API/Agentic)",
+      "location": "South Jordan, UT, United States",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Cricut",
+      "title": "Associate Global Product Manager - Hardware",
+      "location": "South Jordan, UT, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Lucid Software",
+      "title": "Field Enablement Manager",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Entrata",
+      "title": "Senior Director of Cyber Defense",
+      "location": "Lehi, Utah",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Awardco",
+      "title": "VP, Marketing",
+      "location": "Lindon, Utah",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pluralsight",
+      "title": "Product Marketing Manager",
+      "location": "Remote - USA",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "MX",
+      "title": "Creative Director",
+      "location": "Lehi, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "MX",
+      "title": "Director, Product",
+      "location": "Lehi, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "MX",
+      "title": "Senior Product Manager",
+      "location": "Lehi, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BILL",
+      "title": "Product Manager - Risk Experiences",
+      "location": "Draper, Utah, United States; San Jose, California, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Recursion",
+      "title": "Executive Director, Chemical Biology",
+      "location": "Salt Lake City, Utah",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Recursion",
+      "title": "Principal AI Researcher",
+      "location": "Remote Opportunity - United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BambooHR",
+      "title": "Agentic Engineering Manager",
+      "location": "Utah | Hybrid",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "BambooHR",
+      "title": "Manager, Outbound",
+      "location": "Utah | Hybrid",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BambooHR",
+      "title": "Senior Product Manager, Agent Platform",
+      "location": "Utah | Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BambooHR",
+      "title": "Senior Product Manager, Data Catalog & AI Readiness",
+      "location": "Utah | Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "BambooHR",
+      "title": "Senior Product Manager, Payroll Platform",
+      "location": "Utah | Remote",
+      "reason": "excluded by 'payroll'"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Staff Product Manager, Mobile Application",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Research Manager - Southern United States",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Research Team Manager - Eastern European/Jewish",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Research Team Manager - Probate, Lineage, or General US",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Associate Marketing Production Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Director of Product Design, Engage",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Ancestry",
+      "title": "Sr. Director, Information Security",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Traeger",
+      "title": "Finance Manager, Revenue & Gross Margin",
+      "location": "Salt Lake City",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "Affiliate Marketing Manager",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "Community Manager - TikTok Shop",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "Manager, DTC Business",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "Principal Software Engineer",
+      "location": "Lehi, UT, US",
+      "reason": "excluded by 'engineer'"
+     },
+     {
+      "company": "Pattern",
+      "title": "Product Manager, Transportation",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Pattern",
+      "title": "TikTok Shop Creator LIVE Manager",
+      "location": "Lehi, UT, US",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "NICE",
+      "title": "Accounting Manager",
+      "location": "USA - Sandy, UT",
+      "reason": "excluded by 'accounting'"
+     },
+     {
+      "company": "NICE",
+      "title": "Director Engineering - Automation, Performance and AI Quality",
+      "location": "USA - Sandy, UT",
+      "reason": "excluded by 'engineering'"
+     },
+     {
+      "company": "NICE",
+      "title": "Partner Sales Manager, Actimize",
+      "location": "USA - Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "NICE",
+      "title": "Senior Product Manager",
+      "location": "USA - Atlanta, GA; USA - Sandy, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "NICE",
+      "title": "Senior Product Manager, Actimize",
+      "location": "USA - Atlanta, GA; USA - Hoboken, NJ; USA - Sandy, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "NICE",
+      "title": "Senior Technical Account Manager",
+      "location": "USA - Remote",
+      "reason": "excluded by 'account manager'"
+     },
+     {
+      "company": "Brex",
+      "title": "Director, Performance Marketing",
+      "location": "Salt Lake City, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Brex",
+      "title": "Senior Director, Mid Market Sales",
+      "location": "Salt Lake City, Utah, United States",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Brex",
+      "title": "Senior Field Marketing Manager",
+      "location": "Remote",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Kelso Industries",
+      "title": "Mechanical Project Manager",
+      "location": "Atlanta, GA; Ogden, UT; Phoenix, AZ; Tampa, FL",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Project Manager II - Technical",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Project Manager II - Technical",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Senior Manager, Content & Social Media (Influencer Program)",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Journey Coordination Lead",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Lead IAR Data Analyst",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Director, Enrollment Management",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Manager, Assessment & Psychometrics",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Cost Controls Project Manager - Real Estate Development",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Technical Project Manager III",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
+     },
+     {
+      "company": "Western Governors University",
+      "title": "Technical Project Manager III",
+      "location": "Salt Lake City, UT",
+      "reason": "missed match group [2]"
      }
     ]
    }
