@@ -10,9 +10,17 @@
    "start_delay_min": 515,
    "completed_at": "2026-10-29T15:45:28-06:00",
    "status": "ok",
-   "emailed": {},
+   "emailed": {
+    "lisa": "2026-10-29T15:45:38-06:00"
+   },
    "duration_min": 24.8
   }
  ],
- "delivery": {}
+ "delivery": {
+  "lisa": {
+   "last_sent": "2026-10-29",
+   "last_sent_at": "2026-10-29T15:45:38-06:00",
+   "sends": 1
+  }
+ }
 }
