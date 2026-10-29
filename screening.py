@@ -268,6 +268,10 @@ HARD_REQUIREMENT_RULES = [
         "requisition load", "req load", "requisition ownership", "high-volume recruiting",
         "ats execution", "phone screens",
     ]),
+    ("security_clearance", "mandatory security clearance", [
+        "security clearance", "secret clearance", "top secret", "ts/sci", "active clearance",
+        "clearance required", "polygraph",
+    ]),
     ("manufacturing_production", "manufacturing / production expertise", [
         "manufacturing operations", "production line", "shop floor", "plant operations",
         "lean manufacturing", "production planning", "bill of materials",
@@ -289,18 +293,52 @@ RECRUITING_TITLE_TERMS = [
 ]
 
 
-def _cue_near(text, start, end):
+def _cue_near(text, start, end, cues=None):
     window = text[max(0, start - _WINDOW):end + _WINDOW]
-    return _any_term(window, REQUIREMENT_CUES)
+    return _any_term(window, cues or REQUIREMENT_CUES)
+
+
+# V6 — GATES vs CAUTIONS. Lisa's update: "do not treat every bullet under 'requirements' as
+# equally absolute." A profile that lists `hard_requirements.gate_categories` gets the split:
+# a finding is a GATE (caps the role) only when its category is a gate category AND the JD
+# words it as mandatory — a STRONG cue near the token and no softener ("preferred", "a plus")
+# near it. Everything else that fires is a CAUTION: named on the card, never capping.
+#
+# The strong cues deliberately omit "years of", "proven", "experience" and "qualifications" —
+# those are exactly the arbitrary-year-count and wish-list phrasings the update says must not
+# eliminate her. A profile with no `gate_categories` keeps the V5 behaviour: every finding is
+# a gate.
+STRONG_REQUIREMENT_CUES = [
+    "required", "requires", "must have", "must possess", "must hold", "must be",
+    "mandatory", "is a requirement", "minimum qualifications", "basic qualifications",
+]
+SOFTENER_CUES = [
+    "preferred", "nice to have", "a plus", "is a plus", "bonus", "ideally", "desired",
+    "preferred qualifications", "advantageous",
+]
+
+
+def _is_gate(text, start, end, category, cfg):
+    gates = cfg.get("gate_categories")
+    if gates is None:
+        return True
+    if category not in gates:
+        return False
+    window = text[max(0, start - _WINDOW):end + _WINDOW]
+    return bool(_any_term(window, cfg.get("strong_cues") or STRONG_REQUIREMENT_CUES)
+                and not _any_term(window, cfg.get("softener_cues") or SOFTENER_CUES))
 
 
 def hard_requirements(posting, profile=None):
     """Material requirements the JD states that the reader does not support.
 
-    Returns a list of {category, label, evidence, cue}. Empty when the JD is silent, which is
+    Returns a list of {category, label, evidence, cue, gate}. `gate` is False for a CAUTION
+    (see _is_gate): the profile split requirements and this one is a preference or not a
+    gate category. Empty when the JD is silent, which is
     the common case for the title-only sources (Workday, SmartRecruiters) — silence is not
     evidence of a clean fit, and `deep_retrieval_wanted` exists to reduce it."""
-    rules = (profile or {}).get("hard_requirements", {}).get("rules")
+    cfg = (profile or {}).get("hard_requirements") or {}
+    rules = cfg.get("rules")
     rules = HARD_REQUIREMENT_RULES if rules is None else [
         (r["category"], r.get("label", r["category"]), r["tokens"]) for r in rules]
     text = _blob(posting)
@@ -317,7 +355,8 @@ def hard_requirements(posting, profile=None):
                 continue
             seen.add(category)
             found.append({"category": category, "label": label, "evidence": token,
-                          "cue": cue})
+                          "cue": cue,
+                          "gate": _is_gate(text, m.start(), m.end(), category, cfg)})
             break
     return found
 
@@ -459,6 +498,7 @@ def deep_retrieval_wanted(posting, profile):
         return False
     return bool(posting.get("tier") == "core"
                 or posting.get("priority_employer")
+                or posting.get("sales_adjacent")
                 or is_seo_content(posting, profile))
 
 

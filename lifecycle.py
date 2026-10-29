@@ -465,6 +465,10 @@ def new_record(posting, lane, today):
         "priority_employer": bool(posting.get("priority_employer")),
         "priority_note": posting.get("priority_note") or "",
         "demoted": bool(posting.get("demoted")),
+        # V6: retrieved by the sales-adjacency lane (jobmonitor.sales_adjacency_match). The
+        # change digest gives these their own capped section so they cannot crowd out the
+        # primary search.
+        "sales_adjacent": bool(posting.get("sales_adjacent")),
         "match_reason": posting.get("match_reason") or "",
         "lane": lane,
         "status": STATUS_NEW,
@@ -532,6 +536,8 @@ def _merge_posting(rec, posting, lane, today):
         rec["match_reason"] = posting.get("match_reason") or ""
     # Once a job is known to come from a priority employer it stays flagged: the same role
     # can also arrive via an aggregator row that carries no flag.
+    if posting.get("sales_adjacent"):
+        rec["sales_adjacent"] = True
     if posting.get("priority_employer"):
         rec["priority_employer"] = True
         rec["priority_note"] = posting.get("priority_note") or rec.get("priority_note", "")
@@ -545,6 +551,15 @@ def _merge_posting(rec, posting, lane, today):
     if posting.get("technical_risk"):
         rec["technical_risk"] = True
     return rec
+
+
+# V6 verdict fields that travel onto the record, with their empty values. `work_interest`
+# being non-empty is what marks a record as judged under the JD-first rubric.
+DECISION_FIELDS = {"work_interest": "", "dominant_work": "", "dominant_share": -1,
+                   "fit_level": "", "industry_relationship": "", "industry_importance": "",
+                   "key_qualifications": [], "cautions": [], "sales_readiness": "",
+                   "action_status": "", "material_gap": "", "next_action": "",
+                   "exception_reason": ""}
 
 
 def apply_verdict(rec, verdict, today=None):
@@ -568,6 +583,12 @@ def apply_verdict(rec, verdict, today=None):
         rec["remote_scope"] = verdict.get("remote_scope") or ""
         rec["remote_verified"] = bool(verdict.get("remote_verified"))
         rec["downgraded_from"] = verdict.get("downgraded_from") or ""
+        # V6 decision fields (jd_first rubric). Copied as a set and cleared when absent, so a
+        # record re-scored under the standard rubric never keeps a stale decision.
+        for field in DECISION_FIELDS:
+            rec[field] = verdict.get(field, DECISION_FIELDS[field])
+        if verdict.get("why_fits"):
+            rec["why_fits"] = verdict["why_fits"]
     rec["priority"] = priority_for(rec.get("recommendation", ""), band_for(rec, today),
                                    rec.get("confidence", "medium"))
     return rec

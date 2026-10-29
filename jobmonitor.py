@@ -1527,6 +1527,46 @@ def hard_excluded(posting, profile):
                      _discovery_cfg(profile).get("exclude_any", []))
 
 
+def sales_adjacency_match(posting, profile):
+    """V6 — the SALES-ADJACENCY lane (Lisa's update, section 15). An EVALUATION lane, not a
+    registry lane: it runs over every source already fetched and retrieves consultative
+    technical-sales and sales-adjacent titles (Solutions Consultant, Value Engineer,
+    Pre-Sales, Solution Strategist, Strategic Customer Success…) that the leadership search
+    would never retrieve, and several of which it would hard-exclude — "Value Engineer" names
+    "engineer", which is in `discovery.exclude_any` for good reason everywhere else.
+
+    So it runs BEFORE that exclusion, on its own short list, with its own exclusions (SDR/BDR,
+    inside sales, cold calling). The technical DESCRIPTION screen still applies: a sales
+    engineer whose JD asks for coding or infrastructure work is dropped exactly like any other
+    engineering role. Only the title screen is relaxed, and only for the titles the profile
+    lists in `technical_titles_allowed`.
+
+    Returns (tier, reason) to retrieve, or None to fall through to the normal gate. Retrieved
+    roles carry `sales_adjacent`; the change digest gives them their own capped section so
+    they can never crowd out the primary search."""
+    cfg = profile.get("sales_adjacency") or {}
+    if not cfg.get("enabled"):
+        return None
+    title = (posting.get("title") or "").lower()
+    hit = _any_term(title, cfg.get("title_any", []))
+    if not hit:
+        return None
+    if _any_term(title, cfg.get("exclude_any", [])):
+        return None, "sales-adjacency: excluded sales motion (SDR/BDR/outbound)"
+    screen_profile = profile
+    if _any_term(title, cfg.get("technical_titles_allowed", [])):
+        # An allowed sales title ("sales engineer") — skip the TITLE half of the screen only.
+        screen_profile = dict(profile, technical_exclusion=dict(
+            profile.get("technical_exclusion") or {}, title_any=[]))
+    tech = screening.technical_screen(posting, screen_profile)
+    posting["technical_risk"] = bool(tech["risk"])
+    posting["technical_note"] = tech["reason"]
+    if tech["excluded"]:
+        return None, tech["reason"]
+    posting["sales_adjacent"] = True
+    return TIER_DISCOVERY, f"sales-adjacency lane: '{hit}' in title"
+
+
 def classify_match(posting, profile):
     """Decide whether to RETRIEVE this posting, and how confident the title alone makes us.
 
@@ -1537,6 +1577,16 @@ def classify_match(posting, profile):
     Sets `posting["demoted"]` when a role reaches the discovery tier despite being hit by the
     profile's PRECISION `exclude_any` — see the demotion note below."""
     posting.pop("demoted", None)
+    posting.pop("sales_adjacent", None)
+    sales = sales_adjacency_match(posting, profile)
+    # A title the PRIMARY search already claims ("Director, Value Realization" passes the core
+    # gate) stays primary: value realization and strategic customer success are A-tier work,
+    # and the sales lane exists for what the primary search cannot see, not to annex it.
+    if sales and sales[0] and matches_profile(posting, profile) \
+            and not hard_excluded(posting, profile):
+        posting.pop("sales_adjacent", None)
+    elif sales:
+        return sales
     if hard_excluded(posting, profile):
         return None, "hard-excluded function"
     # THE TECHNICAL-ROLE EXCLUSION (requirement 2), and note WHERE it sits: above the core
@@ -1724,7 +1774,23 @@ class SimulatedFitClient:
             rec = "stretch"
         else:
             rec = "not_recommended"
+        extra = {}
+        if "DOMINANT WORK" in (kw.get("system") or [{}])[0].get("text", ""):
+            # jd_first rubric: fake the decision fields too, so the V6 card renders.
+            extra = {"work_interest": "ABCD"[h % 4], "dominant_work": "SIMULATED",
+                     "dominant_share": 30 + h % 70,
+                     "fit_level": {"apply_first": "strong", "strong_fit": "good"}.get(
+                         rec, "stretch"),
+                     "industry_relationship": INDUSTRY_RELATIONS[h % 5],
+                     "industry_importance": "helpful",
+                     "sales_readiness": ("near_qualified_december"
+                                         if "sales-adjacency" in user else "n_a"),
+                     "action_status": ACTION_STATUSES[(h >> 4) % 4],
+                     "why_fits": "SIMULATED — no Anthropic API call was made.",
+                     "material_gap": "", "next_action": "SIMULATED next action",
+                     "exception_reason": ""}
         return self._Message(json.dumps({
+            **extra,
             "qualification_fit": qual, "interest_fit": interest,
             "practical_fit": practical, "opportunity_score": opp,
             "recommendation": rec,
@@ -1757,12 +1823,16 @@ def load_background(profile):
         return None
 
 
-def _bg_fingerprint(candidate):
+def _bg_fingerprint(candidate, rubric="standard"):
     # Short hash of what is actually sent to the model, PLUS the verdict-schema version.
     # Editing a background file changes this (invalidating that profile's cached verdicts),
     # and so does bumping FIT_SCHEMA_VERSION — which is what guarantees a stale
     # old-shape verdict is never reused by new rendering code. See enrich_with_fit.
+    # A non-standard rubric is folded in too, so switching a profile's rubric re-scores it;
+    # the standard rubric adds nothing, so existing fingerprints are unchanged.
     payload = {"v": FIT_SCHEMA_VERSION, "bg": candidate}
+    if rubric == "jd_first":
+        payload["rubric"] = [rubric, JD_FIRST_RUBRIC_VERSION]
     return hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()[:12]
 
 
@@ -1859,6 +1929,33 @@ def validate_verdict(raw):
          "signing_bonus_mentioned": bool(raw.get("signing_bonus_mentioned")),
          "valid": True}
     v.update(scores)
+    # V6 decision fields (jd_first rubric). Present only when the model sent them, so a
+    # standard-rubric verdict keeps exactly its old shape. Like `confidence` they DEGRADE
+    # rather than reject: they decide placement and wording, not whether the model's judgment
+    # is trustworthy — the scores and recommendation above already settled that.
+    if raw.get("work_interest") is not None or raw.get("action_status") is not None:
+        def choice(key, allowed, default, upper=False):
+            s = str(raw.get(key) or "").strip().replace("-", "_").replace(" ", "_")
+            s = s.upper() if upper else s.lower()
+            return s if s in allowed else default
+        share = _as_score(raw.get("dominant_share"))
+        v.update({
+            "work_interest": choice("work_interest", WORK_INTEREST, "", upper=True),
+            "dominant_work": str(raw.get("dominant_work") or "").strip()[:140],
+            "dominant_share": share if share is not None else -1,
+            "fit_level": choice("fit_level", FIT_LEVELS, ""),
+            "industry_relationship": choice("industry_relationship", INDUSTRY_RELATIONS,
+                                            "unknown"),
+            "industry_importance": choice("industry_importance", INDUSTRY_IMPORTANCE, ""),
+            "key_qualifications": _as_str_list(raw.get("key_qualifications"), 4),
+            "cautions": _as_str_list(raw.get("cautions"), 3),
+            "sales_readiness": choice("sales_readiness", SALES_READINESS, "n_a"),
+            "action_status": choice("action_status", ACTION_STATUSES, ""),
+            "why_fits": str(raw.get("why_fits") or "").strip()[:320],
+            "material_gap": str(raw.get("material_gap") or "").strip()[:160],
+            "next_action": str(raw.get("next_action") or "").strip()[:160],
+            "exception_reason": str(raw.get("exception_reason") or "").strip()[:140],
+        })
     # Legacy aliases, kept so existing renderers/sorting/filter logic need no changes.
     v["score"] = scores["opportunity_score"]
     v["fit"] = _REC_TO_FIT[rec]
@@ -1989,7 +2086,195 @@ def _fit_instructions():
         '"signing_bonus_mentioned": true|false}')
 
 
-def _fit_system(candidate):
+# V6 (Lisa's 2026-10 update): the JD-FIRST rubric. Selected per profile with
+# `fit_rubric: "jd_first"`; a profile without it keeps `_fit_instructions` above, byte for
+# byte, so Chad's prompt — and therefore his cached verdicts — do not move.
+#
+# It asks for everything the standard rubric does (the four scores and the recommendation still
+# drive ranking and every downstream guarantee) PLUS the decision fields the reader asked to
+# see instead of numbers: dominant work, interest tier, fit level, industry relationship and its
+# importance, true gates vs cautions, sales readiness, an action status and one next action.
+# `unmet_requirements` keeps its name but narrows its meaning to TRUE GATES — it is what
+# enforce_hard_requirements and the QA gate cap on, and a preference must never cap a role.
+JD_FIRST_RUBRIC_VERSION = 1   # bump when the jd_first prompt or its fields change meaning
+FIT_RUBRICS = ("standard", "jd_first")
+WORK_INTEREST = ("A", "B", "C", "D")
+FIT_LEVELS = ("strong", "good", "stretch", "poor")
+ACTION_STATUSES = ("apply", "validate", "contact", "package", "stretch")
+INDUSTRY_RELATIONS = ("direct", "client_exposure", "adjacent", "new", "unknown")
+INDUSTRY_IMPORTANCE = ("required", "preferred", "helpful", "irrelevant")
+SALES_READINESS = ("qualified_now", "near_qualified_december", "stretch", "not_viable", "n_a")
+
+
+def _fit_instructions_jd_first():
+    return (
+        "You screen job postings for ONE specific candidate. The goal is NOT to find every "
+        "job that could plausibly match. It is to identify the few she would realistically "
+        "want, is credibly qualified or near-qualified for, and that are worth limited "
+        "application time. Accuracy is the objective: do not inflate fit, invent experience, "
+        "ignore a genuine specialization gap, or reinterpret a hard requirement as "
+        "transferable when it is not — and do not manufacture negatives from missing "
+        "information either. 'Plausible but uncertain' and 'insufficient evidence' are "
+        "legitimate answers.\n\n"
+
+        "1. READ THE JOB DESCRIPTION, NOT THE TITLE. A matching title does not make a role a "
+        "match; an unfamiliar title does not make it a mismatch. Words like strategy, "
+        "operations, transformation, customer, experience, program, AI, service, people and "
+        "enablement are discovery signals only. Decide: what would she actually spend most "
+        "of her time doing; does she want to do it; is she credibly qualified on confirmed or "
+        "transferable evidence; are the apparent gaps true requirements, preferences, or "
+        "merely absent evidence; are pay, location and work model acceptable; is it worth "
+        "the effort compared with other opportunities.\n\n"
+
+        "2. DOMINANT WORK. Name it in dominant_work (under 15 words) and classify it with "
+        "the candidate's role_interest_hierarchy as work_interest A, B, C or D. Estimate in "
+        "dominant_share (0-100) the share of the meaningful work that is A/B work. Strongly "
+        "prefer roles where it is about 60 or more. One attractive responsibility buried in "
+        "an otherwise poor-fit JD must NOT create a strong match; 10-20% of off-preference "
+        "duties must NOT sink a strong role.\n\n"
+
+        "3. REQUIREMENTS: GATES vs PREFERENCES vs CAUTIONS. Not every bullet under "
+        "'requirements' is absolute. A TRUE GATE is likely to prevent candidacy or success: "
+        "a required professional license, a mandatory security clearance, a clinical "
+        "credential, deep software-engineering depth, highly specialized regulatory/legal "
+        "expertise, a geographic requirement she cannot meet, or genuinely mandatory years of "
+        "specialized experience central to the job. These do NOT normally eliminate her: an "
+        "exact prior title, an exact industry where transferable experience is acceptable, "
+        "preferred SaaS experience, a learnable tool or platform, an arbitrary year count "
+        "when her scope shows equivalent seniority, anything phrased as preferred. List TRUE "
+        "gates she does not meet in unmet_requirements (empty means you checked and found "
+        "none). List meaningful gaps that affect competitiveness but are not gates in "
+        "cautions.\n\n"
+
+        "4. EVIDENCE. For up to 4 of the most important qualifications, write "
+        "key_qualifications entries as 'STATE: qualification', STATE being exactly one of "
+        "CONFIRMED (the candidate context supports it), TRANSFERABLE (different title, "
+        "industry or mechanism, but credible transfer), UNKNOWN (the context does not say), "
+        "GAP (evidence shows she lacks something materially required). UNKNOWN IS NOT NO: "
+        "never turn absence of evidence into a negative, and never invent experience to "
+        "resolve an unknown. The candidate context is a summary, not her complete career.\n\n"
+
+        "5. INDUSTRY IS SEPARATE FROM FUNCTION. Set industry_relationship to direct, "
+        "client_exposure, adjacent, new or unknown by checking her COMPLETE context — "
+        "including earlier career (travel/aviation is DIRECT; retail/consumer is DIRECT "
+        "earlier-career familiarity; industries served as enterprise clients are "
+        "client_exposure). Set industry_importance to required, preferred, helpful or "
+        "irrelevant FOR THIS JD. Never write 'new industry', 'no industry experience' or "
+        "equivalent unless the full context supports it. Recent senior experience sets "
+        "scope and seniority; older experience sets familiarity.\n\n"
+
+        "6. SALES. She has substantial commercial, solutioning and sales-adjacent "
+        "experience; NEVER say she has no sales experience. The accurate gap, where it "
+        "matters, is 'no recent traditional quota-carrying SaaS closing history'. For any "
+        "consultative technical-sales or sales-adjacent role (solutions/value consultant, "
+        "value engineer, pre-sales, solution or customer strategist, strategic customer "
+        "success, value realization, sales strategy, solutions-consulting leadership) set "
+        "sales_readiness to qualified_now, near_qualified_december (existing experience "
+        "plus her IN-PROGRESS Adobe Technical Sales training makes a credible near-term case "
+        "— often worth applying NOW with the training disclosed as in progress, unless a "
+        "hard requirement cannot currently be met), stretch, or not_viable. Use n_a for "
+        "every other role. Her Adobe training is in progress, not completed — never describe "
+        "it as completed or certified. SDR/BDR, high-volume outbound, cold-calling, deeply "
+        "technical sales-engineering (coding/infrastructure) and roles whose central "
+        "qualification is years of quota-carrying enterprise closing are not_recommended "
+        "unless you name an exceptional reason.\n\n"
+
+        "7. AI ROLES: business AI adoption, enablement, transformation, operating models, "
+        "workforce adoption, change and value realization are her work. ML engineering, AI "
+        "research, data science, software engineering, AI infrastructure and engineering-"
+        "depth technical product management are not. Would she BUILD it, or lead its "
+        "adoption?\n\n"
+
+        "8. COMMON FALSE POSITIVES to detect from the JD: technical or security TPM; deeply "
+        "technical product roles; finance/accounting specialist; legal operations needing "
+        "legal/CLM expertise; insurance specialist; clinical healthcare; call-center "
+        "operations; narrow renewals or deal-desk work; narrow RevOps; sales enablement; "
+        "highly specialized pricing; PLG/self-serve growth needing deep direct experience; "
+        "engineering-heavy AI; 'professional services' that is really hands-on product "
+        "implementation; support-heavy or high-volume customer success; corporate "
+        "development, valuation or deal execution presented as 'M&A'.\n\n"
+
+        "9. FALSE NEGATIVES to avoid: do not reject a promising role because she lacks the "
+        "exact title, the industry looks unfamiliar, a skill came from a different career "
+        "context or from consulting rather than an internal function, her sales experience "
+        "was embedded in professional services rather than an AE title, or her "
+        "transformation experience spans disciplines rather than one ladder.\n\n"
+
+        "10. COMPENSATION, LOCATION, EMPLOYMENT TYPE: apply the candidate's compensation and "
+        "location preferences in practical_fit. Contract/temporary roles are judged as "
+        "bridge income on their own terms (practical_contract). When pay is not stated, say "
+        "nothing about it rather than guessing.\n\n"
+
+        "11. EXCEPTIONS. If a role sits somewhat outside normal parameters but has "
+        "exceptional value (see the candidate's exceptional_opportunities), put the specific "
+        "reason in exception_reason (under 15 words); otherwise leave it empty. Exceptions "
+        "are rare.\n\n"
+
+        "12. NO DESCRIPTION. If the posting has no description you cannot establish the "
+        "dominant work: confidence must be low and recommendation cannot be apply_first.\n\n"
+
+        "SCORES (internal ranking only — never shown to the reader), 0-100 each: "
+        "qualification_fit, interest_fit, practical_fit, and opportunity_score = the "
+        "EXPECTED VALUE of pursuing it (functional fit, interest, qualification credibility, "
+        "compensation, closing risk, likelihood of response, speed to income, referral "
+        "leverage, effort, location, strategic and mission value) — not keyword similarity.\n\n"
+
+        "recommendation, exactly one of: apply_first (genuinely worthwhile now: dominant "
+        "work A/B — or C with an unusual draw — credible qualification, no true gate, "
+        "practical); strong_fit (worthwhile, good fit, worth serious consideration); stretch "
+        "(transferable case but meaningful gaps, or plausible but uncertain); "
+        "practical_contract (contract/temporary worth it for income); not_recommended (poor "
+        "match, D-dominant work, an unmet true gate, or not worth her limited time). "
+        "fit_level, exactly one of strong, good, stretch, poor. confidence: high, medium or "
+        "low — how sure you are.\n\n"
+
+        "action_status, exactly one of: apply (apply now as-is); contact (a referral, "
+        "recruiter or known contact she holds should be used first — only when the context "
+        "says such leverage exists); package (worth applying but needs deliberate "
+        "positioning: a non-obvious transferable case, a sales transition, disclosing "
+        "in-progress training); validate (one material uncertainty that ONLY she can "
+        "resolve, such as whether she would relocate or accept the pay); stretch (only "
+        "worth it if she wants a reach). next_action: ONE concrete action for her, under 20 "
+        "words. Never ask her to research, verify, inspect the JD, find compensation or "
+        "check whether the role is live — Prospector does those. why_fits: 1-2 sentences "
+        "grounded in the actual JD work. material_gap: the single most meaningful gap in "
+        "under 20 words, or empty if none is meaningful.\n\n"
+
+        "remote_scope, exactly one of nationwide_us, state_restricted, residence_required, "
+        "pay_zone, office_associated, preferred_location, unclear — from what the posting "
+        "says, never from the location label; nationwide_us only when the posting says the "
+        "role is open across the US. relocation_assistance_mentioned and "
+        "signing_bonus_mentioned true ONLY when the posting says so. reasons: up to 5 short "
+        "phrases. concerns: up to 3. bridge_skills: up to 3 specific skills to bridge on a "
+        "promising stretch.\n\n"
+
+        "Respond with ONLY this JSON object — no prose, no markdown fences:\n"
+        '{"dominant_work": "...", "dominant_share": <0-100>, "work_interest": "A"|"B"|"C"|"D", '
+        '"qualification_fit": <0-100>, "interest_fit": <0-100>, "practical_fit": <0-100>, '
+        '"opportunity_score": <0-100>, "recommendation": "apply_first"|"strong_fit"|'
+        '"stretch"|"practical_contract"|"not_recommended", "fit_level": "strong"|"good"|'
+        '"stretch"|"poor", "confidence": "high"|"medium"|"low", '
+        '"industry_relationship": "direct"|"client_exposure"|"adjacent"|"new"|"unknown", '
+        '"industry_importance": "required"|"preferred"|"helpful"|"irrelevant", '
+        '"key_qualifications": ["STATE: ..."], "unmet_requirements": ["..."], '
+        '"cautions": ["..."], "sales_readiness": "qualified_now"|"near_qualified_december"|'
+        '"stretch"|"not_viable"|"n_a", "action_status": "apply"|"validate"|"contact"|'
+        '"package"|"stretch", "why_fits": "...", "material_gap": "...", '
+        '"next_action": "...", "exception_reason": "...", "reasons": ["..."], '
+        '"concerns": ["..."], "bridge_skills": ["..."], '
+        '"remote_scope": "nationwide_us"|"state_restricted"|"residence_required"|'
+        '"pay_zone"|"office_associated"|"preferred_location"|"unclear", '
+        '"relocation_required": true|false, '
+        '"relocation_assistance_mentioned": true|false, '
+        '"signing_bonus_mentioned": true|false}')
+
+
+def _rubric_for(profile):
+    r = (profile or {}).get("fit_rubric") or "standard"
+    return r if r in FIT_RUBRICS else "standard"
+
+
+def _fit_system(candidate, rubric="standard"):
     """The STABLE half of the prompt: scoring rubric + candidate profile. Byte-identical for
     every posting in a run, so it is sent as a cached system block — the first call writes the
     cache, the rest read it at roughly a tenth of the input price. `sort_keys=True` matters:
@@ -1997,7 +2282,9 @@ def _fit_system(candidate):
 
     A cache miss is harmless — it just costs what it did before, so this is a saving, not a
     dependency. Nothing downstream inspects the cache fields."""
-    text = (_fit_instructions() + "\n\nCANDIDATE:\n"
+    instructions = (_fit_instructions_jd_first() if rubric == "jd_first"
+                    else _fit_instructions())
+    text = (instructions + "\n\nCANDIDATE:\n"
             + json.dumps(candidate, indent=2, sort_keys=True))
     return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
 
@@ -2029,7 +2316,7 @@ def fit_usage_summary():
             f"({hit}% of prompt served from cache) · out {u['output']:,}")
 
 
-def score_fit(candidate, posting, client):
+def score_fit(candidate, posting, client, rubric="standard"):
     """Score one posting for one candidate. Returns a validated verdict dict (see
     `validate_verdict`) carrying the four dimensions, a recommendation, reasons/concerns,
     the three explicit-mention booleans, and legacy `fit`/`score`/`reason` aliases.
@@ -2056,7 +2343,7 @@ def score_fit(candidate, posting, client):
         # the largest line on the bill) without changing the judgment we need.
         msg = client.messages.create(model=FIT_MODEL, max_tokens=FIT_MAX_TOKENS,
                                      output_config={"effort": "low"},
-                                     system=_fit_system(candidate),
+                                     system=_fit_system(candidate, rubric),
                                      messages=[{"role": "user", "content": user}])
         _record_usage(msg)
         text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
@@ -2100,11 +2387,24 @@ def enforce_hard_requirements(posting, verdict, profile):
     posting asks for is named rather than being the silent reason it slid down the list."""
     if not verdict or not verdict.get("valid"):
         return verdict
+    # Opt-in, like the technical screen. A profile with neither block is not judged against
+    # this list at all — it is Lisa's list of things she does not support, and applying it to
+    # an engineering profile capped every role that asked for Python.
+    if not (profile.get("hard_requirements") or screening.technical_screening_enabled(profile)):
+        return verdict
     detected = screening.hard_requirements(posting, profile)
     verdict["detected_requirements"] = [d["label"] for d in detected]
+    # V6: only GATES cap. A caution — a preference, or a category the profile does not treat
+    # as a gate — is named on the card (`cautions`) and never moves the recommendation.
+    cautions = [f'{d["label"]} ("{d["evidence"]}")' for d in detected if not d.get("gate", True)]
+    if cautions:
+        have = " ".join(verdict.get("cautions") or [])
+        verdict["cautions"] = (list(verdict.get("cautions") or [])
+                               + [c for c in cautions if c.split(" (")[0] not in have])[:4]
+    detected = [d for d in detected if d.get("gate", True)]
     gaps = screening.recruiting_gaps(posting, profile)
     if gaps:
-        verdict["recruiting_gaps"] = [g["label"] for g in gaps]
+        verdict["recruiting_gaps"] = [g["label"] for g in gaps if g.get("gate", True)]
     blockers = list(verdict.get("unmet_requirements") or [])
     blockers += [f'{d["label"]} ("{d["evidence"]}")' for d in detected
                  if d["label"] not in " ".join(blockers)]
@@ -2179,7 +2479,8 @@ def enrich_with_fit(matched, prev, profile, client, max_new=None):
     candidate = load_background(profile)
     if not (candidate and client):
         return 0
-    fp = _bg_fingerprint(candidate)
+    rubric = _rubric_for(profile)
+    fp = _bg_fingerprint(candidate, rubric)
     cached = {p["key"]: p["fit_result"] for p in (prev or [])
               if (p.get("fit_result") or {}).get("score", -1) >= 0
               and (p.get("fit_result") or {}).get("bg") == fp}
@@ -2196,7 +2497,7 @@ def enrich_with_fit(matched, prev, profile, client, max_new=None):
         if scored >= budget:
             p["score_pending"] = True
             continue
-        r = score_fit(candidate, p, client)
+        r = score_fit(candidate, p, client, rubric)
         r["bg"] = fp                       # stamp the background it was scored against
         p["fit_result"] = r
         scored += 1
@@ -3716,10 +4017,87 @@ def _is_wildcard(rec):
         and rec.get("recommendation") not in ("", "not_recommended")
 
 
+# V6 — STRICT SELECTION (Lisa's update, sections 24-26). The sections a selection-mode digest
+# renders, in order. `new_review` and `wildcards` stay as keys so the QA gate and the renderers
+# need no special case, but selection mode never fills them itself: "do not call mediocre
+# roles worthwhile simply to populate the report".
+SELECTION_DEFAULTS = {"max_new": 5, "max_sales": 2, "max_contract": 2, "max_exceptions": 1,
+                      "max_still": 5}
+NEW_SECTIONS = ("apply_first", "new_review", "contract", "sales", "exceptions", "wildcards")
+SHOWN_SECTIONS = NEW_SECTIONS + ("still",)
+
+
+def selection_cfg(profile):
+    cfg = (profile or {}).get("selection") or {}
+    if not cfg.get("enabled"):
+        return None
+    return {**SELECTION_DEFAULTS, **{k: v for k, v in cfg.items() if k in SELECTION_DEFAULTS}}
+
+
+def worthwhile_lane(rec):
+    """Which lane a JD-first verdict makes this role WORTHWHILE in, or why it is not.
+
+    Returns one of "primary", "sales", "contract", "exception" — or a reason it is out:
+    "rescore" (no JD-first verdict yet), "screened_out", "below_bar".
+
+    Worthwhile means the model recommended it outright (apply_first / strong_fit) or as bridge
+    income (practical_contract). A stretch is worthwhile only as a NAMED exception, and D-tier
+    dominant work only with one. A role capped by a true gate is a stretch by the time it gets
+    here (enforce_hard_requirements), so it needs an exception too."""
+    rec_key = rec.get("recommendation") or ""
+    if not rec.get("work_interest"):
+        return "rescore"
+    if rec_key == "not_recommended":
+        return "screened_out"
+    exception = bool(rec.get("exception_reason"))
+    if rec.get("work_interest") == "D" and not exception:
+        return "screened_out"
+    top = rec_key in TOP_RECOMMENDATIONS and rec.get("work_interest") != "D"
+    if rec.get("sales_adjacent"):
+        if top and rec.get("sales_readiness") in ("qualified_now", "near_qualified_december"):
+            return "sales"
+        return "exception" if exception and rec_key != "not_recommended" else "below_bar"
+    if rec_key == "practical_contract":
+        return "contract"
+    if top:
+        return "primary"
+    return "exception" if exception else "below_bar"
+
+
+def _select_new(candidates, cfg):
+    """Fill at most `max_new` slots. The primary search claims slots FIRST, so the sales,
+    contract and exception lanes only ever use slots the primary search left empty — that is
+    the literal form of "must not crowd out Lisa's primary A/B search". Each lane also has
+    its own ceiling, and exceptions "must not dominate normal results"."""
+    out = {"primary": [], "sales": [], "contract": [], "exception": []}
+    over = 0
+    for lane, rec in candidates:
+        if lane == "primary" and len(out["primary"]) < cfg["max_new"]:
+            out["primary"].append(rec)
+    caps = {"sales": cfg["max_sales"], "contract": cfg["max_contract"],
+            "exception": cfg["max_exceptions"]}
+    for lane, rec in candidates:
+        if lane == "primary":
+            continue
+        used = sum(len(v) for v in out.values())
+        if used < cfg["max_new"] and len(out[lane]) < caps[lane]:
+            out[lane].append(rec)
+        else:
+            over += 1
+    over += sum(1 for lane, _ in candidates if lane == "primary") - len(out["primary"])
+    return out, over
+
+
 def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None,
-                    regions=None):
+                    regions=None, profile=None):
     """Pick what today's email shows. Every record lands in AT MOST ONE section, and the
-    order below is the precedence — a role cannot appear twice in one email."""
+    order below is the precedence — a role cannot appear twice in one email.
+
+    A profile with `selection.enabled` (Lisa, V6) is routed through `_selection_sections`
+    instead: a hard ceiling on worthwhile NEW roles, and zero is an allowed answer."""
+    if selection_cfg(profile):
+        return _selection_sections(db, feedback, seen_keys or set(), newly_gone, regions,
+                                   selection_cfg(profile))
     today = today or datetime.date.today().isoformat()
     seen_keys = seen_keys or set()
     sections = {"apply_first": [], "new_review": [], "wildcards": [], "still": [],
@@ -3802,6 +4180,77 @@ def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None,
     return sections, counts
 
 
+def _selection_sections(db, feedback, seen_keys, newly_gone, regions, cfg):
+    """The V6 selection: rank by EXPECTED VALUE (the model's opportunity_score, an internal
+    number the reader never sees), keep only roles a JD-first verdict calls worthwhile, cap.
+
+    Still-open roles the reader was already shown stay visible when they are still
+    worthwhile, and the digest leads with whichever is the better move — a new role does not
+    automatically outrank a strong existing one (section 26)."""
+    sections = {k: [] for k in SHOWN_SECTIONS + ("removed",)}
+    counts = {"screened_out": 0, "suppressed": 0, "stale_hidden": 0, "pending_score": 0,
+              "repeats": 0, "needs_recheck": 0, "below_bar": 0, "held_over_cap": 0,
+              "reviewed": 0}
+
+    def rank(rec):
+        return (-(rec.get("fit_score") or -1), location_rank(rec.get("location"), regions),
+                0 if rec.get("priority_employer") else 1, rec.get("posted_date") or "")
+
+    candidates, still = [], []
+    live = [db["jobs"][k] for k in seen_keys if k in db["jobs"]]
+    for rec in sorted(live, key=rank):
+        if _suppressed(rec, feedback):
+            counts["suppressed"] += 1
+            continue
+        if rec.get("status") == lifecycle.STATUS_STALE:
+            counts["stale_hidden"] += 1
+            continue
+        lane = worthwhile_lane(rec)
+        if lane == "rescore":
+            # No JD-first verdict yet: scored under an older rubric, or over today's scoring
+            # budget. Never shown on an old verdict — it is judged properly on a later run.
+            counts["pending_score"] += 1
+            continue
+        counts["reviewed"] += 1
+        if lane in ("screened_out", "below_bar"):
+            counts[lane] += 1
+            continue
+        if rec.get("ever_shown"):
+            counts["repeats"] += 1
+            if lane != "exception":         # an exception is surfaced once, not repeated
+                still.append(rec)
+            continue
+        candidates.append((lane, rec))
+
+    picked, counts["held_over_cap"] = _select_new(candidates, cfg)
+    sections["apply_first"] = picked["primary"]
+    sections["sales"] = picked["sales"]
+    sections["contract"] = picked["contract"]
+    sections["exceptions"] = picked["exception"]
+    state_order = {lifecycle.CHANGE_REOPENED: 0, lifecycle.CHANGE_REVALIDATED: 1,
+                   lifecycle.CHANGE_UPDATED: 2}
+    sections["still"] = sorted(still, key=lambda r: (rank(r)[0],
+                                                     state_order.get(r.get("change_state"), 3),
+                                                     rank(r)[1:]))[:cfg["max_still"]]
+    for rec in (newly_gone or []):
+        if rec.get("ever_shown"):
+            sections["removed"].append(rec)
+    sections["removed"].sort(key=lambda r: (r.get("company") or "").lower())
+    sections["removed"] = sections["removed"][:CHANGE_QUOTAS["removed"]]
+    counts["needs_recheck"] = sum(
+        1 for rec in db["jobs"].values()
+        if rec.get("verification") == lifecycle.NEEDS_RECHECK and rec.get("ever_shown"))
+    counts["selection"] = True
+    return sections, counts
+
+
+def best_move(sections):
+    """The single highest expected-value role across new AND still-open sections."""
+    rows = [r for k in SHOWN_SECTIONS for r in sections.get(k) or []
+            if k not in ("wildcards", "exceptions")]
+    return max(rows, key=lambda r: r.get("fit_score") or -1) if rows else None
+
+
 def _remote_label(rec):
     """What the report is allowed to say about where the reader may live (requirement 7).
 
@@ -3844,7 +4293,90 @@ def _rec_meta(rec):
     return _muted(" &nbsp;·&nbsp; ".join(bits))
 
 
+ACTION_LABEL = {"apply": ("APPLY", "green"), "contact": ("CONTACT", "green"),
+                "package": ("PACKAGE", "link"), "validate": ("VALIDATE", "amber"),
+                "stretch": ("STRETCH", "amber")}
+FIT_LEVEL_LABEL = {"strong": "Strong", "good": "Good", "stretch": "Stretch", "poor": "Poor"}
+INDUSTRY_LABEL = {"direct": "Direct", "client_exposure": "Client Exposure",
+                  "adjacent": "Adjacent", "new": "New", "unknown": "Unknown"}
+SALES_READINESS_LABEL = {"qualified_now": "QUALIFIED NOW",
+                         "near_qualified_december": "NEAR-QUALIFIED / DECEMBER",
+                         "stretch": "STRETCH", "not_viable": "NOT VIABLE"}
+
+
+def _action_status(rec):
+    """APPLY / VALIDATE / CONTACT / PACKAGE / STRETCH. A role capped by a true gate, or one
+    the model called a stretch, reads STRETCH whatever action the model proposed."""
+    if rec.get("recommendation") == "stretch" or rec.get("downgraded_from"):
+        return "stretch"
+    return rec.get("action_status") or "apply"
+
+
+def _decision_lines(rec):
+    """The V6 card body as (label, text) pairs, shared by the HTML and Markdown renderers so
+    the two can never disagree. Deliberately no numbers: 'avoid pseudo-precision such as
+    87/100' — the score still ranks, it is just not presented as a fact."""
+    fit = FIT_LEVEL_LABEL.get(rec.get("fit_level")) or (
+        "Strong" if rec.get("recommendation") == "apply_first" else
+        "Good" if rec.get("recommendation") in ("strong_fit", "practical_contract")
+        else "Stretch")
+    head = [f"Status: {ACTION_LABEL[_action_status(rec)][0]}"]
+    if rec.get("work_interest"):
+        head.append(f"Work Interest: {rec['work_interest']}")
+    head.append(f"Fit: {fit}")
+    if rec.get("sales_adjacent") and rec.get("sales_readiness") in SALES_READINESS_LABEL:
+        head.append(f"Sales readiness: {SALES_READINESS_LABEL[rec['sales_readiness']]}")
+    lines = [("", " · ".join(head))]
+    industry = INDUSTRY_LABEL.get(rec.get("industry_relationship"), "Unknown")
+    lines.append(("Industry", industry))
+    lines.append(("Compensation", rec.get("compensation") or "not stated in the posting"))
+    if rec.get("why_fits"):
+        lines.append(("Why it fits", rec["why_fits"]))
+    gap = rec.get("material_gap") or (rec.get("unmet_requirements") or [""])[0]
+    if gap:
+        lines.append(("Material gap", gap))
+    if rec.get("exception_reason") and rec.get("recommendation") not in TOP_RECOMMENDATIONS:
+        lines.append(("Surfaced as an exception", rec["exception_reason"]))
+    if rec.get("next_action"):
+        lines.append(("Next action", rec["next_action"]))
+    return lines
+
+
+def _decision_card(rec):
+    status, color = ACTION_LABEL[_action_status(rec)]
+    lines = _decision_lines(rec)
+    head = (f'<div style="margin:0 0 2px;color:{_C[color]};font-family:{_FONT};'
+            f'font-size:12px;font-weight:800;letter-spacing:.2px;">{_esc(lines[0][1])}')
+    if rec.get("confidence") == "low":
+        head += (f' <span style="color:{_C["amber"]};font-weight:700;">· lower confidence'
+                 f'</span>')
+    if rec.get("priority_employer"):
+        head += f' <span style="color:{_C["green"]};">· ⭐ PRIORITY EMPLOYER</span>'
+    state = rec.get("change_state")
+    if state in (lifecycle.CHANGE_REVALIDATED, lifecycle.CHANGE_REOPENED,
+                 lifecycle.CHANGE_UPDATED, lifecycle.CHANGE_STILL_OPEN):
+        head += (f' <span style="color:{_C["muted"]};">· '
+                 f'{_esc(lifecycle.CHANGE_LABEL[state])}</span>')
+    if rec.get("verification") == lifecycle.NEEDS_RECHECK:
+        head += f' <span style="color:{_C["amber"]};">· NEEDS RECHECK</span>'
+    head += '</div>'
+    title = (f'<div style="margin:3px 0 0;line-height:1.35;">'
+             f'{_link(rec.get("title") or "(untitled)", rec.get("canonical_url") or "")}</div>')
+    body = ""
+    for label, text in lines[1:]:
+        tone = {"Material gap": "amber", "Next action": "head"}.get(label, "text")
+        body += (f'<div style="color:{_C[tone]};font-family:{_FONT};font-size:13px;'
+                 f'margin-top:4px;"><b>{_esc(label)}:</b> {_esc(text)}</div>')
+    if rec.get("priority_note"):
+        body += (f'<div style="color:{_C["green"]};font-family:{_FONT};font-size:12px;'
+                 f'font-weight:700;margin-top:4px;">⭐ {_esc(rec["priority_note"])}</div>')
+    inner = head + title + _rec_meta(rec) + body
+    return _card(_icon_row(rec.get("company") or "", inner), _C[color])
+
+
 def _rec_card(rec):
+    if rec.get("work_interest"):
+        return _decision_card(rec)
     rec_key = rec.get("recommendation") or "stretch"
     emoji, label, color = REC_LABEL.get(rec_key, ("🤔", "Stretch", "amber"))
     head = (f'<div style="margin:0 0 2px;">'
@@ -4048,8 +4580,9 @@ def _change_hero(sections, counts):
 
 
 def _change_preheader(sections):
-    new_total = len(sections["apply_first"]) + len(sections["new_review"]) \
-        + len(sections["wildcards"])
+    new_keys = (("apply_first", "contract", "sales", "exceptions") if "sales" in sections
+                else ("apply_first", "new_review", "wildcards"))
+    new_total = sum(len(sections.get(k) or []) for k in new_keys)
     s = f'{new_total} new · {len(sections["still"])} still worth applying'
     top = sections["apply_first"] or sections["new_review"] or sections["wildcards"]
     if top:
@@ -4059,6 +4592,70 @@ def _change_preheader(sections):
             'font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;'
             'overflow:hidden;color:transparent;height:0;width:0;">'
             f'{_esc(s)}{pad}</div>')
+
+
+# Selection-mode sections, in render order: (key, heading, blurb).
+SELECTION_LAYOUT = [
+    ("apply_first", "Worth your time — new",
+     "New roles whose actual work, qualifications, pay and location make them worth an "
+     "application. Ranked by expected value, not keyword match."),
+    ("contract", "Contract / bridge income — new",
+     "Judged as near-term income on their own terms, not against long-term pay goals."),
+    ("sales", "Sales-adjacency — new",
+     "Consultative / technical-sales roles. A separate lane, capped so it never displaces "
+     "the primary search."),
+    ("exceptions", "Outside the usual parameters — surfaced for a stated reason", ""),
+    ("still", "Still worth applying",
+     "Shown in an earlier email, still open, and still worthwhile."),
+    ("wildcards", "Moved down by the final check",
+     "These were selected, then held back by the pre-send QA below."),
+]
+
+
+def _selection_counts_line(counts):
+    bits = []
+    if counts.get("reviewed"):
+        bits.append(f'{counts["reviewed"]} roles judged on their job descriptions')
+    out = (counts.get("below_bar", 0) + counts.get("screened_out", 0))
+    if out:
+        bits.append(f"{out} not worth your time")
+    if counts.get("held_over_cap"):
+        bits.append(f'{counts["held_over_cap"]} worthwhile held for a later day (daily cap)')
+    if counts.get("pending_score"):
+        bits.append(f'{counts["pending_score"]} awaiting a JD review')
+    if counts.get("suppressed"):
+        bits.append(f'{counts["suppressed"]} hidden by your decisions')
+    return " · ".join(bits)
+
+
+def _selection_body(sections, counts):
+    new_total = sum(len(sections.get(k) or []) for k in ("apply_first", "contract", "sales",
+                                                         "exceptions"))
+    F = _FONT
+    rows = [f'<div style="color:{_C["head"]};font-family:{F};font-size:20px;font-weight:800;'
+            f'line-height:1.25;"><span style="color:{_C["green"]};">{new_total}</span> '
+            f'new role{"" if new_total == 1 else "s"} worth your time</div>']
+    top = best_move(sections)
+    if top:
+        where = "new today" if not top.get("ever_shown") else "from an earlier email"
+        rows.append(f'<div style="color:{_C["text"]};font-family:{F};font-size:14px;'
+                    f'margin-top:7px;">Best move today ({where}): '
+                    f'<b style="color:{_C["head"]};">{_esc(top.get("title") or "")}</b> — '
+                    f'{_esc(top.get("company") or "")}</div>')
+    elif not new_total:
+        rows.append(f'<div style="color:{_C["text"]};font-family:{F};font-size:14px;'
+                    f'margin-top:7px;">Nothing new cleared the bar today. That is a real '
+                    f'answer, not a fault — no role was promoted just to fill the email.</div>')
+    line = _selection_counts_line(counts)
+    if line:
+        rows.append(f'<div style="color:{_C["muted"]};font-family:{F};font-size:12px;'
+                    f'margin-top:5px;">{_esc(line)}</div>')
+    B = [f'<div style="border:1px solid {_C["border"]};border-left:3px solid {_C["link"]};'
+         f'background-color:{_C["panel"]};border-radius:12px;padding:18px 20px;'
+         f'margin:16px 0 6px;">{"".join(rows)}</div>']
+    for key, heading, blurb in SELECTION_LAYOUT:
+        B.append(_change_section(heading, sections.get(key) or [], blurb))
+    return "".join(B)
 
 
 def build_change_digest_html(profile, sections, counts, health_rows, qa_findings=None):
@@ -4075,6 +4672,13 @@ def build_change_digest_html(profile, sections, counts, health_rows, qa_findings
              f'font-weight:800;line-height:1.3;">Prospector — {today}</div>')
     B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
              f'margin-top:4px;">{_esc(profile["label"])}</div>')
+    if counts.get("selection"):
+        B.append(_selection_body(sections, counts))
+        B.append(_removed_html(sections["removed"]))
+        B.append(_qa_html(qa_findings or []))
+        B.append(_source_health_html(health_rows))
+        shown = [r["job_key"] for k in SHOWN_SECTIONS for r in sections.get(k) or []]
+        return _digest_shell(profile, "".join(B)), shown
     B.append(_change_hero(sections, counts))
     B.append(_change_section("Apply first", sections["apply_first"],
                              "Highest-value new opportunities."))
@@ -4100,6 +4704,8 @@ def build_change_digest_md(profile, sections, counts, health_rows, qa_findings=N
     """Plain-text mirror of the email, committed as report_<name>.md so a run can be reviewed
     (and diffed) without opening HTML."""
     today = datetime.date.today().isoformat()
+    if counts.get("selection"):
+        return _selection_md(profile, sections, counts, health_rows, qa_findings, today)
     new_total = sum(len(sections[k]) for k in ("apply_first", "new_review", "wildcards"))
     L = [f"# Prospector — {today}", f"_{profile['label']}_", "",
          f"**{new_total} new roles today** · {len(sections['still'])} still worth applying "
@@ -4163,6 +4769,63 @@ def build_change_digest_md(profile, sections, counts, health_rows, qa_findings=N
         L.append(f"- No roles matching this search for {STALE_SOURCE_RUNS}+ runs "
                  f"(feeds healthy, postings out of region or out of the age window): "
                  f"{', '.join(quiet)}")
+    return "\n".join(L) + "\n"
+
+
+def _selection_md(profile, sections, counts, health_rows, qa_findings, today):
+    new_total = sum(len(sections.get(k) or []) for k in ("apply_first", "contract", "sales",
+                                                         "exceptions"))
+    L = [f"# Prospector — {today}", f"_{profile['label']}_", "",
+         f"**{new_total} new role{'' if new_total == 1 else 's'} worth your time** · "
+         f"{len(sections['still'])} still worth applying · "
+         f"{len(sections['removed'])} closed/removed"]
+    top = best_move(sections)
+    if top:
+        L.append(f"Best move today: **{top.get('title')}** — {top.get('company')}")
+    elif not new_total:
+        L.append("Nothing new cleared the bar today — no role was promoted to fill the email.")
+    line = _selection_counts_line(counts)
+    if line:
+        L.append(f"_{line}_")
+    L.append("")
+    for key, heading, _ in SELECTION_LAYOUT:
+        rows = sections.get(key) or []
+        if not rows:
+            continue
+        L.append(f"## {heading.upper()} ({len(rows)})")
+        for r in rows:
+            lines = _decision_lines(r) if r.get("work_interest") else [("", "")]
+            arrangement = r.get("work_arrangement") or ""
+            date = (f"posted {r['posted_date']}" if r.get("posted_date")
+                    else f"first seen {r.get('first_seen', '?')}")
+            L.append(f"- **{r.get('company')} — {r.get('title')}**")
+            if lines[0][1]:
+                L.append(f"  - {lines[0][1]}")
+            L.append(f"  - Work model/location: {arrangement} {r.get('location', '')} · {date}")
+            for label, text in lines[1:]:
+                L.append(f"  - {label}: {text}")
+            if r.get("priority_note"):
+                L.append(f"  - ⭐ {r['priority_note']}")
+            L.append(f"  - {r.get('canonical_url', '')}")
+        L.append("")
+    if sections["removed"]:
+        L.append(f"## REMOVED SINCE PRIOR RUN ({len(sections['removed'])}) — closure "
+                 f"confirmed at the employer")
+        for r in sections["removed"]:
+            why = lifecycle.REMOVAL_REASONS.get(r.get("removal_reason"), "no longer listed")
+            L.append(f"- {r.get('title')} — {r.get('company')} · {why}")
+        L.append("")
+    if counts.get("needs_recheck"):
+        L.append(f"_{counts['needs_recheck']} previously-emailed role(s) are not visible "
+                 f"right now and are marked NEEDS RECHECK — not reported as closed._")
+        L.append("")
+    for f in qa.corrected(qa_findings or []):
+        L.append(f"- QA: {f['check']} — {f['detail']}")
+    s = source_health_summary(health_rows)
+    L += ["", "## SOURCE HEALTH",
+          f"- Sources checked: {s['ok']}/{s['total']} successful",
+          f"- Temporary errors: {s['temp_error']}",
+          f"- Needs attention: {len(s['broken']) + len(s['stale'])}"]
     return "\n".join(L) + "\n"
 
 
@@ -4513,7 +5176,8 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, priority
         # V3: the change digest, built from the lifecycle DB (requirement F).
         sections, counts = change_sections(db, feedback, seen_keys=seen,
                                            newly_gone=newly_gone,
-                                           regions=settings.get("location_priority"))
+                                           regions=settings.get("location_priority"),
+                                           profile=profile)
         # THE FINAL QA GATE (requirement 9). It runs on the exact selection about to be sent,
         # AFTER every per-role rule, and it corrects the report rather than reporting on it.
         # Deliberately placed here and not inside change_sections: half of what it checks is a

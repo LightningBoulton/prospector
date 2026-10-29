@@ -1821,7 +1821,7 @@ class TestDiscoveryGate(unittest.TestCase):
 
         calls = []
 
-        def fake_score(candidate, p, client):
+        def fake_score(candidate, p, client, rubric="standard"):
             calls.append(p["key"])
             return {"opportunity_score": 50, "score": 50, "recommendation": "stretch"}
 
@@ -3351,11 +3351,20 @@ class TestHardRequirements(unittest.TestCase):
         cats = [r["category"] for r in screening.hard_requirements(pst)]
         self.assertEqual(cats, ["sql_or_programming"])
 
+    @staticmethod
+    def _v5_profile():
+        """Lisa's profile WITHOUT the V6 gate/caution split — the V5 behaviour, where every
+        detected requirement caps, which is still the default for any profile that does not
+        list gate_categories."""
+        p = load_real_profile("lisa")
+        p.pop("hard_requirements", None)
+        return p
+
     def test_enforcement_caps_at_stretch_and_keeps_the_role(self):
         pst = posting("A", "1", "Director, Revenue Operations",
                       description="Requires 7+ years of dedicated revenue operations and "
                                   "proven pipeline forecasting ownership.")
-        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        v = jm.enforce_hard_requirements(pst, self._verdict(), self._v5_profile())
         self.assertEqual(v["recommendation"], "stretch")
         self.assertEqual(v["downgraded_from"], "apply_first")
         self.assertTrue(v["unmet_requirements"])
@@ -3369,8 +3378,46 @@ class TestHardRequirements(unittest.TestCase):
         pst = posting("A", "1", "Director, Talent Strategy",
                       description="Drive transformation, operating model design and change "
                                   "management. Must have 5+ years of full-cycle recruiting.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), self._v5_profile())
+        self.assertEqual(v["recommendation"], "stretch")
+
+    # ---- V6: gates vs cautions (Lisa's update, section 4) ----
+
+    def test_v6_a_specialist_year_count_is_a_caution_not_a_cap(self):
+        """'Do not treat every bullet under requirements as equally absolute.' Under Lisa's
+        profile a deterministic specialist-tenure hit is shown as a caution; whether it is a
+        TRUE gate for this job is the model's call (its unmet_requirements still caps)."""
+        pst = posting("A", "1", "Director, Revenue Operations",
+                      description="Requires 7+ years of dedicated revenue operations and "
+                                  "proven pipeline forecasting ownership.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "apply_first")
+        self.assertTrue(any("specialist tenure" in c for c in v["cautions"]))
+
+    def test_v6_a_mandatory_license_is_a_gate(self):
+        pst = posting("A", "1", "Director, Clinical Operations Strategy",
+                      description="An active RN license is required for this position.")
         v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
         self.assertEqual(v["recommendation"], "stretch")
+
+    def test_v6_a_preferred_certification_is_not_a_gate(self):
+        pst = posting("A", "1", "Director, PMO",
+                      description="Qualifications: PMP certification preferred.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "apply_first")
+
+    def test_v6_a_mandatory_clearance_is_a_gate(self):
+        pst = posting("A", "1", "Director, Program Operations",
+                      description="Active TS/SCI clearance is required.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "stretch")
+
+    def test_v6_a_profile_with_no_screening_blocks_is_not_judged_against_lisas_list(self):
+        """Chad: an engineering profile must not be capped for 'requires Python'."""
+        pst = posting("A", "1", "Senior Software Engineer",
+                      description="Must have proven expertise in Python.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("chad"))
+        self.assertEqual(v["recommendation"], "apply_first")
 
     def test_a_clean_jd_is_left_alone(self):
         pst = posting("A", "1", "Director, Business Transformation",
@@ -3858,9 +3905,25 @@ class TestPreSendQA(unittest.TestCase):
         seo = self._rec("seo", title="Director, SEO", recommendation="strong_fit",
                         fit_score=88)
         db = {"jobs": {"seo": seo}}
-        sections, findings = self._run(self._sections(), db=db, seen={"seo"})
+        classic = load_real_profile("lisa")
+        classic.pop("selection")
+        sections, findings = qa.review(self._sections(), db, classic, seen_keys={"seo"})
         self.assertEqual([r["job_key"] for r in sections["new_review"]], ["seo"])
         self.assertEqual(self._verdict(findings, "SEO / content coverage"), "corrected")
+
+    def test_v6_seo_promotion_respects_the_cap_and_the_bar(self):
+        """Selection mode: SEO is a B-tier interest, not a quota. A JD-first-worthwhile SEO
+        role fills a FREE slot; a stretch one is never promoted; a full day promotes none."""
+        good = self._rec("good", title="Director, SEO", recommendation="strong_fit",
+                         fit_score=88, work_interest="B")
+        weak = self._rec("weak", title="SEO Manager", recommendation="stretch",
+                         fit_score=60, work_interest="B")
+        db = {"jobs": {"good": good, "weak": weak}}
+        sections, _ = self._run(self._sections(), db=db, seen={"good", "weak"})
+        self.assertEqual([r["job_key"] for r in sections["apply_first"]], ["good"])
+        full = self._sections(apply_first=[self._rec(str(i)) for i in range(5)])
+        sections, _ = self._run(full, db={"jobs": {"good": dict(good)}}, seen={"good"})
+        self.assertEqual(len(sections["apply_first"]), 5)
 
     def test_a_recruiting_role_screened_out_with_no_reason_is_reported(self):
         rec = self._rec("r", title="Director, Recruiting Operations",
@@ -4069,6 +4132,159 @@ class TestScreeningConfigIsAlive(unittest.TestCase):
         self.assertTrue(screening.technical_screening_enabled(load_real_profile("lisa")))
         self.assertFalse(screening.technical_screening_enabled(load_real_profile("chad")))
 
+
+
+class TestV6SalesAdjacency(unittest.TestCase):
+    """Lisa's update, section 15: a separate sales-adjacency lane."""
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+
+    def test_a_solutions_consultant_is_retrieved_into_the_sales_lane(self):
+        p = posting("Adobe", "1", "Senior Solutions Consultant")
+        tier, reason = jm.classify_match(p, self.lisa)
+        self.assertEqual(tier, jm.TIER_DISCOVERY)
+        self.assertTrue(p["sales_adjacent"])
+        self.assertIn("sales-adjacency", reason)
+
+    def test_value_engineer_is_not_dropped_for_naming_engineer(self):
+        p = posting("Acme", "1", "Value Engineer")
+        self.assertEqual(jm.classify_match(p, self.lisa)[0], jm.TIER_DISCOVERY)
+
+    def test_a_coding_sales_engineer_is_still_dropped_on_its_description(self):
+        p = posting("Acme", "1", "Sales Engineer",
+                    description="Hands-on coding experience required; write code daily, "
+                                "build APIs and manage Kubernetes and Terraform.")
+        tier, _ = jm.classify_match(p, self.lisa)
+        self.assertIsNone(tier)
+
+    def test_sdr_and_bdr_are_never_retrieved(self):
+        for title in ("Sales Development Representative", "BDR, Solutions",
+                      "Inside Sales Solutions Consultant"):
+            self.assertIsNone(jm.classify_match(posting("A", "1", title), self.lisa)[0], title)
+
+    def test_a_primary_title_stays_primary(self):
+        """'Director, Value Realization' is A-tier work the primary search claims."""
+        p = posting("Acme", "1", "Director, Value Realization")
+        tier, _ = jm.classify_match(p, self.lisa)
+        self.assertEqual(tier, jm.TIER_CORE)
+        self.assertFalse(p.get("sales_adjacent"))
+
+    def test_chad_has_no_sales_lane(self):
+        p = posting("Acme", "1", "Senior Solutions Consultant")
+        jm.classify_match(p, load_real_profile("chad"))
+        self.assertFalse(p.get("sales_adjacent"))
+
+
+class TestV6Selection(unittest.TestCase):
+    """Lisa's update, sections 24-26: at most five worthwhile NEW roles, zero allowed."""
+
+    def _rec(self, key, **kw):
+        r = {"job_key": key, "title": key, "company": "X", "recommendation": "strong_fit",
+             "work_interest": "A", "fit_score": 80, "status": "new", "ever_shown": False}
+        r.update(kw)
+        return r
+
+    def _run(self, recs):
+        jobs = {r["job_key"]: r for r in recs}
+        return jm.change_sections({"jobs": jobs}, None, seen_keys=set(jobs),
+                                  profile=load_real_profile("lisa"))
+
+    def _new(self, sections):
+        return [r["job_key"] for k in jm.NEW_SECTIONS for r in sections.get(k) or []]
+
+    def test_never_more_than_five(self):
+        sections, counts = self._run([self._rec(f"r{i}", fit_score=90 - i) for i in range(9)])
+        self.assertEqual(len(self._new(sections)), 5)
+        self.assertEqual(counts["held_over_cap"], 4)
+
+    def test_mediocre_roles_are_not_promoted_to_fill_the_email(self):
+        sections, counts = self._run([self._rec("s", recommendation="stretch"),
+                                      self._rec("n", recommendation="not_recommended")])
+        self.assertEqual(self._new(sections), [])
+        self.assertEqual(counts["below_bar"] + counts["screened_out"], 2)
+
+    def test_d_tier_work_needs_a_named_exception(self):
+        sections, _ = self._run([self._rec("d", work_interest="D"),
+                                 self._rec("dx", work_interest="D", recommendation="stretch",
+                                           exception_reason="rare M&A role at a referral")])
+        self.assertEqual(self._new(sections), ["dx"])
+        self.assertEqual([r["job_key"] for r in sections["exceptions"]], ["dx"])
+
+    def test_sales_lane_never_crowds_out_the_primary_search(self):
+        recs = [self._rec(f"p{i}", fit_score=70) for i in range(5)]
+        recs += [self._rec(f"s{i}", fit_score=99, sales_adjacent=True,
+                           sales_readiness="qualified_now") for i in range(3)]
+        sections, _ = self._run(recs)
+        self.assertEqual(len(sections["apply_first"]), 5)
+        self.assertEqual(sections["sales"], [])
+
+    def test_sales_lane_is_capped_at_two(self):
+        recs = [self._rec(f"s{i}", sales_adjacent=True, sales_readiness="near_qualified_december")
+                for i in range(4)]
+        sections, _ = self._run(recs)
+        self.assertEqual(len(sections["sales"]), 2)
+
+    def test_a_sales_role_needs_readiness(self):
+        sections, _ = self._run([self._rec("s", sales_adjacent=True,
+                                           sales_readiness="not_viable")])
+        self.assertEqual(self._new(sections), [])
+
+    def test_an_old_rubric_verdict_is_never_shown(self):
+        sections, counts = self._run([self._rec("old", work_interest="")])
+        self.assertEqual(self._new(sections), [])
+        self.assertEqual(counts["pending_score"], 1)
+
+    def test_a_strong_existing_role_can_be_the_best_move(self):
+        """Section 26: a new role does not automatically outrank a strong existing one."""
+        sections, _ = self._run([self._rec("old", ever_shown=True, fit_score=95),
+                                 self._rec("new", fit_score=70)])
+        self.assertEqual(jm.best_move(sections)["job_key"], "old")
+
+    def test_the_card_shows_decisions_not_numbers(self):
+        rec = self._rec("r", company="Delta", title="Director, CX", fit_level="good",
+                        action_status="package", industry_relationship="direct",
+                        why_fits="Owns CX transformation.", next_action="Lead with Delta.",
+                        sales_adjacent=True, sales_readiness="near_qualified_december",
+                        fit_score=87, canonical_url="https://x.test")
+        html = jm._rec_card(rec)
+        for want in ("Status: PACKAGE", "Work Interest: A", "Fit: Good", "Direct",
+                     "NEAR-QUALIFIED / DECEMBER", "Next action"):
+            self.assertIn(want, html)
+        self.assertNotIn("87/100", html)
+
+
+class TestV6Verdict(unittest.TestCase):
+    BASE = {"qualification_fit": 80, "interest_fit": 80, "practical_fit": 80,
+            "opportunity_score": 80, "recommendation": "strong_fit"}
+
+    def test_decision_fields_validate_and_degrade(self):
+        v = jm.validate_verdict({**self.BASE, "work_interest": "a", "action_status": "PACKAGE",
+                                 "industry_relationship": "client exposure",
+                                 "sales_readiness": "bogus", "fit_level": "good"})
+        self.assertEqual(v["work_interest"], "A")
+        self.assertEqual(v["action_status"], "package")
+        self.assertEqual(v["industry_relationship"], "client_exposure")
+        self.assertEqual(v["sales_readiness"], "n_a")
+
+    def test_a_standard_verdict_keeps_its_old_shape(self):
+        self.assertNotIn("work_interest", jm.validate_verdict(dict(self.BASE)))
+
+    def test_rubric_selection_and_fingerprint(self):
+        cand = {"x": 1}
+        self.assertEqual(jm._rubric_for(load_real_profile("lisa")), "jd_first")
+        self.assertEqual(jm._rubric_for(load_real_profile("chad")), "standard")
+        self.assertNotEqual(jm._bg_fingerprint(cand, "jd_first"), jm._bg_fingerprint(cand))
+        self.assertIn("DOMINANT WORK", jm._fit_system(cand, "jd_first")[0]["text"])
+        self.assertNotIn("DOMINANT WORK", jm._fit_system(cand)[0]["text"])
+
+    def test_lisas_context_carries_the_facts_the_update_requires(self):
+        bg = json.load(open(os.path.join(jm.HERE, "lisa_background.json")))
+        blob = json.dumps(bg)
+        self.assertEqual(bg["adobe_digital_academy"]["status"], "in_progress")
+        self.assertIn("Delta Air Lines", blob)
+        self.assertIn("Travel, aviation, corporate travel and travel-tech are DIRECT", blob)
+        self.assertIn("NOT 'without sales experience'", blob)
 
 
 if __name__ == "__main__":

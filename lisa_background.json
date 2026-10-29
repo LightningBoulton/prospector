@@ -1,112 +1,173 @@
 {
-  "_comment": "Candidate scoring profile for Lisa. This WHOLE object is sent to the model on every scoring call, so it is deliberately lean and decision-focused rather than a full CV — everything here exists to help the model score qualification_fit, interest_fit, practical_fit and opportunity_score. Editing this file changes the cache fingerprint, so all of Lisa's verdicts re-score on the next run. Previous version was ~7.9KB of prose; this is ~2.5KB.",
+  "_comment": "Candidate context for Lisa. This WHOLE object is sent to the model on every scoring call (as the cached system block), so it is the CANONICAL candidate context: the model has no other view of her career — Prospector cannot read her Google Drive or resume library. V6 (2026-10-28) rebuilt it from Lisa's own update: full career history including earlier-career travel, retail and entrepreneurship, explicit commercial/sales-adjacent experience, client-industry exposure, the in-progress Adobe Digital Academy program, a role-interest hierarchy, and compensation/location priorities. Editing this file changes the cache fingerprint, so every one of Lisa's verdicts re-scores on the next run. KEEP adobe_digital_academy.status = 'in_progress' until Lisa confirms completion — the model is told to treat it exactly as stated here.",
 
   "name": "Lisa Hillier",
-  "current_title": "Senior Director, Customer Experience — strategic practice leader, experience design",
-  "years_experience": 15,
+  "current_title": "Senior strategy, operations, transformation, professional-services, customer-experience and organizational leader",
 
-  "positioning": "Builds the operating and leadership capability organizations need to get through growth and major change without losing the people, knowledge, customer value, and operational strength that made them work. Strongest entering complex or fast-growing environments: creating structure, improving performance, helping teams scale.",
+  "context_completeness": "This profile is a summary, not her complete career. Absence of something here is NOT evidence she lacks it — classify it UNKNOWN, never as a gap.",
 
-  "core_domains": [
-    "Enterprise and business transformation",
-    "Organizational strategy, design and effectiveness",
-    "Operations, business operations, operational excellence",
-    "Program and portfolio leadership, PMO",
-    "M&A integration (post-merger integration, IMO)",
-    "Change management and organizational change",
-    "Customer experience and employee experience",
-    "Professional services and service delivery",
-    "AI adoption, enablement and transformation",
-    "Operating model design, value realization"
-  ],
-
-  "adjacent_domains_still_relevant": [
-    "Business operations", "Marketing operations", "Revenue operations",
-    "Customer success leadership", "Learning and development",
-    "Organizational development", "Service design", "Process improvement",
-    "Content strategy", "Digital strategy", "SEO",
-    "Workforce transformation"
-  ],
-
-  "target_titles": [
-    "Director / Senior Director of: Organizational Strategy, Business Transformation, Operations, Operational Excellence, Program Management, PMO, Customer Experience, Employee Experience, Professional Services, Strategic Initiatives, AI Enablement, Change Management",
-    "Head of Operations", "Chief of Staff", "Program Director",
-    "Transformation Lead", "Practice Leader", "General Manager",
-    "VP / SVP / COO / CCO / CXO where scope fits"
-  ],
-
-  "seniority_stance": "Open from Manager through C-level. Do NOT down-rank a role only because the title is below Director, or because it is individual-contributor, Lead, Principal, Manager, Senior Manager, contract, or temporary. Judge it on whether it carries meaningful ownership, influence, strategic scope, transformation or operating responsibility, or executive-facing work. A Manager or Senior Manager role with a real transformation / operations / strategy / M&A / org-effectiveness / experience mandate is a STRONG fit, not a stretch.",
-
-  "title_caveat": "Her best-fit roles are frequently poorly or generically titled — several of her own past roles were. Judge primarily from the mandate, scope, and problems described in the posting, not from title keywords.",
-
-  "strong_signals": [
-    "M&A integration, post-merger integration, integration management office, due diligence",
-    "operating model design, target operating model, organizational design",
-    "enterprise or business transformation, transformation office or roadmap",
-    "operational excellence, process excellence, value realization",
-    "change management, change enablement, organizational change",
-    "AI adoption, AI enablement, workforce transformation",
-    "scaling operations, operationalizing strategy, organizational maturity",
-    "professional services or service delivery leadership",
-    "customer experience or employee experience ownership",
-    "executive-facing scope, P&L or margin ownership, global or multi-site scope"
-  ],
-
-  "proof_points": [
-    "Senior leadership at Credera/TA Digital, Merkle/Axis41, 180fusion, Delta Air Lines",
-    "Led global teams through organizational growth and integration",
-    "Measurable gains in revenue, margin, utilization, customer metrics, engagement, retention",
-    "Spans consulting, agency, enterprise, nonprofit and global organizations"
-  ],
-
-  "working_style": "Systems thinker; evidence-based; connects business strategy to execution; explains technology in business terms; structured executive communication.",
-
-  "_technical_boundary_comment": "This is the hard line, not a preference. Prospector also enforces it deterministically before a role is ever scored (screening.technical_screen), so the two must not disagree.",
-  "technical_boundary": {
-    "out_of_scope": "Roles requiring HER PERSONALLY to have substantial expertise in software engineering, architecture or infrastructure, APIs or integrations, data engineering, ML/AI engineering, automation development, or technical implementation. This holds regardless of title — a role called Program Manager, Transformation, Operations, AI or Customer Success is still out of scope if the work is engineering work. A Senior Forward Deployed Architect is never a recommendation.",
-    "in_scope": "Business-side AI and technology leadership is a TARGET, not an exception: AI adoption and enablement, workforce transformation, change management, process redesign, operating models, AI governance, organizational adoption, and business-side AI strategy. She explains technology in business terms; she does not build it.",
-    "the_distinction": "Would she be BUILDING the technology, or leading its adoption? The second is her work."
+  "senior_career_profile": {
+    "summary": "Senior strategy, operations, transformation, professional-services, customer-experience and organizational leader.",
+    "recent_work": [
+      "enterprise transformation", "operational excellence", "professional-services leadership",
+      "P&L and business performance", "organizational effectiveness", "operating models",
+      "M&A integration", "customer experience", "employee experience", "leadership development",
+      "workforce/capacity planning", "global delivery", "strategy execution",
+      "digital/content/SEO strategy", "change leadership", "AI adoption and business transformation"
+    ],
+    "demonstrated_outcomes": [
+      "grew a global organization from ~28 to 54 people",
+      "36% YoY revenue growth",
+      "net margin improved from ~10% to 27.3%",
+      "utilization improved from ~64% to 90.1%",
+      "95%+ employee retention through acquisition/integration",
+      "significant employee-engagement and customer-NPS improvement",
+      "led multidisciplinary teams across countries and time zones",
+      "enterprise client and executive stakeholder leadership"
+    ]
   },
 
-  "hard_requirements_she_does_not_support": [
-    "a required number of years in a specialist function she has not held",
-    "a required industry specialization",
-    "a required license or certification",
-    "SQL or programming proficiency",
-    "CRM or MarTech administration",
-    "engineering or architecture depth",
-    "dedicated RevOps or Sales Ops ownership",
-    "deep SaaS renewals and forecasting",
-    "full-cycle recruiting execution",
-    "manufacturing or production expertise"
+  "career_history": [
+    {"employer": "TA Digital → Credera / Omnicom", "years": "2021–2024",
+     "scope": "Senior leadership across customer experience, content/strategy, professional services, organizational leadership and transformation. Partnered with sales, pre-sales, account, strategy, technology and delivery leaders across the opportunity lifecycle."},
+    {"employer": "Axis41 → Merkle / Dentsu", "years": "2016–2020",
+     "scope": "Leadership across digital experience, omnichannel campaigns, content/SEO, professional-services delivery and enterprise clients. Participated in discovery, solution development, scoping, RFP/pitch preparation and presentations."},
+    {"employer": "180fusion → Deluxe", "years": "2014–2016",
+     "scope": "Digital strategy, SEO/content and practice/operations leadership during growth and acquisition."},
+    {"employer": "Delta Air Lines", "years": "~2007–2014 (~7 years)",
+     "scope": "Reservation Sales & Support: direct reservation sales and customer service, domestic and international travel, specialized bookings, complex ticket reissues, partner/affiliate travel, fares, destinations and schedules, regulatory/policy requirements, needs identification; measured on customer satisfaction, quality and first-contact resolution. Airport Operations Administration / Station Finance & Audit Lead: station finance and audit, West-region responsibilities, finance/audit training, scheduling and payroll, operational process improvement, cross-functional airport operations; a process change cut SLC staffing costs by $250K+ in its first quarter with no reduction in force."},
+    {"employer": "Pinpoint Destinations", "years": "~2013–2018 (~5 years)",
+     "scope": "Marketing Communications Manager / Independent Travel Agent — independent travel-industry work plus marketing and customer-facing responsibilities."},
+    {"employer": "Victoria's Secret", "years": "~2004–2008",
+     "scope": "Sales Support & Merchandising Manager — merchandising, retail operations, customer experience, sales support, people oversight."},
+    {"employer": "Macy's / Meier & Frank", "years": "~2005–2006",
+     "scope": "Retail sales (incl. shoe department) — direct consumer sales, retail operations, customer service."},
+    {"employer": "Haiku Wedding and Floral Design", "years": "~2004–2010",
+     "scope": "Owner / Designer — small-business ownership, entrepreneurship, customer relationships, weddings/events, service delivery, creative services, business operations."},
+    {"employer": "Annie's Main Street Floral", "years": "~2002–2005",
+     "scope": "Floral Designer — customer-facing service, design/creative work, retail/service environment."},
+    {"employer": "Oak Hills Dentistry / Glenn A. Zeh, DDS", "years": "early career",
+     "scope": "Dental-assisting education, internship and work experience."},
+    {"employer": "Women Tech Council / SheTech", "years": "",
+     "scope": "Nonprofit / workforce-development leadership."}
   ],
-  "_hard_requirements_comment": "A stated requirement from this list OUTRANKS semantic similarity. Generic overlap in strategy, transformation, operations, CX or leadership does not compensate for one — do not average them against each other. Such a role is at best a stretch.",
 
-  "recruiting_and_talent_stance": "Do NOT exclude recruiting or talent roles on title history — judge the actual duties. Genuinely relevant: recruiting operations, talent strategy, workforce planning, recruiting-process design, talent analytics, hiring-manager enablement, recruiting transformation. These are operating-model and process work, which is her work. But flag the direct-execution gap where the posting asks for 5+ years of full-cycle recruiting, specialized recruiting tenure, advanced sourcing, requisition ownership, offer negotiation and closing, or extensive hands-on ATS execution — and for a promising recruiting role, name the SPECIFIC skills she would need to bridge.",
+  "how_to_weigh_history": "Recent senior experience (2014 onward) establishes current SCOPE and SENIORITY. Earlier experience establishes INDUSTRY FAMILIARITY, customer-facing experience and breadth. Keep the two separate: older retail experience does not qualify her for a modern retail-merchandising executive role, and the floral/events business is evidence of entrepreneurship and service orientation, not of current senior qualifications.",
 
-  "seo_and_content": "Actively wanted, and not required to carry transformation language: SEO Director / Head / Lead / Manager, Enterprise SEO, Organic Search and Organic Growth, Search Strategy, SEO Content Strategy, Content Strategy, Content Operations, Digital Content Strategy, and SEO in the age of AI search (GEO / AEO). Treat these as squarely in scope on their own terms — do not require them to also describe transformation, operating-model or change work, and do not down-rank them for lacking it.",
+  "industry_experience": {
+    "direct": [
+      "Travel and aviation (Delta Air Lines ~7 yrs; independent travel agent ~5 yrs). Travel, aviation, corporate travel and travel-tech are DIRECT industry experience — never describe travel as an industry she has not worked in.",
+      "Professional services / digital agencies / consulting (TA Digital, Credera, Omnicom, Axis41, Merkle, Dentsu, 180fusion)",
+      "Retail / consumer (Victoria's Secret, Macy's) — earlier-career familiarity, not modern executive merchandising expertise",
+      "Weddings / events / creative services (owned a business)",
+      "Nonprofit / workforce development (Women Tech Council / SheTech)"
+    ],
+    "client_exposure": [
+      "financial services", "healthcare", "insurance", "regulated B2B environments",
+      "enterprise technology / digital transformation", "B2B", "B2C", "B2B2C"
+    ],
+    "limited": "Early dental-assisting experience establishes limited familiarity with a clinical/dental environment ONLY. It does NOT qualify her for clinical roles, licensed healthcare roles, or roles requiring substantive recent clinical experience."
+  },
 
-  "weak_or_wrong_fit": [
-    "Hands-on software / data / security engineering, IT administration, technician work",
-    "Accounting, FP&A, tax, treasury, audit, controller, payroll",
-    "Clinical or medical provider work",
-    "Plant, production-floor, warehouse or depot operations",
-    "Sales-quota ownership, account executive, SDR/BDR",
-    "Roles with no ownership, influence or strategic scope at all"
-  ],
+  "commercial_and_sales_experience": {
+    "summary": "She is NOT 'without sales experience' — that statement is false. What she lacks is RECENT TRADITIONAL QUOTA-CARRYING SaaS ACCOUNT-EXECUTIVE CLOSING history. Keep those two things distinct in every judgment.",
+    "confirmed": [
+      "working with sales and pre-sales teams", "opportunity qualification", "client discovery",
+      "needs identification", "solution development", "scoping",
+      "estimation and delivery feasibility", "assumption development",
+      "RFP development and responses", "pitch and proposal development", "client presentations",
+      "executive client conversations", "account / client relationship leadership",
+      "identifying expansion opportunities", "professional-services economics",
+      "business and financial judgment", "customer retention", "value realization",
+      "post-sale delivery", "executive business reviews",
+      "earlier direct consumer sales (Delta reservations sales; retail sales)"
+    ],
+    "context": "Her professional-services leadership required balancing what could be sold, staffed, delivered and delivered profitably."
+  },
+
+  "adobe_digital_academy": {
+    "program": "Adobe Digital Academy — Technical Sales",
+    "started": "2026-10-26",
+    "expected_completion": "December 2026",
+    "status": "in_progress",
+    "how_to_use": "IN PROGRESS, NOT COMPLETED. Never describe it as completed, certified or earned. It builds on her existing professional-services, solutioning, discovery, client and technology-consulting experience, and it SHOULD raise near-term readiness for consultative technical-sales roles (Solutions Consultant, Value Consultant and similar): such a role may be worth applying to NOW with the training disclosed as in progress, provided the employer imposes no hard requirement she cannot currently meet."
+  },
+
+  "role_interest_hierarchy": {
+    "A_high_interest": [
+      "M&A integration", "Operational excellence", "Chief of Staff / executive operations",
+      "AI adoption / AI enablement / business AI transformation",
+      "Organizational effectiveness", "Change leadership / organizational change",
+      "Operating model / organizational design", "CX / EX / service design",
+      "Leadership development",
+      "Customer success / value realization when strategic, consultative, transformation-oriented or enterprise-level"
+    ],
+    "B_good_fit_for_right_company_or_comp": [
+      "Enterprise transformation (not primarily technical implementation/migration)",
+      "Strategy", "Business operations", "Professional services leadership and operations",
+      "SEO / content / digital strategy", "Marketing operations"
+    ],
+    "C_capable_lower_interest": [
+      "Program management", "Portfolio management", "PMO"
+    ],
+    "C_note": "C roles can still rank when compensation, company, strategic value, speed-to-income or scope make the opportunity unusually attractive.",
+    "D_generally_avoid": [
+      "outbound-heavy sales", "traditional SDR/BDR work", "technical program management",
+      "deep technical support", "hands-on martech implementation",
+      "formal research / VOC roles", "pure enablement roles (e.g. sales enablement)",
+      "clinical healthcare work",
+      "narrow specialist roles requiring deep domain expertise she does not have"
+    ]
+  },
+
+  "ai_interest": {
+    "wants": [
+      "enterprise AI adoption", "AI enablement", "organizational AI transformation",
+      "AI operating models", "workforce adoption", "AI change leadership", "practical business AI",
+      "AI-enabled customer/employee experience", "value realization from AI"
+    ],
+    "not_her_work": [
+      "ML engineering", "AI research", "data science", "software engineering",
+      "deeply technical AI infrastructure",
+      "technical product management requiring engineering depth"
+    ],
+    "rule": "AI in a title does not make a role relevant. Would she be BUILDING the technology, or leading its adoption? The second is her work."
+  },
+
+  "technical_boundary": {
+    "out_of_scope": "Roles requiring HER PERSONALLY to have substantial expertise in software engineering, architecture or infrastructure, APIs or integrations, data engineering, ML/AI engineering, automation development, or technical implementation — regardless of title. Prospector also enforces this deterministically before scoring (screening.technical_screen).",
+    "learnable": "Technical knowledge that is LEARNABLE product/solution knowledge (as in consultative technical sales, demos, solution positioning) is NOT engineering depth and is not out of scope."
+  },
+
+  "professional_services_stance": "Highly relevant when the role is about practice/business operations, utilization, margin/profitability, resource/capacity planning, delivery health, operating cadence, org design, transformation, client value, service-line leadership, global delivery, process improvement, M&A integration or executive leadership. NOT when 'professional services' actually means deep hands-on product implementation or technical consulting requiring specialized engineering expertise.",
+
+  "customer_success_stance": "Attractive when centred on strategic enterprise customers, value realization, transformation, executive relationships, adoption, operating-model improvement, complex customer programs, customer strategy, CX, or retention/expansion through realized value. Deprioritize high-volume account coverage, support-heavy CS, reactive escalation management, highly transactional renewals, and narrow product-support roles.",
+
+  "m_and_a_stance": "Meaningful M&A INTEGRATION experience: post-merger integration, integration management, operating-model, organizational and people/process integration, transformation management, acquisition readiness, integration PMO, change/adoption around acquisitions. This is NOT corporate development: it does not qualify her for investment banking, valuation, financial-modeling-heavy corp dev, or transaction execution requiring specialized deal credentials.",
+
+  "recruiting_and_talent_stance": "Judge recruiting/talent roles on duties, never title history. Recruiting operations, talent strategy, workforce planning, recruiting-process design, talent analytics, hiring-manager enablement and recruiting transformation are operating-model work. Flag the direct-execution gap where the posting genuinely requires full-cycle recruiting tenure, advanced sourcing, requisition ownership or offer negotiation, and name the specific skills to bridge.",
+
+  "seo_and_content": "SEO / organic search / content strategy / content operations / GEO-AEO roles are B-tier interest on their own terms — do not require them to also describe transformation work.",
+
+  "compensation": {
+    "permanent": "Preferred ~$165K–$200K+; strong preference for $200K+ where fit supports it. Below ~$150K generally needs another compelling reason to rank highly.",
+    "contract_or_temporary": "Willing to accept materially lower pay for credible near-term income; ~$85K annualized (or equivalent hourly) can be acceptable as a bridge. Do not reject an attractive contract because it misses long-term compensation goals.",
+    "unknown": "When a posting states no pay, say so; do not guess and do not penalize it for silence."
+  },
 
   "practical_constraints": {
-    "location_preference": "Ranked, best first: (1) FULLY REMOTE within the United States — the strongest option and the default target; (2) UTAH LOCAL (Salt Lake / Silicon Slopes corridor) on a hybrid or flexible arrangement — fully onsite five days in Utah is workable but less attractive than hybrid; (3) WASHINGTON STATE (Seattle / Bellevue / Redmond corridor); (4) CALIFORNIA; (5) OREGON. Tiers 3-5 are acceptable and would be relocated for. Score practical_fit against this order. Anywhere else onsite or hybrid is a real constraint and should be scored down on practical_fit — but still surfaced when the role itself is strong. Washington DC is NOT Washington State and gets no preference.",
-    "remote_eligibility": "A location LABEL is not an eligibility statement. 'Remote - California', 'Remote - Seattle' and the like can mean a residence requirement, a pay zone, an associated office, a preferred location, or genuine nationwide US remote — read the posting and say which. Never call a role nationwide US remote when the posting restricts the eligible states, and answer 'unclear' rather than guessing when the posting does not say.",
-    "priority_employers": "Adobe, Salesforce, Zillow Group, Atlassian, NPR, PBS, Marriott International and Hilton are employers she has named as deliberate targets and is actively watching. At Adobe specifically she holds an employee referral, a recruiting contact, and a Women Tech Council connection, which materially raises her odds of a real conversation. Let this lift opportunity_score for these employers — it is a genuine advantage in getting seen. Do NOT let it lift qualification_fit or interest_fit: whether she can do the job, and whether she wants it, are unchanged by who she knows. A poorly matched role at Adobe is still a poorly matched role.",
-    "title_vs_responsibilities": "Roles from those priority employers are deliberately retrieved on a looser title filter than the rest of the search, so more of them will arrive with titles that do not obviously match. Judge them on the responsibilities described in the posting, and say so plainly when a title is misleading in either direction.",
-    "employment_types": "Open to permanent, contract, interim and temporary. Contract leadership work is explicitly in scope and can be valuable for income and experience.",
-    "open_to_international": "Open to international opportunities in principle, but US-remote and Utah are the practical default."
+    "location_preference": "Strong preference: (1) fully REMOTE within the US, or remote with reasonable travel; (2) UTAH local (Salt Lake / Silicon Slopes) hybrid or flexible; (3) hybrid/on-site in preferred relocation markets — Washington State, California, Oregon and the wider Western US are particularly relevant. Relocation can be considered for a sufficiently strong opportunity, so do not reject a strong role merely because it is not in Utah — reflect the cost in practical_fit instead. Washington DC is NOT Washington State.",
+    "remote_eligibility": "A location LABEL is not an eligibility statement. 'Remote - California' can mean a residence requirement, a pay zone, an associated office, a preference, or genuine nationwide US remote — read the posting and say which; answer 'unclear' rather than guessing.",
+    "priority_employers": "Adobe, Salesforce, Zillow Group, Atlassian, NPR, PBS, Marriott International and Hilton are deliberate targets. At Adobe she holds an employee referral, a recruiting contact and a Women Tech Council connection. That lifts opportunity_score (likelihood of response) and can justify a CONTACT action; it does NOT lift qualification or interest. A poorly matched role at Adobe is still a poorly matched role.",
+    "employment_types": "Open to permanent, contract, interim and temporary. Permanent career roles and fast-income contract roles are related but distinct lanes."
   },
+
+  "exceptional_opportunities": "A role somewhat outside normal parameters may be surfaced for exceptional value: unusually high compensation, extraordinary mission/company alignment, exceptional career trajectory, a strong warm referral, a rare M&A/AI/transformation opportunity, a highly compelling sports/entertainment opportunity, an unusually strong sales-transition opportunity, or an unusually fast path to income. The exception must be named.",
 
   "goals": [
     "Executive leadership in transformation and organizational scaling",
     "M&A integration and enterprise AI adoption",
+    "A credible consultative technical-sales / solutions path alongside the primary search",
     "Consulting optionality and thought leadership"
   ]
 }

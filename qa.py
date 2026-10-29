@@ -36,6 +36,12 @@ import screening
 # unsupported technical expertise".
 BLOCKING_FLAGS = ("unmet_requirements", "recruiting_gaps")
 
+# Every section that presents a role as NEW, and every section that shows a role at all. V6's
+# selection mode adds contract / sales / exceptions; the checks iterate these so a new section
+# can never be a blind spot. `.get` everywhere: the classic digest does not have them.
+NEW_SECTIONS = ("apply_first", "new_review", "contract", "sales", "exceptions")
+SHOWN_SECTIONS = NEW_SECTIONS + ("wildcards", "still")
+
 
 def _title(rec):
     return f'{rec.get("title") or "(untitled)"} — {rec.get("company") or ""}'.strip(" —")
@@ -75,7 +81,7 @@ def _check_top_role_executable(sections, findings):
     keep, moved = [], []
     for rec in sections.get("apply_first") or []:
         blocked = any(rec.get(flag) for flag in BLOCKING_FLAGS) or rec.get("technical_risk")
-        if blocked and rec.get("recommendation") == "apply_first":
+        if blocked and rec.get("recommendation") in ("apply_first", "strong_fit"):
             moved.append(rec)
         else:
             keep.append(rec)
@@ -103,7 +109,7 @@ def _check_hard_requirements(sections, findings):
     """A backstop for `enforce_hard_requirements`. Anything still recommended above `stretch`
     while carrying an unmet requirement means enforcement did not run on it — most likely a
     verdict cached under an older schema."""
-    offenders = [r for name in ("apply_first", "new_review", "still")
+    offenders = [r for name in ("apply_first", "new_review", "contract", "sales", "still")
                  for r in sections.get(name) or []
                  if r.get("unmet_requirements")
                  and r.get("recommendation") in ("apply_first", "strong_fit")]
@@ -126,7 +132,7 @@ def _check_new_means_new(sections, findings):
     been emailed is a repeat however it re-entered the pipeline — a second source found it, a
     tracking parameter changed, or it briefly dropped out of a feed and came back."""
     repeats = []
-    for name in ("apply_first", "new_review"):
+    for name in NEW_SECTIONS:
         keep = []
         for rec in sections.get(name) or []:
             if rec.get("ever_shown"):
@@ -174,7 +180,7 @@ def _check_employer_source_wins(sections, findings):
     """Requirement 5's authority order, checked where it is visible to the reader: the apply
     link. A record that has ever been seen on an employer or ATS board should be linking there,
     not at an aggregator that may redirect, expire, or land on a search page."""
-    weak = [r for name in ("apply_first", "new_review", "wildcards", "still")
+    weak = [r for name in SHOWN_SECTIONS
             for r in sections.get(name) or []
             if lifecycle.url_rank(r.get("canonical_ats")) >= lifecycle.AUTHORITY_AGGREGATOR
             and len(r.get("sources") or []) > 1]
@@ -194,7 +200,7 @@ def _check_remote_eligibility(sections, findings):
     """Requirement 7. The report may call a role nationwide-US remote only where the posting
     says so; anything else is relabelled to what we actually know."""
     revoked, unstated = [], 0
-    for name in ("apply_first", "new_review", "wildcards", "still"):
+    for name in SHOWN_SECTIONS:
         for rec in sections.get(name) or []:
             if rec.get("work_arrangement") != "remote":
                 continue
@@ -253,9 +259,26 @@ def _check_seo_coverage(sections, db, profile, seen_keys, findings):
                                  "no scored SEO or content role was left out"))
         return
     candidates.sort(key=lambda r: -(r.get("fit_score") or 0))
-    promoted = candidates[:3]
-    sections.setdefault("new_review", [])
-    sections["new_review"] = sections["new_review"] + promoted
+    selection = (profile or {}).get("selection") or {}
+    if selection.get("enabled"):
+        # V6 selection mode: SEO/content is a B-tier interest, not a quota. Only a role the
+        # JD-first verdict already calls worthwhile may be promoted, and only into a slot the
+        # daily cap still has free — "do not call mediocre roles worthwhile to populate it".
+        cap = int(selection.get("max_new", 5))
+        used = sum(len(sections.get(k) or []) for k in NEW_SECTIONS)
+        candidates = [r for r in candidates if r.get("work_interest")
+                      and r.get("recommendation") in ("apply_first", "strong_fit")]
+        promoted = candidates[:max(0, cap - used)]
+        if not promoted:
+            findings.append(_finding("SEO / content coverage", "pass",
+                                     "no worthwhile SEO or content role was left out"
+                                     + (" with a free slot" if candidates else "")))
+            return
+        sections["apply_first"] = (sections.get("apply_first") or []) + promoted
+    else:
+        promoted = candidates[:3]
+        sections.setdefault("new_review", [])
+        sections["new_review"] = sections["new_review"] + promoted
     findings.append(_finding(
         "SEO / content coverage", "corrected",
         f"{len(promoted)} SEO/content role(s) promoted into the email that a section quota "

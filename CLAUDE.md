@@ -15,7 +15,7 @@ Full narrative + GitHub Actions setup in @README.md.
   fire. Use this for every local test. `--snapshot-dir`/`--out-dir` redirect individually.
 - `python3 jobmonitor.py --no-fit` — skip all Anthropic calls. `--fake-fit` — deterministic
   local fake verdicts for previewing email layout free (reports get a warning banner).
-- `python3 test_jobmonitor.py` — 372 offline tests (stdlib `unittest`; no network, no API).
+- `python3 test_jobmonitor.py` — 401 offline tests (stdlib `unittest`; no network, no API).
 - `python3 jobmonitor.py --check-schedule` — should THIS invocation do today's work? Offline;
   writes `should_run` to `GITHUB_OUTPUT`. `--timing` prints today's delivery timing.
 - `python3 audit.py` — weekly self-audit. **Reads committed files only; makes no network
@@ -50,6 +50,18 @@ the DST-safe schedule guard, and the once-a-day delivery ledger). New state file
 `california` and `oregon`. **Chad opts into none of it and his report is unchanged.** See
 **Technical-role exclusion**, **Hard requirements**, **Job status**, **Durable identity**,
 **Pre-send QA** and **Delivery timing** below.
+
+**V6 additions — Lisa's JD-first update (read @PROSPECTOR_V6.md before touching Lisa's rubric,
+selection, the sales lane or `lisa_background.json`):** a second scoring rubric
+(`_fit_instructions_jd_first`, selected by profile `fit_rubric:"jd_first"`; Chad stays on the
+standard rubric and his fingerprint is unchanged) returning decision fields (dominant work,
+A/B/C/D interest, industry relationship, gates vs cautions, sales readiness, APPLY/VALIDATE/
+CONTACT/PACKAGE/STRETCH + next action). **Selection mode** (profile `selection`): at most 5
+worthwhile NEW roles, zero allowed, primary search claims slots first. **Sales-adjacency lane**
+(`sales_adjacency_match`, profile `sales_adjacency`). **Gates vs cautions**: only
+`hard_requirements.gate_categories` can cap deterministically; everything else is a caution.
+`enforce_hard_requirements` is now opt-in. Live test: `check_v6.py`.
+**`unmet_requirements` means TRUE GATES under jd_first — never put a preference in it.**
 
 Python 3.12, **standard library only — do not add dependencies** unless a tier-3
 (Playwright) source genuinely requires it (`anthropic` is the one optional dep, declared in
@@ -102,6 +114,7 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 - `sheets_sync.py` — Discovery Log export: CSV always, Apps Script webhook (`SHEETS_WEBHOOK_URL`) when configured. Writes ONLY the `Prospector Discovery Log` tab — never `Application Pipeline` or `Applied`.
 - `jobs_<profile>.json` — **STATE.** The lifecycle DB. Committed by CI. Do not delete: it carries `first_seen`, `ever_shown` and the human decision fields.
 - `test_jobmonitor.py` — offline test suite. `audit.py` — weekly, network-free self-audit.
+- `check_v6.py` — LIVE implementation test for V6 (tests A-G): real postings, real scoring via the production path, writes nothing. `--offline` runs the API-free half.
 - `feedback_<name>.json` — hand-edited feedback (the only file a non-developer edits).
 - `PROSPECTOR_V2_CHANGELOG.md` / `PROSPECTOR_TESTING.md` — what changed, and how to operate it.
 - `fetch_logos.py` — occasional prefetch of company logos → `logos/<slug>.png` via logo.dev (needs `LOGO_DEV_TOKEN` env — the **publishable** `pk_` token; it is passed as a query param to `img.logo.dev`, so the server-side `sk_` key will not work). **Not run by the daily job.** Run it locally, or use the manual `prospector-logos` workflow (`.github/workflows/logos.yml`, `LOGO_DEV_TOKEN` repo secret) which fetches, verifies and commits for you.
