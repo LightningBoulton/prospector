@@ -113,14 +113,32 @@ Rules that matter:
 ## E. Source health in the email
 
 ```
-Sources checked: 129/129 successful · 127 returned roles · 2 returned none
+Sources checked: 136/136 successful · 135 returned roles · 1 returned none
 Temporary errors: 1 (retried; roles from these sources were held, not marked removed)
-Needs attention: 2 — Weave, Vivint
+Needs attention: 1 — Nav
+No roles matching this search: 15 — Miro, Postman, Speechify, Route, Metabase, Knock +9 more
+  (feeds healthy; postings are out of region or out of the age window)
 ```
 
-"Needs attention" = a `config_error`, or a source that has **answered with nothing** for
-`STALE_SOURCE_RUNS` (10) runs running — the ATS-migration signal. An outage no longer
-pollutes that streak.
+"Needs attention" = a `config_error`, or a source whose **whole listing has been empty**
+(`consecutive_silent_runs`) for `STALE_SOURCE_RUNS` (10) runs running — the ATS-migration
+signal. An outage no longer pollutes that streak.
+
+**Corrected 2026-08-26.** As first shipped this read `consecutive_zero_runs`, which counts
+postings that survived the location and age GATES, not whether the board answered. The result
+was a "Needs attention: 16" line in which **15 of the 16 sources had answered normally that
+morning** — Miro with 41 EMEA/APAC roles, Postman with 65, Speechify with 1,291 — and none of
+which could ever clear, because an employer that does not hire in Utah will keep not hiring in
+Utah. Alerting on an unclearable condition is how a health block gets ignored. The two streaks
+are now separate and only the empty-listing one raises an alarm; see **Source health** in
+CLAUDE.md.
+
+The one true positive that had been buried in that list: **Nav**, whose Greenhouse slug
+`navtechnologies` is valid (HTTP 200) but whose board is genuinely empty. The investigation
+also turned up two registry errors the wrong signal had hidden — **Instructure**, whose
+SmartRecruiters board had been frozen since 2018-10-29 while 44 live roles sat on Ashby, and
+**Vivint**, whose board's newest posting is from 2015-09-10 (acquired by NRG Energy in 2023;
+parked in `needs_identification` pending a confirmed destination).
 
 ---
 

@@ -26,8 +26,11 @@ import os
 import tempfile
 import unittest
 
+import delivery
 import jobmonitor as jm
 import lifecycle
+import qa
+import screening
 import sheets_sync
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -1818,7 +1821,7 @@ class TestDiscoveryGate(unittest.TestCase):
 
         calls = []
 
-        def fake_score(candidate, p, client):
+        def fake_score(candidate, p, client, rubric="standard"):
             calls.append(p["key"])
             return {"opportunity_score": 50, "score": 50, "recommendation": "stretch"}
 
@@ -1865,6 +1868,37 @@ class TestInternationalMarkersV3(unittest.TestCase):
     def test_us_remote_is_unaffected(self):
         for loc in ["Remote - US", "USA (Remote)", "Remote", "United States (Remote)"]:
             self.assertTrue(jm.is_us_remote(loc), loc)
+
+
+class TestNationwideUsIsLocal(unittest.TestCase):
+    """A US-national posting includes Utah. Weave (Lehi) posts its sales roles with the bare
+    location "United States", and all 8 were invisible: the string names no local city and
+    no remote marker, so the shared local gate dropped them."""
+
+    def test_bare_national_labels_are_local(self):
+        for loc in ["United States", "USA", "US", "U.S.", "united states of america",
+                    "Nationwide"]:
+            self.assertTrue(jm.is_local(loc), f"nationwide should be local: {loc}")
+
+    def test_a_named_metro_is_still_dropped(self):
+        """The whole-string test is the safety property: the moment an employer names a
+        specific place, the normal keyword rules apply again. Without this, the change
+        would quietly import every other US metro."""
+        for loc in ["San Francisco, CA, United States", "San Francisco Bay Area, California",
+                    "New York, NY, USA", "Austin, TX, United States", "Seattle, WA (US)"]:
+            self.assertFalse(jm.is_local(loc), f"named metro must stay dropped: {loc}")
+
+    def test_utah_and_remote_behaviour_is_unchanged(self):
+        for loc in ["Lehi, Utah, United States", "Salt Lake City, UT", "Remote",
+                    "Remote - US"]:
+            self.assertTrue(jm.is_local(loc), loc)
+        for loc in ["London, UK", "Remote - Spain", "Budapest, , Hungary"]:
+            self.assertFalse(jm.is_local(loc), loc)
+
+    def test_it_does_not_widen_the_us_remote_lane(self):
+        """is_us_remote is a separate gate and must still require a remote marker, or the
+        remote lane would start keeping onsite-anywhere-in-the-US roles."""
+        self.assertFalse(jm.is_us_remote("United States"))
 
 
 class TestSourceStatus(unittest.TestCase):
@@ -1960,6 +1994,41 @@ class TestSourceStatus(unittest.TestCase):
         self.assertEqual(rows["Down"]["consecutive_zero_runs"], 4,
                          "an unanswered source tells us nothing; the streak must not move")
         self.assertEqual(rows["Down"]["consecutive_error_runs"], 1)
+
+    def test_a_gate_filtered_source_is_not_an_ats_migration_signal(self):
+        """The bug this splits apart: a healthy board whose roles are simply out of region
+        answered normally, so it must never reach 'needs attention'. Miro answering with 41
+        Copenhagen/Amsterdam/Tokyo roles is an employer that does not hire here."""
+        runs = [{"name": "Foreign", "ats": "ashby", "slug": "f", "status": jm.SRC_OK_RESULTS,
+                 "fetched": 41, "attempts": 1, "error": ""},
+                {"name": "Empty", "ats": "greenhouse", "slug": "e", "status": jm.SRC_OK_ZERO,
+                 "fetched": 0, "attempts": 1, "error": ""}]
+        regs = [("local", {"pool": [], "errors": [], "failed": set(), "runs": runs})]
+        prev = {"Foreign": 40, "Empty": 40}
+        rows = {r["name"]: r for r in jm.source_health_rows(
+            regs, prev_streak=prev, prev_error_streak={}, prev_silent_streak=prev)}
+        # Both kept nothing, so the post-gate streak advances for both...
+        self.assertEqual(rows["Foreign"]["consecutive_zero_runs"], 41)
+        self.assertEqual(rows["Empty"]["consecutive_zero_runs"], 41)
+        # ...but only the genuinely empty listing advances the silent streak.
+        self.assertEqual(rows["Foreign"]["consecutive_silent_runs"], 0,
+                         "a board that answered with 41 postings is not going silent")
+        self.assertEqual(rows["Empty"]["consecutive_silent_runs"], 41)
+
+        s = jm.source_health_summary(list(rows.values()))
+        self.assertEqual(s["stale"], ["Empty"],
+                         "only an empty listing is the ATS-migration signal")
+        self.assertEqual(s["filtered_out"], ["Foreign"],
+                         "the out-of-region board is reported, but as information")
+
+    def test_silent_streak_is_not_advanced_by_an_outage(self):
+        runs = [{"name": "Down", "ats": "lever", "slug": "d", "status": jm.SRC_TEMP_ERROR,
+                 "fetched": 0, "attempts": 2, "error": "TimeoutError"}]
+        regs = [("local", {"pool": [], "errors": [], "failed": {"Down"}, "runs": runs})]
+        rows = {r["name"]: r for r in jm.source_health_rows(
+            regs, prev_streak={}, prev_error_streak={}, prev_silent_streak={"Down": 7})}
+        self.assertEqual(rows["Down"]["consecutive_silent_runs"], 7,
+                         "a source that never answered cannot be called silent")
 
     def test_health_summary_counts_the_four_states(self):
         rows = [{"name": "a", "status": jm.SRC_OK_RESULTS, "consecutive_zero_runs": 0},
@@ -2079,22 +2148,31 @@ class TestLifecycleRules(unittest.TestCase):
         db = {"jobs": {}}
         p = posting("Acme", "1", "Director, Operations", location="Remote", _source="Acme")
         lifecycle.upsert(db, [p], "lane", "2026-08-10")
-        gone = lifecycle.close_missing(db, seen_keys=set(), failed_sources={"Acme"},
-                                       today="2026-08-11")
+        lifecycle.close_missing(db, seen_keys=set(), failed_sources={"Acme"},
+                                today="2026-08-11")
         rec = list(db["jobs"].values())[0]
-        self.assertEqual(gone, [])
         self.assertNotIn(rec["status"], lifecycle.GONE_STATUSES)
         self.assertEqual(rec["unverified_run"], "2026-08-11")
+        self.assertEqual(rec["verification"], lifecycle.NEEDS_RECHECK)
+        self.assertEqual(rec["verification_reason"], "source_failed")
+        self.assertEqual(rec["missing_since"], "",
+                         "a failed source must not start the recheck clock")
 
-    def test_a_healthy_source_dropping_a_job_does_mark_it_removed(self):
+    def test_a_healthy_source_dropping_a_job_only_needs_a_recheck(self):
+        """Requirement 5: never mark a role closed solely because a feed stopped
+        returning it. Disappearing from a feed is the absence of evidence, not evidence."""
         db = {"jobs": {}}
         p = posting("Acme", "1", "Director, Operations", location="Remote", _source="Acme")
         lifecycle.upsert(db, [p], "lane", "2026-08-10")
-        gone = lifecycle.close_missing(db, seen_keys=set(), failed_sources=set(),
-                                       today="2026-08-11")
-        self.assertEqual(len(gone), 1)
-        self.assertEqual(gone[0]["status"], lifecycle.STATUS_REMOVED)
-        self.assertEqual(gone[0]["closed_date"], "2026-08-11")
+        missing = lifecycle.close_missing(db, seen_keys=set(), failed_sources=set(),
+                                          today="2026-08-11")
+        self.assertEqual(len(missing), 1)
+        self.assertEqual(missing[0]["verification"], lifecycle.NEEDS_RECHECK)
+        self.assertEqual(missing[0]["verification_reason"], "not_returned")
+        self.assertEqual(missing[0]["missing_since"], "2026-08-11")
+        self.assertNotIn(missing[0]["status"], lifecycle.GONE_STATUSES)
+        self.assertEqual(missing[0]["closed_date"], "",
+                         "nothing but the employer may set a closed date")
 
     def test_verification_only_calls_out_to_old_strong_roles(self):
         db = {"jobs": {}}
@@ -3172,6 +3250,1041 @@ class TestWorkdayMultiSearch(unittest.TestCase):
             jm._post_json = orig
         self.assertEqual(len(out), 25)
         self.assertEqual(sorted(o for _, o in calls), [0, 20])
+
+
+
+# ======================================================================================
+# V5 — Lisa's improvement list. One class per requirement.
+# ======================================================================================
+
+
+class TestTechnicalRoleExclusion(unittest.TestCase):
+    """Requirement 2: never recommend a role that needs Lisa to BE a technical practitioner,
+    while continuing to find business-side AI work."""
+
+    def setUp(self):
+        self.p = load_real_profile("lisa")
+
+    def _tier(self, title, description=""):
+        pst = posting("Acme", "1", title, description=description)
+        return jm.classify_match(pst, self.p)[0]
+
+    def test_forward_deployed_architect_is_dropped(self):
+        """The role Lisa named by hand as one that must never lead the email."""
+        self.assertIsNone(self._tier("Senior Forward Deployed Architect"))
+
+    def test_technical_titles_are_dropped(self):
+        for title in ["Solutions Architect", "Enterprise Architect",
+                      "Director of Engineering", "Data Engineer",
+                      "Machine Learning Engineer", "Platform Engineering Manager",
+                      "Integration Engineer", "Technical Program Manager",
+                      "Automation Engineer", "Site Reliability Manager"]:
+            with self.subTest(title=title):
+                self.assertIsNone(self._tier(title), f"{title!r} should be excluded")
+
+    def test_exclusion_beats_the_core_title_gate(self):
+        """The requirement is explicit that this applies even to a title that otherwise
+        matches — which is only true if the screen runs ABOVE the core gate."""
+        pst = posting("Acme", "1", "Director, Transformation Architecture")
+        self.assertTrue(jm.matches_profile(pst, self.p),
+                        "precondition: this title passes the precise gate")
+        self.assertIsNone(jm.classify_match(pst, self.p)[0])
+
+    def test_m_and_a_integration_is_never_treated_as_technical(self):
+        """'integration' is one of Lisa's strongest domains. Only the engineering compounds
+        are excluded — getting this wrong would delete her best category."""
+        for title in ["Director, M&A Integration", "Post-Merger Integration Lead",
+                      "Head of Integration Management Office"]:
+            with self.subTest(title=title):
+                self.assertIsNotNone(self._tier(title))
+
+    def test_business_side_ai_survives_a_technical_sounding_description(self):
+        """A JD about AI adoption that also names model deployment is describing the
+        technology being adopted, not the work. Kept, flagged, capped later."""
+        desc = ("Lead our AI adoption and change management programme. You will partner with "
+                "teams on model deployment and data pipelines to drive organizational "
+                "adoption across the enterprise.")
+        pst = posting("Acme", "1", "Director, AI Enablement", description=desc)
+        tier, _ = jm.classify_match(pst, self.p)
+        self.assertIsNotNone(tier, "a business-side AI role must not be dropped")
+        self.assertTrue(pst["technical_risk"], "but it must be flagged so it cannot lead")
+
+    def test_a_generic_title_hiding_engineering_work_is_dropped(self):
+        desc = ("You will write code daily, own our microservices and build data pipelines. "
+                "Software engineering experience is required.")
+        pst = posting("Acme", "1", "Program Manager", description=desc)
+        self.assertIsNone(jm.classify_match(pst, self.p)[0])
+
+    def test_chad_is_not_screened_at_all(self):
+        """Chad has no technical_exclusion block, so his engineering search is untouched."""
+        chad = load_real_profile("chad")
+        pst = posting("Acme", "1", "Senior Software Engineer")
+        self.assertFalse(screening.technical_screening_enabled(chad))
+        self.assertFalse(screening.technical_screen(pst, chad)["excluded"])
+        self.assertTrue(jm.matches_profile(pst, chad))
+
+
+class TestHardRequirements(unittest.TestCase):
+    """Requirement 3: a stated requirement she does not support outranks similarity."""
+
+    def _verdict(self, **extra):
+        v = {"recommendation": "apply_first", "qualification_fit": 90, "interest_fit": 90,
+             "practical_fit": 90, "opportunity_score": 92, "reasons": ["strong overlap"],
+             "concerns": [], "unmet_requirements": [], "bridge_skills": [],
+             "confidence": "high", "valid": True, "fit": "yes", "score": 92}
+        v.update(extra)
+        return v
+
+    def test_a_requirement_needs_a_cue_nearby(self):
+        """A passing mention of SQL is not a requirement. Without the proximity test every
+        JD that names a tool would downgrade and the signal would mean nothing."""
+        passing = posting("A", "1", "Director, Ops",
+                          description="Our analysts use SQL and Tableau every day.")
+        required = posting("A", "2", "Director, Ops",
+                           description="Required: 5+ years of advanced SQL proficiency.")
+        self.assertEqual(screening.hard_requirements(passing), [])
+        self.assertTrue(screening.hard_requirements(required))
+
+    def test_categories_are_reported_once_each(self):
+        pst = posting("A", "1", "Director, Ops",
+                      description="Must have expert SQL and proven expertise in Python.")
+        cats = [r["category"] for r in screening.hard_requirements(pst)]
+        self.assertEqual(cats, ["sql_or_programming"])
+
+    @staticmethod
+    def _v5_profile():
+        """Lisa's profile WITHOUT the V6 gate/caution split — the V5 behaviour, where every
+        detected requirement caps, which is still the default for any profile that does not
+        list gate_categories."""
+        p = load_real_profile("lisa")
+        p.pop("hard_requirements", None)
+        return p
+
+    def test_enforcement_caps_at_stretch_and_keeps_the_role(self):
+        pst = posting("A", "1", "Director, Revenue Operations",
+                      description="Requires 7+ years of dedicated revenue operations and "
+                                  "proven pipeline forecasting ownership.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), self._v5_profile())
+        self.assertEqual(v["recommendation"], "stretch")
+        self.assertEqual(v["downgraded_from"], "apply_first")
+        self.assertTrue(v["unmet_requirements"])
+        self.assertIn("Hard requirement not supported", v["concerns"][0])
+        self.assertEqual(v["opportunity_score"], 92,
+                         "the scores are the model's reading and are not rewritten")
+
+    def test_generic_overlap_does_not_rescue_a_hard_mismatch(self):
+        """The heart of requirement 3: strategy/transformation language in the same JD must
+        not buy the role back up to a top recommendation."""
+        pst = posting("A", "1", "Director, Talent Strategy",
+                      description="Drive transformation, operating model design and change "
+                                  "management. Must have 5+ years of full-cycle recruiting.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), self._v5_profile())
+        self.assertEqual(v["recommendation"], "stretch")
+
+    # ---- V6: gates vs cautions (Lisa's update, section 4) ----
+
+    def test_v6_a_specialist_year_count_is_a_caution_not_a_cap(self):
+        """'Do not treat every bullet under requirements as equally absolute.' Under Lisa's
+        profile a deterministic specialist-tenure hit is shown as a caution; whether it is a
+        TRUE gate for this job is the model's call (its unmet_requirements still caps)."""
+        pst = posting("A", "1", "Director, Revenue Operations",
+                      description="Requires 7+ years of dedicated revenue operations and "
+                                  "proven pipeline forecasting ownership.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "apply_first")
+        self.assertTrue(any("specialist tenure" in c for c in v["cautions"]))
+
+    def test_v6_a_mandatory_license_is_a_gate(self):
+        pst = posting("A", "1", "Director, Clinical Operations Strategy",
+                      description="An active RN license is required for this position.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "stretch")
+
+    def test_v6_a_preferred_certification_is_not_a_gate(self):
+        pst = posting("A", "1", "Director, PMO",
+                      description="Qualifications: PMP certification preferred.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "apply_first")
+
+    def test_v6_a_mandatory_clearance_is_a_gate(self):
+        pst = posting("A", "1", "Director, Program Operations",
+                      description="Active TS/SCI clearance is required.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "stretch")
+
+    def test_v6_a_profile_with_no_screening_blocks_is_not_judged_against_lisas_list(self):
+        """Chad: an engineering profile must not be capped for 'requires Python'."""
+        pst = posting("A", "1", "Senior Software Engineer",
+                      description="Must have proven expertise in Python.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("chad"))
+        self.assertEqual(v["recommendation"], "apply_first")
+
+    def test_a_clean_jd_is_left_alone(self):
+        pst = posting("A", "1", "Director, Business Transformation",
+                      description="Lead enterprise transformation and operating model work.")
+        v = jm.enforce_hard_requirements(pst, self._verdict(), load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "apply_first")
+        self.assertNotIn("downgraded_from", v)
+
+    def test_the_model_alone_can_trigger_the_cap(self):
+        """Two independent detectors, either one sufficient — the deterministic rules cannot
+        anticipate every requirement a JD might state."""
+        pst = posting("A", "1", "Director, Ops", description="Nothing detectable here.")
+        v = jm.enforce_hard_requirements(
+            pst, self._verdict(unmet_requirements=["requires a CPA"]),
+            load_real_profile("lisa"))
+        self.assertEqual(v["recommendation"], "stretch")
+
+    def test_deep_retrieval_never_reaches_the_network_in_this_suite(self):
+        """Rule 1 of this file is NO NETWORK, and deep retrieval is a new place that could
+        break it. A posting built by `posting()` carries no _detail_url, so the fetch is
+        skipped rather than attempted — asserted here rather than left to luck."""
+        p = load_real_profile("lisa")
+        pst = posting("A", "1", "Director, Operations", tier="core")
+        self.assertIsNone(pst["_detail_url"])
+        jm._DETAIL_CACHE.clear()
+        self.assertEqual(jm.deepen_descriptions([pst], p), 0)
+        self.assertEqual(pst["description"], "")
+
+    def test_deep_retrieval_is_bounded_and_cached(self):
+        calls = []
+
+        def fake_detail(p):
+            calls.append(p["key"])
+            return "a full description"
+
+        jm._DETAIL_CACHE.clear()
+        original, jm._detail_text = jm._detail_text, fake_detail
+        try:
+            p = load_real_profile("lisa")
+            pool = [posting("A", str(i), "Director, Operations", tier="core",
+                            _detail_url=f"https://example.test/detail/{i}")
+                    for i in range(10)]
+            self.assertEqual(jm.deepen_descriptions(pool, p, limit=3), 3)
+            self.assertEqual(len(calls), 3, "the budget is a hard cap, not a target")
+            jm.deepen_descriptions(pool[:3], p, limit=3)
+            self.assertEqual(len(calls), 3, "a second lane reuses the cache")
+        finally:
+            jm._detail_text = original
+
+    def test_a_failing_detail_endpoint_never_fails_the_run(self):
+        def boom(p):
+            raise OSError("connection reset")
+
+        jm._DETAIL_CACHE.clear()
+        original, jm._detail_text = jm._detail_text, boom
+        try:
+            pst = posting("A", "1", "Director, Operations", tier="core",
+                          _detail_url="https://example.test/detail/1")
+            self.assertEqual(jm.deepen_descriptions([pst], load_real_profile("lisa")), 0)
+        finally:
+            jm._detail_text = original
+
+    def test_deep_retrieval_is_only_spent_on_promising_roles(self):
+        p = load_real_profile("lisa")
+        described = posting("A", "1", "Director, Ops", description="already have it",
+                            tier="core")
+        core = posting("A", "2", "Director, Ops", tier="core")
+        wildcard = posting("A", "3", "Manager, Something", tier="discovery")
+        named = posting("Adobe", "4", "Manager, Something", tier="discovery",
+                        priority_employer=True)
+        seo = posting("A", "5", "Organic Search Lead", tier="discovery")
+        self.assertFalse(screening.deep_retrieval_wanted(described, p),
+                         "never re-fetch a description we already have")
+        self.assertTrue(screening.deep_retrieval_wanted(core, p))
+        self.assertFalse(screening.deep_retrieval_wanted(wildcard, p))
+        self.assertTrue(screening.deep_retrieval_wanted(named, p))
+        self.assertTrue(screening.deep_retrieval_wanted(seo, p))
+
+
+class TestRecruitingRolesJudgedOnSubstance(unittest.TestCase):
+    """Requirement 4: evaluate the duties, never the title history."""
+
+    def setUp(self):
+        self.p = load_real_profile("lisa")
+
+    def test_recruiting_operations_roles_are_retrieved(self):
+        for title in ["Director, Recruiting Operations", "Head of Talent Strategy",
+                      "Manager, Workforce Planning", "Director, Talent Analytics",
+                      "Recruiting Transformation Lead"]:
+            with self.subTest(title=title):
+                self.assertIsNotNone(jm.classify_match(posting("A", "1", title), self.p)[0],
+                                     f"{title!r} must not be excluded on title history")
+
+    def test_execution_gaps_are_flagged_not_hidden(self):
+        pst = posting("A", "1", "Director, Recruiting Operations",
+                      description="You must have 5+ years of full-cycle recruiting and "
+                                  "proven offer negotiation experience.")
+        gaps = screening.recruiting_gaps(pst, self.p)
+        self.assertTrue(gaps)
+        self.assertIn("full_cycle_recruiting", [g["category"] for g in gaps])
+
+    def test_gaps_are_only_reported_for_recruiting_shaped_roles(self):
+        pst = posting("A", "1", "Director, Operations",
+                      description="Partners with recruiting; must have proven candidate "
+                                  "sourcing partnerships.")
+        self.assertEqual(screening.recruiting_gaps(pst, self.p), [],
+                         "a transformation role that mentions sourcing is not a "
+                         "recruiting role")
+
+    def test_bridge_skills_survive_validation(self):
+        v = jm.validate_verdict({"recommendation": "stretch", "qualification_fit": 60,
+                                 "interest_fit": 70, "practical_fit": 80,
+                                 "opportunity_score": 65,
+                                 "bridge_skills": ["ATS configuration", "sourcing tooling"]})
+        self.assertEqual(v["bridge_skills"], ["ATS configuration", "sourcing tooling"])
+
+
+class TestJobStatusLogic(unittest.TestCase):
+    """Requirement 5: LIVE VERIFIED / NEEDS RECHECK / CLOSED VERIFIED, and the authority
+    order that decides between them."""
+
+    def _db_with(self, ats="greenhouse", **extra):
+        db = {"jobs": {}, "aliases": {}}
+        p = posting("Acme", "1", "Director, Operations", location="Remote",
+                    _source="Acme", _ats=ats, **extra)
+        lifecycle.upsert(db, [p], "lane", "2026-08-10")
+        return db, list(db["jobs"])[0]
+
+    def test_an_employer_source_makes_a_role_live_verified(self):
+        db, key = self._db_with("greenhouse")
+        lifecycle.refresh_statuses(db, {key}, "2026-08-10")
+        self.assertEqual(db["jobs"][key]["verification"], lifecycle.VERIFIED_LIVE)
+
+    def test_an_aggregator_alone_is_not_enough(self):
+        """Authority order: aggregators re-serve cached rows for days after a requisition
+        closes, so an aggregator sighting is not the employer confirming anything."""
+        db, key = self._db_with("himalayas")
+        lifecycle.refresh_statuses(db, {key}, "2026-08-10")
+        self.assertEqual(db["jobs"][key]["verification"], lifecycle.NEEDS_RECHECK)
+        self.assertEqual(db["jobs"][key]["verification_reason"], "aggregator_only")
+
+    def test_the_employer_wins_when_sources_disagree(self):
+        db = {"jobs": {}, "aliases": {}}
+        agg = posting("Acme", "9", "Director, Operations", location="Remote",
+                      _source="Himalayas", _ats="himalayas")
+        emp = posting("Acme", "1", "Director, Operations", location="Remote",
+                      _source="Acme", _ats="greenhouse")
+        lifecycle.upsert(db, [agg, emp], "lane", "2026-08-10")
+        key = list(db["jobs"])[0]
+        lifecycle.refresh_statuses(db, {key}, "2026-08-10")
+        self.assertEqual(db["jobs"][key]["verification"], lifecycle.VERIFIED_LIVE)
+
+    def test_a_feed_going_quiet_never_closes_a_role(self):
+        db, key = self._db_with()
+        lifecycle.close_missing(db, set(), set(), "2026-08-11")
+        rec = db["jobs"][key]
+        self.assertEqual(rec["verification"], lifecycle.NEEDS_RECHECK)
+        self.assertNotEqual(rec["verification"], lifecycle.VERIFIED_CLOSED)
+        self.assertEqual(rec["closed_date"], "")
+
+    def test_only_the_employer_closes_a_role(self):
+        db, key = self._db_with()
+        lifecycle.close_missing(db, set(), set(), "2026-08-11")
+        checked, closed = lifecycle.verify_missing(
+            db, limit=5, today="2026-08-12",
+            verifier=lambda url: lifecycle.VERIFY_CLOSED)
+        self.assertEqual(checked, 1)
+        self.assertEqual(len(closed), 1)
+        self.assertEqual(db["jobs"][key]["verification"], lifecycle.VERIFIED_CLOSED)
+        self.assertEqual(db["jobs"][key]["status"], lifecycle.STATUS_CLOSED)
+
+    def test_an_unknown_recheck_leaves_the_role_open(self):
+        db, key = self._db_with()
+        lifecycle.close_missing(db, set(), set(), "2026-08-11")
+        _, closed = lifecycle.verify_missing(
+            db, limit=5, today="2026-08-12",
+            verifier=lambda url: lifecycle.VERIFY_UNKNOWN)
+        self.assertEqual(closed, [])
+        self.assertEqual(db["jobs"][key]["verification"], lifecycle.NEEDS_RECHECK)
+
+    def test_an_employer_still_serving_the_page_beats_the_feed(self):
+        db, key = self._db_with()
+        lifecycle.close_missing(db, set(), set(), "2026-08-11")
+        lifecycle.verify_missing(db, limit=5, today="2026-08-12",
+                                 verifier=lambda url: lifecycle.VERIFY_OPEN)
+        self.assertEqual(db["jobs"][key]["verification"], lifecycle.VERIFIED_LIVE)
+        self.assertEqual(db["jobs"][key]["missing_since"], "")
+
+    def test_a_failed_source_is_never_spent_on_a_recheck(self):
+        db, key = self._db_with()
+        lifecycle.close_missing(db, set(), {"Acme"}, "2026-08-11")
+        checked, closed = lifecycle.verify_missing(
+            db, limit=5, today="2026-08-12",
+            verifier=lambda url: lifecycle.VERIFY_CLOSED)
+        self.assertEqual((checked, closed), (0, []))
+
+    def test_a_stated_deadline_closes_a_role_without_a_request(self):
+        db, key = self._db_with(expires="2026-08-01")
+        lifecycle.refresh_statuses(db, {key}, "2026-08-11")
+        self.assertEqual(db["jobs"][key]["verification"], lifecycle.VERIFIED_CLOSED)
+        self.assertEqual(db["jobs"][key]["removal_reason"], "expired")
+
+
+class TestDurableIdentity(unittest.TestCase):
+    """Requirement 6: a role already reported must not come back as NEW."""
+
+    def _seed(self):
+        db = {"jobs": {}, "aliases": {}}
+        p = posting("Acme", "1", "Director, Operations", location="Remote",
+                    _source="Acme", _ats="greenhouse")
+        lifecycle.upsert(db, [p], "lane", "2026-08-10")
+        return db
+
+    def test_a_tracking_parameter_is_not_a_new_job(self):
+        db = self._seed()
+        again = posting("Acme", "1", "Director, Operations", location="Remote",
+                        _source="Acme", _ats="greenhouse")
+        again["url"] = "https://example.test/1?utm_source=newsletter&ref=x"
+        stats = lifecycle.upsert(db, [again], "lane", "2026-08-11")
+        self.assertEqual(stats["new"], 0)
+        self.assertEqual(len(db["jobs"]), 1)
+
+    def test_a_slightly_reworded_title_is_not_a_new_job(self):
+        db = self._seed()
+        again = posting("Acme", "1", "Director - Operations (Remote)", location="Remote",
+                        _source="Acme", _ats="greenhouse")
+        stats = lifecycle.upsert(db, [again], "lane", "2026-08-11")
+        self.assertEqual(stats["new"], 0, "the requisition id resolves it to the same job")
+        self.assertEqual(len(db["jobs"]), 1)
+
+    def test_a_second_source_finding_it_is_not_a_new_job(self):
+        db = self._seed()
+        agg = posting("Acme", "77", "Director, Operations", location="Remote",
+                      _source="Himalayas", _ats="himalayas")
+        agg["url"] = "https://example.test/1"
+        stats = lifecycle.upsert(db, [agg], "lane", "2026-08-11")
+        self.assertEqual(stats["new"], 0, "the canonical URL resolves it to the same job")
+
+    def test_two_real_openings_in_two_cities_stay_separate(self):
+        db = self._seed()
+        other = posting("Acme", "2", "Director, Operations", location="Austin, TX",
+                        _source="Acme", _ats="greenhouse")
+        stats = lifecycle.upsert(db, [other], "lane", "2026-08-11")
+        self.assertEqual(stats["new"], 1)
+
+    def test_change_states(self):
+        db = self._seed()
+        key = list(db["jobs"])[0]
+        again = lambda **kw: posting("Acme", "1", kw.pop("title", "Director, Operations"),
+                                     location="Remote", _source="Acme", _ats="greenhouse",
+                                     **kw)
+        # unchanged -> STILL OPEN
+        lifecycle.upsert(db, [again()], "lane", "2026-08-11")
+        self.assertEqual(db["jobs"][key]["change_state"], lifecycle.CHANGE_STILL_OPEN)
+        # material change -> UPDATED
+        lifecycle.upsert(db, [again(salary="$180,000 - $200,000")], "lane", "2026-08-12")
+        self.assertEqual(db["jobs"][key]["change_state"], lifecycle.CHANGE_UPDATED)
+        # missing then back -> REVALIDATED
+        lifecycle.close_missing(db, set(), set(), "2026-08-13")
+        lifecycle.upsert(db, [again()], "lane", "2026-08-14")
+        self.assertEqual(db["jobs"][key]["change_state"], lifecycle.CHANGE_REVALIDATED)
+        # confirmed closed then back -> REOPENED
+        lifecycle.close_missing(db, set(), set(), "2026-08-15")
+        lifecycle.verify_missing(db, limit=5, today="2026-08-16",
+                                 verifier=lambda url: lifecycle.VERIFY_CLOSED)
+        lifecycle.upsert(db, [again()], "lane", "2026-08-17")
+        self.assertEqual(db["jobs"][key]["change_state"], lifecycle.CHANGE_REOPENED)
+
+    def test_new_means_never_reported_not_first_seen_today(self):
+        """The definition requirement 6 asks for. A role first seen days ago that has never
+        been in an email is still news to the reader; one that HAS been is not."""
+        db = self._seed()
+        key = list(db["jobs"])[0]
+        rec = db["jobs"][key]
+        rec.update({"recommendation": "strong_fit", "fit_score": 80, "band": "new",
+                    "confidence": "high", "first_seen": "2026-08-01"})
+        sections, _ = jm.change_sections(db, None, today="2026-08-11", seen_keys={key})
+        self.assertEqual([r["job_key"] for r in sections["new_review"]], [rec["job_key"]])
+        rec["ever_shown"] = True
+        sections, _ = jm.change_sections(db, None, today="2026-08-11", seen_keys={key})
+        self.assertEqual(sections["new_review"], [])
+        self.assertEqual(len(sections["still"]), 1)
+
+    def test_an_old_database_rebuilds_its_alias_index(self):
+        with tempfile.TemporaryDirectory() as d:
+            legacy = {"version": 1, "jobs": {"acme|director operations|remote": {
+                "job_key": "acme|director operations|remote", "company": "Acme",
+                "title": "Director, Operations", "source_keys": ["Acme::1"],
+                "canonical_url": "https://example.test/1", "sources": ["Acme"]}}}
+            json.dump(legacy, open(os.path.join(d, "jobs_x.json"), "w"))
+            db = lifecycle.load_db("x", d)
+            self.assertIn("src:Acme::1", db["aliases"])
+            self.assertIn("url:example.test/1", db["aliases"])
+
+
+class TestRemoteEligibilityFromTheJD(unittest.TestCase):
+    """Requirement 7: the location label is a label, not an eligibility statement."""
+
+    def _scope(self, description, location="Remote - California"):
+        return screening.remote_eligibility(
+            posting("A", "1", "Director, Ops", location=location,
+                    description=description))
+
+    def test_a_label_alone_proves_nothing(self):
+        r = self._scope("")
+        self.assertEqual(r["scope"], screening.SCOPE_UNCLEAR)
+        self.assertFalse(r["verified"])
+
+    def test_each_meaning_is_distinguished(self):
+        cases = {
+            "This role is open to candidates anywhere in the United States.":
+                screening.SCOPE_NATIONWIDE,
+            "We can currently hire in CA, NY and TX only.":
+                screening.SCOPE_STATE_RESTRICTED,
+            "You must reside in California.": screening.SCOPE_RESIDENCE_REQUIRED,
+            "Base pay varies by geographic pay zone.": screening.SCOPE_PAY_ZONE,
+            "Expect 3 days per week in the office.": screening.SCOPE_OFFICE_ASSOCIATED,
+            "Bay Area is our preferred location.": screening.SCOPE_PREFERRED_LOCATION,
+        }
+        for text, expected in cases.items():
+            with self.subTest(text=text):
+                self.assertEqual(self._scope(text)["scope"], expected)
+
+    def test_work_authorization_is_not_an_eligibility_statement(self):
+        """"Authorized to work in the United States" is about a visa, not about where you may
+        live. It sits one word away from several phrases in the nationwide list."""
+        self.assertEqual(
+            self._scope("You must be authorized to work in the United States.")["scope"],
+            screening.SCOPE_UNCLEAR)
+
+    def test_the_common_real_phrasings_are_recognised(self):
+        for text in ["This is a fully remote role in the United States.",
+                     "We are open to candidates located anywhere in the United States.",
+                     "This position is 100% remote within the United States.",
+                     "Nationwide remote opportunity."]:
+            with self.subTest(text=text):
+                self.assertEqual(self._scope(text)["scope"], screening.SCOPE_NATIONWIDE)
+
+    def test_a_restriction_beats_a_permissive_phrase_in_the_same_jd(self):
+        """The generosity of the nationwide list is only safe because restrictions are tested
+        first. Both orderings, so a reshuffle of _SCOPE_RULES fails here."""
+        r = self._scope("Fully remote within the United States. We can currently hire in "
+                        "the following states: CA, WA.")
+        self.assertEqual(r["scope"], screening.SCOPE_STATE_RESTRICTED)
+        r = self._scope("Nationwide remote. You must reside in California.")
+        self.assertEqual(r["scope"], screening.SCOPE_RESIDENCE_REQUIRED)
+
+    def test_only_a_stated_nationwide_role_is_verified(self):
+        pst = posting("A", "1", "Director, Ops", location="Remote - US",
+                      description="Open to candidates anywhere in the United States.")
+        v = jm.apply_remote_eligibility(pst, {"remote_scope": screening.SCOPE_NATIONWIDE})
+        self.assertTrue(v["remote_verified"])
+
+    def test_the_stricter_of_the_two_readings_wins(self):
+        pst = posting("A", "1", "Director, Ops", location="Remote - US",
+                      description="Open to candidates anywhere in the United States.")
+        v = jm.apply_remote_eligibility(
+            pst, {"remote_scope": screening.SCOPE_STATE_RESTRICTED})
+        self.assertFalse(v["remote_verified"])
+        self.assertEqual(v["remote_scope"], screening.SCOPE_STATE_RESTRICTED)
+
+    def test_a_model_that_says_nothing_does_not_veto_the_jd(self):
+        """UNCLEAR is an ABSENCE, not a stricter reading. validate_verdict degrades a missing
+        remote_scope to unclear, so treating it as a veto would let a model that skipped the
+        question overrule a posting that states its eligibility in so many words."""
+        pst = posting("A", "1", "Director, Ops", location="Remote - US",
+                      description="This is a fully remote role in the United States.")
+        v = jm.apply_remote_eligibility(pst, {"remote_scope": screening.SCOPE_UNCLEAR})
+        self.assertEqual(v["remote_scope"], screening.SCOPE_NATIONWIDE)
+        self.assertTrue(v["remote_verified"])
+
+    def test_neither_reading_saying_anything_stays_unclear(self):
+        pst = posting("A", "1", "Director, Ops", location="Remote - US", description="")
+        v = jm.apply_remote_eligibility(pst, {"remote_scope": screening.SCOPE_UNCLEAR})
+        self.assertEqual(v["remote_scope"], screening.SCOPE_UNCLEAR)
+        self.assertFalse(v["remote_verified"])
+
+    def test_the_label_says_what_we_know(self):
+        self.assertEqual(jm._remote_label({"work_arrangement": "remote",
+                                           "remote_verified": True}),
+                         "✓ Remote (US) — confirmed")
+        self.assertIn("not stated",
+                      jm._remote_label({"work_arrangement": "remote",
+                                        "remote_scope": screening.SCOPE_UNCLEAR}))
+
+
+class TestSeoAndContentCoverage(unittest.TestCase):
+    """Requirement 8: stronger SEO/content coverage, with no transformation language
+    required of it."""
+
+    def setUp(self):
+        self.p = load_real_profile("lisa")
+
+    def test_seo_and_content_titles_are_retrieved(self):
+        for title in ["SEO Director", "Head of Enterprise SEO", "Organic Search Lead",
+                      "Director, Content Strategy", "Content Operations Manager",
+                      "Digital Content Strategy Lead", "Search Strategy Director",
+                      "Manager, Organic Growth"]:
+            with self.subTest(title=title):
+                self.assertIsNotNone(jm.classify_match(posting("A", "1", title), self.p)[0])
+
+    def test_no_transformation_language_is_required(self):
+        """A bare SEO title with an empty description must still be retrieved — the whole
+        point of the family_only path."""
+        pst = posting("A", "1", "SEO Content Strategist", description="")
+        tier, reason = jm.classify_match(pst, self.p)
+        self.assertIsNotNone(tier)
+        self.assertIn("family alone", reason)
+
+    def test_the_family_only_list_stays_specific(self):
+        """A broad term here retrieves on one signal and would behave like no filter."""
+        terms = self.p["discovery"]["family_only_any"]
+        for banned in ("content", "search", "digital", "growth", "strategy"):
+            self.assertNotIn(banned, terms,
+                             f"{banned!r} alone is too broad for a one-signal retrieval")
+
+
+class TestPreSendQA(unittest.TestCase):
+    """Requirement 9: the eight checks, run on the exact selection about to be sent."""
+
+    def _rec(self, key, **extra):
+        r = {"job_key": key, "company": "Acme", "title": f"Role {key}",
+             "recommendation": "apply_first", "fit_score": 90, "ever_shown": False,
+             "canonical_ats": "greenhouse", "sources": ["Acme"], "canonical_url": "u",
+             "work_arrangement": "onsite", "verification": lifecycle.VERIFIED_LIVE}
+        r.update(extra)
+        return r
+
+    def _sections(self, **kw):
+        base = {"apply_first": [], "new_review": [], "wildcards": [], "still": [],
+                "removed": []}
+        base.update(kw)
+        return base
+
+    def _run(self, sections, db=None, seen=None):
+        return qa.review(sections, db or {"jobs": {}}, load_real_profile("lisa"),
+                         seen_keys=seen or set())
+
+    def test_a_blocked_role_cannot_lead_the_email(self):
+        blocked = self._rec("a", unmet_requirements=["requires a CPA"])
+        clean = self._rec("b")
+        sections, findings = self._run(self._sections(apply_first=[blocked, clean]))
+        self.assertEqual([r["job_key"] for r in sections["apply_first"]], ["b"])
+        self.assertIn("a", [r["job_key"] for r in sections["wildcards"]])
+        self.assertEqual(self._verdict(findings, "top role executable"), "corrected")
+
+    def test_a_technical_risk_role_cannot_lead_the_email(self):
+        sections, _ = self._run(self._sections(
+            apply_first=[self._rec("a", technical_risk=True)]))
+        self.assertEqual(sections["apply_first"], [])
+
+    def test_a_strong_fit_carrying_an_unmet_requirement_is_capped_at_send_time(self):
+        rec = self._rec("a", recommendation="strong_fit",
+                        unmet_requirements=["5+ years full-cycle recruiting"])
+        sections, findings = self._run(self._sections(new_review=[rec]))
+        self.assertEqual(rec["recommendation"], "stretch")
+        self.assertEqual(self._verdict(findings, "hard requirements"), "corrected")
+
+    def test_a_previously_emailed_role_leaves_the_new_sections(self):
+        rec = self._rec("a", ever_shown=True)
+        sections, findings = self._run(self._sections(new_review=[rec]))
+        self.assertEqual(sections["new_review"], [])
+        self.assertEqual([r["job_key"] for r in sections["still"]], ["a"])
+        self.assertEqual(self._verdict(findings, "new means new"), "corrected")
+
+    def test_only_verified_closures_may_be_reported_as_removed(self):
+        kept = self._rec("a", verification=lifecycle.VERIFIED_CLOSED)
+        held = self._rec("b", verification=lifecycle.NEEDS_RECHECK)
+        sections, findings = self._run(self._sections(removed=[kept, held]))
+        self.assertEqual([r["job_key"] for r in sections["removed"]], ["a"])
+        self.assertEqual(self._verdict(findings, "removed are verified closed"), "corrected")
+
+    def test_an_aggregator_link_on_a_multi_source_role_is_flagged(self):
+        rec = self._rec("a", canonical_ats="himalayas", sources=["Acme", "Himalayas"])
+        _, findings = self._run(self._sections(new_review=[rec]))
+        self.assertEqual(self._verdict(findings, "employer source wins"), "warn")
+
+    def test_an_unsupported_nationwide_remote_claim_is_softened(self):
+        rec = self._rec("a", work_arrangement="remote", remote_verified=True,
+                        remote_scope=screening.SCOPE_PAY_ZONE)
+        self._run(self._sections(new_review=[rec]))
+        self.assertFalse(rec["remote_verified"])
+
+    def test_a_strong_seo_role_cut_by_a_quota_is_promoted_back_in(self):
+        seo = self._rec("seo", title="Director, SEO", recommendation="strong_fit",
+                        fit_score=88)
+        db = {"jobs": {"seo": seo}}
+        classic = load_real_profile("lisa")
+        classic.pop("selection")
+        sections, findings = qa.review(self._sections(), db, classic, seen_keys={"seo"})
+        self.assertEqual([r["job_key"] for r in sections["new_review"]], ["seo"])
+        self.assertEqual(self._verdict(findings, "SEO / content coverage"), "corrected")
+
+    def test_v6_seo_promotion_respects_the_cap_and_the_bar(self):
+        """Selection mode: SEO is a B-tier interest, not a quota. A JD-first-worthwhile SEO
+        role fills a FREE slot; a stretch one is never promoted; a full day promotes none."""
+        good = self._rec("good", title="Director, SEO", recommendation="strong_fit",
+                         fit_score=88, work_interest="B")
+        weak = self._rec("weak", title="SEO Manager", recommendation="stretch",
+                         fit_score=60, work_interest="B")
+        db = {"jobs": {"good": good, "weak": weak}}
+        sections, _ = self._run(self._sections(), db=db, seen={"good", "weak"})
+        self.assertEqual([r["job_key"] for r in sections["apply_first"]], ["good"])
+        full = self._sections(apply_first=[self._rec(str(i)) for i in range(5)])
+        sections, _ = self._run(full, db={"jobs": {"good": dict(good)}}, seen={"good"})
+        self.assertEqual(len(sections["apply_first"]), 5)
+
+    def test_a_recruiting_role_screened_out_with_no_reason_is_reported(self):
+        rec = self._rec("r", title="Director, Recruiting Operations",
+                        recommendation="not_recommended", unmet_requirements=[],
+                        top_concern="")
+        db = {"jobs": {"r": rec}}
+        _, findings = self._run(self._sections(), db=db, seen={"r"})
+        self.assertEqual(self._verdict(findings, "recruiting judged on duties"), "warn")
+
+    def test_a_clean_selection_reports_eight_passes(self):
+        sections, findings = self._run(self._sections(apply_first=[self._rec("a")]))
+        self.assertEqual(len(findings), 8)
+        self.assertTrue(all(f["verdict"] == "pass" for f in findings),
+                        [f for f in findings if f["verdict"] != "pass"])
+
+    def _verdict(self, findings, check):
+        return next(f["verdict"] for f in findings if f["check"] == check)
+
+
+class TestDeliverySchedule(unittest.TestCase):
+    """Requirement 1: 06:45 America/Denver, DST-safe, retried, and exactly one email."""
+
+    def _at(self, hour, minute=45, month=9):
+        import datetime
+        return datetime.datetime(2026, month, 3, hour, minute,
+                                 tzinfo=delivery._zone())
+
+    def test_the_guard_accepts_only_the_right_seasons_cron(self):
+        self.assertTrue(delivery.should_run_now(self._at(6)))
+        self.assertFalse(delivery.should_run_now(self._at(5)),
+                         "the off-season cron is one hour early")
+        self.assertFalse(delivery.should_run_now(self._at(7)),
+                         "the off-season cron is one hour late")
+
+    def test_a_late_start_still_produces_the_morning_email(self):
+        self.assertTrue(delivery.should_run_now(self._at(7, 40)),
+                        "GitHub starts crons late; 55 minutes is still the morning")
+        self.assertFalse(delivery.should_run_now(self._at(9, 0)))
+
+    def test_a_completed_run_stops_the_second_cron_doing_the_work_again(self):
+        log = {"runs": [{"date": delivery.today_local(), "status": "ok"}], "delivery": {}}
+        run, why = delivery.should_start(log)
+        self.assertFalse(run)
+        self.assertIn("already completed", why)
+
+    def test_the_catchup_runs_only_when_the_morning_run_did_not(self):
+        empty = {"runs": [], "delivery": {}}
+        self.assertTrue(delivery.should_start(empty, catchup=True,
+                                              dt=self._at(16, 30))[0])
+        done = {"runs": [{"date": delivery.today_local(), "status": "ok"}], "delivery": {}}
+        self.assertFalse(delivery.should_start(done, catchup=True,
+                                               dt=self._at(16, 30))[0])
+
+    def test_a_crashed_run_does_not_count_as_completed(self):
+        log = {"runs": [{"date": delivery.today_local(), "status": "running"}],
+               "delivery": {}}
+        self.assertTrue(delivery.catchup_needed(log))
+
+    def test_the_ledger_makes_the_daily_email_canonical(self):
+        log = {"runs": [], "delivery": {}}
+        self.assertFalse(delivery.already_delivered(log, "lisa"))
+        delivery.record_delivery(log, ["lisa"])
+        self.assertTrue(delivery.already_delivered(log, "lisa"))
+        self.assertFalse(delivery.already_delivered(log, "chad"))
+
+    def test_a_second_run_after_delivery_does_not_email_again(self):
+        settings = {"email": {"enabled": True}}
+        profiles = [{"name": "lisa", "email": True}]
+        log = {"runs": [], "delivery": {}}
+        first = jm.github_output_lines(profiles, ["lisa"], {"lisa": []}, settings, log)
+        self.assertIn("lisa_email=true", first)
+        delivery.record_delivery(log, ["lisa"])
+        second = jm.github_output_lines(profiles, ["lisa"], {"lisa": []}, settings, log)
+        self.assertIn("lisa_email=false", second)
+        self.assertIn("lisa_changed=true", second,
+                      "the ledger withholds the SEND; it must not lie about the diff")
+
+    def test_the_run_log_records_the_four_timestamps(self):
+        log = {"runs": [], "delivery": {}}
+        run = delivery.start_run(log, scheduled_for="45 12 * * *", trigger="schedule")
+        self.assertTrue(run["started_at"])
+        self.assertEqual(run["scheduled_for"], "45 12 * * *")
+        delivery.finish_run(run, "ok")
+        self.assertTrue(run["completed_at"])
+        delivery.record_delivery(log, ["lisa"])
+        self.assertIn("lisa", run["emailed"])
+
+    def test_the_workflow_schedules_both_dst_candidates_and_a_catchup(self):
+        wf = open(os.path.join(HERE, ".github/workflows/prospector.yml")).read()
+        for cron in ('"45 12 * * *"', '"45 13 * * *"', '"30 16 * * *"'):
+            self.assertIn(cron, wf)
+        self.assertIn("--check-schedule", wf)
+        self.assertIn("--catchup", wf)
+        self.assertIn("run_log.json", wf, "the ledger must be committed or it is not state")
+
+    def test_every_working_step_is_gated_on_the_schedule_guard(self):
+        wf = open(os.path.join(HERE, ".github/workflows/prospector.yml")).read()
+        for step in ("Run prospector", "Email Chad's report", "Email Lisa's report",
+                     "Confirm delivery"):
+            block = wf.split(f"name: {step}")[1].split("- name:")[0]
+            self.assertIn("steps.gate.outputs.should_run == 'true'", block,
+                          f"{step} would run on a day the guard said to skip")
+
+
+class TestCaliforniaAndOregonRegions(unittest.TestCase):
+    """Requirement 7's preference order gained two states. Both codes are ambiguous."""
+
+    def test_california_cities_and_code(self):
+        for loc in ["San Francisco, CA", "Remote - California", "Foster City, CA"]:
+            self.assertTrue(jm.is_california(loc), loc)
+
+    def test_the_ca_code_does_not_import_canada(self):
+        for loc in ["Toronto, CA", "Vancouver, BC, CA", "Montreal, QC, CA"]:
+            self.assertFalse(jm.is_california(loc), loc)
+
+    def test_oregon_never_matches_the_word_or(self):
+        self.assertFalse(jm.is_oregon("Sales or Marketing — Austin, TX"))
+        self.assertTrue(jm.is_oregon("Portland, OR"))
+        self.assertTrue(jm.is_oregon("Remote - Oregon"))
+
+    def test_the_new_regions_are_ranked_last(self):
+        order = ["remote_us", "utah", "washington", "california", "oregon"]
+        self.assertLess(jm.location_rank("Salt Lake City, UT", order),
+                        jm.location_rank("San Francisco, CA", order))
+        self.assertLess(jm.location_rank("Seattle, WA", order),
+                        jm.location_rank("Portland, OR", order))
+
+    def test_the_local_gate_is_unchanged(self):
+        """Chad's geography must not move because Lisa's preference list grew."""
+        self.assertFalse(jm.is_local("San Francisco, CA"))
+        self.assertFalse(jm.is_local("Portland, OR"))
+
+    def test_the_committed_settings_use_the_stated_order(self):
+        order = json.load(open(os.path.join(HERE, "settings.json")))["location_priority"]
+        self.assertEqual(order, ["remote_us", "utah", "washington", "california", "oregon"])
+        for region in order:
+            self.assertIn(region, jm.REGION_GATES)
+
+
+class TestScreeningConfigIsAlive(unittest.TestCase):
+    """The project's oldest trap: a STEM never matches, because everything is matched as
+    \\bterm\\b. A dead term looks like it is filtering and silently is not."""
+
+    # The stems this project has actually shipped dead, plus the ones the new lists are
+    # most likely to grow. A blacklist is honest about what it checks: there is no offline
+    # way to tell a stem from a word, so the test guards the failures we know about rather
+    # than pretending to a general rule.
+    KNOWN_DEAD_STEMS = ("housekeep", "veterinar", "phlebotom", "radiolog", "engineerin",
+                        "architec", "integrat", "automat", "recruit", "developm",
+                        "analyt", "strateg", "operat", "transform")
+
+    def test_no_new_list_contains_a_known_dead_stem(self):
+        lists = {"technical titles": screening.TECHNICAL_TITLE_TERMS,
+                 "technical descriptions": screening.TECHNICAL_DESCRIPTION_TERMS,
+                 "business overrides": screening.BUSINESS_OVERRIDE_TERMS,
+                 "seo/content": screening.SEO_CONTENT_TERMS,
+                 "recruiting titles": screening.RECRUITING_TITLE_TERMS}
+        lisa = load_real_profile("lisa")
+        lists["family_only_any"] = lisa["discovery"]["family_only_any"]
+        for label, terms in lists.items():
+            for term in terms:
+                self.assertNotIn(term, self.KNOWN_DEAD_STEMS,
+                                 f"{label}: {term!r} is a stem and matches nothing")
+
+    def test_the_risky_terms_match_what_they_are_meant_to(self):
+        """The lists are only worth having if they fire on real titles and stay off the
+        ones next door. Both directions, spelled out."""
+        should_match = {
+            "architect": "Senior Forward Deployed Architect",
+            "data engineer": "Staff Data Engineer",
+            "technical program manager": "Technical Program Manager, AI",
+            "organic search": "Head of Organic Search",
+            "content operations": "Director, Content Operations",
+            "workforce planning": "Manager, Workforce Planning",
+        }
+        for term, title in should_match.items():
+            self.assertTrue(jm._any_term(title.lower(), [term]),
+                            f"{term!r} should match {title!r}")
+        should_not_match = {
+            "architect": "Director, M&A Integration",
+            "integration engineer": "Post-Merger Integration Lead",
+            "platform engineer": "Director, Platform Operations",
+            "automation engineer": "Director, AI Automation Adoption",
+        }
+        for term, title in should_not_match.items():
+            self.assertFalse(jm._any_term(title.lower(), [term]),
+                             f"{term!r} must not match {title!r}")
+
+    def test_integration_is_not_excluded_as_a_bare_word(self):
+        """Guarded by a test because deleting M&A integration would be the single most
+        expensive mistake available in this file."""
+        self.assertNotIn("integration", screening.TECHNICAL_TITLE_TERMS)
+        self.assertNotIn("automation", screening.TECHNICAL_TITLE_TERMS)
+        self.assertNotIn("platform", screening.TECHNICAL_TITLE_TERMS)
+        self.assertNotIn("ai", screening.TECHNICAL_TITLE_TERMS)
+
+    def test_every_hard_requirement_rule_has_tokens_and_a_label(self):
+        for category, label, tokens in screening.HARD_REQUIREMENT_RULES:
+            self.assertTrue(category and label and tokens, category)
+        cats = [c for c, _, _ in screening.HARD_REQUIREMENT_RULES]
+        self.assertEqual(len(cats), len(set(cats)))
+        for c in screening.RECRUITING_EXECUTION_CATEGORIES:
+            self.assertIn(c, cats, "a recruiting category must name a real rule")
+
+    def test_lisa_has_the_technical_screen_on_and_chad_does_not(self):
+        self.assertTrue(screening.technical_screening_enabled(load_real_profile("lisa")))
+        self.assertFalse(screening.technical_screening_enabled(load_real_profile("chad")))
+
+
+
+class TestV6SalesAdjacency(unittest.TestCase):
+    """Lisa's update, section 15: a separate sales-adjacency lane."""
+
+    def setUp(self):
+        self.lisa = load_real_profile("lisa")
+
+    def test_a_solutions_consultant_is_retrieved_into_the_sales_lane(self):
+        p = posting("Adobe", "1", "Senior Solutions Consultant")
+        tier, reason = jm.classify_match(p, self.lisa)
+        self.assertEqual(tier, jm.TIER_DISCOVERY)
+        self.assertTrue(p["sales_adjacent"])
+        self.assertIn("sales-adjacency", reason)
+
+    def test_value_engineer_is_not_dropped_for_naming_engineer(self):
+        p = posting("Acme", "1", "Value Engineer")
+        self.assertEqual(jm.classify_match(p, self.lisa)[0], jm.TIER_DISCOVERY)
+
+    def test_a_coding_sales_engineer_is_still_dropped_on_its_description(self):
+        p = posting("Acme", "1", "Sales Engineer",
+                    description="Hands-on coding experience required; write code daily, "
+                                "build APIs and manage Kubernetes and Terraform.")
+        tier, _ = jm.classify_match(p, self.lisa)
+        self.assertIsNone(tier)
+
+    def test_sdr_and_bdr_are_never_retrieved(self):
+        for title in ("Sales Development Representative", "BDR, Solutions",
+                      "Inside Sales Solutions Consultant"):
+            self.assertIsNone(jm.classify_match(posting("A", "1", title), self.lisa)[0], title)
+
+    def test_a_primary_title_stays_primary(self):
+        """'Director, Value Realization' is A-tier work the primary search claims."""
+        p = posting("Acme", "1", "Director, Value Realization")
+        tier, _ = jm.classify_match(p, self.lisa)
+        self.assertEqual(tier, jm.TIER_CORE)
+        self.assertFalse(p.get("sales_adjacent"))
+
+    def test_chad_has_no_sales_lane(self):
+        p = posting("Acme", "1", "Senior Solutions Consultant")
+        jm.classify_match(p, load_real_profile("chad"))
+        self.assertFalse(p.get("sales_adjacent"))
+
+
+class TestV6Selection(unittest.TestCase):
+    """Lisa's update, sections 24-26: at most five worthwhile NEW roles, zero allowed."""
+
+    def _rec(self, key, **kw):
+        r = {"job_key": key, "title": key, "company": "X", "recommendation": "strong_fit",
+             "work_interest": "A", "fit_score": 80, "status": "new", "ever_shown": False}
+        r.update(kw)
+        return r
+
+    def _run(self, recs):
+        jobs = {r["job_key"]: r for r in recs}
+        return jm.change_sections({"jobs": jobs}, None, seen_keys=set(jobs),
+                                  profile=load_real_profile("lisa"))
+
+    def _new(self, sections):
+        return [r["job_key"] for k in jm.NEW_SECTIONS for r in sections.get(k) or []]
+
+    def test_never_more_than_five(self):
+        sections, counts = self._run([self._rec(f"r{i}", fit_score=90 - i) for i in range(9)])
+        self.assertEqual(len(self._new(sections)), 5)
+        self.assertEqual(counts["held_over_cap"], 4)
+
+    def test_mediocre_roles_are_not_promoted_to_fill_the_email(self):
+        sections, counts = self._run([self._rec("s", recommendation="stretch"),
+                                      self._rec("n", recommendation="not_recommended")])
+        self.assertEqual(self._new(sections), [])
+        self.assertEqual(counts["below_bar"] + counts["screened_out"], 2)
+
+    def test_d_tier_work_needs_a_named_exception(self):
+        sections, _ = self._run([self._rec("d", work_interest="D"),
+                                 self._rec("dx", work_interest="D", recommendation="stretch",
+                                           exception_reason="rare M&A role at a referral")])
+        self.assertEqual(self._new(sections), ["dx"])
+        self.assertEqual([r["job_key"] for r in sections["exceptions"]], ["dx"])
+
+    def test_sales_lane_never_crowds_out_the_primary_search(self):
+        recs = [self._rec(f"p{i}", fit_score=70) for i in range(5)]
+        recs += [self._rec(f"s{i}", fit_score=99, sales_adjacent=True,
+                           sales_readiness="qualified_now") for i in range(3)]
+        sections, _ = self._run(recs)
+        self.assertEqual(len(sections["apply_first"]), 5)
+        self.assertEqual(sections["sales"], [])
+
+    def test_sales_lane_is_capped_at_two(self):
+        recs = [self._rec(f"s{i}", sales_adjacent=True, sales_readiness="near_qualified_december")
+                for i in range(4)]
+        sections, _ = self._run(recs)
+        self.assertEqual(len(sections["sales"]), 2)
+
+    def test_a_sales_role_needs_readiness(self):
+        sections, _ = self._run([self._rec("s", sales_adjacent=True,
+                                           sales_readiness="not_viable")])
+        self.assertEqual(self._new(sections), [])
+
+    def test_an_old_rubric_verdict_is_never_shown(self):
+        sections, counts = self._run([self._rec("old", work_interest="")])
+        self.assertEqual(self._new(sections), [])
+        self.assertEqual(counts["pending_score"], 1)
+
+    def test_a_strong_existing_role_can_be_the_best_move(self):
+        """Section 26: a new role does not automatically outrank a strong existing one."""
+        sections, _ = self._run([self._rec("old", ever_shown=True, fit_score=95),
+                                 self._rec("new", fit_score=70)])
+        self.assertEqual(jm.best_move(sections)["job_key"], "old")
+
+    def test_the_card_shows_decisions_not_numbers(self):
+        rec = self._rec("r", company="Delta", title="Director, CX", fit_level="good",
+                        action_status="package", industry_relationship="direct",
+                        why_fits="Owns CX transformation.", next_action="Lead with Delta.",
+                        sales_adjacent=True, sales_readiness="near_qualified_december",
+                        fit_score=87, canonical_url="https://x.test")
+        html = jm._rec_card(rec)
+        for want in ("Status: PACKAGE", "Work Interest: A", "Fit: Good", "Direct",
+                     "NEAR-QUALIFIED / DECEMBER", "Next action"):
+            self.assertIn(want, html)
+        self.assertNotIn("87/100", html)
+
+
+class TestV6Verdict(unittest.TestCase):
+    BASE = {"qualification_fit": 80, "interest_fit": 80, "practical_fit": 80,
+            "opportunity_score": 80, "recommendation": "strong_fit"}
+
+    def test_decision_fields_validate_and_degrade(self):
+        v = jm.validate_verdict({**self.BASE, "work_interest": "a", "action_status": "PACKAGE",
+                                 "industry_relationship": "client exposure",
+                                 "sales_readiness": "bogus", "fit_level": "good"})
+        self.assertEqual(v["work_interest"], "A")
+        self.assertEqual(v["action_status"], "package")
+        self.assertEqual(v["industry_relationship"], "client_exposure")
+        self.assertEqual(v["sales_readiness"], "n_a")
+
+    def test_a_standard_verdict_keeps_its_old_shape(self):
+        self.assertNotIn("work_interest", jm.validate_verdict(dict(self.BASE)))
+
+    def test_rubric_selection_and_fingerprint(self):
+        cand = {"x": 1}
+        self.assertEqual(jm._rubric_for(load_real_profile("lisa")), "jd_first")
+        self.assertEqual(jm._rubric_for(load_real_profile("chad")), "standard")
+        self.assertNotEqual(jm._bg_fingerprint(cand, "jd_first"), jm._bg_fingerprint(cand))
+        self.assertIn("DOMINANT WORK", jm._fit_system(cand, "jd_first")[0]["text"])
+        self.assertNotIn("DOMINANT WORK", jm._fit_system(cand)[0]["text"])
+
+    def test_lisas_context_carries_the_facts_the_update_requires(self):
+        bg = json.load(open(os.path.join(jm.HERE, "lisa_background.json")))
+        blob = json.dumps(bg)
+        self.assertEqual(bg["adobe_digital_academy"]["status"], "in_progress")
+        self.assertIn("Delta Air Lines", blob)
+        self.assertIn("Travel, aviation, corporate travel and travel-tech are DIRECT", blob)
+        self.assertIn("NOT 'without sales experience'", blob)
 
 
 if __name__ == "__main__":

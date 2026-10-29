@@ -18,7 +18,10 @@ import argparse, codecs, collections, glob, hashlib, html, http.client, http.coo
     json, os, re, shutil, socket, sys, time, urllib.error, urllib.parse, urllib.request, \
     datetime
 
+import delivery
 import lifecycle
+import qa
+import screening
 import sheets_sync
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
@@ -42,8 +45,13 @@ SETTINGS_DEFAULTS = {
     "star_within_days": 7, "allow_international_remote": False,
     # V3. `lifecycle` governs the age rules and the bounded still-open verification;
     # `discovery` caps what a broadened search may cost in one run.
-    "lifecycle": {"exceptional_score": 85, "verify_limit": 15, "prune_after_days": 180},
-    "discovery": {"max_new_scored_per_run": 150},
+    "lifecycle": {"exceptional_score": 85, "verify_limit": 15, "prune_after_days": 180,
+                  # Requirement 5's closure budget: how many vanished roles may be checked
+                  # against the employer per run, and how long a role must have been missing
+                  # first. A one-run absence is usually a feed hiccup, so waiting a day
+                  # spends the budget on the roles that are actually gone.
+                  "recheck_limit": 20, "recheck_after_days": 1},
+    "discovery": {"max_new_scored_per_run": 150, "deep_retrieval_limit": 40},
     "sheets": {"enabled": True},
     # The reader's location / work-arrangement preference, best first. It is ONE setting
     # doing two jobs on purpose, so the order can never disagree with itself: it is the
@@ -82,7 +90,10 @@ DESC_LIMIT = 2000               # chars of job description sent to the model
 # fingerprint (`_bg_fingerprint`), so bumping it invalidates every stored verdict and forces
 # one full re-score. Bump it whenever the fields or their meaning change — that is what stops
 # new rendering code from reading a stale verdict written under the old schema.
-FIT_SCHEMA_VERSION = 3   # v3 adds `confidence` and judges responsibilities over title
+# v4 adds `unmet_requirements`, `bridge_skills` and `remote_scope`, and changes the MEANING of
+# apply_first/strong_fit: a hard requirement the candidate does not support now caps a role at
+# `stretch` regardless of how well the rest of it reads. Every stored verdict re-scores once.
+FIT_SCHEMA_VERSION = 4
 
 # Output ceiling per scoring call. This covers THINKING + the JSON reply, not just the JSON:
 # Sonnet 5 runs adaptive thinking by default and `max_tokens` bounds both together. The first
@@ -1069,6 +1080,27 @@ def _matches_any(l, terms):
     return any(re.search(r"\b" + re.escape(t) + r"\b", l) for t in terms)
 
 
+# Locations that name the United States as a WHOLE and pin the role to nowhere more
+# specific. Compared against the location with every non-letter stripped, so "U.S.",
+# "US", "united states" and "United States of America" all collapse to one entry.
+_US_NATIONAL_NORM = frozenset(
+    {"us", "usa", "unitedstates", "unitedstatesofamerica", "nationwide"})
+
+
+def _is_nationwide_us(loc):
+    """True only when the WHOLE location string is a US-national label.
+
+    A nationwide role includes Utah, so "United States" is local — that is how Weave, a
+    Lehi employer, posts its sales roles, and all 8 of them were invisible because the
+    string names no local city and no remote marker.
+
+    The whole-string test is what keeps this safe. "San Francisco Bay Area, California"
+    and "San Francisco, CA, United States" both still fail it, so this cannot smuggle in
+    another metro — the moment the employer names a specific place, the normal keyword
+    rules apply again."""
+    return re.sub(r"[^a-z]", "", (loc or "").lower()) in _US_NATIONAL_NORM
+
+
 def is_local(loc):
     l = loc.lower()
     # Remote roles pass — unless a non-US country is named and international remote is off,
@@ -1076,6 +1108,8 @@ def is_local(loc):
     if KEEP_REMOTE and "remote" in l:
         if ALLOW_INTL_REMOTE or not _matches_any(l, INTERNATIONAL_MARKERS):
             return True
+    if _is_nationwide_us(l):
+        return True
     return _matches_any(l, LOCAL_KEYWORDS)
 
 
@@ -1145,10 +1179,68 @@ def is_utah(loc):
     return _matches_any((loc or "").lower(), LOCAL_KEYWORDS)
 
 
-REGION_GATES = {"remote_us": is_us_remote, "utah": is_utah, "washington": is_washington}
+# California and Oregon complete the reader's stated preference order (Remote US > Utah >
+# Washington > California > Oregon). Both are keyword lists rather than state codes, and the
+# two codes are handled with deliberate care:
+#
+#   * "CA" is also the ISO country code for CANADA, which appears constantly in job feeds
+#     ("Toronto, CA"). The bare code is therefore accepted only when the string names no
+#     international marker.
+#   * "OR" is the English word "or". A bare `\bor\b` would match "Sales or Marketing" and
+#     turn half the feed into Oregon roles, so the code is matched ONLY in its postal
+#     position — directly after a comma, as in "Portland, OR".
+CALIFORNIA_KEYWORDS = [
+    "california", "san francisco", "bay area", "los angeles", "san diego", "san jose",
+    "sacramento", "oakland", "irvine", "palo alto", "mountain view", "sunnyvale",
+    "santa clara", "san mateo", "redwood city", "menlo park", "cupertino", "pasadena",
+    "long beach", "santa monica", "culver city", "burbank", "berkeley", "fresno",
+    "anaheim", "carlsbad", "el segundo", "playa vista", "silicon valley",
+]
+OREGON_KEYWORDS = [
+    "oregon", "portland", "beaverton", "hillsboro", "gresham", "tigard", "lake oswego",
+    "eugene", "bend, or", "corvallis", "wilsonville",
+]
+_POSTAL_OR = re.compile(r",\s*or\b")
+_POSTAL_CA = re.compile(r",\s*ca\b")
+# Canadian signals, used ONLY to veto the bare "CA" postal code. Province codes are matched in
+# postal position for the same reason "OR" is: `\bon\b` and `\bne\b` are ordinary English.
+# Deliberately NOT listed: "ontario" and "vancouver" as bare words — Ontario is a California
+# city and Vancouver is a Washington one, so the province code and the unambiguous city names
+# carry the check instead.
+_CANADA_CITIES = ["canada", "toronto", "montreal", "ottawa", "calgary", "edmonton",
+                  "winnipeg", "halifax", "mississauga", "british columbia"]
+_POSTAL_PROVINCE = re.compile(r",\s*(bc|on|qc|ab|mb|sk|ns|nb|nl|pe|yt|nt|nu)\b")
+
+
+def _looks_canadian(l):
+    return bool(_matches_any(l, _CANADA_CITIES) or _POSTAL_PROVINCE.search(l))
+
+
+def is_california(loc):
+    """California, without importing Canada.
+
+    The named cities are unambiguous. The bare postal code is not — "CA" is also the country
+    code for Canada, and "Toronto, CA" / "Vancouver, BC, CA" are exactly how feeds write it —
+    so the code is accepted only when nothing else in the string looks Canadian."""
+    l = (loc or "").lower()
+    if _matches_any(l, CALIFORNIA_KEYWORDS):
+        return True
+    return bool(_POSTAL_CA.search(l)) and not _looks_canadian(l) \
+        and not _matches_any(l, INTERNATIONAL_MARKERS)
+
+
+def is_oregon(loc):
+    """Oregon. The postal code is matched only after a comma — a bare \bor\b is the English
+    word "or" and would match most of the feed."""
+    l = (loc or "").lower()
+    return _matches_any(l, OREGON_KEYWORDS) or bool(_POSTAL_OR.search(l))
+
+
+REGION_GATES = {"remote_us": is_us_remote, "utah": is_utah, "washington": is_washington,
+                "california": is_california, "oregon": is_oregon}
 # Lisa's stated order of preference, best first. Used both as the priority lane's geography
 # and as the ranking tiebreak inside the digest (see `location_rank`).
-DEFAULT_REGIONS = ["remote_us", "utah", "washington"]
+DEFAULT_REGIONS = ["remote_us", "utah", "washington", "california", "oregon"]
 
 
 def region_gate(regions=None):
@@ -1223,6 +1315,54 @@ def enrich_salary(postings):
             except Exception:
                 _SALARY_CACHE[p["key"]] = None
         p["salary"] = _SALARY_CACHE[p["key"]]
+
+
+# Full job descriptions fetched by `deepen_descriptions`, keyed like _SALARY_CACHE so a role
+# matched by several profiles or lanes costs at most one detail fetch per run.
+_DETAIL_CACHE = {}
+DEEP_RETRIEVAL_LIMIT = 40      # per lane; see settings.discovery.deep_retrieval_limit
+
+
+def deepen_descriptions(postings, profile, limit=None):
+    """Fetch the full JD for the promising roles that arrived without one.
+
+    Requirement 3 ends with "only perform expensive/deep JD retrieval on roles that are
+    otherwise promising", and that constraint is doing real work here. Three of the new rules
+    — the technical-role exclusion, hard requirements, and remote eligibility — can only be
+    applied to text, and the sources that give no text at list time (Workday,
+    SmartRecruiters, Paradox) are exactly where the reader's priority employers live. Without
+    this step those employers would be judged on a title, which is the failure the whole
+    change set is about.
+
+    So: bounded, and spent only where `screening.deep_retrieval_wanted` says the role already
+    looks promising — a precise-gate match, a named employer, or an SEO/content role. Runs
+    BEFORE scoring, so the model sees the JD too and the description is not fetched twice.
+
+    Returns the number of postings that gained a description."""
+    if not screening.technical_screening_enabled(profile):
+        return 0                       # a profile not using the new screening pays nothing
+    limit = DEEP_RETRIEVAL_LIMIT if limit is None else int(limit)
+    wanted = [p for p in postings if screening.deep_retrieval_wanted(p, profile)]
+    fetched = 0
+    for p in wanted[:limit]:
+        key = p.get("key")
+        if key not in _DETAIL_CACHE:
+            try:
+                _DETAIL_CACHE[key] = _detail_text(p) if p.get("_detail_url") else ""
+            except Exception as e:                       # noqa: BLE001
+                # A detail endpoint that fails costs us depth, never the run. The role stays
+                # in the pool and is judged on what we do have.
+                print(f"  [detail] {p.get('company')}: {type(e).__name__} — "
+                      f"judging '{(p.get('title') or '')[:50]}' from the title alone")
+                _DETAIL_CACHE[key] = ""
+        text = _DETAIL_CACHE[key]
+        if text:
+            p["description"] = text
+            fetched += 1
+    if len(wanted) > limit:
+        print(f"  [{profile['name']}] deep JD retrieval capped at {limit}; "
+              f"{len(wanted) - limit} promising role(s) judged from the title this run")
+    return fetched
 
 
 def _fmt_posted(posted):
@@ -1387,6 +1527,46 @@ def hard_excluded(posting, profile):
                      _discovery_cfg(profile).get("exclude_any", []))
 
 
+def sales_adjacency_match(posting, profile):
+    """V6 — the SALES-ADJACENCY lane (Lisa's update, section 15). An EVALUATION lane, not a
+    registry lane: it runs over every source already fetched and retrieves consultative
+    technical-sales and sales-adjacent titles (Solutions Consultant, Value Engineer,
+    Pre-Sales, Solution Strategist, Strategic Customer Success…) that the leadership search
+    would never retrieve, and several of which it would hard-exclude — "Value Engineer" names
+    "engineer", which is in `discovery.exclude_any` for good reason everywhere else.
+
+    So it runs BEFORE that exclusion, on its own short list, with its own exclusions (SDR/BDR,
+    inside sales, cold calling). The technical DESCRIPTION screen still applies: a sales
+    engineer whose JD asks for coding or infrastructure work is dropped exactly like any other
+    engineering role. Only the title screen is relaxed, and only for the titles the profile
+    lists in `technical_titles_allowed`.
+
+    Returns (tier, reason) to retrieve, or None to fall through to the normal gate. Retrieved
+    roles carry `sales_adjacent`; the change digest gives them their own capped section so
+    they can never crowd out the primary search."""
+    cfg = profile.get("sales_adjacency") or {}
+    if not cfg.get("enabled"):
+        return None
+    title = (posting.get("title") or "").lower()
+    hit = _any_term(title, cfg.get("title_any", []))
+    if not hit:
+        return None
+    if _any_term(title, cfg.get("exclude_any", [])):
+        return None, "sales-adjacency: excluded sales motion (SDR/BDR/outbound)"
+    screen_profile = profile
+    if _any_term(title, cfg.get("technical_titles_allowed", [])):
+        # An allowed sales title ("sales engineer") — skip the TITLE half of the screen only.
+        screen_profile = dict(profile, technical_exclusion=dict(
+            profile.get("technical_exclusion") or {}, title_any=[]))
+    tech = screening.technical_screen(posting, screen_profile)
+    posting["technical_risk"] = bool(tech["risk"])
+    posting["technical_note"] = tech["reason"]
+    if tech["excluded"]:
+        return None, tech["reason"]
+    posting["sales_adjacent"] = True
+    return TIER_DISCOVERY, f"sales-adjacency lane: '{hit}' in title"
+
+
 def classify_match(posting, profile):
     """Decide whether to RETRIEVE this posting, and how confident the title alone makes us.
 
@@ -1397,8 +1577,35 @@ def classify_match(posting, profile):
     Sets `posting["demoted"]` when a role reaches the discovery tier despite being hit by the
     profile's PRECISION `exclude_any` — see the demotion note below."""
     posting.pop("demoted", None)
+    posting.pop("sales_adjacent", None)
+    sales = sales_adjacency_match(posting, profile)
+    # A title the PRIMARY search already claims ("Director, Value Realization" passes the core
+    # gate) stays primary: value realization and strategic customer success are A-tier work,
+    # and the sales lane exists for what the primary search cannot see, not to annex it.
+    if sales and sales[0] and matches_profile(posting, profile) \
+            and not hard_excluded(posting, profile):
+        posting.pop("sales_adjacent", None)
+    elif sales:
+        return sales
     if hard_excluded(posting, profile):
         return None, "hard-excluded function"
+    # THE TECHNICAL-ROLE EXCLUSION (requirement 2), and note WHERE it sits: above the core
+    # title gate, not below it. The requirement is explicit that it applies "even when the
+    # title says Program Manager, Transformation, Operations, AI, Customer Success" — so a
+    # role that satisfies the precise `match_groups` filter is still dropped when the work
+    # itself requires the reader to be a software engineer, architect, data engineer or ML
+    # engineer. Putting it below the gate would have let exactly those titles through, which
+    # is how a Senior Forward Deployed Architect became a top recommendation.
+    #
+    # It runs before scoring, so an excluded role costs nothing. `technical_risk` is the
+    # softer outcome: a business-side AI role whose description is thick with the technology
+    # the organisation is ADOPTING is kept, flagged, and capped at `stretch` downstream by
+    # enforce_hard_requirements. See screening.technical_screen.
+    tech = screening.technical_screen(posting, profile)
+    posting["technical_risk"] = bool(tech["risk"])
+    posting["technical_note"] = tech["reason"]
+    if tech["excluded"]:
+        return None, tech["reason"]
     if matches_profile(posting, profile):
         return TIER_CORE, "core title gate"
     cfg = _discovery_cfg(profile)
@@ -1433,6 +1640,22 @@ def classify_match(posting, profile):
                                     f"'{precision_hit}'")
         return TIER_DISCOVERY, reason
 
+    # FAMILIES THAT RETRIEVE ON THE TITLE ALONE (requirement 8).
+    #
+    # The general discovery gate asks for a role family AND either seniority or mandate
+    # language in the description. For SEO, organic search and content strategy that bar is
+    # wrong in a specific way: the requirement says in as many words not to require
+    # transformation language of these roles, and the mandate vocabulary the description path
+    # matches on IS transformation language. An "SEO Content Strategist" or "Organic Growth
+    # Lead" names its own relevance; asking it to also talk about operating models would drop
+    # precisely the coverage this is meant to increase.
+    #
+    # This list is short and specific on purpose — it is the one place in the gate where a
+    # single title term retrieves with no second signal at all, so a broad term here would
+    # behave like no filter.
+    family_only = _any_term(title, cfg.get("family_only_any", []))
+    if family_only:
+        return keep(f"role family '{family_only}' in title (retrieved on the family alone)")
     # A named role family plus ANY seniority signal is enough — this is the path that
     # recovers "Director, Pipeline Excellence" and "Manager, Business Operations".
     if families and senior:
@@ -1551,7 +1774,23 @@ class SimulatedFitClient:
             rec = "stretch"
         else:
             rec = "not_recommended"
+        extra = {}
+        if "DOMINANT WORK" in (kw.get("system") or [{}])[0].get("text", ""):
+            # jd_first rubric: fake the decision fields too, so the V6 card renders.
+            extra = {"work_interest": "ABCD"[h % 4], "dominant_work": "SIMULATED",
+                     "dominant_share": 30 + h % 70,
+                     "fit_level": {"apply_first": "strong", "strong_fit": "good"}.get(
+                         rec, "stretch"),
+                     "industry_relationship": INDUSTRY_RELATIONS[h % 5],
+                     "industry_importance": "helpful",
+                     "sales_readiness": ("near_qualified_december"
+                                         if "sales-adjacency" in user else "n_a"),
+                     "action_status": ACTION_STATUSES[(h >> 4) % 4],
+                     "why_fits": "SIMULATED — no Anthropic API call was made.",
+                     "material_gap": "", "next_action": "SIMULATED next action",
+                     "exception_reason": ""}
         return self._Message(json.dumps({
+            **extra,
             "qualification_fit": qual, "interest_fit": interest,
             "practical_fit": practical, "opportunity_score": opp,
             "recommendation": rec,
@@ -1584,12 +1823,16 @@ def load_background(profile):
         return None
 
 
-def _bg_fingerprint(candidate):
+def _bg_fingerprint(candidate, rubric="standard"):
     # Short hash of what is actually sent to the model, PLUS the verdict-schema version.
     # Editing a background file changes this (invalidating that profile's cached verdicts),
     # and so does bumping FIT_SCHEMA_VERSION — which is what guarantees a stale
     # old-shape verdict is never reused by new rendering code. See enrich_with_fit.
+    # A non-standard rubric is folded in too, so switching a profile's rubric re-scores it;
+    # the standard rubric adds nothing, so existing fingerprints are unchanged.
     payload = {"v": FIT_SCHEMA_VERSION, "bg": candidate}
+    if rubric == "jd_first":
+        payload["rubric"] = [rubric, JD_FIRST_RUBRIC_VERSION]
     return hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()[:12]
 
 
@@ -1599,6 +1842,14 @@ _REC_TO_FIT = {"apply_first": "yes", "strong_fit": "yes", "stretch": "maybe",
                "practical_contract": "maybe", "not_recommended": "no"}
 RECOMMENDATIONS = tuple(_REC_TO_FIT)
 CONFIDENCE_LEVELS = ("high", "medium", "low")
+REMOTE_SCOPES = tuple(screening.REMOTE_SCOPE_LABEL)
+
+# The ceiling a role is capped at when a hard requirement is unsupported. `stretch`, not
+# `not_recommended`: requirement 3 says downgrade OR exclude, and downgrading keeps the role
+# visible with its gap named, which is what lets the reader overrule us. Dropping it would
+# re-create the false negatives broad discovery exists to remove.
+HARD_REQUIREMENT_CEILING = "stretch"
+TOP_RECOMMENDATIONS = ("apply_first", "strong_fit")
 
 
 def _neutral_verdict(why):
@@ -1607,7 +1858,8 @@ def _neutral_verdict(why):
     return {"recommendation": "stretch", "fit": "maybe", "score": -1,
             "opportunity_score": -1, "qualification_fit": -1, "interest_fit": -1,
             "practical_fit": -1, "reasons": [], "concerns": [], "reason": why,
-            "confidence": "low",
+            "confidence": "low", "unmet_requirements": [], "bridge_skills": [],
+            "remote_scope": screening.SCOPE_UNCLEAR,
             "relocation_required": False, "relocation_assistance_mentioned": False,
             "signing_bonus_mentioned": False, "valid": False}
 
@@ -1658,15 +1910,52 @@ def validate_verdict(raw):
     # deliberately NOT strict — an old or malformed value degrades to "medium" rather than
     # rejecting an otherwise good verdict, because confidence only affects placement.
     conf = str(raw.get("confidence", "")).strip().lower()
+    # `remote_scope` is the model's reading of the JD's eligibility language (requirement 7).
+    # Like `confidence` it degrades rather than rejects: an unknown value becomes "unclear",
+    # which is the honest default and the one that stops the report claiming nationwide remote.
+    scope = str(raw.get("remote_scope", "")).strip().lower().replace("-", "_").replace(" ", "_")
     v = {"recommendation": rec,
          "confidence": conf if conf in CONFIDENCE_LEVELS else "medium",
          "reasons": reasons,
          "concerns": _as_str_list(raw.get("concerns"), 3),
+         # Requirement 3 / 4. These are evidence, not presentation: they are what
+         # `enforce_hard_requirements` reads to decide a role cannot be a top recommendation,
+         # and what the card prints so the reader sees the gap rather than a bare downgrade.
+         "unmet_requirements": _as_str_list(raw.get("unmet_requirements"), 4),
+         "bridge_skills": _as_str_list(raw.get("bridge_skills"), 3),
+         "remote_scope": scope if scope in REMOTE_SCOPES else screening.SCOPE_UNCLEAR,
          "relocation_required": bool(raw.get("relocation_required")),
          "relocation_assistance_mentioned": bool(raw.get("relocation_assistance_mentioned")),
          "signing_bonus_mentioned": bool(raw.get("signing_bonus_mentioned")),
          "valid": True}
     v.update(scores)
+    # V6 decision fields (jd_first rubric). Present only when the model sent them, so a
+    # standard-rubric verdict keeps exactly its old shape. Like `confidence` they DEGRADE
+    # rather than reject: they decide placement and wording, not whether the model's judgment
+    # is trustworthy — the scores and recommendation above already settled that.
+    if raw.get("work_interest") is not None or raw.get("action_status") is not None:
+        def choice(key, allowed, default, upper=False):
+            s = str(raw.get(key) or "").strip().replace("-", "_").replace(" ", "_")
+            s = s.upper() if upper else s.lower()
+            return s if s in allowed else default
+        share = _as_score(raw.get("dominant_share"))
+        v.update({
+            "work_interest": choice("work_interest", WORK_INTEREST, "", upper=True),
+            "dominant_work": str(raw.get("dominant_work") or "").strip()[:140],
+            "dominant_share": share if share is not None else -1,
+            "fit_level": choice("fit_level", FIT_LEVELS, ""),
+            "industry_relationship": choice("industry_relationship", INDUSTRY_RELATIONS,
+                                            "unknown"),
+            "industry_importance": choice("industry_importance", INDUSTRY_IMPORTANCE, ""),
+            "key_qualifications": _as_str_list(raw.get("key_qualifications"), 4),
+            "cautions": _as_str_list(raw.get("cautions"), 3),
+            "sales_readiness": choice("sales_readiness", SALES_READINESS, "n_a"),
+            "action_status": choice("action_status", ACTION_STATUSES, ""),
+            "why_fits": str(raw.get("why_fits") or "").strip()[:320],
+            "material_gap": str(raw.get("material_gap") or "").strip()[:160],
+            "next_action": str(raw.get("next_action") or "").strip()[:160],
+            "exception_reason": str(raw.get("exception_reason") or "").strip()[:140],
+        })
     # Legacy aliases, kept so existing renderers/sorting/filter logic need no changes.
     v["score"] = scores["opportunity_score"]
     v["fit"] = _REC_TO_FIT[rec]
@@ -1716,6 +2005,56 @@ def _fit_instructions():
         "Reserve not_recommended for roles that are genuinely wrong — wrong function, "
         "unrealistic requirements, or clearly outside the candidate's field. Do not use it "
         "merely because you are unsure.\n\n"
+
+        "HARD REQUIREMENTS OUTRANK SEMANTIC SIMILARITY. Before you may answer apply_first or "
+        "strong_fit, read the posting's stated requirements and check them against the "
+        "candidate. Material unsupported requirements include: a required number of years in "
+        "a specialist function the candidate has not held; a required industry "
+        "specialization; a required license or certification; SQL or programming; CRM or "
+        "MarTech administration; engineering or architecture depth; dedicated RevOps or Sales "
+        "Ops ownership; deep SaaS renewals and forecasting; full-cycle recruiting; "
+        "manufacturing or production expertise. If the posting states one, the role is at "
+        "best a stretch. Generic overlap in strategy, transformation, operations, customer "
+        "experience or leadership DOES NOT compensate for a hard mismatch — do not average "
+        "them against each other. List each one you found in unmet_requirements, quoting the "
+        "requirement briefly. An empty list means you looked and found none, so do not leave "
+        "it empty by default.\n\n"
+
+        "TECHNICAL EXECUTION IS OUT OF SCOPE. Never recommend a role that requires the "
+        "candidate PERSONALLY to have substantial expertise in software engineering, "
+        "architecture or infrastructure, APIs or integrations, data engineering, ML/AI "
+        "engineering, automation development, or technical implementation — no matter what "
+        "the title says. A role titled Program Manager, Transformation, Operations, AI or "
+        "Customer Success is still out of scope if the work is engineering work. Judge this "
+        "from the responsibilities and requirements, not the title, and say so in "
+        "unmet_requirements when it applies.\n\n"
+        "This is NOT a bar on AI or on technology. Business-side AI work is squarely in "
+        "scope and should score well: AI adoption and enablement, workforce transformation, "
+        "change management, process redesign, operating models, AI governance, "
+        "organizational adoption, and business-side AI strategy. The distinction is whether "
+        "the candidate would be BUILDING the technology or leading its adoption.\n\n"
+
+        "RECRUITING AND TALENT ROLES: judge the substance, never the title history. Do not "
+        "discount a role because it is in recruiting. Recruiting operations, talent strategy, "
+        "workforce planning, recruiting-process design, talent analytics, hiring-manager "
+        "enablement and recruiting transformation are all genuinely relevant — they are "
+        "operating-model and process work. But flag the direct-execution gap when the posting "
+        "asks for things like 5+ years of full-cycle recruiting, specialized recruiting "
+        "tenure, advanced sourcing, requisition ownership, offer negotiation and closing, or "
+        "extensive hands-on ATS execution. When a recruiting role is promising, use "
+        "bridge_skills to name the SPECIFIC skills the candidate would need to bridge — "
+        "concrete capabilities, not 'recruiting experience'.\n\n"
+
+        "REMOTE ELIGIBILITY COMES FROM THE POSTING, NOT THE LOCATION LABEL. A label like "
+        "'Remote - California' or 'Remote - Seattle' can mean any of: a residence "
+        "requirement, a pay zone, an associated office, a preferred location, or genuine "
+        "nationwide US remote. Decide from what the posting actually says and set "
+        "remote_scope to exactly one of: nationwide_us, state_restricted, "
+        "residence_required, pay_zone, office_associated, preferred_location, unclear. "
+        "Answer nationwide_us ONLY when the posting says the role is open across the United "
+        "States. If the posting restricts eligible states, it is state_restricted, not "
+        "nationwide. If the posting does not say, answer unclear — that is a real answer and "
+        "is preferred to a guess.\n\n"
         "recommendation must be exactly one of:\n"
         "- apply_first: well qualified, strongly matches their interests, practical enough "
         "to prioritize now.\n"
@@ -1730,18 +2069,212 @@ def _fit_instructions():
         "the posting explicitly says so. Never infer them. If the description is missing or "
         "silent, they are false.\n\n"
         "reasons: up to 5 items, each a short phrase (under 15 words) explaining why this "
-        "role surfaced. concerns: up to 3, only if genuinely useful.\n\n"
+        "role surfaced. concerns: up to 3, only if genuinely useful. unmet_requirements: up "
+        "to 4 short phrases naming hard requirements the candidate does not support. "
+        "bridge_skills: up to 3 short phrases naming specific skills they would need to "
+        "bridge, required for a promising recruiting/talent role and useful on any stretch.\n\n"
         "Respond with ONLY this JSON object — no prose, no markdown fences:\n"
         '{"qualification_fit": <0-100>, "interest_fit": <0-100>, "practical_fit": <0-100>, '
         '"opportunity_score": <0-100>, "recommendation": "apply_first"|"strong_fit"|'
         '"stretch"|"practical_contract"|"not_recommended", "confidence": "high"|"medium"|'
         '"low", "reasons": ["..."], '
-        '"concerns": ["..."], "relocation_required": true|false, '
+        '"concerns": ["..."], "unmet_requirements": ["..."], "bridge_skills": ["..."], '
+        '"remote_scope": "nationwide_us"|"state_restricted"|"residence_required"|'
+        '"pay_zone"|"office_associated"|"preferred_location"|"unclear", '
+        '"relocation_required": true|false, '
         '"relocation_assistance_mentioned": true|false, '
         '"signing_bonus_mentioned": true|false}')
 
 
-def _fit_system(candidate):
+# V6 (Lisa's 2026-10 update): the JD-FIRST rubric. Selected per profile with
+# `fit_rubric: "jd_first"`; a profile without it keeps `_fit_instructions` above, byte for
+# byte, so Chad's prompt — and therefore his cached verdicts — do not move.
+#
+# It asks for everything the standard rubric does (the four scores and the recommendation still
+# drive ranking and every downstream guarantee) PLUS the decision fields the reader asked to
+# see instead of numbers: dominant work, interest tier, fit level, industry relationship and its
+# importance, true gates vs cautions, sales readiness, an action status and one next action.
+# `unmet_requirements` keeps its name but narrows its meaning to TRUE GATES — it is what
+# enforce_hard_requirements and the QA gate cap on, and a preference must never cap a role.
+JD_FIRST_RUBRIC_VERSION = 1   # bump when the jd_first prompt or its fields change meaning
+FIT_RUBRICS = ("standard", "jd_first")
+WORK_INTEREST = ("A", "B", "C", "D")
+FIT_LEVELS = ("strong", "good", "stretch", "poor")
+ACTION_STATUSES = ("apply", "validate", "contact", "package", "stretch")
+INDUSTRY_RELATIONS = ("direct", "client_exposure", "adjacent", "new", "unknown")
+INDUSTRY_IMPORTANCE = ("required", "preferred", "helpful", "irrelevant")
+SALES_READINESS = ("qualified_now", "near_qualified_december", "stretch", "not_viable", "n_a")
+
+
+def _fit_instructions_jd_first():
+    return (
+        "You screen job postings for ONE specific candidate. The goal is NOT to find every "
+        "job that could plausibly match. It is to identify the few she would realistically "
+        "want, is credibly qualified or near-qualified for, and that are worth limited "
+        "application time. Accuracy is the objective: do not inflate fit, invent experience, "
+        "ignore a genuine specialization gap, or reinterpret a hard requirement as "
+        "transferable when it is not — and do not manufacture negatives from missing "
+        "information either. 'Plausible but uncertain' and 'insufficient evidence' are "
+        "legitimate answers.\n\n"
+
+        "1. READ THE JOB DESCRIPTION, NOT THE TITLE. A matching title does not make a role a "
+        "match; an unfamiliar title does not make it a mismatch. Words like strategy, "
+        "operations, transformation, customer, experience, program, AI, service, people and "
+        "enablement are discovery signals only. Decide: what would she actually spend most "
+        "of her time doing; does she want to do it; is she credibly qualified on confirmed or "
+        "transferable evidence; are the apparent gaps true requirements, preferences, or "
+        "merely absent evidence; are pay, location and work model acceptable; is it worth "
+        "the effort compared with other opportunities.\n\n"
+
+        "2. DOMINANT WORK. Name it in dominant_work (under 15 words) and classify it with "
+        "the candidate's role_interest_hierarchy as work_interest A, B, C or D. Estimate in "
+        "dominant_share (0-100) the share of the meaningful work that is A/B work. Strongly "
+        "prefer roles where it is about 60 or more. One attractive responsibility buried in "
+        "an otherwise poor-fit JD must NOT create a strong match; 10-20% of off-preference "
+        "duties must NOT sink a strong role.\n\n"
+
+        "3. REQUIREMENTS: GATES vs PREFERENCES vs CAUTIONS. Not every bullet under "
+        "'requirements' is absolute. A TRUE GATE is likely to prevent candidacy or success: "
+        "a required professional license, a mandatory security clearance, a clinical "
+        "credential, deep software-engineering depth, highly specialized regulatory/legal "
+        "expertise, a geographic requirement she cannot meet, or genuinely mandatory years of "
+        "specialized experience central to the job. These do NOT normally eliminate her: an "
+        "exact prior title, an exact industry where transferable experience is acceptable, "
+        "preferred SaaS experience, a learnable tool or platform, an arbitrary year count "
+        "when her scope shows equivalent seniority, anything phrased as preferred. List TRUE "
+        "gates she does not meet in unmet_requirements (empty means you checked and found "
+        "none). List meaningful gaps that affect competitiveness but are not gates in "
+        "cautions.\n\n"
+
+        "4. EVIDENCE. For up to 4 of the most important qualifications, write "
+        "key_qualifications entries as 'STATE: qualification', STATE being exactly one of "
+        "CONFIRMED (the candidate context supports it), TRANSFERABLE (different title, "
+        "industry or mechanism, but credible transfer), UNKNOWN (the context does not say), "
+        "GAP (evidence shows she lacks something materially required). UNKNOWN IS NOT NO: "
+        "never turn absence of evidence into a negative, and never invent experience to "
+        "resolve an unknown. The candidate context is a summary, not her complete career.\n\n"
+
+        "5. INDUSTRY IS SEPARATE FROM FUNCTION. Set industry_relationship to direct, "
+        "client_exposure, adjacent, new or unknown by checking her COMPLETE context — "
+        "including earlier career (travel/aviation is DIRECT; retail/consumer is DIRECT "
+        "earlier-career familiarity; industries served as enterprise clients are "
+        "client_exposure). Set industry_importance to required, preferred, helpful or "
+        "irrelevant FOR THIS JD. Never write 'new industry', 'no industry experience' or "
+        "equivalent unless the full context supports it. Recent senior experience sets "
+        "scope and seniority; older experience sets familiarity.\n\n"
+
+        "6. SALES. She has substantial commercial, solutioning and sales-adjacent "
+        "experience; NEVER say she has no sales experience. The accurate gap, where it "
+        "matters, is 'no recent traditional quota-carrying SaaS closing history'. For any "
+        "consultative technical-sales or sales-adjacent role (solutions/value consultant, "
+        "value engineer, pre-sales, solution or customer strategist, strategic customer "
+        "success, value realization, sales strategy, solutions-consulting leadership) set "
+        "sales_readiness to qualified_now, near_qualified_december (existing experience "
+        "plus her IN-PROGRESS Adobe Technical Sales training makes a credible near-term case "
+        "— often worth applying NOW with the training disclosed as in progress, unless a "
+        "hard requirement cannot currently be met), stretch, or not_viable. Use n_a for "
+        "every other role. Her Adobe training is in progress, not completed — never describe "
+        "it as completed or certified. SDR/BDR, high-volume outbound, cold-calling, deeply "
+        "technical sales-engineering (coding/infrastructure) and roles whose central "
+        "qualification is years of quota-carrying enterprise closing are not_recommended "
+        "unless you name an exceptional reason.\n\n"
+
+        "7. AI ROLES: business AI adoption, enablement, transformation, operating models, "
+        "workforce adoption, change and value realization are her work. ML engineering, AI "
+        "research, data science, software engineering, AI infrastructure and engineering-"
+        "depth technical product management are not. Would she BUILD it, or lead its "
+        "adoption?\n\n"
+
+        "8. COMMON FALSE POSITIVES to detect from the JD: technical or security TPM; deeply "
+        "technical product roles; finance/accounting specialist; legal operations needing "
+        "legal/CLM expertise; insurance specialist; clinical healthcare; call-center "
+        "operations; narrow renewals or deal-desk work; narrow RevOps; sales enablement; "
+        "highly specialized pricing; PLG/self-serve growth needing deep direct experience; "
+        "engineering-heavy AI; 'professional services' that is really hands-on product "
+        "implementation; support-heavy or high-volume customer success; corporate "
+        "development, valuation or deal execution presented as 'M&A'.\n\n"
+
+        "9. FALSE NEGATIVES to avoid: do not reject a promising role because she lacks the "
+        "exact title, the industry looks unfamiliar, a skill came from a different career "
+        "context or from consulting rather than an internal function, her sales experience "
+        "was embedded in professional services rather than an AE title, or her "
+        "transformation experience spans disciplines rather than one ladder.\n\n"
+
+        "10. COMPENSATION, LOCATION, EMPLOYMENT TYPE: apply the candidate's compensation and "
+        "location preferences in practical_fit. Contract/temporary roles are judged as "
+        "bridge income on their own terms (practical_contract). When pay is not stated, say "
+        "nothing about it rather than guessing.\n\n"
+
+        "11. EXCEPTIONS. If a role sits somewhat outside normal parameters but has "
+        "exceptional value (see the candidate's exceptional_opportunities), put the specific "
+        "reason in exception_reason (under 15 words); otherwise leave it empty. Exceptions "
+        "are rare.\n\n"
+
+        "12. NO DESCRIPTION. If the posting has no description you cannot establish the "
+        "dominant work: confidence must be low and recommendation cannot be apply_first.\n\n"
+
+        "SCORES (internal ranking only — never shown to the reader), 0-100 each: "
+        "qualification_fit, interest_fit, practical_fit, and opportunity_score = the "
+        "EXPECTED VALUE of pursuing it (functional fit, interest, qualification credibility, "
+        "compensation, closing risk, likelihood of response, speed to income, referral "
+        "leverage, effort, location, strategic and mission value) — not keyword similarity.\n\n"
+
+        "recommendation, exactly one of: apply_first (genuinely worthwhile now: dominant "
+        "work A/B — or C with an unusual draw — credible qualification, no true gate, "
+        "practical); strong_fit (worthwhile, good fit, worth serious consideration); stretch "
+        "(transferable case but meaningful gaps, or plausible but uncertain); "
+        "practical_contract (contract/temporary worth it for income); not_recommended (poor "
+        "match, D-dominant work, an unmet true gate, or not worth her limited time). "
+        "fit_level, exactly one of strong, good, stretch, poor. confidence: high, medium or "
+        "low — how sure you are.\n\n"
+
+        "action_status, exactly one of: apply (apply now as-is); contact (a referral, "
+        "recruiter or known contact she holds should be used first — only when the context "
+        "says such leverage exists); package (worth applying but needs deliberate "
+        "positioning: a non-obvious transferable case, a sales transition, disclosing "
+        "in-progress training); validate (one material uncertainty that ONLY she can "
+        "resolve, such as whether she would relocate or accept the pay); stretch (only "
+        "worth it if she wants a reach). next_action: ONE concrete action for her, under 20 "
+        "words. Never ask her to research, verify, inspect the JD, find compensation or "
+        "check whether the role is live — Prospector does those. why_fits: 1-2 sentences "
+        "grounded in the actual JD work. material_gap: the single most meaningful gap in "
+        "under 20 words, or empty if none is meaningful.\n\n"
+
+        "remote_scope, exactly one of nationwide_us, state_restricted, residence_required, "
+        "pay_zone, office_associated, preferred_location, unclear — from what the posting "
+        "says, never from the location label; nationwide_us only when the posting says the "
+        "role is open across the US. relocation_assistance_mentioned and "
+        "signing_bonus_mentioned true ONLY when the posting says so. reasons: up to 5 short "
+        "phrases. concerns: up to 3. bridge_skills: up to 3 specific skills to bridge on a "
+        "promising stretch.\n\n"
+
+        "Respond with ONLY this JSON object — no prose, no markdown fences:\n"
+        '{"dominant_work": "...", "dominant_share": <0-100>, "work_interest": "A"|"B"|"C"|"D", '
+        '"qualification_fit": <0-100>, "interest_fit": <0-100>, "practical_fit": <0-100>, '
+        '"opportunity_score": <0-100>, "recommendation": "apply_first"|"strong_fit"|'
+        '"stretch"|"practical_contract"|"not_recommended", "fit_level": "strong"|"good"|'
+        '"stretch"|"poor", "confidence": "high"|"medium"|"low", '
+        '"industry_relationship": "direct"|"client_exposure"|"adjacent"|"new"|"unknown", '
+        '"industry_importance": "required"|"preferred"|"helpful"|"irrelevant", '
+        '"key_qualifications": ["STATE: ..."], "unmet_requirements": ["..."], '
+        '"cautions": ["..."], "sales_readiness": "qualified_now"|"near_qualified_december"|'
+        '"stretch"|"not_viable"|"n_a", "action_status": "apply"|"validate"|"contact"|'
+        '"package"|"stretch", "why_fits": "...", "material_gap": "...", '
+        '"next_action": "...", "exception_reason": "...", "reasons": ["..."], '
+        '"concerns": ["..."], "bridge_skills": ["..."], '
+        '"remote_scope": "nationwide_us"|"state_restricted"|"residence_required"|'
+        '"pay_zone"|"office_associated"|"preferred_location"|"unclear", '
+        '"relocation_required": true|false, '
+        '"relocation_assistance_mentioned": true|false, '
+        '"signing_bonus_mentioned": true|false}')
+
+
+def _rubric_for(profile):
+    r = (profile or {}).get("fit_rubric") or "standard"
+    return r if r in FIT_RUBRICS else "standard"
+
+
+def _fit_system(candidate, rubric="standard"):
     """The STABLE half of the prompt: scoring rubric + candidate profile. Byte-identical for
     every posting in a run, so it is sent as a cached system block — the first call writes the
     cache, the rest read it at roughly a tenth of the input price. `sort_keys=True` matters:
@@ -1749,7 +2282,9 @@ def _fit_system(candidate):
 
     A cache miss is harmless — it just costs what it did before, so this is a saving, not a
     dependency. Nothing downstream inspects the cache fields."""
-    text = (_fit_instructions() + "\n\nCANDIDATE:\n"
+    instructions = (_fit_instructions_jd_first() if rubric == "jd_first"
+                    else _fit_instructions())
+    text = (instructions + "\n\nCANDIDATE:\n"
             + json.dumps(candidate, indent=2, sort_keys=True))
     return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
 
@@ -1781,7 +2316,7 @@ def fit_usage_summary():
             f"({hit}% of prompt served from cache) · out {u['output']:,}")
 
 
-def score_fit(candidate, posting, client):
+def score_fit(candidate, posting, client, rubric="standard"):
     """Score one posting for one candidate. Returns a validated verdict dict (see
     `validate_verdict`) carrying the four dimensions, a recommendation, reasons/concerns,
     the three explicit-mention booleans, and legacy `fit`/`score`/`reason` aliases.
@@ -1808,7 +2343,7 @@ def score_fit(candidate, posting, client):
         # the largest line on the bill) without changing the judgment we need.
         msg = client.messages.create(model=FIT_MODEL, max_tokens=FIT_MAX_TOKENS,
                                      output_config={"effort": "low"},
-                                     system=_fit_system(candidate),
+                                     system=_fit_system(candidate, rubric),
                                      messages=[{"role": "user", "content": user}])
         _record_usage(msg)
         text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
@@ -1824,6 +2359,104 @@ def score_fit(candidate, posting, client):
         print(f"[warn] fit parse failed [{posting.get('key', '?')}]: "
               f"{type(e).__name__}: {str(e)[:80]} | raw={text[:120]!r}")
         return _neutral_verdict(f"(scoring unavailable: {type(e).__name__})")
+
+
+def enforce_hard_requirements(posting, verdict, profile):
+    """Cap a role at `stretch` when the JD states a requirement the reader does not support.
+
+    THIS IS THE GUARANTEE, NOT THE JUDGMENT. The rubric asks the model for the same thing, and
+    the model is usually right — but "usually" is not what requirement 3 asks for. It asks
+    that a hard mismatch OUTRANK generic strategy/transformation/leadership overlap every
+    time, and a prompt cannot promise that. So two independent detectors run and either one
+    is enough:
+
+      * `verdict["unmet_requirements"]` — what the model read in the JD.
+      * `screening.hard_requirements` — deterministic, word-boundary matched, requiring a
+        requirement cue ("5 years", "must have", "required") near the specialist token so a
+        passing mention of Salesforce does not downgrade a whole role.
+
+    Plus the technical flag from retrieval: a role kept despite hands-on technical language
+    because it also carried a business mandate may never be a top recommendation either.
+
+    The role is NOT dropped and its scores are NOT rewritten — only the recommendation is
+    capped, and the reason is written into `concerns` and `unmet_requirements` so the card
+    shows the reader what the gap is. Returns the verdict, mutated in place.
+
+    For a recruiting or talent role the detected gaps are additionally recorded as
+    `recruiting_gaps` (requirement 4): the role stays in play, and the specific execution the
+    posting asks for is named rather than being the silent reason it slid down the list."""
+    if not verdict or not verdict.get("valid"):
+        return verdict
+    # Opt-in, like the technical screen. A profile with neither block is not judged against
+    # this list at all — it is Lisa's list of things she does not support, and applying it to
+    # an engineering profile capped every role that asked for Python.
+    if not (profile.get("hard_requirements") or screening.technical_screening_enabled(profile)):
+        return verdict
+    detected = screening.hard_requirements(posting, profile)
+    verdict["detected_requirements"] = [d["label"] for d in detected]
+    # V6: only GATES cap. A caution — a preference, or a category the profile does not treat
+    # as a gate — is named on the card (`cautions`) and never moves the recommendation.
+    cautions = [f'{d["label"]} ("{d["evidence"]}")' for d in detected if not d.get("gate", True)]
+    if cautions:
+        have = " ".join(verdict.get("cautions") or [])
+        verdict["cautions"] = (list(verdict.get("cautions") or [])
+                               + [c for c in cautions if c.split(" (")[0] not in have])[:4]
+    detected = [d for d in detected if d.get("gate", True)]
+    gaps = screening.recruiting_gaps(posting, profile)
+    if gaps:
+        verdict["recruiting_gaps"] = [g["label"] for g in gaps if g.get("gate", True)]
+    blockers = list(verdict.get("unmet_requirements") or [])
+    blockers += [f'{d["label"]} ("{d["evidence"]}")' for d in detected
+                 if d["label"] not in " ".join(blockers)]
+    if posting.get("technical_risk") and posting.get("technical_note"):
+        blockers.append(posting["technical_note"])
+    if not blockers:
+        return verdict
+    verdict["unmet_requirements"] = blockers[:4]
+    if verdict.get("recommendation") in TOP_RECOMMENDATIONS:
+        verdict["downgraded_from"] = verdict["recommendation"]
+        verdict["recommendation"] = HARD_REQUIREMENT_CEILING
+        verdict["fit"] = _REC_TO_FIT[HARD_REQUIREMENT_CEILING]
+        note = f"Hard requirement not supported: {blockers[0]}"
+        verdict["concerns"] = [note] + [c for c in (verdict.get("concerns") or [])][:2]
+    return verdict
+
+
+def apply_remote_eligibility(posting, verdict):
+    """Settle where the reader may actually live (requirement 7).
+
+    Two readings of the same JD — the model's `remote_scope` and `screening.remote_eligibility`
+    — and the STRICTER one wins. "Nationwide US remote" is the only claim this report makes on
+    the reader's behalf, so it is the only one that needs both readings to agree: if either
+    says the eligibility is restricted, unclear, or a pay zone, that is what the card says.
+
+    A role with no description at all lands on `unclear`, which is the point. Requirement 7's
+    complaint is that a location LABEL was being read as an eligibility statement; silence in
+    the JD is not permission to make the claim."""
+    verdict = verdict or {}
+    detected = screening.remote_eligibility(posting)
+    model_scope = verdict.get("remote_scope") or screening.SCOPE_UNCLEAR
+    # "Stricter of the two" — but UNCLEAR is an ABSENCE, not a stricter reading, and treating
+    # it as one is a bug worth naming. `validate_verdict` degrades a missing or unrecognised
+    # `remote_scope` to unclear, so a model that simply did not answer the question would
+    # otherwise veto a posting that says "this role is fully remote in the United States" in
+    # so many words. A reading that says nothing cannot outrank a reading with evidence.
+    #
+    # So: consider only the substantive answers. Any restriction beats nationwide (that is the
+    # strictness that matters), and nationwide needs at least one substantive source to claim
+    # it. No substantive answer at all is honestly unclear.
+    answers = [sc for sc in (detected["scope"], model_scope)
+               if sc != screening.SCOPE_UNCLEAR]
+    restrictions = [sc for sc in answers if sc != screening.SCOPE_NATIONWIDE]
+    scope = restrictions[0] if restrictions else (
+        screening.SCOPE_NATIONWIDE if answers else screening.SCOPE_UNCLEAR)
+    verdict["remote_scope"] = scope
+    verdict["remote_verified"] = bool(scope == screening.SCOPE_NATIONWIDE
+                                      and detected["labelled_remote"])
+    verdict["remote_evidence"] = detected["evidence"]
+    posting["remote_scope"] = scope
+    posting["remote_verified"] = verdict["remote_verified"]
+    return verdict
 
 
 def _score_priority(p):
@@ -1846,7 +2479,8 @@ def enrich_with_fit(matched, prev, profile, client, max_new=None):
     candidate = load_background(profile)
     if not (candidate and client):
         return 0
-    fp = _bg_fingerprint(candidate)
+    rubric = _rubric_for(profile)
+    fp = _bg_fingerprint(candidate, rubric)
     cached = {p["key"]: p["fit_result"] for p in (prev or [])
               if (p.get("fit_result") or {}).get("score", -1) >= 0
               and (p.get("fit_result") or {}).get("bg") == fp}
@@ -1863,7 +2497,7 @@ def enrich_with_fit(matched, prev, profile, client, max_new=None):
         if scored >= budget:
             p["score_pending"] = True
             continue
-        r = score_fit(candidate, p, client)
+        r = score_fit(candidate, p, client, rubric)
         r["bg"] = fp                       # stamp the background it was scored against
         p["fit_result"] = r
         scored += 1
@@ -1871,6 +2505,24 @@ def enrich_with_fit(matched, prev, profile, client, max_new=None):
     if deferred:
         print(f"  [{profile['name']}] scoring budget reached — {deferred} role(s) deferred "
               f"to the next run (they are kept, not dropped)")
+    # Enforcement runs over EVERY scored role, cached verdicts included, and that is the
+    # point. A cached verdict was produced by an earlier prompt against an earlier
+    # description; requirements 3 and 7 are guarantees about what the reader is shown TODAY,
+    # so they are applied at use, not at scoring. The verdict shape carries the outcome
+    # (`downgraded_from`, `unmet_requirements`, `remote_scope`) so the card can explain it.
+    capped = 0
+    for p in matched:
+        verdict = p.get("fit_result")
+        if not verdict:
+            continue
+        apply_remote_eligibility(p, verdict)
+        before = verdict.get("recommendation")
+        enforce_hard_requirements(p, verdict, profile)
+        if verdict.get("recommendation") != before:
+            capped += 1
+    if capped:
+        print(f"  [{profile['name']}] capped {capped} role(s) at '{HARD_REQUIREMENT_CEILING}' "
+              f"— a stated requirement is not supported (requirement 3)")
     return scored
 
 
@@ -2174,17 +2826,35 @@ def write_rejects(profile, lanes, directory=None):
     json.dump(doc, open(path, "w"), indent=1)
 
 
-def source_health_rows(registries, prev_streak=None, prev_error_streak=None):
+def source_health_rows(registries, prev_streak=None, prev_error_streak=None,
+                       prev_silent_streak=None):
     """Build the per-source health rows for `registries` = [(label, lane_source_dict)].
 
     Kept separate from the file write so the email's source-health block and the committed
     diagnostics file are guaranteed to describe the same run.
 
-    `consecutive_zero_runs` counts only runs where the source ANSWERED and had nothing —
-    an errored run leaves the streak untouched, because an unanswered source tells us
-    nothing about whether it has jobs. Error runs get their own streak instead."""
+    THREE streaks, because "we saw no roles from this source" has three very different
+    causes and only one of them is a human's problem:
+
+    `consecutive_error_runs` — back-to-back FAILURES. The source never answered.
+
+    `consecutive_silent_runs` — the board ANSWERED and its whole listing was empty. This,
+    and only this, is the ATS-migration / dead-slug signal, so it is what "needs attention"
+    fires on.
+
+    `consecutive_zero_runs` — the board answered with real postings but NONE survived this
+    lane's location and age gates. That is the system working: Miro answering with 41
+    Copenhagen/Amsterdam/Tokyo roles is not a broken feed, it is an employer that does not
+    hire here. It is recorded because it is genuinely useful ("this row earns nothing"), but
+    it must NOT raise an alarm — it can never clear on its own, so alerting on it trains the
+    reader to ignore the whole block. Conflating the two put 16 healthy sources on the
+    "needs attention" line, 15 of which had answered normally that morning.
+
+    An errored run leaves both non-error streaks untouched: a source that never answered
+    tells us nothing about whether it has jobs."""
     prev_streak = prev_streak or {}
     prev_error_streak = prev_error_streak or {}
+    prev_silent_streak = prev_silent_streak or {}
     rows = []
     for label, src in registries:
         # Aggregator postings carry `_source` = the registry row that produced them; normal
@@ -2195,18 +2865,22 @@ def source_health_rows(registries, prev_streak=None, prev_error_streak=None):
             name = run["name"]
             errored = run["status"] in SRC_ERROR_STATES
             kept = counts.get(name, 0)
+            fetched = run.get("fetched", 0)
             if errored:
                 zero_streak = prev_streak.get(name, 0)          # unchanged: unknown, not zero
+                silent_streak = prev_silent_streak.get(name, 0)  # ditto
                 err_streak = prev_error_streak.get(name, 0) + 1
             else:
                 zero_streak = 0 if kept else prev_streak.get(name, 0) + 1
+                silent_streak = 0 if fetched else prev_silent_streak.get(name, 0) + 1
                 err_streak = 0
             rows.append({"name": name, "registry": label, "ats": run.get("ats"),
                          "slug": run.get("slug"), "status": run["status"],
-                         "roles_fetched": run.get("fetched", 0), "roles_returned": kept,
+                         "roles_fetched": fetched, "roles_returned": kept,
                          "attempts": run.get("attempts", 1), "error": run.get("error", ""),
                          "fetch_failed": errored,
                          "consecutive_zero_runs": zero_streak,
+                         "consecutive_silent_runs": silent_streak,
                          "consecutive_error_runs": err_streak})
     return rows
 
@@ -2220,10 +2894,19 @@ def source_health_summary(rows):
             "zero": sum(1 for r in rows if r["status"] == SRC_OK_ZERO),
             "temp_error": sum(1 for r in rows if r["status"] == SRC_TEMP_ERROR),
             "config_error": sum(1 for r in rows if r["status"] == SRC_CONFIG_ERROR),
-            # A source answering "nothing" for many days running is the ATS-migration signal;
-            # it is NOT an error, so it is surfaced separately as "needs attention".
+            # A board whose whole LISTING has been empty for many runs running is the
+            # ATS-migration / dead-slug signal; it is NOT an error, so it is surfaced
+            # separately as "needs attention". Read `consecutive_silent_runs`, never
+            # `consecutive_zero_runs` — see the streak docs in source_health_rows.
             "stale": sorted(r["name"] for r in rows
-                            if r["consecutive_zero_runs"] >= STALE_SOURCE_RUNS),
+                            if r.get("consecutive_silent_runs",
+                                     r["consecutive_zero_runs"]) >= STALE_SOURCE_RUNS),
+            # Healthy boards that simply post nothing this lane can use (wrong region, or
+            # everything older than the age window). Informational only: nobody has anything
+            # to fix, and these can never clear themselves.
+            "filtered_out": sorted(r["name"] for r in rows
+                                   if r.get("roles_fetched", 0)
+                                   and r["consecutive_zero_runs"] >= STALE_SOURCE_RUNS),
             "broken": sorted(r["name"] for r in rows
                              if r["status"] == SRC_CONFIG_ERROR)}
 
@@ -2235,20 +2918,29 @@ def write_source_health(registries, directory=None):
     """Registry-wide health snapshot. `registries` is [(label, lane_source_dict)]. Returns
     the rows so the caller can render the same data into the email."""
     path = os.path.join(directory or OUT_DIR, "source_health.json")
-    prev_streak, prev_error = {}, {}
+    prev_streak, prev_error, prev_silent = {}, {}, {}
     try:
         for row in json.load(open(path)).get("sources", []):
             prev_streak[row["name"]] = row.get("consecutive_zero_runs", 0)
             prev_error[row["name"]] = row.get("consecutive_error_runs", 0)
+            # Back-compat: a file written before the split has no silent streak. Seeding it
+            # from the old post-gate streak would re-raise the false alarms the split
+            # removes, so an unknown source starts its silent streak at zero and earns the
+            # alert honestly over the next STALE_SOURCE_RUNS runs.
+            prev_silent[row["name"]] = row.get("consecutive_silent_runs", 0)
     except Exception:
         pass
-    rows = source_health_rows(registries, prev_streak, prev_error)
+    rows = source_health_rows(registries, prev_streak, prev_error, prev_silent)
     json.dump({"_comment": (
         "Per-source fetch health from the most recent run. status is one of ok_results, "
-        "ok_zero, temp_error, config_error. consecutive_zero_runs counts runs where the "
-        "source ANSWERED with no in-window roles (an ATS-migration / dead-slug signal); an "
-        "errored run does not advance it, because a source that never answered tells us "
-        "nothing. consecutive_error_runs counts back-to-back failures instead."),
+        "ok_zero, temp_error, config_error. THREE streaks, and they mean different things: "
+        "consecutive_silent_runs counts runs where the board ANSWERED and its listing was "
+        "empty — that is the ATS-migration / dead-slug signal and the only one that raises "
+        "'needs attention'. consecutive_zero_runs counts runs where the board answered with "
+        "real postings but none survived this lane's location/age gates — informational "
+        "only (an employer that does not hire here is not a broken feed). "
+        "consecutive_error_runs counts back-to-back failures. An errored run advances "
+        "neither of the first two, because a source that never answered tells us nothing."),
         "generated": datetime.date.today().isoformat(),
         "summary": source_health_summary(rows), "sources": rows},
         open(path, "w"), indent=1)
@@ -3325,15 +4017,93 @@ def _is_wildcard(rec):
         and rec.get("recommendation") not in ("", "not_recommended")
 
 
+# V6 — STRICT SELECTION (Lisa's update, sections 24-26). The sections a selection-mode digest
+# renders, in order. `new_review` and `wildcards` stay as keys so the QA gate and the renderers
+# need no special case, but selection mode never fills them itself: "do not call mediocre
+# roles worthwhile simply to populate the report".
+SELECTION_DEFAULTS = {"max_new": 5, "max_sales": 2, "max_contract": 2, "max_exceptions": 1,
+                      "max_still": 5}
+NEW_SECTIONS = ("apply_first", "new_review", "contract", "sales", "exceptions", "wildcards")
+SHOWN_SECTIONS = NEW_SECTIONS + ("still",)
+
+
+def selection_cfg(profile):
+    cfg = (profile or {}).get("selection") or {}
+    if not cfg.get("enabled"):
+        return None
+    return {**SELECTION_DEFAULTS, **{k: v for k, v in cfg.items() if k in SELECTION_DEFAULTS}}
+
+
+def worthwhile_lane(rec):
+    """Which lane a JD-first verdict makes this role WORTHWHILE in, or why it is not.
+
+    Returns one of "primary", "sales", "contract", "exception" — or a reason it is out:
+    "rescore" (no JD-first verdict yet), "screened_out", "below_bar".
+
+    Worthwhile means the model recommended it outright (apply_first / strong_fit) or as bridge
+    income (practical_contract). A stretch is worthwhile only as a NAMED exception, and D-tier
+    dominant work only with one. A role capped by a true gate is a stretch by the time it gets
+    here (enforce_hard_requirements), so it needs an exception too."""
+    rec_key = rec.get("recommendation") or ""
+    if not rec.get("work_interest"):
+        return "rescore"
+    if rec_key == "not_recommended":
+        return "screened_out"
+    exception = bool(rec.get("exception_reason"))
+    if rec.get("work_interest") == "D" and not exception:
+        return "screened_out"
+    top = rec_key in TOP_RECOMMENDATIONS and rec.get("work_interest") != "D"
+    if rec.get("sales_adjacent"):
+        if top and rec.get("sales_readiness") in ("qualified_now", "near_qualified_december"):
+            return "sales"
+        return "exception" if exception and rec_key != "not_recommended" else "below_bar"
+    if rec_key == "practical_contract":
+        return "contract"
+    if top:
+        return "primary"
+    return "exception" if exception else "below_bar"
+
+
+def _select_new(candidates, cfg):
+    """Fill at most `max_new` slots. The primary search claims slots FIRST, so the sales,
+    contract and exception lanes only ever use slots the primary search left empty — that is
+    the literal form of "must not crowd out Lisa's primary A/B search". Each lane also has
+    its own ceiling, and exceptions "must not dominate normal results"."""
+    out = {"primary": [], "sales": [], "contract": [], "exception": []}
+    over = 0
+    for lane, rec in candidates:
+        if lane == "primary" and len(out["primary"]) < cfg["max_new"]:
+            out["primary"].append(rec)
+    caps = {"sales": cfg["max_sales"], "contract": cfg["max_contract"],
+            "exception": cfg["max_exceptions"]}
+    for lane, rec in candidates:
+        if lane == "primary":
+            continue
+        used = sum(len(v) for v in out.values())
+        if used < cfg["max_new"] and len(out[lane]) < caps[lane]:
+            out[lane].append(rec)
+        else:
+            over += 1
+    over += sum(1 for lane, _ in candidates if lane == "primary") - len(out["primary"])
+    return out, over
+
+
 def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None,
-                    regions=None):
+                    regions=None, profile=None):
     """Pick what today's email shows. Every record lands in AT MOST ONE section, and the
-    order below is the precedence — a role cannot appear twice in one email."""
+    order below is the precedence — a role cannot appear twice in one email.
+
+    A profile with `selection.enabled` (Lisa, V6) is routed through `_selection_sections`
+    instead: a hard ceiling on worthwhile NEW roles, and zero is an allowed answer."""
+    if selection_cfg(profile):
+        return _selection_sections(db, feedback, seen_keys or set(), newly_gone, regions,
+                                   selection_cfg(profile))
     today = today or datetime.date.today().isoformat()
     seen_keys = seen_keys or set()
     sections = {"apply_first": [], "new_review": [], "wildcards": [], "still": [],
                 "removed": []}
-    counts = {"screened_out": 0, "suppressed": 0, "stale_hidden": 0, "pending_score": 0}
+    counts = {"screened_out": 0, "suppressed": 0, "stale_hidden": 0, "pending_score": 0,
+              "repeats": 0, "needs_recheck": 0}
 
     def rank(rec):
         # Fit score first, then the reader's location preference, then date. Location is a
@@ -3356,7 +4126,14 @@ def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None,
         if rec.get("recommendation") == "not_recommended":
             counts["screened_out"] += 1
             continue
-        band, fresh = rec.get("band"), rec.get("first_seen") == today
+        # "NEW" MEANS NEVER REPORTED BEFORE (requirement 6), and that is the whole
+        # definition — not "first seen today", which is what it used to be. A role re-enters
+        # the pipeline for all sorts of reasons that have nothing to do with the reader: a
+        # second source found it, a tracking parameter changed, it dropped out of a feed for a
+        # morning and came back. None of those make it news. Having actually been in one of
+        # this reader's emails is the only thing that does, and `ever_shown` is the only field
+        # that records it.
+        never_reported = not rec.get("ever_shown")
         if rec.get("status") == lifecycle.STATUS_STALE:
             counts["stale_hidden"] += 1         # 15+ days and not exceptional (requirement D)
             continue
@@ -3365,16 +4142,16 @@ def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None,
             # one fall through to "New — worth reviewing" when the section is full would
             # present a known-lower-precision role as a strong find.
             sections["wildcards"].append(rec)
-        elif fresh and rec.get("recommendation") == "apply_first":
+        elif never_reported and rec.get("recommendation") == "apply_first":
             sections["apply_first"].append(rec)
-        elif fresh:
+        elif never_reported:
             sections["new_review"].append(rec)
-        elif rec.get("ever_shown") and band in (lifecycle.BAND_APPLY, lifecycle.BAND_NEW):
-            sections["still"].append(rec)
         else:
-            # Seen before but never actually shown (it was below the cut on an earlier day)
-            # — treat it as a new discovery for the reader, because for them it IS one.
-            sections["new_review" if not rec.get("ever_shown") else "still"].append(rec)
+            # Already reported at least once. It stays visible while it is worth applying to,
+            # carrying its own change state — STILL OPEN, REVALIDATED after a feed blip,
+            # REOPENED after a confirmed closure, UPDATED when something material moved.
+            counts["repeats"] = counts.get("repeats", 0) + 1
+            sections["still"].append(rec)
 
     # REMOVED: only roles the reader was actually told about. This is the fix for "jobs in
     # the removed section that were never in an earlier Prospector email".
@@ -3382,9 +4159,19 @@ def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None,
         if rec.get("ever_shown"):
             sections["removed"].append(rec)
 
+    counts["needs_recheck"] = sum(
+        1 for rec in db["jobs"].values()
+        if rec.get("verification") == lifecycle.NEEDS_RECHECK and rec.get("ever_shown"))
+
+    # Within "Still worth applying", a role whose STATE changed leads: a reopened or
+    # revalidated role is the one the reader might otherwise think they had missed.
+    state_order = {lifecycle.CHANGE_REOPENED: 0, lifecycle.CHANGE_REVALIDATED: 1,
+                   lifecycle.CHANGE_UPDATED: 2}
     for name, rows in sections.items():
         if name == "removed":
             rows.sort(key=lambda r: (r.get("company") or "").lower())
+        elif name == "still":
+            rows.sort(key=lambda r: (state_order.get(r.get("change_state"), 3), rank(r)))
         else:
             rows.sort(key=rank)
         sections[name] = rows[:CHANGE_QUOTAS[name]]
@@ -3393,15 +4180,104 @@ def change_sections(db, feedback, today=None, seen_keys=None, newly_gone=None,
     return sections, counts
 
 
+def _selection_sections(db, feedback, seen_keys, newly_gone, regions, cfg):
+    """The V6 selection: rank by EXPECTED VALUE (the model's opportunity_score, an internal
+    number the reader never sees), keep only roles a JD-first verdict calls worthwhile, cap.
+
+    Still-open roles the reader was already shown stay visible when they are still
+    worthwhile, and the digest leads with whichever is the better move — a new role does not
+    automatically outrank a strong existing one (section 26)."""
+    sections = {k: [] for k in SHOWN_SECTIONS + ("removed",)}
+    counts = {"screened_out": 0, "suppressed": 0, "stale_hidden": 0, "pending_score": 0,
+              "repeats": 0, "needs_recheck": 0, "below_bar": 0, "held_over_cap": 0,
+              "reviewed": 0}
+
+    def rank(rec):
+        return (-(rec.get("fit_score") or -1), location_rank(rec.get("location"), regions),
+                0 if rec.get("priority_employer") else 1, rec.get("posted_date") or "")
+
+    candidates, still = [], []
+    live = [db["jobs"][k] for k in seen_keys if k in db["jobs"]]
+    for rec in sorted(live, key=rank):
+        if _suppressed(rec, feedback):
+            counts["suppressed"] += 1
+            continue
+        if rec.get("status") == lifecycle.STATUS_STALE:
+            counts["stale_hidden"] += 1
+            continue
+        lane = worthwhile_lane(rec)
+        if lane == "rescore":
+            # No JD-first verdict yet: scored under an older rubric, or over today's scoring
+            # budget. Never shown on an old verdict — it is judged properly on a later run.
+            counts["pending_score"] += 1
+            continue
+        counts["reviewed"] += 1
+        if lane in ("screened_out", "below_bar"):
+            counts[lane] += 1
+            continue
+        if rec.get("ever_shown"):
+            counts["repeats"] += 1
+            if lane != "exception":         # an exception is surfaced once, not repeated
+                still.append(rec)
+            continue
+        candidates.append((lane, rec))
+
+    picked, counts["held_over_cap"] = _select_new(candidates, cfg)
+    sections["apply_first"] = picked["primary"]
+    sections["sales"] = picked["sales"]
+    sections["contract"] = picked["contract"]
+    sections["exceptions"] = picked["exception"]
+    state_order = {lifecycle.CHANGE_REOPENED: 0, lifecycle.CHANGE_REVALIDATED: 1,
+                   lifecycle.CHANGE_UPDATED: 2}
+    sections["still"] = sorted(still, key=lambda r: (rank(r)[0],
+                                                     state_order.get(r.get("change_state"), 3),
+                                                     rank(r)[1:]))[:cfg["max_still"]]
+    for rec in (newly_gone or []):
+        if rec.get("ever_shown"):
+            sections["removed"].append(rec)
+    sections["removed"].sort(key=lambda r: (r.get("company") or "").lower())
+    sections["removed"] = sections["removed"][:CHANGE_QUOTAS["removed"]]
+    counts["needs_recheck"] = sum(
+        1 for rec in db["jobs"].values()
+        if rec.get("verification") == lifecycle.NEEDS_RECHECK and rec.get("ever_shown"))
+    counts["selection"] = True
+    return sections, counts
+
+
+def best_move(sections):
+    """The single highest expected-value role across new AND still-open sections."""
+    rows = [r for k in SHOWN_SECTIONS for r in sections.get(k) or []
+            if k not in ("wildcards", "exceptions")]
+    return max(rows, key=lambda r: r.get("fit_score") or -1) if rows else None
+
+
+def _remote_label(rec):
+    """What the report is allowed to say about where the reader may live (requirement 7).
+
+    A location label of "Remote — California" says nothing about eligibility: it may be a
+    residence rule, a pay zone, an office the role reports into, or a preference. Only a
+    posting that states nationwide-US eligibility earns the unqualified "✓ Remote (US)"; every
+    other remote role is labelled with what we actually know, including "not stated"."""
+    if rec.get("work_arrangement") != "remote":
+        return ""
+    if rec.get("remote_verified"):
+        return "✓ Remote (US) — confirmed"
+    scope = rec.get("remote_scope") or screening.SCOPE_UNCLEAR
+    return "✓ " + screening.REMOTE_SCOPE_LABEL.get(
+        scope, screening.REMOTE_SCOPE_LABEL[screening.SCOPE_UNCLEAR])
+
+
 def _rec_meta(rec):
     """location / work arrangement · employment type · compensation · date line."""
-    arrangement = {"remote": "✓ Remote", "hybrid": "🏡 Hybrid",
-                   "onsite": "📍 Onsite"}.get(rec.get("work_arrangement"), "")
+    arrangement = _remote_label(rec) or {"hybrid": "🏡 Hybrid",
+                                         "onsite": "📍 Onsite"}.get(
+        rec.get("work_arrangement"), "")
     loc = rec.get("location") or ""
     bits = [f'<b style="color:{_C["text"]};">{_esc(rec.get("company") or "")}</b>']
     if arrangement:
-        bits.append(_esc(arrangement) + (f" — {_esc(loc)}"
-                                         if loc and arrangement != "✓ Remote" else ""))
+        bits.append(_esc(arrangement)
+                    + (f" — {_esc(loc)}" if loc and not arrangement.startswith("✓ Remote (US)")
+                       else ""))
     elif loc:
         bits.append(_esc(loc))
     if rec.get("employment_type"):
@@ -3417,7 +4293,90 @@ def _rec_meta(rec):
     return _muted(" &nbsp;·&nbsp; ".join(bits))
 
 
+ACTION_LABEL = {"apply": ("APPLY", "green"), "contact": ("CONTACT", "green"),
+                "package": ("PACKAGE", "link"), "validate": ("VALIDATE", "amber"),
+                "stretch": ("STRETCH", "amber")}
+FIT_LEVEL_LABEL = {"strong": "Strong", "good": "Good", "stretch": "Stretch", "poor": "Poor"}
+INDUSTRY_LABEL = {"direct": "Direct", "client_exposure": "Client Exposure",
+                  "adjacent": "Adjacent", "new": "New", "unknown": "Unknown"}
+SALES_READINESS_LABEL = {"qualified_now": "QUALIFIED NOW",
+                         "near_qualified_december": "NEAR-QUALIFIED / DECEMBER",
+                         "stretch": "STRETCH", "not_viable": "NOT VIABLE"}
+
+
+def _action_status(rec):
+    """APPLY / VALIDATE / CONTACT / PACKAGE / STRETCH. A role capped by a true gate, or one
+    the model called a stretch, reads STRETCH whatever action the model proposed."""
+    if rec.get("recommendation") == "stretch" or rec.get("downgraded_from"):
+        return "stretch"
+    return rec.get("action_status") or "apply"
+
+
+def _decision_lines(rec):
+    """The V6 card body as (label, text) pairs, shared by the HTML and Markdown renderers so
+    the two can never disagree. Deliberately no numbers: 'avoid pseudo-precision such as
+    87/100' — the score still ranks, it is just not presented as a fact."""
+    fit = FIT_LEVEL_LABEL.get(rec.get("fit_level")) or (
+        "Strong" if rec.get("recommendation") == "apply_first" else
+        "Good" if rec.get("recommendation") in ("strong_fit", "practical_contract")
+        else "Stretch")
+    head = [f"Status: {ACTION_LABEL[_action_status(rec)][0]}"]
+    if rec.get("work_interest"):
+        head.append(f"Work Interest: {rec['work_interest']}")
+    head.append(f"Fit: {fit}")
+    if rec.get("sales_adjacent") and rec.get("sales_readiness") in SALES_READINESS_LABEL:
+        head.append(f"Sales readiness: {SALES_READINESS_LABEL[rec['sales_readiness']]}")
+    lines = [("", " · ".join(head))]
+    industry = INDUSTRY_LABEL.get(rec.get("industry_relationship"), "Unknown")
+    lines.append(("Industry", industry))
+    lines.append(("Compensation", rec.get("compensation") or "not stated in the posting"))
+    if rec.get("why_fits"):
+        lines.append(("Why it fits", rec["why_fits"]))
+    gap = rec.get("material_gap") or (rec.get("unmet_requirements") or [""])[0]
+    if gap:
+        lines.append(("Material gap", gap))
+    if rec.get("exception_reason") and rec.get("recommendation") not in TOP_RECOMMENDATIONS:
+        lines.append(("Surfaced as an exception", rec["exception_reason"]))
+    if rec.get("next_action"):
+        lines.append(("Next action", rec["next_action"]))
+    return lines
+
+
+def _decision_card(rec):
+    status, color = ACTION_LABEL[_action_status(rec)]
+    lines = _decision_lines(rec)
+    head = (f'<div style="margin:0 0 2px;color:{_C[color]};font-family:{_FONT};'
+            f'font-size:12px;font-weight:800;letter-spacing:.2px;">{_esc(lines[0][1])}')
+    if rec.get("confidence") == "low":
+        head += (f' <span style="color:{_C["amber"]};font-weight:700;">· lower confidence'
+                 f'</span>')
+    if rec.get("priority_employer"):
+        head += f' <span style="color:{_C["green"]};">· ⭐ PRIORITY EMPLOYER</span>'
+    state = rec.get("change_state")
+    if state in (lifecycle.CHANGE_REVALIDATED, lifecycle.CHANGE_REOPENED,
+                 lifecycle.CHANGE_UPDATED, lifecycle.CHANGE_STILL_OPEN):
+        head += (f' <span style="color:{_C["muted"]};">· '
+                 f'{_esc(lifecycle.CHANGE_LABEL[state])}</span>')
+    if rec.get("verification") == lifecycle.NEEDS_RECHECK:
+        head += f' <span style="color:{_C["amber"]};">· NEEDS RECHECK</span>'
+    head += '</div>'
+    title = (f'<div style="margin:3px 0 0;line-height:1.35;">'
+             f'{_link(rec.get("title") or "(untitled)", rec.get("canonical_url") or "")}</div>')
+    body = ""
+    for label, text in lines[1:]:
+        tone = {"Material gap": "amber", "Next action": "head"}.get(label, "text")
+        body += (f'<div style="color:{_C[tone]};font-family:{_FONT};font-size:13px;'
+                 f'margin-top:4px;"><b>{_esc(label)}:</b> {_esc(text)}</div>')
+    if rec.get("priority_note"):
+        body += (f'<div style="color:{_C["green"]};font-family:{_FONT};font-size:12px;'
+                 f'font-weight:700;margin-top:4px;">⭐ {_esc(rec["priority_note"])}</div>')
+    inner = head + title + _rec_meta(rec) + body
+    return _card(_icon_row(rec.get("company") or "", inner), _C[color])
+
+
 def _rec_card(rec):
+    if rec.get("work_interest"):
+        return _decision_card(rec)
     rec_key = rec.get("recommendation") or "stretch"
     emoji, label, color = REC_LABEL.get(rec_key, ("🤔", "Stretch", "amber"))
     head = (f'<div style="margin:0 0 2px;">'
@@ -3439,6 +4398,20 @@ def _rec_card(rec):
                  f'color:{_C["green"]};font-family:{_FONT};font-size:11px;font-weight:800;'
                  f'padding:3px 9px;border-radius:10px;margin-left:6px;">'
                  f'\u2b50 PRIORITY EMPLOYER</span>')
+    # The per-run change state (requirement 6). NEW is not shown as a chip — the section it
+    # sits in already says so — but REVALIDATED / REOPENED / UPDATED are, because each one
+    # answers a question the reader would otherwise ask: "didn't this go away?"
+    state = rec.get("change_state")
+    if state in (lifecycle.CHANGE_REVALIDATED, lifecycle.CHANGE_REOPENED,
+                 lifecycle.CHANGE_UPDATED, lifecycle.CHANGE_STILL_OPEN):
+        head += (f'<span style="display:inline-block;background-color:{_C["panel"]};'
+                 f'color:{_C["muted"]};font-family:{_FONT};font-size:11px;font-weight:700;'
+                 f'padding:3px 9px;border-radius:10px;margin-left:6px;">'
+                 f'{_esc(lifecycle.CHANGE_LABEL[state])}</span>')
+    if rec.get("verification") == lifecycle.NEEDS_RECHECK:
+        head += (f'<span style="display:inline-block;background-color:{_C["amber_bg"]};'
+                 f'color:{_C["amber"]};font-family:{_FONT};font-size:11px;font-weight:700;'
+                 f'padding:3px 9px;border-radius:10px;margin-left:6px;">NEEDS RECHECK</span>')
     head += '</div>'
 
     title = (f'<div style="margin:3px 0 0;line-height:1.35;">'
@@ -3460,6 +4433,20 @@ def _rec_card(rec):
     if rec.get("top_concern"):
         body += (f'<div style="color:{_C["amber"]};font-family:{_FONT};font-size:12px;'
                  f'margin-top:4px;">Watch: {_esc(rec["top_concern"])}</div>')
+    # Requirement 3: the hard requirement that capped this role, shown rather than merely
+    # applied. A downgrade the reader cannot see is a downgrade they cannot overrule.
+    if rec.get("unmet_requirements"):
+        items = "; ".join(rec["unmet_requirements"][:3])
+        was = (f' (was {_esc(REC_LABEL.get(rec["downgraded_from"], ("", "?"))[1])})'
+               if rec.get("downgraded_from") else "")
+        body += (f'<div style="color:{_C["amber"]};font-family:{_FONT};font-size:12px;'
+                 f'margin-top:4px;"><b>Requirement not supported{was}:</b> '
+                 f'{_esc(items)}</div>')
+    # Requirement 4: for a promising recruiting/talent role, the specific skills to bridge.
+    if rec.get("bridge_skills"):
+        body += (f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:12px;'
+                 f'margin-top:4px;"><b>To bridge:</b> '
+                 f'{_esc("; ".join(rec["bridge_skills"][:3]))}</div>')
     if rec.get("priority_note"):
         # The reader's OWN note about this employer (a referral, a contact). It is not a
         # model judgment, so it is rendered plainly and never folded into why_fits.
@@ -3483,8 +4470,10 @@ def _removed_html(rows):
     if not rows:
         return ""
     B = [_section(f"Removed since prior run ({len(rows)})"),
-         _muted("Roles that appeared in an earlier Prospector email and are now gone from "
-                "their source. A feed that failed never lands a role here.")]
+         _muted("Roles that appeared in an earlier Prospector email and whose closure has "
+                "been CONFIRMED at the employer — a 404, a removed posting, or a deadline "
+                "the posting itself stated. A role that merely stopped appearing in a feed "
+                "is never listed here; it is marked 'needs recheck' and kept.")]
     for rec in rows:
         why = lifecycle.REMOVAL_REASONS.get(rec.get("removal_reason"),
                                             "No longer listed by its source")
@@ -3520,7 +4509,41 @@ def _source_health_html(rows):
                                             if len(attention) > 6 else "")
         B.append(f'<div style="color:{_C["red"]};font-family:{_FONT};font-size:13px;'
                  f'margin:2px 0;">Needs attention: {len(attention)} — {_esc(shown)}</div>')
+    # Healthy boards with nothing this lane can use. Deliberately muted and worded as a
+    # fact rather than a fault: there is nothing to fix, and mixing these into "needs
+    # attention" is what made that line unreadable.
+    quiet = [n for n in s.get("filtered_out", []) if n not in attention]
+    if quiet:
+        shown = ", ".join(quiet[:6]) + (f" +{len(quiet) - 6} more" if len(quiet) > 6 else "")
+        B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:12px;'
+                 f'margin:2px 0;">No roles matching this search: {len(quiet)} — '
+                 f'{_esc(shown)} (feeds healthy; postings are out of region or out of the '
+                 f'age window)</div>')
     return "".join(B)
+
+
+def _qa_html(findings):
+    """The pre-send QA result, in the email.
+
+    Only the corrections and warnings are rendered — a clean pass is the expected case and
+    would just be noise. Showing the corrections matters because each one is a role that moved
+    or a claim that was softened, and the reader is entitled to know the report edited itself
+    rather than wondering why a role they expected is a section lower."""
+    rows = qa.corrected(findings)
+    if not rows:
+        return ""
+    out = [_section("Before sending, we checked"),
+           _muted("Automatic checks run on this exact selection, just before it was sent. "
+                  "Each line is a change made to the report, not a suggestion.")]
+    for f in rows:
+        mark = "✎" if f["verdict"] == "corrected" else "!"
+        out.append(f'<div style="color:{_C["text"]};font-family:{_FONT};font-size:13px;'
+                   f'margin:4px 0;"><b>{mark} {_esc(f["check"])}</b> — '
+                   f'{_esc(f["detail"])}</div>')
+        for role in f["roles"]:
+            out.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:12px;'
+                       f'margin:0 0 0 16px;">· {_esc(role)}</div>')
+    return "".join(out)
 
 
 def _change_hero(sections, counts):
@@ -3557,8 +4580,9 @@ def _change_hero(sections, counts):
 
 
 def _change_preheader(sections):
-    new_total = len(sections["apply_first"]) + len(sections["new_review"]) \
-        + len(sections["wildcards"])
+    new_keys = (("apply_first", "contract", "sales", "exceptions") if "sales" in sections
+                else ("apply_first", "new_review", "wildcards"))
+    new_total = sum(len(sections.get(k) or []) for k in new_keys)
     s = f'{new_total} new · {len(sections["still"])} still worth applying'
     top = sections["apply_first"] or sections["new_review"] or sections["wildcards"]
     if top:
@@ -3570,10 +4594,77 @@ def _change_preheader(sections):
             f'{_esc(s)}{pad}</div>')
 
 
-def build_change_digest_html(profile, sections, counts, health_rows):
+# Selection-mode sections, in render order: (key, heading, blurb).
+SELECTION_LAYOUT = [
+    ("apply_first", "Worth your time — new",
+     "New roles whose actual work, qualifications, pay and location make them worth an "
+     "application. Ranked by expected value, not keyword match."),
+    ("contract", "Contract / bridge income — new",
+     "Judged as near-term income on their own terms, not against long-term pay goals."),
+    ("sales", "Sales-adjacency — new",
+     "Consultative / technical-sales roles. A separate lane, capped so it never displaces "
+     "the primary search."),
+    ("exceptions", "Outside the usual parameters — surfaced for a stated reason", ""),
+    ("still", "Still worth applying",
+     "Shown in an earlier email, still open, and still worthwhile."),
+    ("wildcards", "Moved down by the final check",
+     "These were selected, then held back by the pre-send QA below."),
+]
+
+
+def _selection_counts_line(counts):
+    bits = []
+    if counts.get("reviewed"):
+        bits.append(f'{counts["reviewed"]} roles judged on their job descriptions')
+    out = (counts.get("below_bar", 0) + counts.get("screened_out", 0))
+    if out:
+        bits.append(f"{out} not worth your time")
+    if counts.get("held_over_cap"):
+        bits.append(f'{counts["held_over_cap"]} worthwhile held for a later day (daily cap)')
+    if counts.get("pending_score"):
+        bits.append(f'{counts["pending_score"]} awaiting a JD review')
+    if counts.get("suppressed"):
+        bits.append(f'{counts["suppressed"]} hidden by your decisions')
+    return " · ".join(bits)
+
+
+def _selection_body(sections, counts):
+    new_total = sum(len(sections.get(k) or []) for k in ("apply_first", "contract", "sales",
+                                                         "exceptions"))
+    F = _FONT
+    rows = [f'<div style="color:{_C["head"]};font-family:{F};font-size:20px;font-weight:800;'
+            f'line-height:1.25;"><span style="color:{_C["green"]};">{new_total}</span> '
+            f'new role{"" if new_total == 1 else "s"} worth your time</div>']
+    top = best_move(sections)
+    if top:
+        where = "new today" if not top.get("ever_shown") else "from an earlier email"
+        rows.append(f'<div style="color:{_C["text"]};font-family:{F};font-size:14px;'
+                    f'margin-top:7px;">Best move today ({where}): '
+                    f'<b style="color:{_C["head"]};">{_esc(top.get("title") or "")}</b> — '
+                    f'{_esc(top.get("company") or "")}</div>')
+    elif not new_total:
+        rows.append(f'<div style="color:{_C["text"]};font-family:{F};font-size:14px;'
+                    f'margin-top:7px;">Nothing new cleared the bar today. That is a real '
+                    f'answer, not a fault — no role was promoted just to fill the email.</div>')
+    line = _selection_counts_line(counts)
+    if line:
+        rows.append(f'<div style="color:{_C["muted"]};font-family:{F};font-size:12px;'
+                    f'margin-top:5px;">{_esc(line)}</div>')
+    B = [f'<div style="border:1px solid {_C["border"]};border-left:3px solid {_C["link"]};'
+         f'background-color:{_C["panel"]};border-radius:12px;padding:18px 20px;'
+         f'margin:16px 0 6px;">{"".join(rows)}</div>']
+    for key, heading, blurb in SELECTION_LAYOUT:
+        B.append(_change_section(heading, sections.get(key) or [], blurb))
+    return "".join(B)
+
+
+def build_change_digest_html(profile, sections, counts, health_rows, qa_findings=None):
     """Requirement F's email, in its stated order. Returns (html, shown_job_keys) — the
     caller passes those keys to lifecycle.mark_shown, which is the ONLY thing that makes a
-    role eligible for the removed section later."""
+    role eligible for the removed section later.
+
+    `qa_findings` comes from qa.review, which has ALREADY corrected `sections` by the time
+    this runs. What is rendered here is the record of what it changed, not a to-do list."""
     _LOGOS_USED.clear()
     today = datetime.date.today().isoformat()
     B = [_change_preheader(sections), _simulated_banner()]
@@ -3581,6 +4672,13 @@ def build_change_digest_html(profile, sections, counts, health_rows):
              f'font-weight:800;line-height:1.3;">Prospector — {today}</div>')
     B.append(f'<div style="color:{_C["muted"]};font-family:{_FONT};font-size:14px;'
              f'margin-top:4px;">{_esc(profile["label"])}</div>')
+    if counts.get("selection"):
+        B.append(_selection_body(sections, counts))
+        B.append(_removed_html(sections["removed"]))
+        B.append(_qa_html(qa_findings or []))
+        B.append(_source_health_html(health_rows))
+        shown = [r["job_key"] for k in SHOWN_SECTIONS for r in sections.get(k) or []]
+        return _digest_shell(profile, "".join(B)), shown
     B.append(_change_hero(sections, counts))
     B.append(_change_section("Apply first", sections["apply_first"],
                              "Highest-value new opportunities."))
@@ -3595,16 +4693,19 @@ def build_change_digest_html(profile, sections, counts, health_rows):
     if not any(sections[k] for k in ("apply_first", "new_review", "wildcards", "still")):
         B.append(_muted("No new or still-open roles cleared the bar today."))
     B.append(_removed_html(sections["removed"]))
+    B.append(_qa_html(qa_findings or []))
     B.append(_source_health_html(health_rows))
     shown = [r["job_key"] for k in ("apply_first", "new_review", "wildcards", "still")
              for r in sections[k]]
     return _digest_shell(profile, "".join(B)), shown
 
 
-def build_change_digest_md(profile, sections, counts, health_rows):
+def build_change_digest_md(profile, sections, counts, health_rows, qa_findings=None):
     """Plain-text mirror of the email, committed as report_<name>.md so a run can be reviewed
     (and diffed) without opening HTML."""
     today = datetime.date.today().isoformat()
+    if counts.get("selection"):
+        return _selection_md(profile, sections, counts, health_rows, qa_findings, today)
     new_total = sum(len(sections[k]) for k in ("apply_first", "new_review", "wildcards"))
     L = [f"# Prospector — {today}", f"_{profile['label']}_", "",
          f"**{new_total} new roles today** · {len(sections['still'])} still worth applying "
@@ -3629,13 +4730,29 @@ def build_change_digest_md(profile, sections, counts, health_rows):
                 L.append(f"  - Why: {r['why_fits']}")
             if r.get("top_concern"):
                 L.append(f"  - Concern: {r['top_concern']}")
+            if r.get("unmet_requirements"):
+                L.append(f"  - Requirement not supported: "
+                         f"{'; '.join(r['unmet_requirements'][:3])}")
+            if r.get("bridge_skills"):
+                L.append(f"  - To bridge: {'; '.join(r['bridge_skills'][:3])}")
+            if r.get("change_state") and r["change_state"] != lifecycle.CHANGE_NEW:
+                L.append(f"  - Status: {lifecycle.CHANGE_LABEL[r['change_state']]}")
             L.append(f"  - {r.get('canonical_url', '')}")
         L.append("")
     if sections["removed"]:
-        L.append(f"## REMOVED SINCE PRIOR RUN ({len(sections['removed'])})")
+        L.append(f"## REMOVED SINCE PRIOR RUN ({len(sections['removed'])}) — closure "
+                 f"confirmed at the employer")
         for r in sections["removed"]:
             why = lifecycle.REMOVAL_REASONS.get(r.get("removal_reason"), "no longer listed")
             L.append(f"- {r.get('title')} — {r.get('company')} · {why}")
+        L.append("")
+    if counts.get("needs_recheck"):
+        L.append(f"_{counts['needs_recheck']} previously-emailed role(s) are not visible "
+                 f"right now and are marked NEEDS RECHECK — not reported as closed._")
+        L.append("")
+    for f in qa.corrected(qa_findings or []):
+        L.append(f"- QA: {f['check']} — {f['detail']}")
+    if qa.corrected(qa_findings or []):
         L.append("")
     s = source_health_summary(health_rows)
     L += ["## SOURCE HEALTH",
@@ -3645,7 +4762,70 @@ def build_change_digest_md(profile, sections, counts, health_rows):
     if s["broken"]:
         L.append(f"  - Broken config: {', '.join(s['broken'])}")
     if s["stale"]:
-        L.append(f"  - Returning nothing for {STALE_SOURCE_RUNS}+ runs: {', '.join(s['stale'])}")
+        L.append(f"  - Empty listing for {STALE_SOURCE_RUNS}+ runs "
+                 f"(likely ATS migration): {', '.join(s['stale'])}")
+    quiet = [n for n in s.get("filtered_out", []) if n not in s["broken"] + s["stale"]]
+    if quiet:
+        L.append(f"- No roles matching this search for {STALE_SOURCE_RUNS}+ runs "
+                 f"(feeds healthy, postings out of region or out of the age window): "
+                 f"{', '.join(quiet)}")
+    return "\n".join(L) + "\n"
+
+
+def _selection_md(profile, sections, counts, health_rows, qa_findings, today):
+    new_total = sum(len(sections.get(k) or []) for k in ("apply_first", "contract", "sales",
+                                                         "exceptions"))
+    L = [f"# Prospector — {today}", f"_{profile['label']}_", "",
+         f"**{new_total} new role{'' if new_total == 1 else 's'} worth your time** · "
+         f"{len(sections['still'])} still worth applying · "
+         f"{len(sections['removed'])} closed/removed"]
+    top = best_move(sections)
+    if top:
+        L.append(f"Best move today: **{top.get('title')}** — {top.get('company')}")
+    elif not new_total:
+        L.append("Nothing new cleared the bar today — no role was promoted to fill the email.")
+    line = _selection_counts_line(counts)
+    if line:
+        L.append(f"_{line}_")
+    L.append("")
+    for key, heading, _ in SELECTION_LAYOUT:
+        rows = sections.get(key) or []
+        if not rows:
+            continue
+        L.append(f"## {heading.upper()} ({len(rows)})")
+        for r in rows:
+            lines = _decision_lines(r) if r.get("work_interest") else [("", "")]
+            arrangement = r.get("work_arrangement") or ""
+            date = (f"posted {r['posted_date']}" if r.get("posted_date")
+                    else f"first seen {r.get('first_seen', '?')}")
+            L.append(f"- **{r.get('company')} — {r.get('title')}**")
+            if lines[0][1]:
+                L.append(f"  - {lines[0][1]}")
+            L.append(f"  - Work model/location: {arrangement} {r.get('location', '')} · {date}")
+            for label, text in lines[1:]:
+                L.append(f"  - {label}: {text}")
+            if r.get("priority_note"):
+                L.append(f"  - ⭐ {r['priority_note']}")
+            L.append(f"  - {r.get('canonical_url', '')}")
+        L.append("")
+    if sections["removed"]:
+        L.append(f"## REMOVED SINCE PRIOR RUN ({len(sections['removed'])}) — closure "
+                 f"confirmed at the employer")
+        for r in sections["removed"]:
+            why = lifecycle.REMOVAL_REASONS.get(r.get("removal_reason"), "no longer listed")
+            L.append(f"- {r.get('title')} — {r.get('company')} · {why}")
+        L.append("")
+    if counts.get("needs_recheck"):
+        L.append(f"_{counts['needs_recheck']} previously-emailed role(s) are not visible "
+                 f"right now and are marked NEEDS RECHECK — not reported as closed._")
+        L.append("")
+    for f in qa.corrected(qa_findings or []):
+        L.append(f"- QA: {f['check']} — {f['detail']}")
+    s = source_health_summary(health_rows)
+    L += ["", "## SOURCE HEALTH",
+          f"- Sources checked: {s['ok']}/{s['total']} successful",
+          f"- Temporary errors: {s['temp_error']}",
+          f"- Needs attention: {len(s['broken']) + len(s['stale'])}"]
     return "\n".join(L) + "\n"
 
 
@@ -3672,6 +4852,16 @@ def write_feedback_template(profile, lanes, feedback):
            "entries": rows}
     path = os.path.join(OUT_DIR, f"feedback_template_{profile['name']}.json")
     json.dump(doc, open(path, "w"), indent=1)
+
+
+# Set once per run in main(), read by the lane. A module global rather than another
+# parameter threaded through four call sites, matching how STAR_WITHIN_DAYS and
+# ALLOW_INTL_REMOTE already work here.
+_RUN_DISCOVERY_CFG = {}
+
+
+def settings_for_lane():
+    return _RUN_DISCOVERY_CFG
 
 
 def _run_lane(profile, src, client, suffix, title, max_age_days=None, budget=None):
@@ -3714,6 +4904,31 @@ def _run_lane(profile, src, client, suffix, title, max_age_days=None, budget=Non
                  else "standard direct-employer posting")
     for p in matched:
         p["_lane"] = lane_hint
+    # DEEP JD RETRIEVAL, then a SECOND technical screen (requirements 2 + 3).
+    #
+    # The screen in classify_match could only read the title for the title-only sources, so a
+    # role that turns out to require hands-on engineering has, until this point, only been
+    # judged on its name. Now that the promising ones carry a real description, re-run the
+    # screen and drop what it newly excludes — still before scoring, so an excluded role
+    # costs nothing at the API.
+    deep_cfg = (settings_for_lane() or {}).get("deep_retrieval_limit")
+    gained = deepen_descriptions(matched, profile, deep_cfg)
+    if gained:
+        print(f"  [{profile['name']}{suffix}] fetched {gained} full job description(s) "
+              f"for otherwise-promising roles")
+        kept = []
+        for p in matched:
+            tech = screening.technical_screen(p, profile)
+            p["technical_risk"] = bool(tech["risk"])
+            p["technical_note"] = tech["reason"]
+            if tech["excluded"]:
+                p["_screened_out"] = tech["reason"]
+            else:
+                kept.append(p)
+        if len(kept) != len(matched):
+            print(f"  [{profile['name']}{suffix}] dropped {len(matched) - len(kept)} role(s) "
+                  f"whose full description shows technical execution work")
+            matched = kept
     enrich_salary(matched)   # cache-deduped across profiles; postings are shared refs
     snap = os.path.join(SNAPSHOT_DIR, f"snapshot_{profile['name']}{suffix}.json")
     prev = json.load(open(snap)) if os.path.exists(snap) else None
@@ -3860,8 +5075,8 @@ def update_lifecycle(profile, lanes, settings, failed_sources):
         # One `seen` set across every lane, so a job arriving on two feeds counts as one
         # discovery deduplicated — not as two discoveries.
         s = lifecycle.upsert(db, lane["matched"], lane["title"], today, run_seen=seen)
-        for k in ("discovered", "duplicates", "new"):
-            stats[k] += s[k]
+        for k in ("discovered", "duplicates", "new", "revalidated", "reopened", "updated"):
+            stats[k] = stats.get(k, 0) + s.get(k, 0)
 
     checked = closed = 0
     if cfg.get("verify_limit"):
@@ -3871,7 +5086,20 @@ def update_lifecycle(profile, lanes, settings, failed_sources):
 
     max_age = profile_age_window(profile, settings)
     lifecycle.refresh_statuses(db, seen, today, max_age, int(cfg["exceptional_score"]))
-    newly_gone = lifecycle.close_missing(db, seen, failed_sources, today)
+    # A role that vanished from a feed is NEEDS RECHECK, never closed (requirement 5).
+    newly_missing = lifecycle.close_missing(db, seen, failed_sources, today)
+    stats["needs_recheck"] = len(newly_missing)
+    # ...and this is the only thing that may close one: asking the employer's own URL. The
+    # budget is separate from the still-open verification above because they answer different
+    # questions and compete for nothing — one keeps a strong old role alive, the other settles
+    # whether a vanished role is really gone.
+    recheck_budget = int(cfg.get("recheck_limit") or 0)
+    r_checked, newly_closed = (0, [])
+    if recheck_budget:
+        r_checked, newly_closed = lifecycle.verify_missing(
+            db, recheck_budget, today, min_days=int(cfg.get("recheck_after_days") or 0))
+    stats["recheck_checked"], stats["recheck_closed"] = r_checked, len(newly_closed)
+    newly_gone = newly_closed
     stats["removed"] = len(newly_gone)
     stats["aged_out"] = sum(1 for k in seen
                             if db["jobs"][k].get("status") == lifecycle.STATUS_STALE)
@@ -3879,6 +5107,10 @@ def update_lifecycle(profile, lanes, settings, failed_sources):
                           if db["jobs"][k].get("status") in lifecycle.ACTIVE_STATUSES)
     stats["unverified_held"] = sum(1 for r in db["jobs"].values()
                                    if r.get("unverified_run") == today)
+    stats["awaiting_recheck"] = sum(1 for r in db["jobs"].values()
+                                    if r.get("verification") == lifecycle.NEEDS_RECHECK)
+    for key in ("revalidated", "reopened", "updated"):
+        stats[key] = stats.get(key, 0)
     # Derived from the DB rather than from the renderer, so the funnel is accurate for every
     # profile — including Chad, who does not use the change digest.
     stats["screened_out"] = sum(1 for k in seen
@@ -3944,10 +5176,21 @@ def run_profile(profile, local_src, remote_src=None, staffing_src=None, priority
         # V3: the change digest, built from the lifecycle DB (requirement F).
         sections, counts = change_sections(db, feedback, seen_keys=seen,
                                            newly_gone=newly_gone,
-                                           regions=settings.get("location_priority"))
+                                           regions=settings.get("location_priority"),
+                                           profile=profile)
+        # THE FINAL QA GATE (requirement 9). It runs on the exact selection about to be sent,
+        # AFTER every per-role rule, and it corrects the report rather than reporting on it.
+        # Deliberately placed here and not inside change_sections: half of what it checks is a
+        # property of the whole selection (what leads the email, what was left out), which a
+        # per-role pass cannot see.
+        sections, qa_findings = qa.review(sections, db, profile, seen_keys=seen,
+                                          counts=counts)
+        stats["qa_corrections"] = len(qa.corrected(qa_findings))
         report_html, shown = build_change_digest_html(profile, sections, counts,
-                                                      health_rows or [])
-        report = build_change_digest_md(profile, sections, counts, health_rows or [])
+                                                      health_rows or [], qa_findings)
+        report = build_change_digest_md(profile, sections, counts, health_rows or [],
+                                        qa_findings)
+        print(qa.summary_text(qa_findings))
         # Marked PENDING, not shown. `--confirm-sent` promotes these once the workflow has
         # actually delivered the email; see lifecycle.mark_pending_shown. Rendering is not
         # delivering, and only delivery may make a role eligible for the removed section.
@@ -4005,6 +5248,13 @@ def run_stats_text(name, stats, health):
         f"{stats.get('verified_closed', 0)} found closed",
         f"  verified removed                    : {stats.get('removed', 0)}",
         f"  held (source failed, status unknown): {stats.get('unverified_held', 0)}",
+        f"  repeats kept out of 'new'           : {stats.get('repeats', 0)}",
+        f"  revalidated / reopened / updated     : {stats.get('revalidated', 0)} / "
+        f"{stats.get('reopened', 0)} / {stats.get('updated', 0)}",
+        f"  needs recheck (not closed)          : {stats.get('awaiting_recheck', 0)} "
+        f"({stats.get('recheck_checked', 0)} checked, {stats.get('recheck_closed', 0)} "
+        f"confirmed closed)",
+        f"  pre-send QA corrections             : {stats.get('qa_corrections', 0)}",
         f"  shown in today's email              : {stats.get('shown', 0)}",
         f"  feed errors                         : {health.get('temp_error', 0)} temporary, "
         f"{health.get('config_error', 0)} needing attention",
@@ -4034,6 +5284,25 @@ def _parse_args(argv=None):
                         "Promotes that run's pending 'shown' marks to permanent, which is "
                         "what makes a role eligible for a later 'removed' section. Touches "
                         "only jobs_<name>.json — no fetching, no scoring, no network.")
+    p.add_argument("--check-schedule", action="store_true",
+                   help="decide whether this invocation should do the day's work, print the "
+                        "reason, and write should_run=true/false to GITHUB_OUTPUT. Makes no "
+                        "network calls. Exits 0 either way — the workflow gates on the "
+                        "output, not on the exit code.")
+    p.add_argument("--catchup", action="store_true",
+                   help="with --check-schedule: this is the catch-up slot, so run if no "
+                        "successful run has been recorded today, whatever the clock says.")
+    p.add_argument("--force", action="store_true",
+                   help="with --check-schedule: run regardless (manual dispatch).")
+    p.add_argument("--scheduled-for", metavar="WHEN", default="",
+                   help="what this run was SCHEDULED for (a cron expression or a timestamp). "
+                        "Recorded in run_log.json so the gap between scheduled and actual "
+                        "start is visible.")
+    p.add_argument("--trigger", metavar="NAME", default="",
+                   help="what started this run (schedule / workflow_dispatch / catchup). "
+                        "Recorded in run_log.json.")
+    p.add_argument("--timing", action="store_true",
+                   help="print today's delivery timing from run_log.json and exit.")
     p.add_argument("--fake-fit", action="store_true",
                    help="score locally with deterministic FAKE verdicts so the email layout can be previewed with no API key and no cost. Reports are stamped with a warning banner.")
     return p.parse_args(argv)
@@ -4062,7 +5331,8 @@ def _resolve_dirs(args):
     return snap_dir, out_dir
 
 
-def github_output_lines(profiles, changed_profiles, logos_by_profile, settings):
+def github_output_lines(profiles, changed_profiles, logos_by_profile, settings,
+                        delivery_log=None):
     """The per-profile outputs the GitHub Actions workflow gates on, as one text block.
 
     Three per person:
@@ -4087,8 +5357,21 @@ def github_output_lines(profiles, changed_profiles, logos_by_profile, settings):
         name = p["name"]
         out.append(f"{name}_changed="
                    f"{'true' if name in changed_profiles else 'false'}")
+        # THE CANONICAL-EMAIL GATE (requirement 1). `_email` now answers "should this
+        # person be emailed by THIS run", which is the per-person delivery switch AND the
+        # ledger: if today's email has already been confirmed delivered, a second run —
+        # the catch-up slot, a manual dispatch, a duplicated cron — must not send another.
+        #
+        # It stays a separate output from `_changed` for the reason it always has: the
+        # workflow ORs `force_email` against `_changed`, so folding the two together would
+        # let a manual run defeat both a deliberate pause and this gate.
+        sent_today = delivery_log is not None and delivery.already_delivered(delivery_log,
+                                                                             name)
         out.append(f"{name}_email="
-                   f"{'true' if email_enabled_for(p, settings) else 'false'}")
+                   f"{'true' if email_enabled_for(p, settings) and not sent_today else 'false'}")
+        if sent_today:
+            print(f"[{name}] today's canonical email was already delivered — "
+                  f"this run will not send a second one.")
         out.append(f"{name}_logos={','.join(logos_by_profile.get(name, []))}")
     return "".join(line + "\n" for line in out)
 
@@ -4096,6 +5379,27 @@ def github_output_lines(profiles, changed_profiles, logos_by_profile, settings):
 def main():
     args = _parse_args()
     profiles = json.load(open(PROFILES))["profiles"]
+
+    if args.check_schedule:
+        # Answered BEFORE anything expensive happens, and with no network access at all: this
+        # is the guard that turns two UTC cron entries into one 6:45 a.m. Mountain run, and
+        # that stops a catch-up slot from duplicating a morning run that already succeeded.
+        log = delivery.load(args.snapshot_dir or HERE)
+        run, why = delivery.should_start(log, force=args.force, catchup=args.catchup)
+        local = delivery.now_local()
+        print(f"[schedule] {local.isoformat(timespec='seconds')} ({delivery.TIMEZONE}) · "
+              f"target {delivery.TARGET_HOUR:02d}:{delivery.TARGET_MINUTE:02d} · "
+              f"{'RUN' if run else 'SKIP'} — {why}")
+        gh_out = os.environ.get("GITHUB_OUTPUT")
+        if gh_out:
+            with open(gh_out, "a") as fh:
+                fh.write(f"should_run={'true' if run else 'false'}\n")
+                fh.write(f"schedule_reason={why}\n")
+        return
+
+    if args.timing:
+        print(delivery.timing_text(delivery.load(args.snapshot_dir or HERE)))
+        return
 
     if args.list:
         # Email state is shown here because "is my report still being sent?" is the question
@@ -4112,11 +5416,20 @@ def main():
         # the main run cannot: whether the mail was really sent. Deliberately does nothing
         # else — no fetch, no scoring, no report.
         snap_dir = args.snapshot_dir or HERE
-        for name in [n.strip() for n in args.confirm_sent.split(",") if n.strip()]:
+        names = [n.strip() for n in args.confirm_sent.split(",") if n.strip()]
+        for name in names:
             db = lifecycle.load_db(name, snap_dir)
             n = lifecycle.confirm_shown(db)
             lifecycle.save_db(db, name, snap_dir)
             print(f"[{name}] confirmed {n} role(s) as delivered to the reader.")
+        # The same signal, written to the delivery ledger. This is what makes today's email
+        # THE email: a later run in the same day reads it and withholds a second send. It is
+        # written here, from the workflow step that knows the mail actually went out, for the
+        # same reason `ever_shown` is — rendering a report is not delivering it.
+        log = delivery.load(snap_dir)
+        delivery.record_delivery(log, names)
+        delivery.save(log, snap_dir)
+        print(delivery.timing_text(log))
         return
 
     if args.profile:
@@ -4128,7 +5441,21 @@ def main():
 
     global SNAPSHOT_DIR, OUT_DIR, STAR_WITHIN_DAYS, ALLOW_INTL_REMOTE
     SNAPSHOT_DIR, OUT_DIR = _resolve_dirs(args)
+    # Requirement 1's log: scheduled start, actual start, completion, and (written later by
+    # --confirm-sent) email-send time. Opened before the first fetch so a run that CRASHES
+    # still leaves a record saying it started and never finished — which is the case the
+    # catch-up slot exists to notice.
+    run_log = delivery.load(SNAPSHOT_DIR)
+    run_entry = delivery.start_run(run_log, args.scheduled_for, args.trigger)
+    delivery.save(run_log, SNAPSHOT_DIR)
+    print(f"[timing] started {run_entry['started_at']} ({delivery.TIMEZONE}) · "
+          f"{run_entry['start_delay_min']:+d} min vs the "
+          f"{delivery.TARGET_HOUR:02d}:{delivery.TARGET_MINUTE:02d} target"
+          + (f" · scheduled for {args.scheduled_for}" if args.scheduled_for else "")
+          + "\n")
     settings = load_settings()
+    global _RUN_DISCOVERY_CFG
+    _RUN_DISCOVERY_CFG = settings.get("discovery") or {}
     max_age = settings.get("max_posting_age_days")
     STAR_WITHIN_DAYS = settings.get("star_within_days", STAR_WITHIN_DAYS)
     ALLOW_INTL_REMOTE = settings.get("allow_international_remote", ALLOW_INTL_REMOTE)
@@ -4254,12 +5581,16 @@ def main():
     if summary:
         print(summary)
 
+    delivery.finish_run(run_entry, "ok")
+    delivery.save(run_log, SNAPSHOT_DIR)
+    print(delivery.timing_text(run_log))
+
     # A dry run must never signal the workflow to send email, even if GITHUB_OUTPUT is set.
     gh_out = None if args.dry_run else os.environ.get("GITHUB_OUTPUT")
     if gh_out:
         with open(gh_out, "a") as fh:
             fh.write(github_output_lines(profiles, changed_profiles, logos_by_profile,
-                                         settings))
+                                         settings, run_log))
 
 
 if __name__ == "__main__":

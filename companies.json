@@ -11,8 +11,7 @@
     { "name": "Awardco",        "city": "Lindon",             "ats": "greenhouse",      "slug": "awardco", "domain": "award.co" },
     { "name": "Weave",          "city": "Lehi",               "ats": "greenhouse",      "slug": "weave", "domain": "getweave.com" },
     { "name": "Route",          "city": "Lehi",               "ats": "greenhouse",      "slug": "route", "domain": "route.com" },
-    { "name": "Vivint",         "city": "Lehi",               "ats": "smartrecruiters", "slug": "vivint", "domain": "vivint.com" },
-    { "name": "Instructure",    "city": "Cottonwood Heights", "ats": "smartrecruiters", "slug": "instructure", "domain": "instructure.com" },
+    { "name": "Instructure",    "city": "Cottonwood Heights", "ats": "ashby",           "slug": "instructure", "domain": "instructure.com" },
     { "name": "Pluralsight",    "city": "Draper",             "ats": "workday",         "slug": "pluralsight", "domain": "pluralsight.com", "wd_host": "pluralsight.wd1.myworkdayjobs.com", "site": "Careers" },
     { "name": "Podium",         "city": "Lehi",               "ats": "greenhouse",      "slug": "podium81", "domain": "podium.com" },
     { "name": "MX",             "city": "Lehi",               "ats": "greenhouse",      "slug": "mxtechnologiesinc", "domain": "mx.com" },
@@ -43,6 +42,7 @@
     { "name": "BYU",               "city": "Provo",           "ats": "workday",         "slug": "byu", "domain": "byu.edu", "wd_host": "byu.wd1.myworkdayjobs.com", "site": "byu-careers" }
   ],
   "needs_identification": [
+    "Vivint (Lehi) — SmartRecruiters board abandoned (newest posting 2015-09-10); acquired by NRG Energy 2023, current ATS unconfirmed",
     "--- tier-3 / custom (need scraping, not a config add) ---",
     "eBay (Draper) — custom Phenom site (jobs.ebayinc.com)",
     "Ivanti (South Jordan) — likely iCIMS/custom",

@@ -66,7 +66,34 @@
           "leader", "senior", "sr.", "staff", "managing", "partner", "practice leader",
           "practice director", "global", "enterprise"
         ],
+        "_seo_comment": "SEO / content / organic-search families, plus recruiting-OPERATIONS families. Both are listed here AND, for the SEO/content set, in family_only_any below. The distinction matters: appearing here means the ordinary discovery gate will retrieve the role given a seniority word or mandate language; appearing in family_only_any means the title alone is enough. Requirement 8 is explicit that SEO and content roles must not be required to carry transformation language, and the mandate vocabulary description_terms matches on IS transformation language — so 'SEO Content Strategist' has to be retrievable on its family alone or the coverage this is meant to increase is exactly what gets dropped. The recruiting families are here rather than in family_only_any because requirement 4 asks for recruiting roles to be JUDGED on substance, not retrieved on their title alone.",
         "title_any": [
+          "seo",
+          "search engine optimization",
+          "enterprise seo",
+          "technical seo",
+          "organic search",
+          "organic growth",
+          "organic traffic",
+          "search strategy",
+          "seo content strategy",
+          "content strategy",
+          "content operations",
+          "digital content strategy",
+          "content marketing",
+          "editorial strategy",
+          "generative engine optimization",
+          "answer engine optimization",
+          "ai search",
+          "recruiting operations",
+          "talent operations",
+          "talent strategy",
+          "talent analytics",
+          "workforce planning",
+          "recruiting transformation",
+          "talent acquisition operations",
+          "hiring manager enablement",
+          "recruiting process",
           "transformation", "business transformation", "enterprise transformation",
           "digital transformation", "workforce transformation", "transformation office",
           "business operations", "operations", "operating", "operational excellence",
@@ -93,6 +120,22 @@
           "value realization", "value", "process improvement", "continuous improvement",
           "process excellence", "excellence", "revenue operations", "revops",
           "business planning", "planning", "performance", "effectiveness"
+        ],
+        "family_only_any": [
+          "seo",
+          "search engine optimization",
+          "enterprise seo",
+          "technical seo",
+          "organic search",
+          "organic growth",
+          "organic traffic",
+          "search strategy",
+          "seo content strategy",
+          "content strategy",
+          "content operations",
+          "digital content strategy",
+          "generative engine optimization",
+          "answer engine optimization"
         ],
         "description_terms": [
           "m&a integration", "post-merger integration", "post-acquisition",
@@ -133,6 +176,8 @@
           "controller", "comptroller", "fp&a", "financial analyst", "financial reporting",
           "actuary", "underwriter", "loan officer", "teller",
           "sales development", "sales representative", "sdr", "bdr", "account executive",
+          "sales enablement", "deal desk", "inside sales", "business development representative",
+          "call center",
           "attorney", "paralegal", "counsel", "teacher", "professor", "tutor",
           "security guard", "police", "firefighter", "translator", "copywriter",
           "graphic designer", "illustrator", "photographer", "videographer"
@@ -251,8 +296,26 @@
           "revops",
           "marketing operations",
           "content strategy",
+          "content operations",
+          "digital content strategy",
+          "content marketing",
+          "editorial strategy",
           "digital strategy",
           "seo",
+          "search engine optimization",
+          "enterprise seo",
+          "organic search",
+          "organic growth",
+          "search strategy",
+          "generative engine optimization",
+          "answer engine optimization",
+          "recruiting operations",
+          "talent operations",
+          "talent strategy",
+          "talent analytics",
+          "workforce planning",
+          "recruiting transformation",
+          "talent acquisition operations",
           "chief of staff",
           "general manager",
           "practice leader",
@@ -397,9 +460,48 @@
       },
       "remote_search": true,
       "staffing_search": true,
+      "_technical_comment": "REQUIREMENT 2 — the technical-role exclusion, enforced BEFORE scoring and ABOVE the core title gate, so it applies even to a role whose title reads 'Program Manager', 'Transformation', 'Operations', 'AI' or 'Customer Success'. It drops roles that would require Lisa personally to have substantial expertise in software engineering, architecture/infrastructure, APIs/integrations, data engineering, ML/AI engineering, automation development or technical implementation. The TERM LISTS live in screening.py, next to the reasoning for each omission — most importantly that 'integration' is NOT excluded (M&A integration is one of her strongest domains; only 'integration engineer' and friends are) and that 'platform', 'automation', 'data' and 'ai' are not excluded on their own. Override any list here with title_any / description_any / business_override_any. business_override_any is what keeps business-side AI roles: a JD about AI adoption that also talks about model deployment describes the technology being adopted, not the work — so it is kept, flagged, and capped at 'stretch' rather than dropped. Set enabled false to switch the whole screen off; a profile without this block (Chad) is not screened at all.",
+      "technical_exclusion": {
+        "enabled": true,
+        "min_description_hits": 2
+      },
       "_priority_comment": "priority_search opts this profile into the PRIORITY-EMPLOYER lane (priority_companies.json): eight employers named explicitly rather than found by search — Adobe, Salesforce, Zillow Group, Atlassian, NPR, PBS, Marriott International, Hilton. The lane changes retrieval, not judgment: a posting from one of these employers is retrieved on a role family in its title OR the mandate appearing in its responsibilities, instead of needing both a family and a seniority word, so a well-matched role with an off-pattern title still reaches the model. Everything downstream is unchanged — hard exclusions still apply, nothing is promoted to the core tier, and the model still scores it on the same rubric.",
       "priority_search": true,
       "dedupe_same_title": true,
+      "_v6_comment": "V6 (Lisa's 2026-10 update; see PROSPECTOR_V6.md). fit_rubric 'jd_first' selects the JD-first scoring rubric (jobmonitor._fit_instructions_jd_first): dominant work and the A/B/C/D interest hierarchy, true gates vs preferences vs cautions, CONFIRMED/TRANSFERABLE/UNKNOWN/GAP evidence, industry relationship separate from industry importance, sales readiness, and an APPLY/VALIDATE/CONTACT/PACKAGE/STRETCH status with one next action. selection replaces the old section quotas: at most max_new genuinely worthwhile NEW roles per run, zero allowed, the primary search claims slots first and the sales / contract / exception lanes only fill what it leaves, each under its own cap. hard_requirements.gate_categories: only these deterministic categories can CAP a role, and only when the JD words them as mandatory; every other detected requirement is shown as a caution. sales_adjacency is an evaluation lane over every existing source for consultative technical-sales titles; it runs before discovery.exclude_any (so 'Value Engineer' is not dropped for naming 'engineer'), has its own exclusions, and still applies the technical DESCRIPTION screen.",
+      "fit_rubric": "jd_first",
+      "selection": {
+        "enabled": true,
+        "max_new": 5,
+        "max_sales": 2,
+        "max_contract": 2,
+        "max_exceptions": 1,
+        "max_still": 5
+      },
+      "hard_requirements": {
+        "gate_categories": ["license_or_certification", "security_clearance", "engineering_architecture"]
+      },
+      "sales_adjacency": {
+        "enabled": true,
+        "title_any": [
+          "solutions consultant", "solution consultant", "solutions consulting", "solution consulting",
+          "value consultant", "value engineer", "value engineering", "business value consultant",
+          "business value", "value advisor", "value management", "value realization",
+          "solution strategist", "solutions strategist", "customer strategist", "experience strategist",
+          "pre-sales", "presales", "pre sales", "pre-sales consultant", "presales consultant",
+          "strategic customer success", "sales strategy", "solutions engineer", "solution engineer",
+          "sales engineer", "presales engineer", "pre-sales engineer"
+        ],
+        "technical_titles_allowed": [
+          "solutions engineer", "solution engineer", "sales engineer", "presales engineer",
+          "pre-sales engineer", "value engineer", "value engineering"
+        ],
+        "exclude_any": [
+          "sales development", "business development representative", "sdr", "bdr", "inside sales",
+          "account executive", "sales representative", "telesales", "cold calling", "outbound",
+          "lead generation", "intern", "internship"
+        ]
+      },
       "_ic_comment": "Leveled individual-contributor tracks excluded by exact word order: 'customer success manager' drops 'Customer Success Manager II/III/V', 'Enterprise CSM' and 'Strategic CSM' (book-of-business IC roles) while KEEPING 'Sr. Manager, Customer Success', 'Director, Customer Success' and 'Head of Customer Success', because those put the seniority word before the function. Found by probing Samsara, which alone would have added ~8 IC CSM roles. dedupe_same_title collapses one-req-per-city duplicates (see dedupe_same_role)."
     }
   ]

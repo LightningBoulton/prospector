@@ -15,7 +15,9 @@ Full narrative + GitHub Actions setup in @README.md.
   fire. Use this for every local test. `--snapshot-dir`/`--out-dir` redirect individually.
 - `python3 jobmonitor.py --no-fit` — skip all Anthropic calls. `--fake-fit` — deterministic
   local fake verdicts for previewing email layout free (reports get a warning banner).
-- `python3 test_jobmonitor.py` — 223 offline tests (stdlib `unittest`; no network, no API).
+- `python3 test_jobmonitor.py` — 401 offline tests (stdlib `unittest`; no network, no API).
+- `python3 jobmonitor.py --check-schedule` — should THIS invocation do today's work? Offline;
+  writes `should_run` to `GITHUB_OUTPUT`. `--timing` prints today's delivery timing.
 - `python3 audit.py` — weekly self-audit. **Reads committed files only; makes no network
   calls of any kind.**
 
@@ -37,6 +39,29 @@ vendor) and **Atlassian** (`fetch_atlassian`). Named geography regions (`REGION_
 `region_gate`, `location_rank`) add **Washington** as a third location tier WITHOUT touching
 the shared local gate. `fetch_workday` gained `search_texts` (a list). See
 **Priority-employer lane** below.
+
+**V5 additions — stricter recommendations, honest status, reliable delivery (read
+@PROSPECTOR_V5.md before touching screening, job status, identity, the QA gate or the
+schedule):** three new stdlib modules — **`screening.py`** (deterministic JD analysis: the
+technical-role exclusion, hard requirements, recruiting execution gaps, remote eligibility),
+**`qa.py`** (the pre-send gate that corrects the selection), **`delivery.py`** (run timing,
+the DST-safe schedule guard, and the once-a-day delivery ledger). New state file
+**`run_log.json`**, committed. `FIT_SCHEMA_VERSION` is **4**. Location priority gained
+`california` and `oregon`. **Chad opts into none of it and his report is unchanged.** See
+**Technical-role exclusion**, **Hard requirements**, **Job status**, **Durable identity**,
+**Pre-send QA** and **Delivery timing** below.
+
+**V6 additions — Lisa's JD-first update (read @PROSPECTOR_V6.md before touching Lisa's rubric,
+selection, the sales lane or `lisa_background.json`):** a second scoring rubric
+(`_fit_instructions_jd_first`, selected by profile `fit_rubric:"jd_first"`; Chad stays on the
+standard rubric and his fingerprint is unchanged) returning decision fields (dominant work,
+A/B/C/D interest, industry relationship, gates vs cautions, sales readiness, APPLY/VALIDATE/
+CONTACT/PACKAGE/STRETCH + next action). **Selection mode** (profile `selection`): at most 5
+worthwhile NEW roles, zero allowed, primary search claims slots first. **Sales-adjacency lane**
+(`sales_adjacency_match`, profile `sales_adjacency`). **Gates vs cautions**: only
+`hard_requirements.gate_categories` can cap deterministically; everything else is a caution.
+`enforce_hard_requirements` is now opt-in. Live test: `check_v6.py`.
+**`unmet_requirements` means TRUE GATES under jd_first — never put a preference in it.**
 
 Python 3.12, **standard library only — do not add dependencies** unless a tier-3
 (Playwright) source genuinely requires it (`anthropic` is the one optional dep, declared in
@@ -66,7 +91,8 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
   Don't "unify" them without a reason; Chad's email is deliberately unchanged.
 - The daily run writes diagnostics for the weekly audit: `rejects_<name>.json` (fetched but
   filtered out, with the rule that dropped each) and `source_health.json`
-  (`consecutive_zero_runs` = ATS-migration signal). `audit.py` reads ONLY those + snapshots
+  (**`consecutive_silent_runs`** = ATS-migration signal; see Source health below).
+  `audit.py` reads ONLY those + snapshots
   + feedback. Keeping the audit network-free is a deliberate constraint — a re-fetching
   audit would double our ATS traffic and risk the daily run.
 
@@ -77,13 +103,18 @@ Stay in tier 1 whenever possible — it's why this is low-maintenance.
 - `staffing_companies.json` — registry for the **contract/staffing lane** (same entry shape). Staffing/recruiting firms whose public feeds we monitor for **contract** roles. Read only when `settings.staffing_search.enabled` and a profile has `staffing_search:true` (see Contract/staffing lane below).
 - `priority_companies.json` — registry for the **priority-employer lane** (same entry shape, plus `priority`, `note`, `exclude_titles`). Employers the reader named explicitly; each probed live before adding. Read only when `settings.priority_search.enabled` and a profile has `priority_search:true` (see Priority-employer lane below).
 - `profiles.json` — `profiles[]` ({name, label, enabled, match_groups, exclude_any} + optional
-  `mandate_rescue`, `report_style`, `max_posting_age_days`, `background_file`, `fit_mode`, `priority_search`, `email`).
-- `settings.json` — run-wide tweakables (loaded by `load_settings`, defaults in `SETTINGS_DEFAULTS`): `max_posting_age_days` (drop postings older than this; 0/null = keep all; unknown-date always kept), `fit_scoring_enabled` (master off-switch for the Anthropic API), and `star_within_days` (⭐ postings newer than this in the report; 0/null off — `main` sets the `STAR_WITHIN_DAYS` global from it). **`email.enabled`** is the run-wide master switch for SENDING reports (per-person delivery is `email` in `profiles.json`). **`location_priority`** is the reader's location/work-arrangement preference, BEST FIRST (`["remote_us","utah","washington"]`) — one setting doing two jobs so the order can never disagree with itself: it is the priority lane's geography AND the digest's ranking tiebreak within a fit score. Missing file/keys fall back to defaults.
-- `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_sources`/`collect_pool`, `fetch_source`, `classify_fetch_error`, `matches_profile`, `classify_match`, `_mandate_rescue`, `_apply_source_rules`, `region_gate`/`is_washington`/`location_rank`, `enrich_salary`, `enrich_with_fit`, `score_fit`, `validate_verdict`, `diff`, `classify_removal`, `load_feedback`, `update_lifecycle`, `email_enabled_for`, `github_output_lines`, `change_sections`, `build_report`, `build_html_report`, `build_digest_html`, `build_change_digest_html`, `run_profile`.
-- `lifecycle.py` — the persistent discovery database (V3). `dedupe_key`, `upsert`, `refresh_statuses`, `close_missing`, `mark_shown`, `run_verification`, `prune`. **`mark_shown` is the ONLY thing that sets `ever_shown`**, and `ever_shown` is the ONLY thing that makes a role eligible for the digest's removed section — that is the fix for "removed roles that were never emailed". **`close_missing` must never mark a job removed on the word of a failed source.**
+  `mandate_rescue`, `report_style`, `max_posting_age_days`, `background_file`, `fit_mode`, `priority_search`, `email`, and V5's `technical_exclusion` + `discovery.family_only_any`).
+- `settings.json` — run-wide tweakables (loaded by `load_settings`, defaults in `SETTINGS_DEFAULTS`): `max_posting_age_days` (drop postings older than this; 0/null = keep all; unknown-date always kept), `fit_scoring_enabled` (master off-switch for the Anthropic API), and `star_within_days` (⭐ postings newer than this in the report; 0/null off — `main` sets the `STAR_WITHIN_DAYS` global from it). **`email.enabled`** is the run-wide master switch for SENDING reports (per-person delivery is `email` in `profiles.json`). **`location_priority`** is the reader's location/work-arrangement preference, BEST FIRST (`["remote_us","utah","washington","california","oregon"]`) — one setting doing two jobs so the order can never disagree with itself: it is the priority lane's geography AND the digest's ranking tiebreak within a fit score. Missing file/keys fall back to defaults.
+- `jobmonitor.py` — the engine. Key functions: `fetch_greenhouse/lever/smartrecruiters/workday`, `collect_sources`/`collect_pool`, `fetch_source`, `classify_fetch_error`, `matches_profile`, `classify_match`, `_mandate_rescue`, `_apply_source_rules`, `region_gate`/`is_washington`/`location_rank`, `enrich_salary`, `deepen_descriptions`, `enrich_with_fit`, `score_fit`, `validate_verdict`, `enforce_hard_requirements`, `apply_remote_eligibility`, `is_california`/`is_oregon`, `diff`, `classify_removal`, `load_feedback`, `update_lifecycle`, `email_enabled_for`, `github_output_lines`, `change_sections`, `build_report`, `build_html_report`, `build_digest_html`, `build_change_digest_html`, `run_profile`.
+- `screening.py` — deterministic JD analysis (V5), all pure functions, no network. `technical_screen`, `hard_requirements`, `recruiting_gaps`, `remote_eligibility`, `deep_retrieval_wanted`, `is_seo_content`. Every term list here is a DEFAULT a profile may override; a profile with no `technical_exclusion` block is not screened at all.
+- `qa.py` — the pre-send QA gate (V5). `review` runs eight checks on the exact selection about to be sent and CORRECTS it; `summary_text` prints them; `corrected` filters to what changed.
+- `delivery.py` — run timing + the delivery ledger (V5). `should_run_now`/`should_start` (the DST-safe schedule guard), `already_delivered`/`record_delivery` (the one-email-a-day ledger), `start_run`/`finish_run`/`timing_text`.
+- `run_log.json` — **STATE.** Committed by CI. The timing record AND the delivery ledger. Deleting it makes a second run of the day willing to send a second email.
+- `lifecycle.py` — the persistent discovery database (V3, extended in V5). `dedupe_key`, `resolve_key`/`identity_aliases`/`canonical_url_key`, `upsert`, `refresh_statuses`, `close_missing`, `verify_missing`, `mark_shown`, `run_verification`, `prune`. **`mark_shown` is the ONLY thing that sets `ever_shown`**, and `ever_shown` is the ONLY thing that makes a role eligible for the digest's removed section — that is the fix for "removed roles that were never emailed". **`close_missing` closes NOTHING** (V5): a vanished role becomes `needs_recheck`, and only `verify_missing`, asking the employer's own URL, may set `closed_verified`.
 - `sheets_sync.py` — Discovery Log export: CSV always, Apps Script webhook (`SHEETS_WEBHOOK_URL`) when configured. Writes ONLY the `Prospector Discovery Log` tab — never `Application Pipeline` or `Applied`.
 - `jobs_<profile>.json` — **STATE.** The lifecycle DB. Committed by CI. Do not delete: it carries `first_seen`, `ever_shown` and the human decision fields.
 - `test_jobmonitor.py` — offline test suite. `audit.py` — weekly, network-free self-audit.
+- `check_v6.py` — LIVE implementation test for V6 (tests A-G): real postings, real scoring via the production path, writes nothing. `--offline` runs the API-free half.
 - `feedback_<name>.json` — hand-edited feedback (the only file a non-developer edits).
 - `PROSPECTOR_V2_CHANGELOG.md` / `PROSPECTOR_TESTING.md` — what changed, and how to operate it.
 - `fetch_logos.py` — occasional prefetch of company logos → `logos/<slug>.png` via logo.dev (needs `LOGO_DEV_TOKEN` env — the **publishable** `pk_` token; it is passed as a query param to `img.logo.dev`, so the server-side `sk_` key will not work). **Not run by the daily job.** Run it locally, or use the manual `prospector-logos` workflow (`.github/workflows/logos.yml`, `LOGO_DEV_TOKEN` repo secret) which fetches, verifies and commits for you.
@@ -332,6 +363,172 @@ Workday priority employers (Adobe, Salesforce, Zillow, PBS) the relaxation reduc
 role-family path — the same limit V3 documents for SmartRecruiters/Workday generally. It is
 still materially wider than core, which demands family AND seniority together.
 
+## Technical-role exclusion (V5) — and the four words that must never be in it
+
+`screening.technical_screen`, called from `classify_match` **above the core title gate**. That
+placement is the requirement, not a detail: it applies "even when the title says Program
+Manager, Transformation, Operations, AI, Customer Success", which is only true if it can drop
+a role that satisfies `match_groups`. Below the gate, exactly those titles sail through — that
+is how a *Senior Forward Deployed Architect* became a top recommendation.
+
+It runs BEFORE scoring, so an excluded role costs nothing at the API.
+
+**`integration`, `platform`, `automation` and `ai` are NOT in the title list, and must not
+be.** M&A integration is one of Lisa's strongest domains; "Platform Operations", "AI Adoption"
+and "Automation Enablement" are business-side roles. Only the engineering compounds
+(`integration engineer`, `platform engineer`, `automation engineer`, `ai engineer`) are
+excluded. `TestScreeningConfigIsAlive.test_integration_is_not_excluded_as_a_bare_word` guards
+it, because deleting M&A integration would be the single most expensive mistake available in
+this repo. `technical` alone is likewise not excluded — but `technical program manager` and
+`technical architect` are.
+
+**Two outcomes, not one.** A technical TITLE excludes. A technical DESCRIPTION (2+ hits)
+excludes ONLY when the JD carries no business-side mandate; when it does
+(`business_override_any`), the role is **kept, flagged `technical_risk`, and capped at
+`stretch`** by `enforce_hard_requirements`. A JD about AI adoption that mentions model
+deployment describes the technology being adopted, not the work.
+
+Measured on the committed record set: **38 of 608 previously-retrieved roles now drop on title
+alone** (17 Technical Program Manager, 14 Architect, 3 Technical Project Manager, 4 others) —
+no integration, platform or AI-adoption role among them.
+
+## Hard requirements (V5) — they cap, they never drop
+
+`enforce_hard_requirements` caps a role at **`stretch`** and writes the reason into
+`unmet_requirements` + `concerns`, which the card renders. It never rewrites the scores and
+never drops the role: a downgrade the reader cannot see is one they cannot overrule.
+
+**Two independent detectors, either one sufficient** — the model's `unmet_requirements`, and
+`screening.hard_requirements` (ten categories, word-boundary matched). The prompt asks for the
+same thing and is usually right, but "usually" is not the guarantee the requirement asks for.
+
+**The proximity test is what makes the deterministic half usable:** a rule fires only when its
+token is within 140 chars of a requirement cue ("5 years", "must have", "required", "proven",
+"expert in"). Without it every JD that mentions Salesforce in passing would downgrade.
+
+**Enforcement runs at USE, in `enrich_with_fit`, over cached verdicts too.** A cached verdict
+was produced by an older prompt against a thinner description; this is a guarantee about what
+is shown today.
+
+**Deep JD retrieval** (`deepen_descriptions`, before scoring, `settings.discovery.deep_retrieval_limit`
+= 40/lane) fetches the full JD only where `screening.deep_retrieval_wanted` says the role is
+already promising — core tier, priority employer, or SEO/content. The technical screen then
+**re-runs** on the new text inside `_run_lane`. This is what lets Workday/SmartRecruiters/Paradox
+roles be judged on more than a title, which matters because that is where the priority
+employers live.
+
+## Job status (V5) — `verification` is SEPARATE from `status`
+
+Three states in `lifecycle.py`: **`live_verified`**, **`needs_recheck`**, **`closed_verified`**.
+`status` answers "how old and how repeatable is this?"; `verification` answers "do we know it
+is still open, and who told us?" Conflating them produced the reported bug.
+
+**Authority order** (`url_rank` → `AUTHORITY_EMPLOYER`/`SECONDARY`/`AGGREGATOR`): an
+employer/ATS board, or a staffing firm that is itself the applier, listing a role IS that role
+being live. **An aggregator listing it is not** — aggregators re-serve cached rows for days
+after a requisition closes — so an aggregator-only sighting stays `needs_recheck`. When
+sources disagree, the employer wins.
+
+- **`close_missing` no longer closes anything.** A vanished role becomes `needs_recheck` with
+  `missing_since` and a reason. A record whose every source FAILED is stamped `unverified_run`
+  and its recheck clock does not start.
+- **`verify_missing` is the ONLY route to `closed_verified`** — budgeted by
+  `lifecycle.recheck_limit` (20) and `recheck_after_days` (1). A stated expiry date also
+  closes a role, free, because that is the employer speaking. If the employer still serves the
+  page, the record goes back to `live_verified`.
+- The **"Removed since prior run" section shows only `closed_verified`**; QA check 4 enforces
+  it at send time. `needs_recheck` roles get a one-line count instead.
+
+## Durable identity + change state (V5)
+
+`lifecycle.resolve_key` resolves a posting through four identities, in order: composite
+`company|title|location`, **employer requisition id** (the half of `key` after `::`),
+**canonical URL** (tracking params stripped), source key. A persistent `aliases` map in
+`jobs_<profile>.json` carries them; a pre-V5 DB **rebuilds** what it can on load.
+
+**"NEW" means `not ever_shown` — genuinely never reported before** — not "first seen today",
+which is what it used to mean. `change_state` is per-run: `new` / `revalidated` / `reopened` /
+`updated` / `still_open`, rendered as a chip.
+
+**`REOPENED` requires a VERIFIED closure.** A legacy `STATUS_REMOVED` record — written on a
+feed going quiet, never confirmed — returns as `REVALIDATED`. On the first upgraded run that
+was the difference between 13 false "REOPENED" chips and 13 correct ones.
+
+## Pre-send QA (V5)
+
+`qa.review(sections, db, profile, ...)` runs the eight checks on the exact selection about to
+be sent, AFTER every per-role rule, and **corrects `sections` rather than reporting on them**.
+Called from `run_profile`, between `change_sections` and the renderers.
+
+Every check duplicates an upstream guarantee deliberately — a cached verdict or a config edit
+can let something slip. But three can only live here, because they are properties of the
+SELECTION: what leads the email, whether a section holds repeats, and **what was left out**
+(absence is invisible to a per-role rule). The SEO/content check PROMOTES a strong role a
+quota had cut.
+
+Corrections print on every run and render into the email under "Before sending, we checked".
+The remote check reports a correction **only when it withdraws a claim** — a JD that simply
+never stated its eligibility is the normal case, counted not itemised, or the block becomes
+noise the reader learns to skip.
+
+## Remote eligibility + the two ambiguous state codes (V5)
+
+`screening.remote_eligibility` reads the JD for seven scopes; restrictions are tested BEFORE
+permissive phrases. `apply_remote_eligibility` takes the **stricter** of the model's
+`remote_scope` and the text detection. **`nationwide_us` is the only claim the report makes on
+the reader's behalf**, and needs both readings to agree; silence lands on `unclear`.
+
+`location_priority` is now `["remote_us", "utah", "washington", "california", "oregon"]`.
+
+- **`is_california`: "CA" is also the country code for CANADA.** "Toronto, CA" and
+  "Vancouver, BC, CA" are how feeds write it, so the bare code is accepted only when nothing
+  else looks Canadian. `ontario` and `vancouver` are deliberately NOT Canadian markers —
+  Ontario is a California city, Vancouver a Washington one.
+- **`is_oregon`: "OR" is the English word "or".** A bare `\bor\b` matches "Sales or
+  Marketing". The code is matched only in postal position (`,\s*or\b`).
+- `is_local` is UNCHANGED, so Chad's geography did not move.
+
+## Delivery timing (V5) — DST, retry, catch-up, and exactly one email
+
+Target: start **06:45 America/Denver**, email delivered by 07:15–07:30.
+
+- **DST.** GitHub cron is UTC-only. Both candidates are scheduled (`45 12` and `45 13`) and
+  `delivery.should_run_now` runs the work only on the one that is 06:45 in Denver today.
+  **Tolerance is 59 minutes, not 60**, and that minute is load bearing: the off-season cron
+  fires at exactly +1h, so 60 would let both fire.
+- **Catch-up** cron at `30 16` does the work only if no run SUCCEEDED today
+  (`delivery.completed_today`, from committed `run_log.json`). The main run also **retries
+  once** after 180s — safe because state is written at the end and the verdict cache means a
+  retry re-scores nothing.
+- **One canonical email.** `<name>_email` = `email_enabled_for(...) AND NOT
+  already_delivered_today`. The ledger is written ONLY by `--confirm-sent`, from the step that
+  knows the mail went out — rendering is not delivering. It stays a SEPARATE output from
+  `_changed` for the reason it always has: `force_email` ORs against `_changed`, so folding
+  them would let a manual run defeat both a pause and this gate.
+- Every run logs scheduled start, actual start, delay vs target, completion and status;
+  `--confirm-sent` adds the send time. `--timing` prints today's.
+
+## Source health — THREE streaks, and they are not interchangeable
+
+`source_health.json` carries three per-source counters. Reading the wrong one is the bug this
+section exists to prevent (it put **16 sources on "Needs attention", 15 of which had answered
+normally that morning**):
+
+- **`consecutive_error_runs`** — back-to-back FAILURES. The source never answered.
+- **`consecutive_silent_runs`** — the board ANSWERED and its whole listing was empty. This,
+  and ONLY this, is the ATS-migration / dead-slug signal, and it is what "Needs attention"
+  fires on (`summary["stale"]`) alongside `config_error`.
+- **`consecutive_zero_runs`** — the board answered with real postings but NONE survived the
+  lane's location/age gates. **Informational only** (`summary["filtered_out"]`, rendered as a
+  muted "No roles matching this search"). Miro answering with 41 Copenhagen/Amsterdam/Tokyo
+  roles is not a broken feed, it is an employer that does not hire here — and that can never
+  clear itself, so alerting on it trains the reader to ignore the whole block.
+
+An errored run advances neither of the first two: a source that never answered tells us
+nothing about whether it has jobs. **Back-compat:** a `source_health.json` written before the
+split has no silent streak, and it is deliberately NOT seeded from the old post-gate streak —
+a source starts at zero and earns the alert over the next `STALE_SOURCE_RUNS` (10) runs.
+
 ## Location + age gates
 
 Global, applied once to the pool in `collect_pool` before profiles. Location:
@@ -345,6 +542,19 @@ places are intentionally omitted (Georgia, Mexico→New Mexico, Jordan→South J
 `max_posting_age_days` from `settings.json` (`_within_age`) — drops confidently-too-old
 postings, saving downstream salary/LLM calls. If a future profile needs its own geography,
 add a per-profile override rather than widening the global list.
+
+**Nationwide US counts as local** (`_is_nationwide_us`, checked inside `is_local` after the
+remote check). A role open to the whole US includes Utah, and that is how several local
+employers post: **all 8 of Weave's (Lehi) live roles carried the bare location `"United
+States"`** — no local city, no remote marker — and were invisible. The test is on the WHOLE
+location string, normalized to letters only (`us`, `usa`, `unitedstates`,
+`unitedstatesofamerica`, `nationwide`). **That whole-string test is the safety property, not a
+shortcut:** `"San Francisco, CA, United States"` and `"San Francisco Bay Area, California"`
+still fail it, so the moment an employer names a specific place the normal keyword rules apply
+again and no second metro can be smuggled in. Measured on the live local registry: **+76 of
+3,287 postings, 8 companies, 15 of them inside the 21-day window, none engineering** — so it
+did not move Chad's report. `is_us_remote` is deliberately NOT changed: it still requires a
+remote marker, or the remote lane would start keeping onsite-anywhere-in-the-US roles.
 
 **Named regions (V4)** are that per-profile override, now built: `REGION_GATES` maps
 `remote_us`/`utah`/`washington` to `is_us_remote`/`is_utah`/`is_washington`, `region_gate(regions)`
@@ -433,3 +643,8 @@ Ranks each profile's matched roles by how well they fit a candidate, via the Ant
    because it changes her committed criteria. See Profile matching semantics.
 4. Source-health alert when a known company's endpoint drops to zero (likely ATS migration).
 5. Optional HTML email bodies (nice with the ranked/scored layout).
+6. V5 follow-ups: the scoring budget (`max_new_scored_per_run` 150) is now reached most days
+   because discovery is wider — 60 roles deferred on the measured run. Either raise it or
+   spend it more deliberately (the priority lane already runs first). Also watch the
+   `needs_recheck` backlog: 214 records on the first upgraded run against a 20/run recheck
+   budget, so it will take days to drain. Both are cost/latency dials, not defects.
