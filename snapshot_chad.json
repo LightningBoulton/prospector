@@ -9,6 +9,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -22,6 +24,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -35,6 +39,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -48,6 +54,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -61,6 +69,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -74,6 +84,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -87,6 +99,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -100,6 +114,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -113,45 +129,113 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
  {
-  "key": "MX::4444275009",
-  "company": "MX",
-  "title": "Senior Software Engineer I",
-  "location": "Lehi, Utah, United States",
-  "url": "https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4444275009",
+  "key": "Instructure::6ac72011-6515-4506-9507-9a239d4da9a5",
+  "company": "Instructure",
+  "title": "L1 Support Engineer - Spanish Bilingual",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/6ac72011-6515-4506-9507-9a239d4da9a5",
+  "posted": "2026-10-28",
+  "salary": "$18 \u2013 $21 per hour",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Instructure::5c011c93-63d1-4376-97be-be2550410e1b",
+  "company": "Instructure",
+  "title": "L1 Support Engineer - Spanish Backup",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/5c011c93-63d1-4376-97be-be2550410e1b",
+  "posted": "2026-10-28",
+  "salary": "$18 \u2013 $21 per hour",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Instructure::3ba0efe9-7bb6-498c-be6f-e1f084fa7983",
+  "company": "Instructure",
+  "title": "L1 Support Engineer - Portuguese (Part-time)",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/3ba0efe9-7bb6-498c-be6f-e1f084fa7983",
+  "posted": "2026-10-28",
+  "salary": "$18 \u2013 $21 per hour",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Instructure::09dbdc35-5e01-4131-b95f-1d8298f0e8e9",
+  "company": "Instructure",
+  "title": "AI Engineer, Marketing",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/09dbdc35-5e01-4131-b95f-1d8298f0e8e9",
+  "posted": "2026-10-22",
+  "salary": "$85K \u2013 $90K",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "BILL::6223077004",
+  "company": "BILL",
+  "title": "Senior Software Engineer",
+  "location": "United States",
+  "url": "https://www.bill.com/job?6223077004&gh_jid=6223077004",
+  "posted": "2026-10-28",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "BILL::6223092004",
+  "company": "BILL",
+  "title": "Software Engineer II - Growth",
+  "location": "United States",
+  "url": "https://www.bill.com/job?6223092004&gh_jid=6223092004",
+  "posted": "2026-10-16",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "BILL::6223339004",
+  "company": "BILL",
+  "title": "Staff Database Engineer",
+  "location": "United States",
+  "url": "https://www.bill.com/job?6223339004&gh_jid=6223339004",
   "posted": "2026-10-13",
   "salary": null,
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "MX::4453337009",
-  "company": "MX",
-  "title": "Senior Software Engineer II",
-  "location": "Lehi, Utah, United States",
-  "url": "https://job-boards.greenhouse.io/mxtechnologiesinc/jobs/4453337009",
-  "posted": "2026-10-21",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Recursion::8262864",
-  "company": "Recursion",
-  "title": "Staff Engineer, Identity & Access Management (IAM)",
-  "location": "Remote Opportunity - United States; Salt Lake City, Utah",
-  "url": "https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/8262864",
-  "posted": "2026-10-07",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -167,6 +251,25 @@
   "expires": "",
   "priority_employer": true,
   "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Adobe::R173252",
+  "company": "Adobe",
+  "title": "Forward Deployed Engineer",
+  "location": "Lehi",
+  "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Forward-Deployed-Engineer_R173252",
+  "posted": "2026-10-28",
+  "salary": "$159,200 - $301,600",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "priority_note": "Referral network here: employee referral, recruiting contact, and a Women Tech Council connection. Apply through the referral, not the portal.",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -180,6 +283,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -193,6 +298,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -200,12 +307,14 @@
   "key": "Ancestry::R003461",
   "company": "Ancestry",
   "title": "Staff Product Engineer, Developer Experience",
-  "location": "Remote",
-  "url": "https://ancestry.wd501.myworkdayjobs.com/Careers/job/Remote/Staff-Product-Engineer--Developer-Experience_R003461",
-  "posted": "2026-10-15",
+  "location": "Draper, UT",
+  "url": "https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Staff-Product-Engineer--Developer-Experience_R003461",
+  "posted": "2026-10-29",
   "salary": "$135,000 - $160,000",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -219,19 +328,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
-  "tier": "core",
-  "match_reason": "core title gate"
- },
- {
-  "key": "Health Catalyst::REQ-3354",
-  "company": "Health Catalyst",
-  "title": "Data Engineer- Contract",
-  "location": "SG Remote",
-  "url": "https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/SG-Remote/Data-Engineer--Contract_REQ-3354-1",
-  "posted": "2026-10-27",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -245,6 +343,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -258,6 +358,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -271,6 +373,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -284,6 +388,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -297,6 +403,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -310,6 +418,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -323,6 +433,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -336,6 +448,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -349,6 +463,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -362,6 +478,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -375,6 +493,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -388,6 +508,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -401,6 +523,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -414,6 +538,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -427,6 +553,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -440,6 +568,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -453,6 +583,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -466,6 +598,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -479,6 +613,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -492,6 +628,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -505,6 +643,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -518,6 +658,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -531,6 +673,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -544,6 +688,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -557,6 +703,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -570,6 +718,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -583,6 +733,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -596,6 +748,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -609,6 +763,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -622,6 +778,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -635,6 +793,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -648,6 +808,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -661,6 +823,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -674,6 +838,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -687,6 +853,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -700,6 +868,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -713,6 +883,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -726,6 +898,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -739,6 +913,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -752,6 +928,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -765,6 +943,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -778,6 +958,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -791,6 +973,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -804,6 +988,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -817,6 +1003,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -830,6 +1018,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -843,6 +1033,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -856,6 +1048,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -869,6 +1063,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -882,6 +1078,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -895,6 +1093,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -908,6 +1108,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -921,6 +1123,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -934,6 +1138,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -947,6 +1153,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -960,6 +1168,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -973,6 +1183,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -986,6 +1198,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -999,6 +1213,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1012,6 +1228,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1025,6 +1243,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1038,6 +1258,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1051,6 +1273,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1064,6 +1288,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1077,6 +1303,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1090,6 +1318,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1103,6 +1333,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1116,6 +1348,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1129,6 +1363,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1142,6 +1378,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1155,6 +1393,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1168,6 +1408,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1181,6 +1423,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1194,6 +1438,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1207,6 +1453,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1220,6 +1468,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1233,6 +1483,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1246,6 +1498,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1259,6 +1513,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1272,6 +1528,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1285,6 +1543,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1298,6 +1558,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1311,6 +1573,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1324,6 +1588,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1337,6 +1603,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1350,6 +1618,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1363,6 +1633,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1376,6 +1648,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1389,6 +1663,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1402,6 +1678,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1415,6 +1693,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1428,6 +1708,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1441,6 +1723,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1454,6 +1738,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1467,6 +1753,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1480,6 +1768,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1493,6 +1783,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1506,6 +1798,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1519,6 +1813,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1532,6 +1828,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1545,6 +1843,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1558,6 +1858,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1571,6 +1873,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1584,6 +1888,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1597,6 +1903,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1610,6 +1918,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1623,6 +1933,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1636,6 +1948,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1649,6 +1963,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1662,6 +1978,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1675,6 +1993,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1688,6 +2008,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1701,6 +2023,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1714,6 +2038,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1727,6 +2053,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1740,6 +2068,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1753,6 +2083,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1766,6 +2098,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1779,6 +2113,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1792,6 +2128,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1805,6 +2143,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1818,6 +2158,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1831,6 +2173,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1844,6 +2188,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1857,6 +2203,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1870,6 +2218,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1883,6 +2233,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1896,6 +2248,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1909,6 +2263,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1922,6 +2278,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1935,6 +2293,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1948,6 +2308,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1961,6 +2323,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1974,6 +2338,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -1987,6 +2353,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2000,6 +2368,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2013,6 +2383,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2026,6 +2398,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2039,6 +2413,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2052,6 +2428,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2065,6 +2443,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2078,6 +2458,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2091,6 +2473,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2104,6 +2488,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2117,6 +2503,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2130,6 +2518,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2143,6 +2533,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2156,6 +2548,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2169,6 +2563,68 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Western Governors University::JR-026475",
+  "company": "Western Governors University",
+  "title": "Associate Assessment Developer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Associate-Assessment-Developer_JR-026475",
+  "posted": "2026-10-29",
+  "salary": "$60,600.00 - $90,900.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Western Governors University::JR-026474",
+  "company": "Western Governors University",
+  "title": "Principal Software Engineer - AI Platform",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer---AI-Platform_JR-026474-1",
+  "posted": "2026-10-29",
+  "salary": "$180,300.00 - $279,500.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Western Governors University::JR-025416",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer - Salesforce",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Salesforce_JR-025416",
+  "posted": "2026-10-28",
+  "salary": "$143,700.00 - $222,700.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "Western Governors University::JR-025976",
+  "company": "Western Governors University",
+  "title": "Senior Software Engineer",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-025976",
+  "posted": "2026-10-28",
+  "salary": "$143,700.00 - $222,700.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2182,6 +2638,8 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2195,6 +2653,8 @@
   "salary": "$161,000.00 - $249,500.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2208,6 +2668,8 @@
   "salary": "$98,300.00 - $147,400.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2221,6 +2683,8 @@
   "salary": "$143,700.00 - $222,700.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2234,6 +2698,8 @@
   "salary": "$143,700.00 - $222,700.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2247,6 +2713,8 @@
   "salary": "$143,700.00 - $222,700.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2260,6 +2728,8 @@
   "salary": "$143,700.00 - $222,700.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2273,6 +2743,8 @@
   "salary": "$161,000.00 - $249,500.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2286,6 +2758,23 @@
   "salary": "$161,000.00 - $249,500.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "O.C. Tanner::JR26-302",
+  "company": "O.C. Tanner",
+  "title": "Sr. Site Reliability Engineer",
+  "location": "USA - Utah-Salt Lake City-Headquarters",
+  "url": "https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Sr-Site-Reliability-Engineer_JR26-302",
+  "posted": "2026-10-29",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2299,6 +2788,8 @@
   "salary": "$70,000 to $85,000",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  },
@@ -2312,6 +2803,23 @@
   "salary": "$100,000 to $130,000",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate"
+ },
+ {
+  "key": "BYU::JR-13444",
+  "company": "BYU",
+  "title": "Structural/Civil Engineer",
+  "location": "Provo, UT",
+  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Structural-Civil-Engineer_JR-13444",
+  "posted": "2026-10-29",
+  "salary": "$94,000.00 to $122,000.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate"
  }

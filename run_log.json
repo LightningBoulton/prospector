@@ -1,0 +1,18 @@
+{
+ "_comment": "Prospector run + delivery log. `runs` is the timing record the morning-delivery requirement asks for (scheduled, started, completed, emailed) \u2014 newest last. `delivery` is the ledger that keeps the daily email CANONICAL: a profile whose last_sent is today will not be emailed again, which is what makes a catch-up run safe to schedule. Only a CONFIRMED send writes to it (see --confirm-sent).",
+ "timezone": "America/Denver",
+ "runs": [
+  {
+   "date": "2026-10-29",
+   "scheduled_for": "30 16 * * *",
+   "trigger": "schedule",
+   "started_at": "2026-10-29T15:20:40-06:00",
+   "start_delay_min": 515,
+   "completed_at": "2026-10-29T15:45:28-06:00",
+   "status": "ok",
+   "emailed": {},
+   "duration_min": 24.8
+  }
+ ],
+ "delivery": {}
+}

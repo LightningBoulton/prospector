@@ -1,33 +1,23 @@
 {
- "_comment": "Per-source fetch health from the most recent run. status is one of ok_results, ok_zero, temp_error, config_error. consecutive_zero_runs counts runs where the source ANSWERED with no in-window roles (an ATS-migration / dead-slug signal); an errored run does not advance it, because a source that never answered tells us nothing. consecutive_error_runs counts back-to-back failures instead.",
- "generated": "2026-10-28",
+ "_comment": "Per-source fetch health from the most recent run. status is one of ok_results, ok_zero, temp_error, config_error. THREE streaks, and they mean different things: consecutive_silent_runs counts runs where the board ANSWERED and its listing was empty \u2014 that is the ATS-migration / dead-slug signal and the only one that raises 'needs attention'. consecutive_zero_runs counts runs where the board answered with real postings but none survived this lane's location/age gates \u2014 informational only (an employer that does not hire here is not a broken feed). consecutive_error_runs counts back-to-back failures. An errored run advances neither of the first two, because a source that never answered tells us nothing.",
+ "generated": "2026-10-29",
  "summary": {
-  "total": 137,
-  "ok": 129,
+  "total": 136,
+  "ok": 128,
   "with_results": 122,
-  "zero": 7,
+  "zero": 6,
   "temp_error": 1,
   "config_error": 7,
-  "stale": [
-   "Amplitude",
-   "Beyond (Overstock)",
-   "Buffer",
+  "stale": [],
+  "filtered_out": [
    "Cockroach Labs",
-   "Confluent",
-   "Domo",
    "Galileo (SoFi)",
    "Gemini",
    "Inngest",
-   "Instructure",
-   "Marqeta",
    "Miro",
-   "Nav",
    "Nomi Health",
-   "Postman",
    "Together AI",
-   "Vivint",
-   "Weave",
-   "Webflow"
+   "Weave"
   ],
   "broken": [
    "Amplitude",
@@ -47,11 +37,12 @@
    "slug": "filevine",
    "status": "ok_results",
    "roles_fetched": 120,
-   "roles_returned": 4,
+   "roles_returned": 5,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -60,12 +51,13 @@
    "ats": "greenhouse",
    "slug": "qualtrics",
    "status": "ok_results",
-   "roles_fetched": 92,
-   "roles_returned": 14,
+   "roles_fetched": 94,
+   "roles_returned": 16,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -74,12 +66,13 @@
    "ats": "greenhouse",
    "slug": "digicert",
    "status": "ok_results",
-   "roles_fetched": 47,
-   "roles_returned": 5,
+   "roles_fetched": 45,
+   "roles_returned": 6,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -88,12 +81,13 @@
    "ats": "smartrecruiters",
    "slug": "cricut",
    "status": "ok_results",
-   "roles_fetched": 48,
-   "roles_returned": 9,
+   "roles_fetched": 51,
+   "roles_returned": 10,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -102,12 +96,13 @@
    "ats": "greenhouse",
    "slug": "lucidsoftware",
    "status": "ok_results",
-   "roles_fetched": 29,
+   "roles_fetched": 26,
    "roles_returned": 1,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -116,12 +111,13 @@
    "ats": "lever",
    "slug": "entrata",
    "status": "ok_results",
-   "roles_fetched": 25,
-   "roles_returned": 1,
+   "roles_fetched": 29,
+   "roles_returned": 3,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -135,7 +131,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 22,
+   "consecutive_zero_runs": 23,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -150,6 +147,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -163,7 +161,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 93,
+   "consecutive_zero_runs": 94,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -178,34 +177,22 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 0
-  },
-  {
-   "name": "Vivint",
-   "registry": "local",
-   "ats": "smartrecruiters",
-   "slug": "vivint",
-   "status": "ok_results",
-   "roles_fetched": 4,
-   "roles_returned": 0,
-   "attempts": 1,
-   "error": "",
-   "fetch_failed": false,
-   "consecutive_zero_runs": 93,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
    "name": "Instructure",
    "registry": "local",
-   "ats": "smartrecruiters",
+   "ats": "ashby",
    "slug": "instructure",
    "status": "ok_results",
-   "roles_fetched": 4,
-   "roles_returned": 0,
+   "roles_fetched": 60,
+   "roles_returned": 27,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 93,
+   "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -214,12 +201,13 @@
    "ats": "workday",
    "slug": "pluralsight",
    "status": "ok_results",
-   "roles_fetched": 10,
-   "roles_returned": 1,
+   "roles_fetched": 9,
+   "roles_returned": 2,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -234,7 +222,8 @@
    "error": "AttributeError: 'NoneType' object has no attribute 'strip'",
    "fetch_failed": true,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 29
+   "consecutive_silent_runs": 0,
+   "consecutive_error_runs": 30
   },
   {
    "name": "MX",
@@ -242,12 +231,13 @@
    "ats": "greenhouse",
    "slug": "mxtechnologiesinc",
    "status": "ok_results",
-   "roles_fetched": 16,
-   "roles_returned": 8,
+   "roles_fetched": 13,
+   "roles_returned": 6,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -256,12 +246,13 @@
    "ats": "greenhouse",
    "slug": "billcom",
    "status": "ok_results",
-   "roles_fetched": 44,
-   "roles_returned": 1,
+   "roles_fetched": 45,
+   "roles_returned": 19,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -271,11 +262,12 @@
    "slug": "recursionpharmaceuticals",
    "status": "ok_results",
    "roles_fetched": 12,
-   "roles_returned": 3,
+   "roles_returned": 2,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -284,12 +276,13 @@
    "ats": "greenhouse",
    "slug": "canopytax",
    "status": "ok_results",
-   "roles_fetched": 6,
-   "roles_returned": 2,
+   "roles_fetched": 5,
+   "roles_returned": 1,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -303,7 +296,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 93,
+   "consecutive_zero_runs": 94,
+   "consecutive_silent_runs": 1,
    "consecutive_error_runs": 0
   },
   {
@@ -317,7 +311,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 68,
+   "consecutive_zero_runs": 69,
+   "consecutive_silent_runs": 1,
    "consecutive_error_runs": 0
   },
   {
@@ -326,12 +321,13 @@
    "ats": "workday",
    "slug": "adobe",
    "status": "ok_results",
-   "roles_fetched": 23,
-   "roles_returned": 5,
+   "roles_fetched": 25,
+   "roles_returned": 7,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -340,12 +336,13 @@
    "ats": "greenhouse",
    "slug": "bamboohr17",
    "status": "ok_results",
-   "roles_fetched": 28,
+   "roles_fetched": 29,
    "roles_returned": 6,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -354,12 +351,13 @@
    "ats": "workday",
    "slug": "ancestry",
    "status": "ok_results",
-   "roles_fetched": 32,
+   "roles_fetched": 31,
    "roles_returned": 15,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -368,12 +366,13 @@
    "ats": "workday",
    "slug": "healthcatalyst",
    "status": "ok_results",
-   "roles_fetched": 3,
-   "roles_returned": 1,
+   "roles_fetched": 2,
+   "roles_returned": 0,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 0,
+   "consecutive_zero_runs": 1,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -388,6 +387,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -401,7 +401,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 85,
+   "consecutive_zero_runs": 86,
+   "consecutive_silent_runs": 1,
    "consecutive_error_runs": 0
   },
   {
@@ -415,7 +416,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 31,
+   "consecutive_zero_runs": 32,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -424,12 +426,13 @@
    "ats": "lever",
    "slug": "pattern",
    "status": "ok_results",
-   "roles_fetched": 102,
-   "roles_returned": 13,
+   "roles_fetched": 101,
+   "roles_returned": 14,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -438,12 +441,13 @@
    "ats": "greenhouse",
    "slug": "nice",
    "status": "ok_results",
-   "roles_fetched": 184,
-   "roles_returned": 10,
+   "roles_fetched": 182,
+   "roles_returned": 8,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -452,12 +456,13 @@
    "ats": "greenhouse",
    "slug": "brex",
    "status": "ok_results",
-   "roles_fetched": 261,
-   "roles_returned": 7,
+   "roles_fetched": 264,
+   "roles_returned": 8,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -466,12 +471,13 @@
    "ats": "greenhouse",
    "slug": "kelsoindustries",
    "status": "ok_results",
-   "roles_fetched": 181,
-   "roles_returned": 12,
+   "roles_fetched": 172,
+   "roles_returned": 8,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -486,6 +492,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -494,12 +501,13 @@
    "ats": "greenhouse",
    "slug": "flex",
    "status": "ok_results",
-   "roles_fetched": 24,
-   "roles_returned": 1,
+   "roles_fetched": 25,
+   "roles_returned": 2,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -508,12 +516,13 @@
    "ats": "workday",
    "slug": "wgu",
    "status": "ok_results",
-   "roles_fetched": 84,
-   "roles_returned": 45,
+   "roles_fetched": 96,
+   "roles_returned": 62,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -522,12 +531,13 @@
    "ats": "workday",
    "slug": "octanner",
    "status": "ok_results",
-   "roles_fetched": 15,
-   "roles_returned": 6,
+   "roles_fetched": 14,
+   "roles_returned": 9,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -542,6 +552,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -556,7 +567,8 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 29
+   "consecutive_silent_runs": 0,
+   "consecutive_error_runs": 30
   },
   {
    "name": "BYU",
@@ -564,12 +576,13 @@
    "ats": "workday",
    "slug": "byu",
    "status": "ok_results",
-   "roles_fetched": 34,
-   "roles_returned": 21,
+   "roles_fetched": 35,
+   "roles_returned": 23,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -578,12 +591,13 @@
    "ats": "greenhouse",
    "slug": "gitlab",
    "status": "ok_results",
-   "roles_fetched": 235,
-   "roles_returned": 45,
+   "roles_fetched": 234,
+   "roles_returned": 44,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -592,12 +606,13 @@
    "ats": "greenhouse",
    "slug": "cloudflare",
    "status": "ok_results",
-   "roles_fetched": 459,
-   "roles_returned": 13,
+   "roles_fetched": 463,
+   "roles_returned": 15,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -606,12 +621,13 @@
    "ats": "greenhouse",
    "slug": "coinbase",
    "status": "ok_results",
-   "roles_fetched": 227,
+   "roles_fetched": 233,
    "roles_returned": 34,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -620,12 +636,13 @@
    "ats": "greenhouse",
    "slug": "reddit",
    "status": "ok_results",
-   "roles_fetched": 162,
-   "roles_returned": 25,
+   "roles_fetched": 163,
+   "roles_returned": 24,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -634,12 +651,13 @@
    "ats": "greenhouse",
    "slug": "datadog",
    "status": "ok_results",
-   "roles_fetched": 393,
-   "roles_returned": 3,
+   "roles_fetched": 396,
+   "roles_returned": 5,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -654,6 +672,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -662,12 +681,13 @@
    "ats": "greenhouse",
    "slug": "twilio",
    "status": "ok_results",
-   "roles_fetched": 132,
+   "roles_fetched": 129,
    "roles_returned": 20,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -676,12 +696,13 @@
    "ats": "greenhouse",
    "slug": "vercel",
    "status": "ok_results",
-   "roles_fetched": 93,
+   "roles_fetched": 92,
    "roles_returned": 1,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -690,12 +711,13 @@
    "ats": "greenhouse",
    "slug": "grafanalabs",
    "status": "ok_results",
-   "roles_fetched": 131,
-   "roles_returned": 21,
+   "roles_fetched": 129,
+   "roles_returned": 23,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -710,7 +732,8 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 51,
-   "consecutive_error_runs": 42
+   "consecutive_silent_runs": 0,
+   "consecutive_error_runs": 43
   },
   {
    "name": "Webflow",
@@ -723,7 +746,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 12,
+   "consecutive_zero_runs": 13,
+   "consecutive_silent_runs": 1,
    "consecutive_error_runs": 0
   },
   {
@@ -732,12 +756,13 @@
    "ats": "greenhouse",
    "slug": "mercury",
    "status": "ok_results",
-   "roles_fetched": 79,
-   "roles_returned": 31,
+   "roles_fetched": 78,
+   "roles_returned": 29,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -751,7 +776,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 2,
+   "consecutive_zero_runs": 3,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -760,12 +786,13 @@
    "ats": "greenhouse",
    "slug": "doximity",
    "status": "ok_results",
-   "roles_fetched": 14,
+   "roles_fetched": 13,
    "roles_returned": 1,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -774,12 +801,13 @@
    "ats": "greenhouse",
    "slug": "gusto",
    "status": "ok_results",
-   "roles_fetched": 91,
+   "roles_fetched": 87,
    "roles_returned": 0,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 6,
+   "consecutive_zero_runs": 7,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -788,12 +816,13 @@
    "ats": "greenhouse",
    "slug": "affirm",
    "status": "ok_results",
-   "roles_fetched": 243,
+   "roles_fetched": 237,
    "roles_returned": 34,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -802,12 +831,13 @@
    "ats": "greenhouse",
    "slug": "discord",
    "status": "ok_results",
-   "roles_fetched": 46,
+   "roles_fetched": 44,
    "roles_returned": 1,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -816,12 +846,13 @@
    "ats": "ashby",
    "slug": "supabase",
    "status": "ok_results",
-   "roles_fetched": 64,
-   "roles_returned": 18,
+   "roles_fetched": 65,
+   "roles_returned": 17,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -830,12 +861,13 @@
    "ats": "ashby",
    "slug": "posthog",
    "status": "ok_results",
-   "roles_fetched": 12,
-   "roles_returned": 4,
+   "roles_fetched": 11,
+   "roles_returned": 3,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -849,7 +881,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 50,
+   "consecutive_zero_runs": 51,
+   "consecutive_silent_runs": 1,
    "consecutive_error_runs": 0
   },
   {
@@ -864,6 +897,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -878,6 +912,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -887,11 +922,12 @@
    "slug": "ramp",
    "status": "ok_results",
    "roles_fetched": 168,
-   "roles_returned": 31,
+   "roles_returned": 30,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -900,12 +936,13 @@
    "ats": "ashby",
    "slug": "vanta",
    "status": "ok_results",
-   "roles_fetched": 79,
-   "roles_returned": 7,
+   "roles_fetched": 81,
+   "roles_returned": 9,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -914,12 +951,13 @@
    "ats": "ashby",
    "slug": "render",
    "status": "ok_results",
-   "roles_fetched": 35,
-   "roles_returned": 5,
+   "roles_fetched": 36,
+   "roles_returned": 7,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -929,11 +967,12 @@
    "slug": "sentry",
    "status": "ok_results",
    "roles_fetched": 42,
-   "roles_returned": 8,
+   "roles_returned": 9,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -943,11 +982,12 @@
    "slug": "zapier",
    "status": "ok_results",
    "roles_fetched": 12,
-   "roles_returned": 3,
+   "roles_returned": 2,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -956,12 +996,13 @@
    "ats": "ashby",
    "slug": "notion",
    "status": "ok_results",
-   "roles_fetched": 140,
+   "roles_fetched": 144,
    "roles_returned": 10,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -976,6 +1017,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -984,12 +1026,13 @@
    "ats": "greenhouse",
    "slug": "stripe",
    "status": "ok_results",
-   "roles_fetched": 720,
-   "roles_returned": 17,
+   "roles_fetched": 732,
+   "roles_returned": 21,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -999,11 +1042,12 @@
    "slug": "instacart",
    "status": "ok_results",
    "roles_fetched": 93,
-   "roles_returned": 14,
+   "roles_returned": 13,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1012,12 +1056,13 @@
    "ats": "greenhouse",
    "slug": "fivetran",
    "status": "ok_results",
-   "roles_fetched": 162,
-   "roles_returned": 7,
+   "roles_fetched": 160,
+   "roles_returned": 8,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1032,7 +1077,8 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 26
+   "consecutive_silent_runs": 0,
+   "consecutive_error_runs": 27
   },
   {
    "name": "Temporal",
@@ -1046,7 +1092,8 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 62
+   "consecutive_silent_runs": 0,
+   "consecutive_error_runs": 63
   },
   {
    "name": "Dropbox",
@@ -1054,12 +1101,13 @@
    "ats": "greenhouse",
    "slug": "dropbox",
    "status": "ok_results",
-   "roles_fetched": 19,
-   "roles_returned": 6,
+   "roles_fetched": 23,
+   "roles_returned": 7,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1068,12 +1116,13 @@
    "ats": "greenhouse",
    "slug": "calendly",
    "status": "ok_results",
-   "roles_fetched": 8,
-   "roles_returned": 1,
+   "roles_fetched": 9,
+   "roles_returned": 2,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1088,6 +1137,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1101,7 +1151,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 2,
+   "consecutive_zero_runs": 3,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1110,12 +1161,13 @@
    "ats": "greenhouse",
    "slug": "cockroachlabs",
    "status": "ok_results",
-   "roles_fetched": 14,
+   "roles_fetched": 12,
    "roles_returned": 0,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 64,
+   "consecutive_zero_runs": 65,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1125,11 +1177,12 @@
    "slug": "plaid",
    "status": "ok_results",
    "roles_fetched": 129,
-   "roles_returned": 33,
+   "roles_returned": 32,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1138,12 +1191,13 @@
    "ats": "ashby",
    "slug": "1password",
    "status": "ok_results",
-   "roles_fetched": 87,
-   "roles_returned": 42,
+   "roles_fetched": 90,
+   "roles_returned": 44,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1157,7 +1211,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 65,
+   "consecutive_zero_runs": 66,
+   "consecutive_silent_runs": 1,
    "consecutive_error_runs": 0
   },
   {
@@ -1166,12 +1221,13 @@
    "ats": "ashby",
    "slug": "docker",
    "status": "ok_results",
-   "roles_fetched": 54,
-   "roles_returned": 11,
+   "roles_fetched": 51,
+   "roles_returned": 9,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1181,11 +1237,12 @@
    "slug": "airbyte",
    "status": "ok_results",
    "roles_fetched": 13,
-   "roles_returned": 7,
+   "roles_returned": 8,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1199,7 +1256,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 1,
+   "consecutive_zero_runs": 2,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1214,6 +1272,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1227,7 +1286,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 93,
+   "consecutive_zero_runs": 94,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1237,11 +1297,12 @@
    "slug": "sourcegraph91",
    "status": "ok_results",
    "roles_fetched": 7,
-   "roles_returned": 1,
+   "roles_returned": 0,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 0,
+   "consecutive_zero_runs": 1,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1250,12 +1311,13 @@
    "ats": "greenhouse",
    "slug": "tailscale",
    "status": "ok_results",
-   "roles_fetched": 53,
-   "roles_returned": 5,
+   "roles_fetched": 52,
+   "roles_returned": 4,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1264,12 +1326,13 @@
    "ats": "greenhouse",
    "slug": "launchdarkly",
    "status": "ok_results",
-   "roles_fetched": 52,
+   "roles_fetched": 49,
    "roles_returned": 12,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1284,7 +1347,8 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 11,
-   "consecutive_error_runs": 31
+   "consecutive_silent_runs": 0,
+   "consecutive_error_runs": 32
   },
   {
    "name": "Mixpanel",
@@ -1298,6 +1362,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1312,7 +1377,8 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 0,
-   "consecutive_error_runs": 58
+   "consecutive_silent_runs": 0,
+   "consecutive_error_runs": 59
   },
   {
    "name": "Chainguard",
@@ -1320,12 +1386,13 @@
    "ats": "greenhouse",
    "slug": "chainguard",
    "status": "ok_results",
-   "roles_fetched": 92,
+   "roles_fetched": 96,
    "roles_returned": 22,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1334,12 +1401,13 @@
    "ats": "greenhouse",
    "slug": "cresta",
    "status": "ok_results",
-   "roles_fetched": 87,
-   "roles_returned": 6,
+   "roles_fetched": 89,
+   "roles_returned": 7,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1353,7 +1421,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 16,
+   "consecutive_zero_runs": 17,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1362,12 +1431,13 @@
    "ats": "greenhouse",
    "slug": "togetherai",
    "status": "ok_results",
-   "roles_fetched": 87,
+   "roles_fetched": 86,
    "roles_returned": 0,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 64,
+   "consecutive_zero_runs": 65,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1382,6 +1452,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1396,6 +1467,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1410,6 +1482,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1418,12 +1491,13 @@
    "ats": "ashby",
    "slug": "baseten",
    "status": "ok_results",
-   "roles_fetched": 105,
-   "roles_returned": 19,
+   "roles_fetched": 104,
+   "roles_returned": 18,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1438,6 +1512,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1446,12 +1521,13 @@
    "ats": "ashby",
    "slug": "langchain",
    "status": "ok_results",
-   "roles_fetched": 100,
+   "roles_fetched": 99,
    "roles_returned": 11,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1460,12 +1536,13 @@
    "ats": "ashby",
    "slug": "sanity",
    "status": "ok_results",
-   "roles_fetched": 33,
+   "roles_fetched": 32,
    "roles_returned": 2,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1480,6 +1557,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1488,12 +1566,13 @@
    "ats": "ashby",
    "slug": "sardine",
    "status": "ok_results",
-   "roles_fetched": 46,
-   "roles_returned": 6,
+   "roles_fetched": 44,
+   "roles_returned": 7,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1502,12 +1581,13 @@
    "ats": "ashby",
    "slug": "vantage",
    "status": "ok_results",
-   "roles_fetched": 5,
-   "roles_returned": 4,
+   "roles_fetched": 7,
+   "roles_returned": 6,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1516,12 +1596,13 @@
    "ats": "ashby",
    "slug": "doppler",
    "status": "ok_results",
-   "roles_fetched": 4,
-   "roles_returned": 3,
+   "roles_fetched": 5,
+   "roles_returned": 4,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1535,7 +1616,8 @@
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 93,
+   "consecutive_zero_runs": 94,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1550,6 +1632,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1558,12 +1641,13 @@
    "ats": "phenom",
    "slug": "circle",
    "status": "ok_results",
-   "roles_fetched": 60,
+   "roles_fetched": 62,
    "roles_returned": 21,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1572,12 +1656,13 @@
    "ats": "greenhouse",
    "slug": "samsara",
    "status": "ok_results",
-   "roles_fetched": 321,
-   "roles_returned": 85,
+   "roles_fetched": 319,
+   "roles_returned": 86,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1586,12 +1671,13 @@
    "ats": "ashby",
    "slug": "hinge-health",
    "status": "ok_results",
-   "roles_fetched": 82,
-   "roles_returned": 21,
+   "roles_fetched": 80,
+   "roles_returned": 20,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1600,12 +1686,13 @@
    "ats": "lever",
    "slug": "includedhealth",
    "status": "ok_results",
-   "roles_fetched": 48,
+   "roles_fetched": 49,
    "roles_returned": 2,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1615,11 +1702,12 @@
    "slug": "headway",
    "status": "ok_results",
    "roles_fetched": 90,
-   "roles_returned": 25,
+   "roles_returned": 24,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1634,6 +1722,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1642,12 +1731,13 @@
    "ats": "ashby",
    "slug": "angi",
    "status": "ok_results",
-   "roles_fetched": 18,
+   "roles_fetched": 19,
    "roles_returned": 2,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1656,12 +1746,13 @@
    "ats": "ashby",
    "slug": "thumbtack",
    "status": "ok_results",
-   "roles_fetched": 47,
-   "roles_returned": 7,
+   "roles_fetched": 44,
+   "roles_returned": 4,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1670,12 +1761,13 @@
    "ats": "greenhouse",
    "slug": "omadahealth",
    "status": "ok_results",
-   "roles_fetched": 21,
+   "roles_fetched": 20,
    "roles_returned": 4,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1684,12 +1776,13 @@
    "ats": "greenhouse",
    "slug": "oscar",
    "status": "ok_results",
-   "roles_fetched": 225,
-   "roles_returned": 17,
+   "roles_fetched": 212,
+   "roles_returned": 18,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1699,11 +1792,12 @@
    "slug": "smartsheet",
    "status": "ok_results",
    "roles_fetched": 86,
-   "roles_returned": 4,
+   "roles_returned": 5,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1712,12 +1806,13 @@
    "ats": "ashby",
    "slug": "gainsight",
    "status": "ok_results",
-   "roles_fetched": 16,
-   "roles_returned": 6,
+   "roles_fetched": 17,
+   "roles_returned": 8,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1726,12 +1821,13 @@
    "ats": "ashby",
    "slug": "grow-therapy",
    "status": "ok_results",
-   "roles_fetched": 25,
-   "roles_returned": 5,
+   "roles_fetched": 27,
+   "roles_returned": 7,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1746,7 +1842,8 @@
    "error": "HTTPError: HTTP Error 404: Not Found",
    "fetch_failed": true,
    "consecutive_zero_runs": 13,
-   "consecutive_error_runs": 58
+   "consecutive_silent_runs": 0,
+   "consecutive_error_runs": 59
   },
   {
    "name": "Himalayas (aggregator)",
@@ -1755,11 +1852,12 @@
    "slug": "himalayas",
    "status": "ok_results",
    "roles_fetched": 20,
-   "roles_returned": 16,
+   "roles_returned": 12,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1768,12 +1866,13 @@
    "ats": "wwr",
    "slug": "weworkremotely",
    "status": "ok_results",
-   "roles_fetched": 121,
-   "roles_returned": 77,
+   "roles_fetched": 123,
+   "roles_returned": 84,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1782,12 +1881,13 @@
    "ats": "jobicy",
    "slug": "jobicy",
    "status": "ok_results",
-   "roles_fetched": 161,
-   "roles_returned": 161,
+   "roles_fetched": 157,
+   "roles_returned": 157,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1795,13 +1895,14 @@
    "registry": "staffing",
    "ats": "aquent",
    "slug": "aquent",
-   "status": "ok_zero",
-   "roles_fetched": 0,
-   "roles_returned": 0,
+   "status": "ok_results",
+   "roles_fetched": 346,
+   "roles_returned": 151,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 1,
+   "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1810,12 +1911,13 @@
    "ats": "snaphop",
    "slug": "eliassen",
    "status": "ok_results",
-   "roles_fetched": 90,
-   "roles_returned": 19,
+   "roles_fetched": 91,
+   "roles_returned": 23,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1824,12 +1926,13 @@
    "ats": "snaphop",
    "slug": "addisongroup",
    "status": "ok_results",
-   "roles_fetched": 79,
+   "roles_fetched": 81,
    "roles_returned": 1,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1838,12 +1941,13 @@
    "ats": "roberthalf",
    "slug": "roberthalf",
    "status": "ok_results",
-   "roles_fetched": 115,
-   "roles_returned": 112,
+   "roles_fetched": 114,
+   "roles_returned": 110,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1852,12 +1956,13 @@
    "ats": "workday",
    "slug": "adobe",
    "status": "ok_results",
-   "roles_fetched": 61,
-   "roles_returned": 17,
+   "roles_fetched": 62,
+   "roles_returned": 15,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1866,12 +1971,13 @@
    "ats": "workday",
    "slug": "salesforce",
    "status": "ok_results",
-   "roles_fetched": 497,
-   "roles_returned": 218,
+   "roles_fetched": 495,
+   "roles_returned": 258,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1880,12 +1986,13 @@
    "ats": "workday",
    "slug": "zillow",
    "status": "ok_results",
-   "roles_fetched": 199,
-   "roles_returned": 73,
+   "roles_fetched": 203,
+   "roles_returned": 78,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1894,12 +2001,13 @@
    "ats": "atlassian",
    "slug": "atlassian",
    "status": "ok_results",
-   "roles_fetched": 374,
-   "roles_returned": 191,
+   "roles_fetched": 372,
+   "roles_returned": 189,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1908,12 +2016,13 @@
    "ats": "greenhouse",
    "slug": "nationalpublicradioinc",
    "status": "ok_results",
-   "roles_fetched": 11,
+   "roles_fetched": 10,
    "roles_returned": 0,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
-   "consecutive_zero_runs": 2,
+   "consecutive_zero_runs": 3,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1928,6 +2037,7 @@
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1936,12 +2046,13 @@
    "ats": "paradox",
    "slug": "marriott",
    "status": "ok_results",
-   "roles_fetched": 53,
-   "roles_returned": 50,
+   "roles_fetched": 49,
+   "roles_returned": 46,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   },
   {
@@ -1951,11 +2062,12 @@
    "slug": "hilton",
    "status": "ok_results",
    "roles_fetched": 83,
-   "roles_returned": 8,
+   "roles_returned": 9,
    "attempts": 1,
    "error": "",
    "fetch_failed": false,
    "consecutive_zero_runs": 0,
+   "consecutive_silent_runs": 0,
    "consecutive_error_runs": 0
   }
  ]

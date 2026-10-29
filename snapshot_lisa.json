@@ -9,34 +9,65 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Utah onsite/hybrid location fits preference",
-    "Program management core discipline matches background",
-    "Cross-functional GTM enablement has operational scope",
-    "Learning/enablement adjacent to org development skills"
+    "Provo location matches her Utah preference",
+    "Transferable cross-functional program management"
    ],
    "concerns": [
-    "Sales enablement domain narrower than transformation focus",
-    "May be more tactical than strategic ownership role"
+    "Dominant work is sales enablement, explicitly D-tier avoid",
+    "Not AI adoption or transformation leadership",
+    "Narrow enablement specialization gap"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 60,
-   "practical_fit": 80,
-   "opportunity_score": 62,
-   "score": 62,
-   "fit": "maybe",
-   "reason": "Utah onsite/hybrid location fits preference",
-   "bg": "d192ce659668"
-  }
+   "qualification_fit": 40,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "work_interest": "D",
+   "dominant_work": "Design/manage sales enablement programs connecting Product, Marketing and GTM teams",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "TRANSFERABLE: program/project management discipline from PS operations",
+    "UNKNOWN: formal sales-enablement program design experience",
+    "GAP: deep enablement-practitioner specialization across SDR/AE/SE curricula",
+    "TRANSFERABLE: cross-functional stakeholder leadership with product and marketing"
+   ],
+   "cautions": [
+    "Role centers on building enablement content/programs, not leading adoption or transformation",
+    "Explicitly on her D-tier avoid list (sales enablement)"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a dedicated sales-enablement program role (curriculum, onboarding, content for SDR-to-Services roles), which sits in her explicit avoid category despite transferable PM skills.",
+   "material_gap": "Core function is sales enablement practitioner work, not her target adoption/transformation leadership",
+   "next_action": "Skip unless no stronger Provo-area options surface this cycle.",
+   "exception_reason": "",
+   "score": 30,
+   "fit": "no",
+   "reason": "Provo location matches her Utah preference",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Qualtrics::8279293",
@@ -48,34 +79,68 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'consultant' + seniority in title",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Transformation/consulting leadership mandate fits",
-    "Remote US aligns with top location preference",
-    "Healthcare safety specialization is a gap",
-    "Change/culture frameworks align with experience"
+    "Consulting leadership transferable",
+    "Executive stakeholder experience"
    ],
    "concerns": [
-    "Requires deep healthcare/clinical safety domain expertise",
-    "HRO/RCA frameworks are specialized, not in background"
+    "Deep clinical/healthcare domain specialization required",
+    "No healthcare-safety consulting evidence"
    ],
+   "unmet_requirements": [
+    "Deep healthcare patient-safety/HRO clinical domain expertise required to lead these engagements"
+   ],
+   "bridge_skills": [
+    "Healthcare HRO/RCA frameworks",
+    "Clinical stakeholder engagement"
+   ],
+   "remote_scope": "nationwide_us",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 50,
-   "score": 50,
-   "fit": "maybe",
-   "reason": "Transformation/consulting leadership mandate fits",
-   "bg": "d192ce659668"
-  }
+   "qualification_fit": 30,
+   "interest_fit": 35,
+   "practical_fit": 50,
+   "opportunity_score": 30,
+   "work_interest": "B",
+   "dominant_work": "Leads healthcare safety-culture consulting engagements requiring clinical/HRO expertise",
+   "dominant_share": 70,
+   "fit_level": "poor",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: deep clinical/healthcare patient-safety domain expertise (HRO, RCA, Fair and Just Culture)",
+    "TRANSFERABLE: leading multi-stakeholder consulting engagements and executive relationships",
+    "UNKNOWN: direct healthcare system consulting delivery experience",
+    "GAP: specialized clinical credential/background implied by partnering with physician leaders"
+   ],
+   "cautions": [
+    "Role centers on healthcare-specific frameworks (RCA, Fair and Just Culture) she hasn't demonstrated"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "She has strong professional-services and transformation leadership experience but this role requires specialized healthcare patient-safety/clinical reliability expertise she doesn't demonstrate.",
+   "material_gap": "No demonstrated clinical/healthcare safety (HRO, RCA) domain expertise required to lead these engagements",
+   "next_action": "Skip unless she has undisclosed healthcare safety consulting background.",
+   "exception_reason": "",
+   "score": 30,
+   "fit": "no",
+   "reason": "Consulting leadership transferable",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
  },
  {
   "key": "Qualtrics::8279230",
@@ -87,36 +152,71 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'consultant' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Remote US role fits location",
-    "Change/safety culture work loosely adjacent",
-    "Requires clinical/healthcare domain expertise",
-    "Needs HRO/CRP specialized background",
-    "Not aligned with core transformation expertise"
+    "Qualtrics priority-adjacent but not a target employer",
+    "Transformation experience is generic",
+    "No healthcare clinical background"
    ],
    "concerns": [
-    "Healthcare clinical safety specialization not in profile",
-    "Requires SQL/SAS analytics proficiency",
-    "Clinical stakeholder credibility likely required"
+    "Requires clinical safety domain expertise",
+    "Requires specific analytical tool proficiency",
+    "Not aligned with her core interest areas"
    ],
+   "unmet_requirements": [
+    "Deep clinical safety culture / HRO / CRP domain expertise",
+    "Required proficiency in SQL, SAS, Access analytical tools"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 85,
-   "opportunity_score": 35,
-   "score": 35,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Healthcare safety-culture consulting requiring clinical/HRO and analytics expertise",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: no clinical/healthcare safety or HRO expertise",
+    "GAP: SQL/SAS/Access analytics proficiency not evidenced",
+    "UNKNOWN: general consulting/transformation skills transferable",
+    "CONFIRMED: client-facing consulting and transformation leadership"
+   ],
+   "cautions": [
+    "Dental-assisting background is not relevant recent clinical experience",
+    "SQL or programming proficiency (\"sql\")"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a specialized healthcare patient-safety consulting role requiring clinical domain depth and technical data tools she doesn't have; her transformation skills don't offset the specialized gate.",
+   "material_gap": "No clinical/healthcare safety (HRO/CRP) expertise or SQL/SAS analytics proficiency",
+   "next_action": "Skip this role and focus on transformation or CX consulting roles instead.",
+   "exception_reason": "",
+   "score": 15,
    "fit": "no",
-   "reason": "Remote US role fits location",
-   "bg": "d192ce659668"
-  }
+   "reason": "Qualtrics priority-adjacent but not a target employer",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": [
+    "SQL or programming proficiency"
+   ]
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
  },
  {
   "key": "Qualtrics::8306208",
@@ -128,32 +228,60 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "high",
-   "reasons": [
-    "Security operations/SOC leadership role, wrong function",
-    "Requires deep cybersecurity technical expertise"
-   ],
+   "reasons": [],
    "concerns": [
-    "No transformation/org-strategy mandate",
-    "Highly technical security domain mismatch"
+    "Requires deep technical security domain expertise she lacks",
+    "Not aligned with her role-interest hierarchy"
    ],
+   "unmet_requirements": [
+    "Deep cybersecurity/SOC operational expertise required to lead threat detection and response"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 10,
-   "practical_fit": 70,
-   "opportunity_score": 12,
-   "score": 12,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 30,
+   "opportunity_score": 5,
+   "work_interest": "D",
+   "dominant_work": "Leading security operations team detecting/responding to cyber threats",
+   "dominant_share": 5,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: cybersecurity threat detection/response leadership",
+    "GAP: security operations center management",
+    "UNKNOWN: incident response experience",
+    "GAP: deep technical security expertise"
+   ],
+   "cautions": [],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This role requires hands-on cybersecurity leadership of a SOC team, detecting and responding to threats\u2014entirely outside her background and interests.",
+   "material_gap": "No cybersecurity/security-operations expertise or experience",
+   "next_action": "Skip this role; not aligned with her skillset or interests.",
+   "exception_reason": "",
+   "score": 5,
    "fit": "no",
-   "reason": "Security operations/SOC leadership role, wrong function",
-   "bg": "d192ce659668"
-  }
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Cricut::744000154538669",
@@ -165,33 +293,69 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah local, Director-level strategy role",
-    "Matches org strategy/transformation interest",
-    "Creative Labs mandate unclear from title alone"
+    "Business operations leadership scope",
+    "Cross-functional (analytics, finance, marketing) alignment with her generalist strength",
+    "Local Utah location"
    ],
    "concerns": [
-    "No description to verify scope",
-    "Possibly product-specific rather than org-wide strategy"
+    "Unclear seniority/compensation fit",
+    "Narrower domain than her usual transformation mandate",
+    "Unknown required P&L or consumer-product metrics expertise"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Consumer content/product business metrics",
+    "Creative/crafts industry familiarity"
+   ],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 65,
-   "practical_fit": 80,
-   "opportunity_score": 62,
-   "score": 62,
+   "qualification_fit": 55,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 42,
+   "work_interest": "B",
+   "dominant_work": "Business/strategy leadership for a product content business unit (analytics, finance, marketing)",
+   "dominant_share": 55,
+   "fit_level": "stretch",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: cross-functional business leadership across analytics/finance/marketing",
+    "UNKNOWN: P&L ownership for a content/product business specifically",
+    "TRANSFERABLE: operational excellence and growth leadership from agency/PS context",
+    "GAP: no direct consumer product/content or crafts industry experience"
+   ],
+   "cautions": [
+    "Entrepreneurial product-business leadership differs from her professional-services/transformation background",
+    "Consumer hardware/content ecosystem is a new domain for her"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "Role involves leading business operations (analytics, finance, marketing) for a growing content unit, which draws on her operations and cross-functional leadership skills, but the entrepreneurial consumer-product/content focus is a stretch from her transformation/PS background.",
+   "material_gap": "No direct experience running a consumer content/product business P&L",
+   "next_action": "Apply while emphasizing cross-functional operating leadership and growth outcomes from prior roles.",
+   "exception_reason": "",
+   "score": 42,
    "fit": "maybe",
-   "reason": "Utah local, Director-level strategy role",
-   "bg": "d192ce659668"
-  }
+   "reason": "Business operations leadership scope",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Lucid Software::6233639004",
@@ -203,69 +367,677 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'enablement' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Utah hybrid location fits practical criteria",
-    "Sales enablement is adjacent but not core domain",
-    "Focused on sales coaching, not org transformation"
+    "Utah-based, local location match",
+    "Lucid is a tech company but role is narrow enablement"
    ],
    "concerns": [
-    "Narrow sales-enablement mandate, not strategic scope",
-    "Quota/deal-coaching focus misaligned with her goals"
+    "Pure sales enablement is a D-tier interest area",
+    "No strategic transformation component evident"
    ],
+   "unmet_requirements": [
+    "Requires hands-on frontline sales coaching and deal strategy execution, a specialized sales-enablement function she explicitly deprioritizes"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 70,
-   "opportunity_score": 35,
-   "score": 35,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 50,
+   "opportunity_score": 25,
+   "work_interest": "D",
+   "dominant_work": "Field sales enablement coaching and deal-strategy execution for sales reps",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "TRANSFERABLE: cross-functional partnership with sales/pre-sales teams",
+    "GAP: hands-on frontline sales coaching and deal-clinic facilitation with reps",
+    "UNKNOWN: Gong or sales-methodology tool expertise",
+    "GAP: direct quota-carrying field sales management experience"
+   ],
+   "cautions": [
+    "Role is explicitly 'pure sales enablement' which her hierarchy lists as generally avoid"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Role is dedicated frontline sales enablement/coaching work (Gong reviews, deal clinics, ramp coaching) rather than consultative technical sales or transformation leadership she targets.",
+   "material_gap": "Core work is hands-on sales rep coaching/enablement, a category she generally avoids",
+   "next_action": "Skip; prioritize consultative technical-sales or transformation roles instead.",
+   "exception_reason": "",
+   "score": 25,
    "fit": "no",
-   "reason": "Utah hybrid location fits practical criteria",
-   "bg": "d192ce659668"
-  }
+   "reason": "Utah-based, local location match",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
-  "key": "Recursion::8311323",
-  "company": "Recursion",
-  "title": "Principal AI Researcher",
-  "location": "Remote Opportunity - United States",
-  "url": "https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/8311323",
-  "posted": "2026-10-21",
+  "key": "Entrata::6f2e4213-1e3d-43f0-900d-488873049c01",
+  "company": "Entrata",
+  "title": "Implementation Project Manager II",
+  "location": "United States",
+  "url": "https://jobs.lever.co/entrata/6f2e4213-1e3d-43f0-900d-488873049c01",
+  "posted": "2026-10-13",
+  "salary": "$71,800\u2013$112,700/yr",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Utah-based company",
+    "Professional services adjacency"
+   ],
+   "concerns": [
+    "Scope below her seniority",
+    "Dominant work is D-tier hands-on implementation"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 35,
+   "work_interest": "C",
+   "dominant_work": "Hands-on software implementation project management for client onboarding",
+   "dominant_share": 25,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: professional-services delivery and client onboarding experience",
+    "UNKNOWN: formal PM certification or tooling expectations",
+    "CONFIRMED: cross-functional stakeholder coordination",
+    "GAP: hands-on software implementation project execution at individual-contributor level"
+   ],
+   "cautions": [
+    "Likely an individual-contributor PM role, not a leadership/strategy role",
+    "Narrower scope than her recent senior transformation leadership"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Professional-services delivery background transfers to project coordination, but this is a hands-on IC implementation PM role, well below her recent scope and off her preferred work.",
+   "material_gap": "Role is IC-level software onboarding PM, not strategic/transformation leadership she targets",
+   "next_action": "Deprioritize unless bridge income is needed; focus on senior strategy/transformation roles instead.",
+   "exception_reason": "",
+   "score": 35,
+   "fit": "no",
+   "reason": "Utah-based company",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "Instructure::3ca5eeb5-f498-45a7-bc67-e0ccc347028d",
+  "company": "Instructure",
+  "title": "Director, Customer Success",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/3ca5eeb5-f498-45a7-bc67-e0ccc347028d",
+  "posted": "2026-10-27",
+  "salary": "$160K \u2013 $185K",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Director-level team leadership fits her scope",
+    "Executive relationship-building strength",
+    "Value realization and CX alignment"
+   ],
+   "concerns": [
+    "New industry (K12 education)",
+    "Renewals forecasting unproven",
+    "Large team-management complexity"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "K12/education market familiarity",
+    "SaaS renewal forecasting process"
+   ],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 65,
+   "practical_fit": 60,
+   "opportunity_score": 58,
+   "work_interest": "A",
+   "dominant_work": "Leading large K12 CS org: team management, renewals forecasting, executive district relationships",
+   "dominant_share": 60,
+   "fit_level": "stretch",
+   "industry_relationship": "new",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: leading multi-tier CS/professional-services org with managers and coaching",
+    "TRANSFERABLE: executive relationship-building with enterprise clients/business reviews",
+    "UNKNOWN: K12/education SaaS domain and renewals-forecasting specifics",
+    "CONFIRMED: value realization and customer strategy leadership"
+   ],
+   "cautions": [
+    "No direct K12/education industry experience",
+    "Renewals-forecasting rigor in SaaS CS context is unproven"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "She has led large professional-services/CS-like organizations with managers, executive relationships and value realization, which maps well to this director-level CS leadership role, though K12 education and SaaS renewals mechanics are new territory.",
+   "material_gap": "No prior education/K12 industry experience or SaaS renewals-forecasting background.",
+   "next_action": "Apply, emphasizing org scaling, executive relationship management and value-realization leadership.",
+   "exception_reason": "",
+   "score": 58,
+   "fit": "maybe",
+   "reason": "Director-level team leadership fits her scope",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
+  "key": "Instructure::62d49134-f800-4788-8ff6-f65732372442",
+  "company": "Instructure",
+  "title": "Associate Customer Success Manager - Higher Education",
+  "location": "Mexico (Remote)",
+  "url": "https://jobs.ashbyhq.com/instructure/62d49134-f800-4788-8ff6-f65732372442",
+  "posted": "2026-10-19",
+  "salary": "MX$427K \u2013 MX$532K",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: schema validation failed)",
+   "confidence": "low",
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": ""
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "Instructure::34e1232d-04ab-4be2-9b2e-e1cae196b636",
+  "company": "Instructure",
+  "title": "Director of Customer Success, Scaled",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/34e1232d-04ab-4be2-9b2e-e1cae196b636",
+  "posted": "2026-10-23",
+  "salary": "$160K \u2013 $185K",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Org-building and transformation elements",
+    "Director-level scope",
+    "Remote US"
+   ],
+   "concerns": [
+    "High-volume scaled CS is a deprioritized CS type for her",
+    "No clear EdTech/digital CS motion experience",
+    "Team consolidation across business units is complex change work but not core preference"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Scaled/digital CS playbook design",
+    "Persona-based 1:many engagement models",
+    "EdTech customer base familiarity"
+   ],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 40,
+   "work_interest": "C",
+   "dominant_work": "Build/lead org for scaled, high-volume customer success (1:many motion)",
+   "dominant_share": 70,
+   "fit_level": "stretch",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: leading multidisciplinary org through consolidation/integration",
+    "TRANSFERABLE: coaching managers, performance/career development, succession planning",
+    "GAP: deep scaled/digital CS motion design (1:many playbooks, persona-based engagement at volume)",
+    "UNKNOWN: EdTech/SaaS customer success domain specifics"
+   ],
+   "cautions": [
+    "Core work is high-volume, low-touch scaled CS which she prefers to deprioritize",
+    "No confirmed experience designing 1:many digital CS playbooks"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "Strong organizational-consolidation and leadership-development overlap, but the core job is managing high-volume scaled/digital CS motions, which is explicitly off her preferred CS profile.",
+   "material_gap": "Central work is high-volume scaled/digital CS, not strategic enterprise CS she prefers.",
+   "next_action": "Apply only if drawn to building a new CS org; otherwise deprioritize versus stronger-fit roles.",
+   "exception_reason": "",
+   "score": 40,
+   "fit": "maybe",
+   "reason": "Org-building and transformation elements",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
+  "key": "Instructure::4949cd9a-7d0c-421d-b422-75f3ce5af20a",
+  "company": "Instructure",
+  "title": "Product Manager",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/4949cd9a-7d0c-421d-b422-75f3ce5af20a",
+  "posted": "2026-10-22",
+  "salary": "$105K \u2013 $125K",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (adoption, business case)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [],
+   "concerns": [
+    "Specialized PM role outside her functional strengths",
+    "D-dominant work (product management)",
+    "No clear transformation/adoption angle"
+   ],
+   "unmet_requirements": [
+    "Requires product management ownership of assessment content with psychometric partnership - specialized domain expertise she lacks"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 50,
+   "opportunity_score": 20,
+   "work_interest": "D",
+   "dominant_work": "Own content strategy/roadmap for educational assessment products",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "new",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "GAP: deep K-12 assessment/psychometric content ownership",
+    "UNKNOWN: experience writing user stories/acceptance criteria",
+    "TRANSFERABLE: executive client relationship management with district leaders analog",
+    "GAP: product management title/scope with engineering-heavy roadmap ownership"
+   ],
+   "cautions": [
+    "This is a technical/domain-specific PM role, not a transformation or adoption leadership role"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a specialized content/product management role for educational assessment products requiring psychometric partnership and engineering-depth PM work, not her transformation/operations/CX background.",
+   "material_gap": "No assessment/EdTech product management or psychometric domain experience",
+   "next_action": "Skip; pursue roles centered on transformation, CX, or AI adoption instead.",
+   "exception_reason": "",
+   "score": 20,
+   "fit": "no",
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
+  "key": "Instructure::20a71f96-a15e-4a2c-be1e-143e08baae27",
+  "company": "Instructure",
+  "title": "Senior Learning Consultant",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/20a71f96-a15e-4a2c-be1e-143e08baae27",
+  "posted": "2026-10-22",
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'consultant' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Consultative client relationship work",
+    "Remote"
+   ],
+   "concerns": [
+    "New industry (EdTech)",
+    "Dominant work is hands-on product coaching, not strategic transformation",
+    "Lower-tier interest category (consulting delivery, not leadership)"
+   ],
+   "unmet_requirements": [
+    "Requires pedagogical/instructional expertise and hands-on education-product coaching, not her background"
+   ],
+   "bridge_skills": [
+    "Instructure product knowledge",
+    "Pedagogical/instructional design familiarity"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 50,
+   "opportunity_score": 30,
+   "work_interest": "C",
+   "dominant_work": "Dedicated customer consulting/coaching on LMS product adoption for education clients",
+   "dominant_share": 30,
+   "fit_level": "poor",
+   "industry_relationship": "new",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: client relationship/consulting and change leadership experience",
+    "GAP: pedagogical expertise and LMS/education product depth required",
+    "UNKNOWN: familiarity with Canvas/Mastery Connect specifically",
+    "CONFIRMED: customer success and adoption-focused consulting"
+   ],
+   "cautions": [
+    "EdTech industry is new to her",
+    "Role is largely hands-on customer coaching/training delivery, not strategic transformation leadership"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "She has strong client-facing consulting and change-leadership skills, but this role centers on education-specific pedagogical consulting and hands-on LMS coaching, which is outside her domain and lower on her interest hierarchy.",
+   "material_gap": "Requires pedagogical/education-product expertise she does not have",
+   "next_action": "Deprioritize; focus time on transformation/CX or consultative sales roles instead.",
+   "exception_reason": "",
+   "score": 30,
+   "fit": "no",
+   "reason": "Consultative client relationship work",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "BILL::6220998004",
+  "company": "BILL",
+  "title": "Solutions Consultant",
+  "location": "United States",
+  "url": "https://www.bill.com/job?6220998004&gh_jid=6220998004",
+  "posted": "2026-10-14",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "sales_adjacent": true,
+  "tier": "discovery",
+  "match_reason": "sales-adjacency lane: 'True' in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "Consultative pre-sales fits B-tier interest",
+    "Discovery/solution design experience transfers",
+    "Remote-first posting"
+   ],
+   "concerns": [
+    "Technical API/integration depth requirement",
+    "No fintech domain experience",
+    "Quota-adjacent sales team support role"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "API/integration conceptual fluency",
+    "Fintech payments workflow knowledge",
+    "Live technical demo delivery"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 60,
+   "practical_fit": 65,
+   "opportunity_score": 55,
+   "work_interest": "B",
+   "dominant_work": "Pre-sales technical consulting mapping fintech workflows/API integrations to solutions",
+   "dominant_share": 55,
+   "fit_level": "stretch",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: discovery, solution design, client presentations from professional-services leadership",
+    "UNKNOWN: fintech/payments domain expertise",
+    "GAP: deep technical understanding of API-led integrations required for demos",
+    "TRANSFERABLE: Adobe Technical Sales training in progress supports consultative pre-sales readiness"
+   ],
+   "cautions": [
+    "Role requires fairly deep technical fluency in APIs/integrations for live demos, beyond learnable solution positioning",
+    "No direct fintech/payments background"
+   ],
+   "sales_readiness": "near_qualified_december",
+   "action_status": "package",
+   "why_fits": "Pre-sales solutions consulting role leverages her discovery, solution design and client-facing consultative experience, though it requires deeper technical/API fluency than her background shows.",
+   "material_gap": "Limited demonstrated technical depth with APIs/payments-workflow integrations",
+   "next_action": "Apply disclosing in-progress Adobe Technical Sales training and professional-services solutioning background.",
+   "exception_reason": "",
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Consultative pre-sales fits B-tier interest",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "BILL::6220724004",
+  "company": "BILL",
+  "title": "Sr. Privacy Program Manager",
+  "location": "United States",
+  "url": "https://www.bill.com/job?6220724004&gh_jid=6220724004",
+  "posted": "2026-10-14",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Legal/compliance-owned function",
+    "No evidence of privacy domain expertise"
+   ],
+   "concerns": [
+    "True specialization gap",
+    "Low interest alignment (D-tier work)"
+   ],
+   "unmet_requirements": [
+    "Specialized privacy/legal compliance expertise required for program ownership"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Operate/own privacy compliance program (DSRs, PIAs, vendor reviews) under Legal/Compliance",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: deep privacy/regulatory legal expertise (CIPP-type)",
+    "UNKNOWN: experience with data subject requests/PIAs",
+    "GAP: specialized legal/compliance domain knowledge central to role",
+    "UNKNOWN: direct work with InfoSec/Legal on privacy governance"
+   ],
+   "cautions": [
+    "Reports into Legal/Compliance function, not a transformation or CX leadership track"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a specialized privacy-compliance role owning PIAs, DSRs and vendor privacy reviews under General Counsel \u2014 not her transformation, CX or operations background.",
+   "material_gap": "No privacy/legal compliance specialization or credential evidenced",
+   "next_action": "Skip; not aligned with her strategy/operations/transformation focus.",
+   "exception_reason": "",
+   "score": 15,
+   "fit": "no",
+   "reason": "Legal/compliance-owned function",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": false
+ },
+ {
+  "key": "Recursion::8334716",
+  "company": "Recursion",
+  "title": "Principal AI Researcher",
+  "location": "Remote Opportunity - United States",
+  "url": "https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/8334716",
+  "posted": "2026-10-29",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "mandate in description (digital transformation, lean)",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "high",
-   "reasons": [
-    "Deep technical AI research role, wrong function",
-    "Requires hands-on ML/biology research expertise"
-   ],
+   "reasons": [],
    "concerns": [
-    "Not a transformation or operations leadership role"
+    "Pure technical AI research role",
+    "No transformation/adoption component",
+    "Mismatched domain expertise"
    ],
+   "unmet_requirements": [
+    "PhD-level AI research expertise in computational biology/drug discovery"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 10,
-   "interest_fit": 10,
-   "practical_fit": 70,
-   "opportunity_score": 10,
-   "score": 10,
+   "qualification_fit": 5,
+   "interest_fit": 5,
+   "practical_fit": 20,
+   "opportunity_score": 5,
+   "work_interest": "D",
+   "dominant_work": "AI research/engineering for drug discovery models",
+   "dominant_share": 5,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: deep AI/ML research expertise required",
+    "GAP: no biomedical/drug discovery science background"
+   ],
+   "cautions": [],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is deep technical AI research for drug discovery, requiring scientific/engineering depth she does not have and does not want to build.",
+   "material_gap": "Requires frontier AI research expertise in biomedical science, not adoption/transformation work.",
+   "next_action": "Skip this role; not aligned with her profile.",
+   "exception_reason": "",
+   "score": 5,
    "fit": "no",
-   "reason": "Deep technical AI research role, wrong function",
-   "bg": "d192ce659668"
-  }
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
  },
  {
   "key": "NICE::5015282101",
@@ -277,33 +1049,65 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "mandate in description (adoption, customer experience)",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "medium",
+   "confidence": "high",
    "reasons": [
-    "Deep technical AI product management role, not transformation/ops",
-    "Utah location (Sandy) is practically workable",
-    "Requires hands-on AI-native product dev expertise"
+    "AI in title but is build-side engineering PM work"
    ],
    "concerns": [
-    "Wrong function - technical IC product manager, not strategic leadership",
-    "No org design, transformation, or operations mandate"
+    "Technical platform PM depth required",
+    "Not transformation/CX leadership despite CX mention"
    ],
+   "unmet_requirements": [
+    "deep AI-native product management expertise building technical platform services",
+    "engineering-depth technical PM for internal data/AI service layer"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 35,
-   "practical_fit": 60,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 30,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Technical AI platform product management for internal engineering consumers",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "GAP: deep AI-native product development/engineering-level PM expertise",
+    "UNKNOWN: internal platform PM experience",
+    "GAP: technical product management requiring engineering depth",
+    "CONFIRMED: enterprise stakeholder and client relationship leadership"
+   ],
+   "cautions": [
+    "Role is IC technical product management, not transformation/adoption leadership"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a deeply technical IC product-management role building AI service infrastructure for internal engineering teams, not adoption/transformation leadership she pursues.",
+   "material_gap": "Requires engineering-depth AI-native product management, which is explicitly out of scope for her.",
+   "next_action": "Skip; not aligned with her transformation/adoption focus.",
+   "exception_reason": "",
+   "score": 15,
    "fit": "no",
-   "reason": "Deep technical AI product management role, not transformation/ops",
-   "bg": "d192ce659668"
-  }
+   "reason": "AI in title but is build-side engineering PM work",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "NICE::5000149101",
@@ -315,33 +1119,65 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "mandate in description (adoption, business case)",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "high",
+   "confidence": "medium",
    "reasons": [
-    "Core product management for data/KYC software",
-    "Not a transformation or ops leadership mandate",
-    "Utah location but wrong function"
+    "Enterprise B2B client exposure only, not direct PM experience"
    ],
    "concerns": [
-    "Requires deep domain/technical product expertise",
-    "No strategic org/transformation scope"
+    "Specialized regulatory domain",
+    "Hands-on PM execution not her background"
    ],
+   "unmet_requirements": [
+    "Deep specialized KYC/financial-crime domain expertise",
+    "Hands-on software product management (roadmap/requirements/acceptance criteria ownership)"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 25,
-   "practical_fit": 55,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 40,
    "opportunity_score": 22,
+   "work_interest": "D",
+   "dominant_work": "Enterprise software product management for KYC/financial-crime data products",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: no product management ownership of software roadmap/requirements",
+    "GAP: no KYC/financial-crime/regulatory data-product expertise",
+    "UNKNOWN: technical fluency with data/entity-risk analytics products",
+    "TRANSFERABLE: cross-functional partnership with engineering/sales/marketing from PS leadership"
+   ],
+   "cautions": [
+    "Requires technical fluency with data products and analytics pipelines"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a core enterprise software PM role requiring domain-specific KYC/financial-crime expertise and technical product ownership, not her transformation/CX/adoption strength.",
+   "material_gap": "No product management or financial-crime/KYC domain experience",
+   "next_action": "Skip; pursue roles emphasizing transformation, CX or AI adoption instead.",
+   "exception_reason": "",
    "score": 22,
    "fit": "no",
-   "reason": "Core product management for data/KYC software",
-   "bg": "d192ce659668"
-  }
+   "reason": "Enterprise B2B client exposure only, not direct PM experience",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Brex::8895350002",
@@ -353,34 +1189,65 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "strong_fit",
+   "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Utah-local role, strong practical fit",
-    "Operations leadership with cross-functional scope",
-    "Director-level ownership of systems and funnel",
-    "Adjacent to revenue/marketing operations domain"
+    "Marketing operations systems focus, not transformation leadership",
+    "Narrow technical martech specialization"
    ],
    "concerns": [
-    "Marketing ops skews technical/martech vs her transformation focus",
-    "Less strategic/org-design mandate than target roles"
+    "Not her demonstrated domain of expertise",
+    "Low interest-hierarchy alignment (D-tier adjacent to enablement/ops specialist work)"
    ],
+   "unmet_requirements": [
+    "Deep marketing technology/systems and lead-to-pipeline operations expertise central to role"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 58,
-   "interest_fit": 55,
-   "practical_fit": 85,
-   "opportunity_score": 60,
-   "score": 60,
-   "fit": "yes",
-   "reason": "Utah-local role, strong practical fit",
-   "bg": "d192ce659668"
-  }
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 50,
+   "opportunity_score": 25,
+   "work_interest": "D",
+   "dominant_work": "Marketing/RevOps systems and lead-to-pipeline infrastructure leadership",
+   "dominant_share": 25,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "GAP: deep marketing-ops/martech systems architecture and lead-scoring/funnel engineering expertise",
+    "UNKNOWN: experience with marketing automation platforms at this technical depth",
+    "TRANSFERABLE: business operations and cross-functional leadership experience",
+    "GAP: building technical roadmaps for demand-gen funnel systems"
+   ],
+   "cautions": [
+    "This is a specialist RevOps/MarketingOps build role, not a transformation or CX leadership role"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This role centers on building marketing-ops systems, lead scoring and funnel infrastructure for sales conversion\u2014specialized technical marketing operations work outside her strategy/transformation core.",
+   "material_gap": "No demonstrated marketing-ops systems/technical funnel-building expertise required for this role",
+   "next_action": "Deprioritize; pursue roles emphasizing transformation, CX, or operating-model leadership instead.",
+   "exception_reason": "",
+   "score": 25,
+   "fit": "no",
+   "reason": "Marketing operations systems focus, not transformation leadership",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Brex::8914952002",
@@ -392,33 +1259,66 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'performance' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Utah location matches preference",
-    "Paid media/performance marketing not core domain",
-    "Not transformation or ops mandate"
+    "Title suggests marketing leadership but work is paid-media specialist",
+    "Adjacent SEO/content background, not performance media",
+    "D-tier work interest"
    ],
    "concerns": [
-    "Requires deep paid media/channel expertise",
-    "Function mismatch with candidate's background"
+    "Requires deep paid-media/channel expertise she lacks",
+    "Not aligned with her stated interest hierarchy"
    ],
+   "unmet_requirements": [
+    "Deep hands-on performance/paid media buying expertise and channel-level ownership"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 25,
-   "practical_fit": 70,
-   "opportunity_score": 30,
-   "score": 30,
+   "qualification_fit": 25,
+   "interest_fit": 15,
+   "practical_fit": 50,
+   "opportunity_score": 20,
+   "work_interest": "D",
+   "dominant_work": "Hands-on performance marketing/paid media strategy, budget ownership, team leadership",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: deep paid media/performance marketing buying expertise",
+    "UNKNOWN: budget/channel optimization experience at this scale",
+    "CONFIRMED: SEO/content/digital strategy leadership (adjacent but not performance media)",
+    "GAP: direct ownership of acquisition-channel P&L"
+   ],
+   "cautions": [
+    "Role is specialist growth-marketing leadership, not transformation or ops"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a specialized performance-marketing/paid-media leadership role centered on media buying and channel ROI, which is not her core expertise despite adjacent digital-strategy experience.",
+   "material_gap": "No demonstrated deep performance/paid-media buying or channel P&L ownership",
+   "next_action": "Skip; pursue transformation or CX-focused roles instead.",
+   "exception_reason": "",
+   "score": 20,
    "fit": "no",
-   "reason": "Utah location matches preference",
-   "bg": "d192ce659668"
-  }
+   "reason": "Title suggests marketing leadership but work is paid-media specialist",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Brex::8907553002",
@@ -430,33 +1330,61 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
-   "reasons": [
-    "Fraud strategy/detection is wrong domain",
-    "Not transformation or org strategy work",
-    "Utah location is practical positive only"
-   ],
+   "reasons": [],
    "concerns": [
-    "Requires fraud/risk analytics expertise not shown",
-    "Not aligned with target domains"
+    "D-dominant specialized fraud analytics work",
+    "No evidence of risk/fraud domain expertise"
    ],
+   "unmet_requirements": [
+    "Requires specialized fraud/risk detection and analytics expertise she does not have"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 20,
-   "interest_fit": 20,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
+   "interest_fit": 10,
+   "practical_fit": 30,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Fraud detection strategy, pattern analysis and risk-rule building across payment rails",
+   "dominant_share": 10,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: fraud/risk detection logic and analytics expertise",
+    "UNKNOWN: fintech risk operations background",
+    "GAP: data science/engineering collaboration on detection systems"
+   ],
+   "cautions": [
+    "Highly specialized domain role, not a transformation/operations generalist fit"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a specialist fraud-strategy/analytics role building detection logic across payment rails, which is not her domain or interest.",
+   "material_gap": "No fraud/risk analytics or detection-system expertise",
+   "next_action": "Skip this role and focus on transformation/ops or consultative-sales roles.",
+   "exception_reason": "",
+   "score": 15,
    "fit": "no",
-   "reason": "Fraud strategy/detection is wrong domain",
-   "bg": "d192ce659668"
-  }
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Kelso Industries::5460228008",
@@ -468,32 +1396,129 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "high",
-   "reasons": [
-    "Wrong domain: mechanical/HVAC construction PM",
-    "Requires technical trade expertise, not her background"
-   ],
+   "reasons": [],
    "concerns": [
-    "No strategic/org transformation mandate",
-    "Construction trade PM, not operations leadership"
+    "Wrong industry/function entirely",
+    "D-tier work",
+    "No transferable technical construction expertise"
    ],
+   "unmet_requirements": [
+    "Requires mechanical/construction PM expertise and industry-specific technical knowledge she doesn't have"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 40,
-   "opportunity_score": 12,
-   "score": 12,
+   "qualification_fit": 10,
+   "interest_fit": 5,
+   "practical_fit": 20,
+   "opportunity_score": 8,
+   "work_interest": "D",
+   "dominant_work": "Managing mechanical/HVAC construction project execution, budgets, and field coordination",
+   "dominant_share": 5,
+   "fit_level": "poor",
+   "industry_relationship": "new",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: mechanical/HVAC construction project management experience",
+    "GAP: construction estimating, scheduling, trades coordination"
+   ],
+   "cautions": [
+    "specialist tenure in another function (\"procurement\")"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is hands-on mechanical construction project management requiring construction-industry technical expertise she does not have.",
+   "material_gap": "No mechanical/HVAC construction project management background",
+   "next_action": "Skip this role.",
+   "exception_reason": "",
+   "score": 8,
    "fit": "no",
-   "reason": "Wrong domain: mechanical/HVAC construction PM",
-   "bg": "d192ce659668"
-  }
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": [
+    "specialist tenure in another function"
+   ]
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
+ },
+ {
+  "key": "Western Governors University::JR-025890",
+  "company": "Western Governors University",
+  "title": "Project Manager II, Marketing, Salt Lake City, UT",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Project-Manager-I--Marketing--Salt-Lake-City--UT_JR-025890",
+  "posted": "2026-10-28",
+  "salary": "$75,200.00 - $112,700.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Local Salt Lake City location",
+    "Project management is C-tier interest"
+   ],
+   "concerns": [
+    "No description provided",
+    "Title suggests mid-level execution role, not senior strategy"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 50,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "work_interest": "C",
+   "dominant_work": "Marketing project management, unspecified scope",
+   "dominant_share": 40,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "UNKNOWN: scope and seniority of marketing PM role",
+    "TRANSFERABLE: operations and program leadership experience"
+   ],
+   "cautions": [
+    "No description available to assess actual responsibilities or seniority"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "Title suggests tactical marketing PM work, likely narrower/more execution-focused (C-tier) than her senior transformation/strategy background.",
+   "material_gap": "No job description available to confirm scope, seniority, or fit.",
+   "next_action": "Skip unless a description becomes available showing senior strategic scope.",
+   "exception_reason": "",
+   "score": 30,
+   "fit": "no",
+   "reason": "Local Salt Lake City location",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Western Governors University::JR-026341",
@@ -505,33 +1530,61 @@
   "salary": "$89,400.00 - $134,100.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Utah local role",
-    "PM title but technical focus unclear",
-    "No description to assess mandate"
+    "Utah-based (location fit)",
+    "Program/PMO is C-tier interest only"
    ],
    "concerns": [
-    "Title suggests IT/technical PM, not transformation",
-    "No description available to confirm scope"
+    "No JD to confirm actual duties",
+    "Title suggests technical depth gap"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 35,
-   "practical_fit": 75,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Utah local role",
-   "bg": "d192ce659668"
-  }
+   "qualification_fit": 40,
+   "interest_fit": 30,
+   "practical_fit": 50,
+   "opportunity_score": 25,
+   "work_interest": "C",
+   "dominant_work": "Technical project management (unclear scope, no description)",
+   "dominant_share": 40,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "UNKNOWN: technical PM scope and requirements not described"
+   ],
+   "cautions": [
+    "Title says 'Technical' which often implies engineering-depth PM work outside her scope",
+    "No description available to confirm fit"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "No description provided, and 'Technical' PM roles often require engineering/IT depth beyond her transferable program-management experience.",
+   "material_gap": "No JD text; technical PM roles often require specialized technical depth she lacks.",
+   "next_action": "Skip unless a full description surfaces showing non-engineering-depth program management scope.",
+   "exception_reason": "",
+   "score": 25,
+   "fit": "no",
+   "reason": "Utah-based (location fit)",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Western Governors University::JR-026242",
@@ -543,33 +1596,64 @@
   "salary": "$104,000.00 - $187,200.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'program' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Utah-local location is practical",
-    "Content/social media is outside core expertise",
-    "Program keyword likely mismatched to influencer marketing"
+    "Content/digital strategy background",
+    "Salt Lake City location matches preference"
    ],
    "concerns": [
-    "Marketing/content specialization, not transformation or ops",
-    "No description to confirm scope"
+    "No job description available",
+    "Narrow influencer-program focus likely D/C-tier work",
+    "Low confidence in fit without details"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
+   "qualification_fit": 35,
    "interest_fit": 25,
-   "practical_fit": 80,
-   "opportunity_score": 30,
-   "score": 30,
+   "practical_fit": 40,
+   "opportunity_score": 25,
+   "work_interest": "B",
+   "dominant_work": "Content & social media / influencer program management",
+   "dominant_share": 30,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "UNKNOWN: influencer program management experience",
+    "TRANSFERABLE: content/SEO/digital strategy leadership",
+    "UNKNOWN: social media team management"
+   ],
+   "cautions": [
+    "No description available to confirm scope or seniority alignment",
+    "Influencer/social-media-specific focus is narrower than her strategic/transformation interest"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "She has digital/content strategy background but no description confirms this is strategic enough work; influencer/social content management is a narrow specialization not central to her interests.",
+   "material_gap": "No posting detail to confirm seniority, scope, or strategic nature of the role",
+   "next_action": "Skip unless description reveals broader strategic content/brand leadership scope.",
+   "exception_reason": "",
+   "score": 25,
    "fit": "no",
-   "reason": "Utah-local location is practical",
-   "bg": "d192ce659668"
-  }
+   "reason": "Content/digital strategy background",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Western Governors University::JR-026406",
@@ -581,34 +1665,63 @@
   "salary": "$78,200.00 - $129,000.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
+   "recommendation": "not_recommended",
+   "confidence": "medium",
    "reasons": [
-    "Utah-local operations role",
-    "Manager title with possible ops scope",
-    "Thin posting, little detail available"
+    "Utah location matches preference"
    ],
    "concerns": [
-    "No description to assess mandate",
-    "Proctoring ops may lack strategic scope",
-    "Unclear transformation or change component"
+    "D-tier operational niche",
+    "Below target compensation",
+    "No strategic/transformation component"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 75,
-   "opportunity_score": 35,
-   "score": 35,
-   "fit": "maybe",
-   "reason": "Utah-local operations role",
-   "bg": "d192ce659668"
-  }
+   "qualification_fit": 25,
+   "interest_fit": 10,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Managing internal exam proctoring operations and testing-center logistics",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "UNKNOWN: experience managing testing/proctoring operations",
+    "TRANSFERABLE: operational leadership and process improvement",
+    "GAP: no evidence of assessment integrity/compliance specialization"
+   ],
+   "cautions": [
+    "Narrow operational/compliance niche far from her strategic/transformation focus",
+    "Pay range below her target"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is narrow testing-center operations management, not transformation, CX, or AI enablement work she wants.",
+   "material_gap": "Role centers on proctoring compliance/logistics, not her strategic operating-model or transformation strengths.",
+   "next_action": "Skip; not aligned with target role interests or compensation goals.",
+   "exception_reason": "",
+   "score": 15,
+   "fit": "no",
+   "reason": "Utah location matches preference",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Western Governors University::JR-026418",
@@ -620,33 +1733,69 @@
   "salary": "$87,600.00 - $144,700.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah-local, matches location preference",
-    "Operations title could carry real scope",
-    "Thin posting, unclear mandate"
+    "Salt Lake City location matches preference",
+    "Operations/process leadership matches B-tier interest",
+    "Cross-functional leadership experience transfers"
    ],
    "concerns": [
-    "No description to assess scope",
-    "Credential ops may be narrow/administrative"
+    "Pay range ($87.6K-$144.7K) below her preferred permanent comp",
+    "New industry (higher ed) with no direct exposure",
+    "Dominant work is operational execution, not transformation/strategy"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Higher-ed enrollment lifecycle knowledge",
+    "Credential evaluation process specifics"
+   ],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
+   "qualification_fit": 60,
    "interest_fit": 45,
-   "practical_fit": 85,
-   "opportunity_score": 50,
-   "score": 50,
+   "practical_fit": 55,
+   "opportunity_score": 45,
+   "work_interest": "B",
+   "dominant_work": "Operations leadership for enrollment/credential evaluation processes at university",
+   "dominant_share": 55,
+   "fit_level": "stretch",
+   "industry_relationship": "new",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: operations leadership, workforce management, process improvement from professional-services background",
+    "UNKNOWN: higher-education or enrollment/admissions specific experience",
+    "TRANSFERABLE: cross-functional stakeholder leadership across departments",
+    "UNKNOWN: credential evaluation domain specifics"
+   ],
+   "cautions": [
+    "No higher-ed/enrollment operations background shown",
+    "Pay range below her stated preferred permanent range"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "Role is operations leadership over a multi-team function with cross-functional stakeholder management, which matches her operating-model and process-improvement strengths, though the domain is unfamiliar.",
+   "material_gap": "No demonstrated higher-education enrollment/credentialing operations experience",
+   "next_action": "Apply only if open to lower pay and new industry; otherwise deprioritize.",
+   "exception_reason": "",
+   "score": 45,
    "fit": "maybe",
-   "reason": "Utah-local, matches location preference",
-   "bg": "d192ce659668"
-  }
+   "reason": "Salt Lake City location matches preference",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "in-office",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Western Governors University::JR-025477",
@@ -658,72 +1807,139 @@
   "salary": "$109,900.00 - $170,400.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Utah local location is practical",
-    "Cost controls/real estate construction is outside core expertise",
-    "Title suggests financial/construction PM, not transformation"
+    "UT location fits",
+    "PM title overlaps nominally"
    ],
    "concerns": [
-    "No description to confirm scope",
-    "Likely requires construction cost estimating expertise"
+    "No JD to assess actual work",
+    "Title implies specialized real-estate/construction domain"
    ],
+   "unmet_requirements": [
+    "Likely requires construction/real-estate cost-control/budgeting specialization"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Construction/real-estate cost control and project management",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: no evidence of construction/real-estate cost control or budgeting expertise",
+    "UNKNOWN: project management scope and seniority relevant but domain unclear"
+   ],
+   "cautions": [
+    "No description available to confirm scope"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "Title suggests a specialized real-estate/construction cost-control role outside her functional background, and no description exists to confirm otherwise.",
+   "material_gap": "No evidence of construction/real-estate cost-control expertise, a likely specialized requirement.",
+   "next_action": "Skip unless a description confirms a transferable operations/PM scope rather than construction cost control.",
+   "exception_reason": "",
+   "score": 15,
    "fit": "no",
-   "reason": "Utah local location is practical",
-   "bg": "d192ce659668"
-  }
+   "reason": "UT location fits",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
-  "key": "Western Governors University::JR-026195",
+  "key": "Western Governors University::JR-026251",
   "company": "Western Governors University",
-  "title": "Technical Project Manager III",
+  "title": "SEO Analyst, Salt Lake City, UT",
   "location": "Salt Lake City, UT",
-  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Project-Manager-III_JR-026195",
-  "posted": "2026-10-19",
-  "salary": "$108,200.00 - $162,400.00",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/SEO-Analyst--Salt-Lake-City--UT_JR-026251",
+  "posted": "2026-10-26",
+  "salary": "$68,300.00 - $102,500.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
-  "match_reason": "role family 'project manager' + seniority in title",
+  "match_reason": "role family 'True' in title (retrieved on the family alone)",
   "fit_result": {
    "recommendation": "stretch",
-   "confidence": "low",
+   "confidence": "medium",
    "reasons": [
-    "Utah local, possibly hybrid",
-    "PM scope could carry real ownership",
-    "Thin posting, lacks detail"
+    "SEO/content background transferable",
+    "Local SLC location matches preference"
    ],
    "concerns": [
-    "No description to verify mandate",
-    "Technical PM may be too execution-focused",
-    "Title suggests narrower IT scope"
+    "Pay far below her target range",
+    "IC-level, not leadership",
+    "Not transformation-oriented work"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Technical SEO tools",
+    "Link-building execution"
+   ],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 55,
    "interest_fit": 45,
-   "practical_fit": 80,
-   "opportunity_score": 50,
-   "score": 50,
+   "practical_fit": 60,
+   "opportunity_score": 40,
+   "work_interest": "B",
+   "dominant_work": "Hands-on SEO analyst: keyword research, technical SEO, analytics, content optimization",
+   "dominant_share": 60,
+   "fit_level": "stretch",
+   "industry_relationship": "adjacent",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "TRANSFERABLE: SEO/content strategy leadership from agency roles (180fusion, Axis41)",
+    "UNKNOWN: hands-on technical SEO execution (link-building, on-page optimization) at analyst level",
+    "GAP: this is an individual-contributor analyst role, below her recent seniority",
+    "UNKNOWN: current keyword/competitor analysis tool proficiency"
+   ],
+   "cautions": [
+    "Role is IC-level analyst work, a step down from her recent senior leadership scope",
+    "Pay range ($68K-$102K) is well below her stated preference",
+    "SQL or programming proficiency (\"javascript\")"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "She has genuine SEO/content strategy background from agency leadership, but this role is hands-on analyst execution, not strategic/transformation leadership, and pay is far below her range.",
+   "material_gap": "Seniority mismatch - IC analyst role well below her recent leadership scope and comp needs",
+   "next_action": "Skip unless she wants a local SLC bridge role; otherwise deprioritize.",
+   "exception_reason": "",
+   "score": 40,
    "fit": "maybe",
-   "reason": "Utah local, possibly hybrid",
-   "bg": "d192ce659668"
-  }
+   "reason": "SEO/content background transferable",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": [
+    "SQL or programming proficiency"
+   ]
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Western Governors University::JR-025809",
@@ -735,33 +1951,60 @@
   "salary": "$80,700.00 - $121,000.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "role family 'program' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Utah local location",
-    "Program title but likely instructional design",
-    "No description to confirm scope"
+    "Utah-based, matches location preference"
    ],
    "concerns": [
-    "Likely curriculum/instructional design, not org transformation",
-    "No description available"
+    "No job description available",
+    "Title suggests specialized instructional design, not her core expertise"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 30,
    "interest_fit": 25,
-   "practical_fit": 75,
-   "opportunity_score": 30,
-   "score": 30,
+   "practical_fit": 50,
+   "opportunity_score": 20,
+   "work_interest": "C",
+   "dominant_work": "Unknown \u2014 likely curriculum/instructional program design",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "",
+   "key_qualifications": [
+    "UNKNOWN: instructional/curriculum design experience",
+    "UNKNOWN: higher-ed program design background"
+   ],
+   "cautions": [
+    "No description available to assess actual duties or requirements"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "No description provided; title suggests specialized educational/curriculum design work outside her demonstrated strategy/operations/transformation background.",
+   "material_gap": "No evidence of instructional design or curriculum development experience.",
+   "next_action": "Skip unless a description surfaces showing program-management rather than curriculum-design focus.",
+   "exception_reason": "",
+   "score": 20,
    "fit": "no",
-   "reason": "Utah local location",
-   "bg": "d192ce659668"
-  }
+   "reason": "Utah-based, matches location preference",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
  },
  {
   "key": "Western Governors University::JR-026395",
@@ -773,33 +2016,70 @@
   "salary": "$130,600.00 - $235,100.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "stretch",
    "confidence": "low",
    "reasons": [
-    "Utah location strong practical fit",
-    "Partnerships/strategy could overlap transformation work",
-    "No description to confirm mandate"
+    "Salt Lake City HQ matches location preference",
+    "Strategic partnership work aligns with B-tier interest",
+    "Strong compensation range",
+    "Mission-driven education sector"
    ],
    "concerns": [
-    "Title suggests sales/partnerships focus, not core fit",
-    "No description available to verify scope"
+    "Incomplete JD limits full assessment",
+    "Unclear if quota/revenue targets attached",
+    "New industry vertical"
    ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Higher-ed partnership landscape",
+    "Employer/workforce pathway programs"
+   ],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 35,
-   "practical_fit": 80,
-   "opportunity_score": 42,
-   "score": 42,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 70,
+   "opportunity_score": 55,
+   "work_interest": "B",
+   "dominant_work": "Develop and manage strategic enterprise/corporate partnerships for a university",
+   "dominant_share": 55,
+   "fit_level": "stretch",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: partnership/account development from professional-services client relationships",
+    "UNKNOWN: higher-education or enterprise partnership portfolio management experience",
+    "TRANSFERABLE: executive stakeholder engagement and strategic collaboration",
+    "UNKNOWN: experience structuring co-development or investment partnerships"
+   ],
+   "cautions": [
+    "Description cuts off; unclear scope of 'strategic investment' responsibilities",
+    "Higher-ed/employer-partnership domain is new territory"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "Role centers on cultivating strategic partnerships and cross-sector collaboration, which draws on her client relationship, solutioning and executive-engagement experience, though the higher-ed partnership domain is unfamiliar.",
+   "material_gap": "No confirmed higher-education or employer-partnership portfolio experience.",
+   "next_action": "Apply while highlighting enterprise client-relationship and strategic partnership development experience.",
+   "exception_reason": "",
+   "score": 55,
    "fit": "maybe",
-   "reason": "Utah location strong practical fit",
-   "bg": "d192ce659668"
-  }
+   "reason": "Salt Lake City HQ matches location preference",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Western Governors University::JR-025874",
@@ -811,34 +2091,138 @@
   "salary": "$151,800.00 - $250,500.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
+   "recommendation": "not_recommended",
+   "confidence": "medium",
    "reasons": [
-    "Utah-local role, strong practical fit",
-    "Program management aligns with PMO background",
-    "Technical PM scope unclear, no description",
-    "Could be more technical than her profile"
+    "SLC local location",
+    "Strong pay range",
+    "Senior leadership scope"
    ],
    "concerns": [
-    "No description to assess true mandate",
-    "Title suggests technical depth she may lack"
+    "Technical PM/QA depth required",
+    "D-tier work category",
+    "Not aligned to her transformation/CX focus"
    ],
+   "unmet_requirements": [
+    "Technical program management requiring engineering/QA delivery depth"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 50,
-   "practical_fit": 80,
-   "opportunity_score": 55,
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Utah-local role, strong practical fit",
-   "bg": "d192ce659668"
-  }
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "work_interest": "D",
+   "dominant_work": "Lead technical program managers and QA delivering tech initiatives",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "GAP: deep technical program management / software delivery engineering depth",
+    "TRANSFERABLE: leading cross-functional delivery teams and operating models",
+    "UNKNOWN: experience managing QA engineering functions",
+    "CONFIRMED: senior people leadership and organizational scaling"
+   ],
+   "cautions": [
+    "Role is centered on technical software delivery, not business transformation"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Despite senior leadership scope and SLC location, the role centers on technical program/QA delivery management which is explicitly outside her technical depth and interest.",
+   "material_gap": "Requires deep technical program management and QA engineering leadership, not her background",
+   "next_action": "Skip unless she has undisclosed TPM/engineering delivery depth to leverage.",
+   "exception_reason": "",
+   "score": 25,
+   "fit": "no",
+   "reason": "SLC local location",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "in-office",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
+ },
+ {
+  "key": "iCapital::8917667002",
+  "company": "iCapital",
+  "title": "Business Solutions Consultant II - Associate",
+  "location": "Salt Lake City, Utah, United States",
+  "url": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8917667002",
+  "posted": "2026-10-26",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "sales_adjacent": true,
+  "tier": "discovery",
+  "match_reason": "sales-adjacency lane: 'True' in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Associate-level IC role",
+    "Insurance/fintech domain specific"
+   ],
+   "concerns": [
+    "Low seniority relative to her scope",
+    "Not transformation or sales-adjacent despite title"
+   ],
+   "unmet_requirements": [
+    "Requires specialized business-analyst/requirements-writing expertise for software development lifecycle, not her core competency"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 40,
+   "opportunity_score": 22,
+   "work_interest": "D",
+   "dominant_work": "Business requirements analysis/documentation for software dev lifecycle in insurance/fintech",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: deep BA/requirements-writing role within SDLC, not her work pattern",
+    "UNKNOWN: 3+ years financial services/insurance specific requirement",
+    "TRANSFERABLE: client discovery and requirements scoping from professional services",
+    "GAP: no software requirements-documentation specialization"
+   ],
+   "cautions": [
+    "Role is individual-contributor technical requirements work, not strategy/transformation leadership"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "The role is a hands-on business-analyst position writing software requirements and specs within insurance/fintech product development, which is largely outside her strategic/transformation focus.",
+   "material_gap": "Core work is detailed BA/requirements documentation for SDLC, not strategic leadership or consultative sales.",
+   "next_action": "Skip; prioritize transformation or consultative-sales roles instead.",
+   "exception_reason": "",
+   "score": 22,
+   "fit": "no",
+   "reason": "Associate-level IC role",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "iCapital::8753606002",
@@ -850,32 +2234,65 @@
   "salary": null,
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "discovery",
   "match_reason": "mandate in description (stakeholder alignment, strategic initiatives)",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "high",
    "reasons": [
-    "Quota-carrying sales role, not transformation",
-    "Full ownership of revenue targets mismatched"
+    "Strategic account work overlaps with her consulting background"
    ],
    "concerns": [
-    "Sales/AE role outside core domains",
-    "No operations or transformation mandate"
+    "Core job is hunting/closing revenue, not advisory",
+    "Unfamiliar regulated financial-product vertical"
    ],
+   "unmet_requirements": [
+    "Specialized life insurance/annuity sales experience with quota ownership"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 25,
-   "practical_fit": 70,
-   "opportunity_score": 25,
-   "score": 25,
+   "qualification_fit": 30,
+   "interest_fit": 20,
+   "practical_fit": 40,
+   "opportunity_score": 22,
+   "work_interest": "D",
+   "dominant_work": "Quota-carrying sales of financial products to insurance/annuity clients",
+   "dominant_share": 80,
+   "fit_level": "poor",
+   "industry_relationship": "new",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: no quota-carrying SaaS/financial-products closing history",
+    "UNKNOWN: fintech/annuity/insurance product knowledge",
+    "TRANSFERABLE: executive relationship management and account strategy",
+    "GAP: direct new-business revenue generation targets not demonstrated"
+   ],
+   "cautions": [
+    "Requires deep financial-product domain expertise",
+    "Full-lifecycle closing responsibility is core, not adjacent"
+   ],
+   "sales_readiness": "not_viable",
+   "action_status": "stretch",
+   "why_fits": "This is a quota-carrying new-business sales role in a specialized financial-products domain, central work she doesn't have direct closing experience in.",
+   "material_gap": "No quota-carrying sales/closing history in insurance or annuity financial products",
+   "next_action": "Skip; focus on consultative technical-sales roles aligned with Adobe training instead.",
+   "exception_reason": "",
+   "score": 22,
    "fit": "no",
-   "reason": "Quota-carrying sales role, not transformation",
-   "bg": "d192ce659668"
-  }
+   "reason": "Strategic account work overlaps with her consulting background",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
  },
  {
   "key": "BYU::JR-13401",
@@ -887,33 +2304,59 @@
   "salary": "$23.25 to $30.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "low",
-   "reasons": [
-    "Facilities/building ops, not strategic ops",
-    "Utah location aligns practically",
-    "No transformation or org-strategy mandate evident"
-   ],
+   "reasons": [],
    "concerns": [
-    "Likely facilities/maintenance management, wrong function",
-    "No description to verify scope"
+    "Religious employment requirement",
+    "Mismatched functional domain"
    ],
+   "unmet_requirements": [
+    "Church membership/temple recommend requirement"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 15,
+   "qualification_fit": 20,
    "interest_fit": 10,
-   "practical_fit": 70,
-   "opportunity_score": 15,
-   "score": 15,
+   "practical_fit": 20,
+   "opportunity_score": 10,
+   "work_interest": "D",
+   "dominant_work": "Facilities/building operations management at a university",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "GAP: no facilities/building operations management experience evidenced"
+   ],
+   "cautions": [
+    "Role involves physical facilities management, not her domain"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Facilities/building operations management is unrelated to her strategy, transformation and CX background and includes a religious membership requirement she may not meet.",
+   "material_gap": "Temple recommend/Church membership requirement and no facilities-management background",
+   "next_action": "Skip this posting and focus on strategy/transformation roles.",
+   "exception_reason": "",
+   "score": 10,
    "fit": "no",
-   "reason": "Facilities/building ops, not strategic ops",
-   "bg": "d192ce659668"
-  }
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "BYU::JR-13268",
@@ -925,34 +2368,63 @@
   "salary": "$59,500.00 - $77,000.00",
   "employment_type": "",
   "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
   "tier": "core",
   "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "stretch",
+   "recommendation": "not_recommended",
    "confidence": "low",
    "reasons": [
-    "Utah-local, aligns with practical constraints",
-    "Operations title fits adjacent domain",
-    "No description to confirm scope or seniority",
-    "Could be administrative, not strategic"
+    "Utah location aligns with preference"
    ],
    "concerns": [
-    "No job description available",
-    "Title suggests narrower scope than target roles"
+    "Religious eligibility gate",
+    "Unclear role scope",
+    "Lower seniority/compensation likely"
    ],
+   "unmet_requirements": [
+    "Requires LDS temple recommend and church membership worthiness - a true eligibility gate"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 80,
-   "opportunity_score": 45,
-   "score": 45,
-   "fit": "maybe",
-   "reason": "Utah-local, aligns with practical constraints",
-   "bg": "d192ce659668"
-  }
+   "qualification_fit": 40,
+   "interest_fit": 25,
+   "practical_fit": 20,
+   "opportunity_score": 20,
+   "work_interest": "B",
+   "dominant_work": "Finance and HR administrative operations management",
+   "dominant_share": 30,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "UNKNOWN: finance/HR operations management depth",
+    "CONFIRMED: operations and business leadership experience"
+   ],
+   "cautions": [
+    "Job description lacks detail on actual scope of finance/HR duties"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Finance/HR operations role is tangential to her transformation/strategy focus, and the posting requires LDS temple recommend eligibility, a hard gate unrelated to her qualifications.",
+   "material_gap": "Requires current temple recommend/LDS church membership, a mandatory eligibility requirement.",
+   "next_action": "Skip unless she independently meets the religious membership requirement.",
+   "exception_reason": "",
+   "score": 20,
+   "fit": "no",
+   "reason": "Utah location aligns with preference",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
  },
  {
   "key": "Podium::8141620",

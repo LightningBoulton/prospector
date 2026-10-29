@@ -1,107 +1,90 @@
-# Prospector — 2026-10-28
+# Prospector — 2026-10-29
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**11 new roles today** · 8 still worth applying · 12 closed/removed
+**5 new roles worth your time** · 3 still worth applying · 0 closed/removed
+Best move today: **Senior Director, Product Strategy & Operations (IC)** — Salesforce
+_95 roles judged on their job descriptions · 79 not worth your time · 8 worthwhile held for a later day (daily cap) · 117 awaiting a JD review_
 
-## NEW — WORTH REVIEWING (7)
-- **Marketing Strategy & Operations Business Partner** — Stripe · 82/100 · remote San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US · posted 2026-10-28
-  - Why: Strategic ops partnering with CMO leadership
-  - Concern: Title generic for marketing ops specifically
-  - https://stripe.com/jobs/search?gh_jid=8329719
-- **Senior Customer Experience Strategist** — ŌURA · 80/100 · remote USA (Remote) · posted 2026-10-28
-  - Why: Strong CX strategy and journey mapping mandate
-  - Concern: Reports to Director, below her current level
-  - https://jobicy.com/jobs/157476-senior-customer-experience-strategist
-- **Senior GTM Program Manager** — 1Password · 72/100 · remote Toronto, ON (Remote) · posted 2026-10-27
-  - Why: Cross-functional program leadership mandate
-  - Concern: Remote but Canadian company, visa/tax ambiguity
-  - https://jobs.ashbyhq.com/1password/89f1ecd1-0bcd-4cbf-aaf9-337e0c0568e1
-- **Chief of Staff, Office of the President** — Replit · 68/100 · remote Foster City, CA (Remote) · $200K – $300K · posted 2026-10-27
-  - Why: True Chief of Staff mandate with executive proximity
-  - Concern: Deeply technical engineering/product context may be a stretch
-  - https://jobs.ashbyhq.com/replit/a8aa0921-38e1-4015-bb95-a08b090e218e
-- **Senior Business Value Strategist** — Samsara · 58/100 · remote Remote - US · posted 2026-10-28
-  - Why: Value realization and ROI strategy aligns with transformation focus
-  - Concern: Sales-adjacent value selling, not pure ops/transformation
-  - https://www.samsara.com/company/careers/roles/8315202?gh_jid=8315202
-- **Director AD&C Project Management - Full Service Brands** — Hilton · 42/100 · remote Memphis, TN, United States (Remote) · posted 2026-10-27
-  - Why: Priority employer Hilton
-  - Concern: Construction/design PM is specialized, different skillset
-  - https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/228240
-- **Senior Applied AI Lead, Talent** — Netflix · 40/100 · remote United States (Remote) · $265,000–$450,000 · posted 2026-10-28
-  - Why: AI adoption mandate matches interest area
-  - Concern: Requires hands-on AI prototyping/build skills
-  - https://himalayas.app/companies/netflix/jobs/senior-applied-ai-lead-talent?utm_source=api
+## WORTH YOUR TIME — NEW (5)
+- **Salesforce — Senior Director, Product Strategy & Operations (IC)**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: onsite Bellevue (+2 more) · posted 2026-10-29
+  - Industry: Client Exposure
+  - Compensation: $197,300 - $365,200
+  - Why it fits: This is chief-of-staff/strategy-and-operations work for a product org—translating ambiguity into plans, executive narratives, cross-functional liaison—closely matching her senior transformation and professional-services leadership experience.
+  - Material gap: No direct software product/engineering operating-cadence experience, though transferable skills are strong.
+  - Next action: Apply, framing professional-services operating-cadence and executive-narrative experience as directly transferable.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Product-Strategy---Operations--IC-_JR365526-1
+- **Salesforce — Customer Success Manager, Tableau - Public Sector**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: onsite Bellevue (+6 more) · posted 2026-10-16
+  - Industry: Client Exposure
+  - Compensation: $123,100 - $186,300
+  - Why it fits: Strategic, trusted-advisor CSM role aligned to value realization and executive relationships for high-value accounts, matching her transformation/CX strengths; Salesforce is a priority employer.
+  - Material gap: No confirmed Tableau or public-sector specific experience
+  - Next action: Apply via Salesforce referral/contact, highlighting enterprise value-realization and executive stakeholder work.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Virginia---Mclean/Customer-Success-Manager--Tableau---Public-Sector_JR362634
+- **Atlassian — Enterprise Customer Success Manager, DX**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: remote New York - United States; Remote - Remote · first seen 2026-10-21
+  - Industry: Adjacent
+  - Compensation: not stated in the posting
+  - Why it fits: This is a strategic, consultative enterprise CSM role focused on transformation, adoption and value realization rather than support-heavy work, matching her professional-services and customer-strategy background.
+  - Material gap: Limited direct experience with engineering/developer-experience tooling adoption.
+  - Next action: Apply highlighting enterprise program ownership, adoption and value-realization experience from professional services.
+  - https://careers-americas.icims.com/jobs/27793/enterprise-customer-success-manager%2c-dx/job?mode=apply
+- **Atlassian — Customer Success Manager, DX**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: remote San Francisco - United States; Remote - Remote; Austin - United States; Mountain View - United States or Remote; New York - United States · first seen 2026-10-21
+  - Industry: Adjacent
+  - Compensation: not stated in the posting
+  - Why it fits: Centers on strategic enterprise customer success, adoption, business alignment and renewal—closely matches her value-realization and transformation strengths, though customers are engineering orgs.
+  - Material gap: Limited demonstrated experience with engineering/developer-experience product domains
+  - Next action: Apply, emphasizing transformation and value-realization outcomes in professional services delivery.
+  - https://careers-americas.icims.com/jobs/26305/customer-success-manager%2c-dx/job?mode=apply
+- **Salesforce — Customer Success Manager**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: remote Remote (+1 more) · posted 2026-10-21
+  - Industry: Client Exposure
+  - Compensation: $123,100 - $186,300
+  - Why it fits: This is a strategic, high-touch enterprise CSM role focused on value realization, executive trust and renewal/expansion — closely matching her professional-services and customer-value leadership background, with Adobe/Salesforce as a priority employer.
+  - Material gap: No confirmed SLED (public sector/education) customer experience, which the posting prefers
+  - Next action: Apply, emphasizing enterprise value-realization and executive trusted-advisor experience from professional services.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Colorado---Denver/Customer-Success-Manager_JR350694
 
-## DISCOVERY / WILDCARDS (4)
-- **Forward Deployed (Value Acceleration) Consultant** — Salesforce · 68/100 · remote Remote (+1 more) · $148,500 - $223,900 · posted 2026-10-21
-  - Why: Priority employer Salesforce
-  - Concern: No description to confirm mandate
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-Jersey---New-York-City-Metro---Remote/Forward-Deployed--Value-Acceleration--Consultant_JR364817
-- **Business Strategy Director (Financial Services, Healthcare & Life Sciences)** — Salesforce · 68/100 · remote Remote (+7 more) · $197,300 - $313,700 · posted 2026-10-22
-  - Why: Salesforce is priority employer target
-  - Concern: No description to confirm mandate
+## STILL WORTH APPLYING (3)
+- **Salesforce — Business Strategy Director (Financial Services, Healthcare & Life Sciences)**
+  - Status: PACKAGE · Work Interest: B · Fit: Good
+  - Work model/location: remote Remote (+7 more) · posted 2026-10-22
+  - Industry: Client Exposure
+  - Compensation: $197,300 - $313,700
+  - Why it fits: Role centers on enterprise business strategy, operating-model design and value realization with C-level clients—closely matching her professional-services leadership and transformation background; main uncertainty is depth of FS/HLS vertical expertise.
+  - Material gap: Unclear depth of specific Financial Services or Healthcare & Life Sciences consulting experience required
+  - Next action: Apply via Adobe... no, apply directly leveraging PS transformation and client-exposure to regulated industries.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Remote/Business-Strategy-Director--Financial-Services--Healthcare---Life-Sciences-_JR365063
-- **Transformation Communications Lead** — Salesforce · 68/100 · onsite Bellevue (+1 more) · $172,500 - $260,100 · posted 2026-10-15
-  - Why: Transformation + change communications mandate fits core domains
-  - Concern: No description to confirm seniority or scope
+- **Salesforce — Transformation Communications Lead**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: onsite Bellevue (+1 more) · posted 2026-10-15
+  - Industry: Adjacent
+  - Compensation: $172,500 - $260,100
+  - Why it fits: This is internal change leadership and communications for an AI-native transformation, closely matching her change/AI-adoption and transformation strengths, though she'd need to frame her experience for a design-org-specific context.
+  - Material gap: No explicit background in design/research organizational culture or UX practice communications.
+  - Next action: Apply leveraging Adobe/Salesforce target-employer status and transformation-communications experience.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Transformation-Communications-Lead_JR363268
-- **Engagement Delivery Senior Manager - LSC** — Salesforce · 65/100 · remote Remote (+1 more) · posted 2026-10-16
-  - Why: Salesforce priority employer
-  - Concern: No job description to verify mandate
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Spain---Madrid/Engagement-Delivery-Senior-Manager---LSC_JR364258
+- **Aquent — Senior Product Operations Analyst**
+  - Status: VALIDATE · Work Interest: B · Fit: Good
+  - Work model/location: remote Southlake, TX, US (Remote) · posted 2026-10-19
+  - Industry: Client Exposure
+  - Compensation: not stated in the posting
+  - Why it fits: Process mapping, operating model design and governance work align with her transformation/operations background, though this is an individual-contributor analyst contract.
+  - Material gap: Seniority/scope likely below her executive-level operating experience
+  - Next action: Apply if bridge income is needed; confirm pay rate and contract length.
+  - https://aquent.com/find-work/213831
 
-## STILL WORTH APPLYING (8)
-- **Program Manager, OMX SOTO** — Chime · 90/100 · remote Remote, USA · posted 2026-10-21
-  - Why: Strategic program leadership with GM-level ownership
-  - Concern: Fintech domain is new industry context
-  - https://boards.greenhouse.io/chime/jobs/8895837002?gh_jid=8895837002
-- **Chief of Staff, CRO** — GitLab · 88/100 · remote Remote, United States · posted 2026-08-24
-  - Why: Chief of Staff executive-facing strategic role
-  - Concern: CRO/sales-ops context is adjacent, not core domain
-  - https://job-boards.greenhouse.io/gitlab/jobs/8700245002
-- **Staff Program Manager, CX Operations & Programs** — 1Password · 85/100 · remote Remote (United States | Canada) · posted 2026-10-21
-  - Why: CX operations and program leadership mandate
-  - Concern: Staff title may mean less org-wide scope than Director
-  - https://jobs.ashbyhq.com/1password/86c4d000-e4f2-439f-be85-5018767e5cc1
-- **Director, Travel Services** — TripActions · 85/100 · remote USA (Remote) · posted 2026-10-24
-  - Why: Operational excellence & CX leadership mandate
-  - Concern: Travel industry domain not prior background
-  - https://jobicy.com/jobs/156859-director-travel-services
-- **Chief of Staff, CEO** — Gainsight · 82/100 · remote USA - CA - Remote · posted 2026-10-15
-  - Why: Executive-facing strategic scope, CEO-adjacent
-  - Concern: Heavy emphasis on executive writing/comms, less operations
-  - https://jobs.ashbyhq.com/gainsight/d9052456-370f-4d21-81ff-0dae9f2db965
-- **Senior Manager, Strategic Operations** — 1Password · 82/100 · remote Remote (United States | Canada) · posted 2026-10-21
-  - Why: Cross-functional strategic initiative leadership
-  - Concern: Reports to Director, one layer below her typical scope
-  - https://jobs.ashbyhq.com/1password/59c03a18-a50d-4ef0-adf5-a0e132024784
-- **Customer Enablement Manager** — Asana · 78/100 · remote Anywhere in the World (Remote) · posted 2026-10-21
-  - Why: Change management and adoption strategy core mandate
-  - Concern: West Coast time zone restriction may exclude Utah/Mountain edge cases
-  - https://weworkremotely.com/remote-jobs/asana-customer-enablement-manager
-- **Program Manager, Commercial Solutions** — Stripe · 78/100 · remote US-Remote · posted 2026-10-22
-  - Why: US-remote matches top location preference
-  - Concern: Sales/revenue-ops focus narrower than typical enterprise transformation roles
-  - https://stripe.com/jobs/search?gh_jid=8279867
+_43 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
-## REMOVED SINCE PRIOR RUN (12)
-- Program Manager — Aquent · No longer listed by its source
-- Workday Supply Chain Management Lead — Aquent · No longer listed by its source
-- Content Manager — Aquent · No longer listed by its source
-- Digital Marketing Program Manager — Aquent · No longer listed by its source
-- MarTech Mobile Messaging Delivery Manager — Aquent · No longer listed by its source
-- Senior Product Operations Analyst — Aquent · No longer listed by its source
-- Senior Digital Project Manager- Director Level — Aquent · No longer listed by its source
-- Program Manager (III) | Executive Engagement — Aquent · No longer listed by its source
-- Implementation Manager — Clover Health · No longer listed by its source
-- Staff Technical Program Manager, Consumer — Coinbase · No longer listed by its source
-- HR Business Partner — Cordance · No longer listed by its source
-- Staff Renewals Operations Manager — GitLab · No longer listed by its source
 
 ## SOURCE HEALTH
-- Sources checked: 129/137 successful
+- Sources checked: 128/136 successful
 - Temporary errors: 1
-- Needs attention: 26
-  - Broken config: Amplitude, ClickHouse, Hightouch, LVT, Marqeta, Postman, Temporal
-  - Returning nothing for 10+ runs: Amplitude, Beyond (Overstock), Buffer, Cockroach Labs, Confluent, Domo, Galileo (SoFi), Gemini, Inngest, Instructure, Marqeta, Miro, Nav, Nomi Health, Postman, Together AI, Vivint, Weave, Webflow
+- Needs attention: 7
