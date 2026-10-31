@@ -714,6 +714,77 @@
   "remote_verified": true
  },
  {
+  "key": "Instructure::78bf95ad-09c1-47fc-b494-e3b526a31abb",
+  "company": "Instructure",
+  "title": "Senior Manager, Center of Excellence",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/78bf95ad-09c1-47fc-b494-e3b526a31abb",
+  "posted": "2026-10-30",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'excellence' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Operating-model design transferable skill",
+    "Cross-functional governance experience"
+   ],
+   "concerns": [
+    "Narrow RevOps/deal-desk specialization",
+    "No evidence of CPQ/Revenue Cloud expertise",
+    "D-dominant work (systems/data governance)"
+   ],
+   "unmet_requirements": [
+    "Deep Salesforce CPQ/Revenue Cloud and quote-to-cash systems expertise central to role"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 50,
+   "opportunity_score": 22,
+   "work_interest": "D",
+   "dominant_work": "Build Salesforce quote-to-cash data governance team (CPQ/contracts/renewals ops)",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "GAP: Salesforce CPQ/Revenue Cloud quote-to-cash systems expertise",
+    "UNKNOWN: direct contract/subscription data governance experience",
+    "TRANSFERABLE: operating-model design and cross-functional team building",
+    "GAP: deal desk/revenue operations specialization"
+   ],
+   "cautions": [
+    "Highly specialized RevOps/deal-desk/data-governance focus, not her core strength"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Operating-model design piece is transferable, but the role is dominated by hands-on Salesforce CPQ data hygiene, contract governance and quote-to-cash systems work she hasn't done.",
+   "material_gap": "Deep Salesforce CPQ/Revenue Cloud quote-to-cash operational expertise is central, not peripheral.",
+   "next_action": "Skip; pursue roles centered on transformation or AI adoption instead.",
+   "exception_reason": "",
+   "score": 22,
+   "fit": "no",
+   "reason": "Operating-model design transferable skill",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "BILL::6220998004",
   "company": "BILL",
   "title": "Solutions Consultant",

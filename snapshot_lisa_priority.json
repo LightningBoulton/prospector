@@ -1,5 +1,81 @@
 [
  {
+  "key": "Salesforce::JR352952",
+  "company": "Salesforce",
+  "title": "Human Centered Change Senior Manager- Public Sector",
+  "location": "Virginia - Washington DC Metro - Remote",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Virginia---Washington-DC-Metro---Remote/Human-Centered-Change-Senior-Manager--Public-Sector_JR352952",
+  "posted": "2026-10-31",
+  "salary": "$150,100 - $227,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'change' + seniority in title",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "A-tier change leadership work",
+    "Salesforce is a priority employer",
+    "Strong transferable transformation/PS background"
+   ],
+   "concerns": [
+    "Public Sector specificity unconfirmed",
+    "Pay not stated"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Public sector/government client context",
+    "Salesforce ecosystem familiarity"
+   ],
+   "remote_scope": "preferred_location",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 85,
+   "practical_fit": 60,
+   "opportunity_score": 78,
+   "work_interest": "A",
+   "dominant_work": "Leading human-centered change/transformation consulting for Salesforce public-sector client engagements",
+   "dominant_share": 80,
+   "fit_level": "good",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "CONFIRMED: change management, stakeholder analysis, transformation strategy from professional-services leadership",
+    "CONFIRMED: client advisory, discovery, organizational readiness assessment",
+    "UNKNOWN: direct Public Sector consulting experience",
+    "TRANSFERABLE: professional-services delivery excellence and customer engagement leadership"
+   ],
+   "cautions": [
+    "Public Sector consulting experience preferred but not confirmed in her background",
+    "CRM / MarTech administration (\"salesforce administrator\")"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "This is change-management/transformation consulting work advising enterprise clients, squarely her A-tier interest and built on her professional-services and organizational-change experience, with an Adobe/Salesforce-adjacent target employer.",
+   "material_gap": "No confirmed direct Public Sector consulting background",
+   "next_action": "Apply, emphasizing enterprise transformation, change management and stakeholder advisory experience.",
+   "exception_reason": "",
+   "score": 78,
+   "fit": "yes",
+   "reason": "A-tier change leadership work",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": [
+    "CRM / MarTech administration"
+   ]
+  },
+  "remote_scope": "preferred_location",
+  "remote_verified": false
+ },
+ {
   "key": "Salesforce::JR362631",
   "company": "Salesforce",
   "title": "Customer Success Manager - State East & Local",
@@ -2302,6 +2378,7 @@
    "unmet_requirements": [
     "Requires deep information-security/vulnerability-management technical expertise she does not have",
     "the posting asks for hands-on technical work (terraform, kubernetes)",
+    "the posting asks for hands-on technical work (terraform, kubernetes)",
     "the posting asks for hands-on technical work (terraform, kubernetes)"
    ],
    "bridge_skills": [],
@@ -2413,6 +2490,81 @@
    "detected_requirements": []
   },
   "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "Salesforce::JR340890",
+  "company": "Salesforce",
+  "title": "Customer Success Manager (Informatica)",
+  "location": "Seattle (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Indianapolis/Customer-Success-Manager--Informatica-_JR340890",
+  "posted": "2026-10-31",
+  "salary": "$99,400 - $186,300",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Priority employer Salesforce",
+    "Strategic CSM/value realization fits A-tier interest",
+    "Has referral contact at Salesforce"
+   ],
+   "concerns": [
+    "Thin JD, limited detail on technical requirements",
+    "Possible specialized Informatica technical depth needed"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Informatica platform familiarity",
+    "Technical troubleshooting fluency"
+   ],
+   "remote_scope": "office_associated",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 65,
+   "practical_fit": 60,
+   "opportunity_score": 58,
+   "work_interest": "A",
+   "dominant_work": "Technical CSM driving adoption/value realization for Informatica platform customers",
+   "dominant_share": 55,
+   "fit_level": "stretch",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: enterprise customer relationship and value realization leadership",
+    "UNKNOWN: Informatica/data-integration platform technical depth",
+    "CONFIRMED: executive stakeholder management and account strategy",
+    "UNKNOWN: required technical troubleshooting for a specific data platform"
+   ],
+   "cautions": [
+    "Role likely requires specific technical fluency with Informatica/data platforms",
+    "Thin job description limits certainty about technical depth required"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "Strategic, trusted-advisor CSM work driving value realization aligns with her profile, but technical specificity around Informatica platform is unclear from a thin posting.",
+   "material_gap": "Unclear depth of required technical/platform expertise for Informatica specialization.",
+   "next_action": "Use Salesforce referral contact and ask about technical depth expectations before applying.",
+   "exception_reason": "Salesforce is a named priority employer with referral/contact leverage.",
+   "score": 58,
+   "fit": "maybe",
+   "reason": "Priority employer Salesforce",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "in-office",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
   "remote_verified": false
  },
  {
@@ -2860,9 +3012,7 @@
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
-   "detected_requirements": [
-    "deep SaaS renewals / forecasting"
-   ]
+   "detected_requirements": []
   },
   "remote_scope": "unclear",
   "remote_verified": false
@@ -2936,7 +3086,7 @@
    "reason": "Salesforce priority employer",
    "bg": "55a510aca86d",
    "remote_verified": false,
-   "remote_evidence": "in-office",
+   "remote_evidence": "",
    "detected_requirements": []
   },
   "remote_scope": "office_associated",
@@ -3227,77 +3377,6 @@
    "detected_requirements": []
   },
   "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "Salesforce::JR362056",
-  "company": "Salesforce",
-  "title": "Manager, Social Content & Influence Strategy",
-  "location": "Seattle (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Washington---Seattle/Manager--Social-Content---Influence-Strategy_JR362056",
-  "posted": "2026-10-29",
-  "salary": "$117,400 - $177,600",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Priority employer (Salesforce)"
-   ],
-   "concerns": [
-    "D-tier work interest",
-    "No evidenced influencer/social specialization",
-    "Narrow marketing function"
-   ],
-   "unmet_requirements": [
-    "Requires deep social/influencer marketing specialization not evidenced in her background"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "preferred_location",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 10,
-   "practical_fit": 40,
-   "opportunity_score": 20,
-   "work_interest": "D",
-   "dominant_work": "Influencer marketing, social content strategy and employee advocacy program management",
-   "dominant_share": 10,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "UNKNOWN: influencer relationship management experience",
-    "TRANSFERABLE: content/SEO and digital strategy background",
-    "GAP: deep social-platform culture fluency and creator ecosystem expertise",
-    "UNKNOWN: employee advocacy program ownership"
-   ],
-   "cautions": [
-    "Role is a specialized marketing function, not transformation/strategy leadership"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "Despite a priority employer, this is a specialized social/influencer marketing execution role, not the strategy/transformation/CX work she targets.",
-   "material_gap": "No evidenced influencer marketing or social-content execution specialization",
-   "next_action": "Skip; pursue Salesforce roles aligned to transformation, operations or technical sales instead.",
-   "exception_reason": "",
-   "score": 20,
-   "fit": "no",
-   "reason": "Priority employer (Salesforce)",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "preferred_location",
   "remote_verified": false
  },
  {
@@ -5420,9 +5499,9 @@
  {
   "key": "Atlassian::26958",
   "company": "Atlassian",
-  "title": "Principal Product Manager",
+  "title": "Principal Product Manager, Usage Based Pricing",
   "location": "San Francisco - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/26958/principal-product-manager/job?mode=apply",
+  "url": "https://careers-americas.icims.com/jobs/26958/principal-product-manager%2c-usage-based-pricing/job?mode=apply",
   "posted": "",
   "salary": null,
   "employment_type": "",
@@ -5658,26 +5737,61 @@
   "match_reason": "sales-adjacency lane: 'True' in title",
   "fit_result": {
    "recommendation": "stretch",
-   "fit": "maybe",
-   "score": -1,
-   "opportunity_score": -1,
-   "qualification_fit": -1,
-   "interest_fit": -1,
-   "practical_fit": -1,
-   "reasons": [],
-   "concerns": [],
-   "reason": "(scoring unavailable: schema validation failed)",
-   "confidence": "low",
+   "confidence": "medium",
+   "reasons": [
+    "Executive relationship-building fits strongly",
+    "Value/business-case articulation is transferable",
+    "A-tier adoption/CS-value interest alignment"
+   ],
+   "concerns": [
+    "Principal seniority bar is high",
+    "DX/dev-tools domain is new",
+    "No quota-carrying closing history"
+   ],
    "unmet_requirements": [],
-   "bridge_skills": [],
+   "bridge_skills": [
+    "Value-engineering frameworks/ROI modeling",
+    "DX/developer-tools product knowledge",
+    "Formal business-case software (e.g. value calculators)"
+   ],
    "remote_scope": "unclear",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 80,
+   "practical_fit": 65,
+   "opportunity_score": 66,
+   "work_interest": "A",
+   "dominant_work": "Enterprise value-consulting: building business cases and value narratives with senior customer execs",
+   "dominant_share": 70,
+   "fit_level": "stretch",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "TRANSFERABLE: executive client relationship-building and solution development from professional-services leadership",
+    "TRANSFERABLE: business-case/value articulation from P&L, margin and utilization improvement work",
+    "UNKNOWN: rapid financial/industry data analysis at the depth implied by 'Principal' level",
+    "GAP: no recent quota-carrying or formal value-engineering closing track record"
+   ],
+   "cautions": [
+    "Principal-level title suggests very senior, deeply quantitative value-engineering experience",
+    "DX (developer experience) product domain is unfamiliar territory"
+   ],
+   "sales_readiness": "near_qualified_december",
+   "action_status": "package",
+   "why_fits": "Her consultative, executive-facing solutioning and business-case work in professional services maps to value-advisor work, and her in-progress Adobe technical sales training strengthens the case, but 'Principal' seniority and DX product depth are real stretches.",
+   "material_gap": "Principal-level quantitative value-engineering depth and DX product specialization are unproven",
+   "next_action": "Apply with Adobe training disclosed, emphasizing executive value/business-case work from professional services.",
+   "exception_reason": "",
+   "score": 66,
+   "fit": "maybe",
+   "reason": "Executive relationship-building fits strongly",
    "bg": "55a510aca86d",
    "remote_verified": false,
-   "remote_evidence": ""
+   "remote_evidence": "",
+   "detected_requirements": []
   },
   "remote_scope": "unclear",
   "remote_verified": false
@@ -6624,83 +6738,6 @@
    "detected_requirements": []
   },
   "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "Marriott International::26126790",
-  "company": "Marriott International",
-  "title": "FLEX Director, Revenue Management Amadeus CRS Workshop Facilitation Leader",
-  "location": "Bethesda, MD (Remote)",
-  "url": "https://careers.marriott.com/flex-director-revenue-management-amadeus-crs-workshop-facilitation-leader/job/P1-7379310-0",
-  "posted": "",
-  "salary": "$57.21-$89.42",
-  "employment_type": "Full Time",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, change management, adoption)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Priority employer Marriott",
-    "Travel background is loosely related",
-    "Change/adoption facilitation experience"
-   ],
-   "concerns": [
-    "Deep RM/CRS domain gap",
-    "Temporary role ending 2027",
-    "Heavy travel requirement"
-   ],
-   "unmet_requirements": [
-    "8+ years specialized Revenue Management/Reservations/lodging system deployment experience"
-   ],
-   "bridge_skills": [
-    "Revenue management fundamentals",
-    "Amadeus CRS familiarity"
-   ],
-   "remote_scope": "preferred_location",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 25,
-   "practical_fit": 40,
-   "opportunity_score": 30,
-   "work_interest": "D",
-   "dominant_work": "Lead revenue-management workshop facilitation for Amadeus CRS deployment to hotel properties",
-   "dominant_share": 35,
-   "fit_level": "poor",
-   "industry_relationship": "client_exposure",
-   "industry_importance": "required",
-   "key_qualifications": [
-    "GAP: deep revenue management/reservations systems subject-matter expertise required",
-    "UNKNOWN: experience designing/delivering adult-learner training workshops",
-    "GAP: central reservation system (Amadeus CRS) specific knowledge",
-    "CONFIRMED: change management and adoption-driving experience in transformation contexts"
-   ],
-   "cautions": [
-    "Heavy hospitality revenue-management domain depth required, not just transformation skills",
-    "Temporary FLEX assignment through 2027, travel required"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "She has change-management and training/adoption experience and Marriott is a priority employer, but the role centers on deep hotel revenue-management and CRS subject-matter expertise she lacks.",
-   "material_gap": "No direct revenue management/reservations systems expertise required as core SME qualification",
-   "next_action": "Skip; pursue other Marriott roles better aligned to transformation/change leadership.",
-   "exception_reason": "",
-   "score": 30,
-   "fit": "no",
-   "reason": "Priority employer Marriott",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "preferred_location",
   "remote_verified": false
  },
  {
