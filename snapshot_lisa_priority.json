@@ -229,13 +229,13 @@
   "remote_verified": false
  },
  {
-  "key": "Salesforce::JR332336",
+  "key": "Salesforce::JR366403",
   "company": "Salesforce",
-  "title": "Customer Success Manager - Core (Sales & Service) Clouds",
-  "location": "Seattle (+8 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Indianapolis/Customer-Success-Manager---Core--Sales---Service--Clouds_JR332336-1",
-  "posted": "2026-10-20",
-  "salary": "$123,100 - $186,300",
+  "title": "Customer Success Manager - Core Clouds",
+  "location": "Remote (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Canada---Toronto/Customer-Success-Manager---Core-Clouds_JR366403",
+  "posted": "2026-10-30",
+  "salary": null,
   "employment_type": "",
   "expires": "",
   "priority_employer": true,
@@ -245,51 +245,56 @@
   "tier": "discovery",
   "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
+   "recommendation": "stretch",
+   "confidence": "medium",
    "reasons": [
-    "Priority employer Salesforce",
-    "CSM aligns with value-realization interest when strategic"
+    "Priority target employer",
+    "Strategic enterprise CSM work aligns with A-tier interest",
+    "Executive relationship and value realization experience transfers"
    ],
    "concerns": [
-    "No description available",
-    "CSM titles often mean high-volume support work"
+    "Platform-specific technical depth unknown",
+    "Industry specialization (FINS/HLS) preferred, not confirmed"
    ],
    "unmet_requirements": [],
-   "bridge_skills": [],
+   "bridge_skills": [
+    "Salesforce platform fundamentals",
+    "Financial Services Cloud or HLS Cloud familiarity"
+   ],
    "remote_scope": "office_associated",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 40,
-   "practical_fit": 50,
-   "opportunity_score": 35,
-   "work_interest": "C",
-   "dominant_work": "Customer success management for Salesforce Sales/Service Cloud customers",
-   "dominant_share": 50,
+   "qualification_fit": 55,
+   "interest_fit": 55,
+   "practical_fit": 60,
+   "opportunity_score": 55,
+   "work_interest": "A",
+   "dominant_work": "Dedicated enterprise CSM driving technical/business adoption on Salesforce platform for Signature Success customers",
+   "dominant_share": 55,
    "fit_level": "stretch",
    "industry_relationship": "client_exposure",
-   "industry_importance": "helpful",
+   "industry_importance": "preferred",
    "key_qualifications": [
-    "UNKNOWN: scope of CSM role - strategic vs support-heavy",
-    "TRANSFERABLE: customer value realization and executive relationship experience",
-    "UNKNOWN: whether quota/renewal metrics are central",
-    "CONFIRMED: Salesforce is a priority target employer"
+    "TRANSFERABLE: executive client relationship and value-realization leadership from professional services",
+    "UNKNOWN: direct Salesforce platform product knowledge",
+    "GAP: no confirmed Financial Services Cloud or deep platform-specific technical experience",
+    "CONFIRMED: enterprise customer success, retention, and adoption leadership"
    ],
    "cautions": [
-    "No description available, so true scope (strategic vs high-volume/support-heavy CS) cannot be assessed"
+    "Requires deep Salesforce product/platform fluency which is not confirmed",
+    "Industry-specific (FINS/HLS) alignment preferred, uncertain fit"
    ],
    "sales_readiness": "n_a",
-   "action_status": "validate",
-   "why_fits": "Salesforce is a named priority employer and CSM work aligns with her value-realization interests, but with no JD available this could be a high-volume, support-heavy CSM role she should deprioritize.",
-   "material_gap": "No job description to confirm whether role is strategic/enterprise or support-heavy",
-   "next_action": "Have Prospector retrieve full JD before deciding whether to apply.",
-   "exception_reason": "",
-   "score": 35,
-   "fit": "no",
-   "reason": "Priority employer Salesforce",
+   "action_status": "package",
+   "why_fits": "Role is strategic, enterprise-level customer success with trusted-advisor positioning, aligning with her value-realization and executive relationship strengths, but requires real Salesforce platform depth she hasn't confirmed.",
+   "material_gap": "No confirmed Salesforce platform or Financial Services Cloud product expertise",
+   "next_action": "Apply leveraging Adobe referral network angle; emphasize enterprise CS and transformation experience, note Salesforce is a priority employer.",
+   "exception_reason": "Salesforce is a named priority target employer for her search",
+   "score": 55,
+   "fit": "maybe",
+   "reason": "Priority target employer",
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "in-office",
@@ -4624,6 +4629,81 @@
   },
   "remote_scope": "office_associated",
   "remote_verified": false
+ },
+ {
+  "key": "Atlassian::27341",
+  "company": "Atlassian",
+  "title": "Business Process Partner, Sales Process & Productivity",
+  "location": "Remote - Americas; San Francisco - United States; Austin - United States",
+  "url": "https://careers-americas.icims.com/jobs/27341/business-process-partner%2c-sales-process-%26-productivity/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'business process' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Atlassian priority employer",
+    "Cross-functional GTM partnership"
+   ],
+   "concerns": [
+    "Narrow BSA/systems-admin scope",
+    "Individual contributor sales-ops role, not leadership",
+    "Specific tooling/years requirement unmet"
+   ],
+   "unmet_requirements": [
+    "6+ years Sales Operations experience with systems administration in enterprise software"
+   ],
+   "bridge_skills": [
+    "Sales systems administration",
+    "Lead-to-cash process depth"
+   ],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "work_interest": "C",
+   "dominant_work": "Sales operations/systems business analyst work supporting GTM process scaling",
+   "dominant_share": 30,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "GAP: 6+ years dedicated Sales Operations with systems administration",
+    "UNKNOWN: Direct/Channel sales ecosystem experience",
+    "TRANSFERABLE: cross-functional partnership with sales/strategy teams",
+    "CONFIRMED: requirements documentation and process work from professional services"
+   ],
+   "cautions": [
+    "Narrow RevOps/BSA role requiring specific sales-tools systems administration"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a hands-on sales-systems BSA role (BRDs, system admin, UAT) rather than strategic transformation leadership, and requires dedicated SalesOps tooling depth she hasn't demonstrated.",
+   "material_gap": "Requires dedicated SalesOps systems-administration background, not her core experience",
+   "next_action": "Deprioritize; pursue stronger-fit Atlassian roles aligned to transformation or CX leadership instead.",
+   "exception_reason": "",
+   "score": 30,
+   "fit": "no",
+   "reason": "Atlassian priority employer",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
  },
  {
   "key": "Atlassian::27792",
