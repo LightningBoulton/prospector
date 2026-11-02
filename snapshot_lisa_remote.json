@@ -73,6 +73,77 @@
   "remote_verified": false
  },
  {
+  "key": "GitLab::8923121002",
+  "company": "GitLab",
+  "title": "Incident & Escalation Lead- Enterprise Customers",
+  "location": "Remote, Canada; Remote, United States",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8923121002",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (digital transformation, customer experience)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Executive relationship skills transfer",
+    "GitLab is a reputable tech employer"
+   ],
+   "concerns": [
+    "Technical/engineering incident depth required",
+    "Reactive support-heavy role",
+    "Not aligned with A/B interests"
+   ],
+   "unmet_requirements": [
+    "Requires technical incident command and deep familiarity with software/DevSecOps product issues"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 25,
+   "practical_fit": 40,
+   "opportunity_score": 25,
+   "work_interest": "D",
+   "dominant_work": "Technical incident/escalation coordination for enterprise support issues",
+   "dominant_share": 30,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "TRANSFERABLE: executive client relationship management during critical delivery issues",
+    "GAP: deep technical incident management for DevSecOps/engineering product issues",
+    "UNKNOWN: experience coordinating cross-functional technical crisis response at this scale",
+    "CONFIRMED: customer trust/retention leadership in professional services"
+   ],
+   "cautions": [
+    "Support-heavy, reactive escalation management is explicitly deprioritized in her profile"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "She has executive client relationship and crisis-adjacent experience from professional services, but this role centers on technical incident command for a DevSecOps platform, which is reactive support work outside her target work.",
+   "material_gap": "Deep technical incident/escalation management for engineering products is not her core strength",
+   "next_action": "Deprioritize; focus on roles emphasizing strategic CX/transformation rather than technical escalation ownership.",
+   "exception_reason": "",
+   "score": 25,
+   "fit": "no",
+   "reason": "Executive relationship skills transfer",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
   "key": "GitLab::8896290002",
   "company": "GitLab",
   "title": "Manager, Customer Success",
@@ -999,6 +1070,72 @@
   "remote_verified": false
  },
  {
+  "key": "Coinbase::8346266",
+  "company": "Coinbase",
+  "title": "Senior Risk Analyst, Payments Risk Operations",
+  "location": "Remote - USA",
+  "url": "https://www.coinbase.com/careers/positions/8346266?gh_jid=8346266",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'operations' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [],
+   "concerns": [
+    "Specialist domain expertise required",
+    "D-dominant work, narrow investigative analyst role"
+   ],
+   "unmet_requirements": [
+    "deep expertise in fraud/risk investigation workflows and controls required for the role"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 10,
+   "practical_fit": 30,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Fraud/payments risk case investigation and escalation decisioning",
+   "dominant_share": 10,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: deep fraud/risk investigation and payments-risk expertise",
+    "UNKNOWN: experience with rule/model tuning for fraud controls",
+    "GAP: specialized risk operations analyst background"
+   ],
+   "cautions": [
+    "Highly specialized risk-analyst role, not a leadership/transformation role"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a specialist fraud/risk case investigation role requiring deep payments-risk expertise, not the transformation, operations-leadership or CX work she targets.",
+   "material_gap": "No demonstrated fraud/payments risk investigation or analyst background",
+   "next_action": "Skip; not aligned with her strategic/operations leadership focus.",
+   "exception_reason": "",
+   "score": 15,
+   "fit": "no",
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Coinbase::8230848",
   "company": "Coinbase",
   "title": "Senior Strategic Program Lead, GFCO",
@@ -1143,6 +1280,76 @@
   "remote_verified": true
  },
  {
+  "key": "Twilio::8337880",
+  "company": "Twilio",
+  "title": "Marketing Operations Manager",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8337880",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Remote US",
+    "Twilio is tech-forward"
+   ],
+   "concerns": [
+    "D-dominant technical operations work",
+    "Little strategic leadership visible"
+   ],
+   "unmet_requirements": [
+    "Hands-on marketing automation system build/integration expertise central to role"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 15,
+   "practical_fit": 50,
+   "opportunity_score": 22,
+   "work_interest": "D",
+   "dominant_work": "Marketing automation/systems administration and workflow engineering",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "GAP: deep marketing automation/system integration engineering expertise required",
+    "UNKNOWN: Marketo/Eloqua or similar platform admin depth",
+    "CONFIRMED: marketing/digital strategy leadership experience",
+    "GAP: live-chat routing and workflow-engineering specialization"
+   ],
+   "cautions": [
+    "Role is heavily technical ops execution, not strategic leadership"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a hands-on marketing operations/systems-engineering role (chat routing, workflow automation, integrations) rather than the strategy, transformation or CX leadership work she targets.",
+   "material_gap": "Requires deep marketing-automation/systems-integration execution skill, not her core strength",
+   "next_action": "Skip; pursue transformation/CX/AI-adoption roles instead.",
+   "exception_reason": "",
+   "score": 22,
+   "fit": "no",
+   "reason": "Remote US",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Twilio::8287927",
   "company": "Twilio",
   "title": "Partner Program Manager",
@@ -1217,6 +1424,77 @@
   "remote_verified": false
  },
  {
+  "key": "Twilio::8348199",
+  "company": "Twilio",
+  "title": "Principal Manager, Procurement Enablement & Contingent Workforce",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/twilio/jobs/8348199",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'enablement' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Operational process leadership background",
+    "Enterprise systems exposure via consulting"
+   ],
+   "concerns": [
+    "Deep procurement specialization required",
+    "Not aligned with her role-interest hierarchy",
+    "D-tier functional work"
+   ],
+   "unmet_requirements": [
+    "Deep procurement systems expertise (Oracle P2P, Ironclad CLM, Pursuit RFP) required"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 50,
+   "opportunity_score": 25,
+   "work_interest": "D",
+   "dominant_work": "Procurement systems/process management and contingent workforce program governance",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: no procurement/CLM/P2P systems expertise evident",
+    "UNKNOWN: contingent workforce program management experience",
+    "TRANSFERABLE: process governance and operational improvement leadership",
+    "GAP: no evidence of deep procurement-domain specialization"
+   ],
+   "cautions": [
+    "Highly specialized procurement/contingent-workforce domain, not her background"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a specialized procurement operations and systems leadership role; she has adjacent process/operating-model skills but lacks the core procurement domain expertise required.",
+   "material_gap": "No procurement/contingent-workforce domain or systems (P2P, CLM) expertise",
+   "next_action": "Skip this role and focus on transformation or AI-enablement roles instead.",
+   "exception_reason": "",
+   "score": 25,
+   "fit": "no",
+   "reason": "Operational process leadership background",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
   "key": "Twilio::8257820",
   "company": "Twilio",
   "title": "Senior Executive Business Partner, Strategy & Operations",
@@ -1282,81 +1560,6 @@
   },
   "remote_scope": "unclear",
   "remote_verified": false
- },
- {
-  "key": "Twilio::8241356",
-  "company": "Twilio",
-  "title": "Senior Presales Engineer",
-  "location": "Remote - US",
-  "url": "https://job-boards.greenhouse.io/twilio/jobs/8241356",
-  "posted": "2026-10-13",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "sales-adjacency lane: 'True' in title",
-  "sales_adjacent": true,
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Sales-adjacent experience",
-    "Remote-first company"
-   ],
-   "concerns": [
-    "True technical engineering depth required",
-    "Not aligned with role interest hierarchy (D-tier technical sales engineering)"
-   ],
-   "unmet_requirements": [
-    "Deep technical engineering depth for building/demoing API-based POCs"
-   ],
-   "bridge_skills": [
-    "API/technical product fluency",
-    "Demo-building capability"
-   ],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 30,
-   "practical_fit": 40,
-   "opportunity_score": 25,
-   "work_interest": "D",
-   "dominant_work": "Technical pre-sales engineering: demos, POCs, RFPs for communications APIs",
-   "dominant_share": 40,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "preferred",
-   "key_qualifications": [
-    "TRANSFERABLE: discovery, scoping, RFP, client presentations",
-    "GAP: deep technical API/engineering depth required for 'Senior Solutions/Presales Engineer'",
-    "UNKNOWN: hands-on coding/integration ability with communications APIs",
-    "TRANSFERABLE: partnering with AEs in pre-sales cycle"
-   ],
-   "cautions": [
-    "Title says 'Senior Presales Engineer' but body references 'Senior Solutions Engineer' - genuinely technical role",
-    "Regulated Verticals Communications requires specific technical product depth"
-   ],
-   "sales_readiness": "stretch",
-   "action_status": "stretch",
-   "why_fits": "She has real pre-sales-adjacent experience (discovery, RFPs, scoping) but this role requires hands-on technical engineering depth to build demos and POCs on Twilio's API platform, which is outside her technical boundary.",
-   "material_gap": "Requires personal technical engineering depth for API demos/POCs, not just solution positioning",
-   "next_action": "Skip unless a referral exists; pursue less technically deep solutions-consulting roles instead.",
-   "exception_reason": "",
-   "score": 25,
-   "fit": "no",
-   "reason": "Sales-adjacent experience",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
  },
  {
   "key": "Twilio::8325734",
@@ -2282,6 +2485,80 @@
    "score": 45,
    "fit": "maybe",
    "reason": "Operating-model and vendor transition work overlaps her PS leadership experience",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
+  "key": "Doximity::7950903",
+  "company": "Doximity",
+  "title": "Client Success Manager, Enterprise",
+  "location": "San Francisco, CA or Remote (U.S.)",
+  "url": "https://job-boards.greenhouse.io/doximity/jobs/7950903",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "mandate in description (adoption, roi); demoted to wildcards by the precision rule 'client success manager'",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Client-facing relationship skills transfer",
+    "Remote US role"
+   ],
+   "concerns": [
+    "High-volume, support-heavy scope",
+    "Healthcare industry preference not met",
+    "Limited strategic/transformation content"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Healthcare client-facing exposure",
+    "Scaled account management at volume"
+   ],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 45,
+   "interest_fit": 30,
+   "practical_fit": 50,
+   "opportunity_score": 32,
+   "work_interest": "C",
+   "dominant_work": "High-volume client onboarding/implementation and scaled account management for health system IT",
+   "dominant_share": 35,
+   "fit_level": "poor",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "TRANSFERABLE: client onboarding, kickoff, implementation coordination from professional-services delivery",
+    "GAP: 4+ years healthcare-industry client-facing experience specifically required/preferred",
+    "UNKNOWN: scaled/high-volume account management at this transactional level",
+    "CONFIRMED: training, documentation, stakeholder relationship-building"
+   ],
+   "cautions": [
+    "Role is support/implementation-heavy and high-volume, not strategic transformation",
+    "Healthcare-industry client-facing experience preferred and she lacks direct recent healthcare work"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Role is largely scaled onboarding/implementation and support coordination for a high-volume client base, which is lower-interest, support-heavy CS work she tends to deprioritize.",
+   "material_gap": "Primarily high-volume onboarding/support work, not strategic/enterprise value-realization CS she prefers",
+   "next_action": "Deprioritize; pursue more strategic enterprise CS or transformation roles instead.",
+   "exception_reason": "",
+   "score": 32,
+   "fit": "no",
+   "reason": "Client-facing relationship skills transfer",
    "bg": "55a510aca86d",
    "remote_verified": true,
    "remote_evidence": "",
@@ -5452,7 +5729,7 @@
   "title": "Senior GTM Program Manager",
   "location": "Toronto, ON (Remote)",
   "url": "https://jobs.ashbyhq.com/1password/89f1ecd1-0bcd-4cbf-aaf9-337e0c0568e1",
-  "posted": "2026-10-27",
+  "posted": "2026-11-02",
   "salary": null,
   "employment_type": "",
   "expires": "",
@@ -5520,6 +5797,79 @@
   },
   "remote_scope": "unclear",
   "remote_verified": false
+ },
+ {
+  "key": "1Password::3b1dd358-261b-440e-9277-6dc786a5a9d0",
+  "company": "1Password",
+  "title": "Senior Implementation Consultant",
+  "location": "Remote (United States | Canada)",
+  "url": "https://jobs.ashbyhq.com/1password/3b1dd358-261b-440e-9277-6dc786a5a9d0",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'implementation' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Customer-facing professional-services experience is relevant",
+    "Enterprise customer enablement overlaps her background"
+   ],
+   "concerns": [
+    "Dominant work is technical implementation, D-tier interest",
+    "Limited evidence of security-product configuration skill"
+   ],
+   "unmet_requirements": [
+    "Hands-on technical configuration and deployment expertise for a security/IT product"
+   ],
+   "bridge_skills": [
+    "IT/security product configuration",
+    "Technical deployment tooling"
+   ],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 25,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "work_interest": "D",
+   "dominant_work": "Hands-on technical deployment/configuration and implementation consulting for security software",
+   "dominant_share": 25,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: client discovery, scoping, executive presentations from professional-services background",
+    "GAP: hands-on technical configuration/deployment of security software product",
+    "UNKNOWN: depth of IT/security product configuration experience",
+    "CONFIRMED: project management and cross-functional delivery leadership"
+   ],
+   "cautions": [
+    "Role centers on technical implementation, not strategic transformation or sales"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a hands-on technical implementation/configuration role for a security product, not a strategic transformation, CX, or consultative-sales role she targets.",
+   "material_gap": "Requires hands-on technical configuration/deployment expertise rather than her strategic/operations background",
+   "next_action": "Skip unless she has specific interest in hands-on security-product implementation work",
+   "exception_reason": "",
+   "score": 30,
+   "fit": "no",
+   "reason": "Customer-facing professional-services experience is relevant",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
  },
  {
   "key": "Docker::51ef5fd5-27a3-46a3-9b46-e9cece51831c",
@@ -5656,6 +6006,80 @@
   },
   "remote_scope": "nationwide_us",
   "remote_verified": true
+ },
+ {
+  "key": "LaunchDarkly::8166241003",
+  "company": "LaunchDarkly",
+  "title": "Chief of Staff",
+  "location": "Remote - US",
+  "url": "https://job-boards.greenhouse.io/launchdarkly/jobs/8166241003",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "A-tier work interest",
+    "Remote US",
+    "Strong operating-model and executive leadership background",
+    "High autonomy strategic role"
+   ],
+   "concerns": [
+    "No exact CoS title history",
+    "Board-level communications exposure unconfirmed"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Board deck preparation",
+    "OKR ownership at company level"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 90,
+   "practical_fit": 75,
+   "opportunity_score": 82,
+   "work_interest": "A",
+   "dominant_work": "CEO/ELT strategic operations, planning cadence, executive communications",
+   "dominant_share": 90,
+   "fit_level": "good",
+   "industry_relationship": "adjacent",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "TRANSFERABLE: senior operating-model and executive stakeholder leadership across professional services",
+    "CONFIRMED: led cross-functional global teams and operating cadence/P&L performance",
+    "UNKNOWN: direct experience preparing board-level materials for a CEO",
+    "TRANSFERABLE: strategic planning, OKRs, initiative alignment from transformation leadership"
+   ],
+   "cautions": [
+    "No confirmed prior Chief of Staff title at CEO/board level",
+    "SaaS/tech scale-up pace may differ from agency environment"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "This is senior strategic-operator work translating strategy into execution and shaping executive planning and communications, matching her operating-model, transformation and executive-stakeholder experience even without the exact CoS title.",
+   "material_gap": "No confirmed direct board-materials/CEO chief-of-staff experience",
+   "next_action": "Apply, framing operating-model leadership and executive stakeholder work as direct CoS-equivalent experience.",
+   "exception_reason": "",
+   "score": 82,
+   "fit": "yes",
+   "reason": "A-tier work interest",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
  },
  {
   "key": "LaunchDarkly::8109676003",
@@ -6800,6 +7224,71 @@
   "remote_verified": true
  },
  {
+  "key": "Chainguard::4726048006",
+  "company": "Chainguard",
+  "title": "Senior Growth Operations Manager",
+  "location": "United States - Remote",
+  "url": "https://job-boards.greenhouse.io/chainguard/jobs/4726048006",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [],
+   "concerns": [
+    "Deeply technical, engineering-adjacent scope",
+    "D-dominant work"
+   ],
+   "unmet_requirements": [
+    "Deep technical martech/data architecture and hands-on build work with coding agents"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 30,
+   "opportunity_score": 12,
+   "work_interest": "D",
+   "dominant_work": "Martech/GTM systems architecture and hands-on marketing ops engineering",
+   "dominant_share": 10,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "GAP: hands-on CRM/martech stack architecture (HubSpot, Salesforce, Clay, Hightouch, BigQuery)",
+    "GAP: building automations/agents with coding tools",
+    "UNKNOWN: RevOps data modeling depth",
+    "CONFIRMED: cross-functional stakeholder alignment"
+   ],
+   "cautions": [],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a hands-on technical RevOps/martech engineering role requiring her to personally build systems and automations, not a strategy or adoption-leadership function she targets.",
+   "material_gap": "Requires hands-on technical stack-building and coding-agent fluency, not her skill set.",
+   "next_action": "Skip; not aligned with her strategic/transformation focus.",
+   "exception_reason": "",
+   "score": 12,
+   "fit": "no",
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
   "key": "Chainguard::4723167006",
   "company": "Chainguard",
   "title": "Staff Security Analyst (Governance and Trust)",
@@ -7157,6 +7646,72 @@
   "remote_verified": true
  },
  {
+  "key": "Gemini::8328881",
+  "company": "Gemini",
+  "title": "Senior Associate, Fraud Operations",
+  "location": "New York, New York; Miami, Florida; Remote (USA)",
+  "url": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=8328881&gh_jid=8328881",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'operations' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [],
+   "concerns": [
+    "Dominant work is specialist fraud casework, not leadership/transformation",
+    "No demonstrated fraud/financial-crime expertise"
+   ],
+   "unmet_requirements": [
+    "Specialized fraud investigation expertise across payments/crypto transactions"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 10,
+   "practical_fit": 40,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Hands-on fraud investigation/case review across crypto transactions",
+   "dominant_share": 10,
+   "fit_level": "poor",
+   "industry_relationship": "new",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: no fraud investigation or transaction-analysis experience",
+    "UNKNOWN: familiarity with crypto/blockchain data",
+    "GAP: no fraud-rules/model shaping experience"
+   ],
+   "cautions": [
+    "Crypto/Web3 industry unfamiliarity"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Role is hands-on fraud case investigation and rule-tuning, a specialist operational function outside her transformation/leadership background.",
+   "material_gap": "No fraud investigation or financial-crime analytics experience",
+   "next_action": "Skip this role and focus on transformation/CS leadership openings.",
+   "exception_reason": "",
+   "score": 15,
+   "fit": "no",
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Baseten::e3677df5-97b8-4a90-8ed8-135742c675f6",
   "company": "Baseten",
   "title": "Partner Enablement Lead",
@@ -7220,6 +7775,77 @@
    "detected_requirements": []
   },
   "remote_scope": "office_associated",
+  "remote_verified": false
+ },
+ {
+  "key": "Baseten::bbf9fd7c-8666-4487-9a12-1539e08fe4e0",
+  "company": "Baseten",
+  "title": "Deal Strategy",
+  "location": "San Francisco (Remote)",
+  "url": "https://jobs.ashbyhq.com/baseten/bbf9fd7c-8666-4487-9a12-1539e08fe4e0",
+  "posted": "2026-11-02",
+  "salary": "$240K \u2013 $310K",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "AI company could appeal",
+    "but core work is specialized deal-desk finance"
+   ],
+   "concerns": [
+    "Dominant work is D-tier (pricing/deal structuring, not sales or transformation)",
+    "No clear path using her core strengths",
+    "Narrow specialist quantitative role"
+   ],
+   "unmet_requirements": [
+    "Highly specialized deal-desk/pricing financial analysis expertise central to role"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "preferred_location",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 25,
+   "interest_fit": 20,
+   "practical_fit": 40,
+   "opportunity_score": 22,
+   "work_interest": "D",
+   "dominant_work": "Deal desk/commercial deal structuring, pricing and margin analysis for enterprise sales",
+   "dominant_share": 15,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "TRANSFERABLE: professional-services scoping, estimation and commercial judgment",
+    "GAP: deal-desk pricing/margin financial analysis depth not evidenced",
+    "UNKNOWN: contract/legal terms negotiation experience at this specialized level",
+    "GAP: no evidence of deal-desk or pricing-strategy function ownership"
+   ],
+   "cautions": [
+    "Narrow quantitative deal-structuring focus, not transformation or CX work"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a narrow deal-desk/commercial-finance function building pricing and margin analysis infrastructure, not the transformation or consultative-sales adoption work she seeks.",
+   "material_gap": "Lacks demonstrated deal-desk/pricing financial-analysis specialization central to the role",
+   "next_action": "Skip; focus effort on consultative technical-sales or transformation roles instead.",
+   "exception_reason": "",
+   "score": 22,
+   "fit": "no",
+   "reason": "AI company could appeal",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "preferred_location",
   "remote_verified": false
  },
  {
@@ -9009,6 +9635,80 @@
   "remote_verified": false
  },
  {
+  "key": "Thumbtack::cd323d01-b472-4b35-9cca-806ba1c50a1d",
+  "company": "Thumbtack",
+  "title": "Manager, Launch and Growth Operations",
+  "location": "Remote, United States",
+  "url": "https://jobs.ashbyhq.com/thumbtack/cd323d01-b472-4b35-9cca-806ba1c50a1d",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "low",
+   "reasons": [
+    "Operating-model and scaling expertise",
+    "Cross-functional team leadership",
+    "Remote US role"
+   ],
+   "concerns": [
+    "Truncated JD limits confidence",
+    "New industry/domain (home services marketplace)",
+    "Title is 'Manager' which may undersell her seniority"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Partner/marketplace operations basics",
+    "Thumbtack business model familiarity"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 65,
+   "interest_fit": 55,
+   "practical_fit": 60,
+   "opportunity_score": 50,
+   "work_interest": "B",
+   "dominant_work": "Operationalizing/scaling partner programs and cross-functional process infrastructure",
+   "dominant_share": 55,
+   "fit_level": "stretch",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: scaling operations and process infrastructure from professional-services leadership",
+    "TRANSFERABLE: managing distributed cross-functional teams across geographies",
+    "UNKNOWN: experience with partnerships/marketplace commercial operations specifically",
+    "CONFIRMED: operating-model and cross-functional program leadership"
+   ],
+   "cautions": [
+    "Description cut off; unclear how technical/analytical the operational systems work is",
+    "Marketplace partnerships domain is new to her"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "She has strong operating-model, scaling and cross-functional program leadership experience that maps to building out partner operations infrastructure, though the partnerships/marketplace domain is unfamiliar.",
+   "material_gap": "No direct partnerships or marketplace operations experience",
+   "next_action": "Apply while emphasizing operations-scaling and cross-functional program leadership achievements.",
+   "exception_reason": "",
+   "score": 50,
+   "fit": "maybe",
+   "reason": "Operating-model and scaling expertise",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Oscar Health::8334717",
   "company": "Oscar Health",
   "title": "Provider Data Operations Lead",
@@ -9296,7 +9996,7 @@
  {
   "key": "Gainsight::d69cc74d-faaa-44ee-bb04-11da7f46d224",
   "company": "Gainsight",
-  "title": "Sr Director, Customer Operations",
+  "title": "Sr Director, Atlas Customer Operations",
   "location": "USA - TN - Remote",
   "url": "https://jobs.ashbyhq.com/gainsight/d69cc74d-faaa-44ee-bb04-11da7f46d224",
   "posted": "2026-10-29",
@@ -9443,99 +10143,104 @@
   "remote_verified": false
  },
  {
-  "key": "1VALET::https://himalayas.app/companies/1valet/jobs/customer-success-specialist",
-  "company": "1VALET",
-  "title": "Customer Success Specialist",
+  "key": "Revolution Medicines::https://himalayas.app/companies/revolution-medicines/jobs/senior-director-global-people-operations",
+  "company": "Revolution Medicines",
+  "title": "Senior Director, Global People Operations",
   "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/1valet/jobs/customer-success-specialist?utm_source=api",
-  "posted": "2026-11-01",
-  "salary": "$60,000\u2013$60,000",
+  "url": "https://himalayas.app/companies/revolution-medicines/jobs/senior-director-global-people-operations?utm_source=api",
+  "posted": "2026-11-02",
+  "salary": "$232,000\u2013$290,000",
   "employment_type": "Full Time",
-  "expires": "2027-01-22",
+  "expires": "2027-01-01",
   "technical_risk": false,
   "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + mandate in description (adoption, customer experience)",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
+   "recommendation": "stretch",
+   "confidence": "low",
    "reasons": [
-    "Customer-facing training role",
-    "Remote"
+    "Operating-model and scaling expertise",
+    "AI-enabled transformation angle",
+    "Senior remote role"
    ],
    "concerns": [
-    "Seniority mismatch",
-    "Narrow onboarding scope",
-    "Unfamiliar niche industry"
+    "Core function is HR-ops specialist work, not her demonstrated domain",
+    "New industry (biopharma)",
+    "Title suggests dedicated HR leadership track record expected"
    ],
    "unmet_requirements": [],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
+   "bridge_skills": [
+    "HRIS/people-systems exposure",
+    "Employee lifecycle operations design",
+    "HR compliance frameworks"
+   ],
+   "remote_scope": "nationwide_us",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 20,
-   "practical_fit": 30,
-   "opportunity_score": 22,
-   "work_interest": "D",
-   "dominant_work": "Hands-on onboarding/training specialist for smart-building software customers",
-   "dominant_share": 25,
-   "fit_level": "poor",
+   "qualification_fit": 45,
+   "interest_fit": 45,
+   "practical_fit": 55,
+   "opportunity_score": 42,
+   "work_interest": "B",
+   "dominant_work": "Build/lead global HR operations function with AI-enabled service delivery model",
+   "dominant_share": 45,
+   "fit_level": "stretch",
    "industry_relationship": "new",
    "industry_importance": "helpful",
    "key_qualifications": [
-    "TRANSFERABLE: customer onboarding/training experience from CX leadership",
-    "GAP: role is individual-contributor, transactional, high-touch onboarding execution, not strategic CS leadership",
-    "UNKNOWN: compensation level",
-    "CONFIRMED: client relationship and training/communication skills"
+    "TRANSFERABLE: organizational design, operating-model and scaling experience from professional-services leadership",
+    "GAP: no confirmed HRIS/HR shared-services/employee lifecycle operations ownership",
+    "UNKNOWN: compliance and global HR controls expertise",
+    "TRANSFERABLE: AI adoption/enablement interest aligns with embedding AI into service delivery"
    ],
    "cautions": [
-    "Early-career/IC level support-heavy role, not senior scope",
-    "Narrow product-onboarding focus with limited strategic or transformation component"
+    "Likely requires deep HR operations/HRIS domain expertise she hasn't demonstrated",
+    "Biopharma industry is new to her"
    ],
    "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a support-heavy, transactional onboarding/training IC role far below her demonstrated senior strategic scope and not aligned with her CS interest (strategic/enterprise/value realization).",
-   "material_gap": "Role is junior, high-volume onboarding execution rather than strategic customer success leadership she targets.",
-   "next_action": "Deprioritize; focus effort on strategic CS/value-realization roles instead.",
+   "action_status": "validate",
+   "why_fits": "She has strong operating-model, scaling and transformation experience, and the AI-embedded service redesign angle fits her AI-adoption interest, but this is fundamentally a core HR/People Operations leadership role requiring deep HRIS and employee-lifecycle operations expertise she hasn't confirmed.",
+   "material_gap": "No confirmed core HR operations/HRIS/employee lifecycle ownership experience",
+   "next_action": "Apply only if she can credibly frame operating-model and transformation work as direct HR-ops equivalent.",
    "exception_reason": "",
-   "score": 22,
-   "fit": "no",
-   "reason": "Customer-facing training role",
+   "score": 42,
+   "fit": "maybe",
+   "reason": "Operating-model and scaling expertise",
    "bg": "55a510aca86d",
-   "remote_verified": false,
+   "remote_verified": true,
    "remote_evidence": "",
    "detected_requirements": []
   },
-  "remote_scope": "unclear",
-  "remote_verified": false
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
  },
  {
-  "key": "DXC Technology::https://himalayas.app/companies/dxc-technology/jobs/sap-pp-senior-consultant",
-  "company": "DXC Technology",
-  "title": "SAP PP Senior Consultant",
+  "key": "Cloudflare::https://himalayas.app/companies/cloudflare/jobs/senior-principal-sales-compensation-design-strategy",
+  "company": "Cloudflare",
+  "title": "Senior Principal, Sales Compensation Design & Strategy",
   "location": "United States (Remote)",
-  "url": "https://himalayas.app/companies/dxc-technology/jobs/sap-pp-senior-consultant?utm_source=api",
-  "posted": "2026-11-01",
-  "salary": "$84,400\u2013$156,800",
+  "url": "https://himalayas.app/companies/cloudflare/jobs/senior-principal-sales-compensation-design-strategy?utm_source=api",
+  "posted": "2026-11-02",
+  "salary": "$200,000\u2013$317,000",
   "employment_type": "Full Time",
-  "expires": "2027-01-22",
+  "expires": "2027-01-01",
   "technical_risk": false,
   "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'consultant' + seniority in title",
+  "tier": "core",
+  "match_reason": "core title gate",
   "fit_result": {
    "recommendation": "not_recommended",
-   "confidence": "high",
+   "confidence": "medium",
    "reasons": [],
    "concerns": [
-    "Requires deep specialized SAP technical expertise she lacks",
-    "D-dominant hands-on technical consulting work"
+    "Narrow RevOps/comp specialization",
+    "Not her interest area"
    ],
    "unmet_requirements": [
-    "Deep SAP PP module configuration expertise (MRP, BOM, routings, S/4HANA migration)"
+    "Deep sales compensation design/quota-setting specialization not evidenced"
    ],
    "bridge_skills": [],
    "remote_scope": "nationwide_us",
@@ -9543,29 +10248,32 @@
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 10,
-   "practical_fit": 20,
-   "opportunity_score": 8,
+   "qualification_fit": 20,
+   "interest_fit": 15,
+   "practical_fit": 40,
+   "opportunity_score": 15,
    "work_interest": "D",
-   "dominant_work": "Hands-on SAP PP configuration/implementation for manufacturing planning",
-   "dominant_share": 10,
+   "dominant_work": "Designing sales incentive compensation plans and quota/territory methodology",
+   "dominant_share": 15,
    "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "required",
+   "industry_relationship": "adjacent",
+   "industry_importance": "irrelevant",
    "key_qualifications": [
-    "GAP: SAP PP functional/technical configuration expertise",
-    "GAP: SAP S/4HANA migration technical leadership",
-    "UNKNOWN: manufacturing industry exposure"
+    "GAP: no demonstrated sales compensation plan design or incentive modeling experience",
+    "UNKNOWN: quantitative comp design methodology experience",
+    "TRANSFERABLE: professional-services operations and P&L judgment",
+    "GAP: specialized sales-comp/quota-design expertise required central to role"
    ],
-   "cautions": [],
+   "cautions": [
+    "Highly specialized RevOps/comp-design function, not transformation or adoption work"
+   ],
    "sales_readiness": "n_a",
    "action_status": "stretch",
-   "why_fits": "This is a deeply technical SAP functional consultant role requiring hands-on module configuration, not transformation leadership she could credibly perform.",
-   "material_gap": "No SAP PP functional/technical consulting experience",
-   "next_action": "Skip this role; not a credible match for her background.",
+   "why_fits": "This is a narrow, technical sales-compensation design and planning role, not transformation, adoption or consultative-sales work she targets.",
+   "material_gap": "No evidence of specialized sales compensation/incentive design experience central to this role",
+   "next_action": "Skip; not aligned with her core strengths or interests.",
    "exception_reason": "",
-   "score": 8,
+   "score": 15,
    "fit": "no",
    "reason": "",
    "bg": "55a510aca86d",
@@ -10576,80 +11284,6 @@
   "remote_verified": true
  },
  {
-  "key": "Maven Clinic::https://weworkremotely.com/remote-jobs/maven-clinic-customer-success-director",
-  "company": "Maven Clinic",
-  "title": "Customer Success Director",
-  "location": "Anywhere in the World (Remote)",
-  "url": "https://weworkremotely.com/remote-jobs/maven-clinic-customer-success-director",
-  "posted": "2026-10-11",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "2026-11-10",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "low",
-   "reasons": [
-    "Enterprise customer success leadership fits A-tier interest",
-    "Executive relationship and value-realization experience transfers",
-    "Remote role matches location preference"
-   ],
-   "concerns": [
-    "Truncated JD limits confidence",
-    "Healthcare/benefits industry is client-exposure only, not direct",
-    "Pay not stated"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [
-    "Health-benefits/employer-plan domain familiarity",
-    "Healthcare client terminology and stakeholders"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 60,
-   "interest_fit": 65,
-   "practical_fit": 55,
-   "opportunity_score": 55,
-   "work_interest": "A",
-   "dominant_work": "Enterprise customer success leadership for health-benefit employer accounts",
-   "dominant_share": 65,
-   "fit_level": "stretch",
-   "industry_relationship": "client_exposure",
-   "industry_importance": "helpful",
-   "key_qualifications": [
-    "CONFIRMED: enterprise client/account leadership and executive relationship management",
-    "TRANSFERABLE: value realization and retention/expansion from professional-services leadership",
-    "UNKNOWN: healthcare/benefits-specific account management experience",
-    "UNKNOWN: scope of team managed vs individual contributor expectations"
-   ],
-   "cautions": [
-    "Description truncated before listing specific requirements/responsibilities",
-    "Healthcare benefits domain is not her direct industry background"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "validate",
-   "why_fits": "Strategic enterprise customer success with executive relationships and value realization aligns with her CX/CS leadership experience, though the posting's core duties are not fully visible.",
-   "material_gap": "No direct healthcare benefits/health-plan account management experience",
-   "next_action": "Review full job description for scope, team size, and required healthcare domain expertise before applying.",
-   "exception_reason": "",
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Enterprise customer success leadership fits A-tier interest",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
   "key": "YipitData::158052",
   "company": "YipitData",
   "title": "Solutions Lead, Consulting/Banking",
@@ -10799,33 +11433,32 @@
   "remote_verified": true
  },
  {
-  "key": "RevenueCat::157213",
-  "company": "RevenueCat",
-  "title": "Senior Partnerships Manager, Product Partnerships",
-  "location": "EMEA,  LATAM,  Canada,  USA (Remote)",
-  "url": "https://jobicy.com/jobs/157213-senior-partnerships-manager-product-partnerships",
-  "posted": "2026-10-26",
+  "key": "Reddit::158571",
+  "company": "Reddit",
+  "title": "Group Product Manager, Finance Technology",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/158571-group-product-manager-finance-technology",
+  "posted": "2026-11-02",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "technical_risk": false,
   "technical_note": "",
   "tier": "discovery",
-  "match_reason": "mandate in description (adoption, business case)",
+  "match_reason": "mandate in description (adoption, ai transformation)",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Remote-friendly",
-    "Some transferable scoping/discovery skills"
+    "AI-transformation language is a discovery hook, not the real job"
    ],
    "concerns": [
-    "Niche industry expertise required",
-    "Not her core functional interest (D-tier BD/partnerships)",
-    "No leadership/transformation scope"
+    "Technical PM depth required",
+    "Finance systems domain specialization",
+    "Not her functional lane"
    ],
    "unmet_requirements": [
-    "Specialized product-partnerships/BD experience in mobile app monetization ecosystem not evidenced"
+    "Deep, hands-on finance-systems product management expertise (treasury/payroll/R2R/P2P) is a true specialization gap"
    ],
    "bridge_skills": [],
    "remote_scope": "nationwide_us",
@@ -10833,35 +11466,110 @@
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 55,
-   "opportunity_score": 30,
+   "qualification_fit": 20,
+   "interest_fit": 20,
+   "practical_fit": 40,
+   "opportunity_score": 20,
    "work_interest": "D",
-   "dominant_work": "Building and managing technology product partnerships, business cases, integration adoption, and growth",
-   "dominant_share": 35,
+   "dominant_work": "Technical PM owning Finance SaaS systems architecture and vendor stack decisions",
+   "dominant_share": 15,
    "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "preferred",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
    "key_qualifications": [
-    "TRANSFERABLE: RFP/partner discovery and solution scoping experience",
-    "UNKNOWN: direct product-partnership deal-structuring or BD negotiation experience",
-    "GAP: deep SaaS/app monetization industry expertise and partner-ecosystem relationships",
-    "UNKNOWN: experience owning commercial terms with external tech partners"
+    "GAP: deep technical product management owning finance SaaS systems (treasury, P2P, R2R, Q2C, payroll)",
+    "GAP: engineering-adjacent system architecture ownership and vendor stack decisions",
+    "UNKNOWN: finance process domain depth",
+    "TRANSFERABLE: AI transformation/adoption advisory to executives"
    ],
    "cautions": [
-    "Highly specialized niche (mobile subscription monetization, app store ecosystem) with no direct exposure",
-    "Senior IC BD role, not a leadership/transformation role"
+    "Player-coach PM role requires direct SaaS product ownership experience she hasn't demonstrated"
    ],
    "sales_readiness": "n_a",
    "action_status": "stretch",
-   "why_fits": "Some transferable solutioning/business-case skills but this is a specialized product-partnerships BD role in an unfamiliar niche industry, not transformation or CX work.",
-   "material_gap": "No demonstrated product-partnerships/BD experience in mobile monetization ecosystem",
-   "next_action": "Deprioritize; focus on transformation, CX or consultative-sales roles aligned to her core experience.",
+   "why_fits": "The AI-transformation framing is attractive but the core job is technical product management owning finance SaaS systems and vendor architecture, not organizational AI adoption leadership.",
+   "material_gap": "No hands-on finance-systems/SaaS product management experience; this is engineering-adjacent PM depth.",
+   "next_action": "Skip; focus time on transformation/AI-enablement roles matching her operating-model strengths.",
    "exception_reason": "",
-   "score": 30,
+   "score": 20,
    "fit": "no",
-   "reason": "Remote-friendly",
+   "reason": "AI-transformation language is a discovery hook, not the real job",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
+  "key": "impact.com::154425",
+  "company": "impact.com",
+  "title": "Sr. Director, Revenue Operations Planning and Execution",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/154425-sr-director-revenue-operations-planning-and-execution",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "Full-Time",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Senior operating-model experience",
+    "Remote US role",
+    "Professional-services discipline transfers partially"
+   ],
+   "concerns": [
+    "Narrow RevOps specialization vs her broad generalist background",
+    "Unclear systems/analytics depth required",
+    "C-tier interest area (RevOps falls outside her A/B hierarchy)"
+   ],
+   "unmet_requirements": [
+    "Deep, specialized RevOps systems/analytics execution ownership not evidenced"
+   ],
+   "bridge_skills": [
+    "RevOps/CRM systems fluency",
+    "GTM forecasting and pipeline analytics tools"
+   ],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 35,
+   "practical_fit": 55,
+   "opportunity_score": 38,
+   "work_interest": "B",
+   "dominant_work": "RevOps strategy/planning execution with heavy systems, analytics and GTM operational depth",
+   "dominant_share": 35,
+   "fit_level": "stretch",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "TRANSFERABLE: professional-services operating cadence, resource/capacity planning",
+    "UNKNOWN: deep RevOps systems/analytics (CRM, forecasting tools, GTM tech stack ownership)",
+    "GAP: narrow specialized RevOps leadership with quota/pipeline systems ownership not demonstrated",
+    "UNKNOWN: managing Director-level direct reports in a RevOps function specifically"
+   ],
+   "cautions": [
+    "This is narrow RevOps execution, not broad transformation leadership",
+    "Heavy GTM systems/analytics focus is more operational/technical than her core strength"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "She has strong operating-model and professional-services leadership experience, but this role centers on hands-on RevOps systems, analytics and GTM execution rigor rather than broader transformation or strategy leadership.",
+   "material_gap": "Lacks demonstrated deep RevOps systems/analytics ownership central to this execution-heavy role",
+   "next_action": "Deprioritize in favor of broader strategy/transformation or operations-leadership roles.",
+   "exception_reason": "",
+   "score": 38,
+   "fit": "no",
+   "reason": "Senior operating-model experience",
    "bg": "55a510aca86d",
    "remote_verified": true,
    "remote_evidence": "",
@@ -11664,287 +12372,73 @@
   "remote_verified": true
  },
  {
-  "key": "Elevenlabs::157511",
-  "company": "Elevenlabs",
-  "title": "Lead Generation Strategy and Operations",
-  "location": "UK,  USA (Remote)",
-  "url": "https://jobicy.com/jobs/157511-lead-generation-strategy-and-operations",
-  "posted": "2026-10-28",
+  "key": "Tines::158398",
+  "company": "Tines",
+  "title": "Senior Partner Solutions Engineer, Public Sector",
+  "location": "USA (Remote)",
+  "url": "https://jobicy.com/jobs/158398-senior-partner-solutions-engineer-public-sector",
+  "posted": "2026-11-01",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "technical_risk": false,
   "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "sales-adjacency lane: 'True' in title",
+  "sales_adjacent": true,
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
-   "reasons": [
-    "Operations title signal only",
-    "Core function is outbound lead gen, not her interest area"
-   ],
+   "reasons": [],
    "concerns": [
-    "D-dominant work",
-    "No clear seniority match",
-    "Thin JD detail"
+    "Technical SE depth required",
+    "Public sector/channel-specific experience unclear",
+    "D-tier technical sales-engineering work"
    ],
    "unmet_requirements": [
-    "Core job is lead-generation/outbound sales ops, not her specialization"
+    "Deep technical product/engineering depth building security automation workflows required for Solutions Engineer role"
    ],
    "bridge_skills": [],
-   "remote_scope": "nationwide_us",
+   "remote_scope": "preferred_location",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 15,
+   "qualification_fit": 25,
+   "interest_fit": 20,
    "practical_fit": 40,
-   "opportunity_score": 20,
+   "opportunity_score": 25,
    "work_interest": "D",
-   "dominant_work": "Building/operating outbound lead-generation engine and SDR process",
-   "dominant_share": 15,
+   "dominant_work": "Technical pre-sales engineering/enablement for channel partners on a security automation SaaS platform",
+   "dominant_share": 25,
    "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "irrelevant",
+   "industry_relationship": "new",
+   "industry_importance": "required",
    "key_qualifications": [
-    "UNKNOWN: lead-gen funnel/tooling ownership",
-    "TRANSFERABLE: process and operations design from professional services",
-    "GAP: no outbound/SDR pipeline-building history",
-    "UNKNOWN: AI-first high-velocity startup environment fit"
+    "GAP: deep technical automation/integration product knowledge for security/IT workflows",
+    "UNKNOWN: public sector channel-partner experience",
+    "TRANSFERABLE: enablement and solution-value articulation from professional services",
+    "GAP: hands-on technical solutions engineering depth"
    ],
    "cautions": [
-    "Very thin JD; no-titles AI-first culture may not suit her senior leadership profile"
+    "Partner-channel enablement is a narrower lane than her consultative experience",
+    "Public sector focus unfamiliar"
    ],
    "sales_readiness": "not_viable",
    "action_status": "stretch",
-   "why_fits": "Role centers on building lead-generation strategy/operations (outbound pipeline), which is D-tier work for her despite an operations label.",
-   "material_gap": "Core focus is lead-gen/outbound pipeline building, not transformation or strategic CS work she targets.",
-   "next_action": "Skip; pursue roles closer to transformation, CX or consultative sales instead.",
-   "exception_reason": "",
-   "score": 20,
-   "fit": "no",
-   "reason": "Operations title signal only",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
- },
- {
-  "key": "\u014cURA::157468",
-  "company": "\u014cURA",
-  "title": "Product Manager, B2B Customer Solutions",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/157468-product-manager-b2b-customer-solutions",
-  "posted": "2026-10-28",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'customer' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "B2B commercial exposure transferable",
-    "Remote US role"
-   ],
-   "concerns": [
-    "Engineering-depth PM role, D-tier work",
-    "Title mismatch with her career trajectory",
-    "Not a strategic/transformation role"
-   ],
-   "unmet_requirements": [
-    "Requires leading engineering squad and owning technical product roadmap - deep product/engineering management depth not in her background"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 50,
-   "opportunity_score": 25,
-   "work_interest": "D",
-   "dominant_work": "Product manager owning B2B platform features with engineering squad execution",
-   "dominant_share": 20,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "GAP: leading engineering squad through product development/execution",
-    "TRANSFERABLE: cross-functional stakeholder management across Legal, Finance, Commercial",
-    "UNKNOWN: formal product management experience owning roadmap/backlog",
-    "CONFIRMED: B2B client/commercial relationship experience"
-   ],
-   "cautions": [
-    "Title says PM but core work is technical product ownership, not transformation/CX strategy"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a hands-on technical product management role requiring engineering squad leadership, which is core PM execution work outside her transformation/CX/commercial strategy focus.",
-   "material_gap": "No demonstrated technical product management or engineering-squad leadership experience",
-   "next_action": "Deprioritize; not aligned with her strategy/transformation focus.",
+   "why_fits": "This is a technically deep Solutions Engineer role for a security-automation SaaS platform, requiring hands-on product/technical depth and partner-channel enablement that falls outside her consultative, non-engineering background.",
+   "material_gap": "Requires deep technical solutions-engineering expertise, not just consultative pre-sales skill",
+   "next_action": "Skip; focus on value-consultant or customer-strategy roles instead.",
    "exception_reason": "",
    "score": 25,
    "fit": "no",
-   "reason": "B2B commercial exposure transferable",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
- },
- {
-  "key": "Forma.ai::151911",
-  "company": "Forma.ai",
-  "title": "Principal Consultant, Sales Effectiveness",
-  "location": "Canada,  USA (Remote)",
-  "url": "https://jobicy.com/jobs/151911-principal-consultant-sales-effectiveness",
-  "posted": "2026-10-28",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Client-facing solution delivery overlaps her PS background",
-    "Remote US/Canada eligible"
-   ],
-   "concerns": [
-    "Specialized sales planning domain expertise required",
-    "Hands-on product implementation, not transformation leadership",
-    "D-tier work interest"
-   ],
-   "unmet_requirements": [
-    "Practical, hands-on experience specifically in sales planning (territory/quota/incentive design) - a true specialization requirement"
-   ],
-   "bridge_skills": [
-    "Sales compensation/quota planning fundamentals",
-    "Territory design methodology"
-   ],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 30,
-   "interest_fit": 25,
-   "practical_fit": 40,
-   "opportunity_score": 25,
-   "work_interest": "D",
-   "dominant_work": "Hands-on implementation/design of enterprise sales territory & quota planning software",
-   "dominant_share": 30,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "required",
-   "key_qualifications": [
-    "TRANSFERABLE: client-facing solution design, discovery, scoping and rollout from professional-services background",
-    "GAP: deep sales compensation/territory/quota planning domain expertise",
-    "UNKNOWN: technical consulting background in comp/ICM software",
-    "GAP: hands-on sales planning implementation experience required by posting"
-   ],
-   "cautions": [
-    "Heavy technology-consulting background preferred, not confirmed for her"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "She has strong client-facing solutioning and delivery leadership but this role centers on specialized sales-compensation/territory-quota implementation expertise she doesn't have.",
-   "material_gap": "No sales planning/compensation domain expertise, a core specialized requirement",
-   "next_action": "Skip; pursue roles matching transformation/CX leadership instead.",
-   "exception_reason": "",
-   "score": 25,
-   "fit": "no",
-   "reason": "Client-facing solution delivery overlaps her PS background",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
- },
- {
-  "key": "Mural::157445",
-  "company": "Mural",
-  "title": "Senior Product Manager, Data Products",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/157445-senior-product-manager-data-products",
-  "posted": "2026-10-27",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (adoption, roi)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "AI/data keyword matched title only"
-   ],
-   "concerns": [
-    "Engineering-depth technical PM role",
-    "No clear transformation/adoption leadership component"
-   ],
-   "unmet_requirements": [
-    "requires technical data-product management expertise working from raw product events and metric architecture, which is engineering-depth PM "
-   ],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 30,
-   "opportunity_score": 15,
-   "work_interest": "D",
-   "dominant_work": "Define data product metrics layer working from raw product events with data engineering",
-   "dominant_share": 15,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "GAP: deep data product/metrics-definition and data engineering fluency required",
-    "UNKNOWN: enterprise SaaS admin/analytics product experience",
-    "GAP: defining raw-event-based metric taxonomies is engineering-depth technical PM work"
-   ],
-   "cautions": [
-    "Title suggests enterprise/adoption but actual work is technical data product definition"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a highly technical data-product PM role centered on defining metrics from raw events and building data layers with engineering teams, not the adoption/transformation leadership work she targets.",
-   "material_gap": "Requires deep data-product/metrics engineering ownership, not her transferable skill set.",
-   "next_action": "Skip; pursue adoption/enablement PM or CS roles instead.",
-   "exception_reason": "",
-   "score": 15,
-   "fit": "no",
-   "reason": "AI/data keyword matched title only",
+   "reason": "",
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
    "detected_requirements": []
   },
-  "remote_scope": "unclear",
+  "remote_scope": "preferred_location",
   "remote_verified": false
  },
  {
@@ -12018,32 +12512,31 @@
   "remote_verified": true
  },
  {
-  "key": "Samsara::158292",
-  "company": "Samsara",
-  "title": "Associate Sales Engineer, SE Desk (French Bilingual)",
+  "key": "Qualtrics::158442",
+  "company": "Qualtrics",
+  "title": "Senior Program Manager - Privacy Compliance & Data Governance",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/158292-associate-sales-engineer-se-desk-french-bilingual",
-  "posted": "2026-11-01",
+  "url": "https://jobicy.com/jobs/158442-senior-program-manager-privacy-compliance-data-governance",
+  "posted": "2026-11-02",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "technical_risk": false,
   "technical_note": "",
-  "sales_adjacent": true,
   "tier": "discovery",
-  "match_reason": "sales-adjacency lane: 'True' in title",
+  "match_reason": "role family 'program manager' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
-   "reasons": [],
+   "reasons": [
+    "Cross-functional program leadership experience"
+   ],
    "concerns": [
-    "Technical engineering depth required",
-    "Junior scope vs her seniority",
-    "French language requirement"
+    "Specialized legal/privacy domain gap",
+    "Low alignment with her core interests"
    ],
    "unmet_requirements": [
-    "Deep technical IoT/hardware/API/systems-integration expertise required",
-    "French bilingual requirement unaddressed"
+    "Requires specialized privacy/data governance/legal compliance expertise central to role"
    ],
    "bridge_skills": [],
    "remote_scope": "nationwide_us",
@@ -12052,33 +12545,32 @@
    "signing_bonus_mentioned": false,
    "valid": true,
    "qualification_fit": 25,
-   "interest_fit": 25,
-   "practical_fit": 30,
-   "opportunity_score": 22,
+   "interest_fit": 20,
+   "practical_fit": 40,
+   "opportunity_score": 25,
    "work_interest": "D",
-   "dominant_work": "Technical IoT sales engineering: hardware, APIs, system integration demos",
+   "dominant_work": "Enterprise privacy/data-governance compliance program orchestrating Legal, Security, Engineering",
    "dominant_share": 20,
    "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "helpful",
+   "industry_relationship": "unknown",
+   "industry_importance": "irrelevant",
    "key_qualifications": [
-    "GAP: IoT hardware, sensors, carrier network, API/integration technical depth required",
-    "TRANSFERABLE: client discovery and solution scoping from professional services",
-    "UNKNOWN: French bilingual requirement not addressed in context",
-    "GAP: Associate-level quota-adjacent technical SE role is engineering-depth, not consultative value selling"
+    "GAP: deep privacy/data-governance regulatory expertise required",
+    "TRANSFERABLE: cross-functional program leadership across legal/eng/security",
+    "UNKNOWN: formal compliance/legal background"
    ],
    "cautions": [
-    "Associate-level technical SE desk role, junior scope relative to her seniority"
+    "Highly specialized subject matter far from her core transformation/CX work"
    ],
-   "sales_readiness": "not_viable",
+   "sales_readiness": "n_a",
    "action_status": "stretch",
-   "why_fits": "This is a hands-on technical sales-engineering role requiring IoT hardware, carrier network and API depth plus French fluency, not a consultative value-selling role matching her background.",
-   "material_gap": "Requires deep technical/IoT engineering depth and bilingual French, both unconfirmed/unmet.",
-   "next_action": "Skip; focus on consultative Solutions/Value Consultant roles instead.",
+   "why_fits": "This is a specialized privacy-compliance and data-governance program role requiring legal/regulatory depth she does not have, not a general transformation PM role.",
+   "material_gap": "Lacks deep privacy/data governance/legal compliance expertise central to the job",
+   "next_action": "Skip; not a strong match for her background.",
    "exception_reason": "",
-   "score": 22,
+   "score": 25,
    "fit": "no",
-   "reason": "",
+   "reason": "Cross-functional program leadership experience",
    "bg": "55a510aca86d",
    "remote_verified": true,
    "remote_evidence": "",
@@ -12088,30 +12580,30 @@
   "remote_verified": true
  },
  {
-  "key": "Wpromote::158192",
-  "company": "Wpromote",
-  "title": "Manager, SEO",
+  "key": "Verra Mobility::158380",
+  "company": "Verra Mobility",
+  "title": "Project Manager",
   "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/158192-manager-seo",
-  "posted": "2026-10-31",
+  "url": "https://jobicy.com/jobs/158380-project-manager-8",
+  "posted": "2026-11-01",
   "salary": null,
   "employment_type": "Full-Time",
   "expires": "",
   "technical_risk": false,
   "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
    "reasons": [
-    "Direct industry familiarity with SEO/content",
-    "Remote-eligible"
+    "Transferable PM/delivery skills",
+    "Remote US role"
    ],
    "concerns": [
-    "Seniority mismatch - execution not leadership",
-    "Compensation likely below her target range",
-    "Narrow specialist scope"
+    "Low-interest work category (C)",
+    "Likely below her seniority level",
+    "Narrow technical/government industry niche"
    ],
    "unmet_requirements": [],
    "bridge_skills": [],
@@ -12120,35 +12612,35 @@
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
    "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 40,
-   "practical_fit": 50,
-   "opportunity_score": 35,
-   "work_interest": "B",
-   "dominant_work": "Hands-on SEO execution and client account management across multiple accounts",
-   "dominant_share": 40,
+   "qualification_fit": 45,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "work_interest": "C",
+   "dominant_work": "Technical program/project delivery for client implementations in tolling/traffic tech",
+   "dominant_share": 25,
    "fit_level": "poor",
-   "industry_relationship": "direct",
+   "industry_relationship": "adjacent",
    "industry_importance": "helpful",
    "key_qualifications": [
-    "TRANSFERABLE: SEO/content strategy leadership from agency years",
-    "GAP: hands-on technical SEO execution and AI search optimization specifics",
-    "CONFIRMED: client relationship and retention ownership",
-    "UNKNOWN: day-to-day technical implementation depth required"
+    "TRANSFERABLE: project/program delivery, client implementations, stakeholder management",
+    "GAP: agile software development process ownership for technical implementations",
+    "UNKNOWN: experience with tolling/traffic/government technical systems",
+    "CONFIRMED: client-facing delivery and risk/issue management from professional-services leadership"
    ],
    "cautions": [
-    "Role is individual-contributor, hands-on execution rather than strategic/transformation leadership",
-    "Title is 'Manager' but scope reads as client-facing specialist, not senior org leadership"
+    "Role centers on technical implementation delivery and agile software process adherence, not transformation or strategy",
+    "Likely individual-contributor PM scope below her recent seniority"
    ],
    "sales_readiness": "n_a",
    "action_status": "stretch",
-   "why_fits": "SEO/content strategy is listed as B-tier interest, but this role is a hands-on, multi-account execution job well below her recent seniority and scope.",
-   "material_gap": "Role is individual-contributor execution work, not the strategic/transformation leadership level she now operates at",
-   "next_action": "Deprioritize; pursue senior strategy or transformation roles instead.",
+   "why_fits": "She has genuine program/client delivery and stakeholder management experience, but this is a technical implementation PM role in a niche industry, below her recent scope and off her preferred work (C-tier at best).",
+   "material_gap": "Role is hands-on technical project delivery, not strategic/transformation work she prioritizes",
+   "next_action": "Deprioritize in favor of higher-interest transformation or CX/AI roles.",
    "exception_reason": "",
-   "score": 35,
+   "score": 30,
    "fit": "no",
-   "reason": "Direct industry familiarity with SEO/content",
+   "reason": "Transferable PM/delivery skills",
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
@@ -12156,220 +12648,6 @@
   },
   "remote_scope": "unclear",
   "remote_verified": false
- },
- {
-  "key": "Wpromote::158185",
-  "company": "Wpromote",
-  "title": "Manager, Performance Creative Strategy",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/158185-manager-performance-creative-strategy",
-  "posted": "2026-10-31",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Agency/professional-services familiarity",
-    "Client relationship experience"
-   ],
-   "concerns": [
-    "D-tier dominant work",
-    "Requires specialized creative/paid-media execution skill she lacks",
-    "Not aligned with target compensation level likely"
-   ],
-   "unmet_requirements": [
-    "Requires deep hands-on performance-creative/paid-media execution expertise, not strategic leadership"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "work_interest": "D",
-   "dominant_work": "Owning performance creative strategy/briefs for paid-media ad campaigns",
-   "dominant_share": 15,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "required",
-   "key_qualifications": [
-    "TRANSFERABLE: agency/client delivery and executive relationship leadership",
-    "GAP: hands-on performance-creative briefing, ad copy and platform-testing expertise",
-    "UNKNOWN: recent direct paid-media creative production experience",
-    "GAP: asset-level creative direction for static/video ad campaigns"
-   ],
-   "cautions": [
-    "This is an individual-contributor creative-strategy role, not a transformation/org leadership role"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "The role centers on day-to-day creative briefing, ad copy testing and platform-specific performance creative execution, which is specialized hands-on work outside her transformation/operations background.",
-   "material_gap": "No direct experience owning performance-creative execution, briefs, and ad testing across paid channels.",
-   "next_action": "Skip; pursue roles matching transformation, CX or consultative sales interests instead.",
-   "exception_reason": "",
-   "score": 15,
-   "fit": "no",
-   "reason": "Agency/professional-services familiarity",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
- },
- {
-  "key": "Appen::158180",
-  "company": "Appen",
-  "title": "Performance Marketing & Marketing Operations Manager (United States)",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/158180-performance-marketing-marketing-operations-manager-united-states",
-  "posted": "2026-10-31",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [],
-   "concerns": [
-    "D-dominant tactical execution work",
-    "no evidence of hands-on ad platform/HubSpot admin experience"
-   ],
-   "unmet_requirements": [
-    "hands-on LinkedIn/Google Ads campaign management",
-    "HubSpot administration expertise"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 10,
-   "practical_fit": 30,
-   "opportunity_score": 12,
-   "work_interest": "D",
-   "dominant_work": "Hands-on paid media campaign execution and HubSpot marketing operations administration",
-   "dominant_share": 10,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "GAP: hands-on LinkedIn/Google Ads campaign management and HubSpot administration",
-    "UNKNOWN: recent marketing automation tool administration",
-    "GAP: not strategy/transformation work, this is execution-level marketing ops"
-   ],
-   "cautions": [
-    "role is individual-contributor, tactical marketing execution, not leadership/transformation"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a hands-on performance-marketing/martech execution role requiring direct paid-media and HubSpot admin expertise she does not demonstrate; not aligned to her strategy/transformation profile.",
-   "material_gap": "Requires direct hands-on paid-media campaign ownership and HubSpot administration, not her background",
-   "next_action": "Skip; not a fit for her strategic/transformation focus.",
-   "exception_reason": "",
-   "score": 12,
-   "fit": "no",
-   "reason": "",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
- },
- {
-  "key": "Forma.ai::152098",
-  "company": "Forma.ai",
-  "title": "Sales Engineer",
-  "location": "Canada,  USA (Remote)",
-  "url": "https://jobicy.com/jobs/152098-sales-engineer-4",
-  "posted": "2026-10-31",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "sales_adjacent": true,
-  "tier": "discovery",
-  "match_reason": "sales-adjacency lane: 'True' in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Pre-sales/solutioning overlap",
-    "Consultative discovery experience",
-    "Remote eligible"
-   ],
-   "concerns": [
-    "Niche sales-comp domain",
-    "Technical demo depth uncertain",
-    "Title suggests more engineering-leaning expectations"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [
-    "SaaS platform demo delivery",
-    "Sales compensation domain knowledge",
-    "Technical solution scoping"
-   ],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 50,
-   "practical_fit": 45,
-   "opportunity_score": 42,
-   "work_interest": "B",
-   "dominant_work": "Pre-sales solution engineering supporting AEs with demos/technical fit for SaaS comp platform",
-   "dominant_share": 55,
-   "fit_level": "stretch",
-   "industry_relationship": "adjacent",
-   "industry_importance": "preferred",
-   "key_qualifications": [
-    "TRANSFERABLE: client discovery, solution development, scoping, and presentations from professional-services leadership",
-    "UNKNOWN: depth with sales-compensation software or comp-plan design specifics",
-    "TRANSFERABLE: in-progress Adobe Technical Sales training supports consultative pre-sales readiness",
-    "GAP: no demonstrated technical product-demo experience with SaaS platform configuration"
-   ],
-   "cautions": [
-    "Sales engineer role may expect deeper technical/product configuration depth than her background shows",
-    "Niche sales-compensation domain is unfamiliar"
-   ],
-   "sales_readiness": "near_qualified_december",
-   "action_status": "package",
-   "why_fits": "Pre-sales solutioning, discovery and executive presentation work aligns with her consultative experience and in-progress technical-sales training, though the specific SaaS platform depth is unproven.",
-   "material_gap": "No direct technical sales-engineering or SaaS demo/configuration experience",
-   "next_action": "Apply with resume emphasizing solutioning, discovery, and in-progress Adobe Technical Sales training.",
-   "exception_reason": "",
-   "score": 42,
-   "fit": "maybe",
-   "reason": "Pre-sales/solutioning overlap",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
  },
  {
   "key": "GitLab::158362",
@@ -13222,149 +13500,6 @@
    "score": 30,
    "fit": "no",
    "reason": "Digital agency direct experience",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
- },
- {
-  "key": "Imprint::157201",
-  "company": "Imprint",
-  "title": "Senior Delivery Manager",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/157201-senior-delivery-manager",
-  "posted": "2026-10-26",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'delivery' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Delivery management experience transfers",
-    "Remote role"
-   ],
-   "concerns": [
-    "Technical solutions-engineering focus",
-    "New fintech/payments domain",
-    "Incomplete JD limits confidence"
-   ],
-   "unmet_requirements": [
-    "Likely requires technical integration/API-level fluency for partner go-lives"
-   ],
-   "bridge_skills": [
-    "Payments/fintech domain familiarity",
-    "Technical integration vocabulary"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 45,
-   "interest_fit": 30,
-   "practical_fit": 45,
-   "opportunity_score": 30,
-   "work_interest": "C",
-   "dominant_work": "Technical implementation delivery management for partner integrations",
-   "dominant_share": 35,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "helpful",
-   "key_qualifications": [
-    "TRANSFERABLE: delivery/program management from professional services",
-    "UNKNOWN: fintech/payments domain knowledge",
-    "GAP: technical integration/solutions-engineering depth likely required",
-    "TRANSFERABLE: client-facing implementation and scoping experience"
-   ],
-   "cautions": [
-    "Truncated JD limits certainty on technical depth required",
-    "Fintech/payments is a new, specialized domain"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "Delivery/implementation management overlaps with her PS delivery background, but the role centers on technical partner integrations within a specialized fintech/payments context, which is largely D/C-tier work for her.",
-   "material_gap": "Likely needs hands-on technical integration expertise beyond her learnable-tool boundary",
-   "next_action": "Deprioritize unless more detail confirms a non-technical delivery scope.",
-   "exception_reason": "",
-   "score": 30,
-   "fit": "no",
-   "reason": "Delivery management experience transfers",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "Zip::157073",
-  "company": "Zip",
-  "title": "Senior Technical Enablement Manager",
-  "location": "USA (Remote)",
-  "url": "https://jobicy.com/jobs/157073-senior-technical-enablement-manager",
-  "posted": "2026-10-26",
-  "salary": null,
-  "employment_type": "Full-Time",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'enablement' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Explicit enablement role, flagged as generally avoid",
-    "Dominant work is D-tier curriculum/training design"
-   ],
-   "concerns": [
-    "Not sales or adoption leadership, purely training function",
-    "Requires deep technical product depth she doesn't have"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 20,
-   "work_interest": "D",
-   "dominant_work": "Design SE onboarding/enablement curricula for technical pre-sales team",
-   "dominant_share": 15,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "TRANSFERABLE: client discovery and solutioning experience from professional services",
-    "GAP: deep SE/pre-sales technical platform depth and demo certification ownership",
-    "UNKNOWN: experience building formal enablement curricula for technical sellers"
-   ],
-   "cautions": [
-    "Role is pure sales-enablement/training design, explicitly flagged as avoid territory for her",
-    "Requires deep technical product/platform expertise to build demo and objection-handling content"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a dedicated technical sales-enablement/training-design role for an SE organization, not consultative selling or adoption leadership, and sits squarely in her declared low-interest category.",
-   "material_gap": "Core work is enablement curriculum design for technical pre-sales, not her target consultative or transformation work",
-   "next_action": "Skip; prioritize consultative technical-sales or transformation roles instead.",
-   "exception_reason": "",
-   "score": 20,
-   "fit": "no",
-   "reason": "Explicit enablement role, flagged as generally avoid",
    "bg": "55a510aca86d",
    "remote_verified": true,
    "remote_evidence": "",

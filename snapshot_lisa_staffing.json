@@ -1,5 +1,75 @@
 [
  {
+  "key": "Aquent::214185",
+  "company": "Aquent",
+  "title": "Program Manager, Customer Marketing",
+  "location": "Alpharetta, GA, US (Remote)",
+  "url": "https://aquent.com/find-work/214185",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Cross-functional coordination fits her skillset",
+    "Remote and flexible schedule"
+   ],
+   "concerns": [
+    "Part-time hours limit income value",
+    "Narrow marketing-event focus, not strategic",
+    "Pay unstated"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "residence_required",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 55,
+   "interest_fit": 30,
+   "practical_fit": 40,
+   "opportunity_score": 35,
+   "work_interest": "C",
+   "dominant_work": "Hands-on program execution for a customer awards/marketing campaign",
+   "dominant_share": 35,
+   "fit_level": "stretch",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: cross-functional program coordination and stakeholder management",
+    "TRANSFERABLE: client/customer storytelling and advocacy experience via professional services",
+    "UNKNOWN: direct marketing-campaign/event-program execution experience",
+    "CONFIRMED: driving execution across legal, creative, PR-type stakeholders"
+   ],
+   "cautions": [
+    "Part-time (20 hrs/week), narrow-duration contract focused on marketing-campaign/event logistics, not strategic transformation work",
+    "Pay not stated; likely below her bridge-income threshold for the hours offered"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "She has strong cross-functional coordination and stakeholder-management skills, but this is a part-time, detail-heavy marketing/event execution contract outside her preferred strategic/transformation lane.",
+   "material_gap": "Low-interest, execution-heavy marketing program work rather than strategic/transformation scope.",
+   "next_action": "Skip unless seeking quick part-time bridge income with minimal other options.",
+   "exception_reason": "",
+   "score": 35,
+   "fit": "no",
+   "reason": "Cross-functional coordination fits her skillset",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "residence_required",
+  "remote_verified": false
+ },
+ {
   "key": "Aquent::214120",
   "company": "Aquent",
   "title": "Lifecycle Marketing Operations Manager",
@@ -216,6 +286,77 @@
   "remote_verified": false
  },
  {
+  "key": "Aquent::214064",
+  "company": "Aquent",
+  "title": "Content Manager (Website Publisher)",
+  "location": "Austin, TX, US (Remote)",
+  "url": "https://aquent.com/find-work/214064",
+  "posted": "2026-10-28",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "mandate in description (strategic initiatives, governance)",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [
+    "Contract staffing role",
+    "Execution-heavy, low strategic content"
+   ],
+   "concerns": [
+    "Dominant work is D-tier hands-on publishing",
+    "Below her seniority level",
+    "No clear income urgency named"
+   ],
+   "unmet_requirements": [
+    "Hands-on CMS content publishing (Drupal/Sanity) as core daily task"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 30,
+   "interest_fit": 15,
+   "practical_fit": 40,
+   "opportunity_score": 20,
+   "work_interest": "D",
+   "dominant_work": "Hands-on CMS web page publishing (Drupal/Sanity) within governance workflows",
+   "dominant_share": 10,
+   "fit_level": "poor",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "irrelevant",
+   "key_qualifications": [
+    "GAP: hands-on Drupal/Sanity CMS publishing execution",
+    "UNKNOWN: direct CMS tool proficiency",
+    "CONFIRMED: content/SEO strategy leadership",
+    "TRANSFERABLE: governance and workflow experience"
+   ],
+   "cautions": [
+    "Role is execution-level, not strategic despite 'strategic initiatives' mention"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a high-volume hands-on web publishing/CMS production role, not strategy or transformation work, and sits well below her seniority and interests.",
+   "material_gap": "Role is tactical CMS publishing execution, not strategic or leadership work",
+   "next_action": "Skip; not aligned with her seniority or interests.",
+   "exception_reason": "",
+   "score": 20,
+   "fit": "no",
+   "reason": "Contract staffing role",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Aquent::214021",
   "company": "Aquent",
   "title": "Strategic Planning Lead (B2B)",
@@ -281,6 +422,76 @@
    "score": 25,
    "fit": "no",
    "reason": "Contract role",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "Aquent::213986",
+  "company": "Aquent",
+  "title": "Program Manager II",
+  "location": "Washington, DC, US (Remote)",
+  "url": "https://aquent.com/find-work/213986",
+  "posted": "2026-10-23",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Contract income possibility",
+    "AI tool usage mentioned"
+   ],
+   "concerns": [
+    "D-tier operational/tactical work",
+    "No strategic or transformation component",
+    "Unclear pay"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 20,
+   "practical_fit": 30,
+   "opportunity_score": 25,
+   "work_interest": "D",
+   "dominant_work": "Operational tracking/coordination for AV fleet testing vendors and depots",
+   "dominant_share": 30,
+   "fit_level": "poor",
+   "industry_relationship": "new",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: operational tracking and vendor coordination experience",
+    "GAP: autonomous vehicle/fleet testing domain expertise",
+    "UNKNOWN: comfort with hands-on depot operations and dashboards",
+    "TRANSFERABLE: process improvement and operational excellence"
+   ],
+   "cautions": [
+    "Highly operational, hands-on depot/fleet work rather than strategic transformation",
+    "Contract staffing role with narrow operational scope"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is hands-on operational/data tracking for AV fleet testing vendors, not the strategic transformation or leadership work she targets, and depot-level execution is far from her recent scope.",
+   "material_gap": "Role is tactical fleet-operations tracking, not strategic/transformation leadership work she seeks",
+   "next_action": "Skip unless seeking quick bridge income and open to hands-on operational tracking work",
+   "exception_reason": "",
+   "score": 25,
+   "fit": "no",
+   "reason": "Contract income possibility",
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
@@ -357,76 +568,6 @@
    "detected_requirements": []
   },
   "remote_scope": "residence_required",
-  "remote_verified": false
- },
- {
-  "key": "Aquent::213986",
-  "company": "Aquent",
-  "title": "Program Manager II",
-  "location": "Washington, DC, US (Remote)",
-  "url": "https://aquent.com/find-work/213986",
-  "posted": "2026-10-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Contract income possibility",
-    "AI tool usage mentioned"
-   ],
-   "concerns": [
-    "D-tier operational/tactical work",
-    "No strategic or transformation component",
-    "Unclear pay"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 20,
-   "practical_fit": 30,
-   "opportunity_score": 25,
-   "work_interest": "D",
-   "dominant_work": "Operational tracking/coordination for AV fleet testing vendors and depots",
-   "dominant_share": 30,
-   "fit_level": "poor",
-   "industry_relationship": "new",
-   "industry_importance": "helpful",
-   "key_qualifications": [
-    "TRANSFERABLE: operational tracking and vendor coordination experience",
-    "GAP: autonomous vehicle/fleet testing domain expertise",
-    "UNKNOWN: comfort with hands-on depot operations and dashboards",
-    "TRANSFERABLE: process improvement and operational excellence"
-   ],
-   "cautions": [
-    "Highly operational, hands-on depot/fleet work rather than strategic transformation",
-    "Contract staffing role with narrow operational scope"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is hands-on operational/data tracking for AV fleet testing vendors, not the strategic transformation or leadership work she targets, and depot-level execution is far from her recent scope.",
-   "material_gap": "Role is tactical fleet-operations tracking, not strategic/transformation leadership work she seeks",
-   "next_action": "Skip unless seeking quick bridge income and open to hands-on operational tracking work",
-   "exception_reason": "",
-   "score": 25,
-   "fit": "no",
-   "reason": "Contract income possibility",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
   "remote_verified": false
  },
  {
@@ -1562,151 +1703,6 @@
    "score": 40,
    "fit": "maybe",
    "reason": "SEO/content background is direct prior experience",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "Aquent::213474",
-  "company": "Aquent",
-  "title": "MarTech Mobile Messaging Delivery Manager",
-  "location": "Alpharetta, GA, US (Remote)",
-  "url": "https://aquent.com/find-work/213474",
-  "posted": "2026-10-02",
-  "salary": "$50.37 / hourly as W2",
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'delivery' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Contract role could offer bridge income",
-    "Some Agile/stakeholder overlap"
-   ],
-   "concerns": [
-    "Technical delivery focus misaligned with interests",
-    "Low strategic/transformation content",
-    "Contract staffing role"
-   ],
-   "unmet_requirements": [
-    "Requires technical delivery depth in mobile messaging systems (SMS/push/wallet) central to role"
-   ],
-   "bridge_skills": [
-    "Mobile messaging platform knowledge",
-    "Agile/Scrum ceremonies"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 25,
-   "practical_fit": 40,
-   "opportunity_score": 25,
-   "work_interest": "C",
-   "dominant_work": "Agile delivery management for mobile messaging (SMS/push/wallet) technical execution",
-   "dominant_share": 75,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "helpful",
-   "key_qualifications": [
-    "TRANSFERABLE: Agile delivery and stakeholder translation from professional-services leadership",
-    "GAP: hands-on technical delivery of mobile messaging/SMS/push/wallet systems",
-    "UNKNOWN: formal Scrum Master or technical PM credentials",
-    "CONFIRMED: cross-functional stakeholder management and requirements translation"
-   ],
-   "cautions": [
-    "Contract staffing role centered on technical execution, not transformation/strategy"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "Her delivery and stakeholder-translation skills transfer, but the role is fundamentally technical program/delivery management for mobile messaging infrastructure, which is D-tier work for her.",
-   "material_gap": "Core work is technical delivery of mobile messaging channels, not strategic/transformation leadership",
-   "next_action": "Skip unless bridge income is urgently needed; otherwise deprioritize.",
-   "exception_reason": "",
-   "score": 25,
-   "fit": "no",
-   "reason": "Contract role could offer bridge income",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "Aquent::213461",
-  "company": "Aquent",
-  "title": "Workday Supply Chain Management Lead",
-  "location": "PALO ALTO, CA, US (Remote)",
-  "url": "https://aquent.com/find-work/213461",
-  "posted": "2026-10-02",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (digital transformation, operational excellence)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Supply-chain-specific transformation",
-    "Contract role"
-   ],
-   "concerns": [
-    "Technical platform depth required",
-    "Not her domain (WMS/ERP)",
-    "D-tier dominant work"
-   ],
-   "unmet_requirements": [
-    "Requires specific Workday Supply Chain/WMS deployment expertise she does not have"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 30,
-   "opportunity_score": 15,
-   "work_interest": "D",
-   "dominant_work": "Workday WMS supply-chain deployment lead: scope, integrations, UAT, go-live management",
-   "dominant_share": 20,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "GAP: Workday Supply Chain / WMS system implementation expertise",
-    "UNKNOWN: healthcare supply chain domain knowledge",
-    "TRANSFERABLE: project/program leadership across scope, risk, milestones",
-    "GAP: deep technical requirements/functional-design leadership for ERP/WMS platform"
-   ],
-   "cautions": [
-    "Contract staffing role centered on a specific technical platform implementation"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a technical ERP/WMS implementation lead role requiring specific Workday Supply Chain deployment expertise, not her transformation or operations leadership background.",
-   "material_gap": "No Workday or WMS system implementation experience",
-   "next_action": "Skip; does not align with transformation/strategy interests or technical qualifications.",
-   "exception_reason": "",
-   "score": 15,
-   "fit": "no",
-   "reason": "Supply-chain-specific transformation",
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",

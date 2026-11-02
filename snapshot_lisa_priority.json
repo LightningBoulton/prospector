@@ -1,11 +1,201 @@
 [
  {
+  "key": "Salesforce::JR355678",
+  "company": "Salesforce",
+  "title": "Canadian Public Sector Engagement Delivery Leader",
+  "location": "Remote (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Canada---Toronto/Engagement-Delivery-Leader---Canadian-Public-Sector_JR355678",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'delivery' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "PS delivery leadership fit",
+    "Transformation/executive engagement experience",
+    "Adobe/Salesforce priority employer"
+   ],
+   "concerns": [
+    "Citizenship requirement",
+    "Public sector domain unknown",
+    "Location/relocation unclear"
+   ],
+   "unmet_requirements": [
+    "Must be Canadian Citizen",
+    "mandatory security clearance (\"security clearance\")"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "residence_required",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 60,
+   "interest_fit": 55,
+   "practical_fit": 30,
+   "opportunity_score": 35,
+   "work_interest": "B",
+   "dominant_work": "Lead enterprise PS delivery/transformation engagements for Canadian public sector Salesforce customers",
+   "dominant_share": 65,
+   "fit_level": "stretch",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "CONFIRMED: professional-services delivery leadership, executive engagement, transformation programs",
+    "GAP: Canadian citizenship requirement likely unmet",
+    "UNKNOWN: public sector domain expertise",
+    "TRANSFERABLE: PS economics, staffing, scoping, client executive relationships"
+   ],
+   "cautions": [
+    "Public sector domain expertise not evidenced"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Strong PS delivery-leadership and transformation background matches core duties, but the hard Canadian citizenship requirement is a likely disqualifier.",
+   "material_gap": "Requires Canadian citizenship, which she likely does not have",
+   "next_action": "Skip unless she holds Canadian citizenship; otherwise focus elsewhere.",
+   "exception_reason": "",
+   "score": 35,
+   "fit": "no",
+   "reason": "PS delivery leadership fit",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": [
+    "mandatory security clearance"
+   ]
+  },
+  "remote_scope": "residence_required",
+  "remote_verified": false
+ },
+ {
+  "key": "Salesforce::JR349478",
+  "company": "Salesforce",
+  "title": "Portfolio Leader (Manager/Director Levels)",
+  "location": "Remote (+27 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Portfolio-Leader--Manager-Sr-Manager-Director-_JR349478",
+  "posted": "2026-11-02",
+  "salary": "$155,190 - $299,390",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": true,
+  "technical_note": "the posting asks for hands-on technical work (data pipelines, data modeling, prompt engineering pipelines)",
+  "tier": "discovery",
+  "match_reason": "role family 'portfolio' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Priority employer Salesforce",
+    "Otherwise poor functional fit"
+   ],
+   "concerns": [
+    "Engineering-depth requirement",
+    "Not consultative sales/CS, but technical delivery management"
+   ],
+   "unmet_requirements": [
+    "Requires leading/evaluating technical builders (Forward Deployed Engineers) and engineering excellence - deep technical depth she doesn't ha",
+    "the posting asks for hands-on technical work (data pipelines, data modeling, prompt engineering pipelines)"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 20,
+   "interest_fit": 25,
+   "practical_fit": 30,
+   "opportunity_score": 22,
+   "work_interest": "D",
+   "dominant_work": "Managing technical AI engineers deploying Agentforce solutions for customers",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: managing Forward Deployed Engineers requires deep technical/engineering depth",
+    "UNKNOWN: executive-level customer engagement experience with technical delivery teams",
+    "CONFIRMED: professional-services delivery leadership",
+    "GAP: builder-mindset engineering excellence requirement"
+   ],
+   "cautions": [
+    "Salesforce is a priority employer but this specific role is engineering-leadership heavy"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Despite Salesforce being a target employer, this role centers on directly managing technical engineers building AI deployments, which is engineering-depth work outside her scope.",
+   "material_gap": "Requires hands-on technical/engineering leadership of AI builders, not her background",
+   "next_action": "Skip; look for Salesforce value consulting or customer success leadership roles instead.",
+   "exception_reason": "",
+   "score": 22,
+   "fit": "no",
+   "reason": "Priority employer Salesforce",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
+  "key": "Salesforce::JR350915",
+  "company": "Salesforce",
+  "title": "Specialist Solution Engineer",
+  "location": "Remote (+5 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---Remote/Specialist-Solution-Engineer_JR350915",
+  "posted": "2026-11-02",
+  "salary": "$113,330 - $180,250",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "sales_adjacent": true,
+  "tier": "discovery",
+  "match_reason": "sales-adjacency lane: 'True' in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: schema validation failed)",
+   "confidence": "low",
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": ""
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Salesforce::JR352952",
   "company": "Salesforce",
   "title": "Human Centered Change Senior Manager- Public Sector",
   "location": "Virginia - Washington DC Metro - Remote",
   "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Virginia---Washington-DC-Metro---Remote/Human-Centered-Change-Senior-Manager--Public-Sector_JR352952",
-  "posted": "2026-10-31",
+  "posted": "2026-11-02",
   "salary": "$150,100 - $227,000",
   "employment_type": "",
   "expires": "",
@@ -68,11 +258,86 @@
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
-   "detected_requirements": [
-    "CRM / MarTech administration"
-   ]
+   "detected_requirements": []
   },
   "remote_scope": "preferred_location",
+  "remote_verified": false
+ },
+ {
+  "key": "Salesforce::JR363869",
+  "company": "Salesforce",
+  "title": "Lead, Specialist Solution Engineer Marketing Cloud",
+  "location": "Remote (+1 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/United-Kingdom---London/Lead--Specialist-Solution-Engineer-Marketing-Cloud_JR363869",
+  "posted": "2026-11-02",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "sales_adjacent": true,
+  "tier": "discovery",
+  "match_reason": "sales-adjacency lane: 'True' in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Consultative pre-sales aligns with sales-transition goal",
+    "Salesforce is a priority employer"
+   ],
+   "concerns": [
+    "Geographic scope appears UK/Ireland specific",
+    "Deep product-specific expertise required",
+    "Public sector specialization unconfirmed"
+   ],
+   "unmet_requirements": [
+    "UK/Ireland location requirement likely; deep Marketing Cloud technical product expertise"
+   ],
+   "bridge_skills": [
+    "Marketing Cloud product certification",
+    "Public sector domain familiarity"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 40,
+   "interest_fit": 45,
+   "practical_fit": 30,
+   "opportunity_score": 35,
+   "work_interest": "C",
+   "dominant_work": "Pre-sales technical demos/solutioning for Marketing Cloud to UK/Ireland public sector",
+   "dominant_share": 70,
+   "fit_level": "stretch",
+   "industry_relationship": "unknown",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "TRANSFERABLE: solution development, discovery, client presentations from professional services",
+    "GAP: Marketing Cloud product depth and technical demo delivery",
+    "UNKNOWN: UK/Ireland public sector experience",
+    "CONFIRMED: executive-level presentation and stakeholder experience"
+   ],
+   "cautions": [
+    "Role is UK/Ireland-specific public sector focus, not clearly open to US remote",
+    "Requires specific Marketing Cloud technical demo depth beyond her current evidence"
+   ],
+   "sales_readiness": "near_qualified_december",
+   "action_status": "stretch",
+   "why_fits": "This is consultative pre-sales work aligned with her Adobe training direction, but it's tightly scoped to UK/Ireland public sector and deep Marketing Cloud product expertise she hasn't demonstrated.",
+   "material_gap": "No confirmed Marketing Cloud product/technical demo expertise and unclear UK/Ireland residency fit",
+   "next_action": "Skip unless she can confirm UK/Ireland eligibility; focus on US-based solution consultant roles instead.",
+   "exception_reason": "",
+   "score": 35,
+   "fit": "no",
+   "reason": "Consultative pre-sales aligns with sales-transition goal",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
   "remote_verified": false
  },
  {
@@ -1130,83 +1395,6 @@
    ]
   },
   "remote_scope": "residence_required",
-  "remote_verified": false
- },
- {
-  "key": "Salesforce::JR363869",
-  "company": "Salesforce",
-  "title": "Lead, Specialist Solution Engineer Marketing Cloud",
-  "location": "Remote (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/United-Kingdom---London/Lead--Specialist-Solution-Engineer-Marketing-Cloud_JR363869",
-  "posted": "2026-10-23",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "sales_adjacent": true,
-  "tier": "discovery",
-  "match_reason": "sales-adjacency lane: 'True' in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Consultative pre-sales aligns with sales-transition goal",
-    "Salesforce is a priority employer"
-   ],
-   "concerns": [
-    "Geographic scope appears UK/Ireland specific",
-    "Deep product-specific expertise required",
-    "Public sector specialization unconfirmed"
-   ],
-   "unmet_requirements": [
-    "UK/Ireland location requirement likely; deep Marketing Cloud technical product expertise"
-   ],
-   "bridge_skills": [
-    "Marketing Cloud product certification",
-    "Public sector domain familiarity"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 30,
-   "opportunity_score": 35,
-   "work_interest": "C",
-   "dominant_work": "Pre-sales technical demos/solutioning for Marketing Cloud to UK/Ireland public sector",
-   "dominant_share": 70,
-   "fit_level": "stretch",
-   "industry_relationship": "unknown",
-   "industry_importance": "preferred",
-   "key_qualifications": [
-    "TRANSFERABLE: solution development, discovery, client presentations from professional services",
-    "GAP: Marketing Cloud product depth and technical demo delivery",
-    "UNKNOWN: UK/Ireland public sector experience",
-    "CONFIRMED: executive-level presentation and stakeholder experience"
-   ],
-   "cautions": [
-    "Role is UK/Ireland-specific public sector focus, not clearly open to US remote",
-    "Requires specific Marketing Cloud technical demo depth beyond her current evidence"
-   ],
-   "sales_readiness": "near_qualified_december",
-   "action_status": "stretch",
-   "why_fits": "This is consultative pre-sales work aligned with her Adobe training direction, but it's tightly scoped to UK/Ireland public sector and deep Marketing Cloud product expertise she hasn't demonstrated.",
-   "material_gap": "No confirmed Marketing Cloud product/technical demo expertise and unclear UK/Ireland residency fit",
-   "next_action": "Skip unless she can confirm UK/Ireland eligibility; focus on US-based solution consultant roles instead.",
-   "exception_reason": "",
-   "score": 35,
-   "fit": "no",
-   "reason": "Consultative pre-sales aligns with sales-transition goal",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
   "remote_verified": false
  },
  {
@@ -2498,12 +2686,314 @@
   "remote_verified": false
  },
  {
+  "key": "Salesforce::JR366808",
+  "company": "Salesforce",
+  "title": "Customer Success Manager, Director - Core (Sales & Service) Clouds",
+  "location": "Seattle (+5 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager--Director---Core--Sales---Service--Clouds_JR366808",
+  "posted": "2026-11-02",
+  "salary": "$171,200 - $273,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Priority employer target",
+    "Strong value-realization and exec-relationship fit",
+    "Senior strategic scope matches her career level"
+   ],
+   "concerns": [
+    "No confirmed CRM platform depth",
+    "Possible tactical case-management component"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Salesforce platform familiarity",
+    "CRM-specific customer success metrics"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 70,
+   "interest_fit": 80,
+   "practical_fit": 70,
+   "opportunity_score": 75,
+   "work_interest": "A",
+   "dominant_work": "Strategic enterprise CSM driving value realization, exec relationships, ROI for major accounts",
+   "dominant_share": 70,
+   "fit_level": "good",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: enterprise client relationship leadership and executive engagement from professional services",
+    "CONFIRMED: value realization, ROI storytelling, cross-functional orchestration",
+    "UNKNOWN: direct Salesforce platform/CRM product knowledge",
+    "TRANSFERABLE: risk mitigation and strategic account health from PS delivery leadership"
+   ],
+   "cautions": [
+    "No confirmed SaaS CRM platform-specific CSM experience",
+    "Some case/incident management duties may be more tactical than her typical scope",
+    "specialist tenure in another function (\"revenue operations\")"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "This is a senior strategic CSM role centered on executive relationships, value realization and ROI for complex accounts, closely matching her professional-services and transformation leadership experience; she holds an Adobe/Salesforce-adjacent referral network worth leveraging.",
+   "material_gap": "No direct Salesforce platform CSM experience, though transferable account-leadership skills are strong.",
+   "next_action": "Apply directly, leveraging Salesforce priority-employer connections and emphasizing enterprise value-realization leadership.",
+   "exception_reason": "Salesforce is a named priority employer with referral/network leverage",
+   "score": 75,
+   "fit": "yes",
+   "reason": "Priority employer target",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": [
+    "specialist tenure in another function"
+   ]
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "Salesforce::JR349284",
+  "company": "Salesforce",
+  "title": "Customer Success Manager, Senior Manager - Core Clouds",
+  "location": "Seattle (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Customer-Success-Manager--Senior-Manager---Core-Clouds--Sales---Service-_JR349284",
+  "posted": "2026-10-30",
+  "salary": "$150,100 - $227,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Strategic enterprise CSM work",
+    "Value realization focus",
+    "Priority employer",
+    "A-tier interest match"
+   ],
+   "concerns": [
+    "Unclear Salesforce platform depth",
+    "Vertical/location specifics unclear"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Salesforce platform familiarity",
+    "Financial services domain knowledge"
+   ],
+   "remote_scope": "office_associated",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 75,
+   "practical_fit": 65,
+   "opportunity_score": 68,
+   "work_interest": "A",
+   "dominant_work": "Strategic CSM driving adoption/value realization for complex enterprise Salesforce accounts",
+   "dominant_share": 70,
+   "fit_level": "good",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "TRANSFERABLE: strategic enterprise customer relationship leadership from professional services",
+    "TRANSFERABLE: value realization, adoption, executive business reviews",
+    "UNKNOWN: direct Salesforce platform product knowledge",
+    "GAP: no confirmed direct Financial Services Cloud experience"
+   ],
+   "cautions": [
+    "Preferred FSC/financial services platform depth not confirmed",
+    "No confirmed Salesforce product certification"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "Role centers on strategic customer success, adoption and value realization for complex enterprise accounts, matching her professional-services client leadership and value-realization track record, though direct Salesforce product depth is unconfirmed.",
+   "material_gap": "No confirmed direct Salesforce platform/product expertise",
+   "next_action": "Apply citing enterprise client value-realization and multi-stakeholder transformation leadership; leverage Adobe/Salesforce networking contacts.",
+   "exception_reason": "Salesforce is a named priority employer",
+   "score": 68,
+   "fit": "yes",
+   "reason": "Strategic enterprise CSM work",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "in-office",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
+ },
+ {
+  "key": "Salesforce::JR366388",
+  "company": "Salesforce",
+  "title": "Senior Director, Communications Strategy & Operations",
+  "location": "Seattle (+2 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1",
+  "posted": "2026-11-02",
+  "salary": "$181,700 - $304,700",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Chief-of-staff style strategic ops role",
+    "Salesforce priority employer",
+    "Matches A-tier interest in operating models and org effectiveness"
+   ],
+   "concerns": [
+    "Comms domain unfamiliarity",
+    "Seniority level (Senior Director) may be competitive"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Corporate communications function familiarity",
+    "Executive comms planning cadence"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 78,
+   "interest_fit": 80,
+   "practical_fit": 70,
+   "opportunity_score": 75,
+   "work_interest": "A",
+   "dominant_work": "Chief-of-staff style strategy/ops leadership for a comms function CCO",
+   "dominant_share": 70,
+   "fit_level": "good",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: planning cadence, OKRs, executive reviews from professional-services leadership",
+    "CONFIRMED: trusted thought partner to executives, cross-functional alignment",
+    "UNKNOWN: direct corporate communications function experience",
+    "CONFIRMED: organizational scaling and operating-model design"
+   ],
+   "cautions": [
+    "No direct communications-function background, though role is ops/strategy not comms craft"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "This is chief-of-staff/operating-rhythm work for a CCO \u2014 planning, OKRs, executive reviews, cross-org alignment \u2014 squarely matching her transformation and operations leadership experience.",
+   "material_gap": "No direct corporate communications domain experience, though not clearly required for the ops role.",
+   "next_action": "Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.",
+   "exception_reason": "",
+   "score": 75,
+   "fit": "yes",
+   "reason": "Chief-of-staff style strategic ops role",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "Salesforce::JR332569",
+  "company": "Salesforce",
+  "title": "Principal / Sr. Principal Customer Success Manager - Slack",
+  "location": "Seattle (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Atlanta/Customer-Success-Manager---Slack_JR332569",
+  "posted": "2026-11-02",
+  "salary": "$123,100 - $227,000",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Strategic enterprise CSM, not support-heavy",
+    "Executive advisory and trusted-advisor framing",
+    "Salesforce is a named priority employer",
+    "Strong transferable value-realization track record"
+   ],
+   "concerns": [
+    "No confirmed Slack/collaboration-tool experience",
+    "Account coverage model unclear (volume vs. strategic)"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Slack platform familiarity",
+    "SaaS adoption metrics/tools"
+   ],
+   "remote_scope": "office_associated",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 75,
+   "practical_fit": 65,
+   "opportunity_score": 72,
+   "work_interest": "A",
+   "dominant_work": "Strategic enterprise CSM driving adoption, value realization and executive advisory for Slack customers",
+   "dominant_share": 70,
+   "fit_level": "good",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: enterprise client relationship leadership and executive advisory from professional-services career",
+    "CONFIRMED: value realization, adoption and retention through strategic customer programs",
+    "UNKNOWN: direct Slack/collaboration-software product expertise",
+    "TRANSFERABLE: maturity assessments and consultative discovery from agency/consulting roles"
+   ],
+   "cautions": [
+    "No confirmed direct SaaS collaboration-tool CSM experience, though role is strategic/advisory not support-heavy"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "This is a strategic, trusted-advisor CSM role focused on executive relationships, value realization and adoption programs for high-value accounts \u2014 closely matching her professional-services and transformation leadership experience; Salesforce is also a named priority employer.",
+   "material_gap": "No confirmed direct Slack/SaaS product experience, though consultative skillset transfers well.",
+   "next_action": "Apply directly, emphasizing executive advisory, adoption and value-realization work from her professional-services career.",
+   "exception_reason": "Priority target employer (Salesforce) with strong strategic-CSM fit.",
+   "score": 72,
+   "fit": "yes",
+   "reason": "Strategic enterprise CSM, not support-heavy",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "in-office",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
+ },
+ {
   "key": "Salesforce::JR340890",
   "company": "Salesforce",
   "title": "Customer Success Manager (Informatica)",
   "location": "Seattle (+3 more)",
   "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Indiana---Indianapolis/Customer-Success-Manager--Informatica-_JR340890",
-  "posted": "2026-10-31",
+  "posted": "2026-11-02",
   "salary": "$99,400 - $186,300",
   "employment_type": "",
   "expires": "",
@@ -2566,7 +3056,7 @@
    "reason": "Priority employer Salesforce",
    "bg": "55a510aca86d",
    "remote_verified": false,
-   "remote_evidence": "in-office",
+   "remote_evidence": "",
    "detected_requirements": []
   },
   "remote_scope": "office_associated",
@@ -2712,9 +3202,7 @@
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
-   "detected_requirements": [
-    "required license or certification"
-   ]
+   "detected_requirements": []
   },
   "remote_scope": "unclear",
   "remote_verified": false
@@ -2793,9 +3281,7 @@
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
-   "detected_requirements": [
-    "dedicated RevOps / Sales Ops ownership"
-   ]
+   "detected_requirements": []
   },
   "remote_scope": "unclear",
   "remote_verified": false
@@ -2865,83 +3351,7 @@
    "reason": "Priority employer (Salesforce)",
    "bg": "55a510aca86d",
    "remote_verified": false,
-   "remote_evidence": "in-office",
-   "detected_requirements": []
-  },
-  "remote_scope": "office_associated",
-  "remote_verified": false
- },
- {
-  "key": "Salesforce::JR349284",
-  "company": "Salesforce",
-  "title": "Customer Success Manager, Senior Manager - Core Clouds",
-  "location": "Seattle (+3 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Customer-Success-Manager--Senior-Manager---Core-Clouds--Sales---Service-_JR349284",
-  "posted": "2026-10-30",
-  "salary": "$150,100 - $227,000",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "demoted": true,
-  "tier": "discovery",
-  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
-  "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "Strategic enterprise CSM work",
-    "Value realization focus",
-    "Priority employer",
-    "A-tier interest match"
-   ],
-   "concerns": [
-    "Unclear Salesforce platform depth",
-    "Vertical/location specifics unclear"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [
-    "Salesforce platform familiarity",
-    "Financial services domain knowledge"
-   ],
-   "remote_scope": "office_associated",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 75,
-   "practical_fit": 65,
-   "opportunity_score": 68,
-   "work_interest": "A",
-   "dominant_work": "Strategic CSM driving adoption/value realization for complex enterprise Salesforce accounts",
-   "dominant_share": 70,
-   "fit_level": "good",
-   "industry_relationship": "client_exposure",
-   "industry_importance": "preferred",
-   "key_qualifications": [
-    "TRANSFERABLE: strategic enterprise customer relationship leadership from professional services",
-    "TRANSFERABLE: value realization, adoption, executive business reviews",
-    "UNKNOWN: direct Salesforce platform product knowledge",
-    "GAP: no confirmed direct Financial Services Cloud experience"
-   ],
-   "cautions": [
-    "Preferred FSC/financial services platform depth not confirmed",
-    "No confirmed Salesforce product certification"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "package",
-   "why_fits": "Role centers on strategic customer success, adoption and value realization for complex enterprise accounts, matching her professional-services client leadership and value-realization track record, though direct Salesforce product depth is unconfirmed.",
-   "material_gap": "No confirmed direct Salesforce platform/product expertise",
-   "next_action": "Apply citing enterprise client value-realization and multi-stakeholder transformation leadership; leverage Adobe/Salesforce networking contacts.",
-   "exception_reason": "Salesforce is a named priority employer",
-   "score": 68,
-   "fit": "yes",
-   "reason": "Strategic enterprise CSM work",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "in-office",
+   "remote_evidence": "",
    "detected_requirements": []
   },
   "remote_scope": "office_associated",
@@ -3310,81 +3720,6 @@
   "remote_verified": false
  },
  {
-  "key": "Salesforce::JR362015",
-  "company": "Salesforce",
-  "title": "Senior Manager, GTM Growth Strategy",
-  "location": "Seattle (+8 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Manager--GTM-Growth-Strategy_JR362015",
-  "posted": "2026-10-29",
-  "salary": "$150,100 - $227,000",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Priority target employer",
-    "Cross-functional strategy experience transfers",
-    "GTM/revenue focus adjacent to her PS economics background"
-   ],
-   "concerns": [
-    "Analytical GTM modeling depth uncertain",
-    "Likely competitive pool from strategy-consulting backgrounds"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [
-    "Revenue/pipeline analytics",
-    "Market segmentation frameworks",
-    "SaaS consumption GTM models"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 55,
-   "practical_fit": 65,
-   "opportunity_score": 58,
-   "work_interest": "B",
-   "dominant_work": "GTM strategy design, revenue model analysis and cross-functional program execution at Salesforce",
-   "dominant_share": 55,
-   "fit_level": "stretch",
-   "industry_relationship": "adjacent",
-   "industry_importance": "preferred",
-   "key_qualifications": [
-    "TRANSFERABLE: cross-functional strategy/transformation leadership across sales, delivery, finance",
-    "UNKNOWN: quantitative revenue-model/pipeline analytics depth",
-    "CONFIRMED: professional-services operating-model and growth/margin experience",
-    "UNKNOWN: strategy-consulting pedigree (e.g. ex-MBB) often preferred for these roles"
-   ],
-   "cautions": [
-    "Likely prefers candidates with strategy-consulting or RevOps analytics background",
-    "Heavy quantitative GTM modeling may be less central to her recent experience"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "validate",
-   "why_fits": "She has real cross-functional transformation and professional-services operating experience, but this role leans analytical/GTM-strategy rather than her stronger adoption/CX/M&A lanes.",
-   "material_gap": "Unclear depth in quantitative revenue-model and pipeline-analytics work central to the role",
-   "next_action": "Apply leveraging Adobe-adjacent SaaS GTM angle and PS operating-model outcomes; use Salesforce network contact if available.",
-   "exception_reason": "Priority employer (Salesforce) with potential referral leverage",
-   "score": 58,
-   "fit": "maybe",
-   "reason": "Priority target employer",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
   "key": "Salesforce::JR362479",
   "company": "Salesforce",
   "title": "Manager, Revenue Recognition Strategy",
@@ -3658,73 +3993,6 @@
    "detected_requirements": []
   },
   "remote_scope": "office_associated",
-  "remote_verified": false
- },
- {
-  "key": "Salesforce::JR360246",
-  "company": "Salesforce",
-  "title": "Community Program Senior Analyst",
-  "location": "Seattle (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Washington---Seattle/Community-Program-Senior-Analyst_JR360246",
-  "posted": "2026-10-26",
-  "salary": "$94,000 - $142,300",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer (Salesforce)"
-   ],
-   "concerns": [
-    "No description to evaluate",
-    "Analyst title likely below her level"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 50,
-   "opportunity_score": 25,
-   "work_interest": "C",
-   "dominant_work": "Unknown program/community analyst work at Salesforce",
-   "dominant_share": 30,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "UNKNOWN: scope and seniority of this analyst role",
-    "UNKNOWN: whether this is strategic program work or operational execution"
-   ],
-   "cautions": [
-    "No description available, cannot assess true fit",
-    "Title suggests analyst-level, likely below her seniority"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "validate",
-   "why_fits": "Salesforce is a priority employer but 'Senior Analyst' title suggests a level below her senior leadership scope, and no description exists to confirm actual work.",
-   "material_gap": "No job description available to assess dominant work or true seniority fit",
-   "next_action": "Request full job description before considering; likely below her target seniority.",
-   "exception_reason": "",
-   "score": 25,
-   "fit": "no",
-   "reason": "Priority employer (Salesforce)",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
   "remote_verified": false
  },
  {
@@ -4283,73 +4551,6 @@
   "remote_verified": false
  },
  {
-  "key": "Zillow Group::P750062",
-  "company": "Zillow Group",
-  "title": "Senior Product Manager, Agent Performance",
-  "location": "Remote-USA",
-  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Senior-Product-Manager--AI-Platform---Ecosystem_P750062",
-  "posted": "2026-10-11",
-  "salary": "$151,700.00 - $242,300.00",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'performance' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer Zillow Group"
-   ],
-   "concerns": [
-    "No description to judge fit",
-    "Product Manager titles usually require technical/engineering depth"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 20,
-   "practical_fit": 40,
-   "opportunity_score": 20,
-   "work_interest": "D",
-   "dominant_work": "Unknown \u2014 likely product management for real-estate agent performance features",
-   "dominant_share": 30,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "UNKNOWN: product management experience",
-    "GAP: no evidence of technical PM background required for this title"
-   ],
-   "cautions": [
-    "No job description available to assess actual scope",
-    "Title suggests technical product management, likely engineering-adjacent"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "validate",
-   "why_fits": "No description provided; title suggests a technical product-management role for agent-performance features, which is not her background.",
-   "material_gap": "No JD to confirm work content; title implies technical PM depth she doesn't have.",
-   "next_action": "Skip unless a description becomes available showing non-technical, strategy-oriented scope.",
-   "exception_reason": "",
-   "score": 20,
-   "fit": "no",
-   "reason": "Priority employer Zillow Group",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
   "key": "Atlassian::27257",
   "company": "Atlassian",
   "title": "Head of Detection and Response",
@@ -4412,74 +4613,6 @@
   },
   "remote_scope": "unclear",
   "remote_verified": false
- },
- {
-  "key": "Atlassian::27424",
-  "company": "Atlassian",
-  "title": "Technical Head of Enginering",
-  "location": "San Francisco - United States; Remote - Remote; Seattle - United States; New York - United States",
-  "url": "https://careers-americas.icims.com/jobs/27424/technical-head-of-enginering/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "priority employer; mandate in responsibilities (operational excellence)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Priority employer only",
-    "Title misleading"
-   ],
-   "concerns": [
-    "Engineering-depth technical role",
-    "Not a business/transformation function"
-   ],
-   "unmet_requirements": [
-    "deep technical expertise in applied ML, agentic systems, platform engineering, production code"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 5,
-   "interest_fit": 5,
-   "practical_fit": 20,
-   "opportunity_score": 8,
-   "work_interest": "D",
-   "dominant_work": "Hands-on engineering leadership writing production ML/agentic-systems code",
-   "dominant_share": 5,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "GAP: requires deep ML/agentic systems engineering and hands-on coding",
-    "GAP: no software engineering or ML architecture background",
-    "UNKNOWN: people-management experience in engineering orgs"
-   ],
-   "cautions": [],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a hands-on technical engineering leadership role requiring ML architecture and production coding, entirely outside her skill set despite Atlassian being a priority employer.",
-   "material_gap": "Requires deep software/ML engineering depth she does not have",
-   "next_action": "Skip; look for non-engineering operational or transformation roles at Atlassian instead.",
-   "exception_reason": "",
-   "score": 8,
-   "fit": "no",
-   "reason": "Priority employer only",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
  },
  {
   "key": "Atlassian::26052",
@@ -4629,81 +4762,6 @@
   },
   "remote_scope": "office_associated",
   "remote_verified": false
- },
- {
-  "key": "Atlassian::27341",
-  "company": "Atlassian",
-  "title": "Business Process Partner, Sales Process & Productivity",
-  "location": "Remote - Americas; San Francisco - United States; Austin - United States",
-  "url": "https://careers-americas.icims.com/jobs/27341/business-process-partner%2c-sales-process-%26-productivity/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'business process' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Atlassian priority employer",
-    "Cross-functional GTM partnership"
-   ],
-   "concerns": [
-    "Narrow BSA/systems-admin scope",
-    "Individual contributor sales-ops role, not leadership",
-    "Specific tooling/years requirement unmet"
-   ],
-   "unmet_requirements": [
-    "6+ years Sales Operations experience with systems administration in enterprise software"
-   ],
-   "bridge_skills": [
-    "Sales systems administration",
-    "Lead-to-cash process depth"
-   ],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 35,
-   "interest_fit": 30,
-   "practical_fit": 55,
-   "opportunity_score": 30,
-   "work_interest": "C",
-   "dominant_work": "Sales operations/systems business analyst work supporting GTM process scaling",
-   "dominant_share": 30,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "preferred",
-   "key_qualifications": [
-    "GAP: 6+ years dedicated Sales Operations with systems administration",
-    "UNKNOWN: Direct/Channel sales ecosystem experience",
-    "TRANSFERABLE: cross-functional partnership with sales/strategy teams",
-    "CONFIRMED: requirements documentation and process work from professional services"
-   ],
-   "cautions": [
-    "Narrow RevOps/BSA role requiring specific sales-tools systems administration"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a hands-on sales-systems BSA role (BRDs, system admin, UAT) rather than strategic transformation leadership, and requires dedicated SalesOps tooling depth she hasn't demonstrated.",
-   "material_gap": "Requires dedicated SalesOps systems-administration background, not her core experience",
-   "next_action": "Deprioritize; pursue stronger-fit Atlassian roles aligned to transformation or CX leadership instead.",
-   "exception_reason": "",
-   "score": 30,
-   "fit": "no",
-   "reason": "Atlassian priority employer",
-   "bg": "55a510aca86d",
-   "remote_verified": true,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
-  "remote_verified": true
  },
  {
   "key": "Atlassian::27792",
@@ -5949,6 +6007,82 @@
   "remote_verified": true
  },
  {
+  "key": "Atlassian::27402",
+  "company": "Atlassian",
+  "title": "Senior Customer Success Manager, Mid Market",
+  "location": "Austin - United States; Remote - Remote",
+  "url": "https://careers-americas.icims.com/jobs/27402/senior-customer-success-manager%2c-mid-market/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "demoted": true,
+  "tier": "discovery",
+  "match_reason": "role family 'customer success' + seniority in title; demoted to wildcards by the precision rule 'customer success manager'",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Priority employer with referral leverage",
+    "Value-realization and executive-relationship work matches her strengths",
+    "Transferable professional-services account experience"
+   ],
+   "concerns": [
+    "Mid-market volume could be more transactional than preferred",
+    "Unproven direct SaaS CSM metrics track record"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "SaaS adoption/renewal metrics fluency",
+    "Scaled customer-success playbooks",
+    "Atlassian product familiarity"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 65,
+   "practical_fit": 65,
+   "opportunity_score": 62,
+   "work_interest": "A",
+   "dominant_work": "Mid-market SaaS customer success: adoption, EBRs, value realization at scale",
+   "dominant_share": 65,
+   "fit_level": "good",
+   "industry_relationship": "client_exposure",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: executive relationship management and value realization from professional-services leadership",
+    "TRANSFERABLE: EBR/strategic account planning from client-facing delivery roles",
+    "UNKNOWN: recent SaaS-specific CSM tooling/metrics experience",
+    "CONFIRMED: Atlassian is a named priority employer with referral/recruiting contact"
+   ],
+   "cautions": [
+    "Mid-market scale may mean higher account volume/more transactional cadence than her preferred strategic-enterprise focus",
+    "No confirmed direct SaaS CSM title history"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "contact",
+   "why_fits": "Strategic customer value-realization, EBRs and executive relationship work closely mirror her professional-services and account-leadership experience, and she has a referral/contact at Atlassian.",
+   "material_gap": "Lacks confirmed recent SaaS CSM scale/tooling experience",
+   "next_action": "Use her Atlassian referral contact to apply and highlight value-realization and EBR experience.",
+   "exception_reason": "Priority employer with existing referral/recruiting contact raises response likelihood.",
+   "score": 62,
+   "fit": "yes",
+   "reason": "Priority employer with referral leverage",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Atlassian::27282",
   "company": "Atlassian",
   "title": "Senior Design Manager, Strategy Collection",
@@ -6464,6 +6598,81 @@
   },
   "remote_scope": "unclear",
   "remote_verified": false
+ },
+ {
+  "key": "Atlassian::27341",
+  "company": "Atlassian",
+  "title": "Sr. Business Process Partner, Sales Process & Productivity",
+  "location": "Remote - Americas; San Francisco - United States; Austin - United States",
+  "url": "https://careers-americas.icims.com/jobs/27341/sr.-business-process-partner%2c-sales-process-%26-productivity/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'business process' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "medium",
+   "reasons": [
+    "Atlassian priority employer",
+    "Cross-functional GTM partnership"
+   ],
+   "concerns": [
+    "Narrow BSA/systems-admin scope",
+    "Individual contributor sales-ops role, not leadership",
+    "Specific tooling/years requirement unmet"
+   ],
+   "unmet_requirements": [
+    "6+ years Sales Operations experience with systems administration in enterprise software"
+   ],
+   "bridge_skills": [
+    "Sales systems administration",
+    "Lead-to-cash process depth"
+   ],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 30,
+   "work_interest": "C",
+   "dominant_work": "Sales operations/systems business analyst work supporting GTM process scaling",
+   "dominant_share": 30,
+   "fit_level": "poor",
+   "industry_relationship": "adjacent",
+   "industry_importance": "preferred",
+   "key_qualifications": [
+    "GAP: 6+ years dedicated Sales Operations with systems administration",
+    "UNKNOWN: Direct/Channel sales ecosystem experience",
+    "TRANSFERABLE: cross-functional partnership with sales/strategy teams",
+    "CONFIRMED: requirements documentation and process work from professional services"
+   ],
+   "cautions": [
+    "Narrow RevOps/BSA role requiring specific sales-tools systems administration"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is a hands-on sales-systems BSA role (BRDs, system admin, UAT) rather than strategic transformation leadership, and requires dedicated SalesOps tooling depth she hasn't demonstrated.",
+   "material_gap": "Requires dedicated SalesOps systems-administration background, not her core experience",
+   "next_action": "Deprioritize; pursue stronger-fit Atlassian roles aligned to transformation or CX leadership instead.",
+   "exception_reason": "",
+   "score": 30,
+   "fit": "no",
+   "reason": "Atlassian priority employer",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
  },
  {
   "key": "Atlassian::27486",
