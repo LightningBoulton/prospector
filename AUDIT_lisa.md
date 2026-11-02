@@ -1,104 +1,103 @@
 # Prospector audit — Lisa — Transformation / Operations / Experience Leadership
 
-_Generated 2026-10-26 by `audit.py` from committed files only. No ATS fetch, no Anthropic API call, nothing modified._
+_Generated 2026-11-02 by `audit.py` from committed files only. No ATS fetch, no Anthropic API call, nothing modified._
 
 ## Current picture
 
-- Roles tracked across all lanes: **208**
-- `apply_first`: **5**
-- `strong_fit`: **27**
-- `stretch`: **79**
-- `practical_contract`: **3**
-- `not_recommended`: **94**
-- Local: 26
-- US-Remote: 174
-- Contract/Staffing: 8
+- Roles tracked across all lanes: **248**
+- `strong_fit`: **10**
+- `stretch`: **37**
+- `practical_contract`: **1**
+- `not_recommended`: **200**
+- Local: 32
+- US-Remote: 188
+- Contract/Staffing: 28
 
 ## Possible false negatives
 _Highest-scoring roles the model still marked `not_recommended`. If any of these look right to you, the scoring profile or the prompt may be too strict._
 
-- **Mercury** — Research Operations Lead · US-Remote · score 42 · _US-remote option fits location preference_
-- **Chainguard** — Customer Success Manager, Commercial · US-Remote · score 42 · _Remote US fits location preference_
-- **LaunchDarkly** — Senior Director, GTM Systems · US-Remote · score 40 · _Fully remote US role_
-- **MaintainX** — Senior Project and Program Manager, Marketing Brand Creative · US-Remote · score 40 · _Fully remote US role_
-- **Robert Half** — Project Manager - Mergers & Acquisition · Contract/Staffing · score 40 · _M&A integration domain match_
-- **Chainguard** — Customer Success Manager, Enterprise  - Central · US-Remote · score 38 · _US-remote practical fit is strong_
-- **Committee for Children** — Senior Product Manager - Edtech Innovation · US-Remote · score 38 · _Fully remote US role_
-- **Canonical** — Cloud Professional Services Manager · US-Remote · score 38 · _Professional services leadership angle fits_
-- **Qualtrics** — Senior Consultant, Safety and Reliability · Local · score 35 · _Remote US role fits location_
-- **Lucid Software** — Field Enablement Manager · Local · score 35 · _Utah hybrid location fits practical criteria_
-- **Cloudflare** — Senior RevOps Technologist · US-Remote · score 35 · _RevOps tech/systems IC role, not strategy/transformation_
-- **Ramp** — Lead Product Marketing Manager - Verticals · US-Remote · score 35 · _Product marketing specialist role, not transformation/ops leadership_
-- **Toptal** — General Manager, Industrial Products & Services - US Based · US-Remote · score 35 · _Fully remote US role_
-- **Stripe** — SaaS Platform and AI Partner Marketing Lead · US-Remote · score 35 · _Partner marketing strategy, not her domain_
-- **Stripe** — Technical Program Manager, Extensibility Platform · US-Remote · score 35 · _US remote aligns with location preference_
+- **Chainguard** — Senior Customer Success Manager, Enterprise - West · US-Remote · score 42 · _Enterprise customer value realization_
+- **Kaseya** — Director Global Events - Program Management · US-Remote · score 40 · _Operating-model/governance skills transfer_
+- **Twilio** — Partner Program Manager · US-Remote · score 38 · _Cross-functional program experience transfers somewhat_
+- **Plaid** — People Operations Manager · US-Remote · score 38 · _AI-enabled process redesign angle_
+- **Samsara** — Customer Success Manager · US-Remote · score 38 · _CS/value-realization alignment_
+- **GitLab** — Customer Experience Enablement Lead · US-Remote · score 35 · _Cross-functional program design transferable_
+- **Twilio** — Sr. Director, Marketing Strategy, Analytics & Innovation · US-Remote · score 35 · _Senior strategic leadership experience_
+- **Affirm** — GTM Strategy & Operations Lead (Legal & Field Ops) · US-Remote · score 35 · _Cross-functional process design experience_
+- **Affirm** — Operations Enablement Manager · US-Remote · score 35 · _Process/operations design experience transfers_
+- **Ramp** — Manager, Mid-Market Solutions Consulting · US-Remote · score 35 · _Some solutioning/discovery overlap_
+- **Stripe** — Customer Success Enablement Business Partner · US-Remote · score 35 · _Transferable learning-development background_
+- **Stripe** — Marketing Operations Program Manager · US-Remote · score 35 · _Cross-functional program experience_
+- **LaunchDarkly** — Senior Customer Success Manager - West Coast · US-Remote · score 35 · _Enterprise client relationship skills transfer_
+- **Chainguard** — Customer Success Manager, Enterprise  - Central · US-Remote · score 35 · _Enterprise customer relationship work_
+- **Chainguard** — Senior Customer Success Manager - Scaled · US-Remote · score 35 · _Remote US_
 
 ## Fetched but filtered out
 _Leadership-shaped titles the filter dropped, across the last 10 recorded run(s). Recorded by the daily run, so this needs no extra fetching. Use it to spot an over-tight exclusion._
 
-**419** distinct role(s) rejected. Most common rules:
-- missed match group [2] — 1637 occurrence(s)
-- excluded by 'engineering' — 119 occurrence(s)
-- excluded by 'engineer' — 115 occurrence(s)
-- excluded by 'accounting' — 87 occurrence(s)
-- excluded by 'customer success manager' — 82 occurrence(s)
-- excluded by 'account manager' — 72 occurrence(s)
-- missed match group [1] — 69 occurrence(s)
-- excluded by 'fp&a' — 24 occurrence(s)
-- excluded by 'executive assistant' — 20 occurrence(s)
-- excluded by 'tax' — 17 occurrence(s)
+**380** distinct role(s) rejected. Most common rules:
+- missed match group [2] — 1577 occurrence(s)
+- excluded by 'engineering' — 128 occurrence(s)
+- excluded by 'engineer' — 124 occurrence(s)
+- missed match group [1] — 106 occurrence(s)
+- excluded by 'customer success manager' — 85 occurrence(s)
+- excluded by 'accounting' — 72 occurrence(s)
+- excluded by 'account manager' — 43 occurrence(s)
+- excluded by 'fp&a' — 34 occurrence(s)
+- excluded by 'developer' — 21 occurrence(s)
+- excluded by 'data scientist' — 19 occurrence(s)
 
 | Company | Title | Rule that dropped it | Runs |
 |---|---|---|---|
-| NICE | Senior Technical Account Manager | excluded by 'account manager' | 20 |
+| Adobe | Sr. Director, Enterprise Sales | missed match group [2] | 30 |
 | Salesforce | Engagement Delivery Director | missed match group [2] | 16 |
-| Adobe | Sr. Director, Enterprise Sales | missed match group [2] | 15 |
-| Aquent | Creative Project Manager | missed match group [2] | 14 |
-| Aquent | Project Manager | missed match group [2] | 13 |
-| Aquent | Product Marketing Manager | missed match group [2] | 13 |
-| Salesforce | Strategic Partner Account Sr. Manager | missed match group [2] | 12 |
-| Robert Half | FP&A Manager | excluded by 'fp&a' | 12 |
-| Aquent | Art Director | missed match group [2] | 12 |
-| Adobe | Enterprise Technical Account Manager | excluded by 'account manager' | 10 |
-| Adobe | Sr. Manager Risk & Controls | missed match group [2] | 10 |
-| Adobe | Senior Technical Account Manager | excluded by 'account manager' | 10 |
-| Adobe | Principal Scientist - Data Pipeline Engineer | excluded by 'engineer' | 10 |
+| Aquent | Art Director | missed match group [2] | 14 |
+| Robert Half | FP&A Manager | excluded by 'fp&a' | 11 |
+| Adobe | Global Alliance Director - WPP | missed match group [2] | 10 |
+| Adobe | Director of Engineering, Real Time Experience (RTX) | excluded by 'engineering' | 10 |
+| Salesforce | Lead, Specialist Solution Engineer Marketing Cloud | excluded by 'engineer' | 10 |
+| Salesforce | Customer Success Manager, Director - Marketing Cloud | excluded by 'customer success manager' | 10 |
+| Salesforce | Customer Success Manager - Marketing Cloud | excluded by 'customer success manager' | 10 |
+| Salesforce | Customer Success Manager – Digital (Marketing & Commerce) Clouds | excluded by 'customer success manager' | 10 |
+| Salesforce | Lead Solution Engineer, ECS, Public Sector | excluded by 'engineer' | 10 |
+| Salesforce | Senior Experience Design Lead | missed match group [2] | 10 |
+| Salesforce | Principal Partner Account Manager | excluded by 'account manager' | 10 |
+| Salesforce | Senior Technical Architect / Technical Architect Director - Data Foundation Delivery | missed match group [2] | 10 |
+| Salesforce | Principal Architect | missed match group [2] | 10 |
+| Salesforce | Renewals / Senior Renewals Manager | missed match group [2] | 10 |
+| Salesforce | Applied AI Architect (Principal/Lead) | missed match group [2] | 10 |
+| Salesforce | Customer Success Manager - State East & Local | excluded by 'customer success manager' | 10 |
+| Salesforce | Lead, Account SE -  Manufacturing Industry | missed match group [2] | 10 |
+| Salesforce | Cyber Defense & Executive Engagement Lead | missed match group [2] | 10 |
+| Salesforce | Sales Director, Non-Profit: Analytics | missed match group [2] | 10 |
+| Salesforce | Manager/Sr. Manager - Product Marketing, Missionforce (Public Sector) | missed match group [2] | 10 |
+| Salesforce | Lead Product Designer - Qualified, AI Products | missed match group [2] | 10 |
+| Salesforce | Senior Product Marketing Manager, Sales Enablement (Qualified) | missed match group [2] | 10 |
+| Salesforce | Missionforce - Senior Product Manager, Agentforce Public Sector | missed match group [2] | 10 |
+| Salesforce | Senior Product Marketing Manager, GTM (Qualified) | missed match group [2] | 10 |
+| Salesforce | Life Sciences Product Liaison Director | missed match group [2] | 10 |
+| Salesforce | Senior/Lead Engineer, Performance Engineering | excluded by 'engineer' | 10 |
+| Salesforce | Staff Technical Program Manager, Growth | missed match group [2] | 10 |
 | GitLab | Director, Analytics Engineering | excluded by 'engineering' | 10 |
 | GitLab | Director, FP&A | excluded by 'fp&a' | 10 |
-| GitLab | Engineering Manager, Dedicated Infrastructure | excluded by 'engineering' | 10 |
-| GitLab | Lead Legal Counsel, Corporate | missed match group [2] | 10 |
 | GitLab | Manager, Customer Success Engineering | excluded by 'engineering' | 10 |
-| GitLab | Manager, Support Engineering (AMER) | excluded by 'engineering' | 10 |
-| GitLab | Pipeline Programs Manager | missed match group [2] | 10 |
+| GitLab | Principal Engineer, Monetization Engineering | excluded by 'engineer' | 10 |
 | GitLab | Regional Sales Director, Enterprise - Southeast | missed match group [2] | 10 |
-| GitLab | Senior Director, Global SME Solutions Architecture | missed match group [2] | 10 |
+| GitLab | Senior Partner Solutions Manager, Strategic Partnerships | missed match group [2] | 10 |
+| GitLab | Sr. Manager, Solutions Architect - SMB | missed match group [2] | 10 |
 | GitLab | Sr. Manager, Solutions Architect SME | missed match group [2] | 10 |
+| GitLab | Staff Global Partner Programs Manager | missed match group [2] | 10 |
+| GitLab | Staff Product Manager, Agentic Planning | missed match group [2] | 10 |
 | GitLab | Staff Product Manager, Agentic Test Intelligence | missed match group [2] | 10 |
-| Cloudflare | Director, Growth Sales (AI & Digital Natives) | missed match group [2] | 10 |
-| Cloudflare | Senior GTM Analytics Manager | missed match group [2] | 10 |
-| Cloudflare | Technical Product Marketing Manager | missed match group [2] | 10 |
-| Coinbase | Manager, SEC Reporting | missed match group [2] | 10 |
-| Coinbase | Principal Recruiter | missed match group [2] | 10 |
-| Coinbase | Product Manager II, Advanced Trade | missed match group [2] | 10 |
-| Coinbase | Product Manager II, DeFi Borrow | missed match group [2] | 10 |
-| Coinbase | Senior Engineering Manager, AI Foundations | excluded by 'engineering' | 10 |
-| Coinbase | Senior Manager, Digital Securities & Market Structure Policy | missed match group [2] | 10 |
-| Coinbase | Senior Product Marketing Manager, Infrastructure | missed match group [2] | 10 |
-| Coinbase | Senior Strategic Program Lead, GFCO | missed match group [2] | 10 |
-| Coinbase | Social Media Manager, Predictions | missed match group [2] | 10 |
-| Coinbase | Staff Technical Program Manager, Consumer | missed match group [2] | 10 |
-| Reddit | Engineering Manager, Knowledge Graph Platform | excluded by 'engineering' | 10 |
-| Reddit | Staff Product Manager, Community Builders | missed match group [2] | 10 |
-| Reddit | Staff Product Manager, Moderation | missed match group [2] | 10 |
 
-_…and 379 more._
+_…and 340 more._
 
 ## Repeated false-positive patterns
 
 _No feedback recorded yet. Mark a few roles in `feedback_lisa.json` and this section becomes the most useful one here._
 ## Source health
 
-_From the run on 2026-10-26._
+_From the run on 2026-11-01._
 
 ### Sources that FAILED to respond on the last run
 
@@ -115,27 +114,29 @@ _From the run on 2026-10-26._
 
 | Company | Registry | ATS / slug | Runs with zero results |
 |---|---|---|---|
-| Weave | local | greenhouse/weave | 91 ⚠️ |
-| Vivint | local | smartrecruiters/vivint | 91 ⚠️ |
-| Instructure | local | smartrecruiters/instructure | 91 ⚠️ |
-| Nav | local | greenhouse/navtechnologies | 91 ⚠️ |
-| Miro | remote | ashby/miro | 91 ⚠️ |
-| Inngest | remote | ashby/inngest | 91 ⚠️ |
-| Beyond (Overstock) | local | greenhouse/beyond | 83 ⚠️ |
-| Doppler | remote | ashby/doppler | 75 ⚠️ |
-| Airtable | remote | greenhouse/airtable | 69 ⚠️ |
-| Domo | local | workday/domo | 66 ⚠️ |
-| Confluent | remote | ashby/confluent | 63 ⚠️ |
-| Cockroach Labs | remote | greenhouse/cockroachlabs | 62 ⚠️ |
-| Together AI | remote | greenhouse/togetherai | 62 ⚠️ |
-| Buffer | remote | ashby/buffer | 48 ⚠️ |
-| Nomi Health | local | lever/nomihealth | 29 ⚠️ |
-| Galileo (SoFi) | local | greenhouse/galileo | 20 ⚠️ |
-| Gemini | remote | greenhouse/gemini | 14 ⚠️ |
-| Webflow | remote | greenhouse/webflow | 10 ⚠️ |
-| Gusto | remote | greenhouse/gusto | 4 |
-| Aquent | staffing | aquent/aquent | 1 |
+| Weave | local | greenhouse/weave | 97 ⚠️ |
+| Nav | local | greenhouse/navtechnologies | 97 ⚠️ |
+| Miro | remote | ashby/miro | 97 ⚠️ |
+| Beyond (Overstock) | local | greenhouse/beyond | 89 ⚠️ |
+| Domo | local | workday/domo | 72 ⚠️ |
+| Confluent | remote | ashby/confluent | 69 ⚠️ |
+| Cockroach Labs | remote | greenhouse/cockroachlabs | 68 ⚠️ |
+| Together AI | remote | greenhouse/togetherai | 68 ⚠️ |
+| Buffer | remote | ashby/buffer | 54 ⚠️ |
+| Nomi Health | local | lever/nomihealth | 35 ⚠️ |
+| Galileo (SoFi) | local | greenhouse/galileo | 26 ⚠️ |
+| Gemini | remote | greenhouse/gemini | 20 ⚠️ |
+| Webflow | remote | greenhouse/webflow | 16 ⚠️ |
+| Gusto | remote | greenhouse/gusto | 10 ⚠️ |
+| Netlify | remote | greenhouse/netlify | 6 ⚠️ |
+| NPR | priority | greenhouse/nationalpublicradioinc | 6 ⚠️ |
+| Close | remote | ashby/close | 5 ⚠️ |
+| Health Catalyst | local | workday/healthcatalyst | 4 |
+| Sourcegraph | remote | greenhouse/sourcegraph91 | 4 |
+| Doximity | remote | greenhouse/doximity | 2 |
+| Mixpanel | remote | greenhouse/mixpanel | 2 |
+| LangChain | remote | ashby/langchain | 1 |
 
 _A company returning zero for many consecutive runs usually means an ATS migration or a changed slug — worth checking its careers page. A ⚠️ marks 5+ runs._
 
-**109/137** configured sources produced roles on the last run.
+**106/136** configured sources produced roles on the last run.
