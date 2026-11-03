@@ -1,11 +1,34 @@
-# Prospector — 2026-11-02
+# Prospector — 2026-11-03
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**5 new roles worth your time** · 5 still worth applying · 1 closed/removed
+**2 new roles worth your time** · 5 still worth applying · 0 closed/removed
 Best move today: **Chief of Staff** — LaunchDarkly
-_212 roles judged on their job descriptions · 184 not worth your time · 4 worthwhile held for a later day (daily cap) · 1 awaiting a JD review_
+_190 roles judged on their job descriptions · 164 not worth your time · 2 worthwhile held for a later day (daily cap) · 3 awaiting a JD review_
 
-## WORTH YOUR TIME — NEW (4)
+## WORTH YOUR TIME — NEW (1)
+- **Instructure — Sr. Customer Success Manager**
+  - Status: APPLY · Work Interest: A · Fit: Good
+  - Work model/location: remote US-REMOTE · posted 2026-11-03
+  - Industry: Adjacent
+  - Compensation: $80K – $90K
+  - Why it fits: Centers on strategic account planning, EBRs, health monitoring and retention/expansion for key enterprise accounts — squarely her value-realization and executive relationship strengths.
+  - Material gap: No confirmed higher-education/EdTech industry experience
+  - Next action: Apply highlighting EBR leadership, retention/expansion outcomes and enterprise client management.
+  - https://jobs.ashbyhq.com/instructure/7947f857-080e-4a65-a93c-7fb4c8f2cfc6
+
+## OUTSIDE THE USUAL PARAMETERS — SURFACED FOR A STATED REASON (1)
+- **Salesforce — Customer Success Manager, Marketing Cloud Next (Public Sector)**
+  - Status: STRETCH · Work Interest: A · Fit: Stretch
+  - Work model/location: onsite Seattle (+1 more) · posted 2026-10-20
+  - Industry: Client Exposure
+  - Compensation: $123,100 - $186,300
+  - Why it fits: This is a strategic, high-touch enterprise CSM role centered on trusted-advisor relationships, adoption and value realization — matches her consultative CS interest, but the deep required Salesforce/Marketing Cloud product technical knowledge is unconfirmed.
+  - Material gap: Unclear if she has direct hands-on Salesforce Marketing Cloud platform expertise required for technical guidance
+  - Surfaced as an exception: Salesforce is a named priority employer with existing referral contact
+  - Next action: Apply leveraging Adobe/enterprise CX background; use Salesforce referral contact if available.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/District-of-Columbia---Washington/Customer-Success-Manager--Marketing-Cloud-Next--Public-Sector-_JR362625
+
+## STILL WORTH APPLYING (5)
 - **LaunchDarkly — Chief of Staff**
   - Status: PACKAGE · Work Interest: A · Fit: Good
   - Work model/location: remote Remote - US · posted 2026-11-02
@@ -15,47 +38,6 @@ _212 roles judged on their job descriptions · 184 not worth your time · 4 wort
   - Material gap: No confirmed direct board-materials/CEO chief-of-staff experience
   - Next action: Apply, framing operating-model leadership and executive stakeholder work as direct CoS-equivalent experience.
   - https://job-boards.greenhouse.io/launchdarkly/jobs/8166241003
-- **Salesforce — Customer Success Manager, Director - Core (Sales & Service) Clouds**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: onsite Seattle (+5 more) · posted 2026-11-02
-  - Industry: Adjacent
-  - Compensation: $171,200 - $273,000
-  - Why it fits: This is a senior strategic CSM role centered on executive relationships, value realization and ROI for complex accounts, closely matching her professional-services and transformation leadership experience; she holds an Adobe/Salesforce-adjacent referral network worth leveraging.
-  - Material gap: No direct Salesforce platform CSM experience, though transferable account-leadership skills are strong.
-  - Next action: Apply directly, leveraging Salesforce priority-employer connections and emphasizing enterprise value-realization leadership.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager--Director---Core--Sales---Service--Clouds_JR366808
-- **Salesforce — Senior Director, Communications Strategy & Operations**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-02
-  - Industry: Adjacent
-  - Compensation: $181,700 - $304,700
-  - Why it fits: This is chief-of-staff/operating-rhythm work for a CCO — planning, OKRs, executive reviews, cross-org alignment — squarely matching her transformation and operations leadership experience.
-  - Material gap: No direct corporate communications domain experience, though not clearly required for the ops role.
-  - Next action: Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1
-- **Salesforce — Principal / Sr. Principal Customer Success Manager - Slack**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: onsite Seattle (+3 more) · posted 2026-11-02
-  - Industry: Client Exposure
-  - Compensation: $123,100 - $227,000
-  - Why it fits: This is a strategic, trusted-advisor CSM role focused on executive relationships, value realization and adoption programs for high-value accounts — closely matching her professional-services and transformation leadership experience; Salesforce is also a named priority employer.
-  - Material gap: No confirmed direct Slack/SaaS product experience, though consultative skillset transfers well.
-  - Next action: Apply directly, emphasizing executive advisory, adoption and value-realization work from her professional-services career.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Georgia---Atlanta/Customer-Success-Manager---Slack_JR332569
-
-## OUTSIDE THE USUAL PARAMETERS — SURFACED FOR A STATED REASON (1)
-- **Salesforce — Customer Success Manager - Core Clouds**
-  - Status: STRETCH · Work Interest: A · Fit: Stretch
-  - Work model/location: remote Remote (+3 more) · posted 2026-10-30
-  - Industry: Client Exposure
-  - Compensation: not stated in the posting
-  - Why it fits: Role is strategic, enterprise-level customer success with trusted-advisor positioning, aligning with her value-realization and executive relationship strengths, but requires real Salesforce platform depth she hasn't confirmed.
-  - Material gap: No confirmed Salesforce platform or Financial Services Cloud product expertise
-  - Surfaced as an exception: Salesforce is a named priority target employer for her search
-  - Next action: Apply leveraging Adobe referral network angle; emphasize enterprise CS and transformation experience, note Salesforce is a priority employer.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Canada---Toronto/Customer-Success-Manager---Core-Clouds_JR366403
-
-## STILL WORTH APPLYING (5)
 - **LaunchDarkly — Director, Internal AI Operations**
   - Status: PACKAGE · Work Interest: A · Fit: Good
   - Work model/location: remote Remote - US · posted 2026-10-30
@@ -74,38 +56,26 @@ _212 roles judged on their job descriptions · 184 not worth your time · 4 wort
   - Material gap: No direct software product/engineering operating-cadence experience, though transferable skills are strong.
   - Next action: Apply, framing professional-services operating-cadence and executive-narrative experience as directly transferable.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Product-Strategy---Operations--IC-_JR365526-1
-- **Fin — Principal Customer Success Manager**
+- **Salesforce — Senior Director, Communications Strategy & Operations**
   - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: remote Anywhere in the World (Remote) · posted 2026-10-29
-  - Industry: Client Exposure
-  - Compensation: not stated in the posting
-  - Why it fits: Role centers on strategic enterprise customer relationships, AI adoption, value realization and renewal through executive engagement - closely matches her transformation and CX leadership background, now at a Salesforce-owned AI company.
-  - Material gap: No direct SaaS CSM renewal-ownership track record, though transferable skills are strong.
-  - Next action: Apply highlighting enterprise transformation, executive relationship and AI-adoption experience.
-  - https://weworkremotely.com/remote-jobs/fin-principal-customer-success-manager
-- **Asana — Customer Enablement Manager**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: remote Anywhere in the World (Remote) · posted 2026-10-21
-  - Industry: Client Exposure
-  - Compensation: not stated in the posting
-  - Why it fits: This is strategic enterprise customer adoption, change management and value-realization work closely matching her professional-services and AI-enablement strengths, framed as trusted-advisor consulting rather than support.
-  - Material gap: Role restricted to Pacific/Mountain timezone residents, unclear if she qualifies geographically.
-  - Next action: Apply highlighting enterprise change-management and AI adoption experience; confirm PST/MST eligibility.
-  - https://weworkremotely.com/remote-jobs/asana-customer-enablement-manager
-- **Algolia — Senior Project Manager, Business Transformation**
-  - Status: PACKAGE · Work Interest: B · Fit: Good
-  - Work model/location: remote USA (Remote) · posted 2026-10-30
+  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-02
   - Industry: Adjacent
-  - Compensation: not stated in the posting
-  - Why it fits: She has led enterprise transformation, operating-model and change-adoption work with strong delivery outcomes, directly transferable to owning transformation workstreams even though the title sits below her recent scope.
-  - Material gap: Role is a workstream-level PM position, narrower in scope than her recent senior leadership roles.
-  - Next action: Apply, positioning her transformation and delivery leadership as directly applicable to workstream ownership.
-  - https://jobicy.com/jobs/157972-senior-project-manager-business-transformation
+  - Compensation: $181,700 - $304,700
+  - Why it fits: This is chief-of-staff/operating-rhythm work for a CCO — planning, OKRs, executive reviews, cross-org alignment — squarely matching her transformation and operations leadership experience.
+  - Material gap: No direct corporate communications domain experience, though not clearly required for the ops role.
+  - Next action: Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1
+- **Salesforce — Customer Success Manager, Director - Core (Sales & Service) Clouds**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: onsite Seattle (+5 more) · posted 2026-11-02
+  - Industry: Adjacent
+  - Compensation: $171,200 - $273,000
+  - Why it fits: This is a senior strategic CSM role centered on executive relationships, value realization and ROI for complex accounts, closely matching her professional-services and transformation leadership experience; she holds an Adobe/Salesforce-adjacent referral network worth leveraging.
+  - Material gap: No direct Salesforce platform CSM experience, though transferable account-leadership skills are strong.
+  - Next action: Apply directly, leveraging Salesforce priority-employer connections and emphasizing enterprise value-realization leadership.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager--Director---Core--Sales---Service--Clouds_JR366808
 
-## REMOVED SINCE PRIOR RUN (1) — closure confirmed at the employer
-- Content Manager — Aquent · Verified closed at the source (404 / posting removed)
-
-_49 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+_54 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH
