@@ -1,32 +1,21 @@
-# Prospector — 2026-11-03
+# Prospector — 2026-11-04
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**2 new roles worth your time** · 5 still worth applying · 0 closed/removed
+**1 new role worth your time** · 5 still worth applying · 2 closed/removed
 Best move today: **Chief of Staff** — LaunchDarkly
-_190 roles judged on their job descriptions · 164 not worth your time · 2 worthwhile held for a later day (daily cap) · 3 awaiting a JD review_
-
-## WORTH YOUR TIME — NEW (1)
-- **Instructure — Sr. Customer Success Manager**
-  - Status: APPLY · Work Interest: A · Fit: Good
-  - Work model/location: remote US-REMOTE · posted 2026-11-03
-  - Industry: Adjacent
-  - Compensation: $80K – $90K
-  - Why it fits: Centers on strategic account planning, EBRs, health monitoring and retention/expansion for key enterprise accounts — squarely her value-realization and executive relationship strengths.
-  - Material gap: No confirmed higher-education/EdTech industry experience
-  - Next action: Apply highlighting EBR leadership, retention/expansion outcomes and enterprise client management.
-  - https://jobs.ashbyhq.com/instructure/7947f857-080e-4a65-a93c-7fb4c8f2cfc6
+_205 roles judged on their job descriptions · 183 not worth your time · 1 worthwhile held for a later day (daily cap) · 3 awaiting a JD review_
 
 ## OUTSIDE THE USUAL PARAMETERS — SURFACED FOR A STATED REASON (1)
-- **Salesforce — Customer Success Manager, Marketing Cloud Next (Public Sector)**
+- **Salesforce — Director, Customer Success Management (MuleSoft)**
   - Status: STRETCH · Work Interest: A · Fit: Stretch
-  - Work model/location: onsite Seattle (+1 more) · posted 2026-10-20
-  - Industry: Client Exposure
-  - Compensation: $123,100 - $186,300
-  - Why it fits: This is a strategic, high-touch enterprise CSM role centered on trusted-advisor relationships, adoption and value realization — matches her consultative CS interest, but the deep required Salesforce/Marketing Cloud product technical knowledge is unconfirmed.
-  - Material gap: Unclear if she has direct hands-on Salesforce Marketing Cloud platform expertise required for technical guidance
-  - Surfaced as an exception: Salesforce is a named priority employer with existing referral contact
-  - Next action: Apply leveraging Adobe/enterprise CX background; use Salesforce referral contact if available.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/District-of-Columbia---Washington/Customer-Success-Manager--Marketing-Cloud-Next--Public-Sector-_JR362625
+  - Work model/location: onsite Seattle (+7 more) · posted 2026-10-27
+  - Industry: Adjacent
+  - Compensation: $171,200 - $273,000
+  - Why it fits: Director-level CS leadership at a priority employer fits her transformation/CX leadership profile, but MuleSoft's technical integration focus is unconfirmed without a description.
+  - Material gap: No job description to confirm technical/product depth requirements for MuleSoft CSM leadership
+  - Surfaced as an exception: Salesforce is a named priority employer
+  - Next action: Have Prospector retrieve full description before deciding whether to apply.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/New-York---New-York/Director--Customer-Success-Management--MuleSoft-_JR366025
 
 ## STILL WORTH APPLYING (5)
 - **LaunchDarkly — Chief of Staff**
@@ -56,15 +45,6 @@ _190 roles judged on their job descriptions · 164 not worth your time · 2 wort
   - Material gap: No direct software product/engineering operating-cadence experience, though transferable skills are strong.
   - Next action: Apply, framing professional-services operating-cadence and executive-narrative experience as directly transferable.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Product-Strategy---Operations--IC-_JR365526-1
-- **Salesforce — Senior Director, Communications Strategy & Operations**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-02
-  - Industry: Adjacent
-  - Compensation: $181,700 - $304,700
-  - Why it fits: This is chief-of-staff/operating-rhythm work for a CCO — planning, OKRs, executive reviews, cross-org alignment — squarely matching her transformation and operations leadership experience.
-  - Material gap: No direct corporate communications domain experience, though not clearly required for the ops role.
-  - Next action: Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1
 - **Salesforce — Customer Success Manager, Director - Core (Sales & Service) Clouds**
   - Status: PACKAGE · Work Interest: A · Fit: Good
   - Work model/location: onsite Seattle (+5 more) · posted 2026-11-02
@@ -74,8 +54,21 @@ _190 roles judged on their job descriptions · 164 not worth your time · 2 wort
   - Material gap: No direct Salesforce platform CSM experience, though transferable account-leadership skills are strong.
   - Next action: Apply directly, leveraging Salesforce priority-employer connections and emphasizing enterprise value-realization leadership.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager--Director---Core--Sales---Service--Clouds_JR366808
+- **Salesforce — Senior Director, Communications Strategy & Operations**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-02
+  - Industry: Adjacent
+  - Compensation: $181,700 - $304,700
+  - Why it fits: This is chief-of-staff/operating-rhythm work for a CCO — planning, OKRs, executive reviews, cross-org alignment — squarely matching her transformation and operations leadership experience.
+  - Material gap: No direct corporate communications domain experience, though not clearly required for the ops role.
+  - Next action: Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1
 
-_54 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+## REMOVED SINCE PRIOR RUN (2) — closure confirmed at the employer
+- Sales Enablement Specialist, DX — Atlassian · Verified closed at the source (404 / posting removed)
+- AI Operations Lead, Toast IQ — Toast · Verified closed at the source (404 / posting removed)
+
+_57 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH
