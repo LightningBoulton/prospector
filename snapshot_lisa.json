@@ -775,6 +775,79 @@
   "remote_verified": true
  },
  {
+  "key": "Instructure::51b85ce4-ae12-49bb-bbde-be9b42b7cc72",
+  "company": "Instructure",
+  "title": "Director, CX Strategy and Operations",
+  "location": "US-REMOTE",
+  "url": "https://jobs.ashbyhq.com/instructure/51b85ce4-ae12-49bb-bbde-be9b42b7cc72",
+  "posted": "2026-11-05",
+  "salary": "$165K \u2013 $180K",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "confidence": "medium",
+   "reasons": [
+    "CX/PS/CS cross-functional ownership",
+    "Executive-level partner to CCO",
+    "Operating model and retention focus"
+   ],
+   "concerns": [
+    "Heavy data/analytics system-building emphasis",
+    "New industry (EdTech)"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Customer health scoring frameworks",
+    "Data science collaboration for CX metrics"
+   ],
+   "remote_scope": "nationwide_us",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 62,
+   "interest_fit": 70,
+   "practical_fit": 60,
+   "opportunity_score": 58,
+   "work_interest": "A",
+   "dominant_work": "Build CX operating model, health scoring and retention systems across CS/Support/PS",
+   "dominant_share": 65,
+   "fit_level": "stretch",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: operating model, metrics and retention-signal design from professional-services/CX leadership",
+    "TRANSFERABLE: cross-functional partnership with Rev Ops, Sales, Product, Finance",
+    "UNKNOWN: building formal customer health scoring systems with data science collaboration",
+    "CONFIRMED: value realization, retention, executive stakeholder leadership"
+   ],
+   "cautions": [
+    "Role likely wants someone with deep RevOps/data-systems background for health-score architecture",
+    "EdTech industry unfamiliar though adjacent to enterprise B2B/B2B2C"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "Strategic CX operations leadership owning health signals and operating rhythm aligns with her transformation and professional-services operating-model experience, though the data/analytics-system build is less proven.",
+   "material_gap": "No confirmed experience architecting formal data-driven customer health scoring systems",
+   "next_action": "Apply positioning operating-model and retention-value-realization experience, not data-systems expertise.",
+   "exception_reason": "",
+   "score": 58,
+   "fit": "maybe",
+   "reason": "CX/PS/CS cross-functional ownership",
+   "bg": "55a510aca86d",
+   "remote_verified": true,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "nationwide_us",
+  "remote_verified": true
+ },
+ {
   "key": "BILL::6239395004",
   "company": "BILL",
   "title": "Mid Market Customer Success Manager",
@@ -846,152 +919,6 @@
    "detected_requirements": []
   },
   "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "BILL::6220998004",
-  "company": "BILL",
-  "title": "Solutions Consultant",
-  "location": "United States",
-  "url": "https://www.bill.com/job?6220998004&gh_jid=6220998004",
-  "posted": "2026-10-14",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "sales_adjacent": true,
-  "tier": "discovery",
-  "match_reason": "sales-adjacency lane: 'True' in title",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Consultative pre-sales fits B-tier interest",
-    "Discovery/solution design experience transfers",
-    "Remote-first posting"
-   ],
-   "concerns": [
-    "Technical API/integration depth requirement",
-    "No fintech domain experience",
-    "Quota-adjacent sales team support role"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [
-    "API/integration conceptual fluency",
-    "Fintech payments workflow knowledge",
-    "Live technical demo delivery"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 55,
-   "interest_fit": 60,
-   "practical_fit": 65,
-   "opportunity_score": 55,
-   "work_interest": "B",
-   "dominant_work": "Pre-sales technical consulting mapping fintech workflows/API integrations to solutions",
-   "dominant_share": 55,
-   "fit_level": "stretch",
-   "industry_relationship": "adjacent",
-   "industry_importance": "helpful",
-   "key_qualifications": [
-    "TRANSFERABLE: discovery, solution design, client presentations from professional-services leadership",
-    "UNKNOWN: fintech/payments domain expertise",
-    "GAP: deep technical understanding of API-led integrations required for demos",
-    "TRANSFERABLE: Adobe Technical Sales training in progress supports consultative pre-sales readiness"
-   ],
-   "cautions": [
-    "Role requires fairly deep technical fluency in APIs/integrations for live demos, beyond learnable solution positioning",
-    "No direct fintech/payments background"
-   ],
-   "sales_readiness": "near_qualified_december",
-   "action_status": "package",
-   "why_fits": "Pre-sales solutions consulting role leverages her discovery, solution design and client-facing consultative experience, though it requires deeper technical/API fluency than her background shows.",
-   "material_gap": "Limited demonstrated technical depth with APIs/payments-workflow integrations",
-   "next_action": "Apply disclosing in-progress Adobe Technical Sales training and professional-services solutioning background.",
-   "exception_reason": "",
-   "score": 55,
-   "fit": "maybe",
-   "reason": "Consultative pre-sales fits B-tier interest",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "BILL::6220724004",
-  "company": "BILL",
-  "title": "Sr. Privacy Program Manager",
-  "location": "United States",
-  "url": "https://www.bill.com/job?6220724004&gh_jid=6220724004",
-  "posted": "2026-10-14",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "role family 'program manager' + seniority in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Legal/compliance-owned function",
-    "No evidence of privacy domain expertise"
-   ],
-   "concerns": [
-    "True specialization gap",
-    "Low interest alignment (D-tier work)"
-   ],
-   "unmet_requirements": [
-    "Specialized privacy/legal compliance expertise required for program ownership"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "nationwide_us",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 20,
-   "interest_fit": 15,
-   "practical_fit": 40,
-   "opportunity_score": 15,
-   "work_interest": "D",
-   "dominant_work": "Operate/own privacy compliance program (DSRs, PIAs, vendor reviews) under Legal/Compliance",
-   "dominant_share": 15,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "required",
-   "key_qualifications": [
-    "GAP: deep privacy/regulatory legal expertise (CIPP-type)",
-    "UNKNOWN: experience with data subject requests/PIAs",
-    "GAP: specialized legal/compliance domain knowledge central to role",
-    "UNKNOWN: direct work with InfoSec/Legal on privacy governance"
-   ],
-   "cautions": [
-    "Reports into Legal/Compliance function, not a transformation or CX leadership track"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a specialized privacy-compliance role owning PIAs, DSRs and vendor privacy reviews under General Counsel \u2014 not her transformation, CX or operations background.",
-   "material_gap": "No privacy/legal compliance specialization or credential evidenced",
-   "next_action": "Skip; not aligned with her strategy/operations/transformation focus.",
-   "exception_reason": "",
-   "score": 15,
-   "fit": "no",
-   "reason": "Legal/compliance-owned function",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "nationwide_us",
   "remote_verified": false
  },
  {
@@ -1199,6 +1126,80 @@
   },
   "remote_scope": "unclear",
   "remote_verified": false
+ },
+ {
+  "key": "NICE::5028919101",
+  "company": "NICE",
+  "title": "Business Consultant, Change Management, VRS",
+  "location": "USA - Remote",
+  "url": "https://boards.eu.greenhouse.io/nice/jobs/5028919101?gh_jid=5028919101",
+  "posted": "2026-11-05",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "strong_fit",
+   "confidence": "medium",
+   "reasons": [
+    "Change management/adoption focus matches core strength",
+    "AI-enablement component aligns with her interest",
+    "Remote role",
+    "Consulting-style client advisory fits background"
+   ],
+   "concerns": [
+    "Unfamiliar contact-center vertical",
+    "Consulting travel/engagement cadence unknown"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Contact-center operations terminology",
+    "CCaaS/IVR platform familiarity"
+   ],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 75,
+   "interest_fit": 80,
+   "practical_fit": 70,
+   "opportunity_score": 72,
+   "work_interest": "A",
+   "dominant_work": "Advise contact-center customers on change management plans driving adoption of new software/AI tools",
+   "dominant_share": 75,
+   "fit_level": "good",
+   "industry_relationship": "adjacent",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "TRANSFERABLE: change management and adoption coaching from professional-services/transformation leadership",
+    "TRANSFERABLE: client-facing advisory and facilitation across executives, ops teams and front-line staff",
+    "UNKNOWN: contact-center specific software/domain experience",
+    "CONFIRMED: AI adoption and enablement experience relevant to AI-enabled capability rollout"
+   ],
+   "cautions": [
+    "No explicit contact-center industry experience, though CX/transformation work is closely adjacent"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "package",
+   "why_fits": "This is change-management consulting and adoption coaching for enterprise software and AI, directly matching her transformation, CX and AI-enablement background even though the contact-center vertical is new.",
+   "material_gap": "No direct contact-center/CCaaS domain experience",
+   "next_action": "Apply, emphasizing change management, adoption coaching and AI-enablement track record.",
+   "exception_reason": "",
+   "score": 72,
+   "fit": "yes",
+   "reason": "Change management/adoption focus matches core strength",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false,
+  "rescued": true
  },
  {
   "key": "NICE::5015282101",
@@ -1616,6 +1617,210 @@
    ]
   },
   "remote_scope": "office_associated",
+  "remote_verified": false
+ },
+ {
+  "key": "Kelso Industries::5474780008",
+  "company": "Kelso Industries",
+  "title": "Project Manager (Onsite/Hybrid-HVAC, Plumbing, Mechanical) - Charloette, NC",
+  "location": "Remote",
+  "url": "https://careers.kelso-industries.com/?gh_jid=5474780008",
+  "posted": "2026-11-05",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "high",
+   "reasons": [],
+   "concerns": [
+    "Requires HVAC technical depth",
+    "40%+ travel to job sites",
+    "Not her functional domain"
+   ],
+   "unmet_requirements": [
+    "HVAC/mechanical systems expertise required",
+    "onsite field construction project management"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "office_associated",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 10,
+   "interest_fit": 5,
+   "practical_fit": 15,
+   "opportunity_score": 8,
+   "work_interest": "D",
+   "dominant_work": "Construction/mechanical project management onsite",
+   "dominant_share": 5,
+   "fit_level": "poor",
+   "industry_relationship": "new",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: HVAC/mechanical construction project management expertise",
+    "GAP: subcontractor/field construction management experience",
+    "UNKNOWN: construction cost control systems"
+   ],
+   "cautions": [],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "This is hands-on mechanical/HVAC construction project management requiring technical trade knowledge and heavy onsite/field travel, unrelated to her transformation and operations background.",
+   "material_gap": "No construction/HVAC technical project management experience.",
+   "next_action": "Skip this posting.",
+   "exception_reason": "",
+   "score": 8,
+   "fit": "no",
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
+ },
+ {
+  "key": "Western Governors University::JR-026242",
+  "company": "Western Governors University",
+  "title": "Senior Manager, Content & Social Media (Influencer Program)",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Manager--Content---Social-Media_JR-026242",
+  "posted": "2026-11-04",
+  "salary": "$104,000.00 - $187,200.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [
+    "Local to Salt Lake City",
+    "Content/strategy adjacency"
+   ],
+   "concerns": [
+    "No JD text available",
+    "Likely narrow specialist focus (influencer/social)",
+    "Seniority and scope unclear"
+   ],
+   "unmet_requirements": [],
+   "bridge_skills": [
+    "Social media/influencer platform familiarity",
+    "Influencer relationship management"
+   ],
+   "remote_scope": "office_associated",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 35,
+   "interest_fit": 30,
+   "practical_fit": 55,
+   "opportunity_score": 25,
+   "work_interest": "B",
+   "dominant_work": "Content/social media and influencer program management",
+   "dominant_share": 40,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "helpful",
+   "key_qualifications": [
+    "UNKNOWN: influencer program management experience",
+    "TRANSFERABLE: content/SEO/digital strategy leadership",
+    "UNKNOWN: social media marketing depth",
+    "CONFIRMED: SLC local location"
+   ],
+   "cautions": [
+    "No description available, limiting assessment",
+    "Role appears centered on influencer/social media, a narrow specialization not her focus"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "validate",
+   "why_fits": "Title suggests content/social strategy, adjacent to her digital/SEO/content background, but influencer-program focus is a narrow specialization not reflected in her experience.",
+   "material_gap": "No confirmed influencer/social-media program management experience",
+   "next_action": "Skip unless description surfaces broader content-strategy scope beyond influencer marketing.",
+   "exception_reason": "",
+   "score": 25,
+   "fit": "no",
+   "reason": "Local to Salt Lake City",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "office_associated",
+  "remote_verified": false
+ },
+ {
+  "key": "Western Governors University::JR-026542",
+  "company": "Western Governors University",
+  "title": "Lead Academic Program Manager (Department Chair) - Cyber Security/AI",
+  "location": "Salt Lake City, UT",
+  "url": "https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Lead-Academic-Program-Manager--Department-Chair----Cyber-Security-AI_JR-026542",
+  "posted": "2026-11-04",
+  "salary": "$123,000.00 - $190,700.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'program manager' + seniority in title",
+  "fit_result": {
+   "recommendation": "not_recommended",
+   "confidence": "low",
+   "reasons": [],
+   "concerns": [
+    "No JD text to confirm actual duties",
+    "Title suggests specialized academic credential gate"
+   ],
+   "unmet_requirements": [
+    "Likely requires advanced degree/credential in cybersecurity or AI and academic chair experience"
+   ],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": true,
+   "qualification_fit": 15,
+   "interest_fit": 15,
+   "practical_fit": 30,
+   "opportunity_score": 15,
+   "work_interest": "D",
+   "dominant_work": "Academic department chair role requiring cybersecurity/AI faculty credential",
+   "dominant_share": 20,
+   "fit_level": "poor",
+   "industry_relationship": "unknown",
+   "industry_importance": "required",
+   "key_qualifications": [
+    "GAP: academic credentials/subject-matter expertise in cybersecurity or AI education",
+    "UNKNOWN: higher-ed program management experience"
+   ],
+   "cautions": [
+    "No description available to confirm scope"
+   ],
+   "sales_readiness": "n_a",
+   "action_status": "stretch",
+   "why_fits": "Title implies leading an academic department in a specialized technical discipline, which is outside her background and likely requires subject-matter credentials.",
+   "material_gap": "No evident cybersecurity/AI academic credentials required for department chair role",
+   "next_action": "Skip unless description surfaces broader program-ops scope without academic credential requirement.",
+   "exception_reason": "",
+   "score": 15,
+   "fit": "no",
+   "reason": "",
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": "",
+   "detected_requirements": []
+  },
+  "remote_scope": "unclear",
   "remote_verified": false
  },
  {
@@ -2160,74 +2365,6 @@
    "score": 22,
    "fit": "no",
    "reason": "Associate-level IC role",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "office_associated",
-  "remote_verified": false
- },
- {
-  "key": "BYU::JR-13268",
-  "company": "BYU",
-  "title": "Finance & HR Operations Manager",
-  "location": "Provo, UT",
-  "url": "https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Office-Operations-Manager_JR-13268",
-  "posted": "2026-10-22",
-  "salary": "$59,500.00 - $77,000.00",
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Utah location aligns with preference"
-   ],
-   "concerns": [
-    "Religious eligibility gate",
-    "Unclear role scope",
-    "Lower seniority/compensation likely"
-   ],
-   "unmet_requirements": [
-    "Requires LDS temple recommend and church membership worthiness - a true eligibility gate"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "office_associated",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 25,
-   "practical_fit": 20,
-   "opportunity_score": 20,
-   "work_interest": "B",
-   "dominant_work": "Finance and HR administrative operations management",
-   "dominant_share": 30,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "UNKNOWN: finance/HR operations management depth",
-    "CONFIRMED: operations and business leadership experience"
-   ],
-   "cautions": [
-    "Job description lacks detail on actual scope of finance/HR duties"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "Finance/HR operations role is tangential to her transformation/strategy focus, and the posting requires LDS temple recommend eligibility, a hard gate unrelated to her qualifications.",
-   "material_gap": "Requires current temple recommend/LDS church membership, a mandatory eligibility requirement.",
-   "next_action": "Skip unless she independently meets the religious membership requirement.",
-   "exception_reason": "",
-   "score": 20,
-   "fit": "no",
-   "reason": "Utah location aligns with preference",
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
