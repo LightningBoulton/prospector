@@ -1,32 +1,21 @@
-# Prospector — 2026-11-05
+# Prospector — 2026-11-06
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**2 new roles worth your time** · 5 still worth applying · 1 closed/removed
+**1 new role worth your time** · 5 still worth applying · 0 closed/removed
 Best move today: **Chief of Staff** — LaunchDarkly
-_190 roles judged on their job descriptions · 171 not worth your time · 3 worthwhile held for a later day (daily cap) · 19 awaiting a JD review_
-
-## WORTH YOUR TIME — NEW (1)
-- **NICE — Business Consultant, Change Management, VRS**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: remote USA - Remote · posted 2026-11-05
-  - Industry: Adjacent
-  - Compensation: not stated in the posting
-  - Why it fits: This is change-management consulting and adoption coaching for enterprise software and AI, directly matching her transformation, CX and AI-enablement background even though the contact-center vertical is new.
-  - Material gap: No direct contact-center/CCaaS domain experience
-  - Next action: Apply, emphasizing change management, adoption coaching and AI-enablement track record.
-  - https://boards.eu.greenhouse.io/nice/jobs/5028919101?gh_jid=5028919101
+_161 roles judged on their job descriptions · 144 not worth your time · 2 worthwhile held for a later day (daily cap) · 55 awaiting a JD review_
 
 ## OUTSIDE THE USUAL PARAMETERS — SURFACED FOR A STATED REASON (1)
-- **Salesforce — Director, Business Value Services**
-  - Status: STRETCH · Work Interest: B · Fit: Stretch · Sales readiness: NEAR-QUALIFIED / DECEMBER
-  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-03
+- **Salesforce — Senior Director of Solution Consulting**
+  - Status: STRETCH · Work Interest: B · Fit: Stretch
+  - Work model/location: onsite Seattle (+1 more) · posted 2026-11-05
   - Industry: Adjacent
-  - Compensation: $142,800 - $232,750
-  - Why it fits: Title suggests consultative value-selling work aligned with her professional-services and solutioning background and her in-progress Adobe technical sales training, but no description exists to confirm scope.
-  - Material gap: No JD text to confirm actual responsibilities or seniority requirements
-  - Surfaced as an exception: Salesforce is a named priority target employer
-  - Next action: Have Prospector retrieve full JD before deciding whether to apply.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Director--Business-Value-Services_JR365838-1
+  - Compensation: $223,860 - $299,390
+  - Why it fits: Priority employer and plausible leadership/transformation fit, but with no description the actual scope and true requirements can't be assessed.
+  - Material gap: No job description available to confirm pre-sales leadership requirements
+  - Surfaced as an exception: Salesforce is a named priority employer target
+  - Next action: Have Prospector retrieve the full JD before deciding whether to apply.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director-of-Solution-Consulting_JR366522
 
 ## STILL WORTH APPLYING (5)
 - **LaunchDarkly — Chief of Staff**
@@ -56,15 +45,6 @@ _190 roles judged on their job descriptions · 171 not worth your time · 3 wort
   - Material gap: No direct software product/engineering operating-cadence experience, though transferable skills are strong.
   - Next action: Apply, framing professional-services operating-cadence and executive-narrative experience as directly transferable.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Product-Strategy---Operations--IC-_JR365526-1
-- **Salesforce — Senior Director, Communications Strategy & Operations**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-02
-  - Industry: Adjacent
-  - Compensation: $181,700 - $304,700
-  - Why it fits: This is chief-of-staff/operating-rhythm work for a CCO — planning, OKRs, executive reviews, cross-org alignment — squarely matching her transformation and operations leadership experience.
-  - Material gap: No direct corporate communications domain experience, though not clearly required for the ops role.
-  - Next action: Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1
 - **Salesforce — Customer Success Manager, Director - Core (Sales & Service) Clouds**
   - Status: PACKAGE · Work Interest: A · Fit: Good
   - Work model/location: onsite Seattle (+5 more) · posted 2026-11-02
@@ -74,11 +54,17 @@ _190 roles judged on their job descriptions · 171 not worth your time · 3 wort
   - Material gap: No direct Salesforce platform CSM experience, though transferable account-leadership skills are strong.
   - Next action: Apply directly, leveraging Salesforce priority-employer connections and emphasizing enterprise value-realization leadership.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager--Director---Core--Sales---Service--Clouds_JR366808
+- **Salesforce — Senior Director, Communications Strategy & Operations**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-02
+  - Industry: Adjacent
+  - Compensation: $181,700 - $304,700
+  - Why it fits: This is chief-of-staff/operating-rhythm work for a CCO — planning, OKRs, executive reviews, cross-org alignment — squarely matching her transformation and operations leadership experience.
+  - Material gap: No direct corporate communications domain experience, though not clearly required for the ops role.
+  - Next action: Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1
 
-## REMOVED SINCE PRIOR RUN (1) — closure confirmed at the employer
-- Senior Manager, Strategic Operations — 1Password · Verified closed at the source (404 / posting removed)
-
-_63 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+_73 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH

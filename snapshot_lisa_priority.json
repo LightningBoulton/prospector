@@ -101,7 +101,7 @@
    "practical_fit": -1,
    "reasons": [],
    "concerns": [],
-   "reason": "(scoring unavailable: schema validation failed)",
+   "reason": "(scoring unavailable: BadRequestError)",
    "confidence": "low",
    "unmet_requirements": [],
    "bridge_skills": [],
@@ -681,7 +681,7 @@
    "practical_fit": -1,
    "reasons": [],
    "concerns": [],
-   "reason": "(scoring unavailable: schema validation failed)",
+   "reason": "(scoring unavailable: BadRequestError)",
    "confidence": "low",
    "unmet_requirements": [],
    "bridge_skills": [],
@@ -769,83 +769,6 @@
    "detected_requirements": []
   },
   "remote_scope": "preferred_location",
-  "remote_verified": false
- },
- {
-  "key": "Salesforce::JR363869",
-  "company": "Salesforce",
-  "title": "Lead, Specialist Solution Engineer Marketing Cloud",
-  "location": "Remote (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/United-Kingdom---London/Lead--Specialist-Solution-Engineer-Marketing-Cloud_JR363869",
-  "posted": "2026-11-02",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "sales_adjacent": true,
-  "tier": "discovery",
-  "match_reason": "sales-adjacency lane: 'True' in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Consultative pre-sales aligns with sales-transition goal",
-    "Salesforce is a priority employer"
-   ],
-   "concerns": [
-    "Geographic scope appears UK/Ireland specific",
-    "Deep product-specific expertise required",
-    "Public sector specialization unconfirmed"
-   ],
-   "unmet_requirements": [
-    "UK/Ireland location requirement likely; deep Marketing Cloud technical product expertise"
-   ],
-   "bridge_skills": [
-    "Marketing Cloud product certification",
-    "Public sector domain familiarity"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 30,
-   "opportunity_score": 35,
-   "work_interest": "C",
-   "dominant_work": "Pre-sales technical demos/solutioning for Marketing Cloud to UK/Ireland public sector",
-   "dominant_share": 70,
-   "fit_level": "stretch",
-   "industry_relationship": "unknown",
-   "industry_importance": "preferred",
-   "key_qualifications": [
-    "TRANSFERABLE: solution development, discovery, client presentations from professional services",
-    "GAP: Marketing Cloud product depth and technical demo delivery",
-    "UNKNOWN: UK/Ireland public sector experience",
-    "CONFIRMED: executive-level presentation and stakeholder experience"
-   ],
-   "cautions": [
-    "Role is UK/Ireland-specific public sector focus, not clearly open to US remote",
-    "Requires specific Marketing Cloud technical demo depth beyond her current evidence"
-   ],
-   "sales_readiness": "near_qualified_december",
-   "action_status": "stretch",
-   "why_fits": "This is consultative pre-sales work aligned with her Adobe training direction, but it's tightly scoped to UK/Ireland public sector and deep Marketing Cloud product expertise she hasn't demonstrated.",
-   "material_gap": "No confirmed Marketing Cloud product/technical demo expertise and unclear UK/Ireland residency fit",
-   "next_action": "Skip unless she can confirm UK/Ireland eligibility; focus on US-based solution consultant roles instead.",
-   "exception_reason": "",
-   "score": 35,
-   "fit": "no",
-   "reason": "Consultative pre-sales aligns with sales-transition goal",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
   "remote_verified": false
  },
  {
@@ -2005,162 +1928,43 @@
   "remote_verified": false
  },
  {
-  "key": "Salesforce::JR357797",
+  "key": "Salesforce::JR367656",
   "company": "Salesforce",
-  "title": "Business Strategy Senior Manager - Public Sector Experience Services",
-  "location": "Remote (+2 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Virginia---Remote/Business-Strategy-Senior-Manager---Public-Sector-Experience-Services_JR357797",
-  "posted": "2026-10-15",
-  "salary": "$172,500 - $260,100",
+  "title": "Slack AI Solution Strategist",
+  "location": "Bellevue (+3 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Slack-AI-Solution-Strategist_JR367656-1",
+  "posted": "2026-11-06",
+  "salary": "$197,300 - $260,100",
   "employment_type": "",
   "expires": "",
   "priority_employer": true,
   "technical_risk": false,
   "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "sales_adjacent": true,
+  "tier": "discovery",
+  "match_reason": "sales-adjacency lane: 'True' in title",
   "fit_result": {
    "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Salesforce priority employer",
-    "Strategy/operating-model work matches A-tier interest",
-    "Executive client relationship experience transfers well",
-    "Professional services delivery excellence background aligns"
-   ],
-   "concerns": [
-    "Hard requirement not supported: mandatory security clearance (\"security clearance\")",
-    "Public Sector experience requirement unclear if hard gate",
-    "Compensation not stated"
-   ],
-   "unmet_requirements": [
-    "mandatory security clearance (\"security clearance\")"
-   ],
-   "bridge_skills": [
-    "Public Sector domain familiarity",
-    "Government contracting/compliance context"
-   ],
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: BadRequestError)",
+   "confidence": "low",
+   "unmet_requirements": [],
+   "bridge_skills": [],
    "remote_scope": "unclear",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 65,
-   "interest_fit": 75,
-   "practical_fit": 60,
-   "opportunity_score": 68,
-   "work_interest": "A",
-   "dominant_work": "C-level strategy consulting for enterprise Public Sector clients on operating model/value realization",
-   "dominant_share": 70,
-   "fit_level": "good",
-   "industry_relationship": "client_exposure",
-   "industry_importance": "preferred",
-   "key_qualifications": [
-    "TRANSFERABLE: enterprise strategy/operating model design from professional services leadership",
-    "CONFIRMED: executive client relationships and value realization",
-    "UNKNOWN: direct Public Sector consulting experience",
-    "TRANSFERABLE: multi-year transformation program design"
-   ],
-   "cautions": [
-    "Posting emphasizes 'strong Public Sector consulting experience' which may function as a near-gate depending on how strictly enforced"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "package",
-   "why_fits": "This is senior strategy/operating-model consulting with C-level clients focused on value realization \u2014 closely matching her professional-services leadership and transformation experience, though the explicit Public Sector requirement is a real gap to address in positioning.",
-   "material_gap": "No confirmed direct Public Sector consulting experience, which the posting treats as important.",
-   "next_action": "Apply, emphasizing enterprise strategy, operating-model and executive-client work; address Public Sector exposure directly.",
-   "exception_reason": "",
-   "score": 68,
-   "fit": "maybe",
-   "reason": "Salesforce priority employer",
+   "valid": false,
    "bg": "55a510aca86d",
    "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": [
-    "mandatory security clearance"
-   ],
-   "downgraded_from": "strong_fit"
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "Salesforce::JR357805",
-  "company": "Salesforce",
-  "title": "Business Strategy Senior Manager - Canadian Public Sector Experience Services",
-  "location": "Remote (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Ontario---Remote/Business-Strategy-Senior-Manager---Canadian-Public-Sector-Experience-Services_JR357805",
-  "posted": "2026-10-15",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "stretch",
-   "confidence": "medium",
-   "reasons": [
-    "Strong operating-model/strategy fit",
-    "Salesforce is a priority employer",
-    "Executive client relationship experience"
-   ],
-   "concerns": [
-    "Hard public-sector specialization requirement",
-    "Location/remote scope unclear"
-   ],
-   "unmet_requirements": [
-    "Canadian public sector consulting experience appears to be a required specialization",
-    "mandatory security clearance (\"security clearance\")"
-   ],
-   "bridge_skills": [
-    "Public sector domain knowledge",
-    "Salesforce platform familiarity"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 70,
-   "practical_fit": 45,
-   "opportunity_score": 58,
-   "work_interest": "B",
-   "dominant_work": "C-level strategy consulting: operating model design, value realization, multi-year transformation roadmaps for Canadian public sector client",
-   "dominant_share": 70,
-   "fit_level": "stretch",
-   "industry_relationship": "client_exposure",
-   "industry_importance": "required",
-   "key_qualifications": [
-    "TRANSFERABLE: enterprise strategy, operating model design, value realization from professional-services leadership",
-    "CONFIRMED: C-level/executive client relationship leadership",
-    "GAP: Canadian public sector consulting experience explicitly required",
-    "UNKNOWN: Salesforce platform-specific delivery experience"
-   ],
-   "cautions": [
-    "Geographic/market specificity (Canada public sector) may be a hard requirement, not just preference",
-    "No stated comp",
-    "CRM / MarTech administration (\"salesforce administrator\")"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "validate",
-   "why_fits": "Her professional-services leadership, operating-model, value-realization and executive-client work map closely to Business Strategist duties, but the explicit Canadian public sector requirement is a specialization she hasn't demonstrated.",
-   "material_gap": "No confirmed Canadian public sector consulting experience, which is stated as required",
-   "next_action": "Apply while noting transferable public-sector-adjacent (regulated/enterprise) consulting experience if asked.",
-   "exception_reason": "",
-   "score": 58,
-   "fit": "maybe",
-   "reason": "Strong operating-model/strategy fit",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": [
-    "CRM / MarTech administration",
-    "mandatory security clearance"
-   ]
+   "remote_evidence": ""
   },
   "remote_scope": "unclear",
   "remote_verified": false
@@ -2336,6 +2140,7 @@
    ],
    "unmet_requirements": [
     "Requires deep technical security/vulnerability-management engineering expertise she does not hold",
+    "the posting asks for hands-on technical work (terraform, kubernetes)",
     "the posting asks for hands-on technical work (terraform, kubernetes)",
     "the posting asks for hands-on technical work (terraform, kubernetes)"
    ],
@@ -2899,74 +2704,43 @@
   "remote_verified": false
  },
  {
-  "key": "Salesforce::JR363268",
+  "key": "Salesforce::JR366536",
   "company": "Salesforce",
-  "title": "Transformation Communications Lead",
-  "location": "Bellevue (+1 more)",
-  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Transformation-Communications-Lead_JR363268",
-  "posted": "2026-10-15",
-  "salary": "$172,500 - $260,100",
+  "title": "Senior Solution Consultant",
+  "location": "Seattle (+1 more)",
+  "url": "https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Solution-Consultant_JR366536",
+  "posted": "2026-11-06",
+  "salary": "$197,300 - $313,700",
   "employment_type": "",
   "expires": "",
   "priority_employer": true,
   "technical_risk": false,
   "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "sales_adjacent": true,
+  "tier": "discovery",
+  "match_reason": "sales-adjacency lane: 'True' in title",
   "fit_result": {
-   "recommendation": "strong_fit",
-   "confidence": "medium",
-   "reasons": [
-    "AI adoption and transformation focus",
-    "Change communications aligns with her operating-model work",
-    "Salesforce is a named priority employer"
-   ],
-   "concerns": [
-    "Housed in UX/Design org, narrower scope than typical enterprise transformation",
-    "Communications-craft emphasis may be less central to her experience"
-   ],
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: BadRequestError)",
+   "confidence": "low",
    "unmet_requirements": [],
-   "bridge_skills": [
-    "Design-org vocabulary",
-    "Formal internal-comms/storytelling techniques"
-   ],
+   "bridge_skills": [],
    "remote_scope": "unclear",
    "relocation_required": false,
    "relocation_assistance_mentioned": false,
    "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 62,
-   "interest_fit": 70,
-   "practical_fit": 60,
-   "opportunity_score": 64,
-   "work_interest": "A",
-   "dominant_work": "Internal change communications for org's AI-native design/research transformation",
-   "dominant_share": 65,
-   "fit_level": "good",
-   "industry_relationship": "adjacent",
-   "industry_importance": "helpful",
-   "key_qualifications": [
-    "TRANSFERABLE: change/transformation leadership and organizational communications during AI adoption",
-    "UNKNOWN: dedicated corporate-communications/storytelling craft experience",
-    "CONFIRMED: leading AI adoption and operating-model change",
-    "UNKNOWN: experience specific to design/research org functions"
-   ],
-   "cautions": [
-    "Role sits within UX/Experience Design org, not generalist transformation; may expect design-practice fluency"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "package",
-   "why_fits": "This is internal change leadership and communications for an AI-native transformation, closely matching her change/AI-adoption and transformation strengths, though she'd need to frame her experience for a design-org-specific context.",
-   "material_gap": "No explicit background in design/research organizational culture or UX practice communications.",
-   "next_action": "Apply leveraging Adobe/Salesforce target-employer status and transformation-communications experience.",
-   "exception_reason": "Priority target employer (Salesforce) with strong functional fit to AI transformation leadership",
-   "score": 64,
-   "fit": "yes",
-   "reason": "AI adoption and transformation focus",
+   "valid": false,
    "bg": "55a510aca86d",
    "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
+   "remote_evidence": ""
   },
   "remote_scope": "unclear",
   "remote_verified": false
@@ -3042,7 +2816,9 @@
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": "",
-   "detected_requirements": []
+   "detected_requirements": [
+    "specialist tenure in another function"
+   ]
   },
   "remote_scope": "unclear",
   "remote_verified": false
@@ -4567,6 +4343,47 @@
   "remote_verified": false
  },
  {
+  "key": "Zillow Group::P751601",
+  "company": "Zillow Group",
+  "title": "Marketing Sr. Specialist, Media Planning",
+  "location": "Remote-USA",
+  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Marketing-Sr-Specialist--Media-Planning_P751601-1",
+  "posted": "2026-11-05",
+  "salary": "$93,900.00 - $150,100.00",
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "priority employer; role family 'planning' in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: BadRequestError)",
+   "confidence": "low",
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": ""
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Zillow Group::P751645",
   "company": "Zillow Group",
   "title": "Sourcing Project Manager",
@@ -4914,76 +4731,6 @@
   "remote_verified": false
  },
  {
-  "key": "Zillow Group::P751529",
-  "company": "Zillow Group",
-  "title": "Director, Workforce Planning",
-  "location": "Remote-USA",
-  "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/Director--Workforce-Planning_P751529-1",
-  "posted": "2026-10-15",
-  "salary": "$142,500.00 - $227,600.00",
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "low",
-   "reasons": [
-    "Priority employer (Zillow)",
-    "Title suggests workforce/capacity planning overlap",
-    "Remote-USA location fits preference"
-   ],
-   "concerns": [
-    "No description to verify dominant work",
-    "Could be deeply analytical HR workforce-planning role outside her strength",
-    "Seniority/scope unclear"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 45,
-   "practical_fit": 50,
-   "opportunity_score": 35,
-   "work_interest": "B",
-   "dominant_work": "Workforce planning leadership (unclear scope, no description)",
-   "dominant_share": 40,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "UNKNOWN: workforce planning analytics/forecasting depth",
-    "TRANSFERABLE: capacity/resource planning from professional services leadership",
-    "UNKNOWN: scope of role and reporting structure"
-   ],
-   "cautions": [
-    "No JD available - can't confirm whether this is operational HR workforce planning (headcount/forecasting analytics) vs strategic org design"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "validate",
-   "why_fits": "Title suggests workforce/capacity planning, adjacent to her operating-model and resource-planning experience, but no description exists to confirm dominant work or seniority fit.",
-   "material_gap": "No job description available to confirm actual responsibilities or true qualification gaps.",
-   "next_action": "Wait for full job description before investing application effort; Zillow is a priority employer.",
-   "exception_reason": "Zillow is a named priority target employer for Lisa",
-   "score": 35,
-   "fit": "no",
-   "reason": "Priority employer (Zillow)",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
   "key": "Atlassian::27257",
   "company": "Atlassian",
   "title": "Head of Detection and Response",
@@ -5270,77 +5017,6 @@
    "detected_requirements": []
   },
   "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "Atlassian::27290",
-  "company": "Atlassian",
-  "title": "Credit and Collections Manager",
-  "location": "Seattle - United States; Remote - Remote",
-  "url": "https://careers-americas.icims.com/jobs/27290/credit-and-collections-manager/job?mode=apply",
-  "posted": "",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (continuous improvement, board)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Priority employer Atlassian",
-    "People management experience"
-   ],
-   "concerns": [
-    "No finance/credit domain background",
-    "D-tier dominant work",
-    "Narrow specialist function"
-   ],
-   "unmet_requirements": [
-    "Specialized credit and collections / finance domain expertise required"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "pay_zone",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 40,
-   "opportunity_score": 20,
-   "work_interest": "D",
-   "dominant_work": "Managing credit/collections operations and a team within finance quote-to-cash function",
-   "dominant_share": 10,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "GAP: specialized credit/collections/finance domain expertise",
-    "UNKNOWN: people management scope at required scale",
-    "GAP: credit risk analysis and policy experience"
-   ],
-   "cautions": [
-    "Atlassian is a priority employer but this role is a true specialist-finance mismatch"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a specialist finance/credit-risk leadership role; while she has people-leadership and operations experience, it lacks the credit/collections domain depth central to the job.",
-   "material_gap": "No credit, collections, or finance/accounts-receivable domain expertise",
-   "next_action": "Skip this role; pursue other Atlassian openings aligned to transformation or CX.",
-   "exception_reason": "",
-   "score": 20,
-   "fit": "no",
-   "reason": "Priority employer Atlassian",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "pay_zone",
   "remote_verified": false
  },
  {
@@ -5987,6 +5663,88 @@
    "remote_verified": false,
    "remote_evidence": "",
    "detected_requirements": []
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "Atlassian::27422",
+  "company": "Atlassian",
+  "title": "Principal Program Manager, Sales Strategy",
+  "location": "San Francisco - United States; Remote - Remote",
+  "url": "https://careers-americas.icims.com/jobs/27422/principal-program-manager%2c-sales-strategy/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "core",
+  "match_reason": "core title gate",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: BadRequestError)",
+   "confidence": "low",
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": ""
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
+  "key": "Atlassian::27714",
+  "company": "Atlassian",
+  "title": "Principal Revenue Enablement Readiness Manager - Solution Sales",
+  "location": "Mountain View - United States or Remote; Remote - Remote",
+  "url": "https://careers-americas.icims.com/jobs/27714/principal-revenue-enablement-readiness-manager---solution-sales/job?mode=apply",
+  "posted": "",
+  "salary": null,
+  "employment_type": "",
+  "expires": "",
+  "priority_employer": true,
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'enablement' + seniority in title",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: BadRequestError)",
+   "confidence": "low",
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": ""
   },
   "remote_scope": "unclear",
   "remote_verified": false
@@ -7252,75 +7010,6 @@
   "remote_verified": false
  },
  {
-  "key": "Marriott International::26141515",
-  "company": "Marriott International",
-  "title": "Customer Resolution Specialist (Salt Lake)",
-  "location": "Midvale, UT (Remote)",
-  "url": "https://careers.marriott.com/customer-resolution-specialist-salt-lake/job/P1-7572027-0",
-  "posted": "",
-  "salary": null,
-  "employment_type": "Full Time",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "priority employer; role family 'customer' in title",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Priority employer Marriott",
-    "Some travel-industry familiarity"
-   ],
-   "concerns": [
-    "Severely under-leveled for her seniority",
-    "Low pay likely",
-    "High-volume reactive support, not her target work"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 15,
-   "practical_fit": 30,
-   "opportunity_score": 20,
-   "work_interest": "D",
-   "dominant_work": "Front-line customer case resolution/service recovery for hotel guest complaints",
-   "dominant_share": 10,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "helpful",
-   "key_qualifications": [
-    "TRANSFERABLE: customer service and issue resolution from Delta reservations",
-    "GAP: role is entry-level case-handling, not strategic/leadership scope",
-    "UNKNOWN: case management system experience"
-   ],
-   "cautions": [
-    "Entry-level, high-volume, reactive support role far below her seniority and comp needs"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is front-line, high-volume guest complaint resolution work, not strategic CX or transformation leadership, and is well below her seniority and target compensation.",
-   "material_gap": "Role is junior individual-contributor case handling, not senior strategic work",
-   "next_action": "Skip; look for senior CX/transformation roles at Marriott instead.",
-   "exception_reason": "",
-   "score": 20,
-   "fit": "no",
-   "reason": "Priority employer Marriott",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
   "key": "Marriott International::26115386",
   "company": "Marriott International",
   "title": "Director, Property Experience & Salesforce Solutions",
@@ -7387,78 +7076,6 @@
    "detected_requirements": []
   },
   "remote_scope": "office_associated",
-  "remote_verified": false
- },
- {
-  "key": "Marriott International::26120011",
-  "company": "Marriott International",
-  "title": "FLEX Director of Design Operations, Design Systems",
-  "location": "Bethesda, MD (Remote)",
-  "url": "https://careers.marriott.com/flex-director-of-design-operations-design-systems/job/P1-6894858-0",
-  "posted": "",
-  "salary": "$61.05-$81.25",
-  "employment_type": "Full Time",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Priority employer Marriott"
-   ],
-   "concerns": [
-    "Requires UX design craft expertise",
-    "Hands-on design leadership and critique not her skillset",
-    "D-dominant work"
-   ],
-   "unmet_requirements": [
-    "Bachelor's in UX/Interaction Design or equivalent hands-on design expertise",
-    "Hands-on design system/component design leadership"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 20,
-   "practical_fit": 30,
-   "opportunity_score": 15,
-   "work_interest": "D",
-   "dominant_work": "Lead enterprise UX design system strategy and hands-on design leadership",
-   "dominant_share": 15,
-   "fit_level": "poor",
-   "industry_relationship": "adjacent",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "GAP: requires UX/Interaction Design degree and hands-on design system/component expertise",
-    "GAP: hands-on design leadership, critique and component architecture not her background",
-    "UNKNOWN: DesignOps process/governance experience",
-    "CONFIRMED: operational process and cross-functional leadership experience"
-   ],
-   "cautions": [
-    "Role is fundamentally a design/UX craft leadership role, not operations/transformation"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a UX design-system leadership role requiring hands-on design critique and craft expertise she does not have, despite being at a priority employer.",
-   "material_gap": "Requires hands-on UX/design-system craft expertise and design degree, not her background",
-   "next_action": "Skip; not a design-operations or transformation role in her sense.",
-   "exception_reason": "",
-   "score": 15,
-   "fit": "no",
-   "reason": "Priority employer Marriott",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
   "remote_verified": false
  },
  {
@@ -7675,79 +7292,6 @@
   },
   "remote_scope": "office_associated",
   "remote_verified": false
- },
- {
-  "key": "Marriott International::26112254",
-  "company": "Marriott International",
-  "title": "Senior Manager, Technology Product Management - Unified Experience Layer (UXL)",
-  "location": "Bethesda, MD (Remote)",
-  "url": "https://careers.marriott.com/senior-manager-technology-product-management-unified-experience-layer-uxl/job/P1-6676937-0",
-  "posted": "",
-  "salary": "$110,400-$188,000",
-  "employment_type": "Full Time",
-  "expires": "",
-  "priority_employer": true,
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "Marriott is a priority employer",
-    "Direct hospitality industry familiarity"
-   ],
-   "concerns": [
-    "Technical product depth required",
-    "Not aligned with her operating-model/transformation strengths",
-    "D-tier technical PM work"
-   ],
-   "unmet_requirements": [
-    "Requires technical product leadership for API-based shared platform with engineering/architecture depth"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "office_associated",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 25,
-   "interest_fit": 20,
-   "practical_fit": 45,
-   "opportunity_score": 25,
-   "work_interest": "D",
-   "dominant_work": "Technical product management of shared platform/API technology capability",
-   "dominant_share": 20,
-   "fit_level": "poor",
-   "industry_relationship": "direct",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "GAP: deep technical platform/API product management experience",
-    "UNKNOWN: experience owning multi-year technical platform roadmaps",
-    "TRANSFERABLE: stakeholder management and executive alignment across matrixed orgs",
-    "CONFIRMED: direct travel/hospitality industry familiarity"
-   ],
-   "cautions": [
-    "Role centers on platform/technical product strategy, not transformation or adoption leadership"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "Travel-industry familiarity and stakeholder leadership are relevant, but the core job is technical platform product management (APIs, architecture, engineering tradeoffs) which is outside her demonstrated scope.",
-   "material_gap": "No demonstrated technical platform/API product management experience",
-   "next_action": "Skip unless she has undisclosed deep technical product management background.",
-   "exception_reason": "",
-   "score": 25,
-   "fit": "no",
-   "reason": "Marriott is a priority employer",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "office_associated",
-  "remote_verified": false,
-  "rescued": true
  },
  {
   "key": "Hilton::228240",

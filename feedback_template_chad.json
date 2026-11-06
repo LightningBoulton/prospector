@@ -44,6 +44,13 @@
    "note": ""
   },
   {
+   "key": "1Password::59ca115c-3a05-417a-985f-a77246309d07",
+   "company": "1Password",
+   "title": "Senior Developer, Trust Platforms",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::c061444f-2053-4967-aeff-4b11f4a88713",
    "company": "1Password",
    "title": "Senior IT Engineer, Identity and Access Management",
@@ -68,6 +75,13 @@
    "key": "Adobe::R173252",
    "company": "Adobe",
    "title": "Forward Deployed Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::8011130003",
+   "company": "Affirm",
+   "title": "Analytics Lead, Full Stack",
    "status": "",
    "note": ""
   },
@@ -121,23 +135,9 @@
    "note": ""
   },
   {
-   "key": "Affirm::8017340003",
-   "company": "Affirm",
-   "title": "Software Engineer I, Fullstack (Search)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Affirm::8040751003",
    "company": "Affirm",
    "title": "Software Engineer II - CIAM",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Affirm::8032173003",
-   "company": "Affirm",
-   "title": "Software Engineer II, Full Stack (Card Acquisition)",
    "status": "",
    "note": ""
   },
@@ -184,13 +184,6 @@
    "note": ""
   },
   {
-   "key": "Airbyte::b59bbc91-fb77-4a08-9c47-0fca7f755942",
-   "company": "Airbyte",
-   "title": "Senior Backend Engineer, Agent Infrastructure",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Airbyte::5930fed9-c4f6-43c3-87be-3402c2c46489",
    "company": "Airbyte",
    "title": "Senior Site Reliability Engineer",
@@ -201,6 +194,13 @@
    "key": "Airbyte::735d5deb-ba6e-49b2-88ba-5ebdf8d315a0",
    "company": "Airbyte",
    "title": "Senior Software Engineer, Platform Fullstack",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Airbyte::b59bbc91-fb77-4a08-9c47-0fca7f755942",
+   "company": "Airbyte",
+   "title": "Staff Backend Engineer, Agent Infrastructure",
    "status": "",
    "note": ""
   },
@@ -243,13 +243,6 @@
    "key": "BILL::6223092004",
    "company": "BILL",
    "title": "Software Engineer II - Growth",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "BYU::JR-10549",
-   "company": "BYU",
-   "title": "Software Engineer",
    "status": "",
    "note": ""
   },
@@ -345,6 +338,13 @@
    "note": ""
   },
   {
+   "key": "Bright Vision Technologies::https://himalayas.app/companies/bright-vision-technologies/jobs/cloud-migration-engineer",
+   "company": "Bright Vision Technologies",
+   "title": "Cloud Migration Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Buffer::9eed68be-5967-43e6-bb17-3dad6d966747",
    "company": "Buffer",
    "title": "Lead Security Engineer",
@@ -352,9 +352,16 @@
    "note": ""
   },
   {
-   "key": "CACI International Inc::https://himalayas.app/companies/caci-international-inc/jobs/servicenow-senior-application-developer",
+   "key": "CACI International Inc::https://himalayas.app/companies/caci-international-inc/jobs/junior-software-developer",
    "company": "CACI International Inc",
-   "title": "ServiceNow Senior Application Developer",
+   "title": "Junior Software Developer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Canopy::4485146009",
+   "company": "Canopy",
+   "title": "Engineering Team Lead, Data Engineer",
    "status": "",
    "note": ""
   },
@@ -408,6 +415,13 @@
    "note": ""
   },
   {
+   "key": "Chainguard::4727461006",
+   "company": "Chainguard",
+   "title": "Staff Software Engineer, Chainguard Harness",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Circle::JR101180",
    "company": "Circle",
    "title": "Developer Relations Manager",
@@ -429,16 +443,16 @@
    "note": ""
   },
   {
-   "key": "Cloudflare::8327965",
+   "key": "Cloudflare::8335624",
    "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Digital Native - Vancouver BC",
+   "title": "Senior Customer Engineer - Montreal, QC",
    "status": "",
    "note": ""
   },
   {
-   "key": "Cloudflare::8335624",
+   "key": "Cloudflare::8327965",
    "company": "Cloudflare",
-   "title": "Senior Customer Engineer, Named Enterprise - Montreal, QC",
+   "title": "Senior Customer Engineer - Vancouver BC",
    "status": "",
    "note": ""
   },
@@ -446,6 +460,13 @@
    "key": "Cloudflare::8335069",
    "company": "Cloudflare",
    "title": "Senior Customer Engineer, Strategic - Seattle, WA",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cloudflare::8263016",
+   "company": "Cloudflare",
+   "title": "Senior Software Engineer - Kubernetes platform",
    "status": "",
    "note": ""
   },
@@ -467,6 +488,13 @@
    "key": "Coinbase::8285182",
    "company": "Coinbase",
    "title": "Senior Frontend Engineer, Portfolio",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8347602",
+   "company": "Coinbase",
+   "title": "Senior Machine Learning Engineer",
    "status": "",
    "note": ""
   },
@@ -499,9 +527,16 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8357772",
+   "company": "Coinbase",
+   "title": "Senior Software Engineer (Institutional, USDC)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8335547",
    "company": "Coinbase",
-   "title": "Senior Software Engineer, Backend (Coinbase One)",
+   "title": "Senior Software Engineer, (Coinbase One)",
    "status": "",
    "note": ""
   },
@@ -541,6 +576,13 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8356846",
+   "company": "Coinbase",
+   "title": "Staff Software Engineer - Backend (Consumer - Agentic Trading)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8287662",
    "company": "Coinbase",
    "title": "Staff Software Engineer, Backend - FinHub (Transfers)",
@@ -555,6 +597,13 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8356850",
+   "company": "Coinbase",
+   "title": "Staff Software Engineer, Frontend/Mobile (Consumer - Agentic Trading)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Coinbase::8302189",
    "company": "Coinbase",
    "title": "Staff Software Enginer, Backend - Payments Platform",
@@ -563,6 +612,13 @@
   },
   {
    "key": "Cresta::5444638008",
+   "company": "Cresta",
+   "title": "Principal Solutions Engineer, West",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cresta::159188",
    "company": "Cresta",
    "title": "Principal Solutions Engineer, West",
    "status": "",
@@ -632,16 +688,16 @@
    "note": ""
   },
   {
-   "key": "DigiCert::8885889002",
+   "key": "DigiCert::8930996002",
    "company": "DigiCert",
-   "title": "Senior DevOps Engineer",
+   "title": "Forward Deployed Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "DigiCert::8885539002",
+   "key": "DigiCert::8885889002",
    "company": "DigiCert",
-   "title": "Senior Software Engineer",
+   "title": "Senior DevOps Engineer",
    "status": "",
    "note": ""
   },
@@ -660,23 +716,9 @@
    "note": ""
   },
   {
-   "key": "Docker::ed0ec3c2-aa74-4d81-97d9-f99e6b47d078",
-   "company": "Docker",
-   "title": "Senior Software Engineer, AI Gateway",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Docker::33b629b4-fc3a-437e-b13b-16fef283af68",
    "company": "Docker",
    "title": "Senior Software Engineer, Tooling (West Coast Preferred)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Docker::30babe0a-57e8-4425-8991-8797e8337e82",
-   "company": "Docker",
-   "title": "Staff Software Engineer, AI Gateway",
    "status": "",
    "note": ""
   },
@@ -702,6 +744,13 @@
    "note": ""
   },
   {
+   "key": "Dropbox::7172713",
+   "company": "Dropbox",
+   "title": "Infrastructure Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Dropbox::8280093",
    "company": "Dropbox",
    "title": "Senior Corporate Enterprise Platform Engineer, Windows",
@@ -709,28 +758,14 @@
    "note": ""
   },
   {
-   "key": "Elevenlabs::158994",
-   "company": "Elevenlabs",
-   "title": "Developer Advocate",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Emerging Travel Group::https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
-   "company": "Emerging Travel Group",
-   "title": "Senior Python Developer (CRM - AI/LLM)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Fivetran::8167896003",
+   "key": "Fivetran::8075733003",
    "company": "Fivetran",
    "title": "Manager Security Engineer, Operations",
    "status": "",
    "note": ""
   },
   {
-   "key": "Fivetran::8075733003",
+   "key": "Fivetran::8167896003",
    "company": "Fivetran",
    "title": "Manager Security Engineer, Operations",
    "status": "",
@@ -772,6 +807,13 @@
    "note": ""
   },
   {
+   "key": "GitLab::8931347002",
+   "company": "GitLab",
+   "title": "Customer Success Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "GitLab::8922249002",
    "company": "GitLab",
    "title": "Intermediate Fullstack Engineer, Subscription Lifecycle",
@@ -786,23 +828,16 @@
    "note": ""
   },
   {
-   "key": "GitLab::8927630002",
+   "key": "GitLab::8920764002",
    "company": "GitLab",
-   "title": "Principal Field Security Engineer (US)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "GitLab::8931298002",
-   "company": "GitLab",
-   "title": "Senior Corporate Security Engineer",
+   "title": "Senior Professional Services Engineer - North Carolina",
    "status": "",
    "note": ""
   },
   {
    "key": "GitLab::8838394002",
    "company": "GitLab",
-   "title": "Senior Professional Services Engineer - PubSec",
+   "title": "Senior Professional Services Engineer - PubSec - DC Metro",
    "status": "",
    "note": ""
   },
@@ -898,13 +933,6 @@
    "note": ""
   },
   {
-   "key": "Headway::6c028013-11bf-4a29-9bb3-fe528db72cb9",
-   "company": "Headway",
-   "title": "Senior Engineering Manager, Web Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Headway::b544e605-2f49-4744-9e3d-0548e90cb0d5",
    "company": "Headway",
    "title": "Staff Software Engineer, Provider",
@@ -978,6 +1006,13 @@
    "key": "Hinge Health::1f31b983-ea99-4c4e-ad93-5b406d66d66c",
    "company": "Hinge Health",
    "title": "Senior Software Engineer - Frontend",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Hinge Health::dce84ed4-ecd9-4700-854c-46ed7051cbdd",
+   "company": "Hinge Health",
+   "title": "Senior Software Engineer, App Enablement",
    "status": "",
    "note": ""
   },
@@ -1066,9 +1101,9 @@
    "note": ""
   },
   {
-   "key": "Keyfactor, Inc.::159083",
-   "company": "Keyfactor, Inc.",
-   "title": "Sr. Solutions Engineer, West",
+   "key": "Instructure::af01c88f-fb94-420b-85e8-2afbfb5b0213",
+   "company": "Instructure",
+   "title": "Senior Analytics Engineer",
    "status": "",
    "note": ""
   },
@@ -1076,13 +1111,6 @@
    "key": "LaunchDarkly::8015117003",
    "company": "LaunchDarkly",
    "title": "Backend Software Engineer, SDK",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Linear::493579ff-3198-420f-ab6a-b8bb971cb513",
-   "company": "Linear",
-   "title": "Senior / Staff Security Engineer",
    "status": "",
    "note": ""
   },
@@ -1213,16 +1241,23 @@
    "note": ""
   },
   {
-   "key": "Plaid::865f7c94-9da4-49ac-b490-2f770bd94b1c",
+   "key": "Plaid::dab31ae8-1e25-4b63-8008-d6930ff72369",
    "company": "Plaid",
-   "title": "Senior Product Security Engineer",
+   "title": "Staff Machine Learning Engineer (Research Scientist) - DFAI",
    "status": "",
    "note": ""
   },
   {
-   "key": "Plaid::dab31ae8-1e25-4b63-8008-d6930ff72369",
-   "company": "Plaid",
-   "title": "Staff Machine Learning Engineer (Research Scientist) - DFAI",
+   "key": "PostHog::20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
+   "company": "PostHog",
+   "title": "Product Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "PostHog::db808740-242e-4a40-ad43-d41f26c049d7",
+   "company": "PostHog",
+   "title": "Technical Support Engineer",
    "status": "",
    "note": ""
   },
@@ -1241,16 +1276,16 @@
    "note": ""
   },
   {
-   "key": "RTX::https://himalayas.app/companies/rtx/jobs/principal-equipment-engineer-adhesion-assembly",
-   "company": "RTX",
-   "title": "Principal Equipment Engineer, Adhesion & Assembly",
+   "key": "Ramp::d8925f84-562f-470c-a5bd-4f6c20009361",
+   "company": "Ramp",
+   "title": "Research Engineer, Benchmarks & Evaluation",
    "status": "",
    "note": ""
   },
   {
-   "key": "Ramp::d8925f84-562f-470c-a5bd-4f6c20009361",
+   "key": "Ramp::b7514711-8a29-4bd2-a97a-967be14e336f",
    "company": "Ramp",
-   "title": "Research Engineer, Benchmarks & Evaluation",
+   "title": "Senior Backend Engineer | AI Spend Management",
    "status": "",
    "note": ""
   },
@@ -1269,9 +1304,9 @@
    "note": ""
   },
   {
-   "key": "Ramp::b7514711-8a29-4bd2-a97a-967be14e336f",
+   "key": "Ramp::6075e1dc-c833-4e27-a789-61d3a596c66c",
    "company": "Ramp",
-   "title": "Senior Backend Engineer | Token Spend Management",
+   "title": "Senior Security Engineer, Identity",
    "status": "",
    "note": ""
   },
@@ -1293,6 +1328,13 @@
    "key": "Ramp::6511d68f-b65d-4499-962f-7e2f75eabe3f",
    "company": "Ramp",
    "title": "Software Engineer, Frontend",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Recursion::8359888",
+   "company": "Recursion",
+   "title": "Senior Engineer, Exposure & Vulnerability Management",
    "status": "",
    "note": ""
   },
@@ -1479,9 +1521,23 @@
    "note": ""
   },
   {
-   "key": "Samsara::8246034",
+   "key": "Samsara::8359978",
    "company": "Samsara",
    "title": "Firmware Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8359994",
+   "company": "Samsara",
+   "title": "Lead Design Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8353283",
+   "company": "Samsara",
+   "title": "Security Operations Engineer I",
    "status": "",
    "note": ""
   },
@@ -1493,6 +1549,13 @@
    "note": ""
   },
   {
+   "key": "Samsara::8354253",
+   "company": "Samsara",
+   "title": "Senior Software Engineer II",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Samsara::7985175",
    "company": "Samsara",
    "title": "Sr. Software Engineer I",
@@ -1500,16 +1563,16 @@
    "note": ""
   },
   {
-   "key": "Samsara::8287656",
+   "key": "Samsara::8358617",
    "company": "Samsara",
-   "title": "Staff or Senior Firmware Engineer",
+   "title": "Staff Machine Learning Engineer - Edge AI",
    "status": "",
    "note": ""
   },
   {
-   "key": "Sardine::e4e52261-16bf-4285-aced-636fa7f6c28d",
-   "company": "Sardine",
-   "title": "Senior Application Security Engineer",
+   "key": "Samsara::8359984",
+   "company": "Samsara",
+   "title": "Staff Product Operations Manager, Platform",
    "status": "",
    "note": ""
   },
@@ -2578,13 +2641,6 @@
    "note": ""
   },
   {
-   "key": "Stripe::8282859",
-   "company": "Stripe",
-   "title": "Technical Program Manager, Extensibility Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Supabase::6f7656fc-9983-48be-bbd3-8b40e0e3027a",
    "company": "Supabase",
    "title": "Container Engineer",
@@ -2613,9 +2669,9 @@
    "note": ""
   },
   {
-   "key": "Supabase::ed6cedb1-b9bf-4609-ac5c-c75c33b31bf3",
+   "key": "Supabase::159353",
    "company": "Supabase",
-   "title": "Site Reliability Engineer",
+   "title": "Senior Developer Relations, Twitter Brand Rep",
    "status": "",
    "note": ""
   },
@@ -2665,6 +2721,27 @@
    "key": "Tailscale::4733115005",
    "company": "Tailscale",
    "title": "Security Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "The American Institute of Architects::https://weworkremotely.com/remote-jobs/the-american-institute-of-architects-director-enterprise-platform-integration",
+   "company": "The American Institute of Architects",
+   "title": "Director, Enterprise Platform & Integration",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Thumbtack::bdd97695-4f21-4cc5-ac26-4d16f31709dc",
+   "company": "Thumbtack",
+   "title": "Senior Full Stack Engineer, People Products",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Thumbtack::6e4e6d5f-1588-4d88-a4de-429573407773",
+   "company": "Thumbtack",
+   "title": "Senior Full Stack Engineer, People Products",
    "status": "",
    "note": ""
   },
@@ -2753,6 +2830,13 @@
    "note": ""
   },
   {
+   "key": "Western Governors University::JR-026475",
+   "company": "Western Governors University",
+   "title": "Associate Assessment Developer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Western Governors University::JR-026548",
    "company": "Western Governors University",
    "title": "Associate Software Engineer",
@@ -2760,9 +2844,9 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026144",
+   "key": "Western Governors University::JR-026558",
    "company": "Western Governors University",
-   "title": "Manager, Software Engineer Student LifeCycle Services",
+   "title": "Director, Software Engineer",
    "status": "",
    "note": ""
   },
@@ -2774,16 +2858,16 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026038",
+   "key": "Western Governors University::JR-026503",
    "company": "Western Governors University",
-   "title": "Senior Software Engineer",
+   "title": "Senior Software Engineer - Operational Improvement",
    "status": "",
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-025416",
+   "key": "Western Governors University::JR-026554",
    "company": "Western Governors University",
-   "title": "Senior Software Engineer - Salesforce",
+   "title": "Software Engineer II",
    "status": "",
    "note": ""
   },
@@ -2805,6 +2889,13 @@
    "key": "Western Governors University::JR-026231",
    "company": "Western Governors University",
    "title": "Staff Software Engineer, AI",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "WiredPeople, Inc.::https://himalayas.app/companies/wiredpeople-inc/jobs/web-applications-programmer",
+   "company": "WiredPeople, Inc.",
+   "title": "Web Applications Programmer",
    "status": "",
    "note": ""
   },
