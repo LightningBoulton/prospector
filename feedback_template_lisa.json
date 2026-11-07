@@ -2,23 +2,9 @@
  "_comment": "Copy any row you want to act on into feedback_lisa.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_lisa.json is.",
  "entries": [
   {
-   "key": "1Password::4e58afec-6145-4fde-afdc-37792a095a3f",
-   "company": "1Password",
-   "title": "Director, Global Field Sales Operations",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::e7e5ae95-00d2-4d8a-ba85-8146be106300",
    "company": "1Password",
    "title": "Performance Marketing Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "1Password::6639ae84-8af4-4dfb-931c-bdce0704e5e3",
-   "company": "1Password",
-   "title": "Senior Digital Customer Success Campaign Manager",
    "status": "",
    "note": ""
   },
@@ -100,6 +86,13 @@
    "note": ""
   },
   {
+   "key": "Alkami Technology, Inc.::https://himalayas.app/companies/alkami-technology-inc/jobs/principal-banking-consultant",
+   "company": "Alkami Technology, Inc.",
+   "title": "Principal, Banking Consultant",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Alloy::https://weworkremotely.com/remote-jobs/alloy-client-enablement-lead",
    "company": "Alloy",
    "title": "Client Enablement Lead",
@@ -135,16 +128,16 @@
    "note": ""
   },
   {
-   "key": "Aquent::213563",
+   "key": "Aquent::213647",
    "company": "Aquent",
-   "title": "Creative Ops: Project Manager",
+   "title": "Creative Project Manager",
    "status": "",
    "note": ""
   },
   {
-   "key": "Aquent::213647",
+   "key": "Aquent::214162",
    "company": "Aquent",
-   "title": "Creative Project Manager",
+   "title": "Financial Operations",
    "status": "",
    "note": ""
   },
@@ -173,6 +166,13 @@
    "key": "Aquent::213820",
    "company": "Aquent",
    "title": "Major Incident and Problem Manager",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Aquent::213879",
+   "company": "Aquent",
+   "title": "Managing Director - Strategic Accounts",
    "status": "",
    "note": ""
   },
@@ -534,9 +534,9 @@
    "note": ""
   },
   {
-   "key": "Brex::8895350002",
-   "company": "Brex",
-   "title": "Director, Marketing Operations",
+   "key": "Bask Health::https://himalayas.app/companies/bask-health/jobs/strategy-and-planning-lead",
+   "company": "Bask Health",
+   "title": "Strategy and Planning Lead",
    "status": "",
    "note": ""
   },
@@ -558,6 +558,13 @@
    "key": "Brex::8925893002",
    "company": "Brex",
    "title": "Partner Operations Program Manager, Associate",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Canonical::159480",
+   "company": "Canonical",
+   "title": "Senior Sales Operations Analyst",
    "status": "",
    "note": ""
   },
@@ -667,6 +674,13 @@
    "note": ""
   },
   {
+   "key": "Cloudbeds::159473",
+   "company": "Cloudbeds",
+   "title": "Onboarding Project Manager - NORAM",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Cloudflare::8306580",
    "company": "Cloudflare",
    "title": "Principal, GTM Automation, RevOps.",
@@ -691,13 +705,6 @@
    "key": "Cloudflare::8306604",
    "company": "Cloudflare",
    "title": "Senior GTM Technologist, RevOps",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cloudinary::158592",
-   "company": "Cloudinary",
-   "title": "Director, New Business Operations",
    "status": "",
    "note": ""
   },
@@ -754,6 +761,20 @@
    "key": "Committee for Children::https://weworkremotely.com/remote-jobs/committee-for-children-senior-product-manager-edtech-innovation",
    "company": "Committee for Children",
    "title": "Senior Product Manager - Edtech Innovation",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Concept Plus::150198",
+   "company": "Concept Plus",
+   "title": "Capture Management Director",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cresta::5466418008",
+   "company": "Cresta",
+   "title": "Growth Marketer, SEO/AEO and Experimentation",
    "status": "",
    "note": ""
   },
@@ -968,9 +989,23 @@
    "note": ""
   },
   {
+   "key": "GitLab::152562",
+   "company": "GitLab",
+   "title": "AI Transformation Owner, CRO",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "GitLab::8920912002",
    "company": "GitLab",
    "title": "Customer Experience Enablement Lead",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "GitLab::8931337002",
+   "company": "GitLab",
+   "title": "Customer Success LATAM",
    "status": "",
    "note": ""
   },
@@ -989,16 +1024,16 @@
    "note": ""
   },
   {
-   "key": "GitLab::8896290002",
+   "key": "GitLab::8929477002",
    "company": "GitLab",
-   "title": "Manager, Customer Success",
+   "title": "Manager, Customer Success Manager (PubSec)",
    "status": "",
    "note": ""
   },
   {
-   "key": "GitLab::8929477002",
+   "key": "GitLab::8933640002",
    "company": "GitLab",
-   "title": "Manager, Customer Success Manager (PubSec)",
+   "title": "Principal Growth Marketing Strategist",
    "status": "",
    "note": ""
   },
@@ -1108,13 +1143,6 @@
    "note": ""
   },
   {
-   "key": "Headway::ca065802-07db-449d-983d-8239958d2f07",
-   "company": "Headway",
-   "title": "Director, People Operations",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Headway::2730294c-aeda-4635-8bfd-83374d3c6f60",
    "company": "Headway",
    "title": "Principal, Commercial Strategy - Care Partnerships",
@@ -1160,13 +1188,6 @@
    "key": "Instacart::8337981",
    "company": "Instacart",
    "title": "Program Manager, Escalation Management",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Instacart::8292786",
-   "company": "Instacart",
-   "title": "Senior Sales Engineer",
    "status": "",
    "note": ""
   },
@@ -1227,13 +1248,6 @@
    "note": ""
   },
   {
-   "key": "InterVarsity::https://himalayas.app/companies/intervarsity/jobs/field-operations-director-central-region-undergraduate-ministries",
-   "company": "InterVarsity",
-   "title": "Field Operations Director - Central Region (Undergraduate Ministries)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Kelso Industries::5460228008",
    "company": "Kelso Industries",
    "title": "Mechanical Project Manager",
@@ -1248,6 +1262,13 @@
    "note": ""
   },
   {
+   "key": "Keurig Dr Pepper::https://himalayas.app/companies/keurig-dr-pepper/jobs/creative-project-manager",
+   "company": "Keurig Dr Pepper",
+   "title": "Creative Project Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Keyfactor, Inc.::159040",
    "company": "Keyfactor, Inc.",
    "title": "Partner Enablement Manager",
@@ -1255,16 +1276,16 @@
    "note": ""
   },
   {
-   "key": "Kong Inc.::158253",
-   "company": "Kong Inc.",
-   "title": "Senior Manager, Professional Services",
+   "key": "Knowt Inc.::https://weworkremotely.com/remote-jobs/knowt-inc-customer-success-manager-k-12",
+   "company": "Knowt Inc.",
+   "title": "Customer Success Manager (K-12)",
    "status": "",
    "note": ""
   },
   {
-   "key": "LaunchDarkly::158589",
-   "company": "LaunchDarkly",
-   "title": "Chief of Staff",
+   "key": "Labcorp::https://himalayas.app/companies/labcorp/jobs/lead-it-implementation-specialist",
+   "company": "Labcorp",
+   "title": "Lead IT Implementation Specialist",
    "status": "",
    "note": ""
   },
@@ -1353,13 +1374,6 @@
    "note": ""
   },
   {
-   "key": "Medely::159240",
-   "company": "Medely",
-   "title": "Revenue Enablement Lead",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Mercury::6230246004",
    "company": "Mercury",
    "title": "Business Continuity Management Lead",
@@ -1370,20 +1384,6 @@
    "key": "Mercury::158657",
    "company": "Mercury",
    "title": "Head of Product - Business Banking",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Mercury::6111944004",
-   "company": "Mercury",
-   "title": "Revenue Enablement Manager - Product",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Mercury::6227550004",
-   "company": "Mercury",
-   "title": "Senior Customer Support Service Delivery Program Manager",
    "status": "",
    "note": ""
   },
@@ -1402,16 +1402,23 @@
    "note": ""
   },
   {
-   "key": "Metabase::ba13b8ee-b828-471f-9731-9d22dca90150",
-   "company": "Metabase",
-   "title": "Business Operations Manager (Finance & Analytics)",
+   "key": "Microsoft::https://weworkremotely.com/remote-jobs/microsoft-unified-foundational-offers-strategy-and-operations-lead",
+   "company": "Microsoft",
+   "title": "Unified Foundational Offers Strategy and Operations Lead",
    "status": "",
    "note": ""
   },
   {
-   "key": "Microsoft::https://weworkremotely.com/remote-jobs/microsoft-unified-foundational-offers-strategy-and-operations-lead",
-   "company": "Microsoft",
-   "title": "Unified Foundational Offers Strategy and Operations Lead",
+   "key": "Motive::159574",
+   "company": "Motive",
+   "title": "Director, Product Strategy & Monetization",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Mozilla::159475",
+   "company": "Mozilla",
+   "title": "Chief of Staff to the CEO",
    "status": "",
    "note": ""
   },
@@ -1444,16 +1451,16 @@
    "note": ""
   },
   {
-   "key": "Notion::c413d063-add4-4c55-aebd-704d49fb54c1",
-   "company": "Notion",
-   "title": "Head of People Operations",
+   "key": "Netlify::8922485002",
+   "company": "Netlify",
+   "title": "Senior Strategic Finance Manager (Corporate Finance)",
    "status": "",
    "note": ""
   },
   {
-   "key": "OpenAI::158214",
-   "company": "OpenAI",
-   "title": "Land Development & Due Diligence Lead",
+   "key": "Notion::c413d063-add4-4c55-aebd-704d49fb54c1",
+   "company": "Notion",
+   "title": "Head of People Operations",
    "status": "",
    "note": ""
   },
@@ -1475,13 +1482,6 @@
    "key": "PBS::JR1000338",
    "company": "PBS",
    "title": "Manager, Content Operations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "PagerDuty::https://weworkremotely.com/remote-jobs/pagerduty-senior-solutions-consultant",
-   "company": "PagerDuty",
-   "title": "Senior Solutions Consultant",
    "status": "",
    "note": ""
   },
@@ -1577,13 +1577,6 @@
    "note": ""
   },
   {
-   "key": "Ramp::abd1360f-bd9d-4649-ac02-9af2a437ff98",
-   "company": "Ramp",
-   "title": "Chief Compliance Officer, Ramp Advisory LLC",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Ramp::a0a26a90-7c9a-4a45-a042-ae646911930a",
    "company": "Ramp",
    "title": "Customer Activation Manager | AI Spend",
@@ -1661,13 +1654,6 @@
    "note": ""
   },
   {
-   "key": "Reddit::158571",
-   "company": "Reddit",
-   "title": "Group Product Manager, Finance Technology",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Reddit::8359289",
    "company": "Reddit",
    "title": "Senior Product Manager, Finance Technology (Procure-to-Pay & Record-to-Report)",
@@ -1741,6 +1727,13 @@
    "key": "Salesforce::JR363499",
    "company": "Salesforce",
    "title": "Account Solution Engineer - Federal Civilian",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Salesforce::JR367671",
+   "company": "Salesforce",
+   "title": "Associate Security Consultant- PSSA, Early Talent",
    "status": "",
    "note": ""
   },
@@ -1853,13 +1846,6 @@
    "key": "Salesforce::JR326962",
    "company": "Salesforce",
    "title": "Customer Success Manager, Senior Manager - Healthcare",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Salesforce::JR362634",
-   "company": "Salesforce",
-   "title": "Customer Success Manager, Tableau - Public Sector",
    "status": "",
    "note": ""
   },
@@ -2186,6 +2172,13 @@
    "note": ""
   },
   {
+   "key": "Samsara::8353150",
+   "company": "Samsara",
+   "title": "Enterprise Sales Engineer - Public Sector - West",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Samsara::8359531",
    "company": "Samsara",
    "title": "Enterprise Select Implementation Consultant (West)",
@@ -2224,6 +2217,13 @@
    "key": "Samsara::8360112",
    "company": "Samsara",
    "title": "Senior Business Value Strategist",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Samsara::8311584",
+   "company": "Samsara",
+   "title": "Senior Customer Success Manager",
    "status": "",
    "note": ""
   },
@@ -2280,13 +2280,6 @@
    "key": "Sardine::9f34cfd0-7db2-454f-b94a-4468d204eb21",
    "company": "Sardine",
    "title": "Sales Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Services For The Underserved, Inc.::https://himalayas.app/companies/services-for-the-underserved-inc/jobs/assistant-program-director",
-   "company": "Services For The Underserved, Inc.",
-   "title": "Assistant Program Director",
    "status": "",
    "note": ""
   },
@@ -2361,13 +2354,6 @@
    "note": ""
   },
   {
-   "key": "Stripe::8198323",
-   "company": "Stripe",
-   "title": "Solutions Engineer, AI Build Team",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Stripe::8234710",
    "company": "Stripe",
    "title": "Startup Products Strategy & Operations, Insights & Analytics",
@@ -2403,13 +2389,6 @@
    "note": ""
   },
   {
-   "key": "Tailscale::4744878005",
-   "company": "Tailscale",
-   "title": "Program Manager, EPD Operations",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Tailscale::4751402005",
    "company": "Tailscale",
    "title": "Staff Product Operations Manager",
@@ -2434,13 +2413,6 @@
    "key": "Thumbtack::152413",
    "company": "Thumbtack",
    "title": "Sr. Manager, Success Operations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Toptal::ce71467f-ec68-49ec-b513-e7cc42f141d6",
-   "company": "Toptal",
-   "title": "General Manager, Industrial Products & Services - US Based",
    "status": "",
    "note": ""
   },
@@ -2648,6 +2620,13 @@
    "note": ""
   },
   {
+   "key": "Zone &#038; Co::159549",
+   "company": "Zone &#038; Co",
+   "title": "Product Enablement Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Zscaler::https://weworkremotely.com/remote-jobs/zscaler-senior-sales-engineer-majors-georgia",
    "company": "Zscaler",
    "title": "Senior Sales Engineer - Majors, Georgia",
@@ -2669,16 +2648,16 @@
    "note": ""
   },
   {
-   "key": "hims &#038; hers::158161",
-   "company": "hims &#038; hers",
-   "title": "Principal Design Program Manager, International Packaging",
+   "key": "iCapital::8917667002",
+   "company": "iCapital",
+   "title": "Business Solutions Consultant II - Associate",
    "status": "",
    "note": ""
   },
   {
-   "key": "iCapital::8917667002",
-   "company": "iCapital",
-   "title": "Business Solutions Consultant II - Associate",
+   "key": "impact.com::159497",
+   "company": "impact.com",
+   "title": "Senior Revenue Operations Analyst",
    "status": "",
    "note": ""
   },
