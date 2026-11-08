@@ -1,21 +1,21 @@
-# Prospector — 2026-11-07
+# Prospector — 2026-11-08
 _Lisa — Transformation / Operations / Experience Leadership_
 
 **1 new role worth your time** · 5 still worth applying · 1 closed/removed
 Best move today: **Director, Internal AI Operations** — LaunchDarkly
-_145 roles judged on their job descriptions · 129 not worth your time · 1 worthwhile held for a later day (daily cap) · 72 awaiting a JD review_
+_138 roles judged on their job descriptions · 122 not worth your time · 80 awaiting a JD review_
 
 ## OUTSIDE THE USUAL PARAMETERS — SURFACED FOR A STATED REASON (1)
-- **Salesforce — Director/Sr. Director, Strategic Partner Marketing and GTM Strategy**
+- **Zillow Group — SEO Product Manager**
   - Status: STRETCH · Work Interest: B · Fit: Stretch
-  - Work model/location: onsite Bellevue (+3 more) · posted 2026-11-04
+  - Work model/location: remote Remote-USA · posted 2026-10-29
   - Industry: Adjacent
-  - Compensation: $181,700 - $304,700
-  - Why it fits: Salesforce is a priority employer and the role involves cross-functional GTM orchestration and team leadership, but the core work is partner/product marketing content and launch execution, which is adjacent to rather than central in her experience.
-  - Material gap: No demonstrated partner marketing or product marketing specialization central to this role
-  - Surfaced as an exception: Priority employer (Salesforce) with referral network available
-  - Next action: Apply only if she can frame GTM orchestration and content strategy from past agency/client work credibly.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Washington---Seattle/Director-Sr-Director--Strategic-Partner-Marketing-and-GTM-Strategy_JR364079
+  - Compensation: $128,600.00 - $205,400.00
+  - Why it fits: SEO/content strategy is a known B-tier interest area and she has agency-side SEO leadership experience, but with no description it's unclear if this is strategic SEO leadership or a technical product-management role.
+  - Material gap: No description available to confirm actual scope or product-management requirements
+  - Surfaced as an exception: Zillow Group is a named priority employer
+  - Next action: Have Prospector retrieve the full job description before deciding whether to apply.
+  - https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/SEO-Product-Manager_P751410-1
 
 ## STILL WORTH APPLYING (5)
 - **LaunchDarkly — Director, Internal AI Operations**
@@ -36,15 +36,6 @@ _145 roles judged on their job descriptions · 129 not worth your time · 1 wort
   - Material gap: No direct software product/engineering operating-cadence experience, though transferable skills are strong.
   - Next action: Apply, framing professional-services operating-cadence and executive-narrative experience as directly transferable.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Product-Strategy---Operations--IC-_JR365526-1
-- **Salesforce — Senior Director, Communications Strategy & Operations**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-02
-  - Industry: Adjacent
-  - Compensation: $181,700 - $304,700
-  - Why it fits: This is chief-of-staff/operating-rhythm work for a CCO — planning, OKRs, executive reviews, cross-org alignment — squarely matching her transformation and operations leadership experience.
-  - Material gap: No direct corporate communications domain experience, though not clearly required for the ops role.
-  - Next action: Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.
-  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1
 - **Salesforce — Customer Success Manager, Director - Core (Sales & Service) Clouds**
   - Status: PACKAGE · Work Interest: A · Fit: Good
   - Work model/location: onsite Seattle (+5 more) · posted 2026-11-02
@@ -54,6 +45,15 @@ _145 roles judged on their job descriptions · 129 not worth your time · 1 wort
   - Material gap: No direct Salesforce platform CSM experience, though transferable account-leadership skills are strong.
   - Next action: Apply directly, leveraging Salesforce priority-employer connections and emphasizing enterprise value-realization leadership.
   - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/Illinois---Chicago/Customer-Success-Manager--Director---Core--Sales---Service--Clouds_JR366808
+- **Salesforce — Senior Director, Communications Strategy & Operations**
+  - Status: PACKAGE · Work Interest: A · Fit: Good
+  - Work model/location: onsite Seattle (+2 more) · posted 2026-11-02
+  - Industry: Adjacent
+  - Compensation: $181,700 - $304,700
+  - Why it fits: This is chief-of-staff/operating-rhythm work for a CCO — planning, OKRs, executive reviews, cross-org alignment — squarely matching her transformation and operations leadership experience.
+  - Material gap: No direct corporate communications domain experience, though not clearly required for the ops role.
+  - Next action: Apply leveraging her Adobe/Salesforce-adjacent referral network and operating-model track record.
+  - https://salesforce.wd12.myworkdaysite.com/External_Career_Site/job/California---San-Francisco/Senior-Director--Communications-Strategy---Operations_JR366388-1
 - **Fin — Principal Customer Success Manager**
   - Status: PACKAGE · Work Interest: A · Fit: Good
   - Work model/location: remote Anywhere in the World (Remote) · posted 2026-10-29
@@ -65,9 +65,9 @@ _145 roles judged on their job descriptions · 129 not worth your time · 1 wort
   - https://weworkremotely.com/remote-jobs/fin-principal-customer-success-manager
 
 ## REMOVED SINCE PRIOR RUN (1) — closure confirmed at the employer
-- Senior Project Manager, Business Transformation — Algolia · Verified closed at the source (404 / posting removed)
+- Business Operations Manager — Headway · Verified closed at the source (404 / posting removed)
 
-_83 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+_85 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH
