@@ -153,15 +153,17 @@
    "start_delay_min": 637,
    "completed_at": "2026-11-09T17:27:15-07:00",
    "status": "ok",
-   "emailed": {},
+   "emailed": {
+    "lisa": "2026-11-09T17:27:19-07:00"
+   },
    "duration_min": 4.8
   }
  ],
  "delivery": {
   "lisa": {
-   "last_sent": "2026-11-08",
-   "last_sent_at": "2026-11-08T13:45:30-07:00",
-   "sends": 11
+   "last_sent": "2026-11-09",
+   "last_sent_at": "2026-11-09T17:27:19-07:00",
+   "sends": 12
   }
  }
 }
