@@ -1,9 +1,9 @@
 # Prospector — 2026-11-10
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**0 new roles worth your time** · 5 still worth applying · 0 closed/removed
+**0 new roles worth your time** · 5 still worth applying · 2 closed/removed
 Best move today: **Director, Internal AI Operations** — LaunchDarkly
-_118 roles judged on their job descriptions · 104 not worth your time · 96 awaiting a JD review_
+_114 roles judged on their job descriptions · 100 not worth your time · 121 awaiting a JD review_
 
 ## STILL WORTH APPLYING (5)
 - **LaunchDarkly — Director, Internal AI Operations**
@@ -51,6 +51,10 @@ _118 roles judged on their job descriptions · 104 not worth your time · 96 awa
   - Material gap: No direct contact-center/CCaaS domain experience
   - Next action: Apply, emphasizing change management, adoption coaching and AI-enablement track record.
   - https://boards.eu.greenhouse.io/nice/jobs/5028919101?gh_jid=5028919101
+
+## REMOVED SINCE PRIOR RUN (2) — closure confirmed at the employer
+- Principal HRBP, GTM — Atlassian · Verified closed at the source (404 / posting removed)
+- Sr. Director, Revenue Operations Planning and Execution — impact.com · Verified closed at the source (404 / posting removed)
 
 _91 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 

@@ -2,66 +2,46 @@
 ### Job report — 2026-11-10
 _⭐ = posted in the last 1 days_
 
-**34 new today** · 🌎 31 US-Remote · 📍 3 Local
+**19 new today** · 🌎 17 US-Remote · 📍 2 Local
 
-# 🌎 US-Remote (235)
+# 🌎 US-Remote (244)
 ## What's changed
-**New (31)**
-- ⭐ **1Password** — [Senior Developer, Billing Platform](https://jobs.ashbyhq.com/1password/98e406c2-32cd-40fa-bc8d-fd0b7ad3eed7) · Remote (United States | Canada) · Posted Nov 9 · 1d ago
-- ⭐ **1Password** — [Principal Solutions Engineer, Emerging Technologies](https://jobicy.com/jobs/154951-principal-solutions-engineer-emerging-technologies) · Canada,  USA (Remote) · Posted Nov 9 · 1d ago
-- ⭐ **AJAIA** — [Junior AI Engineer](https://himalayas.app/companies/ajaia/jobs/junior-ai-engineer?utm_source=api) · United States (Remote) · $10,000–$10,000 · Posted Nov 9 · 1d ago
-- ⭐ **Affirm** — [Senior Software Engineer, Backend (Consumer)](https://job-boards.greenhouse.io/affirm/jobs/8197325003) · Remote US · Posted Nov 9 · 1d ago
-- ⭐ **Affirm** — [Senior Software Engineer, Backend (Trust & Safety)](https://job-boards.greenhouse.io/affirm/jobs/8197334003) · Remote US · Posted Nov 9 · 1d ago
-- ⭐ **Angi** — [Senior Security Engineer, Application Security](https://jobs.ashbyhq.com/angi/2a9b772d-5cc8-4535-b95a-00d416e7750a) · Remote - United States · Posted Nov 9 · 1d ago
-- ⭐ **Angi** — [Senior Security Engineer, Detection & Response](https://jobs.ashbyhq.com/angi/3d4f46c7-ba53-43c4-a418-785410476e7c) · Remote - United States · Posted Nov 9 · 1d ago
-- **Circle** — [Manager, Software Engineering, Identity & Access Platform](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Engineering-Manager--Identity---Access-Platform_JR101170/apply) · San Francisco, California, United States of America (Remote) · Posted Nov 8 · 2d ago
-- ⭐ **ClickUp** — [Senior Solutions Engineer, Commercial](https://jobicy.com/jobs/160292-senior-solutions-engineer-commercial) · USA (Remote) · Posted Nov 9 · 1d ago
-- ⭐ **Coinbase** — [Software Engineer-1](https://www.coinbase.com/careers/positions/8278991?gh_jid=8278991) · Remote - USA · Posted Nov 9 · 1d ago
-- ⭐ **Coinbase** — [Software Engineer, Wallets, Liquidity and Bridging Team](https://www.coinbase.com/careers/positions/8139750?gh_jid=8139750) · Remote - USA · Posted Nov 9 · 1d ago
-- ⭐ **Coinbase** — [Staff Software Engineer, AI Developer Productivity](https://www.coinbase.com/careers/positions/8366842?gh_jid=8366842) · Remote - USA · Posted Nov 9 · 1d ago
-- ⭐ **Databricks** — [Staff Security Assurance Engineer](https://jobicy.com/jobs/160322-staff-security-assurance-engineer) · USA (Remote) · Posted Nov 9 · 1d ago
-- ⭐ **Datadog** — [Manager II, Developer Advocacy](https://jobicy.com/jobs/160018-manager-ii-developer-advocacy) · USA (Remote) · Posted Nov 9 · 1d ago
-- ⭐ **GitLab** — [Professional Services Engineer - KSA](https://job-boards.greenhouse.io/gitlab/jobs/8928253002) · Remote, KSA · Posted Nov 9 · 1d ago
-- ⭐ **Gusto** — [Software Engineer,  Financial Data & Payments](https://job-boards.greenhouse.io/gusto/jobs/8360497) · Denver, CO - Hybrid; New York, NY - Hybrid; San Francisco, CA - Hybrid; Seattle, WA - Remote · Posted Nov 9 · 1d ago
-- ⭐ **Hinge Health** — [Senior Software Engineer - Search](https://jobs.ashbyhq.com/hinge-health/4d11a165-4f54-4561-80a9-8bc8b3a1d0d0) · San Francisco-HQ (Remote) · $164K – $217K · Posted Nov 9 · 1d ago
-- ⭐ **Hinge Health** — [Senior Firmware Engineer](https://jobs.ashbyhq.com/hinge-health/2c771f05-38d6-483d-8776-f7a768822ca1) · San Francisco-HQ (Remote) · $156K – $214.5K · Posted Nov 9 · 1d ago
-- ⭐ **Lifted (an Upwork Company)** — [Senior Web Designer](https://himalayas.app/companies/lifted-an-upwork-company/jobs/senior-web-designer?utm_source=api) · United States (Remote) · Posted Nov 9 · 1d ago
-- ⭐ **Notion** — [Software Engineer, Web Infrastructure](https://jobs.ashbyhq.com/notion/06c2599d-4dd5-4f97-843f-7194b546f042) · San Francisco, California (Remote) · Posted Nov 9 · 1d ago
-- ⭐ **Quest Analytics** — [Platform Product Manager - Healthcare SaaS](https://jobicy.com/jobs/160291-platform-product-manager-healthcare-saas) · USA (Remote) · Posted Nov 9 · 1d ago
-- ⭐ **Ramp** — [Software Engineer, Security, Stablecoin](https://jobs.ashbyhq.com/ramp/d1183b00-6590-4fe4-a585-28d84e578fe3) · New York, NY (HQ) (Remote) · $189K – $330K · Posted Nov 9 · 1d ago
-- ⭐ **Ramp** — [Senior Security Engineer, Identity](https://jobs.ashbyhq.com/ramp/6075e1dc-c833-4e27-a789-61d3a596c66c) · New York, NY (HQ) (Remote) · $175.2K – $240.9K · Posted Nov 9 · 1d ago
-- ⭐ **Ramp** — [Software Engineer, Backend, Comms Platform](https://jobs.ashbyhq.com/ramp/939892e5-5273-4bfc-8c41-a6c51cabb228) · Remote (US) · $172K – $280K · Posted Nov 9 · 1d ago
-- ⭐ **Reddit** — [Product Manager, Developer Ecosystem](https://job-boards.greenhouse.io/reddit/jobs/8331370) · Remote - United States · Posted Nov 9 · 1d ago
-- ⭐ **Replit** — [Staff Software Engineer, Financial Infrastructure](https://jobs.ashbyhq.com/replit/298db311-7d58-46f5-a6ec-8a10edcb43c2) · Foster City, CA (Remote) · $290K – $375K · Posted Nov 9 · 1d ago
-- ⭐ **Select Source Solutions** — [Lead AWS Platform Architect](https://himalayas.app/companies/select-source-solutions/jobs/lead-aws-platform-architect?utm_source=api) · United States (Remote) · Posted Nov 9 · 1d ago
-- ⭐ **Sentry** — [Senior Solutions Engineer, Enterprise](https://jobs.ashbyhq.com/sentry/2cdc2ba7-8406-452a-b84f-d94d8e7a09bb) · San Francisco, California (Remote) · $190K – $230K · Posted Nov 9 · 1d ago
-- ⭐ **Sentry** — [Forward Deployed Engineer](https://jobs.ashbyhq.com/sentry/9b759583-60d2-4673-9da6-026731956300) · San Francisco, California (Remote) · $175K – $200K · Posted Nov 9 · 1d ago
-- ⭐ **Thumbtack** — [Senior Software Engineer, Developer Experience](https://jobs.ashbyhq.com/thumbtack/7ddfc7e0-81c6-41a5-9b18-1d8e4470c3de) · Remote, United States · Posted Nov 9 · 1d ago
-- ⭐ **WorldVia** — [Contract Role - DevSecOps / AWS Platform Engineer](https://himalayas.app/companies/worldvia/jobs/contract-role-devsecops-aws-platform-engineer?utm_source=api) · United States (Remote) · Posted Nov 9 · 1d ago
-**Changed titles (6)**
-- **Ramp** — "Backend Engineer | AI Spend Management" → [Software Engineer, Backend, AI Spend Management](https://jobs.ashbyhq.com/ramp/b7514711-8a29-4bd2-a97a-967be14e336f)
-- **Ramp** — "Backend Engineer | Accounts Receivable" → [Software Engineer, Backend, Accounts Receivable](https://jobs.ashbyhq.com/ramp/47a75895-24af-49b7-9858-1be0ec0e7c71)
-- **Ramp** — "Backend Engineer | Accounting" → [Software Engineer, Backend, Accounting](https://jobs.ashbyhq.com/ramp/c0a71032-1efb-40dc-b1e8-aa0f30cd5961)
-- **Ramp** — "Software Engineer, Enterprise Product" → [Software Engineer, Forward Deployed, Enterprise Product](https://jobs.ashbyhq.com/ramp/09360e92-fc95-4ba6-9611-dfefd60b13ce)
-- **Airbyte** — "Staff Backend Engineer, Agent Infrastructure" → [Senior Backend Engineer, Agent Infrastructure](https://jobs.ashbyhq.com/airbyte/b59bbc91-fb77-4a08-9c47-0fca7f755942)
-- **Hinge Health** — "Electrical Engineer II" → [Electrical Engineer](https://jobs.ashbyhq.com/hinge-health/17cafbc5-651b-438b-91cd-87aca1f435ad)
+**New (17)**
+- ⭐ **1Password** — [Security Engineer, GRC](https://jobs.ashbyhq.com/1password/15658971-e4f4-490b-97fe-5e716ddab770) · Remote (United States | Canada) · Posted Nov 10 · today
+- ⭐ **Canonical** — [Software Alliances Director, Americas](https://jobicy.com/jobs/161190-software-alliances-director-americas) · LATAM,  Canada,  USA (Remote) · Posted Nov 10 · today
+- ⭐ **Chainguard** — [Senior Technical Support Engineer - East](https://job-boards.greenhouse.io/chainguard/jobs/4728653006) · Canada - Remote; United States - Remote · Posted Nov 10 · today
+- ⭐ **Chainguard** — [Staff Product Security Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4726687006) · United States - Remote · Posted Nov 10 · today
+- ⭐ **Docker** — [Staff Software Engineer, Sandbox Secrets (West Coast)](https://jobs.ashbyhq.com/docker/7c5981e1-9dcf-41f1-a6bb-58e3cf4394af) · United States (Remote) · Posted Nov 10 · today
+- ⭐ **Dropbox** — [Security Engineer, IAM](https://jobs.dropbox.com/listing/8328534?gh_jid=8328534) · Remote - US: Select locations · Posted Nov 10 · today
+- ⭐ **Dropbox** — [Senior Security Engineer, AI Security](https://jobs.dropbox.com/listing/8328546?gh_jid=8328546) · Remote - US: Select locations · Posted Nov 10 · today
+- ⭐ **General Dynamics Information Technology** — [Power BI & Power Platform Developer](https://himalayas.app/companies/general-dynamics-information-technology/jobs/power-bi-power-platform-developer?utm_source=api) · United States (Remote) · $85,093–$115,000 · Posted Nov 10 · today
+- ⭐ **Hinge Health** — [Data Engineer II](https://jobs.ashbyhq.com/hinge-health/a59b0796-25b2-4731-aff7-4fb3403bfcdd) · Bengaluru-HQ (Remote) · Posted Nov 10 · today
+- ⭐ **Instacart** — [Staff Software Engineer, Ads Data Platform](https://instacart.careers/job/?gh_jid=8372846) · United States - Remote · Posted Nov 10 · today
+- ⭐ **Partner One Capital** — [CRM Software Engineer](https://weworkremotely.com/remote-jobs/partner-one-capital-crm-software-engineer) · Anywhere in the World (Remote) · Posted Nov 10 · today
+- ⭐ **Ramp** — [Senior Engineer, Backend, Bill Pay](https://jobs.ashbyhq.com/ramp/26855617-1697-4fd2-8c33-a5fb11fc4c77) · New York, NY (HQ) (Remote) · $204K – $280K · Posted Nov 10 · today
+- ⭐ **Ramp** — [Senior Engineer, Backend, Procurement](https://jobs.ashbyhq.com/ramp/8101bdeb-69ff-4797-838b-7344842b85a4) · New York, NY (HQ) (Remote) · $204K – $280K · Posted Nov 10 · today
+- ⭐ **Replit** — [SOC Engineer](https://jobs.ashbyhq.com/replit/563751ea-cb0b-412e-ae07-c5638b87f81a) · Foster City, CA (Remote) · $250K – $374K · Posted Nov 10 · today
+- ⭐ **Supabase** — [Software Engineer - AI Tooling](https://jobs.ashbyhq.com/supabase/0055f731-cffa-4c74-9c00-8abfa579873d) · Remote, Global · Posted Nov 10 · today
+- ⭐ **Vanta** — [Solutions Engineer, Mid-Market](https://jobs.ashbyhq.com/vanta/383e20b0-b2c5-4c4f-9406-46f0a671a7bc) · Remote U.S. · $190K – $224K · Posted Nov 10 · today
+- ⭐ **Zuora** — [Customer Solution Engineer - Quote to Cash](https://jobicy.com/jobs/161159-customer-solution-engineer-quote-to-cash-2) · USA (Remote) · Posted Nov 10 · today
+**Changed titles (3)**
+- **Coinbase** — "Software Engineer-1" → [Software Engineer-1, Money Movement](https://www.coinbase.com/careers/positions/8278991?gh_jid=8278991)
+- **Grafana Labs** — "Senior Backend Software Engineer - Loki | NASA | Remote" → [Senior Backend Software Engineer - Loki | US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6229350004)
+- **Mercury** — "Senior Software Engineer - Design Systems" → [Senior Frontend Engineer - Design Systems](https://job-boards.greenhouse.io/mercury/jobs/6252006004)
 
-## All current matching roles (235)
+## All current matching roles (244)
 
 **1Password**
 - [.NET Developer, SaaS Manager](https://jobs.ashbyhq.com/1password/005d4b48-d31e-449f-90b7-83313f98a907) · Remote (United States | Canada) · Posted Oct 22 · 19d ago
 - [Developer, Device Trust Reliability](https://jobs.ashbyhq.com/1password/443f9ef6-13a7-4edb-ace5-16be7e630041) · Remote (United States | Canada) · Posted Oct 20 · 21d ago
 - [Developer, Enterprise Tenants and Policies](https://jobs.ashbyhq.com/1password/b9ff2259-517c-4ec2-b92f-646be8bf12b6) · Remote (United States | Canada) · Posted Oct 30 · 11d ago
 - [Frontend Developer, Device Security](https://jobs.ashbyhq.com/1password/e9f8842c-3ed3-4b89-bd55-f59cff9773cb) · Remote (United States | Canada) · Posted Oct 20 · 21d ago
-- ⭐ [Principal Solutions Engineer, Emerging Technologies](https://jobicy.com/jobs/154951-principal-solutions-engineer-emerging-technologies) · Canada,  USA (Remote) · Posted Nov 9 · 1d ago
+- ⭐ [Security Engineer, GRC](https://jobs.ashbyhq.com/1password/15658971-e4f4-490b-97fe-5e716ddab770) · Remote (United States | Canada) · Posted Nov 10 · today
 - [Senior Developer Marketing Manager, Lifecycle & Growth](https://jobs.ashbyhq.com/1password/2925531c-43d3-4999-8537-c156762434a9) · Remote (United States | Canada) · Posted Oct 21 · 20d ago
 - ⭐ [Senior Developer, Billing Platform](https://jobs.ashbyhq.com/1password/98e406c2-32cd-40fa-bc8d-fd0b7ad3eed7) · Remote (United States | Canada) · Posted Nov 9 · 1d ago
 - [Senior Developer, Trust Platforms](https://jobs.ashbyhq.com/1password/59ca115c-3a05-417a-985f-a77246309d07) · Remote (United States | Canada) · Posted Nov 6 · 4d ago
 - [Senior IT Engineer, Identity and Access Management](https://jobs.ashbyhq.com/1password/c061444f-2053-4967-aeff-4b11f4a88713) · Remote (United States | Canada) · Posted Oct 29 · 12d ago
 - [Staff Demo Engineer](https://jobs.ashbyhq.com/1password/a8f6ec2c-ca75-42a0-9708-f7bd74ff6671) · Remote (United States | Canada) · Posted Oct 29 · 12d ago
-
-**AJAIA**
-- ⭐ [Junior AI Engineer](https://himalayas.app/companies/ajaia/jobs/junior-ai-engineer?utm_source=api) · United States (Remote) · $10,000–$10,000 · Posted Nov 9 · 1d ago
 
 **Affirm**
 - [Analytics Lead, Full Stack](https://job-boards.greenhouse.io/affirm/jobs/8011130003) · Remote US · Posted Nov 6 · 4d ago
@@ -115,21 +95,21 @@ _⭐ = posted in the last 1 days_
 
 **Canonical**
 - [Software Alliance Ecosystem Manager](https://jobicy.com/jobs/159483-software-alliance-ecosystem-manager) · EMEA,  LATAM,  Canada,  USA (Remote) · Posted Nov 7 · 3d ago
+- ⭐ [Software Alliances Director, Americas](https://jobicy.com/jobs/161190-software-alliances-director-americas) · LATAM,  Canada,  USA (Remote) · Posted Nov 10 · today
 
 **Chainguard**
 - [Principal Product Security Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4719783006) · United States - Remote · Posted Oct 23 · 18d ago
 - [Senior Software Engineer, Containers](https://job-boards.greenhouse.io/chainguard/jobs/4725945006) · Canada - Remote; Germany - Remote; United Kingdom - Remote; United States - Remote · Posted Nov 4 · 6d ago
+- ⭐ [Senior Technical Support Engineer - East](https://job-boards.greenhouse.io/chainguard/jobs/4728653006) · Canada - Remote; United States - Remote · Posted Nov 10 · today
 - [Software Engineer, Sustaining Automation](https://job-boards.greenhouse.io/chainguard/jobs/4723523006) · Canada - Remote; United States - Remote · Posted Oct 22 · 19d ago
 - [Staff Product Security Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4724287006) · United States - Remote · Posted Oct 23 · 18d ago
+- ⭐ [Staff Product Security Engineer](https://job-boards.greenhouse.io/chainguard/jobs/4726687006) · United States - Remote · Posted Nov 10 · today
 - [Staff Software Engineer, Chainguard Harness](https://job-boards.greenhouse.io/chainguard/jobs/4727461006) · United States - Remote · Posted Nov 5 · 5d ago
 
 **Circle**
 - [Developer Relations Manager](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Developer-Relations-Manager_JR101180/apply) · San Francisco, California, United States of America (Remote) · Posted Oct 20 · 21d ago
 - [Manager, Software Engineering, Identity & Access Platform](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Engineering-Manager--Identity---Access-Platform_JR101170/apply) · San Francisco, California, United States of America (Remote) · Posted Nov 8 · 2d ago
 - [Senior Data Engineer - Finance](https://circle.wd1.myworkdayjobs.com/Circle/job/San-Francisco---remote-first-in-US/Senior-Data-Engineer---Finance_JR101155/apply) · San Francisco, California, United States of America (Remote) · Posted Nov 2 · 8d ago
-
-**ClickUp**
-- ⭐ [Senior Solutions Engineer, Commercial](https://jobicy.com/jobs/160292-senior-solutions-engineer-commercial) · USA (Remote) · Posted Nov 9 · 1d ago
 
 **Close**
 - [Senior Backend Engineer - Backend Platform (USA Only, 100% Remote)](https://weworkremotely.com/remote-jobs/close-senior-backend-engineer-backend-platform-usa-only-100-remote) · Anywhere in the World (Remote) · Posted Nov 5 · 5d ago
@@ -151,7 +131,7 @@ _⭐ = posted in the last 1 days_
 - [Senior Software Engineer, Certificates Management](https://www.coinbase.com/careers/positions/8326127?gh_jid=8326127) · Remote - USA · Posted Oct 27 · 14d ago
 - [Software Engineer - Crypto Data Foundations](https://www.coinbase.com/careers/positions/8304038?gh_jid=8304038) · Remote - USA · Posted Oct 20 · 21d ago
 - ⭐ [Software Engineer, Wallets, Liquidity and Bridging Team](https://www.coinbase.com/careers/positions/8139750?gh_jid=8139750) · Remote - USA · Posted Nov 9 · 1d ago
-- ⭐ [Software Engineer-1](https://www.coinbase.com/careers/positions/8278991?gh_jid=8278991) · Remote - USA · Posted Nov 9 · 1d ago
+- ⭐ [Software Engineer-1, Money Movement](https://www.coinbase.com/careers/positions/8278991?gh_jid=8278991) · Remote - USA · Posted Nov 9 · 1d ago
 - [Staff Analytics Engineer](https://www.coinbase.com/careers/positions/8047150?gh_jid=8047150) · Remote - USA · Posted Oct 30 · 11d ago
 - [Staff Machine Learning Engineer, Compliance Automation (Platform)](https://www.coinbase.com/careers/positions/8333165?gh_jid=8333165) · Remote - USA · Posted Oct 29 · 12d ago
 - [Staff Software Engineer - Backend (Consumer - Agentic Trading)](https://www.coinbase.com/careers/positions/8356846?gh_jid=8356846) · Remote - USA · Posted Nov 6 · 4d ago
@@ -172,7 +152,6 @@ _⭐ = posted in the last 1 days_
 
 **Datadog**
 - [Manager II, Developer Advocacy](https://weworkremotely.com/remote-jobs/datadog-manager-ii-developer-advocacy) · Anywhere in the World (Remote) · Posted Oct 20 · 21d ago
-- ⭐ [Manager II, Developer Advocacy](https://jobicy.com/jobs/160018-manager-ii-developer-advocacy) · USA (Remote) · Posted Nov 9 · 1d ago
 
 **Deepgram**
 - [Staff Product Manager, Agentic Experiences (Former Engineer)](https://jobicy.com/jobs/159511-staff-product-manager-agentic-experiences-former-engineer) · USA (Remote) · Posted Nov 7 · 3d ago
@@ -180,6 +159,7 @@ _⭐ = posted in the last 1 days_
 **Docker**
 - [Principal Forward Deployed Engineer](https://jobs.ashbyhq.com/docker/f50260bc-5da2-475d-bc4b-172ad7c5aa01) · San Francisco, CA (Remote) · Posted Oct 22 · 19d ago
 - [Senior Software Engineer, Tooling (West Coast Preferred)](https://jobs.ashbyhq.com/docker/33b629b4-fc3a-437e-b13b-16fef283af68) · United States (Remote) · Posted Nov 4 · 6d ago
+- ⭐ [Staff Software Engineer, Sandbox Secrets (West Coast)](https://jobs.ashbyhq.com/docker/7c5981e1-9dcf-41f1-a6bb-58e3cf4394af) · United States (Remote) · Posted Nov 10 · today
 
 **Doppler**
 - [Sr. Engineer, Core](https://jobs.ashbyhq.com/Doppler/cf74b4e7-d499-4d85-8764-5e653e421c20) · Remote - USA · $180K – $200K · Posted Oct 29 · 12d ago
@@ -188,16 +168,21 @@ _⭐ = posted in the last 1 days_
 - [Backend Product Software Engineer](https://jobs.dropbox.com/listing/7752226?gh_jid=7752226) · Remote - Mexico · Posted Oct 30 · 11d ago
 - [Backend Product Software Engineer](https://jobs.dropbox.com/listing/7172701?gh_jid=7172701) · Remote - Mexico · Posted Oct 29 · 12d ago
 - [Infrastructure Software Engineer](https://jobs.dropbox.com/listing/7172713?gh_jid=7172713) · Remote - Mexico · Posted Nov 6 · 4d ago
+- ⭐ [Security Engineer, IAM](https://jobs.dropbox.com/listing/8328534?gh_jid=8328534) · Remote - US: Select locations · Posted Nov 10 · today
+- ⭐ [Senior Security Engineer, AI Security](https://jobs.dropbox.com/listing/8328546?gh_jid=8328546) · Remote - US: Select locations · Posted Nov 10 · today
 
 **Fivetran**
-- [Manager Security Engineer, Operations](https://www.fivetran.com/careers/job?gh_jid=8075733003) · Remote, New York, United States, AMER · Posted Nov 3 · 7d ago
 - [Manager Security Engineer, Operations](https://www.fivetran.com/careers/job?gh_jid=8167896003) · Remote, Massachusetts, United States, AMER · Posted Nov 3 · 7d ago
+- [Manager Security Engineer, Operations](https://www.fivetran.com/careers/job?gh_jid=8075733003) · Remote, New York, United States, AMER · Posted Nov 3 · 7d ago
 - [Staff Software Engineer](https://www.fivetran.com/careers/job?gh_jid=8034257003) · Remote, New York, United States, AMER · Posted Nov 5 · 5d ago
 
 **Gainsight**
 - [Cloud Security Operations Engineer](https://jobs.ashbyhq.com/gainsight/19789742-ae30-4c1b-ab25-de0396e8299b) · MEX - Remote · Posted Oct 29 · 12d ago
 - [GRC Engineer](https://jobs.ashbyhq.com/gainsight/146892ae-a133-401a-9565-85691ff3c405) · MEX - Remote · Posted Oct 30 · 11d ago
 - [Staff Security Operations Engineer](https://jobs.ashbyhq.com/gainsight/928139de-b645-43b3-8101-0d74e73169d4) · IND - Hyderabad (Remote) · Posted Oct 28 · 13d ago
+
+**General Dynamics Information Technology**
+- ⭐ [Power BI & Power Platform Developer](https://himalayas.app/companies/general-dynamics-information-technology/jobs/power-bi-power-platform-developer?utm_source=api) · United States (Remote) · $85,093–$115,000 · Posted Nov 10 · today
 
 **GitLab**
 - [Backend Engineer, GitLab Orbit](https://job-boards.greenhouse.io/gitlab/jobs/8771512002) · Remote, Canada; Remote, United States · Posted Oct 23 · 18d ago
@@ -209,7 +194,7 @@ _⭐ = posted in the last 1 days_
 
 **Grafana Labs**
 - [Principal Technical Marketing Engineer | US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6233315004) · United States (Remote) · Posted Oct 23 · 18d ago
-- [Senior Backend Software Engineer - Loki | NASA | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6229350004) · United States (Remote) · Posted Oct 21 · 20d ago
+- [Senior Backend Software Engineer - Loki | US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6229350004) · United States (Remote) · Posted Oct 21 · 20d ago
 - [Senior FullStack Engineer - Grafana Catalog | US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6226999004) · United States (Remote) · Posted Nov 4 · 6d ago
 - [Senior Software Engineer - Grafana Search & Storage | US | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6230155004) · United States (Remote) · Posted Oct 21 · 20d ago
 - [Senior Solutions Engineer, Acquisition | Central | Remote](https://job-boards.greenhouse.io/grafanalabs/jobs/6239644004) · United States (Remote) · Posted Oct 30 · 11d ago
@@ -232,6 +217,7 @@ _⭐ = posted in the last 1 days_
 - [Software Development Engineer III (Fullstack ) - Workflows](https://weworkremotely.com/remote-jobs/highlevel-software-development-engineer-iii-fullstack-workflows) · Anywhere in the World (Remote) · Posted Nov 5 · 5d ago
 
 **Hinge Health**
+- ⭐ [Data Engineer II](https://jobs.ashbyhq.com/hinge-health/a59b0796-25b2-4731-aff7-4fb3403bfcdd) · Bengaluru-HQ (Remote) · Posted Nov 10 · today
 - ⭐ [Electrical Engineer](https://jobs.ashbyhq.com/hinge-health/17cafbc5-651b-438b-91cd-87aca1f435ad) · San Francisco-HQ (Remote) · $135.2K – $185.9K · Posted Nov 9 · 1d ago
 - ⭐ [Senior Design Quality Engineer](https://jobs.ashbyhq.com/hinge-health/cec75e13-9794-4ce1-8158-eae78a5e975e) · San Francisco-HQ (Remote) · $126.4K – $173.8K · Posted Nov 9 · 1d ago
 - ⭐ [Senior Firmware Engineer](https://jobs.ashbyhq.com/hinge-health/2c771f05-38d6-483d-8776-f7a768822ca1) · San Francisco-HQ (Remote) · $156K – $214.5K · Posted Nov 9 · 1d ago
@@ -253,13 +239,11 @@ _⭐ = posted in the last 1 days_
 - [Senior Machine Learning Engineer, Fulfillment](https://instacart.careers/job/?gh_jid=8240305) · United States - Remote · Posted Oct 30 · 11d ago
 - [Senior Software Engineer II - Enterprise Foundations](https://instacart.careers/job/?gh_jid=8304279) · United States - Remote · Posted Oct 20 · 21d ago
 - [Senior Software Engineer, Enterprise AI](https://instacart.careers/job/?gh_jid=8240350) · United States - Remote · Posted Oct 30 · 11d ago
-
-**Lifted (an Upwork Company)**
-- ⭐ [Senior Web Designer](https://himalayas.app/companies/lifted-an-upwork-company/jobs/senior-web-designer?utm_source=api) · United States (Remote) · Posted Nov 9 · 1d ago
+- ⭐ [Staff Software Engineer, Ads Data Platform](https://instacart.careers/job/?gh_jid=8372846) · United States - Remote · Posted Nov 10 · today
 
 **Mercury**
+- [Senior Frontend Engineer - Design Systems](https://job-boards.greenhouse.io/mercury/jobs/6252006004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Nov 6 · 4d ago
 - [Senior Software Engineer - Cards](https://job-boards.greenhouse.io/mercury/jobs/6233820004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Oct 23 · 18d ago
-- [Senior Software Engineer - Design Systems](https://job-boards.greenhouse.io/mercury/jobs/6252006004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Nov 6 · 4d ago
 - [Software Engineer - Mercury Command](https://job-boards.greenhouse.io/mercury/jobs/6233238004) · San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States · Posted Oct 23 · 18d ago
 
 **Notion**
@@ -269,6 +253,9 @@ _⭐ = posted in the last 1 days_
 
 **Omnidian**
 - [Senior Salesforce Developer, Field Service](https://weworkremotely.com/remote-jobs/omnidian-senior-salesforce-developer-field-service) · Anywhere in the World (Remote) · Posted Nov 5 · 5d ago
+
+**Partner One Capital**
+- ⭐ [CRM Software Engineer](https://weworkremotely.com/remote-jobs/partner-one-capital-crm-software-engineer) · Anywhere in the World (Remote) · Posted Nov 10 · today
 
 **Pinecone**
 - [Full-Stack Software Engineer, Experience](https://jobs.ashbyhq.com/pinecone/08760530-e6c3-4167-9272-923d85a2388d) · New York City (Remote) · $165K – $190K · Posted Oct 21 · 20d ago
@@ -283,7 +270,6 @@ _⭐ = posted in the last 1 days_
 - [Staff Machine Learning Engineer (Research Scientist) - DFAI](https://jobs.ashbyhq.com/plaid/dab31ae8-1e25-4b63-8008-d6930ff72369) · San Francisco HQ (Remote) · $249,120 – $367,920 · Posted Oct 21 · 20d ago
 
 **PostHog**
-- [Product Engineer](https://jobs.ashbyhq.com/PostHog/20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8) · Remote · Posted Nov 6 · 4d ago
 - [Technical Support Engineer](https://jobs.ashbyhq.com/PostHog/db808740-242e-4a40-ad43-d41f26c049d7) · Remote · Posted Nov 6 · 4d ago
 
 **Prospex CRM**
@@ -294,6 +280,8 @@ _⭐ = posted in the last 1 days_
 
 **Ramp**
 - [Research Engineer, Benchmarks & Evaluation](https://jobs.ashbyhq.com/ramp/d8925f84-562f-470c-a5bd-4f6c20009361) · New York, NY (HQ) (Remote) · $204.4K – $352K · Posted Nov 3 · 7d ago
+- ⭐ [Senior Engineer, Backend, Bill Pay](https://jobs.ashbyhq.com/ramp/26855617-1697-4fd2-8c33-a5fb11fc4c77) · New York, NY (HQ) (Remote) · $204K – $280K · Posted Nov 10 · today
+- ⭐ [Senior Engineer, Backend, Procurement](https://jobs.ashbyhq.com/ramp/8101bdeb-69ff-4797-838b-7344842b85a4) · New York, NY (HQ) (Remote) · $204K – $280K · Posted Nov 10 · today
 - ⭐ [Senior Security Engineer, Identity](https://jobs.ashbyhq.com/ramp/6075e1dc-c833-4e27-a789-61d3a596c66c) · New York, NY (HQ) (Remote) · $175.2K – $240.9K · Posted Nov 9 · 1d ago
 - [Software Engineer, Backend, AI Spend Management](https://jobs.ashbyhq.com/ramp/b7514711-8a29-4bd2-a97a-967be14e336f) · New York, NY (HQ) (Remote) · $204K – $280K · Posted Oct 20 · 21d ago
 - [Software Engineer, Backend, Accounting](https://jobs.ashbyhq.com/ramp/c0a71032-1efb-40dc-b1e8-aa0f30cd5961) · New York, NY (HQ) (Remote) · $172K – $280K · Posted Oct 21 · 20d ago
@@ -329,6 +317,7 @@ _⭐ = posted in the last 1 days_
 - [Staff Developer Relations Engineer](https://jobs.ashbyhq.com/render/5498e2c2-44d7-4a4b-9bb9-20c0eca92440) · Remote: United States · $204K – $250K · Posted Oct 30 · 11d ago
 
 **Replit**
+- ⭐ [SOC Engineer](https://jobs.ashbyhq.com/replit/563751ea-cb0b-412e-ae07-c5638b87f81a) · Foster City, CA (Remote) · $250K – $374K · Posted Nov 10 · today
 - [Senior Software Engineer, Compute Platform](https://jobs.ashbyhq.com/replit/659a8e1e-69ba-44c0-a632-96665051a3e8) · Foster City, CA (Remote) · $130K – $290K · Posted Oct 23 · 18d ago
 - ⭐ [Staff Software Engineer, Financial Infrastructure](https://jobs.ashbyhq.com/replit/298db311-7d58-46f5-a6ec-8a10edcb43c2) · Foster City, CA (Remote) · $290K – $375K · Posted Nov 9 · 1d ago
 - [Support Engineer I (FC, Weekend Shift)](https://jobs.ashbyhq.com/replit/951e0ebb-a957-45fa-8763-d56ba46750b4) · Foster City, CA (Remote) · $110K – $140K · Posted Nov 2 · 8d ago
@@ -347,9 +336,6 @@ _⭐ = posted in the last 1 days_
 - [Staff Machine Learning Engineer - Edge AI](https://www.samsara.com/company/careers/roles/8358617?gh_jid=8358617) · Remote - US · Posted Nov 6 · 4d ago
 - [Staff Product Operations Manager, Platform](https://www.samsara.com/company/careers/roles/8359984?gh_jid=8359984) · Remote - US · Posted Nov 6 · 4d ago
 
-**Select Source Solutions**
-- ⭐ [Lead AWS Platform Architect](https://himalayas.app/companies/select-source-solutions/jobs/lead-aws-platform-architect?utm_source=api) · United States (Remote) · Posted Nov 9 · 1d ago
-
 **Sentry**
 - [Director of Engineering, Platform (Runtime & Stateful Systems)](https://jobs.ashbyhq.com/sentry/b7c17591-c9f1-449a-b0c1-39f2d6ff650e) · San Francisco, California (Remote) · $300K – $450K · Posted Oct 24 · 17d ago
 - [Engineering Manager, Data Platform](https://jobs.ashbyhq.com/sentry/f9f3c913-26ef-45a2-a77f-79ae473c1a85) · San Francisco, California (Remote) · $220K – $400K · Posted Oct 29 · 12d ago
@@ -367,6 +353,7 @@ _⭐ = posted in the last 1 days_
 - [Container Engineer](https://jobs.ashbyhq.com/supabase/6f7656fc-9983-48be-bbd3-8b40e0e3027a) · Remote, Global · Posted Oct 26 · 15d ago
 - [Data API Engineer](https://jobs.ashbyhq.com/supabase/950e8ffc-79a5-4626-b1dd-115fcbcddad0) · Remote, Global · Posted Oct 24 · 17d ago
 - [Senior Developer Relations, Twitter Brand Rep](https://jobs.ashbyhq.com/supabase/985abb8d-cb2b-4f32-97d7-497e9f89e3ce) · Remote, Global · Posted Nov 4 · 6d ago
+- ⭐ [Software Engineer - AI Tooling](https://jobs.ashbyhq.com/supabase/0055f731-cffa-4c74-9c00-8abfa579873d) · Remote, Global · Posted Nov 10 · today
 - [Software Engineer - AI Tooling Infrastructure](https://jobs.ashbyhq.com/supabase/fb0b563a-e541-43fd-8555-9eb6473aaa11) · Remote, Global · Posted Oct 31 · 10d ago
 - [Software Engineer - Storage](https://jobs.ashbyhq.com/supabase/9f2ba0b2-6d3b-43ea-990f-5b4bf3930520) · Remote, Global · Posted Oct 24 · 17d ago
 - [Software Engineer - Turso](https://jobs.ashbyhq.com/supabase/7c5eb3fc-1087-4c1c-b3a2-a19fe01dd259) · Remote, Global · Posted Oct 21 · 20d ago
@@ -398,20 +385,21 @@ _⭐ = posted in the last 1 days_
 - [Senior Product Manager, GRC Platform](https://jobs.ashbyhq.com/vanta/7816b5fe-e916-43b8-9200-d0d45298ba9f) · Remote U.S. · $207K – $244K · Posted Nov 5 · 5d ago
 - [Senior Software Engineer, AI Developer Experience](https://jobs.ashbyhq.com/vanta/112c82ea-5825-4121-a43f-5e1902bec35c) · Remote U.S. · $195K – $229K · Posted Oct 26 · 15d ago
 - [Senior Software Engineer, AI Platform](https://jobs.ashbyhq.com/vanta/6d2a60a8-7daf-4482-ab9a-6b87516548d0) · Remote U.S. · $224K – $263K · Posted Nov 3 · 7d ago
+- ⭐ [Solutions Engineer, Mid-Market](https://jobs.ashbyhq.com/vanta/383e20b0-b2c5-4c4f-9406-46f0a671a7bc) · Remote U.S. · $190K – $224K · Posted Nov 10 · today
 - [Staff Software Engineer, Growth (Self Serve)](https://jobs.ashbyhq.com/vanta/e4e1f472-5113-4cd0-b8f9-dd10af087f5d) · Remote U.S. · $260K – $306K · Posted Nov 3 · 7d ago
 - [Staff Software Engineer, Vanta for Government](https://jobs.ashbyhq.com/vanta/c752a8a1-5832-4d2a-a8c5-8b8308d6a7e2) · Remote U.S. · $260K – $306K · Posted Nov 2 · 8d ago
 
 **Vantage**
 - [Growth Engineer](https://jobs.ashbyhq.com/vantage/a2f1c002-5615-4d9b-a992-693f5152ce31) · USA (Remote) · $150K – $200K · Posted Oct 29 · 12d ago
 
-**WorldVia**
-- ⭐ [Contract Role - DevSecOps / AWS Platform Engineer](https://himalayas.app/companies/worldvia/jobs/contract-role-devsecops-aws-platform-engineer?utm_source=api) · United States (Remote) · Posted Nov 9 · 1d ago
-
 **Zapier**
 - [Sr. Engineer, Infrastructure Security](https://jobs.ashbyhq.com/zapier/7683bf9a-cb86-47de-a15b-4bcc0b70e2e2) · NAMER (Remote) · $174.2K – $261.2K · Posted Oct 21 · 20d ago
 
 **ZoomInfo Technologies LLC**
 - [Principal Applied AI Engineer - Entity Agents](https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-applied-ai-engineer-entity-agents) · Anywhere in the World (Remote) · Posted Oct 29 · 12d ago
+
+**Zuora**
+- ⭐ [Customer Solution Engineer - Quote to Cash](https://jobicy.com/jobs/161159-customer-solution-engineer-quote-to-cash-2) · USA (Remote) · Posted Nov 10 · today
 
 ## Source warnings (6)
 - Postman (greenhouse/postman) [needs attention]: HTTPError: HTTP Error 404: Not Found
@@ -424,24 +412,23 @@ _⭐ = posted in the last 1 days_
 
 # 📍 Local — Silicon Slopes (39)
 ## What's changed
-**New (3)**
-- ⭐ **BambooHR** — [Staff Application Security Engineer](https://job-boards.greenhouse.io/bamboohr17/jobs/6211383004) · Utah | Remote · Posted Nov 9 · 1d ago
-- ⭐ **Cricut** — [Firmware Test Engineer](https://jobs.smartrecruiters.com/cricut/744000160738939) · South Jordan, UT, United States · Posted Nov 9 · 1d ago
-- ⭐ **Western Governors University** — [Manager, Software Engineer Student LifeCycle Services](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Software-Engineer-Student-LifeCycle-Services_JR-026144) · Salt Lake City, UT · Posted Nov 10 · today
+**New (2)**
+- ⭐ **DigiCert** — [Senior Software Engineer](https://www.digicert.com/careers/?gh_jid=8797736002) · Lehi, Utah · Posted Nov 10 · today
+- ⭐ **iCapital** — [Actuarial Software Engineer II - Associate](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8936222002) · Salt Lake City, Utah, United States · Posted Nov 10 · today
 
 ## All current matching roles (39)
 
 **Adobe**
-- [Forward Deployed Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Forward-Deployed-Engineer_R173252) · Lehi · $159,200 - $301,600 · Posted Oct 29 · 12d ago
+- [Forward Deployed Engineer](https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Forward-Deployed-Engineer_R173252) · Lehi · $159,200 - $301,600 · Posted Oct 28 · 13d ago
 
 **Ancestry**
-- [Staff Product Engineer, Developer Experience](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Staff-Product-Engineer--Developer-Experience_R003461) · Draper, UT · $135,000 - $160,000 · Posted Oct 30 · 11d ago
+- [Staff Product Engineer, Developer Experience](https://ancestry.wd501.myworkdayjobs.com/Careers/job/Draper-UT/Staff-Product-Engineer--Developer-Experience_R003461) · Draper, UT · $135,000 - $160,000 · Posted Oct 29 · 12d ago
 
 **BILL**
 - [Senior Software Engineer](https://www.bill.com/job?6223077004&gh_jid=6223077004) · United States · Posted Oct 28 · 13d ago
 
 **BYU**
-- [Structural/Civil Engineer](https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Structural-Civil-Engineer_JR-13444) · Provo, UT · $94,000.00 to $122,000.00 · Posted Oct 30 · 11d ago
+- [Structural/Civil Engineer](https://byu.wd1.myworkdayjobs.com/byu-careers/job/Provo-UT/Structural-Civil-Engineer_JR-13444) · Provo, UT · $94,000.00 to $122,000.00 · Posted Oct 29 · 12d ago
 
 **BambooHR**
 - [Principal Architect, AI-Native Developer Experience](https://job-boards.greenhouse.io/bamboohr17/jobs/6145893004) · Arizona | Remote; Florida | Remote; Georgia | Remote; Idaho | Remote; Nebraska | Remote; North Carolina | Remote; Oklahoma | Remote; Oregon | Remote; South Carolina | Remote; Tennessee | Remote; Texas | Remote; Utah | Remote; Virginia | Remote · Posted Nov 4 · 6d ago
@@ -462,9 +449,10 @@ _⭐ = posted in the last 1 days_
 **DigiCert**
 - [Forward Deployed Engineer](https://www.digicert.com/careers/?gh_jid=8930996002) · US, Remote · Posted Nov 6 · 4d ago
 - [Senior DevOps Engineer](https://www.digicert.com/careers/?gh_jid=8885889002) · United States - Remote · Posted Oct 23 · 18d ago
+- ⭐ [Senior Software Engineer](https://www.digicert.com/careers/?gh_jid=8797736002) · Lehi, Utah · Posted Nov 10 · today
 
 **Health Catalyst**
-- [Jr Data Engineer](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/SG-Remote/Jr-Data-Engineer_REQ-3368) · SG Remote · Posted Nov 4 · 6d ago
+- [Jr Data Engineer](https://healthcatalyst.wd5.myworkdayjobs.com/healthcatalystcareers/job/SG-Remote/Jr-Data-Engineer_REQ-3368) · SG Remote · Posted Nov 3 · 7d ago
 
 **Instructure**
 - [L1 Support Engineer - Portuguese (Part-time)](https://jobs.ashbyhq.com/instructure/3ba0efe9-7bb6-498c-be6f-e1f084fa7983) · US-REMOTE · $18 – $21 per hour · Posted Oct 28 · 13d ago
@@ -479,7 +467,7 @@ _⭐ = posted in the last 1 days_
 - [Senior Partner Success Implementation Engineer](https://boards.eu.greenhouse.io/nice/jobs/5011751101?gh_jid=5011751101) · USA - Remote · Posted Oct 21 · 20d ago
 
 **O.C. Tanner**
-- [Sr. Site Reliability Engineer](https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Sr-Site-Reliability-Engineer_JR26-302) · USA - Utah-Salt Lake City-Headquarters · Posted Oct 30 · 11d ago
+- [Sr. Site Reliability Engineer](https://octanner.wd501.myworkdayjobs.com/O_C_Tanner/job/USA---Utah-Salt-Lake-City-Headquarters/Sr-Site-Reliability-Engineer_JR26-302) · USA - Utah-Salt Lake City-Headquarters · Posted Oct 29 · 12d ago
 
 **Pattern**
 - [Capital Projects Engineer – Fulfillment](https://jobs.lever.co/pattern/c436505e-adc2-45ca-83ea-acb772f63e9f) · Lehi, UT, US · Posted Oct 26 · 15d ago
@@ -488,19 +476,18 @@ _⭐ = posted in the last 1 days_
 - [Senior Engineer, Exposure & Vulnerability Management](https://job-boards.greenhouse.io/recursionpharmaceuticals/jobs/8359888) · Remote Opportunity - United States · Posted Nov 6 · 4d ago
 
 **Western Governors University**
-- [Associate Assessment Developer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Associate-Assessment-Developer_JR-026475) · Salt Lake City, UT · $60,600.00 - $90,900.00 · Posted Nov 7 · 3d ago
-- [Associate Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Associate-Software-Engineer_JR-026548) · Salt Lake City, UT · $73,800.00 - $110,700.00 · Posted Nov 6 · 4d ago
-- [Director, Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Director--Software-Engineer_JR-026558) · Salt Lake City, UT · $190,100.00 - $342,200.00 · Posted Nov 7 · 3d ago
-- ⭐ [Manager, Software Engineer Student LifeCycle Services](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Software-Engineer-Student-LifeCycle-Services_JR-026144) · Salt Lake City, UT · Posted Nov 10 · today
-- [Principal Software Engineer - AI Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer---AI-Platform_JR-026474-1) · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Oct 30 · 11d ago
-- [Senior Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-026564) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Nov 7 · 3d ago
-- [Senior Software Engineer - Operational Improvement](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer---Operational-Improvement_JR-026503) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Nov 7 · 3d ago
-- [Software Engineer II](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-026554-1) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Nov 7 · 3d ago
-- [Software Engineer II](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-026551) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Nov 6 · 4d ago
-- ⭐ [Staff Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer_JR-026524) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Nov 10 · today
-- [Staff Software Engineer, AI](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--AI_JR-026231) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Oct 29 · 12d ago
+- [Associate Assessment Developer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Associate-Assessment-Developer_JR-026475) · Salt Lake City, UT · $60,600.00 - $90,900.00 · Posted Nov 6 · 4d ago
+- [Director, Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Director--Software-Engineer_JR-026558) · Salt Lake City, UT · $190,100.00 - $342,200.00 · Posted Nov 6 · 4d ago
+- ⭐ [Manager, Software Engineer Student LifeCycle Services](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Manager--Software-Engineer-Student-LifeCycle-Services_JR-026144) · Salt Lake City, UT · Posted Nov 9 · 1d ago
+- [Principal Software Engineer - AI Platform](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Software-Engineer---AI-Platform_JR-026474-1) · Salt Lake City, UT · $180,300.00 - $279,500.00 · Posted Oct 29 · 12d ago
+- [Senior Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Senior-Software-Engineer_JR-026564) · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Nov 6 · 4d ago
+- [Software Engineer II](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-026554-1) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Nov 6 · 4d ago
+- [Software Engineer II](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Software-Engineer-II_JR-026551) · Salt Lake City, UT · $118,900.00 - $178,500.00 · Posted Nov 5 · 5d ago
+- ⭐ [Staff Software Engineer](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer_JR-026524) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Nov 9 · 1d ago
+- [Staff Software Engineer, AI](https://wgu.wd5.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Staff-Software-Engineer--AI_JR-026231) · Salt Lake City, UT · $161,000.00 - $249,500.00 · Posted Oct 28 · 13d ago
 
 **iCapital**
+- ⭐ [Actuarial Software Engineer II - Associate](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8936222002) · Salt Lake City, Utah, United States · Posted Nov 10 · today
 - [Senior Software Integration Engineer - Assistant Vice President](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8931048002) · Salt Lake City, Utah, United States · Posted Nov 4 · 6d ago
 - [Software Integration Engineer - Associate](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8930899002) · Salt Lake City, Utah, United States · Posted Nov 4 · 6d ago
 
@@ -511,174 +498,16 @@ _⭐ = posted in the last 1 days_
 
 # Removed / filled
 
-## 🌎 US-Remote (22)
-- **1Password** — Senior Developer Marketing Manager, Social & Content · Remote (United States | Canada) · Posted Oct 19 · 22d ago
-- **1Password** — Senior Developer Advocate · USA (Remote) · Posted Nov 8 · 2d ago
-- **ANGI** — Principal Product Manager, AI Platform · USA (Remote) · Posted Nov 5 · 5d ago
-- **Affirm** — Senior Software Engineer, Backend (Identity Data) · Remote US · Posted Oct 20 · 21d ago
-- **Chainguard** — Security Engineer · United States - Remote · Posted Nov 3 · 7d ago
-- **Coinbase** — Senior Product Designer, Developer Foundations · Remote - USA · Posted Oct 19 · 22d ago
-- **Coinbase** — Staff Software Enginer, Backend - Payments Platform · Remote - USA · Posted Oct 19 · 22d ago
-- **Data Squared** — Platform Engineer - IaC & CI/CD · United States (Remote) · Posted Nov 8 · 2d ago
-- **Deepgram** — Research Engineer, Post-Training · USA - Remote · $216K – $338K · Posted Oct 19 · 22d ago
-- **Description Ciklum** — Senior DevOps Engineer · Czechia (Remote) · Posted Nov 8 · 2d ago
-- **GitLab** — Principal Engineer, Monetization Engineering · Remote, Canada; Remote, United States · Posted Oct 19 · 22d ago
-- **Grafana Labs** — Staff Software Engineer - Application Core Services | US | Remote · United States (Remote) · Posted Oct 19 · 22d ago
-- **Langan Engineering and Environmenta** — Project Civil Engineer / Project Manager · United States (Remote) · Posted Nov 8 · 2d ago
-- **LaunchDarkly** — Backend Software Engineer, SDK · Remote - US · Posted Oct 19 · 22d ago
-- **Notion** — Software Engineer, Developer Platform · San Francisco, California (Remote) · Posted Oct 19 · 22d ago
-- **Ramp** — Software Engineer, Forward Deployed · New York, NY (HQ) (Remote) · $168K – $285K · Posted Oct 22 · 19d ago
-- **Reddit** — Lead Forward Deployed Engineer (AI Enablement) · Remote - United States · Posted Oct 19 · 22d ago
-- **Reddit** — Machine Learning Engineer, Answers Relevance · Remote - United States · Posted Oct 18 · 23d ago
-- **Reddit** — Senior Forward Deployed Engineer (AI Enablement) · Remote - United States · Posted Oct 19 · 22d ago
-- **Samsara** — Senior AI Data & Analytics Engineer II · Remote - Seattle · Posted Oct 19 · 22d ago
-- **Veeva Systems** — Senior Consultant - CRM Data Software · Massachusetts (Remote) · Posted Oct 19 · 22d ago
-- **Zapier** — Sr. Engineer, Database Reliability · NAMER (Remote) · $174.2K – $261.2K · Posted Oct 19 · 22d ago
+## 🌎 US-Remote (8)
+- **1Password** — Principal Solutions Engineer, Emerging Technologies · Canada,  USA (Remote) · Posted Nov 9 · 1d ago
+- **AJAIA** — Junior AI Engineer · United States (Remote) · $10,000–$10,000 · Posted Nov 9 · 1d ago
+- **ClickUp** — Senior Solutions Engineer, Commercial · USA (Remote) · Posted Nov 9 · 1d ago
+- **Datadog** — Manager II, Developer Advocacy · USA (Remote) · Posted Nov 9 · 1d ago
+- **Lifted (an Upwork Company)** — Senior Web Designer · United States (Remote) · Posted Nov 9 · 1d ago
+- **PostHog** — Product Engineer · Remote · Posted Nov 6 · 4d ago
+- **Select Source Solutions** — Lead AWS Platform Architect · United States (Remote) · Posted Nov 9 · 1d ago
+- **WorldVia** — Contract Role - DevSecOps / AWS Platform Engineer · United States (Remote) · Posted Nov 9 · 1d ago
 
-## 📍 Local — Silicon Slopes (146)
-- **Instructure** — AI Engineer, Marketing · US-REMOTE · $85K – $90K · Posted Oct 22 · 19d ago
-- **Speechify** — Software Engineer, AI Data · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Albuquerque, NM, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Alexandria, VA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Anaheim, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Anchorage, AK, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Ann Arbor, MI, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Arlington, VA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Atlanta, GA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Austin, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Bakersfield, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Baltimore, MD, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Baton Rouge, LA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Bellevue, WA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Bend, OR, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Berkeley, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Birmingham, AL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Bloomington, IN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Boise, ID, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Boston, MA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Boulder, CO, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Buffalo, NY, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Burlington, VT, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Cambridge, MA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Cary, NC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Champaign, IL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Chapel Hill, NC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Charleston, SC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Charlotte, NC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Chattanooga, TN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Chicago, IL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Cincinnati, OH, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Cleveland, OH, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - College Park, MD, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - College Station, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Colorado Springs, CO, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Columbia, SC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Columbus, OH, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Culver City, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Cupertino, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Dallas, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Dayton, OH, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Denver, CO, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Des Moines, IA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Detroit, MI, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Durham, NC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - El Paso, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Eugene, OR, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Evanston, IL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Fort Collins, CO, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Fort Lauderdale, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Fort Worth, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Fremont, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Fresno, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Frisco, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Gainesville, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Grand Rapids, MI, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Greensboro, NC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Hartford, CT, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Honolulu, HI, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Houston, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Huntsville, AL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Indianapolis, IN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Iowa City, IA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Irvine, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Ithaca, NY, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Jacksonville, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Jersey City, NJ, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Kansas City, MO, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Kirkland, WA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Knoxville, TN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Las Vegas, NV, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Lexington, KY, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Long Beach, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Los Angeles, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Louisville, KY, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Madison, WI, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Memphis, TN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Menlo Park, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Miami, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Milwaukee, WI, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Minneapolis, MN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Mountain View, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Naperville, IL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Nashville, TN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Newark, NJ, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - New Haven, CT, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - New Orleans, LA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - New York, NY, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Norfolk, VA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Oakland, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Oklahoma City, OK, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Omaha, NE, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Orlando, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Palo Alto, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Pasadena, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Philadelphia, PA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Phoenix, AZ, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Pittsburgh, PA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Plano, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Portland, OR, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Princeton, NJ, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Providence, RI, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Provo, UT, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Raleigh, NC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Redmond, WA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Reno, NV, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Reston, VA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Richmond, VA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Riverside, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Rochester, NY, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Sacramento, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Saint Paul, MN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Salt Lake City, UT, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - San Antonio, TX, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - San Diego, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - San Francisco, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - San Jose, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - San Mateo, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Santa Clara, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Santa Cruz, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Santa Monica, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Savannah, GA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Scottsdale, AZ, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Seattle, WA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Silver Spring, MD, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Spokane, WA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Stamford, CT, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - State College, PA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - St. Louis, MO, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Stony Brook, NY, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - St. Petersburg, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Sunnyvale, CA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Syracuse, NY, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Tacoma, WA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Tallahassee, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Tampa, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Tempe, AZ, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Tucson, AZ, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Tulsa, OK, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Virginia Beach, VA, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Washington, DC, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - West Lafayette, IN, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - West Palm Beach, FL, USA · Remote · Posted Oct 19 · 22d ago
-- **Speechify** — Software Engineer, AI Data - Winston-Salem, NC, USA · Remote · Posted Oct 19 · 22d ago
+## 📍 Local — Silicon Slopes (2)
+- **Western Governors University** — Senior Software Engineer - Operational Improvement · Salt Lake City, UT · $143,700.00 - $222,700.00 · Posted Nov 7 · 3d ago
+- **Western Governors University** — Associate Software Engineer · Salt Lake City, UT · $73,800.00 - $110,700.00 · Posted Nov 6 · 4d ago
