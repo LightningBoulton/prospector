@@ -1,9 +1,9 @@
-# Prospector — 2026-11-10
+# Prospector — 2026-11-11
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**0 new roles worth your time** · 5 still worth applying · 2 closed/removed
+**0 new roles worth your time** · 5 still worth applying · 3 closed/removed
 Best move today: **Director, Internal AI Operations** — LaunchDarkly
-_114 roles judged on their job descriptions · 100 not worth your time · 121 awaiting a JD review_
+_101 roles judged on their job descriptions · 89 not worth your time · 130 awaiting a JD review_
 
 ## STILL WORTH APPLYING (5)
 - **LaunchDarkly — Director, Internal AI Operations**
@@ -52,11 +52,12 @@ _114 roles judged on their job descriptions · 100 not worth your time · 121 aw
   - Next action: Apply, emphasizing change management, adoption coaching and AI-enablement track record.
   - https://boards.eu.greenhouse.io/nice/jobs/5028919101?gh_jid=5028919101
 
-## REMOVED SINCE PRIOR RUN (2) — closure confirmed at the employer
-- Principal HRBP, GTM — Atlassian · Verified closed at the source (404 / posting removed)
-- Sr. Director, Revenue Operations Planning and Execution — impact.com · Verified closed at the source (404 / posting removed)
+## REMOVED SINCE PRIOR RUN (3) — closure confirmed at the employer
+- Strategy & Operations, Customer Success — Ashby · Verified closed at the source (404 / posting removed)
+- Manager, Customer Success Architects (AI) — Atlassian · Verified closed at the source (404 / posting removed)
+- Sr. Commercial Strategy Manager — Thumbtack · Verified closed at the source (404 / posting removed)
 
-_91 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+_94 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH

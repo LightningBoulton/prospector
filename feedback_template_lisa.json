@@ -2,6 +2,13 @@
  "_comment": "Copy any row you want to act on into feedback_lisa.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_lisa.json is.",
  "entries": [
   {
+   "key": "1Password::0aa863dc-73e7-4769-8421-9060c12cecef",
+   "company": "1Password",
+   "title": "Senior Director of Implementation",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::4fcd3be8-0bfe-4ce2-8b5a-537023760958",
    "company": "1Password",
    "title": "Senior Field Performance Partner, AI",
@@ -19,13 +26,6 @@
    "key": "1Password::3b1dd358-261b-440e-9277-6dc786a5a9d0",
    "company": "1Password",
    "title": "Senior Implementation Consultant",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "1Password::160309",
-   "company": "1Password",
-   "title": "Senior Sales Engineer - Enterprise (West)",
    "status": "",
    "note": ""
   },
@@ -58,6 +58,13 @@
    "note": ""
   },
   {
+   "key": "Addison Group::4e790444-de11-11f1-bb83-0242663b9cdc",
+   "company": "Addison Group",
+   "title": "Senior Oracle ERP Fusion Administrator",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Affirm::8043921003",
    "company": "Affirm",
    "title": "Leadership Development Manager",
@@ -75,13 +82,6 @@
    "key": "Affirm::8182228003",
    "company": "Affirm",
    "title": "Partner Management Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Affirm::8012093003",
-   "company": "Affirm",
-   "title": "Senior Program Manager I",
    "status": "",
    "note": ""
   },
@@ -191,6 +191,13 @@
    "note": ""
   },
   {
+   "key": "Aquent::214421",
+   "company": "Aquent",
+   "title": "SEO Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Aquent::214250",
    "company": "Aquent",
    "title": "Scrum Master and Project Manager",
@@ -257,13 +264,6 @@
    "key": "Aquent::213664",
    "company": "Aquent",
    "title": "Training Specialist \u2013 Microsoft 365 / Viva (Design & Delivery)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Aquent::213650",
-   "company": "Aquent",
-   "title": "UGC Marketing Manager",
    "status": "",
    "note": ""
   },
@@ -478,6 +478,13 @@
    "note": ""
   },
   {
+   "key": "BYU::JR-13819",
+   "company": "BYU",
+   "title": "Cardon Scholars Program Manager (part-time, 28 hours/week)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "BYU::JR-13698",
    "company": "BYU",
    "title": "Program and Communications Manager (part-time, 28 hours/week)",
@@ -537,20 +544,6 @@
    "key": "Canonical::161107",
    "company": "Canonical",
    "title": "Public Cloud Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Canonical::159480",
-   "company": "Canonical",
-   "title": "Senior Sales Operations Analyst",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "CertiK::158888",
-   "company": "CertiK",
-   "title": "Project Manager",
    "status": "",
    "note": ""
   },
@@ -641,7 +634,7 @@
   {
    "key": "Chainguard::4708770006",
    "company": "Chainguard",
-   "title": "Strategy & Operations Senior Manager (Security and Technology)",
+   "title": "Strategy & Operations Senior Manager, Security and Technology",
    "status": "",
    "note": ""
   },
@@ -681,23 +674,9 @@
    "note": ""
   },
   {
-   "key": "Cloudflare::8279302",
-   "company": "Cloudflare",
-   "title": "Program Lead Strategic CDN Accounts GTM",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Cloudflare::8306604",
    "company": "Cloudflare",
    "title": "Senior GTM Technologist, RevOps",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "CodePath::159333",
-   "company": "CodePath",
-   "title": "Senior People Operations Coordinator, Claude Corps",
    "status": "",
    "note": ""
   },
@@ -758,6 +737,13 @@
    "note": ""
   },
   {
+   "key": "Cordance::152956",
+   "company": "Cordance",
+   "title": "President - Business Unit",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "CoreWeave::159707",
    "company": "CoreWeave",
    "title": "Product Strategy Principal",
@@ -800,9 +786,9 @@
    "note": ""
   },
   {
-   "key": "Customer.io::158965",
-   "company": "Customer.io",
-   "title": "People Partner",
+   "key": "D2L::161327",
+   "company": "D2L",
+   "title": "Solutions Engineer",
    "status": "",
    "note": ""
   },
@@ -828,13 +814,6 @@
    "note": ""
   },
   {
-   "key": "Dataiku::158907",
-   "company": "Dataiku",
-   "title": "Global Total Rewards Lead",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Datavant::https://weworkremotely.com/remote-jobs/datavant-senior-success-lead-public-sector",
    "company": "Datavant",
    "title": "Senior Success Lead, Public Sector",
@@ -842,7 +821,7 @@
    "note": ""
   },
   {
-   "key": "Deepgram::4caace1a-beb8-43bc-a69a-4952e6214af7",
+   "key": "Deepgram::161412",
    "company": "Deepgram",
    "title": "Staff Sales Engineer, Voice AI",
    "status": "",
@@ -859,13 +838,6 @@
    "key": "DigiCert::8912369002",
    "company": "DigiCert",
    "title": "Systems and Tools Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Docker::51ef5fd5-27a3-46a3-9b46-e9cece51831c",
-   "company": "Docker",
-   "title": "Principal Product Manager, AI Gateway",
    "status": "",
    "note": ""
   },
@@ -1031,13 +1003,6 @@
    "note": ""
   },
   {
-   "key": "GitLab::152562",
-   "company": "GitLab",
-   "title": "AI Transformation Owner, CRO",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "GitLab::8920912002",
    "company": "GitLab",
    "title": "Customer Experience Enablement Lead",
@@ -1122,6 +1087,13 @@
    "note": ""
   },
   {
+   "key": "Glide::161328",
+   "company": "Glide",
+   "title": "Digital Program Manager (DPM)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Grafana Labs::6239644004",
    "company": "Grafana Labs",
    "title": "Senior Solutions Engineer, Acquisition | Central | Remote",
@@ -1178,13 +1150,6 @@
    "note": ""
   },
   {
-   "key": "Harness::154961",
-   "company": "Harness",
-   "title": "AppSec Sales Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Harness::159022",
    "company": "Harness",
    "title": "Senior Program Manager, Application Security",
@@ -1216,6 +1181,13 @@
    "key": "Hilton::228240",
    "company": "Hilton",
    "title": "Director AD&C Project Management - Full Service Brands",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Hilton::224025",
+   "company": "Hilton",
+   "title": "Director, Distribution Strategy CALA",
    "status": "",
    "note": ""
   },
@@ -1304,6 +1276,13 @@
    "note": ""
   },
   {
+   "key": "Instrument::152911",
+   "company": "Instrument",
+   "title": "Senior Strategist / Strategy Lead (contract)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Juniper Square::159723",
    "company": "Juniper Square",
    "title": "Senior Program Manager, Lead-to-Cash",
@@ -1356,13 +1335,6 @@
    "key": "Latent::161170",
    "company": "Latent",
    "title": "Implementation Project Manager",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "LaunchDarkly::8039686003",
-   "company": "LaunchDarkly",
-   "title": "Director of People Programs, Systems & Analytics",
    "status": "",
    "note": ""
   },
@@ -1472,6 +1444,13 @@
    "note": ""
   },
   {
+   "key": "Mercury::6251680004",
+   "company": "Mercury",
+   "title": "Third Party Risk Manager",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Meta::145132",
    "company": "Meta",
    "title": "Product Manager, Central Products",
@@ -1493,9 +1472,9 @@
    "note": ""
   },
   {
-   "key": "Mozilla::159475",
-   "company": "Mozilla",
-   "title": "Chief of Staff to the CEO",
+   "key": "Motive::161336",
+   "company": "Motive",
+   "title": "GTM Strategy & Operations Manager- Special Projects",
    "status": "",
    "note": ""
   },
@@ -1556,16 +1535,16 @@
    "note": ""
   },
   {
-   "key": "Oscar Health::8312400",
+   "key": "Oscar Health::8375163",
    "company": "Oscar Health",
-   "title": "Senior Specialist, Process improvement (SIU)",
+   "title": "Senior Analyst, Credentialing Data Operations",
    "status": "",
    "note": ""
   },
   {
-   "key": "PBS::JR1000338",
-   "company": "PBS",
-   "title": "Manager, Content Operations",
+   "key": "Oscar Health::8312400",
+   "company": "Oscar Health",
+   "title": "Senior Specialist, Process improvement (SIU)",
    "status": "",
    "note": ""
   },
@@ -1584,9 +1563,23 @@
    "note": ""
   },
   {
+   "key": "Panopto::161281",
+   "company": "Panopto",
+   "title": "Manager, Sales Operations",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Panopto::160699",
    "company": "Panopto",
    "title": "Senior Project Manager (EMEA or USA)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Pattern::956fc0f6-707e-48a4-bc2a-c44251de8d0f",
+   "company": "Pattern",
+   "title": "Partner Onboarding Manager",
    "status": "",
    "note": ""
   },
@@ -1664,6 +1657,20 @@
    "key": "Qualtrics::8306208",
    "company": "Qualtrics",
    "title": "Senior Lead, Security Operations",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Qualtrics::8262091",
+   "company": "Qualtrics",
+   "title": "Senior Solution Manager, Customer Journey",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Qualtrics::8375449",
+   "company": "Qualtrics",
+   "title": "Solution Manager, Customer Journey",
    "status": "",
    "note": ""
   },
@@ -1752,6 +1759,27 @@
    "note": ""
   },
   {
+   "key": "Ramp::8ca5c32b-e6c7-47e3-af23-291f122fa0f8",
+   "company": "Ramp",
+   "title": "Solutions Consultant, Post Sales, Commercial",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::971abc99-f20b-43f0-91d6-90bcbfa2c8d9",
+   "company": "Ramp",
+   "title": "Solutions Consultant, Post Sales, Enterprise",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Ramp::492823d8-9651-46cf-9d33-a632ef706879",
+   "company": "Ramp",
+   "title": "Solutions Consultant, Post Sales, Mid-Market",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Ramp::dba53e68-4c96-449d-af4d-27dc475b814c",
    "company": "Ramp",
    "title": "Travel Operations Lead",
@@ -1829,13 +1857,6 @@
    "note": ""
   },
   {
-   "key": "Salesforce::JR363499",
-   "company": "Salesforce",
-   "title": "Account Solution Engineer - Federal Civilian",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Salesforce::JR367671",
    "company": "Salesforce",
    "title": "Associate Security Consultant- PSSA, Early Talent",
@@ -1878,6 +1899,13 @@
    "note": ""
   },
   {
+   "key": "Salesforce::JR367464",
+   "company": "Salesforce",
+   "title": "Customer Success Manager - Public Sector (MuleSoft)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Salesforce::JR332573",
    "company": "Salesforce",
    "title": "Customer Success Manager \u2013 Digital (Marketing & Commerce) Clouds",
@@ -1906,7 +1934,7 @@
    "note": ""
   },
   {
-   "key": "Salesforce::JR362625",
+   "key": "Salesforce::JR362626",
    "company": "Salesforce",
    "title": "Customer Success Manager, Marketing Cloud Next (Public Sector)",
    "status": "",
@@ -1969,6 +1997,13 @@
    "note": ""
   },
   {
+   "key": "Salesforce::JR367665",
+   "company": "Salesforce",
+   "title": "Director, Financial Planning & Analysis - Real Estate & Workplace Services",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Salesforce::JR364079",
    "company": "Salesforce",
    "title": "Director/Sr. Director, Strategic Partner Marketing and GTM Strategy",
@@ -2018,23 +2053,9 @@
    "note": ""
   },
   {
-   "key": "Salesforce::JR363981",
-   "company": "Salesforce",
-   "title": "Lead Solution Engineer, ECS, Public Sector",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Salesforce::JR366380",
    "company": "Salesforce",
    "title": "Lead/Principal Solution Engineer - Life Sciences",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Salesforce::JR367647",
-   "company": "Salesforce",
-   "title": "Legal Operations Analyst",
    "status": "",
    "note": ""
   },
@@ -2088,6 +2109,13 @@
    "note": ""
   },
   {
+   "key": "Salesforce::JR367351",
+   "company": "Salesforce",
+   "title": "Program Manager, M&A Recruiting (Contract)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Salesforce::JR357948",
    "company": "Salesforce",
    "title": "SVP, General Manager OU Lead - TMT/CBS (Professional Services)",
@@ -2098,13 +2126,6 @@
    "key": "Salesforce::JR366204",
    "company": "Salesforce",
    "title": "Security Risk Operations Lead",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Salesforce::JR358677",
-   "company": "Salesforce",
-   "title": "Senior Creative Strategist, Brand Strategy & Management",
    "status": "",
    "note": ""
   },
@@ -2168,13 +2189,6 @@
    "key": "Salesforce::JR366498",
    "company": "Salesforce",
    "title": "Specialist Solution Engineer - Tableau",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Salesforce::JR365737",
-   "company": "Salesforce",
-   "title": "Specialist Solution Engineer 7",
    "status": "",
    "note": ""
   },
@@ -2340,13 +2354,6 @@
    "note": ""
   },
   {
-   "key": "Samsara::8300580",
-   "company": "Samsara",
-   "title": "Sr. Customer Success Strategy Manager, New Products",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Samsara::8263264",
    "company": "Samsara",
    "title": "Sr. Manager, Procure to Pay",
@@ -2385,6 +2392,13 @@
    "key": "Sentry::2cdc2ba7-8406-452a-b84f-d94d8e7a09bb",
    "company": "Sentry",
    "title": "Senior Solutions Engineer, Enterprise",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Smart Suites::https://weworkremotely.com/remote-jobs/smart-suites-vehicle-sourcing-import-operations-manager",
+   "company": "Smart Suites",
+   "title": "Vehicle Sourcing & Import Operations Manager",
    "status": "",
    "note": ""
   },
@@ -2473,6 +2487,13 @@
    "note": ""
   },
   {
+   "key": "Summation::152933",
+   "company": "Summation",
+   "title": "Solution Lead",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Supabase::090aa2a7-e0ee-49a6-837e-6817147d2d31",
    "company": "Supabase",
    "title": "Director of Technology Partnerships",
@@ -2508,23 +2529,9 @@
    "note": ""
   },
   {
-   "key": "TheHiveCareers::https://himalayas.app/companies/thehivecareers/jobs/group-head-of-project-management-office-pmo-insurance-investments",
-   "company": "TheHiveCareers",
-   "title": "Group Head of Project Management Office (PMO) \u2013 Insurance & Investments",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Thumbtack::6ccdbcc6-e6f9-45fd-bead-e607f1cfd5b0",
    "company": "Thumbtack",
    "title": "Director, Sales Operations",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Tremendous::158863",
-   "company": "Tremendous",
-   "title": "People Operations Manager",
    "status": "",
    "note": ""
   },
@@ -2571,13 +2578,6 @@
    "note": ""
   },
   {
-   "key": "USAA::https://himalayas.app/companies/usaa/jobs/vp-survivorship-contact-center",
-   "company": "USAA",
-   "title": "VP, Survivorship Contact Center",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Vanta::b64b6e72-7c71-446f-b6ce-662330b910e8",
    "company": "Vanta",
    "title": "GTM Program Manager, Revenue Onboarding",
@@ -2620,13 +2620,6 @@
    "note": ""
   },
   {
-   "key": "Walmart - Internal::https://himalayas.app/companies/walmart-com/jobs/usa-senior-manager-marketing-planning-and-strategy-marketing-technology",
-   "company": "Walmart - Internal",
-   "title": "(USA) Senior Manager, Marketing Planning and Strategy - Marketing Technology.",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "We Are Rosie::https://weworkremotely.com/remote-jobs/we-are-rosie-media-project-manager",
    "company": "We Are Rosie",
    "title": "Media Project Manager",
@@ -2665,13 +2658,6 @@
    "key": "Western Governors University::JR-026510",
    "company": "Western Governors University",
    "title": "Project Manager III, PLCI",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-026216",
-   "company": "Western Governors University",
-   "title": "Project Manager IV",
    "status": "",
    "note": ""
   },
@@ -2739,16 +2725,16 @@
    "note": ""
   },
   {
-   "key": "Zillow Group::P751645",
+   "key": "Zillow Group::P751820",
    "company": "Zillow Group",
-   "title": "Sourcing Project Manager",
+   "title": "Senior Sales Strategy Manager, New Construction",
    "status": "",
    "note": ""
   },
   {
-   "key": "Zip::152820",
-   "company": "Zip",
-   "title": "Solution Engineer (Pre-Sales)",
+   "key": "Zillow Group::P751645",
+   "company": "Zillow Group",
+   "title": "Sourcing Project Manager",
    "status": "",
    "note": ""
   },
@@ -2777,13 +2763,6 @@
    "key": "iCapital::8917667002",
    "company": "iCapital",
    "title": "Business Solutions Consultant II - Associate",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "impact.com::159497",
-   "company": "impact.com",
-   "title": "Senior Revenue Operations Analyst",
    "status": "",
    "note": ""
   }

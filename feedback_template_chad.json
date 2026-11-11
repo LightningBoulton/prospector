@@ -9,23 +9,9 @@
    "note": ""
   },
   {
-   "key": "1Password::443f9ef6-13a7-4edb-ace5-16be7e630041",
-   "company": "1Password",
-   "title": "Developer, Device Trust Reliability",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::b9ff2259-517c-4ec2-b92f-646be8bf12b6",
    "company": "1Password",
    "title": "Developer, Enterprise Tenants and Policies",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "1Password::e9f8842c-3ed3-4b89-bd55-f59cff9773cb",
-   "company": "1Password",
-   "title": "Frontend Developer, Device Security",
    "status": "",
    "note": ""
   },
@@ -72,6 +58,13 @@
    "note": ""
   },
   {
+   "key": "1Password::8ff17ade-462e-4afe-9255-b4193d0b8424",
+   "company": "1Password",
+   "title": "Staff Developer, Authentication Enablement",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Adobe::R173252",
    "company": "Adobe",
    "title": "Forward Deployed Engineer",
@@ -89,13 +82,6 @@
    "key": "Affirm::8012914003",
    "company": "Affirm",
    "title": "Platform Marketing Lead",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Affirm::8042128003",
-   "company": "Affirm",
-   "title": "Senior Product Security Engineer",
    "status": "",
    "note": ""
   },
@@ -212,6 +198,13 @@
    "note": ""
   },
   {
+   "key": "Airbyte::49a74b79-7c2a-455c-b714-84e74121403d",
+   "company": "Airbyte",
+   "title": "Staff Backend Engineer, Agent Infrastructure",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Alchemy::144d4418-ea30-48d1-9ff1-3f8e6e4c6a86",
    "company": "Alchemy",
    "title": "Security Operations Engineer",
@@ -275,13 +268,6 @@
    "note": ""
   },
   {
-   "key": "BambooHR::6202763004",
-   "company": "BambooHR",
-   "title": "Senior Product Manager, Agent Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "BambooHR::6202767004",
    "company": "BambooHR",
    "title": "Senior Product Manager, Payroll Platform",
@@ -299,6 +285,20 @@
    "key": "Baseten::64bdba5c-8cf6-473f-814c-1e86c8c66681",
    "company": "Baseten",
    "title": "IT Systems Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Baseten::36f9e1be-a876-478b-b7ce-fa216ba12972",
+   "company": "Baseten",
+   "title": "Product Manager, Inference Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Baseten::0a6f7d46-a0c3-4020-a697-e1bf1a8aeafa",
+   "company": "Baseten",
+   "title": "Product Manager, Training Platform",
    "status": "",
    "note": ""
   },
@@ -410,7 +410,7 @@
   {
    "key": "Chainguard::4728653006",
    "company": "Chainguard",
-   "title": "Senior Technical Support Engineer - East",
+   "title": "Senior Technical Support Engineer, East",
    "status": "",
    "note": ""
   },
@@ -422,14 +422,14 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4724287006",
+   "key": "Chainguard::4726687006",
    "company": "Chainguard",
    "title": "Staff Product Security Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Chainguard::4726687006",
+   "key": "Chainguard::4724287006",
    "company": "Chainguard",
    "title": "Staff Product Security Engineer",
    "status": "",
@@ -443,9 +443,9 @@
    "note": ""
   },
   {
-   "key": "Circle::JR101180",
+   "key": "Circle::JR101203",
    "company": "Circle",
-   "title": "Developer Relations Manager",
+   "title": "Manager, Software Engineering, Data Platform",
    "status": "",
    "note": ""
   },
@@ -520,13 +520,6 @@
    "note": ""
   },
   {
-   "key": "Coinbase::8304034",
-   "company": "Coinbase",
-   "title": "Senior Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Coinbase::8357772",
    "company": "Coinbase",
    "title": "Senior Software Engineer (Institutional, USDC)",
@@ -551,13 +544,6 @@
    "key": "Coinbase::8326127",
    "company": "Coinbase",
    "title": "Senior Software Engineer, Certificates Management",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Coinbase::8304038",
-   "company": "Coinbase",
-   "title": "Software Engineer - Crypto Data Foundations",
    "status": "",
    "note": ""
   },
@@ -600,13 +586,6 @@
    "key": "Coinbase::8366842",
    "company": "Coinbase",
    "title": "Staff Software Engineer, AI Developer Productivity",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Coinbase::8233500",
-   "company": "Coinbase",
-   "title": "Staff Software Engineer, Developer Infrastructure",
    "status": "",
    "note": ""
   },
@@ -674,23 +653,16 @@
    "note": ""
   },
   {
+   "key": "D2L::161327",
+   "company": "D2L",
+   "title": "Solutions Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Databricks::160322",
    "company": "Databricks",
    "title": "Staff Security Assurance Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Datadog::https://weworkremotely.com/remote-jobs/datadog-manager-ii-developer-advocacy",
-   "company": "Datadog",
-   "title": "Manager II, Developer Advocacy",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Deepgram::159511",
-   "company": "Deepgram",
-   "title": "Staff Product Manager, Agentic Experiences (Former Engineer)",
    "status": "",
    "note": ""
   },
@@ -744,14 +716,14 @@
    "note": ""
   },
   {
-   "key": "Dropbox::7752226",
+   "key": "Dropbox::7172701",
    "company": "Dropbox",
    "title": "Backend Product Software Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Dropbox::7172701",
+   "key": "Dropbox::7752226",
    "company": "Dropbox",
    "title": "Backend Product Software Engineer",
    "status": "",
@@ -800,6 +772,13 @@
    "note": ""
   },
   {
+   "key": "Flex::4753290005",
+   "company": "Flex",
+   "title": "Staff Software Engineer, Fraud & Payment Risk Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Gainsight::19789742-ae30-4c1b-ab25-de0396e8299b",
    "company": "Gainsight",
    "title": "Cloud Security Operations Engineer",
@@ -817,13 +796,6 @@
    "key": "Gainsight::928139de-b645-43b3-8101-0d74e73169d4",
    "company": "Gainsight",
    "title": "Staff Security Operations Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "General Dynamics Information Technology::https://himalayas.app/companies/general-dynamics-information-technology/jobs/power-bi-power-platform-developer",
-   "company": "General Dynamics Information Technology",
-   "title": "Power BI & Power Platform Developer",
    "status": "",
    "note": ""
   },
@@ -950,6 +922,13 @@
    "key": "Headway::373a16fe-81e1-4cf9-8966-43bc16d921fa",
    "company": "Headway",
    "title": "Security Engineer (Detection & Response)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Headway::61d675b9-b127-4aae-a615-1dea90bc9a40",
+   "company": "Headway",
+   "title": "Senior Applied AI Enginner, AI Platform",
    "status": "",
    "note": ""
   },
@@ -1101,13 +1080,6 @@
    "note": ""
   },
   {
-   "key": "Instacart::8304279",
-   "company": "Instacart",
-   "title": "Senior Software Engineer II - Enterprise Foundations",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Instacart::8240350",
    "company": "Instacart",
    "title": "Senior Software Engineer, Enterprise AI",
@@ -1150,6 +1122,13 @@
    "note": ""
   },
   {
+   "key": "Leidos::https://himalayas.app/companies/leidos/jobs/nen-solution-engineering-sr-voice-engineer-4852838128",
+   "company": "Leidos",
+   "title": "NEN Solution Engineering \u2013 Sr. Voice Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "MX::4476887009",
    "company": "MX",
    "title": "Information Security Engineer",
@@ -1181,6 +1160,20 @@
    "key": "NICE::5011751101",
    "company": "NICE",
    "title": "Senior Partner Success Implementation Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "NICE::5032850101",
+   "company": "NICE",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "NICE::5032860101",
+   "company": "NICE",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1244,13 +1237,6 @@
    "key": "Pinecone::a50c376a-0216-40b2-9525-da89d47ef190",
    "company": "Pinecone",
    "title": "Solutions Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Pinecone::4433b308-1ff4-4b5f-9184-810e5d9844f6",
-   "company": "Pinecone",
-   "title": "Staff Developer Advocate",
    "status": "",
    "note": ""
   },
@@ -1339,23 +1325,9 @@
    "note": ""
   },
   {
-   "key": "Ramp::b7514711-8a29-4bd2-a97a-967be14e336f",
-   "company": "Ramp",
-   "title": "Software Engineer, Backend, AI Spend Management",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Ramp::c0a71032-1efb-40dc-b1e8-aa0f30cd5961",
    "company": "Ramp",
    "title": "Software Engineer, Backend, Accounting",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Ramp::47a75895-24af-49b7-9858-1be0ec0e7c71",
-   "company": "Ramp",
-   "title": "Software Engineer, Backend, Accounts Receivable",
    "status": "",
    "note": ""
   },
@@ -1402,6 +1374,20 @@
    "note": ""
   },
   {
+   "key": "Reddit::8379092",
+   "company": "Reddit",
+   "title": "Engineering Manager, Ranking Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Reddit::8350761",
+   "company": "Reddit",
+   "title": "Principal Software Engineer, Infrastructure",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Reddit::8331370",
    "company": "Reddit",
    "title": "Product Manager, Developer Ecosystem",
@@ -1416,13 +1402,6 @@
    "note": ""
   },
   {
-   "key": "Reddit::8304463",
-   "company": "Reddit",
-   "title": "Senior Machine Learning Engineer, Ads ML Efficiency",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Reddit::8350749",
    "company": "Reddit",
    "title": "Senior Software Engineer, GRC",
@@ -1433,13 +1412,6 @@
    "key": "Reddit::8331341",
    "company": "Reddit",
    "title": "Senior Software Engineer, Infrastructure Engineering",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::8303798",
-   "company": "Reddit",
-   "title": "Senior Software Engineer, Web Platform",
    "status": "",
    "note": ""
   },
@@ -1577,13 +1549,6 @@
    "note": ""
   },
   {
-   "key": "Roblox::https://weworkremotely.com/remote-jobs/roblox-developer-engagement-team-contract",
-   "company": "Roblox",
-   "title": "Developer Engagement Team  (Contract)",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Samsara::8359978",
    "company": "Samsara",
    "title": "Firmware Engineer",
@@ -1636,6 +1601,13 @@
    "key": "Samsara::8359984",
    "company": "Samsara",
    "title": "Staff Product Operations Manager, Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Sardine::6f2e7d74-5e18-4c5d-acac-0735ccb8e0be",
+   "company": "Sardine",
+   "title": "Support Engineer",
    "status": "",
    "note": ""
   },
@@ -1703,6 +1675,13 @@
    "note": ""
   },
   {
+   "key": "Supabase::26f7817d-ca92-4094-a2b5-f22e07a218c4",
+   "company": "Supabase",
+   "title": "Developer Relations Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Supabase::985abb8d-cb2b-4f32-97d7-497e9f89e3ce",
    "company": "Supabase",
    "title": "Senior Developer Relations, Twitter Brand Rep",
@@ -1766,6 +1745,13 @@
    "note": ""
   },
   {
+   "key": "Talent2win::https://himalayas.app/companies/talent2win/jobs/senior-engineer-data-systems-platform",
+   "company": "Talent2win",
+   "title": "Senior Engineer \u2013 Data Systems & Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "The American Institute of Architects::https://weworkremotely.com/remote-jobs/the-american-institute-of-architects-director-enterprise-platform-integration",
    "company": "The American Institute of Architects",
    "title": "Director, Enterprise Platform & Integration",
@@ -1790,6 +1776,13 @@
    "key": "Thumbtack::7ddfc7e0-81c6-41a5-9b18-1d8e4470c3de",
    "company": "Thumbtack",
    "title": "Senior Software Engineer, Developer Experience",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Tremendous::152860",
+   "company": "Tremendous",
+   "title": "Senior Product Manager - Platform",
    "status": "",
    "note": ""
   },
@@ -1965,6 +1958,13 @@
    "key": "iCapital::8936222002",
    "company": "iCapital",
    "title": "Actuarial Software Engineer II - Associate",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "iCapital::8452443002",
+   "company": "iCapital",
+   "title": "Full Stack Engineer - Vice President",
    "status": "",
    "note": ""
   },

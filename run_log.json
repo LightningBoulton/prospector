@@ -170,6 +170,17 @@
     "lisa": "2026-11-10T14:59:05-07:00"
    },
    "duration_min": 5.3
+  },
+  {
+   "date": "2026-11-11",
+   "scheduled_for": "30 16 * * *",
+   "trigger": "schedule",
+   "started_at": "2026-11-11T15:55:48-07:00",
+   "start_delay_min": 550,
+   "completed_at": "2026-11-11T16:00:18-07:00",
+   "status": "ok",
+   "emailed": {},
+   "duration_min": 4.5
   }
  ],
  "delivery": {
