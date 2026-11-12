@@ -9,9 +9,9 @@
    "note": ""
   },
   {
-   "key": "1Password::b9ff2259-517c-4ec2-b92f-646be8bf12b6",
+   "key": "1Password::13200311-77c5-49ed-a3ce-8460d5c72d91",
    "company": "1Password",
-   "title": "Developer, Enterprise Tenants and Policies",
+   "title": "Security Engineer, Corporate Security",
    "status": "",
    "note": ""
   },
@@ -19,13 +19,6 @@
    "key": "1Password::15658971-e4f4-490b-97fe-5e716ddab770",
    "company": "1Password",
    "title": "Security Engineer, GRC",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "1Password::2925531c-43d3-4999-8537-c156762434a9",
-   "company": "1Password",
-   "title": "Senior Developer Marketing Manager, Lifecycle & Growth",
    "status": "",
    "note": ""
   },
@@ -65,6 +58,20 @@
    "note": ""
   },
   {
+   "key": "1Password::791905f6-85b1-4da5-8f0e-6a84ca11c990",
+   "company": "1Password",
+   "title": "Staff GTM Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "6sense::161577",
+   "company": "6sense",
+   "title": "Product Lead, Predictive Platform",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Adobe::R173252",
    "company": "Adobe",
    "title": "Forward Deployed Engineer",
@@ -75,13 +82,6 @@
    "key": "Affirm::8011130003",
    "company": "Affirm",
    "title": "Analytics Lead, Full Stack",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Affirm::8012914003",
-   "company": "Affirm",
-   "title": "Platform Marketing Lead",
    "status": "",
    "note": ""
   },
@@ -100,16 +100,23 @@
    "note": ""
   },
   {
-   "key": "Affirm::8197334003",
+   "key": "Affirm::8199419003",
    "company": "Affirm",
-   "title": "Senior Software Engineer, Backend (Trust & Safety)",
+   "title": "Senior Software Engineer, Backend (ML Feature Platform)",
    "status": "",
    "note": ""
   },
   {
-   "key": "Affirm::8017284003",
+   "key": "Affirm::8201463003",
    "company": "Affirm",
-   "title": "Senior Software Engineer, Backend (Workload Safety)",
+   "title": "Senior Software Engineer, Backend (ML Training and Serving)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::8197334003",
+   "company": "Affirm",
+   "title": "Senior Software Engineer, Backend (Trust & Safety)",
    "status": "",
    "note": ""
   },
@@ -282,13 +289,6 @@
    "note": ""
   },
   {
-   "key": "Baseten::64bdba5c-8cf6-473f-814c-1e86c8c66681",
-   "company": "Baseten",
-   "title": "IT Systems Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Baseten::36f9e1be-a876-478b-b7ce-fa216ba12972",
    "company": "Baseten",
    "title": "Product Manager, Inference Platform",
@@ -422,14 +422,14 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4726687006",
+   "key": "Chainguard::4724287006",
    "company": "Chainguard",
    "title": "Staff Product Security Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Chainguard::4724287006",
+   "key": "Chainguard::4726687006",
    "company": "Chainguard",
    "title": "Staff Product Security Engineer",
    "status": "",
@@ -443,23 +443,9 @@
    "note": ""
   },
   {
-   "key": "Circle::JR101203",
-   "company": "Circle",
-   "title": "Manager, Software Engineering, Data Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Circle::JR101170",
    "company": "Circle",
    "title": "Manager, Software Engineering, Identity & Access Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Circle::JR101155",
-   "company": "Circle",
-   "title": "Senior Data Engineer - Finance",
    "status": "",
    "note": ""
   },
@@ -495,6 +481,13 @@
    "key": "Cloudflare::8263016",
    "company": "Cloudflare",
    "title": "Senior Software Engineer - Kubernetes platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cockroach Labs::8383567",
+   "company": "Cockroach Labs",
+   "title": "Escalation Engineer",
    "status": "",
    "note": ""
   },
@@ -597,6 +590,13 @@
    "note": ""
   },
   {
+   "key": "Cresta::5480801008",
+   "company": "Cresta",
+   "title": "AI Agent Evaluation Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Cresta::5476118008",
    "company": "Cresta",
    "title": "AI Growth Engineer",
@@ -639,23 +639,23 @@
    "note": ""
   },
   {
+   "key": "Cricut::744000161390299",
+   "company": "Cricut",
+   "title": "Lead Angular Engineer, MarTech - Engagement & Subscriptions",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Cricut::744000161390350",
+   "company": "Cricut",
+   "title": "Lead iOS Engineer, MarTech - Engagement & Subscriptions",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Cricut::744000159724965",
    "company": "Cricut",
    "title": "Senior Data Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Cricut::744000156906419",
-   "company": "Cricut",
-   "title": "Senior Mechanical Engineer, NPI",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "D2L::161327",
-   "company": "D2L",
-   "title": "Solutions Engineer",
    "status": "",
    "note": ""
   },
@@ -716,14 +716,28 @@
    "note": ""
   },
   {
-   "key": "Dropbox::7172701",
+   "key": "Dropbox::8328511",
+   "company": "Dropbox",
+   "title": "Application Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Dropbox::8328516",
+   "company": "Dropbox",
+   "title": "Application Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Dropbox::7752226",
    "company": "Dropbox",
    "title": "Backend Product Software Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Dropbox::7752226",
+   "key": "Dropbox::7172701",
    "company": "Dropbox",
    "title": "Backend Product Software Engineer",
    "status": "",
@@ -740,6 +754,13 @@
    "key": "Dropbox::8328534",
    "company": "Dropbox",
    "title": "Security Engineer, IAM",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Dropbox::8356941",
+   "company": "Dropbox",
+   "title": "Senior Client Platform Engineer, Endpoint Platform & Automation",
    "status": "",
    "note": ""
   },
@@ -830,7 +851,7 @@
   {
    "key": "GitLab::8920764002",
    "company": "GitLab",
-   "title": "Senior Professional Services Engineer - North Carolina",
+   "title": "Senior Professional Services Engineer - Charlotte, NC",
    "status": "",
    "note": ""
   },
@@ -849,23 +870,9 @@
    "note": ""
   },
   {
-   "key": "Grafana Labs::6229350004",
-   "company": "Grafana Labs",
-   "title": "Senior Backend Software Engineer - Loki | US | Remote",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Grafana Labs::6226999004",
    "company": "Grafana Labs",
    "title": "Senior FullStack Engineer - Grafana Catalog | US | Remote",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Grafana Labs::6230155004",
-   "company": "Grafana Labs",
-   "title": "Senior Software Engineer - Grafana Search & Storage | US | Remote",
    "status": "",
    "note": ""
   },
@@ -891,7 +898,7 @@
    "note": ""
   },
   {
-   "key": "Grafana Labs::6230151004",
+   "key": "Grafana Labs::6239639004",
    "company": "Grafana Labs",
    "title": "Senior Solutions Engineer, Growth | Mid Atlantic or Southeast | Remote",
    "status": "",
@@ -908,6 +915,13 @@
    "key": "Grafana Labs::6236204004",
    "company": "Grafana Labs",
    "title": "Solutions Engineer | West Coast | Remote",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Grafana Labs::6259844004",
+   "company": "Grafana Labs",
+   "title": "Staff Mobile Engineer - Session Replay | US | Remote",
    "status": "",
    "note": ""
   },
@@ -1087,6 +1101,13 @@
    "note": ""
   },
   {
+   "key": "Instacart::8383513",
+   "company": "Instacart",
+   "title": "Sr Software Engineer II - Ads Manager (Front End)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Instacart::8372846",
    "company": "Instacart",
    "title": "Staff Software Engineer, Ads Data Platform",
@@ -1122,13 +1143,6 @@
    "note": ""
   },
   {
-   "key": "Leidos::https://himalayas.app/companies/leidos/jobs/nen-solution-engineering-sr-voice-engineer-4852838128",
-   "company": "Leidos",
-   "title": "NEN Solution Engineering \u2013 Sr. Voice Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "MX::4476887009",
    "company": "MX",
    "title": "Information Security Engineer",
@@ -1157,20 +1171,6 @@
    "note": ""
   },
   {
-   "key": "NICE::5011751101",
-   "company": "NICE",
-   "title": "Senior Partner Success Implementation Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "NICE::5032850101",
-   "company": "NICE",
-   "title": "Senior Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "NICE::5032860101",
    "company": "NICE",
    "title": "Senior Software Engineer",
@@ -1178,9 +1178,9 @@
    "note": ""
   },
   {
-   "key": "Notion::45f60d0e-e44f-40c5-985e-4096a8966860",
-   "company": "Notion",
-   "title": "Growth Engineer, Startups & SMBs",
+   "key": "NICE::5032850101",
+   "company": "NICE",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1220,20 +1220,6 @@
    "note": ""
   },
   {
-   "key": "Pattern::c436505e-adc2-45ca-83ea-acb772f63e9f",
-   "company": "Pattern",
-   "title": "Capital Projects Engineer \u2013 Fulfillment",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Pinecone::08760530-e6c3-4167-9272-923d85a2388d",
-   "company": "Pinecone",
-   "title": "Full-Stack Software Engineer, Experience",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Pinecone::a50c376a-0216-40b2-9525-da89d47ef190",
    "company": "Pinecone",
    "title": "Solutions Engineer",
@@ -1255,23 +1241,9 @@
    "note": ""
   },
   {
-   "key": "Plaid::94ecbba3-660c-4604-a4f5-071f5c2c74d8",
-   "company": "Plaid",
-   "title": "Product Manager - Connectivity Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Plaid::a6324085-a7f8-4acd-9e36-a330a6249c4d",
    "company": "Plaid",
    "title": "Senior Infrastructure Engineer - Network Infrastructure",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Plaid::dab31ae8-1e25-4b63-8008-d6930ff72369",
-   "company": "Plaid",
-   "title": "Staff Machine Learning Engineer (Research Scientist) - DFAI",
    "status": "",
    "note": ""
   },
@@ -1304,6 +1276,13 @@
    "note": ""
   },
   {
+   "key": "Ramp::b7fd55f4-6c5a-42f5-be04-aa09a4d5b7a9",
+   "company": "Ramp",
+   "title": "Senior Design Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Ramp::26855617-1697-4fd2-8c33-a5fb11fc4c77",
    "company": "Ramp",
    "title": "Senior Engineer, Backend, Bill Pay",
@@ -1318,16 +1297,16 @@
    "note": ""
   },
   {
-   "key": "Ramp::6075e1dc-c833-4e27-a789-61d3a596c66c",
+   "key": "Ramp::415997bf-a1c2-472d-ad54-04bd0d95259b",
    "company": "Ramp",
-   "title": "Senior Security Engineer, Identity",
+   "title": "Senior Engineer, Backend, Vendor Management",
    "status": "",
    "note": ""
   },
   {
-   "key": "Ramp::c0a71032-1efb-40dc-b1e8-aa0f30cd5961",
+   "key": "Ramp::6075e1dc-c833-4e27-a789-61d3a596c66c",
    "company": "Ramp",
-   "title": "Software Engineer, Backend, Accounting",
+   "title": "Senior Security Engineer, Identity",
    "status": "",
    "note": ""
   },
@@ -1437,13 +1416,6 @@
    "note": ""
   },
   {
-   "key": "Reddit::8204924",
-   "company": "Reddit",
-   "title": "Staff Backend Engineer, User Safety",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Reddit::8334138",
    "company": "Reddit",
    "title": "Staff Machine Learning Engineer, Ads Forecasting & Scenarios",
@@ -1458,23 +1430,16 @@
    "note": ""
   },
   {
-   "key": "Reddit::8311209",
-   "company": "Reddit",
-   "title": "Staff Software Engineer, iOS Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::145336",
-   "company": "Reddit",
-   "title": "Staff Technical Product Manager, Ads ML Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Render::a22230e6-803d-4e2e-82f8-ff5f500cdc3d",
    "company": "Render",
    "title": "Cloud - Bare Metal Infrastructure Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Render::0ed7bac4-72f1-4d73-ab0c-e231af4ec06e",
+   "company": "Render",
+   "title": "Developer Documentation Writer",
    "status": "",
    "note": ""
   },
@@ -1710,9 +1675,9 @@
    "note": ""
   },
   {
-   "key": "Supabase::7c5eb3fc-1087-4c1c-b3a2-a19fe01dd259",
-   "company": "Supabase",
-   "title": "Software Engineer - Turso",
+   "key": "TRM Labs::155143",
+   "company": "TRM Labs",
+   "title": "Marketing Technology Engineer",
    "status": "",
    "note": ""
   },
@@ -1741,13 +1706,6 @@
    "key": "Tailscale::4733115005",
    "company": "Tailscale",
    "title": "Security Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Talent2win::https://himalayas.app/companies/talent2win/jobs/senior-engineer-data-systems-platform",
-   "company": "Talent2win",
-   "title": "Senior Engineer \u2013 Data Systems & Platform",
    "status": "",
    "note": ""
   },
@@ -1843,6 +1801,13 @@
    "note": ""
   },
   {
+   "key": "Vanta::9bafb795-a5bb-4a68-97c6-d914b64b2e7b",
+   "company": "Vanta",
+   "title": "Senior Solutions Engineer, Enterprise",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Vanta::383e20b0-b2c5-4c4f-9406-46f0a671a7bc",
    "company": "Vanta",
    "title": "Solutions Engineer, Mid-Market",
@@ -1867,6 +1832,13 @@
    "key": "Vantage::a2f1c002-5615-4d9b-a992-693f5152ce31",
    "company": "Vantage",
    "title": "Growth Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-026616",
+   "company": "Western Governors University",
+   "title": "Agentic Workflow Engineer",
    "status": "",
    "note": ""
   },
@@ -1934,23 +1906,9 @@
    "note": ""
   },
   {
-   "key": "Zapier::7683bf9a-cb86-47de-a15b-4bcc0b70e2e2",
-   "company": "Zapier",
-   "title": "Sr. Engineer, Infrastructure Security",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "ZoomInfo Technologies LLC::https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-applied-ai-engineer-entity-agents",
    "company": "ZoomInfo Technologies LLC",
    "title": "Principal Applied AI Engineer - Entity Agents",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Zuora::161159",
-   "company": "Zuora",
-   "title": "Customer Solution Engineer - Quote to Cash",
    "status": "",
    "note": ""
   },

@@ -1,9 +1,9 @@
-# Prospector — 2026-11-11
+# Prospector — 2026-11-12
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**0 new roles worth your time** · 5 still worth applying · 3 closed/removed
+**0 new roles worth your time** · 5 still worth applying · 1 closed/removed
 Best move today: **Director, Internal AI Operations** — LaunchDarkly
-_101 roles judged on their job descriptions · 89 not worth your time · 130 awaiting a JD review_
+_90 roles judged on their job descriptions · 78 not worth your time · 160 awaiting a JD review_
 
 ## STILL WORTH APPLYING (5)
 - **LaunchDarkly — Director, Internal AI Operations**
@@ -52,12 +52,10 @@ _101 roles judged on their job descriptions · 89 not worth your time · 130 awa
   - Next action: Apply, emphasizing change management, adoption coaching and AI-enablement track record.
   - https://boards.eu.greenhouse.io/nice/jobs/5028919101?gh_jid=5028919101
 
-## REMOVED SINCE PRIOR RUN (3) — closure confirmed at the employer
-- Strategy & Operations, Customer Success — Ashby · Verified closed at the source (404 / posting removed)
-- Manager, Customer Success Architects (AI) — Atlassian · Verified closed at the source (404 / posting removed)
-- Sr. Commercial Strategy Manager — Thumbtack · Verified closed at the source (404 / posting removed)
+## REMOVED SINCE PRIOR RUN (1) — closure confirmed at the employer
+- Learning Design and Enablement Manager — 1Password · Verified closed at the source (404 / posting removed)
 
-_94 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+_95 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH
