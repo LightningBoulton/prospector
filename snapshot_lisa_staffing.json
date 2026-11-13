@@ -365,8 +365,8 @@
   "expires": "",
   "technical_risk": false,
   "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
+  "tier": "discovery",
+  "match_reason": "role family 'project manager' + seniority in title",
   "fit_result": {
    "recommendation": "not_recommended",
    "confidence": "medium",
@@ -424,8 +424,7 @@
    "detected_requirements": []
   },
   "remote_scope": "unclear",
-  "remote_verified": false,
-  "rescued": true
+  "remote_verified": false
  },
  {
   "key": "Aquent::214120",
@@ -1182,77 +1181,6 @@
   "remote_verified": false
  },
  {
-  "key": "Aquent::213820",
-  "company": "Aquent",
-  "title": "Major Incident and Problem Manager",
-  "location": "Wellesley Hills, MA, US (Remote)",
-  "url": "https://aquent.com/find-work/213820",
-  "posted": "2026-10-19",
-  "salary": null,
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "discovery",
-  "match_reason": "mandate in description (operational excellence, continuous improvement)",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "high",
-   "reasons": [
-    "Process improvement overlap",
-    "Healthcare client exposure only"
-   ],
-   "concerns": [
-    "Technical IT depth required",
-    "D-tier dominant work",
-    "Contract role with likely lower pay"
-   ],
-   "unmet_requirements": [
-    "Requires hands-on technical incident/problem management of complex IT environments, not her domain"
-   ],
-   "bridge_skills": [],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 15,
-   "interest_fit": 10,
-   "practical_fit": 30,
-   "opportunity_score": 15,
-   "work_interest": "D",
-   "dominant_work": "IT major incident/problem management for technical infrastructure",
-   "dominant_share": 10,
-   "fit_level": "poor",
-   "industry_relationship": "client_exposure",
-   "industry_importance": "helpful",
-   "key_qualifications": [
-    "GAP: deep IT major-incident/problem management (ITIL) expertise with technical teams",
-    "UNKNOWN: experience coordinating technical incident bridge calls",
-    "TRANSFERABLE: operational process improvement and cross-functional coordination",
-    "UNKNOWN: healthcare IT infrastructure familiarity"
-   ],
-   "cautions": [
-    "Role is fundamentally technical IT operations work, not business/organizational transformation"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "This is a technical IT incident/problem management role requiring deep infrastructure and ITIL expertise, which is not her background despite some process-improvement overlap.",
-   "material_gap": "No demonstrated technical IT incident/problem management experience",
-   "next_action": "Skip; not aligned with her operating-model/transformation focus.",
-   "exception_reason": "",
-   "score": 15,
-   "fit": "no",
-   "reason": "Process improvement overlap",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
   "key": "Aquent::213794",
   "company": "Aquent",
   "title": "Senior Manager, Finance Transformation & Systems_USD",
@@ -1437,6 +1365,46 @@
   "remote_verified": false
  },
  {
+  "key": "Eliassen::95d930f8-df76-11f1-a6aa-0242db9b5dbc",
+  "company": "Eliassen",
+  "title": "AI Automation Analyst",
+  "location": "Remote",
+  "url": "https://careers.eliassen.com/on0DGN/ai-automation-analyst-business-analysis-anywhere-a1wuq0000020qsb2ae",
+  "posted": "2026-11-13",
+  "salary": "$70.00 to $75.00",
+  "employment_type": "",
+  "expires": "",
+  "technical_risk": false,
+  "technical_note": "",
+  "tier": "discovery",
+  "match_reason": "role family 'automation' + mandate in description (operational excellence, continuous improvement, lean)",
+  "fit_result": {
+   "recommendation": "stretch",
+   "fit": "maybe",
+   "score": -1,
+   "opportunity_score": -1,
+   "qualification_fit": -1,
+   "interest_fit": -1,
+   "practical_fit": -1,
+   "reasons": [],
+   "concerns": [],
+   "reason": "(scoring unavailable: BadRequestError)",
+   "confidence": "low",
+   "unmet_requirements": [],
+   "bridge_skills": [],
+   "remote_scope": "unclear",
+   "relocation_required": false,
+   "relocation_assistance_mentioned": false,
+   "signing_bonus_mentioned": false,
+   "valid": false,
+   "bg": "55a510aca86d",
+   "remote_verified": false,
+   "remote_evidence": ""
+  },
+  "remote_scope": "unclear",
+  "remote_verified": false
+ },
+ {
   "key": "Eliassen::4bbb0767-dc62-11f1-a865-0242663b9cdc",
   "company": "Eliassen",
   "title": "Functional Solution Leader for Individual Productivity and Team Efficiency",
@@ -1513,78 +1481,6 @@
    "bg": "55a510aca86d",
    "remote_verified": false,
    "remote_evidence": ""
-  },
-  "remote_scope": "unclear",
-  "remote_verified": false
- },
- {
-  "key": "Eliassen::1b8a555e-d880-11f1-a865-0242663b9cdc",
-  "company": "Eliassen",
-  "title": "Operations - Process Manager - Sr",
-  "location": "Remote",
-  "url": "https://careers.eliassen.com/IMDUoD/operations-process-manager-sr-programproject-management-anywhere-a1wuq000001zqu92ai",
-  "posted": "2026-11-04",
-  "salary": "$55.00 to $65.00",
-  "employment_type": "",
-  "expires": "",
-  "technical_risk": false,
-  "technical_note": "",
-  "tier": "core",
-  "match_reason": "core title gate",
-  "fit_result": {
-   "recommendation": "not_recommended",
-   "confidence": "medium",
-   "reasons": [
-    "PMO-style coordination",
-    "Executive reporting experience"
-   ],
-   "concerns": [
-    "Technical script/code governance domain gap",
-    "Low interest-fit (C-tier PMO work)",
-    "Contract W2 pay modest"
-   ],
-   "unmet_requirements": [],
-   "bridge_skills": [
-    "Script/code risk terminology",
-    "Financial-services backbook governance context"
-   ],
-   "remote_scope": "unclear",
-   "relocation_required": false,
-   "relocation_assistance_mentioned": false,
-   "signing_bonus_mentioned": false,
-   "valid": true,
-   "qualification_fit": 40,
-   "interest_fit": 25,
-   "practical_fit": 45,
-   "opportunity_score": 30,
-   "work_interest": "C",
-   "dominant_work": "PMO/script-governance tracking tied to technical remediation, compliance reporting",
-   "dominant_share": 30,
-   "fit_level": "poor",
-   "industry_relationship": "unknown",
-   "industry_importance": "irrelevant",
-   "key_qualifications": [
-    "TRANSFERABLE: PMO/program tracking and executive reporting",
-    "UNKNOWN: script/technical governance domain familiarity",
-    "GAP: deep technical script/code risk assessment likely required",
-    "UNKNOWN: financial-services acquisition governance specifics"
-   ],
-   "cautions": [
-    "Heavily technical script-governance content (scripts, code uplift, risk assessment) is narrow domain work, not her background"
-   ],
-   "sales_readiness": "n_a",
-   "action_status": "stretch",
-   "why_fits": "Some PMO/tracking/reporting and cross-team coordination overlap, but core work is technical script governance and compliance in a niche financial-tech context she hasn't shown exposure to.",
-   "material_gap": "Core work centers on technical script inventory/risk management, not her domain",
-   "next_action": "Deprioritize; pursue roles closer to transformation/PMO without script-engineering focus.",
-   "exception_reason": "",
-   "score": 30,
-   "fit": "no",
-   "reason": "PMO-style coordination",
-   "bg": "55a510aca86d",
-   "remote_verified": false,
-   "remote_evidence": "",
-   "detected_requirements": []
   },
   "remote_scope": "unclear",
   "remote_verified": false

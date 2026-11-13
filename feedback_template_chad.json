@@ -2,13 +2,6 @@
  "_comment": "Copy any row you want to act on into feedback_chad.json under \"entries\", set \"status\" to one of: pursue, applied, already_applied, interested, not_interested, wrong_function, too_technical, compensation, location, seniority, industry_requirement, weak_fit, duplicate, closed, wrong_industry. This template is regenerated every run and is NOT read by Prospector \u2014 only feedback_chad.json is.",
  "entries": [
   {
-   "key": "1Password::005d4b48-d31e-449f-90b7-83313f98a907",
-   "company": "1Password",
-   "title": ".NET Developer, SaaS Manager",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "1Password::13200311-77c5-49ed-a3ce-8460d5c72d91",
    "company": "1Password",
    "title": "Security Engineer, Corporate Security",
@@ -44,6 +37,13 @@
    "note": ""
   },
   {
+   "key": "1Password::3bacd3c1-45d1-4337-a11b-a21569a51148",
+   "company": "1Password",
+   "title": "Staff Content Developer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "1Password::a8f6ec2c-ca75-42a0-9708-f7bd74ff6671",
    "company": "1Password",
    "title": "Staff Demo Engineer",
@@ -68,6 +68,13 @@
    "key": "6sense::161577",
    "company": "6sense",
    "title": "Product Lead, Predictive Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Abstra::https://himalayas.app/companies/abstra-co/jobs/senior-software-engineer-net",
+   "company": "Abstra",
+   "title": "Senior Software Engineer (.NET)",
    "status": "",
    "note": ""
   },
@@ -128,6 +135,13 @@
    "note": ""
   },
   {
+   "key": "Affirm::8181183003",
+   "company": "Affirm",
+   "title": "Software Engineer I, Backend (Continuous Delivery)",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Affirm::8040751003",
    "company": "Affirm",
    "title": "Software Engineer II - CIAM",
@@ -159,6 +173,13 @@
    "key": "Affirm::8162556003",
    "company": "Affirm",
    "title": "Staff Software Engineer, Fullstack (Account Management)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Affirm::8196747003",
+   "company": "Affirm",
+   "title": "Staff Software Engineer, Fullstack (Auth Experiences)",
    "status": "",
    "note": ""
   },
@@ -226,6 +247,13 @@
    "note": ""
   },
   {
+   "key": "Ancestry::R003434",
+   "company": "Ancestry",
+   "title": "Software Engineer \u2013 Observability, Co-op",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Ancestry::R003461",
    "company": "Ancestry",
    "title": "Staff Product Engineer, Developer Experience",
@@ -275,13 +303,6 @@
    "note": ""
   },
   {
-   "key": "BambooHR::6202767004",
-   "company": "BambooHR",
-   "title": "Senior Product Manager, Payroll Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "BambooHR::6211383004",
    "company": "BambooHR",
    "title": "Staff Application Security Engineer",
@@ -303,27 +324,6 @@
    "note": ""
   },
   {
-   "key": "Baseten::26af6cd9-6ef1-4d6b-b5f6-77a581e45dc4",
-   "company": "Baseten",
-   "title": "Product Platform - Backend Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Baseten::7428d7cc-36d7-4d02-b19a-bd558fba6751",
-   "company": "Baseten",
-   "title": "Product Platform - Product Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Baseten::34fd4416-49f3-4ef7-b9f8-5883f8d0710c",
-   "company": "Baseten",
-   "title": "Software Engineer - Billing & Internal Tooling",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Baseten::7c0ba27d-2f09-42f2-9277-1b756076b00b",
    "company": "Baseten",
    "title": "Software Engineer - Compute & Isolation",
@@ -331,23 +331,9 @@
    "note": ""
   },
   {
-   "key": "Baseten::86331c05-a6b0-4a9f-991d-b46091b696b5",
-   "company": "Baseten",
-   "title": "Software Engineer - Identity & Authorization",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Baseten::d7e9ee32-dee8-459f-9d8a-538d65df51ae",
    "company": "Baseten",
    "title": "Software Engineer - Networking (Agent Infra)",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Baseten::08bededd-d362-453e-b014-384a2003cbf1",
-   "company": "Baseten",
-   "title": "Software Engineer - Partner Platform",
    "status": "",
    "note": ""
   },
@@ -394,6 +380,20 @@
    "note": ""
   },
   {
+   "key": "Canopy::4506170009",
+   "company": "Canopy",
+   "title": "Technical Support Engineer, Document Management",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Canopy::4506140009",
+   "company": "Canopy",
+   "title": "Technical Support Engineer, Insights",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Chainguard::4719783006",
    "company": "Chainguard",
    "title": "Principal Product Security Engineer",
@@ -415,9 +415,9 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4723523006",
+   "key": "Chainguard::4726687006",
    "company": "Chainguard",
-   "title": "Software Engineer, Sustaining Automation",
+   "title": "Staff Product Security Engineer",
    "status": "",
    "note": ""
   },
@@ -429,16 +429,16 @@
    "note": ""
   },
   {
-   "key": "Chainguard::4726687006",
+   "key": "Chainguard::4727461006",
    "company": "Chainguard",
-   "title": "Staff Product Security Engineer",
+   "title": "Staff Software Engineer, Chainguard Harness",
    "status": "",
    "note": ""
   },
   {
-   "key": "Chainguard::4727461006",
-   "company": "Chainguard",
-   "title": "Staff Software Engineer, Chainguard Harness",
+   "key": "Circle::JR101206",
+   "company": "Circle",
+   "title": "Data Engineer - Risk & Compliance",
    "status": "",
    "note": ""
   },
@@ -590,6 +590,13 @@
    "note": ""
   },
   {
+   "key": "Coinbase::8368472",
+   "company": "Coinbase",
+   "title": "Staff Software Engineer, TRUST Network",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Cresta::5480801008",
    "company": "Cresta",
    "title": "AI Agent Evaluation Engineer",
@@ -660,9 +667,23 @@
    "note": ""
   },
   {
+   "key": "Cricut::744000161399159",
+   "company": "Cricut",
+   "title": "Senior Mechanical Engineer, NPI",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Databricks::160322",
    "company": "Databricks",
    "title": "Staff Security Assurance Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Deepgram::f10e79df-a1d4-489a-b173-9e52af12abb2",
+   "company": "Deepgram",
+   "title": "Staff Software Engineer, Console",
    "status": "",
    "note": ""
   },
@@ -688,13 +709,6 @@
    "note": ""
   },
   {
-   "key": "Docker::f50260bc-5da2-475d-bc4b-172ad7c5aa01",
-   "company": "Docker",
-   "title": "Principal Forward Deployed Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Docker::33b629b4-fc3a-437e-b13b-16fef283af68",
    "company": "Docker",
    "title": "Senior Software Engineer, Tooling (West Coast Preferred)",
@@ -716,13 +730,6 @@
    "note": ""
   },
   {
-   "key": "Dropbox::8328511",
-   "company": "Dropbox",
-   "title": "Application Security Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Dropbox::8328516",
    "company": "Dropbox",
    "title": "Application Security Engineer",
@@ -730,14 +737,21 @@
    "note": ""
   },
   {
-   "key": "Dropbox::7752226",
+   "key": "Dropbox::8328511",
+   "company": "Dropbox",
+   "title": "Application Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Dropbox::7172701",
    "company": "Dropbox",
    "title": "Backend Product Software Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Dropbox::7172701",
+   "key": "Dropbox::7752226",
    "company": "Dropbox",
    "title": "Backend Product Software Engineer",
    "status": "",
@@ -772,14 +786,14 @@
    "note": ""
   },
   {
-   "key": "Fivetran::8167896003",
+   "key": "Fivetran::8075733003",
    "company": "Fivetran",
    "title": "Manager Security Engineer, Operations",
    "status": "",
    "note": ""
   },
   {
-   "key": "Fivetran::8075733003",
+   "key": "Fivetran::8167896003",
    "company": "Fivetran",
    "title": "Manager Security Engineer, Operations",
    "status": "",
@@ -870,6 +884,13 @@
    "note": ""
   },
   {
+   "key": "Grafana Labs::6261013004",
+   "company": "Grafana Labs",
+   "title": "Senior Full Stack Engineer | Experimentation - Product Analytics | NASA | Remote",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Grafana Labs::6226999004",
    "company": "Grafana Labs",
    "title": "Senior FullStack Engineer - Grafana Catalog | US | Remote",
@@ -947,13 +968,6 @@
    "note": ""
   },
   {
-   "key": "Headway::75017946-1062-40fb-a78f-9e1edf5424a7",
-   "company": "Headway",
-   "title": "Senior Data Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Headway::b544e605-2f49-4744-9e3d-0548e90cb0d5",
    "company": "Headway",
    "title": "Staff Software Engineer, Provider",
@@ -978,13 +992,6 @@
    "key": "HighLevel::https://weworkremotely.com/remote-jobs/highlevel-software-development-engineer-iii-fullstack-workflows",
    "company": "HighLevel",
    "title": "Software Development Engineer III (Fullstack ) - Workflows",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Hinge Health::a59b0796-25b2-4731-aff7-4fb3403bfcdd",
-   "company": "Hinge Health",
-   "title": "Data Engineer II",
    "status": "",
    "note": ""
   },
@@ -1143,9 +1150,30 @@
    "note": ""
   },
   {
+   "key": "K2 Space::https://himalayas.app/companies/k2-space/jobs/senior-fpga-prototyping-engineer-7437661084",
+   "company": "K2 Space",
+   "title": "Senior FPGA Prototyping Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "MX::4476887009",
    "company": "MX",
    "title": "Information Security Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "MX::4506948009",
+   "company": "MX",
+   "title": "Workday HCM Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Marsh McLennan::https://himalayas.app/companies/marsh-mclennan/jobs/react-full-stack-senior-software-engineer",
+   "company": "Marsh McLennan",
+   "title": "React Full Stack - Senior Software Engineer",
    "status": "",
    "note": ""
   },
@@ -1171,6 +1199,13 @@
    "note": ""
   },
   {
+   "key": "NICE::5034012101",
+   "company": "NICE",
+   "title": "Forward Deployed Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "NICE::5032860101",
    "company": "NICE",
    "title": "Senior Software Engineer",
@@ -1180,6 +1215,13 @@
   {
    "key": "NICE::5032850101",
    "company": "NICE",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Netlify::8519325002",
+   "company": "Netlify",
    "title": "Senior Software Engineer",
    "status": "",
    "note": ""
@@ -1255,13 +1297,6 @@
    "note": ""
   },
   {
-   "key": "Prospex CRM::https://weworkremotely.com/remote-jobs/prospex-crm-senior-software-engineer",
-   "company": "Prospex CRM",
-   "title": "Senior Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Quest Analytics::160291",
    "company": "Quest Analytics",
    "title": "Platform Product Manager - Healthcare SaaS",
@@ -1278,7 +1313,7 @@
   {
    "key": "Ramp::b7fd55f4-6c5a-42f5-be04-aa09a4d5b7a9",
    "company": "Ramp",
-   "title": "Senior Design Engineer",
+   "title": "Senior Design Systems Engineer",
    "status": "",
    "note": ""
   },
@@ -1318,16 +1353,16 @@
    "note": ""
   },
   {
-   "key": "Ramp::09360e92-fc95-4ba6-9611-dfefd60b13ce",
+   "key": "Ramp::6511d68f-b65d-4499-962f-7e2f75eabe3f",
    "company": "Ramp",
-   "title": "Software Engineer, Forward Deployed, Enterprise Product",
+   "title": "Software Engineer, Frontend",
    "status": "",
    "note": ""
   },
   {
-   "key": "Ramp::6511d68f-b65d-4499-962f-7e2f75eabe3f",
+   "key": "Ramp::6e717b06-6613-42ad-a1ee-f852a305fa37",
    "company": "Ramp",
-   "title": "Software Engineer, Frontend",
+   "title": "Software Engineer, Fullstack, Spend Controls",
    "status": "",
    "note": ""
   },
@@ -1584,7 +1619,7 @@
    "note": ""
   },
   {
-   "key": "Sentry::f9f3c913-26ef-45a2-a77f-79ae473c1a85",
+   "key": "Sentry::20f76384-83a0-4e49-b3d8-5bde14c7d0f2",
    "company": "Sentry",
    "title": "Engineering Manager, Data Platform",
    "status": "",
@@ -1675,16 +1710,16 @@
    "note": ""
   },
   {
-   "key": "TRM Labs::155143",
-   "company": "TRM Labs",
-   "title": "Marketing Technology Engineer",
+   "key": "Tailscale::4740935005",
+   "company": "Tailscale",
+   "title": "Billing Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Tailscale::4740935005",
+   "key": "Tailscale::4754084005",
    "company": "Tailscale",
-   "title": "Billing Engineer",
+   "title": "Developer Relations Engineer",
    "status": "",
    "note": ""
   },
@@ -1843,20 +1878,6 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026475",
-   "company": "Western Governors University",
-   "title": "Associate Assessment Developer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Western Governors University::JR-026558",
-   "company": "Western Governors University",
-   "title": "Director, Software Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Western Governors University::JR-026144",
    "company": "Western Governors University",
    "title": "Manager, Software Engineer Student LifeCycle Services",
@@ -1867,6 +1888,13 @@
    "key": "Western Governors University::JR-026474",
    "company": "Western Governors University",
    "title": "Principal Software Engineer - AI Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-026120",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
