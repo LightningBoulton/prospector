@@ -1,20 +1,11 @@
-# Prospector — 2026-11-13
+# Prospector — 2026-11-14
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**0 new roles worth your time** · 4 still worth applying · 1 closed/removed
-Best move today: **Director, Internal AI Operations** — LaunchDarkly
-_71 roles judged on their job descriptions · 63 not worth your time · 191 awaiting a JD review_
+**0 new roles worth your time** · 3 still worth applying · 1 closed/removed
+Best move today: **Customer Success Manager, Director - Core (Sales & Service) Clouds** — Salesforce
+_52 roles judged on their job descriptions · 46 not worth your time · 186 awaiting a JD review_
 
-## STILL WORTH APPLYING (4)
-- **LaunchDarkly — Director, Internal AI Operations**
-  - Status: PACKAGE · Work Interest: A · Fit: Good
-  - Work model/location: remote Remote - US · posted 2026-10-30
-  - Industry: Adjacent
-  - Compensation: not stated in the posting
-  - Why it fits: This is operating-model, governance and adoption work for enterprise AI—exactly her A-tier interest—leveraging her transformation, reporting and cross-functional leadership experience, even though she'd need to frame her case around AI operations rather than a direct AI title.
-  - Material gap: No direct track record building formal AI governance/vendor-review processes at this scale
-  - Next action: Apply, emphasizing operating-model design, cross-functional governance and transformation metrics experience.
-  - https://job-boards.greenhouse.io/launchdarkly/jobs/8109676003
+## STILL WORTH APPLYING (3)
 - **Salesforce — Customer Success Manager, Director - Core (Sales & Service) Clouds**
   - Status: PACKAGE · Work Interest: A · Fit: Good
   - Work model/location: onsite Seattle (+5 more) · posted 2026-11-02
@@ -44,9 +35,9 @@ _71 roles judged on their job descriptions · 63 not worth your time · 191 awai
   - https://jobs.ashbyhq.com/instructure/7947f857-080e-4a65-a93c-7fb4c8f2cfc6
 
 ## REMOVED SINCE PRIOR RUN (1) — closure confirmed at the employer
-- Principal People Experience Partner — Articulate · Verified closed at the source (404 / posting removed)
+- Principal Technical Program Manager - Trust — Atlassian · Verified closed at the source (404 / posting removed)
 
-_100 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+_103 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH
