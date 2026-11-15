@@ -1,9 +1,9 @@
-# Prospector — 2026-11-14
+# Prospector — 2026-11-15
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**0 new roles worth your time** · 3 still worth applying · 1 closed/removed
+**0 new roles worth your time** · 3 still worth applying · 2 closed/removed
 Best move today: **Customer Success Manager, Director - Core (Sales & Service) Clouds** — Salesforce
-_52 roles judged on their job descriptions · 46 not worth your time · 186 awaiting a JD review_
+_52 roles judged on their job descriptions · 46 not worth your time · 197 awaiting a JD review_
 
 ## STILL WORTH APPLYING (3)
 - **Salesforce — Customer Success Manager, Director - Core (Sales & Service) Clouds**
@@ -34,10 +34,11 @@ _52 roles judged on their job descriptions · 46 not worth your time · 186 awai
   - Next action: Apply highlighting EBR leadership, retention/expansion outcomes and enterprise client management.
   - https://jobs.ashbyhq.com/instructure/7947f857-080e-4a65-a93c-7fb4c8f2cfc6
 
-## REMOVED SINCE PRIOR RUN (1) — closure confirmed at the employer
-- Principal Technical Program Manager - Trust — Atlassian · Verified closed at the source (404 / posting removed)
+## REMOVED SINCE PRIOR RUN (2) — closure confirmed at the employer
+- Lead Enterprise Revenue Architect (Customer Success) — Gong.io · Passed the expiry date the posting itself stated
+- Business Operations & Strategy Manager — Hinge Health · Verified closed at the source (404 / posting removed)
 
-_103 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+_102 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH
