@@ -1,9 +1,9 @@
 # Prospector — 2026-11-17
 _Lisa — Transformation / Operations / Experience Leadership_
 
-**0 new roles worth your time** · 2 still worth applying · 0 closed/removed
+**0 new roles worth your time** · 2 still worth applying · 1 closed/removed
 Best move today: **Business Consultant, Change Management, VRS** — NICE
-_32 roles judged on their job descriptions · 27 not worth your time · 182 awaiting a JD review_
+_32 roles judged on their job descriptions · 27 not worth your time · 203 awaiting a JD review_
 
 ## STILL WORTH APPLYING (2)
 - **NICE — Business Consultant, Change Management, VRS**
@@ -25,7 +25,10 @@ _32 roles judged on their job descriptions · 27 not worth your time · 182 awai
   - Next action: Apply highlighting EBR leadership, retention/expansion outcomes and enterprise client management.
   - https://jobs.ashbyhq.com/instructure/7947f857-080e-4a65-a93c-7fb4c8f2cfc6
 
-_107 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
+## REMOVED SINCE PRIOR RUN (1) — closure confirmed at the employer
+- AI Operations Lead — Karbon · Verified closed at the source (404 / posting removed)
+
+_104 previously-emailed role(s) are not visible right now and are marked NEEDS RECHECK — not reported as closed._
 
 
 ## SOURCE HEALTH
