@@ -65,13 +65,6 @@
    "note": ""
   },
   {
-   "key": "6sense::161577",
-   "company": "6sense",
-   "title": "Product Lead, Predictive Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Adobe::R173252",
    "company": "Adobe",
    "title": "Forward Deployed Engineer",
@@ -82,13 +75,6 @@
    "key": "Affirm::8011130003",
    "company": "Affirm",
    "title": "Analytics Lead, Full Stack",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Affirm::8040267003",
-   "company": "Affirm",
-   "title": "Senior Software Engineer, Backend (AI Platform)",
    "status": "",
    "note": ""
   },
@@ -240,6 +226,13 @@
    "note": ""
   },
   {
+   "key": "Ancestry::R003448",
+   "company": "Ancestry",
+   "title": "Senior Site Reliability Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Ancestry::R003434",
    "company": "Ancestry",
    "title": "Software Engineer \u2013 Observability, Co-op",
@@ -313,20 +306,6 @@
    "key": "Baseten::0a6f7d46-a0c3-4020-a697-e1bf1a8aeafa",
    "company": "Baseten",
    "title": "Product Manager, Training Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Baseten::7c0ba27d-2f09-42f2-9277-1b756076b00b",
-   "company": "Baseten",
-   "title": "Software Engineer - Compute & Isolation",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Baseten::d7e9ee32-dee8-459f-9d8a-538d65df51ae",
-   "company": "Baseten",
-   "title": "Software Engineer - Networking (Agent Infra)",
    "status": "",
    "note": ""
   },
@@ -415,13 +394,6 @@
    "note": ""
   },
   {
-   "key": "Circle::JR101206",
-   "company": "Circle",
-   "title": "Data Engineer - Risk & Compliance",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Circle::JR101170",
    "company": "Circle",
    "title": "Manager, Software Engineering, Identity & Access Platform",
@@ -471,9 +443,9 @@
    "note": ""
   },
   {
-   "key": "Coinbase::8319444",
+   "key": "Coinbase::8394402",
    "company": "Coinbase",
-   "title": "Security Engineer, Corporate Security",
+   "title": "Senior Analytics Engineer",
    "status": "",
    "note": ""
   },
@@ -481,13 +453,6 @@
    "key": "Coinbase::8347602",
    "company": "Coinbase",
    "title": "Senior Machine Learning Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Coinbase::8319448",
-   "company": "Coinbase",
-   "title": "Senior Security Engineer, Corporate Security",
    "status": "",
    "note": ""
   },
@@ -516,6 +481,20 @@
    "key": "Coinbase::8326127",
    "company": "Coinbase",
    "title": "Senior Software Engineer, Certificates Management",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8237493",
+   "company": "Coinbase",
+   "title": "Senior Software Engineer, Core Reliability",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8368463",
+   "company": "Coinbase",
+   "title": "Senior Software Engineer, TRUST Network",
    "status": "",
    "note": ""
   },
@@ -565,6 +544,13 @@
    "key": "Coinbase::8356850",
    "company": "Coinbase",
    "title": "Staff Software Engineer, Frontend/Mobile (Consumer - Agentic Trading)",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Coinbase::8286487",
+   "company": "Coinbase",
+   "title": "Staff Software Engineer, Infrastructure (Datastores)",
    "status": "",
    "note": ""
   },
@@ -639,13 +625,6 @@
    "note": ""
   },
   {
-   "key": "Databricks::160322",
-   "company": "Databricks",
-   "title": "Staff Security Assurance Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Deepgram::f10e79df-a1d4-489a-b173-9e52af12abb2",
    "company": "Deepgram",
    "title": "Staff Software Engineer, Console",
@@ -688,14 +667,14 @@
    "note": ""
   },
   {
-   "key": "Dropbox::8328511",
+   "key": "Dropbox::8328516",
    "company": "Dropbox",
    "title": "Application Security Engineer",
    "status": "",
    "note": ""
   },
   {
-   "key": "Dropbox::8328516",
+   "key": "Dropbox::8328511",
    "company": "Dropbox",
    "title": "Application Security Engineer",
    "status": "",
@@ -744,14 +723,14 @@
    "note": ""
   },
   {
-   "key": "Fivetran::8075733003",
+   "key": "Fivetran::8167896003",
    "company": "Fivetran",
    "title": "Manager Security Engineer, Operations",
    "status": "",
    "note": ""
   },
   {
-   "key": "Fivetran::8167896003",
+   "key": "Fivetran::8075733003",
    "company": "Fivetran",
    "title": "Manager Security Engineer, Operations",
    "status": "",
@@ -824,13 +803,6 @@
    "key": "GitLab::8838394002",
    "company": "GitLab",
    "title": "Senior Professional Services Engineer - PubSec - DC Metro",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Grafana Labs::6261013004",
-   "company": "Grafana Labs",
-   "title": "Senior Full Stack Engineer | Experimentation - Product Analytics | NASA | Remote",
    "status": "",
    "note": ""
   },
@@ -912,6 +884,13 @@
    "note": ""
   },
   {
+   "key": "Headway::6a93f139-1423-48ea-b74d-122b17ee3dd1",
+   "company": "Headway",
+   "title": "Senior Software Engineer, Agentic Engineering",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "Headway::b544e605-2f49-4744-9e3d-0548e90cb0d5",
    "company": "Headway",
    "title": "Staff Software Engineer, Provider",
@@ -922,6 +901,13 @@
    "key": "Health Catalyst::REQ-3368",
    "company": "Health Catalyst",
    "title": "Jr Data Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "HealthEdge::https://himalayas.app/companies/healthedge/jobs/senior-software-engineer",
+   "company": "HealthEdge",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
@@ -957,13 +943,6 @@
    "key": "Hinge Health::2c771f05-38d6-483d-8776-f7a768822ca1",
    "company": "Hinge Health",
    "title": "Senior Firmware Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Hinge Health::de8d7cf5-6cd2-45ad-9f0b-a8ff1e102600",
-   "company": "Hinge Health",
-   "title": "Senior Software Engineer - AI Platform",
    "status": "",
    "note": ""
   },
@@ -1034,6 +1013,13 @@
    "key": "Instacart::8240305",
    "company": "Instacart",
    "title": "Senior Machine Learning Engineer, Fulfillment",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Instacart::8394152",
+   "company": "Instacart",
+   "title": "Senior Product Designer II - Commerce & Retailer Platform",
    "status": "",
    "note": ""
   },
@@ -1185,9 +1171,23 @@
    "note": ""
   },
   {
+   "key": "Plaid::8315280a-2498-4b41-9b98-621a61c1f4dc",
+   "company": "Plaid",
+   "title": "Staff Software Engineer - Device Fingerprinting",
+   "status": "",
+   "note": ""
+  },
+  {
    "key": "PointClickCare::155285",
    "company": "PointClickCare",
    "title": "(US) Software Implementation Consultant - Clinical",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "PostHog::1464036f-94d5-4dbd-aef8-fe99246a26d4",
+   "company": "PostHog",
+   "title": "Site Reliability Engineer (US - Pacific time)",
    "status": "",
    "note": ""
   },
@@ -1272,13 +1272,6 @@
    "key": "Recursion::8359888",
    "company": "Recursion",
    "title": "Senior Engineer, Exposure & Vulnerability Management",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Reddit::https://weworkremotely.com/remote-jobs/reddit-engineering-manager-knowledge-graph-platform",
-   "company": "Reddit",
-   "title": "Engineering Manager, Knowledge Graph Platform",
    "status": "",
    "note": ""
   },
@@ -1398,6 +1391,13 @@
    "key": "Replit::563751ea-cb0b-412e-ae07-c5638b87f81a",
    "company": "Replit",
    "title": "SOC Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Replit::b7f12834-78d2-424d-bf83-0c942815fbf7",
+   "company": "Replit",
+   "title": "Software Engineer, Enterprise",
    "status": "",
    "note": ""
   },
@@ -1542,13 +1542,6 @@
    "note": ""
   },
   {
-   "key": "Supabase::6f7656fc-9983-48be-bbd3-8b40e0e3027a",
-   "company": "Supabase",
-   "title": "Container Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Supabase::26f7817d-ca92-4094-a2b5-f22e07a218c4",
    "company": "Supabase",
    "title": "Developer Relations Engineer",
@@ -1598,13 +1591,6 @@
    "note": ""
   },
   {
-   "key": "Tailscale::4749610005",
-   "company": "Tailscale",
-   "title": "Front End Engineer",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Tailscale::4733115005",
    "company": "Tailscale",
    "title": "Security Software Engineer",
@@ -1640,13 +1626,6 @@
    "note": ""
   },
   {
-   "key": "Tremendous::152860",
-   "company": "Tremendous",
-   "title": "Senior Product Manager - Platform",
-   "status": "",
-   "note": ""
-  },
-  {
    "key": "Twilio::8240487",
    "company": "Twilio",
    "title": "Machine Learning Engineer 2",
@@ -1654,9 +1633,9 @@
    "note": ""
   },
   {
-   "key": "Twilio::8093320",
+   "key": "Twilio::8131089",
    "company": "Twilio",
-   "title": "Senior Director, Developer Relations",
+   "title": "Software Engineer (L2)",
    "status": "",
    "note": ""
   },
@@ -1685,13 +1664,6 @@
    "key": "Vanta::7816b5fe-e916-43b8-9200-d0d45298ba9f",
    "company": "Vanta",
    "title": "Senior Product Manager, GRC Platform",
-   "status": "",
-   "note": ""
-  },
-  {
-   "key": "Vanta::112c82ea-5825-4121-a43f-5e1902bec35c",
-   "company": "Vanta",
-   "title": "Senior Software Engineer, AI Developer Experience",
    "status": "",
    "note": ""
   },
@@ -1745,7 +1717,7 @@
    "note": ""
   },
   {
-   "key": "Western Governors University::JR-026144",
+   "key": "Western Governors University::JR-025952",
    "company": "Western Governors University",
    "title": "Manager, Software Engineer Student LifeCycle Services",
    "status": "",
@@ -1755,6 +1727,20 @@
    "key": "Western Governors University::JR-026474",
    "company": "Western Governors University",
    "title": "Principal Software Engineer - AI Platform",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-026415",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer",
+   "status": "",
+   "note": ""
+  },
+  {
+   "key": "Western Governors University::JR-026424",
+   "company": "Western Governors University",
+   "title": "Senior Software Engineer",
    "status": "",
    "note": ""
   },
